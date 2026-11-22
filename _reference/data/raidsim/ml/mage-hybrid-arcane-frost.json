@@ -9,15 +9,20 @@
  "best_entry": "arcane-frost-raid",
  "best_dps": 701.64,
  "any_split": true,
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "commit": "2e6e77d84",
  "gear": {
   "bis": {
    "entry": "arcane-frost-raid",
-   "setting": "raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-arcane-frost-bis.gear.json",
-   "date": "2026-11-20",
-   "kept": true,
+   "date": "2026-11-21",
+   "setting": "raid",
+   "chosen": "previous",
+   "ilvl": 64.1,
+   "trinkets": [
+    "Talisman of Ephemeral Power",
+    "Eye of the Beast"
+   ],
    "names": [
     "Spellweaver's Turban",
     "Choker of the Fire Lord",
@@ -37,15 +42,45 @@
     "Obsidian Bauble",
     "Bonecreeper Stylus"
    ],
-   "ilvl": 64.1,
-   "note": "the spec's tier set as it stands, made by its last search for that search's winner; not made for this pick"
+   "race_seed1": {
+    "current": 1.0,
+    "all-slots": 1.0144713948170476,
+    "keep-sets-and-effects": 1.0136270089187542,
+    "previous": 1.0145672662598244,
+    "the prebis set": 0.9891957814865454,
+    "the prebis set+trinkets": 0.9969907830158988
+   },
+   "confirm_seed2": {
+    "current": 1.0,
+    "previous": 1.0142861439103281
+   },
+   "weights": {
+    "StatArcaneDamage": 0.3475,
+    "StatCritRating": 0.3827,
+    "StatFireDamage": 0.0018,
+    "StatFrostDamage": 0.1568,
+    "StatHasteRating": 0.5396,
+    "StatHitRating": 0.7106,
+    "StatIntellect": 0.3449,
+    "StatSpellDamage": 0.5061,
+    "StatSpellPiercing": 1.2504,
+    "StatSpirit": 0.0017
+   },
+   "evaluated_on": [
+    "arcane-frost-raid: arcane-frost-open-raid"
+   ]
   },
   "prebis": {
    "entry": "arcane-frost-raid",
-   "setting": "raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-arcane-frost-prebis.gear.json",
-   "date": "2026-11-20",
-   "kept": true,
+   "date": "2026-11-21",
+   "setting": "raid",
+   "chosen": "previous",
+   "ilvl": 62.3,
+   "trinkets": [
+    "Weakness Analyzer",
+    "Eye of the Beast"
+   ],
    "names": [
     "Spellweaver's Turban",
     "Nacreous Shell Necklace",
@@ -65,13 +100,35 @@
     "Obsidian Bauble",
     "Bonecreeper Stylus"
    ],
-   "ilvl": 62.3,
-   "note": "the spec's tier set as it stands, made by its last search for that search's winner; not made for this pick"
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0,
+    "previous": 1.0
+   },
+   "confirm_seed2": {
+    "previous": 1.0,
+    "all-slots": 1.0
+   },
+   "weights": {
+    "StatArcaneDamage": 0.3455,
+    "StatCritRating": 0.3819,
+    "StatFireDamage": 0.0018,
+    "StatFrostDamage": 0.1558,
+    "StatHasteRating": 0.5269,
+    "StatHitRating": 0.6969,
+    "StatIntellect": 0.3468,
+    "StatSpellDamage": 0.5031,
+    "StatSpellPiercing": 1.2505,
+    "StatSpirit": -0.0028
+   },
+   "evaluated_on": [
+    "arcane-frost-raid: arcane-frost-open-raid"
+   ]
   },
   "dungeon": {
    "entry": "arcane-frost-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-arcane-frost-dungeon.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "chosen": "previous",
    "ilvl": 60.3,
    "trinkets": [
@@ -206,7 +263,7 @@
    "spec": "Hybrid Arcane/Frost",
    "setting": "dummy",
    "entry": "arcane-frost-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Arcane": [
@@ -303,17 +360,17 @@
    "spec": "Hybrid Arcane/Frost",
    "setting": "raid",
    "entry": "arcane-frost-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Arcane": [
       [
        "Improved Channeling",
-       2
+       3
       ],
       [
        "Arcane Resilience",
-       3
+       2
       ],
       [
        "Arcane Subtlety",
@@ -392,7 +449,7 @@
    "spec": "Hybrid Arcane/Frost",
    "setting": "dummy",
    "entry": "arcane-frost-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Arcane": [
@@ -484,7 +541,7 @@
    "spec": "Hybrid Arcane/Frost",
    "setting": "raid",
    "entry": "arcane-frost-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Arcane": [
@@ -569,7 +626,7 @@
    "spec": "Hybrid Arcane/Frost",
    "setting": "raid",
    "entry": "arcane-frost-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "commit": "2e6e77d84",
    "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
    "winner": {
@@ -577,11 +634,11 @@
      "Arcane": [
       [
        "Improved Channeling",
-       2
+       3
       ],
       [
        "Arcane Resilience",
-       3
+       2
       ],
       [
        "Arcane Subtlety",
@@ -667,12 +724,12 @@
     "prebis-dummy": 612.0,
     "bis-dummy": 609.2
    },
-   "minutes": 7.5
+   "minutes": 17.0
   }
  },
  "pick_tiers": {
   "build": "arcane-frost-open-raid",
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "note": "the page's pick in each tier's gear (the short-check method of 2026-11-20); no talent search",
   "alt": {
    "bis-dummy": {
@@ -680,6 +737,12 @@
     "search_winner_dps": 598.73,
     "search_winner_split": "29/1/21",
     "better": "search winner"
+   },
+   "bis-raid": {
+    "pick_dps": 701.64,
+    "search_winner_dps": 701.64,
+    "search_winner_split": "28/10/13",
+    "better": "pick"
    },
    "prebis-dummy": {
     "pick_dps": 533.22,
@@ -708,142 +771,5 @@
   "gain_vs_hand": 0.0,
   "commit": "2e6e77d84",
   "pick_tiers": true
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "arcane-frost-raid",
-    "dps": 701.47,
-    "se": 0.105
-   },
-   "frost-arcane-power-raid": {
-    "entry": "arcane-frost-raid",
-    "dps": 688.83,
-    "se": 0.106
-   },
-   "frost-fingers-of-frost-raid": {
-    "entry": "frost-raid",
-    "dps": 630.81,
-    "se": 0.122
-   },
-   "arcane-frost-open-raid": {
-    "entry": "arcane-frost-raid",
-    "dps": 701.47,
-    "se": 0.105
-   }
-  },
-  "best_hand": "frost-arcane-power-raid",
-  "gain_vs_hand": 0.0183
- },
- "signature_check": {
-  "spec": "Hybrid Arcane/Frost",
-  "ok": true,
-  "core_share": 0.7398,
-  "min_share": 0.6,
-  "uncast": [],
-  "missing_talents": [],
-  "why": "",
-  "entry": "arcane-frost-raid",
-  "setting": "raid",
-  "iterations": 6000,
-  "dps": 701.5,
-  "date": "2026-11-20",
-  "commit": "2e6e77d84",
-  "shares": {
-   "Arcane Missiles": 0.2939,
-   "Frostbolt": 0.2901,
-   "Arcane Wrath": 0.2513,
-   "Arcane Blast": 0.1559,
-   "Fire Blast": 0.0047,
-   "Demonic Rune": 0.0042
-  },
-  "casts": {
-   "Frostbolt": 25.97,
-   "Arcane Missiles": 27.02,
-   "Evocation": 0.0,
-   "Fire Blast": 0.59,
-   "Arcane Blast": 24.15,
-   "Arcane Wrath": 14.11
-  },
-  "allocation": {
-   "Arcane": [
-    [
-     "Improved Channeling",
-     2
-    ],
-    [
-     "Arcane Resilience",
-     3
-    ],
-    [
-     "Arcane Subtlety",
-     2
-    ],
-    [
-     "Arcane Concentration",
-     4
-    ],
-    [
-     "Missile Barrage",
-     2
-    ],
-    [
-     "Arcane Impact",
-     3
-    ],
-    [
-     "Arcane Blast",
-     1
-    ],
-    [
-     "Arcane Wrath",
-     1
-    ],
-    [
-     "Arcane Mind",
-     5
-    ],
-    [
-     "Arcane Instability",
-     3
-    ],
-    [
-     "Magic Absorption",
-     2
-    ]
-   ],
-   "Fire": [
-    [
-     "Incineration",
-     5
-    ],
-    [
-     "Accelerant",
-     5
-    ]
-   ],
-   "Frost": [
-    [
-     "Improved Frostbolt",
-     5
-    ],
-    [
-     "Precision",
-     3
-    ],
-    [
-     "Ice Shards",
-     5
-    ]
-   ]
-  }
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-11-20",
-  "setting": "raid",
-  "why": "confirms arcane-frost-open-raid (+0.00% in a full raid)"
  }
 }

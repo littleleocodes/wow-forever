@@ -1,6 +1,6 @@
 {
  "class": "hunter",
- "updated": "2026-11-15",
+ "updated": "2026-11-21",
  "guides": [
   {
    "spec": "Hybrid Beast Mastery/Survival",
@@ -456,7 +456,7 @@
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
      "notes": [
-      "**Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with **Multi-Shot**. Below 35% of the mob's health, let **Auto Shot** and the pet finish it: the tuned rules (2026-11-15) measured that slightly faster.",
+      "**Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with Multi-Shot. Below 35% of the mob's health, let **Auto Shot** and the pet finish it: the tuned rules (2026-11-15) measured that slightly faster.",
       "**Unleashed Fury** (20-24) and **Ferocity** (25-29): the pet hits 15% harder and crits 10% more.",
       "**Freezing Trap** (20): drop it before a pull that will bring two mobs. **Aspect of the Cheetah** (20) is for the road."
      ]
@@ -475,7 +475,7 @@
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
      "notes": [
-      "The fight lab casts **Rapid Fire** at the start of every fight it is ready for. This build has no **Rapid Killing**, so the cooldown stays at 5 minutes.",
+      "The fight lab casts **Rapid Fire** at the start of every fight it is ready for. **Rapid Killing** comes only at 60 (a minute off it), so until then the cooldown stays at 5 minutes.",
       "**Frost Trap** (28) slows a pack."
      ],
      "unsimulated": [
@@ -540,7 +540,7 @@
      "notes": [
       "**Bestial Wrath** (40) has a 2-minute cooldown, so it is ready for some pulls, not all: use it on the first pull it is ready for, as the fight lab does.",
       "**Lethal Attacks** (41-45), **Efficiency** (46-50), **Improved Stings** (51-53) and **Careful Aim** (54-55, its third point at 60): more crit, cheaper shots, a stronger sting and attack power from your Intellect. Nothing new to press.",
-      "**Trueshot Aura** (56) is a buff you cast in Forever: keep it on. **Improved Tracking** (57-59): keep the tracking of the mobs you fight switched on.",
+      "**Trueshot Aura** (56) is a buff you cast in Forever: keep it on. **Improved Tracking** (57-58): keep the tracking of the mobs you fight switched on.",
       "**Volley** (40) is a channel for packs, with **Multi-Shot**. Buy every new rank."
      ],
      "unsimulated": [
@@ -733,7 +733,7 @@
        },
        {
         "key": "Shift+Mouse 5",
-        "role": "A ranged hit for a mob that runs",
+        "role": "A ranged hit: not in the list; press it to stop a runner",
         "binds": [
          {
           "from": 6,
@@ -908,7 +908,7 @@
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
      "notes": [
-      "**Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with **Multi-Shot**. In the band between a quarter and 35% of the mob's health, **Arcane Shot** goes first.",
+      "**Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with Multi-Shot. In the band between a quarter and 35% of the mob's health, **Arcane Shot** goes first.",
       "**Improved Stings** (20-22): **Serpent Sting** does 20% more damage. **Rapid Killing** (23-24) cuts **Rapid Fire**'s cooldown by 2 minutes; its other half, 20% on your next shot after a kill, is not in the fight lab.",
       "**Trueshot Aura** (25) is a buff you cast in Forever: keep it on, no key.",
       "**Freezing Trap** (20): drop it before a pull that will bring two mobs. **Aspect of the Cheetah** (20) is for the road."
@@ -952,7 +952,7 @@
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you while it has more than 35% of its health: **Feign Death** sends it back to the pet. A weaker mob, or **Feign Death** on cooldown: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip**.",
      "notes": [
       "The tuned rules keep **Feign Death** for a mob with more than 35% of its health. A weaker one, the fight lab finishes in melee: that measured faster.",
-      "**Rapid Recuperation** (30): after **Serpent Sting**, a quarter of your mana regeneration continues while casting for 15 seconds (half after you spend a **Rapid Killing**). **Barrage** (32-34): **Aimed Shot**, **Multi-Shot** and **Volley** do 15% more damage. **Ranged Weapon Specialization** (35-38): 4% more damage with your bow. **Improved Tracking** (39, its second point at 60): 1% more damage a point against the creature type you track.",
+      "**Rapid Recuperation** (30): after **Serpent Sting**, a quarter of your mana regeneration continues while casting for 15 seconds (half after you spend a **Rapid Killing**). **Barrage** (32-34): **Aimed Shot**, Multi-Shot and Volley do 15% more damage. **Ranged Weapon Specialization** (35-38): 4% more damage with your bow. **Improved Tracking** (39, its second point at 60): 1% more damage a point against the creature type you track.",
       "**Explosive Trap** (34) is for packs."
      ],
      "unsimulated": [
@@ -1297,7 +1297,7 @@
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. Your own health: let the pet hold the mob and step back.",
      "notes": [
       "Traps work in combat in Forever but land where you stand: drop it beside the mob. The burn lasts 15 seconds, so the fight lab skips it on a mob below 40%.",
-      "**Deflection** (17) adds parries, **Survivalist** (18-19) 4% more health. Nothing to press.",
+      "**Deflection** (17) adds parries, **Entrapment** (18-19) roots a mob your trap catches for 2 seconds. Nothing to press.",
       "**Multi-Shot** (18) is a ranged spell. Not for this build."
      ],
      "unsimulated": [
@@ -1387,8 +1387,8 @@
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**.",
      "notes": [
-      "**Careful Aim** (40-42): attack power from 60% of your Intellect. **Lightning Reflexes** (43-47): 15% more Agility. **Improved Stings** (48-49): **Serpent Sting** does 13% more damage. **Deadly Aspects** (50): with **Aspect of the Beast** on, 2% of your swings speed up the next ones by 30% for 12 seconds.",
-      "**Deflection** (51): its second point, 2% parry. **Improved Stings** (52): its third point, **Serpent Sting** 20% stronger. **Efficiency** (53): your shots, stings and strikes 3% cheaper.",
+      "**Careful Aim** (40-42): attack power from 60% of your Intellect. **Lightning Reflexes** (43-47): 15% more Agility. **Improved Stings** (48-49): **Serpent Sting** does 13% more damage.",
+      "**Efficiency** (50-51): your shots, stings and strikes 6% cheaper. **Improved Stings** (52): its third point, **Serpent Sting** 20% stronger. **Survival Tactics** (53): its second point, +10% chance to hit with your traps and **Feign Death**.",
       "**Explosive Trap** (34) replaces **Immolation Trap** when two or more mobs stand at your feet: they share the cooldown."
      ],
      "unsimulated": [
@@ -1757,7 +1757,7 @@
      ],
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
      "notes": [
-      "**Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with **Multi-Shot**. Below 35% of the mob's health, let **Auto Shot** and the pet finish it: the tuned rules (2026-11-15) measured that slightly faster.",
+      "**Aimed Shot** has a 2-second cast and a 6-second cooldown it shares with Multi-Shot. Below 35% of the mob's health, let **Auto Shot** and the pet finish it: the tuned rules (2026-11-15) measured that slightly faster.",
       "**Improved Stings** (20-22): **Serpent Sting** does 20% more damage. **Careful Aim** (23-24, 26, 28 and 32): attack power from your Intellect. **Trueshot Aura** (25) is a buff you cast in Forever: keep it on, no key.",
       "**Freezing Trap** (20): drop it before a pull that will bring two mobs. **Aspect of the Cheetah** (20) is for the road."
      ]
@@ -1819,7 +1819,7 @@
      "if_hurt": "**Mend Pet** when the pet drops below a third of its health. A mob on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet takes it back.",
      "notes": [
       "**Focused Fire** (41-42) adds 2% to your damage and the pet's. **Endurance Training** (43-44) gives the pet 6% more health and armor. **Improved Revive Pet** (45) makes **Revive Pet** quicker and cheaper. **Unleashed Fury** (46-50) and **Ferocity** (51-55): the pet hits 15% harder and crits 10% more.",
-      "**Bestial Swiftness** (56): the pet runs 30% faster. **Bestial Discipline** (57): a quarter of your mana regeneration continues while casting, all the time, and the pet's focus comes back 10% faster. **Mortal Shots** (58): the critical strike damage bonus of your ranged attacks 6% higher. **Spirit Bond** (59): you and the pet regain 1% of health every 10 seconds. **Improved Tracking** (60): the fifth point, 5% more damage to the tracked creature type.",
+      "**Bestial Discipline** (56-57): half your mana regeneration continues while casting, all the time, and the pet's focus comes back 20% faster. **Mortal Shots** (58): the critical strike damage bonus of your ranged attacks 6% higher. **Spirit Bond** (59): you and the pet regain 1% of health every 10 seconds. **Improved Tracking** (60): the fifth point, 5% more damage to the tracked creature type.",
       "**Volley** (40) is a channel for packs, with **Multi-Shot**."
      ],
      "unsimulated": [
@@ -2001,7 +2001,7 @@
        },
        {
         "key": "Shift+Mouse 5",
-        "role": "A ranged hit for a mob that runs",
+        "role": "A ranged hit: not in the list; press it to stop a runner",
         "binds": [
          {
           "from": 6,

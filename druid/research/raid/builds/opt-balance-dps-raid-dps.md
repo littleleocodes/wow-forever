@@ -90,8 +90,8 @@ Before the pull: at -10s: activate Moonkin Form.
 | 2 | if mana % ≤ 30%: cast Innervate | 0.3 |
 | 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 3.7 |
 | 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 4.0 |
-| 5 | cast Starfire (rank 6) | 16.3 |
-| 6 | if mana % < 15%: cast Starfire (rank 6) | 16.3 |
+| 5 | cast Starfire | 16.3 |
+| 6 | if mana % < 15%: cast Starfire | 16.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Wrath (its condition never held in these fights).
 

@@ -3,7 +3,7 @@
  "spec": "Subtlety",
  "build": "subtlety-open-leveling",
  "rotation": "subtlety-leveling",
- "date": "2026-11-16",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -177,17 +177,386 @@
  ],
  "steps": [
   {
-   "weighted": 21.83,
+   "weighted": 20.913,
    "values_at_60": {
-    "Aggression": -0.138,
-    "Death Mark": -27.045,
-    "Flawless Execution": -0.844,
-    "Weapon Expertise": -0.566
+    "Aggression": -0.195,
+    "Flawless Execution": -0.743,
+    "Weapon Expertise": -0.43
    },
-   "zero": []
+   "zero": [],
+   "dead_held": [
+    "Dirty Tricks"
+   ]
   }
  ],
- "moves": [],
+ "moves": [
+  {
+   "from": "Puncturing Wounds",
+   "to": "Deflection",
+   "level": 52,
+   "seed3": -0.001,
+   "seed4": -0.0015,
+   "why": "gate"
+  },
+  {
+   "from": "Puncturing Wounds",
+   "to": "Deflection",
+   "level": 51,
+   "seed3": -0.0013,
+   "seed4": -0.0003,
+   "why": "gate that did nothing, no loss"
+  }
+ ],
+ "kept_signature": [
+  "Death Mark",
+  "Hemorrhage"
+ ],
+ "gates_checked": {
+  "Boot Knife": {
+   "level": 39,
+   "kind": "tier point for Death Mark (tier 7)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Master of Deception",
+     "seed3": 0.0119
+    },
+    {
+     "to": "Camouflage",
+     "seed3": 0.0119
+    },
+    {
+     "to": "Dirty Tricks",
+     "seed3": 0.0119
+    },
+    {
+     "to": "Elusiveness",
+     "seed3": 0.0119
+    },
+    {
+     "to": "Heightened Senses",
+     "seed3": 0.0119
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Composure": {
+   "level": 55,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0007
+    },
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0012
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0012
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0013
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Coup de Grace": {
+   "level": 43,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0073
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Deflection": {
+   "level": 52,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0004
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0013
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0013
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0013
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Dirty Deeds": {
+   "kind": "tier point for Boot Knife (tier 6)",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: utility (stealth), a value the fight lab cannot see"
+  },
+  "Dirty Tricks": {
+   "level": 34,
+   "kind": "tier point for Boot Knife (tier 6)",
+   "does_nothing": "improves only Blind, Sap, which the build never casts (its removal changes nothing at 40, 50, 60)",
+   "homes": [
+    {
+     "to": "Master of Deception",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Camouflage",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Elusiveness",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Heightened Senses",
+     "seed3": 0.0,
+     "same_times": true
+    }
+   ],
+   "verdict": "no better home"
+  },
+  "Efficient Strikes": {
+   "level": 50,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0064
+    },
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0073
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0083
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0083
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Ghostly Strike": {
+   "level": 25,
+   "kind": "tier point for Boot Knife (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Master of Deception",
+     "seed3": 0.016
+    },
+    {
+     "to": "Camouflage",
+     "seed3": 0.016
+    },
+    {
+     "to": "Dirty Tricks",
+     "seed3": 0.016
+    },
+    {
+     "to": "Elusiveness",
+     "seed3": 0.016
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Ambush": {
+   "level": 33,
+   "kind": "tier point for Boot Knife (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Master of Deception",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Camouflage",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Dirty Tricks",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Elusiveness",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Heightened Senses",
+     "seed3": 0.0028
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Initiative": {
+   "level": 27,
+   "kind": "tier point for Boot Knife (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Master of Deception",
+     "seed3": 0.0112
+    },
+    {
+     "to": "Camouflage",
+     "seed3": 0.0112
+    },
+    {
+     "to": "Dirty Tricks",
+     "seed3": 0.0112
+    },
+    {
+     "to": "Elusiveness",
+     "seed3": 0.0112
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Lightning Reflexes": {
+   "level": 53,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0004
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0007
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0011
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0011
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Master of Deception": {
+   "kind": "tier point for Boot Knife (tier 6)",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: utility (stealth), a value the fight lab cannot see"
+  },
+  "Opportunity": {
+   "level": 32,
+   "kind": "tier point for Boot Knife (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Master of Deception",
+     "seed3": 0.0053
+    },
+    {
+     "to": "Camouflage",
+     "seed3": 0.0053
+    },
+    {
+     "to": "Dirty Tricks",
+     "seed3": 0.0053
+    },
+    {
+     "to": "Elusiveness",
+     "seed3": 0.0053
+    },
+    {
+     "to": "Heightened Senses",
+     "seed3": 0.0053
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Precision": {
+   "level": 48,
+   "kind": "prerequisite of Weapon Expertise",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Premeditation": {
+   "level": 24,
+   "kind": "tier point for Boot Knife (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Master of Deception",
+     "seed3": 0.0071
+    },
+    {
+     "to": "Camouflage",
+     "seed3": 0.0071
+    },
+    {
+     "to": "Dirty Tricks",
+     "seed3": 0.0071
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Preparation": {
+   "kind": "prerequisite of Death Mark",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: utility (escape), a value the fight lab cannot see"
+  },
+  "Serrated Blades": {
+   "level": 22,
+   "kind": "prerequisite of Hemorrhage",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Setup": {
+   "level": 14,
+   "kind": "tier point for Boot Knife (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Master of Deception",
+     "seed3": 0.0034
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  }
+ },
+ "no_better_home": {
+  "Dirty Tricks": {
+   "kind": "tier point for Boot Knife (tier 6)",
+   "exact": true,
+   "why": "improves only Blind, Sap, which the build never casts (its removal changes nothing at 40, 50, 60)",
+   "homes": 4
+  }
+ },
  "final_order": [
   {
    "levels": "10-11",
@@ -324,7 +693,7 @@
   {
    "levels": "51-52",
    "tree": "Combat",
-   "talent": "Puncturing Wounds",
+   "talent": "Deflection",
    "points": 2
   },
   {
@@ -356,6 +725,284 @@
    "tree": "Combat",
    "talent": "Aggression",
    "points": 2
+  }
+ ],
+ "written": {
+  "allocation": {
+   "Assassination": [],
+   "Combat": [
+    [
+     "Coup de Grace",
+     3
+    ],
+    [
+     "Efficient Strikes",
+     2
+    ],
+    [
+     "Lightning Reflexes",
+     3
+    ],
+    [
+     "Deflection",
+     2
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Composure",
+     2
+    ],
+    [
+     "Flawless Execution",
+     1
+    ],
+    [
+     "Weapon Expertise",
+     2
+    ],
+    [
+     "Aggression",
+     2
+    ]
+   ],
+   "Subtlety": [
+    [
+     "Setup",
+     3
+    ],
+    [
+     "Master of Deception",
+     1
+    ],
+    [
+     "Opportunity",
+     5
+    ],
+    [
+     "Dirty Deeds",
+     2
+    ],
+    [
+     "Improved Ambush",
+     3
+    ],
+    [
+     "Dirty Tricks",
+     1
+    ],
+    [
+     "Initiative",
+     3
+    ],
+    [
+     "Premeditation",
+     1
+    ],
+    [
+     "Serrated Blades",
+     3
+    ],
+    [
+     "Ghostly Strike",
+     1
+    ],
+    [
+     "Preparation",
+     1
+    ],
+    [
+     "Hemorrhage",
+     1
+    ],
+    [
+     "Boot Knife",
+     5
+    ],
+    [
+     "Death Mark",
+     1
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-11",
+    "tree": "Subtlety",
+    "talent": "Opportunity",
+    "points": 2
+   },
+   {
+    "levels": "12-14",
+    "tree": "Subtlety",
+    "talent": "Setup",
+    "points": 3
+   },
+   {
+    "levels": "15-16",
+    "tree": "Subtlety",
+    "talent": "Dirty Deeds",
+    "points": 2
+   },
+   {
+    "levels": "17",
+    "tree": "Subtlety",
+    "talent": "Master of Deception",
+    "points": 1
+   },
+   {
+    "levels": "18-19",
+    "tree": "Subtlety",
+    "talent": "Improved Ambush",
+    "points": 2
+   },
+   {
+    "levels": "20-22",
+    "tree": "Subtlety",
+    "talent": "Serrated Blades",
+    "points": 3
+   },
+   {
+    "levels": "23",
+    "tree": "Subtlety",
+    "talent": "Initiative",
+    "points": 1
+   },
+   {
+    "levels": "24",
+    "tree": "Subtlety",
+    "talent": "Premeditation",
+    "points": 1
+   },
+   {
+    "levels": "25",
+    "tree": "Subtlety",
+    "talent": "Ghostly Strike",
+    "points": 1
+   },
+   {
+    "levels": "26-27",
+    "tree": "Subtlety",
+    "talent": "Initiative",
+    "points": 2
+   },
+   {
+    "levels": "28-29",
+    "tree": "Subtlety",
+    "talent": "Opportunity",
+    "points": 2
+   },
+   {
+    "levels": "30",
+    "tree": "Subtlety",
+    "talent": "Hemorrhage",
+    "points": 1
+   },
+   {
+    "levels": "31",
+    "tree": "Subtlety",
+    "talent": "Preparation",
+    "points": 1
+   },
+   {
+    "levels": "32",
+    "tree": "Subtlety",
+    "talent": "Opportunity",
+    "points": 1
+   },
+   {
+    "levels": "33",
+    "tree": "Subtlety",
+    "talent": "Improved Ambush",
+    "points": 1
+   },
+   {
+    "levels": "34",
+    "tree": "Subtlety",
+    "talent": "Dirty Tricks",
+    "points": 1
+   },
+   {
+    "levels": "35-39",
+    "tree": "Subtlety",
+    "talent": "Boot Knife",
+    "points": 5
+   },
+   {
+    "levels": "40",
+    "tree": "Subtlety",
+    "talent": "Death Mark",
+    "points": 1
+   },
+   {
+    "levels": "41-43",
+    "tree": "Combat",
+    "talent": "Coup de Grace",
+    "points": 3
+   },
+   {
+    "levels": "44-45",
+    "tree": "Combat",
+    "talent": "Lightning Reflexes",
+    "points": 2
+   },
+   {
+    "levels": "46-48",
+    "tree": "Combat",
+    "talent": "Precision",
+    "points": 3
+   },
+   {
+    "levels": "49-50",
+    "tree": "Combat",
+    "talent": "Efficient Strikes",
+    "points": 2
+   },
+   {
+    "levels": "51-52",
+    "tree": "Combat",
+    "talent": "Deflection",
+    "points": 2
+   },
+   {
+    "levels": "53",
+    "tree": "Combat",
+    "talent": "Lightning Reflexes",
+    "points": 1
+   },
+   {
+    "levels": "54-55",
+    "tree": "Combat",
+    "talent": "Composure",
+    "points": 2
+   },
+   {
+    "levels": "56",
+    "tree": "Combat",
+    "talent": "Flawless Execution",
+    "points": 1
+   },
+   {
+    "levels": "57-58",
+    "tree": "Combat",
+    "talent": "Weapon Expertise",
+    "points": 2
+   },
+   {
+    "levels": "59-60",
+    "tree": "Combat",
+    "talent": "Aggression",
+    "points": 2
+   }
+  ],
+  "note": "2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Puncturing Wounds to Deflection at 51 (gate that did nothing, no loss: -0.1% seed 3, -0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Puncturing Wounds to Deflection at 52 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
+ },
+ "reruns": [
+  {
+   "date": "2026-11-22",
+   "moves": 0
   }
  ]
 }

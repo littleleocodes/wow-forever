@@ -1,4 +1,158 @@
 {
+ "warrior": {
+  "entry": "prot-tank",
+  "fights": 10000,
+  "commit": "2e6e77d84",
+  "rotations": {
+   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warrior\\prot-tank-raid.apl.json",
+   "upstream": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warrior\\upstream\\protection-default.apl.json"
+  },
+  "builds": {
+   "prot-raid-tank": "3500301-05-150533020311001351",
+   "opt-prot-tank-raid-tank": "35-05-250530022331201351",
+   "protection-ml-tank": "35300103002-03-050530020330001351",
+   "sim preset: Protection": "05-05050005-150531120300001351"
+  },
+  "rows": {
+   "ours|prot-raid-tank": {
+    "1": {
+     "dps": 467.83222639870115,
+     "threat": 1636.207043557058,
+     "dtps": 316.34066388041566
+    },
+    "2": {
+     "dps": 468.44204393242273,
+     "threat": 1638.4641426324758,
+     "dtps": 316.1834355586005
+    }
+   },
+   "ours|opt-prot-tank-raid-tank": {
+    "1": {
+     "dps": 470.4979360653242,
+     "threat": 1644.2565918642752,
+     "dtps": 315.8994534571772
+    },
+    "2": {
+     "dps": 469.9133726005095,
+     "threat": 1642.5040868064877,
+     "dtps": 316.42086797354057
+    }
+   },
+   "ours|protection-ml-tank": {
+    "1": {
+     "dps": 486.4609287442261,
+     "threat": 1678.5275319869686,
+     "dtps": 316.4770670026151
+    },
+    "2": {
+     "dps": 486.61665093931805,
+     "threat": 1678.4669431717552,
+     "dtps": 315.5602671786628
+    }
+   },
+   "ours|sim preset: Protection": {
+    "1": {
+     "dps": 486.01442437389056,
+     "threat": 1678.215055838064,
+     "dtps": 316.34939169187373
+    },
+    "2": {
+     "dps": 485.45907302655985,
+     "threat": 1676.574575631285,
+     "dtps": 316.0033607627319
+    }
+   },
+   "upstream|prot-raid-tank": {
+    "1": {
+     "dps": 476.618589524688,
+     "threat": 1546.3258912049928,
+     "dtps": 310.5561493078917
+    },
+    "2": {
+     "dps": 476.26788583735197,
+     "threat": 1545.94847664763,
+     "dtps": 311.19167228137894
+    }
+   },
+   "upstream|opt-prot-tank-raid-tank": {
+    "1": {
+     "dps": 473.90280626227894,
+     "threat": 1537.7340066037643,
+     "dtps": 312.0276655977046
+    },
+    "2": {
+     "dps": 473.9277207109191,
+     "threat": 1537.6883617094104,
+     "dtps": 311.2786737546361
+    }
+   },
+   "upstream|protection-ml-tank": {
+    "1": {
+     "dps": 491.2568096854576,
+     "threat": 1576.1322621878517,
+     "dtps": 311.71581859456774
+    },
+    "2": {
+     "dps": 490.7288691112792,
+     "threat": 1574.1051504208692,
+     "dtps": 311.6835217649157
+    }
+   },
+   "upstream|sim preset: Protection": {
+    "1": {
+     "dps": 495.7791664273598,
+     "threat": 1598.6232749421688,
+     "dtps": 311.6849821429082
+    },
+    "2": {
+     "dps": 496.05006653566466,
+     "threat": 1599.2763240874083,
+     "dtps": 311.25208293356013
+    }
+   }
+  },
+  "value": {
+   "ours|prot-raid-tank": {
+    "1": 1.0,
+    "2": 1.0
+   },
+   "ours|opt-prot-tank-raid-tank": {
+    "1": 1.0031581595586774,
+    "2": 1.000857660346819
+   },
+   "ours|protection-ml-tank": {
+    "1": 1.0127169955569584,
+    "2": 1.0131948079356152
+   },
+   "ours|sim preset: Protection": {
+    "1": 1.012823215399722,
+    "2": 1.0119148513019551
+   },
+   "upstream|prot-raid-tank": {
+    "1": 0.9818468402891948,
+    "2": 0.9797879644826337
+   },
+   "upstream|opt-prot-tank-raid-tank": {
+    "1": 0.9768193802174593,
+    "2": 0.9771252859302673
+   },
+   "upstream|protection-ml-tank": {
+    "1": 0.9890604279949506,
+    "2": 0.9875786858157376
+   },
+   "upstream|sim preset: Protection": {
+    "1": 0.9959835408696314,
+    "2": 0.9959630936305932
+   }
+  },
+  "reference": "ours|prot-raid-tank",
+  "our_best": "ours|protection-ml-tank",
+  "best": "ours|protection-ml-tank",
+  "gain": [
+   0.0,
+   0.0
+  ]
+ },
  "paladin": {
   "entry": "prot-tank",
   "fights": 10000,
@@ -338,160 +492,6 @@
   "gain": [
    0.4157,
    0.417
-  ]
- },
- "warrior": {
-  "entry": "prot-tank",
-  "fights": 10000,
-  "commit": "2e6e77d84",
-  "rotations": {
-   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warrior\\prot-tank-raid.apl.json",
-   "upstream": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\warrior\\upstream\\protection-default.apl.json"
-  },
-  "builds": {
-   "prot-raid-tank": "3500301-05-150533020311001351",
-   "opt-prot-tank-raid-tank": "35-05-250530022331201351",
-   "protection-ml-tank": "35300103002-03-050530020330001351",
-   "sim preset: Protection": "05-05050005-150531120300001351"
-  },
-  "rows": {
-   "ours|prot-raid-tank": {
-    "1": {
-     "dps": 467.83222639870115,
-     "threat": 1636.207043557058,
-     "dtps": 316.34066388041566
-    },
-    "2": {
-     "dps": 468.44204393242273,
-     "threat": 1638.4641426324758,
-     "dtps": 316.1834355586005
-    }
-   },
-   "ours|opt-prot-tank-raid-tank": {
-    "1": {
-     "dps": 470.4979360653242,
-     "threat": 1644.2565918642752,
-     "dtps": 315.8994534571772
-    },
-    "2": {
-     "dps": 469.9133726005095,
-     "threat": 1642.5040868064877,
-     "dtps": 316.42086797354057
-    }
-   },
-   "ours|protection-ml-tank": {
-    "1": {
-     "dps": 486.4609287442261,
-     "threat": 1678.5275319869686,
-     "dtps": 316.4770670026151
-    },
-    "2": {
-     "dps": 486.61665093931805,
-     "threat": 1678.4669431717552,
-     "dtps": 315.5602671786628
-    }
-   },
-   "ours|sim preset: Protection": {
-    "1": {
-     "dps": 486.01442437389056,
-     "threat": 1678.215055838064,
-     "dtps": 316.34939169187373
-    },
-    "2": {
-     "dps": 485.45907302655985,
-     "threat": 1676.574575631285,
-     "dtps": 316.0033607627319
-    }
-   },
-   "upstream|prot-raid-tank": {
-    "1": {
-     "dps": 476.618589524688,
-     "threat": 1546.3258912049928,
-     "dtps": 310.5561493078917
-    },
-    "2": {
-     "dps": 476.26788583735197,
-     "threat": 1545.94847664763,
-     "dtps": 311.19167228137894
-    }
-   },
-   "upstream|opt-prot-tank-raid-tank": {
-    "1": {
-     "dps": 473.90280626227894,
-     "threat": 1537.7340066037643,
-     "dtps": 312.0276655977046
-    },
-    "2": {
-     "dps": 473.9277207109191,
-     "threat": 1537.6883617094104,
-     "dtps": 311.2786737546361
-    }
-   },
-   "upstream|protection-ml-tank": {
-    "1": {
-     "dps": 491.2568096854576,
-     "threat": 1576.1322621878517,
-     "dtps": 311.71581859456774
-    },
-    "2": {
-     "dps": 490.7288691112792,
-     "threat": 1574.1051504208692,
-     "dtps": 311.6835217649157
-    }
-   },
-   "upstream|sim preset: Protection": {
-    "1": {
-     "dps": 495.7791664273598,
-     "threat": 1598.6232749421688,
-     "dtps": 311.6849821429082
-    },
-    "2": {
-     "dps": 496.05006653566466,
-     "threat": 1599.2763240874083,
-     "dtps": 311.25208293356013
-    }
-   }
-  },
-  "value": {
-   "ours|prot-raid-tank": {
-    "1": 1.0,
-    "2": 1.0
-   },
-   "ours|opt-prot-tank-raid-tank": {
-    "1": 1.0031581595586774,
-    "2": 1.000857660346819
-   },
-   "ours|protection-ml-tank": {
-    "1": 1.0127169955569584,
-    "2": 1.0131948079356152
-   },
-   "ours|sim preset: Protection": {
-    "1": 1.012823215399722,
-    "2": 1.0119148513019551
-   },
-   "upstream|prot-raid-tank": {
-    "1": 0.9818468402891948,
-    "2": 0.9797879644826337
-   },
-   "upstream|opt-prot-tank-raid-tank": {
-    "1": 0.9768193802174593,
-    "2": 0.9771252859302673
-   },
-   "upstream|protection-ml-tank": {
-    "1": 0.9890604279949506,
-    "2": 0.9875786858157376
-   },
-   "upstream|sim preset: Protection": {
-    "1": 0.9959835408696314,
-    "2": 0.9959630936305932
-   }
-  },
-  "reference": "ours|prot-raid-tank",
-  "our_best": "ours|protection-ml-tank",
-  "best": "ours|protection-ml-tank",
-  "gain": [
-   0.0,
-   0.0
   ]
  }
 }

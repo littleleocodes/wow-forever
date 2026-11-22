@@ -4,7 +4,7 @@
 
 What an Arcane mage presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Arcane levels on **Arcane Missiles**, a channel you keep going even when the mob is on you. From 20 two **Arcane Blast** casts on the walk-in make every spell hit harder, and from 25 **Arcane Wrath** opens the pull. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 33/0/18 ([open the talent tree](https://talentsforever.com/mage/60/051205203100311531--0324022101003-12)), the one on the [Arcane leveling page](arcane.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 33/0/18 ([open the talent tree](https://talentsforever.com/mage/60/051205203100311531--1324120101003-12)), the one on the [Arcane leveling page](arcane.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -59,7 +59,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Shift+C | A bad pull: the best healing potion in your bags (one cooldown for every potion) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
 | Shift+X | Free | — | — | — | — | — | — | — | — | — | — |
 
-- The [Frost guide](frost-by-level.md)'s keys, with four changes for Arcane: **Arcane Missiles** takes Q at 8 (it is the spell you press most, and **Frostbolt** leaves the bar), **Arcane Blast** goes on 1, where the other mage guides keep the free Missiles, **Arcane Wrath** on Shift+Q, where they keep the **Presence of Mind** macro, and **Arcane Power** on Shift+1 at 42.
+- The [Frost guide](frost-by-level.md)'s keys, with four changes for Arcane: **Arcane Missiles** takes Q at 8 (it is the spell you press most, and **Frostbolt** leaves the bar), **Arcane Blast** goes on 1, where the Frost and Arcane-Frost guides keep the free Missiles, **Arcane Wrath** on Shift+Q, where they keep the **Presence of Mind** macro, and **Arcane Power** on Shift+1 at 42.
 - R waits for **Ice Lance** at 53: it keeps the job it has in every mage guide, the hit into a freeze.
 - Levels 4 and 8 are the swaps on Q: **Frostbolt** replaces **Fireball**, then **Arcane Missiles** replaces **Frostbolt**.
 - The Shift+Q macro from 30, one line each: `#showtooltip Arcane Wrath`, `/cast Presence of Mind`, `/cast Arcane Wrath`. **Presence of Mind** is off the global cooldown, so one press fires both; while it is on cooldown the second line still casts **Arcane Wrath**.
@@ -99,7 +99,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Conjure Water** (4): drink between fights instead of waiting for your mana.
 - Take **Fireball** off your bar.
 
-*Fight lab, seconds per kill: 22 at level 4. Presses per kill at level 4: Frostbolt 4.8, Wand 0.8.*
+*Fight lab, seconds per kill: 19 at level 4. Presses per kill at level 4: Frostbolt 4.8, Wand 0.8.*
 
 ## Levels 6-7: Fire Blast, your instant
 
@@ -117,7 +117,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Conjure Food** (6) saves you buying bread.
 
-*Fight lab, seconds per kill: 25 at level 6. Presses per kill at level 6: Frostbolt 5.0, Fire Blast 1.0, Wand 0.7.*
+*Fight lab, seconds per kill: 22 at level 6. Presses per kill at level 6: Frostbolt 4.9, Fire Blast 1.0, Wand 0.7.*
 
 ## Levels 8-9: Arcane Missiles, your main spell
 
@@ -133,10 +133,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 2. **Fire Blast** when it will kill the mob.
 
 - **Polymorph** (8): when a second mob joins, sheep it, kill the first, then fight the sheep.
-- Take **Frostbolt** off your bar: the rotation casts it only when you cannot afford the Missiles, and the fight lab never ran that low.
+- Move **Frostbolt** from Q to a side bar: from here the rotation casts it only when you cannot afford the Missiles.
 - A hit while you channel pushes the Missiles back. From 11 your talents start to stop that.
 
-*Fight lab, seconds per kill: 23 at level 8. Presses per kill at level 8: Arcane Missiles 2.2, Fire Blast 0.4, Wand 0.1.*
+*Fight lab, seconds per kill: 20 at level 8. Presses per kill at level 8: Arcane Missiles 2.2, Fire Blast 0.4, Wand 0.1.*
 
 ## Levels 10-19: Frost Nova: freeze, step back, channel
 
@@ -158,10 +158,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 4. **Fire Blast** when it will kill the mob.
 
 - **Improved Channeling** (11-14) makes hits push your Missiles back less, and not at all with the fifth point at 29.
-- **Arcane Concentration** (15-19) makes about one cast in ten free. **Arcane Resilience** (10) adds armor from your Intellect.
+- **Arcane Resilience** (10) adds a quarter of your Intellect to your armor, and **Arcane Concentration** (15-19) makes about one cast in ten free. Short of mana for the Missiles, click the **Frostbolt** on your side bar: the fight lab does that about once in five kills at 19 and almost never from 20.
 - **Arcane Explosion** (14) and **Flamestrike** (16) are for packs. One mob at a time never needs them.
 
-*Fight lab, seconds per kill: 26 at level 10, 33 at level 19. Presses per kill at level 10: Arcane Missiles 2.5, Fire Blast 0.5, Frost Nova 0.4, Wand 0.1.*
+*Fight lab, seconds per kill: 22 at level 10, 30 at level 19. Presses per kill at level 10: Arcane Missiles 2.4, Fire Blast 0.5, Frost Nova 0.4, Wand 0.3, Frostbolt 0.1.*
 
 ## Levels 20-24: Arcane Blast stacks
 
@@ -190,7 +190,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Arcane Subtlety** (23-24) lowers the mob's resistance to all your spells by 15. **Counterspell** (24): a mob that starts casting stops standing back and walks to you.
 - **Evocation** (20) is for between fights, in place of a drink under 15% mana. **Blink** (20) and **Mana Shield** (20) are for a pull that goes wrong. **Blizzard** (20) is for packs.
 
-*Fight lab, seconds per kill: 32 at level 20. Presses per kill at level 20: Arcane Missiles 2.4, Arcane Blast 1.9, Frost Nova 0.6, Fire Blast 0.4, Wand 0.3, Frostbolt 0.1.*
+*Fight lab, seconds per kill: 30 at level 20. Presses per kill at level 20: Arcane Missiles 2.4, Arcane Blast 1.9, Frost Nova 0.6, Fire Blast 0.4, Wand 0.4, Frostbolt 0.1.*
 
 ## Levels 25-29: Arcane Wrath opens the pull
 
@@ -220,7 +220,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Cone of Cold** (26) only when the mob is on you, **Frost Nova** is down and the mob is below a fifth of its health (a tuned rule); step back after it. It comes up rarely.
 - **Arcane Meditation** (26-28) keeps half your mana regeneration going while you cast. **Improved Channeling** (29) gets its fifth point: a hit no longer pushes your Missiles back.
 
-*Fight lab, seconds per kill: 27 at level 25. Presses per kill at level 25: Arcane Blast 1.9, Arcane Missiles 1.6, Frost Nova 0.5, Arcane Wrath 0.5, Fire Blast 0.3, Counterspell 0.2, Wand 0.1.*
+*Fight lab, seconds per kill: 26 at level 25. Presses per kill at level 25: Arcane Blast 1.9, Arcane Missiles 1.6, Frost Nova 0.6, Arcane Wrath 0.5, Fire Blast 0.3, Counterspell 0.2, Wand 0.2, Frostbolt 0.1.*
 
 ## Levels 30-41: Presence of Mind on the pull
 
@@ -252,7 +252,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Arcane Impact** (31-33) adds 6% crit to your Arcane spells. **Arcane Mind** (34, 40-41) adds Intellect and bigger Arcane crits, **Arcane Instability** (35-37) damage and crit.
 - **Precision** (38-39), your first two Frost points, adds 4% hit. Frostfire Bolt (40) is not part of this list.
 
-*Fight lab, seconds per kill: 29 at level 30, 28 at level 40, 28 at level 41. Presses per kill at level 30: Arcane Missiles 1.9, Arcane Blast 1.8, Arcane Wrath 0.7, Frost Nova 0.7, Fire Blast 0.5, Counterspell 0.1, Wand 0.1.*
+*Fight lab, seconds per kill: 28 at level 30, 26 at level 40, 26 at level 41. Presses per kill at level 30: Arcane Missiles 1.9, Arcane Blast 1.8, Arcane Wrath 0.7, Frost Nova 0.7, Fire Blast 0.5, Counterspell 0.1, Wand 0.1, Frostbolt 0.1.*
 
 ## Levels 42-52: Arcane Power on the pull
 
@@ -280,10 +280,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.
 
-- **Arcane Power** (42) goes on Shift+1. The fight lab uses it at the pull, next to **Presence of Mind**, whenever it is ready and you have more than half your mana; in the open search it is worth about 0.4 seconds a kill at 60.
-- **Arcane Mind** (43-44) gets its last two points. From 45 the points go to Frost: **Improved Frostbolt** (45-47, which this list never uses: it casts no **Frostbolt**), **Ice Shards** (48 and 51-52) and **Improved Frost Nova** (49-50: **Frost Nova** comes back 4 seconds sooner); with **Ice Shards**' third point at 52 the ten Frost points open **Ice Lance**'s row. Nothing new to press until 53.
+- **Arcane Power** (42) goes on Shift+1. The fight lab uses it at the pull, next to **Presence of Mind**, whenever it is ready and you have more than half your mana; in the open search of 2026-11-20 it is worth about 0.3 seconds a kill at 60.
+- **Arcane Mind** (43-44) gets its last two points. From 45 the points go to Frost: **Improved Frostbolt** (45-47, which this list never uses: it casts no **Frostbolt**), **Ice Shards** (48 and 51-52) and **Improved Frost Nova** (49-50: **Frost Nova** comes back 4 seconds sooner); with **Ice Shards**' third point at 52 the ten Frost points open the row of **Ice Lance** (53). Nothing new to press until 53.
 
-*Fight lab, seconds per kill: 28 at level 42, 26 at level 50, 27 at level 52. Presses per kill at level 42: Arcane Blast 1.8, Arcane Missiles 1.7, Arcane Wrath 0.7, Frost Nova 0.6, Fire Blast 0.4, Counterspell 0.1.*
+*Fight lab, seconds per kill: 26 at level 42, 26 at level 50, 27 at level 52. Presses per kill at level 42: Arcane Blast 1.8, Arcane Missiles 1.7, Arcane Wrath 0.7, Frost Nova 0.6, Fire Blast 0.5, Counterspell 0.1.*
 
 ## Levels 53-60: Ice Lance into the freeze
 
@@ -291,7 +291,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Blast at 60; Arcane Explosion at 54; Arcane Missiles at 56; Arcane Wrath at 60; Blizzard at 60; Cone of Cold at 58; Fire Blast at 54; Fire Ward at 60; Frost Nova at 54; Frost Ward at 60; Ice Lance at 56; Mana Shield at 60; Polymorph at 60.
 
-**Talents:** 53 Ice Lance, 54 Ice Shards, 55 Frost Channeling, 56-57 Permafrost, 58-60 Shatter.
+**Talents:** 53 Ice Lance, 54 Ice Shards, 55 Frost Channeling, 56 Frost Warding, 57 Frostbite, 58-60 Shatter.
 
 **Keys to set:** R = Ice Lance.
 
@@ -311,10 +311,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.
 
-- **Ice Shards** gets its fourth point at 54 (your Frost crits hit harder), **Frost Channeling** (55) makes your Frost spells 5% cheaper, and **Permafrost** (56-57) makes your chills last longer.
+- **Ice Shards** gets its fourth point at 54 (your Frost crits hit harder), and **Frost Channeling** (55) makes your Frost spells 5% cheaper. **Frost Warding** (56) and **Frostbite** (57) are there to open **Shatter**'s row: **Frost Warding** improves **Frost Armor**, **Ice Armor** and **Frost Ward**, so in **Mage Armor** it does nothing for this list, and **Frostbite** freezes only through chill effects, which this list almost never casts.
 - **Shatter** (58-60): your spells crit more often on a frozen mob, 50% more with the third point at 60, so the **Ice Lance** into a **Frost Nova** crits far more often.
 
-*Fight lab, seconds per kill: 27 at level 53, 24 at level 60. Presses per kill at level 53: Arcane Blast 1.8, Arcane Missiles 1.6, Frost Nova 0.8, Ice Lance 0.7, Arcane Wrath 0.6, Fire Blast 0.5, Counterspell 0.2.*
+*Fight lab, seconds per kill: 26 at level 53, 25 at level 60. Presses per kill at level 53: Arcane Blast 1.8, Arcane Missiles 1.7, Frost Nova 0.8, Ice Lance 0.8, Arcane Wrath 0.6, Fire Blast 0.2, Counterspell 0.2, Wand 0.1.*
 
 ## Between fights
 
@@ -326,8 +326,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 ## Other ways to level this class
 
-- [Arcane-Frost](arcane-frost-by-level.md) is the recommended mage leveling spec in the fight lab (the [Frost](frost-by-level.md) guide is close behind): both freeze the mob and hit it with **Frostbolt** and **Ice Lance**.
+- This build is the fastest mage leveling build in the fight lab, by a hair: [Arcane-Frost](arcane-frost-by-level.md) and [Frost](frost-by-level.md) are close behind, and all three are recommended. Those two freeze the mob and hit it with **Frostbolt** and **Ice Lance**.
 - Packs: **Frost Nova** when two or more reach you, then **Arcane Explosion** while they stand around you. For pulls of several mobs on purpose, **Ice Armor** is the armor: in the fight lab's pulls of four on the AoE Frost build, Mage Armor was 9-20% slower per kill.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-19: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/mage.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

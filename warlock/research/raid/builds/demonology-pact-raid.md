@@ -112,7 +112,7 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
 
 | # | Priority (the first line whose condition holds is cast) | [`demonology-pact-raid`](demonology-pact-raid.md) casts/min |
 |---|---|---|
-| 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption (rank 6) | 3.5 |
+| 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.5 |
 | 2 | cast Eye of the Beast | as ready |
 | 3 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 |
 | 4 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
@@ -121,7 +121,7 @@ Demonology to Demonic Pact, a Forever talent that keeps Demonic Sacrifice's effe
 | 7 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
 | 8 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
 | 9 | if mana % < 15% and time left in the fight ≥ 6s: cast Life Tap | 6.8 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) | 3.5 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
 | 11 | cast Shadow Bolt | 13.8 |
 
 Damage by ability:

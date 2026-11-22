@@ -9,13 +9,13 @@
  "best_entry": "destro-raid",
  "best_dps": 887.35,
  "any_split": false,
- "date": "2026-11-21",
+ "date": "2026-11-22",
  "commit": "2e6e77d84",
  "gear": {
   "bis": {
    "entry": "destro-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-bis.gear.json",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "setting": "raid",
    "chosen": "all-slots",
    "ilvl": 64.1,
@@ -46,8 +46,9 @@
     "current": 1.0,
     "all-slots": 1.0066511815560066,
     "keep-sets-and-effects": 1.0066511815560066,
-    "previous": 0.9983292528291431,
-    "previous+trinkets": 1.0066511815560066
+    "previous": 1.0066511815560066,
+    "the prebis set": 0.964981377940729,
+    "the prebis set+trinkets": 0.9781051499974083
    },
    "confirm_seed2": {
     "current": 1.0,
@@ -71,7 +72,7 @@
   "prebis": {
    "entry": "destro-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-prebis.gear.json",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "setting": "raid",
    "chosen": "previous",
    "ilvl": 62.2,
@@ -126,7 +127,7 @@
   "dungeon": {
    "entry": "destro-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-destruction-dungeon.gear.json",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "chosen": "previous",
    "ilvl": 59.7,
    "trinkets": [
@@ -261,7 +262,7 @@
    "spec": "Destruction",
    "setting": "dummy",
    "entry": "destro-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Affliction": [
@@ -353,7 +354,7 @@
    "spec": "Destruction",
    "setting": "raid",
    "entry": "destro-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Affliction": [
@@ -445,7 +446,7 @@
    "spec": "Destruction",
    "setting": "dummy",
    "entry": "destro-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Affliction": [
@@ -537,7 +538,7 @@
    "spec": "Destruction",
    "setting": "raid",
    "entry": "destro-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Affliction": [
@@ -629,7 +630,7 @@
    "spec": "Destruction",
    "setting": "raid",
    "entry": "destro-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "commit": "2e6e77d84",
    "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
    "winner": {
@@ -724,12 +725,12 @@
    "candidates": {
     "prebis-raid": 777.4
    },
-   "minutes": 2.8
+   "minutes": 3.1
   }
  },
  "pick_tiers": {
   "build": "destruction-succubus-raid",
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "note": "the page's pick in each tier's gear (the short-check method of 2026-11-20); no talent search",
   "alt": {
    "bis-dummy": {

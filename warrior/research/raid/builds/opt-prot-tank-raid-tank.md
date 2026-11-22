@@ -64,14 +64,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | *Protection* | community simulator | - | 1.013 | +0.0% | 1728 | 316 |
-| 2 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 17/3/31 | 1.012 | -0.1% | 1726 | 316 |
-| 3 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 8/5/38 | 1.004 | -0.9% | 1693 | 315 |
-| 4 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 12/5/34 | 1.000 | -1.3% | 1684 | 316 |
+| 1 | *Protection* | community simulator | - | 1.013 | +0.0% | 1679 | 316 |
+| 2 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 17/3/31 | 1.012 | -0.1% | 1677 | 316 |
+| 3 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 8/5/38 | 1.004 | -0.9% | 1644 | 315 |
+| 4 | [`prot-raid-tank`](prot-raid-tank.md) | ours: hand draft | 12/5/34 | 1.000 | -1.3% | 1636 | 316 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 11 passes, the last 2026-11-21, 12 changes to the base rotation; third-seed check: protection-ml-tank 455 -> 498 DPS (+9.5%), sim preset: Protection 464 -> 496 DPS (+7.0%), prot-raid-tank 451 -> 479 DPS (+6.1%), opt-prot-tank-raid-tank 444 -> 481 DPS (+8.4%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 12 passes, the last 2026-11-22, 12 changes to the base rotation; third-seed check: protection-ml-tank 455 -> 486 DPS (+7.0%), sim preset: Protection 464 -> 485 DPS (+4.6%), prot-raid-tank 451 -> 468 DPS (+3.7%), opt-prot-tank-raid-tank 444 -> 470 DPS (+5.9%)):
   1. move down below 'cast Revenge': cast Shield Slam (+0.2%, pass 1)
   2. insert at the top: cast Shield Wall (+3.2%, pass 3)
   3. insert before the filler: if not Rend is on the target: cast Rend (+0.5%, pass 3)
@@ -85,11 +85,11 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
   11. insert at the top: if (number of targets = 1 and not execute phase (E20) and rage ≥ 40 or time until Bloodthirst is ready ≥ spellGcdHastedDuration and time until Whirlwind is ready ≥ spellGcdHastedDuration and rage > 60): cast Heroic Strike (+0.3%, pass 11)
   12. move down below 'cast Shield Block': cast Revenge (+0.2%, pass 11)
 
-Before the pull: at -1s: cast Battle Shout (rank 6).
+Before the pull: at -1s: cast Battle Shout.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) casts/min |
 |---|---|---|
-| 1 | if (number of targets = 1 and not execute phase (E20) and rage ≥ 40 or time until Bloodthirst is ready ≥ spellGcdHastedDuration and time until Whirlwind is ready ≥ spellGcdHastedDuration and rage > 60): cast Heroic Strike | 12.2 |
+| 1 | if number of targets = 1 and not execute phase (E20) and rage ≥ 40: cast Heroic Strike | 19.4 |
 | 2 | cast Shield Block | 11.9 |
 | 3 | cast Revenge | 10.9 |
 | 4 | cast Shield Wall | 0.3 |
@@ -97,24 +97,24 @@ Before the pull: at -1s: cast Battle Shout (rank 6).
 | 6 | if rage < 90: cast Bloodrage | 1.0 |
 | 7 | cast Shield Slam | 8.9 |
 | 8 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 14.8 |
-| 9 | if rage ≥ 33.75: cast Heroic Strike (rank 8) | 7.2 |
+| 9 | if rage ≥ 33.75: cast Heroic Strike | 19.4 |
 | 10 | if not Rend is on the target: cast Rend | 3.2 |
 | 11 | cast Sunder Armor | 14.8 |
 
-Lines of the simulator's rotation these builds never cast: cast Defensive Stance, cast Revenge (rank 5) (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Defensive Stance (its condition never held in these fights).
 
 Damage by ability (threat for tanks):
 
 | Ability | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) |
 |---|---|
-| Revenge | 37% |
+| Revenge | 35% |
 | Heroic Strike | 23% |
 | Shield Slam | 17% |
-| Windfury Totem | 7% |
+| Windfury Totem | 8% |
 | Sunder Armor | 7% |
 | Auto Attack | 4% |
 | Rend | 3% |
-| Judgement of Light | 1% |
+| Judgement of Light | 2% |
 | OtherActionRageGain | 1% |
 | Retribution Aura | 1% |
 

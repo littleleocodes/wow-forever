@@ -314,8 +314,17 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
     prev = json.load(open(p, encoding="utf-8"))["items"] if p.exists() else None   # the tier's last set competes (optimize_set's `extra`)
     if prev and tmpl:
         FE.fill(prev, tmpl)
+    extra = {"previous": prev} if prev else {}
+    ladder = ("dungeon", "prebis", "bis")   # every lower tier's set competes (2026-11-21, the audit session): the pools nest, so it is
+    for lower in ladder[:ladder.index(tier)] if tier in ladder else ():   # legal here; when it wins, this tier's set is that set
+        lp = path.parent / path.name.replace(f"-{tier}.gear.json", f"-{lower}.gear.json") if path else set_path(cls, spec, lower)
+        if lp.exists() and lp.name != p.name:   # a named set file ("...-bis-raid") has no lower tier of its own
+            li = json.load(open(lp, encoding="utf-8"))["items"]
+            if tmpl:
+                FE.fill(li, tmpl)
+            extra[f"the {lower} set"] = li
     r = optimize_set(cls, [(entry_name, e, setting, talents, label)], cur, pool, repo, db, a, f"{cls}-{SM.slug(spec)}-{tier}", keep_current=(tier == "bis"),
-                     extra={"previous": prev} if prev else None)
+                     extra=extra or None)
     if tmpl:
         FE.fill(r["items"], tmpl)
     dropped = G.drop_missing_enchants(r["items"], repo)   # an enchant carried from a set the official database lacks (2026-10-22)

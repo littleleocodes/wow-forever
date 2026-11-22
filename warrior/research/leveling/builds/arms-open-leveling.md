@@ -1,21 +1,21 @@
-# Arms — Leveling (open talent search) — 32/17/2
+# Arms — Leveling (open talent search) — 33/16/2
 
 *[Warrior](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 32/17/2 (Arms / Fury / Protection) |
+| **Build** | 33/16/2 (Arms / Fury / Protection) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Arms leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arms-2h-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (arms-2h-raid). +1.3% faster per kill than arms-open-leveling, the fastest of our leveling builds in that race.
+The Arms leveling build the open leveling search found on 2026-11-21: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the arms-2h-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (arms-2h-raid). 
 
 ## Point allocation
 
-### Arms (32)
+### Arms (33)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -32,18 +32,18 @@ The Arms leveling build the open leveling search found on 2026-11-15: every lega
 | **Bloodthrill** | 2/2 | **NEW** | Grants your Main Hand melee attacks against enemies afflicted by your Rend a 20% chance to allow an activation of Overpower. |
 | **Sweeping Strikes** | 1/1 | unchanged | Your next 5 melee attacks strike an additional nearby opponent. |
 | **Weaponmaster** | 5/5 | **NEW** | Gives your melee weapon attacks a benefit depending on the weapon.   Axe/Polearm: Increases your  critical strike chance by 5%.   Mace/Staff: Your attacks ignore  15% of your target's armor.   Sword: Your successful melee   attacks have a 5% chance to   trigger an extra attack on the   target. |
-| **Improved Slam** | 1/2 | changed | Reduces the global cooldown and cast time of your Slam ability by 0.25 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 2.5 sec. |
+| **Improved Slam** | 2/2 | changed | Reduces the global cooldown and cast time of your Slam ability by 0.50 sec. In addition, Slam no longer interrupts or delays your melee swing and Slam's cooldown is reduced by 5.0 sec. |
 | **Mortal Strike** | 1/1 | unchanged | A vicious strike that deals weapon damage plus 85 and wounds the target, reducing the effectiveness of any healing by 50% for 10 sec. |
 
-### Fury (17)
+### Fury (16)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Booming Voice** | 1/5 | changed | Increases the area of effect of your Shouts by 10% and reduces their Rage cost by 5%. Also reduces the Rage cost of Piercing Howl by 5%. |
 | **Cruelty** | 5/5 | changed | Improves your chance to get a critical strike with melee attacks by 5%. |
-| **Lingering Rage** | 1/5 | changed | Increases the time before your Rage begins to decay after leaving combat by 2 sec. |
 | **Unbridled Wrath** | 4/5 | changed | Gives you a 48% chance to generate 1 additional Rage when you deal melee damage with a weapon. |
 | **Enrage** | 5/5 | changed | Gives you a 30% chance to deal 10% increased Physical damage for 12 sec after being the victim of any damaging attack. |
-| **Improved Execute** | 2/2 | changed | Reduces the Rage cost of your Execute ability by 5. |
+| **Improved Execute** | 1/2 | changed | Reduces the Rage cost of your Execute ability by 3. |
 
 ### Protection (2)
 
@@ -75,21 +75,22 @@ The Arms leveling build the open leveling search found on 2026-11-15: every lega
 | 41-45 | Fury | Cruelty | 5 | 31/5/0 |
 | 46 | Arms | Impale | 1 | 32/5/0 |
 | 47-50 | Fury | Unbridled Wrath | 4 | 32/9/0 |
-| 51 | Fury | Lingering Rage | 1 | 32/10/0 |
+| 51 | Fury | Booming Voice | 1 | 32/10/0 |
 | 52-56 | Fury | Enrage | 5 | 32/15/0 |
-| 57-58 | Fury | Improved Execute | 2 | 32/17/0 |
-| 59-60 | Protection | Improved Bloodrage | 2 | 32/17/2 |
+| 57 | Fury | Improved Execute | 1 | 32/16/0 |
+| 58 | Arms | Improved Slam | 1 | 33/16/0 |
+| 59-60 | Protection | Improved Bloodrage | 2 | 33/16/2 |
 
 ## Core talents (priority order)
 
-1. **Bloodthrill** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Weaponmaster** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Cruelty** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Improved Overpower** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Enrage** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Bloodthrill** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Mortal Strike** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Weaponmaster** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Cruelty** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Improved Overpower** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
 6. **Two-Handed Weapon Specialization** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Improved Charge** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Deep Wounds** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Enrage** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Improved Slam** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -97,8 +98,9 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- +2.5% faster than the hand draft leveling-arms, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 24.70; arms-open-leveling 25.01, opt-arms-2h-raid-leveling-st 25.23, leveling-arms 25.32. The search simulated 25,870 builds.
+- 2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Lingering Rage to Booming Voice at 51 (gate that did nothing, no loss: -0.2% seed 3, -0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Execute to Improved Slam at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
+- +2.2% faster than the hand draft leveling-arms, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 23.92; opt-arms-2h-raid-leveling-st 24.37, leveling-arms 24.45. The search simulated 25,870 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

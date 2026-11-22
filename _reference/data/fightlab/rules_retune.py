@@ -50,6 +50,8 @@ def main():
     ap.add_argument("--fights", type=int, default=600, help="rotation_opt's --fights (a smoke test lowers it)")
     ap.add_argument("--confirm", type=int, default=3000, help="rotation_opt's --confirm")
     ap.add_argument("--rounds", type=int, default=12, help="rotation_opt's --rounds")
+    ap.add_argument("--levels", default=None, help="the levels the tune scores, \"20,25,30,...\" (default: the class pipeline's; "
+                    "2026-11-21, the mid-decade lesson)")
     ap.add_argument("--continued-only", action="store_true",
                     help="skip the from-scratch search when a saved file exists: for a new rule knob on mechanics the saved rules were "
                          "tuned on the same day (2026-11-15, the mage's MAGE_ARMOR; the from-scratch half took 3-10 of the 6-24 minutes)")
@@ -59,6 +61,8 @@ def main():
                 build=a.build, cls=a.cls, all=False, check_rules=False)
     with multiprocessing.Pool(a.jobs, initializer=RO._init) as pool:
         _, levels = RO.targets(a.cls)
+        if a.levels:   # the levels the tune scores (2026-11-21)
+            levels = [int(x) for x in a.levels.split(",") if x]
         fresh = None
         if not (a.continued_only and p.exists()):
             print(f"=== {a.cls} {a.spec} on {a.build}: from scratch", flush=True)

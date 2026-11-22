@@ -96,18 +96,18 @@ What this build casts per kill ([report](../fightlab/arms-2h-raid.md), all level
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 2.6 | 3.7 | 5.4 | 5.6 | 6.4 | 37% |
-| Mortal Strike | 0.0 | 0.0 | 2.0 | 2.2 | 2.4 | 21% |
-| Overpower | 0.3 | 0.7 | 0.9 | 1.0 | 1.3 | 14% |
-| Rend | 1.2 | 1.2 | 1.1 | 1.1 | 1.1 | 5% |
-| Execute | 0.0 | 0.9 | 0.9 | 0.9 | 1.0 | 13% |
+| Melee | 2.3 | 3.4 | 5.0 | 5.1 | 5.9 | 33% |
+| Mortal Strike | 0.0 | 0.0 | 2.1 | 2.2 | 2.5 | 21% |
+| Overpower | 0.3 | 0.7 | 1.0 | 1.0 | 1.3 | 14% |
+| Rend | 1.2 | 1.2 | 1.1 | 1.1 | 1.2 | 5% |
+| Execute | 0.0 | 1.0 | 0.9 | 1.0 | 1.1 | 15% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Victory Rush | 0.4 | 0.6 | 0.6 | 0.6 | 0.7 | 1% |
-| Slam | 0.0 | 0.0 | 0.3 | 0.4 | 0.6 | 4% |
+| Slam | 0.0 | 0.0 | 0.5 | 0.6 | 0.8 | 6% |
+| Victory Rush | 0.5 | 0.6 | 0.6 | 0.6 | 0.7 | 1% |
 | Bloodrage | 0.3 | 0.3 | 0.3 | 0.3 | 0.4 | 0% |
-| Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
-| Spearing Strike | 0.0 | 1.0 | 0.0 | 0.1 | 0.1 | 1% |
-| Heroic Strike | 2.4 | 1.3 | 0.0 | 0.0 | 0.0 | 0% |
+| Spearing Strike | 0.0 | 1.0 | 0.2 | 0.2 | 0.4 | 1% |
+| Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
+| Heroic Strike | 2.7 | 1.6 | 0.0 | 0.0 | 0.1 | 1% |
 
 ## Notes
 

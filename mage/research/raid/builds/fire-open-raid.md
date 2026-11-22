@@ -136,8 +136,8 @@ Before the pull: at -2s: if Ice Barrier is known: cast Ice Barrier.
 | 4 | if mana % < 10% and time left in the fight > 25s: cast Evocation | 0.3 |
 | 5 | if stacks of Heating Up on you = 3: cast Pyroblast | 5.3 |
 | 6 | cast Fire Blast | 5.9 |
-| 7 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 0.7 |
-| 8 | if time left in the fight ≥ 3s: cast Fireball (rank 11) | 5.6 |
+| 7 | if Missile Barrage is up: cast Arcane Missiles | 0.7 |
+| 8 | if time left in the fight ≥ 3s: cast Fireball | 5.6 |
 | 9 | cast Robe of the Archmage | as ready |
 | 10 | cast Scorch | 6.5 |
 

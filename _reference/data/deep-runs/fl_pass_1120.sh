@@ -19,6 +19,7 @@
 # Stop-Process the bash processes running this script (parent and lane subshells) and their python children (never TaskStop).
 #   bash _reference/data/deep-runs/fl_pass_1120.sh
 cd F:/wow-forever || exit 1
+export PATH="/usr/bin:/bin:$PATH"   # 2026-11-21: a non-login bash started from Windows had no date, tr, touch or sleep (empty markers)
 export PYTHONIOENCODING=utf-8
 L=_reference/data/deep-runs
 M=$L/fp1120

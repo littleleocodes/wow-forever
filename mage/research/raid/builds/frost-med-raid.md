@@ -102,7 +102,7 @@ The official wowsims/forever simulator's own Frost build (Frost Med, 18/0/33) fo
   5. move to the top: if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7) (+2.2%, pass 7)
   6. only with 20s or more of the fight left: cast Arcane Wrath (+0.4%, pass 7)
 
-Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
+Before the pull: cast Ice Barrier; cast Frostbolt.
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-med-raid`](frost-med-raid.md) casts/min |
 |---|---|---|
@@ -116,7 +116,7 @@ Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
 | 8 | if stacks of Winter's Chill on the target = 5: cast Cone of Cold | 3.6 |
 | 9 | if stacks of Fingers of Frost on you = 1 and Frostbolt is being cast: cast Ice Lance | 1.7 |
 | 10 | if time left on Frigid Power ≤ 3: cast Ice Barrier | 1.3 |
-| 11 | cast Frostbolt (rank 10) | 18.7 |
+| 11 | cast Frostbolt | 18.7 |
 
 Lines of the simulator's rotation these builds never cast: cast Read Leyline, cast Blizzard (its condition never held in these fights).
 

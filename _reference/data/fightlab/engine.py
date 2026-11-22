@@ -1786,6 +1786,8 @@ class Session:
 
     def downtime(self, p, t):
         """Evocation if available and low, then drink/eat back to full when below the thresholds (pets are fed alongside)."""
+        if tables.REST_REGEN:
+            return self.downtime_regen(p, t)
         mod = self.mod
         total = drink = eat = 0.0
         evo = mod.evocation(p, t)
@@ -1814,6 +1816,49 @@ class Session:
             if not ate:
                 p.hp = min(p.hp_max, p.hp + food_rate(self.level) * sit)
         total += rest
+        return {"total": total, "drink": drink, "eat": eat}
+
+    def downtime_regen(self, p, t):
+        """downtime with tables.REST_REGEN on: the rest is integrated in 0.1 s steps, the character's own regeneration (mana_regen and
+        health_regen a tick of 2 s; the mana at the casting rate while the five-second rule lasts, the gear's mp5) running from the
+        first second and the drink and food rates from the sit-down; it ends when every bar that called for the rest is full (with
+        REST_TOGETHER the other bar gains the rate it would while seated). Evocation, the pet and a resummon as in downtime."""
+        mod = self.mod
+        total = 0.0
+        evo = mod.evocation(p, t)
+        if evo:
+            total += evo
+        dr, fr = drink_rate(self.level), food_rate(self.level)
+        need_m = p.mana_max > 0 and p.mana < (mod.drink_below or DRINK_BELOW) * p.mana_max
+        need_h = p.hp < (mod.eat_below or EAT_BELOW) * p.hp_max
+        drink = eat = 0.0
+        if need_m or need_h:
+            mp5 = (tables.GEAR_BONUS["mp5"] * 0.4 if "mp5" in tables.GEAR_BONUS else 0.0) / 2.0
+            mana, hp, tau, step = p.mana, p.hp, 0.0, 0.1
+            done_m, done_h = not need_m, not need_h
+            while not (done_m and done_h) and tau < 900.0:
+                now = t + tau
+                if p.mana_max > 0:
+                    rate = mod.mana_regen(p, now) * (1.0 if now > p.fsr_until else p.regen_while_casting) / 2.0 + mp5
+                    seated = tau >= SIT_DOWN and (need_m or mod.REST_TOGETHER)
+                    mana = min(p.mana_max, mana + (rate + (dr if seated else 0.0)) * step)
+                seated_h = tau >= SIT_DOWN and (need_h or mod.REST_TOGETHER)
+                hp = min(p.hp_max, hp + (mod.health_regen(p) / 2.0 + (fr if seated_h else 0.0)) * step)
+                tau += step
+                if not done_m and mana >= p.mana_max - 1e-6:
+                    done_m, drink = True, tau
+                if not done_h and hp >= p.hp_max - 1e-6:
+                    done_h, eat = True, tau
+            if p.mana_max > 0:
+                p.mana = mana
+            p.hp = hp
+        if p.pet is not None and p.pet.alive and p.pet.hp < tables.PET_EAT_BELOW * p.pet.hp_max:
+            eat = max(eat, (p.pet.hp_max - p.pet.hp) / (tables.PET_OOC_REGEN * p.pet.hp_max / 2.0 + fr) + SIT_DOWN)
+            p.pet.hp = p.pet.hp_max
+        if p.pet is not None and not p.pet.alive:
+            total += mod.resummon_time()
+            p.pet.alive, p.pet.hp, p.pet.focus, p.pet.mana = True, p.pet.hp_max, p.pet.focus_max, p.pet.mana_max
+        total += max(drink, eat)
         return {"total": total, "drink": drink, "eat": eat}
 
     def summarise(self, s):

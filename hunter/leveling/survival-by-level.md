@@ -2,9 +2,11 @@
 
 [Hunter](../README.md) > [Leveling (solo)](README.md) > [Survival](survival.md) > Level by level
 
+> **Being checked:** The play check's forced runs found Arcane Shot faster when shot from range on the pull (2.65% at 20, the game's 8-yard minimum range kept); the rotation is being tuned again with a pull shot. The build and numbers on this page may change when it is done.
+
 What a Survival hunter presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. This is a melee hunter: two one-handed weapons, a pet that holds the mob and does a part of the damage, **Serpent Sting** at the pull, **Immolation Trap** under your feet and **Raptor Strike** to finish. It plays the same rotation as the Beast-Survival build, with Survival's crit, hit and Agility talents in place of most of the pet talents. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 1/18/32 ([open the talent tree](https://talentsforever.com/hunter/60/1-0053450001-52022023015020215-12)), the one on the [Survival leveling page](survival.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 0/19/32 ([open the talent tree](https://talentsforever.com/hunter/60/-0053550001-51220023025020215-12)), the one on the [Survival leveling page](survival.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -100,7 +102,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Aspect of the Monkey** (4) stays on from here to 30: more dodges, and from 16 each dodge lights up **Mongoose Bite**. No key, click it.
 - **Arcane Shot** (6) and **Concussive Shot** (8) are ranged tools, and the fight lab's melee hunter never casts **Hunter's Mark**. Walk in instead.
 
-*Fight lab, seconds per kill: 12 at level 4, 13 at level 9. Presses per kill at level 4: Claw 2.5, Melee (off-hand) 1.4, Melee 1.1, Auto Shot 1.1, Growl 1.0, Bite 1.0, Serpent Sting 1.0, Raptor Strike 0.3.*
+*Fight lab, seconds per kill: 12 at level 4, 14 at level 9. Presses per kill at level 4: Claw 2.8, Melee (off-hand) 1.5, Melee 1.2, Auto Shot 1.1, Growl 1.1, Bite 1.0, Serpent Sting 1.0, Raptor Strike 0.3.*
 
 ## Levels 10-15: The pet, and talents begin
 
@@ -125,7 +127,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Call Pet**, **Feed Pet** and **Revive Pet** (10) are between-fights buttons. **Aspect of the Hawk** (10) is for ranged hunters.
 - **Mend Pet** (12) when the pet drops below a third of its health. **Wing Clip** (12) stops a mob that runs.
 
-*Fight lab, seconds per kill: 14 at level 10, 16 at level 15. Presses per kill at level 10: Claw 3.7, Melee (off-hand) 2.0, Melee 1.5, Growl 1.2, Auto Shot 1.1, Serpent Sting 1.0, Bite 1.0, Raptor Strike 0.5.*
+*Fight lab, seconds per kill: 14 at level 10, 17 at level 15. Presses per kill at level 10: Claw 3.9, Melee (off-hand) 2.1, Melee 1.6, Growl 1.3, Auto Shot 1.1, Serpent Sting 1.0, Bite 1.0, Raptor Strike 0.5.*
 
 ## Levels 16-19: Immolation Trap and Mongoose Bite
 
@@ -133,7 +135,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Raptor Strike at 16; Serpent Sting at 18.
 
-**Talents:** 16 Savage Strikes, 17 Deflection, 18-19 Survivalist.
+**Talents:** 16 Savage Strikes, 17 Deflection, 18-19 Entrapment.
 
 **Keys to set:** R = Immolation Trap; Mouse 5 = Mongoose Bite.
 
@@ -150,10 +152,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. Your own health: let the pet hold the mob and step back.
 
 - Traps work in combat in Forever but land where you stand: drop it beside the mob. The burn lasts 15 seconds, so the fight lab skips it on a mob below 40%.
-- **Deflection** (17) adds parries, **Survivalist** (18-19) 4% more health. Nothing to press.
+- **Deflection** (17) adds parries, **Entrapment** (18-19) roots a mob your trap catches for 2 seconds. Nothing to press.
 - **Multi-Shot** (18) is a ranged spell. Not for this build.
 
-*Fight lab, seconds per kill: 15 at level 16. Presses per kill at level 16: Claw 4.6, Melee (off-hand) 2.7, Melee 2.1, Growl 1.7, Auto Shot 1.1, Bite 1.0, Serpent Sting 1.0, Raptor Strike 0.6, Immolation Trap 0.5.*
+*Fight lab, seconds per kill: 16 at level 16. Presses per kill at level 16: Claw 4.7, Melee (off-hand) 2.9, Melee 2.2, Growl 1.8, Auto Shot 1.1, Bite 1.0, Serpent Sting 1.0, Raptor Strike 0.6, Immolation Trap 0.5.*
 
 ## Levels 20-25: Freezing Trap
 
@@ -181,7 +183,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Freezing Trap** (20): drop it before a pull that will bring two mobs; the second one stands frozen.
 - **Aspect of the Cheetah** (20) is for the road. **Aimed Shot** (20) is a ranged spell: not for this build.
 
-*Fight lab, seconds per kill: 16 at level 20, 17 at level 25. Presses per kill at level 20: Claw 4.6, Melee (off-hand) 2.8, Melee 2.2, Growl 1.7, Auto Shot 1.2, Bite 1.0, Serpent Sting 1.0, Raptor Strike 0.6, Immolation Trap 0.5.*
+*Fight lab, seconds per kill: 16 at level 20, 18 at level 25. Presses per kill at level 20: Claw 4.7, Melee (off-hand) 3.0, Melee 2.3, Growl 1.8, Auto Shot 1.2, Bite 1.0, Serpent Sting 1.0, Raptor Strike 0.7, Immolation Trap 0.5.*
 
 ## Levels 26-29: Rapid Fire
 
@@ -209,7 +211,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Rapid Fire** speeds your melee swings as well as your shots. The fight lab casts it at the start of every fight it is ready for, on a 5-minute cooldown.
 - **Frost Trap** (28) is a slow field for packs and escapes.
 
-*Fight lab, seconds per kill: 18 at level 26. Presses per kill at level 26: Claw 4.9, Melee (off-hand) 3.3, Melee 2.6, Growl 2.0, Auto Shot 1.2, Bite 1.1, Serpent Sting 1.0, Raptor Strike 0.8, Immolation Trap 0.5.*
+*Fight lab, seconds per kill: 18 at level 26. Presses per kill at level 26: Claw 5.0, Melee (off-hand) 3.4, Melee 2.7, Growl 2.0, Auto Shot 1.2, Bite 1.1, Serpent Sting 1.0, Raptor Strike 0.7, Immolation Trap 0.5.*
 
 ## Levels 30-39: Lacerate, Feign Death, Aspect of the Beast
 
@@ -240,7 +242,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Survivalist's Discipline** (33-34) cuts the trap's cooldown by 40%. **Lethal Attacks** (35-39): 5% more crit.
 - **Counterattack** and **Deterrence** belong to other builds. This one does not take them. **Strider Kick** comes at 54.
 
-*Fight lab, seconds per kill: 18 at level 30, 21 at level 39. Presses per kill at level 30: Claw 5.2, Melee (off-hand) 3.8, Melee 3.1, Growl 2.2, Auto Shot 1.2, Bite 1.1, Serpent Sting 1.0, Raptor Strike 0.7, Lacerate 0.5, Immolation Trap 0.5.*
+*Fight lab, seconds per kill: 19 at level 30, 21 at level 39. Presses per kill at level 30: Claw 5.3, Melee (off-hand) 4.0, Melee 3.2, Growl 2.3, Bite 1.2, Auto Shot 1.2, Serpent Sting 1.0, Raptor Strike 0.8, Immolation Trap 0.5, Lacerate 0.4.*
 
 ## Levels 40-53: Nothing new to press
 
@@ -248,7 +250,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Arcane Shot at 44, 52; Explosive Trap at 44; Freezing Trap at 40; Immolation Trap at 46; Lacerate at 40, 50; Mend Pet at 44, 52; Mongoose Bite at 44; Raptor Strike at 40, 48; Scare Beast at 46; Serpent Sting at 42, 50.
 
-**Talents:** 40-42 Careful Aim, 43-47 Lightning Reflexes, 48-49 Improved Stings, 50 Deadly Aspects, 51 Deflection, 52 Improved Stings, 53 Efficiency.
+**Talents:** 40-42 Careful Aim, 43-47 Lightning Reflexes, 48-49 Improved Stings, 50-51 Efficiency, 52 Improved Stings, 53 Survival Tactics.
 
 **Your keys in this stage:** Q Raptor Strike, R Immolation Trap, F Feign Death, Mouse 5 Mongoose Bite, Mouse 4 Serpent Sting, 1 Lacerate, 3 Mend Pet, C Rapid Fire.
 
@@ -264,11 +266,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** **Mend Pet** when the pet drops below a third of its health. A pull gone wrong: **Feign Death**.
 
-- **Careful Aim** (40-42): attack power from 60% of your Intellect. **Lightning Reflexes** (43-47): 15% more Agility. **Improved Stings** (48-49): **Serpent Sting** does 13% more damage. **Deadly Aspects** (50): with **Aspect of the Beast** on, 2% of your swings speed up the next ones by 30% for 12 seconds.
-- **Deflection** (51): its second point, 2% parry. **Improved Stings** (52): its third point, **Serpent Sting** 20% stronger. **Efficiency** (53): your shots, stings and strikes 3% cheaper.
+- **Careful Aim** (40-42): attack power from 60% of your Intellect. **Lightning Reflexes** (43-47): 15% more Agility. **Improved Stings** (48-49): **Serpent Sting** does 13% more damage.
+- **Efficiency** (50-51): your shots, stings and strikes 6% cheaper. **Improved Stings** (52): its third point, **Serpent Sting** 20% stronger. **Survival Tactics** (53): its second point, +10% chance to hit with your traps and **Feign Death**.
 - **Explosive Trap** (34) replaces **Immolation Trap** when two or more mobs stand at your feet: they share the cooldown.
 
-*Fight lab, seconds per kill: 21 at level 40, 22 at level 50, 23 at level 53. Presses per kill at level 40: Claw 5.8, Melee (off-hand) 4.6, Melee 3.8, Growl 2.6, Bite 1.5, Auto Shot 1.2, Serpent Sting 1.0, Immolation Trap 1.0, Raptor Strike 0.8, Lacerate 0.2.*
+*Fight lab, seconds per kill: 21 at level 40, 22 at level 50, 22 at level 53. Presses per kill at level 40: Claw 5.8, Melee (off-hand) 4.8, Melee 4.0, Growl 2.7, Bite 1.6, Auto Shot 1.2, Serpent Sting 1.0, Immolation Trap 1.0, Raptor Strike 0.8, Lacerate 0.2.*
 
 ## Levels 54-60: Strider Kick
 
@@ -299,7 +301,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Efficiency** (55-57) makes your strikes and stings cheaper, 12% at four points. **Careful Aim** (58-59): its fourth and fifth points, attack power from all of your Intellect. **Trueshot Aura** (60): 20 ranged attack power for you and your party.
 - **Explosive Trap** (34) replaces **Immolation Trap** when two or more mobs stand at your feet: they share the cooldown.
 
-*Fight lab, seconds per kill: 23 at level 54, 23 at level 60. Presses per kill at level 54: Claw 6.0, Melee (off-hand) 5.1, Melee 4.4, Growl 2.9, Bite 1.7, Auto Shot 1.2, Serpent Sting 1.0, Immolation Trap 1.0, Strider Kick 1.0, Raptor Strike 0.7, Lacerate 0.2, Mongoose Bite 0.1.*
+*Fight lab, seconds per kill: 23 at level 54, 23 at level 60. Presses per kill at level 54: Claw 5.9, Melee (off-hand) 4.9, Melee 4.3, Growl 2.8, Bite 1.6, Auto Shot 1.2, Serpent Sting 1.0, Immolation Trap 1.0, Strider Kick 1.0, Raptor Strike 0.7, Lacerate 0.2, Mongoose Bite 0.1.*
 
 ## Between fights
 
@@ -314,4 +316,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Marksmanship, Beast Mastery and Beast-Marks are the ranged hunters: [Marksmanship](marksmanship-by-level.md), [Beast Mastery](beast-mastery-by-level.md), [Beast-Marks](beast-marks-by-level.md).
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-19: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

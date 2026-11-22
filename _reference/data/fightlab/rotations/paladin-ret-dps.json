@@ -7,6 +7,10 @@
    "off": true
   }
  },
+ "knobs": {
+  "REST_TOGETHER": true
+ },
+ "drink_below": 0.15,
  "class": "paladin",
  "spec": "ret-dps",
  "build": "leveling-retribution",
@@ -17,14 +21,14 @@
   50,
   60
  ],
- "date": "2026-11-09",
+ "date": "2026-11-20",
  "signature": {
   "required": [
    "Judgement"
   ],
   "build_spec": "Retribution",
   "dropped_saved_rules": [],
-  "core_share_before": 0.7762182622941484,
+  "core_share_before": 1.0,
   "core_share_after": 1.0,
   "min_share": 0.6,
   "floor_reached": null,
@@ -36,62 +40,57 @@
  "changes": [
   {
    "round": 1,
-   "change": "never cast Consecration",
+   "change": "drink below 15% mana",
    "rule": [
-    "off",
-    "Consecration",
-    true
+    "drink_below",
+    null,
+    0.15
    ],
-   "gain_seed1": 0.10963950729060346,
-   "gain_seed2": 0.10847589425025517
-  },
-  {
-   "round": 2,
-   "change": "never cast Hammer of Wrath",
-   "rule": [
-    "off",
-    "Hammer of Wrath",
-    true
-   ],
-   "gain_seed1": 0.02415356723312745,
-   "gain_seed2": 0.0222176267865406
+   "gain_seed1": 0.011272358250100312,
+   "gain_seed2": 0.008336360246070207
   }
  ],
- "weighted_before": 31.143225871558087,
- "weighted_after": 27.193713009296676,
+ "weighted_before": 28.222850563514164,
+ "weighted_after": 28.057495758654188,
  "per_level": {
   "20": {
-   "before": 20.47103468310751,
-   "after": 19.544033333222714,
+   "before": 20.993433333208145,
+   "after": 20.993433333208145,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 25.969071201961327,
-   "after": 22.008743970194118,
+   "before": 24.410009293067386,
+   "after": 24.286088874465378,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 30.16204052048195,
-   "after": 26.745868674573067,
+   "before": 28.580374672285355,
+   "after": 28.339978162559117,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 34.12374655832052,
-   "after": 28.390469524499014,
+   "before": 29.756852326037958,
+   "after": 29.36756921063495,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 35.45805659758872,
-   "after": 31.63735654801974,
+   "before": 31.022392734222283,
+   "after": 31.017837196643356,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
  },
- "knobs": {
-  "REST_TOGETHER": true
+ "retune": {
+  "times": {
+   "saved": 28.223,
+   "from scratch": 28.226,
+   "continued": 28.057
+  },
+  "installed": "continued",
+  "reference_ok": true
  }
 }

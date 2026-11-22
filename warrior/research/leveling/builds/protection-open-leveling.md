@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Protection leveling build the open leveling search found on 2026-11-15: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the prot-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (arms-2h-raid). +1.0% faster per kill than protection-open-leveling, the fastest of our leveling builds in that race.
+The Protection leveling build the open leveling search found on 2026-11-21: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the prot-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (arms-2h-raid). 
 
 ## Point allocation
 
@@ -81,14 +81,14 @@ The Protection leveling build the open leveling search found on 2026-11-15: ever
 
 ## Core talents (priority order)
 
-1. **Shield Slam** — +12.2 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Shield Specialization** — +3.0 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Focused Rage** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Bastion** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Improved Revenge** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Cruelty** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Enrage** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Master of Defense** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Shield Slam** — +8.7 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Improved Revenge** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Bastion** — +1.8 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Shield Specialization** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Focused Rage** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Cruelty** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Enrage** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Master of Defense** — +0.3 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -96,7 +96,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 26.95; protection-open-leveling 27.21, protection-leveling 27.84. The search simulated 20,719 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.12; protection-leveling 25.96. The search simulated 20,719 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

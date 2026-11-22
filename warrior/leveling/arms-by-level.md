@@ -4,7 +4,7 @@
 
 What an Arms warrior presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A warrior has no mana: every attack costs rage, and rage comes from hitting and being hit. The whole game is spending it on the right attack. You stay in Battle Stance with a two-handed weapon from 1 to 60. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 32/17/2 ([open the talent tree](https://talentsforever.com/warrior/60/02323213132215101-05140005002-2-12)), the one on the [Arms leveling page](arms.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 33/16/2 ([open the talent tree](https://talentsforever.com/warrior/60/02323213132215201-15040005001-2-12)), the one on the [Arms leveling page](arms.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -78,7 +78,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - Stay in **Battle Stance**. Use a two-handed weapon from the first one you find.
 
-*Fight lab, seconds per kill: 12 at level 1. Presses per kill at level 1: Melee 1.2, Heroic Strike 0.5.*
+*Fight lab, seconds per kill: 12 at level 1. Presses per kill at level 1: Melee 1.1, Heroic Strike 0.5.*
 
 ## Levels 4-9: Charge and Rend
 
@@ -99,7 +99,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Thunder Clap** (6) is for two or more mobs. **Hamstring** (8) stops a mob that runs away.
 
-*Fight lab, seconds per kill: 15 at level 4, 19 at level 9. Presses per kill at level 4: Melee 1.8, Rend 1.1, Heroic Strike 0.9, Charge 0.7, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 15 at level 4, 19 at level 9. Presses per kill at level 4: Melee 1.7, Rend 1.1, Heroic Strike 1.0, Charge 0.7, Battle Shout 0.1.*
 
 ## Levels 10-11: Bloodrage, and talents begin
 
@@ -123,7 +123,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Defensive Stance**, **Taunt** and **Sunder Armor** (10) are for tanking. Arms levels in **Battle Stance**.
 - **Improved Rend** (10-12) is why the one **Rend** per mob is worth its rage.
 
-*Fight lab, seconds per kill: 19 at level 10. Presses per kill at level 10: Melee 2.2, Heroic Strike 1.7, Rend 1.2, Charge 1.0, Bloodrage 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 19 at level 10. Presses per kill at level 10: Melee 2.1, Heroic Strike 2.0, Rend 1.2, Charge 1.0, Bloodrage 0.3, Battle Shout 0.1.*
 
 ## Levels 12-19: Overpower
 
@@ -148,7 +148,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Improved Overpower** (15-16) and **Improved Charge** (17-18) make both buttons better. Nothing new to press.
 - **Shield Bash** (12) and **Revenge** (14) need a shield or Defensive Stance. Skip them.
 
-*Fight lab, seconds per kill: 19 at level 12, 23 at level 19. Presses per kill at level 12: Melee 2.4, Heroic Strike 1.7, Rend 1.2, Charge 1.0, Overpower 0.3, Bloodrage 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 20 at level 12, 24 at level 19. Presses per kill at level 12: Melee 2.2, Heroic Strike 2.0, Rend 1.2, Charge 1.0, Overpower 0.3, Bloodrage 0.3, Battle Shout 0.1.*
 
 ## Levels 20-23: Victory Rush
 
@@ -174,7 +174,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Deep Wounds** (20-22) adds a bleed to every critical hit. Nothing to press.
 - **Retaliation** (20, key 4) and **Intimidating Shout** (22, F) are for a pull that goes wrong: **Retaliation** counterattacks everything that hits you in melee for 15 seconds, once per 15 minutes, in **Battle Stance** only.
 
-*Fight lab, seconds per kill: 22 at level 20. Presses per kill at level 20: Melee 2.6, Heroic Strike 2.3, Rend 1.2, Charge 1.0, Victory Rush 0.4, Overpower 0.4, Bloodrage 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 22 at level 20. Presses per kill at level 20: Heroic Strike 2.6, Melee 2.3, Rend 1.2, Charge 1.0, Victory Rush 0.6, Overpower 0.4, Bloodrage 0.3, Battle Shout 0.1.*
 
 ## Level 24: Execute
 
@@ -197,7 +197,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 5. **Rend** once, while the mob has more than a third of its health.
 6. **Heroic Strike** with spare rage. Keep 15 back for **Overpower**.
 
-*Fight lab, seconds per kill: 21 at level 24. Presses per kill at level 24: Melee 3.2, Heroic Strike 1.5, Rend 1.2, Charge 1.0, Execute 0.9, Victory Rush 0.4, Bloodrage 0.3, Overpower 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 21 at level 24. Presses per kill at level 24: Melee 2.9, Heroic Strike 1.7, Rend 1.2, Execute 1.0, Charge 1.0, Victory Rush 0.5, Overpower 0.3, Bloodrage 0.3, Battle Shout 0.1.*
 
 ## Levels 25-34: Spearing Strike
 
@@ -224,7 +224,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Bloodthrill** (30-31) also lights **Overpower** up while your **Rend** ticks. From 30 you press **Overpower** more often.
 - **Berserker Stance** (30) and **Intercept** (30) are not part of this rotation. Stay in **Battle Stance**.
 
-*Fight lab, seconds per kill: 23 at level 30, 22 at level 34. Presses per kill at level 30: Melee 3.7, Heroic Strike 1.3, Rend 1.2, Charge 1.0, Spearing Strike 1.0, Execute 0.9, Overpower 0.7, Victory Rush 0.6, Bloodrage 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 20 at level 25, 23 at level 30, 22 at level 34. Presses per kill at level 25: Melee 3.2, Rend 1.2, Heroic Strike 1.1, Charge 1.0, Execute 1.0, Spearing Strike 0.9, Victory Rush 0.5, Overpower 0.3, Bloodrage 0.3, Battle Shout 0.1.*
 
 ## Levels 35-39: Slam
 
@@ -250,7 +250,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Whirlwind** (36) needs **Berserker Stance**. This rotation never leaves **Battle Stance**.
 - **Sweeping Strikes** (39) is for a second mob: press it, then **Thunder Clap** and **Cleave**.
 
-*Fight lab, seconds per kill: 20 at level 35. Presses per kill at level 35: Melee 3.8, Rend 1.2, Slam 1.1, Charge 1.0, Overpower 1.0, Spearing Strike 0.9, Execute 0.8, Heroic Strike 0.6, Victory Rush 0.5, Bloodrage 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 20 at level 35. Presses per kill at level 35: Melee 3.4, Rend 1.2, Slam 1.1, Charge 1.0, Overpower 1.0, Execute 0.9, Spearing Strike 0.8, Heroic Strike 0.8, Victory Rush 0.5, Bloodrage 0.3, Battle Shout 0.1.*
 
 ## Levels 40-60: Mortal Strike, the finished rotation
 
@@ -258,7 +258,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Battle Shout at 42, 52, 60; Charge at 46; Cleave at 40, 50, 60; Execute at 40, 48, 56; Hamstring at 54; Heroic Strike at 40, 48, 56, 60; Mortal Strike at 48, 54, 60; Overpower at 44, 60; Rend at 40, 50, 60; Slam at 46, 54; Thunder Clap at 48, 58.
 
-**Talents:** 40 Mortal Strike, 41-45 Cruelty, 46 Impale, 47-50 Unbridled Wrath, 51 Lingering Rage, 52-56 Enrage, 57-58 Improved Execute, 59-60 Improved Bloodrage.
+**Talents:** 40 Mortal Strike, 41-45 Cruelty, 46 Impale, 47-50 Unbridled Wrath, 51 Booming Voice, 52-56 Enrage, 57 Improved Execute, 58 Improved Slam, 59-60 Improved Bloodrage.
 
 **Keys to set:** Q = Mortal Strike; C = Heroic Strike.
 
@@ -278,7 +278,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - The remaining points go to Fury: **Cruelty** (41-45) for critical hits, **Unbridled Wrath** (47-50) and **Enrage** (52-56) for rage and damage.
 - Two or more mobs: **Sweeping Strikes**, then **Thunder Clap** and **Cleave**.
 
-*Fight lab, seconds per kill: 24 at level 40, 25 at level 50, 26 at level 60. Presses per kill at level 40: Melee 5.4, Mortal Strike 2.0, Rend 1.1, Charge 1.0, Overpower 1.0, Execute 0.9, Victory Rush 0.6, Bloodrage 0.3, Slam 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 23 at level 40, 24 at level 50, 25 at level 60. Presses per kill at level 40: Melee 5.0, Mortal Strike 2.1, Rend 1.1, Charge 1.0, Execute 1.0, Overpower 0.9, Victory Rush 0.6, Slam 0.5, Bloodrage 0.3, Battle Shout 0.1, Spearing Strike 0.1.*
 
 ## Between fights
 
@@ -292,4 +292,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Pulling two mobs at a time works from 39 with **Sweeping Strikes**. Before that, one at a time is faster and safer.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-19: the stages are hand-kept in `_reference/data/level-guides/warrior.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/warrior.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

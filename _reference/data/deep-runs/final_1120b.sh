@@ -4,6 +4,7 @@
 # (tank_weights.py, as gear_phase_1118.sh ran it), GearCheck's values file, the pages and the lint. Then Claude reviews, writes the
 # rotation guides, commits and pushes (stage 2), and messages the Addons session; weight_errors after the push (lever e).
 cd F:/wow-forever || exit 1
+export PATH="/usr/bin:/bin:$PATH"   # 2026-11-22: a non-login bash started from Windows has no date, grep or sleep (its wait loop spun)
 export PYTHONIOENCODING=utf-8
 export WOW_FOREVER_NO_RACIALS=1
 export WOW_FOREVER_SIM="$HOME/.wow-forever-tools/wowsims-forever-y"
@@ -15,7 +16,7 @@ R=_reference/data/raidsim
 D=_reference/data
 mkdir -p $M
 WINPID=$(cat /proc/$$/winpid 2>/dev/null)
-[ -n "$WINPID" ] && powershell -NoProfile -ExecutionPolicy Bypass -File "$L/throttle.ps1" -ProcId "$WINPID" -Reserve 2 -Priority BelowNormal >> $LOG 2>&1
+[ -n "$WINPID" ] && powershell -NoProfile -ExecutionPolicy Bypass -File "$L/throttle.ps1" -ProcId "$WINPID" -Reserve "${RESERVE_CPUS:-2}" -Priority "${PRIORITY:-BelowNormal}" >> $LOG 2>&1   # low mode: PRIORITY=Idle RESERVE_CPUS=10 (2026-11-21)
 say() { echo "=== $(date +%F_%H:%M) $*" >> $LOG; }
 run() {
   local mk=$1; shift
@@ -37,7 +38,7 @@ run builds bash -c "python -u $D/validate_builds.py && python -u $D/render_build
 run unused python -u $R/unused_abilities.py --write || say "WARNING: unused_abilities"
 run tank-warrior python -u $D/characters/tank_weights.py warrior prot-tank protection-ml-tank Protection || say "WARNING: tank_weights warrior"
 run tank-paladin python -u $D/characters/tank_weights.py paladin prot-tank protection-ml-tank Protection || say "WARNING: tank_weights paladin"
-run tank-druid python -u $D/characters/tank_weights.py druid feral-bear-tank feral-combat-ml-tank "Feral Combat" || say "WARNING: tank_weights druid"
+run tank-druid python -u $D/characters/tank_weights.py druid feral-bear-tank feral-combat-bear-preset-tank "Feral Combat" || say "WARNING: tank_weights druid"   # 2026-11-22: the bear's pick is the simulator's Bear preset (the audit session)
 run addon-values python -u $D/characters/addon_values.py || say "WARNING: addon_values"
 run options python -u $R/options_check.py --write || say "WARNING: options_check"
 run pages python -u $D/render_modes.py || say "WARNING: render_modes"

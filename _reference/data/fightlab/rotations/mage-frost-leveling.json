@@ -1,7 +1,7 @@
 {
  "veto": {
   "Frostbolt": {
-   "min_hp": 0.2
+   "min_hp": 0.1
   },
   "Cone of Cold": {
    "off": true
@@ -28,15 +28,15 @@
   50,
   60
  ],
- "date": "2026-11-16",
+ "date": "2026-11-20",
  "signature": {
   "required": [
    "Frostbolt"
   ],
   "build_spec": "Frost",
   "dropped_saved_rules": [],
-  "core_share_before": 0.8932317567651429,
-  "core_share_after": 0.8927868868825646,
+  "core_share_before": 0.8857586193398845,
+  "core_share_after": 0.9297088648045679,
   "min_share": 0.6,
   "floor_reached": null,
   "played_before": true,
@@ -47,54 +47,55 @@
  "changes": [
   {
    "round": 1,
-   "change": "eat below 40% health",
+   "change": "Frostbolt only while the mob has more than 10% health",
    "rule": [
-    "eat_below",
-    null,
-    0.4
+    "min_hp",
+    "Frostbolt",
+    0.1
    ],
-   "gain_seed1": 0.004795399040234072,
-   "gain_seed2": 0.0049855357826360525
+   "gain_seed1": 0.003173137480576904,
+   "gain_seed2": 0.006774038530317772
   }
  ],
- "weighted_before": 28.994904940414663,
- "weighted_after": 28.879388877331508,
+ "weighted_before": 29.578642804242964,
+ "weighted_after": 29.44371641019213,
  "per_level": {
   "20": {
-   "before": 27.186768655520407,
-   "after": 27.08394556320128,
+   "before": 27.334681384139085,
+   "after": 27.614560857834586,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 33.189726522433205,
-   "after": 33.06269997508226,
-   "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "before": 33.574573822462796,
+   "after": 33.73306569401,
+   "deaths_before": 0.06666666666666667,
+   "deaths_after": 0.03333333333333333
   },
   "40": {
-   "before": 33.40769066534063,
-   "after": 33.264380309624876,
-   "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "before": 33.33370304682808,
+   "after": 33.524029556699496,
+   "deaths_before": 0.36666666666666664,
+   "deaths_after": 0.4666666666666667
   },
   "50": {
-   "before": 27.97650901307354,
-   "after": 27.828522701704607,
+   "before": 28.27728899177292,
+   "after": 27.880292652134326,
    "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "deaths_after": 0.03333333333333333
   },
   "60": {
-   "before": 25.407012367203773,
-   "after": 25.33860862465972,
+   "before": 26.909752450502644,
+   "after": 26.491404653112323,
    "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "deaths_after": 0.03333333333333333
   }
  },
  "retune": {
   "times": {
-   "saved": 28.995,
-   "continued": 28.879
+   "saved": 29.579,
+   "from scratch": 31.216,
+   "continued": 29.444
   },
   "installed": "continued",
   "reference_ok": true

@@ -334,7 +334,10 @@ class HunterModule(BaseModule):
     # Sniper Shot (2026-10-25: never cast before): 0 = not cast (the default, every build as before), 1 = from range on cooldown while the
     # mob has more than 30% health; the default cast cost the builds holding it 1-11% per kill before any tuning, so rotation_opt.py decides
     SNIPER_SHOT = 0
-    ROTATION_KNOBS = {"SNIPER_SHOT": [0, 1]}   # tuned by rotation_opt.py ("knobs" in rotations/hunter-<spec>.json)
+    # Aimed Shot from this level on (0: as soon as it is trained, the lab before, bit for bit; 61: never). A rules knob since 2026-11-22
+    # (the audit session: Marksmanship went from 15.0 s a kill at 19 to 16.2 at 20 on training Aimed Shot), like Frostfire's.
+    AIMED_FROM = 0
+    ROTATION_KNOBS = {"SNIPER_SHOT": [0, 1], "AIMED_FROM": [0, 25, 30, 40, 50, 61]}   # tuned by rotation_opt.py ("knobs" in rotations/hunter-<spec>.json)
 
     AOE = {'channel': ['Volley'], 'direct': ['Multi-Shot'], 'dots': ['Serpent Sting'], 'min_near': 2}
 
@@ -937,6 +940,6 @@ class HunterModule(BaseModule):
             return sniper
         if multi and can(multi):
             return multi
-        if aimed and can(aimed) and hp > 0.25 * m.hp_max:
+        if aimed and can(aimed) and hp > 0.25 * m.hp_max and p.level >= self.AIMED_FROM:
             return aimed
         return None

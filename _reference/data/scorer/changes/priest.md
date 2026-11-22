@@ -108,9 +108,9 @@ For each Forever `opt-<spec>-<profile>` build: the Classic community build it wa
 - **Adds:** Holy Binding 1 (new), Holy Nova 1, Litany of Light 2 (new), Mental Strength 5, Penance 1 (new), Spell Warding 1, Twilight Focus 3 (new), Twin Disciplines 5 (new)
 - **Fewer ranks:** Mental Agility 5->3, Silent Resolve 4->3, Spiritual Healing 5->3
 
-### `opt-shadow-dps-raid-dps` (20/0/31) vs Classic `leveling-shadow` (7/0/44)
+### `opt-shadow-dps-raid-dps` (17/3/31) vs Classic `leveling-shadow` (7/0/44)
 
-- **Drops:** Blackout 5, Improved Power Word: Shield 2, Improved Psychic Scream 2, Silence 1, Spirit Tap 5
-- **Adds:** Dark Inspiration 3, Devouring Contagion 2 (new), Improved Mind Flay 2 (new), Meditation 3, Mental Strength 5, Power in Light 5 (new), Twin Disciplines 5 (new), Wand Specialization 2
-- **Fewer ranks:** Shadow Reach 3->1, Shadow Weaving 5->3
+- **Drops:** Blackout 5, Improved Power Word: Shield 2, Improved Psychic Scream 2, Shadow Reach 3, Silence 1
+- **Adds:** Dark Inspiration 3, Devouring Contagion 2 (new), Improved Mind Flay 2 (new), Martyrdom 2, Meditation 3, Mental Strength 5, Silent Resolve 2, Twilight Focus 3 (new), Twin Disciplines 5 (new)
+- **Fewer ranks:** Shadow Weaving 5->3, Spirit Tap 5->1
 

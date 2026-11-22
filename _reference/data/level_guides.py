@@ -197,7 +197,7 @@ def measure(cls, jobs):
     data = load(cls)
     rec = {"class": cls, "date": TODAY, "fights": FIGHTS, "seed": SEED, "guides": {}}
     with multiprocessing.Pool(jobs, initializer=_init) as pool:
-        for g in data["guides"]:
+        for g in own_guides(data):
             b, order, prov, rot = pick(cls, g["spec"])
             if not b:
                 print(f"== {cls} {g['spec']}: no leveling build on its page; skipped", flush=True)
@@ -321,7 +321,7 @@ def check(cls):
     """[(level of the problem: 'error' or 'warning', text)] for a class's guides."""
     out = []
     data = load(cls)
-    for g in data["guides"]:
+    for g in own_guides(data):
         b, order, prov, rot = pick(cls, g["spec"])
         if not b:
             out.append(("error", f"{g['spec']}: no leveling build on its page"))
@@ -401,9 +401,13 @@ def render(cls, g):
     m = measured(cls, spec, b, order, rot)
     split = "/".join(str(x) for x in SM.tree_points(cls, b).values())
     name = SM.spec_name(cls, spec)
+    hp = HERE / "fightlab" / "play-check-hold.json"   # a pick held by hand (2026-11-22): the same notice as its leveling page
+    why = ((json.load(open(hp, encoding="utf-8")).get(cls) or {}).get(spec) if hp.exists() else None)
     o = [f"# {name} {cls.capitalize()} — leveling, level by level", "",
-         f"[{cls.capitalize()}](../README.md) > [Leveling (solo)](README.md) > [{name}]({SM.spec_slug(cls, spec)}.md) > Level by level", "",
-         g.get("intro", ""), "",
+         f"[{cls.capitalize()}](../README.md) > [Leveling (solo)](README.md) > [{name}]({SM.spec_slug(cls, spec)}.md) > Level by level", ""]
+    if why:
+        o += [f"> **Being checked:** {why[0].upper() + why[1:]}. The build and numbers on this page may change when it is done.", ""]
+    o += [g.get("intro", ""), "",
          f"**The build:** {split} ([open the talent tree]({RSH.tf_link(cls, SG.held(b))})), the one on the [{name} leveling page]({SM.spec_slug(cls, spec)}.md), "
          "which has the full talent table and the reasons behind the level-60 rotation.", ""]
     if prov:
@@ -494,7 +498,7 @@ def write(cls, folder=None):
     if not data:
         return out
     folder = pathlib.Path(folder) if folder else ROOT / cls / "leveling"
-    for g in data["guides"]:
+    for g in own_guides(data):
         text = render(cls, g)
         if text:
             (folder / page_name(cls, g["spec"])).write_text(text, encoding="utf-8")
@@ -517,13 +521,26 @@ def macros_line(cls):
 
 
 def link_line(cls, spec):
-    """The line a spec's leveling page carries when the class has a by-level guide for it, else None."""
+    """The line a spec's leveling page carries when the class has a by-level guide for it, else None. A guide that is another spec's by
+    reference (`same_as`, 2026-11-21: Frostfire levels as Frost) points at that spec's page."""
     data = load(cls)
-    if data and any(g["spec"] == spec for g in data["guides"]):
+    g = next((g for g in (data or {}).get("guides", []) if g["spec"] == spec), None)
+    if not g:
+        return None
+    own = g.get("same_as")
+    if own:
+        line = (f"**Leveling from level 1?** You level as {own}: [the {own} rotation level by level]({page_name(cls, own)}), what to press "
+                "as each spell and talent arrives.")
+    else:
         line = (f"**Leveling from level 1?** [The rotation level by level]({page_name(cls, spec)}): what to press as each spell and talent "
                 "arrives.")
-        return line + (f" [Your keys and macros]({KEYBINDS})." if keybinds_line(cls) else "")
-    return None
+    return line + (f" [Your keys and macros]({KEYBINDS})." if keybinds_line(cls) else "")
+
+
+def own_guides(data):
+    """The guides written out as pages: a guide that is another spec's by reference (`same_as`, 2026-11-21) has no page, measure, check or
+    play check of its own."""
+    return [g for g in (data or {}).get("guides", []) if not g.get("same_as")]
 
 
 def main():

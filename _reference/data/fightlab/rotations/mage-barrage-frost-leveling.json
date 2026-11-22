@@ -1,7 +1,7 @@
 {
  "veto": {
   "Frostbolt": {
-   "min_hp": 0.2
+   "min_hp": 0.1
   },
   "Cone of Cold": {
    "off": true
@@ -28,7 +28,7 @@
   50,
   60
  ],
- "date": "2026-11-15",
+ "date": "2026-11-20",
  "signature": {
   "required": [
    "Arcane Missiles",
@@ -36,8 +36,8 @@
   ],
   "build_spec": "Hybrid Arcane/Frost",
   "dropped_saved_rules": [],
-  "core_share_before": 0.9095630280350743,
-  "core_share_after": 0.9095157695974282,
+  "core_share_before": 0.9184821573766698,
+  "core_share_after": 0.950515443662736,
   "min_share": 0.6,
   "floor_reached": null,
   "played_before": true,
@@ -48,54 +48,55 @@
  "changes": [
   {
    "round": 1,
-   "change": "MAGE_ARMOR = 1",
+   "change": "Frostbolt only while the mob has more than 10% health",
    "rule": [
-    "knob",
-    "MAGE_ARMOR",
-    1
+    "min_hp",
+    "Frostbolt",
+    0.1
    ],
-   "gain_seed1": 0.005867197699755522,
-   "gain_seed2": 0.005437459963390068
+   "gain_seed1": 0.010067220148546774,
+   "gain_seed2": 0.012014727360146304
   }
  ],
- "weighted_before": 28.472894371374327,
- "weighted_after": 28.361149423846193,
+ "weighted_before": 28.683289951202216,
+ "weighted_after": 28.374795758123206,
  "per_level": {
   "20": {
-   "before": 28.69357598745145,
-   "after": 28.69357598745145,
+   "before": 27.97605532427682,
+   "after": 28.371994180534237,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 33.47662155027279,
-   "after": 33.47662155027279,
+   "before": 33.64056558885711,
+   "after": 33.96490809210656,
    "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "deaths_after": 0.03333333333333333
   },
   "40": {
-   "before": 33.2331814036488,
-   "after": 32.49951599941485,
-   "deaths_before": 0.0,
-   "deaths_after": 0.06666666666666667
+   "before": 30.92830668731304,
+   "after": 30.82633647830766,
+   "deaths_before": 0.4666666666666667,
+   "deaths_after": 0.36666666666666664
   },
   "50": {
-   "before": 26.50433996717002,
-   "after": 26.24209083662397,
-   "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "before": 27.30432051109483,
+   "after": 26.572922777486028,
+   "deaths_before": 0.2,
+   "deaths_after": 0.1
   },
   "60": {
-   "before": 24.36440755855333,
-   "after": 24.699575611737224,
+   "before": 26.092860384032175,
+   "after": 25.447873787402525,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
  },
  "retune": {
   "times": {
-   "saved": 28.473,
-   "continued": 28.361
+   "saved": 28.683,
+   "from scratch": 29.582,
+   "continued": 28.375
   },
   "installed": "continued",
   "reference_ok": true

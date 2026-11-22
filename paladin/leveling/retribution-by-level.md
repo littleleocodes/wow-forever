@@ -4,7 +4,7 @@
 
 What a Retribution paladin presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A paladin's fight is simple: a seal on yourself, your weapon's swings, and two strikes on 10-second cooldowns. Most new spells are safety tools, not rotation. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 12/8/31 ([open the talent tree](https://talentsforever.com/paladin/60/05025-503-0523330120130134-12)), the one on the [Retribution leveling page](retribution.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 12/8/31 ([open the talent tree](https://talentsforever.com/paladin/60/05025-503-0523330121130133-12)), the one on the [Retribution leveling page](retribution.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -45,7 +45,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 |---|---|---|---|---|---|---|---|---|
 | Shift+Q | Packs: the ground under you | — | — | — | — | — | **Consecration** | Consecration |
 | Shift+E | Control a humanoid: a second setup for the doubled Judgement | — | — | — | — | — | — | **Repentance** from 49 (talent) |
-| Shift+R | Finisher from range | — | — | — | — | — | — | **Hammer of Wrath** |
+| Shift+R | Finisher from range: not in the list; press it to finish a runner | — | — | — | — | — | — | **Hammer of Wrath** |
 | Shift+F | Escape from roots and slows | — | — | — | — | **Blessing of Freedom** from 18 | Blessing of Freedom | Blessing of Freedom |
 | Shift+Mouse 5 | The panic button: a full heal | — | — | — | — | **Lay on Hands** | Lay on Hands | Lay on Hands |
 | Shift+Mouse 4 | Send an extra Undead mob running | — | — | — | — | — | **Turn Undead** from 24 | Turn Undead |
@@ -79,7 +79,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Keep **Devotion Aura** on. Heal with **Holy Light** between fights.
 - Use a two-handed weapon from the first one you find. Every seal and strike hits harder with a slow, heavy weapon.
 
-*Fight lab, seconds per kill: 12 at level 1. Presses per kill at level 1: Melee 1.7, Seal of Righteousness 1.0.*
+*Fight lab, seconds per kill: 12 at level 1. Presses per kill at level 1: Melee 1.7, Seal of Righteousness 0.2.*
 
 ## Levels 4-5: Judgement
 
@@ -118,7 +118,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Seal of the Crusader** (6) is not part of the leveling rotation. Stay on **Seal of Righteousness**.
 
-*Fight lab, seconds per kill: 16 at level 6. Presses per kill at level 6: Melee 2.8, Judgement 1.2, Holy Strike 1.2, Seal of Righteousness 1.0.*
+*Fight lab, seconds per kill: 16 at level 6. Presses per kill at level 6: Melee 3.0, Judgement 1.2, Holy Strike 1.2, Seal of Righteousness 1.0.*
 
 ## Levels 8-9: Hammer of Justice
 
@@ -139,7 +139,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Purify** (8) removes a poison or a disease. It is not part of the fight.
 
-*Fight lab, seconds per kill: 18 at level 8. Presses per kill at level 8: Melee 3.3, Judgement 1.4, Holy Strike 1.4, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 18 at level 8. Presses per kill at level 8: Melee 3.6, Judgement 1.4, Holy Strike 1.4, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 10-19: Talents begin, Lay on Hands
 
@@ -167,7 +167,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Blessing of Protection** (10) and **Blessing of Freedom** (18) are tools for a bad pull, not rotation.
 - Buy the next rank of the defensive spells on your bars too: **Divine Protection** at 18 (8 seconds instead of 6), **Blessing of Protection** at 24 and 38 (8, then 10 seconds), **Lay on Hands** at 30 and 50 and **Divine Shield** at 50.
 
-*Fight lab, seconds per kill: 18 at level 10, 21 at level 19. Presses per kill at level 10: Melee 3.1, Judgement 1.3, Holy Strike 1.2, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 18 at level 10, 22 at level 19. Presses per kill at level 10: Melee 3.4, Judgement 1.4, Holy Strike 1.3, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 20-43: Seal of Command and the stun combo
 
@@ -197,7 +197,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Blessing of Kings** (20) is an alternative to **Blessing of Might**; the fight lab plays **Blessing of Might**. From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key.
 - If you spent **Hammer of Justice** on the combo, a mob that casts spells in the next fight runs free until the stun is back: when you see a caster, keep the stun for it.
 
-*Fight lab, seconds per kill: 20 at level 20, 22 at level 30, 26 at level 40, 28 at level 43. Presses per kill at level 20: Melee 3.7, Judgement 1.6, Holy Strike 1.5, Seal of Command 1.0, Hammer of Justice 0.3.*
+*Fight lab, seconds per kill: 21 at level 20, 24 at level 30, 28 at level 40, 29 at level 43. Presses per kill at level 20: Melee 4.0, Judgement 1.7, Holy Strike 1.6, Seal of Command 1.0, Hammer of Justice 0.3.*
 
 ## Levels 44-60: Hammer of Wrath
 
@@ -205,7 +205,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Consecration at 50, 60; Divine Shield at 50; Exorcism at 44, 52, 60; Flash of Light at 50, 58; Hammer of Justice at 54; Hammer of Wrath at 52, 60; Holy Light at 46, 54, 60; Holy Strike at 44, 52, 60; Holy Wrath at 60; Lay on Hands at 50; Seal of Command at 50, 60; Turn Undead at 52.
 
-**Talents:** 44-45 Divine Intellect, 46-48 Precision, 49 Repentance, 50 Vindication, 51-53 Champion of the Light, 54-55 Vindication, 56 Champion of the Light, 57-58 Reverence, 59-60 Improved Seals.
+**Talents:** 44-45 Divine Intellect, 46-48 Precision, 49 Repentance, 50 Vindication, 51-53 Champion of the Light, 54-55 Vindication, 56 Eye for an Eye, 57-58 Reverence, 59-60 Improved Seals.
 
 **Keys to set:** Shift+R = Hammer of Wrath; Shift+E = Repentance (at 49), talent; Shift+2 = Holy Wrath (at 50).
 
@@ -224,12 +224,12 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Hammer of Wrath** (44) hits a mob below 20% health from range. The tuned rules of 2026-11-02 switch it off against single mobs: kills measured no faster with it. Use it on a mob that runs.
 - **Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.
 
-*Fight lab, seconds per kill: 27 at level 44, 28 at level 50, 30 at level 60. Presses per kill at level 44: Melee 5.0, Judgement 2.4, Holy Strike 2.0, Seal of Command 1.0, Hammer of Justice 0.4.*
+*Fight lab, seconds per kill: 29 at level 44, 29 at level 50, 31 at level 60. Presses per kill at level 44: Melee 5.4, Judgement 2.5, Holy Strike 2.1, Seal of Command 1.0, Hammer of Justice 0.4.*
 
 ## Between fights
 
 - Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.
-- Drink when you are below about a third of your mana: the fight lab's default, which the tuned rules of 2026-11-09 keep (the 2026-11-02 tune drank below 15%, about 0.4% faster per kill; the re-tune did not keep it). Eat only if you are still below 65% of your health after the heals.
+- Drink when you are below 15% of your mana (the tuned rules of 2026-11-20). Eat only if you are still below 65% of your health after the heals.
 - Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.
 - Re-cast **Blessing of Might** when it runs out, and your seal just before each pull.
 - Visit the trainer every even level for new ranks of your seal and **Holy Strike**.
@@ -240,4 +240,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Packs of mobs: **Consecration** and the Protection tree's tools. Single pulls are faster for Retribution.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-19: the stages are hand-kept in `_reference/data/level-guides/paladin.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/paladin.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

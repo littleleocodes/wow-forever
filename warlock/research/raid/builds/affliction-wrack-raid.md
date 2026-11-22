@@ -83,12 +83,12 @@ Before the pull: cast Shadow Bolt; at -1s: petAttack.
 | 5 | if warlockAssignedCurseIsActive and not warlockAssignedCurseIsActiveOnAllTargets and number of targets > 1: change target | as ready |
 | 6 | if number of targets = 1 and not Bane of Agony is on the target and time left in the fight > 12: cast Amplify Curse | 0.3 |
 | 7 | if number of targets = 1 and not Bane of Agony is on the target and time left in the fight > 12: cast Bane of Agony | 2.6 |
-| 8 | if number of targets = 1 and not Corruption is on the target and time left in the fight > 9: cast Corruption (rank 6) | 3.3 |
+| 8 | if number of targets = 1 and not Corruption is on the target and time left in the fight > 9: cast Corruption | 3.3 |
 | 9 | if number of targets = 1 and not Siphon Life is on the target and time left in the fight > dotBaseDuration and not Shadow Vulnerability is on the target and not Blood Fury is up and not spellIsChanneling: cast Siphon Life | 1.8 |
 | 10 | if number of targets > 1 and not Bane of Doom is on the target and (not Bane of Doom is ready or time left in the fight < “Doom tick”) and not Bane of Agony is on the target and number of targets < 5: cast Amplify Curse | 0.3 |
 | 11 | if number of targets > 1 and not Bane of Doom is on the target and not Bane of Agony is on the target and number of targets < 5: cast Bane of Agony | 2.6 |
 | 12 | if number of targets > 1 and (Bane of Agony is on the target or Bane of Doom is on the target) and not warlockBaneIsActiveOnAllTargets and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and number of targets < 5: change target | as ready |
-| 13 | if number of targets > 1 and not Corruption is on the target and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: cast Corruption (rank 6) | 3.3 |
+| 13 | if number of targets > 1 and not Corruption is on the target and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: cast Corruption | 3.3 |
 | 14 | if number of targets > 1 and Corruption is on the target and not dotIsActiveOnAllTargets and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and ((Bane of Agony is on the target or Bane of Doom is on the target) or not (number of targets < 5)) and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: change target | as ready |
 | 15 | if number of targets > 1 and (warlockAssignedCurseIsActiveOnAllTargets or warlockIsAssignedCurse) and (warlockBaneIsActiveOnAllTargets or not (number of targets < 5)) and (dotIsActiveOnAllTargets or time left in the fight > dotBaseDuration): change target | as ready |
 | 16 | if (Shadow Trance is up or “Improved Shadow Bolt Known” and Revelation is known and Revelation is up and (not Shadow Vulnerability is on the target or time left on Shadow Vulnerability < (cast time of Shadow Bolt + spellTravelTime))): cast Shadow Bolt | 2.6 |

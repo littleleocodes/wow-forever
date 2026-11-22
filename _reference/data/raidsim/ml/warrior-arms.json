@@ -7,14 +7,15 @@
  ],
  "best": "arms-battle-raid",
  "best_entry": "arms-battle-raid",
- "best_dps": 488.89,
+ "best_dps": 876.37,
  "any_split": false,
- "date": "2026-10-14",
+ "date": "2026-11-22",
+ "commit": "2e6e77d84",
  "gear": {
   "bis": {
    "entry": "arms-battle-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-arms-bis.gear.json",
-   "date": "2026-11-19",
+   "date": "2026-11-22",
    "setting": "raid",
    "chosen": "keep-sets-and-effects",
    "ilvl": 61.6,
@@ -43,35 +44,35 @@
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 0.9939447593625447,
-    "keep-sets-and-effects": 1.0024437865864586
+    "all-slots": 0.9941185862109534,
+    "keep-sets-and-effects": 1.0043197492542877,
+    "previous": 1.0043197492542877,
+    "the prebis set": 0.9098709940351108
    },
    "confirm_seed2": {
     "current": 1.0,
-    "keep-sets-and-effects": 1.0050051880338837
+    "keep-sets-and-effects": 1.004981978406426
    },
    "weights": {
-    "PseudoStatMainHandDps": 4.4095,
-    "StatAgility": 0.4731,
-    "StatArmorPenetration": 0.1135,
-    "StatAttackPower": 0.2565,
-    "StatCritRating": 0.6018,
-    "StatExpertiseRating": 0.3803,
-    "StatHasteRating": 0.3897,
-    "StatStrength": 0.5643
+    "PseudoStatMainHandDps": 4.3879,
+    "StatAgility": 0.4369,
+    "StatArmorPenetration": 0.1112,
+    "StatAttackPower": 0.2555,
+    "StatCritRating": 0.5975,
+    "StatExpertiseRating": 0.2862,
+    "StatHasteRating": 0.4029,
+    "StatStrength": 0.562
    },
    "evaluated_on": [
-    "arms-battle-raid: ml winner"
-   ],
-   "commit": "2e6e77d84"
+    "arms-battle-raid: arms-battle-raid"
+   ]
   },
-  "bis2": true,
   "prebis": {
    "entry": "arms-battle-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-arms-prebis.gear.json",
-   "date": "2026-11-19",
+   "date": "2026-11-22",
    "setting": "raid",
-   "chosen": "all-slots",
+   "chosen": "previous",
    "ilvl": 60.4,
    "trinkets": [
     "Hand of Justice",
@@ -98,32 +99,32 @@
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9972288044659557
+    "keep-sets-and-effects": 0.9978828963792347,
+    "previous": 1.0
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0028401801480673
+    "previous": 1.0,
+    "all-slots": 1.0
    },
    "weights": {
-    "PseudoStatMainHandDps": 3.8833,
-    "StatAgility": 0.419,
-    "StatArmorPenetration": 0.1026,
-    "StatAttackPower": 0.2489,
-    "StatCritRating": 0.536,
-    "StatExpertiseRating": 0.4526,
-    "StatHasteRating": 0.557,
-    "StatStrength": 0.5475
+    "PseudoStatMainHandDps": 3.8737,
+    "StatAgility": 0.4025,
+    "StatArmorPenetration": 0.1022,
+    "StatAttackPower": 0.2482,
+    "StatCritRating": 0.535,
+    "StatExpertiseRating": 0.3573,
+    "StatHasteRating": 0.6059,
+    "StatStrength": 0.5461
    },
    "evaluated_on": [
-    "arms-battle-raid: ml winner (bis)"
-   ],
-   "commit": "2e6e77d84"
+    "arms-battle-raid: arms-battle-raid"
+   ]
   },
   "dungeon": {
    "entry": "arms-battle-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-arms-dungeon.gear.json",
-   "date": "2026-11-19",
-   "chosen": "all-slots",
+   "date": "2026-11-22",
+   "chosen": "previous",
    "ilvl": 59.6,
    "trinkets": [
     "Hand of Justice",
@@ -226,11 +227,12 @@
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9987519248503017
+    "keep-sets-and-effects": 0.9987519248503017,
+    "previous": 1.0
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0012511511717608
+    "previous": 1.0,
+    "all-slots": 1.0
    },
    "weights": {
     "PseudoStatMainHandDps": 3.7864,
@@ -249,562 +251,12 @@
   }
  },
  "search": {
-  "bis-dummy-1": {
-   "class": "warrior",
-   "spec": "Arms",
-   "setting": "dummy",
-   "entry": "arms-battle-raid",
-   "date": "2026-10-14",
-   "constraint": "Arms 30+",
-   "protected": [],
-   "entries_screened": {},
-   "entries_searched": [
-    "arms-battle-raid"
-   ],
-   "winner": {
-    "allocation": {
-     "Arms": [
-      [
-       "Deflection",
-       2
-      ],
-      [
-       "Improved Rend",
-       3
-      ],
-      [
-       "Improved Tactical Mastery",
-       5
-      ],
-      [
-       "Improved Overpower",
-       2
-      ],
-      [
-       "Anger Management",
-       1
-      ],
-      [
-       "Deep Wounds",
-       3
-      ],
-      [
-       "Spearing Strike",
-       1
-      ],
-      [
-       "Two-Handed Weapon Specialization",
-       3
-      ],
-      [
-       "Impale",
-       2
-      ],
-      [
-       "Bloodthrill",
-       5
-      ],
-      [
-       "Weaponmaster",
-       5
-      ],
-      [
-       "Improved Slam",
-       1
-      ]
-     ],
-     "Fury": [
-      [
-       "Booming Voice",
-       1
-      ],
-      [
-       "Cruelty",
-       5
-      ],
-      [
-       "Lingering Rage",
-       3
-      ],
-      [
-       "Unbridled Wrath",
-       5
-      ],
-      [
-       "Blood Craze",
-       1
-      ],
-      [
-       "Raging Blows",
-       1
-      ],
-      [
-       "Improved Execute",
-       2
-      ]
-     ],
-     "Protection": []
-    },
-    "split": "33/18/0",
-    "dps": 499.77,
-    "se": 0.1221,
-    "iterations": 100000
-   },
-   "runner_up": {
-    "split": "33/18/0",
-    "dps": 499.77,
-    "se": 0.1221,
-    "differs": [
-     [
-      "Blood Craze",
-      1
-     ],
-     [
-      "Deflection",
-      1
-     ],
-     [
-      "Deflection",
-      2
-     ],
-     [
-      "Furious Precision",
-      3
-     ],
-     [
-      "Improved Heroic Strike",
-      1
-     ],
-     [
-      "Lingering Rage",
-      1
-     ],
-     [
-      "Lingering Rage",
-      3
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Arms": [
-       [
-        "Deflection",
-        2
-       ],
-       [
-        "Improved Rend",
-        3
-       ],
-       [
-        "Improved Tactical Mastery",
-        5
-       ],
-       [
-        "Improved Overpower",
-        2
-       ],
-       [
-        "Anger Management",
-        1
-       ],
-       [
-        "Deep Wounds",
-        3
-       ],
-       [
-        "Spearing Strike",
-        1
-       ],
-       [
-        "Two-Handed Weapon Specialization",
-        3
-       ],
-       [
-        "Impale",
-        2
-       ],
-       [
-        "Bloodthrill",
-        5
-       ],
-       [
-        "Weaponmaster",
-        5
-       ],
-       [
-        "Improved Slam",
-        1
-       ]
-      ],
-      "Fury": [
-       [
-        "Booming Voice",
-        1
-       ],
-       [
-        "Cruelty",
-        5
-       ],
-       [
-        "Lingering Rage",
-        3
-       ],
-       [
-        "Unbridled Wrath",
-        5
-       ],
-       [
-        "Blood Craze",
-        1
-       ],
-       [
-        "Raging Blows",
-        1
-       ],
-       [
-        "Improved Execute",
-        2
-       ]
-      ],
-      "Protection": []
-     },
-     "split": "33/18/0",
-     "dps": 499.77,
-     "se": 0.1221
-    },
-    {
-     "allocation": {
-      "Arms": [
-       [
-        "Improved Heroic Strike",
-        1
-       ],
-       [
-        "Deflection",
-        1
-       ],
-       [
-        "Improved Rend",
-        3
-       ],
-       [
-        "Improved Tactical Mastery",
-        5
-       ],
-       [
-        "Improved Overpower",
-        2
-       ],
-       [
-        "Anger Management",
-        1
-       ],
-       [
-        "Deep Wounds",
-        3
-       ],
-       [
-        "Spearing Strike",
-        1
-       ],
-       [
-        "Two-Handed Weapon Specialization",
-        3
-       ],
-       [
-        "Impale",
-        2
-       ],
-       [
-        "Bloodthrill",
-        5
-       ],
-       [
-        "Weaponmaster",
-        5
-       ],
-       [
-        "Improved Slam",
-        1
-       ]
-      ],
-      "Fury": [
-       [
-        "Booming Voice",
-        1
-       ],
-       [
-        "Cruelty",
-        5
-       ],
-       [
-        "Lingering Rage",
-        1
-       ],
-       [
-        "Unbridled Wrath",
-        5
-       ],
-       [
-        "Furious Precision",
-        3
-       ],
-       [
-        "Raging Blows",
-        1
-       ],
-       [
-        "Improved Execute",
-        2
-       ]
-      ],
-      "Protection": []
-     },
-     "split": "33/18/0",
-     "dps": 499.77,
-     "se": 0.1221
-    }
-   ],
-   "runs": [
-    {
-     "entry": "arms-battle-raid",
-     "run": 1,
-     "simulated": 1788,
-     "best_screen": 501.6,
-     "best_split": "33/18/0",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 388,
-       "best": 500.47
-      },
-      {
-       "round": 1,
-       "simulated": 588,
-       "best": 500.47,
-       "predicted_top": 494.96
-      },
-      {
-       "round": 2,
-       "simulated": 788,
-       "best": 501.09,
-       "predicted_top": 497.65
-      },
-      {
-       "round": 3,
-       "simulated": 988,
-       "best": 501.6,
-       "predicted_top": 500.24
-      },
-      {
-       "round": 4,
-       "simulated": 1188,
-       "best": 501.6,
-       "predicted_top": 500.79
-      },
-      {
-       "round": 5,
-       "simulated": 1388,
-       "best": 501.6,
-       "predicted_top": 501.41
-      },
-      {
-       "round": 6,
-       "simulated": 1588,
-       "best": 501.6,
-       "predicted_top": 501.47
-      },
-      {
-       "round": 7,
-       "simulated": 1788,
-       "best": 501.6,
-       "predicted_top": 501.54
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    },
-    {
-     "entry": "arms-battle-raid",
-     "run": 2,
-     "simulated": 1793,
-     "best_screen": 500.25,
-     "best_split": "38/11/2",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 393,
-       "best": 496.82
-      },
-      {
-       "round": 1,
-       "simulated": 593,
-       "best": 497.77,
-       "predicted_top": 493.87
-      },
-      {
-       "round": 2,
-       "simulated": 793,
-       "best": 499.35,
-       "predicted_top": 496.79
-      },
-      {
-       "round": 3,
-       "simulated": 993,
-       "best": 500.01,
-       "predicted_top": 497.66
-      },
-      {
-       "round": 4,
-       "simulated": 1193,
-       "best": 500.25,
-       "predicted_top": 499.25
-      },
-      {
-       "round": 5,
-       "simulated": 1393,
-       "best": 500.25,
-       "predicted_top": 499.75
-      },
-      {
-       "round": 6,
-       "simulated": 1593,
-       "best": 500.25,
-       "predicted_top": 500.15
-      },
-      {
-       "round": 7,
-       "simulated": 1793,
-       "best": 500.25,
-       "predicted_top": 500.22
-      }
-     ],
-     "best_stage1_gap": -0.0016,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 2,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      499.68,
-      499.68,
-      499.68,
-      499.68,
-      499.68,
-      499.68,
-      498.88,
-      498.88,
-      498.88,
-      498.88,
-      498.88,
-      498.88
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      499.46,
-      499.46,
-      499.46,
-      499.46,
-      499.46
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      499.77,
-      499.77
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 405,
-     "best_gap": 0.0,
-     "best_move": "2 Lingering Rage -> Blood Craze"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Deflection",
-     "importance": 0.2671
-    },
-    {
-     "feature": "Protection points",
-     "importance": 0.177
-    },
-    {
-     "feature": "Bloodthrill",
-     "importance": 0.1427
-    },
-    {
-     "feature": "Improved Charge",
-     "importance": 0.1281
-    },
-    {
-     "feature": "Improved Slam",
-     "importance": 0.1052
-    },
-    {
-     "feature": "Arms points",
-     "importance": 0.0423
-    },
-    {
-     "feature": "Fury points",
-     "importance": 0.0212
-    },
-    {
-     "feature": "Weaponmaster",
-     "importance": 0.0162
-    },
-    {
-     "feature": "Iron Will",
-     "importance": 0.0129
-    },
-    {
-     "feature": "Impale",
-     "importance": 0.0118
-    },
-    {
-     "feature": "Improved Overpower",
-     "importance": 0.0091
-    },
-    {
-     "feature": "Improved Heroic Strike",
-     "importance": 0.008
-    }
-   ],
-   "simulated_builds": 3974,
-   "simulated_fights": 5237000,
-   "minutes": 6.4,
-   "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-arms-bis.gear.json",
-   "commit": "30f67f5d2",
-   "sig_start": "2026-11-19: the stored winner is not legal on the current talent trees; the final step starts from the arms-battle-raid open-search winner (warrior.json)"
-  },
   "bis-dummy": {
    "class": "warrior",
    "spec": "Arms",
    "setting": "dummy",
    "entry": "arms-battle-raid",
-   "date": "2026-11-19",
-   "constraint": "Arms 30+",
-   "protected": [
-    "Mortal Strike"
-   ],
-   "entries_screened": {},
-   "entries_searched": [
-    "arms-battle-raid"
-   ],
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Arms": [
@@ -899,409 +351,26 @@
      ]
     },
     "split": "32/17/2",
-    "dps": 410.19,
-    "se": 0.0917,
-    "iterations": 100000
+    "dps": 407.21,
+    "se": 0.287,
+    "iterations": 10000,
+    "build": "the search's winner"
    },
-   "runner_up": {
-    "split": "32/17/2",
-    "dps": 410.19,
-    "se": 0.0917,
-    "differs": [
-     [
-      "Enrage",
-      1
-     ],
-     [
-      "Piercing Howl",
-      1
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Arms": [
-       [
-        "Improved Heroic Strike",
-        3
-       ],
-       [
-        "Improved Rend",
-        3
-       ],
-       [
-        "Improved Tactical Mastery",
-        3
-       ],
-       [
-        "Improved Overpower",
-        2
-       ],
-       [
-        "Anger Management",
-        1
-       ],
-       [
-        "Deep Wounds",
-        3
-       ],
-       [
-        "Spearing Strike",
-        1
-       ],
-       [
-        "Two-Handed Weapon Specialization",
-        3
-       ],
-       [
-        "Impale",
-        2
-       ],
-       [
-        "Bloodthrill",
-        2
-       ],
-       [
-        "Sweeping Strikes",
-        1
-       ],
-       [
-        "Weaponmaster",
-        5
-       ],
-       [
-        "Improved Slam",
-        2
-       ],
-       [
-        "Mortal Strike",
-        1
-       ]
-      ],
-      "Fury": [
-       [
-        "Cruelty",
-        5
-       ],
-       [
-        "Lingering Rage",
-        1
-       ],
-       [
-        "Unbridled Wrath",
-        5
-       ],
-       [
-        "Furious Precision",
-        3
-       ],
-       [
-        "Enrage",
-        1
-       ],
-       [
-        "Improved Execute",
-        2
-       ]
-      ],
-      "Protection": [
-       [
-        "Improved Bloodrage",
-        2
-       ]
-      ]
-     },
-     "split": "32/17/2",
-     "dps": 410.19,
-     "se": 0.0917
-    },
-    {
-     "allocation": {
-      "Arms": [
-       [
-        "Improved Heroic Strike",
-        3
-       ],
-       [
-        "Improved Rend",
-        3
-       ],
-       [
-        "Improved Tactical Mastery",
-        3
-       ],
-       [
-        "Improved Overpower",
-        2
-       ],
-       [
-        "Anger Management",
-        1
-       ],
-       [
-        "Deep Wounds",
-        3
-       ],
-       [
-        "Spearing Strike",
-        1
-       ],
-       [
-        "Two-Handed Weapon Specialization",
-        3
-       ],
-       [
-        "Impale",
-        2
-       ],
-       [
-        "Bloodthrill",
-        2
-       ],
-       [
-        "Sweeping Strikes",
-        1
-       ],
-       [
-        "Weaponmaster",
-        5
-       ],
-       [
-        "Improved Slam",
-        2
-       ],
-       [
-        "Mortal Strike",
-        1
-       ]
-      ],
-      "Fury": [
-       [
-        "Cruelty",
-        5
-       ],
-       [
-        "Lingering Rage",
-        1
-       ],
-       [
-        "Unbridled Wrath",
-        5
-       ],
-       [
-        "Furious Precision",
-        3
-       ],
-       [
-        "Piercing Howl",
-        1
-       ],
-       [
-        "Improved Execute",
-        2
-       ]
-      ],
-      "Protection": [
-       [
-        "Improved Bloodrage",
-        2
-       ]
-      ]
-     },
-     "split": "32/17/2",
-     "dps": 410.19,
-     "se": 0.0917
-    }
-   ],
-   "runs": [
-    {
-     "entry": "arms-battle-raid",
-     "run": 1,
-     "simulated": 1600,
-     "best_screen": 410.17,
-     "best_split": "32/17/2",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 400,
-       "best": 409.53
-      },
-      {
-       "round": 1,
-       "simulated": 600,
-       "best": 409.53,
-       "predicted_top": 408.4
-      },
-      {
-       "round": 2,
-       "simulated": 800,
-       "best": 409.6,
-       "predicted_top": 408.79
-      },
-      {
-       "round": 3,
-       "simulated": 1000,
-       "best": 410.17,
-       "predicted_top": 408.71
-      },
-      {
-       "round": 4,
-       "simulated": 1200,
-       "best": 410.17,
-       "predicted_top": 409.9
-      },
-      {
-       "round": 5,
-       "simulated": 1400,
-       "best": 410.17,
-       "predicted_top": 410.1
-      },
-      {
-       "round": 6,
-       "simulated": 1600,
-       "best": 410.17,
-       "predicted_top": 410.14
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      410.37,
-      410.37,
-      410.37,
-      410.37,
-      410.37,
-      410.37
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      410.41,
-      410.41,
-      410.41,
-      410.41,
-      410.41
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      410.19,
-      410.19
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 196,
-     "best_gap": 0.0011,
-     "best_move": "1 Enrage -> Booming Voice",
-     "raced": [
-      "1 Enrage -> Booming Voice",
-      "1 Lingering Rage -> Booming Voice",
-      "1 Furious Precision -> Booming Voice",
-      "3 Furious Precision -> Booming Voice"
-     ],
-     "confirmed_gap": 0.0009
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Improved Slam",
-     "importance": 0.2753
-    },
-    {
-     "feature": "Deflection",
-     "importance": 0.1777
-    },
-    {
-     "feature": "Improved Execute",
-     "importance": 0.1744
-    },
-    {
-     "feature": "Improved Charge",
-     "importance": 0.0758
-    },
-    {
-     "feature": "Protection points",
-     "importance": 0.0454
-    },
-    {
-     "feature": "Arms points",
-     "importance": 0.0356
-    },
-    {
-     "feature": "Bloodthrill",
-     "importance": 0.0317
-    },
-    {
-     "feature": "Cruelty",
-     "importance": 0.0314
-    },
-    {
-     "feature": "Fury points",
-     "importance": 0.0298
-    },
-    {
-     "feature": "Unbridled Wrath",
-     "importance": 0.0231
-    },
-    {
-     "feature": "Impale",
-     "importance": 0.0175
-    },
-    {
-     "feature": "Weaponmaster",
-     "importance": 0.013
-    }
-   ],
-   "simulated_builds": 1815,
-   "signature_check": {
-    "spec": "Arms",
-    "ok": true,
-    "core_share": 0.9789,
-    "min_share": 0.8,
-    "uncast": [],
-    "missing_talents": [],
-    "why": ""
-   },
-   "simulated_fights": 2751000,
-   "minutes": 6.5,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-arms-bis.gear.json",
-   "commit": "2e6e77d84"
+   "commit": "2e6e77d84",
+   "pick_tiers": true
   },
   "bis-raid": {
    "class": "warrior",
    "spec": "Arms",
    "setting": "raid",
    "entry": "arms-battle-raid",
-   "date": "2026-11-19",
-   "constraint": "Arms 30+",
-   "protected": [
-    "Mortal Strike"
-   ],
-   "entries_screened": {},
-   "entries_searched": [
-    "arms-battle-raid"
-   ],
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Arms": [
       [
-       "Improved Heroic Strike",
+       "Deflection",
        3
       ],
       [
@@ -1309,12 +378,12 @@
        3
       ],
       [
-       "Improved Tactical Mastery",
-       3
-      ],
-      [
        "Improved Overpower",
        2
+      ],
+      [
+       "Improved Tactical Mastery",
+       3
       ],
       [
        "Anger Management",
@@ -1325,12 +394,16 @@
        3
       ],
       [
-       "Two-Handed Weapon Specialization",
-       3
-      ],
-      [
        "Impale",
        2
+      ],
+      [
+       "Spearing Strike",
+       1
+      ],
+      [
+       "Two-Handed Weapon Specialization",
+       3
       ],
       [
        "Bloodthrill",
@@ -1363,417 +436,36 @@
        5
       ],
       [
-       "Lingering Rage",
-       1
-      ],
-      [
        "Unbridled Wrath",
-       4
+       5
       ],
       [
        "Improved Execute",
        2
-      ]
-     ],
-     "Protection": [
+      ],
       [
-       "Improved Bloodrage",
+       "Blood Craze",
        2
-      ],
-      [
-       "Shield Specialization",
-       1
       ]
-     ]
+     ],
+     "Protection": []
     },
-    "split": "31/17/3",
-    "dps": 862.68,
-    "se": 0.1718,
-    "iterations": 100000
+    "split": "32/19/0",
+    "dps": 876.37,
+    "se": 0.564,
+    "iterations": 10000,
+    "build": "arms-battle-raid"
    },
-   "runner_up": {
-    "split": "32/17/2",
-    "dps": 862.68,
-    "se": 0.1718,
-    "differs": [
-     [
-      "Deflection",
-      2
-     ],
-     [
-      "Improved Heroic Strike",
-      2
-     ],
-     [
-      "Improved Heroic Strike",
-      3
-     ],
-     [
-      "Lingering Rage",
-      1
-     ],
-     [
-      "Piercing Howl",
-      1
-     ],
-     [
-      "Shield Specialization",
-      1
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Arms": [
-       [
-        "Improved Heroic Strike",
-        3
-       ],
-       [
-        "Improved Rend",
-        3
-       ],
-       [
-        "Improved Tactical Mastery",
-        3
-       ],
-       [
-        "Improved Overpower",
-        2
-       ],
-       [
-        "Anger Management",
-        1
-       ],
-       [
-        "Deep Wounds",
-        3
-       ],
-       [
-        "Two-Handed Weapon Specialization",
-        3
-       ],
-       [
-        "Impale",
-        2
-       ],
-       [
-        "Bloodthrill",
-        2
-       ],
-       [
-        "Sweeping Strikes",
-        1
-       ],
-       [
-        "Weaponmaster",
-        5
-       ],
-       [
-        "Improved Slam",
-        2
-       ],
-       [
-        "Mortal Strike",
-        1
-       ]
-      ],
-      "Fury": [
-       [
-        "Booming Voice",
-        5
-       ],
-       [
-        "Cruelty",
-        5
-       ],
-       [
-        "Lingering Rage",
-        1
-       ],
-       [
-        "Unbridled Wrath",
-        4
-       ],
-       [
-        "Improved Execute",
-        2
-       ]
-      ],
-      "Protection": [
-       [
-        "Improved Bloodrage",
-        2
-       ],
-       [
-        "Shield Specialization",
-        1
-       ]
-      ]
-     },
-     "split": "31/17/3",
-     "dps": 862.68,
-     "se": 0.1718
-    },
-    {
-     "allocation": {
-      "Arms": [
-       [
-        "Improved Heroic Strike",
-        2
-       ],
-       [
-        "Deflection",
-        2
-       ],
-       [
-        "Improved Rend",
-        3
-       ],
-       [
-        "Improved Tactical Mastery",
-        3
-       ],
-       [
-        "Improved Overpower",
-        2
-       ],
-       [
-        "Anger Management",
-        1
-       ],
-       [
-        "Deep Wounds",
-        3
-       ],
-       [
-        "Two-Handed Weapon Specialization",
-        3
-       ],
-       [
-        "Impale",
-        2
-       ],
-       [
-        "Bloodthrill",
-        2
-       ],
-       [
-        "Sweeping Strikes",
-        1
-       ],
-       [
-        "Weaponmaster",
-        5
-       ],
-       [
-        "Improved Slam",
-        2
-       ],
-       [
-        "Mortal Strike",
-        1
-       ]
-      ],
-      "Fury": [
-       [
-        "Booming Voice",
-        5
-       ],
-       [
-        "Cruelty",
-        5
-       ],
-       [
-        "Unbridled Wrath",
-        4
-       ],
-       [
-        "Piercing Howl",
-        1
-       ],
-       [
-        "Improved Execute",
-        2
-       ]
-      ],
-      "Protection": [
-       [
-        "Improved Bloodrage",
-        2
-       ]
-      ]
-     },
-     "split": "32/17/2",
-     "dps": 862.68,
-     "se": 0.1718
-    }
-   ],
-   "runs": [
-    {
-     "entry": "arms-battle-raid",
-     "run": 1,
-     "simulated": 1194,
-     "best_screen": 864.03,
-     "best_split": "31/17/3",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 394,
-       "best": 863.84
-      },
-      {
-       "round": 1,
-       "simulated": 594,
-       "best": 863.84,
-       "predicted_top": 851.72
-      },
-      {
-       "round": 2,
-       "simulated": 794,
-       "best": 863.84,
-       "predicted_top": 861.43
-      },
-      {
-       "round": 3,
-       "simulated": 994,
-       "best": 864.03,
-       "predicted_top": 863.61
-      },
-      {
-       "round": 4,
-       "simulated": 1194,
-       "best": 864.03,
-       "predicted_top": 863.98
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      861.96,
-      861.96,
-      861.96,
-      861.96,
-      861.96,
-      861.96
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      862.59,
-      862.59,
-      862.59,
-      862.59,
-      862.59
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      862.68,
-      862.68
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 160,
-     "best_gap": 0.0006,
-     "best_move": "1 Shield Specialization -> Unbridled Wrath"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Spearing Strike",
-     "importance": 0.3401
-    },
-    {
-     "feature": "Improved Slam",
-     "importance": 0.1474
-    },
-    {
-     "feature": "Improved Charge",
-     "importance": 0.0946
-    },
-    {
-     "feature": "Improved Execute",
-     "importance": 0.076
-    },
-    {
-     "feature": "Fury points",
-     "importance": 0.0669
-    },
-    {
-     "feature": "Unbridled Wrath",
-     "importance": 0.0528
-    },
-    {
-     "feature": "Bloodthrill",
-     "importance": 0.0365
-    },
-    {
-     "feature": "Improved Heroic Strike",
-     "importance": 0.0302
-    },
-    {
-     "feature": "Improved Overpower",
-     "importance": 0.0227
-    },
-    {
-     "feature": "Deflection",
-     "importance": 0.0211
-    },
-    {
-     "feature": "Arms points",
-     "importance": 0.0196
-    },
-    {
-     "feature": "Protection points",
-     "importance": 0.0191
-    }
-   ],
-   "simulated_builds": 1368,
-   "signature_check": {
-    "spec": "Arms",
-    "ok": true,
-    "core_share": 0.8079,
-    "min_share": 0.8,
-    "uncast": [],
-    "missing_talents": [],
-    "why": ""
-   },
-   "simulated_fights": 2087000,
-   "minutes": 3.9,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-arms-bis.gear.json",
-   "commit": "2e6e77d84"
+   "commit": "2e6e77d84",
+   "pick_tiers": true
   },
   "prebis-dummy": {
    "class": "warrior",
    "spec": "Arms",
    "setting": "dummy",
    "entry": "arms-battle-raid",
-   "date": "2026-11-19",
-   "constraint": "Arms 30+",
-   "protected": [
-    "Mortal Strike"
-   ],
-   "entries_screened": {},
-   "entries_searched": [
-    "arms-battle-raid"
-   ],
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Arms": [
@@ -1864,384 +556,21 @@
      ]
     },
     "split": "32/17/2",
-    "dps": 394.28,
-    "se": 0.0836,
-    "iterations": 100000
+    "dps": 391.71,
+    "se": 0.265,
+    "iterations": 10000,
+    "build": "the search's winner"
    },
-   "runner_up": {
-    "split": "32/17/2",
-    "dps": 394.28,
-    "se": 0.0836,
-    "differs": [
-     [
-      "Enrage",
-      1
-     ],
-     [
-      "Lingering Rage",
-      1
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Arms": [
-       [
-        "Improved Heroic Strike",
-        3
-       ],
-       [
-        "Improved Rend",
-        3
-       ],
-       [
-        "Improved Tactical Mastery",
-        3
-       ],
-       [
-        "Improved Overpower",
-        2
-       ],
-       [
-        "Anger Management",
-        1
-       ],
-       [
-        "Deep Wounds",
-        3
-       ],
-       [
-        "Spearing Strike",
-        1
-       ],
-       [
-        "Two-Handed Weapon Specialization",
-        3
-       ],
-       [
-        "Impale",
-        2
-       ],
-       [
-        "Bloodthrill",
-        2
-       ],
-       [
-        "Sweeping Strikes",
-        1
-       ],
-       [
-        "Weaponmaster",
-        5
-       ],
-       [
-        "Improved Slam",
-        2
-       ],
-       [
-        "Mortal Strike",
-        1
-       ]
-      ],
-      "Fury": [
-       [
-        "Booming Voice",
-        4
-       ],
-       [
-        "Cruelty",
-        5
-       ],
-       [
-        "Unbridled Wrath",
-        5
-       ],
-       [
-        "Enrage",
-        1
-       ],
-       [
-        "Improved Execute",
-        2
-       ]
-      ],
-      "Protection": [
-       [
-        "Improved Bloodrage",
-        2
-       ]
-      ]
-     },
-     "split": "32/17/2",
-     "dps": 394.28,
-     "se": 0.0836
-    },
-    {
-     "allocation": {
-      "Arms": [
-       [
-        "Improved Heroic Strike",
-        3
-       ],
-       [
-        "Improved Rend",
-        3
-       ],
-       [
-        "Improved Tactical Mastery",
-        3
-       ],
-       [
-        "Improved Overpower",
-        2
-       ],
-       [
-        "Anger Management",
-        1
-       ],
-       [
-        "Deep Wounds",
-        3
-       ],
-       [
-        "Spearing Strike",
-        1
-       ],
-       [
-        "Two-Handed Weapon Specialization",
-        3
-       ],
-       [
-        "Impale",
-        2
-       ],
-       [
-        "Bloodthrill",
-        2
-       ],
-       [
-        "Sweeping Strikes",
-        1
-       ],
-       [
-        "Weaponmaster",
-        5
-       ],
-       [
-        "Improved Slam",
-        2
-       ],
-       [
-        "Mortal Strike",
-        1
-       ]
-      ],
-      "Fury": [
-       [
-        "Booming Voice",
-        4
-       ],
-       [
-        "Cruelty",
-        5
-       ],
-       [
-        "Lingering Rage",
-        1
-       ],
-       [
-        "Unbridled Wrath",
-        5
-       ],
-       [
-        "Improved Execute",
-        2
-       ]
-      ],
-      "Protection": [
-       [
-        "Improved Bloodrage",
-        2
-       ]
-      ]
-     },
-     "split": "32/17/2",
-     "dps": 394.28,
-     "se": 0.0836
-    }
-   ],
-   "runs": [
-    {
-     "entry": "arms-battle-raid",
-     "run": 1,
-     "simulated": 1192,
-     "best_screen": 394.78,
-     "best_split": "32/17/2",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 392,
-       "best": 394.78
-      },
-      {
-       "round": 1,
-       "simulated": 592,
-       "best": 394.78,
-       "predicted_top": 392.25
-      },
-      {
-       "round": 2,
-       "simulated": 792,
-       "best": 394.78,
-       "predicted_top": 393.9
-      },
-      {
-       "round": 3,
-       "simulated": 992,
-       "best": 394.78,
-       "predicted_top": 394.04
-      },
-      {
-       "round": 4,
-       "simulated": 1192,
-       "best": 394.78,
-       "predicted_top": 394.02
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      394.54,
-      394.37,
-      394.37,
-      394.37,
-      394.37,
-      394.37
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      394.51,
-      394.51,
-      394.51,
-      394.51,
-      394.49
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      394.28,
-      394.28
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 204,
-     "best_gap": 0.001,
-     "best_move": "3 Booming Voice -> Enrage",
-     "raced": [
-      "3 Booming Voice -> Enrage",
-      "3 Booming Voice -> Blood Craze",
-      "3 Booming Voice -> Furious Precision",
-      "3 Booming Voice -> Lingering Rage"
-     ],
-     "confirmed_gap": -0.0002
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Improved Execute",
-     "importance": 0.2378
-    },
-    {
-     "feature": "Deflection",
-     "importance": 0.1618
-    },
-    {
-     "feature": "Improved Slam",
-     "importance": 0.127
-    },
-    {
-     "feature": "Fury points",
-     "importance": 0.0975
-    },
-    {
-     "feature": "Improved Charge",
-     "importance": 0.07
-    },
-    {
-     "feature": "Protection points",
-     "importance": 0.0549
-    },
-    {
-     "feature": "Bloodthrill",
-     "importance": 0.0515
-    },
-    {
-     "feature": "Unbridled Wrath",
-     "importance": 0.0364
-    },
-    {
-     "feature": "Arms points",
-     "importance": 0.0362
-    },
-    {
-     "feature": "Impale",
-     "importance": 0.024
-    },
-    {
-     "feature": "Cruelty",
-     "importance": 0.0207
-    },
-    {
-     "feature": "Improved Hamstring",
-     "importance": 0.0144
-    }
-   ],
-   "simulated_builds": 1415,
-   "signature_check": {
-    "spec": "Arms",
-    "ok": true,
-    "core_share": 0.9794,
-    "min_share": 0.8,
-    "uncast": [],
-    "missing_talents": [],
-    "why": ""
-   },
-   "simulated_fights": 2367000,
-   "minutes": 5.4,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-arms-prebis.gear.json",
-   "commit": "2e6e77d84"
+   "commit": "2e6e77d84",
+   "pick_tiers": true
   },
   "prebis-raid": {
    "class": "warrior",
    "spec": "Arms",
    "setting": "raid",
    "entry": "arms-battle-raid",
-   "date": "2026-11-19",
-   "constraint": "Arms 30+",
-   "protected": [
-    "Mortal Strike"
-   ],
-   "entries_screened": {},
-   "entries_searched": [
-    "arms-battle-raid"
-   ],
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Arms": [
@@ -2328,369 +657,21 @@
      ]
     },
     "split": "32/17/2",
-    "dps": 797.49,
-    "se": 0.1475,
-    "iterations": 100000
+    "dps": 798.08,
+    "se": 0.468,
+    "iterations": 10000,
+    "build": "the search's winner"
    },
-   "runner_up": {
-    "split": "32/17/2",
-    "dps": 797.49,
-    "se": 0.1475,
-    "differs": [
-     [
-      "Booming Voice",
-      4
-     ],
-     [
-      "Booming Voice",
-      5
-     ],
-     [
-      "Enrage",
-      1
-     ]
-    ]
-   },
-   "gap_to_runner_up": 0.0,
-   "finalists": [
-    {
-     "allocation": {
-      "Arms": [
-       [
-        "Improved Heroic Strike",
-        3
-       ],
-       [
-        "Improved Rend",
-        3
-       ],
-       [
-        "Improved Tactical Mastery",
-        3
-       ],
-       [
-        "Improved Overpower",
-        2
-       ],
-       [
-        "Anger Management",
-        1
-       ],
-       [
-        "Deep Wounds",
-        3
-       ],
-       [
-        "Spearing Strike",
-        1
-       ],
-       [
-        "Two-Handed Weapon Specialization",
-        3
-       ],
-       [
-        "Impale",
-        2
-       ],
-       [
-        "Bloodthrill",
-        2
-       ],
-       [
-        "Sweeping Strikes",
-        1
-       ],
-       [
-        "Weaponmaster",
-        5
-       ],
-       [
-        "Improved Slam",
-        2
-       ],
-       [
-        "Mortal Strike",
-        1
-       ]
-      ],
-      "Fury": [
-       [
-        "Booming Voice",
-        5
-       ],
-       [
-        "Cruelty",
-        5
-       ],
-       [
-        "Unbridled Wrath",
-        5
-       ],
-       [
-        "Improved Execute",
-        2
-       ]
-      ],
-      "Protection": [
-       [
-        "Improved Bloodrage",
-        2
-       ]
-      ]
-     },
-     "split": "32/17/2",
-     "dps": 797.49,
-     "se": 0.1475
-    },
-    {
-     "allocation": {
-      "Arms": [
-       [
-        "Improved Heroic Strike",
-        3
-       ],
-       [
-        "Improved Rend",
-        3
-       ],
-       [
-        "Improved Tactical Mastery",
-        3
-       ],
-       [
-        "Improved Overpower",
-        2
-       ],
-       [
-        "Anger Management",
-        1
-       ],
-       [
-        "Deep Wounds",
-        3
-       ],
-       [
-        "Spearing Strike",
-        1
-       ],
-       [
-        "Two-Handed Weapon Specialization",
-        3
-       ],
-       [
-        "Impale",
-        2
-       ],
-       [
-        "Bloodthrill",
-        2
-       ],
-       [
-        "Sweeping Strikes",
-        1
-       ],
-       [
-        "Weaponmaster",
-        5
-       ],
-       [
-        "Improved Slam",
-        2
-       ],
-       [
-        "Mortal Strike",
-        1
-       ]
-      ],
-      "Fury": [
-       [
-        "Booming Voice",
-        4
-       ],
-       [
-        "Cruelty",
-        5
-       ],
-       [
-        "Unbridled Wrath",
-        5
-       ],
-       [
-        "Enrage",
-        1
-       ],
-       [
-        "Improved Execute",
-        2
-       ]
-      ],
-      "Protection": [
-       [
-        "Improved Bloodrage",
-        2
-       ]
-      ]
-     },
-     "split": "32/17/2",
-     "dps": 797.49,
-     "se": 0.1475
-    }
-   ],
-   "runs": [
-    {
-     "entry": "arms-battle-raid",
-     "run": 1,
-     "simulated": 1202,
-     "best_screen": 797.77,
-     "best_split": "32/17/2",
-     "trace": [
-      {
-       "round": 0,
-       "simulated": 402,
-       "best": 797.77
-      },
-      {
-       "round": 1,
-       "simulated": 602,
-       "best": 797.77,
-       "predicted_top": 795.42
-      },
-      {
-       "round": 2,
-       "simulated": 802,
-       "best": 797.77,
-       "predicted_top": 796.38
-      },
-      {
-       "round": 3,
-       "simulated": 1002,
-       "best": 797.77,
-       "predicted_top": 796.54
-      },
-      {
-       "round": 4,
-       "simulated": 1202,
-       "best": 797.77,
-       "predicted_top": 797.64
-      }
-     ],
-     "best_stage1_gap": 0.0,
-     "agrees_with_winner": true
-    }
-   ],
-   "runs_agree": 1,
-   "race": [
-    {
-     "iterations": 10000,
-     "seed": 2,
-     "dps": [
-      797.77,
-      797.77,
-      797.77,
-      797.77,
-      797.77,
-      797.77
-     ]
-    },
-    {
-     "iterations": 30000,
-     "seed": 3,
-     "dps": [
-      797.93,
-      797.93,
-      797.93,
-      797.93,
-      797.93
-     ]
-    },
-    {
-     "iterations": 100000,
-     "seed": 4,
-     "dps": [
-      797.49,
-      797.49
-     ]
-    }
-   ],
-   "certificate": [
-    {
-     "neighbours": 188,
-     "best_gap": 0.0,
-     "best_move": "5 Booming Voice -> Enrage"
-    }
-   ],
-   "other_entries": [],
-   "important_features": [
-    {
-     "feature": "Improved Execute",
-     "importance": 0.1881
-    },
-    {
-     "feature": "Deflection",
-     "importance": 0.177
-    },
-    {
-     "feature": "Improved Slam",
-     "importance": 0.1427
-    },
-    {
-     "feature": "Fury points",
-     "importance": 0.1144
-    },
-    {
-     "feature": "Improved Charge",
-     "importance": 0.08
-    },
-    {
-     "feature": "Protection points",
-     "importance": 0.0637
-    },
-    {
-     "feature": "Bloodthrill",
-     "importance": 0.0531
-    },
-    {
-     "feature": "Unbridled Wrath",
-     "importance": 0.031
-    },
-    {
-     "feature": "Arms points",
-     "importance": 0.0223
-    },
-    {
-     "feature": "Improved Overpower",
-     "importance": 0.019
-    },
-    {
-     "feature": "Impale",
-     "importance": 0.0182
-    },
-    {
-     "feature": "Cruelty",
-     "importance": 0.0129
-    }
-   ],
-   "simulated_builds": 1404,
-   "signature_check": {
-    "spec": "Arms",
-    "ok": true,
-    "core_share": 0.8048,
-    "min_share": 0.8,
-    "uncast": [],
-    "missing_talents": [],
-    "why": ""
-   },
-   "simulated_fights": 2179000,
-   "minutes": 4.3,
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-arms-prebis.gear.json",
-   "commit": "2e6e77d84"
+   "commit": "2e6e77d84",
+   "pick_tiers": true
   },
   "dungeon-raid": {
    "class": "warrior",
    "spec": "Arms",
    "setting": "raid",
    "entry": "arms-battle-raid",
-   "date": "2026-11-19",
+   "date": "2026-11-22",
    "commit": "2e6e77d84",
    "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
    "winner": {
@@ -2790,205 +771,62 @@
       724.6,
       724.6,
       724.6,
-      711.3
+      721.5
      ]
     }
    ],
    "candidates": {
     "prebis-raid": 724.6,
-    "bis-raid": 711.3,
+    "bis-raid": 721.5,
     "prebis-dummy": 724.6,
     "bis-dummy": 724.6
    },
-   "minutes": 1.1
+   "minutes": 2.5
   }
  },
- "commit": "2e6e77d84",
- "spells_done": {
-  "date": "2026-10-14",
-  "lines_kept": 0
+ "pick_tiers": {
+  "build": "arms-battle-raid",
+  "date": "2026-11-22",
+  "note": "the page's pick in each tier's gear (the short-check method of 2026-11-20); no talent search",
+  "alt": {
+   "bis-dummy": {
+    "pick_dps": 404.68,
+    "search_winner_dps": 407.21,
+    "search_winner_split": "32/17/2",
+    "better": "search winner"
+   },
+   "bis-raid": {
+    "pick_dps": 876.37,
+    "search_winner_dps": 861.65,
+    "search_winner_split": "31/17/3",
+    "better": "pick"
+   },
+   "prebis-dummy": {
+    "pick_dps": 389.18,
+    "search_winner_dps": 391.71,
+    "search_winner_split": "32/17/2",
+    "better": "search winner"
+   },
+   "prebis-raid": {
+    "pick_dps": 795.39,
+    "search_winner_dps": 798.08,
+    "search_winner_split": "32/17/2",
+    "better": "search winner"
+   }
+  }
  },
  "compare": {
   "setting": "dummy",
   "dps": {
    "winner": {
     "entry": "arms-battle-raid",
-    "dps": 410.31,
-    "se": 0.091
-   },
-   "arms-battle-raid": {
-    "entry": "arms-battle-raid",
-    "dps": 407.58,
-    "se": 0.092
+    "dps": 407.21,
+    "se": 0.287
    }
   },
   "best_hand": "arms-battle-raid",
-  "gain_vs_hand": 0.0067,
-  "commit": "2e6e77d84"
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "arms-battle-raid",
-    "dps": 862.89,
-    "se": 0.173
-   },
-   "arms-battle-raid": {
-    "entry": "arms-battle-raid",
-    "dps": 876.49,
-    "se": 0.177
-   },
-   "arms-ml-raid": {
-    "entry": "arms-battle-raid",
-    "dps": 871.22,
-    "se": 0.175
-   },
-   "arms-community-parse": {
-    "entry": "arms-battle-raid",
-    "dps": 865.93,
-    "se": 0.177
-   }
-  },
-  "best_hand": "arms-battle-raid",
-  "gain_vs_hand": -0.0155
- },
- "signature_check": {
-  "spec": "Arms",
-  "ok": true,
-  "core_share": 0.8068,
-  "min_share": 0.8,
-  "uncast": [],
-  "missing_talents": [],
-  "why": "",
-  "entry": "arms-battle-raid",
-  "setting": "raid",
-  "iterations": 6000,
-  "dps": 862.9,
-  "date": "2026-11-19",
+  "gain_vs_hand": 0.0,
   "commit": "2e6e77d84",
-  "shares": {
-   "Auto Attack": 0.2369,
-   "Windfury Totem": 0.1741,
-   "Mortal Strike": 0.1446,
-   "Overpower": 0.138,
-   "Slam": 0.09,
-   "Execute": 0.0771,
-   "Deep Wound": 0.0767,
-   "Rend": 0.0435,
-   "Hamstring": 0.0192
-  },
-  "casts": {
-   "Overpower": 17.62,
-   "Slam": 15.71,
-   "Execute": 10.12,
-   "Hamstring": 45.52,
-   "Rend": 8.68,
-   "Battle Stance": 1.0,
-   "Deep Wound": 80.87,
-   "Bloodrage": 2.19,
-   "Mortal Strike": 23.58
-  },
-  "allocation": {
-   "Arms": [
-    [
-     "Improved Heroic Strike",
-     3
-    ],
-    [
-     "Improved Rend",
-     3
-    ],
-    [
-     "Improved Tactical Mastery",
-     3
-    ],
-    [
-     "Improved Overpower",
-     2
-    ],
-    [
-     "Anger Management",
-     1
-    ],
-    [
-     "Deep Wounds",
-     3
-    ],
-    [
-     "Two-Handed Weapon Specialization",
-     3
-    ],
-    [
-     "Impale",
-     2
-    ],
-    [
-     "Bloodthrill",
-     2
-    ],
-    [
-     "Sweeping Strikes",
-     1
-    ],
-    [
-     "Weaponmaster",
-     5
-    ],
-    [
-     "Improved Slam",
-     2
-    ],
-    [
-     "Mortal Strike",
-     1
-    ]
-   ],
-   "Fury": [
-    [
-     "Booming Voice",
-     5
-    ],
-    [
-     "Cruelty",
-     5
-    ],
-    [
-     "Lingering Rage",
-     1
-    ],
-    [
-     "Unbridled Wrath",
-     4
-    ],
-    [
-     "Improved Execute",
-     2
-    ]
-   ],
-   "Protection": [
-    [
-     "Improved Bloodrage",
-     2
-    ],
-    [
-     "Shield Specialization",
-     1
-    ]
-   ]
-  }
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-11-20",
-  "setting": "raid",
-  "why": "confirms arms-battle-raid (-1.55% in a full raid)"
- },
- "tidied": {
-  "bis-dummy": null,
-  "bis-raid": null,
-  "prebis-dummy": null,
-  "prebis-raid": null
+  "pick_tiers": true
  }
 }

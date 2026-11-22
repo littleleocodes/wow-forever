@@ -111,7 +111,7 @@ Allocation adopted on 2026-09-28 from `opt-frost-raid-raid-dps`, the best build 
   5. move to the top: if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7) (+2.2%, pass 7)
   6. only with 20s or more of the fight left: cast Arcane Wrath (+0.4%, pass 7)
 
-Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
+Before the pull: cast Ice Barrier; cast Frostbolt.
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-fingers-of-frost-raid`](frost-fingers-of-frost-raid.md) casts/min |
 |---|---|---|
@@ -121,7 +121,7 @@ Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
 | 4 | if number of targets ≥ 3 and stacks of Fingers of Frost on you ≥ 1: cast Ice Lance | 1.9 |
 | 5 | if stacks of Winter's Chill on the target = 5: cast Cone of Cold | 3.2 |
 | 6 | if stacks of Fingers of Frost on you = 1 and Frostbolt is being cast: cast Ice Lance | 1.9 |
-| 7 | cast Frostbolt (rank 10) | 20.3 |
+| 7 | cast Frostbolt | 20.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Read Leyline, cast Blizzard (its condition never held in these fights); cast Cold Snap (needs the Cold Snap talent); cast Ice Barrier (needs the Ice Barrier talent).
 

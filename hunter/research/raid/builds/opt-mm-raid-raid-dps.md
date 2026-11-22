@@ -99,13 +99,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `mm-raid`
   21. drop '“Use Summon Hawk” and “Use Arcane Shot”' from the condition: if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' (+1.0%, pass 18)
   22. insert at the end: cast Major Mana Potion (+0.4%, pass 18)
 
-Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (rank 6); at -19s: move to “Pull range” yd; if “Use Sniper Shot”: cast Sniper Shot.
+Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk; at -19s: move to “Pull range” yd; if “Use Sniper Shot”: cast Sniper Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-mm-raid-raid-dps`](opt-mm-raid-raid-dps.md) casts/min |
 |---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready |
 | 2 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 |
-| 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.9 |
+| 3 | if not Serpent Sting is on the target: cast Serpent Sting | 2.9 |
 | 4 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.5 |
 | 5 | if “Use Aimed Shot”: cast Aimed Shot | 4.8 |
 | 6 | if unitDistance ≠ “Shoot spot” and not (Arcane Shot is in range and (“Windup close” or “Just shot”)): move to “Shoot spot” yd | as ready |

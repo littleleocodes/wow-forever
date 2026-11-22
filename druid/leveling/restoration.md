@@ -4,11 +4,13 @@
 
 **Leveling from level 1?** [The rotation level by level](restoration-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
+> **The fastest way to level:** as **Feral Combat** ([Feral Combat leveling](../leveling/feral-combat.md)), 23 s a kill (level-weighted, 20-60) against 29 s for this healer build: 28% faster. Switch your talents to Restoration at 60 (a respec at a class trainer). The build below is to level as the healer itself.
+
 **[Restoration — Leveling into the raid build](../research/leveling/builds/restoration-leveling.md)** (11/0/40) — [open the talent tree](https://talentsforever.com/druid/60/25002101--4403035153103251-12)
 
-> 🔬 These are your **raid talents** ([Restoration — Raid healing](../raid/restoration.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 33 s per kill; own tree last: 33 s per kill; own tree first: 35 s per kill). A model of the beta, to check at launch.
+> 🔬 These are your **raid talents** ([Restoration — Raid healing](../raid/restoration.md)), taken in the order that levels fastest: the fight lab raced three orders to them (own tree last: 29 s per kill; stats model's order: 29 s per kill; own tree first: 30 s per kill). A model of the beta, to check at launch.
 
-**Leveling as Restoration or as Feral Combat?** This build takes 33 s per kill (level-weighted, 20-60), [Feral Combat](../leveling/feral-combat.md) 26 s: Restoration is 28% slower. Your first Restoration point comes at level 18. Level this way if you want to heal dungeons later on the way; otherwise level as Feral Combat and switch at 60 (a respec at a class trainer).
+**Leveling as Restoration or as Feral Combat?** This build takes 29 s per kill (level-weighted, 20-60), [Feral Combat](../leveling/feral-combat.md) 23 s: Restoration is 28% slower. Your first Restoration point comes at level 21. Level this way if you want to heal dungeons later on the way; otherwise level as Feral Combat and switch at 60 (a respec at a class trainer).
 
 ## How to play
 
@@ -24,7 +26,7 @@
 6. **Rip** at 5 points on a mob above half its health. Before **Ferocious Bite** (levels 20-23): **Rip** at 2 points while the mob has more than 40% of its health.
 7. Under 30% health while the mob has more than a quarter of its health: leave **Cat Form**, cast **Regrowth**, then **Cat Form** again.
 
-**Between fights:** Below 70% health: leave **Cat Form**, cast **Rejuvenation** (and **Regrowth** if still below 85%), then shift back; only with the mana to shift back. Drink when your mana is below about a third (35%): it only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal. Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
+**Between fights:** Below 70% health: leave **Cat Form**, cast **Rejuvenation** (and **Regrowth** if still below 85%), then shift back; only with the mana to shift back. Drink when your mana is below 15%: it only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal. Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
 
 ## Why this rotation
 
@@ -32,17 +34,17 @@ You level as a cat with your healer's talents: the Feral Combat steps, slower pe
 
 **Why it works**
 
-- Levels 10-19 are the bear steps (**Enrage** from 12, **Demoralizing Roar**, **Maul**). Your first points go to Balance and do little for a bear: **Improved Wrath** (10-11) is a gate point, **Genesis** (12-14, 19-20) adds 2% a point to periodic damage and healing (10% at 5), **Nature's Reach** (15) another gate point, **Nature's Majesty** (16-17) +4% critical strike chance. **Genesis** later strengthens **Rake** and **Rip** and your heals over time.
-- **Heart of the Wild** (18 and 22-24, 4 points: +8% Strength in **Cat Form**, +8% Intellect, +16% Stamina in **Bear Form**) is the point set that pays in the cat; the raid build takes no **Naturalist**.
+- Levels 10-19 are the bear steps (**Enrage** from 12, **Demoralizing Roar**, **Maul**). Your first points go to Balance and do little for a bear: **Improved Wrath** (10-11) is a gate point, **Genesis** (12-14, 18-19) adds 2% a point to periodic damage and healing (10% at 5), **Nature's Reach** (15) another gate point, **Nature's Majesty** (16-17) +4% critical strike chance. **Genesis** later strengthens **Rake** and **Rip** and your heals over time.
+- **Heart of the Wild** (21-24, 4 points: +8% Strength in **Cat Form**, +8% Intellect, +16% Stamina in **Bear Form**) is the point set that pays in the cat; the raid build takes no **Naturalist**.
 - From 20 the cat steps follow the Feral Combat page: open from **Prowl** (**Ravage** from 32, **Claw** before), then **Rake**, **Claw** to 5 points, **Ferocious Bite** when it will kill and **Rip** on a mob above half health (before 24, **Rip** at 2 points while the mob has more than 40% of its health). Without **Ferocity**, **Claw** and **Rake** cost their full energy.
 - This build takes no **Furor** and no **Natural Shapeshifter**: each shift back into **Cat Form** starts at no energy and costs the full 55% of your base mana.
-- The rest is the raid healer: **Nature's Splendor** (21) stretches **Rejuvenation** and **Regrowth**, **Nature's Focus** (25-28) and **Reflection** (29-31) keep your casts and mana going, **Subtlety** (32-34) quiets your heals' threat, **Gift of Nature** starts at 35, **Swiftmend** comes at 36, **Tranquil Spirit**, **Living Spirit**, the rest of **Gift of Nature**, **Bloom** (49), **Improved Rejuvenation**, **Improved Tranquility** and **Improved Regrowth** fill 37-59, and **Wild Growth** is the 60th point.
+- The rest is the raid healer: **Nature's Splendor** (20) stretches **Rejuvenation** and **Regrowth**, **Nature's Focus** (25-28) and **Reflection** (29-31) keep your casts and mana going, **Subtlety** (32-34) quiets your heals' threat, **Gift of Nature** starts at 35, **Swiftmend** comes at 36, **Tranquil Spirit**, **Living Spirit**, the rest of **Gift of Nature**, **Bloom** (49), **Improved Rejuvenation**, **Improved Tranquility** and **Improved Regrowth** fill 37-59, and **Wild Growth** is the 60th point.
 
 **Caveats**
 
 - Each shift into **Cat Form** costs 55% of your base mana: heal between fights rather than during them when you can.
 - The fight lab does not cast **Swiftmend** while leveling: it heals with **Rejuvenation** and **Regrowth** between fights (below 70% health) and with **Regrowth** in an emergency. This raid build takes no **Nature's Swiftness**.
-- Drink late: mana only pays for shifts and heals, and the tuned cat rotation keeps the default, below about a third of your mana. When you sit down to drink, eat too if your health is not full: it costs no extra time.
+- Drink late: mana only pays for shifts and heals, and the tuned cat rotation drinks below 15% of your mana (2026-11-20). When you sit down to drink, eat too if your health is not full: it costs no extra time.
 
 **When to change it**
 
@@ -59,10 +61,9 @@ One point per level from 10, in this order:
 | 12-14 | Genesis (Balance) | 3 |
 | 15 | Nature's Reach (Balance) | 1 |
 | 16-17 | Nature's Majesty (Balance) | 2 |
-| 18 | Heart of the Wild (Restoration) | 1 |
-| 19-20 | Genesis (Balance) | 2 |
-| 21 | Nature's Splendor (Balance) | 1 |
-| 22-24 | Heart of the Wild (Restoration) | 3 |
+| 18-19 | Genesis (Balance) | 2 |
+| 20 | Nature's Splendor (Balance) | 1 |
+| 21-24 | Heart of the Wild (Restoration) | 4 |
 | 25-28 | Nature's Focus (Restoration) | 4 |
 | 29-31 | Reflection (Restoration) | 3 |
 | 32-34 | Subtlety (Restoration) | 3 |
@@ -81,14 +82,16 @@ One point per level from 10, in this order:
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
-| 20 | 22 | 16 |
-| 30 | 28 | 19 |
-| 40 | 32 | 24 |
-| 50 | 35 | 28 |
-| 60 | 38 | 29 |
+| 20 | 20 | 15 |
+| 30 | 25 | 18 |
+| 40 | 28 | 21 |
+| 50 | 30 | 24 |
+| 60 | 33 | 26 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

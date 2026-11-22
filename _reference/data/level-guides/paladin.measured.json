@@ -1,6 +1,6 @@
 {
  "class": "paladin",
- "date": "2026-11-18",
+ "date": "2026-11-22",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -8,144 +8,294 @@
    "build": "leveling-retribution",
    "rotation": "ret-dps",
    "provisional_order": false,
-   "fingerprint": "15089a02996f",
+   "fingerprint": "17494794f957",
    "levels": {
     "1": {
-     "seconds": 11.6,
+     "seconds": 11.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Seal of Righteousness": 1.0,
-      "Melee": 1.67
-     }
+      "Melee": 1.73,
+      "Seal of Righteousness": 0.22
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.945,
+      "Seal of Righteousness": 0.055
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "4": {
      "seconds": 15.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 2.83,
+      "Melee": 2.82,
       "Judgement": 1.18
-     }
+     },
+     "idle_share": 0.002,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.864,
+      "Seal of Righteousness": 0.136
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "6": {
-     "seconds": 15.7,
+     "seconds": 16.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 2.75,
-      "Judgement": 1.21,
-      "Holy Strike": 1.21
-     }
+      "Melee": 2.99,
+      "Judgement": 1.25,
+      "Holy Strike": 1.25
+     },
+     "idle_share": 0.001,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.739,
+      "Seal of Righteousness": 0.144,
+      "Holy Strike": 0.117
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "8": {
-     "seconds": 17.8,
+     "seconds": 18.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 3.32,
-      "Judgement": 1.36,
-      "Holy Strike": 1.36,
+      "Melee": 3.56,
+      "Judgement": 1.44,
+      "Holy Strike": 1.44,
       "Hammer of Justice": 0.07
-     }
+     },
+     "idle_share": 0.002,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.727,
+      "Seal of Righteousness": 0.155,
+      "Holy Strike": 0.117
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "10": {
-     "seconds": 17.5,
+     "seconds": 18.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 3.13,
-      "Judgement": 1.34,
-      "Holy Strike": 1.25,
+      "Melee": 3.35,
+      "Judgement": 1.41,
+      "Holy Strike": 1.3,
       "Hammer of Justice": 0.1
-     }
+     },
+     "idle_share": 0.001,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.596,
+      "Judgement": 0.18,
+      "Seal of Righteousness": 0.127,
+      "Holy Strike": 0.096
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "19": {
-     "seconds": 21.2,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Seal of Righteousness": 1.0,
-      "Melee": 4.09,
-      "Judgement": 1.74,
-      "Holy Strike": 1.66,
-      "Hammer of Justice": 0.14
-     }
-    },
-    "20": {
-     "seconds": 20.0,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Seal of Command": 1.0,
-      "Melee": 3.72,
-      "Hammer of Justice": 0.3,
-      "Judgement": 1.6,
-      "Holy Strike": 1.5
-     }
-    },
-    "30": {
      "seconds": 22.3,
      "deaths_per_100": 0.0,
      "casts": {
+      "Seal of Righteousness": 1.0,
+      "Melee": 4.31,
+      "Judgement": 1.82,
+      "Holy Strike": 1.73,
+      "Hammer of Justice": 0.14
+     },
+     "idle_share": 0.046,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.581,
+      "Judgement": 0.178,
+      "Seal of Righteousness": 0.133,
+      "Holy Strike": 0.108
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
+    },
+    "20": {
+     "seconds": 21.2,
+     "deaths_per_100": 0.0,
+     "casts": {
       "Seal of Command": 1.0,
-      "Melee": 4.2,
-      "Hammer of Justice": 0.33,
-      "Judgement": 2.04,
-      "Holy Strike": 1.7
-     }
+      "Melee": 4.0,
+      "Hammer of Justice": 0.32,
+      "Judgement": 1.69,
+      "Holy Strike": 1.58
+     },
+     "idle_share": 0.041,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.513,
+      "Judgement": 0.201,
+      "Seal of Command": 0.179,
+      "Holy Strike": 0.107
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
+    },
+    "30": {
+     "seconds": 24.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Command": 1.0,
+      "Melee": 4.4,
+      "Hammer of Justice": 0.35,
+      "Judgement": 2.09,
+      "Holy Strike": 1.77
+     },
+     "idle_share": 0.098,
+     "drink_per_kill": 1.3,
+     "eat_per_kill": 0.14,
+     "shares": {
+      "Melee": 0.476,
+      "Judgement": 0.21,
+      "Seal of Command": 0.181,
+      "Holy Strike": 0.133
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "40": {
-     "seconds": 26.5,
+     "seconds": 28.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 5.03,
-      "Hammer of Justice": 0.39,
-      "Judgement": 2.36,
-      "Holy Strike": 1.99
-     }
+      "Melee": 5.34,
+      "Hammer of Justice": 0.41,
+      "Judgement": 2.5,
+      "Holy Strike": 2.07
+     },
+     "idle_share": 0.113,
+     "drink_per_kill": 1.97,
+     "eat_per_kill": 0.12,
+     "shares": {
+      "Melee": 0.439,
+      "Judgement": 0.227,
+      "Seal of Command": 0.193,
+      "Holy Strike": 0.142
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "43": {
-     "seconds": 27.9,
+     "seconds": 29.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 5.27,
-      "Hammer of Justice": 0.41,
-      "Judgement": 2.46,
-      "Holy Strike": 2.07
-     }
+      "Melee": 5.45,
+      "Hammer of Justice": 0.42,
+      "Judgement": 2.56,
+      "Holy Strike": 2.12
+     },
+     "idle_share": 0.125,
+     "drink_per_kill": 2.22,
+     "eat_per_kill": 0.13,
+     "shares": {
+      "Melee": 0.435,
+      "Judgement": 0.225,
+      "Seal of Command": 0.197,
+      "Holy Strike": 0.143
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "44": {
-     "seconds": 27.0,
+     "seconds": 28.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 5.03,
-      "Hammer of Justice": 0.39,
-      "Judgement": 2.39,
-      "Holy Strike": 2.04
-     }
+      "Melee": 5.38,
+      "Hammer of Justice": 0.41,
+      "Judgement": 2.53,
+      "Holy Strike": 2.11
+     },
+     "idle_share": 0.119,
+     "drink_per_kill": 1.97,
+     "eat_per_kill": 0.23,
+     "shares": {
+      "Melee": 0.417,
+      "Judgement": 0.22,
+      "Seal of Command": 0.193,
+      "Holy Strike": 0.17
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "50": {
-     "seconds": 28.0,
+     "seconds": 28.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 5.37,
-      "Hammer of Justice": 0.4,
-      "Judgement": 2.51,
-      "Holy Strike": 2.13
-     }
+      "Melee": 5.66,
+      "Hammer of Justice": 0.41,
+      "Judgement": 2.58,
+      "Holy Strike": 2.18
+     },
+     "idle_share": 0.103,
+     "drink_per_kill": 1.57,
+     "eat_per_kill": 0.32,
+     "shares": {
+      "Melee": 0.416,
+      "Judgement": 0.214,
+      "Seal of Command": 0.206,
+      "Holy Strike": 0.164
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "60": {
-     "seconds": 29.7,
+     "seconds": 30.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Seal of Command": 1.0,
-      "Melee": 6.03,
-      "Hammer of Justice": 0.44,
-      "Judgement": 2.75,
-      "Holy Strike": 2.33
-     }
+      "Seal of Command": 1.01,
+      "Melee": 6.37,
+      "Hammer of Justice": 0.45,
+      "Judgement": 2.85,
+      "Holy Strike": 2.45
+     },
+     "idle_share": 0.081,
+     "drink_per_kill": 1.37,
+     "eat_per_kill": 0.04,
+     "shares": {
+      "Melee": 0.381,
+      "Judgement": 0.232,
+      "Seal of Command": 0.203,
+      "Holy Strike": 0.183
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     }
    }
   },
@@ -153,168 +303,342 @@
    "build": "prot-ret-open-leveling",
    "rotation": "ret-dps",
    "provisional_order": false,
-   "fingerprint": "d3b7becdfdfa",
+   "fingerprint": "3ccbad7bb710",
    "levels": {
     "1": {
-     "seconds": 11.6,
+     "seconds": 11.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Seal of Righteousness": 1.0,
-      "Melee": 1.67
-     }
+      "Melee": 1.73,
+      "Seal of Righteousness": 0.22
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.945,
+      "Seal of Righteousness": 0.055
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "4": {
      "seconds": 15.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 2.83,
+      "Melee": 2.82,
       "Judgement": 1.18
-     }
+     },
+     "idle_share": 0.002,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.864,
+      "Seal of Righteousness": 0.136
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "6": {
-     "seconds": 15.7,
+     "seconds": 16.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 2.75,
-      "Judgement": 1.21,
-      "Holy Strike": 1.21
-     }
+      "Melee": 2.99,
+      "Judgement": 1.25,
+      "Holy Strike": 1.25
+     },
+     "idle_share": 0.001,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.739,
+      "Seal of Righteousness": 0.144,
+      "Holy Strike": 0.117
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "8": {
-     "seconds": 17.8,
+     "seconds": 18.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 3.32,
-      "Judgement": 1.36,
-      "Holy Strike": 1.36,
+      "Melee": 3.56,
+      "Judgement": 1.44,
+      "Holy Strike": 1.44,
       "Hammer of Justice": 0.07
-     }
+     },
+     "idle_share": 0.002,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.727,
+      "Seal of Righteousness": 0.155,
+      "Holy Strike": 0.117
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "10": {
-     "seconds": 17.5,
+     "seconds": 18.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 3.13,
-      "Judgement": 1.34,
-      "Holy Strike": 1.25,
+      "Melee": 3.36,
+      "Judgement": 1.4,
+      "Holy Strike": 1.3,
       "Hammer of Justice": 0.1
-     }
+     },
+     "idle_share": 0.001,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.597,
+      "Judgement": 0.18,
+      "Seal of Righteousness": 0.128,
+      "Holy Strike": 0.096
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "19": {
-     "seconds": 21.2,
+     "seconds": 22.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 4.09,
-      "Judgement": 1.75,
-      "Holy Strike": 1.65,
+      "Melee": 4.32,
+      "Judgement": 1.81,
+      "Holy Strike": 1.73,
       "Hammer of Justice": 0.14
-     }
+     },
+     "idle_share": 0.04,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.58,
+      "Judgement": 0.177,
+      "Seal of Righteousness": 0.134,
+      "Holy Strike": 0.109
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "20": {
-     "seconds": 19.9,
+     "seconds": 21.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 3.73,
-      "Hammer of Justice": 0.29,
-      "Judgement": 1.61,
-      "Holy Strike": 1.5
-     }
+      "Melee": 3.96,
+      "Hammer of Justice": 0.31,
+      "Judgement": 1.68,
+      "Holy Strike": 1.57
+     },
+     "idle_share": 0.036,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.515,
+      "Judgement": 0.203,
+      "Seal of Command": 0.178,
+      "Holy Strike": 0.104
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "30": {
-     "seconds": 21.7,
+     "seconds": 23.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 4.27,
-      "Hammer of Justice": 0.32,
-      "Judgement": 1.89,
-      "Holy Strike": 1.66
-     }
+      "Melee": 4.39,
+      "Hammer of Justice": 0.34,
+      "Judgement": 2.15,
+      "Holy Strike": 1.76
+     },
+     "idle_share": 0.088,
+     "drink_per_kill": 1.27,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.48,
+      "Judgement": 0.218,
+      "Seal of Command": 0.169,
+      "Holy Strike": 0.133
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "40": {
-     "seconds": 25.8,
+     "seconds": 27.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 5.17,
-      "Hammer of Justice": 0.38,
-      "Judgement": 2.23,
-      "Holy Strike": 1.98
-     }
+      "Melee": 5.28,
+      "Hammer of Justice": 0.4,
+      "Judgement": 2.46,
+      "Holy Strike": 2.06
+     },
+     "idle_share": 0.087,
+     "drink_per_kill": 0.89,
+     "eat_per_kill": 0.72,
+     "shares": {
+      "Melee": 0.432,
+      "Judgement": 0.221,
+      "Seal of Command": 0.201,
+      "Holy Strike": 0.146
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "43": {
-     "seconds": 26.8,
+     "seconds": 28.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 5.3,
-      "Hammer of Justice": 0.39,
-      "Judgement": 2.27,
-      "Holy Strike": 2.04
-     }
+      "Melee": 5.41,
+      "Hammer of Justice": 0.41,
+      "Judgement": 2.52,
+      "Holy Strike": 2.12
+     },
+     "idle_share": 0.101,
+     "drink_per_kill": 1.45,
+     "eat_per_kill": 0.49,
+     "shares": {
+      "Melee": 0.433,
+      "Judgement": 0.218,
+      "Seal of Command": 0.203,
+      "Holy Strike": 0.146
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "44": {
-     "seconds": 26.2,
+     "seconds": 27.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 5.1,
-      "Hammer of Justice": 0.39,
-      "Judgement": 2.21,
-      "Holy Strike": 1.99
-     }
+      "Melee": 5.28,
+      "Hammer of Justice": 0.4,
+      "Judgement": 2.48,
+      "Holy Strike": 2.08
+     },
+     "idle_share": 0.097,
+     "drink_per_kill": 1.24,
+     "eat_per_kill": 0.59,
+     "shares": {
+      "Melee": 0.421,
+      "Judgement": 0.216,
+      "Seal of Command": 0.196,
+      "Holy Strike": 0.168
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "50": {
-     "seconds": 27.5,
+     "seconds": 28.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 5.51,
-      "Hammer of Justice": 0.4,
-      "Judgement": 2.33,
-      "Holy Strike": 2.08
-     }
+      "Melee": 5.67,
+      "Hammer of Justice": 0.42,
+      "Judgement": 2.62,
+      "Holy Strike": 2.21
+     },
+     "idle_share": 0.091,
+     "drink_per_kill": 1.28,
+     "eat_per_kill": 0.44,
+     "shares": {
+      "Melee": 0.415,
+      "Judgement": 0.216,
+      "Seal of Command": 0.205,
+      "Holy Strike": 0.164
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "55": {
+     "seconds": 31.6,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Command": 1.0,
+      "Melee": 6.19,
+      "Hammer of Justice": 0.49,
+      "Judgement": 2.8,
+      "Holy Strike": 2.38
+     },
+     "idle_share": 0.116,
+     "drink_per_kill": 2.37,
+     "eat_per_kill": 0.23,
+     "shares": {
+      "Melee": 0.411,
+      "Judgement": 0.215,
+      "Seal of Command": 0.194,
+      "Holy Strike": 0.18
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
+    },
+    "56": {
      "seconds": 30.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Melee": 5.94,
+      "Melee": 6.1,
       "Hammer of Justice": 0.47,
-      "Judgement": 2.52,
-      "Holy Strike": 2.28
-     }
+      "Swift Judgement": 0.46,
+      "Judgement": 3.22,
+      "Holy Strike": 2.36
+     },
+     "idle_share": 0.082,
+     "drink_per_kill": 0.86,
+     "eat_per_kill": 0.75,
+     "shares": {
+      "Melee": 0.396,
+      "Judgement": 0.25,
+      "Seal of Command": 0.183,
+      "Holy Strike": 0.171
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
-    "56": {
-     "seconds": 28.8,
+    "60": {
+     "seconds": 29.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.01,
-      "Melee": 5.76,
-      "Hammer of Justice": 0.46,
-      "Swift Judgement": 0.43,
-      "Judgement": 2.88,
-      "Holy Strike": 2.19
-     }
-    },
-    "60": {
-     "seconds": 28.8,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Seal of Command": 1.0,
-      "Melee": 5.96,
-      "Hammer of Justice": 0.46,
-      "Swift Judgement": 0.45,
-      "Judgement": 3.0,
-      "Holy Strike": 2.28
-     }
+      "Melee": 6.18,
+      "Hammer of Justice": 0.47,
+      "Swift Judgement": 0.46,
+      "Judgement": 3.23,
+      "Holy Strike": 2.4
+     },
+     "idle_share": 0.07,
+     "drink_per_kill": 1.07,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.368,
+      "Judgement": 0.262,
+      "Seal of Command": 0.194,
+      "Holy Strike": 0.176
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     }
    }
   },
@@ -322,139 +646,280 @@
    "build": "shockadin-open-leveling",
    "rotation": "holy-leveling",
    "provisional_order": false,
-   "fingerprint": "c1aef0158de1",
+   "fingerprint": "c8b6e7f28e09",
    "levels": {
     "1": {
-     "seconds": 11.6,
+     "seconds": 11.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Seal of Righteousness": 1.0,
-      "Melee": 1.67
-     }
+      "Melee": 1.73,
+      "Seal of Righteousness": 0.22
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.945,
+      "Seal of Righteousness": 0.055
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "4": {
-     "seconds": 16.1,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Seal of Righteousness": 1.0,
-      "Melee": 3.0,
-      "Judgement": 1.23
-     }
-    },
-    "6": {
      "seconds": 16.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 2.87,
-      "Judgement": 1.25,
-      "Holy Strike": 1.25
-     }
+      "Melee": 2.98,
+      "Judgement": 1.23
+     },
+     "idle_share": 0.003,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.854,
+      "Seal of Righteousness": 0.146
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
+    },
+    "6": {
+     "seconds": 17.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Righteousness": 1.0,
+      "Melee": 3.15,
+      "Judgement": 1.29,
+      "Holy Strike": 1.29
+     },
+     "idle_share": 0.001,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.732,
+      "Seal of Righteousness": 0.153,
+      "Holy Strike": 0.115
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "8": {
-     "seconds": 18.2,
+     "seconds": 19.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 3.43,
-      "Judgement": 1.42,
-      "Holy Strike": 1.42,
+      "Melee": 3.72,
+      "Judgement": 1.5,
+      "Holy Strike": 1.5,
       "Hammer of Justice": 0.07
-     }
+     },
+     "idle_share": 0.003,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.718,
+      "Seal of Righteousness": 0.163,
+      "Holy Strike": 0.119
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "10": {
-     "seconds": 17.9,
+     "seconds": 18.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 3.24,
-      "Judgement": 1.38,
-      "Holy Strike": 1.28,
+      "Melee": 3.45,
+      "Judgement": 1.46,
+      "Holy Strike": 1.34,
       "Hammer of Justice": 0.1
-     }
+     },
+     "idle_share": 0.001,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.584,
+      "Judgement": 0.188,
+      "Seal of Righteousness": 0.132,
+      "Holy Strike": 0.097
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "19": {
-     "seconds": 21.3,
+     "seconds": 22.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 4.12,
-      "Judgement": 1.77,
-      "Holy Strike": 1.68,
+      "Melee": 4.41,
+      "Judgement": 1.88,
+      "Holy Strike": 1.75,
       "Hammer of Justice": 0.13
-     }
+     },
+     "idle_share": 0.049,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.555,
+      "Judgement": 0.195,
+      "Seal of Righteousness": 0.144,
+      "Holy Strike": 0.106
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "20": {
-     "seconds": 21.4,
+     "seconds": 22.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 4.13,
-      "Judgement": 1.78,
-      "Holy Strike": 1.69,
+      "Melee": 4.42,
+      "Judgement": 1.89,
+      "Holy Strike": 1.75,
       "Hammer of Justice": 0.14
-     }
+     },
+     "idle_share": 0.044,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.546,
+      "Judgement": 0.192,
+      "Seal of Righteousness": 0.145,
+      "Holy Strike": 0.117
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "26": {
-     "seconds": 23.5,
+     "seconds": 25.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 4.71,
-      "Judgement": 1.98,
-      "Holy Strike": 1.89,
-      "Hammer of Justice": 0.15
-     }
+      "Melee": 5.01,
+      "Judgement": 2.06,
+      "Holy Strike": 1.94,
+      "Hammer of Justice": 0.16
+     },
+     "idle_share": 0.066,
+     "drink_per_kill": 0.34,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.544,
+      "Judgement": 0.19,
+      "Seal of Righteousness": 0.153,
+      "Holy Strike": 0.113
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "27": {
-     "seconds": 24.4,
+     "seconds": 26.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 4.94,
-      "Judgement": 2.04,
-      "Holy Strike": 1.94,
+      "Melee": 5.21,
+      "Judgement": 2.14,
+      "Holy Strike": 2.01,
       "Hammer of Justice": 0.15
-     }
+     },
+     "idle_share": 0.072,
+     "drink_per_kill": 0.46,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.541,
+      "Judgement": 0.19,
+      "Seal of Righteousness": 0.157,
+      "Holy Strike": 0.112
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "30": {
-     "seconds": 27.5,
+     "seconds": 28.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Divine Favor": 0.2,
-      "Holy Shock": 1.33,
-      "Melee": 4.25,
-      "Judgement": 1.86,
-      "Holy Strike": 1.81,
-      "Hammer of Justice": 0.13
-     }
+      "Divine Favor": 0.21,
+      "Holy Shock": 1.4,
+      "Melee": 4.43,
+      "Judgement": 1.94,
+      "Holy Strike": 1.86,
+      "Hammer of Justice": 0.14
+     },
+     "idle_share": 0.201,
+     "drink_per_kill": 4.57,
+     "eat_per_kill": 1.36,
+     "shares": {
+      "Melee": 0.411,
+      "Holy Shock": 0.202,
+      "Judgement": 0.156,
+      "Seal of Righteousness": 0.126,
+      "Holy Strike": 0.105
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "40": {
-     "seconds": 31.5,
+     "seconds": 32.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
       "Divine Favor": 0.24,
-      "Holy Shock": 1.81,
-      "Melee": 5.43,
-      "Judgement": 2.24,
-      "Holy Strike": 2.15,
+      "Holy Shock": 1.87,
+      "Melee": 5.7,
+      "Judgement": 2.31,
+      "Holy Strike": 2.21,
       "Hammer of Justice": 0.12
-     }
+     },
+     "idle_share": 0.162,
+     "drink_per_kill": 3.43,
+     "eat_per_kill": 1.49,
+     "shares": {
+      "Melee": 0.381,
+      "Holy Shock": 0.21,
+      "Judgement": 0.157,
+      "Seal of Righteousness": 0.143,
+      "Holy Strike": 0.109
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "41": {
-     "seconds": 30.9,
+     "seconds": 31.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
-      "Divine Favor": 0.23,
-      "Holy Shock": 1.7,
-      "Melee": 5.32,
-      "Hammer of Justice": 0.42,
-      "Judgement": 2.14,
-      "Holy Strike": 2.03
-     }
+      "Divine Favor": 0.24,
+      "Holy Shock": 1.74,
+      "Melee": 5.56,
+      "Hammer of Justice": 0.44,
+      "Judgement": 2.21,
+      "Holy Strike": 2.13
+     },
+     "idle_share": 0.155,
+     "drink_per_kill": 3.2,
+     "eat_per_kill": 1.49,
+     "shares": {
+      "Melee": 0.362,
+      "Holy Shock": 0.186,
+      "Judgement": 0.186,
+      "Seal of Command": 0.162,
+      "Holy Strike": 0.104
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "44": {
      "seconds": 29.7,
@@ -462,41 +927,83 @@
      "casts": {
       "Seal of Command": 1.0,
       "Divine Favor": 0.23,
-      "Holy Shock": 1.6,
-      "Melee": 4.28,
+      "Holy Shock": 1.65,
+      "Melee": 4.5,
       "Hammer of Justice": 0.41,
-      "Judgement": 2.05,
-      "Holy Strike": 1.7,
-      "Hammer of Wrath": 0.9
-     }
+      "Judgement": 2.1,
+      "Holy Strike": 1.79,
+      "Hammer of Wrath": 0.89
+     },
+     "idle_share": 0.201,
+     "drink_per_kill": 5.12,
+     "eat_per_kill": 1.39,
+     "shares": {
+      "Melee": 0.288,
+      "Judgement": 0.177,
+      "Holy Shock": 0.163,
+      "Seal of Command": 0.143,
+      "Hammer of Wrath": 0.124,
+      "Holy Strike": 0.106
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "50": {
-     "seconds": 29.1,
+     "seconds": 29.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
       "Divine Favor": 0.22,
-      "Holy Shock": 1.59,
-      "Melee": 4.25,
-      "Hammer of Justice": 0.4,
-      "Judgement": 2.07,
-      "Holy Strike": 1.74,
-      "Hammer of Wrath": 0.93
-     }
+      "Holy Shock": 1.63,
+      "Melee": 4.53,
+      "Hammer of Justice": 0.41,
+      "Judgement": 2.12,
+      "Holy Strike": 1.83,
+      "Hammer of Wrath": 0.9
+     },
+     "idle_share": 0.195,
+     "drink_per_kill": 4.74,
+     "eat_per_kill": 1.19,
+     "shares": {
+      "Melee": 0.278,
+      "Holy Shock": 0.184,
+      "Judgement": 0.169,
+      "Seal of Command": 0.136,
+      "Holy Strike": 0.123,
+      "Hammer of Wrath": 0.11
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "60": {
-     "seconds": 27.7,
+     "seconds": 27.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Command": 1.0,
       "Divine Favor": 0.21,
-      "Holy Shock": 1.64,
-      "Melee": 4.32,
+      "Holy Shock": 1.67,
+      "Melee": 4.52,
       "Hammer of Justice": 0.39,
-      "Judgement": 2.09,
-      "Holy Strike": 1.75,
+      "Judgement": 2.12,
+      "Holy Strike": 1.8,
       "Hammer of Wrath": 0.9
-     }
+     },
+     "idle_share": 0.175,
+     "drink_per_kill": 4.26,
+     "eat_per_kill": 1.58,
+     "shares": {
+      "Melee": 0.244,
+      "Holy Shock": 0.198,
+      "Judgement": 0.169,
+      "Hammer of Wrath": 0.141,
+      "Holy Strike": 0.129,
+      "Seal of Command": 0.119
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     }
    }
   },
@@ -507,176 +1014,361 @@
    "fingerprint": "461e0edfa4a5",
    "levels": {
     "1": {
-     "seconds": 11.6,
+     "seconds": 11.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Seal of Righteousness": 1.0,
-      "Melee": 1.67
-     }
+      "Melee": 1.73,
+      "Seal of Righteousness": 0.22
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.945,
+      "Seal of Righteousness": 0.055
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "4": {
-     "seconds": 16.1,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Seal of Righteousness": 1.0,
-      "Melee": 3.0,
-      "Judgement": 1.23
-     }
-    },
-    "6": {
      "seconds": 16.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 2.87,
-      "Judgement": 1.25,
-      "Holy Strike": 1.25
-     }
+      "Melee": 2.98,
+      "Judgement": 1.23
+     },
+     "idle_share": 0.003,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.854,
+      "Seal of Righteousness": 0.146
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
+    },
+    "6": {
+     "seconds": 17.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Righteousness": 1.0,
+      "Melee": 3.15,
+      "Judgement": 1.29,
+      "Holy Strike": 1.29
+     },
+     "idle_share": 0.001,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.732,
+      "Seal of Righteousness": 0.153,
+      "Holy Strike": 0.115
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "8": {
-     "seconds": 18.2,
+     "seconds": 19.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 3.43,
-      "Judgement": 1.42,
-      "Holy Strike": 1.42,
+      "Melee": 3.72,
+      "Judgement": 1.5,
+      "Holy Strike": 1.5,
       "Hammer of Justice": 0.07
-     }
+     },
+     "idle_share": 0.003,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.718,
+      "Seal of Righteousness": 0.163,
+      "Holy Strike": 0.119
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "10": {
-     "seconds": 17.9,
+     "seconds": 18.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 3.24,
-      "Judgement": 1.38,
-      "Holy Strike": 1.28,
+      "Melee": 3.45,
+      "Judgement": 1.46,
+      "Holy Strike": 1.34,
       "Hammer of Justice": 0.1
-     }
+     },
+     "idle_share": 0.001,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.584,
+      "Judgement": 0.188,
+      "Seal of Righteousness": 0.132,
+      "Holy Strike": 0.097
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "19": {
-     "seconds": 21.9,
+     "seconds": 23.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 4.27,
-      "Judgement": 1.81,
-      "Holy Strike": 1.73,
-      "Hammer of Justice": 0.13
-     }
+      "Melee": 4.58,
+      "Judgement": 1.91,
+      "Holy Strike": 1.81,
+      "Hammer of Justice": 0.14
+     },
+     "idle_share": 0.05,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.57,
+      "Judgement": 0.183,
+      "Seal of Righteousness": 0.137,
+      "Holy Strike": 0.11
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "20": {
-     "seconds": 21.9,
+     "seconds": 23.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 4.26,
-      "Judgement": 1.82,
-      "Holy Strike": 1.73,
+      "Melee": 4.59,
+      "Judgement": 1.93,
+      "Holy Strike": 1.81,
       "Hammer of Justice": 0.14
-     }
+     },
+     "idle_share": 0.046,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.561,
+      "Judgement": 0.181,
+      "Seal of Righteousness": 0.137,
+      "Holy Strike": 0.121
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "29": {
-     "seconds": 26.4,
+     "seconds": 28.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 5.46,
-      "Judgement": 2.22,
-      "Holy Strike": 2.11,
+      "Melee": 5.74,
+      "Judgement": 2.31,
+      "Holy Strike": 2.19,
       "Hammer of Justice": 0.15
-     }
+     },
+     "idle_share": 0.073,
+     "drink_per_kill": 0.48,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.553,
+      "Judgement": 0.172,
+      "Seal of Righteousness": 0.147,
+      "Holy Strike": 0.127
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "30": {
-     "seconds": 28.7,
+     "seconds": 29.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Holy Shock": 1.5,
-      "Melee": 4.48,
-      "Judgement": 1.96,
-      "Holy Strike": 1.9,
-      "Hammer of Justice": 0.12
-     }
+      "Holy Shock": 1.51,
+      "Melee": 4.78,
+      "Judgement": 2.01,
+      "Holy Strike": 1.93,
+      "Hammer of Justice": 0.14
+     },
+     "idle_share": 0.199,
+     "drink_per_kill": 4.74,
+     "eat_per_kill": 1.63,
+     "shares": {
+      "Melee": 0.436,
+      "Holy Shock": 0.197,
+      "Judgement": 0.143,
+      "Seal of Righteousness": 0.118,
+      "Holy Strike": 0.105
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "40": {
-     "seconds": 34.6,
+     "seconds": 34.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Holy Shock": 1.88,
-      "Melee": 5.71,
-      "Judgement": 2.32,
-      "Holy Strike": 2.24,
+      "Holy Shock": 1.86,
+      "Melee": 5.97,
+      "Judgement": 2.38,
+      "Holy Strike": 2.32,
       "Hammer of Justice": 0.13
-     }
+     },
+     "idle_share": 0.198,
+     "drink_per_kill": 5.52,
+     "eat_per_kill": 1.93,
+     "shares": {
+      "Melee": 0.414,
+      "Holy Shock": 0.191,
+      "Judgement": 0.146,
+      "Seal of Righteousness": 0.137,
+      "Holy Strike": 0.113
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "43": {
-     "seconds": 35.7,
+     "seconds": 36.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Holy Shock": 1.91,
-      "Melee": 5.98,
-      "Judgement": 2.42,
-      "Holy Strike": 2.34,
+      "Holy Shock": 1.92,
+      "Melee": 6.21,
+      "Judgement": 2.49,
+      "Holy Strike": 2.4,
       "Hammer of Justice": 0.14
-     }
+     },
+     "idle_share": 0.203,
+     "drink_per_kill": 5.75,
+     "eat_per_kill": 2.31,
+     "shares": {
+      "Melee": 0.411,
+      "Holy Shock": 0.18,
+      "Judgement": 0.152,
+      "Seal of Righteousness": 0.144,
+      "Holy Strike": 0.113
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "44": {
-     "seconds": 36.2,
+     "seconds": 35.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Holy Shock": 1.9,
-      "Melee": 4.99,
-      "Judgement": 2.09,
-      "Holy Strike": 2.03,
+      "Holy Shock": 1.93,
+      "Melee": 5.28,
+      "Judgement": 2.18,
+      "Holy Strike": 2.07,
       "Hammer of Wrath": 0.85,
       "Hammer of Justice": 0.15
-     }
+     },
+     "idle_share": 0.245,
+     "drink_per_kill": 7.26,
+     "eat_per_kill": 3.95,
+     "shares": {
+      "Melee": 0.338,
+      "Holy Shock": 0.174,
+      "Judgement": 0.131,
+      "Seal of Righteousness": 0.121,
+      "Hammer of Wrath": 0.118,
+      "Holy Strike": 0.118
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "50": {
-     "seconds": 37.7,
+     "seconds": 35.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
       "Holy Shock": 1.94,
-      "Melee": 5.38,
-      "Judgement": 2.25,
-      "Holy Strike": 2.14,
-      "Hammer of Wrath": 0.89,
-      "Hammer of Justice": 0.12
-     }
+      "Melee": 5.65,
+      "Judgement": 2.33,
+      "Holy Strike": 2.23,
+      "Hammer of Wrath": 0.86,
+      "Hammer of Justice": 0.13
+     },
+     "idle_share": 0.231,
+     "drink_per_kill": 6.1,
+     "eat_per_kill": 3.97,
+     "shares": {
+      "Melee": 0.336,
+      "Holy Shock": 0.193,
+      "Judgement": 0.135,
+      "Seal of Righteousness": 0.124,
+      "Holy Strike": 0.113,
+      "Hammer of Wrath": 0.099
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "51": {
-     "seconds": 37.8,
+     "seconds": 36.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Divine Favor": 0.27,
-      "Holy Shock": 1.94,
-      "Melee": 5.47,
-      "Judgement": 2.26,
-      "Holy Strike": 2.19,
-      "Hammer of Wrath": 0.9,
+      "Divine Favor": 0.26,
+      "Holy Shock": 1.96,
+      "Melee": 5.73,
+      "Judgement": 2.35,
+      "Holy Strike": 2.27,
+      "Hammer of Wrath": 0.87,
       "Hammer of Justice": 0.14
-     }
+     },
+     "idle_share": 0.233,
+     "drink_per_kill": 6.23,
+     "eat_per_kill": 3.64,
+     "shares": {
+      "Melee": 0.333,
+      "Holy Shock": 0.2,
+      "Judgement": 0.134,
+      "Seal of Righteousness": 0.124,
+      "Holy Strike": 0.112,
+      "Hammer of Wrath": 0.097
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "60": {
      "seconds": 38.1,
      "deaths_per_100": 0.0,
      "casts": {
-      "Seal of Righteousness": 1.0,
+      "Seal of Righteousness": 1.01,
       "Divine Favor": 0.28,
       "Holy Shock": 2.03,
-      "Melee": 6.09,
-      "Judgement": 2.49,
-      "Holy Strike": 2.41,
-      "Hammer of Wrath": 0.87,
+      "Melee": 6.39,
+      "Judgement": 2.54,
+      "Holy Strike": 2.48,
+      "Hammer of Wrath": 0.85,
       "Hammer of Justice": 0.08
-     }
+     },
+     "idle_share": 0.213,
+     "drink_per_kill": 7.34,
+     "eat_per_kill": 4.31,
+     "shares": {
+      "Melee": 0.307,
+      "Holy Shock": 0.2,
+      "Judgement": 0.13,
+      "Seal of Righteousness": 0.127,
+      "Holy Strike": 0.123,
+      "Hammer of Wrath": 0.113
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     }
    }
   },
@@ -690,196 +1382,395 @@
      "seconds": 13.1,
      "deaths_per_100": 0.0,
      "casts": {
-      "Seal of Righteousness": 1.0,
-      "Melee": 2.45,
+      "Melee": 2.43,
+      "Seal of Righteousness": 0.37,
       "Shield block": 0.12
-     }
+     },
+     "idle_share": 0.002,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.928,
+      "Seal of Righteousness": 0.072
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "4": {
      "seconds": 17.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 4.1,
+      "Melee": 4.07,
       "Judgement": 1.29,
       "Shield block": 0.24
-     }
+     },
+     "idle_share": 0.005,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.885,
+      "Seal of Righteousness": 0.115
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "6": {
-     "seconds": 17.6,
+     "seconds": 18.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Righteousness": 1.0,
-      "Melee": 4.02,
-      "Judgement": 1.34,
-      "Holy Strike": 1.34,
-      "Shield block": 0.22
-     }
+      "Melee": 4.43,
+      "Judgement": 1.46,
+      "Holy Strike": 1.46,
+      "Shield block": 0.24
+     },
+     "idle_share": 0.001,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.772,
+      "Seal of Righteousness": 0.122,
+      "Holy Strike": 0.106
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "10": {
-     "seconds": 19.0,
+     "seconds": 19.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Fury": 1.0,
-      "Melee": 4.43,
-      "Judgement": 1.52,
-      "Holy Strike": 1.42,
-      "Shield block": 0.36
-     }
+      "Melee": 4.75,
+      "Judgement": 1.66,
+      "Holy Strike": 1.54,
+      "Shield block": 0.35
+     },
+     "idle_share": 0.003,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.597,
+      "Judgement": 0.191,
+      "Seal of Fury": 0.127,
+      "Holy Strike": 0.086
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "19": {
-     "seconds": 22.7,
+     "seconds": 24.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Fury": 1.0,
-      "Melee": 5.78,
-      "Judgement": 1.99,
-      "Holy Strike": 1.9,
-      "Shield block": 0.71
-     }
+      "Melee": 6.32,
+      "Judgement": 2.06,
+      "Holy Strike": 1.98,
+      "Shield block": 0.78
+     },
+     "idle_share": 0.039,
+     "drink_per_kill": 0.32,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.603,
+      "Judgement": 0.186,
+      "Seal of Fury": 0.117,
+      "Holy Strike": 0.095
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "20": {
-     "seconds": 22.8,
+     "seconds": 24.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Fury": 1.0,
-      "Melee": 5.77,
-      "Judgement": 1.99,
-      "Holy Strike": 1.9,
-      "Shield block": 0.71
-     }
+      "Melee": 6.33,
+      "Judgement": 2.06,
+      "Holy Strike": 1.98,
+      "Shield block": 0.78
+     },
+     "idle_share": 0.044,
+     "drink_per_kill": 0.46,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.6,
+      "Judgement": 0.183,
+      "Seal of Fury": 0.11,
+      "Holy Strike": 0.107
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "25": {
-     "seconds": 25.8,
+     "seconds": 28.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Fury": 1.0,
-      "Melee": 6.8,
-      "Swift Judgement": 0.4,
-      "Judgement": 2.56,
-      "Holy Strike": 2.08,
-      "Shield block": 0.83
-     }
+      "Melee": 7.23,
+      "Swift Judgement": 0.44,
+      "Judgement": 2.72,
+      "Holy Strike": 2.15,
+      "Shield block": 0.94
+     },
+     "idle_share": 0.074,
+     "drink_per_kill": 1.03,
+     "eat_per_kill": 0.03,
+     "shares": {
+      "Melee": 0.606,
+      "Judgement": 0.206,
+      "Holy Strike": 0.098,
+      "Seal of Fury": 0.09
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "30": {
-     "seconds": 27.6,
+     "seconds": 28.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Fury": 1.0,
-      "Melee": 6.47,
-      "Holy Shield": 1.85,
-      "Swift Judgement": 0.4,
-      "Judgement": 2.38,
-      "Holy Strike": 1.88,
-      "Shield block": 2.54
-     }
+      "Melee": 6.77,
+      "Holy Shield": 1.89,
+      "Swift Judgement": 0.42,
+      "Judgement": 2.44,
+      "Holy Strike": 1.9,
+      "Shield block": 2.72
+     },
+     "idle_share": 0.129,
+     "drink_per_kill": 3.43,
+     "eat_per_kill": 0.16,
+     "shares": {
+      "Melee": 0.467,
+      "Holy Shield": 0.188,
+      "Judgement": 0.173,
+      "Seal of Fury": 0.091,
+      "Holy Strike": 0.081
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "40": {
-     "seconds": 30.8,
+     "seconds": 32.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Fury": 1.0,
-      "Melee": 8.56,
-      "Holy Shield": 2.15,
-      "Swift Judgement": 0.48,
-      "Judgement": 2.95,
-      "Holy Strike": 2.33,
-      "Shield block": 3.35
-     }
+      "Melee": 8.98,
+      "Holy Shield": 2.21,
+      "Swift Judgement": 0.5,
+      "Judgement": 3.04,
+      "Holy Strike": 2.42,
+      "Shield block": 3.37
+     },
+     "idle_share": 0.06,
+     "drink_per_kill": 1.49,
+     "eat_per_kill": 0.23,
+     "shares": {
+      "Melee": 0.448,
+      "Holy Shield": 0.188,
+      "Judgement": 0.174,
+      "Seal of Fury": 0.097,
+      "Holy Strike": 0.092
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "43": {
-     "seconds": 30.4,
+     "seconds": 31.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Fury": 1.0,
-      "Melee": 8.31,
-      "Holy Shield": 2.05,
-      "Swift Judgement": 0.48,
-      "Judgement": 3.38,
-      "Holy Strike": 2.35,
-      "Shield block": 3.21
-     }
+      "Melee": 8.57,
+      "Holy Shield": 2.1,
+      "Swift Judgement": 0.49,
+      "Judgement": 3.52,
+      "Holy Strike": 2.4,
+      "Shield block": 3.43
+     },
+     "idle_share": 0.056,
+     "drink_per_kill": 1.3,
+     "eat_per_kill": 0.11,
+     "shares": {
+      "Melee": 0.422,
+      "Judgement": 0.204,
+      "Holy Shield": 0.172,
+      "Seal of Fury": 0.11,
+      "Holy Strike": 0.091
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "44": {
-     "seconds": 30.3,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Seal of Fury": 1.0,
-      "Melee": 8.23,
-      "Holy Shield": 2.05,
-      "Swift Judgement": 0.47,
-      "Judgement": 3.36,
-      "Holy Strike": 2.32,
-      "Shield block": 3.16
-     }
-    },
-    "49": {
-     "seconds": 31.8,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Seal of Fury": 1.0,
-      "Melee": 8.84,
-      "Holy Shield": 2.18,
-      "Swift Judgement": 0.5,
-      "Judgement": 3.56,
-      "Holy Strike": 2.53,
-      "Shield block": 3.55
-     }
-    },
-    "50": {
-     "seconds": 30.9,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Seal of Fury": 1.0,
-      "Melee": 8.38,
-      "Holy Shield": 2.09,
-      "Swift Judgement": 0.48,
-      "Judgement": 3.4,
-      "Holy Strike": 2.39,
-      "Shield block": 3.24
-     }
-    },
-    "55": {
      "seconds": 31.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Fury": 1.0,
-      "Melee": 8.66,
-      "Holy Shield": 2.12,
+      "Melee": 8.56,
+      "Holy Shield": 2.11,
+      "Swift Judgement": 0.5,
+      "Judgement": 3.5,
+      "Holy Strike": 2.39,
+      "Shield block": 3.32
+     },
+     "idle_share": 0.063,
+     "drink_per_kill": 1.43,
+     "eat_per_kill": 0.15,
+     "shares": {
+      "Melee": 0.416,
+      "Judgement": 0.204,
+      "Holy Shield": 0.161,
+      "Holy Strike": 0.111,
+      "Seal of Fury": 0.108
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
+    },
+    "49": {
+     "seconds": 33.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Fury": 1.0,
+      "Melee": 9.39,
+      "Holy Shield": 2.26,
+      "Swift Judgement": 0.51,
+      "Judgement": 3.8,
+      "Holy Strike": 2.65,
+      "Shield block": 3.64
+     },
+     "idle_share": 0.049,
+     "drink_per_kill": 1.07,
+     "eat_per_kill": 0.3,
+     "shares": {
+      "Melee": 0.426,
+      "Judgement": 0.202,
+      "Holy Shield": 0.142,
+      "Holy Strike": 0.134,
+      "Seal of Fury": 0.096
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
+    },
+    "50": {
+     "seconds": 32.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Fury": 1.0,
+      "Melee": 8.77,
+      "Holy Shield": 2.14,
       "Swift Judgement": 0.5,
       "Judgement": 3.52,
-      "Holy Strike": 2.43,
-      "Shield block": 3.38,
+      "Holy Strike": 2.51,
+      "Shield block": 3.47
+     },
+     "idle_share": 0.054,
+     "drink_per_kill": 1.47,
+     "eat_per_kill": 0.19,
+     "shares": {
+      "Melee": 0.393,
+      "Judgement": 0.192,
+      "Holy Shield": 0.181,
+      "Holy Strike": 0.126,
+      "Seal of Fury": 0.109
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
+    },
+    "55": {
+     "seconds": 33.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Seal of Fury": 1.0,
+      "Melee": 9.09,
+      "Holy Shield": 2.23,
+      "Swift Judgement": 0.52,
+      "Judgement": 3.7,
+      "Holy Strike": 2.55,
+      "Shield block": 3.43,
       "Reckoning": 1.28
-     }
+     },
+     "idle_share": 0.065,
+     "drink_per_kill": 1.58,
+     "eat_per_kill": 0.46,
+     "shares": {
+      "Melee": 0.375,
+      "Judgement": 0.194,
+      "Holy Shield": 0.153,
+      "Holy Strike": 0.128,
+      "Seal of Fury": 0.098,
+      "Reckoning": 0.052
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "56": {
-     "seconds": 31.3,
+     "seconds": 32.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Fury": 1.0,
-      "Melee": 8.21,
-      "Holy Shield": 1.99,
-      "Swift Judgement": 0.48,
-      "Judgement": 3.42,
-      "Holy Strike": 3.6,
-      "Shield block": 3.11,
-      "Reckoning": 1.11
-     }
+      "Melee": 8.69,
+      "Holy Shield": 2.06,
+      "Swift Judgement": 0.51,
+      "Judgement": 3.6,
+      "Holy Strike": 3.79,
+      "Shield block": 3.3,
+      "Reckoning": 1.23
+     },
+     "idle_share": 0.07,
+     "drink_per_kill": 1.85,
+     "eat_per_kill": 0.31,
+     "shares": {
+      "Melee": 0.347,
+      "Holy Strike": 0.188,
+      "Judgement": 0.187,
+      "Holy Shield": 0.14,
+      "Seal of Fury": 0.089,
+      "Reckoning": 0.049
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     },
     "60": {
-     "seconds": 31.0,
+     "seconds": 32.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Seal of Fury": 1.0,
-      "Melee": 8.23,
-      "Holy Shield": 1.99,
-      "Swift Judgement": 0.48,
-      "Judgement": 3.44,
-      "Holy Strike": 3.6,
-      "Shield block": 3.3,
-      "Reckoning": 1.5
-     }
+      "Melee": 8.75,
+      "Holy Shield": 2.05,
+      "Swift Judgement": 0.5,
+      "Judgement": 3.62,
+      "Holy Strike": 3.82,
+      "Shield block": 3.52,
+      "Reckoning": 1.59
+     },
+     "idle_share": 0.061,
+     "drink_per_kill": 1.85,
+     "eat_per_kill": 0.03,
+     "shares": {
+      "Melee": 0.313,
+      "Holy Strike": 0.188,
+      "Holy Shield": 0.183,
+      "Judgement": 0.177,
+      "Seal of Fury": 0.083,
+      "Reckoning": 0.056
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Devotion Aura"
     }
    }
   }

@@ -27,6 +27,12 @@ TANK_TREE = {"warrior": "Protection", "paladin": "Protection", "druid": "Feral C
 LEVEL_AS = {("druid", "Restoration"): "Feral Combat", ("paladin", "Holy"): "Retribution", ("paladin", "Protection"): "Retribution",
             ("priest", "Discipline"): "Shadow", ("priest", "Holy"): "Shadow", ("shaman", "Restoration"): "Enhancement",
             ("warrior", "Protection"): "Arms"}
+# a spec that levels as another by the user's choice (2026-11-21, relayed by the audit session: "Go with your recommendations";
+# Frostfire only, an extension of the healer exception above, not a rule for hybrids): its leveling page leads with the spec it levels
+# as and the switch at 60, its own leveling build leaves the leveling ranking and the recommendation, its by-level guide is that spec's
+# (level-guides `same_as`), and a short section prices playing its own spell while leveling (CHOICE_SPELL; fightlab/frostfire_choice.py)
+LEVEL_AS_CHOICE = {("mage", "Hybrid Fire/Frost"): "Frost"}
+CHOICE_SPELL = {("mage", "Hybrid Fire/Frost"): "Frostfire Bolt"}
 
 
 # player names for the hybrids (hand-kept, 2026-09-29: "name the hybrids the way players do"): (name, page slug, one line on what it is).
@@ -41,8 +47,10 @@ HYBRID_NAMES = {
     ("hunter", "Hybrid Marksmanship/Survival"): ("Melee (split)", "melee-split", "Dual-wield melee with Marksmanship support, short of 30 Survival points."),
     ("hunter", "Hybrid Beast Mastery/Survival"): ("Beast-Survival", "beast-survival", {
         "leveling": "Dual-wield melee with a pet and Beast Mastery's aspect and pet talents, short of 30 Survival points.",
-        "raid": "Dual-wield melee with no pet out: Summon Hawk and Lone Wolf from the other trees (16/11/24), about 9% more damage than "
-                "Melee Survival in a full raid (802 against 737 DPS, 2026-11-19; the hybrid check, kept by open_builds.raid_kept)."}),
+        # 2026-11-22 (the audit session: the 2026-11-19 comparison, 802 against 737, had outlived the simulator's own melee rotation)
+        "raid": "Dual-wield melee with no pet out: Summon Hawk and Lone Wolf from the other trees (16/11/24). The no-pet option: in a full "
+                "raid about 3% ahead of Melee Survival without a pet and 6% behind Survival with its pet (864 against 836 and 915 DPS, "
+                "2026-11-22)."}),
     ("mage", "Hybrid Arcane/Frost"): ("Arcane-Frost", "arcane-frost", {
         "raid": "Arcane's Missile Barrage, Arcane Wrath, Arcane Mind and Arcane Instability on a Frostbolt filler (Improved Frostbolt, Ice Shards).",
         "leveling": "Frost's Shatter and Fingers of Frost with Arcane's Missile Barrage: Frostbolt, Ice Lance into the freeze, free Arcane Missiles."}),

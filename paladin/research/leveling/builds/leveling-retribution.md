@@ -42,11 +42,12 @@ Allocation and order adopted on 2026-09-26 from `cand-ret-r5`, the fastest build
 | **Vindication** | 3/3 | changed | Gives your damaging melee attacks a chance to reduce the target's Attack Power by 204 for 30 sec. |
 | **Seal of Command** | 1/1 | changed | Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.  Unleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 145 if the target is stunned or incapacitated. |
 | **Pursuit of Justice** | 2/2 | changed | Increases movement speed and mounted movement speed by 15%. This does not stack with other movement speed increasing effects. |
+| **Eye for an Eye** | 1/2 | changed | All critical strikes against you cause 5% of the damage taken to the attacker as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health. |
 | **Sacred Arbiter** | 1/1 | **NEW** | Increases the damage of your Holy Strike ability by 20% and causes it to refresh all Judgement effects on the target. |
 | **Two-Handed Weapon Specialization** | 3/3 | unchanged | Increases the Holy and Physical damage you deal by 6%, and reduces all threat you generate by 20% while a two-handed melee weapon is equipped. |
 | **Repentance** | 1/1 | moved | Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids. |
 | **Vengeance** | 3/3 | changed | Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a non-periodic critical strike. Stacks up to 5 times. |
-| **Champion of the Light** | 4/5 | **NEW** | Increases your spell damage by up to 48% of your Intellect, and reduces the cast time of your Hammer of Wrath by 0.8 sec. |
+| **Champion of the Light** | 3/5 | **NEW** | Increases your spell damage by up to 36% of your Intellect, and reduces the cast time of your Hammer of Wrath by 0.6 sec. |
 
 ## Leveling order
 
@@ -71,7 +72,7 @@ Allocation and order adopted on 2026-09-26 from `cand-ret-r5`, the fastest build
 | 50 | Retribution | Vindication | 1 | 8/8/25 |
 | 51-53 | Retribution | Champion of the Light | 3 | 8/8/28 |
 | 54-55 | Retribution | Vindication | 2 | 8/8/30 |
-| 56 | Retribution | Champion of the Light | 1 | 8/8/31 |
+| 56 | Retribution | Eye for an Eye | 1 | 8/8/31 |
 | 57-58 | Holy | Reverence | 2 | 10/8/31 |
 | 59-60 | Holy | Improved Seals | 2 | 12/8/31 |
 
@@ -97,20 +98,23 @@ Allocation and order adopted on 2026-09-26 from `cand-ret-r5`, the fastest build
 
 Single-target leveling fights against normal mobs of your level with a two-hander: Blessing of Might and Devotion Aura up, a Seal recast before each pull (Seal of Command once talented, Seal of Righteousness before), the mob walks in (paladins have no charge), Judgement and Holy Strike on cooldown, Consecration while mana allows, Hammer of Justice into a doubled Seal of Command judgement or when hurt, Hammer of Wrath under 20%; Divine Protection and a Holy Light when low, Lay on Hands in an emergency. Between fights: 2 s loot, 6 s travel, Holy Light or Flash of Light back to 80% health, water below 35% mana; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-09, on top of the priority below): never cast Consecration; never cast Hammer of Wrath. Together +12.7% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-20, on top of the priority below): drink below 15% mana. Together +0.6% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/ret-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.8 | 4.3 | 5.2 | 5.5 | 6.1 | 37% |
-| Judgement | 1.6 | 2.1 | 2.4 | 2.6 | 2.8 | 23% |
-| Holy Strike | 1.5 | 1.7 | 2.0 | 2.2 | 2.4 | 21% |
-| Seal of Command | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 19% |
-| Hammer of Justice | 0.3 | 0.3 | 0.4 | 0.4 | 0.4 | 0% |
+| Melee | 4.0 | 4.5 | 5.4 | 5.7 | 6.4 | 38% |
+| Judgement | 1.7 | 2.1 | 2.5 | 2.6 | 2.9 | 23% |
+| Holy Strike | 1.6 | 1.8 | 2.1 | 2.2 | 2.5 | 18% |
+| Seal of Command | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 20% |
+| Hammer of Justice | 0.3 | 0.4 | 0.4 | 0.4 | 0.5 | 0% |
 
 ## Notes
 
+- 2026-11-21: undone from the leveling filler pass: Pursuit of Justice to Deflection at 21, Pursuit of Justice to Deflection at 22, Repentance to Deflection at 49. Movement speed and control are values the fight lab cannot see (it keeps travel fixed at 6 s a kill and never presses a control ability), so its measurements do not weigh them against Deflection (the stats model's kinds, scorer/kinds.json).
+- 2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Pursuit of Justice to Deflection at 21 (gate that did nothing, no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Repentance to Deflection at 49 (gate that did nothing, no loss: -0.1% seed 3, -0.0% seed 4, level-weighted time per kill).
+- 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Champion of the Light to Eye for an Eye at 56 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Pursuit of Justice to Deflection at 22 (gate: -0.3% seed 3, -0.1% seed 4, level-weighted time per kill).
 - 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing moved: Purifying Power to Improved Seals at 60 (tie-break: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill); Sacred Duty to Champion of the Light at 56 (no loss: -0.1% seed 3, -0.0% seed 4, level-weighted time per kill); Purifying Power to Improved Seals at 59 (tie-break: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill).
 - Adopted from the fight-lab race on 2026-09-26: cand-ret-r5 beat the previous draft by +5.1% (level-weighted time per kill); the rationale below the fight-lab note predates the adoption where it names talents no longer taken.
 - Loop: Seal of Command -> Judgement on cooldown -> Holy Strike (refreshes the Judgement from 34) -> Consecration (baseline) on 2+ mobs; heal between pulls.
@@ -120,7 +124,7 @@ What this build casts per kill ([report](../fightlab/ret-dps.md), all leveling b
 - 2026-10-31 (repair_builds.py, client build 1.60.1.70707 trees): 15/0/36 -> 12/9/30; Divine Intellect 2 gone (moved to Protection); Reverence 3 -> 2 (rank cap); Holy Conduit 2 gone (moved to Holy); Conviction 5 -> 3 (rank cap); Instrument of Law 2 gone; refill +5 Divine Intellect, +3 Precision, +1 Sacred Duty; order dropped (order_repair.py) (refill: the ret-dps model, leveling-st).
 - 2026-11-07 (order_repair.py, page audit C1): the order lost in the 2026-10-03 repair is the fastest of three the fight lab raced (the ret-dps rotation, seed 3, 3000 fights per level, levels 20-60 weighted by level): stats model 27.5 s per kill; own tree first 27.8 s; own tree last 29.9 s.
 - 2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Holy Conduit, Instrument of Law; a tree change or a repair took them out).
-- Fight lab (leveling/fightlab/ret-dps.md, 2026-11-19, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 20/22/27/28/30 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-ret-dps-leveling-st is +2% at 60 and +0% at 30 (negative = faster); race winner over the leveling: leveling-retribution; top talents at 60: Conviction +9%, Sanctified Judgement +8%, Vengeance +5%, Two-Handed Weapon Specialization +5%; about zero: Pursuit of Justice, Repentance, Sacred Duty, Templar's Bulwark. See the Fight lab section of leveling/README.md.
+- Fight lab (leveling/fightlab/ret-dps.md, 2026-11-22, generated by render_fightlab_sections.py): time per kill at L20/30/40/50/60 = 21/24/28/29/31 s with Classic 1.12 creature stats and quest greens; the optimizer's opt-ret-dps-leveling-st is +2% at 60 and +0% at 30 (negative = faster); race winner over the leveling: leveling-retribution; top talents at 60: Conviction +9%, Sanctified Judgement +6%, Vengeance +6%, Two-Handed Weapon Specialization +5%; about zero: Divine Intellect, Pursuit of Justice, Repentance, Reverence, Sacred Duty, Templar's Bulwark. See the Fight lab section of leveling/README.md.
 
 ## Open questions (verify in the live game)
 

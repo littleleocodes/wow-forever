@@ -59,7 +59,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 9. if (time left in the fight ≤ 20s or time left in the fight ≥ 141.5s): cast Blood Fury
 10. if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Earthstrike
 11. if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest
-12. if not execute phase (E20) and rage ≥ 90 and not Improved Slam is taken: cast Heroic Strike (rank 8)
+12. if not execute phase (E20) and rage ≥ 90 and not Improved Slam is taken: cast Heroic Strike
 13. if (time left in the fight ≤ 30s or time left in the fight ≥ 130s): cast Slayer's Crest
 14. if time left in the fight ≤ 33.75s: use every other cooldown when ready
 15. if number of targets > 1: cast Whirlwind
@@ -82,7 +82,7 @@ The tables below are the training-dummy rotation, filtered per build:
 | # | Priority (the first line whose condition holds is cast) | [`fury-open-raid`](builds/fury-open-raid.md) casts/min | [`opt-arms-2h-raid-raid-dps`](builds/opt-arms-2h-raid-raid-dps.md) casts/min | [`arms-2h-raid`](builds/arms-2h-raid.md) casts/min | *Fury* casts/min |
 |---|---|---|---|---|---|
 | 1 | cast Berserker Rage | 2.0 | 2.0 | 2.0 | 2.0 |
-| 2 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 | 0.3 | 0.3 | 0.3 |
+| 2 | if not Battle Shout is up: cast Battle Shout | 0.3 | 0.3 | 0.3 | 0.3 |
 | 3 | if execute phase (E20): cast Execute | 5.1 | 5.1 | 5.0 | 5.1 |
 | 4 | cast Goblin Sapper Charge | as ready | as ready | as ready | as ready |
 | 5 | cast Dense Dynamite | as ready | as ready | as ready | as ready |
@@ -118,7 +118,7 @@ Damage by ability:
 | # | Priority (the first line whose condition holds is cast) | *Arms* casts/min |
 |---|---|---|
 | 1 | cast Berserker Rage | 2.0 |
-| 2 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
+| 2 | if not Battle Shout is up: cast Battle Shout | 0.3 |
 | 3 | if execute phase (E20): cast Execute | 4.2 |
 | 4 | cast Goblin Sapper Charge | as ready |
 | 5 | cast Dense Dynamite | as ready |
@@ -224,7 +224,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 19. if number of targets > 1 and (rage ≥ 40 or execute phase (E20)): cast Cleave
 20. if time until Bloodthirst is ready > 1.125s and time until Whirlwind is ready > 2s: cast Hamstring
 21. if rage < 22.5: cast Bloodrage
-22. if number of targets = 1 and rage ≥ 67.5: cast Heroic Strike (rank 8)
+22. if number of targets = 1 and rage ≥ 67.5: cast Heroic Strike
 23. if rage < 67.5: cast Bloodrage
 24. if time until Bloodthirst is ready ≥ spellGcdHastedDuration and time until Whirlwind is ready ≥ spellGcdHastedDuration and Improved Berserker Rage is taken: cast Berserker Rage
 25. if not Berserker Stance is up: cast Berserker Stance
@@ -248,10 +248,10 @@ The tables below are the training-dummy rotation, filtered per build:
 | 11 | if (time left in the fight ≤ 33.75s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready | as ready | as ready | as ready |
 | 12 | cast Whirlwind | 5.4 | 5.3 | 5.3 | 5.3 |
 | 13 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 5.4 | 5.3 | 5.3 | 5.3 |
-| 14 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 | 0.3 | 0.3 | 0.3 |
+| 14 | if not Battle Shout is up: cast Battle Shout | 0.3 | 0.3 | 0.3 | 0.3 |
 | 15 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 6.5 | 6.6 | 6.6 | 6.6 |
 
-Lines of the simulator's rotation these builds never cast: cast Recklessness (a switch this rotation keeps off); cast Blood Fury, cast Heroic Strike (rank 8), cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
+Lines of the simulator's rotation these builds never cast: cast Recklessness (a switch this rotation keeps off); cast Blood Fury, cast Heroic Strike, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
 Damage by ability:
 
@@ -279,10 +279,10 @@ Damage by ability:
 | 10 | cast Whirlwind | 4.2 |
 | 11 | cast Mortal Strike | 5.0 |
 | 12 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 4.2 |
-| 13 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
+| 13 | if not Battle Shout is up: cast Battle Shout | 0.3 |
 | 14 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 6.7 |
 
-Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Bloodthirst (needs the Bloodthirst talent); cast Recklessness (a switch this rotation keeps off); cast Blood Fury, cast Spearing Strike, cast Heroic Strike (rank 8), cast Cleave, cast Berserker Stance (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Death Wish (needs the Death Wish talent); cast Bloodthirst (needs the Bloodthirst talent); cast Recklessness (a switch this rotation keeps off); cast Blood Fury, cast Spearing Strike, cast Heroic Strike, cast Cleave, cast Berserker Stance (its condition never held in these fights).
 
 Damage by ability:
 
@@ -316,7 +316,7 @@ Our rotation `prot-tank-raid.apl.json` (our base rotation `protection.apl.json` 
 
 ### *Protection* (community simulator, 486 DPS), [`protection-ml-tank`](builds/protection-ml-tank.md) (ours: derived (ML search), 486 DPS), [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) (ours: optimizer, 470 DPS), [`prot-raid-tank`](builds/prot-raid-tank.md) (ours: hand draft, 468 DPS)
 
-Before the pull: at -1s: cast Battle Shout (rank 6).
+Before the pull: at -1s: cast Battle Shout.
 
 | # | Priority (the first line whose condition holds is cast) | *Protection* casts/min | [`protection-ml-tank`](builds/protection-ml-tank.md) casts/min | [`opt-prot-tank-raid-tank`](builds/opt-prot-tank-raid-tank.md) casts/min | [`prot-raid-tank`](builds/prot-raid-tank.md) casts/min |
 |---|---|---|---|---|---|
@@ -437,7 +437,7 @@ Before the pull: at -1s: cast Battle Stance.
 | 13 | cast Mortal Strike | 2.8 | 2.8 | 2.8 | 2.9 |
 | 14 | if not Rend is on the target: cast Rend | 2.4 | 2.4 | 2.5 | 2.5 |
 | 15 | cast Slam | 3.5 | 3.5 | 3.5 | 3.5 |
-| 16 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 | 0.3 | 0.3 | 0.3 |
+| 16 | if not Battle Shout is up: cast Battle Shout | 0.3 | 0.3 | 0.3 | 0.3 |
 | 17 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 5.8 | 5.5 | 5.7 | 5.4 |
 | 18 | if not Berserker Stance is up: cast Berserker Stance | 26.1 | 26.2 | 26.2 | 26.2 |
 | 19 | cast Spearing Strike | 1.2 | 1.2 | 1.2 | 1.1 |

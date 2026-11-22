@@ -95,10 +95,10 @@ Before the pull: at -2s: cast Ice Barrier.
 |---|---|---|
 | 1 | if mana % ≤ 60% and mana % ≥ 60%: cast Mana Ruby | as ready |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7) | 4.5 |
+| 3 | if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles | 4.5 |
 | 4 | if (time left on Arcane Blast < cast time of Arcane Blast or stacks of Arcane Blast on you < 2): cast Arcane Blast | 8.3 |
 | 5 | if mana % < 5% and time left in the fight > 50s: cast Evocation | 0.2 |
-| 6 | if time left in the fight ≥ 3s: cast Frostbolt (rank 10) | 13.0 |
+| 6 | if time left in the fight ≥ 3s: cast Frostbolt | 13.0 |
 | 7 | if (Clearcasting is up or mana % ≥ 10%): cast Fire Blast | 0.1 |
 | 8 | cast Arcane Blast | 8.3 |
 | 9 | cast Robe of the Archmage | as ready |

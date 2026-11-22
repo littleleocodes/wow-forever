@@ -110,7 +110,7 @@ Before the pull: at -1.5s: cast Life Tap.
 
 | # | Priority (the first line whose condition holds is cast) | [`destruction-incinerate-raid`](destruction-incinerate-raid.md) casts/min |
 |---|---|---|
-| 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption (rank 6) | 3.3 |
+| 1 | if time left on Corruption ≤ cast time of Corruption and time left in the fight ≥ 10s: cast Corruption | 3.3 |
 | 2 | if time left in the fight ≥ 15s and mana % ≤ 75%: cast Potion | as ready |
 | 3 | if time left in the fight ≥ 15s and mana % ≤ 60%: cast Demonic Rune | as ready |
 | 4 | use every other cooldown when ready | as ready |
@@ -119,7 +119,7 @@ Before the pull: at -1.5s: cast Life Tap.
 | 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
 | 8 | if mana % < 10%: cast Life Tap | 6.9 |
 | 9 | if not Curse of the Elements is on the target: cast Curse of the Elements | 0.4 |
-| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) | 3.5 |
+| 10 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.5 |
 | 11 | if Immolate is on the target: cast Conflagrate | 4.0 |
 | 12 | cast Shadow Bolt | 11.9 |
 

@@ -28,7 +28,7 @@ The raid rotation (a fully buffed raid: Blessing of Wisdom and Mana Spring chang
 3. use every other cooldown when ready
 4. if mana % ≤ 10%: cast Innervate
 5. if Eclipse is known and stacks of Eclipse on you < 2: cast Wrath
-6. cast Starfire (rank 6)
+6. cast Starfire
 
 The tables below are the training-dummy rotation, filtered per build:
 
@@ -43,8 +43,8 @@ Before the pull: at -10s: activate Moonkin Form.
 | 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 3.8 |
 | 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 4.1 |
 | 5 | if Eclipse is known and stacks of Eclipse on you < 2: cast Wrath | 8.8 |
-| 6 | cast Starfire (rank 6) | 14.2 |
-| 7 | if mana % < 15%: cast Starfire (rank 6) | 14.2 |
+| 6 | cast Starfire | 14.2 |
+| 7 | if mana % < 15%: cast Starfire | 14.2 |
 | 8 | cast Wrath | 8.8 |
 
 Damage by ability:
@@ -66,8 +66,8 @@ Before the pull: at -10s: activate Moonkin Form.
 | 2 | if mana % ≤ 30%: cast Innervate | 0.3 | 0.3 |
 | 3 | if time left in the fight ≥ 10s: keep Insect Swarm on up to 1 targets (refresh under 0ms) | 3.7 | 3.7 |
 | 4 | keep Moonfire on up to 1 targets (refresh under 0ms) | 4.0 | 4.0 |
-| 5 | cast Starfire (rank 6) | 16.3 | 16.3 |
-| 6 | if mana % < 15%: cast Starfire (rank 6) | 16.3 | 16.3 |
+| 5 | cast Starfire | 16.3 | 16.3 |
+| 6 | if mana % < 15%: cast Starfire | 16.3 | 16.3 |
 
 Lines of the simulator's rotation these builds never cast: cast Wrath (its condition never held in these fights).
 
@@ -104,16 +104,16 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 5 | if unitDistance > 5: wait until not (unitDistance > 5) | as ready | as ready | as ready |
 | 6 | if “Ready to activate MCP”: cast Manual Crowd Pummeler | as ready | as ready | as ready |
 | 7 | if not Cat Form is up: cast Cat Form | 0.3 | 0.3 | 0.3 |
-| 8 | if “Final-global Bite”: cast Ferocious Bite (rank 5) | 0.7 | 0.7 | 0.6 |
+| 8 | if “Final-global Bite”: cast Ferocious Bite | 0.7 | 0.7 | 0.6 |
 | 9 | use every other cooldown when ready | as ready | as ready | as ready |
 | 10 | if “Mana potion fits and is needed”: cast ResourcePotion on self | as ready | as ready | as ready |
 | 11 | if number of targets = 2 and “Use Shred cleave tuning” and time until the global cooldown is ready ≤ 0s and “2 targets: Shred: next target is worth switching to”: change target | as ready | as ready | as ready |
-| 12 | if number of targets = 2 and “Use Shred cleave tuning” and “2 targets: Shred: Midfight Bite is worthwhile” and not “2 targets: Shred: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.7 | 0.7 | 0.6 |
+| 12 | if number of targets = 2 and “Use Shred cleave tuning” and “2 targets: Shred: Midfight Bite is worthwhile” and not “2 targets: Shred: leave this global for the target switch”: cast Ferocious Bite | 0.7 | 0.7 | 0.6 |
 | 13 | if number of targets = 2 and “Use Shred cleave tuning” and “Shifting Power ready”: cast Shifting Power | 5.5 | 5.5 | 5.5 |
 | 14 | if number of targets = 2 and “Use Shred cleave tuning” and “Tea is selected and energy is low”: cast Thistle Tea | as ready | as ready | as ready |
 | 15 | if number of targets = 2 and “Use Shred cleave tuning” and “Rune can restore mana after Tea”: cast Demonic Rune | as ready | as ready | as ready |
 | 16 | if number of targets = 2 and “Use Shred cleave tuning” and Cat Form is up: cast OffensivePotion | as ready | as ready | as ready |
-| 17 | if number of targets = 2 and “Use Shred cleave tuning” and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Shred: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.7 | 0.7 | 0.6 |
+| 17 | if number of targets = 2 and “Use Shred cleave tuning” and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Shred: leave this global for the target switch”: cast Ferocious Bite | 0.7 | 0.7 | 0.6 |
 | 18 | if number of targets = 2 and “Use Shred cleave tuning” and Cat Form is up and Clearcasting is up and not “2 targets: Shred: Pool energy for Bite” and not “2 targets: Shred: leave this global for the target switch”: cast Shred | 14.6 | 14.5 | 14.4 |
 | 19 | if number of targets = 2 and “Use Shred cleave tuning” and Cat Form is up and “Cleave 2: 2 targets: Shred: Rip due” and not “2 targets: Shred: leave this global for the target switch”: cast Rip | 4.8 | 4.7 | 4.7 |
 | 20 | if number of targets = 2 and “Use Shred cleave tuning” and Cat Form is up and “Cleave 2: Rake due”: cast Rake | 6.3 | 6.2 | 6.2 |
@@ -123,7 +123,7 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 24 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Tea is selected and energy is low”: cast Thistle Tea | as ready | as ready | as ready |
 | 25 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Rune can restore mana after Tea”: cast Demonic Rune | as ready | as ready | as ready |
 | 26 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up: cast OffensivePotion | as ready | as ready | as ready |
-| 27 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.7 | 0.7 | 0.6 |
+| 27 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Ferocious Bite | 0.7 | 0.7 | 0.6 |
 | 28 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “2 targets: Hybrid with Blood Frenzy: next target is worth switching to”: change target | as ready | as ready | as ready |
 | 29 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up and Clearcasting is up and not “2 targets: Hybrid: Pool energy for Bite” and not “2 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Shred | 14.6 | 14.5 | 14.4 |
 | 30 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up and “Blood Frenzy: Cleave 2: Rip due” and not “2 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Rip | 4.8 | 4.7 | 4.7 |
@@ -134,7 +134,7 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 35 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Tea is selected and energy is low”: cast Thistle Tea | as ready | as ready | as ready |
 | 36 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Rune can restore mana after Tea”: cast Demonic Rune | as ready | as ready | as ready |
 | 37 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up: cast OffensivePotion | as ready | as ready | as ready |
-| 38 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.7 | 0.7 | 0.6 |
+| 38 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite | 0.7 | 0.7 | 0.6 |
 | 39 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “2 targets: Hybrid: next target is worth switching to”: change target | as ready | as ready | as ready |
 | 40 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and Clearcasting is up and not “2 targets: Hybrid: Pool energy for Bite” and not “2 targets: Hybrid: leave this global for the target switch”: cast Shred | 14.6 | 14.5 | 14.4 |
 | 41 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and “Cleave 2: Rip due” and not “2 targets: Hybrid: leave this global for the target switch”: cast Rip | 4.8 | 4.7 | 4.7 |
@@ -143,12 +143,12 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 44 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Innervate can restore needed mana”: cast Innervate | 0.3 | 0.3 | 0.3 |
 | 45 | if number of targets = 3 and “Use Shred cleave tuning” and time until the global cooldown is ready ≤ 0s and “3 targets: Shred: next target is worth switching to”: change target | as ready | as ready | as ready |
 | 46 | if number of targets = 3 and “Use Shred cleave tuning” and time until the global cooldown is ready ≤ 0s and “3 targets: Shred: previous target is worth switching to”: change target | as ready | as ready | as ready |
-| 47 | if number of targets = 3 and “Use Shred cleave tuning” and “3 targets: Shred: Midfight Bite is worthwhile” and not “3 targets: Shred: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.7 | 0.7 | 0.6 |
+| 47 | if number of targets = 3 and “Use Shred cleave tuning” and “3 targets: Shred: Midfight Bite is worthwhile” and not “3 targets: Shred: leave this global for the target switch”: cast Ferocious Bite | 0.7 | 0.7 | 0.6 |
 | 48 | if number of targets = 3 and “Use Shred cleave tuning” and “Shifting Power ready”: cast Shifting Power | 5.5 | 5.5 | 5.5 |
 | 49 | if number of targets = 3 and “Use Shred cleave tuning” and “Tea is selected and energy is low”: cast Thistle Tea | as ready | as ready | as ready |
 | 50 | if number of targets = 3 and “Use Shred cleave tuning” and “Rune can restore mana after Tea”: cast Demonic Rune | as ready | as ready | as ready |
 | 51 | if number of targets = 3 and “Use Shred cleave tuning” and Cat Form is up: cast OffensivePotion | as ready | as ready | as ready |
-| 52 | if number of targets = 3 and “Use Shred cleave tuning” and “Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Shred: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.7 | 0.7 | 0.6 |
+| 52 | if number of targets = 3 and “Use Shred cleave tuning” and “Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Shred: leave this global for the target switch”: cast Ferocious Bite | 0.7 | 0.7 | 0.6 |
 | 53 | if number of targets = 3 and “Use Shred cleave tuning” and Cat Form is up and Clearcasting is up and not “3 targets: Shred: Pool energy for Bite” and not “3 targets: Shred: leave this global for the target switch”: cast Shred | 14.6 | 14.5 | 14.4 |
 | 54 | if number of targets = 3 and “Use Shred cleave tuning” and Cat Form is up and “Cleave 3: 3 targets: Shred: Rip due” and not “3 targets: Shred: leave this global for the target switch”: cast Rip | 4.8 | 4.7 | 4.7 |
 | 55 | if number of targets = 3 and “Use Shred cleave tuning” and Cat Form is up and “Cleave 3: Rake due”: cast Rake | 6.3 | 6.2 | 6.2 |
@@ -158,7 +158,7 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 59 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Tea is selected and energy is low”: cast Thistle Tea | as ready | as ready | as ready |
 | 60 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Rune can restore mana after Tea”: cast Demonic Rune | as ready | as ready | as ready |
 | 61 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up: cast OffensivePotion | as ready | as ready | as ready |
-| 62 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Blood Frenzy: Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.7 | 0.7 | 0.6 |
+| 62 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Blood Frenzy: Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Ferocious Bite | 0.7 | 0.7 | 0.6 |
 | 63 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “3 targets: Hybrid with Blood Frenzy: next target is worth switching to”: change target | as ready | as ready | as ready |
 | 64 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “3 targets: Hybrid with Blood Frenzy: previous target is worth switching to”: change target | as ready | as ready | as ready |
 | 65 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up and Clearcasting is up and not “Blood Frenzy: 3 targets: Hybrid: Pool energy for Bite” and not “3 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Shred | 14.6 | 14.5 | 14.4 |
@@ -166,12 +166,12 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 67 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up and “Blood Frenzy: Cleave 3: Rake due”: cast Rake | 6.3 | 6.2 | 6.2 |
 | 68 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up and not “Use Claw for paid builders” and energy ≥ current cost and “Blood Frenzy: Cleave 3: 3 targets: Hybrid: Paid builder fits the energy pool” and not “3 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Shred | 14.6 | 14.5 | 14.4 |
 | 69 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Innervate can restore needed mana”: cast Innervate | 0.3 | 0.3 | 0.3 |
-| 70 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and combo points ≥ 4 and time left on Rip ≥ 2s and (Clearcasting is up and energy ≥ 30 or energy ≥ 50) and not “3 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.7 | 0.7 | 0.6 |
+| 70 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and combo points ≥ 4 and time left on Rip ≥ 2s and (Clearcasting is up and energy ≥ 30 or energy ≥ 50) and not “3 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite | 0.7 | 0.7 | 0.6 |
 | 71 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Shifting Power ready”: cast Shifting Power | 5.5 | 5.5 | 5.5 |
 | 72 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Tea is selected and energy is low”: cast Thistle Tea | as ready | as ready | as ready |
 | 73 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Rune can restore mana after Tea”: cast Demonic Rune | as ready | as ready | as ready |
 | 74 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up: cast OffensivePotion | as ready | as ready | as ready |
-| 75 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.7 | 0.7 | 0.6 |
+| 75 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite | 0.7 | 0.7 | 0.6 |
 | 76 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “3 targets: Hybrid: next target is worth switching to”: change target | as ready | as ready | as ready |
 | 77 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “3 targets: Hybrid: previous target is worth switching to”: change target | as ready | as ready | as ready |
 | 78 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and Clearcasting is up and not “3 targets: Hybrid: Pool energy for Bite” and not “3 targets: Hybrid: leave this global for the target switch”: cast Shred | 14.6 | 14.5 | 14.4 |
@@ -179,12 +179,12 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 80 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and “Cleave 3: Rake due”: cast Rake | 6.3 | 6.2 | 6.2 |
 | 81 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and not “Use Claw for paid builders” and energy ≥ current cost and “Cleave 3: 3 targets: Hybrid: Paid builder fits the energy pool” and not “3 targets: Hybrid: leave this global for the target switch”: cast Shred | 14.6 | 14.5 | 14.4 |
 | 82 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Innervate can restore needed mana”: cast Innervate | 0.3 | 0.3 | 0.3 |
-| 83 | if not (number of targets = 2 or number of targets = 3) and “Midfight Bite is worthwhile”: cast Ferocious Bite (rank 5) | 0.7 | 0.7 | 0.6 |
+| 83 | if not (number of targets = 2 or number of targets = 3) and “Midfight Bite is worthwhile”: cast Ferocious Bite | 0.7 | 0.7 | 0.6 |
 | 84 | if not (number of targets = 2 or number of targets = 3) and “Shifting Power ready”: cast Shifting Power | 5.5 | 5.5 | 5.5 |
 | 85 | if not (number of targets = 2 or number of targets = 3) and “Tea is selected and energy is low”: cast Thistle Tea | as ready | as ready | as ready |
 | 86 | if not (number of targets = 2 or number of targets = 3) and “Rune can restore mana after Tea”: cast Demonic Rune | as ready | as ready | as ready |
 | 87 | if not (number of targets = 2 or number of targets = 3) and Cat Form is up: cast OffensivePotion | as ready | as ready | as ready |
-| 88 | if not (number of targets = 2 or number of targets = 3) and “Fight-end Bite is worthwhile”: cast Ferocious Bite (rank 5) | 0.7 | 0.7 | 0.6 |
+| 88 | if not (number of targets = 2 or number of targets = 3) and “Fight-end Bite is worthwhile”: cast Ferocious Bite | 0.7 | 0.7 | 0.6 |
 | 89 | if not (number of targets = 2 or number of targets = 3) and Cat Form is up and Clearcasting is up and not “Pool energy for Bite”: cast Shred | 14.6 | 14.5 | 14.4 |
 | 90 | if not (number of targets = 2 or number of targets = 3) and Cat Form is up and “Rip due”: cast Rip | 4.8 | 4.7 | 4.7 |
 | 91 | if not (number of targets = 2 or number of targets = 3) and Cat Form is up and “Rake due”: cast Rake | 6.3 | 6.2 | 6.2 |
@@ -218,16 +218,16 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 5 | if unitDistance > 5: wait until not (unitDistance > 5) | as ready |
 | 6 | if “Ready to activate MCP”: cast Manual Crowd Pummeler | as ready |
 | 7 | if not Cat Form is up: cast Cat Form | 0.3 |
-| 8 | if “Final-global Bite”: cast Ferocious Bite (rank 5) | 0.3 |
+| 8 | if “Final-global Bite”: cast Ferocious Bite | 0.3 |
 | 9 | use every other cooldown when ready | as ready |
 | 10 | if “Mana potion fits and is needed”: cast ResourcePotion on self | as ready |
 | 11 | if number of targets = 2 and “Use Shred cleave tuning” and time until the global cooldown is ready ≤ 0s and “2 targets: Shred: next target is worth switching to”: change target | as ready |
-| 12 | if number of targets = 2 and “Use Shred cleave tuning” and “2 targets: Shred: Midfight Bite is worthwhile” and not “2 targets: Shred: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 |
+| 12 | if number of targets = 2 and “Use Shred cleave tuning” and “2 targets: Shred: Midfight Bite is worthwhile” and not “2 targets: Shred: leave this global for the target switch”: cast Ferocious Bite | 0.3 |
 | 13 | if number of targets = 2 and “Use Shred cleave tuning” and “Shifting Power ready”: cast Shifting Power | 5.5 |
 | 14 | if number of targets = 2 and “Use Shred cleave tuning” and “Tea is selected and energy is low”: cast Thistle Tea | as ready |
 | 15 | if number of targets = 2 and “Use Shred cleave tuning” and “Rune can restore mana after Tea”: cast Demonic Rune | as ready |
 | 16 | if number of targets = 2 and “Use Shred cleave tuning” and Cat Form is up: cast OffensivePotion | as ready |
-| 17 | if number of targets = 2 and “Use Shred cleave tuning” and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Shred: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 |
+| 17 | if number of targets = 2 and “Use Shred cleave tuning” and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Shred: leave this global for the target switch”: cast Ferocious Bite | 0.3 |
 | 18 | if number of targets = 2 and “Use Shred cleave tuning” and Cat Form is up and Clearcasting is up and not “2 targets: Shred: Pool energy for Bite” and not “2 targets: Shred: leave this global for the target switch”: cast Shred | 1.8 |
 | 19 | if number of targets = 2 and “Use Shred cleave tuning” and Cat Form is up and “Cleave 2: 2 targets: Shred: Rip due” and not “2 targets: Shred: leave this global for the target switch”: cast Rip | 4.4 |
 | 20 | if number of targets = 2 and “Use Shred cleave tuning” and Cat Form is up and “Cleave 2: Rake due”: cast Rake | 5.8 |
@@ -239,7 +239,7 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 26 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Tea is selected and energy is low”: cast Thistle Tea | as ready |
 | 27 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Rune can restore mana after Tea”: cast Demonic Rune | as ready |
 | 28 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up: cast OffensivePotion | as ready |
-| 29 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 |
+| 29 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Ferocious Bite | 0.3 |
 | 30 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “2 targets: Hybrid with Blood Frenzy: next target is worth switching to”: change target | as ready |
 | 31 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up and Clearcasting is up and not “2 targets: Hybrid: Pool energy for Bite” and not “2 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Shred | 1.8 |
 | 32 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up and “Blood Frenzy: Cleave 2: Rip due” and not “2 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Rip | 4.4 |
@@ -252,7 +252,7 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 39 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Tea is selected and energy is low”: cast Thistle Tea | as ready |
 | 40 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Rune can restore mana after Tea”: cast Demonic Rune | as ready |
 | 41 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up: cast OffensivePotion | as ready |
-| 42 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 |
+| 42 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite | 0.3 |
 | 43 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “2 targets: Hybrid: next target is worth switching to”: change target | as ready |
 | 44 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and Clearcasting is up and not “2 targets: Hybrid: Pool energy for Bite” and not “2 targets: Hybrid: leave this global for the target switch”: cast Shred | 1.8 |
 | 45 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and “Cleave 2: Rip due” and not “2 targets: Hybrid: leave this global for the target switch”: cast Rip | 4.4 |
@@ -263,12 +263,12 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 50 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Innervate can restore needed mana”: cast Innervate | 0.3 |
 | 51 | if number of targets = 3 and “Use Shred cleave tuning” and time until the global cooldown is ready ≤ 0s and “3 targets: Shred: next target is worth switching to”: change target | as ready |
 | 52 | if number of targets = 3 and “Use Shred cleave tuning” and time until the global cooldown is ready ≤ 0s and “3 targets: Shred: previous target is worth switching to”: change target | as ready |
-| 53 | if number of targets = 3 and “Use Shred cleave tuning” and “3 targets: Shred: Midfight Bite is worthwhile” and not “3 targets: Shred: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 |
+| 53 | if number of targets = 3 and “Use Shred cleave tuning” and “3 targets: Shred: Midfight Bite is worthwhile” and not “3 targets: Shred: leave this global for the target switch”: cast Ferocious Bite | 0.3 |
 | 54 | if number of targets = 3 and “Use Shred cleave tuning” and “Shifting Power ready”: cast Shifting Power | 5.5 |
 | 55 | if number of targets = 3 and “Use Shred cleave tuning” and “Tea is selected and energy is low”: cast Thistle Tea | as ready |
 | 56 | if number of targets = 3 and “Use Shred cleave tuning” and “Rune can restore mana after Tea”: cast Demonic Rune | as ready |
 | 57 | if number of targets = 3 and “Use Shred cleave tuning” and Cat Form is up: cast OffensivePotion | as ready |
-| 58 | if number of targets = 3 and “Use Shred cleave tuning” and “Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Shred: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 |
+| 58 | if number of targets = 3 and “Use Shred cleave tuning” and “Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Shred: leave this global for the target switch”: cast Ferocious Bite | 0.3 |
 | 59 | if number of targets = 3 and “Use Shred cleave tuning” and Cat Form is up and Clearcasting is up and not “3 targets: Shred: Pool energy for Bite” and not “3 targets: Shred: leave this global for the target switch”: cast Shred | 1.8 |
 | 60 | if number of targets = 3 and “Use Shred cleave tuning” and Cat Form is up and “Cleave 3: 3 targets: Shred: Rip due” and not “3 targets: Shred: leave this global for the target switch”: cast Rip | 4.4 |
 | 61 | if number of targets = 3 and “Use Shred cleave tuning” and Cat Form is up and “Cleave 3: Rake due”: cast Rake | 5.8 |
@@ -280,7 +280,7 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 67 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Tea is selected and energy is low”: cast Thistle Tea | as ready |
 | 68 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Rune can restore mana after Tea”: cast Demonic Rune | as ready |
 | 69 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up: cast OffensivePotion | as ready |
-| 70 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Blood Frenzy: Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 |
+| 70 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Blood Frenzy: Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Ferocious Bite | 0.3 |
 | 71 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “3 targets: Hybrid with Blood Frenzy: next target is worth switching to”: change target | as ready |
 | 72 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “3 targets: Hybrid with Blood Frenzy: previous target is worth switching to”: change target | as ready |
 | 73 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up and Clearcasting is up and not “Blood Frenzy: 3 targets: Hybrid: Pool energy for Bite” and not “3 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Shred | 1.8 |
@@ -290,12 +290,12 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 77 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up and “Use Claw for paid builders” and energy ≥ current cost and “Blood Frenzy: Cleave 3: 3 targets: Hybrid: Paid builder fits the energy pool” and not “3 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Claw | 13.9 |
 | 78 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Claw can replace Shred” and energy ≥ current cost and not “Blood Frenzy: 3 targets: Hybrid: Pool energy for Bite” and not “3 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Claw | 13.9 |
 | 79 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Innervate can restore needed mana”: cast Innervate | 0.3 |
-| 80 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and combo points ≥ 4 and time left on Rip ≥ 2s and (Clearcasting is up and energy ≥ 30 or energy ≥ 50) and not “3 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 |
+| 80 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and combo points ≥ 4 and time left on Rip ≥ 2s and (Clearcasting is up and energy ≥ 30 or energy ≥ 50) and not “3 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite | 0.3 |
 | 81 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Shifting Power ready”: cast Shifting Power | 5.5 |
 | 82 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Tea is selected and energy is low”: cast Thistle Tea | as ready |
 | 83 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Rune can restore mana after Tea”: cast Demonic Rune | as ready |
 | 84 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up: cast OffensivePotion | as ready |
-| 85 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 |
+| 85 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite | 0.3 |
 | 86 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “3 targets: Hybrid: next target is worth switching to”: change target | as ready |
 | 87 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “3 targets: Hybrid: previous target is worth switching to”: change target | as ready |
 | 88 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and Clearcasting is up and not “3 targets: Hybrid: Pool energy for Bite” and not “3 targets: Hybrid: leave this global for the target switch”: cast Shred | 1.8 |
@@ -305,12 +305,12 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 92 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and “Use Claw for paid builders” and energy ≥ current cost and “Cleave 3: 3 targets: Hybrid: Paid builder fits the energy pool” and not “3 targets: Hybrid: leave this global for the target switch”: cast Claw | 13.9 |
 | 93 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Claw can replace Shred” and energy ≥ current cost and not “3 targets: Hybrid: Pool energy for Bite” and not “3 targets: Hybrid: leave this global for the target switch”: cast Claw | 13.9 |
 | 94 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Innervate can restore needed mana”: cast Innervate | 0.3 |
-| 95 | if not (number of targets = 2 or number of targets = 3) and “Midfight Bite is worthwhile”: cast Ferocious Bite (rank 5) | 0.3 |
+| 95 | if not (number of targets = 2 or number of targets = 3) and “Midfight Bite is worthwhile”: cast Ferocious Bite | 0.3 |
 | 96 | if not (number of targets = 2 or number of targets = 3) and “Shifting Power ready”: cast Shifting Power | 5.5 |
 | 97 | if not (number of targets = 2 or number of targets = 3) and “Tea is selected and energy is low”: cast Thistle Tea | as ready |
 | 98 | if not (number of targets = 2 or number of targets = 3) and “Rune can restore mana after Tea”: cast Demonic Rune | as ready |
 | 99 | if not (number of targets = 2 or number of targets = 3) and Cat Form is up: cast OffensivePotion | as ready |
-| 100 | if not (number of targets = 2 or number of targets = 3) and “Fight-end Bite is worthwhile”: cast Ferocious Bite (rank 5) | 0.3 |
+| 100 | if not (number of targets = 2 or number of targets = 3) and “Fight-end Bite is worthwhile”: cast Ferocious Bite | 0.3 |
 | 101 | if not (number of targets = 2 or number of targets = 3) and Cat Form is up and Clearcasting is up and not “Pool energy for Bite”: cast Shred | 1.8 |
 | 102 | if not (number of targets = 2 or number of targets = 3) and Cat Form is up and “Rip due”: cast Rip | 4.4 |
 | 103 | if not (number of targets = 2 or number of targets = 3) and Cat Form is up and “Rake due”: cast Rake | 5.8 |
@@ -346,15 +346,15 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 4 | if unitDistance > 5: move to 5 yd | as ready | as ready |
 | 5 | if unitDistance > 5: wait until not (unitDistance > 5) | as ready | as ready |
 | 6 | if “Ready to activate MCP”: cast Manual Crowd Pummeler | as ready | as ready |
-| 7 | if “Final-global Bite”: cast Ferocious Bite (rank 5) | 0.3 | 0.3 |
+| 7 | if “Final-global Bite”: cast Ferocious Bite | 0.3 | 0.3 |
 | 8 | use every other cooldown when ready | as ready | as ready |
 | 9 | if “Mana potion fits and is needed”: cast ResourcePotion on self | as ready | as ready |
 | 10 | if number of targets = 2 and “Use Shred cleave tuning” and time until the global cooldown is ready ≤ 0s and “2 targets: Shred: next target is worth switching to”: change target | as ready | as ready |
-| 11 | if number of targets = 2 and “Use Shred cleave tuning” and “2 targets: Shred: Midfight Bite is worthwhile” and not “2 targets: Shred: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 | 0.3 |
+| 11 | if number of targets = 2 and “Use Shred cleave tuning” and “2 targets: Shred: Midfight Bite is worthwhile” and not “2 targets: Shred: leave this global for the target switch”: cast Ferocious Bite | 0.3 | 0.3 |
 | 12 | if number of targets = 2 and “Use Shred cleave tuning” and “Tea is selected and energy is low”: cast Thistle Tea | as ready | as ready |
 | 13 | if number of targets = 2 and “Use Shred cleave tuning” and “Rune can restore mana after Tea”: cast Demonic Rune | as ready | as ready |
 | 14 | if number of targets = 2 and “Use Shred cleave tuning” and Cat Form is up: cast OffensivePotion | as ready | as ready |
-| 15 | if number of targets = 2 and “Use Shred cleave tuning” and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Shred: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 | 0.3 |
+| 15 | if number of targets = 2 and “Use Shred cleave tuning” and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Shred: leave this global for the target switch”: cast Ferocious Bite | 0.3 | 0.3 |
 | 16 | if number of targets = 2 and “Use Shred cleave tuning” and Cat Form is up and Clearcasting is up and not “2 targets: Shred: Pool energy for Bite” and not “2 targets: Shred: leave this global for the target switch”: cast Shred | 9.0 | 9.2 |
 | 17 | if number of targets = 2 and “Use Shred cleave tuning” and Cat Form is up and “Cleave 2: 2 targets: Shred: Rip due” and not “2 targets: Shred: leave this global for the target switch”: cast Rip | 4.4 | 4.5 |
 | 18 | if number of targets = 2 and “Use Shred cleave tuning” and Cat Form is up and “Cleave 2: Rake due”: cast Rake | 6.1 | 6.2 |
@@ -362,7 +362,7 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 20 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Tea is selected and energy is low”: cast Thistle Tea | as ready | as ready |
 | 21 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Rune can restore mana after Tea”: cast Demonic Rune | as ready | as ready |
 | 22 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up: cast OffensivePotion | as ready | as ready |
-| 23 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 | 0.3 |
+| 23 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Ferocious Bite | 0.3 | 0.3 |
 | 24 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “2 targets: Hybrid with Blood Frenzy: next target is worth switching to”: change target | as ready | as ready |
 | 25 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up and Clearcasting is up and not “2 targets: Hybrid: Pool energy for Bite” and not “2 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Shred | 9.0 | 9.2 |
 | 26 | if number of targets = 2 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up and “Blood Frenzy: Cleave 2: Rip due” and not “2 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Rip | 4.4 | 4.5 |
@@ -371,7 +371,7 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 29 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Tea is selected and energy is low”: cast Thistle Tea | as ready | as ready |
 | 30 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Rune can restore mana after Tea”: cast Demonic Rune | as ready | as ready |
 | 31 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up: cast OffensivePotion | as ready | as ready |
-| 32 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 | 0.3 |
+| 32 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Cleave 2: Fight-end Bite is worthwhile” and not “2 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite | 0.3 | 0.3 |
 | 33 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “2 targets: Hybrid: next target is worth switching to”: change target | as ready | as ready |
 | 34 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and Clearcasting is up and not “2 targets: Hybrid: Pool energy for Bite” and not “2 targets: Hybrid: leave this global for the target switch”: cast Shred | 9.0 | 9.2 |
 | 35 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and “Cleave 2: Rip due” and not “2 targets: Hybrid: leave this global for the target switch”: cast Rip | 4.4 | 4.5 |
@@ -379,11 +379,11 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 37 | if number of targets = 2 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and not “Use Claw for paid builders” and energy ≥ current cost and “Cleave 2: 2 targets: Hybrid: Paid builder fits the energy pool” and not “2 targets: Hybrid: leave this global for the target switch”: cast Shred | 9.0 | 9.2 |
 | 38 | if number of targets = 3 and “Use Shred cleave tuning” and time until the global cooldown is ready ≤ 0s and “3 targets: Shred: next target is worth switching to”: change target | as ready | as ready |
 | 39 | if number of targets = 3 and “Use Shred cleave tuning” and time until the global cooldown is ready ≤ 0s and “3 targets: Shred: previous target is worth switching to”: change target | as ready | as ready |
-| 40 | if number of targets = 3 and “Use Shred cleave tuning” and “3 targets: Shred: Midfight Bite is worthwhile” and not “3 targets: Shred: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 | 0.3 |
+| 40 | if number of targets = 3 and “Use Shred cleave tuning” and “3 targets: Shred: Midfight Bite is worthwhile” and not “3 targets: Shred: leave this global for the target switch”: cast Ferocious Bite | 0.3 | 0.3 |
 | 41 | if number of targets = 3 and “Use Shred cleave tuning” and “Tea is selected and energy is low”: cast Thistle Tea | as ready | as ready |
 | 42 | if number of targets = 3 and “Use Shred cleave tuning” and “Rune can restore mana after Tea”: cast Demonic Rune | as ready | as ready |
 | 43 | if number of targets = 3 and “Use Shred cleave tuning” and Cat Form is up: cast OffensivePotion | as ready | as ready |
-| 44 | if number of targets = 3 and “Use Shred cleave tuning” and “Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Shred: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 | 0.3 |
+| 44 | if number of targets = 3 and “Use Shred cleave tuning” and “Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Shred: leave this global for the target switch”: cast Ferocious Bite | 0.3 | 0.3 |
 | 45 | if number of targets = 3 and “Use Shred cleave tuning” and Cat Form is up and Clearcasting is up and not “3 targets: Shred: Pool energy for Bite” and not “3 targets: Shred: leave this global for the target switch”: cast Shred | 9.0 | 9.2 |
 | 46 | if number of targets = 3 and “Use Shred cleave tuning” and Cat Form is up and “Cleave 3: 3 targets: Shred: Rip due” and not “3 targets: Shred: leave this global for the target switch”: cast Rip | 4.4 | 4.5 |
 | 47 | if number of targets = 3 and “Use Shred cleave tuning” and Cat Form is up and “Cleave 3: Rake due”: cast Rake | 6.1 | 6.2 |
@@ -391,29 +391,29 @@ Before the pull: at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 i
 | 49 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Tea is selected and energy is low”: cast Thistle Tea | as ready | as ready |
 | 50 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Rune can restore mana after Tea”: cast Demonic Rune | as ready | as ready |
 | 51 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up: cast OffensivePotion | as ready | as ready |
-| 52 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Blood Frenzy: Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 | 0.3 |
+| 52 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and “Blood Frenzy: Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Ferocious Bite | 0.3 | 0.3 |
 | 53 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “3 targets: Hybrid with Blood Frenzy: next target is worth switching to”: change target | as ready | as ready |
 | 54 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “3 targets: Hybrid with Blood Frenzy: previous target is worth switching to”: change target | as ready | as ready |
 | 55 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up and Clearcasting is up and not “Blood Frenzy: 3 targets: Hybrid: Pool energy for Bite” and not “3 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Shred | 9.0 | 9.2 |
 | 56 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up and “Cleave 3: Rip due” and not “3 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Rip | 4.4 | 4.5 |
 | 57 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up and “Blood Frenzy: Cleave 3: Rake due”: cast Rake | 6.1 | 6.2 |
 | 58 | if number of targets = 3 and not “Use Shred cleave tuning” and Blood Frenzy is taken and Cat Form is up and not “Use Claw for paid builders” and energy ≥ current cost and “Blood Frenzy: Cleave 3: 3 targets: Hybrid: Paid builder fits the energy pool” and not “3 targets: Hybrid with Blood Frenzy: leave this global for the target switch”: cast Shred | 9.0 | 9.2 |
-| 59 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and combo points ≥ 4 and time left on Rip ≥ 2s and (Clearcasting is up and energy ≥ 30 or energy ≥ 50) and not “3 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 | 0.3 |
+| 59 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and combo points ≥ 4 and time left on Rip ≥ 2s and (Clearcasting is up and energy ≥ 30 or energy ≥ 50) and not “3 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite | 0.3 | 0.3 |
 | 60 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Tea is selected and energy is low”: cast Thistle Tea | as ready | as ready |
 | 61 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Rune can restore mana after Tea”: cast Demonic Rune | as ready | as ready |
 | 62 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up: cast OffensivePotion | as ready | as ready |
-| 63 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite (rank 5) | 0.3 | 0.3 |
+| 63 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and “Cleave 3: Fight-end Bite is worthwhile” and not “3 targets: Hybrid: leave this global for the target switch”: cast Ferocious Bite | 0.3 | 0.3 |
 | 64 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “3 targets: Hybrid: next target is worth switching to”: change target | as ready | as ready |
 | 65 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and time until the global cooldown is ready ≤ 0s and “3 targets: Hybrid: previous target is worth switching to”: change target | as ready | as ready |
 | 66 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and Clearcasting is up and not “3 targets: Hybrid: Pool energy for Bite” and not “3 targets: Hybrid: leave this global for the target switch”: cast Shred | 9.0 | 9.2 |
 | 67 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and “Cleave 3: Rip due” and not “3 targets: Hybrid: leave this global for the target switch”: cast Rip | 4.4 | 4.5 |
 | 68 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and “Cleave 3: Rake due”: cast Rake | 6.1 | 6.2 |
 | 69 | if number of targets = 3 and not “Use Shred cleave tuning” and not Blood Frenzy is taken and Cat Form is up and not “Use Claw for paid builders” and energy ≥ current cost and “Cleave 3: 3 targets: Hybrid: Paid builder fits the energy pool” and not “3 targets: Hybrid: leave this global for the target switch”: cast Shred | 9.0 | 9.2 |
-| 70 | if not (number of targets = 2 or number of targets = 3) and “Midfight Bite is worthwhile”: cast Ferocious Bite (rank 5) | 0.3 | 0.3 |
+| 70 | if not (number of targets = 2 or number of targets = 3) and “Midfight Bite is worthwhile”: cast Ferocious Bite | 0.3 | 0.3 |
 | 71 | if not (number of targets = 2 or number of targets = 3) and “Tea is selected and energy is low”: cast Thistle Tea | as ready | as ready |
 | 72 | if not (number of targets = 2 or number of targets = 3) and “Rune can restore mana after Tea”: cast Demonic Rune | as ready | as ready |
 | 73 | if not (number of targets = 2 or number of targets = 3) and Cat Form is up: cast OffensivePotion | as ready | as ready |
-| 74 | if not (number of targets = 2 or number of targets = 3) and “Fight-end Bite is worthwhile”: cast Ferocious Bite (rank 5) | 0.3 | 0.3 |
+| 74 | if not (number of targets = 2 or number of targets = 3) and “Fight-end Bite is worthwhile”: cast Ferocious Bite | 0.3 | 0.3 |
 | 75 | if not (number of targets = 2 or number of targets = 3) and Cat Form is up and Clearcasting is up and not “Pool energy for Bite”: cast Shred | 9.0 | 9.2 |
 | 76 | if not (number of targets = 2 or number of targets = 3) and Cat Form is up and “Rip due”: cast Rip | 4.4 | 4.5 |
 | 77 | if not (number of targets = 2 or number of targets = 3) and Cat Form is up and “Rake due”: cast Rake | 6.1 | 6.2 |

@@ -101,16 +101,16 @@ What this build casts per kill ([report](../fightlab/melee-dps.md), all leveling
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Claw | 4.6 | 5.2 | 5.9 | 6.2 | 6.7 | 7% |
-| Melee (off-hand) | 2.8 | 3.7 | 5.0 | 5.8 | 6.5 | 13% |
-| Melee | 2.2 | 3.1 | 4.3 | 5.0 | 5.6 | 15% |
-| Growl | 1.8 | 2.2 | 2.8 | 3.0 | 3.3 | 0% |
-| Bite | 1.0 | 1.1 | 1.6 | 1.7 | 1.8 | 4% |
-| Auto Shot | 1.2 | 1.2 | 1.2 | 1.1 | 1.1 | 5% |
-| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 21% |
+| Claw | 4.7 | 5.3 | 6.0 | 6.1 | 6.8 | 7% |
+| Melee (off-hand) | 3.0 | 3.9 | 5.2 | 5.7 | 6.6 | 13% |
+| Melee | 2.3 | 3.3 | 4.5 | 4.8 | 5.7 | 15% |
+| Growl | 1.8 | 2.3 | 2.9 | 3.0 | 3.4 | 0% |
+| Bite | 1.0 | 1.2 | 1.7 | 1.7 | 1.9 | 4% |
+| Auto Shot | 1.2 | 1.2 | 1.2 | 1.2 | 1.1 | 5% |
+| Serpent Sting | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 18% |
 | Strider Kick | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 | 4% |
-| Raptor Strike | 0.7 | 0.5 | 0.7 | 0.8 | 0.9 | 4% |
-| Immolation Trap | 0.5 | 0.5 | 0.5 | 0.6 | 0.7 | 8% |
+| Raptor Strike | 0.7 | 0.6 | 0.8 | 0.8 | 0.9 | 4% |
+| Immolation Trap | 0.5 | 0.5 | 0.6 | 0.6 | 0.7 | 8% |
 | Lacerate | 0.0 | 0.2 | 0.1 | 0.2 | 0.2 | 1% |
 | Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.0 | 0.1 | 0% |
 

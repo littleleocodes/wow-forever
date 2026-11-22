@@ -141,7 +141,8 @@ def main():
                 f"{RP.weighted(res[best]):.1f} s per kill; {others}.")
             changed = True
         if changed and a.write:
-            bp.write_text(dumps(data) + "\n", encoding="utf-8")
+            import builds_io as BIO   # whole or not at all (2026-11-22: a running tail's validate_builds.py reads without the lock)
+            BIO._write_atomic(bp, dumps(data) + "\n")
             print(f"wrote {bp}", flush=True)
 
 

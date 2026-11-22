@@ -368,6 +368,10 @@ class MageModule(BaseModule):
     # knobs set by hand for the 70291 rule are searched again by rotation_opt.py, with the Arcane Wrath opener
     # 2026-10-25 (cast-path audit: Pyroblast was cast only on a full Heating Up, Frost Blast never): decide_fire / decide_frost
     PYRO_HARDCAST = 0        # 1: a hard-cast Pyroblast whenever its whole cast finishes before the mob is on you (0: as before)
+    FROSTFIRE_FROM = 0       # Frostfire: the level from which Frostfire Bolt replaces Frostbolt as the bolt (0: as soon as it is known,
+                             # as before; 2026-11-21, the audit session: rank 1 at 40 made the page 25% slower than Frostbolt for a decade).
+                             # Not a rules knob: the user's decision of 2026-11-21 keeps it at 0 (the Frostfire page levels as Frost, and
+                             # its "while leveling" section prices Frostfire Bolt from 40 and from 48: fightlab/frostfire_choice.py)
     FROST_BLAST = 0          # 1: Frost Blast as a finisher; 2: also when a Frostbolt cannot finish before the mob arrives (0: never)
     # 2026-11-06 (user decision on the Fire page's signature check: "teach the simulator the real opener, a hard-cast Pyroblast at the
     # start of every pull"): decide_fire's first cast of a pull. The lab's mob runs in from the pull's first second, the convention every
@@ -387,9 +391,16 @@ class MageModule(BaseModule):
     # tuned rules (20,000 fights, seeds 1-2, levels 20-60): 0.15 (the drink line) 0.6-1.1% faster per kill than 0.40, up to 1.9% at
     # 20-35; 0.10 slower (under the drink line it rarely fires). A rule knob; the default keeps the regression.
     EVO_BELOW = 0.4
+    # 2026-11-21 (the audit session, after the leveling play check's forced runs): Cone of Cold as the raid plays it, a single-target
+    # nuke once Frostbolt has stacked Winter's Chill (in a raid a quarter of Frost's damage, worth 21%). decide_frost casts it when the
+    # target carries this many stacks and the cone reaches it. Forced at 3-5 stacks with Winter's Chill 5/5 and Improved Cone of Cold
+    # 3/3 it was 1-2% faster at 50-60 (9-10% at 40) than its own paid build, and not faster than the page build once the six points
+    # are paid: a structural question for the leveling search, which this knob lets the rules tune reach. Off by default (the
+    # regression, every rules file tuned before it); a rule's veto of Cone of Cold still holds the line off.
+    CONE_AT_WC = 0           # N: Cone of Cold at N or more Winter's Chill stacks on the target, in reach (0: never)
     ROTATION_KNOBS = {"AB_MAX_STACKS": [1, 2, 3, 4], "AB_MANA_SHARE": [0.15, 0.25, 0.4], "AW_OPENER": [0, 1],
                       "PYRO_HARDCAST": [0, 1], "FROST_BLAST": [0, 1, 2], "PYRO_OPENER": [0, 1], "MAGE_ARMOR": [0, 1],
-                      "EVO_BELOW": [0.15, 0.2, 0.25, 0.3, 0.4]}
+                      "EVO_BELOW": [0.15, 0.2, 0.25, 0.3, 0.4], "CONE_AT_WC": [0, 3, 4, 5]}
 
     def __init__(self, talents, level, spec="frost-leveling", gear="leveling", armor_spell="auto"):
         self.t = {k: v for k, v in talents.items() if v > 0}
@@ -1025,6 +1036,10 @@ class MageModule(BaseModule):
             return fblast
         if hp <= wand_hit * 1.5:
             return "wand"
+        if self.CONE_AT_WC and coc and can(coc):   # CONE_AT_WC (2026-11-21): the cone at N Winter's Chill stacks, in reach
+            wc = m.debuffs.get("Winter's Chill")
+            if wc and wc.get("until", 0) > t and (wc.get("stacks") or 0) >= self.CONE_AT_WC and m.dist <= max(coc.range or 10.0, MELEE_RANGE) + 0.5:
+                return coc
         if in_melee and not rooted:
             if nova and can(nova) and hp > 0.12 * m.hp_max:
                 return nova
@@ -1188,6 +1203,8 @@ class MageModule(BaseModule):
         sp = self.spells
         ffb, fb, blast, nova, coc, lance, pyro = (sp.get(n) for n in ("Frostfire Bolt", "Frostbolt", "Fire Blast", "Frost Nova", "Cone of Cold", "Ice Lance", "Pyroblast"))
         ffb_off = ((self.veto or {}).get("Frostfire Bolt") or {}).get("off")   # 2026-10-22: a vetoed Frostfire Bolt fell back to nothing
+        if ffb and fb and self.FROSTFIRE_FROM and self.level < self.FROSTFIRE_FROM:   # FROSTFIRE_FROM: Frostbolt stays the bolt until then
+            ffb_off = True
         bolt = (fb if ffb_off else ffb) or fb or (None if ffb_off else ffb)    # (wand and Ice Lance only from 40), not to Frostbolt
         if bolt is None:
             return "wand"

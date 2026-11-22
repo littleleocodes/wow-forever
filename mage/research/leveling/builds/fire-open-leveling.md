@@ -1,17 +1,17 @@
-# Fire — Leveling (open talent search) — 1/31/19
+# Fire — Leveling (open talent search) — 1/32/18
 
 *[Mage](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 1/31/19 (Arcane / Fire / Frost) |
+| **Build** | 1/32/18 (Arcane / Fire / Frost) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
 
 ## Summary
 
-The Fire leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the fire-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (fire-leveling). +1.1% faster per kill than fire-open-leveling, the fastest of our leveling builds in that race.
+The Fire leveling build the open leveling search found on 2026-11-21: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the fire-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (fire-leveling). +1.6% faster per kill than fire-open-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -21,24 +21,23 @@ The Fire leveling build the open leveling search found on 2026-11-17: every lega
 |---|---|---|---|
 | **Wand Specialization** | 1/2 | moved | Increases your damage with Wands by 13%. |
 
-### Fire (31)
+### Fire (32)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Incineration** | 5/5 | **NEW** | Increases the critical strike chance of your Fire Blast, Ice Lance, Arcane Blast, and Scorch spells by 10%. |
 | **Accelerant** | 5/5 | changed | Reduces the casting time of your Fireball, Frostfire Bolt, and Arcane Wrath spells by 0.5 sec. |
 | **Ignite** | 5/5 | unchanged | Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec. |
-| **Burning Soul** | 2/3 | changed | Gives your Fire spells a 47% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 20%. |
+| **Burning Soul** | 3/3 | changed | Gives your Fire spells a 70% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 30%. |
 | **Pyroblast** | 1/1 | changed | Hurls an immense fiery boulder that causes 101 to 131 Fire damage and an additional 44 Fire damage over 12 sec. |
-| **Improved Fire Blast** | 1/2 | **NEW** | Reduces the cooldown of your Fire Blast spell by 1 sec and increases its range by 8 yards. |
-| **Improved Scorch** | 1/3 | changed | Your Scorch spell has a 33% chance to cause your target to be vulnerable to Fire damage. This vulnerability increases all Fire damage you deal to your target by 3% and lasts 30 sec, stacking up to 5 times. |
+| **Improved Fire Blast** | 2/2 | **NEW** | Reduces the cooldown of your Fire Blast spell by 2 sec and increases its range by 15 yards. |
 | **Heating Up** | 1/1 | **NEW** | Non-periodic critical strikes with Fireball, Frostfire Bolt, Fire Blast, and Scorch reduce the cast time of your next Pyroblast cast within 20 sec by 25%, stacking up to 3 times. Fire Blast grants an additional stack every time it deals damage. |
 | **Master of Elements** | 3/3 | changed | Your Fire and Frost critical strikes will refund 30% of their base mana cost. |
 | **Critical Mass** | 3/3 | unchanged | Increases the critical strike chance of your Fire spells by 6%. |
 | **Fire Power** | 3/3 | unchanged | Increases the damage done by your Fire spells by 3% per your Fire effects on the target, up to a maximum increase of 12%. Effects which mix multiple schools of magic do not qualify. |
 | **Combustion** | 1/1 | changed | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 non-periodic critical strikes with Fire spells. |
 
-### Frost (19)
+### Frost (18)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -46,7 +45,7 @@ The Fire leveling build the open leveling search found on 2026-11-17: every lega
 | **Precision** | 3/3 | changed | Improves your chance to hit with all spells by 6%. |
 | **Ice Shards** | 5/5 | unchanged | Increases the critical strike damage bonus of your Frost spells by 100%. |
 | **Improved Frost Nova** | 2/2 | unchanged | Reduces the cooldown of your Frost Nova spell by 4 sec. |
-| **Frost Channeling** | 3/3 | moved | Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%. |
+| **Frost Channeling** | 2/3 | moved | Reduces the mana cost of your Frost spells by 10% and reduces the threat caused by your Frost spells by 20%. |
 | **Ice Lance** | 1/1 | **NEW** | Deals 28 to 32 Frost damage to an enemy target. Deals 300% increased damage to Frozen targets. |
 | **Shatter** | 3/3 | changed | Increases the critical strike chance of all your spells against Frozen targets by 50%. |
 
@@ -63,33 +62,33 @@ The Fire leveling build the open leveling search found on 2026-11-17: every lega
 | 26-27 | Frost | Improved Frost Nova | 2 | 0/11/7 |
 | 28-30 | Frost | Ice Shards | 3 | 0/11/10 |
 | 31 | Frost | Ice Lance | 1 | 0/11/11 |
-| 32-34 | Frost | Frost Channeling | 3 | 0/11/14 |
-| 35 | Frost | Ice Shards | 1 | 0/11/15 |
+| 32-33 | Frost | Frost Channeling | 2 | 0/11/13 |
+| 34-35 | Frost | Ice Shards | 2 | 0/11/15 |
 | 36-38 | Frost | Shatter | 3 | 0/11/18 |
-| 39 | Frost | Ice Shards | 1 | 0/11/19 |
-| 40 | Arcane | Wand Specialization | 1 | 1/11/19 |
-| 41 | Fire | Improved Fire Blast | 1 | 1/12/19 |
-| 42-43 | Fire | Burning Soul | 2 | 1/14/19 |
-| 44 | Fire | Incineration | 1 | 1/15/19 |
-| 45 | Fire | Heating Up | 1 | 1/16/19 |
-| 46 | Fire | Improved Scorch | 1 | 1/17/19 |
-| 47-49 | Fire | Master of Elements | 3 | 1/20/19 |
-| 50-52 | Fire | Critical Mass | 3 | 1/23/19 |
-| 53-54 | Fire | Incineration | 2 | 1/25/19 |
-| 55-57 | Fire | Fire Power | 3 | 1/28/19 |
-| 58-59 | Fire | Incineration | 2 | 1/30/19 |
-| 60 | Fire | Combustion | 1 | 1/31/19 |
+| 39 | Arcane | Wand Specialization | 1 | 1/11/18 |
+| 40 | Fire | Improved Fire Blast | 1 | 1/12/18 |
+| 41-42 | Fire | Burning Soul | 2 | 1/14/18 |
+| 43 | Fire | Incineration | 1 | 1/15/18 |
+| 44 | Fire | Heating Up | 1 | 1/16/18 |
+| 45 | Fire | Burning Soul | 1 | 1/17/18 |
+| 46-48 | Fire | Master of Elements | 3 | 1/20/18 |
+| 49-51 | Fire | Critical Mass | 3 | 1/23/18 |
+| 52-53 | Fire | Incineration | 2 | 1/25/18 |
+| 54-56 | Fire | Fire Power | 3 | 1/28/18 |
+| 57-58 | Fire | Incineration | 2 | 1/30/18 |
+| 59 | Fire | Combustion | 1 | 1/31/18 |
+| 60 | Fire | Improved Fire Blast | 1 | 1/32/18 |
 
 ## Core talents (priority order)
 
-1. **Ice Lance** — +3.5 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Shatter** — +2.8 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Heating Up** — +1.5 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Ignite** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Shatter** — +2.8 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Ice Lance** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Ignite** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Heating Up** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
 5. **Precision** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Master of Elements** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Improved Frost Nova** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Critical Mass** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Pyroblast** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Master of Elements** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Combustion** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -97,7 +96,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 33.62; fire-open-leveling 33.99, fire-leveling 34.14, opt-fire-leveling-leveling-st 36.11. The search simulated 54,185 builds.
+- 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Fire Ward to Improved Fire Blast at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Scorch to Burning Soul at 45 (gate: -0.3% seed 3, -0.1% seed 4, level-weighted time per kill).
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 32.83; fire-open-leveling 33.34, fire-leveling 33.88, opt-fire-leveling-leveling-st 34.82. The search simulated 54,185 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
@@ -108,7 +108,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/mage>
-- <https://talentsforever.com/mage/60/1-55500201110133031-2035020301003-12>
+- <https://talentsforever.com/mage/60/1-55500301200133031-2035020201003-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

@@ -111,10 +111,10 @@ For each Forever `opt-<spec>-<profile>` build: the Classic community build it wa
 - **Adds:** Feral Swiftness 2 (new), Genesis 5 (new), Natural Instinct 2 (new), Naturalist 5 (new), Nature's Majesty 2 (new), Nature's Reach 2, Rend and Tear 5 (new)
 - **Fewer ranks:** Natural Shapeshifter 3->2, Sharpened Claws 3->2, Thick Hide 5->1
 
-### `opt-balance-dps-raid-dps` (33/0/18) vs Classic `balance-moonkin-raid` (35/0/16)
+### `opt-balance-dps-raid-dps` (36/0/15) vs Classic `balance-moonkin-raid` (35/0/16)
 
-- **Drops:** Improved Wrath 5, Subtlety 2
-- **Adds:** Genesis 5 (new), Heart of the Wild 5, Naturalist 5 (new), Nature's Majesty 2 (new), Nature's Splendor 1 (new)
+- **Drops:** Improved Wrath 5, Nature's Focus 5
+- **Adds:** Genesis 5 (new), Heart of the Wild 5, Improved Entangling Roots 3, Naturalist 5 (new), Nature's Majesty 2 (new), Nature's Splendor 1 (new)
 - **Fewer ranks:** Improved Moonfire 5->2
 
 ### `opt-feral-bear-tank-raid-tank` (9/37/5) vs Classic `feral-bear-tank` (14/32/5)

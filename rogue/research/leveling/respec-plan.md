@@ -31,7 +31,7 @@ Total: **67.9 h** (24.5% faster than talentless), no respec.
   - at level 60: **Subtlety**: Opportunity 2, Master of Deception 3, Dirty Deeds 2, Improved Ambush 3, Serrated Blades 2; **Combat**: Lightning Reflexes 5, Puncturing Wounds 3, Precision 3, Deflection 3, Riposte 1, Flawless Execution 1, Aggression 3, Weapon Expertise 2, Blade Flurry 1, Hack and Slash 5, Dual Wield Specialization 2, Endurance 1, Adrenaline Rush 1; **Assassination**: Malice 5, Ruthlessness 3
   - order: 10-11 Opportunity x2, 12-16 Lightning Reflexes x5, 17-19 Puncturing Wounds x3, 20-22 Precision x3, 23-25 Deflection x3, 26 Riposte, 27 Flawless Execution, 28-30 Aggression x3, 31-32 Weapon Expertise x2, 33 Blade Flurry, 34-38 Malice x5, 39-41 Ruthlessness x3, 42-46 Hack and Slash x5, 47-48 Dual Wield Specialization x2, 49 Endurance, 50 Adrenaline Rush, 51-53 Master of Deception x3, 54-55 Dirty Deeds x2, 56-58 Improved Ambush x3, 59-60 Serrated Blades x2
 
-Total: **69.8 h** (22.5% faster than talentless), no respec.
+Total: **71.3 h** (20.8% faster than talentless), no respec.
 
 ## Never respec: best single plan
 
@@ -42,11 +42,11 @@ Total: **69.8 h** (22.5% faster than talentless), no respec.
 | combat-swords-raid -> level-40 build (7/21/3) | 68.2 | +0.3 h |
 | combat-swords-raid -> level-50 build (7/18/16) | 68.2 | +0.3 h |
 | combat-swords-raid -> level-60 build (28/21/2) | 68.4 | +0.5 h |
-| combat-daggers-raid -> level-30 build (0/19/2) | 69.8 | +1.9 h |
-| combat-daggers-raid -> level-20 build (0/9/2) | 70.0 | +2.1 h |
-| combat-daggers-raid -> level-50 build (8/31/2) | 70.2 | +2.3 h |
-| combat-daggers-raid -> level-40 build (8/21/2) | 70.6 | +2.7 h |
-| combat-daggers-raid -> level-60 build (31/18/2) | 73.8 | +5.9 h |
+| combat-daggers-raid -> level-30 build (0/19/2) | 71.3 | +3.4 h |
+| combat-daggers-raid -> level-20 build (0/9/2) | 71.6 | +3.7 h |
+| combat-daggers-raid -> level-50 build (8/31/2) | 71.7 | +3.8 h |
+| combat-daggers-raid -> level-40 build (8/21/2) | 72.2 | +4.3 h |
+| combat-daggers-raid -> level-60 build (31/18/2) | 75.5 | +7.6 h |
 
 ## Leveling score by level (fraction of time per kill saved)
 

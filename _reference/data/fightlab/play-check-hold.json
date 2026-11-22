@@ -1,0 +1,24 @@
+{
+ "_note": "Leveling picks held by hand (2026-11-22, the audit session's ruling on the leveling play check of 08:16): class -> spec -> why. The spec's leveling page and its by-level guide say 'Being checked', and the class's leveling ranking marks it, until the fix is in and the play check passes; then its line goes. render_modes.leveling_hold and level_guides.render read it.",
+ "druid": {
+  "Balance": "the first point of Eclipse makes the pick slower at 30 (the play check: 33.3 seconds a kill at 29, 35.9 at 30), and the rotation is being checked for why"
+ },
+ "hunter": {
+  "Survival": "the play check's forced runs found Arcane Shot faster when shot from range on the pull (2.65% at 20, the game's 8-yard minimum range kept); the rotation is being tuned again with a pull shot",
+  "Hybrid Beast Mastery/Survival": "the play check's forced runs found Arcane Shot faster when shot from range on the pull (2.65% at 20, the game's 8-yard minimum range kept); the rotation is being tuned again with a pull shot",
+  "Marksmanship": "training Aimed Shot at 20 makes the pick slower (the play check: 15.0 seconds a kill at 19, 16.2 at 20); Aimed Shot is being moved to the level it pays"
+ },
+ "priest": {
+  "Holy": "the play check's forced runs found Shadow Word: Death faster when pressed (10.5% at 40, 6.3% at 50); the rotation is being tuned again with it",
+  "Hybrid Discipline/Holy": "the play check's forced runs found Shadow Word: Death faster when pressed (10.5% at 40, 6.3% at 50); the rotation is being tuned again with it"
+ },
+ "shaman": {
+  "Enhancement": "the play check's forced runs found Frost Shock and Flame Shock faster when pressed (2.8% at 20, 1.4% at 30); the rotation is being tuned again with them",
+  "Restoration": "the play check's forced runs found Frost Shock and Flame Shock faster when pressed (2.8% at 20, 1.4% at 30); the rotation is being tuned again with them"
+ },
+ "warlock": {
+  "Destruction": "the play check's forced runs found Bane of Agony faster when pressed (4-7% from 20), and Soul Fire and Corruption a little; the rotation is being tuned again with them",
+  "Affliction": "two points had been moved into talents the build does not use at those levels (Improved Shadow Bolt and Nightfall, which only help Shadow Bolt); the build, its filler record and its texts are being made again",
+  "Hybrid Affliction/Demonology": "its filler pass is still running (points that do nothing at the levels they are held); its play check follows"
+ }
+}

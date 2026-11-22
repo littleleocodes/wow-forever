@@ -3,7 +3,7 @@
  "spec": "Demonology",
  "build": "demonology-open-leveling",
  "rotation": "demonology-leveling",
- "date": "2026-11-17",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -33,38 +33,32 @@
   {
    "levels": "20-21",
    "tree": "Demonology",
-   "talent": "Improved Imp",
+   "talent": "Demonic Embrace",
    "points": 2
   },
   {
-   "levels": "22-23",
+   "levels": "22-24",
+   "tree": "Demonology",
+   "talent": "Improved Imp",
+   "points": 3
+  },
+  {
+   "levels": "25-26",
    "tree": "Demonology",
    "talent": "Demonic Aegis",
    "points": 2
   },
   {
-   "levels": "24",
-   "tree": "Demonology",
-   "talent": "Improved Sayaad",
-   "points": 1
-  },
-  {
-   "levels": "25",
+   "levels": "27",
    "tree": "Demonology",
    "talent": "Demonic Sacrifice",
    "points": 1
   },
   {
-   "levels": "26",
-   "tree": "Demonology",
-   "talent": "Master Summoner",
-   "points": 1
-  },
-  {
-   "levels": "27-29",
+   "levels": "28-29",
    "tree": "Demonology",
    "talent": "Demonic Brand",
-   "points": 3
+   "points": 2
   },
   {
    "levels": "30",
@@ -81,38 +75,32 @@
   {
    "levels": "34",
    "tree": "Demonology",
-   "talent": "Improved Felhunter",
+   "talent": "Demonic Brand",
    "points": 1
   },
   {
-   "levels": "35-37",
+   "levels": "35-39",
    "tree": "Affliction",
    "talent": "Improved Corruption",
-   "points": 3
+   "points": 5
   },
   {
-   "levels": "38-42",
+   "levels": "40-44",
    "tree": "Demonology",
    "talent": "Master Demonologist",
    "points": 5
   },
   {
-   "levels": "43-44",
+   "levels": "45-46",
    "tree": "Affliction",
    "talent": "Improved Life Tap",
    "points": 2
   },
   {
-   "levels": "45-48",
+   "levels": "47-49",
    "tree": "Affliction",
    "talent": "Suppression",
-   "points": 4
-  },
-  {
-   "levels": "49",
-   "tree": "Affliction",
-   "talent": "Grim Reach",
-   "points": 1
+   "points": 3
   },
   {
    "levels": "50",
@@ -153,157 +141,387 @@
  ],
  "steps": [
   {
-   "weighted": 30.753,
+   "weighted": 34.244,
    "values_at_60": {
-    "Amplify Curse": -0.3,
-    "Grim Reach": -0.01,
-    "Improved Bane of Agony": -0.174,
-    "Improved Corruption": -0.05,
-    "Improved Life Tap": -0.405,
-    "Malevolence": -0.12,
-    "Master Demonologist": 0.014,
-    "Pandemic": -0.144,
-    "Siphon Life": -1.676,
-    "Suppression": -0.213
+    "Amplify Curse": -0.466,
+    "Improved Bane of Agony": -0.23,
+    "Improved Corruption": -0.043,
+    "Improved Life Tap": -0.173,
+    "Malevolence": -0.068,
+    "Master Demonologist": 0.058,
+    "Pandemic": -0.131,
+    "Siphon Life": -2.325,
+    "Suppression": -0.07
    },
    "zero": [
-    "Grim Reach",
-    "Improved Corruption",
-    "Master Demonologist"
-   ]
-  },
-  {
-   "weighted": 30.714,
-   "values_at_60": {
-    "Amplify Curse": -0.276,
-    "Grim Reach": 0.0,
-    "Improved Bane of Agony": -0.198,
-    "Improved Corruption": -0.022,
-    "Improved Life Tap": -0.373,
-    "Malevolence": -0.089,
-    "Master Demonologist": 0.078,
-    "Pandemic": -0.147,
-    "Siphon Life": -1.617,
-    "Suppression": 0.006
-   },
-   "zero": [
-    "Grim Reach",
     "Improved Corruption",
     "Malevolence",
     "Master Demonologist",
     "Suppression"
-   ]
-  },
-  {
-   "weighted": 30.718,
-   "values_at_60": {
-    "Curse of Exhaustion": 0.0,
-    "Grim Reach": -0.074,
-    "Improved Bane of Agony": -0.221,
-    "Improved Corruption": -0.148,
-    "Improved Life Tap": -0.354,
-    "Malevolence": -0.173,
-    "Master Demonologist": 0.011,
-    "Pandemic": -0.199,
-    "Siphon Life": -1.793,
-    "Suppression": -0.007
-   },
-   "zero": [
-    "Curse of Exhaustion",
-    "Grim Reach",
-    "Master Demonologist",
-    "Suppression"
-   ]
-  },
-  {
-   "weighted": 30.705,
-   "values_at_60": {
-    "Amplify Curse": -0.306,
-    "Grim Reach": 0.066,
-    "Improved Bane of Agony": -0.147,
-    "Improved Corruption": -0.102,
-    "Improved Life Tap": -0.314,
-    "Malevolence": -0.075,
-    "Master Demonologist": 0.039,
-    "Pandemic": -0.173,
-    "Siphon Life": -1.77,
-    "Suppression": -0.017
-   },
-   "zero": [
-    "Grim Reach",
-    "Malevolence",
-    "Master Demonologist",
-    "Suppression"
-   ]
+   ],
+   "dead_held": []
   }
  ],
  "moves": [
   {
    "from": "Master Demonologist",
-   "to": "Improved Corruption",
-   "level": 42,
-   "seed3": -0.0046,
-   "seed4": -0.0047,
-   "why": "measured"
-  },
-  {
-   "from": "Malevolence",
-   "to": "Improved Corruption",
-   "level": 58,
-   "seed3": 0.0002,
-   "seed4": 0.0004,
-   "why": "no loss"
-  },
-  {
-   "from": "Master Demonologist",
    "to": "Suppression",
-   "level": 41,
-   "seed3": -0.0013,
-   "seed4": -0.0005,
+   "level": 44,
+   "seed3": -0.0016,
+   "seed4": -0.0018,
    "why": "tie-break"
   },
   {
-   "from": "Improved Corruption",
-   "to": "Curse of Exhaustion",
-   "level": 58,
-   "seed3": 0.0001,
-   "seed4": 0.0005,
-   "why": "no loss"
-  },
-  {
-   "from": "Curse of Exhaustion",
-   "to": "Malevolence",
-   "level": 58,
-   "seed3": -0.0004,
-   "seed4": -0.0009,
-   "why": "tie-break"
-  },
-  {
-   "from": "Demonic Aegis",
+   "from": "Demonic Embrace",
    "to": "Fel Vitality",
-   "level": 23,
-   "seed3": -0.0011,
-   "seed4": -0.0014,
+   "level": 21,
+   "seed3": -0.0021,
+   "seed4": -0.0018,
    "why": "gate"
   },
   {
-   "from": "Improved Imp",
+   "from": "Improved Voidwalker",
    "to": "Fel Vitality",
-   "level": 21,
+   "level": 18,
    "seed3": -0.0013,
+   "seed4": -0.0013,
+   "why": "gate"
+  },
+  {
+   "from": "Demonic Embrace",
+   "to": "Fel Vitality",
+   "level": 20,
+   "seed3": -0.0018,
    "seed4": -0.001,
    "why": "gate"
   },
   {
    "from": "Improved Imp",
-   "to": "Fel Vitality",
-   "level": 20,
-   "seed3": -0.0008,
-   "seed4": -0.0011,
-   "why": "gate"
+   "to": "Improved Voidwalker",
+   "level": 24,
+   "seed3": 0.0001,
+   "seed4": 0.0,
+   "why": "gate that did nothing, no loss"
+  },
+  {
+   "from": "Improved Imp",
+   "to": "Demonic Embrace",
+   "level": 23,
+   "seed3": 0.0008,
+   "seed4": -0.0002,
+   "why": "gate that did nothing, no loss"
+  },
+  {
+   "from": "Improved Imp",
+   "to": "Demonic Embrace",
+   "level": 22,
+   "seed3": 0.0005,
+   "seed4": -0.0005,
+   "why": "gate that did nothing, no loss"
   }
  ],
  "kept_signature": [],
+ "gates_checked": {
+  "Demonic Aegis": {
+   "level": 26,
+   "kind": "tier point for Master Demonologist (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Demonic Embrace",
+     "seed3": -0.0009
+    },
+    {
+     "to": "Improved Health Funnel",
+     "seed3": -0.0007
+    },
+    {
+     "to": "Improved Imp",
+     "seed3": -0.0007
+    },
+    {
+     "to": "Improved Sayaad",
+     "seed3": -0.0007
+    },
+    {
+     "to": "Master Summoner",
+     "seed3": -0.0007
+    },
+    {
+     "to": "Decimation",
+     "seed3": 0.0
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Demonic Brand": {
+   "level": 34,
+   "kind": "tier point for Master Demonologist (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Health Funnel",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Improved Imp",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Improved Sayaad",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Master Summoner",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Improved Felhunter",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Demonic Embrace",
+     "seed3": 0.0034
+    },
+    {
+     "to": "Decimation",
+     "seed3": 0.004
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Demonic Embrace": {
+   "level": 23,
+   "kind": "tier point for Master Demonologist (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Health Funnel",
+     "seed3": -0.0007
+    },
+    {
+     "to": "Improved Imp",
+     "seed3": -0.0007
+    },
+    {
+     "to": "Improved Sayaad",
+     "seed3": -0.0007
+    },
+    {
+     "to": "Master Summoner",
+     "seed3": -0.0007
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Demonic Energies": {
+   "level": 19,
+   "kind": "tier point for Master Demonologist (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Health Funnel",
+     "seed3": 0.0066
+    },
+    {
+     "to": "Improved Imp",
+     "seed3": 0.0066
+    },
+    {
+     "to": "Demonic Embrace",
+     "seed3": 0.0072
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Demonic Knowledge": {
+   "level": 33,
+   "kind": "tier point for Master Demonologist (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Health Funnel",
+     "seed3": 0.0187
+    },
+    {
+     "to": "Improved Imp",
+     "seed3": 0.0187
+    },
+    {
+     "to": "Improved Sayaad",
+     "seed3": 0.0187
+    },
+    {
+     "to": "Master Summoner",
+     "seed3": 0.0187
+    },
+    {
+     "to": "Improved Felhunter",
+     "seed3": 0.0187
+    },
+    {
+     "to": "Demonic Embrace",
+     "seed3": 0.0187
+    },
+    {
+     "to": "Decimation",
+     "seed3": 0.02
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Demonic Sacrifice": {
+   "level": 27,
+   "kind": "prerequisite of Soul Link",
+   "does_nothing": "a talent ability the build never presses (its removal changes nothing at 30, 40, 50, 60)",
+   "homes": [],
+   "verdict": "no legal home"
+  },
+  "Fel Vitality": {
+   "level": 21,
+   "kind": "tier point for Master Demonologist (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Demonic Embrace",
+     "seed3": -0.0002
+    },
+    {
+     "to": "Improved Health Funnel",
+     "seed3": 0.0004
+    },
+    {
+     "to": "Improved Imp",
+     "seed3": 0.0004
+    },
+    {
+     "to": "Improved Sayaad",
+     "seed3": 0.0004
+    },
+    {
+     "to": "Master Summoner",
+     "seed3": 0.0004
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Voidwalker": {
+   "level": 24,
+   "kind": "tier point for Master Demonologist (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Demonic Embrace",
+     "seed3": -0.001
+    },
+    {
+     "to": "Improved Health Funnel",
+     "seed3": -0.0
+    },
+    {
+     "to": "Improved Imp",
+     "seed3": -0.0
+    },
+    {
+     "to": "Improved Sayaad",
+     "seed3": -0.0
+    },
+    {
+     "to": "Master Summoner",
+     "seed3": -0.0
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Soul Link": {
+   "level": 30,
+   "kind": "tier point for Master Demonologist (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Health Funnel",
+     "seed3": 0.0142
+    },
+    {
+     "to": "Improved Imp",
+     "seed3": 0.0142
+    },
+    {
+     "to": "Improved Sayaad",
+     "seed3": 0.0142
+    },
+    {
+     "to": "Master Summoner",
+     "seed3": 0.0142
+    },
+    {
+     "to": "Improved Felhunter",
+     "seed3": 0.0142
+    },
+    {
+     "to": "Demonic Embrace",
+     "seed3": 0.0142
+    },
+    {
+     "to": "Decimation",
+     "seed3": 0.0149
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Unholy Power": {
+   "level": 14,
+   "kind": "tier point for Master Demonologist (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Demonic Embrace",
+     "seed3": 0.0018
+    },
+    {
+     "to": "Improved Health Funnel",
+     "seed3": 0.0018
+    },
+    {
+     "to": "Improved Imp",
+     "seed3": 0.0018
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  }
+ },
+ "no_better_home": {
+  "Improved Corruption": {
+   "kind": "zero point",
+   "exact": false,
+   "why": "time per kill at 60 without its last rank: +0.04 s (seed 3)",
+   "homes": 12
+  },
+  "Malevolence": {
+   "kind": "zero point",
+   "exact": false,
+   "why": "time per kill at 60 without its last rank: +0.07 s (seed 3)",
+   "homes": 18
+  },
+  "Master Demonologist": {
+   "kind": "zero point",
+   "exact": false,
+   "why": "time per kill at 60 without its last rank: -0.06 s (seed 3)",
+   "homes": 14
+  },
+  "Suppression": {
+   "kind": "zero point",
+   "exact": false,
+   "why": "time per kill at 60 without its last rank: +0.07 s (seed 3)",
+   "homes": 15
+  },
+  "Demonic Sacrifice": {
+   "kind": "prerequisite of Soul Link",
+   "exact": true,
+   "why": "a talent ability the build never presses (its removal changes nothing at 30, 40, 50, 60)",
+   "homes": 0
+  }
+ },
  "final_order": [
   {
    "levels": "10-14",
@@ -318,10 +536,16 @@
    "points": 1
   },
   {
-   "levels": "16-18",
+   "levels": "16-17",
    "tree": "Demonology",
    "talent": "Improved Voidwalker",
-   "points": 3
+   "points": 2
+  },
+  {
+   "levels": "18",
+   "tree": "Demonology",
+   "talent": "Fel Vitality",
+   "points": 1
   },
   {
    "levels": "19",
@@ -336,40 +560,34 @@
    "points": 2
   },
   {
-   "levels": "22",
+   "levels": "22-23",
    "tree": "Demonology",
-   "talent": "Demonic Aegis",
-   "points": 1
-  },
-  {
-   "levels": "23",
-   "tree": "Demonology",
-   "talent": "Fel Vitality",
-   "points": 1
+   "talent": "Demonic Embrace",
+   "points": 2
   },
   {
    "levels": "24",
    "tree": "Demonology",
-   "talent": "Improved Sayaad",
+   "talent": "Improved Voidwalker",
    "points": 1
   },
   {
-   "levels": "25",
+   "levels": "25-26",
+   "tree": "Demonology",
+   "talent": "Demonic Aegis",
+   "points": 2
+  },
+  {
+   "levels": "27",
    "tree": "Demonology",
    "talent": "Demonic Sacrifice",
    "points": 1
   },
   {
-   "levels": "26",
-   "tree": "Demonology",
-   "talent": "Master Summoner",
-   "points": 1
-  },
-  {
-   "levels": "27-29",
+   "levels": "28-29",
    "tree": "Demonology",
    "talent": "Demonic Brand",
-   "points": 3
+   "points": 2
   },
   {
    "levels": "30",
@@ -386,50 +604,38 @@
   {
    "levels": "34",
    "tree": "Demonology",
-   "talent": "Improved Felhunter",
+   "talent": "Demonic Brand",
    "points": 1
   },
   {
-   "levels": "35-37",
+   "levels": "35-39",
    "tree": "Affliction",
    "talent": "Improved Corruption",
-   "points": 3
+   "points": 5
   },
   {
-   "levels": "38-40",
+   "levels": "40-43",
    "tree": "Demonology",
    "talent": "Master Demonologist",
-   "points": 3
+   "points": 4
   },
   {
-   "levels": "41",
+   "levels": "44",
    "tree": "Affliction",
    "talent": "Suppression",
    "points": 1
   },
   {
-   "levels": "42",
-   "tree": "Affliction",
-   "talent": "Improved Corruption",
-   "points": 1
-  },
-  {
-   "levels": "43-44",
+   "levels": "45-46",
    "tree": "Affliction",
    "talent": "Improved Life Tap",
    "points": 2
   },
   {
-   "levels": "45-48",
+   "levels": "47-49",
    "tree": "Affliction",
    "talent": "Suppression",
-   "points": 4
-  },
-  {
-   "levels": "49",
-   "tree": "Affliction",
-   "talent": "Grim Reach",
-   "points": 1
+   "points": 3
   },
   {
    "levels": "50",
@@ -477,15 +683,11 @@
     ],
     [
      "Suppression",
-     5
-    ],
-    [
-     "Improved Corruption",
      4
     ],
     [
-     "Grim Reach",
-     1
+     "Improved Corruption",
+     5
     ],
     [
      "Improved Bane of Agony",
@@ -510,12 +712,16 @@
    ],
    "Demonology": [
     [
+     "Demonic Embrace",
+     2
+    ],
+    [
      "Unholy Power",
      5
     ],
     [
      "Demonic Aegis",
-     1
+     2
     ],
     [
      "Improved Voidwalker",
@@ -530,24 +736,12 @@
      2
     ],
     [
-     "Improved Sayaad",
-     1
-    ],
-    [
      "Demonic Sacrifice",
-     1
-    ],
-    [
-     "Master Summoner",
      1
     ],
     [
      "Demonic Brand",
      3
-    ],
-    [
-     "Improved Felhunter",
-     1
     ],
     [
      "Soul Link",
@@ -559,7 +753,7 @@
     ],
     [
      "Master Demonologist",
-     3
+     4
     ]
    ],
    "Destruction": []
@@ -578,10 +772,16 @@
     "points": 1
    },
    {
-    "levels": "16-18",
+    "levels": "16-17",
     "tree": "Demonology",
     "talent": "Improved Voidwalker",
-    "points": 3
+    "points": 2
+   },
+   {
+    "levels": "18",
+    "tree": "Demonology",
+    "talent": "Fel Vitality",
+    "points": 1
    },
    {
     "levels": "19",
@@ -596,40 +796,34 @@
     "points": 2
    },
    {
-    "levels": "22",
+    "levels": "22-23",
     "tree": "Demonology",
-    "talent": "Demonic Aegis",
-    "points": 1
-   },
-   {
-    "levels": "23",
-    "tree": "Demonology",
-    "talent": "Fel Vitality",
-    "points": 1
+    "talent": "Demonic Embrace",
+    "points": 2
    },
    {
     "levels": "24",
     "tree": "Demonology",
-    "talent": "Improved Sayaad",
+    "talent": "Improved Voidwalker",
     "points": 1
    },
    {
-    "levels": "25",
+    "levels": "25-26",
+    "tree": "Demonology",
+    "talent": "Demonic Aegis",
+    "points": 2
+   },
+   {
+    "levels": "27",
     "tree": "Demonology",
     "talent": "Demonic Sacrifice",
     "points": 1
    },
    {
-    "levels": "26",
-    "tree": "Demonology",
-    "talent": "Master Summoner",
-    "points": 1
-   },
-   {
-    "levels": "27-29",
+    "levels": "28-29",
     "tree": "Demonology",
     "talent": "Demonic Brand",
-    "points": 3
+    "points": 2
    },
    {
     "levels": "30",
@@ -646,50 +840,38 @@
    {
     "levels": "34",
     "tree": "Demonology",
-    "talent": "Improved Felhunter",
+    "talent": "Demonic Brand",
     "points": 1
    },
    {
-    "levels": "35-37",
+    "levels": "35-39",
     "tree": "Affliction",
     "talent": "Improved Corruption",
-    "points": 3
+    "points": 5
    },
    {
-    "levels": "38-40",
+    "levels": "40-43",
     "tree": "Demonology",
     "talent": "Master Demonologist",
-    "points": 3
+    "points": 4
    },
    {
-    "levels": "41",
+    "levels": "44",
     "tree": "Affliction",
     "talent": "Suppression",
     "points": 1
    },
    {
-    "levels": "42",
-    "tree": "Affliction",
-    "talent": "Improved Corruption",
-    "points": 1
-   },
-   {
-    "levels": "43-44",
+    "levels": "45-46",
     "tree": "Affliction",
     "talent": "Improved Life Tap",
     "points": 2
    },
    {
-    "levels": "45-48",
+    "levels": "47-49",
     "tree": "Affliction",
     "talent": "Suppression",
-    "points": 4
-   },
-   {
-    "levels": "49",
-    "tree": "Affliction",
-    "talent": "Grim Reach",
-    "points": 1
+    "points": 3
    },
    {
     "levels": "50",
@@ -728,6 +910,12 @@
     "points": 1
    }
   ],
-  "note": "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Master Demonologist to Suppression at 41 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Corruption to Curse of Exhaustion at 58 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Curse of Exhaustion to Malevolence at 58 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Aegis to Fel Vitality at 23 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Imp to Fel Vitality at 21 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Imp to Fel Vitality at 20 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Master Demonologist to Improved Corruption at 42 (measured: -0.5% seed 3, -0.5% seed 4, level-weighted time per kill); Malevolence to Improved Corruption at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill)."
- }
+  "note": "2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Imp to Improved Voidwalker at 24 (gate that did nothing, no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Improved Imp to Demonic Embrace at 23 (gate that did nothing, no loss: +0.1% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Imp to Demonic Embrace at 22 (gate that did nothing, no loss: +0.1% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Master Demonologist to Suppression at 44 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Demonic Embrace to Fel Vitality at 21 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Voidwalker to Fel Vitality at 18 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Embrace to Fel Vitality at 20 (gate: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill)."
+ },
+ "reruns": [
+  {
+   "date": "2026-11-22",
+   "moves": 0
+  }
+ ]
 }

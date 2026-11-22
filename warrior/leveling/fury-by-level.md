@@ -4,7 +4,7 @@
 
 What a Fury warrior presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. A warrior has no mana: every attack costs rage, and rage comes from hitting and being hit. Fury fights with a weapon in each hand: two weapons swing more often, and every landed swing gives rage. You stay in Battle Stance from 1 to 60, as Arms does; what Fury adds is Death Wish at 30, Bloodthirst at 40 and Reckless Swings at 43. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 17/34/0 ([open the talent tree](https://talentsforever.com/warrior/60/20323213001-050530355100120031--12)), the one on the [Fury leveling page](fury.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 16/35/0 ([open the talent tree](https://talentsforever.com/warrior/60/20323213-050530355110120031--12)), the one on the [Fury leveling page](fury.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -79,7 +79,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - Stay in **Battle Stance**. The fight lab gives you a one-handed weapon in each hand from level 1. The Forever data here names no level for Dual Wield (in Classic Era the trainer taught it at 20): until you can wield two weapons, fight with a two-hander. The fight lab has not measured that stretch.
 
-*Fight lab, seconds per kill: 13 at level 1. Presses per kill at level 1: Melee 1.6, Melee (off-hand) 1.4, Heroic Strike 0.5, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 13 at level 1. Presses per kill at level 1: Melee 1.5, Melee (off-hand) 1.3, Heroic Strike 0.5, Battle Shout 0.1.*
 
 ## Levels 4-9: Charge and Rend
 
@@ -100,7 +100,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Thunder Clap** (6) is for two or more mobs. **Hamstring** (8) stops a mob that runs away.
 
-*Fight lab, seconds per kill: 15 at level 4, 18 at level 9. Presses per kill at level 4: Melee (off-hand) 2.9, Melee 2.3, Rend 1.1, Heroic Strike 0.9, Charge 0.6, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 15 at level 4, 18 at level 9. Presses per kill at level 4: Melee (off-hand) 2.9, Melee 2.2, Rend 1.1, Heroic Strike 0.9, Charge 0.6, Battle Shout 0.1.*
 
 ## Levels 10-11: Bloodrage, and talents begin
 
@@ -124,7 +124,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Defensive Stance**, **Taunt** and **Sunder Armor** (10) are for tanking. Fury levels in **Battle Stance**.
 - **Cruelty** (10-14) adds critical strikes. A critical swing gives double rage, so it feeds every button.
 
-*Fight lab, seconds per kill: 18 at level 10. Presses per kill at level 10: Melee (off-hand) 4.6, Melee 2.8, Heroic Strike 1.9, Rend 1.2, Charge 0.9, Bloodrage 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 18 at level 10. Presses per kill at level 10: Melee (off-hand) 4.5, Melee 2.5, Heroic Strike 2.1, Rend 1.2, Charge 0.9, Bloodrage 0.3, Battle Shout 0.1.*
 
 ## Levels 12-19: Overpower
 
@@ -149,7 +149,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Unbridled Wrath** (15-19) gives extra rage from your white swings, with both hands. Nothing new to press.
 - **Shield Bash** (12) and **Revenge** (14) need a shield or Defensive Stance. Skip them. **Tactical Mastery** (14) only matters when you change stance, and Fury never does.
 
-*Fight lab, seconds per kill: 19 at level 12, 21 at level 19. Presses per kill at level 12: Melee (off-hand) 4.9, Melee 3.1, Heroic Strike 1.9, Rend 1.2, Charge 1.0, Overpower 0.5, Bloodrage 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 19 at level 12, 21 at level 19. Presses per kill at level 12: Melee (off-hand) 4.8, Melee 2.7, Heroic Strike 2.2, Rend 1.2, Charge 1.0, Overpower 0.5, Bloodrage 0.3, Battle Shout 0.1.*
 
 ## Levels 20-23: Victory Rush
 
@@ -174,7 +174,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Slam** (20) stays off your bar: this build never takes **Improved Slam**, and plain Slam stops your swings. **Cleave** (20) is for two or more mobs.
 - **Enrage** (20-24): more damage for 12 seconds after a mob hits you. Nothing to press. **Retaliation** (20, key 4) and **Intimidating Shout** (22, F) are for a pull that goes wrong.
 
-*Fight lab, seconds per kill: 20 at level 20. Presses per kill at level 20: Melee (off-hand) 5.5, Melee 3.1, Heroic Strike 2.4, Rend 1.2, Charge 1.0, Overpower 0.6, Victory Rush 0.3, Bloodrage 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 20 at level 20. Presses per kill at level 20: Melee (off-hand) 5.5, Melee 2.8, Heroic Strike 2.7, Rend 1.2, Charge 1.0, Overpower 0.6, Victory Rush 0.5, Bloodrage 0.3, Battle Shout 0.1.*
 
 ## Levels 24-29: Execute
 
@@ -199,7 +199,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Furious Precision** (25, 32-33) and **Dual Wield Specialization** (26-29, 31) are why Fury wants two weapons: the off hand hits more often, harder, and gives more rage. Nothing new to press.
 
-*Fight lab, seconds per kill: 20 at level 24, 22 at level 29. Presses per kill at level 24: Melee (off-hand) 5.4, Melee 4.0, Heroic Strike 1.4, Rend 1.2, Charge 1.0, Execute 0.9, Overpower 0.6, Victory Rush 0.4, Bloodrage 0.3, Battle Shout 0.1.*
+*Fight lab, seconds per kill: 20 at level 24, 23 at level 29. Presses per kill at level 24: Melee (off-hand) 5.3, Melee 3.7, Heroic Strike 1.6, Rend 1.2, Execute 1.0, Charge 1.0, Overpower 0.5, Victory Rush 0.5, Bloodrage 0.3, Battle Shout 0.1.*
 
 ## Levels 30-39: Death Wish
 
@@ -226,7 +226,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Berserker Stance** (30) opens **Berserker Rage** and **Intercept** (30), **Whirlwind** (36) and **Pummel** (38). This rotation stays in **Battle Stance**: the fight lab has not measured the swap.
 - **Blood Craze** (34, 38-39) heals you after a big hit, **Flurry** (35-37) swings faster after a critical strike. Nothing new to press.
 
-*Fight lab, seconds per kill: 22 at level 30, 26 at level 39. Presses per kill at level 30: Melee (off-hand) 6.1, Melee 4.0, Heroic Strike 2.1, Rend 1.2, Charge 1.0, Execute 0.9, Overpower 0.7, Victory Rush 0.6, Bloodrage 0.3, Battle Shout 0.1, Death Wish 0.1.*
+*Fight lab, seconds per kill: 22 at level 30, 26 at level 39. Presses per kill at level 30: Melee (off-hand) 6.0, Melee 3.5, Heroic Strike 2.5, Rend 1.2, Execute 1.0, Charge 1.0, Overpower 0.6, Victory Rush 0.6, Bloodrage 0.3, Battle Shout 0.1, Death Wish 0.1.*
 
 ## Levels 40-42: Bloodthirst
 
@@ -251,7 +251,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Gore Drinker** (41-42): your next 3 hits after **Bloodrage**, **Death Wish**, **Bloodthirst** or an **Enrage** each heal 0.5% of your health, 1% with both points.
 - Two or more mobs: **Thunder Clap** and **Cleave**.
 
-*Fight lab, seconds per kill: 24 at level 40. Presses per kill at level 40: Melee (off-hand) 7.2, Melee 6.6, Bloodthirst 2.0, Rend 1.2, Charge 1.0, Execute 0.9, Overpower 0.8, Victory Rush 0.6, Heroic Strike 0.6, Bloodrage 0.3, Battle Shout 0.1, Death Wish 0.1.*
+*Fight lab, seconds per kill: 24 at level 40. Presses per kill at level 40: Melee (off-hand) 7.1, Melee 6.1, Bloodthirst 2.1, Rend 1.2, Execute 1.1, Charge 1.0, Heroic Strike 1.0, Overpower 0.8, Victory Rush 0.6, Bloodrage 0.3, Battle Shout 0.1, Death Wish 0.1.*
 
 ## Levels 43-60: Reckless Swings, the finished rotation
 
@@ -259,7 +259,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Battle Shout at 52, 60; Bloodthirst at 48, 54, 60; Charge at 46; Cleave at 50, 60; Execute at 48, 56; Hamstring at 54; Heroic Strike at 48, 56, 60; Overpower at 44, 60; Rend at 50, 60; Thunder Clap at 48, 58.
 
-**Talents:** 43 Reckless Swings, 44-46 Improved Rend, 47-48 Improved Heroic Strike, 49-50 Improved Charge, 51-53 Improved Tactical Mastery, 54 Anger Management, 55-57 Deep Wounds, 58 Improved Overpower, 59 Impale, 60 Improved Overpower.
+**Talents:** 43 Reckless Swings, 44-46 Improved Rend, 47-48 Improved Heroic Strike, 49-50 Improved Charge, 51-53 Improved Tactical Mastery, 54 Anger Management, 55-57 Deep Wounds, 58 Improved Overpower, 59 Improved Execute, 60 Improved Overpower.
 
 **Keys to set:** Shift+Q = Reckless Swings.
 
@@ -277,10 +277,10 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 8. **Heroic Strike** with spare rage. Keep 15 back for **Overpower**.
 
 - **Reckless Swings** costs health, not rage. The fight lab casts it off the global cooldown (an assumption: the tooltip names none) and skips it when your rage is within 20 of full.
-- From 44 the points go to Arms: **Improved Rend**, **Improved Heroic Strike**, **Improved Charge**, **Deep Wounds**, **Improved Overpower** and **Impale** make the buttons you have better. Nothing new to press.
+- From 44 the points go to Arms: **Improved Rend**, **Improved Heroic Strike**, **Improved Charge**, **Deep Wounds** and **Improved Overpower** make the buttons you have better. Nothing new to press.
 - Two or more mobs: **Thunder Clap** and **Cleave**.
 
-*Fight lab, seconds per kill: 25 at level 50, 27 at level 60. Presses per kill at level 50: Melee (off-hand) 7.7, Melee 6.2, Bloodthirst 2.4, Heroic Strike 1.5, Rend 1.2, Execute 1.1, Charge 1.0, Overpower 0.9, Reckless Swings 0.7, Victory Rush 0.7, Bloodrage 0.3, Battle Shout 0.1, Death Wish 0.1.*
+*Fight lab, seconds per kill: 24 at level 43, 24 at level 50, 26 at level 60. Presses per kill at level 43: Melee (off-hand) 7.1, Melee 5.7, Bloodthirst 2.2, Heroic Strike 1.4, Rend 1.2, Execute 1.1, Charge 1.0, Overpower 0.8, Reckless Swings 0.8, Victory Rush 0.7, Bloodrage 0.3, Battle Shout 0.1, Death Wish 0.1.*
 
 ## Between fights
 
@@ -294,4 +294,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Several mobs: **Thunder Clap** and **Cleave** in **Battle Stance**. **Whirlwind** needs **Berserker Stance**; the fight lab has not measured Fury fighting there.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-19: the stages are hand-kept in `_reference/data/level-guides/warrior.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/warrior.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

@@ -217,8 +217,35 @@ _BOOK_FILE = pathlib.Path(__file__).resolve().parents[1] / "raidsim" / "trainer-
 BOOK_RANK_IDS = {int(b) for b in json.load(open(_BOOK_FILE, encoding="utf-8"))["map"]} if _BOOK_FILE.exists() else set()
 
 
+# The live client's mana costs (2026-11-21, the extended lint's cost check; the audit session: "write it up as a check that runs with
+# live_spells at every client update, since the export's cost field is never refreshed"): client_costs.json (client_costs.py: the
+# client's SpellPower table against forever-spells, by spell id) puts the client's cost on every rank where ours differs, when a
+# spellbook loads (trainer_ranks_only, which every fight-lab module calls; the healer lab has its own loader, and its one listed heal,
+# Riptide, it reads from the notes within 3 mana of the client). Client 71037: Arcane Shot and Summon Hawk at 11% of
+# base mana since 70938 (flat 25-190 before), Chain Lightning 245/360/425/495, Riptide 150/180/230. False: the lab before, bit for bit.
+CLIENT_COSTS = True
+_CLIENT_COSTS_FILE = pathlib.Path(__file__).resolve().parent / "client_costs.json"
+CLIENT_COST_TEXT = ({int(k): v["client"] for k, v in json.load(open(_CLIENT_COSTS_FILE, encoding="utf-8"))["costs"].items()}
+                    if _CLIENT_COSTS_FILE.exists() else {})
+
+
+def client_costs(spellbook):
+    """A forever-spells spellbook object with the live client's cost text on the ranks client_costs.json lists (CLIENT_COSTS); the object
+    itself when off or when nothing applies."""
+    if not CLIENT_COSTS or not CLIENT_COST_TEXT:
+        return spellbook
+    hit = any(int(r.get("id") or 0) in CLIENT_COST_TEXT for tab in spellbook.get("tabs", []) for sp in tab["spells"] for r in sp["ranks"])
+    if not hit:
+        return spellbook
+    return dict(spellbook, tabs=[dict(tab, spells=[dict(sp, ranks=[dict(r, cost=CLIENT_COST_TEXT[int(r["id"])]) if int(r.get("id") or 0) in
+                                                                  CLIENT_COST_TEXT else r for r in sp["ranks"]]) for sp in tab["spells"]])
+                                 for tab in spellbook.get("tabs", [])])
+
+
 def trainer_ranks_only(spellbook):
-    """A forever-spells spellbook object without the class books' ranks (TRAINER_RANKS); the object itself when off."""
+    """A forever-spells spellbook object without the class books' ranks (TRAINER_RANKS); the object itself when off. It also puts the
+    live client's mana costs on the ranks client_costs.json lists (CLIENT_COSTS, 2026-11-21)."""
+    spellbook = client_costs(spellbook)
     if not TRAINER_RANKS or not BOOK_RANK_IDS:
         return spellbook
     out = dict(spellbook, tabs=[dict(tab, spells=[dict(sp, ranks=[r for r in sp["ranks"] if int(r.get("id") or 0) not in BOOK_RANK_IDS])
@@ -733,6 +760,25 @@ def bandage_heal(level):
 DRINK_BELOW = 0.35      # start drinking after a fight when mana is below this fraction
 EAT_BELOW = 0.65        # start eating when health is below this fraction (a cloth caster tops up early; 50% made a talentless mage die 80 times per 100 kills)
 SIT_DOWN = 2.0          # seconds lost sitting/standing per eat-or-drink break
+# Regeneration while resting (2026-11-21, the Shadow priest investigation; the audit session's ruling: a switch, off and bit-identical,
+# until the user decides). On: a rest lets the character's own regeneration run under the drink and the food (Spirit's mana outside
+# the five-second rule once it has lapsed, Spirit Tap's doubled rate while it lasts, health regeneration), so a drink ends sooner.
+# Evidence: Classic's server rule (regeneration continues while seated); no Forever combat log checked, and the official simulator
+# has no rest model. Off: the bar fills from the drink and food rates alone, as the lab always has. Measured on: Shadow priest 39
+# 37.7 -> 33.4 s a kill, Frost mage 5.7% faster at 30 and 3.8% at 50, nothing for a build that never rests.
+# On since 2026-11-21 (the user's decision, relayed by the audit session: "Go with your recommendations"; the off/on table of every
+# leveling pick: deep-runs/rest-regen-table-1121.json, priests 9-13% faster, casters 4-6%, rogues and warriors 0.0%); the mage
+# regression was re-recorded with it on the same day (fl_regen_1121.sh's redo re-tunes and re-races what it moves).
+REST_REGEN = True
+# Revenge's flat part (2026-11-21, the smaller-jumps investigation; the audit session: "a tooltip number read as 0 for every rank"):
+# warrior.py's RANGE needs "X to Y damage", and Revenge's tooltip says "for X to Y plus 25% of your Attack Power damage", so its
+# flat part read 0 at every rank and only the attack-power share played (the Protection pick 5-9% slow at 33-40). False: the lab
+# before, bit for bit. Read when warrior.py loads its spellbook.
+REVENGE_FLAT = True
+# Chain Lightning by the live client (2026-11-21): its cost by rank from the client's SpellPower table (245/360/425/495; the notes'
+# reading, 225% of the bolt, had ranks 2-3 15-16% cheap) and the live tooltip's damage where it is within 2% of the notes' floor. Cast in
+# pulls of several mobs and in duels only. False: the lab before, bit for bit. Read when shaman.py loads its spellbook.
+CL_CLIENT = True
 LOOT_TIME = 2.0         # seconds after each kill
 TRAVEL_TIME = 6.0       # seconds to reach the next mob
 DEATH_TIME = 90.0       # seconds lost per death (corpse run), then full health and mana

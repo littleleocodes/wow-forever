@@ -4,7 +4,7 @@
 
 What a Shockadin presses from level 1 to 60, stage by stage. It fights like a Retribution paladin with a two-handed weapon and plays the Holy list: **Seal of Righteousness** (**Seal of Command** from 41), **Judgement** and **Holy Strike** on cooldown, **Blessing of Wisdom** for mana, and from 30 **Holy Shock**, Holy's signature spell, whenever it is ready while the mob has more than 35% of its health. **Hammer of Wrath** (44) finishes the mob. Holy takes the first 21 points (10-30: **Divine Favor** at 27, **Holy Shock** at 30), Retribution the other 30 (31-60: **Seal of Command** at 41, **Vengeance** at 51-53, **Champion of the Light** at 56-60). Below 40% health you heal yourself in the fight. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 21/0/30 ([open the talent tree](https://talentsforever.com/paladin/60/05025111220101--1523330100130035-12)), the one on the [Shockadin leveling page](shockadin.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 21/0/30 ([open the talent tree](https://talentsforever.com/paladin/60/05025013220001--1523330100130035-12)), the one on the [Shockadin leveling page](shockadin.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -81,7 +81,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Keep **Devotion Aura** on. Heal with **Holy Light** between fights.
 - Use a two-handed weapon from the first one you find: the Holy list fights with one, and every seal and strike hits harder with a slow, heavy weapon.
 
-*Fight lab, seconds per kill: 12 at level 1. Presses per kill at level 1: Melee 1.7, Seal of Righteousness 1.0.*
+*Fight lab, seconds per kill: 12 at level 1. Presses per kill at level 1: Melee 1.7, Seal of Righteousness 0.2.*
 
 ## Levels 4-5: Judgement
 
@@ -120,7 +120,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Seal of the Crusader** (6) is not part of the leveling rotation. Stay on **Seal of Righteousness**.
 
-*Fight lab, seconds per kill: 16 at level 6. Presses per kill at level 6: Melee 2.9, Judgement 1.2, Holy Strike 1.2, Seal of Righteousness 1.0.*
+*Fight lab, seconds per kill: 17 at level 6. Presses per kill at level 6: Melee 3.1, Judgement 1.3, Holy Strike 1.3, Seal of Righteousness 1.0.*
 
 ## Levels 8-9: Hammer of Justice
 
@@ -141,7 +141,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Purify** (8) removes a poison or a disease. It is not part of the fight.
 
-*Fight lab, seconds per kill: 18 at level 8. Presses per kill at level 8: Melee 3.4, Judgement 1.4, Holy Strike 1.4, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 19 at level 8. Presses per kill at level 8: Melee 3.7, Judgement 1.5, Holy Strike 1.5, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 10-19: Talents begin, Lay on Hands
 
@@ -169,7 +169,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Blessing of Protection** (10) and **Blessing of Freedom** (18) are tools for a bad pull, not rotation.
 - Buy the next rank of the defensive spells on your bars too: **Divine Protection** at 18 (8 seconds instead of 6), **Blessing of Protection** at 24 and 38 (8, then 10 seconds), **Lay on Hands** at 30 and 50 and **Divine Shield** at 50.
 
-*Fight lab, seconds per kill: 18 at level 10, 21 at level 19. Presses per kill at level 10: Melee 3.2, Judgement 1.4, Holy Strike 1.3, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 18 at level 10, 23 at level 19. Presses per kill at level 10: Melee 3.5, Judgement 1.5, Holy Strike 1.3, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 20-26: Flash of Light, the same fight
 
@@ -177,7 +177,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Blessing of Protection at 24; Flash of Light at 26; Hammer of Justice at 24; Holy Light at 22; Holy Strike at 20; Seal of Righteousness at 26.
 
-**Talents:** 20-21 Holy Conduit, 22 Purifying Power, 23-24 Improved Seals, 25-26 Divine Precision.
+**Talents:** 20-21 Holy Conduit, 22 Illumination, 23-24 Improved Seals, 25-26 Divine Precision.
 
 **Keys to set:** Mouse 4 = Flash of Light; 2 = Exorcism; Shift+Q = Consecration; Shift+Mouse 4 = Turn Undead (at 24).
 
@@ -194,9 +194,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Consecration** (20): the Holy list never casts it against a single mob. It is for packs.
 - **Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it.
-- The Holy talents go on: **Holy Conduit** (20-21) makes **Exorcism**, **Consecration** and **Hammer of Wrath** 40% cheaper, **Purifying Power** (22) takes 17% off the cooldown of **Exorcism** and **Holy Wrath**, **Divine Precision** (25-26) adds 8% hit to Holy spells such as **Holy Shock**.
+- The Holy talents go on: **Holy Conduit** (20-21) makes **Exorcism**, **Consecration** and **Hammer of Wrath** 40% cheaper, **Illumination** (22) can give back half a heal's base mana cost when it crits, **Divine Precision** (25-26) adds 8% hit to Holy spells such as **Holy Shock**.
 
-*Fight lab, seconds per kill: 21 at level 20, 24 at level 26. Presses per kill at level 20: Melee 4.1, Judgement 1.8, Holy Strike 1.7, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 23 at level 20, 25 at level 26. Presses per kill at level 20: Melee 4.4, Judgement 1.9, Holy Strike 1.8, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 27-29: Divine Favor
 
@@ -204,7 +204,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Exorcism at 28; Holy Strike at 28.
 
-**Talents:** 27 Divine Favor, 28 Illumination, 29 Oath of Light.
+**Talents:** 27 Divine Favor, 28-29 Illumination.
 
 **Keys to set:** 3 = Divine Favor.
 
@@ -220,9 +220,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Below 40% of your health, with the mob above a fifth of its own: **Divine Protection** first if you are below 30%, then **Hammer of Justice**, then **Holy Light**; **Divine Favor** before the heal if it is ready. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%.
 
 - **Divine Favor** is off the global cooldown, on a 2-minute cooldown: press it, then the heal.
-- **Illumination** (28) and **Oath of Light** (29) are the last points **Holy Shock**'s row asks for: neither changes what you press.
+- **Illumination**'s second and third points (28-29) are the last points **Holy Shock**'s row asks for: they change nothing you press.
 
-*Fight lab, seconds per kill: 24 at level 27. Presses per kill at level 27: Melee 4.9, Judgement 2.0, Holy Strike 1.9, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 26 at level 27. Presses per kill at level 27: Melee 5.2, Judgement 2.1, Holy Strike 2.0, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 30-40: Holy Shock
 
@@ -252,7 +252,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - From 31 the points go into Retribution: **Benediction** (31-35) makes instant spells such as **Holy Shock**, your seal and **Judgement** 10% cheaper, **Sanctified Judgement** (36-38) returns 60% of the judged seal's mana cost, **Conviction** (39-40) adds critical chance to spells and attacks. Nothing new to press until 41.
 - From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key.
 
-*Fight lab, seconds per kill: 28 at level 30, 32 at level 40. Presses per kill at level 30: Melee 4.2, Judgement 1.9, Holy Strike 1.8, Holy Shock 1.3, Seal of Righteousness 1.0, Divine Favor 0.2, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 28 at level 30, 32 at level 40. Presses per kill at level 30: Melee 4.4, Judgement 1.9, Holy Strike 1.9, Holy Shock 1.4, Seal of Righteousness 1.0, Divine Favor 0.2, Hammer of Justice 0.1.*
 
 ## Levels 41-43: Seal of Command
 
@@ -281,7 +281,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - In melee gear **Seal of Command** is the faster seal at 41-55 and ties at 60, and the tuned rules of 2026-11-16 keep it. In spell-power gear **Seal of Righteousness** catches up by 55 and is about 3% faster at 60, because its damage grows with spell power.
 - **Conviction** takes its third point at 42 (6% critical chance), and **Improved Judgement** (43-44) takes 2 seconds off **Judgement**'s cooldown.
 
-*Fight lab, seconds per kill: 31 at level 41. Presses per kill at level 41: Melee 5.3, Judgement 2.1, Holy Strike 2.0, Holy Shock 1.7, Seal of Command 1.0, Hammer of Justice 0.4, Divine Favor 0.2.*
+*Fight lab, seconds per kill: 31 at level 41. Presses per kill at level 41: Melee 5.6, Judgement 2.2, Holy Strike 2.1, Holy Shock 1.7, Seal of Command 1.0, Hammer of Justice 0.4, Divine Favor 0.2.*
 
 ## Levels 44-60: Hammer of Wrath
 
@@ -312,7 +312,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Champion of the Light** (56-60) adds spell damage equal to 12% of your Intellect a point.
 - **Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.
 
-*Fight lab, seconds per kill: 30 at level 44, 29 at level 50, 28 at level 60. Presses per kill at level 44: Melee 4.3, Judgement 2.0, Holy Strike 1.7, Holy Shock 1.6, Seal of Command 1.0, Hammer of Wrath 0.9, Hammer of Justice 0.4, Divine Favor 0.2.*
+*Fight lab, seconds per kill: 30 at level 44, 29 at level 50, 28 at level 60. Presses per kill at level 44: Melee 4.5, Judgement 2.1, Holy Strike 1.8, Holy Shock 1.6, Seal of Command 1.0, Hammer of Wrath 0.9, Hammer of Justice 0.4, Divine Favor 0.2.*
 
 ## Between fights
 
@@ -329,4 +329,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Packs of mobs: **Consecration** on Shift+Q hits them all. The single-target list never casts it.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-19: the stages are hand-kept in `_reference/data/level-guides/paladin.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/paladin.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

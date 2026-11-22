@@ -16,7 +16,7 @@
    ],
    "between": [
     "Below 70% health: leave **Cat Form**, cast **Rejuvenation** (and **Regrowth** if still below 85%), then shift back; only with the mana to shift back.",
-    "Drink when your mana is below about a third (35%): it only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.",
+    "Drink when your mana is below 15%: it only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.",
     "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   },
@@ -28,12 +28,12 @@
     "**Moonfire** on a mob above a third of its health.",
     "**Wrath** while the mob walks in and whenever nothing below applies: each one stores **Eclipse** charges.",
     "**Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.",
-    "A nearly dead mob: finish it with **Moonfire** or **Wrath**.",
-    "Low on health: **Entangling Roots** on the mob, step out of melee, then **Regrowth** (it drops **Moonkin Form**; go back in while you have half your health and the mob still has half of its own)."
+    "A nearly dead mob: finish it with **Wrath**.",
+    "Low on health: **Entangling Roots** on the mob, step out of melee. The tuned rules cast no heal in a fight."
    ],
    "between": [
-    "In **Moonkin Form**, stay in it and eat when your health is below 40%. Before 40: **Rejuvenation** below 85% health, **Regrowth** below 70%.",
-    "Drink when your mana is below about a third (35%).",
+    "Eat when your health is below 40%, in **Moonkin Form** from 40 (stay in it). No heals between fights either: the tuned rules of 2026-11-21 eat instead, about 2% faster per kill.",
+    "Drink when your mana is below a quarter (25%).",
     "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   }
@@ -98,14 +98,14 @@
  "mage": {
   "frost-leveling": {
    "before": [
-    "**Frost Armor** (**Ice Armor** from level 30, **Mage Armor** from 34) and **Arcane Intellect** up; **Ice Barrier** before each pull if your build has it.",
+    "**Frost Armor** (**Ice Armor** from level 30, **Mage Armor** from 34) and **Arcane Intellect** up; **Ice Barrier** (the page build's, from 40) before each pull when it is ready, and again in a fight once it has run out.",
     "Pull from as far away as you can."
    ],
    "steps": [
-    "**Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, but only while the mob has more than a fifth of its health; if the mob would reach you before the cast ends, wand it until it arrives (the tuned rules keep **Fire Blast** for the finish).",
+    "**Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, but only while the mob has more than a tenth of its health; if the mob would reach you before the cast ends, wand it until it arrives (the tuned rules keep **Fire Blast** for the finish).",
     "**Frost Nova** when it reaches you, then step back out of melee; if your build has **Cold Snap**, it resets **Frost Nova** when more than 8 seconds of cooldown are left and the mob still has 40% of its health.",
-    "**Ice Lance** into the freeze whenever it is ready: it has an 8-second cooldown, so one per **Frost Nova**, **Frostbite** freeze or **Fingers of Frost** charge, not a stream of them.",
-    "Below a fifth of the mob's health: **Fire Blast** (not below a tenth), an **Ice Lance** that will kill, or your wand. No Cone of Cold at all.",
+    "**Ice Lance** into the freeze whenever it is ready: it has an 8-second cooldown, shared with **Fire Blast**, so one per **Frost Nova**, **Frostbite** freeze or **Fingers of Frost** charge, not a stream of them.",
+    "In the last fifth of the mob's health: **Fire Blast** when it will kill or the mob is on you, or an **Ice Lance** that will kill; below a tenth, only **Ice Lance** or your wand. No Cone of Cold at all.",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
@@ -119,15 +119,15 @@
     "Pull from as far away as you can."
    ],
    "steps": [
-    "From level 20 (the **Pyroblast** talent), open every pull with a hard-cast **Pyroblast**; before that, and after it, **Fireball** while the mob walks in and whenever nothing below applies, while the mob has more than about a third (35%) of its health and you have more than 15% of your mana.",
+    "From level 20 (the **Pyroblast** talent), open every pull with a hard-cast **Pyroblast**, and cast it again whenever its whole cast ends before the mob reaches you; before that, and after it, **Fireball** while the mob walks in and whenever nothing below applies, while the mob has more than about a third (35%) of its health and you have more than 15% of your mana.",
     "**Fire Blast** when the mob would reach you before a **Fireball** lands, once it is on you, or when it will kill. No Scorch: the tuned rules never cast it.",
-    "**Frost Nova** when it reaches you, then step back; **Blast Wave** if **Frost Nova** is on cooldown and the mob has more than about a third of its health.",
-    "**Ice Lance** while the mob is frozen; **Pyroblast** again only at 3 stacks of **Heating Up** (from level 44).",
+    "**Frost Nova** when it reaches you, then step back; Blast Wave, in a build that takes it, if **Frost Nova** is on cooldown and the mob has more than about a third of its health.",
+    "**Ice Lance** while the mob is frozen; **Pyroblast** again at 3 stacks of **Heating Up** (from level 44), or hard-cast when its cast ends before the mob can hit you (in practice inside a **Frost Nova** freeze), both while the mob has more than 35% of its health.",
     "Below about a third of the mob's health, or under 15% of your mana, no **Fireball**: finish with **Fire Blast**, an **Ice Lance** or your wand.",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below 15% of your mana and eat below 40% of your health (the tuned rules), **Evocation** in place of a drink when it is ready and you are under 15% mana.",
+    "Drink your conjured water below 15% of your mana and eat below 80% of your health (the tuned rules of 2026-11-20), **Evocation** in place of a drink when it is ready and you are under 15% mana.",
     "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full. **Evocation** is not a sit and brings no food."
    ]
   },
@@ -139,12 +139,12 @@
    "steps": [
     "Your bolt: **Frostbolt** until level 40, **Frostfire Bolt** from 40, each only while the mob has more than about a third (35%) of its health (**Frostfire Bolt** also only while you have more than 15% of your mana). Cast it while the mob walks in and whenever nothing below applies; if the mob would reach you before the cast ends, **Fire Blast** (with it on cooldown and **Frost Nova** ready, wand the mob until it arrives).",
     "**Frost Nova** when it reaches you, then step back; with **Frost Nova** on cooldown, **Fire Blast**, then keep casting the bolt.",
-    "**Ice Lance** into the freeze whenever it is ready (an 8-second cooldown).",
+    "**Ice Lance** into the freeze whenever it is ready (an 8-second cooldown, shared with **Fire Blast**). From 48, **Pyroblast** at 3 stacks of **Heating Up**, while the mob has more health than about one **Frostfire Bolt** deals.",
     "Below about a third of the mob's health (or, from 40, under 15% of your mana): no bolt; **Fire Blast** whenever it is ready until the mob is down to a tenth of its health, an **Ice Lance** into a freeze or one that will kill, else your wand. No Cone of Cold (the tuned rules switch it off).",
     "**Counterspell** a mob that casts spells."
    ],
    "between": [
-    "Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** in place of a drink when it is ready and you are under 15% mana, eat below 40% of your health (the tuned rule).",
+    "Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** in place of a drink when it is ready and you are under 15% mana, eat below 50% of your health (the tuned rule of 2026-11-20).",
     "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full. **Evocation** is not a sit and brings no food."
    ]
   },
@@ -188,7 +188,7 @@
     "Pull from as far away as you can."
    ],
    "steps": [
-    "**Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, while the mob has more than a fifth of its health; if the mob would reach you before the cast ends, wand it until it arrives (the tuned rules keep **Fire Blast** for the finish).",
+    "**Frostbolt** while the mob walks in (it slows it) and whenever nothing below applies, while the mob has more than a tenth of its health; if the mob would reach you before the cast ends, wand it until it arrives (the tuned rules keep **Fire Blast** for the finish).",
     "**Arcane Missiles** whenever **Missile Barrage** lights up (your Frostbolts give it): free and twice as fast; not while the mob hits you in melee unless it is frozen.",
     "**Frost Nova** when it reaches you, then step back out of melee; if your build has **Cold Snap**, it resets **Frost Nova** when more than 8 seconds of cooldown are left and the mob still has 40% of its health. No Cone of Cold.",
     "**Ice Lance** while the mob is frozen (**Frost Nova**, **Frostbite** or **Fingers of Frost**).",
@@ -216,7 +216,7 @@
     "Low on health (below a third, with the mob above a quarter): **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter; **Lay on Hands** below 15%."
    ],
    "between": [
-    "Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink below about a third of your mana, and eat only if you are still below 65% of your health.",
+    "Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink below 15% of your mana, and eat only if you are still below 65% of your health.",
     "Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full."
    ]
   },
@@ -359,7 +359,7 @@
     "**Premeditation** for two free combo points."
    ],
    "steps": [
-    "Open with **Ambush** in short fights; **Garrote** once its bleed outlasts the fight (with the Subtlety build the fight lab opens with **Ambush** on most pulls up to level 25 and at 35, with **Garrote** at 30 and on every pull from 40; the Combat-Subtlety build opens with **Ambush** on every pull from level 18).",
+    "Open with **Ambush** in short fights; **Garrote** once its bleed outlasts the fight (with the Subtlety build the fight lab opens with **Ambush** on most pulls up to level 25 and at 35, with **Garrote** at 30 and on every pull from 40; the Combat-Subtlety build opens with **Ambush** from level 18, with **Garrote** on about half the pulls at 23-25, and with **Ambush** on every pull from 30).",
     "**Ghostly Strike** whenever it is ready (it also makes you dodge more). With **Dirty Deeds**, follow it with a **Garrote** when none is bleeding and the mob has more than half its health.",
     "**Shank** whenever it is ready (level 24), unless the energy it gives would go over your maximum; with **Boot Knife** also to build combo points.",
     "**Sinister Strike** to build combo points; once you have **Hemorrhage**, it replaces **Sinister Strike**.",
@@ -445,7 +445,7 @@
     "With **Demonic Brand**: **Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than a third of its health and you have more than 30% of your mana.",
     "**Bane of Agony** and **Siphon Life** on a mob above about a third of its health; **Corruption** only on a mob above 35% of its health; **Immolate** only above half your mana, and not on a mob below about a third of its health.",
     "Your wand is the filler: **Shadow Bolt** only above 80% mana, which the dots and brands rarely leave you.",
-    "With **Decimation**: **Soul Fire** while its buff lasts (a **Shadow Bolt** on a mob below 35% health starts it).",
+    "With **Decimation**: **Soul Fire** while its buff lasts (a **Shadow Bolt** or **Searing Pain** on a mob below 35% health starts it, so a build that casts neither from 30, as Affliction-Demonology, never gets it).",
     "**Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%; **Life Tap** in a fight only when you are short of mana and above 60% health.",
     "With **Improved Health Funnel**: **Health Funnel** a Voidwalker below 30% health while the mob still has more than a third of its health and you have more than 65% of yours.",
     "If a mob reaches you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health."
@@ -465,8 +465,8 @@
     "**Immolate** on a fresh mob above 30% of its health, unless it would pull the mob off the Voidwalker or a mob is already hitting you.",
     "**Conflagrate** when **Immolate** has about 3 seconds left (whenever it is ready with 5 points in **Shadow and Flame**, which keeps **Immolate** burning), while the mob has more than a fifth of its health.",
     "With **Decimation**: **Soul Fire** while its buff lasts. With **Shadow Trance**: the free **Shadow Bolt** at once.",
-    "The filler is **Shadow Bolt** while the mob has more than about a third (35%) of its health; below that, your wand. From level 40, while **Immolate** burns, the wand instead of the bolt: with Incinerate switched off, the fight lab levels faster wanding a burning mob. No Affliction dots, Searing Pain, Drain Life or Incinerate: the fight lab levels faster without them.",
-    "**Life Tap** in a fight only when you are short of mana and above 60% health.",
+    "The filler is **Shadow Bolt** while you have more than 60% of your mana and the mob has more than about a third (35%) of its health; otherwise your wand. From level 40, while **Immolate** burns, the wand instead of the bolt: with Incinerate switched off, the fight lab levels faster wanding a burning mob. No Affliction dots, Searing Pain, Drain Life or Incinerate: the fight lab levels faster without them.",
+    "No **Life Tap** in a fight: with **Shadow Bolt** kept for spare mana the fight lab never needs one.",
     "If a mob reaches you: **Death Coil** below 60% health, and let the Voidwalker's **Torment** take it back. No Fear: the tuned rules of 2026-11-07 never cast it. Your Healthstone below 35% health."
    ],
    "between": [
@@ -521,12 +521,12 @@
    "steps": [
     "**Battle Stance**, **Charge** in, spend the rage **Tactical Mastery** cannot keep on **Shield Slam** or **Rend**, then back to **Defensive Stance** (with **Vanguard**, **Charge** straight from **Defensive Stance**).",
     "**Shield Bash** a mob that is casting.",
-    "**Shield Block** whenever the mob is hitting you.",
+    "**Shield Block** whenever the mob is hitting you and has more than a fifth of its health.",
     "**Battle Shout**: keep it up (it lasts 3 minutes).",
     "**Concussion Blow** when you drop below half health; **Victory Rush** after a kill when you are below 90%.",
     "**Revenge** whenever it lights up (after a block, dodge or parry), then **Shield Slam** whenever ready.",
     "**Rend** once, while the mob has more than half its health.",
-    "**Heroic Strike** only once the mob is below 20% of its health (the tuned rule), keeping enough rage for **Shield Slam** and **Revenge**; two or more mobs: **Thunder Clap**, **Demoralizing Shout** and **Cleave**."
+    "**Heroic Strike** only once the mob is below 35% of its health (the tuned rule), keeping enough rage for **Shield Slam** and **Revenge**; two or more mobs: **Thunder Clap**, **Demoralizing Shout** and **Cleave**."
    ],
    "between": [
     "You rarely need to eat or bandage: the shield soaks most of the damage."

@@ -6,11 +6,11 @@
 
 **Leveling from level 1?** [The rotation level by level](fury-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Fury — Leveling](../research/leveling/builds/fury-open-leveling.md)** (17/34/0) — [open the talent tree](https://talentsforever.com/warrior/60/20323213001-050530355100120031--12)
+**[Fury — Leveling](../research/leveling/builds/fury-open-leveling.md)** (16/35/0) — [open the talent tree](https://talentsforever.com/warrior/60/20323213-050530355110120031--12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 83% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Bloodthirst, Heroic Strike, Execute; this build never casts Whirlwind, Slam) (the spec's rule: at least 80%; **Bloodthirst** cast at level 60).
+**Signature spells:** 86% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Bloodthirst, Heroic Strike, Execute, Deep Wounds; this build never casts Whirlwind, Slam) (the spec's rule: at least 80%; **Bloodthirst** cast at level 60).
 
 ## How to play
 
@@ -47,7 +47,7 @@ Fury levels with a weapon in each hand in **Battle Stance**. Open with **Bloodra
 **Caveats**
 
 - **Furious Precision** (levels 25 and 32-33: 10% more off-hand hit) and **Dual Wield Specialization** (26-29 and 31: 25% more off-hand damage and 50% more off-hand rage) are why this build wants a weapon in each hand; **Gore Drinker** (41-42, both ranks) makes your next 3 hits after **Bloodrage**, **Death Wish**, **Bloodthirst** or an **Enrage** heal 1% of your health each.
-- From 44 the points go to Arms (**Improved Rend**, **Improved Heroic Strike**, **Improved Charge**, **Improved Tactical Mastery**, **Anger Management**, **Deep Wounds**, **Improved Overpower**, **Impale**): small gains each, none of them changes the list.
+- From 44 the points go to Arms (**Improved Rend**, **Improved Heroic Strike**, **Improved Charge**, **Improved Tactical Mastery**, **Anger Management**, **Deep Wounds**, **Improved Overpower**): small gains each, none of them changes the list.
 - Between fights the fight lab bandages below 60% health and eats below 40% (the rule tuned on 2026-11-15, under 1% faster per kill than the default 65%); with **Victory Rush** and the bandage it almost never needs food.
 - Several mobs: **Whirlwind** needs **Berserker Stance**. In **Battle Stance**, use **Cleave** instead of **Heroic Strike** and **Thunder Clap** to slow them (20% slower attacks).
 
@@ -79,33 +79,37 @@ One point per level from 10, in this order:
 | 44-46 | Improved Rend (Arms) | 3 |
 | 47-48 | Improved Heroic Strike (Arms) | 2 |
 | 49-50 | Improved Charge (Arms) | 2 |
-| 51-53 | Improved Tactical Mastery (Arms) | 3 |
+| 51-53 | Improved Tactical Mastery (Arms) (needed for Anger Management) | 3 |
 | 54 | Anger Management (Arms) | 1 |
 | 55-57 | Deep Wounds (Arms) | 3 |
 | 58 | Improved Overpower (Arms) | 1 |
-| 59 | Impale (Arms) | 1 |
+| 59 | Improved Execute (Fury) | 1 |
 | 60 | Improved Overpower (Arms) | 1 |
+
+A talent marked as a tier point does nothing in the fight lab's leveling fights; it is in the build because no legal talent that helps can take that point.
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
-| 20 | 21 | 17 |
-| 30 | 22 | 18 |
+| 20 | 20 | 17 |
+| 30 | 23 | 18 |
 | 40 | 24 | 19 |
-| 50 | 25 | 22 |
-| 60 | 27 | 22 |
+| 50 | 24 | 21 |
+| 60 | 26 | 22 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
-**Points that do nothing for this spec:** **Improved Tactical Mastery** (3) only counts toward the points the tree needs before **Anger Management**.
+**Points that do nothing for this spec:** **Improved Tactical Mastery** (3) is needed for **Anger Management**.
 
 ## Other builds of this spec
 
-- [Fury (optimized)](../research/leveling/builds/opt-fury-dw-raid-leveling-st.md) (13/38/0, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/05320003-050530355020121231--12)
-- [Fury (optimized, solo at 60)](../research/leveling/builds/opt-fury-dw-raid-solo-60.md) (11/40/0, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/0502301-050530355021122231--12)
-- [Fury (optimized, AoE pulls)](../research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md) (20/31/0, 27 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/05320203131-150501350020122031--12)
+- [Fury (optimized)](../research/leveling/builds/opt-fury-dw-raid-leveling-st.md) (13/38/0, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/05320003-050530355020121231--12)
+- [Fury (optimized, solo at 60)](../research/leveling/builds/opt-fury-dw-raid-solo-60.md) (11/40/0, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/0502301-050530355021122231--12)
+- [Fury (optimized, AoE pulls)](../research/leveling/builds/opt-arms-2h-raid-leveling-aoe.md) (20/31/0, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/05320203131-150501350020122031--12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

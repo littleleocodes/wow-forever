@@ -2,15 +2,17 @@
 
 [Hunter](../README.md) > [Leveling (solo)](README.md) > Survival
 
+> **Being checked:** The play check's forced runs found Arcane Shot faster when shot from range on the pull (2.65% at 20, the game's 8-yard minimum range kept); the rotation is being tuned again with a pull shot. The build and numbers on this page may change when it is done.
+
 **✅ Recommended** for leveling (the best hunter spec here, or within 3% of it).
 
 **Leveling from level 1?** [The rotation level by level](survival-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Survival — Leveling](../research/leveling/builds/survival-open-leveling.md)** (1/18/32) — [open the talent tree](https://talentsforever.com/hunter/60/1-0053450001-52022023015020215-12)
+**[Survival — Leveling](../research/leveling/builds/survival-open-leveling.md)** (0/19/32) — [open the talent tree](https://talentsforever.com/hunter/60/-0053550001-51220023025020215-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 53% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Raptor Strike, Mongoose Bite, Lacerate, your pet; this build never casts Wing Clip) (the spec's rule: at least 50%).
+**Signature spells:** 58% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Raptor Strike, Mongoose Bite, Lacerate, your pet, Strider Kick, Lacerating Strikes; this build never casts Wing Clip) (the spec's rule: at least 50%).
 
 ## How to play
 
@@ -28,7 +30,7 @@
 
 ## Why this rotation
 
-Melee Survival levels with the pet as the tank: you walk in behind it and fight beside it with two one-handers. **Raptor Strike** finishes the mob (with **Strider Kick** from level 54), **Mongoose Bite** comes when it lights up, **Immolation Trap** burns the longer fights, **Lacerate** adds a bleed from level 30, and white swings do the rest. The build puts 32 points into Survival, 18 into Marksmanship (**Lethal Attacks**, **Careful Aim**, **Improved Stings**, **Efficiency**, **Trueshot Aura**) and 1 into **Deadly Aspects**.
+Melee Survival levels with the pet as the tank: you walk in behind it and fight beside it with two one-handers. **Raptor Strike** finishes the mob (with **Strider Kick** from level 54), **Mongoose Bite** comes when it lights up, **Immolation Trap** burns the longer fights, **Lacerate** adds a bleed from level 30, and white swings do the rest. The build puts 32 points into Survival and 19 into Marksmanship (**Lethal Attacks**, **Careful Aim**, **Improved Stings**, **Efficiency**, **Trueshot Aura**).
 
 **Why it works**
 
@@ -36,7 +38,7 @@ Melee Survival levels with the pet as the tank: you walk in behind it and fight 
 - **Raptor Strike** is kept for the finish: the tuned rules cast it only once the mob is below 20% of its health. It replaces your next main-hand swing and costs no global cooldown, so queue it first when it is up. Held back, its mana buys more in the sting, the trap and **Lacerate**.
 - **Immolation Trap** goes at your feet beside the mob (traps work in combat in Forever but land where you stand), while the mob has more than 40% of its health (the burn lasts 15 seconds). **Resourcefulness** (levels 30 and 32) cuts the cost of traps and melee abilities by 60%.
 - **Lacerate** (trained at 30) only while the mob has more than half its health and you have 80% of your mana or more: cast freely, its mana cost more time than its bleed saved.
-- **Mongoose Bite** lights up after you dodge, so **Aspect of the Monkey** (its dodges) until level 30; then **Aspect of the Beast**: melee attack power, and with **Deadly Aspects** (50) a chance per melee auto attack for 30% faster swings for 12 seconds. **Deflection** raises your parry.
+- **Mongoose Bite** lights up after you dodge, so **Aspect of the Monkey** (its dodges) until level 30; then **Aspect of the Beast**: melee attack power. **Deflection** raises your parry.
 - In the fight lab's removal runs at 60 (seconds a kill costs without the talent), **Resourcefulness** is worth about 2.5 seconds, **Survivalist's Discipline** (33-34, the trap every 18 seconds) 0.6, **Lethal Attacks** and **Surefooted** 0.5 each, **Efficiency** and **Clever Traps** 0.3 each: the build's most valuable talents. Melee, Raptor Strike, Mongoose Bite, Lacerate, Wing Clip and the pet are 53% of the damage at 60.
 - Between fights the lab drinks below 35% of your mana and eats below 65% of your health: the tuned rules change neither. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).
 
@@ -46,7 +48,7 @@ Melee Survival levels with the pet as the tank: you walk in behind it and fight 
 - The pet is still your tank: **Mend Pet** below about a third in the fight and below half between fights, and let it build threat before you hit hard.
 - The project counts a melee hunter's damage as swings, strikes, bleeds and the pet (the spec's rule: at least half at 60; this build reaches 53%). The sting and the trap are not counted, which is why the rotation does not lean on them harder.
 - **Improved Tracking** (levels 10-14) adds 1% a point, and only against the creature type you are tracking: switch tracking to what you are killing.
-- The last points go to a second **Deflection** (51), a third **Improved Stings** (52), **Efficiency** (53 and 55-57), **Careful Aim**'s last two points (58-59) and **Trueshot Aura** (60). The leveling filler pass of 2026-11-17 took them from points the fight lab measured at nothing (Endurance Training, a fifth **Efficiency**, a second **Deadly Aspects**): the third **Improved Stings** measured 0.2% faster per kill, the others cost nothing.
+- The last points go to **Efficiency** (50-51, 55-57), a third **Improved Stings** (52), a second **Survival Tactics** (53), **Careful Aim**'s last two points (58-59) and **Trueshot Aura** (60). The leveling filler passes moved a Deadly Aspects point to **Efficiency** (by way of Endurance Training, 2026-11-20 to 2026-11-22), a second Deflection point to **Efficiency** and Survivalist's two points to **Entrapment** (18-19, which only holds the row), none slower in the fight lab; the second **Survival Tactics** point is for traps and **Feign Death**, which the fight lab does not measure.
 - Buy the new ranks: in the beta client (build 70753) the top ranks are the strongest. **Aspect of the Beast** rank 4 gives +110 melee attack power at 60 (rank 3 +90); the other ranks of the spells you press only add damage. Cast the highest rank you know; the fight lab does.
 
 **When to change it**
@@ -63,7 +65,7 @@ One point per level from 10, in this order:
 | 10-14 | Improved Tracking (Survival) | 5 |
 | 15-16 | Savage Strikes (Survival) | 2 |
 | 17 | Deflection (Survival) | 1 |
-| 18-19 | Survivalist (Survival) | 2 |
+| 18-19 | Entrapment (Survival) | 2 |
 | 20-22 | Surefooted (Survival) | 3 |
 | 23-24 | Clever Traps (Survival) | 2 |
 | 25-29 | Predator's Edge (Survival) | 5 |
@@ -75,10 +77,9 @@ One point per level from 10, in this order:
 | 40-42 | Careful Aim (Marksmanship) | 3 |
 | 43-47 | Lightning Reflexes (Survival) | 5 |
 | 48-49 | Improved Stings (Marksmanship) | 2 |
-| 50 | Deadly Aspects (Beast Mastery) | 1 |
-| 51 | Deflection (Survival) | 1 |
+| 50-51 | Efficiency (Marksmanship) | 2 |
 | 52 | Improved Stings (Marksmanship) | 1 |
-| 53 | Efficiency (Marksmanship) | 1 |
+| 53 | Survival Tactics (Survival) | 1 |
 | 54 | Strider Kick (Survival) | 1 |
 | 55-57 | Efficiency (Marksmanship) | 3 |
 | 58-59 | Careful Aim (Marksmanship) | 2 |
@@ -88,10 +89,10 @@ One point per level from 10, in this order:
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
-| 20 | 16 | 14 |
-| 30 | 18 | 17 |
+| 20 | 16 | 15 |
+| 30 | 19 | 17 |
 | 40 | 21 | 19 |
-| 50 | 22 | 21 |
+| 50 | 22 | 20 |
 | 60 | 23 | 21 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
@@ -101,5 +102,7 @@ One point per level from 10, in this order:
 - [Survival (optimized, AoE pulls)](../research/leveling/builds/opt-bm-leveling-leveling-aoe.md) (8/12/31, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/512-3150102-504103031201022151-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

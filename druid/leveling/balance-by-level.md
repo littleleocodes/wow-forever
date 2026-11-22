@@ -2,9 +2,11 @@
 
 [Druid](../README.md) > [Leveling (solo)](README.md) > [Balance](balance.md) > Level by level
 
-What a Balance druid presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Balance stays a caster the whole way: **Wrath** from level 1, **Moonfire** at the pull from 4, **Regrowth** from range from 12, **Starfire** woven with **Eclipse** from 30 and **Moonkin Form** from 40. The page build (36/0/15) puts 36 points in Balance and 15 in Restoration for Intellect, pushback, mana and damage; it skips **Insect Swarm**. Each stage lists the full priority, so you can jump in at your level.
+> **Being checked:** The first point of Eclipse makes the pick slower at 30 (the play check: 33.3 seconds a kill at 29, 35.9 at 30), and the rotation is being checked for why. The build and numbers on this page may change when it is done.
 
-**The build:** 36/0/15 ([open the talent tree](https://talentsforever.com/druid/60/5332200105501351--51530001-12)), the one on the [Balance leveling page](balance.md), which has the full talent table and the reasons behind the level-60 rotation.
+What a Balance druid presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Balance stays a caster the whole way: **Wrath** from level 1, **Moonfire** at the pull from 4, **Starfire** woven with **Eclipse** from 30 and **Moonkin Form** from 40; you eat between fights, and **Regrowth** (12) is for a pull that goes wrong. The page build (36/0/15) puts 36 points in Balance and 15 in Restoration for Intellect, pushback, mana and damage; it skips **Insect Swarm**. Each stage lists the full priority, so you can jump in at your level.
+
+**The build:** 36/0/15 ([open the talent tree](https://talentsforever.com/druid/60/5332200105501351--51531-12)), the one on the [Balance leveling page](balance.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -12,7 +14,7 @@ What a Balance druid presses from level 1 to 60, stage by stage, as the trainer 
 |---|---|
 | 1-3 | **Wrath** is your only attack. |
 | 4-11 | **Moonfire** at the pull, **Wrath** after it. |
-| 12-19 | Hurt: root the mob, step out of its reach, **Regrowth**. |
+| 12-19 | **Regrowth** is your emergency heal: the tuned rules eat between fights and heal in no fight. Hurt in a fight: root the mob and step out of its reach. |
 | 20-29 | **Starfire** arrives; **Wrath** stays your nuke until **Eclipse** at 30. |
 | 30-39 | **Eclipse**: each **Wrath** speeds up your next two **Starfire** casts. About two **Starfire** to each **Wrath**. |
 | 40-45 | **Moonkin Form**: fight in it, and eat instead of healing between fights. |
@@ -30,7 +32,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | E | Control: root it and step back | — | **Entangling Roots** from 8 | Entangling Roots | Entangling Roots | Entangling Roots | Entangling Roots | Entangling Roots |
 | R | The payoff: the big hit into a root, a stun or an Eclipse charge | — | — | — | **Starfire** | Starfire | Starfire | Starfire |
 | F | The save before a hard pull | — | — | — | — | — | **Barkskin** from 44 | Barkskin |
-| Mouse 5 | The fight heal, after the root | — | — | **Regrowth** | Regrowth | Regrowth | Regrowth | Regrowth |
+| Mouse 5 | The fight heal, after the root: not in the list (the tuned rules heal in no fight); press it to heal in a bad pull | — | — | **Regrowth** | Regrowth | Regrowth | Regrowth | Regrowth |
 | Mouse 4 | The heal over time: between fights before 40 | — | **Rejuvenation** | Rejuvenation | Rejuvenation | Rejuvenation | Rejuvenation | Rejuvenation |
 | 1 | The big slow heal | **Healing Touch** | Healing Touch | Healing Touch | Healing Touch | Healing Touch | Healing Touch | Healing Touch |
 | 2 | A second beast sleeps | — | — | **Hibernate** from 18 | Hibernate | Hibernate | Hibernate | Hibernate |
@@ -81,7 +83,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** **Healing Touch** below a third of your health. The mob hits you through the cast, so step back first when you can.
 
 - **Mark of the Wild** (1) is a buff: keep it on, no key.
-- Druids cannot use a wand, so mana is your limit: drink after a fight that left you below about a third.
+- Druids cannot use a wand, so mana is your limit: drink after a fight that left you below a quarter.
 
 *Fight lab, seconds per kill: 14 at level 1. Presses per kill at level 1: Wrath 3.6.*
 
@@ -105,13 +107,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** **Healing Touch** below a third of your health. At these levels the mob usually dies first.
 
-- **Rejuvenation** (4) is your heal between fights: below 85% of your health.
+- **Rejuvenation** (4) is for a pull that goes wrong: the tuned rules cast no heal between fights (eating while you drink measured 2.1-2.3% faster per kill).
 - **Thorns** (6) is a buff: keep it on, no key. Every mob that hits you takes its damage.
 - **Entangling Roots** (8) is for the emergency of the next stage: root the mob, step out of its reach, heal. A direct hit can break it.
 - From 10, **Improved Wrath**, one point a level: by 14 **Wrath** is a 1.5-second cast for half the mana.
 - **Nature's Grasp** (10) roots the next mob that hits you: your way out. **Bear Form** (10) is for the Feral build; this one stays a caster.
 
-*Fight lab, seconds per kill: 20 at level 4, 28 at level 10, 30 at level 11. Presses per kill at level 4: Wrath 5.1, Moonfire 1.5.*
+*Fight lab, seconds per kill: 20 at level 4, 26 at level 10, 28 at level 11. Presses per kill at level 4: Wrath 5.5, Moonfire 1.1.*
 
 ## Levels 12-19: Regrowth, from range
 
@@ -131,14 +133,14 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 2. **Wrath** while it walks in, and after it reaches you.
 3. A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**.
 
-**If the fight goes wrong:** Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it, step out of its reach, then **Regrowth**. A rooted mob still hits you if you stand next to it. A mob with less left: finish it instead.
+**If the fight goes wrong:** Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it and step out of its reach: a rooted mob still hits you if you stand next to it. A mob with less left: finish it instead. The tuned rules (2026-11-20) cast no **Regrowth** in a fight: against a mob of your level it never paid in the fight lab, which lost no fights at any level; heal if a pull goes wrong.
 
-- **Regrowth** (12) between fights too: below 70% of your health, after the **Rejuvenation** below 85%.
+- **Regrowth** (12) is for a pull that goes wrong: between fights you eat below 40% of your health.
 - **Moonglow** (15, 17, 19): your damage spells cost up to 25% less. **Improved Moonfire** (16, 18): **Moonfire** gets 10% more damage and critical strike chance.
 - **Hibernate** (18) sleeps a second beast or dragonkin for up to 20 s: cast it before the pull.
 - **Faerie Fire** (18) lowers armor, which your spells ignore: no key.
 
-*Fight lab, seconds per kill: 33 at level 12, 37 at level 19. Presses per kill at level 12: Wrath 8.3, Moonfire 1.6.*
+*Fight lab, seconds per kill: 30 at level 12, 36 at level 19. Presses per kill at level 12: Wrath 8.6, Moonfire 1.2.*
 
 ## Levels 20-29: Starfire waits
 
@@ -150,7 +152,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** R = Starfire; 4 = Remove Curse (at 24); 3 = Abolish Poison (at 26).
 
-**Your keys in this stage:** Q Wrath, E Entangling Roots, R Starfire, Mouse 5 Regrowth, Middle mouse Moonfire.
+**Your keys in this stage:** Q Wrath, E Entangling Roots, R Starfire, Middle mouse Moonfire.
 
 **What to press**, top to bottom:
 
@@ -158,7 +160,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 2. **Wrath** while it walks in, and after it reaches you.
 3. A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**.
 
-**If the fight goes wrong:** Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it, step out of its reach, then **Regrowth**. A rooted mob still hits you if you stand next to it. If the roots still hold after the heal, a **Starfire**. A mob with less left: finish it instead.
+**If the fight goes wrong:** Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it and step out of its reach: a rooted mob still hits you if you stand next to it. While the roots hold, a **Starfire**. A mob with less left: finish it instead.
 
 - **Starfire** (20) is your biggest hit and a 3.5-second cast that the mob's hits push back. The fight lab casts it only into a root or a stun, so at these levels it almost never does.
 - **Improved Starfire** (25-29): **Starfire** casts 0.5 s faster and stuns the mob for 3 s 15% of the time.
@@ -167,7 +169,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Omen of Clarity** (20) is a buff: keep it on, no key. **Cat Form** (20) is for the Feral build.
 - **Insect Swarm** is a talent this build skips.
 
-*Fight lab, seconds per kill: 36 at level 20, 48 at level 29. Presses per kill at level 20: Wrath 9.3, Moonfire 2.1.*
+*Fight lab, seconds per kill: 30 at level 20, 33 at level 29. Presses per kill at level 20: Starfire 3.2, Moonfire 1.1, Wrath 0.5.*
 
 ## Levels 30-39: Wrath, then Starfire
 
@@ -179,7 +181,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** Shift+R = Travel Form.
 
-**Your keys in this stage:** Q Wrath, E Entangling Roots, R Starfire, Mouse 5 Regrowth, Middle mouse Moonfire.
+**Your keys in this stage:** Q Wrath, E Entangling Roots, R Starfire, Middle mouse Moonfire.
 
 **What to press**, top to bottom:
 
@@ -188,14 +190,14 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 3. **Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.
 4. A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**: not a **Starfire** it will not live through.
 
-**If the fight goes wrong:** Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it, step out of its reach, then **Regrowth**. A rooted mob still hits you if you stand next to it. If the roots still hold after the heal, a **Starfire**. A mob with less left: finish it instead.
+**If the fight goes wrong:** Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it and step out of its reach: a rooted mob still hits you if you stand next to it. While the roots hold, a **Starfire**. A mob with less left: finish it instead.
 
 - **Eclipse** (30-32) takes 0.17 s off each charged **Starfire** at 1 point, 0.33 s at 2 and 0.5 s at 3.
 - **Nature's Grace** (33): a spell critical hit makes your casts and your global cooldown 10% faster for 3 s.
 - **Vengeance** (34 and 39, then 55 and 57-58): your Arcane and Nature critical hits do more damage. **Moonfury** (35-38, then 41): 10% more Arcane and Nature damage at 5 points.
 - **Travel Form** (30) is the road between mobs.
 
-*Fight lab, seconds per kill: 41 at level 30, 45 at level 39. Presses per kill at level 30: Starfire 3.9, Wrath 2.1, Moonfire 1.5.*
+*Fight lab, seconds per kill: 36 at level 30, 39 at level 39. Presses per kill at level 30: Starfire 3.9, Wrath 2.3, Moonfire 1.1.*
 
 ## Levels 40-45: Moonkin Form
 
@@ -217,7 +219,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 4. **Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.
 5. A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**: not a **Starfire** it will not live through.
 
-**If the fight goes wrong:** Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots**, step out of its reach, then leave **Moonkin Form** and cast **Regrowth** (no heal works in the form). Go back into **Moonkin Form** if you have half your health and the mob still has half of its own; else after the fight.
+**If the fight goes wrong:** Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** and step out of its reach. The tuned rules heal in no fight: a **Regrowth** means leaving **Moonkin Form** (no heal works in it) and 35% of your base mana to go back. If a pull goes wrong, heal anyway and go back in once you have half your health.
 
 - **Moonkin Form** (40): 360% more armor from your items, 3% more critical strike chance for your party or raid within 45 yards and **Omen of Clarity** twice as often. Going in costs 35% of your base mana each time, so you stay in it.
 - **Nature's Focus** (42-46): **Wrath** and **Starfire** ignore the mob's pushback 70% of the time at 5 points.
@@ -225,7 +227,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Innervate** (40): mana for you after a run of hard pulls, or for a group's healer.
 - **Barkskin** (44): 20% less physical damage for 15 s, and the mob's hits no longer push your casts back. The form blocks only heals, so it works in **Moonkin Form**; the fight lab does not cast it.
 
-*Fight lab, seconds per kill: 40 at level 40, 34 at level 45. Presses per kill at level 40: Starfire 4.6, Wrath 2.2, Moonfire 1.6.*
+*Fight lab, seconds per kill: 37 at level 40, 32 at level 45. Presses per kill at level 40: Starfire 4.7, Wrath 2.5, Moonfire 1.1, Entangling Roots 0.1.*
 
 ## Levels 46-60: The same play to 60
 
@@ -233,7 +235,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Entangling Roots at 48, 58; Healing Touch at 50, 56, 60; Hibernate at 58; Hurricane at 50, 60; Moonfire at 46, 52, 58; Nature's Grasp at 48, 58; Regrowth at 48, 54, 60; Rejuvenation at 46, 52, 58, 60; Starfire at 50, 58, 60; Wrath at 46, 54.
 
-**Talents:** 46 Nature's Focus, 47-49 Reflection, 50-54 Naturalist, 55 Vengeance, 56 Genesis, 57-58 Vengeance, 59 Bloom, 60 Heart of the Wild.
+**Talents:** 46 Nature's Focus, 47-49 Reflection, 50-54 Naturalist, 55 Vengeance, 56 Genesis, 57-58 Vengeance, 59 Natural Shapeshifter, 60 Heart of the Wild.
 
 **Your keys in this stage:** Q Wrath, E Entangling Roots, R Starfire, Mouse 5 Regrowth, Middle mouse Moonfire, Shift+Q Moonkin Form.
 
@@ -245,19 +247,19 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 4. **Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.
 5. A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**: not a **Starfire** it will not live through.
 
-**If the fight goes wrong:** Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots**, step out of its reach, then leave **Moonkin Form** and cast **Regrowth** (no heal works in the form). Go back into **Moonkin Form** if you have half your health and the mob still has half of its own; else after the fight.
+**If the fight goes wrong:** Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** and step out of its reach. The tuned rules heal in no fight: a **Regrowth** means leaving **Moonkin Form** (no heal works in it) and 35% of your base mana to go back. If a pull goes wrong, heal anyway and go back in once you have half your health.
 
 - **Reflection** (47-49): half your mana regeneration keeps going while you cast.
 - **Naturalist** (50-54): 10% more damage at 5 points.
 - **Vengeance** fills to 5 points at 55 and 57-58: your Arcane and Nature critical hits do double the bonus.
-- **Genesis**'s third point (56: **Moonfire**'s burn 6% stronger), **Bloom** (59) and **Heart of the Wild** (60, 2% more Intellect) are the build's last points: the fight lab measures nothing for them, and no other talent it can reach there measured faster. The point at 56 was Ferocity until 2026-11-18, which only cheapens cat and bear attacks this build never uses.
+- **Genesis**'s third point (56: **Moonfire**'s burn 6% stronger) and **Vengeance**'s last three (55, 57-58) end the damage talents. **Natural Shapeshifter** (59: shapeshifting costs 10% less mana) does something the fight lab cannot measure, and **Heart of the Wild** (60: 2% more Intellect) is the last point. The point at 56 was Ferocity until 2026-11-18, which only cheapens cat and bear attacks this build never uses; the point at 60 was **Gift of Nature** (your heals 2% stronger) until 2026-11-22, when the build stopped healing between fights.
 
-*Fight lab, seconds per kill: 35 at level 46, 32 at level 50, 28 at level 60. Presses per kill at level 46: Starfire 4.2, Wrath 2.1, Moonfire 1.5.*
+*Fight lab, seconds per kill: 32 at level 46, 30 at level 50, 28 at level 60. Presses per kill at level 46: Starfire 4.3, Wrath 2.2, Moonfire 1.0.*
 
 ## Between fights
 
-- Before 40: **Rejuvenation** below 85% of your health and **Regrowth** below 70%, then the next pull. From 40, stay in **Moonkin Form** and eat below 40% of your health: leaving it to heal costs 35% of your base mana to go back in.
-- Drink when your mana is below about a third (35%). Eat below 40% of your health when there was no mana to heal.
+- Eat below 40% of your health and drink below a quarter of your mana, both at once: no heals (the re-tune of 2026-11-21 measured eating 2.1-2.3% faster per kill than **Rejuvenation** and **Regrowth** before 40). From 40, stay in **Moonkin Form** to eat: leaving it costs 35% of your base mana to go back in.
+- Drink when your mana is below a quarter (25%). Eat below 40% of your health when there was no mana to heal.
 - Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. It was 7.1% faster per kill for this build in the fight lab (2026-11-16), and the tuned rules play it.
 - Visit the trainer every even level: **Wrath**, **Moonfire** and **Starfire** have many ranks.
 
@@ -267,4 +269,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Restoration levels as a cat with its raid healer's talents: [its level-by-level guide](restoration-by-level.md).
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-19: the stages are hand-kept in `_reference/data/level-guides/druid.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/druid.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

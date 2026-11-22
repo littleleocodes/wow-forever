@@ -9,13 +9,13 @@
  "best_entry": "elemental-dps",
  "best_dps": 747.83,
  "any_split": false,
- "date": "2026-11-21",
+ "date": "2026-11-22",
  "commit": "2e6e77d84",
  "gear": {
   "bis": {
    "entry": "elemental-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-bis.gear.json",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "setting": "raid",
    "chosen": "all-slots",
    "ilvl": 64.1,
@@ -46,7 +46,9 @@
     "current": 1.0,
     "all-slots": 1.0004560987419095,
     "keep-sets-and-effects": 1.0004560987419095,
-    "previous": 0.9945805941627001
+    "previous": 1.0004560987419095,
+    "the prebis set": 0.9879797985039455,
+    "the prebis set+trinkets": 0.9939411618185512
    },
    "confirm_seed2": {
     "current": 1.0,
@@ -70,9 +72,9 @@
   "prebis": {
    "entry": "elemental-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-prebis.gear.json",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "setting": "raid",
-   "chosen": "all-slots",
+   "chosen": "previous",
    "ilvl": 62.9,
    "trinkets": [
     "Eye of the Beast",
@@ -100,12 +102,11 @@
    "race_seed1": {
     "all-slots": 1.0,
     "keep-sets-and-effects": 1.0,
-    "previous": 0.9873922263128804,
-    "previous+trinkets": 0.9866438034163545
+    "previous": 1.0
    },
    "confirm_seed2": {
     "previous": 1.0,
-    "all-slots": 1.0128987062672044
+    "all-slots": 1.0
    },
    "weights": {
     "StatCritRating": 0.3724,
@@ -125,7 +126,7 @@
   "dungeon": {
    "entry": "elemental-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-elemental-dungeon.gear.json",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "chosen": "keep-sets-and-effects",
    "ilvl": 60.6,
    "trinkets": [
@@ -258,7 +259,7 @@
    "spec": "Elemental",
    "setting": "dummy",
    "entry": "elemental-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Elemental": [
@@ -351,7 +352,7 @@
    "spec": "Elemental",
    "setting": "raid",
    "entry": "elemental-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Elemental": [
@@ -444,7 +445,7 @@
    "spec": "Elemental",
    "setting": "dummy",
    "entry": "elemental-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Elemental": [
@@ -533,7 +534,7 @@
    "spec": "Elemental",
    "setting": "raid",
    "entry": "elemental-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Elemental": [
@@ -625,7 +626,7 @@
    "spec": "Elemental",
    "setting": "raid",
    "entry": "elemental-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "commit": "2e6e77d84",
    "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
    "winner": {
@@ -725,12 +726,12 @@
     "bis-raid": 677.8,
     "prebis-dummy": 677.7
    },
-   "minutes": 1.6
+   "minutes": 0.8
   }
  },
  "pick_tiers": {
   "build": "elemental-raid-dps",
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "note": "the page's pick in each tier's gear (the short-check method of 2026-11-20); no talent search",
   "alt": {
    "bis-dummy": {

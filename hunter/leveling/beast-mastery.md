@@ -4,11 +4,11 @@
 
 **Leveling from level 1?** [The rotation level by level](beast-mastery-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Beast Mastery — Leveling](../research/leveling/builds/beast-mastery-open-leveling.md)** (31/17/3) — [open the talent tree](https://talentsforever.com/hunter/60/5320001505011251-0053530001-3-12)
+**[Beast Mastery — Leveling](../research/leveling/builds/beast-mastery-open-leveling.md)** (32/17/2) — [open the talent tree](https://talentsforever.com/hunter/60/5320001505021251-0053521001-2-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Beast Mastery), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 35% of the damage at level 60 in the fight lab comes from the spec's core spells (your pet) (the spec's rule: at least 30%; **Bestial Wrath** cast at level 60).
+**Signature spells:** 38% of the damage at level 60 in the fight lab comes from the spec's core spells (your pet) (the spec's rule: at least 30%; **Bestial Wrath** cast at level 60).
 
 ## How to play
 
@@ -34,7 +34,7 @@ Beast Mastery levels with the cat as the tank: it holds the mob while **Auto Sho
 - Send the pet first, then **Hunter's Mark** and **Serpent Sting**. In the fight lab the cat Growls every 5 seconds and keeps the mob until your threat passes 130% of its own, so two cheap openers give it a head start; the lab casts the mark only while the mob has more than 30% of its health and the sting while it has more than 40%.
 - **Aimed Shot** (from level 20) is your only cooldown shot on a single mob, cast while the mob has more than 35% of its health: below that, **Auto Shot** and the pet finish the mob, which the fight lab's tuned rules (2026-11-15) measured slightly faster. The rules never cast **Multi-Shot** (it shares the cooldown) or **Arcane Shot**: their mana is worth more as fewer drinks between pulls. This build has no **Summon Hawk** point (the rules switch the hawk off as well).
 - The pet talents come first: **Deadly Aspects** (levels 10-14), **Unleashed Fury** (20-24), **Ferocity** (25-29) and **Bestial Discipline** (30-31, half your mana regeneration keeps running while you cast). In the fight lab's removal runs at 60 (seconds a kill costs without the talent) **Unleashed Fury** is worth about 1.0 second, **Bestial Discipline** about 0.9, **Efficiency** (46-50) about 0.8 and **Ferocity** about 0.7: the build's four most valuable talents. **Trueshot Aura** (56) is a buff you cast in Forever: keep it on.
-- **Rapid Fire** (26) at the start of a fight whenever it is ready (a 5-minute cooldown here: no **Rapid Killing**); **Intimidation** (34) and **Bestial Wrath** (40) likewise, the pet's stun and rage at the pull. **Bestial Wrath** has a 2-minute cooldown, so it goes on the first pull and then again every few pulls.
+- **Rapid Fire** (26) at the start of a fight whenever it is ready (a 5-minute cooldown until **Rapid Killing** at 60 takes a minute off); **Intimidation** (34) and **Bestial Wrath** (40) likewise, the pet's stun and rage at the pull. **Bestial Wrath** has a 2-minute cooldown, so it goes on the first pull and then again every few pulls.
 - At 60 the pet is about a third of your damage (35% in the fight lab) and your shots most of the rest. The bow cannot fire within 8 yards: if the mob ends up next to you while the pet holds it, step back rather than melee.
 - **Mend Pet** when the pet drops below about a third while it holds the mob, and between fights below half. A dead pet costs a **Revive Pet** before the next pull and your **Focused Fire** bonus until then. Between fights the lab drinks below 15% of your mana and eats below 65% of your health: the tuned rules of 2026-11-15 drink this late, since fewer stops measured slightly faster. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).
 
@@ -43,7 +43,7 @@ Beast Mastery levels with the cat as the tank: it holds the mob while **Auto Sho
 - **Intimidation** is the point that opens **Bestial Wrath**: cast on its own it measured slightly slower in the fight lab (about 0.2 seconds a kill), and **Bestial Wrath** itself is worth about 0.2. **Endurance Training**, **Bestial Swiftness** and **Spirit Bond** measured nothing at 60 (a sturdier, faster, self-healing pet; the lab's pet rarely dies).
 - A mob that turns on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite** after a dodge, **Raptor Strike** and **Wing Clip** until the pet's Growl takes the mob back.
 - Several mobs at once: **Multi-Shot** and **Volley** (from level 40; a 6-second channel with no cooldown in Forever) are your area damage.
-- **Improved Tracking** (levels 57-59, 3 points) adds 1% a point, and only against the creature type you are tracking: switch tracking to what you are killing.
+- **Improved Tracking** (levels 57-58, 3 points) adds 1% a point, and only against the creature type you are tracking: switch tracking to what you are killing.
 - Buy the new ranks: in the beta client (build 70753) the top ranks are the strongest. **Aspect of the Hawk** rank 7 gives +120 ranged attack power (rank 6 +110), **Hunter's Mark** rank 4 +143 (rank 3 +98) and **Trueshot Aura** rank 5 +100 (rank 4 +75). Cast the highest rank you know; the fight lab does.
 - **Auto Shot** keeps firing while you cast **Aimed Shot**, but after you step back it waits until you have stood still for half a second (Blizzard's 16 Oct notes), so don't shuffle between shots.
 
@@ -60,12 +60,12 @@ One point per level from 10, in this order:
 |---|---|---|
 | 10-14 | Deadly Aspects (Beast Mastery) | 5 |
 | 15-16 | Focused Fire (Beast Mastery) | 2 |
-| 17-19 | Endurance Training (Beast Mastery) | 3 |
+| 17-19 | Endurance Training (Beast Mastery) (tier point: needed to reach Bestial Swiftness) | 3 |
 | 20-24 | Unleashed Fury (Beast Mastery) | 5 |
 | 25-29 | Ferocity (Beast Mastery) | 5 |
 | 30-31 | Bestial Discipline (Beast Mastery) | 2 |
 | 32 | Spirit Bond (Beast Mastery) | 1 |
-| 33 | Bestial Swiftness (Beast Mastery) | 1 |
+| 33 | Bestial Swiftness (Beast Mastery) (needed for Intimidation) | 1 |
 | 34 | Intimidation (Beast Mastery) | 1 |
 | 35-39 | Frenzy (Beast Mastery) | 5 |
 | 40 | Bestial Wrath (Beast Mastery) | 1 |
@@ -74,8 +74,11 @@ One point per level from 10, in this order:
 | 51-53 | Improved Stings (Marksmanship) | 3 |
 | 54-55 | Careful Aim (Marksmanship) | 2 |
 | 56 | Trueshot Aura (Marksmanship) | 1 |
-| 57-59 | Improved Tracking (Survival) | 3 |
-| 60 | Careful Aim (Marksmanship) | 1 |
+| 57-58 | Improved Tracking (Survival) | 2 |
+| 59 | Spirit Bond (Beast Mastery) | 1 |
+| 60 | Rapid Killing (Marksmanship) | 1 |
+
+A talent marked as a tier point does nothing in the fight lab's leveling fights; it is in the build because no legal talent that helps can take that point.
 
 ## The numbers
 
@@ -84,16 +87,20 @@ One point per level from 10, in this order:
 | 20 | 16 | 13 |
 | 30 | 19 | 16 |
 | 40 | 23 | 20 |
-| 50 | 24 | 21 |
-| 60 | 25 | 22 |
+| 50 | 23 | 20 |
+| 60 | 24 | 21 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
+**Points that do nothing for this spec:** **Endurance Training** (3) only counts toward the points the tree needs before **Bestial Swiftness**; **Bestial Swiftness** (1) is needed for **Intimidation**.
+
 ## Other builds of this spec
 
-- [Beast Mastery](../research/leveling/builds/bm-solo-farm.md) (31/20/0, 24 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/5520001505101051-00505500005--12)
-- [Beast Mastery — Leveling](../research/leveling/builds/beast-mastery-leveling.md) (30/21/0, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/532002050510025-005355200001--12)
+- [Beast Mastery](../research/leveling/builds/bm-solo-farm.md) (31/20/0, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/5520001505101051-00505500005--12)
+- [Beast Mastery — Leveling](../research/leveling/builds/beast-mastery-leveling.md) (30/21/0, 22 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/532002050510025-005355200001--12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

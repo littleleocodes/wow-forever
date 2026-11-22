@@ -3,7 +3,7 @@
  "spec": "Hybrid Holy/Retribution",
  "build": "shockadin-open-leveling",
  "rotation": "holy-leveling",
- "date": "2026-11-17",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -171,11 +171,12 @@
  ],
  "steps": [
   {
-   "weighted": 28.199,
+   "weighted": 28.634,
    "values_at_60": {
-    "Champion of the Light": -0.239
+    "Champion of the Light": -0.214
    },
-   "zero": []
+   "zero": [],
+   "dead_held": []
   }
  ],
  "moves": [
@@ -194,11 +195,411 @@
    "seed3": -0.0008,
    "seed4": -0.0016,
    "why": "gate"
+  },
+  {
+   "from": "Oath of Light",
+   "to": "Illumination",
+   "level": 29,
+   "seed3": 0.0008,
+   "seed4": -0.0008,
+   "why": "gate that did nothing, no loss"
+  },
+  {
+   "from": "Purifying Power",
+   "to": "Illumination",
+   "level": 22,
+   "seed3": -0.0005,
+   "seed4": 0.0005,
+   "why": "gate that did nothing, no loss"
   }
  ],
  "kept_signature": [
   "Holy Shock"
  ],
+ "gates_checked": {
+  "Benediction": {
+   "level": 35,
+   "kind": "tier point for Champion of the Light (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0018
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Conviction": {
+   "level": 42,
+   "kind": "tier point for Champion of the Light (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0091
+    },
+    {
+     "to": "Unyielding Faith",
+     "seed3": 0.0111
+    },
+    {
+     "to": "Pursuit of Justice",
+     "seed3": 0.0111
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Deflection": {
+   "level": 55,
+   "kind": "tier point for Champion of the Light (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Eye for an Eye",
+     "seed3": -0.0005
+    },
+    {
+     "to": "Unyielding Faith",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Pursuit of Justice",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Turn Evil",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Repentance",
+     "seed3": 0.0009
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Divine Favor": {
+   "level": 27,
+   "kind": "tier point for Holy Shock (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Illumination",
+     "seed3": 0.0068
+    },
+    {
+     "to": "Spiritual Focus",
+     "seed3": 0.0077
+    },
+    {
+     "to": "Purifying Power",
+     "seed3": 0.0077
+    },
+    {
+     "to": "Infusion of Light",
+     "seed3": 0.0077
+    },
+    {
+     "to": "Oath of Light",
+     "seed3": 0.0077
+    },
+    {
+     "to": "Healing Light",
+     "seed3": 0.0078
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Divine Precision": {
+   "level": 26,
+   "kind": "tier point for Holy Shock (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Illumination",
+     "seed3": 0.0005
+    },
+    {
+     "to": "Spiritual Focus",
+     "seed3": 0.0006
+    },
+    {
+     "to": "Purifying Power",
+     "seed3": 0.0006
+    },
+    {
+     "to": "Infusion of Light",
+     "seed3": 0.0006
+    },
+    {
+     "to": "Oath of Light",
+     "seed3": 0.0006
+    },
+    {
+     "to": "Healing Light",
+     "seed3": 0.0006
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Divine Strength": {
+   "level": 14,
+   "kind": "tier point for Reverence (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Spiritual Focus",
+     "seed3": 0.0014
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Holy Conduit": {
+   "level": 21,
+   "kind": "tier point for Holy Shock (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Illumination",
+     "seed3": 0.0089
+    },
+    {
+     "to": "Spiritual Focus",
+     "seed3": 0.0095
+    },
+    {
+     "to": "Purifying Power",
+     "seed3": 0.0095
+    },
+    {
+     "to": "Healing Light",
+     "seed3": 0.0095
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Illumination": {
+   "level": 29,
+   "kind": "tier point for Holy Shock (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Healing Light",
+     "seed3": 0.0007
+    },
+    {
+     "to": "Spiritual Focus",
+     "seed3": 0.0007
+    },
+    {
+     "to": "Purifying Power",
+     "seed3": 0.0007
+    },
+    {
+     "to": "Infusion of Light",
+     "seed3": 0.0007
+    },
+    {
+     "to": "Oath of Light",
+     "seed3": 0.0007
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Judgement": {
+   "level": 44,
+   "kind": "tier point for Champion of the Light (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Unyielding Faith",
+     "seed3": 0.0036
+    },
+    {
+     "to": "Pursuit of Justice",
+     "seed3": 0.0036
+    },
+    {
+     "to": "Deflection",
+     "seed3": 0.0041
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Seals": {
+   "level": 24,
+   "kind": "tier point for Holy Shock (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Illumination",
+     "seed3": 0.0056
+    },
+    {
+     "to": "Healing Light",
+     "seed3": 0.0059
+    },
+    {
+     "to": "Spiritual Focus",
+     "seed3": 0.006
+    },
+    {
+     "to": "Purifying Power",
+     "seed3": 0.006
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Reverence": {
+   "level": 19,
+   "kind": "prerequisite of Illumination",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Sacred Arbiter": {
+   "level": 46,
+   "kind": "tier point for Champion of the Light (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0061
+    },
+    {
+     "to": "Unyielding Faith",
+     "seed3": 0.0075
+    },
+    {
+     "to": "Pursuit of Justice",
+     "seed3": 0.0075
+    },
+    {
+     "to": "Eye for an Eye",
+     "seed3": 0.0076
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Sanctified Judgement": {
+   "level": 38,
+   "kind": "tier point for Champion of the Light (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0184
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Seal of Command": {
+   "level": 41,
+   "kind": "prerequisite of Vengeance",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Two-Handed Weapon Specialization": {
+   "level": 49,
+   "kind": "tier point for Champion of the Light (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0049
+    },
+    {
+     "to": "Unyielding Faith",
+     "seed3": 0.0052
+    },
+    {
+     "to": "Pursuit of Justice",
+     "seed3": 0.0052
+    },
+    {
+     "to": "Eye for an Eye",
+     "seed3": 0.0053
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Vengeance": {
+   "level": 53,
+   "kind": "tier point for Champion of the Light (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0045
+    },
+    {
+     "to": "Eye for an Eye",
+     "seed3": 0.0045
+    },
+    {
+     "to": "Unyielding Faith",
+     "seed3": 0.0051
+    },
+    {
+     "to": "Pursuit of Justice",
+     "seed3": 0.0051
+    },
+    {
+     "to": "Turn Evil",
+     "seed3": 0.0051
+    },
+    {
+     "to": "Repentance",
+     "seed3": 0.0051
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Vindication": {
+   "level": 54,
+   "kind": "tier point for Champion of the Light (tier 6)",
+   "does_nothing": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 60",
+   "homes": [
+    {
+     "to": "Unyielding Faith",
+     "seed3": -0.0,
+     "seed4": 0.0011
+    },
+    {
+     "to": "Pursuit of Justice",
+     "seed3": -0.0,
+     "seed4": 0.0011
+    },
+    {
+     "to": "Turn Evil",
+     "seed3": -0.0
+    },
+    {
+     "to": "Repentance",
+     "seed3": -0.0,
+     "seed4": 0.0011
+    },
+    {
+     "to": "Deflection",
+     "seed3": 0.0001,
+     "seed4": 0.0014
+    },
+    {
+     "to": "Eye for an Eye",
+     "seed3": 0.0009
+    }
+   ],
+   "verdict": "no better home"
+  }
+ },
+ "no_better_home": {
+  "Vindication": {
+   "kind": "tier point for Champion of the Light (tier 6)",
+   "exact": true,
+   "why": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 60",
+   "homes": 6
+  }
+ },
  "final_order": [
   {
    "levels": "10-14",
@@ -227,7 +628,7 @@
   {
    "levels": "22",
    "tree": "Holy",
-   "talent": "Purifying Power",
+   "talent": "Illumination",
    "points": 1
   },
   {
@@ -249,16 +650,10 @@
    "points": 1
   },
   {
-   "levels": "28",
+   "levels": "28-29",
    "tree": "Holy",
    "talent": "Illumination",
-   "points": 1
-  },
-  {
-   "levels": "29",
-   "tree": "Holy",
-   "talent": "Oath of Light",
-   "points": 1
+   "points": 2
   },
   {
    "levels": "30",
@@ -351,6 +746,16 @@
    "points": 5
   }
  ],
+ "reruns": [
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-22",
+   "moves": 0
+  }
+ ],
  "written": {
   "allocation": {
    "Holy": [
@@ -367,16 +772,12 @@
      5
     ],
     [
-     "Purifying Power",
-     1
-    ],
-    [
      "Divine Favor",
      1
     ],
     [
      "Illumination",
-     1
+     3
     ],
     [
      "Holy Conduit",
@@ -385,10 +786,6 @@
     [
      "Divine Precision",
      2
-    ],
-    [
-     "Oath of Light",
-     1
     ],
     [
      "Holy Shock",
@@ -471,7 +868,7 @@
    {
     "levels": "22",
     "tree": "Holy",
-    "talent": "Purifying Power",
+    "talent": "Illumination",
     "points": 1
    },
    {
@@ -493,16 +890,10 @@
     "points": 1
    },
    {
-    "levels": "28",
+    "levels": "28-29",
     "tree": "Holy",
     "talent": "Illumination",
-    "points": 1
-   },
-   {
-    "levels": "29",
-    "tree": "Holy",
-    "talent": "Oath of Light",
-    "points": 1
+    "points": 2
    },
    {
     "levels": "30",
@@ -595,6 +986,6 @@
     "points": 5
    }
   ],
-  "note": "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Infusion of Light to Illumination at 28 (gate: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill). Earlier: 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Consecrated Ground to Champion of the Light at 59 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
+  "note": "2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Oath of Light to Illumination at 29 (gate that did nothing, no loss: +0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Purifying Power to Illumination at 22 (gate that did nothing, no loss: -0.1% seed 3, +0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Infusion of Light to Illumination at 28 (gate: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill). Earlier: 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Consecrated Ground to Champion of the Light at 59 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
  }
 }

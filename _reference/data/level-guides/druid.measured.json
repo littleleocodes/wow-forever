@@ -1,6 +1,6 @@
 {
  "class": "druid",
- "date": "2026-11-18",
+ "date": "2026-11-22",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -8,158 +8,343 @@
    "build": "feral-combat-open-leveling",
    "rotation": "feral-cat-dps",
    "provisional_order": false,
-   "fingerprint": "5b03ce6904a6",
+   "fingerprint": "da3531482a1b",
    "levels": {
     "1": {
      "seconds": 14.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Melee": 5.83
-     }
+      "Melee": 5.74
+     },
+     "idle_share": 0.007,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.11,
+     "shares": {
+      "Melee": 1.0
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
     },
     "4": {
+     "seconds": 22.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Melee": 12.75
+     },
+     "idle_share": 0.024,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.52,
+     "shares": {
+      "Melee": 1.0
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
+    },
+    "9": {
+     "seconds": 36.2,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Melee": 20.68
+     },
+     "idle_share": 0.183,
+     "drink_per_kill": 0,
+     "eat_per_kill": 6.61,
+     "shares": {
+      "Melee": 0.85,
+      "Thorns": 0.15
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
+    },
+    "10": {
+     "seconds": 24.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Melee": 4.96,
+      "Demoralizing Roar": 1.0,
+      "Maul": 2.06
+     },
+     "idle_share": 0.005,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.551,
+      "Maul": 0.351,
+      "Thorns": 0.098
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Bear Form"
+    },
+    "14": {
+     "seconds": 29.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Melee": 4.28,
+      "Enrage": 0.45,
+      "Demoralizing Roar": 1.0,
+      "Maul": 3.84,
+      "Bash": 0.11
+     },
+     "idle_share": 0.051,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Maul": 0.481,
+      "Melee": 0.371,
+      "Thorns": 0.148
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Bear Form"
+    },
+    "19": {
+     "seconds": 32.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Melee": 4.78,
+      "Enrage": 0.5,
+      "Demoralizing Roar": 1.0,
+      "Maul": 4.69,
+      "Bash": 0.15
+     },
+     "idle_share": 0.058,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Maul": 0.539,
+      "Melee": 0.347,
+      "Thorns": 0.114
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Bear Form"
+    },
+    "20": {
+     "seconds": 19.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Claw": 4.56,
+      "Melee": 9.76,
+      "Rip": 0.99
+     },
+     "idle_share": 0.07,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Claw": 0.481,
+      "Melee": 0.344,
+      "Rip": 0.13,
+      "Thorns": 0.045
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
+    },
+    "24": {
+     "seconds": 19.6,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Rake": 1.21,
+      "Melee": 9.8,
+      "Claw": 3.82,
+      "Ferocious Bite": 0.62
+     },
+     "idle_share": 0.072,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Claw": 0.34,
+      "Melee": 0.296,
+      "Rake": 0.195,
+      "Ferocious Bite": 0.121,
+      "Thorns": 0.047
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
+    },
+    "30": {
+     "seconds": 21.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Rake": 1.31,
+      "Melee": 11.38,
+      "Claw": 3.94,
+      "Ferocious Bite": 0.88
+     },
+     "idle_share": 0.076,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Claw": 0.339,
+      "Melee": 0.315,
+      "Rake": 0.162,
+      "Ferocious Bite": 0.14,
+      "Thorns": 0.039
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
+    },
+    "31": {
      "seconds": 21.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Melee": 12.87
-     }
-    },
-    "9": {
-     "seconds": 37.7,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Melee": 20.41
-     }
-    },
-    "10": {
-     "seconds": 25.6,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Melee": 5.39,
-      "Demoralizing Roar": 1.0,
-      "Maul": 1.97
-     }
-    },
-    "14": {
-     "seconds": 29.1,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Melee": 4.75,
-      "Enrage": 0.46,
-      "Demoralizing Roar": 1.0,
-      "Maul": 3.65,
-      "Bash": 0.11
-     }
-    },
-    "19": {
-     "seconds": 33.3,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Melee": 5.44,
-      "Enrage": 0.5,
-      "Demoralizing Roar": 1.0,
-      "Maul": 4.5,
-      "Bash": 0.15
-     }
-    },
-    "20": {
-     "seconds": 21.5,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Claw": 4.63,
-      "Melee": 12.14,
-      "Rip": 0.97
-     }
-    },
-    "24": {
-     "seconds": 21.5,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Rake": 1.41,
-      "Melee": 11.99,
-      "Claw": 3.62,
-      "Ferocious Bite": 0.68
-     }
-    },
-    "30": {
-     "seconds": 23.8,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Rake": 1.62,
-      "Melee": 13.98,
-      "Claw": 3.7,
+      "Rake": 1.37,
+      "Melee": 11.85,
+      "Claw": 4.04,
       "Ferocious Bite": 0.89
-     }
-    },
-    "31": {
-     "seconds": 24.4,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Rake": 1.67,
-      "Melee": 14.59,
-      "Claw": 3.78,
-      "Ferocious Bite": 0.91,
-      "Rip": 0.07
-     }
+     },
+     "idle_share": 0.078,
+     "drink_per_kill": 0.06,
+     "eat_per_kill": 0,
+     "shares": {
+      "Claw": 0.334,
+      "Melee": 0.321,
+      "Rake": 0.163,
+      "Ferocious Bite": 0.137,
+      "Thorns": 0.039,
+      "Rip": 0.006
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
     },
     "32": {
+     "seconds": 19.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Ravage": 1.0,
+      "Melee": 9.95,
+      "Rake": 1.23,
+      "Claw": 2.46,
+      "Ferocious Bite": 0.82
+     },
+     "idle_share": 0.067,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.258,
+      "Ravage": 0.242,
+      "Claw": 0.192,
+      "Ferocious Bite": 0.151,
+      "Rake": 0.126,
+      "Thorns": 0.03
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
+    },
+    "39": {
+     "seconds": 23.5,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Ravage": 1.0,
+      "Melee": 12.79,
+      "Rake": 1.27,
+      "Claw": 2.96,
+      "Ferocious Bite": 0.94,
+      "Rip": 0.06
+     },
+     "idle_share": 0.102,
+     "drink_per_kill": 0.48,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.289,
+      "Claw": 0.212,
+      "Ravage": 0.183,
+      "Rake": 0.139,
+      "Ferocious Bite": 0.129,
+      "Thorns": 0.036,
+      "Rip": 0.012
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
+    },
+    "40": {
      "seconds": 23.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Ravage": 1.0,
-      "Melee": 13.28,
-      "Rake": 1.48,
-      "Claw": 2.6,
-      "Ferocious Bite": 0.93
-     }
-    },
-    "39": {
-     "seconds": 26.1,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Ravage": 1.0,
-      "Melee": 15.82,
-      "Rake": 1.55,
-      "Claw": 3.09,
-      "Ferocious Bite": 0.93,
-      "Rip": 0.18
-     }
-    },
-    "40": {
-     "seconds": 25.8,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Ravage": 1.0,
-      "Melee": 15.47,
-      "Rake": 1.61,
-      "Claw": 2.93,
-      "Ferocious Bite": 0.94,
-      "Rip": 0.17
-     }
+      "Melee": 12.55,
+      "Rake": 1.29,
+      "Claw": 2.85,
+      "Ferocious Bite": 1.0,
+      "Rip": 0.06
+     },
+     "idle_share": 0.091,
+     "drink_per_kill": 0.38,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.269,
+      "Claw": 0.195,
+      "Ferocious Bite": 0.183,
+      "Ravage": 0.175,
+      "Rake": 0.132,
+      "Thorns": 0.033,
+      "Rip": 0.013
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
     },
     "50": {
-     "seconds": 26.3,
+     "seconds": 22.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Ravage": 1.0,
-      "Melee": 15.02,
-      "Rake": 1.56,
-      "Claw": 2.85,
-      "Ferocious Bite": 0.97,
-      "Rip": 0.17
-     }
+      "Melee": 11.7,
+      "Rake": 1.27,
+      "Claw": 2.69,
+      "Ferocious Bite": 1.0
+     },
+     "idle_share": 0.114,
+     "drink_per_kill": 0.9,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.244,
+      "Ferocious Bite": 0.199,
+      "Ravage": 0.197,
+      "Claw": 0.193,
+      "Rake": 0.128,
+      "Thorns": 0.029,
+      "Rip": 0.01
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
     },
     "60": {
-     "seconds": 26.9,
+     "seconds": 23.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Ravage": 1.0,
-      "Melee": 16.66,
-      "Rake": 1.72,
-      "Claw": 3.07,
-      "Ferocious Bite": 0.77,
-      "Rip": 0.43
-     }
+      "Melee": 13.8,
+      "Rake": 1.4,
+      "Claw": 3.05,
+      "Ferocious Bite": 0.99,
+      "Rip": 0.12
+     },
+     "idle_share": 0.069,
+     "drink_per_kill": 0.23,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.232,
+      "Claw": 0.209,
+      "Ferocious Bite": 0.204,
+      "Ravage": 0.169,
+      "Rake": 0.123,
+      "Rip": 0.034,
+      "Thorns": 0.03
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
     }
    }
   },
@@ -167,133 +352,309 @@
    "build": "balance-open-leveling",
    "rotation": "balance-dps",
    "provisional_order": false,
-   "fingerprint": "4f1fdd060fdf",
+   "fingerprint": "7b73a6ee56f9",
    "levels": {
     "1": {
      "seconds": 14.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Wrath": 3.59
-     }
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Wrath": 1.0
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
     },
     "4": {
-     "seconds": 20.1,
+     "seconds": 19.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Moonfire": 1.51,
-      "Wrath": 5.11
-     }
+      "Moonfire": 1.05,
+      "Wrath": 5.51
+     },
+     "idle_share": 0.003,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.05,
+     "shares": {
+      "Wrath": 0.798,
+      "Moonfire": 0.202
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
     },
     "10": {
-     "seconds": 28.1,
+     "seconds": 26.3,
      "deaths_per_100": 0.0,
      "casts": {
-      "Moonfire": 1.53,
-      "Wrath": 6.2
-     }
+      "Moonfire": 1.04,
+      "Wrath": 6.54
+     },
+     "idle_share": 0.143,
+     "drink_per_kill": 3.75,
+     "eat_per_kill": 0.08,
+     "shares": {
+      "Wrath": 0.739,
+      "Moonfire": 0.195,
+      "Thorns": 0.067
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
     },
     "11": {
+     "seconds": 27.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.07,
+      "Wrath": 7.71
+     },
+     "idle_share": 0.135,
+     "drink_per_kill": 3.5,
+     "eat_per_kill": 1.19,
+     "shares": {
+      "Wrath": 0.759,
+      "Moonfire": 0.176,
+      "Thorns": 0.065
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
+    },
+    "12": {
      "seconds": 30.3,
      "deaths_per_100": 0.0,
      "casts": {
-      "Moonfire": 1.56,
-      "Wrath": 7.32
-     }
-    },
-    "12": {
-     "seconds": 32.9,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Moonfire": 1.64,
-      "Wrath": 8.26
-     }
+      "Moonfire": 1.18,
+      "Wrath": 8.62
+     },
+     "idle_share": 0.147,
+     "drink_per_kill": 1.26,
+     "eat_per_kill": 4.01,
+     "shares": {
+      "Wrath": 0.757,
+      "Moonfire": 0.174,
+      "Thorns": 0.068
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
     },
     "19": {
-     "seconds": 36.7,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Moonfire": 2.15,
-      "Wrath": 9.11
-     }
-    },
-    "20": {
-     "seconds": 36.2,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Moonfire": 2.14,
-      "Wrath": 9.34
-     }
-    },
-    "29": {
-     "seconds": 47.9,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Moonfire": 2.5,
-      "Wrath": 12.63
-     }
-    },
-    "30": {
-     "seconds": 41.0,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Moonfire": 1.49,
-      "Wrath": 2.06,
-      "Starfire": 3.89
-     }
-    },
-    "39": {
-     "seconds": 45.2,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Moonfire": 1.54,
-      "Wrath": 2.35,
-      "Starfire": 4.67
-     }
-    },
-    "40": {
-     "seconds": 39.7,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Moonfire": 1.59,
-      "Wrath": 2.23,
-      "Starfire": 4.59
-     }
-    },
-    "45": {
-     "seconds": 34.4,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Moonfire": 1.43,
-      "Wrath": 2.09,
-      "Starfire": 4.17
-     }
-    },
-    "46": {
-     "seconds": 34.6,
+     "seconds": 35.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Moonfire": 1.47,
-      "Wrath": 2.1,
-      "Starfire": 4.22
-     }
+      "Wrath": 9.57,
+      "Entangling Roots": 0.08
+     },
+     "idle_share": 0.206,
+     "drink_per_kill": 0.12,
+     "eat_per_kill": 7.24,
+     "shares": {
+      "Wrath": 0.692,
+      "Moonfire": 0.22,
+      "Thorns": 0.084
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
+    },
+    "20": {
+     "seconds": 30.0,
+     "deaths_per_100": 0.25,
+     "casts": {
+      "Moonfire": 1.07,
+      "Starfire": 3.17,
+      "Wrath": 0.45
+     },
+     "idle_share": 0.184,
+     "drink_per_kill": 0.7,
+     "eat_per_kill": 4.97,
+     "shares": {
+      "Starfire": 0.749,
+      "Moonfire": 0.158,
+      "Thorns": 0.062,
+      "Wrath": 0.03
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
+    },
+    "29": {
+     "seconds": 33.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.05,
+      "Starfire": 4.22,
+      "Wrath": 0.43
+     },
+     "idle_share": 0.221,
+     "drink_per_kill": 3.44,
+     "eat_per_kill": 5.68,
+     "shares": {
+      "Starfire": 0.739,
+      "Moonfire": 0.189,
+      "Thorns": 0.051,
+      "Wrath": 0.02
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
+    },
+    "30": {
+     "seconds": 35.9,
+     "deaths_per_100": 0.25,
+     "casts": {
+      "Moonfire": 1.07,
+      "Wrath": 2.28,
+      "Starfire": 3.93
+     },
+     "idle_share": 0.216,
+     "drink_per_kill": 2.84,
+     "eat_per_kill": 6.57,
+     "shares": {
+      "Starfire": 0.653,
+      "Moonfire": 0.184,
+      "Wrath": 0.107,
+      "Thorns": 0.054
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
+    },
+    "39": {
+     "seconds": 38.8,
+     "deaths_per_100": 0.25,
+     "casts": {
+      "Moonfire": 1.13,
+      "Wrath": 2.58,
+      "Starfire": 4.67,
+      "Entangling Roots": 0.09
+     },
+     "idle_share": 0.241,
+     "drink_per_kill": 2.12,
+     "eat_per_kill": 8.23,
+     "shares": {
+      "Starfire": 0.68,
+      "Moonfire": 0.163,
+      "Wrath": 0.102,
+      "Thorns": 0.052
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
+    },
+    "40": {
+     "seconds": 37.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.11,
+      "Wrath": 2.49,
+      "Starfire": 4.66,
+      "Entangling Roots": 0.06
+     },
+     "idle_share": 0.219,
+     "drink_per_kill": 4.57,
+     "eat_per_kill": 5.39,
+     "shares": {
+      "Starfire": 0.659,
+      "Moonfire": 0.191,
+      "Wrath": 0.099,
+      "Thorns": 0.049
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
+    },
+    "45": {
+     "seconds": 32.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.04,
+      "Wrath": 2.29,
+      "Starfire": 4.19
+     },
+     "idle_share": 0.229,
+     "drink_per_kill": 4.39,
+     "eat_per_kill": 4.63,
+     "shares": {
+      "Starfire": 0.7,
+      "Moonfire": 0.165,
+      "Wrath": 0.093,
+      "Thorns": 0.043
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
+    },
+    "46": {
+     "seconds": 32.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.04,
+      "Wrath": 2.25,
+      "Starfire": 4.28
+     },
+     "idle_share": 0.237,
+     "drink_per_kill": 5.74,
+     "eat_per_kill": 3.93,
+     "shares": {
+      "Starfire": 0.678,
+      "Moonfire": 0.185,
+      "Wrath": 0.096,
+      "Thorns": 0.04
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
     },
     "50": {
-     "seconds": 31.8,
+     "seconds": 30.1,
      "deaths_per_100": 0.0,
      "casts": {
-      "Moonfire": 1.48,
-      "Wrath": 2.04,
-      "Starfire": 4.13
-     }
+      "Moonfire": 1.04,
+      "Wrath": 2.24,
+      "Starfire": 4.18
+     },
+     "idle_share": 0.189,
+     "drink_per_kill": 3.9,
+     "eat_per_kill": 3.15,
+     "shares": {
+      "Starfire": 0.718,
+      "Moonfire": 0.163,
+      "Wrath": 0.085,
+      "Thorns": 0.034
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
     },
     "60": {
-     "seconds": 28.4,
+     "seconds": 27.7,
      "deaths_per_100": 0.0,
      "casts": {
-      "Moonfire": 1.4,
-      "Wrath": 1.78,
-      "Starfire": 3.57
-     }
+      "Moonfire": 1.03,
+      "Wrath": 2.02,
+      "Starfire": 3.84
+     },
+     "idle_share": 0.165,
+     "drink_per_kill": 3.3,
+     "eat_per_kill": 2.17,
+     "shares": {
+      "Starfire": 0.69,
+      "Moonfire": 0.19,
+      "Wrath": 0.089,
+      "Thorns": 0.032
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
     }
    }
   },
@@ -301,155 +662,337 @@
    "build": "restoration-leveling",
    "rotation": "feral-cat-dps",
    "provisional_order": false,
-   "fingerprint": "829a48c72f70",
+   "fingerprint": "7b7899d156b0",
    "levels": {
     "1": {
      "seconds": 14.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Melee": 5.83
-     }
+      "Melee": 5.74
+     },
+     "idle_share": 0.007,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.11,
+     "shares": {
+      "Melee": 1.0
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
     },
     "4": {
-     "seconds": 21.9,
+     "seconds": 22.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Melee": 12.87
-     }
+      "Melee": 12.75
+     },
+     "idle_share": 0.024,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.52,
+     "shares": {
+      "Melee": 1.0
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
     },
     "9": {
-     "seconds": 37.7,
+     "seconds": 36.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Melee": 20.41
-     }
+      "Melee": 20.68
+     },
+     "idle_share": 0.183,
+     "drink_per_kill": 0,
+     "eat_per_kill": 6.61,
+     "shares": {
+      "Melee": 0.85,
+      "Thorns": 0.15
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
     },
     "10": {
-     "seconds": 25.7,
+     "seconds": 25.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Melee": 5.48,
+      "Melee": 5.11,
       "Demoralizing Roar": 1.0,
-      "Maul": 1.91
-     }
+      "Maul": 1.98
+     },
+     "idle_share": 0.006,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.03,
+     "shares": {
+      "Melee": 0.563,
+      "Maul": 0.338,
+      "Thorns": 0.099
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Bear Form"
     },
     "14": {
-     "seconds": 29.7,
+     "seconds": 29.3,
      "deaths_per_100": 0.0,
      "casts": {
-      "Melee": 5.67,
-      "Enrage": 0.47,
+      "Melee": 5.09,
+      "Enrage": 0.46,
       "Demoralizing Roar": 1.0,
-      "Maul": 2.96,
-      "Bash": 0.11
-     }
+      "Maul": 3.14,
+      "Bash": 0.1
+     },
+     "idle_share": 0.051,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.452,
+      "Maul": 0.396,
+      "Thorns": 0.152
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Bear Form"
     },
     "19": {
-     "seconds": 32.8,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Melee": 6.17,
-      "Enrage": 0.5,
-      "Demoralizing Roar": 1.0,
-      "Maul": 3.55,
-      "Bash": 0.15
-     }
-    },
-    "20": {
-     "seconds": 21.6,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Claw": 4.04,
-      "Melee": 12.06,
-      "Rip": 0.92
-     }
-    },
-    "24": {
-     "seconds": 22.8,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Rake": 1.25,
-      "Melee": 13.05,
-      "Claw": 3.47,
-      "Ferocious Bite": 0.65
-     }
-    },
-    "30": {
-     "seconds": 27.3,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Rake": 1.75,
-      "Melee": 16.95,
-      "Claw": 3.92,
-      "Ferocious Bite": 0.84
-     }
-    },
-    "31": {
-     "seconds": 28.1,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Rake": 1.84,
-      "Melee": 17.7,
-      "Claw": 3.96,
-      "Ferocious Bite": 0.86
-     }
-    },
-    "32": {
-     "seconds": 26.7,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Ravage": 1.0,
-      "Melee": 16.42,
-      "Rake": 1.61,
-      "Claw": 2.79,
-      "Ferocious Bite": 0.96
-     }
-    },
-    "39": {
-     "seconds": 32.3,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Ravage": 1.0,
-      "Melee": 21.34,
-      "Rake": 1.96,
-      "Claw": 3.46,
-      "Ferocious Bite": 1.12
-     }
-    },
-    "40": {
      "seconds": 32.1,
      "deaths_per_100": 0.0,
      "casts": {
+      "Melee": 5.42,
+      "Enrage": 0.49,
+      "Demoralizing Roar": 1.0,
+      "Maul": 3.7,
+      "Bash": 0.15
+     },
+     "idle_share": 0.062,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Maul": 0.456,
+      "Melee": 0.43,
+      "Thorns": 0.114
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Bear Form"
+    },
+    "20": {
+     "seconds": 19.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Claw": 3.96,
+      "Melee": 10.05,
+      "Rip": 0.98
+     },
+     "idle_share": 0.073,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Claw": 0.429,
+      "Melee": 0.365,
+      "Rip": 0.157,
+      "Thorns": 0.05
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
+    },
+    "24": {
+     "seconds": 20.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Rake": 1.23,
+      "Melee": 10.93,
+      "Claw": 3.52,
+      "Ferocious Bite": 0.64
+     },
+     "idle_share": 0.072,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.336,
+      "Claw": 0.281,
+      "Rake": 0.207,
+      "Ferocious Bite": 0.121,
+      "Thorns": 0.054
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
+    },
+    "30": {
+     "seconds": 25.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Rake": 1.65,
+      "Melee": 14.46,
+      "Claw": 4.03,
+      "Ferocious Bite": 0.78
+     },
+     "idle_share": 0.088,
+     "drink_per_kill": 0.11,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.363,
+      "Claw": 0.286,
+      "Rake": 0.187,
+      "Ferocious Bite": 0.112,
+      "Thorns": 0.052
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
+    },
+    "31": {
+     "seconds": 25.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Rake": 1.72,
+      "Melee": 15.07,
+      "Claw": 4.08,
+      "Ferocious Bite": 0.77
+     },
+     "idle_share": 0.092,
+     "drink_per_kill": 0.17,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.371,
+      "Claw": 0.282,
+      "Rake": 0.189,
+      "Ferocious Bite": 0.106,
+      "Thorns": 0.052
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
+    },
+    "32": {
+     "seconds": 23.1,
+     "deaths_per_100": 0.0,
+     "casts": {
       "Ravage": 1.0,
-      "Melee": 20.87,
-      "Rake": 2.02,
-      "Claw": 3.31,
-      "Ferocious Bite": 1.12
-     }
+      "Melee": 12.76,
+      "Rake": 1.32,
+      "Claw": 2.73,
+      "Ferocious Bite": 0.78
+     },
+     "idle_share": 0.086,
+     "drink_per_kill": 0.06,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.295,
+      "Ravage": 0.222,
+      "Claw": 0.176,
+      "Rake": 0.135,
+      "Ferocious Bite": 0.131,
+      "Thorns": 0.041
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
+    },
+    "39": {
+     "seconds": 29.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Ravage": 1.0,
+      "Melee": 17.02,
+      "Rake": 1.66,
+      "Claw": 3.38,
+      "Ferocious Bite": 0.96
+     },
+     "idle_share": 0.136,
+     "drink_per_kill": 1.35,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.324,
+      "Claw": 0.195,
+      "Ravage": 0.162,
+      "Rake": 0.153,
+      "Ferocious Bite": 0.113,
+      "Thorns": 0.051
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
+    },
+    "40": {
+     "seconds": 28.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Ravage": 1.0,
+      "Melee": 16.96,
+      "Rake": 1.74,
+      "Claw": 3.28,
+      "Ferocious Bite": 1.03
+     },
+     "idle_share": 0.121,
+     "drink_per_kill": 1.13,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.311,
+      "Claw": 0.175,
+      "Ferocious Bite": 0.163,
+      "Ravage": 0.152,
+      "Rake": 0.15,
+      "Thorns": 0.048
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
     },
     "50": {
-     "seconds": 35.6,
+     "seconds": 30.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Ravage": 1.0,
-      "Melee": 22.72,
-      "Rake": 2.13,
-      "Claw": 3.56,
-      "Ferocious Bite": 1.25,
-      "Rip": 0.05
-     }
+      "Melee": 18.04,
+      "Rake": 1.87,
+      "Claw": 3.4,
+      "Ferocious Bite": 1.13
+     },
+     "idle_share": 0.125,
+     "drink_per_kill": 1.38,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.299,
+      "Claw": 0.175,
+      "Ferocious Bite": 0.174,
+      "Ravage": 0.158,
+      "Rake": 0.148,
+      "Thorns": 0.044
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
     },
     "60": {
-     "seconds": 38.7,
+     "seconds": 33.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Ravage": 1.0,
-      "Melee": 26.55,
-      "Rake": 2.39,
-      "Claw": 4.16,
-      "Ferocious Bite": 1.06,
-      "Rip": 0.41
-     }
+      "Melee": 21.71,
+      "Rake": 2.17,
+      "Claw": 3.96,
+      "Rip": 0.15,
+      "Ferocious Bite": 1.17
+     },
+     "idle_share": 0.091,
+     "drink_per_kill": 0.77,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.286,
+      "Claw": 0.177,
+      "Ferocious Bite": 0.168,
+      "Rake": 0.149,
+      "Ravage": 0.135,
+      "Thorns": 0.046,
+      "Rip": 0.04
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Cat Form"
     }
    }
   }

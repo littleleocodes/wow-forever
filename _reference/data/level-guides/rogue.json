@@ -1,6 +1,6 @@
 {
  "class": "rogue",
- "updated": "2026-11-16",
+ "updated": "2026-11-21",
  "guides": [
   {
    "spec": "Combat",
@@ -153,7 +153,7 @@
      "if_hurt": "Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.",
      "notes": [
       "**Malice** (42-46) and **Lethality** (52-53) are crit; **Vigor** (50-51) is 10 more energy, so **Shank** overflows less often.",
-      "**Mutilate**, **Death Mark** and **Adrenaline Rush** belong to other builds. This one does not take them."
+      "Mutilate, Death Mark and Adrenaline Rush belong to other builds. This one does not take them."
      ],
      "unsimulated": [
       "Stealth"
@@ -185,7 +185,7 @@
     "Visit the trainer every even level: **Sinister Strike** and **Eviscerate** have many ranks."
    ],
    "other": [
-    "The Combat-Subtlety split is about 1% behind in the fight lab and plays **Ghostly Strike** and the stealth openers; Assassination with daggers plays **Mutilate** from 40. Both have pages in this folder."
+    "The Combat-Subtlety split is about 1% behind in the fight lab and plays Ghostly Strike and the stealth openers; Assassination with daggers plays Mutilate from 40. Both have pages in this folder."
    ],
    "keys": {
     "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; poisons, food, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the save, the thumb buttons the reactions, 1-4 the rest, the Shift bar the rarer tools. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup: the [rogue keybinds page](keybinds.md).",
@@ -320,7 +320,7 @@
        },
        {
         "key": "Shift+E",
-        "role": "The interrupt the tuned rotation skips: for a caster that hits too hard",
+        "role": "The interrupt: not in the list; press it to stop a cast that hits too hard",
         "binds": [
          {
           "from": 12,
@@ -542,7 +542,7 @@
       "Q keeps its job: change the Q macro's spell to **Mutilate** (the [macros page](../macros.md) has it).",
       "**Mutilate** hits 20% harder on a mob your Deadly Poison is on, but the fight lab still kills faster with **Instant Poison** on both weapons: keep it.",
       "From 41 the points go to Combat: **Lightning Reflexes** (41-42) is dodge, **Coup de Grace** (43-45) a bigger **Eviscerate**, **Puncturing Wounds** (46-48) crit on **Mutilate**, **Precision** (49-51) hit, **Deflection** (52-53) parry, **Composure** (54-55) a cheaper opener, **Flawless Execution** (56) a cheaper **Eviscerate**, **Aggression** (57-58) a harder one, **Weapon Expertise** (59-60) fewer dodges and parries.",
-      "**Adrenaline Rush**, **Blade Flurry** and **Riposte** belong to Combat builds. This one does not take them."
+      "Adrenaline Rush, Blade Flurry and Riposte belong to Combat builds. This one does not take them."
      ],
      "unsimulated": [
       "Stealth"
@@ -555,7 +555,7 @@
     "Visit the trainer every even level: **Sinister Strike**, **Garrote** and **Eviscerate** have many ranks, and **Mutilate** has new ranks at 50 and 60."
    ],
    "other": [
-    "Combat with swords is the rogue's fastest leveling spec in the fight lab and builds with **Sinister Strike** all the way; the Subtlety and Combat-Subtlety builds open with **Premeditation** and **Ambush** and strike with **Ghostly Strike**. Each has a page in this folder."
+    "Combat with swords is the rogue's fastest leveling spec in the fight lab and builds with **Sinister Strike** all the way; the Subtlety and Combat-Subtlety builds open from stealth with Premeditation's two points and **Ambush** or **Garrote**, and strike with Ghostly Strike and Hemorrhage. Each has a page in this folder."
    ],
    "keys": {
     "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; poisons, food, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the save, the thumb buttons the reactions, 1-4 the rest, the Shift bar the rarer tools. Every spell this spec shares with Combat sits on the Combat key, so your hands do not relearn anything when you switch specs. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and the macros: the [rogue keybinds page](keybinds.md).",
@@ -689,7 +689,7 @@
        },
        {
         "key": "Shift+E",
-        "role": "The interrupt: a caster mob's spell, as soon as it starts casting",
+        "role": "The interrupt: not in the list; press it to stop a cast that hits too hard",
         "binds": [
          {
           "from": 12,
@@ -783,7 +783,7 @@
       "At 5 points: **Eviscerate**. Earlier when it would kill the mob."
      ],
      "notes": [
-      "Carry a dagger in each hand from the start: **Ambush** (18) needs one in your main hand, and **Ghostly Strike** and **Hemorrhage** hit much harder with it.",
+      "Carry a dagger in each hand from the start: **Ambush** (18) needs one in your main hand, and **Ghostly Strike** (25) and **Hemorrhage** (30) hit much harder with it.",
       "**Backstab** (4) needs the mob's back, and a mob you fight alone turns to face you after your first hit: never Backstab.",
       "**Stealth** (1) has nothing to open with yet and is not worth the walk: mobs die in a few hits. It gets its key at 14, with **Garrote**."
      ]
@@ -858,7 +858,7 @@
      "if_hurt": "Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather.",
      "notes": [
       "**Ambush** needs a dagger in your main hand and you behind the mob. **Improved Ambush** (18-19) raises its crit chance.",
-      "**Garrote** instead on a mob that will take a while to kill (a lot of health or armor): its bleed ignores armor but pays only while the mob lives. The fight lab's same-level mobs never last that long at 18-21.",
+      "**Garrote** instead on a mob that will take a while to kill (a lot of health or armor): its bleed ignores armor but pays only while the mob lives. The fight lab's same-level mobs rarely last that long at 18-21.",
       "**Poised** (18) makes the opener 10 energy cheaper.",
       "**Rupture** (20) is never cast: the points are worth more as **Eviscerate**.",
       "**Serrated Blades** (20-22): your attacks ignore part of the mob's armor.",
@@ -880,7 +880,7 @@
      ],
      "if_hurt": "Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.",
      "notes": [
-      "At 22 the fight lab opens with **Ambush** on about three pulls in four and with **Garrote** on the rest.",
+      "At 22 the fight lab opens with **Ambush** on about two pulls in three and with **Garrote** on the rest.",
       "**Vanish** (22) is the emergency exit: the mob loses you, and you walk away.",
       "**Initiative** (23): your opener may add a second combo point."
      ],
@@ -948,7 +948,7 @@
      "if_hurt": "Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.",
      "notes": [
       "Q keeps its job: change the Q macro's spell to **Hemorrhage** (the [macros page](../macros.md) has it). **Hemorrhage** also makes your **Garrote** bleed 15% harder for 15 seconds.",
-      "**Garrote** rank 3 (30) makes the bleed bigger still: at 30 the fight lab opens with it on almost every pull. **Ambush** rank 3 (34) tips most pulls back to **Ambush**.",
+      "**Garrote** rank 3 (30) makes the bleed bigger still: at 30 the fight lab opens with it on almost every pull. **Ambush** rank 3 (34) tips about half the pulls back to **Ambush**.",
       "**Instant Poison** stays on both weapons: Deadly Poison (30) on the off hand measured about 1% slower per kill in the fight lab (the tuned rules, 2026-11-15). A buff you reapply between fights, no key.",
       "**Kidney Shot** (30): off. The tuned rotation never casts it.",
       "**Preparation** (31): when you need **Evasion** and it is on cooldown, Preparation resets it (and your other cooldowns). The fight lab never needed it.",
@@ -974,7 +974,7 @@
      "if_hurt": "Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit. If **Evasion** is on cooldown, **Preparation** resets it.",
      "notes": [
       "**Boot Knife** takes a point a level: a 20% chance a point, a sure 2 combo points at 39.",
-      "At 35 the fight lab opens with **Ambush** on about two pulls in three. **Garrote** rank 4 (38) makes the bleed bigger again, and from 40 the fight lab opens with **Garrote** on every pull."
+      "At 35 the fight lab opens with **Ambush** on about half the pulls. **Garrote** rank 4 (38) makes the bleed bigger again, and from 40 the fight lab opens with **Garrote** on every pull."
      ],
      "unsimulated": [
       "Stealth"
@@ -998,7 +998,7 @@
      "notes": [
       "**Death Mark** stores more with more combo points: the fight lab presses it at 5. How much it stores is not in the tooltip: the fight lab assumes a rate, so treat this line as a best guess.",
       "**Coup de Grace** (41-43) makes **Eviscerate** and **Death Mark** stronger. **Lightning Reflexes** (44-45) is dodge, and with **Setup** a dodge can be a combo point. **Precision** (46-48) is hit; **Efficient Strikes** (49-50) makes **Hemorrhage** cheaper.",
-      "**Puncturing Wounds** (51-52) is two tier points on the way to **Weapon Expertise** (57-58) and **Aggression** (59-60): this list casts no **Backstab** or **Mutilate**. **Lightning Reflexes** (53) takes its third point: more dodge. **Composure** (54-55) and **Flawless Execution** (56) make the opener and **Eviscerate** cheaper."
+      "**Deflection** (51-52) is 4% more parry and two tier points on the way to **Weapon Expertise** (57-58) and **Aggression** (59-60). **Lightning Reflexes** (53) takes its third point: more dodge. **Composure** (54-55) and **Flawless Execution** (56) make the opener and **Eviscerate** cheaper."
      ],
      "unsimulated": [
       "Stealth"
@@ -1155,7 +1155,7 @@
        },
        {
         "key": "Shift+E",
-        "role": "The interrupt the tuned rotation skips: for a caster that hits too hard",
+        "role": "The interrupt: not in the list; press it to stop a cast that hits too hard",
         "binds": [
          {
           "from": 12,
@@ -1248,7 +1248,7 @@
   },
   {
    "spec": "Hybrid Combat/Subtlety",
-   "intro": "What a Combat-Subtlety rogue presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. This split plays Subtlety's rotation with a dagger in each hand: **Premeditation** and **Ambush** put combo points on the mob before your first builder, **Ghostly Strike**, its signature strike, goes in on its cooldown, and Combat's talents add hit, dodge and cheaper finishers. **Sinister Strike** stays your builder until **Hemorrhage** arrives at 60. Each stage lists the full priority, so you can jump in at your level.",
+   "intro": "What a Combat-Subtlety rogue presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. This split plays Subtlety's rotation with a dagger in each hand: **Premeditation** and a stealth opener, **Ambush** on most pulls, put combo points on the mob before your first builder, **Ghostly Strike**, its signature strike, goes in on its cooldown, and Combat's talents add hit, dodge and cheaper finishers. **Sinister Strike** stays your builder until **Hemorrhage** takes over at 32. Each stage lists the full priority, so you can jump in at your level.",
    "stages": [
     {
      "from": 1,
@@ -1259,7 +1259,7 @@
       "At 5 points: **Eviscerate**. Earlier when it would kill the mob."
      ],
      "notes": [
-      "Carry a dagger in each hand from the start: **Ambush** (18) needs one in your main hand, and **Ghostly Strike** hits much harder with it.",
+      "Carry a dagger in each hand from the start: **Ambush** (18) needs one in your main hand, and **Ghostly Strike** (25) and **Hemorrhage** (32) hit much harder with it.",
       "**Backstab** (4) needs the mob's back, and a mob you fight alone turns to face you after your first hit: never Backstab.",
       "**Stealth** (1) has nothing to open with yet and is not worth the walk: mobs die in a few hits. It gets its key at 14, with **Garrote**."
      ]
@@ -1299,7 +1299,7 @@
       "**Slice and Dice** (10): leave it off your bar. The tuned rotation never casts it: a mob dies before the extra swings pay for the combo points.",
       "**Sap** (10): a second mob next to your target, from stealth, before the pull.",
       "**Kick** (12): the tuned rotation never interrupts. A caster that stands and casts walks to you when you close in, and the kill is faster without the detour.",
-      "**Setup** (12): a dodge can add a combo point. Nothing to press."
+      "**Setup** (12-14): a dodge can add a combo point. Nothing to press."
      ]
     },
     {
@@ -1315,7 +1315,7 @@
      "if_hurt": "Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather.",
      "notes": [
       "**Dirty Deeds** (15) makes **Garrote** 10 energy cheaper and lets it go from the front.",
-      "**Expose Armor** (14) is never cast. **Improved Ambush** (17-19) is crit for the opener you get at 18."
+      "**Expose Armor** (14) is never cast. **Opportunity** (16-18) takes its last three points: **Garrote** and **Ambush** hit 20% harder."
      ],
      "unsimulated": [
       "Stealth"
@@ -1324,16 +1324,16 @@
     {
      "from": 18,
      "title": "Ambush",
-     "change": "**Ambush** from stealth: one big hit with your dagger, your opener from here to 60.",
+     "change": "**Ambush** from stealth: one big hit with your dagger, your usual opener from here.",
      "press": [
       "**Stealth** up behind the mob with full energy.",
-      "Open with **Ambush**.",
+      "Open with **Ambush**. From 22, with **Garrote** on a mob that will take a while to kill (a lot of health or armor).",
       "**Sinister Strike** until you have 5 combo points.",
       "At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob."
      ],
      "if_hurt": "Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather.",
      "notes": [
-      "**Ambush** needs a dagger in your main hand and you behind the mob. With **Improved Ambush** it crits often, and the fight lab opens with it on every pull.",
+      "**Ambush** needs a dagger in your main hand and you behind the mob. **Improved Ambush** (19) raises its crit chance. The fight lab opens with **Ambush** on most pulls at 18 and on every pull at 20; **Garrote** rank 2 (22) makes the bleed bigger, and at 23 it opens with **Garrote** on about half the pulls.",
       "**Poised** (18) makes the opener 10 energy cheaper.",
       "**Rupture** (20) is never cast: the points are worth more as **Eviscerate**.",
       "**Serrated Blades** (20-22): your attacks ignore part of the mob's armor. **Initiative** (23): your opener may add a second combo point.",
@@ -1351,14 +1351,14 @@
      "press": [
       "**Stealth** up behind the mob with full energy.",
       "**Premeditation** whenever it is ready (every 2 minutes): 2 combo points on the mob before you open.",
-      "Open with **Ambush**.",
+      "Open with **Ambush**, or with **Garrote** on a mob that will take a while to kill (a lot of health or armor).",
       "**Shank** whenever it is ready, unless the energy it gives would go over your maximum.",
       "**Sinister Strike** until you have 5 combo points.",
       "At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob."
      ],
      "if_hurt": "Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.",
      "notes": [
-      "**Stealth** and **Premeditation** are off the global cooldown: Stealth, Premeditation, then **Ambush**. Use the points within 20 seconds.",
+      "**Stealth** and **Premeditation** are off the global cooldown: Stealth, Premeditation, then the opener. Use the points within 20 seconds.",
       "**Mind-numbing Poison** (24) is for casters in groups."
      ],
      "unsimulated": [
@@ -1372,7 +1372,7 @@
      "press": [
       "**Stealth** up behind the mob with full energy.",
       "**Premeditation** whenever it is ready (every 2 minutes): 2 combo points on the mob before you open.",
-      "Open with **Ambush**.",
+      "Open with **Ambush**, or with **Garrote** on a mob that will take a while to kill (a lot of health or armor).",
       "**Shank** whenever it is ready, unless the energy it gives would go over your maximum.",
       "**Ghostly Strike** whenever it is ready, unless you have 5 points. Right after it, **Garrote** if none is bleeding on the mob and it has more than half its health: **Ghostly Strike** lets **Garrote** go without **Stealth**, and **Dirty Deeds** lets it go from the front.",
       "**Sinister Strike** until you have 5 combo points.",
@@ -1380,9 +1380,9 @@
      ],
      "if_hurt": "Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.",
      "notes": [
-      "**Coup de Grace** (26-28) makes **Eviscerate** hit harder.",
-      "**Cheap Shot** (26): the rotation opens with it only when **Ambush** cannot go, which the fight lab never saw.",
-      "**Remorseless Attacks** (29-30): the first **Ambush** or strike after a kill is likelier to crit. Pull the next mob within 20 seconds."
+      "**Cheap Shot** (26): the rotation opens with it only when neither **Ambush** nor **Garrote** can go, which the fight lab never saw.",
+      "**Remorseless Attacks** (26-27): the first **Ambush** or strike after a kill is likelier to crit. Pull the next mob within 20 seconds.",
+      "**Initiative** (28-29): from 29 your opener always adds a second combo point."
      ],
      "unsimulated": [
       "Stealth"
@@ -1390,8 +1390,8 @@
     },
     {
      "from": 30,
-     "title": "Kidney Shot stays off",
-     "change": "Nothing new to press: **Instant Poison** stays on both weapons and **Kidney Shot** (30) stays off.",
+     "title": "Improved Ambush; Kidney Shot stays off",
+     "change": "**Improved Ambush** takes its last two points, and **Ambush** opens every pull again. **Instant Poison** stays on both weapons and **Kidney Shot** (30) stays off.",
      "press": [
       "**Stealth** up behind the mob with full energy.",
       "**Premeditation** whenever it is ready (every 2 minutes): 2 combo points on the mob before you open.",
@@ -1405,7 +1405,29 @@
      "notes": [
       "Deadly Poison (30) on the off hand measured about 1% slower per kill than **Instant Poison** there in the fight lab (the tuned rules, 2026-11-15): Instant Poison on both weapons, a buff you reapply between fights, no key.",
       "**Kidney Shot** (30): off. The tuned rotation never casts it.",
-      "**Malice** (31-33) is crit, **Efficient Strikes** (34-35) makes **Sinister Strike** cheaper, **Lightning Reflexes** (36-37, 41-43) is dodge (and with **Setup** a dodge can be a combo point), **Precision** (38-40) is hit.",
+      "**Improved Ambush** (30-31): 45% more crit on **Ambush** at three points. From 30 the fight lab opens with it on every pull."
+     ],
+     "unsimulated": [
+      "Stealth"
+     ]
+    },
+    {
+     "from": 32,
+     "title": "Hemorrhage",
+     "change": "**Hemorrhage** (talent) takes over from **Sinister Strike** as your builder.",
+     "press": [
+      "**Stealth** up behind the mob with full energy.",
+      "**Premeditation** whenever it is ready (every 2 minutes): 2 combo points on the mob before you open.",
+      "Open with **Ambush**.",
+      "**Shank** whenever it is ready, unless the energy it gives would go over your maximum.",
+      "**Ghostly Strike** whenever it is ready, unless you have 5 points. Right after it, **Garrote** if none is bleeding on the mob and it has more than half its health: **Ghostly Strike** lets **Garrote** go without **Stealth**, and **Dirty Deeds** lets it go from the front.",
+      "**Hemorrhage** until you have 5 combo points.",
+      "At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob."
+     ],
+     "if_hurt": "Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.",
+     "notes": [
+      "Q keeps its job: change the Q macro's spell to **Hemorrhage** (the [macros page](../macros.md) has it). **Hemorrhage** also makes your **Garrote** bleed 15% harder for 15 seconds.",
+      "**Coup de Grace** (33-35) makes **Eviscerate** hit 20% harder. **Lightning Reflexes** (36-37) is dodge, and with **Setup** a dodge can be a combo point. **Precision** (38-40) is hit.",
       "**Blind** (34) handles a second mob that joins mid-fight."
      ],
      "unsimulated": [
@@ -1422,34 +1444,14 @@
       "Open with **Ambush**.",
       "**Shank** whenever it is ready, unless the energy it gives would go over your maximum.",
       "**Ghostly Strike** whenever it is ready, unless you have 5 points. Right after it, **Garrote** if none is bleeding on the mob and it has more than half its health: **Ghostly Strike** lets **Garrote** go without **Stealth**, and **Dirty Deeds** lets it go from the front.",
-      "**Sinister Strike** until you have 5 combo points.",
-      "At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob."
-     ],
-     "if_hurt": "Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.",
-     "notes": [
-      "**Composure** (44-45) makes the opener cheaper, **Flawless Execution** (46) makes **Eviscerate** cheaper, **Weapon Expertise** (47-48) cuts dodges and parries, **Aggression** (49-51) makes **Sinister Strike** and **Eviscerate** hit harder.",
-      "**Initiative** (52-53) makes the opener's second combo point certain. **Dual Wield Specialization** (54-55) and **Hack and Slash** (56-57) are off-hand damage and dagger crit. **Setup** (58-59) takes its last two points: a dodge adds a combo point 45% of the time instead of 15%."
-     ],
-     "unsimulated": [
-      "Stealth"
-     ]
-    },
-    {
-     "from": 60,
-     "title": "Hemorrhage",
-     "change": "**Hemorrhage** (talent) takes over from **Sinister Strike** as your builder.",
-     "press": [
-      "**Stealth** up behind the mob with full energy.",
-      "**Premeditation** whenever it is ready (every 2 minutes): 2 combo points on the mob before you open.",
-      "Open with **Ambush**.",
-      "**Shank** whenever it is ready, unless the energy it gives would go over your maximum.",
-      "**Ghostly Strike** whenever it is ready, unless you have 5 points. Right after it, **Garrote** if none is bleeding on the mob and it has more than half its health: **Ghostly Strike** lets **Garrote** go without **Stealth**, and **Dirty Deeds** lets it go from the front.",
       "**Hemorrhage** until you have 5 combo points.",
       "At 5 points: **Eviscerate**, waiting for the energy rather than pressing another builder. Earlier when it would kill the mob."
      ],
      "if_hurt": "Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.",
      "notes": [
-      "Q keeps its job: change the Q macro's spell to **Hemorrhage** (the [macros page](../macros.md) has it). **Hemorrhage** also makes your **Garrote** bleed 15% harder for 15 seconds."
+      "**Deflection** (41-42) is parry, **Lightning Reflexes** (43) takes its third point, **Efficient Strikes** (44-45) makes **Hemorrhage** 5 energy cheaper.",
+      "**Composure** (46-47) makes the opener cheaper, **Flawless Execution** (48) makes **Eviscerate** cheaper, **Weapon Expertise** (49-50) cuts dodges and parries, **Aggression** (51-53) makes **Eviscerate** hit harder.",
+      "**Dual Wield Specialization** (54-55) and **Hack and Slash** (56-57) are off-hand damage and dagger crit. **Flash of Steel** (58-59) makes **Shank** give 6 more energy and come back 0.8 seconds sooner, and the last point is **Malice** (60): 1% more crit."
      ],
      "unsimulated": [
       "Stealth"
@@ -1459,10 +1461,10 @@
    "between": [
     "Bandage when you are below 60% of your health, eat when you are below 40%. That is the tuned rule.",
     "Reapply your poisons when they run out, and **Stealth** before each pull from 14.",
-    "Visit the trainer every even level: **Sinister Strike**, **Ambush** and **Eviscerate** have many ranks."
+    "Visit the trainer every even level: **Ambush**, **Garrote** and **Eviscerate** have many ranks, and **Sinister Strike** until **Hemorrhage** replaces it at 32."
    ],
    "other": [
-    "Combat with swords is the rogue's fastest leveling spec in the fight lab, this split close behind it. Subtlety plays the same rotation deeper in its tree, with **Hemorrhage** from 30 and **Death Mark** from 40. Both have pages in this folder."
+    "Combat with swords is the rogue's fastest leveling spec in the fight lab, this split close behind it. Subtlety plays the same rotation deeper in its tree, with **Hemorrhage** from 30 and Death Mark from 40. Both have pages in this folder."
    ],
    "keys": {
     "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; poisons, food, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q the attack you press most, E the control, R the payoff, F the save, the thumb buttons the reactions, 1-4 the rest, the Shift bar the rarer tools. Every spell this spec shares with Combat sits on the Combat key, so your hands do not relearn anything when you switch specs. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and the macros: the [rogue keybinds page](keybinds.md).",
@@ -1479,7 +1481,7 @@
           "spell": "Sinister Strike"
          },
          {
-          "from": 60,
+          "from": 32,
           "spell": "Hemorrhage"
          }
         ]
@@ -1606,7 +1608,7 @@
        },
        {
         "key": "Shift+E",
-        "role": "The interrupt the tuned rotation skips: for a caster that hits too hard",
+        "role": "The interrupt: not in the list; press it to stop a cast that hits too hard",
         "binds": [
          {
           "from": 12,
@@ -1679,11 +1681,11 @@
     ],
     "no_key": [],
     "notes": [
-     "The Combat layout for every spell the two share, and the Subtlety layout's keys for the rest: Mouse 4 holds **Ghostly Strike** (no **Riposte** in this build), C **Ambush** (no **Cold Blood**), Shift+Q **Premeditation**, and Q takes **Hemorrhage** at 60. **Garrote** keeps 1 as in every rogue layout: from 18 it is the bleed that follows **Ghostly Strike**. **Kick** stays on Shift+E, although this rotation never casts it.",
+     "The Combat layout for every spell the two share, and the Subtlety layout's keys for the rest: Mouse 4 holds **Ghostly Strike** (no **Riposte** in this build), C **Ambush** (no **Cold Blood**), Shift+Q **Premeditation**, and Q takes **Hemorrhage** at 32. **Garrote** keeps 1 as in every rogue layout: the opener before 18 and on a long fight at 22-29, and from 25 the bleed that follows **Ghostly Strike**. **Kick** stays on Shift+E, although this rotation never casts it.",
      "WoW switches bar 1 to a second page while you are in **Stealth** (the stealth bar, as in Classic). Put the same spells in the same slots on it, so every key does the same thing in and out of Stealth.",
-     "Before each pull: Shift+1 (**Stealth**), Shift+Q (**Premeditation**, when it is ready), then C (**Ambush**; 1 for **Garrote** before 18). Stealth and Premeditation are off the global cooldown, so the three go one after the other.",
+     "Before each pull: Shift+1 (**Stealth**), Shift+Q (**Premeditation**, when it is ready), then C (**Ambush**) or 1 (**Garrote**: before 18, and at 22-29 on a mob that will take a while to kill). Stealth and Premeditation are off the global cooldown, so the three go one after the other.",
      "No key: the poisons, **Slice and Dice** and **Kidney Shot** (the tuned rotation never casts them), **Cheap Shot** and **Backstab** (not in this list), food, bandages, the mount and the Hearthstone.",
-     "Levels 1-5 fight with Q and R. Q is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free; at 60 change its spell to **Hemorrhage**. Add a key when its spell arrives."
+     "Levels 1-5 fight with Q and R. Q is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free; at 32 change its spell to **Hemorrhage**. Add a key when its spell arrives."
     ]
    }
   }

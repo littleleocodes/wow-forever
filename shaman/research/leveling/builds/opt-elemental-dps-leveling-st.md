@@ -97,13 +97,13 @@ What this build casts per kill ([report](../fightlab/elemental-dps.md), all leve
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Lightning Bolt | 3.1 | 4.1 | 4.0 | 4.0 | 4.1 | 56% |
-| Melee | 1.1 | 1.5 | 1.5 | 1.5 | 1.4 | 8% |
-| Flame Shock | 0.8 | 0.8 | 0.9 | 0.9 | 0.9 | 13% |
-| Searing Totem | 0.8 | 0.7 | 0.7 | 0.7 | 0.7 | 4% |
-| Earth Shock | 0.4 | 0.8 | 0.8 | 0.8 | 0.7 | 10% |
-| Lightning Shield | 0.5 | 0.5 | 0.5 | 0.5 | 0.5 | 8% |
-| Windfury | 0.0 | 0.5 | 0.5 | 0.0 | 0.0 | 0% |
+| Lightning Bolt | 3.1 | 4.0 | 4.0 | 4.0 | 4.2 | 57% |
+| Melee | 1.2 | 1.6 | 1.6 | 1.6 | 1.5 | 9% |
+| Flame Shock | 0.8 | 0.8 | 0.9 | 0.9 | 0.9 | 12% |
+| Earth Shock | 0.5 | 0.8 | 0.8 | 0.8 | 0.7 | 11% |
+| Searing Totem | 0.7 | 0.7 | 0.7 | 0.7 | 0.7 | 4% |
+| Lightning Shield | 0.5 | 0.5 | 0.6 | 0.5 | 0.5 | 8% |
+| Windfury | 0.0 | 0.6 | 0.6 | 0.0 | 0.0 | 0% |
 
 ## Notes
 

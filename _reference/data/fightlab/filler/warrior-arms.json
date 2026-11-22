@@ -3,7 +3,7 @@
  "spec": "Arms",
  "build": "arms-open-leveling",
  "rotation": "arms-2h-raid",
- "date": "2026-11-15",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -153,17 +153,288 @@
  ],
  "steps": [
   {
-   "weighted": 24.183,
+   "weighted": 23.473,
    "values_at_60": {
-    "Impale": -0.226,
-    "Improved Bloodrage": -0.17,
-    "Improved Execute": -0.111,
-    "Mortal Strike": -33.957
+    "Impale": -0.35,
+    "Improved Bloodrage": -0.29,
+    "Improved Execute": -0.19,
+    "Improved Slam": -0.253
    },
-   "zero": []
+   "zero": [],
+   "dead_held": [
+    "Improved Tactical Mastery"
+   ]
   }
  ],
- "moves": [],
+ "moves": [
+  {
+   "from": "Improved Execute",
+   "to": "Improved Slam",
+   "level": 58,
+   "seed3": -0.0005,
+   "seed4": -0.0007,
+   "why": "tie-break"
+  },
+  {
+   "from": "Lingering Rage",
+   "to": "Booming Voice",
+   "level": 51,
+   "seed3": -0.0018,
+   "seed4": -0.0004,
+   "why": "gate that did nothing, no loss"
+  }
+ ],
+ "kept_signature": [
+  "Mortal Strike"
+ ],
+ "gates_checked": {
+  "Anger Management": {
+   "level": 26,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0147
+    },
+    {
+     "to": "Improved Heroic Strike",
+     "seed3": 0.0168
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Bloodthrill": {
+   "level": 31,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Heroic Strike",
+     "seed3": 0.0194
+    },
+    {
+     "to": "Deflection",
+     "seed3": 0.0198
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Booming Voice": {
+   "level": 51,
+   "kind": "tier point for Enrage (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Unbridled Wrath",
+     "seed3": 0.0016
+    },
+    {
+     "to": "Lingering Rage",
+     "seed3": 0.0018
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Cruelty": {
+   "level": 45,
+   "kind": "tier point for Enrage (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Booming Voice",
+     "seed3": 0.0057
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Deep Wounds": {
+   "level": 22,
+   "kind": "prerequisite of Impale",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Deflection": {
+   "level": 14,
+   "kind": "tier point for Improved Charge (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Heroic Strike",
+     "seed3": 0.0018
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Enrage": {
+   "level": 56,
+   "kind": "tier point for Improved Execute (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Unbridled Wrath",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Booming Voice",
+     "seed3": 0.0012
+    },
+    {
+     "to": "Blood Craze",
+     "seed3": 0.0022
+    },
+    {
+     "to": "Lingering Rage",
+     "seed3": 0.0029
+    },
+    {
+     "to": "Furious Precision",
+     "seed3": 0.0029
+    },
+    {
+     "to": "Piercing Howl",
+     "seed3": 0.0029
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Charge": {
+   "level": 18,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0127
+    },
+    {
+     "to": "Improved Heroic Strike",
+     "seed3": 0.014
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Overpower": {
+   "level": 16,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0199
+    },
+    {
+     "to": "Improved Heroic Strike",
+     "seed3": 0.0209
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Rend": {
+   "level": 12,
+   "kind": "prerequisite of Deep Wounds",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Tactical Mastery": {
+   "level": 24,
+   "kind": "prerequisite of Anger Management",
+   "does_nothing": "improves only Tactical Mastery, which the build never casts (its removal changes nothing at 30, 40, 50, 60)",
+   "homes": [],
+   "verdict": "no legal home"
+  },
+  "Spearing Strike": {
+   "level": 25,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Heroic Strike",
+     "seed3": 0.0182
+    },
+    {
+     "to": "Deflection",
+     "seed3": 0.0196
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Sweeping Strikes": {
+   "level": 39,
+   "kind": "prerequisite of Mortal Strike",
+   "does_nothing": "a talent ability the build never presses (its removal changes nothing at 40, 50, 60)",
+   "homes": [],
+   "verdict": "no legal home"
+  },
+  "Two-Handed Weapon Specialization": {
+   "level": 29,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Heroic Strike",
+     "seed3": 0.0124
+    },
+    {
+     "to": "Deflection",
+     "seed3": 0.0128
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Unbridled Wrath": {
+   "level": 50,
+   "kind": "tier point for Enrage (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Lingering Rage",
+     "seed3": 0.0024
+    },
+    {
+     "to": "Booming Voice",
+     "seed3": 0.0035
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Weaponmaster": {
+   "level": 37,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0066
+    },
+    {
+     "to": "Improved Heroic Strike",
+     "seed3": 0.008
+    },
+    {
+     "to": "Improved Hamstring",
+     "seed3": 0.0084
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  }
+ },
+ "no_better_home": {
+  "Improved Tactical Mastery": {
+   "kind": "prerequisite of Anger Management",
+   "exact": true,
+   "why": "improves only Tactical Mastery, which the build never casts (its removal changes nothing at 30, 40, 50, 60)",
+   "homes": 0
+  },
+  "Sweeping Strikes": {
+   "kind": "prerequisite of Mortal Strike",
+   "exact": true,
+   "why": "a talent ability the build never presses (its removal changes nothing at 40, 50, 60)",
+   "homes": 0
+  }
+ },
  "final_order": [
   {
    "levels": "10-12",
@@ -288,7 +559,7 @@
   {
    "levels": "51",
    "tree": "Fury",
-   "talent": "Lingering Rage",
+   "talent": "Booming Voice",
    "points": 1
   },
   {
@@ -298,16 +569,275 @@
    "points": 5
   },
   {
-   "levels": "57-58",
+   "levels": "57",
    "tree": "Fury",
    "talent": "Improved Execute",
-   "points": 2
+   "points": 1
+  },
+  {
+   "levels": "58",
+   "tree": "Arms",
+   "talent": "Improved Slam",
+   "points": 1
   },
   {
    "levels": "59-60",
    "tree": "Protection",
    "talent": "Improved Bloodrage",
    "points": 2
+  }
+ ],
+ "written": {
+  "allocation": {
+   "Arms": [
+    [
+     "Deflection",
+     2
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Charge",
+     2
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Improved Overpower",
+     2
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ],
+    [
+     "Spearing Strike",
+     1
+    ],
+    [
+     "Two-Handed Weapon Specialization",
+     3
+    ],
+    [
+     "Impale",
+     2
+    ],
+    [
+     "Bloodthrill",
+     2
+    ],
+    [
+     "Sweeping Strikes",
+     1
+    ],
+    [
+     "Weaponmaster",
+     5
+    ],
+    [
+     "Improved Slam",
+     2
+    ],
+    [
+     "Mortal Strike",
+     1
+    ]
+   ],
+   "Fury": [
+    [
+     "Booming Voice",
+     1
+    ],
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     4
+    ],
+    [
+     "Enrage",
+     5
+    ],
+    [
+     "Improved Execute",
+     1
+    ]
+   ],
+   "Protection": [
+    [
+     "Improved Bloodrage",
+     2
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-12",
+    "tree": "Arms",
+    "talent": "Improved Rend",
+    "points": 3
+   },
+   {
+    "levels": "13-14",
+    "tree": "Arms",
+    "talent": "Deflection",
+    "points": 2
+   },
+   {
+    "levels": "15-16",
+    "tree": "Arms",
+    "talent": "Improved Overpower",
+    "points": 2
+   },
+   {
+    "levels": "17-18",
+    "tree": "Arms",
+    "talent": "Improved Charge",
+    "points": 2
+   },
+   {
+    "levels": "19",
+    "tree": "Arms",
+    "talent": "Improved Tactical Mastery",
+    "points": 1
+   },
+   {
+    "levels": "20-22",
+    "tree": "Arms",
+    "talent": "Deep Wounds",
+    "points": 3
+   },
+   {
+    "levels": "23-24",
+    "tree": "Arms",
+    "talent": "Improved Tactical Mastery",
+    "points": 2
+   },
+   {
+    "levels": "25",
+    "tree": "Arms",
+    "talent": "Spearing Strike",
+    "points": 1
+   },
+   {
+    "levels": "26",
+    "tree": "Arms",
+    "talent": "Anger Management",
+    "points": 1
+   },
+   {
+    "levels": "27-29",
+    "tree": "Arms",
+    "talent": "Two-Handed Weapon Specialization",
+    "points": 3
+   },
+   {
+    "levels": "30-31",
+    "tree": "Arms",
+    "talent": "Bloodthrill",
+    "points": 2
+   },
+   {
+    "levels": "32-34",
+    "tree": "Arms",
+    "talent": "Weaponmaster",
+    "points": 3
+   },
+   {
+    "levels": "35",
+    "tree": "Arms",
+    "talent": "Improved Slam",
+    "points": 1
+   },
+   {
+    "levels": "36-37",
+    "tree": "Arms",
+    "talent": "Weaponmaster",
+    "points": 2
+   },
+   {
+    "levels": "38",
+    "tree": "Arms",
+    "talent": "Impale",
+    "points": 1
+   },
+   {
+    "levels": "39",
+    "tree": "Arms",
+    "talent": "Sweeping Strikes",
+    "points": 1
+   },
+   {
+    "levels": "40",
+    "tree": "Arms",
+    "talent": "Mortal Strike",
+    "points": 1
+   },
+   {
+    "levels": "41-45",
+    "tree": "Fury",
+    "talent": "Cruelty",
+    "points": 5
+   },
+   {
+    "levels": "46",
+    "tree": "Arms",
+    "talent": "Impale",
+    "points": 1
+   },
+   {
+    "levels": "47-50",
+    "tree": "Fury",
+    "talent": "Unbridled Wrath",
+    "points": 4
+   },
+   {
+    "levels": "51",
+    "tree": "Fury",
+    "talent": "Booming Voice",
+    "points": 1
+   },
+   {
+    "levels": "52-56",
+    "tree": "Fury",
+    "talent": "Enrage",
+    "points": 5
+   },
+   {
+    "levels": "57",
+    "tree": "Fury",
+    "talent": "Improved Execute",
+    "points": 1
+   },
+   {
+    "levels": "58",
+    "tree": "Arms",
+    "talent": "Improved Slam",
+    "points": 1
+   },
+   {
+    "levels": "59-60",
+    "tree": "Protection",
+    "talent": "Improved Bloodrage",
+    "points": 2
+   }
+  ],
+  "note": "2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Lingering Rage to Booming Voice at 51 (gate that did nothing, no loss: -0.2% seed 3, -0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Execute to Improved Slam at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
+ },
+ "reruns": [
+  {
+   "date": "2026-11-22",
+   "moves": 0
   }
  ]
 }

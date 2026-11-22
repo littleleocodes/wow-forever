@@ -1,10 +1,10 @@
 {
  "class": "warlock",
- "updated": "2026-11-16",
+ "updated": "2026-11-21",
  "guides": [
   {
    "spec": "Demonology",
-   "intro": "What a Demonology warlock presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Demonology levels behind its demon: the Voidwalker (from 10) holds the mob, your dots and the demon's talents do the damage, and the wand fills every gap. From 27, **Searing Pain** brands the mob so the Voidwalker's hits deal extra damage. Each stage lists the full priority, so you can jump in at your level.",
+   "intro": "What a Demonology warlock presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Demonology levels behind its demon: the Voidwalker (from 10) holds the mob, your dots and the demon's talents do the damage, and the wand fills every gap. From 28, **Searing Pain** brands the mob so the Voidwalker's hits deal extra damage. Each stage lists the full priority, so you can jump in at your level.",
    "stages": [
     {
      "from": 1,
@@ -62,16 +62,17 @@
      "notes": [
       "**Summon Voidwalker** costs a Soul Shard: **Drain Soul** (10) a mob as it dies to get one (Shift+Mouse 4). The fight lab does not count shards; keep two or three in your bags for the demon and your Healthstone.",
       "Heal the Voidwalker between fights with **Consume Shadows** (18, its own spell, not usable in a fight) or **Health Funnel** (12). Check that its **Torment** is on autocast on the pet bar.",
-      "**Shadow Bolt** waits for 80% of your mana from here on. With the dots and the wand you rarely have that much past the first pull after a rest, so the fight lab casts almost none.",
-      "**Drain Life** (14) goes on R: from 27 it is the answer after **Fear**.",
-      "**Unholy Power** (10-14) adds 10% to the Voidwalker's damage, **Demonic Energies** (15, 19) heals it for 15% of your spell damage and **Improved Voidwalker** (16-18) makes **Torment** and **Consume Shadows** 30% stronger. **Fel Vitality** (20-21, 23) gives the Voidwalker 15% more health and mana and you 15% more mana, **Demonic Aegis** (22) makes **Demon Armor** 15% stronger, and **Improved Sayaad** (24) does nothing for a Voidwalker. The leveling filler pass of 2026-11-17 moved Improved Imp's two points and **Demonic Aegis**'s second to **Fel Vitality**, each about 0.1% faster per kill.",
-      "**Demon Armor** (20) replaces **Demon Skin**. **Rain of Fire** (20) is for packs: one mob at a time never needs it. **Searing Pain** (18) waits for **Demonic Brand** at 27."
+      "**Shadow Bolt** waits for 80% of your mana from here on. With the dots and the wand you rarely have that much past the first pull after a rest, so the fight lab casts few.",
+      "**Drain Life** (14) goes on R: from 28 it is the answer after **Fear**.",
+      "**Unholy Power** (10-14) adds 10% to the Voidwalker's damage, **Demonic Energies** (15, 19) heals it for 15% of your spell damage and **Improved Voidwalker** (16-17, 24) makes **Torment** and **Consume Shadows** 30% stronger. **Fel Vitality** (18, 20-21) gives the Voidwalker 15% more health and mana and you 15% more mana, **Demonic Embrace** (22-23) adds 6% to your Stamina and **Demonic Aegis** (25-26) makes **Demon Armor** 30% stronger. The leveling filler passes of 2026-11-20 and 2026-11-21 moved three points into **Fel Vitality** (0.1-0.2% faster per kill each) and Improved Imp's three points, which only strengthen the Imp, into **Demonic Embrace** and **Improved Voidwalker** (no slower).",
+      "**Demonic Sacrifice** (27) is only the step to **Soul Link** at 30: never sacrifice your tank.",
+      "**Demon Armor** (20) replaces **Demon Skin**. **Rain of Fire** (20) is for packs: one mob at a time never needs it. **Searing Pain** (18) waits for **Demonic Brand** at 28."
      ]
     },
     {
-     "from": 27,
+     "from": 28,
      "title": "Demonic Brand: Searing Pain for the Voidwalker",
-     "change": "**Demonic Brand** (talent): **Searing Pain** brands the mob, and the Voidwalker's next 2 attacks (4 at 28, 6 from 29) deal 65 to 68 extra damage each.",
+     "change": "**Demonic Brand** (talent): **Searing Pain** brands the mob, and the Voidwalker's next 2 attacks (4 from 29, 6 from 34) deal extra damage each, 65 to 68 at level 60.",
      "press": [
       "Send the Voidwalker in with **Corruption** (Mouse 4), on a mob above about a third of its health; its **Torment** holds the mob.",
       "**Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than a third of its health and you have more than 30% of your mana.",
@@ -82,15 +83,15 @@
      "if_hurt": "A mob on you: **Fear** it, then **Drain Life** while it runs, until the Voidwalker takes it back. Your Healthstone below 35% health.",
      "notes": [
       "**Soul Link** (30): click it once after every summon. 30% of the damage you take goes to the Voidwalker, and you both deal 3% more.",
-      "**Demonic Knowledge** (31-33) adds spell damage and **Master Demonologist** (38-40) cuts the physical damage you take, both only while the Voidwalker is out: never fight without it.",
-      "**Demonic Sacrifice** (25) is only the step to **Soul Link**: never sacrifice your tank.",
+      "**Demonic Knowledge** (31-33) adds spell damage and **Master Demonologist** (40-41) cuts the physical damage you take, both only while the Voidwalker is out: never fight without it.",
+      "**Improved Corruption** (35-39) shortens **Corruption**'s cast by 0.4 seconds a point and adds 2% a point to its damage: **Corruption** is instant from 39.",
       "**Searing Pain** is no finisher here: the tuned rules cast it only on a mob above a third of its health. **Banish** (28) holds a second mob if it is a demon or an elemental."
      ]
     },
     {
      "from": 42,
-     "title": "Death Coil; a faster Corruption",
-     "change": "**Death Coil** for a mob that reaches you while you are hurt. **Improved Corruption** (35-37, 42) shortens **Corruption**'s cast to 0.4 seconds and adds 8% to its damage.",
+     "title": "Death Coil",
+     "change": "**Death Coil** for a mob that reaches you while you are hurt. The rest stays.",
      "press": [
       "Send the Voidwalker in with **Corruption** (Mouse 4), on a mob above about a third of its health; its **Torment** holds the mob.",
       "**Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than a third of its health and you have more than 30% of your mana.",
@@ -99,9 +100,9 @@
      ],
      "if_hurt": "A mob on you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.",
      "notes": [
-      "**Immolate** only while you have more than half your mana, which the brand almost never leaves you: the fight lab casts it on about one mob in twenty from here.",
+      "**Immolate** only while you have more than half your mana, which the brand almost never leaves you: the fight lab casts it on fewer than one mob in twenty from here.",
       "**Howl of Terror** (40) fears every mob near you: the escape from a pull that brings friends (Shift+F).",
-      "**Improved Life Tap** (43-44) adds 20% to each **Life Tap**; **Suppression** (41, 45-48) gives 5% hit and cuts your threat by 20%; **Grim Reach** (49) only widens the range of your Affliction spells."
+      "With the Voidwalker out, **Master Demonologist** (42-43) cuts the physical damage you and it take by 8%. **Improved Life Tap** (45-46) adds 20% to each **Life Tap**; **Suppression** (44, 47-49) gives 4% hit and cuts your threat by 16%."
      ]
     },
     {
@@ -117,7 +118,7 @@
      "if_hurt": "A mob on you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.",
      "notes": [
       "**Amplify Curse** (50): the next **Bane of Agony** is 50% stronger, every 3 minutes. It is off the global cooldown, so the macro on key 1 casts it and the bane in one press when it is ready, and the plain bane otherwise.",
-      "**Improved Bane of Agony** (51-52), **Pandemic** (53-54, 59) and **Malevolence** (55-58) make your dots hit harder and crit more often and harder. **Corruption** keeps its 0.4-second cast: the leveling filler pass of 2026-11-17 moved the last **Improved Corruption** point (an instant **Corruption**) to **Malevolence**, no slower in the fight lab."
+      "**Improved Bane of Agony** (51-52), **Pandemic** (53-54, 59) and **Malevolence** (55-58) make your dots hit harder and crit more often and harder."
      ]
     },
     {
@@ -133,7 +134,7 @@
      ],
      "if_hurt": "A mob on you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.",
      "notes": [
-      "The third dot costs mana: the fight lab casts **Life Tap** in about one fight in three at 60."
+      "The third dot costs mana: the fight lab casts **Life Tap** in about one fight in seventeen at 60. The talent gives you **Siphon Life**'s first rank: buy its other ranks at the trainer when you take it."
      ]
     }
    ],
@@ -200,7 +201,7 @@
         "role": "Thumb: the brand, each time it drops",
         "binds": [
          {
-          "from": 27,
+          "from": 28,
           "spell": "Searing Pain"
          }
         ]
@@ -387,7 +388,7 @@
      "Q keeps **Shadow Bolt** in every warlock spec. Demonology casts it only above 80% of its mana, mostly on the first pull after a rest: from level 4 the wand on the middle mouse button is your most-pressed key.",
      "Mouse 4 starts every fight from level 4: a macro that sends your demon and casts **Corruption** (the keybinds page). At 1-3, send the Imp from the pet bar and open with **Immolate** on 2.",
      "E then R answers a mob that reaches you: **Fear** it, then **Drain Life** while it runs. From 42 **Death Coil** on F comes first when you are below 60% health.",
-     "Mouse 5 holds **Searing Pain** from 27: press it each time the brand drops. Key 1 becomes the Amplify Curse macro at 50.",
+     "Mouse 5 holds **Searing Pain** from 28: press it each time the brand drops. Key 1 becomes the Amplify Curse macro at 50.",
      "No key: **Demon Skin** and **Demon Armor**, **Summon Imp** and **Summon Voidwalker**, **Soul Link**, **Create Healthstone**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights. The Voidwalker's **Torment** casts by itself; **Consume Shadows** and **Sacrifice** stay on the pet bar.",
      "Every warlock guide in this folder keeps these keys for the spells it shares with Demonology, so the keys feel the same whichever spec you level; each guide's notes name the few keys it changes."
     ]
@@ -407,7 +408,7 @@
      ],
      "notes": [
       "**Summon Imp** (1) before the first pull: its **Firebolt** casts by itself. Keep **Demon Skin** up at all times, from here to 20.",
-      "The fight lab gives you a wand from level 1. Buy one as soon as you can: until then **Shadow Bolt** is your filler, the only time this guide uses it. With a wand, **Shadow Bolt** measured slower at every level, 6% at level 1."
+      "The fight lab gives you a wand from level 1. Buy one as soon as you can: until then cast Shadow Bolt, the only time this guide does: with a wand, the fight lab never casts **Shadow Bolt** (it measured slower at every level, 6% at level 1)."
      ]
     },
     {
@@ -488,7 +489,7 @@
      "if_hurt": "Below 60% health: **Drain Life**, and in place of the wand below 85%. Your Healthstone below 35% health.",
      "notes": [
       "**Soul Siphon** (32-33) waits for **Wrack** at 40. **Shadow Mastery** (35-39) adds 10% to your Shadow damage.",
-      "**Siphon Life** is worth about 3.4 seconds a kill at 60 in the fight lab, the build's most valuable talent after **Wrack**."
+      "**Siphon Life** is worth about 4.8 seconds a kill at 60 in the fight lab, the build's second most valuable talent."
      ]
     },
     {
@@ -503,7 +504,7 @@
      ],
      "if_hurt": "Below 60% health: **Drain Life**, and in place of the wand below 85%. Your Healthstone below 35% health.",
      "notes": [
-      "**Wrack** (the hotfix of 2026-11-10) deals Shadow damage every second for 6 seconds (about 25 a second at 40, 60 at level 60), and while you channel it your **Corruption**, **Bane of Agony** and **Siphon Life** tick twice as fast, each extra tick a full one. **Soul Siphon** (32-33, 41) adds 12% to it for each of your other Affliction effects on the mob, up to 36%. It is the build's most valuable talent at 60: about 3.5 seconds a kill.",
+      "**Wrack** (the hotfix of 2026-11-10) deals Shadow damage every second for 6 seconds (about 25 a second at 40, 60 at level 60), and while you channel it your **Corruption**, **Bane of Agony** and **Siphon Life** tick twice as fast, each extra tick a full one. **Soul Siphon** (32-33, 41) adds 12% to it for each of your other Affliction effects on the mob, up to 36%. It is the build's most valuable talent at 60: about 6.5 seconds a kill.",
       "The 30% mana rule: the re-tune of 2026-11-16 measured it about 3% faster per kill than channelling whenever you can.",
       "**Immolate** keeps its rule (above half your mana), but after the three dots and **Wrack** the fight lab never has that much mana from 40: key 2 goes quiet.",
       "**Howl of Terror** (40) fears every mob near you: the escape from a pull that brings friends (Shift+F)."
@@ -517,14 +518,13 @@
       "Send the Voidwalker in with **Corruption** (Mouse 4), on a mob above about a third of its health and while you have more than 15% of your mana; its **Torment** holds the mob.",
       "**Bane of Agony** (key 1's macro) and **Siphon Life** on a mob above about a third of its health.",
       "**Wrack** once **Corruption** is up, on a mob above a quarter of its health, while you have more than 30% of your mana.",
-      "**Drain Life** whenever you drop below 60% health, and in place of the wand while you are below 85%.",
       "**Life Tap** in a fight only when your mana is down to about 15%, you stay above 60% health after it and the mob is not nearly dead.",
       "Your wand while the dots finish the mob."
      ],
-     "if_hurt": "A mob on you below 60% health: **Death Coil** first. Your Healthstone below 35% health.",
+     "if_hurt": "Below 60% health: **Death Coil** if a mob is on you, otherwise **Drain Life**; below 85%, **Drain Life** in place of the wand. Your Healthstone below 35% health.",
      "notes": [
-      "**Improved Drains** (42-43) adds 13% to **Drain Life**. **Fel Concentration** (51) gives your drains and **Wrack** a 23% chance not to lose casting time when you take damage.",
-      "The 12 Demonology points are for the Voidwalker: **Unholy Power** (45-49) adds 10% to its damage, **Demonic Energies** (50, 60) heals it for 15% of your spell damage and gives it the mana of each **Life Tap** too, **Improved Voidwalker** (53-55) makes **Torment** and **Consume Shadows** 30% stronger, and **Improved Health Funnel** (52) makes **Health Funnel** heal it 20% more for 15% less of your health. **Curse of Exhaustion** (56) slows a mob by 30% for 12 seconds, for one that runs at low health (the fight lab has no runners), **Grim Reach** (57, 59) only lengthens the range of your Affliction spells, and **Demonic Sacrifice** (58) is not for leveling: never sacrifice the Voidwalker that tanks for you. The fight lab measures these four at about nothing; the leveling filler passes of 2026-11-16 and 2026-11-17 moved points that measured nothing at all into them."
+      "**Malevolence**'s last point (44) adds 1% to your Shadow spells' critical strike chance.",
+      "The 15 Demonology points are for the Voidwalker and for you: **Unholy Power** (45-48) adds 8% to its damage, **Demonic Energies** (49-50) heals it for 15% of your spell damage and gives it all the mana of each **Life Tap**, **Improved Voidwalker** (53-55) makes **Torment** and **Consume Shadows** 30% stronger, **Demonic Embrace** (42-43, 56, 59) adds 12% to your Stamina, **Demonic Aegis** (51) makes **Demon Armor** 15% stronger and **Improved Health Funnel** (58) makes **Health Funnel** heal 20% more. The rest do nothing in the fight lab: **Curse of Exhaustion** (52) is a curse this list does not cast, and **Grim Reach** (57) and **Destructive Reach** (60) only lengthen the range of your Affliction and Destruction spells. The leveling filler passes of 2026-11-20 and 2026-11-22 moved the points that measured nothing into these, no slower in the fight lab."
      ]
     }
    ],
@@ -552,13 +552,13 @@
         "binds": [
          {
           "from": 1,
-          "spell": "Shadow Bolt"
+          "text": "Shadow Bolt, until you own a wand"
          }
         ]
        },
        {
         "key": "E",
-        "role": "Control: a second mob",
+        "role": "Control: not in the list; press it to send a second mob or a runner away in a bad pull",
         "binds": [
          {
           "from": 8,
@@ -784,16 +784,16 @@
   },
   {
    "spec": "Destruction",
-   "intro": "What a Destruction warlock presses from level 1 to 60, stage by stage. Destruction levels as a nuker behind the Voidwalker (from 10): **Shadow Bolt** and **Immolate**, **Shadowburn** (31) to finish and **Conflagrate** (32) on its cooldown. No Affliction dots, no **Fear** and no **Drain Life**: the tuned rules of 2026-11-07 level faster without them. Each stage lists the full priority, so you can jump in at your level.",
+   "intro": "What a Destruction warlock presses from level 1 to 60, stage by stage. Destruction levels as a nuker behind the Voidwalker (from 10): **Immolate**, **Shadow Bolt** while you have more than 60% of your mana and the wand below that, **Shadowburn** (29) to finish and **Conflagrate** (30) on its cooldown. No Affliction dots, no **Fear** and no **Drain Life**: the tuned rules of 2026-11-07 level faster without them. Each stage lists the full priority, so you can jump in at your level.",
    "stages": [
     {
      "from": 1,
      "title": "Immolate and Shadow Bolt",
-     "change": "**Immolate**, then **Shadow Bolt**, while the Imp throws **Firebolt**. No Affliction dots in this list.",
+     "change": "**Immolate**, then **Shadow Bolt** as long as you have more than 60% of your mana; the Imp throws **Firebolt**. No Affliction dots in this list.",
      "press": [
       "Send the Imp in, then **Immolate** the mob above 30% of its health.",
-      "**Shadow Bolt** while the mob has more than about a third of its health.",
-      "Your wand finishes it."
+      "**Shadow Bolt** while you have more than 60% of your mana and the mob has more than about a third of its health.",
+      "Your wand otherwise, and to finish it."
      ],
      "if_hurt": "A mob on you: wand it until it dies; nothing hits hard at these levels.",
      "notes": [
@@ -805,30 +805,30 @@
     },
     {
      "from": 10,
-     "title": "The Voidwalker tanks, Shadow Bolt fills",
+     "title": "The Voidwalker tanks, the wand fills below 60% mana",
      "change": "**Summon Voidwalker** holds the mob while you nuke. Talent points start: **Bane** makes your casts faster.",
      "press": [
       "Send the Voidwalker in and open with **Shadow Bolt** (Mouse 4's macro) while its **Torment** takes the mob, then **Immolate** on a mob above 30% of its health, once it will not pull the mob off the Voidwalker.",
-      "**Shadow Bolt** while the mob has more than about a third of its health and you keep a little mana in reserve; below that, your wand.",
-      "**Life Tap** in a fight only when you are short of mana and above 60% health."
+      "**Shadow Bolt** while you have more than 60% of your mana and the mob has more than about a third of its health; otherwise your wand."
      ],
      "if_hurt": "A mob on you: wand it until the Voidwalker's taunt takes it back; a cast in melee gets pushed back. Your Healthstone below 35% health.",
      "notes": [
       "**Summon Voidwalker** costs a Soul Shard: **Drain Soul** (10) a mob as it dies to get one (Shift+Mouse 4). The fight lab does not count shards; keep two or three in your bags for the demon and your Healthstone.",
       "Heal the Voidwalker between fights with **Consume Shadows** (18, its own spell, not usable in a fight) or **Health Funnel** (12). Check that its **Torment** is on autocast on the pet bar.",
-      "**Bane** (10-14) takes 0.5 seconds off **Shadow Bolt** and **Immolate**, **Destructive Reach** (15-16) adds 20% to the range of your Destruction spells (start the pull a little farther out), **Cataclysm** (17-19) makes your Destruction spells 10% cheaper, **Ruin** (20-24) doubles their critical strike bonus and **Agonizing Flames** (25-27) adds 10% to their damage. **Intensity** (28-30): your Destruction spells keep their cast time 70% of the time when a mob hits you.",
+      "**Bane** (10-14) takes 0.5 seconds off **Shadow Bolt** and **Immolate**, **Destructive Reach** (15-16) adds 20% to the range of your Destruction spells (start the pull a little farther out), **Cataclysm** (17-19) makes your Destruction spells 10% cheaper, **Ruin** (20-24) doubles their critical strike bonus and **Agonizing Flames** (25-27) adds 10% to their damage. **Intensity** (28): your Destruction spells keep their cast time 23% of the time when a mob hits you.",
+      "From 10 to 28 the wand does a third to two fifths of your damage and **Shadow Bolt** a quarter to a third (the fight lab, 2026-11-22). The list casts **Shadow Bolt** only while you have more than 60% of your mana: the wand costs nothing, and every bolt's mana has to be drunk back after the fight, so below that line the wand kills faster overall (the re-tune of 2026-11-21: 3% faster per kill over levels 20-60). No **Life Tap** in a fight: with the bolt kept for spare mana the fight lab never runs short.",
       "**Drain Life** (14) and **Searing Pain** (18) are not part of this list: the tuned rules measured faster kills without them.",
       "**Demon Armor** (20) replaces **Demon Skin**. **Rain of Fire** (20) is for packs: one mob at a time never needs it."
      ]
     },
     {
-     "from": 31,
+     "from": 29,
      "title": "Shadowburn",
      "change": "**Shadowburn** (talent) finishes a mob instantly. Cast it only when it will kill: the Soul Shard comes back.",
      "press": [
       "**Shadowburn** on a mob it would kill.",
       "Send the Voidwalker in and open with **Shadow Bolt** (Mouse 4's macro) while its **Torment** takes the mob, then **Immolate** on a mob above 30% of its health, once it will not pull the mob off the Voidwalker.",
-      "**Shadow Bolt** while the mob has more than about a third of its health and you keep a little mana in reserve; below that, your wand."
+      "**Shadow Bolt** while you have more than 60% of your mana and the mob has more than about a third of its health; otherwise your wand."
      ],
      "if_hurt": "A mob on you: **Shadowburn** if it would kill, otherwise wand it until the Voidwalker's taunt takes it back. Your Healthstone below 35% health.",
      "notes": [
@@ -836,21 +836,21 @@
      ]
     },
     {
-     "from": 32,
+     "from": 30,
      "title": "Conflagrate",
      "change": "**Conflagrate** (talent): an instant hit on a burning mob every 10 seconds. Until 39 it uses up your **Immolate**.",
      "press": [
       "**Shadowburn** on a mob it would kill.",
       "Send the Voidwalker in and open with **Shadow Bolt** (Mouse 4's macro) while its **Torment** takes the mob, then **Immolate** on a mob above 30% of its health, once it will not pull the mob off the Voidwalker.",
       "**Conflagrate** (R) on a burning mob above a fifth of its health, when **Immolate** has about 3 seconds left.",
-      "**Shadow Bolt** while the mob has more than about a third of its health and you keep a little mana in reserve; below that, your wand.",
-      "**Life Tap** in a fight only when you are short of mana and above 60% health."
+      "**Shadow Bolt** while you have more than 60% of your mana and the mob has more than about a third of its health; otherwise your wand."
      ],
      "if_hurt": "A mob on you: **Shadowburn** if it would kill, otherwise wand it until the Voidwalker's taunt takes it back. Your Healthstone below 35% health.",
      "notes": [
       "**Conflagrate** is no kill shot: the tuned rules cast it only on a mob above a fifth of its health.",
       "**Shadow and Flame** (35-39): at 5 points (39) **Conflagrate** no longer uses up **Immolate**, so cast it whenever it is ready; it also adds 20% to your Shadow damage for 20 seconds.",
-      "**Pyroclasm** (33) and **Bane of Havoc** (34) are tier points before **Shadow and Flame**: this list casts no **Soul Fire** and fights one mob at a time, so neither does anything here."
+      "**Bane of Havoc** (31) is a tier point before **Shadow and Flame**: this list fights one mob at a time, so it does nothing here. **Fire and Brimstone** (32-34) adds 25% critical strike chance to **Conflagrate**.",
+      "From 30 to 39 this list is mostly your wand: 34-47% of your damage, with **Shadow Bolt** at 7% at most (the fight lab, 2026-11-22). It keeps **Shadow Bolt** for when you have more than 60% of your mana and spends the rest on **Immolate**, **Conflagrate** and **Shadowburn**: the wand costs nothing, and a bolt's mana has to be drunk back, so the re-tune of 2026-11-21 measured level 35 18% faster per kill that way (44.7 to 36.5 seconds) than bolting through it."
      ]
     },
     {
@@ -865,8 +865,8 @@
      ],
      "if_hurt": "A mob on you: **Shadowburn** if it would kill, **Conflagrate** if it is ready, otherwise wand it until the Voidwalker's taunt takes it back. Your Healthstone below 35% health.",
      "notes": [
-      "**Incinerate** (40) is a tier point: the tuned rules of 2026-11-07 never cast it, and because the list reserves the filler for it on a burning mob, the fight lab now wands a burning mob instead of casting a bolt: about one and a half **Shadow Bolt** a kill from here, four before. A check on 2026-11-07 (400 fights a level) measured that 5-12% faster per kill at levels 40-60 than bolting the burning mob.",
-      "**Fire and Brimstone** (41-43) adds 25% critical strike chance to **Conflagrate**.",
+      "**Incinerate** (40) is a tier point: the tuned rules never cast it, and because the list reserves the filler for it on a burning mob, the fight lab now wands a burning mob instead of casting a bolt: about half a **Shadow Bolt** a kill from here. A check on 2026-11-07 (400 fights a level) measured that 5-12% faster per kill at levels 40-60 than bolting the burning mob.",
+      "**Aftermath**'s first point (41) adds 10% to **Immolate**'s first hit and gives **Conflagrate** a 20% chance to daze the mob.",
       "**Howl of Terror** (40) fears every mob near you: the escape from a pull that brings friends (Shift+F)."
      ]
     },
@@ -883,8 +883,8 @@
      ],
      "if_hurt": "A mob on you: **Shadowburn** or **Conflagrate** if ready, otherwise wand it until the Voidwalker's taunt takes it back. Your Healthstone below 35% health.",
      "notes": [
-      "**Life Tap** in a fight only when you are short of mana and above 60% health: rare from 40, since the wand costs nothing.",
-      "**Improved Life Tap** (44) adds 10% to each **Life Tap**. **Suppression** (45-49) gives 5% hit and cuts your threat by 20%, so the Voidwalker keeps the mob. From 50 to 59, **Unholy Power**, **Improved Voidwalker**, **Demonic Energies** and **Fel Vitality** make the Voidwalker hit harder and last longer, and **Demonic Aegis** (60) makes **Demon Armor** 15% stronger."
+      "No **Life Tap** in a fight: the fight lab never needs one, since the wand costs nothing.",
+      "**Suppression** (42-45) gives 4% hit and cuts your threat by 16%, so the Voidwalker keeps the mob. **Aftermath** (41, 46-49) adds 50% to **Immolate**'s first hit and makes **Conflagrate** daze the mob. From 50 to 60, **Unholy Power** (50-54), **Improved Voidwalker** (55, 59-60), **Demonic Energies** (56-57) and **Fel Vitality** (58) make the Voidwalker hit harder and last longer."
      ]
     }
    ],
@@ -917,7 +917,7 @@
        },
        {
         "key": "E",
-        "role": "Control: send the mob running",
+        "role": "Control: not in the list; press it to send a second mob running in a bad pull",
         "binds": [
          {
           "from": 8,
@@ -930,7 +930,7 @@
         "role": "The payoff after Immolate, on its cooldown",
         "binds": [
          {
-          "from": 32,
+          "from": 30,
           "spell": "Conflagrate"
          }
         ]
@@ -950,7 +950,7 @@
         "role": "Thumb: the finisher",
         "binds": [
          {
-          "from": 31,
+          "from": 29,
           "spell": "Shadowburn"
          }
         ]
@@ -1119,7 +1119,7 @@
     "notes": [
      "Every spell Destruction shares with Demonology keeps its key from the [keybinds page](keybinds.md): Q **Shadow Bolt**, 2 **Immolate**, E **Fear**, F **Death Coil**, 4 **Life Tap**, C the Healthstone, the wand on the middle mouse button.",
      "Mouse 4's pull macro casts **Shadow Bolt** in place of **Corruption** from 10: the fight lab opens with a bolt while the Voidwalker takes the mob, then **Immolate**. Destruction casts no Affliction dots, so 1 and 3 stay free.",
-     "R holds **Conflagrate** from 32: the tuned rules never cast **Drain Life**, so Demonology's R is free here. Mouse 5 holds **Shadowburn** from 31, the finisher.",
+     "R holds **Conflagrate** from 30: the tuned rules never cast **Drain Life**, so Demonology's R is free here. Mouse 5 holds **Shadowburn** from 29, the finisher.",
      "**Fear** keeps E for a pull that brings a second mob. The tuned rules of 2026-11-07 never cast it against one mob.",
      "No key: **Demon Skin** and **Demon Armor**, **Summon Imp** and **Summon Voidwalker**, **Create Healthstone**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights. The Voidwalker's **Torment** casts by itself; **Consume Shadows** and **Sacrifice** stay on the pet bar."
     ]
@@ -1127,7 +1127,7 @@
   },
   {
    "spec": "Hybrid Affliction/Demonology",
-   "intro": "What the Affliction/Demonology hybrid (25 Affliction and 26 Demonology points) presses from level 1 to 60. It plays the Demonology list: the Voidwalker (from 10) holds the mob, **Demonic Brand** (27) turns **Searing Pain** into extra Voidwalker hits, **Corruption** and **Bane of Agony** tick, and the wand does the rest. The Demonology points come first (levels 10-34, and one at 38) and make the Voidwalker a large share of your damage; the Affliction points (35-60) make your dots stronger. Each stage lists the full priority, so you can jump in at your level.",
+   "intro": "What the Affliction/Demonology hybrid (27 Affliction and 24 Demonology points) presses from level 1 to 60. It plays the Demonology list without the brand: the Voidwalker (from 10) holds the mob, **Corruption**, **Bane of Agony**, **Immolate** and from 30 **Siphon Life** tick, and the wand does the rest. The Affliction points come first (levels 10-36) and make your dots stronger; the Demonology points (37-60) make the Voidwalker stronger and end in **Soul Link** (57) and **Demonic Knowledge** (58-60). Each stage lists the full priority, so you can jump in at your level.",
    "stages": [
     {
      "from": 1,
@@ -1174,7 +1174,7 @@
     {
      "from": 10,
      "title": "The Voidwalker tanks",
-     "change": "**Summon Voidwalker**: it holds the mob while you dot and wand. Talent points start: Demonology until 34, most of it for the Voidwalker.",
+     "change": "**Summon Voidwalker**: it holds the mob while you dot and wand. Talent points start: Affliction until 36, for your dots.",
      "press": [
       "Send the Voidwalker in with **Corruption** (Mouse 4), on a mob above about a third of its health; its **Torment** holds the mob.",
       "**Bane of Agony** on a mob above about a third of its health.",
@@ -1186,29 +1186,45 @@
       "**Summon Voidwalker** costs a Soul Shard: **Drain Soul** (10) a mob as it dies to get one (Shift+Mouse 4). The fight lab does not count shards; keep two or three in your bags for the demon and your Healthstone.",
       "Heal the Voidwalker between fights with **Consume Shadows** (18, its own spell, not usable in a fight) or **Health Funnel** (12). Check that its **Torment** is on autocast on the pet bar.",
       "**Shadow Bolt** waits for 80% of your mana from here on. With the dots and the wand you rarely have that much past the first pull after a rest, so the fight lab casts almost none.",
-      "**Drain Life** (14) goes on R: from 27 it is the answer after **Fear**.",
-      "**Unholy Power** (10-14) adds 10% to the Voidwalker's damage, **Demonic Energies** (15, 19) heals it for 15% of your spell damage, **Improved Voidwalker** (16-18) makes **Torment** and **Consume Shadows** 30% stronger. **Improved Imp** (20-21) and **Improved Sayaad** (24) only fill tiers: the Voidwalker is your demon. **Demonic Aegis** (22-23) makes **Demon Armor** 30% stronger.",
-      "**Demonic Sacrifice** (25) is a step: never sacrifice your tank. **Master Summoner** (26) shortens a new summon.",
-      "**Demon Armor** (20) replaces **Demon Skin**. **Rain of Fire** (20) is for packs: one mob at a time never needs it. **Searing Pain** (18) waits for **Demonic Brand** at 27."
+      "**Drain Life** (14) goes on R: from 20 it is the answer after **Fear**.",
+      "**Improved Life Tap** (10-11) adds 20% to every **Life Tap**. **Suppression** (12-15, 33) gives up to 5% hit and cuts your threat by up to 20%, so the Voidwalker keeps the mob. **Improved Corruption** (16-19, 23) shortens **Corruption**'s cast; it is instant from 23.",
+      "**Searing Pain** (18) stays off your bars: the Demonology list casts it for Demonic Brand, a talent this build does not take, and the fight lab casts almost none."
      ]
     },
     {
-     "from": 27,
-     "title": "Demonic Brand: Searing Pain for the Voidwalker",
-     "change": "**Demonic Brand** (talent): **Searing Pain** brands the mob, and the Voidwalker's next attacks deal extra damage.",
+     "from": 20,
+     "title": "Amplify Curse",
+     "change": "**Amplify Curse** (talent) makes the next **Bane of Agony** 50% stronger, every 3 minutes. One macro casts both.",
      "press": [
       "Send the Voidwalker in with **Corruption** (Mouse 4), on a mob above about a third of its health; its **Torment** holds the mob.",
-      "**Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than about a third of its health and you have more than 30% of your mana.",
-      "**Bane of Agony** on a mob above about a third of its health.",
-      "**Immolate** only while you have more than half your mana: rare from here, since the brand costs mana.",
+      "**Bane of Agony** with key 1's macro (it adds Amplify Curse when that is ready), on a mob above about a third of its health.",
+      "**Immolate** while you have more than half your mana.",
+      "Your wand until the mob dies. **Shadow Bolt** only above 80% of your mana."
+     ],
+     "if_hurt": "A mob on you: **Fear** it, then **Drain Life** while it runs, until the Voidwalker takes it back. Your Healthstone below 35% health.",
+     "notes": [
+      "**Amplify Curse** (20): the next **Bane of Agony** is 50% stronger, every 3 minutes. It is off the global cooldown, so the macro on key 1 casts it and the bane in one press when it is ready, and the plain bane otherwise.",
+      "**Demon Armor** (20) replaces **Demon Skin**. **Rain of Fire** (20) is for packs: one mob at a time never needs it. **Banish** (28) holds a second mob if it is a demon or an elemental.",
+      "**Improved Bane of Agony** (21-22) adds 10% to the bane. **Pandemic** (24, 28) and **Malevolence** (25-27, 29) make your dots crit more often and harder."
+     ]
+    },
+    {
+     "from": 30,
+     "title": "Siphon Life",
+     "change": "**Siphon Life** (talent): a third dot that heals you.",
+     "press": [
+      "Send the Voidwalker in with **Corruption** (Mouse 4), on a mob above about a third of its health; its **Torment** holds the mob.",
+      "**Bane of Agony** (key 1's macro) and **Siphon Life** on a mob above about a third of its health.",
+      "**Immolate** while you have more than half your mana.",
       "Your wand until the mob dies."
      ],
      "if_hurt": "A mob on you: **Fear** it, then **Drain Life** while it runs, until the Voidwalker takes it back. Your Healthstone below 35% health.",
      "notes": [
-      "**Soul Link** (30): click it once after every summon. 30% of the damage you take goes to the Voidwalker, and you both deal 3% more.",
-      "**Demonic Knowledge** (31-33) adds spell damage while the Voidwalker is out: never fight without it.",
-      "**Improved Felhunter** (34) fills a tier. **Improved Corruption** (35-37 and 39, then 55) shortens **Corruption**'s cast by 0.4 s a point: it is instant from 55. **Master Demonologist** (38): with the Voidwalker out, you and it take 2% less physical damage. **Improved Life Tap** (40-41) adds 20% to each **Life Tap**.",
-      "**Searing Pain** is no finisher here: the tuned rules cast it only on a mob above about a third of its health. **Banish** (28) holds a second mob if it is a demon or an elemental."
+      "The third dot costs mana: **Life Tap** between fights, and in a fight only when you are short of mana and above 60% health. **Shadow Bolt** waits for 80% of your mana, which the three dots no longer leave you: the fight lab casts almost none from here.",
+      "**Pandemic** (31) and **Malevolence** (32) take their last points: your dots' critical strikes hit harder, and your Shadow spells crit 5% more often. **Suppression** (33) completes 5% hit and 20% less threat.",
+      "**Soul Siphon** (34) is the 25th Affliction point, which opens **Shadow Mastery** (35-36: 4% more Shadow damage); it only strengthens **Drain Life** and **Drain Soul** here, which this list rarely casts.",
+      "The Demonology points start at 37: **Unholy Power** (37-41) adds 10% to the Voidwalker's damage.",
+      "**Howl of Terror** (40) fears every mob near you: the escape from a pull that brings friends (Shift+F)."
      ]
     },
     {
@@ -1217,62 +1233,32 @@
      "change": "**Death Coil** for a mob that reaches you while you are hurt. The rest stays.",
      "press": [
       "Send the Voidwalker in with **Corruption** (Mouse 4), on a mob above about a third of its health; its **Torment** holds the mob.",
-      "**Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than about a third of its health and you have more than 30% of your mana.",
-      "**Bane of Agony** on a mob above about a third of its health.",
-      "Your wand until the mob dies."
-     ],
-     "if_hurt": "A mob on you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.",
-     "notes": [
-      "**Immolate** only while you have more than half your mana, which the brand almost never leaves you: the fight lab casts it on about one mob in ten from here, or fewer.",
-      "**Howl of Terror** (40) fears every mob near you: the escape from a pull that brings friends (Shift+F).",
-      "**Suppression** (42-45): 4% more chance to hit and 16% less threat. **Grim Reach** (46): your Affliction spells reach 10% farther."
-     ]
-    },
-    {
-     "from": 47,
-     "title": "Amplify Curse",
-     "change": "**Amplify Curse** (talent) makes the next **Bane of Agony** 50% stronger, every 3 minutes. One macro casts both.",
-     "press": [
-      "Send the Voidwalker in with **Corruption** (Mouse 4), on a mob above about a third of its health; its **Torment** holds the mob.",
-      "**Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than about a third of its health and you have more than 30% of your mana.",
-      "**Bane of Agony** with key 1's macro (it adds Amplify Curse when that is ready), on a mob above about a third of its health.",
-      "Your wand until the mob dies."
-     ],
-     "if_hurt": "A mob on you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.",
-     "notes": [
-      "**Amplify Curse** (47): the next **Bane of Agony** is 50% stronger, every 3 minutes. It is off the global cooldown, so the macro on key 1 casts it and the bane in one press when it is ready, and the plain bane otherwise.",
-      "**Improved Bane of Agony** (48-49), **Pandemic** (50-51 and 59) and **Malevolence** (52-54) make your dots hit harder and crit more often and harder. **Improved Corruption**'s fifth point (55) makes **Corruption** instant. **Soul Siphon** (56-58): **Drain Life** drains up to 36% more while your other Affliction effects are on the mob."
-     ]
-    },
-    {
-     "from": 60,
-     "title": "Siphon Life",
-     "change": "**Siphon Life** (talent): a third dot that heals you.",
-     "press": [
-      "Send the Voidwalker in with **Corruption** (Mouse 4), on a mob above about a third of its health; its **Torment** holds the mob.",
-      "**Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than about a third of its health and you have more than 30% of your mana.",
       "**Bane of Agony** (key 1's macro) and **Siphon Life** on a mob above about a third of its health.",
+      "**Immolate** while you have more than half your mana.",
       "Your wand until the mob dies."
      ],
      "if_hurt": "A mob on you: **Death Coil** below 60% health, otherwise **Fear** it, then **Drain Life** while it runs. Your Healthstone below 35% health.",
      "notes": [
-      "The third dot costs mana: **Life Tap** between fights, and in a fight only when you are short of mana and above 60% health."
+      "**Immolate** only while you have more than half your mana: with no brand to pay for, the fight lab casts it on about three mobs in four from here.",
+      "**Demonic Energies** (42, 46) heals the Voidwalker for 15% of your spell damage and gives it the mana of each **Life Tap**; **Fel Vitality** (43-45) gives your demon 15% more health and mana, and you 15% more mana.",
+      "**Demonic Sacrifice** (47) is only the step to **Soul Link**: never sacrifice your tank. **Improved Imp** (48-49) and **Demonic Aegis** (50, 52) only fill tiers: the Imp is not your demon, and **Demonic Aegis**'s stronger **Demon Armor** measured nothing in the fight lab, where the Voidwalker takes the hits. **Demonic Embrace** (51, 53-56) adds 15% to your Stamina.",
+      "**Soul Link** (57): click it once after every summon. 30% of the damage you take goes to the Voidwalker, and you both deal 3% more. **Demonic Knowledge** (58-60) adds a third of your level a point to your spell damage while the Voidwalker is out: never fight without it."
      ]
     }
    ],
    "between": [
     "**Life Tap** back to about 70% mana while your health stays above 60%. Your health comes back while you rest, and the Voidwalker takes the next mob.",
     "Eat only below 55% of your health. Drink only below 15% of your mana, when you are too hurt to **Life Tap**: the fight lab needs almost no drinking.",
-    "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.",
+    "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing, but it never costs time.",
     "Heal a Voidwalker below 60% of its health with **Consume Shadows** (not usable in a fight), or with **Health Funnel** when it is below half.",
     "Keep two or three Soul Shards: **Drain Soul** a dying mob for one. **Summon Voidwalker** and **Create Healthstone** use one each, and a new Voidwalker costs one when the old one dies.",
     "Visit the trainer every even level for new ranks of your dots."
    ],
    "other": [
-    "This hybrid plays the Demonology list with the Voidwalker's talents first and Affliction's dot talents after. The Demonology and Affliction guides in this folder show the two specs it is made of; the leveling index ranks the specs by time per kill."
+    "This hybrid plays the Demonology list with Affliction's dot talents first and the Voidwalker's talents after. The Demonology and Affliction guides in this folder show the two specs it is made of; the leveling index ranks the specs by time per kill."
    ],
    "keys": {
-    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; armor, summons, Soul Link, conjured stones, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q your bolt, E the control, R the payoff after it, F the save, the thumb buttons the reactions and the pull, 1-4 the rest, the middle mouse button the wand. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and macros: the [warlock keybinds page](keybinds.md), written for Demonology; this guide keeps its keys.",
+    "intro": "Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2, 3, 4, C and the middle mouse button; bar 2 is the same keys with Shift, and Shift+X in the last slot. Keys are for spells you press in a fight and for the things that help you there; armor, summons, Soul Link, conjured stones, food, drink, the mount and the Hearthstone have no key, you click them between fights. The scheme is the same on every class: Q your bolt, E the control, R the payoff after it, F the save, the thumb buttons the reactions and the pull, 1-4 the rest, the middle mouse button the wand. A key keeps its job from 1 to 60 and only the spell on it changes. Bold marks what arrives in that stage. Free slots stay free until something earns them. Setup and macros: the [warlock keybinds page](keybinds.md), written for Demonology; this guide changes the key its notes name.",
     "bars": [
      {
       "title": "Action bar 1: the fight",
@@ -1319,13 +1305,8 @@
        },
        {
         "key": "Mouse 5",
-        "role": "Thumb: the brand, each time it drops",
-        "binds": [
-         {
-          "from": 27,
-          "spell": "Searing Pain"
-         }
-        ]
+        "role": "Free (Demonology's brand key: this build has no Demonic Brand)",
+        "binds": []
        },
        {
         "key": "Mouse 4",
@@ -1347,7 +1328,7 @@
           "spell": "Bane of Agony"
          },
          {
-          "from": 47,
+          "from": 20,
           "spell": "Bane of Agony",
           "only": "Amplify Curse macro"
          }
@@ -1368,7 +1349,7 @@
         "role": "The third dot",
         "binds": [
          {
-          "from": 60,
+          "from": 30,
           "spell": "Siphon Life"
          }
         ]
@@ -1506,10 +1487,10 @@
      "Torment"
     ],
     "notes": [
-     "The Demonology layout of the [keybinds page](keybinds.md), unchanged: only the levels differ. **Searing Pain** takes Mouse 5 at 27, the Amplify Curse macro key 1 at 47 and **Siphon Life** key 3 at 60, when this build takes the talents.",
+     "The Demonology layout of the [keybinds page](keybinds.md), with one change: this build takes no Demonic Brand, so Mouse 5 stays free where Demonology keeps **Searing Pain**. The Amplify Curse macro takes key 1 at 20 and **Siphon Life** key 3 at 30, when this build takes them.",
      "Q keeps **Shadow Bolt**, cast only above 80% of your mana: the wand on the middle mouse button is your most-pressed key from level 4.",
      "E then R answers a mob that reaches you: **Fear** it, then **Drain Life** while it runs. From 42 **Death Coil** on F comes first when you are below 60% health.",
-     "**Health Funnel** on Shift+R heals the Voidwalker between fights, as in Demonology: this build has no **Improved Health Funnel**, and the fight lab never channels it in a fight.",
+     "**Health Funnel** on Shift+R heals the Voidwalker between fights, as in Demonology: this build has no Improved Health Funnel, and the fight lab never channels it in a fight.",
      "No key: **Demon Skin** and **Demon Armor**, **Summon Imp** and **Summon Voidwalker**, **Soul Link**, **Create Healthstone**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights. The Voidwalker's **Torment** casts by itself; **Consume Shadows** and **Sacrifice** stay on the pet bar."
     ]
    }

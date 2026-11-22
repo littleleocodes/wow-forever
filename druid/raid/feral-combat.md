@@ -15,7 +15,7 @@
 **Then press the first one that is ready**, top to bottom:
 
 1. **Ravage** when Prowl is active
-2. **Ferocious Bite** (rank 5) (timing: see below)
+2. **Ferocious Bite** (timing: see below)
 3. **Shifting Power** (timing: see below)
 4. **Shred** when Cat Form is active and Clearcasting is active (timing: see below)
 5. **Rip** when Cat Form is active (timing: see below)
@@ -137,7 +137,7 @@ Tank value 1.880 (threat and damage taken under a boss, relative to our referenc
 | Main hand | [Unyielding Maul](https://www.wowhead.com/forever/item=18531) · *Tribute, Dire Maul*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Unyielding Maul](https://www.wowhead.com/forever/item=18531) · *Tribute, Dire Maul*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
 | Ranged/relic | [Idol of the Moon](https://www.wowhead.com/forever/item=23197) | [Idol of the Moon](https://www.wowhead.com/forever/item=23197) |
 
-*These sets were chosen for the bear's earlier pick; they are being made again for this build, the simulator's Bear preset (2026-11-22).*
+*These sets were chosen for the bear's earlier pick, and before the tanks stood in front of the boss (so they likely undervalue Expertise); they are being made again for this build, the simulator's Bear preset (2026-11-22).*
 
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/druid/feralbear/#eJzEVE9IFGEUn/fN7M7zM9bxI2qclL48xLYw8u1na+plV09RCNGpQ5CjO+uu2e4yu4HRRQqhg5F0Sis8WBRLRfQP6VqIhQch6uAlSw8dkoounSJmdCuq69rv8Hjze7/h/ea94dEmBANM4BCFfshCEcYALgDcBmDbghLxS51g3dNRN+qt01TH1+ON5lo91XD2ClANXy0aVMf1S2C+i1Adnz1qMFf9ZP4cmFd1quPiomG+jVAVnw9RHe9fBv9tHV9Owgb96Ww13DpOVbx4iuq4OgnmxwhVqIbXH0NrszGfi67NwDTUzTp3nOWemZtQgfBE7kvLeK4XA6eQgqekRSSEkNJOCClEe7uMy3YhZFwmEnFbJBaItkTwPVkKMc0i3QrbbbXQ7cukkar4sI8RI2SFqUaJLFmhDeo3QeVvQaWPTQDLOMWRE4VimUshO+y4sOWBbj6YdfJDbpoXPO6k026aD5zh5azLvULZKecKeV5yHW8wy6Ml1+UZ13NG7AHX8eyykz9pV0X2hqhtuFTI77NaqRnbgRrD4TDV8OuTwxbSMNX2tyVK1ibDSlvmps7SaYgDTvUx74+mosuWXTVpisGHXnsA7PzWzb2JGrEIqox4yub2RfB7rEfZ+L9cdNTExS7aGGvAMCOHFH/yVJXi59pN9QNZgM8k/Y1ARdUsYkLrd1Kn+BjLpJqmp3y8SO7JBHiTlCvE1HgyNkeU/4JyqprVFHvv1qxPVxCP3kj1bBKpfv9wTkHwoKwkYyrO7ewmBvQ2/7qxAjohBQfhCByDLBRhFEbJjwEApoEqVA==); Raid BiS: [full raid](https://wowsims.com/forever/druid/feralbear/#eJzEVE9IFG8Ynveb2Z3X1x/rOPyocVKaPMS2MPLtZ2vqZVdPUQjRqUOQozvrrtnuMruE0UWKhQ5GUpe0woNFsRRF/5CuhVh4EKIOXrL00CGp6NIpYkatqK5rz2F453mfj/f53vfjpSYEDQywIAr9kIUijAGcA7gFoP8XpJif6gTzroqqVm+eJBVfVRqN1XpScOYykIIvFzRSce0CGG8jpOLThw3Gih/MnQHjikoqLixoxpsIyfhsiFS8dxH80yq+mACfVrByCUjGj6dJxptHScbzJ0jFlQkwPkRIIgWvPYLWZm0uF12dhimom3FuO0s90zegCuHx3OeWSq4XA6uQgieshSc4F8JOcMF5e7uIi3bORVwkEnGbJ+aZssjwHVsM6YrJuiV9p9lC/y+xRpLxQZ/OtJAZJoWYKJmhdeoXQfVPQbVPHwc94xRHjhWKZUtw0WHHuS32dVuDWSc/5Katgmc56bSbtgZOWeWsa3mFslPOFfJWyXW8wawVLbmulXE9Z8QecB3PLjv54/amyF4XtQ2XCvk9ZisZsW2o6DgcJgW/PD5oIoVJ2duWKJkbjF7aMjd1pkohC3CyT/d+K8q7bNFVk6IYXPTqfdDPbl3fm0iLRVDWmSdtTJ8Hz2Mtqlf+5qKjJi52UGOsAcM6OyD5nSdZ8B9jN+T3bB4+sfRXBlVZMZkBrd9YneRjLJNqmpr08Ty5KxPgdVIsM0OxkrFZJv0TlFObUU2x+07N6nQF38PXUz0bRKrf35yTEPxIy8mYjLPbu5kGvc0/lyyHTkjBfjgERyALRRiFUfZ9AD5cKgY=).
 

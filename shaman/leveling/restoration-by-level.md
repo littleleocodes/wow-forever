@@ -2,6 +2,8 @@
 
 [Shaman](../README.md) > [Leveling (solo)](README.md) > [Restoration](restoration.md) > Level by level
 
+> **Being checked:** The play check's forced runs found Frost Shock and Flame Shock faster when pressed (2.8% at 20, 1.4% at 30); the rotation is being tuned again with them. The build and numbers on this page may change when it is done.
+
 What a Restoration shaman presses from level 1 to 60 while leveling into the raid healer's talents. Restoration has no leveling rotation of its own, so it plays the Enhancement list without the talents it never takes (**Stormstrike**, **Maelstrom Weapon**, **Rage of the Farseer**): a slow two-handed weapon, a weapon imbue, a shield, **Searing Totem** at the pull and **Earth Shock** whenever it is ready. It is slower per kill than Enhancement: the price of arriving at 60 ready to heal. Each stage lists the full priority, so you can jump in at your level.
 
 **The build:** 0/10/41 ([open the talent tree](https://talentsforever.com/shaman/60/-055-0530503315513151-12)), the one on the [Restoration leveling page](restoration.md), which has the full talent table and the reasons behind the level-60 rotation.
@@ -117,7 +119,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Under 30% of your health: drop **Stoneclaw Totem**. The mob turns on the totem while you cast **Healing Wave**.
 
-*Fight lab, seconds per kill: 17 at level 8. Presses per kill at level 8: Melee 2.5, Earth Shock 1.5, Lightning Shield 0.5.*
+*Fight lab, seconds per kill: 18 at level 8. Presses per kill at level 8: Melee 2.5, Earth Shock 1.5, Lightning Shield 0.5.*
 
 ## Levels 10-19: Searing Totem, and talents begin
 
@@ -144,7 +146,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Stay on **Rockbiter Weapon** until level 30. Use a slow two-handed weapon as soon as you can: your swings are most of your damage.
 - **Strength of Earth Totem** (10) and **Fire Nova** (12) cost more mana than they return against one mob.
 
-*Fight lab, seconds per kill: 16 at level 10, 24 at level 19. Presses per kill at level 10: Melee 2.4, Earth Shock 1.5, Searing Totem 1.0, Lightning Shield 0.5.*
+*Fight lab, seconds per kill: 18 at level 10, 24 at level 19. Presses per kill at level 10: Melee 2.4, Earth Shock 1.5, Searing Totem 1.0, Lightning Shield 0.5.*
 
 ## Levels 20-27: Lesser Healing Wave and Ghost Wolf
 
@@ -170,7 +172,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Frost Shock** (20) is for a mob that runs away, or to slow one you want to escape. It shares the shock cooldown.
 - **Thundering Strikes** (18-22) adds crit to spells and swings; **Totemic Focus** (23-27) makes **Searing Totem** a quarter cheaper.
 
-*Fight lab, seconds per kill: 24 at level 20, 29 at level 27. Presses per kill at level 20: Melee 3.1, Earth Shock 2.0, Searing Totem 1.0, Lightning Shield 0.6.*
+*Fight lab, seconds per kill: 24 at level 20, 29 at level 27. Presses per kill at level 20: Melee 3.3, Earth Shock 2.0, Searing Totem 0.8, Lightning Shield 0.6.*
 
 ## Levels 28-29: Water Shield
 
@@ -193,7 +195,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Only one shield can be up at a time, and each has 3 charges: put a new one up before the pull once the old one's charges are gone. **Water Shield** when your mana is under 60%, **Lightning Shield** otherwise.
 - **Ancestral Healing** (29) is a healer's talent: nothing to press.
 
-*Fight lab, seconds per kill: 29 at level 28. Presses per kill at level 28: Melee 3.9, Earth Shock 2.3, Searing Totem 0.9, Lightning Shield 0.7.*
+*Fight lab, seconds per kill: 29 at level 28. Presses per kill at level 28: Melee 4.2, Earth Shock 2.4, Searing Totem 0.8, Lightning Shield 0.6.*
 
 ## Levels 30-34: Windfury Weapon and Mana Tide Totem
 
@@ -220,7 +222,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Restorative Totems** (31-34) makes **Healing Stream Totem** and **Mana Spring Totem** stronger: a healer's talent.
 - **Chain Lightning** (32) and **Windfury Totem** (32) are not part of a fight against one mob.
 
-*Fight lab, seconds per kill: 31 at level 30. Presses per kill at level 30: Melee 4.2, Earth Shock 2.5, Windfury 1.5, Searing Totem 0.9, Lightning Shield 0.7.*
+*Fight lab, seconds per kill: 31 at level 30. Presses per kill at level 30: Melee 4.6, Earth Shock 2.6, Windfury 1.6, Searing Totem 0.8, Lightning Shield 0.6.*
 
 ## Levels 35-60: Nature's Swiftness, the finished rotation
 
@@ -246,7 +248,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Chain Heal** (40) and **Riptide** (60) heal a group in a dungeon. Solo, the fight lab never casts them.
 - **Rockbiter Weapon** is back on your weapon from 40, in place of Windfury (rank 5; rank 6 at 44, rank 7 at 54): its attack power on every swing beats Windfury's extra attacks there in the fight lab (the Enhancement rules re-tuned on 2026-11-16, which this page plays). Windfury Weapon's ranks 2-4 (40, 50, 60) are not needed.
 
-*Fight lab, seconds per kill: 34 at level 35, 36 at level 40, 39 at level 50, 41 at level 60. Presses per kill at level 35: Melee 5.0, Earth Shock 2.9, Windfury 1.9, Searing Totem 0.8, Lightning Shield 0.6.*
+*Fight lab, seconds per kill: 34 at level 35, 35 at level 40, 38 at level 50, 40 at level 60. Presses per kill at level 35: Melee 5.3, Earth Shock 3.0, Windfury 1.9, Searing Totem 0.7, Lightning Shield 0.6.*
 
 ## Between fights
 
@@ -262,4 +264,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Elemental fights from range with **Lightning Bolt**; it has its own page and guide in this folder.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-19: the stages are hand-kept in `_reference/data/level-guides/shaman.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/shaman.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

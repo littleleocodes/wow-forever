@@ -161,6 +161,53 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+1e. **The filler pass's ping-pong guard had two holes (2026-11-22; the audit session's question on Arcane's level-10 point; fixed the
+    same day)**. The record chain (2026-11-21) loaded only when the record's order was the build's order, so every redo that re-raced the
+    order (the mechanics pass of 2026-11-20, the rest-rule redo of 2026-11-22) started a new chain without saying so; and the gate path (a
+    gate point's measured move, 0.05% on both seeds) never read the chain at all. Four reversals in today's records, each undoing a move
+    made on an earlier model: Arcane's level 10 (Arcane Resilience -> Wand Specialization on 2026-11-20 at -0.13% / -0.33%, back today at
+    -0.36% / -0.23%), Shadow's 52 (Twilight Focus <-> Early Demise) and 56 (Power in Light <-> Mental Strength), Elemental's Concussion and
+    Reverberation (43, 53). The rule now, as the audit session put it: a change of model resets the chain, and the first pass on the new
+    model is then held by its own moves. fl_filler_pass.py stores the model fingerprint (fl_open_search.sim_fingerprint) and the chain's
+    state in the record ("model", "chain"); a record with the same fingerprint binds whatever the order, an older record without one
+    binds on the order as before; within a chain the gate path, like the others, reverses no move unless it clears the bar (0.3%) on
+    both seeds. Today's four stand: each is the first pass on a new model. Found on the way and fixed the same day (the audit session's
+    "(a), fix it now"): Shadow's 56 sat in Power in Light, which only improves Smite and Penance. Two readings had called it live:
+    `dead_talents` took Shadow Word: Pain, named as the condition ("targets afflicted with your Holy Fire or Shadow Word: Pain"), for an
+    improved spell (now `page_lint.improved_names`: a spell after "afflicted with", "affected by" or "targets with" is a condition, unless
+    every named spell is in such a clause: Overgrowth's extended spell, Rapid Recuperation's trigger); and the filler pass's probe
+    counted every heal of the spellbook when a build heals between fights, Penance included though Shadow lacks its talent (now a
+    talent's heal counts only with the talent). Over every leveling pick (read as the pass reads them) and every raid page build, the
+    only flip is that one; Shadow's pass then moved the point to Silent Resolve by utility at bit-identical times on both seeds. The
+    leveling play check had already failed it (Lc, 2026-11-21): the measured rule caught what the tooltip reading missed.
+
+1d. **A raid guide can describe a rotation its entry left (2026-11-22; found on the audit session's read of the tank pages)**. The
+    Protection paladin raid guide of 2026-10-15 described a Seal of Righteousness rotation; on 2026-10-31 the entry moved to the official
+    simulator's own Protection rotation (Seal of the Crusader judged first, Seal of Fury kept up, Seal of Righteousness switched off), and
+    the guide was never rewritten. Its stamp had been refreshed at some point without a rewrite (and once more on 2026-11-22 after a
+    one-line edit), so guides.py --check stayed quiet, while the pushed page's own Advanced list said "Seal of Fury: part of the rotation".
+    A stamp says the text was read against the rotation; refresh it only after reading the whole guide. Open: a guides.py --check warning
+    for a raid guide whose plan or reasons name a spell the page's build never casts in its play-check row, unless the sentence says so
+    (page_lint's `negated`): "judge **Seal of Righteousness**" against 0 casts would have read as wrong on 2026-10-31.
+
+1c. **The rotation search inserted class-book ranks (2026-11-22; fixed the same day)**. The warrior tank tune of 2026-11-21 put Revenge
+    rank 6 (25288, round 1, +1.0%) and Heroic Strike rank 9 (25286, round 2, +0.3%) at the top of its rotation, both class books. apl_opt's
+    insertion pool takes every line of the class's rotations in the simulator's checkout (`class_pool`), which cast book ranks; only
+    `new_spell_pool` left them out (the H18 switch of 2026-11-19). The play check missed them: rule e looked only for book ranks the
+    simulator does not register. Now apl_opt maps book ranks in the pool to the trainer's rank (casts and conditions, `trainer_pool`) and
+    refuses a base that names one (`book_casts`), and the play check fails any book-rank cast (rule a). The warrior tank lane runs again.
+    Checked the same day: no committed rotation file since the switch (97dc22be) names a book rank, and no committed play-check record
+    has a book-rank cast, so no pushed page's numbers had one. Also from the play check's first read (one of its own D12-style faults): a
+    tune's insert above an old line of the same spell left the old line dead (the trainer's Revenge rank 5 under the book's rank 6).
+
+1b. **A spell cast more often than its cooldown allows reads as a fault until a talent is found (2026-11-22)**. The paladin tank cast Holy
+    Strike 29 times in a 180-second fight against its 10-second cooldown (at most 19); no reset or modifier showed in sim/paladin's code,
+    because Shieldsworn's 4 seconds come from its spell row through ParseStatic (the audit session found it). The play check now carries
+    a cooldown-bound row (b4): each spell's casts against one at the pull and one each cooldown after, with the build's cooldown talents
+    read from their tooltips ("Reduces the cooldown of your Holy Strike ability by 4 sec"; lists and spell families split); more casts than
+    that is "explain", never a fail. A 60-second probe confirmed the 6-second cooldown (9.97 Holy Strikes). Related, in the play check's
+    by-name counts: a seal's judgement books two ids (damage and taunt), so "Judgement of Fury 49.9" is about 25 judgements.
+
 1a. **Three raid rotation leads for the optimality pass (2026-11-21, the audit session's C18-C20 from its player read of the raid
     pages; noted, not run)**. C18: the alternative that loses 2.7% to the official rotation. C19: the Demonology dummy rotation, below
     its base. C20: the Arcane-Frost dummy rotation, without Arcane Wrath. Each wants the parity race of the 2026-11-20 rule (ours and

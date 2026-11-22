@@ -37,9 +37,9 @@ The Beast-Survival (a Beast Mastery/Survival hybrid) leveling build the open lev
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
-| **Entrapment** | 1/5 | changed | When your traps are triggered, all affected targets are Entrapped, preventing them from moving for 1 sec. |
+| **Deflection** | 1/5 | unchanged | Increases your Parry chance by 1%. |
+| **Entrapment** | 2/5 | changed | When your traps are triggered, all affected targets are Entrapped, preventing them from moving for 2 sec. |
 | **Savage Strikes** | 2/2 | changed | Increases the critical strike chance of all your melee abilities by 4%. |
-| **Survivalist** | 2/5 | changed | Increases your total Health by 4%. |
 | **Clever Traps** | 2/2 | unchanged | Increases the duration of Freezing and Frost trap effects by 30% and the damage of Immolation and Explosive trap effects by 30%. |
 | **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |
 | **Survival Tactics** | 1/2 | **NEW** | Increases your chance to hit with your Trap and Feign Death abilities by 5%. |
@@ -53,8 +53,8 @@ The Beast-Survival (a Beast Mastery/Survival hybrid) leveling build the open lev
 |---|---|---|---|---|
 | 10-14 | Survival | Improved Tracking | 5 | 0/0/5 |
 | 15-16 | Survival | Savage Strikes | 2 | 0/0/7 |
-| 17-18 | Survival | Survivalist | 2 | 0/0/9 |
-| 19 | Survival | Entrapment | 1 | 0/0/10 |
+| 17-18 | Survival | Entrapment | 2 | 0/0/9 |
+| 19 | Survival | Deflection | 1 | 0/0/10 |
 | 20-22 | Survival | Surefooted | 3 | 0/0/13 |
 | 23-24 | Survival | Clever Traps | 2 | 0/0/15 |
 | 25-28 | Survival | Predator's Edge | 4 | 0/0/19 |
@@ -89,6 +89,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
+- 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Survivalist to Entrapment at 18 (gate that did nothing, no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Survivalist to Entrapment at 17 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill).
+- 2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Entrapment to Deflection at 19 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill).
 - 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Expose Prey to Lethal Attacks at 31 (measured: -0.4% seed 3, -0.4% seed 4, level-weighted time per kill); Spirit Bond to Predator's Edge at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
 - +5.6% faster than the hand draft leveling-melee, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.09; survival-open-leveling 21.15, opt-bm-leveling-leveling-aoe 24.58. The search simulated 60,489 builds.

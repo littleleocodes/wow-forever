@@ -163,7 +163,7 @@ Hemorrhage builds.
 /cast Hemorrhage
 ```
 
-- **Replaces:** the plain Hemorrhage button on Q. The Q macro already starts your swings from level 1 (no key holds Attack), so this changes the spell on Q from Sinister Strike to Hemorrhage: at level 30 in the Subtlety build, at level 60 in Combat-Subtlety.
+- **Replaces:** the plain Hemorrhage button on Q. The Q macro already starts your swings from level 1 (no key holds Attack), so this changes the spell on Q from Sinister Strike to Hemorrhage: at level 30 in the Subtlety build, at level 32 in Combat-Subtlety.
 - **Frees:** nothing.
 - **Fill it with:** Nothing needs it.
 - **Why it works:** The strike macro for the Subtlety builds. Before Hemorrhage, the same macro with Sinister Strike.

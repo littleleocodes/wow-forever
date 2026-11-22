@@ -138,10 +138,10 @@ The Fury raid build the open talent search found on 2026-11-08: every legal 51-p
 | 11 | if (time left in the fight ≤ 33.75s or time left in the fight ≥ 70s): use every other cooldown when ready | as ready |
 | 12 | cast Whirlwind | 5.4 |
 | 13 | if time until Bloodthirst is ready > 1.5s: cast Whirlwind | 5.4 |
-| 14 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
+| 14 | if not Battle Shout is up: cast Battle Shout | 0.3 |
 | 15 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 6.5 |
 
-Lines of the simulator's rotation these builds never cast: cast Recklessness (a switch this rotation keeps off); cast Blood Fury, cast Heroic Strike (rank 8), cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
+Lines of the simulator's rotation these builds never cast: cast Recklessness (a switch this rotation keeps off); cast Blood Fury, cast Heroic Strike, cast Cleave, cast Berserker Stance (its condition never held in these fights); cast Mortal Strike (needs the Mortal Strike talent); cast Spearing Strike (needs the Spearing Strike talent).
 
 Damage by ability:
 

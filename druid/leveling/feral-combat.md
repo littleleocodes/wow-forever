@@ -10,7 +10,7 @@
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Feral cat), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 96% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Claw, Rake, Rip, Ferocious Bite, Ravage; this build never casts Shred, Primal Bite, Pounce) (the spec's rule: at least 80%; **Claw**, **Ferocious Bite** cast at level 60).
+**Signature spells:** 97% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Claw, Rake, Rip, Ferocious Bite, Ravage; this build never casts Shred, Primal Bite, Pounce) (the spec's rule: at least 80%; **Claw**, **Ferocious Bite** cast at level 60).
 
 ## How to play
 
@@ -26,7 +26,7 @@
 6. **Rip** at 5 points on a mob above half its health. Before **Ferocious Bite** (levels 20-23): **Rip** at 2 points while the mob has more than 40% of its health.
 7. Under 30% health while the mob has more than a quarter of its health: leave **Cat Form**, cast **Regrowth**, then **Cat Form** again.
 
-**Between fights:** Below 70% health: leave **Cat Form**, cast **Rejuvenation** (and **Regrowth** if still below 85%), then shift back; only with the mana to shift back. Drink when your mana is below about a third (35%): it only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal. Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
+**Between fights:** Below 70% health: leave **Cat Form**, cast **Rejuvenation** (and **Regrowth** if still below 85%), then shift back; only with the mana to shift back. Drink when your mana is below 15%: it only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal. Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
 
 ## Why this rotation
 
@@ -46,7 +46,7 @@ Level 10-19 as a bear, then as a cat: open every pull from **Prowl** behind the 
 
 - Before 24 there is no **Ferocious Bite**, so **Rip** is your only finisher: put it on at 2 or more points while the mob has more than 40% of its health, rather than waiting for 5 points that almost never come on a mob above half health.
 - Leaving **Cat Form** costs you: going back costs 55% of your base mana (10% less with the one point of **Natural Shapeshifter**, level 52), and your energy starts low: one point of **Furor** (from 24) gives back 20% of the energy you left with, plus 2 a second out of form. Heal between fights rather than in them when you can.
-- Your mana only pays for shifts and heals, so drink late: the tuned rules of 2026-11-06 keep the lab's default, below about a third of your mana (35%). Between fights it heals with **Rejuvenation** and **Regrowth** below 70% health and eats only when there was no mana for that. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).
+- Your mana only pays for shifts and heals, so drink late: below 15% of your mana (the tuned rules of 2026-11-20). Between fights it heals with **Rejuvenation** and **Regrowth** below 70% health and eats only when there was no mana for that. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).
 
 **When to change it**
 
@@ -64,7 +64,7 @@ One point per level from 10, in this order:
 | 17-19 | Thick Hide (Feral Combat) | 3 |
 | 20-21 | Sharpened Claws (Feral Combat) | 2 |
 | 22-23 | Savage Fury (Feral Combat) | 2 |
-| 24 | Furor (Feral Combat) | 1 |
+| 24 | Furor (Feral Combat) (tier point: needed to reach Rend and Tear) | 1 |
 | 25-27 | Predatory Strikes (Feral Combat) | 3 |
 | 28-29 | Blood Frenzy (Feral Combat) | 2 |
 | 30 | Leader of the Pack (Feral Combat) | 1 |
@@ -75,32 +75,36 @@ One point per level from 10, in this order:
 | 42-46 | Heart of the Wild (Restoration) | 5 |
 | 47-51 | Naturalist (Restoration) | 5 |
 | 52 | Natural Shapeshifter (Restoration) | 1 |
-| 53 | Brutal Impact (Feral Combat) | 1 |
+| 53 | Brutal Impact (Feral Combat) (tier point: needed to reach Rend and Tear) | 1 |
 | 54 | Feral Charge (Feral Combat) | 1 |
 | 55-58 | Rend and Tear (Feral Combat) | 4 |
-| 59 | Improved Wrath (Balance) | 1 |
+| 59 | Improved Wrath (Balance) (tier point: needed to reach Nature's Splendor) | 1 |
 | 60 | Nature's Splendor (Balance) | 1 |
+
+A talent marked as a tier point does nothing in the fight lab's leveling fights; it is in the build because no legal talent that helps can take that point.
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
-| 20 | 22 | 16 |
-| 30 | 24 | 18 |
-| 40 | 26 | 20 |
-| 50 | 26 | 21 |
-| 60 | 27 | 21 |
+| 20 | 19 | 14 |
+| 30 | 22 | 16 |
+| 40 | 23 | 18 |
+| 50 | 22 | 18 |
+| 60 | 24 | 19 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
-**Points that do nothing for this spec:** **Feral Charge** (1) only counts toward the points the tree needs before **Rend and Tear**.
+**Points that do nothing for this spec:** **Brutal Impact** (1) and **Furor** (1) only count toward the points the tree needs before **Rend and Tear**; **Improved Wrath** (1) only counts toward the points the tree needs before **Nature's Splendor**.
 
 ## Other builds of this spec
 
-- [Feral Combat (optimized, solo at 60)](../research/leveling/builds/opt-feral-cat-dps-solo-60.md) (9/30/12, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/050022-55200102023002125-05502-12)
-- [Feral Combat (optimized)](../research/leveling/builds/opt-feral-cat-dps-leveling-st.md) (9/30/12, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/050022-53200302023002125-15501-12)
-- [Leveling — Feral cat](../research/leveling/builds/leveling-feral.md) (9/30/12, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/050022-53200302023002125-15402-12)
+- [Feral Combat (optimized, solo at 60)](../research/leveling/builds/opt-feral-cat-dps-solo-60.md) (9/30/12, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/050022-55200102023002125-05502-12)
+- [Feral Combat (optimized)](../research/leveling/builds/opt-feral-cat-dps-leveling-st.md) (9/30/12, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/050022-53200302023002125-15501-12)
+- [Leveling — Feral cat](../research/leveling/builds/leveling-feral.md) (9/30/12, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/050022-53200302023002125-15402-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

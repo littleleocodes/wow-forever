@@ -45,9 +45,6 @@
 - [ ] Is there a cat Mangle rank? The demo talent is bear-only.
 - [ ] Rend and Tear rank scaling.
 
-**Feral — Bear Tank (simulator winner adopted 2026-09-27)** (`druid/research/raid/builds/feral-bear-tank.md`)
-- [ ] Mangle threat modifier; whether Dire Bear armor multiplier changed with the reworked Thick Hide.
-
 **Balance — Moonkin / Nature's Grace (simulator winner adopted 2026-09-26)** (`druid/research/raid/builds/balance-moonkin-raid.md`)
 - [ ] Moonfury per-rank value; Eclipse charge behaviour; whether Moonkin's crit aura stacks with Leader of the Pack (demo says exclusive).
 
@@ -94,12 +91,6 @@
 **Optimizer — White 40%, Shred 30% (60 energy), Ferocious Bite 15%, Rip 10%, Claw/Rake 5% (parse)** (`druid/research/raid/builds/opt-feral-cat-dps-parse.md`)
 - [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
 
-**Optimizer — Maul 40%, white 30%, Swipe 15%, Faerie Fire/Demoralizing Roar 5%, Thorns 10%; Mangle arrives as a talent effect (raid-tank)** (`druid/research/raid/builds/opt-feral-bear-tank-raid-tank.md`)
-- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-
-**Feral Combat — Raid tank (machine-learning search)** (`druid/research/raid/builds/feral-combat-ml-tank.md`)
-- [ ] A machine-searched Feral Combat tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps).
-
 **Feral Combat — Raid (open talent search)** (`druid/research/raid/builds/feral-combat-open-raid.md`)
 - [ ] An open-search Feral Combat build: check it against the community's Feral Combat builds at launch.
 
@@ -114,6 +105,18 @@
 
 **Restoration — Leveling into the raid build** (`druid/research/leveling/builds/restoration-leveling.md`)
 - [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
+
+**Feral — Bear Tank (simulator winner adopted 2026-09-27)** (`druid/research/raid/builds/feral-bear-tank.md`)
+- [ ] Mangle threat modifier; whether Dire Bear armor multiplier changed with the reworked Thick Hide.
+
+**Optimizer — Maul 40%, white 30%, Swipe 15%, Faerie Fire/Demoralizing Roar 5%, Thorns 10%; Mangle arrives as a talent effect (raid-tank)** (`druid/research/raid/builds/opt-feral-bear-tank-raid-tank.md`)
+- [ ] Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
+
+**Feral Combat — Raid tank (machine-learning search)** (`druid/research/raid/builds/feral-combat-ml-tank.md`)
+- [ ] A machine-searched Feral Combat tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps).
+
+**Feral Combat — Raid tank (the simulator's Bear 9/32/10)** (`druid/research/raid/builds/feral-combat-bear-preset-tank.md`)
+- [ ] Lacerate's stacking threat and Primal Bite in Forever: check the bear's threat against these numbers at launch.
 
 ### Hunter
 
@@ -331,6 +334,9 @@
 **Arcane — Raid (open talent search)** (`mage/research/raid/builds/arcane-open-raid.md`)
 - [ ] An open-search Arcane build: check it against the community's Arcane builds at launch.
 
+**Frost — Raid (machine-learning search)** (`mage/research/raid/builds/frost-ml-raid.md`)
+- [ ] A machine-searched Frost build: check it against the community's Frost builds at launch.
+
 **Arcane — Leveling (open talent search)** (`mage/research/leveling/builds/arcane-open-leveling.md`)
 - [ ] An open-search Arcane leveling build: check it while leveling at launch.
 
@@ -345,9 +351,6 @@
 
 **Frostfire — Leveling (open talent search)** (`mage/research/leveling/builds/frostfire-open-leveling.md`)
 - [ ] An open-search Frostfire leveling build: check it while leveling at launch.
-
-**Frost — Raid (machine-learning search)** (`mage/research/raid/builds/frost-ml-raid.md`)
-- [ ] A machine-searched Frost build: check it against the community's Frost builds at launch.
 
 ### Paladin
 
@@ -782,9 +785,6 @@
 **Destruction — Incinerate, Succubus out (the simulator's own build)** (`warlock/research/raid/builds/destruction-succubus-raid.md`)
 - [ ] Bane of Havoc copies damage done to other targets: worth nothing on a single boss (a filler here).
 
-**Affliction — Leveling (open talent search)** (`warlock/research/leveling/builds/affliction-open-leveling.md`)
-- [ ] An open-search Affliction leveling build: check it while leveling at launch.
-
 **Affliction-Demonology — Leveling (open talent search)** (`warlock/research/leveling/builds/affliction-demonology-open-leveling.md`)
 - [ ] An open-search Affliction-Demonology leveling build: check it while leveling at launch.
 
@@ -793,6 +793,9 @@
 
 **Demonology — Leveling (open talent search)** (`warlock/research/leveling/builds/demonology-open-leveling.md`)
 - [ ] An open-search Demonology leveling build: check it while leveling at launch.
+
+**Affliction — Leveling (open talent search)** (`warlock/research/leveling/builds/affliction-open-leveling.md`)
+- [ ] An open-search Affliction leveling build: check it while leveling at launch.
 
 ### Warrior
 

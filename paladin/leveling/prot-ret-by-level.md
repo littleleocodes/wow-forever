@@ -4,7 +4,7 @@
 
 What a Prot-Ret paladin presses from level 1 to 60, stage by stage. It plays the Retribution rotation with a two-handed weapon: a seal on yourself, your swings, and **Judgement** and **Holy Strike** on their 10-second cooldowns, with **Hammer of Justice** before a **Judgement** from 20. Up to 48 the talents are close to the Retribution page's (both take Protection's **Divine Intellect** and **Precision**, here at 41-48); from 49 the rest go into Protection, which adds **Templar's Bulwark** (51) and **Swift Judgement** (56), a free extra Judgement once a minute. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 12/16/23 ([open the talent tree](https://talentsforever.com/paladin/60/05025-5030211031-321333010013003-12)), the one on the [Prot-Ret leveling page](prot-ret.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 12/16/23 ([open the talent tree](https://talentsforever.com/paladin/60/05025-1430211031-502332010013003-12)), the one on the [Prot-Ret leveling page](prot-ret.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -46,7 +46,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 |---|---|---|---|---|---|---|---|---|---|
 | Shift+Q | Packs: the ground under you | — | — | — | — | — | **Consecration** | Consecration | Consecration |
 | Shift+E | Free (the Retribution build's Repentance key; this build does not take it) | — | — | — | — | — | — | — | — |
-| Shift+R | Finisher from range | — | — | — | — | — | — | **Hammer of Wrath** | Hammer of Wrath |
+| Shift+R | Finisher from range: not in the list; press it to finish a runner | — | — | — | — | — | — | **Hammer of Wrath** | Hammer of Wrath |
 | Shift+F | Escape from roots and slows | — | — | — | — | **Blessing of Freedom** from 18 | Blessing of Freedom | Blessing of Freedom | Blessing of Freedom |
 | Shift+Mouse 5 | The panic button: a full heal | — | — | — | — | **Lay on Hands** | Lay on Hands | Lay on Hands | Lay on Hands |
 | Shift+Mouse 4 | Send an extra Undead mob running | — | — | — | — | — | **Turn Undead** from 24 | Turn Undead | Turn Undead |
@@ -80,7 +80,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Keep **Devotion Aura** on. Heal with **Holy Light** between fights.
 - Use a two-handed weapon from the first one you find. Every seal and strike hits harder with a slow, heavy weapon.
 
-*Fight lab, seconds per kill: 12 at level 1. Presses per kill at level 1: Melee 1.7, Seal of Righteousness 1.0.*
+*Fight lab, seconds per kill: 12 at level 1. Presses per kill at level 1: Melee 1.7, Seal of Righteousness 0.2.*
 
 ## Levels 4-5: Judgement
 
@@ -119,7 +119,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Seal of the Crusader** (6) is not part of the leveling rotation. Stay on **Seal of Righteousness**.
 
-*Fight lab, seconds per kill: 16 at level 6. Presses per kill at level 6: Melee 2.8, Judgement 1.2, Holy Strike 1.2, Seal of Righteousness 1.0.*
+*Fight lab, seconds per kill: 16 at level 6. Presses per kill at level 6: Melee 3.0, Judgement 1.2, Holy Strike 1.2, Seal of Righteousness 1.0.*
 
 ## Levels 8-9: Hammer of Justice
 
@@ -140,7 +140,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Purify** (8) removes a poison or a disease. It is not part of the fight.
 
-*Fight lab, seconds per kill: 18 at level 8. Presses per kill at level 8: Melee 3.3, Judgement 1.4, Holy Strike 1.4, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 18 at level 8. Presses per kill at level 8: Melee 3.6, Judgement 1.4, Holy Strike 1.4, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 10-19: Talents begin, Lay on Hands
 
@@ -148,7 +148,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Divine Protection at 18; Holy Light at 14; Holy Strike at 12; Seal of Righteousness at 10, 18.
 
-**Talents:** 10-11 Benediction, 12-14 Deflection, 15-17 Sanctified Judgement, 18-19 Conviction.
+**Talents:** 10-14 Deflection, 15-17 Sanctified Judgement, 18-19 Conviction.
 
 **Keys to set:** 1 = Blessing of Protection; Shift+Mouse 5 = Lay on Hands; Shift+F = Blessing of Freedom (at 18).
 
@@ -168,7 +168,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Blessing of Protection** (10) and **Blessing of Freedom** (18) are tools for a bad pull, not rotation.
 - Buy the next rank of the defensive spells on your bars too: **Divine Protection** at 18 (8 seconds instead of 6), **Blessing of Protection** at 24 and 38 (8, then 10 seconds), **Lay on Hands** at 30 and 50 and **Divine Shield** at 50.
 
-*Fight lab, seconds per kill: 18 at level 10, 21 at level 19. Presses per kill at level 10: Melee 3.1, Judgement 1.3, Holy Strike 1.2, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
+*Fight lab, seconds per kill: 18 at level 10, 22 at level 19. Presses per kill at level 10: Melee 3.4, Judgement 1.4, Holy Strike 1.3, Seal of Righteousness 1.0, Hammer of Justice 0.1.*
 
 ## Levels 20-43: Seal of Command and the stun combo
 
@@ -176,7 +176,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Blessing of Protection at 24, 38; Consecration at 30, 40; Exorcism at 28, 36; Flash of Light at 26, 34, 42; Hammer of Justice at 24, 40; Holy Light at 22, 30, 38; Holy Strike at 20, 28, 36; Lay on Hands at 30; Seal of Command at 30, 40; Turn Undead at 38.
 
-**Talents:** 20 Seal of Command, 21 Conviction, 22 Improved Judgement, 23-24 Vindication, 25 Sacred Arbiter, 26-28 Two-Handed Weapon Specialization, 29 Vindication, 30-32 Vengeance, 33-37 Divine Strength, 38-40 Improved Seals, 41-43 Divine Intellect.
+**Talents:** 20 Seal of Command, 21 Conviction, 22-23 Improved Judgement, 24 Vindication, 25 Sacred Arbiter, 26-28 Two-Handed Weapon Specialization, 29 Vindication, 30-32 Vengeance, 33-37 Divine Strength, 38-40 Improved Seals, 41 Divine Intellect, 42-43 Redoubt.
 
 **Keys to set:** Mouse 4 = Flash of Light; 2 = Exorcism; Shift+Q = Consecration; Shift+Mouse 4 = Turn Undead (at 24); F = Divine Shield (at 34); 4 = Cleanse (at 42).
 
@@ -197,7 +197,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it.
 - **Blessing of Kings** (20) is an alternative to **Blessing of Might**; the fight lab plays **Blessing of Might**. From 34, **Divine Shield** replaces **Divine Protection** as your bubble: longer, and it takes the same key.
 
-*Fight lab, seconds per kill: 20 at level 20, 22 at level 30, 26 at level 40, 27 at level 43. Presses per kill at level 20: Melee 3.7, Judgement 1.6, Holy Strike 1.5, Seal of Command 1.0, Hammer of Justice 0.3.*
+*Fight lab, seconds per kill: 21 at level 20, 24 at level 30, 27 at level 40, 28 at level 43. Presses per kill at level 20: Melee 4.0, Judgement 1.7, Holy Strike 1.6, Seal of Command 1.0, Hammer of Justice 0.3.*
 
 ## Levels 44-55: Hammer of Wrath, then Protection talents
 
@@ -205,7 +205,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Consecration at 50; Divine Shield at 50; Exorcism at 44, 52; Flash of Light at 50; Hammer of Justice at 54; Hammer of Wrath at 52; Holy Light at 46, 54; Holy Strike at 44, 52; Lay on Hands at 50; Seal of Command at 50; Turn Undead at 52.
 
-**Talents:** 44-45 Divine Intellect, 46-48 Precision, 49-50 Sacred Duty, 51 Templar's Bulwark, 52 Improved Hammer of Justice, 53-55 Toughness.
+**Talents:** 44-45 Redoubt, 46-48 Precision, 49-50 Sacred Duty, 51 Templar's Bulwark, 52 Improved Hammer of Justice, 53-55 Toughness.
 
 **Keys to set:** Shift+R = Hammer of Wrath; Shift+2 = Holy Wrath (at 50); Middle mouse = Templar's Bulwark (at 51).
 
@@ -223,11 +223,11 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Hammer of Wrath** (44) hits a mob below 20% health from range. The tuned rules of 2026-11-09 switch it off against single mobs: kills measured faster without it. Use it on a mob that runs.
 - From 49 the build parts from the Retribution page's: it takes Protection's **Sacred Duty** (49-50, a minute off the cooldown of your bubble), **Templar's Bulwark** (51), **Improved Hammer of Justice** (52, the stun combo 5 seconds sooner), **Toughness** (53-55, armor) and **Swift Judgement** (56) where Retribution takes **Repentance** and **Champion of the Light**.
-- **Sacred Duty** and **Toughness** fill Protection's rows on the way to **Swift Judgement**. The build takes no **Redoubt**, the other choice there: it adds block, which needs a shield, and with a two-hander it does nothing.
+- **Redoubt** (42-45), **Sacred Duty** (49-50) and **Toughness** (53-55) fill Protection's rows on the way to **Swift Judgement** (56). **Redoubt** adds block, which needs a shield: with a two-hander it does nothing, and the leveling filler pass found no more useful legal talent for its points.
 - **Templar's Bulwark** (51) goes on the middle mouse button: an absorb as large as your health for 8 seconds. The Retribution list never presses it, so the fight lab has not measured it. It shares Forbearance with **Divine Shield** and **Blessing of Protection**: one of the three a minute.
 - **Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**.
 
-*Fight lab, seconds per kill: 26 at level 44, 28 at level 50, 30 at level 55. Presses per kill at level 44: Melee 5.1, Judgement 2.2, Holy Strike 2.0, Seal of Command 1.0, Hammer of Justice 0.4.*
+*Fight lab, seconds per kill: 27 at level 44, 29 at level 50, 32 at level 55. Presses per kill at level 44: Melee 5.3, Judgement 2.5, Holy Strike 2.1, Seal of Command 1.0, Hammer of Justice 0.4.*
 
 ## Levels 56-60: Swift Judgement
 
@@ -255,12 +255,12 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Swift Judgement** judges your seal without touching **Judgement**'s cooldown, and the seal stays up. It is off the global cooldown: press it in the same moment as Q or R. On a stunned mob, **Seal of Command**'s judgement hits twice as hard through it as well.
 - **Reverence** (57-58) and **Improved Seals** (59-60) finish the build. Nothing new to press.
 
-*Fight lab, seconds per kill: 29 at level 56, 29 at level 60. Presses per kill at level 56: Melee 5.8, Judgement 2.9, Holy Strike 2.2, Seal of Command 1.0, Hammer of Justice 0.5, Swift Judgement 0.4.*
+*Fight lab, seconds per kill: 30 at level 56, 30 at level 60. Presses per kill at level 56: Melee 6.1, Judgement 3.2, Holy Strike 2.4, Seal of Command 1.0, Hammer of Justice 0.5, Swift Judgement 0.5.*
 
 ## Between fights
 
 - Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.
-- Drink when you are below about a third of your mana: the fight lab's default, which the tuned rules of 2026-11-09 keep. Eat only if you are still below 65% of your health after the heals.
+- Drink when you are below 15% of your mana (the tuned rules of 2026-11-20). Eat only if you are still below 65% of your health after the heals.
 - Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.
 - Re-cast **Blessing of Might** when it runs out, and your seal just before each pull.
 - Visit the trainer every even level for new ranks of your seal and **Holy Strike**.
@@ -271,4 +271,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Packs of mobs: **Consecration** on Shift+Q hits them all. The single-target rotation never casts it.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-19: the stages are hand-kept in `_reference/data/level-guides/paladin.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/paladin.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

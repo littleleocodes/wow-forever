@@ -3,7 +3,7 @@
  "spec": "Marksmanship",
  "build": "marksmanship-open-leveling",
  "rotation": "mm-raid",
- "date": "2026-11-17",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -111,34 +111,16 @@
  ],
  "steps": [
   {
-   "weighted": 22.533,
+   "weighted": 21.798,
    "values_at_60": {
-    "Bestial Discipline": -0.051,
-    "Ranged Weapon Specialization": -0.112
+    "Ferocity": -0.137,
+    "Improved Tracking": -0.083,
+    "Ranged Weapon Specialization": -0.106
    },
-   "zero": [
-    "Bestial Discipline"
+   "zero": [],
+   "dead_held": [
+    "Improved Aspect of the Monkey"
    ]
-  },
-  {
-   "weighted": 22.528,
-   "values_at_60": {
-    "Ferocity": -0.106,
-    "Improved Tracking": -0.08,
-    "Ranged Weapon Specialization": -0.072
-   },
-   "zero": [
-    "Ranged Weapon Specialization"
-   ]
-  },
-  {
-   "weighted": 22.531,
-   "values_at_60": {
-    "Ferocity": -0.119,
-    "Improved Tracking": -0.079,
-    "Ranged Weapon Specialization": -0.077
-   },
-   "zero": []
   }
  ],
  "moves": [
@@ -160,6 +142,313 @@
   }
  ],
  "kept_signature": [],
+ "gates_checked": {
+  "Barrage": {
+   "level": 34,
+   "kind": "tier point for Ranged Weapon Specialization (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Hawk Eye",
+     "seed3": 0.0007
+    },
+    {
+     "to": "Mortal Shots",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Improved Concussive Shot",
+     "seed3": 0.0022
+    },
+    {
+     "to": "Rapid Recuperation",
+     "seed3": 0.0022
+    },
+    {
+     "to": "Scatter Shot",
+     "seed3": 0.0022
+    },
+    {
+     "to": "Improved Arcane Shot",
+     "seed3": 0.0026
+    },
+    {
+     "to": "Lone Wolf",
+     "seed3": 0.4146
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Careful Aim": {
+   "level": 19,
+   "kind": "tier point for Ranged Weapon Specialization (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Hawk Eye",
+     "seed3": 0.0024
+    },
+    {
+     "to": "Improved Concussive Shot",
+     "seed3": 0.0037
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Deadly Aspects": {
+   "level": 44,
+   "kind": "tier point for Unleashed Fury (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Endurance Training",
+     "seed3": 0.0008
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Efficiency": {
+   "level": 31,
+   "kind": "tier point for Ranged Weapon Specialization (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Mortal Shots",
+     "seed3": 0.0045
+    },
+    {
+     "to": "Hawk Eye",
+     "seed3": 0.0054
+    },
+    {
+     "to": "Improved Arcane Shot",
+     "seed3": 0.0064
+    },
+    {
+     "to": "Improved Concussive Shot",
+     "seed3": 0.0065
+    },
+    {
+     "to": "Rapid Recuperation",
+     "seed3": 0.0065
+    },
+    {
+     "to": "Scatter Shot",
+     "seed3": 0.0065
+    },
+    {
+     "to": "Lone Wolf",
+     "seed3": 0.4066
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Endurance Training": {
+   "level": 47,
+   "kind": "tier point for Unleashed Fury (tier 3)",
+   "does_nothing": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 50, 60",
+   "homes": [
+    {
+     "to": "Improved Aspect of the Monkey",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Improved Revive Pet",
+     "seed3": 0.0,
+     "same_times": true
+    }
+   ],
+   "verdict": "no better home"
+  },
+  "Focused Fire": {
+   "level": 46,
+   "kind": "tier point for Unleashed Fury (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Endurance Training",
+     "seed3": 0.0037
+    },
+    {
+     "to": "Improved Aspect of the Monkey",
+     "seed3": 0.0037
+    },
+    {
+     "to": "Improved Revive Pet",
+     "seed3": 0.0037
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Aspect of the Monkey": {
+   "level": 49,
+   "kind": "tier point for Unleashed Fury (tier 3)",
+   "does_nothing": "improves only Aspect of the Monkey, which the build never casts (its removal changes nothing at 50, 60)",
+   "homes": [
+    {
+     "to": "Endurance Training",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Improved Revive Pet",
+     "seed3": 0.0,
+     "same_times": true
+    }
+   ],
+   "verdict": "no better home"
+  },
+  "Improved Stings": {
+   "level": 22,
+   "kind": "tier point for Ranged Weapon Specialization (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Hawk Eye",
+     "seed3": 0.003
+    },
+    {
+     "to": "Improved Concussive Shot",
+     "seed3": 0.0047
+    },
+    {
+     "to": "Improved Arcane Shot",
+     "seed3": 0.005
+    },
+    {
+     "to": "Lone Wolf",
+     "seed3": 0.4679
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Lethal Attacks": {
+   "level": 14,
+   "kind": "tier point for Improved Stings (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Hawk Eye",
+     "seed3": 0.0039
+    },
+    {
+     "to": "Improved Concussive Shot",
+     "seed3": 0.0055
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Rapid Killing": {
+   "level": 24,
+   "kind": "prerequisite of Rapid Recuperation",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Rapid Recuperation": {
+   "level": 30,
+   "kind": "tier point for Ranged Weapon Specialization (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Mortal Shots",
+     "seed3": 0.0315
+    },
+    {
+     "to": "Hawk Eye",
+     "seed3": 0.0315
+    },
+    {
+     "to": "Improved Concussive Shot",
+     "seed3": 0.0334
+    },
+    {
+     "to": "Scatter Shot",
+     "seed3": 0.0334
+    },
+    {
+     "to": "Improved Arcane Shot",
+     "seed3": 0.0345
+    },
+    {
+     "to": "Lone Wolf",
+     "seed3": 0.4472
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Trueshot Aura": {
+   "level": 25,
+   "kind": "tier point for Ranged Weapon Specialization (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Mortal Shots",
+     "seed3": 0.0131
+    },
+    {
+     "to": "Hawk Eye",
+     "seed3": 0.0148
+    },
+    {
+     "to": "Improved Arcane Shot",
+     "seed3": 0.0149
+    },
+    {
+     "to": "Improved Concussive Shot",
+     "seed3": 0.015
+    },
+    {
+     "to": "Lone Wolf",
+     "seed3": 0.4796
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Unleashed Fury": {
+   "level": 54,
+   "kind": "tier point for Ferocity (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Endurance Training",
+     "seed3": 0.0025
+    },
+    {
+     "to": "Improved Aspect of the Monkey",
+     "seed3": 0.0025
+    },
+    {
+     "to": "Improved Revive Pet",
+     "seed3": 0.0025
+    },
+    {
+     "to": "Pathfinding",
+     "seed3": 0.0025
+    },
+    {
+     "to": "Bestial Swiftness",
+     "seed3": 0.0025
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  }
+ },
+ "no_better_home": {
+  "Endurance Training": {
+   "kind": "tier point for Unleashed Fury (tier 3)",
+   "exact": true,
+   "why": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 50, 60",
+   "homes": 2
+  },
+  "Improved Aspect of the Monkey": {
+   "kind": "tier point for Unleashed Fury (tier 3)",
+   "exact": true,
+   "why": "improves only Aspect of the Monkey, which the build never casts (its removal changes nothing at 50, 60)",
+   "homes": 2
+  }
+ },
  "final_order": [
   {
    "levels": "10-14",
@@ -268,6 +557,33 @@
    "tree": "Survival",
    "talent": "Improved Tracking",
    "points": 1
+  }
+ ],
+ "reruns": [
+  {
+   "date": "2026-11-20",
+   "moves": 0,
+   "note": "a written run that moved nothing; its no-move record had dropped the earlier pass (start_order, moves, written), which open_builds.py re-applies; restored from the record of 2026-11-17 on 2026-11-21"
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-22",
+   "moves": 0
   }
  ],
  "written": {

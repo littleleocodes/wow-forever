@@ -7,21 +7,21 @@
  ],
  "best": "mm-lone-wolf-raid",
  "best_entry": "mm-lonewolf-raid",
- "best_dps": 995.78,
+ "best_dps": 1000.55,
  "any_split": false,
- "date": "2026-11-20",
+ "date": "2026-11-22",
  "commit": "2e6e77d84",
  "gear": {
   "bis": {
-   "entry": "mm-raid",
+   "entry": "mm-lonewolf-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "setting": "raid",
-   "chosen": "keep-sets-and-effects",
-   "ilvl": 63.7,
+   "chosen": "previous+trinkets",
+   "ilvl": 63.8,
    "trinkets": [
     "Blackhand's Breadth",
-    "Royal Seal of Eldre'Thalas"
+    "Counterattack Lodestone"
    ],
    "names": [
     "Black Dragonscale Helm",
@@ -37,46 +37,45 @@
     "Channeler's Ring",
     "Band of Sulfuras",
     "Blackhand's Breadth",
-    "Royal Seal of Eldre'Thalas",
+    "Counterattack Lodestone",
     "Legionite Glaive",
     null,
     "Rhok'delar, Longbow of the Ancient Keepers"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 0.9958942858516672,
-    "keep-sets-and-effects": 1.0068449389372987
+    "all-slots": 0.9865100262921953,
+    "keep-sets-and-effects": 0.9958427479348968,
+    "previous": 1.0051519570814929,
+    "previous+trinkets": 1.005502761606895,
+    "the prebis set": 0.9479517779357891
    },
    "confirm_seed2": {
     "current": 1.0,
-    "keep-sets-and-effects": 1.0068465939316873
+    "previous+trinkets": 1.0056818954459592
    },
    "weights": {
-    "PseudoStatRangedDps": 2.2617,
-    "StatAgility": 0.7522,
-    "StatArmorPenetration": 0.0815,
-    "StatCritRating": 0.7099,
-    "StatExpertiseRating": 0.0765,
-    "StatHasteRating": 0.4447,
-    "StatHitRating": 1.0567,
-    "StatIntellect": 0.8555,
-    "StatRangedAttackPower": 0.2491,
-    "StatSpellPiercing": 0.3635,
-    "StatSpirit": 0.1798
+    "PseudoStatRangedDps": 2.6032,
+    "StatAgility": 0.8085,
+    "StatArmorPenetration": 0.0971,
+    "StatCritRating": 0.6882,
+    "StatHasteRating": 0.5239,
+    "StatHitRating": 0.9907,
+    "StatIntellect": 0.9639,
+    "StatRangedAttackPower": 0.2759,
+    "StatSpellPiercing": 0.4607,
+    "StatSpirit": 0.354
    },
    "evaluated_on": [
-    "mm-raid: ml winner"
-   ],
-   "commit": "2e6e77d84",
-   "kept": true,
-   "note": "the spec's tier set as it stands, made by its last search for that search's winner; not made for this pick"
+    "mm-lonewolf-raid: mm-lone-wolf-raid"
+   ]
   },
   "prebis": {
-   "entry": "mm-raid",
+   "entry": "mm-lonewolf-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-prebis.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "setting": "raid",
-   "chosen": "all-slots",
+   "chosen": "previous",
    "ilvl": 62.5,
    "trinkets": [
     "Blackhand's Breadth",
@@ -103,36 +102,33 @@
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9979190282497538
+    "keep-sets-and-effects": 1.0120172232504476,
+    "previous": 1.0105617487147738
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0016108543111355
+    "previous": 1.0,
+    "keep-sets-and-effects": 0.9996096655266716
    },
    "weights": {
-    "PseudoStatRangedDps": 1.9023,
-    "StatAgility": 0.6338,
-    "StatArmorPenetration": 0.0619,
-    "StatCritRating": 0.5528,
-    "StatExpertiseRating": 0.2341,
-    "StatHasteRating": 0.2364,
-    "StatHitRating": 0.7992,
-    "StatIntellect": 0.2356,
-    "StatRangedAttackPower": 0.2142,
-    "StatSpellPiercing": 0.2716,
-    "StatSpirit": 0.0
+    "PseudoStatRangedDps": 2.5774,
+    "StatAgility": 0.7988,
+    "StatArmorPenetration": 0.0912,
+    "StatCritRating": 0.6694,
+    "StatHasteRating": 0.5182,
+    "StatHitRating": 1.0448,
+    "StatIntellect": 0.9274,
+    "StatRangedAttackPower": 0.2749,
+    "StatSpellPiercing": 0.4498,
+    "StatSpirit": 0.3571
    },
    "evaluated_on": [
-    "mm-raid: ml winner (bis)"
-   ],
-   "commit": "2e6e77d84",
-   "kept": true,
-   "note": "the spec's tier set as it stands, made by its last search for that search's winner; not made for this pick"
+    "mm-lonewolf-raid: mm-lone-wolf-raid"
+   ]
   },
   "dungeon": {
    "entry": "mm-lonewolf-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-dungeon.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "chosen": "previous",
    "ilvl": 61.1,
    "trinkets": [
@@ -140,81 +136,81 @@
     "Counterattack Lodestone"
    ],
    "trinket_screen": {
-    "Blackhand's Breadth (13965)": 1.0164,
-    "Counterattack Lodestone (18537)": 1.0091,
-    "Royal Seal of Eldre'Thalas (18473)": 1.0088,
-    "Devilsaur Tooth (19992)": 1.0054,
-    "Devilsaur Eye (19991)": 1.0046,
-    "Rune of the Guard Captain (19120)": 1.004,
-    "Smokey's Lighter (13171)": 1.004,
-    "Everlook Delivery Bot (274760)": 1.0034,
-    "Hand of Justice (11815)": 1.0033,
-    "Linken's Boomerang (11905)": 1.0018,
-    "Second Wind (11819)": 1.0015,
-    "Burst of Knowledge (11832)": 1.0014,
-    "Shard of the Splithooves (10659)": 1.0012,
-    "Theka's Last Breath (274641)": 1.0012,
-    "Enriched Seal (271903)": 1.0009,
-    "Darkspear Voodoo Seal (272061)": 1.0009,
-    "Enriched Seal (271905)": 1.0005,
-    "Darkspear Voodoo Seal (272059)": 1.0005,
-    "Worgenbane Talisman (273643)": 1.0002,
+    "Blackhand's Breadth (13965)": 1.0169,
+    "Counterattack Lodestone (18537)": 1.0092,
+    "Royal Seal of Eldre'Thalas (18473)": 1.009,
+    "Devilsaur Tooth (19992)": 1.0056,
+    "Smokey's Lighter (13171)": 1.0049,
+    "Devilsaur Eye (19991)": 1.0048,
+    "Rune of the Guard Captain (19120)": 1.0042,
+    "Everlook Delivery Bot (274760)": 1.0036,
+    "Hand of Justice (11815)": 1.0035,
+    "Linken's Boomerang (11905)": 1.0024,
+    "Second Wind (11819)": 1.0004,
+    "Enriched Seal (271903)": 1.0002,
+    "Darkspear Voodoo Seal (272061)": 1.0002,
+    "Burst of Knowledge (11832)": 1.0002,
+    "Shard of the Splithooves (10659)": 1.0002,
+    "Theka's Last Breath (274641)": 1.0002,
     "Thunderbrew's Boot Flask (744)": 1.0,
-    "Evonice's Landin' Pilla (18951)": 1.0,
+    "Enriched Seal (271905)": 0.9999,
+    "Darkspear Voodoo Seal (272059)": 0.9999,
+    "Worgenbane Talisman (273643)": 0.9999,
     "Roogug's Severed Head (274152)": 0.9999,
-    "Lookie's Spyglass (273298)": 0.9995,
-    "Guardian Talisman (1490)": 0.9995,
-    "Nifty Stopwatch (2820)": 0.9995,
-    "Dog Whistle (3456)": 0.9995,
-    "Smotts' Compass (4130)": 0.9995,
-    "Glimmering Mithril Insignia (10418)": 0.9995,
-    "Chained Essence of Eranikus (10455)": 0.9995,
-    "Demon's Blood (10779)": 0.9995,
-    "Carrot on a Stick (11122)": 0.9995,
-    "Force of Will (11810)": 0.9995,
-    "Ward of the Elements (12065)": 0.9995,
-    "Heart of the Scale (13164)": 0.9995,
-    "Seal of the Dawn (13209)": 0.9995,
-    "Smolderweb's Eye (13213)": 0.9995,
-    "Cannonball Runner (13382)": 0.9995,
-    "Ramstein's Lightning Bolts (13515)": 0.9995,
-    "Spectral Essence (13544)": 0.9995,
-    "Mark of Tyranny (13966)": 0.9995,
-    "Eye of the Beast (13968)": 0.9995,
-    "Barov Peasant Caller (14022)": 0.9995,
-    "Barov Peasant Caller (14023)": 0.9995,
-    "Prismcharm (15867)": 0.9995,
-    "Ragged John's Neverending Cup (15873)": 0.9995,
-    "Heart of Noxxion (17744)": 0.9995,
-    "Mark of Resolution (17759)": 0.9995,
-    "Mark of the Chosen (17774)": 0.9995,
-    "Vigilance Charm (18370)": 0.9995,
-    "Arena Grand Master (19024)": 0.9995,
-    "Luffa (19141)": 0.9995,
-    "Rune of the Dawn (19812)": 0.9995,
-    "Hook of the Master Angler (19979)": 0.9995,
-    "Talisman of Arathor (20071)": 0.9995,
-    "Defiler's Talisman (20072)": 0.9995,
-    "Defiler's Talisman (21115)": 0.9995,
-    "Defiler's Talisman (21116)": 0.9995,
-    "Talisman of Arathor (21117)": 0.9995,
-    "Talisman of Arathor (21118)": 0.9995,
-    "Talisman of Arathor (21119)": 0.9995,
-    "Defiler's Talisman (21120)": 0.9995,
-    "Defender of the Timbermaw (21326)": 0.9995,
-    "Heart of Wyrmthalak (22321)": 0.9995,
-    "Volunteer's Lucky Seal (271904)": 0.9995,
-    "Volunteer's Lucky Seal (271906)": 0.9995,
-    "Relentless Raider's Seal (272060)": 0.9995,
-    "Relentless Raider's Seal (272062)": 0.9995,
-    "Adaptive Combat Assistant (272437)": 0.9995,
-    "Cursed Murloc Eye (273840)": 0.9995,
-    "The Desert Rose (274648)": 0.9995,
-    "Everlook Pathcarver (274759)": 0.9995,
-    "Parachute-Priest Pager (274761)": 0.9995,
-    "Transformative Cocoon (276895)": 0.9995,
-    "Satchel of Potions (280766)": 0.9995,
-    "Mindtap Talisman (18371)": 0.9877
+    "Evonice's Landin' Pilla (18951)": 0.9999,
+    "Lookie's Spyglass (273298)": 0.9998,
+    "Guardian Talisman (1490)": 0.9997,
+    "Nifty Stopwatch (2820)": 0.9997,
+    "Dog Whistle (3456)": 0.9997,
+    "Smotts' Compass (4130)": 0.9997,
+    "Glimmering Mithril Insignia (10418)": 0.9997,
+    "Chained Essence of Eranikus (10455)": 0.9997,
+    "Demon's Blood (10779)": 0.9997,
+    "Carrot on a Stick (11122)": 0.9997,
+    "Force of Will (11810)": 0.9997,
+    "Ward of the Elements (12065)": 0.9997,
+    "Heart of the Scale (13164)": 0.9997,
+    "Seal of the Dawn (13209)": 0.9997,
+    "Smolderweb's Eye (13213)": 0.9997,
+    "Cannonball Runner (13382)": 0.9997,
+    "Ramstein's Lightning Bolts (13515)": 0.9997,
+    "Spectral Essence (13544)": 0.9997,
+    "Mark of Tyranny (13966)": 0.9997,
+    "Eye of the Beast (13968)": 0.9997,
+    "Barov Peasant Caller (14022)": 0.9997,
+    "Barov Peasant Caller (14023)": 0.9997,
+    "Prismcharm (15867)": 0.9997,
+    "Ragged John's Neverending Cup (15873)": 0.9997,
+    "Heart of Noxxion (17744)": 0.9997,
+    "Mark of Resolution (17759)": 0.9997,
+    "Mark of the Chosen (17774)": 0.9997,
+    "Vigilance Charm (18370)": 0.9997,
+    "Arena Grand Master (19024)": 0.9997,
+    "Luffa (19141)": 0.9997,
+    "Rune of the Dawn (19812)": 0.9997,
+    "Hook of the Master Angler (19979)": 0.9997,
+    "Talisman of Arathor (20071)": 0.9997,
+    "Defiler's Talisman (20072)": 0.9997,
+    "Defiler's Talisman (21115)": 0.9997,
+    "Defiler's Talisman (21116)": 0.9997,
+    "Talisman of Arathor (21117)": 0.9997,
+    "Talisman of Arathor (21118)": 0.9997,
+    "Talisman of Arathor (21119)": 0.9997,
+    "Defiler's Talisman (21120)": 0.9997,
+    "Defender of the Timbermaw (21326)": 0.9997,
+    "Heart of Wyrmthalak (22321)": 0.9997,
+    "Volunteer's Lucky Seal (271904)": 0.9997,
+    "Volunteer's Lucky Seal (271906)": 0.9997,
+    "Relentless Raider's Seal (272060)": 0.9997,
+    "Relentless Raider's Seal (272062)": 0.9997,
+    "Adaptive Combat Assistant (272437)": 0.9997,
+    "Cursed Murloc Eye (273840)": 0.9997,
+    "The Desert Rose (274648)": 0.9997,
+    "Everlook Pathcarver (274759)": 0.9997,
+    "Parachute-Priest Pager (274761)": 0.9997,
+    "Transformative Cocoon (276895)": 0.9997,
+    "Satchel of Potions (280766)": 0.9997,
+    "Mindtap Talisman (18371)": 0.9859
    },
    "names": [
     "Backwood Helm",
@@ -237,24 +233,23 @@
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0090449127582686,
-    "previous": 1.0090449127582686
+    "keep-sets-and-effects": 1.0101652734833237,
+    "previous": 1.0179774271133613
    },
    "confirm_seed2": {
-    "previous": 1.0,
-    "keep-sets-and-effects": 1.0
+    "previous": 1.0
    },
    "weights": {
-    "PseudoStatRangedDps": 2.4886,
-    "StatAgility": 0.7677,
-    "StatArmorPenetration": 0.0843,
-    "StatCritRating": 0.632,
-    "StatHasteRating": 0.5291,
-    "StatHitRating": 1.0089,
-    "StatIntellect": 0.8649,
-    "StatRangedAttackPower": 0.2644,
-    "StatSpellPiercing": 0.4254,
-    "StatSpirit": 0.1035
+    "PseudoStatRangedDps": 2.5143,
+    "StatAgility": 0.7749,
+    "StatArmorPenetration": 0.0856,
+    "StatCritRating": 0.6411,
+    "StatHasteRating": 0.5298,
+    "StatHitRating": 1.0679,
+    "StatIntellect": 0.8613,
+    "StatRangedAttackPower": 0.2669,
+    "StatSpellPiercing": 0.4273,
+    "StatSpirit": 0.3194
    },
    "evaluated_on": [
     "mm-lonewolf-raid: ml winner (pre-BiS, full raid)"
@@ -268,7 +263,7 @@
    "spec": "Marksmanship",
    "setting": "dummy",
    "entry": "mm-lonewolf-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Beast Mastery": [
@@ -292,7 +287,7 @@
       ],
       [
        "Efficiency",
-       4
+       3
       ],
       [
        "Lone Wolf",
@@ -316,7 +311,7 @@
       ],
       [
        "Rapid Recuperation",
-       1
+       2
       ],
       [
        "Ranged Weapon Specialization",
@@ -339,8 +334,8 @@
      ]
     },
     "split": "5/41/5",
-    "dps": 474.71,
-    "se": 0.212,
+    "dps": 478.65,
+    "se": 0.214,
     "iterations": 10000,
     "build": "mm-lone-wolf-raid"
    },
@@ -353,7 +348,7 @@
    "spec": "Marksmanship",
    "setting": "raid",
    "entry": "mm-lonewolf-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Beast Mastery": [
@@ -377,7 +372,7 @@
       ],
       [
        "Efficiency",
-       4
+       3
       ],
       [
        "Lone Wolf",
@@ -401,7 +396,7 @@
       ],
       [
        "Rapid Recuperation",
-       1
+       2
       ],
       [
        "Ranged Weapon Specialization",
@@ -424,8 +419,8 @@
      ]
     },
     "split": "5/41/5",
-    "dps": 995.78,
-    "se": 0.362,
+    "dps": 1000.55,
+    "se": 0.357,
     "iterations": 10000,
     "build": "mm-lone-wolf-raid"
    },
@@ -438,7 +433,7 @@
    "spec": "Marksmanship",
    "setting": "dummy",
    "entry": "mm-lonewolf-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Beast Mastery": [
@@ -462,7 +457,7 @@
       ],
       [
        "Efficiency",
-       4
+       3
       ],
       [
        "Lone Wolf",
@@ -486,7 +481,7 @@
       ],
       [
        "Rapid Recuperation",
-       1
+       2
       ],
       [
        "Ranged Weapon Specialization",
@@ -509,8 +504,8 @@
      ]
     },
     "split": "5/41/5",
-    "dps": 429.06,
-    "se": 0.193,
+    "dps": 430.56,
+    "se": 0.192,
     "iterations": 10000,
     "build": "mm-lone-wolf-raid"
    },
@@ -523,7 +518,7 @@
    "spec": "Marksmanship",
    "setting": "raid",
    "entry": "mm-lonewolf-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Beast Mastery": [
@@ -547,7 +542,7 @@
       ],
       [
        "Efficiency",
-       4
+       3
       ],
       [
        "Lone Wolf",
@@ -571,7 +566,7 @@
       ],
       [
        "Rapid Recuperation",
-       1
+       2
       ],
       [
        "Ranged Weapon Specialization",
@@ -594,8 +589,8 @@
      ]
     },
     "split": "5/41/5",
-    "dps": 926.23,
-    "se": 0.37,
+    "dps": 943.86,
+    "se": 0.365,
     "iterations": 10000,
     "build": "mm-lone-wolf-raid"
    },
@@ -608,7 +603,7 @@
    "spec": "Marksmanship",
    "setting": "raid",
    "entry": "mm-lonewolf-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "commit": "2e6e77d84",
    "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
    "winner": {
@@ -634,7 +629,7 @@
       ],
       [
        "Efficiency",
-       4
+       3
       ],
       [
        "Lone Wolf",
@@ -658,7 +653,7 @@
       ],
       [
        "Rapid Recuperation",
-       1
+       2
       ],
       [
        "Ranged Weapon Specialization",
@@ -681,7 +676,7 @@
      ]
     },
     "split": "5/41/5",
-    "dps": 894.2,
+    "dps": 896.3,
     "from": "prebis-raid"
    },
    "race": [
@@ -689,41 +684,41 @@
      "iterations": 30000,
      "seed": 1,
      "dps": [
-      894.2
+      896.3
      ]
     }
    ],
    "candidates": {
-    "prebis-raid": 894.2
+    "prebis-raid": 896.3
    },
-   "minutes": 5.7
+   "minutes": 1.9
   }
  },
  "pick_tiers": {
   "build": "mm-lone-wolf-raid",
-  "date": "2026-11-20",
+  "date": "2026-11-22",
   "note": "the page's pick in each tier's gear (the short-check method of 2026-11-20); no talent search",
   "alt": {
    "bis-dummy": {
-    "pick_dps": 474.71,
-    "search_winner_dps": 380.24,
+    "pick_dps": 478.65,
+    "search_winner_dps": 380.85,
     "search_winner_split": "21/30/0",
     "better": "pick"
    },
    "bis-raid": {
-    "pick_dps": 995.78,
-    "search_winner_dps": 831.76,
+    "pick_dps": 1000.55,
+    "search_winner_dps": 831.99,
     "search_winner_split": "7/39/5",
     "better": "pick"
    },
    "prebis-dummy": {
-    "pick_dps": 429.06,
+    "pick_dps": 430.56,
     "search_winner_dps": 344.17,
     "search_winner_split": "21/30/0",
     "better": "pick"
    },
    "prebis-raid": {
-    "pick_dps": 926.23,
+    "pick_dps": 943.86,
     "search_winner_dps": 761.28,
     "search_winner_split": "7/39/5",
     "better": "pick"
@@ -735,8 +730,8 @@
   "dps": {
    "winner": {
     "entry": "mm-lonewolf-raid",
-    "dps": 474.71,
-    "se": 0.212
+    "dps": 478.65,
+    "se": 0.214
    }
   },
   "best_hand": "mm-lone-wolf-raid",

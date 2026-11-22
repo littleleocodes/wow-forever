@@ -321,8 +321,11 @@ def search(pool, cls, spec, bid, levels, a):
         bad = {i: signature_bad(levels, base1, r, req, rl) for i, r in enumerate(res)} if FS.enabled() else {}
         nbad = sum(1 for v in bad.values() if v)
         if nbad:
-            print(f"  round {rnd}: {nbad} candidates break the signature rule (e.g. {describe(cands[next(i for i, v in bad.items() if v)])}: "
-                  f"{next(v for v in bad.values() if v)})", flush=True)
+            # every candidate a signature rule turned down, with its seed-1 score (2026-11-21, the audit session: one example had hidden
+            # that BOLT_ABOVE 0.4, 15% faster at 31-35, was turned down for a page-less hybrid's required Shadow Bolt); fastest first
+            print(f"  round {rnd}: {nbad} candidates break the signature rule:", flush=True)
+            for g, i, why in sorted(((1 - wsig(res[i], levels, rl) / w0, i, v) for i, v in bad.items() if v), reverse=True):
+                print(f"    {g:+.2%} seed 1, turned down: {describe(cands[i])} ({why})", flush=True)
         scored = sorted(((wsig(r, levels, rl) / w0, i) for i, r in enumerate(res) if not bad.get(i)), key=lambda x: x[0])
         top = [(sc, i) for sc, i in scored if sc < 1 - a.screen_gain][: a.top]
         if not top:
@@ -377,6 +380,7 @@ def main():
     ap.add_argument("--build", help="with --spec: tune on this build (a spec model no pipeline names yet, e.g. the healer leveling specs)")
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--rounds", type=int, default=12)
+    ap.add_argument("--levels", default=None, help="the levels the tune scores, \"20,25,30,...\" (default: the pipeline's; 2026-11-21)")
     ap.add_argument("--fights", type=int, default=600, help="fights per level and candidate on seed 1")
     ap.add_argument("--confirm", type=int, default=3000, help="fights per level on the confirmation seed 2 (and the final check on seed 3)")
     ap.add_argument("--top", type=int, default=5)
@@ -402,6 +406,8 @@ def main():
     with multiprocessing.Pool(a.jobs, initializer=_init) as pool:
         for cls in classes:
             tl, levels = targets(cls)
+            if a.levels:   # the levels the tune scores (2026-11-21, the mid-decade lesson)
+                levels = [int(x) for x in a.levels.split(",") if x]
             if a.build and a.spec:   # a spec string outside the class pipeline (2026-09-30: the new leveling rotations)
                 tl = [(a.spec, a.build)]
             for spec, bid in tl:

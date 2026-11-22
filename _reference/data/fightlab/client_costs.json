@@ -1,0 +1,160 @@
+{
+ "build": "1.60.1.71037",
+ "date": "2026-11-21",
+ "source": "wago.tools SpellPower, product wowf, build 1.60.1.71037",
+ "note": "Ranks whose forever-spells cost differs from the live client's; applied by tables.CLIENT_COSTS. Made by client_costs.py.",
+ "costs": {
+  "1293241": {
+   "class": "hunter",
+   "spell": "Summon Hawk",
+   "rank": "Rank 1",
+   "level": 25,
+   "ours": "80 Mana",
+   "client": "11% of base mana"
+  },
+  "1293525": {
+   "class": "hunter",
+   "spell": "Summon Hawk",
+   "rank": "Rank 2",
+   "level": 36,
+   "ours": "105 Mana",
+   "client": "11% of base mana"
+  },
+  "1293526": {
+   "class": "hunter",
+   "spell": "Summon Hawk",
+   "rank": "Rank 3",
+   "level": 48,
+   "ours": "135 Mana",
+   "client": "11% of base mana"
+  },
+  "1293527": {
+   "class": "hunter",
+   "spell": "Summon Hawk",
+   "rank": "Rank 4",
+   "level": 60,
+   "ours": "190 Mana",
+   "client": "11% of base mana"
+  },
+  "3044": {
+   "class": "hunter",
+   "spell": "Arcane Shot",
+   "rank": "Rank 1",
+   "level": 6,
+   "ours": "25 Mana",
+   "client": "11% of base mana"
+  },
+  "14281": {
+   "class": "hunter",
+   "spell": "Arcane Shot",
+   "rank": "Rank 2",
+   "level": 12,
+   "ours": "35 Mana",
+   "client": "11% of base mana"
+  },
+  "14282": {
+   "class": "hunter",
+   "spell": "Arcane Shot",
+   "rank": "Rank 3",
+   "level": 20,
+   "ours": "50 Mana",
+   "client": "11% of base mana"
+  },
+  "14283": {
+   "class": "hunter",
+   "spell": "Arcane Shot",
+   "rank": "Rank 4",
+   "level": 28,
+   "ours": "80 Mana",
+   "client": "11% of base mana"
+  },
+  "14284": {
+   "class": "hunter",
+   "spell": "Arcane Shot",
+   "rank": "Rank 5",
+   "level": 36,
+   "ours": "105 Mana",
+   "client": "11% of base mana"
+  },
+  "14285": {
+   "class": "hunter",
+   "spell": "Arcane Shot",
+   "rank": "Rank 6",
+   "level": 44,
+   "ours": "135 Mana",
+   "client": "11% of base mana"
+  },
+  "14286": {
+   "class": "hunter",
+   "spell": "Arcane Shot",
+   "rank": "Rank 7",
+   "level": 52,
+   "ours": "160 Mana",
+   "client": "11% of base mana"
+  },
+  "14287": {
+   "class": "hunter",
+   "spell": "Arcane Shot",
+   "rank": "Rank 8",
+   "level": 60,
+   "ours": "190 Mana",
+   "client": "11% of base mana"
+  },
+  "421": {
+   "class": "shaman",
+   "spell": "Chain Lightning",
+   "rank": "Rank 1",
+   "level": 32,
+   "ours": "145 Mana",
+   "client": "245 Mana"
+  },
+  "930": {
+   "class": "shaman",
+   "spell": "Chain Lightning",
+   "rank": "Rank 2",
+   "level": 40,
+   "ours": "200 Mana",
+   "client": "360 Mana"
+  },
+  "2860": {
+   "class": "shaman",
+   "spell": "Chain Lightning",
+   "rank": "Rank 3",
+   "level": 48,
+   "ours": "250 Mana",
+   "client": "425 Mana"
+  },
+  "10605": {
+   "class": "shaman",
+   "spell": "Chain Lightning",
+   "rank": "Rank 4",
+   "level": 56,
+   "ours": "315 Mana",
+   "client": "495 Mana"
+  },
+  "408521": {
+   "class": "shaman",
+   "spell": "Riptide",
+   "rank": "Rank 1",
+   "level": 40,
+   "ours": "245 Mana",
+   "client": "150 Mana"
+  },
+  "1239242": {
+   "class": "shaman",
+   "spell": "Riptide",
+   "rank": "Rank 2",
+   "level": 50,
+   "ours": "300 Mana",
+   "client": "180 Mana"
+  },
+  "1239243": {
+   "class": "shaman",
+   "spell": "Riptide",
+   "rank": "Rank 3",
+   "level": 60,
+   "ours": "385 Mana",
+   "client": "230 Mana"
+  }
+ }
+}

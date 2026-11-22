@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Feral Combat leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the feral-cat-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (feral-cat-dps). 
+The Feral Combat leveling build the open leveling search found on 2026-11-21: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the feral-cat-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (feral-cat-dps). 
 
 ## Point allocation
 
@@ -81,12 +81,12 @@ The Feral Combat leveling build the open leveling search found on 2026-11-17: ev
 
 1. **Naturalist** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
 2. **Sharpened Claws** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Ferocity** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Blood Frenzy** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Nature's Reach** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Predatory Strikes** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Nature's Majesty** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Nature's Splendor** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Ferocity** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Predatory Strikes** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Blood Frenzy** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Nature's Majesty** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Savage Fury** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Rend and Tear** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -95,7 +95,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Notes
 
 - +0.9% faster than the hand draft leveling-feral, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.78; leveling-feral 26.00, opt-feral-cat-dps-leveling-st 26.00, opt-feral-cat-dps-solo-60 26.00, restoration-leveling 31.37. The search simulated 46,777 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.54; opt-feral-cat-dps-leveling-st 22.70, opt-feral-cat-dps-solo-60 22.72, leveling-feral 22.75, restoration-leveling 28.93. The search simulated 46,777 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

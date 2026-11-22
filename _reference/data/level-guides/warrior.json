@@ -1,6 +1,6 @@
 {
  "class": "warrior",
- "updated": "2026-11-15",
+ "updated": "2026-11-21",
  "guides": [
   {
    "spec": "Arms",
@@ -530,7 +530,7 @@
      ],
      "notes": [
       "**Reckless Swings** costs health, not rage. The fight lab casts it off the global cooldown (an assumption: the tooltip names none) and skips it when your rage is within 20 of full.",
-      "From 44 the points go to Arms: **Improved Rend**, **Improved Heroic Strike**, **Improved Charge**, **Deep Wounds**, **Improved Overpower** and **Impale** make the buttons you have better. Nothing new to press.",
+      "From 44 the points go to Arms: **Improved Rend**, **Improved Heroic Strike**, **Improved Charge**, **Deep Wounds** and **Improved Overpower** make the buttons you have better. Nothing new to press.",
       "Two or more mobs: **Thunder Clap** and **Cleave**."
      ]
     }
@@ -779,11 +779,11 @@
      "change": "A one-handed weapon and a shield from the start. **Heroic Strike** is for the end of the fight.",
      "press": [
       "Keep **Battle Shout** up.",
-      "**Heroic Strike** once the mob is below 20% of its health."
+      "**Heroic Strike** once the mob is below 35% of its health."
      ],
      "notes": [
       "You start in **Battle Stance**; **Defensive Stance** comes at 10.",
-      "This rotation's tuned rule (2026-11-06) holds **Heroic Strike** until the mob is below 20% of its health, at every level: before that the rage is worth more on your other attacks. At 1-3 that means: let the rage build, then spend it at the end."
+      "This rotation's tuned rule (2026-11-20) holds **Heroic Strike** until the mob is below 35% of its health, at every level: before that the rage is worth more on your other attacks. At 1-3 that means: let the rage build, then spend it at the end."
      ]
     },
     {
@@ -794,7 +794,7 @@
       "**Charge** to open every fight.",
       "Keep **Battle Shout** up.",
       "**Rend** once, while the mob has more than half its health.",
-      "**Heroic Strike** once the mob is below 20% of its health."
+      "**Heroic Strike** once the mob is below 35% of its health."
      ],
      "notes": [
       "**Thunder Clap** (6) is for two or more mobs. **Hamstring** (8) stops a mob that runs away, in **Battle Stance** only."
@@ -809,7 +809,7 @@
       "**Rend** if you have the rage, then **Defensive Stance**. Until 14 a stance change loses all your rage, so spend it first.",
       "Keep **Battle Shout** up.",
       "**Rend** once, if the mob has none yet and has more than half its health.",
-      "**Heroic Strike** once the mob is below 20% of its health."
+      "**Heroic Strike** once the mob is below 35% of its health."
      ],
      "notes": [
       "Press **Bloodrage** after the swap to **Battle Stance**, not before: a stance change keeps none of your rage until 14, and 10 of it after. Its second 10 rage comes over 10 seconds, in **Defensive Stance** too.",
@@ -826,7 +826,7 @@
       "**Shield Bash** a mob that is casting.",
       "Keep **Battle Shout** up.",
       "**Rend** once, if the mob has none yet and has more than half its health.",
-      "**Heroic Strike** once the mob is below 20% of its health."
+      "**Heroic Strike** once the mob is below 35% of its health."
      ],
      "notes": [
       "Nothing new from the talents: **Shield Specialization** fills its five points by 14."
@@ -843,7 +843,7 @@
       "Keep **Battle Shout** up.",
       "**Revenge** whenever it lights up.",
       "**Rend** once, if the mob has none yet and has more than half its health.",
-      "**Heroic Strike** once the mob is below 20% of its health, with rage left for **Revenge**."
+      "**Heroic Strike** once the mob is below 35% of its health, with rage left for **Revenge**."
      ],
      "notes": [
       "**Revenge** works in **Defensive Stance** only. **Demoralizing Shout** (14) is for two or more mobs.",
@@ -858,11 +858,11 @@
       "**Battle Stance**, then **Bloodrage** while you are above 45% of your health, then **Charge** in.",
       "Above 10 rage: **Rend**. Then **Defensive Stance**, which keeps the first 10.",
       "**Shield Bash** a mob that is casting.",
-      "**Shield Block** whenever the mob is hitting you and it is not up. It is off the global cooldown: press it between the others.",
+      "**Shield Block** whenever the mob is hitting you, it is not up and the mob has more than a fifth of its health. It is off the global cooldown: press it between the others.",
       "Keep **Battle Shout** up.",
       "**Revenge** whenever it lights up.",
       "**Rend** once, if the mob has none yet and has more than half its health.",
-      "**Heroic Strike** once the mob is below 20% of its health, with rage left for **Revenge**."
+      "**Heroic Strike** once the mob is below 35% of its health, with rage left for **Revenge**."
      ],
      "notes": [
       "**Improved Revenge** (20-22): **Revenge** hits 60% harder. **Master of Defense** (23-24): rage from your dodges and parries. **Defiance** (25-27) and **Improved Sunder Armor** (28-29, 34) are the raid tank's threat talents: nothing for a lone warrior. **Focused Rage** (30-32): your attacks cost 3 rage less, so **Revenge** costs 2.",
@@ -878,12 +878,12 @@
       "**Battle Stance**, then **Bloodrage** while you are above 45% of your health, then **Charge** in.",
       "Above 10 rage: **Rend**. Then **Defensive Stance**, which keeps the first 10.",
       "**Shield Bash** a mob that is casting.",
-      "**Shield Block** whenever the mob is hitting you and it is not up. It is off the global cooldown: press it between the others.",
+      "**Shield Block** whenever the mob is hitting you, it is not up and the mob has more than a fifth of its health. It is off the global cooldown: press it between the others.",
       "Keep **Battle Shout** up.",
       "Open with **Victory Rush** when it is up and you are below 90% of your health.",
       "**Revenge** whenever it lights up.",
       "**Rend** once, if the mob has none yet and has more than half its health.",
-      "**Heroic Strike** once the mob is below 20% of its health, with rage left for **Revenge**."
+      "**Heroic Strike** once the mob is below 35% of its health, with rage left for **Revenge**."
      ],
      "if_hurt": "Below half your health: **Concussion Blow**, 5 seconds without hits. A pull that goes badly: **Shield Wall**, and **Intimidating Shout** when more than one mob is on you.",
      "notes": [
@@ -898,12 +898,12 @@
       "**Battle Stance**, then **Bloodrage** while you are above 45% of your health, then **Charge** in.",
       "Above 10 rage: **Shield Slam**, then **Rend**. Then **Defensive Stance**, which keeps the first 10.",
       "**Shield Bash** a mob that is casting.",
-      "**Shield Block** whenever the mob is hitting you and it is not up. It is off the global cooldown: press it between the others.",
+      "**Shield Block** whenever the mob is hitting you, it is not up and the mob has more than a fifth of its health. It is off the global cooldown: press it between the others.",
       "Keep **Battle Shout** up.",
       "Open with **Victory Rush** when it is up and you are below 90% of your health.",
       "**Revenge** whenever it lights up, then **Shield Slam** whenever it is ready.",
       "**Rend** once, if the mob has none yet and has more than half its health.",
-      "**Heroic Strike** once the mob is below 20% of its health, with rage left for **Revenge** and the next **Shield Slam**."
+      "**Heroic Strike** once the mob is below 35% of its health, with rage left for **Revenge** and the next **Shield Slam**."
      ],
      "if_hurt": "Below half your health: **Concussion Blow**, 5 seconds without hits. A pull that goes badly: **Shield Wall**, and **Intimidating Shout** when more than one mob is on you.",
      "notes": [

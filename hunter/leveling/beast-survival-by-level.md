@@ -2,9 +2,11 @@
 
 [Hunter](../README.md) > [Leveling (solo)](README.md) > [Beast-Survival](beast-survival.md) > Level by level
 
+> **Being checked:** The play check's forced runs found Arcane Shot faster when shot from range on the pull (2.65% at 20, the game's 8-yard minimum range kept); the rotation is being tuned again with a pull shot. The build and numbers on this page may change when it is done.
+
 What a melee hunter presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. The Beast-Survival build is the hunter's fastest leveling build in the fight lab: a pet that does a third of the work, two weapons, a sting at the pull, a trap under your feet, and Raptor Strike to finish. It is a strange hunter and a quick one. Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 22/4/25 ([open the talent tree](https://talentsforever.com/hunter/60/53200005050002-004-501220230150202-12)), the one on the [Beast-Survival leveling page](beast-survival.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 22/4/25 ([open the talent tree](https://talentsforever.com/hunter/60/53200005050002-004-512200230150202-12)), the one on the [Beast-Survival leveling page](beast-survival.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -97,7 +99,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Aspect of the Monkey** (4) stays on from here to 30: more dodges. No key, click it.
 - **Arcane Shot** (6) and **Concussive Shot** (8) are ranged tools. The melee hunter walks in instead.
 
-*Fight lab, seconds per kill: 12 at level 4, 13 at level 9. Presses per kill at level 4: Claw 2.5, Melee (off-hand) 1.4, Melee 1.1, Auto Shot 1.1, Growl 1.0, Bite 1.0, Serpent Sting 1.0, Raptor Strike 0.3.*
+*Fight lab, seconds per kill: 12 at level 4, 14 at level 9. Presses per kill at level 4: Claw 2.8, Melee (off-hand) 1.5, Melee 1.2, Auto Shot 1.1, Growl 1.1, Bite 1.0, Serpent Sting 1.0, Raptor Strike 0.3.*
 
 ## Levels 10-15: The pet, and talents begin
 
@@ -121,7 +123,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Call Pet**, **Feed Pet** and **Revive Pet** (10) are between-fights buttons. **Aspect of the Hawk** (10) is for ranged hunters.
 - **Mend Pet** (12) when the pet drops below a third of its health. **Wing Clip** (12) stops a mob that runs.
 
-*Fight lab, seconds per kill: 14 at level 10, 16 at level 15. Presses per kill at level 10: Claw 3.7, Melee (off-hand) 2.0, Melee 1.5, Growl 1.2, Auto Shot 1.1, Serpent Sting 1.0, Bite 1.0, Raptor Strike 0.5.*
+*Fight lab, seconds per kill: 14 at level 10, 17 at level 15. Presses per kill at level 10: Claw 3.9, Melee (off-hand) 2.1, Melee 1.6, Growl 1.3, Auto Shot 1.1, Serpent Sting 1.0, Bite 1.0, Raptor Strike 0.5.*
 
 ## Levels 16-19: Immolation Trap and Mongoose Bite
 
@@ -129,7 +131,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Raptor Strike at 16; Serpent Sting at 18.
 
-**Talents:** 16 Savage Strikes, 17-18 Survivalist, 19 Entrapment.
+**Talents:** 16 Savage Strikes, 17-18 Entrapment, 19 Deflection.
 
 **Keys to set:** R = Immolation Trap; Mouse 5 = Mongoose Bite.
 
@@ -147,7 +149,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Multi-Shot** (18) is a ranged spell. Not for this build.
 
-*Fight lab, seconds per kill: 15 at level 16. Presses per kill at level 16: Claw 4.6, Melee (off-hand) 2.7, Melee 2.1, Growl 1.7, Auto Shot 1.1, Bite 1.0, Serpent Sting 1.0, Raptor Strike 0.6, Immolation Trap 0.5.*
+*Fight lab, seconds per kill: 16 at level 16. Presses per kill at level 16: Claw 4.7, Melee (off-hand) 2.9, Melee 2.2, Growl 1.8, Auto Shot 1.1, Bite 1.0, Serpent Sting 1.0, Raptor Strike 0.6, Immolation Trap 0.5.*
 
 ## Levels 20-29: Freezing Trap
 
@@ -174,7 +176,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Freezing Trap** (20): drop it before a pull that will bring two mobs; the second one stands frozen.
 - **Aspect of the Cheetah** (20) is for the road. **Aimed Shot** (20) is a ranged spell: not for this build.
 
-*Fight lab, seconds per kill: 16 at level 20, 19 at level 29. Presses per kill at level 20: Claw 4.6, Melee (off-hand) 2.8, Melee 2.2, Growl 1.7, Auto Shot 1.2, Bite 1.0, Serpent Sting 1.0, Raptor Strike 0.6, Immolation Trap 0.5.*
+*Fight lab, seconds per kill: 16 at level 20, 19 at level 29. Presses per kill at level 20: Claw 4.7, Melee (off-hand) 3.0, Melee 2.3, Growl 1.8, Auto Shot 1.2, Bite 1.0, Serpent Sting 1.0, Raptor Strike 0.7, Immolation Trap 0.5.*
 
 ## Levels 30-39: Lacerate, Feign Death, Aspect of the Beast
 
@@ -203,7 +205,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Resourcefulness** (30 and 32) makes the trap and your strikes 60% cheaper; **Survivalist's Discipline** (33-34) brings the trap back every 18 seconds. **Lethal Attacks** (31, then 35-37): 1% more critical strike chance a point.
 - **Lethal Attacks** (35-37) and **Deadly Aspects** (38-42) are the melee talents of this build. Nothing to press.
 
-*Fight lab, seconds per kill: 18 at level 30, 21 at level 39. Presses per kill at level 30: Claw 5.3, Melee (off-hand) 3.8, Melee 3.1, Growl 2.2, Auto Shot 1.2, Bite 1.2, Serpent Sting 1.0, Raptor Strike 0.7, Lacerate 0.6, Immolation Trap 0.5.*
+*Fight lab, seconds per kill: 19 at level 30, 21 at level 39. Presses per kill at level 30: Claw 5.3, Melee (off-hand) 4.0, Melee 3.2, Growl 2.3, Bite 1.2, Auto Shot 1.2, Serpent Sting 1.0, Raptor Strike 0.8, Immolation Trap 0.5, Lacerate 0.5.*
 
 ## Levels 40-60: Nothing new to press
 
@@ -229,7 +231,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Bestial Wrath**, **Intimidation**, **Counterattack** and **Deterrence** belong to other builds. This one does not take them.
 - **Mongoose Bite** lights up only after you dodge, which is rare while the pet holds the mob: from 40 the fight lab hardly ever presses it. Press it when it does light up.
 
-*Fight lab, seconds per kill: 21 at level 40, 22 at level 50, 23 at level 60. Presses per kill at level 40: Claw 5.8, Melee (off-hand) 4.9, Melee 4.1, Growl 2.6, Bite 1.5, Auto Shot 1.2, Serpent Sting 1.0, Immolation Trap 1.0, Raptor Strike 0.8, Lacerate 0.2.*
+*Fight lab, seconds per kill: 21 at level 40, 22 at level 50, 23 at level 60. Presses per kill at level 40: Claw 5.8, Melee (off-hand) 5.0, Melee 4.2, Growl 2.7, Bite 1.6, Auto Shot 1.2, Serpent Sting 1.0, Immolation Trap 1.0, Raptor Strike 0.9, Lacerate 0.2.*
 
 ## Between fights
 
@@ -244,4 +246,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Beast Mastery, the pet-first ranged build, is the slowest of the five in the fight lab.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-19: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/hunter.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

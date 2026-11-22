@@ -47,7 +47,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Key | Its job | 1-5 | 6-7 | 8-9 | 10-13 | 14-20 | 21-23 | 24-29 | 30-39 | 40-54 | 55-60 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Shift+Q | Free | — | — | — | — | — | — | — | — | — | — |
-| Shift+E | The interrupt the tuned rotation skips: for a caster that hits too hard | — | — | — | **Kick** from 12 | Kick | Kick | Kick | Kick | Kick | Kick |
+| Shift+E | The interrupt: not in the list; press it to stop a cast that hits too hard | — | — | — | **Kick** from 12 | Kick | Kick | Kick | Kick | Kick | Kick |
 | Shift+R | Free | — | — | — | — | — | — | — | — | — | — |
 | Shift+F | Free | — | — | — | — | — | — | — | — | — | — |
 | Shift+Mouse 5 | Free | — | — | — | — | — | — | — | — | — | — |
@@ -80,7 +80,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Backstab** (4) is for daggers. This build plays swords: never Backstab.
 - **Stealth** (1) has nothing to open with yet and is not worth the walk: mobs die in a few hits. It gets its key at 14, with **Garrote**.
 
-*Fight lab, seconds per kill: 9 at level 1. Presses per kill at level 1: Sinister Strike 1.4, Melee 1.0, Melee (off-hand) 0.2.*
+*Fight lab, seconds per kill: 9 at level 1. Presses per kill at level 1: Sinister Strike 1.4, Melee 0.9, Melee (off-hand) 0.2.*
 
 ## Levels 6-7: Gouge
 
@@ -99,7 +99,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** **Gouge**, then bandage or walk away while the mob stands stunned.
 
-*Fight lab, seconds per kill: 13 at level 6. Presses per kill at level 6: Sinister Strike 2.6, Melee 2.3, Melee (off-hand) 1.9, Eviscerate 0.2.*
+*Fight lab, seconds per kill: 12 at level 6. Presses per kill at level 6: Sinister Strike 2.8, Melee 2.2, Melee (off-hand) 1.7, Eviscerate 0.2.*
 
 ## Levels 8-9: Evasion
 
@@ -118,7 +118,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather.
 
-*Fight lab, seconds per kill: 14 at level 8. Presses per kill at level 8: Sinister Strike 2.9, Melee 2.8, Melee (off-hand) 2.4, Eviscerate 0.3.*
+*Fight lab, seconds per kill: 14 at level 8. Presses per kill at level 8: Sinister Strike 3.1, Melee 2.7, Melee (off-hand) 2.3, Eviscerate 0.5.*
 
 ## Levels 10-13: Talents begin; Sprint and Sap
 
@@ -142,7 +142,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Kick** (12): the tuned rotation never interrupts. A caster that stands and casts walks to you when you close in, and the kill is faster without the detour.
 - **Coup de Grace** (10-12) makes every **Eviscerate** hit harder. **Precision** (15-17) makes your hits land.
 
-*Fight lab, seconds per kill: 16 at level 10. Presses per kill at level 10: Melee 3.3, Sinister Strike 3.2, Melee (off-hand) 2.9, Eviscerate 0.4.*
+*Fight lab, seconds per kill: 15 at level 10. Presses per kill at level 10: Sinister Strike 3.5, Melee 3.2, Melee (off-hand) 2.8, Eviscerate 0.5.*
 
 ## Levels 14-20: Garrote from stealth
 
@@ -168,7 +168,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Poised** (18) makes the opener 10 energy cheaper.
 - **Ambush** (18) is for daggers. **Expose Armor** (14) and **Rupture** (20) are never cast: the points are worth more as **Eviscerate**.
 
-*Fight lab, seconds per kill: 18 at level 14, 18 at level 20. Presses per kill at level 14: Melee 4.3, Melee (off-hand) 3.8, Sinister Strike 2.9, Garrote 1.0, Eviscerate 0.3.*
+*Fight lab, seconds per kill: 18 at level 14, 18 at level 20. Presses per kill at level 14: Melee 4.1, Melee (off-hand) 3.5, Sinister Strike 3.1, Garrote 1.0, Eviscerate 0.4.*
 
 ## Levels 21-23: Riposte
 
@@ -194,7 +194,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Vanish** (22) is the emergency exit: the mob loses you, and you walk away.
 
-*Fight lab, seconds per kill: 19 at level 21. Presses per kill at level 21: Melee 4.5, Melee (off-hand) 3.9, Sinister Strike 2.9, Garrote 1.0, Riposte 0.6, Eviscerate 0.3.*
+*Fight lab, seconds per kill: 18 at level 21. Presses per kill at level 21: Melee 4.2, Melee (off-hand) 3.6, Sinister Strike 3.1, Garrote 1.0, Riposte 0.6, Eviscerate 0.4.*
 
 ## Levels 24-29: Shank
 
@@ -222,7 +222,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Cheap Shot** (26): off. The tuned rotation never casts it: **Garrote** is the better opener.
 - Put **Instant Poison** on both weapons once you have it (20). **Mind-numbing Poison** (24) is for casters in groups.
 
-*Fight lab, seconds per kill: 18 at level 24, 19 at level 29. Presses per kill at level 24: Melee 4.2, Melee (off-hand) 3.7, Sinister Strike 3.4, Shank 1.3, Garrote 1.0, Riposte 0.6, Eviscerate 0.5.*
+*Fight lab, seconds per kill: 18 at level 24, 19 at level 29. Presses per kill at level 24: Melee 3.9, Sinister Strike 3.6, Melee (off-hand) 3.5, Shank 1.2, Garrote 1.0, Riposte 0.6, Eviscerate 0.5.*
 
 ## Levels 30-39: Hack and Slash
 
@@ -251,7 +251,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Kidney Shot** (30): off. The tuned rotation never casts it.
 - **Hack and Slash** (33-34) gives extra swings. Nothing to press. **Blind** (34) handles a second mob that joins mid-fight.
 
-*Fight lab, seconds per kill: 19 at level 30, 21 at level 39. Presses per kill at level 30: Melee 4.3, Melee (off-hand) 3.9, Sinister Strike 3.8, Shank 1.3, Garrote 1.0, Eviscerate 0.8, Riposte 0.4.*
+*Fight lab, seconds per kill: 18 at level 30, 21 at level 39. Presses per kill at level 30: Melee 4.1, Sinister Strike 4.0, Melee (off-hand) 3.7, Shank 1.2, Garrote 1.0, Eviscerate 0.8, Riposte 0.3.*
 
 ## Levels 40-54: Nothing new to press
 
@@ -275,9 +275,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.
 
 - **Malice** (42-46) and **Lethality** (52-53) are crit; **Vigor** (50-51) is 10 more energy, so **Shank** overflows less often.
-- **Mutilate**, **Death Mark** and **Adrenaline Rush** belong to other builds. This one does not take them.
+- Mutilate, Death Mark and Adrenaline Rush belong to other builds. This one does not take them.
 
-*Fight lab, seconds per kill: 21 at level 40, 21 at level 50, 22 at level 54. Presses per kill at level 40: Melee 4.9, Melee (off-hand) 4.5, Sinister Strike 4.4, Shank 1.8, Eviscerate 1.1, Garrote 1.0, Riposte 0.5, Hack and Slash 0.3.*
+*Fight lab, seconds per kill: 21 at level 40, 20 at level 50, 21 at level 54. Presses per kill at level 40: Melee 4.7, Sinister Strike 4.5, Melee (off-hand) 4.3, Shank 1.8, Eviscerate 1.1, Garrote 1.0, Riposte 0.5, Hack and Slash 0.3.*
 
 ## Levels 55-60: Cold Blood
 
@@ -301,7 +301,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather. **Vanish** is the emergency exit.
 
-*Fight lab, seconds per kill: 22 at level 55, 21 at level 60. Presses per kill at level 55: Melee 5.0, Sinister Strike 5.0, Melee (off-hand) 4.5, Shank 1.7, Eviscerate 1.4, Garrote 1.0, Riposte 0.5, Hack and Slash 0.3, Cold Blood 0.1.*
+*Fight lab, seconds per kill: 21 at level 55, 20 at level 60. Presses per kill at level 55: Sinister Strike 4.9, Melee 4.6, Melee (off-hand) 4.2, Shank 1.6, Eviscerate 1.4, Garrote 1.0, Riposte 0.5, Hack and Slash 0.3, Cold Blood 0.1.*
 
 ## Between fights
 
@@ -311,7 +311,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 ## Other ways to level this class
 
-- The Combat-Subtlety split is about 1% behind in the fight lab and plays **Ghostly Strike** and the stealth openers; Assassination with daggers plays **Mutilate** from 40. Both have pages in this folder.
+- The Combat-Subtlety split is about 1% behind in the fight lab and plays Ghostly Strike and the stealth openers; Assassination with daggers plays Mutilate from 40. Both have pages in this folder.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-19: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

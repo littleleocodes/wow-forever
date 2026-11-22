@@ -1,17 +1,33 @@
 {
  "eat_below": 0.4,
+ "knobs": {
+  "REST_TOGETHER": true,
+  "CASTER_HEAL": 0
+ },
+ "drink_below": 0.25,
+ "veto": {
+  "Regrowth": {
+   "off": true
+  },
+  "Moonfire": {
+   "min_hp": 0.1
+  }
+ },
  "class": "druid",
  "spec": "balance-dps",
- "build": "opt-balance-dps-leveling-st",
+ "build": "balance-open-leveling",
  "levels": [
-  15,
   20,
+  25,
   30,
+  35,
   40,
+  45,
   50,
+  55,
   60
  ],
- "date": "2026-11-06",
+ "date": "2026-11-21",
  "signature": {
   "required": [
    "Moonfire",
@@ -19,67 +35,92 @@
   ],
   "build_spec": "Balance",
   "dropped_saved_rules": [],
-  "core_share_before": 0.9717410592407464,
-  "core_share_after": 0.9717409529645604,
+  "core_share_before": 0.9690061265524234,
+  "core_share_after": 0.9690061265524234,
   "min_share": 0.7,
-  "floor_reached": null
+  "floor_reached": null,
+  "played_before": true,
+  "played_after": true
  },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "eat below 40% health",
+   "change": "CASTER_HEAL = 0",
    "rule": [
-    "eat_below",
-    null,
-    0.4
+    "knob",
+    "CASTER_HEAL",
+    0
    ],
-   "gain_seed1": 0.008704113397535296,
-   "gain_seed2": 0.006587633365921053
+   "gain_seed1": 0.021073279348597262,
+   "gain_seed2": 0.022983850249276294
   }
  ],
- "weighted_before": 30.003890208587702,
- "weighted_after": 29.75524659863073,
+ "weighted_before": 32.565356018730576,
+ "weighted_after": 31.832698611306746,
  "per_level": {
-  "15": {
-   "before": 20.362871675556725,
-   "after": 20.362871675556725,
-   "deaths_before": 0.0,
-   "deaths_after": 0.0
-  },
   "20": {
-   "before": 20.174942821668736,
-   "after": 20.174942821668736,
+   "before": 31.369633333504442,
+   "after": 29.436366666782355,
    "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "deaths_after": 0.06666666666666667
+  },
+  "25": {
+   "before": 34.66503333360482,
+   "after": 33.29073333356422,
+   "deaths_before": 0.0,
+   "deaths_after": 0.13333333333333333
   },
   "30": {
-   "before": 28.328804535568683,
-   "after": 28.328804535568683,
+   "before": 38.43756666704838,
+   "after": 35.63316666698945,
    "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "deaths_after": 0.03333333333333333
+  },
+  "35": {
+   "before": 39.24730000038915,
+   "after": 36.201533333664734,
+   "deaths_before": 0.0,
+   "deaths_after": 0.1
   },
   "40": {
-   "before": 34.519476772029286,
-   "after": 34.08227835645692,
+   "before": 36.88486666703437,
+   "after": 36.88486666703437,
+   "deaths_before": 0.03333333333333333,
+   "deaths_after": 0.03333333333333333
+  },
+  "45": {
+   "before": 32.70586666688282,
+   "after": 32.70586666688282,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 32.66699395642845,
-   "after": 32.231754882849515,
+   "before": 30.076000000140464,
+   "after": 30.076000000140464,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "55": {
+   "before": 28.577100000092692,
+   "after": 28.577100000092692,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 31.298359308499595,
-   "after": 31.06155121118447,
+   "before": 28.00046666674172,
+   "after": 28.00046666674172,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
  },
- "knobs": {
-  "REST_TOGETHER": true
+ "retune": {
+  "times": {
+   "saved": 32.565,
+   "continued": 31.833
+  },
+  "installed": "continued",
+  "reference_ok": true
  }
 }

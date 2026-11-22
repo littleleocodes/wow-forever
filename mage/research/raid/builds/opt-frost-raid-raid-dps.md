@@ -102,7 +102,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `frost-ra
   5. move to the top: if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7) (+2.2%, pass 7)
   6. only with 20s or more of the fight left: cast Arcane Wrath (+0.4%, pass 7)
 
-Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
+Before the pull: cast Ice Barrier; cast Frostbolt.
 
 | # | Priority (the first line whose condition holds is cast) | [`opt-frost-raid-raid-dps`](opt-frost-raid-raid-dps.md) casts/min |
 |---|---|---|
@@ -110,7 +110,7 @@ Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
 | 2 | use every other cooldown when ready | as ready |
 | 3 | if number of targets ≥ 3 and stacks of Fingers of Frost on you ≥ 1: cast Ice Lance | 2.3 |
 | 4 | if stacks of Fingers of Frost on you = 1 and Frostbolt is being cast: cast Ice Lance | 2.3 |
-| 5 | cast Frostbolt (rank 10) | 22.1 |
+| 5 | cast Frostbolt | 22.1 |
 
 Lines of the simulator's rotation these builds never cast: cast Read Leyline, cast Cone of Cold, cast Blizzard (its condition never held in these fights); cast Cold Snap (needs the Cold Snap talent); cast Ice Barrier (needs the Ice Barrier talent).
 

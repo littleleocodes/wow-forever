@@ -69,7 +69,7 @@ The official wowsims/forever simulator's own Destruction build (its destro build
 - **The training dummy:** the simulator's own rotation (no rotation search recorded).
 - **A fully buffed raid:** the simulator's own rotation: no single change (and no pair of changes) beat it on two seeds (`raidsim/apl_opt.py`, 2026-11-20).
 
-Before the pull: cast Soul Fire; at -1s: petAttack; at -0.1s: cast Immolate (rank 7).
+Before the pull: cast Soul Fire; at -1s: petAttack; at -0.1s: cast Immolate.
 
 | # | Priority (the first line whose condition holds is cast) | [`destruction-succubus-raid`](destruction-succubus-raid.md) casts/min |
 |---|---|---|
@@ -81,24 +81,24 @@ Before the pull: cast Soul Fire; at -1s: petAttack; at -0.1s: cast Immolate (ran
 | 6 | if Bane of Havoc is on the target: change target | as ready |
 | 7 | if number of targets = 1 and not Bane of Doom is on the target and (not Bane of Doom is ready or time left in the fight < “Doom tick”) and not Bane of Agony is on the target and time left in the fight > dotBaseDuration: cast Amplify Curse | 0.3 |
 | 8 | if number of targets = 1 and not Bane of Doom is on the target and not Bane of Agony is on the target and time left in the fight > dotBaseDuration: cast Bane of Agony | 0.9 |
-| 9 | if number of targets = 1 and not Immolate is on the target and time left in the fight > dotBaseDuration: cast Immolate (rank 7) | 4.0 |
-| 10 | if number of targets = 1 and not Corruption is on the target and time left in the fight > dotBaseDuration: cast Corruption (rank 6) | 3.2 |
+| 9 | if number of targets = 1 and not Immolate is on the target and time left in the fight > dotBaseDuration: cast Immolate | 4.0 |
+| 10 | if number of targets = 1 and not Corruption is on the target and time left in the fight > dotBaseDuration: cast Corruption | 3.2 |
 | 11 | if number of targets > 1 and not Bane of Doom is on the target and (not Bane of Doom is ready or time left in the fight < “Doom tick”) and not Bane of Agony is on the target and not Bane of Havoc is on the target and number of targets < 5: cast Amplify Curse | 0.3 |
 | 12 | if number of targets > 1 and not Bane of Doom is on the target and not Bane of Agony is on the target and not Bane of Havoc is on the target and number of targets < 5: cast Bane of Agony | 0.9 |
 | 13 | if number of targets > 1 and (Bane of Agony is on the target or Bane of Doom is on the target or Bane of Havoc is on the target) and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and not warlockBaneIsActiveOnAllTargets and number of targets < 5: change target | as ready |
-| 14 | if number of targets > 1 and not Immolate is on the target and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: cast Immolate (rank 7) | 4.0 |
+| 14 | if number of targets > 1 and not Immolate is on the target and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: cast Immolate | 4.0 |
 | 15 | if number of targets > 1 and Immolate is on the target and not dotIsActiveOnAllTargets and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and ((Bane of Agony is on the target or Bane of Doom is on the target) or not (number of targets < 5)) and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: change target | as ready |
-| 16 | if number of targets > 1 and not Corruption is on the target and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: cast Corruption (rank 6) | 3.2 |
+| 16 | if number of targets > 1 and not Corruption is on the target and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: cast Corruption | 3.2 |
 | 17 | if number of targets > 1 and Corruption is on the target and not dotIsActiveOnAllTargets and (warlockAssignedCurseIsActive or warlockIsAssignedCurse) and ((Bane of Agony is on the target or Bane of Doom is on the target) or not (number of targets < 5)) and Immolate is on the target and time left in the fight > dotBaseDuration and not “in 5y range of 3T”: change target | as ready |
 | 18 | if number of targets > 1 and (warlockAssignedCurseIsActiveOnAllTargets or warlockIsAssignedCurse) and (warlockBaneIsActiveOnAllTargets or not (number of targets < 5)) and (dotIsActiveOnAllTargets or not (time left in the fight > dotBaseDuration and not “in 5y range of 3T”)) and (dotIsActiveOnAllTargets or not (time left in the fight > dotBaseDuration and not “in 5y range of 3T”)): change target | as ready |
 | 19 | if (Immolate is on the target or not Shadow is up): cast Conflagrate | 5.2 |
 | 20 | cast Shadowburn | 3.6 |
 | 21 | if (“Amount of Dooms left” < 1 and not Bane of Doom is on the target or (Bane of Doom is on the target or “in 5y range of 3T”)) and (time left on Bane of Doom < 15s and Bane of Doom is on the target or not Bane of Doom is on the target): cast Frozen Heart of the Mountain | as ready |
 | 22 | if (“Amount of Dooms left” < 1 and not Bane of Doom is on the target or (Bane of Doom is on the target or “in 5y range of 3T”)) and (time left on Bane of Doom < 30s and Bane of Doom is on the target or not Bane of Doom is on the target): cast Major Spellblasting Potion | as ready |
-| 23 | if (“Amount of Dooms left” < 1 and not Bane of Doom is on the target or (Bane of Doom is on the target or “in 5y range of 3T”)) and time left on Bane of Doom < 15s and Bane of Doom is on the target and number of targets = 1 and time left on Immolate < cast time of Incinerate: cast Immolate (rank 7) | 4.0 |
+| 23 | if (“Amount of Dooms left” < 1 and not Bane of Doom is on the target or (Bane of Doom is on the target or “in 5y range of 3T”)) and time left on Bane of Doom < 15s and Bane of Doom is on the target and number of targets = 1 and time left on Immolate < cast time of Incinerate: cast Immolate | 4.0 |
 | 24 | if (cast time of Incinerate + spellTravelTime) > time left in the fight: cast Searing Pain | 0.2 |
 | 25 | if mana % < 35% and time left in the fight > 60s: cast Life Tap | 7.1 |
-| 26 | if time left on Immolate < cast time of Incinerate: cast Immolate (rank 7) | 4.0 |
+| 26 | if time left on Immolate < cast time of Incinerate: cast Immolate | 4.0 |
 | 27 | cast Incinerate | 11.4 |
 | 28 | cast Life Tap | 7.1 |
 

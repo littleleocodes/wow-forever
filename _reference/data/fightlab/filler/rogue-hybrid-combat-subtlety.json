@@ -3,7 +3,7 @@
  "spec": "Hybrid Combat/Subtlety",
  "build": "combat-subtlety-open-leveling",
  "rotation": "subtlety-leveling",
- "date": "2026-11-16",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -13,16 +13,10 @@
    "points": 2
   },
   {
-   "levels": "12",
+   "levels": "12-14",
    "tree": "Subtlety",
    "talent": "Setup",
-   "points": 1
-  },
-  {
-   "levels": "13-14",
-   "tree": "Subtlety",
-   "talent": "Opportunity",
-   "points": 2
+   "points": 3
   },
   {
    "levels": "15",
@@ -31,16 +25,16 @@
    "points": 1
   },
   {
-   "levels": "16",
+   "levels": "16-18",
    "tree": "Subtlety",
    "talent": "Opportunity",
-   "points": 1
+   "points": 3
   },
   {
-   "levels": "17-19",
+   "levels": "19",
    "tree": "Subtlety",
    "talent": "Improved Ambush",
-   "points": 3
+   "points": 1
   },
   {
    "levels": "20-22",
@@ -67,28 +61,34 @@
    "points": 1
   },
   {
-   "levels": "26-28",
-   "tree": "Combat",
-   "talent": "Coup de Grace",
-   "points": 3
-  },
-  {
-   "levels": "29-30",
+   "levels": "26-27",
    "tree": "Assassination",
    "talent": "Remorseless Attacks",
    "points": 2
   },
   {
-   "levels": "31-33",
-   "tree": "Assassination",
-   "talent": "Malice",
-   "points": 3
+   "levels": "28-29",
+   "tree": "Subtlety",
+   "talent": "Initiative",
+   "points": 2
   },
   {
-   "levels": "34-35",
-   "tree": "Combat",
-   "talent": "Efficient Strikes",
+   "levels": "30-31",
+   "tree": "Subtlety",
+   "talent": "Improved Ambush",
    "points": 2
+  },
+  {
+   "levels": "32",
+   "tree": "Subtlety",
+   "talent": "Hemorrhage",
+   "points": 1
+  },
+  {
+   "levels": "33-35",
+   "tree": "Combat",
+   "talent": "Coup de Grace",
+   "points": 3
   },
   {
    "levels": "36-37",
@@ -103,40 +103,46 @@
    "points": 3
   },
   {
-   "levels": "41-43",
+   "levels": "41-42",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "43",
    "tree": "Combat",
    "talent": "Lightning Reflexes",
-   "points": 3
+   "points": 1
   },
   {
    "levels": "44-45",
+   "tree": "Combat",
+   "talent": "Efficient Strikes",
+   "points": 2
+  },
+  {
+   "levels": "46-47",
    "tree": "Combat",
    "talent": "Composure",
    "points": 2
   },
   {
-   "levels": "46",
+   "levels": "48",
    "tree": "Combat",
    "talent": "Flawless Execution",
    "points": 1
   },
   {
-   "levels": "47-48",
+   "levels": "49-50",
    "tree": "Combat",
    "talent": "Weapon Expertise",
    "points": 2
   },
   {
-   "levels": "49-51",
+   "levels": "51-53",
    "tree": "Combat",
    "talent": "Aggression",
    "points": 3
-  },
-  {
-   "levels": "52-53",
-   "tree": "Subtlety",
-   "talent": "Initiative",
-   "points": 2
   },
   {
    "levels": "54-55",
@@ -151,35 +157,469 @@
    "points": 2
   },
   {
-   "levels": "58-59",
-   "tree": "Subtlety",
-   "talent": "Setup",
-   "points": 2
-  },
-  {
-   "levels": "60",
-   "tree": "Subtlety",
-   "talent": "Hemorrhage",
-   "points": 1
+   "levels": "58-60",
+   "tree": "Combat",
+   "talent": "Flash of Steel",
+   "points": 3
   }
  ],
  "steps": [
   {
-   "weighted": 20.604,
+   "weighted": 20.146,
    "values_at_60": {
-    "Aggression": -0.355,
-    "Dual Wield Specialization": -0.396,
-    "Flawless Execution": -1.497,
-    "Hack and Slash": -0.184,
-    "Hemorrhage": -0.862,
-    "Malice": -0.217,
-    "Remorseless Attacks": -1.863,
-    "Weapon Expertise": -0.58
+    "Flash of Steel": -0.144,
+    "Hemorrhage": -0.873,
+    "Malice": -0.158,
+    "Remorseless Attacks": -1.273
    },
-   "zero": []
+   "zero": [],
+   "dead_held": []
   }
  ],
- "moves": [],
+ "moves": [
+  {
+   "from": "Flash of Steel",
+   "to": "Malice",
+   "level": 60,
+   "seed3": -0.0009,
+   "seed4": -0.0007,
+   "why": "tie-break"
+  }
+ ],
+ "kept_signature": [
+  "Ghostly Strike"
+ ],
+ "gates_checked": {
+  "Aggression": {
+   "level": 53,
+   "kind": "tier point for Flash of Steel (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Hack and Slash",
+     "seed3": 0.0011
+    },
+    {
+     "to": "Deflection",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0031
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0033
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0033
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0033
+    },
+    {
+     "to": "Improved Kick",
+     "seed3": 0.0033
+    },
+    {
+     "to": "Blade Flurry",
+     "seed3": 0.0037
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Composure": {
+   "level": 47,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0031
+    },
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0038
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0039
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0039
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0039
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Coup de Grace": {
+   "level": 35,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0094
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Deflection": {
+   "level": 42,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Lightning Reflexes",
+     "seed3": -0.0005
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0014
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0014
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Dirty Deeds": {
+   "kind": "tier point for Hemorrhage (tier 5)",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: utility (stealth), a value the fight lab cannot see"
+  },
+  "Dual Wield Specialization": {
+   "level": 55,
+   "kind": "tier point for Flash of Steel (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Hack and Slash",
+     "seed3": 0.002
+    },
+    {
+     "to": "Deflection",
+     "seed3": 0.0034
+    },
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0039
+    },
+    {
+     "to": "Blade Flurry",
+     "seed3": 0.0041
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0046
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0046
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0046
+    },
+    {
+     "to": "Improved Kick",
+     "seed3": 0.0046
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Efficient Strikes": {
+   "level": 45,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0076
+    },
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0088
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0091
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0091
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0091
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Flawless Execution": {
+   "level": 48,
+   "kind": "tier point for Flash of Steel (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.026
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0272
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0272
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0272
+    },
+    {
+     "to": "Improved Kick",
+     "seed3": 0.0272
+    },
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0273
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Hack and Slash": {
+   "level": 57,
+   "kind": "tier point for Flash of Steel (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Blade Flurry",
+     "seed3": 0.0004
+    },
+    {
+     "to": "Deflection",
+     "seed3": 0.0005
+    },
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0013
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0013
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0013
+    },
+    {
+     "to": "Improved Kick",
+     "seed3": 0.0013
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Ambush": {
+   "level": 31,
+   "kind": "tier point for Hemorrhage (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Master of Deception",
+     "seed3": 0.0152
+    },
+    {
+     "to": "Camouflage",
+     "seed3": 0.0152
+    },
+    {
+     "to": "Dirty Tricks",
+     "seed3": 0.0152
+    },
+    {
+     "to": "Elusiveness",
+     "seed3": 0.0152
+    },
+    {
+     "to": "Dirty Deeds",
+     "seed3": 0.0241
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Initiative": {
+   "level": 29,
+   "kind": "tier point for Hemorrhage (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Master of Deception",
+     "seed3": 0.0077
+    },
+    {
+     "to": "Camouflage",
+     "seed3": 0.0077
+    },
+    {
+     "to": "Dirty Tricks",
+     "seed3": 0.0077
+    },
+    {
+     "to": "Elusiveness",
+     "seed3": 0.0077
+    },
+    {
+     "to": "Dirty Deeds",
+     "seed3": 0.0159
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Lightning Reflexes": {
+   "level": 43,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": -0.0006
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0001
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0001
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0001
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Opportunity": {
+   "level": 18,
+   "kind": "tier point for Hemorrhage (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Master of Deception",
+     "seed3": 0.0084
+    },
+    {
+     "to": "Camouflage",
+     "seed3": 0.0084
+    },
+    {
+     "to": "Dirty Tricks",
+     "seed3": 0.0084
+    },
+    {
+     "to": "Dirty Deeds",
+     "seed3": 0.0215
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Precision": {
+   "level": 40,
+   "kind": "prerequisite of Weapon Expertise",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Premeditation": {
+   "level": 24,
+   "kind": "tier point for Hemorrhage (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Master of Deception",
+     "seed3": 0.006
+    },
+    {
+     "to": "Camouflage",
+     "seed3": 0.006
+    },
+    {
+     "to": "Dirty Tricks",
+     "seed3": 0.006
+    },
+    {
+     "to": "Dirty Deeds",
+     "seed3": 0.0154
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Serrated Blades": {
+   "level": 22,
+   "kind": "prerequisite of Hemorrhage",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Setup": {
+   "level": 14,
+   "kind": "tier point for Hemorrhage (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Master of Deception",
+     "seed3": 0.0033
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Weapon Expertise": {
+   "level": 50,
+   "kind": "tier point for Flash of Steel (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0045
+    },
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0048
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0058
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0058
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0058
+    },
+    {
+     "to": "Improved Kick",
+     "seed3": 0.0058
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  }
+ },
+ "no_better_home": {},
  "final_order": [
   {
    "levels": "10-11",
@@ -188,16 +628,10 @@
    "points": 2
   },
   {
-   "levels": "12",
+   "levels": "12-14",
    "tree": "Subtlety",
    "talent": "Setup",
-   "points": 1
-  },
-  {
-   "levels": "13-14",
-   "tree": "Subtlety",
-   "talent": "Opportunity",
-   "points": 2
+   "points": 3
   },
   {
    "levels": "15",
@@ -206,16 +640,16 @@
    "points": 1
   },
   {
-   "levels": "16",
+   "levels": "16-18",
    "tree": "Subtlety",
    "talent": "Opportunity",
-   "points": 1
+   "points": 3
   },
   {
-   "levels": "17-19",
+   "levels": "19",
    "tree": "Subtlety",
    "talent": "Improved Ambush",
-   "points": 3
+   "points": 1
   },
   {
    "levels": "20-22",
@@ -242,28 +676,34 @@
    "points": 1
   },
   {
-   "levels": "26-28",
-   "tree": "Combat",
-   "talent": "Coup de Grace",
-   "points": 3
-  },
-  {
-   "levels": "29-30",
+   "levels": "26-27",
    "tree": "Assassination",
    "talent": "Remorseless Attacks",
    "points": 2
   },
   {
-   "levels": "31-33",
-   "tree": "Assassination",
-   "talent": "Malice",
-   "points": 3
+   "levels": "28-29",
+   "tree": "Subtlety",
+   "talent": "Initiative",
+   "points": 2
   },
   {
-   "levels": "34-35",
-   "tree": "Combat",
-   "talent": "Efficient Strikes",
+   "levels": "30-31",
+   "tree": "Subtlety",
+   "talent": "Improved Ambush",
    "points": 2
+  },
+  {
+   "levels": "32",
+   "tree": "Subtlety",
+   "talent": "Hemorrhage",
+   "points": 1
+  },
+  {
+   "levels": "33-35",
+   "tree": "Combat",
+   "talent": "Coup de Grace",
+   "points": 3
   },
   {
    "levels": "36-37",
@@ -278,40 +718,46 @@
    "points": 3
   },
   {
-   "levels": "41-43",
+   "levels": "41-42",
+   "tree": "Combat",
+   "talent": "Deflection",
+   "points": 2
+  },
+  {
+   "levels": "43",
    "tree": "Combat",
    "talent": "Lightning Reflexes",
-   "points": 3
+   "points": 1
   },
   {
    "levels": "44-45",
+   "tree": "Combat",
+   "talent": "Efficient Strikes",
+   "points": 2
+  },
+  {
+   "levels": "46-47",
    "tree": "Combat",
    "talent": "Composure",
    "points": 2
   },
   {
-   "levels": "46",
+   "levels": "48",
    "tree": "Combat",
    "talent": "Flawless Execution",
    "points": 1
   },
   {
-   "levels": "47-48",
+   "levels": "49-50",
    "tree": "Combat",
    "talent": "Weapon Expertise",
    "points": 2
   },
   {
-   "levels": "49-51",
+   "levels": "51-53",
    "tree": "Combat",
    "talent": "Aggression",
    "points": 3
-  },
-  {
-   "levels": "52-53",
-   "tree": "Subtlety",
-   "talent": "Initiative",
-   "points": 2
   },
   {
    "levels": "54-55",
@@ -327,15 +773,292 @@
   },
   {
    "levels": "58-59",
-   "tree": "Subtlety",
-   "talent": "Setup",
+   "tree": "Combat",
+   "talent": "Flash of Steel",
    "points": 2
   },
   {
    "levels": "60",
-   "tree": "Subtlety",
-   "talent": "Hemorrhage",
+   "tree": "Assassination",
+   "talent": "Malice",
    "points": 1
   }
- ]
+ ],
+ "reruns": [
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-22",
+   "moves": 0
+  }
+ ],
+ "written": {
+  "allocation": {
+   "Assassination": [
+    [
+     "Remorseless Attacks",
+     2
+    ],
+    [
+     "Malice",
+     1
+    ]
+   ],
+   "Combat": [
+    [
+     "Coup de Grace",
+     3
+    ],
+    [
+     "Efficient Strikes",
+     2
+    ],
+    [
+     "Lightning Reflexes",
+     3
+    ],
+    [
+     "Deflection",
+     2
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Composure",
+     2
+    ],
+    [
+     "Flawless Execution",
+     1
+    ],
+    [
+     "Weapon Expertise",
+     2
+    ],
+    [
+     "Aggression",
+     3
+    ],
+    [
+     "Dual Wield Specialization",
+     2
+    ],
+    [
+     "Hack and Slash",
+     2
+    ],
+    [
+     "Flash of Steel",
+     2
+    ]
+   ],
+   "Subtlety": [
+    [
+     "Setup",
+     3
+    ],
+    [
+     "Opportunity",
+     5
+    ],
+    [
+     "Dirty Deeds",
+     1
+    ],
+    [
+     "Improved Ambush",
+     3
+    ],
+    [
+     "Initiative",
+     3
+    ],
+    [
+     "Premeditation",
+     1
+    ],
+    [
+     "Serrated Blades",
+     3
+    ],
+    [
+     "Ghostly Strike",
+     1
+    ],
+    [
+     "Hemorrhage",
+     1
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-11",
+    "tree": "Subtlety",
+    "talent": "Opportunity",
+    "points": 2
+   },
+   {
+    "levels": "12-14",
+    "tree": "Subtlety",
+    "talent": "Setup",
+    "points": 3
+   },
+   {
+    "levels": "15",
+    "tree": "Subtlety",
+    "talent": "Dirty Deeds",
+    "points": 1
+   },
+   {
+    "levels": "16-18",
+    "tree": "Subtlety",
+    "talent": "Opportunity",
+    "points": 3
+   },
+   {
+    "levels": "19",
+    "tree": "Subtlety",
+    "talent": "Improved Ambush",
+    "points": 1
+   },
+   {
+    "levels": "20-22",
+    "tree": "Subtlety",
+    "talent": "Serrated Blades",
+    "points": 3
+   },
+   {
+    "levels": "23",
+    "tree": "Subtlety",
+    "talent": "Initiative",
+    "points": 1
+   },
+   {
+    "levels": "24",
+    "tree": "Subtlety",
+    "talent": "Premeditation",
+    "points": 1
+   },
+   {
+    "levels": "25",
+    "tree": "Subtlety",
+    "talent": "Ghostly Strike",
+    "points": 1
+   },
+   {
+    "levels": "26-27",
+    "tree": "Assassination",
+    "talent": "Remorseless Attacks",
+    "points": 2
+   },
+   {
+    "levels": "28-29",
+    "tree": "Subtlety",
+    "talent": "Initiative",
+    "points": 2
+   },
+   {
+    "levels": "30-31",
+    "tree": "Subtlety",
+    "talent": "Improved Ambush",
+    "points": 2
+   },
+   {
+    "levels": "32",
+    "tree": "Subtlety",
+    "talent": "Hemorrhage",
+    "points": 1
+   },
+   {
+    "levels": "33-35",
+    "tree": "Combat",
+    "talent": "Coup de Grace",
+    "points": 3
+   },
+   {
+    "levels": "36-37",
+    "tree": "Combat",
+    "talent": "Lightning Reflexes",
+    "points": 2
+   },
+   {
+    "levels": "38-40",
+    "tree": "Combat",
+    "talent": "Precision",
+    "points": 3
+   },
+   {
+    "levels": "41-42",
+    "tree": "Combat",
+    "talent": "Deflection",
+    "points": 2
+   },
+   {
+    "levels": "43",
+    "tree": "Combat",
+    "talent": "Lightning Reflexes",
+    "points": 1
+   },
+   {
+    "levels": "44-45",
+    "tree": "Combat",
+    "talent": "Efficient Strikes",
+    "points": 2
+   },
+   {
+    "levels": "46-47",
+    "tree": "Combat",
+    "talent": "Composure",
+    "points": 2
+   },
+   {
+    "levels": "48",
+    "tree": "Combat",
+    "talent": "Flawless Execution",
+    "points": 1
+   },
+   {
+    "levels": "49-50",
+    "tree": "Combat",
+    "talent": "Weapon Expertise",
+    "points": 2
+   },
+   {
+    "levels": "51-53",
+    "tree": "Combat",
+    "talent": "Aggression",
+    "points": 3
+   },
+   {
+    "levels": "54-55",
+    "tree": "Combat",
+    "talent": "Dual Wield Specialization",
+    "points": 2
+   },
+   {
+    "levels": "56-57",
+    "tree": "Combat",
+    "talent": "Hack and Slash",
+    "points": 2
+   },
+   {
+    "levels": "58-59",
+    "tree": "Combat",
+    "talent": "Flash of Steel",
+    "points": 2
+   },
+   {
+    "levels": "60",
+    "tree": "Assassination",
+    "talent": "Malice",
+    "points": 1
+   }
+  ],
+  "note": "2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Flash of Steel to Malice at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
+ }
 }

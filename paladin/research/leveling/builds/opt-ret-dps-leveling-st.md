@@ -90,17 +90,17 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `ret-dps`
 
 Single-target leveling fights against normal mobs of your level with a two-hander: Blessing of Might and Devotion Aura up, a Seal recast before each pull (Seal of Command once talented, Seal of Righteousness before), the mob walks in (paladins have no charge), Judgement and Holy Strike on cooldown, Consecration while mana allows, Hammer of Justice into a doubled Seal of Command judgement or when hurt, Hammer of Wrath under 20%; Divine Protection and a Holy Light when low, Lay on Hands in an emergency. Between fights: 2 s loot, 6 s travel, Holy Light or Flash of Light back to 80% health, water below 35% mana; a death costs 90 s.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-09, on top of the priority below): never cast Consecration; never cast Hammer of Wrath. Together +12.7% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-20, on top of the priority below): drink below 15% mana. Together +0.6% time per kill saved for `leveling-retribution` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/ret-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.8 | 4.3 | 5.2 | 5.5 | 6.2 | 38% |
-| Judgement | 1.6 | 2.1 | 2.4 | 2.6 | 2.9 | 22% |
-| Holy Strike | 1.5 | 1.7 | 2.0 | 2.2 | 2.4 | 22% |
-| Seal of Command | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 19% |
-| Hammer of Justice | 0.3 | 0.3 | 0.4 | 0.4 | 0.4 | 0% |
+| Melee | 4.0 | 4.5 | 5.4 | 5.7 | 6.5 | 39% |
+| Judgement | 1.7 | 2.1 | 2.5 | 2.6 | 3.0 | 23% |
+| Holy Strike | 1.6 | 1.8 | 2.1 | 2.2 | 2.5 | 19% |
+| Seal of Command | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 20% |
+| Hammer of Justice | 0.3 | 0.4 | 0.4 | 0.4 | 0.5 | 0% |
 
 ## Notes
 

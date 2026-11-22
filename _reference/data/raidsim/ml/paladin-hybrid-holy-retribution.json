@@ -9,13 +9,13 @@
  "best_entry": "shockadin-raid",
  "best_dps": 813.8,
  "any_split": true,
- "date": "2026-11-20",
+ "date": "2026-11-22",
  "commit": "2e6e77d84",
  "gear": {
   "bis": {
    "entry": "shockadin-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-bis.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "setting": "raid",
    "chosen": "all-slots",
    "ilvl": 63.2,
@@ -45,7 +45,10 @@
    "race_seed1": {
     "current": 1.0,
     "all-slots": 1.0065930111789727,
-    "keep-sets-and-effects": 1.0045987737773037
+    "keep-sets-and-effects": 1.0045987737773037,
+    "previous": 1.0065930111789727,
+    "the prebis set": 0.9656203782913483,
+    "the prebis set+trinkets": 0.9714043303808624
    },
    "confirm_seed2": {
     "current": 1.0,
@@ -73,7 +76,7 @@
   "prebis": {
    "entry": "shockadin-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-prebis.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "setting": "raid",
    "chosen": "all-slots",
    "ilvl": 62.5,
@@ -130,7 +133,7 @@
   "dungeon": {
    "entry": "shockadin-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/paladin-hybrid-holy-retribution-dungeon.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "chosen": "keep-sets-and-effects",
    "ilvl": 60.1,
    "trinkets": [
@@ -267,7 +270,7 @@
    "spec": "Hybrid Holy/Retribution",
    "setting": "dummy",
    "entry": "shockadin-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Holy": [
@@ -375,7 +378,7 @@
    "spec": "Hybrid Holy/Retribution",
    "setting": "raid",
    "entry": "shockadin-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Holy": [
@@ -483,7 +486,7 @@
    "spec": "Hybrid Holy/Retribution",
    "setting": "dummy",
    "entry": "shockadin-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Holy": [
@@ -591,7 +594,7 @@
    "spec": "Hybrid Holy/Retribution",
    "setting": "raid",
    "entry": "shockadin-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Holy": [
@@ -699,7 +702,7 @@
    "spec": "Hybrid Holy/Retribution",
    "setting": "raid",
    "entry": "shockadin-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "commit": "2e6e77d84",
    "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
    "winner": {
@@ -810,12 +813,12 @@
    "candidates": {
     "prebis-raid": 733.5
    },
-   "minutes": 4.0
+   "minutes": 1.5
   }
  },
  "pick_tiers": {
   "build": "shockadin-holy-shock-raid",
-  "date": "2026-11-20",
+  "date": "2026-11-22",
   "note": "the page's pick in each tier's gear (the short-check method of 2026-11-20); no talent search"
  },
  "compare": {
@@ -831,170 +834,5 @@
   "gain_vs_hand": 0.0,
   "commit": "2e6e77d84",
   "pick_tiers": true
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "shockadin-raid",
-    "dps": 813.94,
-    "se": 0.09
-   },
-   "shockadin-holy-shock-raid": {
-    "entry": "shockadin-raid",
-    "dps": 813.94,
-    "se": 0.09
-   },
-   "ret-raid-dps": {
-    "entry": "ret-dps",
-    "dps": 639.82,
-    "se": 0.098
-   },
-   "shockadin-open-raid": {
-    "entry": "shockadin-raid",
-    "dps": 809.69,
-    "se": 0.089
-   }
-  },
-  "best_hand": "shockadin-holy-shock-raid",
-  "gain_vs_hand": 0.0
- },
- "signature_check": {
-  "spec": "Hybrid Holy/Retribution",
-  "ok": true,
-  "core_share": 0.1144,
-  "min_share": 0.0,
-  "cd_use": 0.9444,
-  "min_cd_use": 0.9,
-  "uncast": [],
-  "missing_talents": [],
-  "why": "",
-  "entry": "shockadin-raid",
-  "setting": "raid",
-  "iterations": 6000,
-  "dps": 814.4,
-  "date": "2026-11-20",
-  "commit": "2e6e77d84",
-  "shares": {
-   "Auto Attack": 0.2199,
-   "Seal of Righteousness": 0.1735,
-   "Judgement of Righteousness": 0.1408,
-   "Consecration": 0.126,
-   "Holy Shock": 0.1144,
-   "Holy Strike": 0.111,
-   "Windfury Totem": 0.0614,
-   "Hammer of Wrath": 0.0449,
-   "Demonic Rune": 0.0055,
-   "spell 16614": 0.0027
-  },
-  "casts": {
-   "Hammer of Wrath": 5.0,
-   "Judgement of Righteousness": 23.0,
-   "Holy Strike": 18.0,
-   "Seal of Righteousness": 10.0,
-   "Retribution Aura": 1.0,
-   "Holy Shock": 17.0,
-   "Seal of the Crusader": 1.0,
-   "Consecration": 22.0,
-   "Divine Favor": 2.0
-  },
-  "allocation": {
-   "Holy": [
-    [
-     "Divine Strength",
-     5
-    ],
-    [
-     "Reverence",
-     2
-    ],
-    [
-     "Improved Seals",
-     5
-    ],
-    [
-     "Purifying Power",
-     2
-    ],
-    [
-     "Divine Favor",
-     1
-    ],
-    [
-     "Holy Conduit",
-     2
-    ],
-    [
-     "Divine Precision",
-     2
-    ],
-    [
-     "Infusion of Light",
-     1
-    ],
-    [
-     "Consecrated Ground",
-     2
-    ],
-    [
-     "Holy Shock",
-     1
-    ]
-   ],
-   "Protection": [],
-   "Retribution": [
-    [
-     "Benediction",
-     5
-    ],
-    [
-     "Improved Judgement",
-     2
-    ],
-    [
-     "Conviction",
-     3
-    ],
-    [
-     "Sanctified Judgement",
-     3
-    ],
-    [
-     "Vindication",
-     3
-    ],
-    [
-     "Seal of Command",
-     1
-    ],
-    [
-     "Pursuit of Justice",
-     1
-    ],
-    [
-     "Sacred Arbiter",
-     1
-    ],
-    [
-     "Two-Handed Weapon Specialization",
-     3
-    ],
-    [
-     "Vengeance",
-     3
-    ],
-    [
-     "Champion of the Light",
-     3
-    ]
-   ]
-  }
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-11-20",
-  "setting": "raid",
-  "why": "confirms shockadin-holy-shock-raid (+0.00% in a full raid)"
  }
 }

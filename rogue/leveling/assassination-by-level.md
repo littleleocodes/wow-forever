@@ -45,7 +45,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 | Key | Its job | 1-5 | 6-7 | 8-9 | 10-13 | 14-23 | 24 | 25-39 | 40-60 |
 |---|---|---|---|---|---|---|---|---|---|
 | Shift+Q | Free | — | — | — | — | — | — | — | — |
-| Shift+E | The interrupt: a caster mob's spell, as soon as it starts casting | — | — | — | **Kick** from 12 | Kick | Kick | Kick | Kick |
+| Shift+E | The interrupt: not in the list; press it to stop a cast that hits too hard | — | — | — | **Kick** from 12 | Kick | Kick | Kick | Kick |
 | Shift+R | Free | — | — | — | — | — | — | — | — |
 | Shift+F | Free | — | — | — | — | — | — | — | — |
 | Shift+Mouse 5 | Free | — | — | — | — | — | — | — | — |
@@ -80,7 +80,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Backstab** (4) needs the mob's back, and a mob you fight alone turns to face you after your first hit: never Backstab.
 - **Stealth** (1) has nothing to open with yet and is not worth the walk: mobs die in a few hits. It gets its key at 14, with **Garrote**.
 
-*Fight lab, seconds per kill: 10 at level 1. Presses per kill at level 1: Sinister Strike 1.6, Melee 1.3, Melee (off-hand) 1.0, Eviscerate 0.2.*
+*Fight lab, seconds per kill: 9 at level 1. Presses per kill at level 1: Sinister Strike 1.6, Melee 1.1, Melee (off-hand) 0.8, Eviscerate 0.2.*
 
 ## Levels 6-7: Gouge
 
@@ -99,7 +99,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** **Gouge**, then bandage or walk away while the mob stands stunned.
 
-*Fight lab, seconds per kill: 14 at level 6. Presses per kill at level 6: Melee 3.8, Melee (off-hand) 3.3, Sinister Strike 3.1, Eviscerate 0.2.*
+*Fight lab, seconds per kill: 14 at level 6. Presses per kill at level 6: Melee 3.6, Sinister Strike 3.3, Melee (off-hand) 3.0, Eviscerate 0.3.*
 
 ## Levels 8-9: Evasion
 
@@ -118,7 +118,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** Below half your health, while the mob has more than 30% of its own: **Evasion**. **Gouge** for a breather.
 
-*Fight lab, seconds per kill: 16 at level 8. Presses per kill at level 8: Melee 4.9, Melee (off-hand) 4.3, Sinister Strike 3.4, Eviscerate 0.4.*
+*Fight lab, seconds per kill: 16 at level 8. Presses per kill at level 8: Melee 4.6, Melee (off-hand) 4.0, Sinister Strike 3.6, Eviscerate 0.5.*
 
 ## Levels 10-13: Talents begin; Sprint and Sap
 
@@ -141,7 +141,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Sap** (10): a second mob next to your target, from stealth, before the pull.
 - **Kick** (12): the tuned rotation never interrupts (2026-11-15: about 0.4% to 1% faster per kill without it). A caster that stands and casts walks to you when you close in.
 
-*Fight lab, seconds per kill: 18 at level 10. Presses per kill at level 10: Melee 5.8, Melee (off-hand) 5.2, Sinister Strike 3.7, Eviscerate 0.4.*
+*Fight lab, seconds per kill: 17 at level 10. Presses per kill at level 10: Melee 5.5, Melee (off-hand) 4.9, Sinister Strike 3.9, Eviscerate 0.6.*
 
 ## Levels 14-23: Garrote from stealth
 
@@ -171,7 +171,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Put **Instant Poison** on both weapons once you have it (20).
 - **Vanish** (22) is the emergency exit: the mob loses you, and you walk away.
 
-*Fight lab, seconds per kill: 19 at level 14, 20 at level 20, 21 at level 23. Presses per kill at level 14: Melee 6.2, Melee (off-hand) 5.7, Sinister Strike 2.6, Garrote 1.0, Eviscerate 0.6.*
+*Fight lab, seconds per kill: 18 at level 14, 20 at level 20, 20 at level 23. Presses per kill at level 14: Melee 5.7, Melee (off-hand) 5.2, Sinister Strike 2.8, Garrote 1.0, Eviscerate 0.6.*
 
 ## Level 24: Shank
 
@@ -198,7 +198,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Blood Splatter** (24) makes **Garrote** bleed 9 seconds longer.
 - **Mind-numbing Poison** (24) is for casters in groups.
 
-*Fight lab, seconds per kill: 20 at level 24. Presses per kill at level 24: Melee 6.8, Melee (off-hand) 6.3, Sinister Strike 3.5, Shank 1.4, Garrote 1.0, Eviscerate 0.5.*
+*Fight lab, seconds per kill: 20 at level 24. Presses per kill at level 24: Melee 6.2, Melee (off-hand) 5.7, Sinister Strike 3.6, Shank 1.3, Garrote 1.0, Eviscerate 0.6.*
 
 ## Levels 25-39: Cold Blood
 
@@ -232,7 +232,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Relentless Strikes** (31, 33-34, 38-39) gives a finisher a chance to refund 25 energy. **Seal Fate** (35-37): a builder that crits adds a second combo point.
 - **Blind** (34) handles a second mob that joins mid-fight.
 
-*Fight lab, seconds per kill: 21 at level 25, 22 at level 30, 25 at level 39. Presses per kill at level 25: Melee 7.1, Melee (off-hand) 6.6, Sinister Strike 3.6, Shank 1.5, Garrote 1.0, Eviscerate 0.5.*
+*Fight lab, seconds per kill: 20 at level 25, 21 at level 30, 24 at level 39. Presses per kill at level 25: Melee 6.5, Melee (off-hand) 6.0, Sinister Strike 3.7, Shank 1.4, Garrote 1.0, Eviscerate 0.6.*
 
 ## Levels 40-60: Mutilate
 
@@ -260,9 +260,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Q keeps its job: change the Q macro's spell to **Mutilate** (the [macros page](../macros.md) has it).
 - **Mutilate** hits 20% harder on a mob your Deadly Poison is on, but the fight lab still kills faster with **Instant Poison** on both weapons: keep it.
 - From 41 the points go to Combat: **Lightning Reflexes** (41-42) is dodge, **Coup de Grace** (43-45) a bigger **Eviscerate**, **Puncturing Wounds** (46-48) crit on **Mutilate**, **Precision** (49-51) hit, **Deflection** (52-53) parry, **Composure** (54-55) a cheaper opener, **Flawless Execution** (56) a cheaper **Eviscerate**, **Aggression** (57-58) a harder one, **Weapon Expertise** (59-60) fewer dodges and parries.
-- **Adrenaline Rush**, **Blade Flurry** and **Riposte** belong to Combat builds. This one does not take them.
+- Adrenaline Rush, Blade Flurry and Riposte belong to Combat builds. This one does not take them.
 
-*Fight lab, seconds per kill: 23 at level 40, 22 at level 50, 20 at level 60. Presses per kill at level 40: Melee 7.8, Melee (off-hand) 7.4, Mutilate 2.7, Shank 1.8, Eviscerate 1.5, Garrote 1.0, Cold Blood 0.1.*
+*Fight lab, seconds per kill: 23 at level 40, 22 at level 50, 20 at level 60. Presses per kill at level 40: Melee 7.4, Melee (off-hand) 7.0, Mutilate 2.7, Shank 1.7, Eviscerate 1.5, Garrote 1.0, Cold Blood 0.1.*
 
 ## Between fights
 
@@ -272,7 +272,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 ## Other ways to level this class
 
-- Combat with swords is the rogue's fastest leveling spec in the fight lab and builds with **Sinister Strike** all the way; the Subtlety and Combat-Subtlety builds open with **Premeditation** and **Ambush** and strike with **Ghostly Strike**. Each has a page in this folder.
+- Combat with swords is the rogue's fastest leveling spec in the fight lab and builds with **Sinister Strike** all the way; the Subtlety and Combat-Subtlety builds open from stealth with Premeditation's two points and **Ambush** or **Garrote**, and strike with Ghostly Strike and Hemorrhage. Each has a page in this folder.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-19: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/rogue.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

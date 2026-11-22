@@ -4,7 +4,7 @@
 
 **Leveling from level 1?** [The rotation level by level](retribution-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Leveling — Retribution](../research/leveling/builds/leveling-retribution.md)** (12/8/31) — [open the talent tree](https://talentsforever.com/paladin/60/05025-503-0523330120130134-12)
+**[Leveling — Retribution](../research/leveling/builds/leveling-retribution.md)** (12/8/31) — [open the talent tree](https://talentsforever.com/paladin/60/05025-503-0523330121130133-12)
 
 **Signature spells:** 100% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Seal of Command, Judgement, Holy Strike, Vengeance; this build never casts Seal of Righteousness) (the spec's rule: at least 60%; **Judgement** cast at level 60).
 
@@ -20,7 +20,7 @@
 4. **Judgement** and **Holy Strike** whenever ready. Against a single mob, no Consecration and no Hammer of Wrath: the tuned rotation never casts either.
 5. Low on health (below a third, with the mob above a quarter): **Divine Protection** and **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter; **Lay on Hands** below 15%.
 
-**Between fights:** Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink below about a third of your mana, and eat only if you are still below 65% of your health. Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
+**Between fights:** Heal yourself back to 80% with **Holy Light** or **Flash of Light**; drink below 15% of your mana, and eat only if you are still below 65% of your health. Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
 
 ## Why this rotation
 
@@ -33,8 +33,8 @@ Retribution levels with one seal: **Seal of Command** before each pull (**Seal o
 - **Consecration** is for two or more mobs. Against a single mob the fight lab's tuned rules (re-tuned from scratch on 2026-11-07 and again on 2026-11-09, with **Vindication** modelled: the same two rules) never cast it and kill about 10% faster that way: its mana costs more drinking than its damage saves.
 - **Hammer of Justice** doubles **Seal of Command**'s judgement: against a stunned mob it hits for 339 to 373 instead of 169 to 187 at rank 5. It has a 1-minute cooldown, so the combo is ready for about one pull in three; on those pulls, when both spells are ready and the mob has more than 30% health left, stun first, then judge. The same stun is your answer to a mob that casts spells, so a caster in the next fight runs free if you just spent it.
 - **Hammer of Wrath** comes at 44, with a 1-second cast (**Champion of the Light**, 51-53 and 56, takes 0.8 seconds off). The tuned rules leave it out, because never casting it measured faster: keep it for a mob that runs.
-- The points from level 41 on are small: **Divine Intellect** (41-45), **Precision** (46-48, 3% hit), **Repentance** (49), **Vindication** (50 and 54-55), **Champion of the Light** (51-53 and 56), **Reverence** (57-58) and **Improved Seals** (59-60, its last two ranks). **Pursuit of Justice** (21-22) is movement speed, which the lab models as constant travel. **Vindication** lowers the attack power of the mob you hit, so it hits you softer: the fight lab models it since 2026-11-09. The build takes no **Sacred Duty** or **Purifying Power** since that date: both measured nothing against single mobs of your level, and their three points went to **Champion of the Light** (56) and **Improved Seals** (59-60).
-- Below about a third of your health, while the mob still has a quarter of its own: **Divine Protection** (8 seconds immune from level 18, but you cannot attack) with **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter, **Lay on Hands** below 15%. From 34 **Divine Shield** (10 seconds, your damage halved) takes the bubble's place. Against same-level mobs the fight lab almost never needed these. Between fights heal back to 80%, drink below about a third of your mana and eat only if you are still below 65% of your health (the lab's defaults for this list, which the tuned rules do not change). Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).
+- The points from level 41 on are small: **Divine Intellect** (41-45), **Precision** (46-48, 3% hit), **Repentance** (49), **Vindication** (50 and 54-55), **Champion of the Light** (51-53), **Reverence** (57-58) and **Improved Seals** (59-60, its last two ranks). **Pursuit of Justice** (21-22) is movement speed, which the lab models as constant travel. **Vindication** lowers the attack power of the mob you hit, so it hits you softer: the fight lab models it since 2026-11-09. The build takes no **Sacred Duty** or **Purifying Power** since that date: both measured nothing against single mobs of your level, and their three points went to **Champion of the Light** (51-53) and **Improved Seals** (59-60).
+- Below about a third of your health, while the mob still has a quarter of its own: **Divine Protection** (8 seconds immune from level 18, but you cannot attack) with **Holy Light** inside it, or **Hammer of Justice** and heal during the stun; **Flash of Light** below a quarter, **Lay on Hands** below 15%. From 34 **Divine Shield** (10 seconds, your damage halved) takes the bubble's place. Against same-level mobs the fight lab almost never needed these. Between fights heal back to 80%, drink below 15% of your mana and eat only if you are still below 65% of your health (the lab's defaults for this list, which the tuned rules do not change). Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).
 
 **Caveats**
 
@@ -72,7 +72,7 @@ One point per level from 10, in this order:
 | 50 | Vindication (Retribution) | 1 |
 | 51-53 | Champion of the Light (Retribution) | 3 |
 | 54-55 | Vindication (Retribution) | 2 |
-| 56 | Champion of the Light (Retribution) | 1 |
+| 56 | Eye for an Eye (Retribution) | 1 |
 | 57-58 | Reverence (Holy) | 2 |
 | 59-60 | Improved Seals (Holy) | 2 |
 
@@ -80,18 +80,24 @@ One point per level from 10, in this order:
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
-| 20 | 20 | 16 |
-| 30 | 22 | 18 |
-| 40 | 27 | 22 |
-| 50 | 28 | 24 |
-| 60 | 30 | 23 |
+| 20 | 21 | 17 |
+| 30 | 24 | 20 |
+| 40 | 28 | 23 |
+| 50 | 29 | 24 |
+| 60 | 31 | 24 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
 ## Other builds of this spec
 
-- [Retribution (optimized)](../research/leveling/builds/opt-ret-dps-leveling-st.md) (10/11/30, 27 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/paladin/60/05023-503021-0523330120130133-12)
+- [Retribution (optimized)](../research/leveling/builds/opt-ret-dps-leveling-st.md) (10/11/30, 28 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/paladin/60/05023-503021-0523330120130133-12)
+
+## Builds that play as a hybrid
+
+- Shockadin — Leveling (21/0/30): 30+ points in Retribution, but it plays as the [Shockadin](shockadin.md); it is ranked there
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

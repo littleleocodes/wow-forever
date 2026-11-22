@@ -116,7 +116,7 @@ The Fury raid build the open talent search found on 2026-11-08: every legal 51-p
 | # | Priority (the first line whose condition holds is cast) | [`fury-open-raid`](fury-open-raid.md) casts/min |
 |---|---|---|
 | 1 | cast Berserker Rage | 2.0 |
-| 2 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
+| 2 | if not Battle Shout is up: cast Battle Shout | 0.3 |
 | 3 | if execute phase (E20): cast Execute | 5.1 |
 | 4 | cast Goblin Sapper Charge | as ready |
 | 5 | cast Dense Dynamite | as ready |

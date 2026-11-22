@@ -1,6 +1,6 @@
 {
  "class": "rogue",
- "date": "2026-11-16",
+ "date": "2026-11-22",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -11,202 +11,442 @@
    "fingerprint": "ff30c7919b52",
    "levels": {
     "1": {
-     "seconds": 9.1,
+     "seconds": 8.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Sinister Strike": 1.41,
-      "Melee": 0.99,
-      "Melee (off-hand)": 0.2
-     }
+      "Sinister Strike": 1.44,
+      "Melee": 0.89,
+      "Melee (off-hand)": 0.16
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.668,
+      "Melee": 0.299,
+      "Melee (off-hand)": 0.025,
+      "Eviscerate": 0.009
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "6": {
-     "seconds": 12.8,
+     "seconds": 12.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Sinister Strike": 2.64,
-      "Melee": 2.31,
-      "Melee (off-hand)": 1.9,
-      "Eviscerate": 0.16
-     }
+      "Sinister Strike": 2.79,
+      "Melee": 2.19,
+      "Melee (off-hand)": 1.73,
+      "Eviscerate": 0.21
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.554,
+      "Melee": 0.305,
+      "Melee (off-hand)": 0.117,
+      "Eviscerate": 0.024
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "8": {
-     "seconds": 14.2,
+     "seconds": 13.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Sinister Strike": 2.9,
-      "Melee": 2.81,
-      "Melee (off-hand)": 2.42,
-      "Eviscerate": 0.32
-     }
+      "Sinister Strike": 3.06,
+      "Melee": 2.67,
+      "Melee (off-hand)": 2.28,
+      "Eviscerate": 0.48
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.492,
+      "Melee": 0.299,
+      "Melee (off-hand)": 0.124,
+      "Eviscerate": 0.086
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "10": {
-     "seconds": 15.6,
+     "seconds": 15.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Sinister Strike": 3.23,
-      "Melee": 3.29,
-      "Melee (off-hand)": 2.91,
-      "Eviscerate": 0.38
-     }
+      "Sinister Strike": 3.46,
+      "Melee": 3.21,
+      "Melee (off-hand)": 2.77,
+      "Eviscerate": 0.52
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.473,
+      "Melee": 0.302,
+      "Melee (off-hand)": 0.13,
+      "Eviscerate": 0.095
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "14": {
+     "seconds": 18.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 4.1,
+      "Sinister Strike": 3.12,
+      "Melee (off-hand)": 3.47,
+      "Eviscerate": 0.41
+     },
+     "idle_share": 0.03,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.326,
+      "Melee": 0.267,
+      "Garrote": 0.234,
+      "Melee (off-hand)": 0.114,
+      "Eviscerate": 0.058
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
+    },
+    "20": {
+     "seconds": 18.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 4.21,
+      "Sinister Strike": 3.2,
+      "Melee (off-hand)": 3.54,
+      "Eviscerate": 0.46
+     },
+     "idle_share": 0.033,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.301,
+      "Melee": 0.271,
+      "Garrote": 0.17,
+      "Melee (off-hand)": 0.117,
+      "Eviscerate": 0.079,
+      "Instant Poison": 0.062
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "21": {
      "seconds": 18.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.33,
-      "Sinister Strike": 2.9,
-      "Melee (off-hand)": 3.76,
-      "Eviscerate": 0.28
-     }
+      "Melee": 4.24,
+      "Sinister Strike": 3.15,
+      "Melee (off-hand)": 3.65,
+      "Riposte": 0.55,
+      "Eviscerate": 0.36
+     },
+     "idle_share": 0.029,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.282,
+      "Melee": 0.261,
+      "Garrote": 0.16,
+      "Melee (off-hand)": 0.116,
+      "Riposte": 0.064,
+      "Instant Poison": 0.061,
+      "Eviscerate": 0.056
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
-    "20": {
+    "24": {
+     "seconds": 17.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 3.94,
+      "Sinister Strike": 3.58,
+      "Melee (off-hand)": 3.46,
+      "Riposte": 0.61,
+      "Shank": 1.18,
+      "Eviscerate": 0.52
+     },
+     "idle_share": 0.026,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.295,
+      "Melee": 0.215,
+      "Garrote": 0.16,
+      "Eviscerate": 0.108,
+      "Melee (off-hand)": 0.089,
+      "Riposte": 0.059,
+      "Instant Poison": 0.054,
+      "Shank": 0.019
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "29": {
+     "seconds": 19.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 4.31,
+      "Shank": 1.24,
+      "Melee (off-hand)": 3.89,
+      "Sinister Strike": 4.05,
+      "Riposte": 0.36,
+      "Eviscerate": 0.86
+     },
+     "idle_share": 0.038,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.304,
+      "Melee": 0.2,
+      "Eviscerate": 0.165,
+      "Garrote": 0.129,
+      "Melee (off-hand)": 0.09,
+      "Instant Poison": 0.064,
+      "Riposte": 0.03,
+      "Shank": 0.018
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "30": {
      "seconds": 18.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.43,
-      "Sinister Strike": 2.93,
-      "Melee (off-hand)": 3.83,
-      "Eviscerate": 0.38
-     }
-    },
-    "21": {
-     "seconds": 18.7,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 4.46,
-      "Sinister Strike": 2.9,
-      "Melee (off-hand)": 3.89,
-      "Riposte": 0.57,
-      "Eviscerate": 0.35
-     }
-    },
-    "24": {
-     "seconds": 18.2,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 4.19,
-      "Shank": 1.29,
-      "Melee (off-hand)": 3.71,
-      "Riposte": 0.61,
-      "Sinister Strike": 3.44,
-      "Eviscerate": 0.48
-     }
-    },
-    "29": {
-     "seconds": 19.2,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 4.47,
-      "Shank": 1.32,
-      "Melee (off-hand)": 4.01,
-      "Sinister Strike": 3.86,
-      "Eviscerate": 0.86,
-      "Riposte": 0.45
-     }
-    },
-    "30": {
-     "seconds": 18.7,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 4.34,
-      "Shank": 1.27,
-      "Melee (off-hand)": 3.85,
-      "Sinister Strike": 3.79,
-      "Eviscerate": 0.82,
-      "Riposte": 0.43
-     }
+      "Melee": 4.13,
+      "Shank": 1.17,
+      "Melee (off-hand)": 3.73,
+      "Sinister Strike": 3.98,
+      "Riposte": 0.35,
+      "Eviscerate": 0.82
+     },
+     "idle_share": 0.033,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.321,
+      "Melee": 0.187,
+      "Garrote": 0.153,
+      "Eviscerate": 0.152,
+      "Melee (off-hand)": 0.084,
+      "Instant Poison": 0.057,
+      "Riposte": 0.028,
+      "Shank": 0.016
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
     "39": {
-     "seconds": 21.4,
+     "seconds": 21.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 5.08,
-      "Shank": 1.89,
-      "Melee (off-hand)": 4.66,
-      "Sinister Strike": 4.54,
-      "Eviscerate": 1.03,
-      "Riposte": 0.46,
-      "Hack and Slash": 0.28
-     }
+      "Melee": 4.86,
+      "Shank": 1.85,
+      "Melee (off-hand)": 4.43,
+      "Sinister Strike": 4.62,
+      "Eviscerate": 1.04,
+      "Riposte": 0.51,
+      "Hack and Slash": 0.3
+     },
+     "idle_share": 0.064,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.292,
+      "Melee": 0.164,
+      "Eviscerate": 0.161,
+      "Garrote": 0.136,
+      "Melee (off-hand)": 0.113,
+      "Instant Poison": 0.062,
+      "Riposte": 0.032,
+      "Shank": 0.03,
+      "Hack and Slash": 0.011
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
     "40": {
-     "seconds": 21.1,
+     "seconds": 20.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.93,
-      "Shank": 1.84,
-      "Melee (off-hand)": 4.53,
-      "Sinister Strike": 4.42,
-      "Eviscerate": 1.08,
-      "Riposte": 0.46,
-      "Hack and Slash": 0.28
-     }
+      "Melee": 4.71,
+      "Shank": 1.8,
+      "Melee (off-hand)": 4.3,
+      "Sinister Strike": 4.51,
+      "Eviscerate": 1.09,
+      "Riposte": 0.5,
+      "Hack and Slash": 0.29
+     },
+     "idle_share": 0.066,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.28,
+      "Eviscerate": 0.222,
+      "Melee": 0.151,
+      "Garrote": 0.123,
+      "Melee (off-hand)": 0.103,
+      "Instant Poison": 0.056,
+      "Riposte": 0.029,
+      "Shank": 0.028,
+      "Hack and Slash": 0.009
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
     "50": {
-     "seconds": 21.1,
+     "seconds": 20.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.82,
-      "Sinister Strike": 4.73,
-      "Melee (off-hand)": 4.43,
-      "Shank": 1.68,
-      "Eviscerate": 1.34,
-      "Riposte": 0.46,
+      "Melee": 4.5,
+      "Sinister Strike": 4.75,
+      "Melee (off-hand)": 4.11,
+      "Shank": 1.56,
+      "Eviscerate": 1.32,
+      "Riposte": 0.51,
       "Hack and Slash": 0.28
-     }
+     },
+     "idle_share": 0.077,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.05,
+     "shares": {
+      "Sinister Strike": 0.29,
+      "Eviscerate": 0.258,
+      "Melee": 0.134,
+      "Garrote": 0.107,
+      "Melee (off-hand)": 0.095,
+      "Instant Poison": 0.058,
+      "Riposte": 0.027,
+      "Shank": 0.022,
+      "Hack and Slash": 0.009
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
     "54": {
-     "seconds": 21.6,
+     "seconds": 20.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.94,
-      "Sinister Strike": 4.91,
-      "Melee (off-hand)": 4.54,
-      "Shank": 1.75,
+      "Melee": 4.62,
+      "Sinister Strike": 4.87,
+      "Melee (off-hand)": 4.21,
+      "Shank": 1.58,
       "Eviscerate": 1.38,
-      "Riposte": 0.47,
-      "Hack and Slash": 0.28
-     }
+      "Riposte": 0.53,
+      "Hack and Slash": 0.29
+     },
+     "idle_share": 0.079,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.1,
+     "shares": {
+      "Sinister Strike": 0.303,
+      "Eviscerate": 0.236,
+      "Melee": 0.126,
+      "Garrote": 0.118,
+      "Melee (off-hand)": 0.09,
+      "Instant Poison": 0.071,
+      "Riposte": 0.026,
+      "Shank": 0.021,
+      "Hack and Slash": 0.008
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
     "55": {
-     "seconds": 21.8,
+     "seconds": 20.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.97,
-      "Sinister Strike": 4.95,
-      "Melee (off-hand)": 4.55,
-      "Shank": 1.74,
+      "Melee": 4.6,
+      "Sinister Strike": 4.88,
+      "Melee (off-hand)": 4.25,
+      "Shank": 1.59,
+      "Eviscerate": 1.41,
+      "Riposte": 0.53,
       "Cold Blood": 0.11,
-      "Eviscerate": 1.37,
-      "Riposte": 0.47,
-      "Hack and Slash": 0.28
-     }
+      "Hack and Slash": 0.3
+     },
+     "idle_share": 0.078,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.1,
+     "shares": {
+      "Sinister Strike": 0.299,
+      "Eviscerate": 0.248,
+      "Melee": 0.124,
+      "Garrote": 0.116,
+      "Melee (off-hand)": 0.089,
+      "Instant Poison": 0.069,
+      "Riposte": 0.026,
+      "Shank": 0.021,
+      "Hack and Slash": 0.009
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
     "60": {
-     "seconds": 21.1,
+     "seconds": 20.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 4.77,
-      "Sinister Strike": 4.75,
-      "Melee (off-hand)": 4.38,
-      "Shank": 1.71,
+      "Melee": 4.53,
+      "Sinister Strike": 4.87,
+      "Melee (off-hand)": 4.13,
+      "Shank": 1.58,
+      "Eviscerate": 1.38,
+      "Hack and Slash": 0.3,
       "Cold Blood": 0.1,
-      "Eviscerate": 1.36,
-      "Hack and Slash": 0.28,
-      "Riposte": 0.52
-     }
+      "Riposte": 0.51
+     },
+     "idle_share": 0.069,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Eviscerate": 0.264,
+      "Sinister Strike": 0.257,
+      "Instant Poison": 0.151,
+      "Melee": 0.11,
+      "Garrote": 0.093,
+      "Melee (off-hand)": 0.076,
+      "Riposte": 0.022,
+      "Shank": 0.018,
+      "Hack and Slash": 0.007
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     }
    }
   },
@@ -217,165 +457,359 @@
    "fingerprint": "fe0161f47e4d",
    "levels": {
     "1": {
-     "seconds": 9.6,
+     "seconds": 9.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Sinister Strike": 1.58,
-      "Melee": 1.3,
-      "Melee (off-hand)": 0.97,
-      "Eviscerate": 0.2
-     }
+      "Sinister Strike": 1.6,
+      "Melee": 1.15,
+      "Melee (off-hand)": 0.84,
+      "Eviscerate": 0.23
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.579,
+      "Melee": 0.28,
+      "Melee (off-hand)": 0.095,
+      "Eviscerate": 0.047
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "6": {
-     "seconds": 14.5,
+     "seconds": 14.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Sinister Strike": 3.15,
-      "Melee": 3.83,
-      "Melee (off-hand)": 3.29,
-      "Eviscerate": 0.18
-     }
+      "Sinister Strike": 3.29,
+      "Melee": 3.58,
+      "Melee (off-hand)": 3.04,
+      "Eviscerate": 0.31
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.496,
+      "Melee": 0.335,
+      "Melee (off-hand)": 0.133,
+      "Eviscerate": 0.035
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "8": {
-     "seconds": 16.3,
+     "seconds": 15.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Sinister Strike": 3.37,
-      "Melee": 4.94,
-      "Melee (off-hand)": 4.32,
-      "Eviscerate": 0.36
-     }
+      "Sinister Strike": 3.58,
+      "Melee": 4.61,
+      "Melee (off-hand)": 4.03,
+      "Eviscerate": 0.51
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.418,
+      "Melee": 0.339,
+      "Melee (off-hand)": 0.141,
+      "Eviscerate": 0.102
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "10": {
-     "seconds": 17.9,
+     "seconds": 17.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Sinister Strike": 3.66,
-      "Melee": 5.83,
-      "Melee (off-hand)": 5.2,
-      "Eviscerate": 0.43
-     }
+      "Sinister Strike": 3.91,
+      "Melee": 5.53,
+      "Melee (off-hand)": 4.91,
+      "Eviscerate": 0.58
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.387,
+      "Melee": 0.348,
+      "Melee (off-hand)": 0.152,
+      "Eviscerate": 0.113
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "14": {
-     "seconds": 19.0,
+     "seconds": 18.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 6.23,
-      "Melee (off-hand)": 5.71,
-      "Sinister Strike": 2.57,
-      "Eviscerate": 0.59
-     }
+      "Melee": 5.71,
+      "Melee (off-hand)": 5.23,
+      "Sinister Strike": 2.79,
+      "Eviscerate": 0.55
+     },
+     "idle_share": 0.039,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.299,
+      "Garrote": 0.253,
+      "Sinister Strike": 0.244,
+      "Melee (off-hand)": 0.134,
+      "Eviscerate": 0.07
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "20": {
+     "seconds": 19.6,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 6.18,
+      "Melee (off-hand)": 5.66,
+      "Sinister Strike": 3.27,
+      "Eviscerate": 0.51
+     },
+     "idle_share": 0.052,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.274,
+      "Sinister Strike": 0.263,
+      "Garrote": 0.186,
+      "Melee (off-hand)": 0.124,
+      "Instant Poison": 0.079,
+      "Eviscerate": 0.076
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "23": {
+     "seconds": 20.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 6.34,
+      "Melee (off-hand)": 5.88,
+      "Sinister Strike": 3.6,
+      "Eviscerate": 0.52
+     },
+     "idle_share": 0.06,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.04,
+     "shares": {
+      "Sinister Strike": 0.282,
+      "Melee": 0.257,
+      "Garrote": 0.209,
+      "Melee (off-hand)": 0.118,
+      "Instant Poison": 0.068,
+      "Eviscerate": 0.066
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "24": {
+     "seconds": 19.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 6.18,
+      "Melee (off-hand)": 5.72,
+      "Sinister Strike": 3.61,
+      "Shank": 1.32,
+      "Eviscerate": 0.61
+     },
+     "idle_share": 0.06,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.27,
+      "Melee": 0.242,
+      "Garrote": 0.19,
+      "Melee (off-hand)": 0.109,
+      "Eviscerate": 0.107,
+      "Instant Poison": 0.067,
+      "Shank": 0.016
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "25": {
+     "seconds": 20.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 6.45,
+      "Melee (off-hand)": 5.99,
+      "Sinister Strike": 3.74,
+      "Shank": 1.37,
+      "Eviscerate": 0.61
+     },
+     "idle_share": 0.065,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.267,
+      "Melee": 0.246,
+      "Garrote": 0.186,
+      "Melee (off-hand)": 0.112,
+      "Eviscerate": 0.109,
+      "Instant Poison": 0.065,
+      "Shank": 0.016
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "30": {
+     "seconds": 21.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 6.87,
+      "Melee (off-hand)": 6.43,
+      "Sinister Strike": 4.07,
+      "Shank": 1.5,
+      "Eviscerate": 0.56
+     },
+     "idle_share": 0.069,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.253,
+      "Melee": 0.213,
+      "Garrote": 0.187,
+      "Instant Poison": 0.155,
+      "Melee (off-hand)": 0.102,
+      "Eviscerate": 0.075,
+      "Shank": 0.015
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "39": {
+     "seconds": 24.2,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 8.08,
+      "Melee (off-hand)": 7.68,
+      "Sinister Strike": 4.53,
+      "Shank": 1.86,
+      "Cold Blood": 0.12,
+      "Eviscerate": 1.38
+     },
+     "idle_share": 0.086,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.212,
+      "Melee": 0.188,
+      "Instant Poison": 0.173,
+      "Garrote": 0.171,
+      "Eviscerate": 0.152,
+      "Melee (off-hand)": 0.091,
+      "Shank": 0.014
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "40": {
+     "seconds": 22.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 7.43,
+      "Melee (off-hand)": 6.99,
+      "Mutilate": 2.69,
+      "Shank": 1.7,
+      "Cold Blood": 0.12,
+      "Eviscerate": 1.52
+     },
+     "idle_share": 0.083,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Eviscerate": 0.225,
+      "Mutilate": 0.204,
+      "Melee": 0.169,
+      "Instant Poison": 0.168,
+      "Garrote": 0.143,
+      "Melee (off-hand)": 0.077,
+      "Shank": 0.012
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "50": {
+     "seconds": 22.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 6.89,
+      "Melee (off-hand)": 6.52,
+      "Mutilate": 2.82,
+      "Shank": 1.56,
+      "Cold Blood": 0.12,
+      "Eviscerate": 1.66
+     },
+     "idle_share": 0.089,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.05,
+     "shares": {
+      "Eviscerate": 0.302,
+      "Mutilate": 0.212,
+      "Instant Poison": 0.168,
+      "Melee": 0.131,
+      "Garrote": 0.115,
+      "Melee (off-hand)": 0.062,
+      "Shank": 0.01
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "60": {
      "seconds": 20.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 6.63,
-      "Melee (off-hand)": 6.11,
-      "Sinister Strike": 3.06,
-      "Eviscerate": 0.37
-     }
-    },
-    "23": {
-     "seconds": 20.6,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 6.9,
-      "Melee (off-hand)": 6.39,
-      "Sinister Strike": 3.29,
-      "Eviscerate": 0.54
-     }
-    },
-    "24": {
-     "seconds": 20.5,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 6.85,
-      "Melee (off-hand)": 6.31,
-      "Shank": 1.44,
-      "Sinister Strike": 3.5,
-      "Eviscerate": 0.47
-     }
-    },
-    "25": {
-     "seconds": 21.0,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 7.08,
-      "Melee (off-hand)": 6.57,
-      "Shank": 1.5,
-      "Sinister Strike": 3.62,
-      "Eviscerate": 0.48
-     }
-    },
-    "30": {
-     "seconds": 21.9,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 7.39,
-      "Melee (off-hand)": 6.93,
-      "Shank": 1.56,
-      "Sinister Strike": 3.81,
-      "Eviscerate": 0.46
-     }
-    },
-    "39": {
-     "seconds": 25.4,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 8.84,
-      "Melee (off-hand)": 8.45,
-      "Shank": 1.94,
-      "Sinister Strike": 4.25,
-      "Cold Blood": 0.12,
-      "Eviscerate": 1.19
-     }
-    },
-    "40": {
-     "seconds": 23.2,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 7.82,
-      "Melee (off-hand)": 7.38,
-      "Shank": 1.79,
-      "Mutilate": 2.74,
-      "Cold Blood": 0.12,
-      "Eviscerate": 1.47
-     }
-    },
-    "50": {
-     "seconds": 22.5,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 7.28,
-      "Melee (off-hand)": 6.9,
-      "Shank": 1.71,
-      "Mutilate": 2.84,
-      "Cold Blood": 0.12,
-      "Eviscerate": 1.7
-     }
-    },
-    "60": {
-     "seconds": 19.9,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 6.19,
-      "Melee (off-hand)": 5.75,
-      "Shank": 1.48,
-      "Mutilate": 2.85,
-      "Eviscerate": 1.8,
-      "Cold Blood": 0.1
-     }
+      "Melee": 6.15,
+      "Melee (off-hand)": 5.7,
+      "Shank": 1.46,
+      "Mutilate": 2.9,
+      "Cold Blood": 0.1,
+      "Eviscerate": 1.88
+     },
+     "idle_share": 0.069,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Eviscerate": 0.353,
+      "Instant Poison": 0.2,
+      "Mutilate": 0.197,
+      "Melee": 0.103,
+      "Garrote": 0.089,
+      "Melee (off-hand)": 0.049,
+      "Shank": 0.007
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     }
    }
   },
@@ -383,196 +817,419 @@
    "build": "subtlety-open-leveling",
    "rotation": "subtlety-leveling",
    "provisional_order": false,
-   "fingerprint": "bc64110fb5d8",
+   "fingerprint": "4f08fcff235e",
    "levels": {
     "1": {
-     "seconds": 9.6,
+     "seconds": 9.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Sinister Strike": 1.58,
-      "Melee": 1.3,
-      "Melee (off-hand)": 0.97,
-      "Eviscerate": 0.2
-     }
+      "Sinister Strike": 1.6,
+      "Melee": 1.15,
+      "Melee (off-hand)": 0.84,
+      "Eviscerate": 0.23
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.579,
+      "Melee": 0.28,
+      "Melee (off-hand)": 0.095,
+      "Eviscerate": 0.047
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "6": {
-     "seconds": 14.5,
+     "seconds": 14.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Sinister Strike": 3.15,
-      "Melee": 3.83,
-      "Melee (off-hand)": 3.29,
-      "Eviscerate": 0.18
-     }
+      "Sinister Strike": 3.29,
+      "Melee": 3.58,
+      "Melee (off-hand)": 3.04,
+      "Eviscerate": 0.31
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.496,
+      "Melee": 0.335,
+      "Melee (off-hand)": 0.133,
+      "Eviscerate": 0.035
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "8": {
-     "seconds": 16.3,
+     "seconds": 15.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Sinister Strike": 3.37,
-      "Melee": 4.94,
-      "Melee (off-hand)": 4.32,
-      "Eviscerate": 0.36
-     }
+      "Sinister Strike": 3.58,
+      "Melee": 4.61,
+      "Melee (off-hand)": 4.03,
+      "Eviscerate": 0.51
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.418,
+      "Melee": 0.339,
+      "Melee (off-hand)": 0.141,
+      "Eviscerate": 0.102
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "10": {
-     "seconds": 18.0,
+     "seconds": 17.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Sinister Strike": 3.68,
-      "Melee": 5.92,
-      "Melee (off-hand)": 5.27,
-      "Eviscerate": 0.45
-     }
+      "Sinister Strike": 3.93,
+      "Melee": 5.6,
+      "Melee (off-hand)": 4.96,
+      "Eviscerate": 0.6
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.385,
+      "Melee": 0.349,
+      "Melee (off-hand)": 0.151,
+      "Eviscerate": 0.116
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "14": {
-     "seconds": 19.3,
+     "seconds": 18.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Garrote": 1.0,
-      "Melee": 6.37,
-      "Melee (off-hand)": 5.86,
-      "Sinister Strike": 2.57,
-      "Eviscerate": 0.65
-     }
+      "Melee": 5.87,
+      "Melee (off-hand)": 5.39,
+      "Sinister Strike": 2.77,
+      "Eviscerate": 0.67
+     },
+     "idle_share": 0.042,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.287,
+      "Garrote": 0.267,
+      "Sinister Strike": 0.227,
+      "Melee (off-hand)": 0.13,
+      "Eviscerate": 0.089
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "18": {
-     "seconds": 18.4,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Ambush": 1.0,
-      "Melee": 5.86,
-      "Melee (off-hand)": 5.27,
-      "Sinister Strike": 2.44,
-      "Eviscerate": 0.72
-     }
-    },
-    "20": {
-     "seconds": 17.0,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Ambush": 1.0,
-      "Melee": 5.21,
-      "Melee (off-hand)": 4.68,
-      "Sinister Strike": 2.22,
-      "Eviscerate": 0.61
-     }
-    },
-    "22": {
      "seconds": 18.6,
      "deaths_per_100": 0.0,
      "casts": {
-      "Ambush": 0.73,
-      "Melee": 5.96,
-      "Melee (off-hand)": 5.38,
-      "Sinister Strike": 2.67,
-      "Eviscerate": 0.62,
-      "Garrote": 0.27
-     }
+      "Ambush": 0.94,
+      "Melee": 5.65,
+      "Melee (off-hand)": 5.12,
+      "Sinister Strike": 2.75,
+      "Eviscerate": 0.81,
+      "Garrote": 0.06
+     },
+     "idle_share": 0.049,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Ambush": 0.309,
+      "Melee": 0.245,
+      "Sinister Strike": 0.191,
+      "Eviscerate": 0.133,
+      "Melee (off-hand)": 0.107,
+      "Garrote": 0.015
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
-    "24": {
-     "seconds": 19.1,
+    "20": {
+     "seconds": 17.6,
      "deaths_per_100": 0.0,
      "casts": {
-      "Premeditation": 0.14,
-      "Ambush": 0.68,
-      "Melee": 6.17,
-      "Melee (off-hand)": 5.68,
-      "Shank": 1.49,
-      "Sinister Strike": 2.79,
-      "Eviscerate": 0.78,
-      "Garrote": 0.32
-     }
+      "Ambush": 1.0,
+      "Melee": 5.24,
+      "Melee (off-hand)": 4.75,
+      "Sinister Strike": 2.59,
+      "Eviscerate": 0.72
+     },
+     "idle_share": 0.035,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Ambush": 0.344,
+      "Melee": 0.211,
+      "Sinister Strike": 0.172,
+      "Eviscerate": 0.104,
+      "Melee (off-hand)": 0.1,
+      "Instant Poison": 0.067
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
-    "25": {
+    "22": {
+     "seconds": 18.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Ambush": 0.65,
+      "Melee": 5.78,
+      "Melee (off-hand)": 5.27,
+      "Sinister Strike": 3.08,
+      "Eviscerate": 0.69,
+      "Garrote": 0.35
+     },
+     "idle_share": 0.048,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.227,
+      "Sinister Strike": 0.209,
+      "Ambush": 0.209,
+      "Melee (off-hand)": 0.105,
+      "Eviscerate": 0.097,
+      "Garrote": 0.089,
+      "Instant Poison": 0.066
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "24": {
      "seconds": 19.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.15,
-      "Ambush": 0.65,
-      "Melee": 6.16,
-      "Melee (off-hand)": 5.64,
-      "Shank": 1.49,
-      "Ghostly Strike": 0.78,
-      "Garrote": 0.43,
-      "Eviscerate": 0.83,
-      "Sinister Strike": 2.05
-     }
+      "Ambush": 0.56,
+      "Melee": 5.81,
+      "Melee (off-hand)": 5.35,
+      "Shank": 1.38,
+      "Sinister Strike": 3.12,
+      "Eviscerate": 0.95,
+      "Garrote": 0.44
+     },
+     "idle_share": 0.052,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.204,
+      "Sinister Strike": 0.19,
+      "Eviscerate": 0.177,
+      "Ambush": 0.161,
+      "Melee (off-hand)": 0.1,
+      "Garrote": 0.09,
+      "Instant Poison": 0.062,
+      "Shank": 0.016
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "25": {
+     "seconds": 18.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Premeditation": 0.14,
+      "Ambush": 0.52,
+      "Melee": 5.78,
+      "Melee (off-hand)": 5.31,
+      "Shank": 1.35,
+      "Ghostly Strike": 0.76,
+      "Garrote": 0.57,
+      "Eviscerate": 0.98,
+      "Sinister Strike": 2.33
+     },
+     "idle_share": 0.043,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.205,
+      "Eviscerate": 0.165,
+      "Ambush": 0.149,
+      "Sinister Strike": 0.14,
+      "Garrote": 0.104,
+      "Melee (off-hand)": 0.097,
+      "Ghostly Strike": 0.064,
+      "Instant Poison": 0.059,
+      "Shank": 0.016
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
     "30": {
-     "seconds": 20.6,
+     "seconds": 19.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Premeditation": 0.16,
-      "Ambush": 0.16,
-      "Melee": 6.88,
-      "Melee (off-hand)": 6.38,
-      "Shank": 1.47,
-      "Ghostly Strike": 0.84,
-      "Garrote": 0.9,
-      "Eviscerate": 1.15,
-      "Hemorrhage": 2.96
-     }
+      "Premeditation": 0.15,
+      "Garrote": 1.01,
+      "Melee": 6.26,
+      "Melee (off-hand)": 5.83,
+      "Ghostly Strike": 0.81,
+      "Shank": 1.37,
+      "Eviscerate": 1.25,
+      "Hemorrhage": 3.18,
+      "Ambush": 0.06
+     },
+     "idle_share": 0.05,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Garrote": 0.196,
+      "Melee": 0.191,
+      "Hemorrhage": 0.181,
+      "Eviscerate": 0.181,
+      "Melee (off-hand)": 0.092,
+      "Instant Poison": 0.072,
+      "Ghostly Strike": 0.057,
+      "Ambush": 0.016,
+      "Shank": 0.014
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
     "35": {
-     "seconds": 21.1,
+     "seconds": 20.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.16,
-      "Ambush": 0.63,
-      "Melee": 7.08,
-      "Melee (off-hand)": 6.58,
-      "Shank": 1.6,
-      "Ghostly Strike": 0.85,
-      "Garrote": 0.53,
-      "Eviscerate": 1.27,
-      "Hemorrhage": 2.57
-     }
+      "Ambush": 0.55,
+      "Melee": 6.7,
+      "Melee (off-hand)": 6.22,
+      "Shank": 1.54,
+      "Ghostly Strike": 0.86,
+      "Garrote": 0.58,
+      "Eviscerate": 1.41,
+      "Hemorrhage": 2.98
+     },
+     "idle_share": 0.055,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Eviscerate": 0.201,
+      "Melee": 0.179,
+      "Ambush": 0.157,
+      "Hemorrhage": 0.147,
+      "Garrote": 0.107,
+      "Melee (off-hand)": 0.087,
+      "Instant Poison": 0.057,
+      "Ghostly Strike": 0.053,
+      "Shank": 0.014
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
     "40": {
-     "seconds": 24.0,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Premeditation": 0.18,
-      "Garrote": 1.04,
-      "Melee": 8.22,
-      "Melee (off-hand)": 7.83,
-      "Shank": 1.92,
-      "Ghostly Strike": 0.99,
-      "Death Mark": 0.97,
-      "Hemorrhage": 3.35,
-      "Eviscerate": 0.88
-     }
-    },
-    "50": {
-     "seconds": 22.9,
+     "seconds": 22.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.17,
-      "Garrote": 1.05,
-      "Melee": 7.57,
-      "Melee (off-hand)": 7.17,
-      "Shank": 1.82,
-      "Ghostly Strike": 0.97,
-      "Death Mark": 1.02,
-      "Hemorrhage": 3.78,
-      "Eviscerate": 0.9
-     }
+      "Garrote": 1.06,
+      "Melee": 7.21,
+      "Melee (off-hand)": 6.84,
+      "Shank": 1.69,
+      "Ghostly Strike": 0.93,
+      "Death Mark": 0.99,
+      "Hemorrhage": 3.5,
+      "Eviscerate": 0.73
+     },
+     "idle_share": 0.075,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Death Mark": 0.251,
+      "Garrote": 0.171,
+      "Melee": 0.151,
+      "Hemorrhage": 0.135,
+      "Eviscerate": 0.1,
+      "Melee (off-hand)": 0.073,
+      "Instant Poison": 0.06,
+      "Ghostly Strike": 0.045,
+      "Shank": 0.011
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
-    "60": {
+    "50": {
      "seconds": 22.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.17,
       "Garrote": 1.05,
-      "Melee": 7.13,
-      "Melee (off-hand)": 6.82,
+      "Melee": 6.96,
+      "Melee (off-hand)": 6.62,
+      "Shank": 1.7,
       "Ghostly Strike": 0.95,
+      "Death Mark": 1.0,
+      "Hemorrhage": 3.9,
+      "Eviscerate": 0.88
+     },
+     "idle_share": 0.081,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.05,
+     "shares": {
+      "Death Mark": 0.284,
+      "Eviscerate": 0.147,
+      "Garrote": 0.144,
+      "Hemorrhage": 0.129,
+      "Melee": 0.126,
+      "Instant Poison": 0.062,
+      "Melee (off-hand)": 0.06,
+      "Ghostly Strike": 0.037,
+      "Shank": 0.01
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "60": {
+     "seconds": 21.2,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Premeditation": 0.17,
+      "Garrote": 1.04,
+      "Melee": 6.8,
+      "Melee (off-hand)": 6.43,
+      "Ghostly Strike": 0.92,
       "Death Mark": 0.98,
-      "Shank": 1.69,
-      "Hemorrhage": 3.84,
-      "Eviscerate": 1.29
-     }
+      "Shank": 1.58,
+      "Hemorrhage": 4.05,
+      "Eviscerate": 1.19
+     },
+     "idle_share": 0.062,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Death Mark": 0.267,
+      "Eviscerate": 0.212,
+      "Garrote": 0.121,
+      "Hemorrhage": 0.117,
+      "Melee": 0.11,
+      "Instant Poison": 0.079,
+      "Melee (off-hand)": 0.053,
+      "Ghostly Strike": 0.033,
+      "Shank": 0.008
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     }
    }
   },
@@ -580,119 +1237,259 @@
    "build": "combat-subtlety-open-leveling",
    "rotation": "subtlety-leveling",
    "provisional_order": false,
-   "fingerprint": "4d1850a799da",
+   "fingerprint": "50bd281c6cf1",
    "levels": {
     "1": {
-     "seconds": 9.6,
+     "seconds": 9.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Sinister Strike": 1.58,
-      "Melee": 1.3,
-      "Melee (off-hand)": 0.97,
-      "Eviscerate": 0.2
-     }
+      "Sinister Strike": 1.6,
+      "Melee": 1.15,
+      "Melee (off-hand)": 0.84,
+      "Eviscerate": 0.23
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.579,
+      "Melee": 0.28,
+      "Melee (off-hand)": 0.095,
+      "Eviscerate": 0.047
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "6": {
-     "seconds": 14.5,
+     "seconds": 14.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Sinister Strike": 3.15,
-      "Melee": 3.83,
-      "Melee (off-hand)": 3.29,
-      "Eviscerate": 0.18
-     }
+      "Sinister Strike": 3.29,
+      "Melee": 3.58,
+      "Melee (off-hand)": 3.04,
+      "Eviscerate": 0.31
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.496,
+      "Melee": 0.335,
+      "Melee (off-hand)": 0.133,
+      "Eviscerate": 0.035
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "8": {
-     "seconds": 16.3,
+     "seconds": 15.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Sinister Strike": 3.37,
-      "Melee": 4.94,
-      "Melee (off-hand)": 4.32,
-      "Eviscerate": 0.36
-     }
+      "Sinister Strike": 3.58,
+      "Melee": 4.61,
+      "Melee (off-hand)": 4.03,
+      "Eviscerate": 0.51
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.418,
+      "Melee": 0.339,
+      "Melee (off-hand)": 0.141,
+      "Eviscerate": 0.102
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
     },
     "10": {
-     "seconds": 18.0,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Sinister Strike": 3.68,
-      "Melee": 5.92,
-      "Melee (off-hand)": 5.27,
-      "Eviscerate": 0.45
-     }
-    },
-    "14": {
-     "seconds": 19.2,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Garrote": 1.0,
-      "Melee": 6.32,
-      "Melee (off-hand)": 5.76,
-      "Sinister Strike": 2.57,
-      "Eviscerate": 0.61
-     }
-    },
-    "18": {
-     "seconds": 16.9,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Ambush": 1.0,
-      "Melee": 5.11,
-      "Melee (off-hand)": 4.6,
-      "Sinister Strike": 2.17,
-      "Eviscerate": 0.64
-     }
-    },
-    "20": {
-     "seconds": 15.6,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Ambush": 1.0,
-      "Melee": 4.46,
-      "Melee (off-hand)": 4.0,
-      "Sinister Strike": 1.99,
-      "Eviscerate": 0.53
-     }
-    },
-    "23": {
-     "seconds": 17.9,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Ambush": 1.0,
-      "Melee": 5.67,
-      "Melee (off-hand)": 5.08,
-      "Sinister Strike": 2.44,
-      "Eviscerate": 0.57
-     }
-    },
-    "24": {
-     "seconds": 17.6,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Premeditation": 0.14,
-      "Ambush": 1.0,
-      "Melee": 5.43,
-      "Melee (off-hand)": 4.91,
-      "Shank": 1.34,
-      "Sinister Strike": 2.4,
-      "Eviscerate": 0.63
-     }
-    },
-    "25": {
      "seconds": 17.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Premeditation": 0.14,
+      "Sinister Strike": 3.93,
+      "Melee": 5.6,
+      "Melee (off-hand)": 4.96,
+      "Eviscerate": 0.6
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Sinister Strike": 0.385,
+      "Melee": 0.349,
+      "Melee (off-hand)": 0.151,
+      "Eviscerate": 0.116
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
+    },
+    "14": {
+     "seconds": 18.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Garrote": 1.0,
+      "Melee": 5.87,
+      "Melee (off-hand)": 5.39,
+      "Sinister Strike": 2.77,
+      "Eviscerate": 0.67
+     },
+     "idle_share": 0.042,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.287,
+      "Garrote": 0.267,
+      "Sinister Strike": 0.227,
+      "Melee (off-hand)": 0.13,
+      "Eviscerate": 0.089
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
+    },
+    "18": {
+     "seconds": 19.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Ambush": 0.84,
+      "Melee": 5.84,
+      "Melee (off-hand)": 5.29,
+      "Sinister Strike": 2.85,
+      "Eviscerate": 0.8,
+      "Garrote": 0.16
+     },
+     "idle_share": 0.054,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Ambush": 0.264,
+      "Melee": 0.254,
+      "Sinister Strike": 0.196,
+      "Eviscerate": 0.135,
+      "Melee (off-hand)": 0.111,
+      "Garrote": 0.04
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none / none"
+    },
+    "20": {
+     "seconds": 17.7,
+     "deaths_per_100": 0.0,
+     "casts": {
       "Ambush": 1.0,
-      "Melee": 5.42,
-      "Melee (off-hand)": 4.92,
+      "Melee": 5.29,
+      "Melee (off-hand)": 4.77,
+      "Sinister Strike": 2.6,
+      "Eviscerate": 0.71
+     },
+     "idle_share": 0.036,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Ambush": 0.343,
+      "Melee": 0.213,
+      "Sinister Strike": 0.173,
+      "Eviscerate": 0.102,
+      "Melee (off-hand)": 0.101,
+      "Instant Poison": 0.068
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "23": {
+     "seconds": 19.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Ambush": 0.51,
+      "Melee": 6.2,
+      "Melee (off-hand)": 5.71,
+      "Sinister Strike": 3.23,
+      "Eviscerate": 0.72,
+      "Garrote": 0.49
+     },
+     "idle_share": 0.056,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.239,
+      "Sinister Strike": 0.205,
+      "Ambush": 0.158,
+      "Garrote": 0.13,
+      "Melee (off-hand)": 0.11,
+      "Eviscerate": 0.096,
+      "Instant Poison": 0.062
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "24": {
+     "seconds": 19.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Premeditation": 0.15,
+      "Ambush": 0.51,
+      "Melee": 5.83,
+      "Melee (off-hand)": 5.35,
       "Shank": 1.34,
-      "Ghostly Strike": 0.7,
-      "Garrote": 0.07,
-      "Eviscerate": 0.66,
-      "Sinister Strike": 1.73
-     }
+      "Sinister Strike": 3.11,
+      "Eviscerate": 0.89,
+      "Garrote": 0.49
+     },
+     "idle_share": 0.053,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.209,
+      "Sinister Strike": 0.188,
+      "Eviscerate": 0.168,
+      "Ambush": 0.147,
+      "Garrote": 0.111,
+      "Melee (off-hand)": 0.1,
+      "Instant Poison": 0.06,
+      "Shank": 0.016
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "25": {
+     "seconds": 19.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Premeditation": 0.15,
+      "Ambush": 0.46,
+      "Melee": 5.89,
+      "Melee (off-hand)": 5.41,
+      "Shank": 1.35,
+      "Ghostly Strike": 0.78,
+      "Garrote": 0.62,
+      "Eviscerate": 0.94,
+      "Sinister Strike": 2.35
+     },
+     "idle_share": 0.046,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.205,
+      "Eviscerate": 0.168,
+      "Sinister Strike": 0.136,
+      "Garrote": 0.128,
+      "Ambush": 0.127,
+      "Melee (off-hand)": 0.099,
+      "Ghostly Strike": 0.064,
+      "Instant Poison": 0.058,
+      "Shank": 0.016
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
     "30": {
      "seconds": 19.0,
@@ -700,89 +1497,191 @@
      "casts": {
       "Premeditation": 0.15,
       "Ambush": 1.0,
-      "Melee": 6.09,
-      "Melee (off-hand)": 5.59,
-      "Shank": 1.47,
+      "Melee": 5.96,
+      "Melee (off-hand)": 5.42,
+      "Shank": 1.44,
       "Ghostly Strike": 0.78,
-      "Garrote": 0.05,
-      "Eviscerate": 0.74,
-      "Sinister Strike": 1.91
-     }
+      "Garrote": 0.09,
+      "Eviscerate": 0.94,
+      "Sinister Strike": 2.13
+     },
+     "idle_share": 0.04,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Ambush": 0.357,
+      "Melee": 0.177,
+      "Eviscerate": 0.131,
+      "Sinister Strike": 0.112,
+      "Melee (off-hand)": 0.084,
+      "Instant Poison": 0.061,
+      "Ghostly Strike": 0.054,
+      "Shank": 0.014,
+      "Garrote": 0.011
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "32": {
+     "seconds": 18.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Premeditation": 0.14,
+      "Ambush": 1.0,
+      "Melee": 5.58,
+      "Melee (off-hand)": 5.09,
+      "Shank": 1.26,
+      "Ghostly Strike": 0.71,
+      "Garrote": 0.09,
+      "Eviscerate": 1.12,
+      "Hemorrhage": 2.47
+     },
+     "idle_share": 0.039,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Ambush": 0.342,
+      "Eviscerate": 0.19,
+      "Melee": 0.154,
+      "Hemorrhage": 0.127,
+      "Melee (off-hand)": 0.072,
+      "Instant Poison": 0.051,
+      "Ghostly Strike": 0.043,
+      "Garrote": 0.011,
+      "Shank": 0.011
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
     "39": {
-     "seconds": 23.9,
+     "seconds": 22.6,
      "deaths_per_100": 0.0,
      "casts": {
-      "Premeditation": 0.18,
-      "Garrote": 0.33,
-      "Melee": 8.36,
-      "Melee (off-hand)": 7.88,
-      "Shank": 1.84,
-      "Ghostly Strike": 0.98,
-      "Eviscerate": 1.02,
-      "Sinister Strike": 2.55,
+      "Premeditation": 0.17,
+      "Garrote": 0.36,
+      "Melee": 7.48,
+      "Melee (off-hand)": 7.07,
+      "Ghostly Strike": 0.92,
+      "Shank": 1.67,
+      "Eviscerate": 1.4,
+      "Hemorrhage": 2.72,
       "Ambush": 1.0
-     }
+     },
+     "idle_share": 0.071,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Ambush": 0.275,
+      "Eviscerate": 0.179,
+      "Melee": 0.173,
+      "Hemorrhage": 0.113,
+      "Melee (off-hand)": 0.082,
+      "Instant Poison": 0.07,
+      "Garrote": 0.05,
+      "Ghostly Strike": 0.047,
+      "Shank": 0.012
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
     "40": {
-     "seconds": 23.5,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Premeditation": 0.18,
-      "Garrote": 0.38,
-      "Melee": 8.04,
-      "Melee (off-hand)": 7.63,
-      "Shank": 1.77,
-      "Ghostly Strike": 0.96,
-      "Eviscerate": 1.12,
-      "Sinister Strike": 2.35,
-      "Ambush": 1.0
-     }
-    },
-    "50": {
-     "seconds": 21.4,
+     "seconds": 22.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.17,
       "Garrote": 0.39,
-      "Melee": 6.91,
-      "Melee (off-hand)": 6.48,
-      "Shank": 1.46,
-      "Ghostly Strike": 0.92,
-      "Sinister Strike": 2.87,
-      "Eviscerate": 1.38,
+      "Melee": 7.23,
+      "Melee (off-hand)": 6.79,
+      "Ghostly Strike": 0.9,
+      "Shank": 1.6,
+      "Eviscerate": 1.43,
+      "Hemorrhage": 2.47,
       "Ambush": 1.0
-     }
+     },
+     "idle_share": 0.071,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Ambush": 0.261,
+      "Eviscerate": 0.242,
+      "Melee": 0.159,
+      "Hemorrhage": 0.099,
+      "Melee (off-hand)": 0.075,
+      "Instant Poison": 0.063,
+      "Garrote": 0.046,
+      "Ghostly Strike": 0.045,
+      "Shank": 0.011
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     },
-    "59": {
-     "seconds": 21.2,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Premeditation": 0.16,
-      "Garrote": 0.43,
-      "Melee": 6.78,
-      "Melee (off-hand)": 6.38,
-      "Shank": 1.41,
-      "Ghostly Strike": 0.88,
-      "Eviscerate": 1.75,
-      "Sinister Strike": 2.63,
-      "Ambush": 1.0
-     }
-    },
-    "60": {
-     "seconds": 19.9,
+    "50": {
+     "seconds": 20.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Premeditation": 0.15,
-      "Garrote": 0.4,
-      "Melee": 6.15,
-      "Melee (off-hand)": 5.73,
-      "Shank": 1.34,
-      "Ghostly Strike": 0.8,
-      "Eviscerate": 1.8,
-      "Hemorrhage": 3.14,
+      "Garrote": 0.39,
+      "Melee": 6.17,
+      "Melee (off-hand)": 5.74,
+      "Shank": 1.36,
+      "Ghostly Strike": 0.84,
+      "Eviscerate": 1.79,
+      "Hemorrhage": 3.44,
       "Ambush": 1.0
-     }
+     },
+     "idle_share": 0.067,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Eviscerate": 0.293,
+      "Ambush": 0.257,
+      "Hemorrhage": 0.124,
+      "Melee": 0.123,
+      "Instant Poison": 0.067,
+      "Melee (off-hand)": 0.057,
+      "Ghostly Strike": 0.036,
+      "Garrote": 0.035,
+      "Shank": 0.008
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
+    },
+    "60": {
+     "seconds": 20.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Premeditation": 0.15,
+      "Garrote": 0.42,
+      "Melee": 6.29,
+      "Melee (off-hand)": 5.84,
+      "Ghostly Strike": 0.83,
+      "Shank": 1.43,
+      "Eviscerate": 1.9,
+      "Hemorrhage": 3.58,
+      "Ambush": 1.0
+     },
+     "idle_share": 0.06,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Eviscerate": 0.339,
+      "Ambush": 0.218,
+      "Hemorrhage": 0.108,
+      "Melee": 0.108,
+      "Instant Poison": 0.077,
+      "Melee (off-hand)": 0.076,
+      "Ghostly Strike": 0.032,
+      "Garrote": 0.031,
+      "Shank": 0.011
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Instant Poison / Instant Poison"
     }
    }
   }

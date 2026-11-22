@@ -15,7 +15,7 @@
   }
  },
  "drink_below": 0.15,
- "eat_below": 0.4,
+ "eat_below": 0.5,
  "knobs": {
   "MAGE_ARMOR": 1,
   "EVO_BELOW": 0.15,
@@ -31,15 +31,15 @@
   50,
   60
  ],
- "date": "2026-11-17",
+ "date": "2026-11-20",
  "signature": {
   "required": [
    "Frostfire Bolt"
   ],
   "build_spec": "Hybrid Fire/Frost",
   "dropped_saved_rules": [],
-  "core_share_before": 0.3039049118816397,
-  "core_share_after": 0.30744369272579597,
+  "core_share_before": 0.37031513679295924,
+  "core_share_after": 0.37132427728331635,
   "min_share": 0.3,
   "floor_reached": null,
   "played_before": true,
@@ -50,54 +50,55 @@
  "changes": [
   {
    "round": 1,
-   "change": "Fire Blast only while the mob has more than 10% health",
+   "change": "eat below 50% health",
    "rule": [
-    "min_hp",
-    "Fire Blast",
-    0.1
+    "eat_below",
+    null,
+    0.5
    ],
-   "gain_seed1": 0.004888685179492813,
-   "gain_seed2": 0.006415347338584398
+   "gain_seed1": 0.00546361916132565,
+   "gain_seed2": 0.006645984567456464
   }
  ],
- "weighted_before": 32.02259716532983,
- "weighted_after": 31.8575896208492,
+ "weighted_before": 35.30121523982153,
+ "weighted_after": 34.99086003455257,
  "per_level": {
   "20": {
-   "before": 27.42414963476614,
-   "after": 27.34836733268441,
+   "before": 28.598031049550624,
+   "after": 28.642457402927928,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 30.283238564375182,
-   "after": 30.051406227255526,
+   "before": 33.167857154672866,
+   "after": 33.182301839913634,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 38.988611353825824,
-   "after": 38.57515823374186,
-   "deaths_before": 0.03333333333333333,
-   "deaths_after": 0.06666666666666667
+   "before": 44.5975639741325,
+   "after": 43.064184834344346,
+   "deaths_before": 3.466666666666667,
+   "deaths_after": 1.5333333333333334
   },
   "50": {
-   "before": 32.63421251999578,
-   "after": 32.59986817755343,
-   "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "before": 35.87760858502206,
+   "after": 35.79631415156792,
+   "deaths_before": 0.43333333333333335,
+   "deaths_after": 0.26666666666666666
   },
   "60": {
-   "before": 29.271403388109427,
-   "after": 29.166810874519,
-   "deaths_before": 0.0,
-   "deaths_after": 0.0
+   "before": 31.924395401945077,
+   "after": 31.957845045039615,
+   "deaths_before": 0.06666666666666667,
+   "deaths_after": 0.06666666666666667
   }
  },
  "retune": {
   "times": {
-   "saved": 32.023,
-   "continued": 31.858
+   "saved": 35.301,
+   "from scratch": 36.979,
+   "continued": 34.991
   },
   "installed": "continued",
   "reference_ok": true

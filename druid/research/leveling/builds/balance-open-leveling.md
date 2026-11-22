@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Balance leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the balance-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (balance-dps). +0.6% faster per kill than balance-open-leveling, the fastest of our leveling builds in that race.
+The Balance leveling build the open leveling search found on 2026-11-21: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the balance-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (balance-dps). +0.5% faster per kill than balance-open-leveling, the fastest of our leveling builds in that race.
 
 ## Point allocation
 
@@ -44,7 +44,7 @@ The Balance leveling build the open leveling search found on 2026-11-17: every l
 | **Heart of the Wild** | 1/5 | changed | Increases your Intellect by 2%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 2%. |
 | **Naturalist** | 5/5 | **NEW** | Reduces the cast time of your Healing Touch and Wild Growth spells by 0.5 sec and increases all damage you deal by 10%. |
 | **Reflection** | 3/3 | changed | Allows 50% of your Mana regeneration to continue while casting. |
-| **Bloom** | 1/1 | **NEW** | When your Rejuvenation or Regrowth spell expires due to its duration, the target is instantly healed for an amount equal to 100% of your Spirit. If either spell expires due to being dispelled, the target is healed for 50% of your Spirit instead. |
+| **Natural Shapeshifter** | 1/3 | moved | Reduces the mana cost of all shapeshifting by 10%. |
 
 ## Leveling order
 
@@ -73,19 +73,19 @@ The Balance leveling build the open leveling search found on 2026-11-17: every l
 | 55 | Balance | Vengeance | 1 | 33/0/13 |
 | 56 | Balance | Genesis | 1 | 34/0/13 |
 | 57-58 | Balance | Vengeance | 2 | 36/0/13 |
-| 59 | Restoration | Bloom | 1 | 36/0/14 |
+| 59 | Restoration | Natural Shapeshifter | 1 | 36/0/14 |
 | 60 | Restoration | Heart of the Wild | 1 | 36/0/15 |
 
 ## Core talents (priority order)
 
-1. **Eclipse** — +11.4 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Moonkin Form** — +4.7 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Moonglow** — +3.4 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Moonfury** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Naturalist** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Reflection** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Nature's Focus** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Improved Wrath** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Moonglow** — +2.8 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Moonfury** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Naturalist** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Reflection** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Nature's Focus** — +1.7 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Improved Starfire** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Improved Wrath** — +1.6 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Moonkin Form** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -93,9 +93,9 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-18: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Ferocity to Genesis at 56 (no loss: -0.1% seed 3, +0.0% seed 4, level-weighted time per kill).
-- 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Genesis to Vengeance at 55 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Ferocity to Vengeance at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Ferocity to Vengeance at 57 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Subtlety to Heart of the Wild at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Natural Shapeshifter to Bloom at 59 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill).
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 34.43; balance-open-leveling 34.62, opt-balance-dps-leveling-st 34.86. The search simulated 49,461 builds.
+- 2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Gift of Nature to Insect Swarm at 60 (no loss: +0.1% seed 3, +0.1% seed 4, level-weighted time per kill); Insect Swarm to Heart of the Wild at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
+- 2026-11-21: undone from the leveling filler pass: Gift of Nature back at 60 (it held Heart of the Wild). Its value is one the fight lab cannot see (the stats model's kinds, scorer/kinds.json: travel, control, escape), so the lab's times, a gain or a tie, do not weigh it against the talent that took its point (the audit session's ruling). 2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Gift of Nature to Heart of the Wild at 60 (no loss: -0.1% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-21: undone from the leveling filler pass: Natural Shapeshifter back at 59 (it held Genesis). Its value is one the fight lab cannot see (the stats model's kinds, scorer/kinds.json: travel, control, escape), so the lab's times, a gain or a tie, do not weigh it against the talent that took its point (the audit session's ruling). 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Bloom to Genesis at 59 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Heart of the Wild to Gift of Nature at 60 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-18: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Ferocity to Genesis at 56 (no loss: -0.1% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Genesis to Vengeance at 55 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Ferocity to Vengeance at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Ferocity to Vengeance at 57 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Subtlety to Heart of the Wild at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Natural Shapeshifter to Bloom at 59 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill).
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 31.42; balance-open-leveling 31.58, opt-balance-dps-leveling-st 32.19. The search simulated 49,461 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -105,7 +105,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/druid>
-- <https://talentsforever.com/druid/60/5332200102501351-3-505311-12>
+- <https://talentsforever.com/druid/60/5332200105501351--5053101-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

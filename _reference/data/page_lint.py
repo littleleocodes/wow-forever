@@ -173,7 +173,7 @@ def check_guides(tree, cls, out):
         return
     if not tree.exists(f"{cls}/leveling/keybinds.md"):
         out.append(("coverage", cls, "no keybinds page"))
-    for g in data["guides"]:
+    for g in LG.own_guides(data):   # a guide by reference (same_as, 2026-11-21) has no page of its own
         slug = SM.spec_slug(cls, g["spec"])
         page, guide = f"{cls}/leveling/{slug}.md", f"{cls}/leveling/{LG.page_name(cls, g['spec'])}"
         if not tree.exists(guide):
@@ -294,6 +294,12 @@ def check_build(tree, cls, pages, out):
         if not m or not sec:
             continue
         have = {t["name"] for s, tr in zip(m.group(2).split("-"), trees) for c, t in zip(s, tr["talents"]) if c.isdigit() and int(c)}
+        # a page that also shows the class's tank build (the druid's bear under "## Tanking" on the Feral page, 2026-11-22): the guide may
+        # name that build's talents too (Primal Bite)
+        tank = re.search(r"\n## Tanking\n(.*?)(?=\n## |\Z)", text, re.S)
+        mt = TF.search(tank.group(1)) if tank else None
+        if mt:
+            have |= {t["name"] for s, tr in zip(mt.group(2).split("-"), trees) for c, t in zip(s, tr["talents"]) if c.isdigit() and int(c)}
         body = sec.group(2)
         def negated(b):
             if any(k in body[max(0, b.start() - 40):b.start()].lower() for k in NEGATE):
@@ -354,6 +360,32 @@ GENERIC = re.compile(r"\ball\b|\byour (?:spells|attacks|abilities|melee|ranged|h
                      re.I)
 
 
+# a spell named only as the condition of a talent's effect is no spell the talent improves (2026-11-22, the Shadow priest's point at 56:
+# Power in Light, "Your Smite and Penance spells deal 2% increased damage to targets afflicted with your Holy Fire or Shadow Word: Pain",
+# had read as live because Shadow casts Shadow Word: Pain)
+CONDITION = re.compile(r"\b(?:afflicted with|affected by|targets? with|under the effects? of|gives your)\s+(?:your\s+)?([^.;]+)", re.I)
+# a talent whose effect needs a named spell's critical strike ("Your Shadow Bolt critical strikes increase Shadow damage taken by the
+# target"): dead when the build never uses that spell, however general the effect (2026-11-22: the Affliction filler pass had put a point
+# in Improved Shadow Bolt, and Nightfall's "gives your Corruption ... a 4% chance" had read its triggers as what it improves)
+TRIGGER = re.compile(r"\b[Yy]our ((?:[A-Z][\w':-]*\s?)+?) (?:critical strikes?|critical hits?|crits)\b")
+
+
+def trigger_names(tip, names):
+    """The spells of `names` a tooltip's effect needs to fire (TRIGGER): none used means the talent does nothing."""
+    trig = " ".join(m.group(1) for m in TRIGGER.finditer(tip))
+    return {n for n in names if re.search(rf"\b{re.escape(n)}\b", trig)}
+
+
+def improved_names(tip, names):
+    """The spells of `names` a tooltip improves: the ones it names outside its condition clauses (a spell named in both stays). When
+    every named spell is in such a clause, they are the talent's own spells: the trigger it needs (Rapid Recuperation, "Afflicting a target
+    with Serpent Sting allows ...") or the spell it extends (Overgrowth, "targets you may have affected by Entangling Roots"), so all of
+    them count, as before."""
+    cond = " ".join(m.group(1) for m in CONDITION.finditer(tip))
+    outside = CONDITION.sub(" ", tip)
+    return {n for n in names if not re.search(rf"\b{re.escape(n)}\b", cond) or re.search(rf"\b{re.escape(n)}\b", outside)} or set(names)
+
+
 def rank_text(t):
     r = (t.get("ranks") or [""])[-1]
     return r if isinstance(r, str) else (r.get("text") or r.get("description") or "")
@@ -395,10 +427,15 @@ def dead_talents(cls, text, body):
             rest = tip
             for n in names:
                 rest = rest.replace(n, " ")
+            trig = trigger_names(tip, names)   # its effect needs a spell the page never uses (TRIGGER, 2026-11-22)
+            if trig and not any(re.search(rf"\b{re.escape(n)}\b", cut) for n in trig):
+                found.append((t["name"], int(c), tr["name"], sorted(trig)))
+                continue
             if FAMILY.search(rest):   # "your Shock and Lightning Shield spells": every shock counts (the shaman audit, 2026-11-08)
                 continue
-            if names and not GENERIC.search(rest) and not any(re.search(rf"\b{re.escape(n)}\b", cut) for n in names):
-                found.append((t["name"], int(c), tr["name"], sorted(names)))
+            imp = improved_names(tip, names)   # a spell named only as the effect's condition is not what it improves (2026-11-22)
+            if imp and not GENERIC.search(rest) and not any(re.search(rf"\b{re.escape(n)}\b", cut) for n in imp):
+                found.append((t["name"], int(c), tr["name"], sorted(imp)))
     return found
 
 
@@ -471,7 +508,7 @@ def check_dead(tree, cls, pages, out):
             if "/raid/" in p:
                 zero = ZT.raid(cls, lead_id)
             else:
-                zero = ZT.leveling(cls, p.rsplit("/", 1)[-1][:-3], lb.get("order"))
+                zero = ZT.leveling(cls, p.rsplit("/", 1)[-1][:-3], lb.get("order"), build=lead_id)
             dead = [d for d in dead if d[0] in zero]
         if not dead:
             continue
@@ -510,6 +547,70 @@ def check_tiers(tree, cls, pages, out):
         # is the two runs' noise (Retribution 767 against 768, the same set in both)
         if m and "Raid BiS" in rows and (rec.get("standard_legal") or {}).get("bis") and int(rows["Raid BiS"]) < 0.995 * int(m.group(1)):
             out.append(("tiers", cls, f"{pg}: Raid BiS {rows['Raid BiS']} is below the standard set's {m.group(1)}, a set Raid BiS allows"))
+
+
+def check_tagline(tree, cls, pages, out):
+    """A raid page's opening lines (its hybrid line or summary, before "## How to play") that quote a DPS for the page's own build
+    ("864 against 836 and 915 DPS", "(802 against 737 DPS ...)") against the page's own full-raid number: more than 2% apart is a stale
+    quote (2026-11-22, the audit session: Beast-Survival's tagline said 9% ahead of Survival at 802 against 737 while the page showed
+    864 and Survival's pick 915)."""
+    for pg in pages:
+        if not re.match(rf"{cls}/raid/[a-z0-9-]+\.md$", pg) or pg.endswith("README.md"):
+            continue
+        text = tree.text(pg)
+        m = re.search(r"^\| Full raid, 3-minute fight[^|]*\| (\d+) \|", text, re.M)
+        if not m:
+            continue
+        head = text.split("\n## ", 1)[0]
+        own = int(m.group(1))
+        for q in re.finditer(r"\b(\d{3,4}(?:\.\d)?) (?:DPS )?against \d", head):
+            n = float(q.group(1))
+            if abs(n / own - 1) > 0.02:
+                out.append(("tagline", cls, f"{pg}: the opening lines quote {q.group(1)} DPS for the page's build; the page's full-raid number "
+                                            f"is {own}"))
+
+
+def lev_ranking(tree, cls):
+    """{page slug: (seconds per kill, spec name)} from the class page's leveling ranking: the integer the table shows refined by its
+    "behind the fastest" percentage (the fastest row's own number is rounded, so the refinement is at best within half a second)."""
+    text = tree.text(f"{cls}/README.md")
+    sec = text.split("### Leveling (solo)", 1)[1].split("\n### ", 1)[0] if "### Leveling (solo)" in text else ""
+    rows = re.findall(r"^\| \d+ \| \[([^\]]+)\]\(leveling/([a-z0-9-]+)\.md\)[^|]*\| (\d+) \| (fastest|[+-][\d.]+%) \|", sec, re.M)
+    fast = next((int(s) for _, _, s, b in rows if b == "fastest"), None)
+    out = {}
+    for name, slug, s, b in rows:
+        v = float(s) if b == "fastest" or fast is None else fast * (1 + float(b.rstrip("%")) / 100)
+        out[slug] = (v, name)
+    return out
+
+
+def check_quoted(tree, cls, pages, out):
+    """A leveling page's sentence that quotes level-weighted seconds per kill for its own build, or for a sibling spec's page build ("the
+    Frost page's (28.5)"), against the class page's ranking: more than a second apart is a stale quote (2026-11-22, the audit session: the
+    Arcane-Frost guide still quoted the 2026-11-20 race, 27.9 against Arcane's 27.8 and Frost's 28.5, in the reverse order of the
+    ranking the same push carried, 26 / 27 / 27)."""
+    rank = lev_ranking(tree, cls)
+    if not rank:
+        return
+    by_name = {name.lower(): slug for slug, (_, name) in rank.items()}
+    for pg in pages:
+        m = re.match(rf"{cls}/leveling/([a-z0-9-]+)\.md$", pg)
+        if not m or m.group(1) in ("README", "keybinds") or m.group(1).endswith("-by-level"):
+            continue
+        slug = m.group(1)
+        text = tree.text(pg).split("\n---\n")[0]
+        for sent in re.split(r"(?<=[.;])\s+(?=[A-Z*])", text.replace("\n", " ")):
+            if "level-weighted" not in sent:
+                continue
+            own = (re.search(r"(\d+(?:\.\d)?) against \d+(?:\.\d)? seconds", sent)   # "38 against 27 seconds": the page's own first
+                   or re.search(r"(\d+(?:\.\d)?) seconds (?:per|a) kill", sent))
+            if own and slug in rank and abs(float(own.group(1)) - rank[slug][0]) > 1.0:
+                out.append(("quoted", cls, f"{pg}: quotes {own.group(1)} s a kill level-weighted for its build; the class ranking shows "
+                                           f"{rank[slug][0]:.1f}"))
+            for nm, v in re.findall(r"the ([A-Z][\w-]*(?: [A-Z][\w-]*)?) page's(?: build)? \(?(\d+(?:\.\d)?)\b", sent):
+                s2 = by_name.get(nm.lower())
+                if s2 and abs(float(v) - rank[s2][0]) > 1.0:
+                    out.append(("quoted", cls, f"{pg}: quotes {v} s a kill for the {nm} page's build; the class ranking shows {rank[s2][0]:.1f}"))
 
 
 def check_timing(tree, cls, pages, out):
@@ -629,6 +730,32 @@ def live(out):
     return notes
 
 
+def check_gap(out):
+    """The live client against the data (client_gap.py's record; 2026-11-21, the audit session: "make the gap a finding that cannot be
+    missed rather than a line in a log"): a finding while the live client is newer than the data, the simulator's upstream is ahead of
+    the pin, or the record is more than a day old."""
+    import client_gap as CG
+    rec = CG.load()
+    if not rec:
+        out.append(("client", "all", "no client-gap.json: run `python _reference/data/client_gap.py --write`"))
+        return
+    line = CG.footer_line(rec)
+    if line:
+        out.append(("client", "all", f"{line} (talents {rec['data'].get('talents')}, spells {rec['data'].get('spells')}; the pages' footers say so)"))
+    up = (rec.get("sim") or {}).get("upstream") or {}
+    if up.get("behind"):
+        out.append(("client", "all", f"the official simulator's upstream is {up['behind']} commits ahead of the pin {rec['sim']['pin'][:9]} "
+                                     f"(head {up.get('head', '?')[:9]}, {up.get('date', '?')}): a re-pin is due"))
+    try:
+        age = (datetime.datetime.now() - datetime.datetime.fromisoformat(rec["checked"])).total_seconds() / 3600
+    except (KeyError, ValueError):
+        age = None
+    if age is None or age > 24:
+        out.append(("client", "all", f"client-gap.json was checked {rec.get('checked', 'never')}: run client_gap.py --write again"))
+    for e in rec.get("errors") or []:
+        out.append(("client", "all", f"client_gap.py: {e}"))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("classes", nargs="*")
@@ -651,9 +778,13 @@ def main():
         check_free(tree, cls, pages, out)
         check_timing(tree, cls, pages, out)
         check_tiers(tree, cls, pages, out)
+        check_tagline(tree, cls, pages, out)
+        check_quoted(tree, cls, pages, out)
         check_names(tree, cls, pages, known, out)
+    check_gap(out)
     notes = live(out) if a.live else []
-    order = ["patch", "talents", "links", "guide", "build", "dead", "free", "timing", "tiers", "keys", "steps", "macros", "coverage", "names"]
+    order = ["client", "patch", "talents", "links", "guide", "build", "dead", "free", "timing", "tiers", "tagline", "quoted", "keys", "steps", "macros",
+             "coverage", "names"]
     src = "origin/main" if a.pushed else "the working tree"
     o = ["# Page audit", "", f"> Generated by `_reference/data/page_lint.py` on {datetime.date.today().isoformat()} from {src}: {len(classes)} classes, {links} talent links. Do not hand-edit.", ""]
     o += [f"- {n}" for n in notes] + ([""] if notes else [])

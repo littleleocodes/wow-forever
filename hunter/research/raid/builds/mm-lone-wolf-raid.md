@@ -84,13 +84,13 @@ Allocation adopted on 2026-09-26 from `opt-mm-lonewolf-raid-raid-dps`, the best 
 - **The training dummy:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/turret.apl.json`), untuned. The rotation search of 2026-09-27 to 2026-10-07 (9 changes, `mm-lonewolf-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 - **A fully buffed raid:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/turret.apl.json`), untuned. The rotation search of 2026-09-27 to 2026-11-10 (14 changes, `mm-lonewolf-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 
-Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (rank 6); at -19s: move to “Pull range” yd; if “Use Sniper Shot”: cast Sniper Shot.
+Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk; at -19s: move to “Pull range” yd; if “Use Sniper Shot”: cast Sniper Shot.
 
 | # | Priority (the first line whose condition holds is cast) | [`mm-lone-wolf-raid`](mm-lone-wolf-raid.md) casts/min |
 |---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready |
 | 2 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 |
-| 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.1 |
+| 3 | if not Serpent Sting is on the target: cast Serpent Sting | 2.1 |
 | 4 | if “Use Arcane Shot” and not “Use Summon Hawk”: cast Arcane Shot | 8.5 |
 | 5 | if “Use Aimed Shot”: cast Aimed Shot | 3.1 |
 | 6 | if “Use Sniper Shot”: cast Sniper Shot | 1.7 |

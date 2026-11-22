@@ -3,7 +3,7 @@
  "spec": "Fury",
  "build": "fury-open-leveling",
  "rotation": "fury-dw-raid",
- "date": "2026-11-15",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -147,18 +147,248 @@
  ],
  "steps": [
   {
-   "weighted": 24.474,
+   "weighted": 24.134,
    "values_at_60": {
-    "Bloodthirst": -36.601,
-    "Gore Drinker": -0.811,
-    "Impale": -0.136,
-    "Improved Overpower": -0.47,
-    "Reckless Swings": -0.971
+    "Anger Management": -0.403,
+    "Deep Wounds": -0.155,
+    "Gore Drinker": -0.727,
+    "Improved Execute": -0.183,
+    "Improved Overpower": -0.385,
+    "Reckless Swings": -0.854
    },
-   "zero": []
+   "zero": [],
+   "dead_held": [
+    "Improved Tactical Mastery"
+   ]
   }
  ],
- "moves": [],
+ "moves": [
+  {
+   "from": "Impale",
+   "to": "Improved Execute",
+   "level": 59,
+   "seed3": -0.0008,
+   "seed4": -0.0007,
+   "why": "tie-break"
+  }
+ ],
+ "kept_signature": [
+  "Bloodthirst"
+ ],
+ "gates_checked": {
+  "Blood Craze": {
+   "level": 39,
+   "kind": "prerequisite of Gore Drinker",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Cruelty": {
+   "level": 14,
+   "kind": "tier point for Unbridled Wrath (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Booming Voice",
+     "seed3": 0.0135
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Death Wish": {
+   "level": 30,
+   "kind": "prerequisite of Bloodthirst",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Dual Wield Specialization": {
+   "level": 31,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Execute",
+     "seed3": 0.005
+    },
+    {
+     "to": "Lingering Rage",
+     "seed3": 0.0098
+    },
+    {
+     "to": "Piercing Howl",
+     "seed3": 0.0098
+    },
+    {
+     "to": "Improved Berserker Rage",
+     "seed3": 0.0098
+    },
+    {
+     "to": "Improved Intercept",
+     "seed3": 0.0098
+    },
+    {
+     "to": "Booming Voice",
+     "seed3": 0.0101
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Enrage": {
+   "level": 24,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Booming Voice",
+     "seed3": 0.0077
+    },
+    {
+     "to": "Lingering Rage",
+     "seed3": 0.009
+    },
+    {
+     "to": "Piercing Howl",
+     "seed3": 0.009
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Flurry": {
+   "level": 37,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Execute",
+     "seed3": 0.0043
+    },
+    {
+     "to": "Booming Voice",
+     "seed3": 0.0078
+    },
+    {
+     "to": "Lingering Rage",
+     "seed3": 0.0103
+    },
+    {
+     "to": "Piercing Howl",
+     "seed3": 0.0103
+    },
+    {
+     "to": "Improved Berserker Rage",
+     "seed3": 0.0103
+    },
+    {
+     "to": "Improved Intercept",
+     "seed3": 0.0103
+    },
+    {
+     "to": "Improved Whirlwind",
+     "seed3": 0.0103
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Furious Precision": {
+   "level": 33,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Execute",
+     "seed3": 0.0025
+    },
+    {
+     "to": "Booming Voice",
+     "seed3": 0.0068
+    },
+    {
+     "to": "Lingering Rage",
+     "seed3": 0.0076
+    },
+    {
+     "to": "Piercing Howl",
+     "seed3": 0.0076
+    },
+    {
+     "to": "Improved Berserker Rage",
+     "seed3": 0.0076
+    },
+    {
+     "to": "Improved Intercept",
+     "seed3": 0.0076
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Charge": {
+   "level": 50,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Heroic Strike",
+     "seed3": 0.001
+    },
+    {
+     "to": "Deflection",
+     "seed3": 0.0025
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Heroic Strike": {
+   "level": 48,
+   "kind": "tier point for Improved Charge (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0008
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Rend": {
+   "level": 46,
+   "kind": "prerequisite of Deep Wounds",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Tactical Mastery": {
+   "level": 53,
+   "kind": "prerequisite of Anger Management",
+   "does_nothing": "improves only Tactical Mastery, which the build never casts (its removal changes nothing at 60)",
+   "homes": [],
+   "verdict": "no legal home"
+  },
+  "Unbridled Wrath": {
+   "level": 19,
+   "kind": "tier point for Furious Precision (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Booming Voice",
+     "seed3": 0.0021
+    },
+    {
+     "to": "Lingering Rage",
+     "seed3": 0.0034
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  }
+ },
+ "no_better_home": {
+  "Improved Tactical Mastery": {
+   "kind": "prerequisite of Anger Management",
+   "exact": true,
+   "why": "improves only Tactical Mastery, which the build never casts (its removal changes nothing at 60)",
+   "homes": 0
+  }
+ },
  "final_order": [
   {
    "levels": "10-14",
@@ -288,8 +518,8 @@
   },
   {
    "levels": "59",
-   "tree": "Arms",
-   "talent": "Impale",
+   "tree": "Fury",
+   "talent": "Improved Execute",
    "points": 1
   },
   {
@@ -297,6 +527,238 @@
    "tree": "Arms",
    "talent": "Improved Overpower",
    "points": 1
+  }
+ ],
+ "written": {
+  "allocation": {
+   "Arms": [
+    [
+     "Improved Heroic Strike",
+     2
+    ],
+    [
+     "Improved Rend",
+     3
+    ],
+    [
+     "Improved Charge",
+     2
+    ],
+    [
+     "Improved Tactical Mastery",
+     3
+    ],
+    [
+     "Improved Overpower",
+     2
+    ],
+    [
+     "Anger Management",
+     1
+    ],
+    [
+     "Deep Wounds",
+     3
+    ]
+   ],
+   "Fury": [
+    [
+     "Cruelty",
+     5
+    ],
+    [
+     "Unbridled Wrath",
+     5
+    ],
+    [
+     "Furious Precision",
+     3
+    ],
+    [
+     "Blood Craze",
+     3
+    ],
+    [
+     "Enrage",
+     5
+    ],
+    [
+     "Dual Wield Specialization",
+     5
+    ],
+    [
+     "Reckless Swings",
+     1
+    ],
+    [
+     "Improved Execute",
+     1
+    ],
+    [
+     "Death Wish",
+     1
+    ],
+    [
+     "Gore Drinker",
+     2
+    ],
+    [
+     "Flurry",
+     3
+    ],
+    [
+     "Bloodthirst",
+     1
+    ]
+   ],
+   "Protection": []
+  },
+  "order": [
+   {
+    "levels": "10-14",
+    "tree": "Fury",
+    "talent": "Cruelty",
+    "points": 5
+   },
+   {
+    "levels": "15-19",
+    "tree": "Fury",
+    "talent": "Unbridled Wrath",
+    "points": 5
+   },
+   {
+    "levels": "20-24",
+    "tree": "Fury",
+    "talent": "Enrage",
+    "points": 5
+   },
+   {
+    "levels": "25",
+    "tree": "Fury",
+    "talent": "Furious Precision",
+    "points": 1
+   },
+   {
+    "levels": "26-29",
+    "tree": "Fury",
+    "talent": "Dual Wield Specialization",
+    "points": 4
+   },
+   {
+    "levels": "30",
+    "tree": "Fury",
+    "talent": "Death Wish",
+    "points": 1
+   },
+   {
+    "levels": "31",
+    "tree": "Fury",
+    "talent": "Dual Wield Specialization",
+    "points": 1
+   },
+   {
+    "levels": "32-33",
+    "tree": "Fury",
+    "talent": "Furious Precision",
+    "points": 2
+   },
+   {
+    "levels": "34",
+    "tree": "Fury",
+    "talent": "Blood Craze",
+    "points": 1
+   },
+   {
+    "levels": "35-37",
+    "tree": "Fury",
+    "talent": "Flurry",
+    "points": 3
+   },
+   {
+    "levels": "38-39",
+    "tree": "Fury",
+    "talent": "Blood Craze",
+    "points": 2
+   },
+   {
+    "levels": "40",
+    "tree": "Fury",
+    "talent": "Bloodthirst",
+    "points": 1
+   },
+   {
+    "levels": "41-42",
+    "tree": "Fury",
+    "talent": "Gore Drinker",
+    "points": 2
+   },
+   {
+    "levels": "43",
+    "tree": "Fury",
+    "talent": "Reckless Swings",
+    "points": 1
+   },
+   {
+    "levels": "44-46",
+    "tree": "Arms",
+    "talent": "Improved Rend",
+    "points": 3
+   },
+   {
+    "levels": "47-48",
+    "tree": "Arms",
+    "talent": "Improved Heroic Strike",
+    "points": 2
+   },
+   {
+    "levels": "49-50",
+    "tree": "Arms",
+    "talent": "Improved Charge",
+    "points": 2
+   },
+   {
+    "levels": "51-53",
+    "tree": "Arms",
+    "talent": "Improved Tactical Mastery",
+    "points": 3
+   },
+   {
+    "levels": "54",
+    "tree": "Arms",
+    "talent": "Anger Management",
+    "points": 1
+   },
+   {
+    "levels": "55-57",
+    "tree": "Arms",
+    "talent": "Deep Wounds",
+    "points": 3
+   },
+   {
+    "levels": "58",
+    "tree": "Arms",
+    "talent": "Improved Overpower",
+    "points": 1
+   },
+   {
+    "levels": "59",
+    "tree": "Fury",
+    "talent": "Improved Execute",
+    "points": 1
+   },
+   {
+    "levels": "60",
+    "tree": "Arms",
+    "talent": "Improved Overpower",
+    "points": 1
+   }
+  ],
+  "note": "2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Impale to Improved Execute at 59 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
+ },
+ "reruns": [
+  {
+   "date": "2026-11-22",
+   "moves": 0
   }
  ]
 }

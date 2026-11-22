@@ -80,13 +80,13 @@ Our Marksmanship raid draft's tree split with Summon Hawk, a Forever Beast Maste
 - **The training dummy:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/turret_hawk.apl.json`), untuned. The rotation search of 2026-09-28 to 2026-10-09 (15 changes, `bm-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 - **A fully buffed raid:** the entry's base rotation (`_reference/data/raidsim/apls/hunter/upstream/turret_hawk.apl.json`), untuned. The rotation search of 2026-09-28 to 2026-11-20 (15 changes, `bm-raid-rotation-search.json`) tuned an earlier base that this entry no longer plays.
 
-Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk (rank 6); at -19s: move to “Pull range” yd.
+Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Hawk; at -19s: move to “Pull range” yd.
 
 | # | Priority (the first line whose condition holds is cast) | [`mm-hawk-raid`](mm-hawk-raid.md) casts/min |
 |---|---|---|
 | 1 | if time into the fight ≥ 5s: use every other cooldown when ready | as ready |
 | 2 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 |
-| 3 | if not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.8 |
+| 3 | if not Serpent Sting is on the target: cast Serpent Sting | 2.8 |
 | 4 | if “Use Summon Hawk” and “Use Arcane Shot” and the sequence is complete: reset sequence 'HHA' | as ready |
 | 5 | if “Use Summon Hawk” and “Use Arcane Shot”: sequence 'HHA': cast Summon Hawk; cast Summon Hawk; cast Arcane Shot | 13.5 |
 | 6 | if “Use Aimed Shot”: cast Aimed Shot | 4.7 |

@@ -384,14 +384,30 @@ PIPELINE = {"variants": [{'spec': 'balance-dps', 'opt': 'opt-balance-dps-levelin
             "extra_reports": [{"spec": "balance-dps", "build": "opt-balance-dps-leveling-st", "compare": ["opt-feral-cat-dps-leveling-st"]}]}
 
 
+# Starfire without Eclipse (2026-11-21, the smaller-jumps investigation): the Balance list cast Starfire only on Eclipse charges or at a
+# rooted or stunned mob, so before Eclipse (30) it cast Wrath only and Improved Starfire (25-29) did nothing; a build without Eclipse
+# may cast it whenever it is affordable. STARFIRE_NO_ECLIPSE False: the lab before (bit for bit).
+STARFIRE_NO_ECLIPSE = True
+# Rip's damage is read from its per-combo-point table by the module (the lint's dot check does not apply)
+LINT_FILLED = ("Rip",)
+
+
 class DruidModule(BaseModule):
     resource = "energy"
     melee = True
     RIP_EARLY_CP = RIP_EARLY_CP   # Rip before Ferocious Bite: at this many combo points ...
     RIP_EARLY_HP = RIP_EARLY_HP   # ... while the mob has more than this share of its health
     SHIFTING_POWER_ABOVE = SHIFTING_POWER_ABOVE   # Shifting Power only above this share of mana (1.01: never; see the module constant)
+    # between fights, heal in caster form when hurt (1, the lab before) or eat (0): a rules knob since 2026-11-21 (the smaller-jumps
+    # investigation: Balance before Moonkin Form healed, then drank that mana back; eating was about 9% faster at 30-39, never compared)
+    CASTER_HEAL = 1
+    # Starfire waits for Eclipse charges from this rank of Eclipse on; below it, Starfire is cast as without Eclipse (STARFIRE_NO_ECLIPSE).
+    # A rules knob since 2026-11-22 (the audit session: Balance went from 33.3 s a kill at 29 to 35.9 at 30 on taking Eclipse's first rank,
+    # whose charges take 0.17 s off a Starfire while the gate costs the Starfires). 1: the lab before (bit for bit); 4: never.
+    ECLIPSE_GATE_RANK = 1
     ROTATION_KNOBS = {"RIP_EARLY_CP": [2, 3, 4, 5], "RIP_EARLY_HP": [0.0, 0.25, 0.4, 0.5],
-                      "SHIFTING_POWER_ABOVE": [0.5, 0.65, 0.8, 0.95, 1.01]}   # tuned by rotation_opt.py (1.01: never)
+                      "SHIFTING_POWER_ABOVE": [0.5, 0.65, 0.8, 0.95, 1.01],   # tuned by rotation_opt.py (1.01: never)
+                      "CASTER_HEAL": [0, 1], "ECLIPSE_GATE_RANK": [1, 2, 3, 4]}
 
     def __init__(self, talents, level, spec="feral-cat-dps", gear="leveling"):
         self.t = {k: v for k, v in talents.items() if v > 0}
@@ -887,7 +903,7 @@ class DruidModule(BaseModule):
             if self.in_moonkin:
                 return 0.0
             rj, rg = self.spells.get("Rejuvenation"), self.spells.get("Regrowth")
-            for heal in (rj, rg):
+            for heal in ((rj, rg) if self.CASTER_HEAL else ()):   # CASTER_HEAL 0: no heal, the rest's eating takes the health back
                 if heal is None or p.hp >= 0.85 * p.hp_max or p.hp >= 0.70 * p.hp_max and heal is rg or p.mana < self.mana_cost(heal):
                     continue
                 p.mana -= self.mana_cost(heal)
@@ -900,7 +916,7 @@ class DruidModule(BaseModule):
         rj, rg = self.spells.get("Rejuvenation"), self.spells.get("Regrowth")
         cheapest = min((self.mana_cost(h) for h in (rj, rg) if h is not None), default=0.0)
         # shift out to heal only with the mana for a heal and the way back (out of form already: heal with what there is)
-        if p.hp < 0.70 * p.hp_max and (rj or rg) and self.form != "caster" and (not self.in_cat or p.mana >= self.shift_cost(p) + cheapest):
+        if self.CASTER_HEAL and p.hp < 0.70 * p.hp_max and (rj or rg) and self.form != "caster" and (not self.in_cat or p.mana >= self.shift_cost(p) + cheapest):
             if self.in_cat:
                 if self.form == "cat":
                     self._cat_exit = (t, p.energy)
@@ -977,7 +993,8 @@ class DruidModule(BaseModule):
             return mf
         if swarm and can(swarm) and not fight.dot_active("Insect Swarm") and hp > 0.4 * m.hp_max:
             return swarm
-        eclipse = self.rank("Eclipse") and self.eclipse_charges(fight) > 0
+        gated = self.rank("Eclipse") >= self.ECLIPSE_GATE_RANK if self.rank("Eclipse") else False   # (ECLIPSE_GATE_RANK, 2026-11-22)
+        eclipse = (gated and self.eclipse_charges(fight) > 0) or (STARFIRE_NO_ECLIPSE and not gated)
         if sf and can(sf) and (eclipse or m.rooted(t) or m.stunned(t)) and hp > avg(sf) * 0.5:
             return sf
         if wrath and can(wrath) and hp > avg(wrath) * 0.5:

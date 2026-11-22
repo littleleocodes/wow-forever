@@ -3,7 +3,7 @@
  "spec": "Hybrid Beast Mastery/Survival",
  "build": "beast-survival-open-leveling",
  "rotation": "melee-dps",
- "date": "2026-11-15",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -129,47 +129,16 @@
  ],
  "steps": [
   {
-   "weighted": 21.173,
+   "weighted": 21.145,
    "values_at_60": {
     "Bestial Discipline": -0.317,
-    "Expose Prey": 0.0,
-    "Lethal Attacks": -0.066,
-    "Resourcefulness": -1.034,
-    "Spirit Bond": -0.025,
-    "Survivalist's Discipline": -0.883
+    "Lethal Attacks": -0.13,
+    "Predator's Edge": -0.11,
+    "Resourcefulness": -0.909,
+    "Survivalist's Discipline": -0.934
    },
-   "zero": [
-    "Expose Prey",
-    "Lethal Attacks",
-    "Spirit Bond"
-   ]
-  },
-  {
-   "weighted": 21.081,
-   "values_at_60": {
-    "Bestial Discipline": -0.318,
-    "Lethal Attacks": -0.058,
-    "Resourcefulness": -0.97,
-    "Spirit Bond": -0.013,
-    "Survivalist's Discipline": -0.892
-   },
-   "zero": [
-    "Lethal Attacks",
-    "Spirit Bond"
-   ]
-  },
-  {
-   "weighted": 21.071,
-   "values_at_60": {
-    "Bestial Discipline": -0.27,
-    "Lethal Attacks": -0.062,
-    "Predator's Edge": -0.077,
-    "Resourcefulness": -0.964,
-    "Survivalist's Discipline": -0.955
-   },
-   "zero": [
-    "Lethal Attacks"
-   ]
+   "zero": [],
+   "dead_held": []
   }
  ],
  "moves": [
@@ -188,8 +157,272 @@
    "seed3": -0.0005,
    "seed4": -0.0006,
    "why": "tie-break"
+  },
+  {
+   "from": "Entrapment",
+   "to": "Deflection",
+   "level": 19,
+   "seed3": -0.0002,
+   "seed4": -0.0001,
+   "why": "gate that did nothing, no loss"
+  },
+  {
+   "from": "Survivalist",
+   "to": "Entrapment",
+   "level": 18,
+   "seed3": 0.0002,
+   "seed4": 0.0001,
+   "why": "gate that did nothing, no loss"
+  },
+  {
+   "from": "Survivalist",
+   "to": "Entrapment",
+   "level": 17,
+   "seed3": -0.0,
+   "seed4": -0.0001,
+   "why": "gate that did nothing, no loss"
   }
  ],
+ "kept_signature": [],
+ "gates_checked": {
+  "Clever Traps": {
+   "level": 24,
+   "kind": "tier point for Survival Tactics (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0095
+    },
+    {
+     "to": "Entrapment",
+     "seed3": 0.0097
+    },
+    {
+     "to": "Improved Wing Clip",
+     "seed3": 0.0097
+    },
+    {
+     "to": "Deterrence",
+     "seed3": 0.0097
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Deadly Aspects": {
+   "level": 42,
+   "kind": "tier point for Unleashed Fury (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Endurance Training",
+     "seed3": 0.0006
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Deflection": {
+   "level": 19,
+   "kind": "tier point for Clever Traps (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Entrapment",
+     "seed3": 0.0002
+    },
+    {
+     "to": "Improved Wing Clip",
+     "seed3": 0.0002
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Endurance Training": {
+   "level": 47,
+   "kind": "tier point for Unleashed Fury (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Aspect of the Monkey",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Improved Revive Pet",
+     "seed3": 0.0009
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Ferocity": {
+   "level": 57,
+   "kind": "tier point for Bestial Discipline (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Endurance Training",
+     "seed3": 0.0004
+    },
+    {
+     "to": "Improved Aspect of the Monkey",
+     "seed3": 0.0006
+    },
+    {
+     "to": "Improved Revive Pet",
+     "seed3": 0.0006
+    },
+    {
+     "to": "Pathfinding",
+     "seed3": 0.0006
+    },
+    {
+     "to": "Bestial Swiftness",
+     "seed3": 0.0006
+    },
+    {
+     "to": "Summon Hawk",
+     "seed3": 0.0006
+    },
+    {
+     "to": "Improved Mend Pet",
+     "seed3": 0.0006
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Focused Fire": {
+   "level": 44,
+   "kind": "tier point for Unleashed Fury (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Endurance Training",
+     "seed3": 0.0026
+    },
+    {
+     "to": "Improved Aspect of the Monkey",
+     "seed3": 0.0036
+    },
+    {
+     "to": "Improved Revive Pet",
+     "seed3": 0.0036
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Tracking": {
+   "level": 14,
+   "kind": "tier point for Clever Traps (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.004
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Savage Strikes": {
+   "level": 16,
+   "kind": "tier point for Clever Traps (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Entrapment",
+     "seed3": 0.001
+    },
+    {
+     "to": "Improved Wing Clip",
+     "seed3": 0.001
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Surefooted": {
+   "level": 22,
+   "kind": "tier point for Survival Tactics (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Entrapment",
+     "seed3": 0.0057
+    },
+    {
+     "to": "Improved Wing Clip",
+     "seed3": 0.0057
+    },
+    {
+     "to": "Deterrence",
+     "seed3": 0.0057
+    },
+    {
+     "to": "Deflection",
+     "seed3": 0.0058
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Survival Tactics": {
+   "kind": "not a gate",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: utility (escape), a value the fight lab cannot see"
+  },
+  "Survivalist": {
+   "level": 17,
+   "kind": "tier point for Clever Traps (tier 3)",
+   "does_nothing": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 20, 30, 40, 50, 60",
+   "homes": [
+    {
+     "to": "Entrapment",
+     "seed3": -0.0,
+     "seed4": -0.0001
+    },
+    {
+     "to": "Improved Wing Clip",
+     "seed3": -0.0
+    },
+    {
+     "to": "Deflection",
+     "seed3": -0.0,
+     "seed4": 0.0001
+    }
+   ],
+   "verdict": "moved to Entrapment"
+  },
+  "Unleashed Fury": {
+   "level": 52,
+   "kind": "tier point for Ferocity (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Endurance Training",
+     "seed3": 0.0013
+    },
+    {
+     "to": "Improved Aspect of the Monkey",
+     "seed3": 0.0019
+    },
+    {
+     "to": "Improved Revive Pet",
+     "seed3": 0.0019
+    },
+    {
+     "to": "Pathfinding",
+     "seed3": 0.0019
+    },
+    {
+     "to": "Bestial Swiftness",
+     "seed3": 0.0019
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  }
+ },
+ "no_better_home": {},
  "final_order": [
   {
    "levels": "10-14",
@@ -206,13 +439,13 @@
   {
    "levels": "17-18",
    "tree": "Survival",
-   "talent": "Survivalist",
+   "talent": "Entrapment",
    "points": 2
   },
   {
    "levels": "19",
    "tree": "Survival",
-   "talent": "Entrapment",
+   "talent": "Deflection",
    "points": 1
   },
   {
@@ -312,6 +545,24 @@
    "points": 1
   }
  ],
+ "reruns": [
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  }
+ ],
  "written": {
   "allocation": {
    "Beast Mastery": [
@@ -352,15 +603,15 @@
      5
     ],
     [
-     "Entrapment",
+     "Deflection",
      1
     ],
     [
-     "Savage Strikes",
+     "Entrapment",
      2
     ],
     [
-     "Survivalist",
+     "Savage Strikes",
      2
     ],
     [
@@ -405,13 +656,13 @@
    {
     "levels": "17-18",
     "tree": "Survival",
-    "talent": "Survivalist",
+    "talent": "Entrapment",
     "points": 2
    },
    {
     "levels": "19",
     "tree": "Survival",
-    "talent": "Entrapment",
+    "talent": "Deflection",
     "points": 1
    },
    {
@@ -511,6 +762,6 @@
     "points": 1
    }
   ],
-  "note": "2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Expose Prey to Lethal Attacks at 31 (measured: -0.4% seed 3, -0.4% seed 4, level-weighted time per kill); Spirit Bond to Predator's Edge at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
+  "note": "2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Survivalist to Entrapment at 18 (gate that did nothing, no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Survivalist to Entrapment at 17 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Entrapment to Deflection at 19 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Expose Prey to Lethal Attacks at 31 (measured: -0.4% seed 3, -0.4% seed 4, level-weighted time per kill); Spirit Bond to Predator's Edge at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
  }
 }

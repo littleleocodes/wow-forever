@@ -11,7 +11,7 @@
 
 ## Summary
 
-Level with the talents of the Restoration raid build (restoration-ml-heal) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 33 s per kill over levels 20-60, the feral-cat-dps rotation).
+Level with the talents of the Restoration raid build (restoration-ml-heal) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (own tree last: 29 s per kill over levels 20-60, the feral-cat-dps rotation).
 
 ## Point allocation
 
@@ -55,10 +55,9 @@ Level with the talents of the Restoration raid build (restoration-ml-heal) so yo
 | 12-14 | Balance | Genesis | 3 | 5/0/0 |
 | 15 | Balance | Nature's Reach | 1 | 6/0/0 |
 | 16-17 | Balance | Nature's Majesty | 2 | 8/0/0 |
-| 18 | Restoration | Heart of the Wild | 1 | 8/0/1 |
-| 19-20 | Balance | Genesis | 2 | 10/0/1 |
-| 21 | Balance | Nature's Splendor | 1 | 11/0/1 |
-| 22-24 | Restoration | Heart of the Wild | 3 | 11/0/4 |
+| 18-19 | Balance | Genesis | 2 | 10/0/0 |
+| 20 | Balance | Nature's Splendor | 1 | 11/0/0 |
+| 21-24 | Restoration | Heart of the Wild | 4 | 11/0/4 |
 | 25-28 | Restoration | Nature's Focus | 4 | 11/0/8 |
 | 29-31 | Restoration | Reflection | 3 | 11/0/11 |
 | 32-34 | Restoration | Subtlety | 3 | 11/0/14 |
@@ -79,7 +78,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-17 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 33 s; own tree first 35 s; own tree last 33 s. First Restoration point at level 18.
+- 2026-11-21 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): own tree last 29 s; stats model's order 29 s; own tree first 30 s. First Restoration point at level 21.
 - Fight-lab numbers are a model of the beta, not in-game measurements.
 
 ## Open questions (verify in the live game)

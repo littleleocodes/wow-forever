@@ -9,13 +9,13 @@
  "best_entry": "arcane-dps",
  "best_dps": 835.93,
  "any_split": false,
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "commit": "2e6e77d84",
  "gear": {
   "bis": {
    "entry": "arcane-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-bis.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "setting": "raid",
    "chosen": "all-slots",
    "ilvl": 63.8,
@@ -44,40 +44,41 @@
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0119290914769792,
-    "keep-sets-and-effects": 1.0119290914769792
+    "all-slots": 1.0125635856138007,
+    "keep-sets-and-effects": 1.0125635856138007,
+    "previous": 1.0125635856138007,
+    "the prebis set": 0.987131810452792,
+    "the prebis set+trinkets": 0.9946763219512441
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.0112187599588496
+    "all-slots": 1.0117242662744108
    },
    "weights": {
-    "StatArcaneDamage": 0.4414,
-    "StatCritRating": 0.4521,
-    "StatFireDamage": 0.1048,
-    "StatHasteRating": 0.6664,
-    "StatHitRating": 0.8743,
-    "StatIntellect": 0.5356,
-    "StatSpellDamage": 0.5462,
-    "StatSpellPiercing": 1.4018,
-    "StatSpirit": 0.0944
+    "StatArcaneDamage": 0.3346,
+    "StatCritRating": 0.4752,
+    "StatFireDamage": 0.2341,
+    "StatHasteRating": 0.9007,
+    "StatHitRating": 0.9283,
+    "StatIntellect": 0.4466,
+    "StatSpellDamage": 0.5688,
+    "StatSpellPiercing": 1.4211,
+    "StatSpirit": 0.0921
    },
    "evaluated_on": [
-    "arcane-dps: ml winner"
-   ],
-   "commit": "2e6e77d84",
-   "kept": true
+    "arcane-dps: arcane-fire-raid"
+   ]
   },
   "prebis": {
    "entry": "arcane-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-prebis.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "setting": "raid",
-   "chosen": "keep-sets-and-effects",
+   "chosen": "all-slots",
    "ilvl": 62.3,
    "trinkets": [
-    "Weakness Analyzer",
-    "Eye of the Beast"
+    "Eye of the Beast",
+    "Weakness Analyzer"
    ],
    "names": [
     "Spellweaver's Turban",
@@ -92,41 +93,41 @@
     "Kayser's Boots of Precision",
     "Channeler's Ring",
     "Elemental Focus Band",
-    "Weakness Analyzer",
     "Eye of the Beast",
+    "Weakness Analyzer",
     "Sageblade",
     "Obsidian Bauble",
     "Bonecreeper Stylus"
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0
+    "keep-sets-and-effects": 1.0,
+    "previous": 0.998325423618782,
+    "previous+trinkets": 1.0
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0
+    "previous": 1.0,
+    "all-slots": 1.001829527709352
    },
    "weights": {
-    "StatArcaneDamage": 0.4582,
-    "StatCritRating": 0.4147,
-    "StatFireDamage": 0.0586,
-    "StatHasteRating": 0.531,
-    "StatHitRating": 0.7827,
-    "StatIntellect": 0.4819,
-    "StatSpellDamage": 0.5169,
-    "StatSpellPiercing": 1.3645,
-    "StatSpirit": 0.1357
+    "StatArcaneDamage": 0.3321,
+    "StatCritRating": 0.4709,
+    "StatFireDamage": 0.2334,
+    "StatHasteRating": 0.9026,
+    "StatHitRating": 0.915,
+    "StatIntellect": 0.4722,
+    "StatSpellDamage": 0.5655,
+    "StatSpellPiercing": 1.4202,
+    "StatSpirit": 0.0741
    },
    "evaluated_on": [
-    "arcane-dps: ml winner (bis)"
-   ],
-   "commit": "2e6e77d84",
-   "kept": true
+    "arcane-dps: arcane-fire-raid"
+   ]
   },
   "dungeon": {
    "entry": "arcane-dps",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-dungeon.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "chosen": "previous",
    "ilvl": 60.2,
    "trinkets": [
@@ -260,7 +261,7 @@
    "spec": "Arcane",
    "setting": "dummy",
    "entry": "arcane-dps",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Arcane": [
@@ -357,7 +358,7 @@
    "spec": "Arcane",
    "setting": "raid",
    "entry": "arcane-dps",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Arcane": [
@@ -458,7 +459,7 @@
    "spec": "Arcane",
    "setting": "dummy",
    "entry": "arcane-dps",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Arcane": [
@@ -541,8 +542,8 @@
      ]
     },
     "split": "32/16/3",
-    "dps": 566.85,
-    "se": 0.377,
+    "dps": 567.97,
+    "se": 0.375,
     "iterations": 10000,
     "build": "the search's winner"
    },
@@ -555,7 +556,7 @@
    "spec": "Arcane",
    "setting": "raid",
    "entry": "arcane-dps",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Arcane": [
@@ -642,7 +643,7 @@
      ]
     },
     "split": "32/16/3",
-    "dps": 815.03,
+    "dps": 816.81,
     "se": 0.385,
     "iterations": 10000,
     "build": "arcane-fire-raid"
@@ -656,7 +657,7 @@
    "spec": "Arcane",
    "setting": "raid",
    "entry": "arcane-dps",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "commit": "2e6e77d84",
    "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
    "winner": {
@@ -764,12 +765,12 @@
     "prebis-dummy": 691.8,
     "bis-dummy": 690.7
    },
-   "minutes": 1.1
+   "minutes": 1.3
   }
  },
  "pick_tiers": {
   "build": "arcane-fire-raid",
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "note": "the page's pick in each tier's gear (the short-check method of 2026-11-20); no talent search",
   "alt": {
    "bis-dummy": {
@@ -785,14 +786,14 @@
     "better": "pick"
    },
    "prebis-dummy": {
-    "pick_dps": 553.62,
-    "search_winner_dps": 566.85,
+    "pick_dps": 553.85,
+    "search_winner_dps": 567.97,
     "search_winner_split": "32/16/3",
     "better": "search winner"
    },
    "prebis-raid": {
-    "pick_dps": 815.03,
-    "search_winner_dps": 807.78,
+    "pick_dps": 816.81,
+    "search_winner_dps": 808.52,
     "search_winner_split": "32/16/3",
     "better": "pick"
    }
@@ -811,159 +812,5 @@
   "gain_vs_hand": 0.0,
   "commit": "2e6e77d84",
   "pick_tiers": true
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "arcane-dps",
-    "dps": 835.98,
-    "se": 0.122
-   },
-   "arcane-fire-raid": {
-    "entry": "arcane-dps",
-    "dps": 835.98,
-    "se": 0.122
-   },
-   "arcane-blast-raid": {
-    "entry": "arcane-dps",
-    "dps": 700.42,
-    "se": 0.111
-   },
-   "arcane-open-raid": {
-    "entry": "arcane-dps",
-    "dps": 833.6,
-    "se": 0.122
-   }
-  },
-  "best_hand": "arcane-fire-raid",
-  "gain_vs_hand": 0.0
- },
- "signature_check": {
-  "spec": "Arcane",
-  "ok": true,
-  "core_share": 0.5636,
-  "min_share": 0.5,
-  "uncast": [],
-  "missing_talents": [],
-  "why": "",
-  "entry": "arcane-dps",
-  "setting": "raid",
-  "iterations": 6000,
-  "dps": 835.7,
-  "date": "2026-11-20",
-  "commit": "2e6e77d84",
-  "shares": {
-   "Arcane Missiles": 0.2374,
-   "Fire Blast": 0.197,
-   "Arcane Blast": 0.1923,
-   "Pyroblast": 0.1749,
-   "Arcane Wrath": 0.1339,
-   "Ignite": 0.0435,
-   "Scorch": 0.0146,
-   "Demonic Rune": 0.0064
-  },
-  "casts": {
-   "Arcane Missiles": 24.88,
-   "Arcane Blast": 34.21,
-   "Arcane Power": 1.0,
-   "Evocation": 0.98,
-   "Scorch": 2.91,
-   "Fire Blast": 28.0,
-   "Arcane Wrath": 8.31,
-   "Presence of Mind": 1.0,
-   "Pyroblast": 10.55
-  },
-  "allocation": {
-   "Arcane": [
-    [
-     "Improved Channeling",
-     5
-    ],
-    [
-     "Arcane Subtlety",
-     2
-    ],
-    [
-     "Arcane Concentration",
-     5
-    ],
-    [
-     "Missile Barrage",
-     2
-    ],
-    [
-     "Arcane Impact",
-     3
-    ],
-    [
-     "Arcane Blast",
-     1
-    ],
-    [
-     "Arcane Meditation",
-     3
-    ],
-    [
-     "Arcane Wrath",
-     1
-    ],
-    [
-     "Presence of Mind",
-     1
-    ],
-    [
-     "Arcane Mind",
-     5
-    ],
-    [
-     "Arcane Instability",
-     3
-    ],
-    [
-     "Arcane Power",
-     1
-    ]
-   ],
-   "Fire": [
-    [
-     "Incineration",
-     5
-    ],
-    [
-     "Accelerant",
-     2
-    ],
-    [
-     "Ignite",
-     5
-    ],
-    [
-     "Pyroblast",
-     1
-    ],
-    [
-     "Improved Fire Blast",
-     2
-    ],
-    [
-     "Heating Up",
-     1
-    ]
-   ],
-   "Frost": [
-    [
-     "Precision",
-     3
-    ]
-   ]
-  }
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-11-20",
-  "setting": "raid",
-  "why": "confirms arcane-fire-raid (+0.00% in a full raid)"
  }
 }

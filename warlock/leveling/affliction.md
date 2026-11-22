@@ -2,15 +2,17 @@
 
 [Warlock](../README.md) > [Leveling (solo)](README.md) > Affliction
 
+> **Being checked:** Two points had been moved into talents the build does not use at those levels (Improved Shadow Bolt and Nightfall, which only help Shadow Bolt); the build, its filler record and its texts are being made again. The build and numbers on this page may change when it is done.
+
 **✅ Recommended** for leveling (the best warlock spec here, or within 3% of it).
 
 **Leveling from level 1?** [The rotation level by level](affliction-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Affliction — Leveling](../research/leveling/builds/affliction-open-leveling.md)** (39/12/0) — [open the talent tree](https://talentsforever.com/warlock/60/25520221135011351-1005030201--12)
+**[Affliction — Leveling](../research/leveling/builds/affliction-open-leveling.md)** (35/16/0) — [open the talent tree](https://talentsforever.com/warlock/60/25510120135001351-10451302--12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 69% of the damage at level 60 in the fight lab comes from the spec's core spells (Corruption, Bane of Agony, Siphon Life, Drain Life, Wrack; this build never casts Drain Soul) (the spec's rule: at least 50%; **Corruption**, **Bane of Agony** cast at level 60).
+*Signature spells (**Corruption**, **Bane of Agony**): not checked for this build in its rotation yet (fightlab/signature_audit.py).*
 
 ## How to play
 
@@ -37,14 +39,14 @@ Affliction levels on its damage-over-time spells and the wand while the Voidwalk
 - Send the Voidwalker in first: its **Torment** holds the mob while you stand at range. **Suppression** (levels 12-15 and 31) gives 5% hit and cuts your threat by 20%, so the Voidwalker keeps the mob. **Amplify Curse** (level 20) goes on whenever it is ready (3-minute cooldown): it makes that fight's **Bane of Agony** 50% stronger.
 - No **Shadow Bolt** once you own a wand. The re-tune of 2026-11-16 measured kills about a quarter faster without it at levels 20 and 30 (23.5 against 30.6 seconds at 20), and a check at level 10 found 15%. While the Voidwalker holds the mob, a bolt hardly shortens the fight: the dots and the wand kill it in about the same time. But it triples the mana a kill costs, and drinking that back took 3 seconds a kill at level 10 and 7 to 10 seconds at 20 and 30 in the fight lab.
 - **Corruption**, **Bane of Agony** and **Siphon Life** (level 34) go on once each, none of them on a mob below about a third of its health: it dies before the spell pays for its mana. **Corruption** goes on only while you have more than 15% mana. **Immolate** only on a mob above about half its health, while you have more than half your mana: without bolts that is nearly every mob until 40, and from 40 **Wrack** spends that mana and the fight lab no longer casts it.
-- **Wrack** (level 40, changed by the hotfix of 2026-11-10) is a 6-second channel of Shadow damage, 60 a second at level 60, that makes your **Corruption**, **Bane of Agony** and **Siphon Life** tick twice as fast while you channel it. Channel it once **Corruption** is on a mob with more than a quarter of its health, and only while you have more than 30% of your mana: the re-tune measured that mana rule about 3% faster per kill. **Soul Siphon** (levels 32-33 and 41) adds 12% to it for each of your other Affliction effects on the mob, up to 36%. **Wrack** and **Siphon Life** are the build's two most valuable talents at 60: about 3.5 seconds a kill each in the open search, twice **Suppression**'s five points.
+- **Wrack** (level 40, changed by the hotfix of 2026-11-10) is a 6-second channel of Shadow damage, 60 a second at level 60, that makes your **Corruption**, **Bane of Agony** and **Siphon Life** tick twice as fast while you channel it. Channel it once **Corruption** is on a mob with more than a quarter of its health, and only while you have more than 30% of your mana: the re-tune measured that mana rule about 3% faster per kill. **Soul Siphon** (levels 32-33 and 41) adds 12% to it for each of your other Affliction effects on the mob, up to 36%. **Wrack** and **Siphon Life** are the build's two most valuable talents at 60: about 6.5 and 4.8 seconds a kill in the open search, three to four times **Suppression**'s five points.
 - **Drain Life** below 60% health, and in place of the wand below 85%. **Life Tap** in a fight only when your mana is down to about 15% and you stay above 60% health; between fights tap back to about 70% mana, and eat only below 55% health. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).
 
 **Caveats**
 
 - No **Curse of the Elements** while leveling: the re-tune of 2026-11-04 measured about 3% faster per kill without it (a global cooldown and mana on a mob that dies quickly), and the re-tune of 2026-11-16 kept it off.
 - No **Fear**: with the Voidwalker holding the mob the fight lab hardly needs it, and the re-tune measured kills about 0.7% faster without it over levels 20-60. At level 8, before the Voidwalker, dotting and wanding a mob that reaches you was 3% faster than fearing it. Keep it for a pull that brings a second mob.
-- This build has no **Nightfall** and no **Soul Link**. Its 12 Demonology points (levels 45-50, 52-55, 58 and 60) are for the Voidwalker: **Unholy Power** adds 10% to its damage, **Improved Voidwalker** makes **Torment** and **Consume Shadows** 30% stronger, **Demonic Energies** heals it for 15% of your spell damage and gives it the mana of each **Life Tap** too, and **Improved Health Funnel** (52) makes **Health Funnel** heal it 20% more for 15% less of your health. **Curse of Exhaustion** (56), **Grim Reach** (57 and 59) and **Demonic Sacrifice** (58) close the build: the fight lab measures them at about nothing, and you never sacrifice the Voidwalker while leveling. The leveling filler passes of 2026-11-16 and 2026-11-17 put into them the points that measured nothing at all: the build no longer takes Improved Shadow Bolt (this list never casts **Shadow Bolt**), Demonic Aegis, Demonic Embrace or Destructive Reach, and keeps two of the three **Improved Drains** points and one of the three **Fel Concentration** points.
+- This build has no Soul Link. Its 15 Demonology points (levels 42-43, 45-51, 53-56 and 58-59) are for the Voidwalker and for you: **Unholy Power** adds 8% to its damage, **Improved Voidwalker** makes **Torment** and **Consume Shadows** 30% stronger, **Demonic Energies** heals it for 15% of your spell damage and gives it all the mana of each **Life Tap**, **Demonic Embrace** adds 12% to your Stamina, **Demonic Aegis** makes **Demon Armor** 15% stronger and **Improved Health Funnel** makes **Health Funnel** heal 20% more. **Curse of Exhaustion** (52), a curse this list does not cast, **Grim Reach** (57) and **Destructive Reach** (60) close the build, and the fight lab measures them at about nothing. The leveling filler passes of 2026-11-20 and 2026-11-22 moved the points that measured nothing at all into these, no slower in the fight lab.
 - Without **Shadow Bolt** Affliction spends little mana: the fight lab drinks well under a second a kill. When you are too hurt to **Life Tap**, drink below 15% mana.
 - When a mob reaches you: **Death Coil** (level 42) if you are below about 60% health (it heals you for its damage); otherwise keep dotting and wanding, with **Drain Life** when you are hurt, until the Voidwalker's **Torment** takes it back.
 
@@ -79,35 +81,41 @@ One point per level from 10, in this order:
 | 35-39 | Shadow Mastery (Affliction) | 5 |
 | 40 | Wrack (Affliction) | 1 |
 | 41 | Soul Siphon (Affliction) | 1 |
-| 42-43 | Improved Drains (Affliction) | 2 |
+| 42-43 | Demonic Embrace (Demonology) | 2 |
 | 44 | Malevolence (Affliction) | 1 |
-| 45-49 | Unholy Power (Demonology) | 5 |
-| 50 | Demonic Energies (Demonology) | 1 |
-| 51 | Fel Concentration (Affliction) | 1 |
-| 52 | Improved Health Funnel (Demonology) | 1 |
+| 45-48 | Unholy Power (Demonology) | 4 |
+| 49-50 | Demonic Energies (Demonology) | 2 |
+| 51 | Demonic Aegis (Demonology) | 1 |
+| 52 | Improved Drains (Affliction) (no effect in the fight lab; the talent order needs a point here) | 1 |
 | 53-55 | Improved Voidwalker (Demonology) | 3 |
-| 56 | Curse of Exhaustion (Affliction) | 1 |
+| 56 | Demonic Embrace (Demonology) | 1 |
 | 57 | Grim Reach (Affliction) | 1 |
-| 58 | Demonic Sacrifice (Demonology) | 1 |
-| 59 | Grim Reach (Affliction) | 1 |
-| 60 | Demonic Energies (Demonology) | 1 |
+| 58 | Improved Health Funnel (Demonology) | 1 |
+| 59 | Demonic Embrace (Demonology) | 1 |
+| 60 | Unholy Power (Demonology) | 1 |
+
+A talent marked as a tier point does nothing in the fight lab's leveling fights; it is in the build because no legal talent that helps can take that point.
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
-| 20 | 24 | 16 |
-| 30 | 29 | 17 |
-| 40 | 32 | 23 |
+| 20 | 26 | 18 |
+| 30 | 31 | 19 |
+| 40 | 34 | 24 |
 | 50 | 32 | 25 |
-| 60 | 32 | 25 |
+| 60 | 31 | 25 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
+**Points that do nothing for this spec:** **Improved Drains** (1) does nothing here, and no more useful legal talent was found for its point.
+
 ## Other builds of this spec
 
-- [Affliction — Leveling](../research/leveling/builds/affliction-leveling.md) (33/6/12, 33 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warlock/60/0550032013500135-00050001-0055002-12)
+- [Affliction — Leveling](../research/leveling/builds/affliction-leveling.md) (33/6/12, 36 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warlock/60/0550032013500135-00050001-0055002-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

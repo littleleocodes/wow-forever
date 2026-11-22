@@ -332,6 +332,14 @@ def main():
             if names:
                 f.write_text(json.dumps(d, indent=1, ensure_ascii=False), encoding="utf-8")
                 print(f"  {f.stem}: {', '.join(names)}")
+        # the client's mana costs, which the descriptions above never carry (2026-11-21, the audit session: the export's cost field is
+        # never refreshed; client_costs.py): the pull's client build against forever-spells, fightlab/client_costs.json rewritten
+        if a.build:
+            try:
+                import client_costs
+                client_costs.main(["--build", a.build, "--fetch", "--write"])
+            except (Exception, SystemExit) as e:   # noqa: BLE001 - the pull itself is done; the cost check is reported, not fatal
+                print(f"WARNING: client_costs.py failed for {a.build}: {e}; run it by hand")
 
 
 if __name__ == "__main__":

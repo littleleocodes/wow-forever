@@ -1,12 +1,15 @@
 {
  "veto": {
+  "Shield Block": {
+   "min_hp": 0.2
+  },
   "Heroic Strike": {
-   "max_hp": 0.2
+   "max_hp": 0.35
   }
  },
  "class": "warrior",
  "spec": "prot-leveling",
- "build": "protection-open-leveling",
+ "build": "protection-leveling",
  "levels": [
   20,
   30,
@@ -14,71 +17,85 @@
   50,
   60
  ],
- "date": "2026-11-06",
+ "date": "2026-11-20",
  "signature": {
   "required": [
    "Shield Slam"
   ],
   "build_spec": "Protection",
   "dropped_saved_rules": [],
-  "core_share_before": 0.9122930093310975,
-  "core_share_after": 0.9136516858183018,
+  "core_share_before": 0.9017951326052519,
+  "core_share_after": 0.9030154246048936,
   "min_share": 0.7,
-  "floor_reached": null
+  "floor_reached": null,
+  "played_before": true,
+  "played_after": true
  },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "Heroic Strike only when the mob is below 20% health",
+   "change": "Shield Block only while the mob has more than 20% health",
+   "rule": [
+    "min_hp",
+    "Shield Block",
+    0.2
+   ],
+   "gain_seed1": 0.006398444941681847,
+   "gain_seed2": 0.005193820279383199
+  },
+  {
+   "round": 2,
+   "change": "Heroic Strike only when the mob is below 35% health",
    "rule": [
     "max_hp",
     "Heroic Strike",
-    0.2
+    0.35
    ],
-   "gain_seed1": 0.0065364837468672166,
-   "gain_seed2": 0.006221489951911963
+   "gain_seed1": 0.0070356290078296135,
+   "gain_seed2": 0.005291897180010996
   }
  ],
- "weighted_before": 27.76774725642678,
- "weighted_after": 27.594708710342946,
+ "weighted_before": 27.900994698737215,
+ "weighted_after": 27.665442692104527,
  "per_level": {
   "20": {
-   "before": 24.349733333278902,
-   "after": 24.500933333285356,
+   "before": 24.294899999943063,
+   "after": 24.253993586836124,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 28.885100000132567,
-   "after": 29.107805663781328,
+   "before": 28.907407856809773,
+   "after": 28.86260000012988,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 25.818800000002927,
-   "after": 25.597966666660117,
+   "before": 25.255865261783402,
+   "after": 25.084366666640328,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 27.7718586696892,
-   "after": 27.496891301729356,
+   "before": 27.957488399279317,
+   "after": 27.717200000081316,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 29.64428085218708,
-   "after": 29.28209456227615,
+   "before": 30.316161226816426,
+   "after": 29.881600000176796,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
  },
  "retune": {
   "times": {
-   "hand-written": 27.768,
-   "from scratch": 27.595
+   "saved": 27.802,
+   "from scratch": 27.665,
+   "continued": 27.802
   },
   "installed": "from scratch",
   "reference_ok": true

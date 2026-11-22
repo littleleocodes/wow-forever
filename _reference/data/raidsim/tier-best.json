@@ -3,7 +3,7 @@
   "Arcane": {
    "build": "arcane-fire-raid",
    "entry": "arcane-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -12,7 +12,7 @@
     },
     "prebis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-prebis.gear.json",
-     "dps": 815.09
+     "dps": 816.16
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/mage-arcane-bis.gear.json",
@@ -36,8 +36,8 @@
     },
     "prebis": {
      "set": "prebis",
-     "dps": 815.09,
-     "own": 815.09
+     "dps": 816.16,
+     "own": 816.16
     },
     "bis": {
      "set": "bis",
@@ -49,7 +49,7 @@
   "Fire": {
    "build": "fire-open-raid",
    "entry": "fire-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -58,7 +58,7 @@
     },
     "prebis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-prebis.gear.json",
-     "dps": 850.47
+     "dps": 855.33
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/mage-fire-bis.gear.json",
@@ -82,8 +82,8 @@
     },
     "prebis": {
      "set": "prebis",
-     "dps": 850.47,
-     "own": 850.47
+     "dps": 855.33,
+     "own": 855.33
     },
     "bis": {
      "set": "bis",
@@ -95,7 +95,7 @@
   "Frost": {
    "build": "frost-med-raid",
    "entry": "frost-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -108,7 +108,7 @@
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/mage-frost-bis.gear.json",
-     "dps": 801.37
+     "dps": 807.09
     },
     "standard": {
      "file": "_reference/data/raidsim/gear_sets/forever/mage-dps-p1.p1opt.gear.json",
@@ -133,15 +133,15 @@
     },
     "bis": {
      "set": "bis",
-     "dps": 801.37,
-     "own": 801.37
+     "dps": 807.09,
+     "own": 807.09
     }
    }
   },
   "Hybrid Arcane/Frost": {
    "build": "arcane-frost-open-raid",
    "entry": "arcane-frost-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -187,7 +187,7 @@
   "Hybrid Fire/Frost": {
    "build": "frostfire-ffb-raid",
    "entry": "frostfire-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -235,7 +235,7 @@
   "Shadow": {
    "build": "shadow-ml-raid",
    "entry": "shadow-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -281,7 +281,7 @@
   "Hybrid Discipline/Holy": {
    "build": "smite-open-raid",
    "entry": "smite-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -290,11 +290,11 @@
     },
     "prebis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-prebis.gear.json",
-     "dps": 586.91
+     "dps": 588.23
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/priest-hybrid-discipline-holy-bis.gear.json",
-     "dps": 608.94
+     "dps": 610.7
     },
     "standard": {
      "file": "_reference/data/raidsim/gear_sets/forever/priest-dps-p0.p1opt.gear.json",
@@ -314,13 +314,13 @@
     },
     "prebis": {
      "set": "prebis",
-     "dps": 586.91,
-     "own": 586.91
+     "dps": 588.23,
+     "own": 588.23
     },
     "bis": {
      "set": "bis",
-     "dps": 608.94,
-     "own": 608.94
+     "dps": 610.7,
+     "own": 610.7
     }
    }
   }
@@ -329,12 +329,12 @@
   "Affliction": {
    "build": "affliction-wrack-raid",
    "entry": "affliction-wrack-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-dungeon.gear.json",
-     "dps": 815.42
+     "dps": 825.82
     },
     "prebis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-prebis.gear.json",
@@ -357,8 +357,8 @@
    "tiers": {
     "dungeon": {
      "set": "dungeon",
-     "dps": 815.42,
-     "own": 815.42
+     "dps": 825.82,
+     "own": 825.82
     },
     "prebis": {
      "set": "prebis",
@@ -375,12 +375,12 @@
   "Demonology": {
    "build": "demonology-ml-raid",
    "entry": "demonology-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-demonology-dungeon.gear.json",
-     "dps": 798.22
+     "dps": 800.76
     },
     "prebis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-demonology-prebis.gear.json",
@@ -388,7 +388,7 @@
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-demonology-bis.gear.json",
-     "dps": 916.62
+     "dps": 917.17
     },
     "standard": {
      "file": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
@@ -403,8 +403,8 @@
    "tiers": {
     "dungeon": {
      "set": "dungeon",
-     "dps": 798.22,
-     "own": 798.22
+     "dps": 800.76,
+     "own": 800.76
     },
     "prebis": {
      "set": "prebis",
@@ -413,15 +413,15 @@
     },
     "bis": {
      "set": "bis",
-     "dps": 916.62,
-     "own": 916.62
+     "dps": 917.17,
+     "own": 917.17
     }
    }
   },
   "Destruction": {
    "build": "destruction-succubus-raid",
    "entry": "destro-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -467,12 +467,12 @@
   "Hybrid Affliction/Destruction": {
    "build": "opt-affliction-raid-raid-dps",
    "entry": "affliction-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-hybrid-affliction-destruction-dungeon.gear.json",
-     "dps": 716.04
+     "dps": 716.0
     },
     "prebis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-hybrid-affliction-destruction-prebis.gear.json",
@@ -480,7 +480,7 @@
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-hybrid-affliction-destruction-bis.gear.json",
-     "dps": 822.6
+     "dps": 824.29
     },
     "standard": {
      "file": "_reference/data/raidsim/gear_sets/forever/warlock-dps-mc.p1opt.gear.json",
@@ -495,8 +495,8 @@
    "tiers": {
     "dungeon": {
      "set": "dungeon",
-     "dps": 716.04,
-     "own": 716.04
+     "dps": 716.0,
+     "own": 716.0
     },
     "prebis": {
      "set": "prebis",
@@ -505,8 +505,8 @@
     },
     "bis": {
      "set": "bis",
-     "dps": 822.6,
-     "own": 822.6
+     "dps": 824.29,
+     "own": 824.29
     }
    }
   }
@@ -515,7 +515,7 @@
   "Beast Mastery": {
    "build": "beast-mastery-ml-raid",
    "entry": "bm-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -528,7 +528,7 @@
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-bis.gear.json",
-     "dps": 955.58
+     "dps": 955.6
     },
     "standard": {
      "file": "_reference/data/raidsim/gear_sets/forever/hunter-dps-p1.p1opt.gear.json",
@@ -553,15 +553,15 @@
     },
     "bis": {
      "set": "bis",
-     "dps": 955.58,
-     "own": 955.58
+     "dps": 955.6,
+     "own": 955.6
     }
    }
   },
   "Marksmanship": {
    "build": "mm-lone-wolf-raid",
    "entry": "mm-lonewolf-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -574,7 +574,7 @@
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-marksmanship-bis.gear.json",
-     "dps": 1000.85
+     "dps": 1001.14
     },
     "standard": {
      "file": "_reference/data/raidsim/gear_sets/forever/hunter-dps-p1.p1opt.gear.json",
@@ -599,15 +599,15 @@
     },
     "bis": {
      "set": "bis",
-     "dps": 1000.85,
-     "own": 1000.85
+     "dps": 1001.14,
+     "own": 1001.14
     }
    }
   },
   "Survival": {
    "build": "survival-raptor-raid",
    "entry": "survival-pet-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -653,7 +653,7 @@
   "Hybrid Beast Mastery/Marksmanship": {
    "build": "beast-marks-ml-raid",
    "entry": "bm-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -699,9 +699,21 @@
   "Hybrid Beast Mastery/Survival": {
    "build": "beast-survival-open-raid",
    "entry": "melee-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
+    "dungeon": {
+     "file": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-survival-dungeon.gear.json",
+     "dps": 752.66
+    },
+    "prebis": {
+     "file": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-survival-prebis.gear.json",
+     "dps": 871.89
+    },
+    "bis": {
+     "file": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-hybrid-beast-mastery-survival-bis.gear.json",
+     "dps": 874.25
+    },
     "standard": {
      "file": "_reference/data/raidsim/gear_sets/forever/hunter-project-hunter_melee_p1.p1opt.gear.json",
      "dps": 863.83
@@ -713,10 +725,20 @@
     "bis": true
    },
    "tiers": {
+    "dungeon": {
+     "set": "dungeon",
+     "dps": 752.66,
+     "own": 752.66
+    },
+    "prebis": {
+     "set": "prebis",
+     "dps": 871.89,
+     "own": 871.89
+    },
     "bis": {
-     "set": "standard",
-     "dps": 863.83,
-     "own": null
+     "set": "bis",
+     "dps": 874.25,
+     "own": 874.25
     }
    }
   }
@@ -725,7 +747,7 @@
   "Arms": {
    "build": "arms-battle-raid",
    "entry": "arms-battle-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -771,7 +793,7 @@
   "Fury": {
    "build": "fury-dual-wield-open-raid",
    "entry": "fury-dw-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -819,7 +841,7 @@
   "Assassination": {
    "build": "assassination-open-raid",
    "entry": "assassination-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -865,7 +887,7 @@
   "Combat": {
    "build": "combat-ml-raid",
    "entry": "combat-daggers-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -911,7 +933,7 @@
   "Subtlety": {
    "build": "subtlety-ml-raid",
    "entry": "subtlety-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -957,7 +979,7 @@
   "Hybrid Assassination/Combat": {
    "build": "daggers-split-open-raid",
    "entry": "combat-daggers-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -1003,7 +1025,7 @@
   "Hybrid Assassination/Subtlety": {
    "build": "hybrid-assassination-subtlety-open-raid",
    "entry": "subtlety-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -1012,7 +1034,7 @@
     },
     "prebis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-subtlety-prebis.gear.json",
-     "dps": 820.89
+     "dps": 825.67
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/rogue-hybrid-assassination-subtlety-bis.gear.json",
@@ -1036,8 +1058,8 @@
     },
     "prebis": {
      "set": "prebis",
-     "dps": 820.89,
-     "own": 820.89
+     "dps": 825.67,
+     "own": 825.67
     },
     "bis": {
      "set": "bis",
@@ -1051,7 +1073,7 @@
   "Retribution": {
    "build": "retribution-unsealed-wrath-raid",
    "entry": "ret-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -1097,7 +1119,7 @@
   "Hybrid Holy/Retribution": {
    "build": "shockadin-holy-shock-raid",
    "entry": "shockadin-raid",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -1143,7 +1165,7 @@
   "Hybrid Protection/Retribution": {
    "build": "prot-ret-ml-raid",
    "entry": "ret-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -1191,7 +1213,7 @@
   "Elemental": {
    "build": "elemental-raid-dps",
    "entry": "elemental-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -1237,7 +1259,7 @@
   "Enhancement": {
    "build": "enhancement-open-raid",
    "entry": "enhancement-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -1246,7 +1268,7 @@
     },
     "prebis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-prebis.gear.json",
-     "dps": 722.43
+     "dps": 725.82
     },
     "bis": {
      "file": "_reference/data/raidsim/gear_sets/forever/tiers/shaman-enhancement-bis.gear.json",
@@ -1270,8 +1292,8 @@
     },
     "prebis": {
      "set": "prebis",
-     "dps": 722.43,
-     "own": 722.43
+     "dps": 725.82,
+     "own": 725.82
     },
     "bis": {
      "set": "bis",
@@ -1283,7 +1305,7 @@
   "Hybrid Elemental/Enhancement": {
    "build": "elemental-enhancement-ml-raid",
    "entry": "enhancement-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -1331,7 +1353,7 @@
   "Balance": {
    "build": "balance-moonkin-raid",
    "entry": "balance-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {
@@ -1377,7 +1399,7 @@
   "Feral Combat": {
    "build": "feral-combat-open-raid",
    "entry": "feral-cat-dps",
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "fights": 5000,
    "sets": {
     "dungeon": {

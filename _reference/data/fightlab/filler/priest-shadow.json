@@ -3,7 +3,7 @@
  "spec": "Shadow",
  "build": "shadow-open-leveling",
  "rotation": "shadow-dps",
- "date": "2026-11-17",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -135,32 +135,23 @@
  ],
  "steps": [
   {
-   "weighted": 24.679,
+   "weighted": 24.344,
    "values_at_60": {
-    "Dark Inspiration": -0.028,
-    "Darkness": -0.203,
-    "Meditation": -0.233,
-    "Shadowform": -12.605,
-    "Twilight Focus": -0.016
+    "Dark Inspiration": 0.0,
+    "Darkness": -0.176,
+    "Early Demise": -0.045,
+    "Meditation": -1.022,
+    "Shadowform": -9.821,
+    "Twilight Focus": -0.073,
+    "Wand Specialization": -0.056
    },
    "zero": [
     "Dark Inspiration",
-    "Twilight Focus"
-   ]
-  },
-  {
-   "weighted": 24.681,
-   "values_at_60": {
-    "Dark Inspiration": -0.01,
-    "Darkness": -0.233,
-    "Early Demise": -0.032,
-    "Meditation": -0.281,
-    "Shadowform": -12.374,
-    "Twilight Focus": -0.106
-   },
-   "zero": [
-    "Dark Inspiration",
-    "Early Demise"
+    "Early Demise",
+    "Wand Specialization"
+   ],
+   "dead_held": [
+    "Power in Light"
    ]
   }
  ],
@@ -172,11 +163,310 @@
    "seed3": 0.0001,
    "seed4": 0.0003,
    "why": "no loss"
+  },
+  {
+   "from": "Early Demise",
+   "to": "Twilight Focus",
+   "level": 52,
+   "seed3": -0.0008,
+   "seed4": -0.0006,
+   "why": "tie-break"
+  },
+  {
+   "from": "Meditation",
+   "to": "Wand Specialization",
+   "level": 60,
+   "seed3": -0.0003,
+   "seed4": -0.0,
+   "why": "no loss"
+  },
+  {
+   "from": "Mental Strength",
+   "to": "Wand Specialization",
+   "level": 55,
+   "seed3": -0.0007,
+   "seed4": -0.0008,
+   "why": "gate"
+  },
+  {
+   "from": "Power in Light",
+   "to": "Martyrdom",
+   "level": 57,
+   "seed3": -0.0001,
+   "seed4": -0.0003,
+   "why": "gate that did nothing, no loss"
+  },
+  {
+   "from": "Power in Light",
+   "to": "Mental Strength",
+   "level": 56,
+   "seed3": -0.0,
+   "seed4": -0.0001,
+   "why": "gate that did nothing, no loss"
+  },
+  {
+   "from": "Mental Strength",
+   "to": "Power in Light",
+   "level": 56,
+   "seed3": 0.0,
+   "seed4": 0.0001,
+   "why": "gate that did nothing, no loss"
+  },
+  {
+   "from": "Meditation",
+   "to": "Early Demise",
+   "level": 59,
+   "seed3": -0.0003,
+   "seed4": -0.0006,
+   "why": "tie-break"
+  },
+  {
+   "from": "Power in Light",
+   "to": "Silent Resolve",
+   "level": 56,
+   "seed3": 0.0,
+   "seed4": 0.0,
+   "why": "gate that did nothing, tie-break by utility (survival)"
   }
  ],
  "kept_signature": [
   "Mind Flay"
  ],
+ "model": "d06ac68d14bc8278c13036a579f31f2a57d8c47e",
+ "chain": "kept: the same model",
+ "gates_checked": {
+  "Improved Mind Blast": {
+   "level": 34,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Shadow Word: Pain",
+     "seed3": 0.0093
+    },
+    {
+     "to": "Shadow Focus",
+     "seed3": 0.0095
+    },
+    {
+     "to": "Silence",
+     "seed3": 0.0095
+    },
+    {
+     "to": "Devouring Contagion",
+     "seed3": 0.0095
+    },
+    {
+     "to": "Blackout",
+     "seed3": 0.0098
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Mind Flay": {
+   "level": 22,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Shadow Word: Pain",
+     "seed3": 0.0181
+    },
+    {
+     "to": "Shadow Focus",
+     "seed3": 0.0197
+    },
+    {
+     "to": "Blackout",
+     "seed3": 0.0199
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Martyrdom": {
+   "level": 57,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Mental Strength",
+     "seed3": 0.0001
+    },
+    {
+     "to": "Silent Resolve",
+     "seed3": 0.0001
+    },
+    {
+     "to": "Holy Precision",
+     "seed3": 0.0001
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Mental Strength": {
+   "level": 54,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Silent Resolve",
+     "seed3": -0.0003
+    },
+    {
+     "to": "Holy Precision",
+     "seed3": -0.0003
+    },
+    {
+     "to": "Martyrdom",
+     "seed3": -0.0001
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Power in Light": {
+   "level": 56,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": "improves only Penance, Smite, which the build never casts (its removal changes nothing at 60)",
+   "homes": [
+    {
+     "to": "Silent Resolve",
+     "seed3": 0.0,
+     "same_times": true,
+     "seed4": 0.0,
+     "same_times_seed4": true
+    },
+    {
+     "to": "Holy Precision",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Martyrdom",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Mental Strength",
+     "seed3": 0.0001
+    }
+   ],
+   "verdict": "moved to Silent Resolve"
+  },
+  "Shadow Focus": {
+   "level": 18,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Shadow Word: Pain",
+     "seed3": 0.0063
+    },
+    {
+     "to": "Blackout",
+     "seed3": 0.0082
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Shadow Reach": {
+   "level": 23,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Shadow Word: Pain",
+     "seed3": 0.0056
+    },
+    {
+     "to": "Shadow Focus",
+     "seed3": 0.0062
+    },
+    {
+     "to": "Blackout",
+     "seed3": 0.0067
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Shadow Weaving": {
+   "level": 30,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Shadow Focus",
+     "seed3": 0.0047
+    },
+    {
+     "to": "Silence",
+     "seed3": 0.0047
+    },
+    {
+     "to": "Devouring Contagion",
+     "seed3": 0.0047
+    },
+    {
+     "to": "Improved Shadow Word: Pain",
+     "seed3": 0.0047
+    },
+    {
+     "to": "Blackout",
+     "seed3": 0.0063
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Spirit Tap": {
+   "level": 14,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Blackout",
+     "seed3": 0.0345
+    },
+    {
+     "to": "Shadow Focus",
+     "seed3": 0.0356
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Twin Disciplines": {
+   "level": 49,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Vampiric Embrace": {
+   "level": 39,
+   "kind": "prerequisite of Shadowform",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  }
+ },
+ "no_better_home": {
+  "Dark Inspiration": {
+   "kind": "zero point",
+   "exact": true,
+   "why": "time per kill at 60 without its last rank: -0.00 s (seed 3)",
+   "homes": 8
+  },
+  "Early Demise": {
+   "kind": "zero point",
+   "exact": false,
+   "why": "time per kill at 60 without its last rank: +0.05 s (seed 3)",
+   "homes": 16
+  },
+  "Wand Specialization": {
+   "kind": "zero point",
+   "exact": false,
+   "why": "time per kill at 60 without its last rank: +0.06 s (seed 3)",
+   "homes": 16
+  }
+ },
  "final_order": [
   {
    "levels": "10-14",
@@ -281,41 +571,65 @@
    "points": 5
   },
   {
-   "levels": "50-51",
+   "levels": "50-52",
    "tree": "Holy",
    "talent": "Twilight Focus",
+   "points": 3
+  },
+  {
+   "levels": "53-54",
+   "tree": "Discipline",
+   "talent": "Mental Strength",
    "points": 2
   },
   {
-   "levels": "52",
+   "levels": "55",
+   "tree": "Discipline",
+   "talent": "Wand Specialization",
+   "points": 1
+  },
+  {
+   "levels": "56",
+   "tree": "Discipline",
+   "talent": "Silent Resolve",
+   "points": 1
+  },
+  {
+   "levels": "57",
+   "tree": "Discipline",
+   "talent": "Martyrdom",
+   "points": 1
+  },
+  {
+   "levels": "58",
+   "tree": "Discipline",
+   "talent": "Meditation",
+   "points": 1
+  },
+  {
+   "levels": "59",
    "tree": "Shadow",
    "talent": "Early Demise",
    "points": 1
   },
   {
-   "levels": "53-55",
+   "levels": "60",
    "tree": "Discipline",
-   "talent": "Mental Strength",
-   "points": 3
-  },
+   "talent": "Wand Specialization",
+   "points": 1
+  }
+ ],
+ "reruns": [
   {
-   "levels": "56-57",
-   "tree": "Discipline",
-   "talent": "Power in Light",
-   "points": 2
-  },
-  {
-   "levels": "58-60",
-   "tree": "Discipline",
-   "talent": "Meditation",
-   "points": 3
+   "date": "2026-11-22",
+   "moves": 0
   }
  ],
  "written": {
   "allocation": {
    "Discipline": [
     [
-     "Power in Light",
+     "Wand Specialization",
      2
     ],
     [
@@ -323,18 +637,26 @@
      5
     ],
     [
+     "Silent Resolve",
+     1
+    ],
+    [
      "Mental Strength",
-     3
+     2
+    ],
+    [
+     "Martyrdom",
+     1
     ],
     [
      "Meditation",
-     3
+     1
     ]
    ],
    "Holy": [
     [
      "Twilight Focus",
-     2
+     3
     ]
    ],
    "Shadow": [
@@ -492,36 +814,54 @@
     "points": 5
    },
    {
-    "levels": "50-51",
+    "levels": "50-52",
     "tree": "Holy",
     "talent": "Twilight Focus",
+    "points": 3
+   },
+   {
+    "levels": "53-54",
+    "tree": "Discipline",
+    "talent": "Mental Strength",
     "points": 2
    },
    {
-    "levels": "52",
+    "levels": "55",
+    "tree": "Discipline",
+    "talent": "Wand Specialization",
+    "points": 1
+   },
+   {
+    "levels": "56",
+    "tree": "Discipline",
+    "talent": "Silent Resolve",
+    "points": 1
+   },
+   {
+    "levels": "57",
+    "tree": "Discipline",
+    "talent": "Martyrdom",
+    "points": 1
+   },
+   {
+    "levels": "58",
+    "tree": "Discipline",
+    "talent": "Meditation",
+    "points": 1
+   },
+   {
+    "levels": "59",
     "tree": "Shadow",
     "talent": "Early Demise",
     "points": 1
    },
    {
-    "levels": "53-55",
+    "levels": "60",
     "tree": "Discipline",
-    "talent": "Mental Strength",
-    "points": 3
-   },
-   {
-    "levels": "56-57",
-    "tree": "Discipline",
-    "talent": "Power in Light",
-    "points": 2
-   },
-   {
-    "levels": "58-60",
-    "tree": "Discipline",
-    "talent": "Meditation",
-    "points": 3
+    "talent": "Wand Specialization",
+    "points": 1
    }
   ],
-  "note": "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Twilight Focus to Early Demise at 52 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill)."
+  "note": "2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Power in Light to Silent Resolve at 56 (gate that did nothing, tie-break by utility (survival): +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Meditation to Early Demise at 59 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Mental Strength to Power in Light at 56 (gate that did nothing, no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Power in Light to Martyrdom at 57 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Power in Light to Mental Strength at 56 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Early Demise to Twilight Focus at 52 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Meditation to Wand Specialization at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Mental Strength to Wand Specialization at 55 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Twilight Focus to Early Demise at 52 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill)."
  }
 }

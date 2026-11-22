@@ -39,7 +39,7 @@
      "Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** (levels 40-41) gives your next **Sinister Strike** 40% more crit chance."
     ],
     "caveats": [
-     "This build has no **Blade Flurry** or **Adrenaline Rush** (the list above leaves their line out) and no **Setup**, so **Evasion** is your only cooldown when a pull goes wrong.",
+     "This build has no Blade Flurry or Adrenaline Rush (the list above leaves their line out) and no Setup, so **Evasion** is your only cooldown when a pull goes wrong.",
      "**Improved Expose Armor** (54), **Improved Poisons** (56-57) and **Vile Poisons** (58-59) fill the Assassination tiers on the way to **Venom** (60), which makes each **Shank** strengthen your poisons for 6 seconds: the first improves a spell this list never casts, the two poison talents only your poisons (the filler pass of 2026-11-15 moved the Improved Slice and Dice point to **Improved Poisons**).",
      "**Kidney Shot** is not in the list: the tuned rules never cast it (under 1% faster per kill). Keep it for an add or a pull that goes wrong.",
      "With swords the tuned rules never **Kick** (about 0.5% to 1% faster per kill): a caster mob that stays back walks in once it has cast. **Backstab** and **Ambush** need a dagger, so they are not in the list.",
@@ -53,7 +53,7 @@
     "rotations": {
      "leveling:combat-swords-raid": "8fe993c1421f",
      "leveling:combat-daggers-raid": "5d52a58e63af",
-     "leveling:subtlety-leveling": "923258fb1477"
+     "leveling:subtlety-leveling": "2188f706082c"
     },
     "written": "2026-11-15"
    }
@@ -100,7 +100,7 @@
      "The points after level 40 go to Combat's talents (**Coup de Grace**, **Puncturing Wounds**, **Precision**, **Aggression**): they make **Eviscerate** and **Mutilate** hit harder and land more often.",
      "**Kidney Shot** is not in the list: the tuned rules never cast it (under 1% faster per kill). Keep it for an add or a pull that goes wrong.",
      "The tuned rules never **Kick** (2026-11-15: about 0.4% to 1% faster per kill without it): a caster mob that stays back walks in once it has cast. Keep **Kick** for a caster that hits too hard.",
-     "This build has no **Blade Flurry**, **Adrenaline Rush** or **Riposte**, so **Evasion** is your only cooldown when a pull goes wrong.",
+     "This build has no Blade Flurry, Adrenaline Rush or Riposte, so **Evasion** is your only cooldown when a pull goes wrong.",
      "Eat only below 40% health and bandage below 60%: the tuned rules measured eating that late about 4.2% faster per kill."
     ],
     "diverge": [
@@ -110,7 +110,7 @@
     "rotations": {
      "leveling:combat-swords-raid": "8fe993c1421f",
      "leveling:combat-daggers-raid": "5d52a58e63af",
-     "leveling:subtlety-leveling": "923258fb1477"
+     "leveling:subtlety-leveling": "2188f706082c"
     },
     "written": "2026-11-08"
    }
@@ -145,8 +145,8 @@
    "leveling": {
     "plan": "Subtlety levels on its openers and on dodges: **Premeditation** (24) and a stealth opener put up to 4 points on the mob, a builder makes 5, and **Eviscerate** or **Death Mark** ends the fight. **Ghostly Strike** (25) and **Hemorrhage** (30) are the signature strikes, and **Setup** (12-14) turns the mob's dodged swings into combo points.",
     "why": [
-     "From stealth, **Premeditation** (level 24) adds 2 points (a 2-minute cooldown, so about every fifth pull) and **Initiative** (23, 26-27) makes your opener add a second one: up to 4 points before your first builder.",
-     "Open with **Ambush** or **Garrote**, whichever fits the fight: **Ambush**'s burst wins short fights (**Opportunity** makes both hit harder), the 18-second bleed of **Garrote** ignores armor but pays only while the mob lives, and **Dirty Deeds** (15-16) makes it 20 energy cheaper and usable from the front. The fight lab opens with **Ambush** on every pull at levels 18-21 and on about two in three at 22-25 and at 35 (after **Ambush** rank 3 at 34), with **Garrote** on almost every pull at 30 and on every pull from 40. **Improved Ambush** (18-19, 33) adds crit to the **Ambush** openers; it measured nothing at 60, where **Garrote** opens.",
+     "From stealth, **Premeditation** (level 24) adds 2 points (a 2-minute cooldown, so about one pull in six or seven) and **Initiative** (23, 26-27) makes your opener add a second one: up to 4 points before your first builder.",
+     "Open with **Ambush** or **Garrote**, whichever fits the fight: **Ambush**'s burst wins short fights (**Opportunity** makes both hit harder), the 18-second bleed of **Garrote** ignores armor but pays only while the mob lives, and **Dirty Deeds** (15-16) makes it 20 energy cheaper and usable from the front. The fight lab opens with **Ambush** on every pull at levels 18-21, on about two in three at 22 and on about half at 24-25 and at 35 (after **Ambush** rank 3 at 34), with **Garrote** on almost every pull at 30 and on every pull from 40. **Improved Ambush** (18-19, 33) adds crit to the **Ambush** openers; it measured nothing at 60, where **Garrote** opens.",
      "**Ghostly Strike** (level 25) goes in on its 20-second cooldown: 180% weapon damage with a dagger, 1 combo point, 15% more dodge for 7 seconds, and your next **Ambush** or **Garrote** in that time needs no stealth. **Hemorrhage** (level 30) replaces **Sinister Strike** as the builder: 35 energy for 145% weapon damage with a dagger.",
      "With **Setup** (12-14, 45% at 3 ranks), a dodge can add a combo point, so **Ghostly Strike**, **Lightning Reflexes** and **Evasion** also build points.",
      "**Shank** (level 24) is a free strike that gives energy back; **Boot Knife** (35-39) adds 2 combo points to a **Shank** with 20% a rank, a sure 2 at 39, so it is a builder too.",
@@ -155,8 +155,8 @@
     ],
     "caveats": [
      "**Ambush** needs a dagger in your main hand and you behind the mob, and **Ghostly Strike** and **Hemorrhage** hit much harder with a dagger: keep daggers in both hands.",
-     "This build has no **Remorseless Attacks**, **Riposte** or **Blade Flurry**, so the list has no **Riposte** line.",
-     "**Master of Deception**, **Dirty Tricks** (34, which opens **Boot Knife** and **Death Mark**) and **Puncturing Wounds** (51-52, which opens **Aggression**, **Flawless Execution** and **Weapon Expertise**) are tier points on the way down the tree: the fight lab plays none of them.",
+     "This build has no Remorseless Attacks, Riposte or Blade Flurry, so the list has no Riposte line.",
+     "**Master of Deception** and **Dirty Tricks** (34, which opens **Boot Knife** and **Death Mark**) are tier points on the way down the tree: the fight lab plays neither. **Deflection** (51-52), 4% more parry, holds the two Combat tier points that open **Flawless Execution**, **Weapon Expertise** and **Aggression**: the filler passes of 2026-11-20 and 2026-11-21 moved them there from Puncturing Wounds, which helps only Backstab and Mutilate, at no loss.",
      "**Rupture** is not in the leveling list: the fight lab plays **Eviscerate** and **Death Mark**, so **Serrated Blades** counts here for the armor it ignores and as the prerequisite of **Hemorrhage**.",
      "Eat only below 40% health and bandage below 60%: the tuned rules measured eating that late about 4.3% faster per kill.",
      "The tuned rules never **Kick** (2026-11-15: about 0.6% to 0.9% faster per kill without it): a caster mob that stays back walks in once it has cast. Keep **Kick** for a caster that hits too hard."
@@ -168,7 +168,7 @@
     "rotations": {
      "leveling:combat-swords-raid": "8fe993c1421f",
      "leveling:combat-daggers-raid": "5d52a58e63af",
-     "leveling:subtlety-leveling": "923258fb1477"
+     "leveling:subtlety-leveling": "2188f706082c"
     },
     "written": "2026-11-15"
    }
@@ -198,7 +198,7 @@
     "rotations": {
      "leveling:combat-swords-raid": "8fe993c1421f",
      "leveling:combat-daggers-raid": "5d52a58e63af",
-     "leveling:subtlety-leveling": "923258fb1477"
+     "leveling:subtlety-leveling": "2188f706082c"
     },
     "written": "2026-10-26"
    },
@@ -231,19 +231,19 @@
   },
   "Hybrid Combat/Subtlety": {
    "leveling": {
-    "plan": "Combat-Subtlety levels on Subtlety's openers and Combat's finishers: **Premeditation** (24) and **Ambush** start the fight at up to 4 points, **Sinister Strike** builds, **Ghostly Strike** (25) goes in on its cooldown, **Eviscerate** finishes, and **Hemorrhage** is the last point, at level 60.",
+    "plan": "Combat-Subtlety levels on Subtlety's openers and Combat's finishers: **Premeditation** (24) and a stealth opener, **Ambush** on most pulls, start the fight at up to 4 points, **Sinister Strike** builds until **Hemorrhage** (32) takes over, **Ghostly Strike** (25) goes in on its cooldown, and **Eviscerate** finishes.",
     "why": [
-     "From stealth, **Premeditation** (level 24) adds 2 points (a 2-minute cooldown, so about every fifth pull) and **Initiative** (1 rank at 23, all 3 by 53) makes your opener add a second one: up to 4 points before your first builder.",
-     "Open with **Ambush** on every pull once you have it (level 18): **Opportunity** (5 ranks by 16) and **Improved Ambush** (17-19) make it hit harder and crit more. **Garrote** is the opener before that (14-17); later the fight lab casts it after a **Ghostly Strike**, whose next **Garrote** needs no stealth (**Dirty Deeds** lets it land from the front), when no bleed is on the mob and it has more than half its health.",
-     "**Sinister Strike** is your builder all the way to 59: **Hemorrhage** needs 3 ranks of **Serrated Blades** behind it and arrives with the last point, at 60. **Efficient Strikes** (34-35) cut **Sinister Strike**'s cost by 5.",
-     "**Ghostly Strike** (level 25) goes in on its 20-second cooldown: 180% weapon damage with a dagger, 15% more dodge for 7 seconds. With **Setup** (1 rank at 12, 15%; all 3 by 59, 45%) a dodge sometimes adds a combo point.",
-     "At 5 points, wait for the energy for **Eviscerate** rather than press a builder whose point would be lost, and cast it earlier when it would kill the mob. **Coup de Grace** (26-28) makes it hit 20% harder.",
-     "Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** (29-30) gives your next strike 40% more crit chance."
+     "From stealth, **Premeditation** (level 24) adds 2 points (a 2-minute cooldown, so about one pull in six or seven) and **Initiative** (1 rank at 23, all 3 by 29) makes your opener add a second one: up to 4 points before your first builder.",
+     "Open with **Ambush** from level 18: **Opportunity** (5 ranks by 18) and **Improved Ambush** (19, 30-31) make it hit harder and crit more, and the fight lab opens with it on every pull at 20 and from 30. In between, until **Improved Ambush** takes its last two points, **Garrote** rank 2 (22) outweighs **Ambush** on the mobs that will take a while to kill: at 23-25 the fight lab opens with **Garrote** on about half the pulls. **Garrote** is also the opener before 18 (14-17), and the fight lab casts it after a **Ghostly Strike**, whose next **Garrote** needs no stealth (**Dirty Deeds** lets it land from the front), when no bleed is on the mob and it has more than half its health.",
+     "**Sinister Strike** builds to 31. **Hemorrhage** (32: it needs 20 points in Subtlety and 3 ranks of **Serrated Blades**) takes over: 35 energy for 145% weapon damage with a dagger, and your **Garrote** bleeds 15% harder for 15 seconds after it. **Efficient Strikes** (44-45) cut its cost by 5.",
+     "**Ghostly Strike** (level 25) goes in on its 20-second cooldown: 180% weapon damage with a dagger, 15% more dodge for 7 seconds. With **Setup** (12-14, 45% at 3 ranks) a dodge can add a combo point.",
+     "At 5 points, wait for the energy for **Eviscerate** rather than press a builder whose point would be lost, and cast it earlier when it would kill the mob. **Coup de Grace** (33-35) makes it hit 20% harder.",
+     "Pull the next mob within 20 seconds of a kill: **Remorseless Attacks** (26-27) gives your next **Ambush**, **Sinister Strike** or **Ghostly Strike** 40% more crit chance; **Hemorrhage** does not use it."
     ],
     "caveats": [
      "Skip **Slice and Dice** (about 6% faster per kill without it). **Kidney Shot** is not in the list: the tuned rules never cast it (under 1% faster per kill). Keep it for an add or a pull that goes wrong.",
      "Keep a dagger in your main hand: **Ambush** needs one, and **Ghostly Strike** and **Hemorrhage** hit much harder with it.",
-     "This build has no **Riposte**, **Preparation**, **Death Mark**, **Boot Knife** or **Relentless Strikes**: the list drops the lines that lead with them, and where it still names **Boot Knife** or **Preparation**, that part does not apply. **Evasion** is your only cooldown when a pull goes wrong.",
+     "This build has no Riposte, Preparation, Death Mark, Boot Knife or Relentless Strikes: the list drops the lines that lead with them, and where it still names Boot Knife or Preparation, that part does not apply. **Evasion** is your only cooldown when a pull goes wrong.",
      "Eat only below 40% health and bandage below 60%: the tuned rules measured eating that late about 4.3% faster per kill.",
      "The tuned rules never **Kick** (2026-11-15: about 0.6% to 0.9% faster per kill without it): a caster mob that stays back walks in once it has cast. Keep **Kick** for a caster that hits too hard."
     ],
@@ -254,9 +254,9 @@
     "rotations": {
      "leveling:combat-swords-raid": "8fe993c1421f",
      "leveling:combat-daggers-raid": "5d52a58e63af",
-     "leveling:subtlety-leveling": "923258fb1477"
+     "leveling:subtlety-leveling": "2188f706082c"
     },
-    "written": "2026-11-15"
+    "written": "2026-11-21"
    }
   },
   "Hybrid Assassination/Subtlety": {

@@ -100,13 +100,13 @@ What this build casts per kill ([report](../fightlab/enhancement-dps.md), all le
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.1 | 3.2 | 3.5 | 3.7 | 4.2 | 29% |
-| Earth Shock | 2.0 | 1.8 | 2.0 | 2.1 | 2.3 | 38% |
+| Melee | 3.2 | 3.3 | 3.6 | 3.8 | 4.2 | 29% |
+| Earth Shock | 2.0 | 1.9 | 2.1 | 2.1 | 2.3 | 38% |
 | Stormstrike | 0.0 | 1.6 | 1.7 | 1.8 | 1.9 | 13% |
-| Lightning Shield | 0.6 | 0.6 | 0.7 | 0.7 | 0.7 | 13% |
-| Searing Totem | 1.0 | 0.9 | 0.8 | 0.8 | 0.7 | 4% |
+| Lightning Shield | 0.6 | 0.6 | 0.7 | 0.7 | 0.7 | 12% |
+| Searing Totem | 0.9 | 0.9 | 0.8 | 0.8 | 0.7 | 5% |
 | Lightning Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 3% |
-| Windfury | 0.0 | 1.6 | 0.0 | 0.0 | 0.0 | 0% |
+| Windfury | 0.0 | 1.7 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 

@@ -520,7 +520,12 @@ class WarlockModule(BaseModule):
     # seeds 1-2): the Imp 22% to 93% slower per kill at every level of every pick (Affliction +26% at 60, Destruction +93% at 40), so
     # the Voidwalker stays and the knob is not offered to the tunes (the Succubus is not modelled)
     IMP_FROM = 61
-    ROTATION_KNOBS = {"NUKE_ABOVE": [0.0, 0.2, 0.4, 0.6, 0.8], "BOLT_FIRST": [0, 1], "DESTRO_DOTS": [0, 1]}
+    # Destruction's bolt-first list: its filler (Shadow Bolt, or Incinerate on an Immolated mob) and Searing Pain only above this mana
+    # share (2026-11-21, the Destruction 30-31 investigation: no gate, NUKE_ABOVE is not read there; from 31 Shadowburn's killing blow at
+    # any mana sent a third of the pulls under the drink line and each full bar went into Shadow Bolts; a 40% gate was 6-12% faster at
+    # 20-30 and about 1-2% at 40-60, seeds 1-2). 0: the lab before, bit for bit
+    BOLT_ABOVE = 0.0
+    ROTATION_KNOBS = {"NUKE_ABOVE": [0.0, 0.2, 0.4, 0.6, 0.8], "BOLT_FIRST": [0, 1], "DESTRO_DOTS": [0, 1], "BOLT_ABOVE": [0.0, 0.2, 0.4, 0.6]}
     CONFLAG_LEFT = 3.0   # Destruction: Conflagrate (outside the finisher) once Immolate has this many seconds left
     CRIT_BONUS_OF_BASE = 0.5   # new rotations: "increases the critical strike damage bonus by X%" = X% of the 50% bonus (wowsims)
 
@@ -1078,9 +1083,10 @@ class WarlockModule(BaseModule):
             return soul
         if bolt and c.can(bolt) and p.buff("Shadow Trance", t) and hp > c.avg(bolt) * 0.5:
             return bolt
-        if filler and c.can(filler) and hp > c.avg(filler) * 0.9 and not (c.on_me and c.in_melee) and not c.near_aggro and p.mana - self.mana_cost(filler) > c.reserve:
+        gate = not self.BOLT_ABOVE or p.mana > self.BOLT_ABOVE * p.mana_max   # BOLT_ABOVE (2026-11-21): the filler only above this mana share
+        if gate and filler and c.can(filler) and hp > c.avg(filler) * 0.9 and not (c.on_me and c.in_melee) and not c.near_aggro and p.mana - self.mana_cost(filler) > c.reserve:
             return filler
-        if sear and c.can(sear) and hp > c.wand_hit * 2 and not (c.on_me and c.in_melee) and not c.near_aggro and p.mana - self.mana_cost(sear) > c.reserve:
+        if gate and sear and c.can(sear) and hp > c.wand_hit * 2 and not (c.on_me and c.in_melee) and not c.near_aggro and p.mana - self.mana_cost(sear) > c.reserve:
             return sear
         if c.drain and c.can(c.drain) and p.hp < 0.85 * p.hp_max and hp > c.wand_hit * 4 and m.dist <= c.drain.range and not c.near_aggro:
             return c.drain

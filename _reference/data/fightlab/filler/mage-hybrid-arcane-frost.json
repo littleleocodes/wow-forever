@@ -3,7 +3,7 @@
  "spec": "Hybrid Arcane/Frost",
  "build": "arcane-frost-open-leveling",
  "rotation": "barrage-frost-leveling",
- "date": "2026-11-17",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -19,16 +19,28 @@
    "points": 3
   },
   {
-   "levels": "15-17",
+   "levels": "15",
    "tree": "Frost",
    "talent": "Frostbite",
-   "points": 3
+   "points": 1
   },
   {
-   "levels": "18-19",
+   "levels": "16",
+   "tree": "Frost",
+   "talent": "Improved Frostbolt",
+   "points": 1
+  },
+  {
+   "levels": "17-18",
    "tree": "Frost",
    "talent": "Ice Shards",
    "points": 2
+  },
+  {
+   "levels": "19",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
+   "points": 1
   },
   {
    "levels": "20",
@@ -37,15 +49,27 @@
    "points": 1
   },
   {
-   "levels": "21-23",
+   "levels": "21",
    "tree": "Frost",
    "talent": "Frost Channeling",
-   "points": 3
+   "points": 1
+  },
+  {
+   "levels": "22",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
+   "points": 1
+  },
+  {
+   "levels": "23",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 1
   },
   {
    "levels": "24",
    "tree": "Frost",
-   "talent": "Ice Shards",
+   "talent": "Improved Frostbolt",
    "points": 1
   },
   {
@@ -57,68 +81,74 @@
   {
    "levels": "26",
    "tree": "Frost",
-   "talent": "Ice Shards",
-   "points": 1
-  },
-  {
-   "levels": "27",
-   "tree": "Frost",
    "talent": "Arctic Reach",
    "points": 1
   },
   {
-   "levels": "28-29",
+   "levels": "27-28",
    "tree": "Frost",
    "talent": "Shatter",
    "points": 2
   },
   {
-   "levels": "30-31",
-   "tree": "Frost",
-   "talent": "Fingers of Frost",
-   "points": 2
-  },
-  {
-   "levels": "32-33",
+   "levels": "29-30",
    "tree": "Arcane",
    "talent": "Wand Specialization",
    "points": 2
   },
   {
-   "levels": "34",
+   "levels": "31",
    "tree": "Arcane",
    "talent": "Arcane Resilience",
    "points": 1
   },
   {
-   "levels": "35-36",
+   "levels": "32-33",
    "tree": "Arcane",
    "talent": "Improved Channeling",
    "points": 2
   },
   {
-   "levels": "37-38",
+   "levels": "34-35",
    "tree": "Arcane",
    "talent": "Missile Barrage",
    "points": 2
   },
   {
-   "levels": "39",
+   "levels": "36",
    "tree": "Frost",
    "talent": "Arctic Reach",
    "points": 1
   },
   {
-   "levels": "40-41",
+   "levels": "37-38",
+   "tree": "Frost",
+   "talent": "Fingers of Frost",
+   "points": 2
+  },
+  {
+   "levels": "39-40",
    "tree": "Arcane",
    "talent": "Arcane Subtlety",
    "points": 2
   },
   {
-   "levels": "42-46",
+   "levels": "41",
    "tree": "Arcane",
    "talent": "Arcane Concentration",
-   "points": 5
+   "points": 1
+  },
+  {
+   "levels": "42",
+   "tree": "Arcane",
+   "talent": "Arcane Geometry",
+   "points": 1
+  },
+  {
+   "levels": "43-46",
+   "tree": "Arcane",
+   "talent": "Arcane Concentration",
+   "points": 4
   },
   {
    "levels": "47",
@@ -171,17 +201,510 @@
  ],
  "steps": [
   {
-   "weighted": 27.243,
+   "weighted": 27.054,
    "values_at_60": {
-    "Arcane Instability": -0.208,
-    "Arctic Reach": -0.558,
-    "Fingers of Frost": -0.407
+    "Arcane Instability": -0.27,
+    "Fingers of Frost": -0.257,
+    "Frost Channeling": -0.196
    },
-   "zero": []
+   "zero": [],
+   "dead_held": []
   }
  ],
- "moves": [],
+ "moves": [
+  {
+   "from": "Arcane Geometry",
+   "to": "Frost Channeling",
+   "level": 42,
+   "seed3": -0.0078,
+   "seed4": -0.0062,
+   "why": "measured"
+  },
+  {
+   "from": "Ice Shards",
+   "to": "Frost Channeling",
+   "level": 23,
+   "seed3": -0.0014,
+   "seed4": -0.0035,
+   "why": "gate"
+  }
+ ],
  "kept_signature": [],
+ "gates_checked": {
+  "Arcane Concentration": {
+   "level": 46,
+   "kind": "prerequisite of Arcane Meditation",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Arcane Meditation": {
+   "level": 50,
+   "kind": "tier point for Arcane Instability (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Arcane Resilience",
+     "seed3": 0.0057
+    },
+    {
+     "to": "Arcane Impact",
+     "seed3": 0.0058
+    },
+    {
+     "to": "Improved Channeling",
+     "seed3": 0.006
+    },
+    {
+     "to": "Improved Counterspell",
+     "seed3": 0.0063
+    },
+    {
+     "to": "Magic Absorption",
+     "seed3": 0.0078
+    },
+    {
+     "to": "Arcane Geometry",
+     "seed3": 0.0078
+    },
+    {
+     "to": "Arcane Blast",
+     "seed3": 0.0078
+    },
+    {
+     "to": "Arcane Shielding",
+     "seed3": 0.0078
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Arcane Mind": {
+   "level": 56,
+   "kind": "tier point for Arcane Instability (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Magic Absorption",
+     "seed3": -0.0006
+    },
+    {
+     "to": "Arcane Geometry",
+     "seed3": -0.0006
+    },
+    {
+     "to": "Arcane Blast",
+     "seed3": -0.0006
+    },
+    {
+     "to": "Arcane Shielding",
+     "seed3": -0.0006
+    },
+    {
+     "to": "Arcane Impact",
+     "seed3": 0.0
+    },
+    {
+     "to": "Arcane Resilience",
+     "seed3": 0.0002
+    },
+    {
+     "to": "Improved Counterspell",
+     "seed3": 0.0002
+    },
+    {
+     "to": "Improved Channeling",
+     "seed3": 0.0008
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Arcane Resilience": {
+   "level": 57,
+   "kind": "tier point for Arcane Instability (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Arcane Impact",
+     "seed3": -0.0005
+    },
+    {
+     "to": "Arcane Mind",
+     "seed3": -0.0003
+    },
+    {
+     "to": "Improved Counterspell",
+     "seed3": -0.0002
+    },
+    {
+     "to": "Magic Absorption",
+     "seed3": -0.0001
+    },
+    {
+     "to": "Arcane Geometry",
+     "seed3": -0.0001
+    },
+    {
+     "to": "Arcane Blast",
+     "seed3": -0.0001
+    },
+    {
+     "to": "Arcane Shielding",
+     "seed3": -0.0001
+    },
+    {
+     "to": "Improved Channeling",
+     "seed3": 0.0002
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Arcane Subtlety": {
+   "level": 40,
+   "kind": "tier point for Arcane Instability (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Arcane Resilience",
+     "seed3": 0.0088
+    },
+    {
+     "to": "Magic Absorption",
+     "seed3": 0.0099
+    },
+    {
+     "to": "Improved Channeling",
+     "seed3": 0.0105
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Arctic Reach": {
+   "level": 36,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Ice Shards",
+     "seed3": 0.0127
+    },
+    {
+     "to": "Permafrost",
+     "seed3": 0.0187
+    },
+    {
+     "to": "Frost Warding",
+     "seed3": 0.0212
+    },
+    {
+     "to": "Precision",
+     "seed3": 0.0212
+    },
+    {
+     "to": "Frostbite",
+     "seed3": 0.0212
+    },
+    {
+     "to": "Improved Blizzard",
+     "seed3": 0.0212
+    },
+    {
+     "to": "Ice Block",
+     "seed3": 0.0212
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Frostbite": {
+   "level": 15,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Ice Shards",
+     "seed3": 0.0064
+    },
+    {
+     "to": "Permafrost",
+     "seed3": 0.0154
+    },
+    {
+     "to": "Frost Warding",
+     "seed3": 0.0178
+    },
+    {
+     "to": "Precision",
+     "seed3": 0.0181
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Ice Lance": {
+   "level": 20,
+   "kind": "prerequisite of Fingers of Frost",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Ice Shards": {
+   "level": 18,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Frostbite",
+     "seed3": 0.0098
+    },
+    {
+     "to": "Permafrost",
+     "seed3": 0.0131
+    },
+    {
+     "to": "Frost Warding",
+     "seed3": 0.014
+    },
+    {
+     "to": "Precision",
+     "seed3": 0.0141
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Channeling": {
+   "level": 51,
+   "kind": "tier point for Arcane Instability (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Arcane Impact",
+     "seed3": 0.0005
+    },
+    {
+     "to": "Arcane Resilience",
+     "seed3": 0.0005
+    },
+    {
+     "to": "Improved Counterspell",
+     "seed3": 0.001
+    },
+    {
+     "to": "Magic Absorption",
+     "seed3": 0.0011
+    },
+    {
+     "to": "Arcane Geometry",
+     "seed3": 0.0011
+    },
+    {
+     "to": "Arcane Blast",
+     "seed3": 0.0011
+    },
+    {
+     "to": "Arcane Shielding",
+     "seed3": 0.0011
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Counterspell": {
+   "kind": "tier point for Arcane Instability (tier 6)",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: utility (stun), a value the fight lab cannot see"
+  },
+  "Improved Frost Nova": {
+   "level": 22,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Ice Shards",
+     "seed3": 0.0026
+    },
+    {
+     "to": "Frostbite",
+     "seed3": 0.0079
+    },
+    {
+     "to": "Permafrost",
+     "seed3": 0.009
+    },
+    {
+     "to": "Frost Warding",
+     "seed3": 0.012
+    },
+    {
+     "to": "Precision",
+     "seed3": 0.012
+    },
+    {
+     "to": "Improved Blizzard",
+     "seed3": 0.012
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Frostbolt": {
+   "level": 24,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Ice Shards",
+     "seed3": 0.0142
+    },
+    {
+     "to": "Permafrost",
+     "seed3": 0.0186
+    },
+    {
+     "to": "Frostbite",
+     "seed3": 0.0223
+    },
+    {
+     "to": "Precision",
+     "seed3": 0.0261
+    },
+    {
+     "to": "Improved Blizzard",
+     "seed3": 0.0261
+    },
+    {
+     "to": "Frost Warding",
+     "seed3": 0.0262
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Missile Barrage": {
+   "level": 35,
+   "kind": "tier point for Arcane Instability (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Arcane Resilience",
+     "seed3": 0.0334
+    },
+    {
+     "to": "Improved Channeling",
+     "seed3": 0.0357
+    },
+    {
+     "to": "Magic Absorption",
+     "seed3": 0.0362
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Precision": {
+   "level": 11,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Frost Warding",
+     "seed3": 0.0269
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Presence of Mind": {
+   "level": 53,
+   "kind": "tier point for Arcane Instability (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Arcane Mind",
+     "seed3": 0.0022
+    },
+    {
+     "to": "Arcane Resilience",
+     "seed3": 0.0026
+    },
+    {
+     "to": "Improved Counterspell",
+     "seed3": 0.0027
+    },
+    {
+     "to": "Magic Absorption",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Arcane Geometry",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Arcane Blast",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Arcane Shielding",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Arcane Impact",
+     "seed3": 0.0029
+    },
+    {
+     "to": "Improved Channeling",
+     "seed3": 0.0034
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Shatter": {
+   "level": 28,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Ice Shards",
+     "seed3": 0.0181
+    },
+    {
+     "to": "Frostbite",
+     "seed3": 0.0232
+    },
+    {
+     "to": "Permafrost",
+     "seed3": 0.0237
+    },
+    {
+     "to": "Precision",
+     "seed3": 0.0262
+    },
+    {
+     "to": "Improved Blizzard",
+     "seed3": 0.0262
+    },
+    {
+     "to": "Ice Block",
+     "seed3": 0.0262
+    },
+    {
+     "to": "Frost Warding",
+     "seed3": 0.0263
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Wand Specialization": {
+   "level": 30,
+   "kind": "tier point for Arcane Instability (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Channeling",
+     "seed3": 0.0056
+    },
+    {
+     "to": "Arcane Resilience",
+     "seed3": 0.0067
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  }
+ },
+ "no_better_home": {},
  "final_order": [
   {
    "levels": "10-11",
@@ -196,16 +719,28 @@
    "points": 3
   },
   {
-   "levels": "15-17",
+   "levels": "15",
    "tree": "Frost",
    "talent": "Frostbite",
-   "points": 3
+   "points": 1
   },
   {
-   "levels": "18-19",
+   "levels": "16",
+   "tree": "Frost",
+   "talent": "Improved Frostbolt",
+   "points": 1
+  },
+  {
+   "levels": "17-18",
    "tree": "Frost",
    "talent": "Ice Shards",
    "points": 2
+  },
+  {
+   "levels": "19",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
+   "points": 1
   },
   {
    "levels": "20",
@@ -214,15 +749,27 @@
    "points": 1
   },
   {
-   "levels": "21-23",
+   "levels": "21",
    "tree": "Frost",
    "talent": "Frost Channeling",
-   "points": 3
+   "points": 1
+  },
+  {
+   "levels": "22",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
+   "points": 1
+  },
+  {
+   "levels": "23",
+   "tree": "Frost",
+   "talent": "Frost Channeling",
+   "points": 1
   },
   {
    "levels": "24",
    "tree": "Frost",
-   "talent": "Ice Shards",
+   "talent": "Improved Frostbolt",
    "points": 1
   },
   {
@@ -234,68 +781,74 @@
   {
    "levels": "26",
    "tree": "Frost",
-   "talent": "Ice Shards",
-   "points": 1
-  },
-  {
-   "levels": "27",
-   "tree": "Frost",
    "talent": "Arctic Reach",
    "points": 1
   },
   {
-   "levels": "28-29",
+   "levels": "27-28",
    "tree": "Frost",
    "talent": "Shatter",
    "points": 2
   },
   {
-   "levels": "30-31",
-   "tree": "Frost",
-   "talent": "Fingers of Frost",
-   "points": 2
-  },
-  {
-   "levels": "32-33",
+   "levels": "29-30",
    "tree": "Arcane",
    "talent": "Wand Specialization",
    "points": 2
   },
   {
-   "levels": "34",
+   "levels": "31",
    "tree": "Arcane",
    "talent": "Arcane Resilience",
    "points": 1
   },
   {
-   "levels": "35-36",
+   "levels": "32-33",
    "tree": "Arcane",
    "talent": "Improved Channeling",
    "points": 2
   },
   {
-   "levels": "37-38",
+   "levels": "34-35",
    "tree": "Arcane",
    "talent": "Missile Barrage",
    "points": 2
   },
   {
-   "levels": "39",
+   "levels": "36",
    "tree": "Frost",
    "talent": "Arctic Reach",
    "points": 1
   },
   {
-   "levels": "40-41",
+   "levels": "37-38",
+   "tree": "Frost",
+   "talent": "Fingers of Frost",
+   "points": 2
+  },
+  {
+   "levels": "39-40",
    "tree": "Arcane",
    "talent": "Arcane Subtlety",
    "points": 2
   },
   {
-   "levels": "42-46",
+   "levels": "41",
    "tree": "Arcane",
    "talent": "Arcane Concentration",
-   "points": 5
+   "points": 1
+  },
+  {
+   "levels": "42",
+   "tree": "Frost",
+   "talent": "Frost Channeling",
+   "points": 1
+  },
+  {
+   "levels": "43-46",
+   "tree": "Arcane",
+   "talent": "Arcane Concentration",
+   "points": 4
   },
   {
    "levels": "47",
@@ -345,5 +898,307 @@
    "talent": "Arcane Instability",
    "points": 3
   }
- ]
+ ],
+ "reruns": [
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-22",
+   "moves": 0
+  }
+ ],
+ "written": {
+  "allocation": {
+   "Arcane": [
+    [
+     "Wand Specialization",
+     2
+    ],
+    [
+     "Improved Channeling",
+     4
+    ],
+    [
+     "Arcane Resilience",
+     2
+    ],
+    [
+     "Arcane Subtlety",
+     2
+    ],
+    [
+     "Arcane Concentration",
+     5
+    ],
+    [
+     "Missile Barrage",
+     2
+    ],
+    [
+     "Improved Counterspell",
+     1
+    ],
+    [
+     "Arcane Meditation",
+     3
+    ],
+    [
+     "Presence of Mind",
+     1
+    ],
+    [
+     "Arcane Mind",
+     3
+    ],
+    [
+     "Arcane Instability",
+     3
+    ]
+   ],
+   "Fire": [],
+   "Frost": [
+    [
+     "Improved Frostbolt",
+     5
+    ],
+    [
+     "Precision",
+     2
+    ],
+    [
+     "Ice Shards",
+     2
+    ],
+    [
+     "Frostbite",
+     1
+    ],
+    [
+     "Improved Frost Nova",
+     2
+    ],
+    [
+     "Frost Channeling",
+     3
+    ],
+    [
+     "Ice Lance",
+     1
+    ],
+    [
+     "Arctic Reach",
+     2
+    ],
+    [
+     "Shatter",
+     3
+    ],
+    [
+     "Fingers of Frost",
+     2
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-11",
+    "tree": "Frost",
+    "talent": "Precision",
+    "points": 2
+   },
+   {
+    "levels": "12-14",
+    "tree": "Frost",
+    "talent": "Improved Frostbolt",
+    "points": 3
+   },
+   {
+    "levels": "15",
+    "tree": "Frost",
+    "talent": "Frostbite",
+    "points": 1
+   },
+   {
+    "levels": "16",
+    "tree": "Frost",
+    "talent": "Improved Frostbolt",
+    "points": 1
+   },
+   {
+    "levels": "17-18",
+    "tree": "Frost",
+    "talent": "Ice Shards",
+    "points": 2
+   },
+   {
+    "levels": "19",
+    "tree": "Frost",
+    "talent": "Improved Frost Nova",
+    "points": 1
+   },
+   {
+    "levels": "20",
+    "tree": "Frost",
+    "talent": "Ice Lance",
+    "points": 1
+   },
+   {
+    "levels": "21",
+    "tree": "Frost",
+    "talent": "Frost Channeling",
+    "points": 1
+   },
+   {
+    "levels": "22",
+    "tree": "Frost",
+    "talent": "Improved Frost Nova",
+    "points": 1
+   },
+   {
+    "levels": "23",
+    "tree": "Frost",
+    "talent": "Frost Channeling",
+    "points": 1
+   },
+   {
+    "levels": "24",
+    "tree": "Frost",
+    "talent": "Improved Frostbolt",
+    "points": 1
+   },
+   {
+    "levels": "25",
+    "tree": "Frost",
+    "talent": "Shatter",
+    "points": 1
+   },
+   {
+    "levels": "26",
+    "tree": "Frost",
+    "talent": "Arctic Reach",
+    "points": 1
+   },
+   {
+    "levels": "27-28",
+    "tree": "Frost",
+    "talent": "Shatter",
+    "points": 2
+   },
+   {
+    "levels": "29-30",
+    "tree": "Arcane",
+    "talent": "Wand Specialization",
+    "points": 2
+   },
+   {
+    "levels": "31",
+    "tree": "Arcane",
+    "talent": "Arcane Resilience",
+    "points": 1
+   },
+   {
+    "levels": "32-33",
+    "tree": "Arcane",
+    "talent": "Improved Channeling",
+    "points": 2
+   },
+   {
+    "levels": "34-35",
+    "tree": "Arcane",
+    "talent": "Missile Barrage",
+    "points": 2
+   },
+   {
+    "levels": "36",
+    "tree": "Frost",
+    "talent": "Arctic Reach",
+    "points": 1
+   },
+   {
+    "levels": "37-38",
+    "tree": "Frost",
+    "talent": "Fingers of Frost",
+    "points": 2
+   },
+   {
+    "levels": "39-40",
+    "tree": "Arcane",
+    "talent": "Arcane Subtlety",
+    "points": 2
+   },
+   {
+    "levels": "41",
+    "tree": "Arcane",
+    "talent": "Arcane Concentration",
+    "points": 1
+   },
+   {
+    "levels": "42",
+    "tree": "Frost",
+    "talent": "Frost Channeling",
+    "points": 1
+   },
+   {
+    "levels": "43-46",
+    "tree": "Arcane",
+    "talent": "Arcane Concentration",
+    "points": 4
+   },
+   {
+    "levels": "47",
+    "tree": "Arcane",
+    "talent": "Improved Channeling",
+    "points": 1
+   },
+   {
+    "levels": "48-50",
+    "tree": "Arcane",
+    "talent": "Arcane Meditation",
+    "points": 3
+   },
+   {
+    "levels": "51",
+    "tree": "Arcane",
+    "talent": "Improved Channeling",
+    "points": 1
+   },
+   {
+    "levels": "52",
+    "tree": "Arcane",
+    "talent": "Improved Counterspell",
+    "points": 1
+   },
+   {
+    "levels": "53",
+    "tree": "Arcane",
+    "talent": "Presence of Mind",
+    "points": 1
+   },
+   {
+    "levels": "54-56",
+    "tree": "Arcane",
+    "talent": "Arcane Mind",
+    "points": 3
+   },
+   {
+    "levels": "57",
+    "tree": "Arcane",
+    "talent": "Arcane Resilience",
+    "points": 1
+   },
+   {
+    "levels": "58-60",
+    "tree": "Arcane",
+    "talent": "Arcane Instability",
+    "points": 3
+   }
+  ],
+  "note": "2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Arcane Geometry to Frost Channeling at 42 (measured: -0.8% seed 3, -0.6% seed 4, level-weighted time per kill); Ice Shards to Frost Channeling at 23 (gate: -0.1% seed 3, -0.4% seed 4, level-weighted time per kill)."
+ }
 }

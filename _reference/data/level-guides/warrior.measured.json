@@ -1,6 +1,6 @@
 {
  "class": "warrior",
- "date": "2026-11-15",
+ "date": "2026-11-22",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -8,203 +8,433 @@
    "build": "arms-open-leveling",
    "rotation": "arms-2h-raid",
    "provisional_order": false,
-   "fingerprint": "35283a4fcf0d",
+   "fingerprint": "b0ec2e558e04",
    "levels": {
     "1": {
-     "seconds": 12.1,
+     "seconds": 11.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Melee": 1.2,
-      "Heroic Strike": 0.53
-     }
+      "Melee": 1.13,
+      "Heroic Strike": 0.52
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.628,
+      "Heroic Strike": 0.372
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "4": {
-     "seconds": 14.9,
+     "seconds": 14.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Charge": 0.7,
-      "Melee": 1.77,
+      "Melee": 1.69,
       "Battle Shout": 0.08,
-      "Rend": 1.06,
-      "Heroic Strike": 0.92
-     }
+      "Rend": 1.13,
+      "Heroic Strike": 0.96
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.536,
+      "Heroic Strike": 0.381,
+      "Rend": 0.083
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "9": {
-     "seconds": 18.9,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Charge": 0.97,
-      "Melee": 2.47,
-      "Battle Shout": 0.1,
-      "Rend": 1.31,
-      "Heroic Strike": 1.58
-     }
-    },
-    "10": {
      "seconds": 18.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Bloodrage": 0.27,
       "Charge": 0.97,
-      "Melee": 2.23,
+      "Melee": 2.27,
       "Battle Shout": 0.1,
-      "Rend": 1.21,
-      "Heroic Strike": 1.74
-     }
+      "Rend": 1.3,
+      "Heroic Strike": 1.76
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Heroic Strike": 0.46,
+      "Melee": 0.442,
+      "Rend": 0.098
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
+    },
+    "10": {
+     "seconds": 19.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.27,
+      "Charge": 0.98,
+      "Melee": 2.06,
+      "Battle Shout": 0.1,
+      "Rend": 1.2,
+      "Heroic Strike": 1.99
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Heroic Strike": 0.486,
+      "Melee": 0.37,
+      "Rend": 0.144
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "12": {
-     "seconds": 19.4,
+     "seconds": 19.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Bloodrage": 0.27,
       "Charge": 0.99,
-      "Melee": 2.43,
+      "Melee": 2.21,
       "Battle Shout": 0.11,
-      "Overpower": 0.31,
-      "Rend": 1.21,
-      "Heroic Strike": 1.72
-     }
+      "Overpower": 0.3,
+      "Rend": 1.18,
+      "Heroic Strike": 2.0
+     },
+     "idle_share": 0.001,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Heroic Strike": 0.415,
+      "Melee": 0.373,
+      "Rend": 0.151,
+      "Overpower": 0.061
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "19": {
-     "seconds": 23.0,
+     "seconds": 23.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Bloodrage": 0.32,
+      "Bloodrage": 0.34,
       "Charge": 1.0,
-      "Melee": 2.68,
-      "Battle Shout": 0.12,
-      "Overpower": 0.33,
-      "Rend": 1.29,
-      "Heroic Strike": 2.42
-     }
+      "Melee": 2.38,
+      "Battle Shout": 0.13,
+      "Overpower": 0.35,
+      "Rend": 1.27,
+      "Heroic Strike": 2.75
+     },
+     "idle_share": 0.04,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Heroic Strike": 0.474,
+      "Melee": 0.319,
+      "Rend": 0.122,
+      "Overpower": 0.085
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "20": {
-     "seconds": 21.9,
+     "seconds": 22.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Bloodrage": 0.32,
       "Charge": 1.0,
-      "Melee": 2.57,
+      "Melee": 2.29,
       "Battle Shout": 0.12,
       "Overpower": 0.37,
       "Rend": 1.19,
-      "Heroic Strike": 2.32,
-      "Victory Rush": 0.41
-     }
+      "Heroic Strike": 2.65,
+      "Victory Rush": 0.57
+     },
+     "idle_share": 0.004,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Heroic Strike": 0.447,
+      "Melee": 0.299,
+      "Rend": 0.141,
+      "Overpower": 0.085,
+      "Victory Rush": 0.025
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "24": {
-     "seconds": 21.1,
+     "seconds": 21.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Bloodrage": 0.3,
       "Charge": 0.99,
-      "Melee": 3.17,
+      "Melee": 2.87,
       "Battle Shout": 0.12,
-      "Overpower": 0.3,
-      "Rend": 1.21,
-      "Heroic Strike": 1.49,
-      "Execute": 0.92,
-      "Victory Rush": 0.43
-     }
+      "Overpower": 0.32,
+      "Rend": 1.22,
+      "Execute": 1.03,
+      "Heroic Strike": 1.69,
+      "Victory Rush": 0.53
+     },
+     "idle_share": 0.009,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.355,
+      "Heroic Strike": 0.267,
+      "Execute": 0.177,
+      "Rend": 0.103,
+      "Overpower": 0.069,
+      "Victory Rush": 0.022,
+      "Deep Wounds": 0.008
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
-    "30": {
-     "seconds": 22.7,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Bloodrage": 0.32,
-      "Charge": 1.0,
-      "Melee": 3.72,
-      "Battle Shout": 0.12,
-      "Overpower": 0.65,
-      "Rend": 1.2,
-      "Spearing Strike": 0.99,
-      "Heroic Strike": 1.33,
-      "Victory Rush": 0.58,
-      "Execute": 0.94
-     }
-    },
-    "34": {
-     "seconds": 22.5,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Bloodrage": 0.32,
-      "Charge": 1.0,
-      "Melee": 3.68,
-      "Battle Shout": 0.12,
-      "Overpower": 0.97,
-      "Rend": 1.21,
-      "Spearing Strike": 0.98,
-      "Heroic Strike": 1.26,
-      "Execute": 0.93,
-      "Victory Rush": 0.55
-     }
-    },
-    "35": {
-     "seconds": 20.5,
+    "25": {
+     "seconds": 20.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Bloodrage": 0.29,
       "Charge": 0.99,
-      "Melee": 3.79,
+      "Melee": 3.19,
       "Battle Shout": 0.11,
-      "Overpower": 0.98,
+      "Overpower": 0.35,
       "Rend": 1.21,
-      "Slam": 1.09,
-      "Spearing Strike": 0.86,
-      "Heroic Strike": 0.59,
-      "Execute": 0.82,
-      "Victory Rush": 0.47
-     }
+      "Spearing Strike": 0.94,
+      "Execute": 0.96,
+      "Heroic Strike": 1.15,
+      "Victory Rush": 0.52
+     },
+     "idle_share": 0.008,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.386,
+      "Heroic Strike": 0.187,
+      "Execute": 0.146,
+      "Rend": 0.093,
+      "Spearing Strike": 0.086,
+      "Overpower": 0.072,
+      "Victory Rush": 0.022,
+      "Deep Wounds": 0.009
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
+    },
+    "30": {
+     "seconds": 22.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.33,
+      "Charge": 1.0,
+      "Melee": 3.32,
+      "Battle Shout": 0.12,
+      "Overpower": 0.69,
+      "Rend": 1.19,
+      "Spearing Strike": 0.99,
+      "Execute": 0.98,
+      "Victory Rush": 0.58,
+      "Heroic Strike": 1.62
+     },
+     "idle_share": 0.026,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.343,
+      "Heroic Strike": 0.21,
+      "Overpower": 0.134,
+      "Execute": 0.109,
+      "Rend": 0.092,
+      "Spearing Strike": 0.079,
+      "Victory Rush": 0.021,
+      "Deep Wounds": 0.012
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
+    },
+    "34": {
+     "seconds": 22.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.32,
+      "Charge": 1.0,
+      "Melee": 3.24,
+      "Battle Shout": 0.12,
+      "Overpower": 0.93,
+      "Rend": 1.22,
+      "Spearing Strike": 0.99,
+      "Heroic Strike": 1.57,
+      "Execute": 0.98,
+      "Victory Rush": 0.58
+     },
+     "idle_share": 0.021,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.305,
+      "Heroic Strike": 0.2,
+      "Overpower": 0.16,
+      "Execute": 0.155,
+      "Rend": 0.073,
+      "Spearing Strike": 0.071,
+      "Victory Rush": 0.019,
+      "Deep Wounds": 0.016
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
+    },
+    "35": {
+     "seconds": 20.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.28,
+      "Charge": 0.99,
+      "Melee": 3.44,
+      "Battle Shout": 0.11,
+      "Overpower": 0.97,
+      "Rend": 1.18,
+      "Slam": 1.08,
+      "Spearing Strike": 0.85,
+      "Victory Rush": 0.51,
+      "Heroic Strike": 0.77,
+      "Execute": 0.94
+     },
+     "idle_share": 0.013,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.325,
+      "Overpower": 0.163,
+      "Execute": 0.145,
+      "Slam": 0.119,
+      "Heroic Strike": 0.097,
+      "Rend": 0.061,
+      "Spearing Strike": 0.061,
+      "Victory Rush": 0.015,
+      "Deep Wounds": 0.014
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "40": {
-     "seconds": 24.1,
+     "seconds": 23.3,
      "deaths_per_100": 0.0,
      "casts": {
-      "Bloodrage": 0.34,
+      "Bloodrage": 0.33,
       "Charge": 1.0,
-      "Melee": 5.42,
+      "Melee": 4.97,
       "Battle Shout": 0.13,
-      "Overpower": 0.96,
-      "Mortal Strike": 2.04,
-      "Rend": 1.11,
-      "Victory Rush": 0.62,
-      "Execute": 0.86,
-      "Slam": 0.31
-     }
+      "Overpower": 0.94,
+      "Mortal Strike": 2.09,
+      "Rend": 1.1,
+      "Victory Rush": 0.58,
+      "Slam": 0.51,
+      "Execute": 0.97,
+      "Spearing Strike": 0.13
+     },
+     "idle_share": 0.027,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.374,
+      "Mortal Strike": 0.218,
+      "Execute": 0.144,
+      "Overpower": 0.129,
+      "Rend": 0.049,
+      "Slam": 0.048,
+      "Deep Wounds": 0.015,
+      "Victory Rush": 0.014,
+      "Spearing Strike": 0.007
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "50": {
-     "seconds": 24.7,
+     "seconds": 23.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Bloodrage": 0.34,
       "Charge": 1.0,
-      "Melee": 5.44,
-      "Battle Shout": 0.14,
-      "Overpower": 1.07,
-      "Mortal Strike": 2.21,
-      "Rend": 1.12,
-      "Execute": 0.9,
-      "Victory Rush": 0.63,
-      "Slam": 0.45,
-      "Spearing Strike": 0.09
-     }
+      "Melee": 5.03,
+      "Battle Shout": 0.13,
+      "Overpower": 1.12,
+      "Mortal Strike": 2.23,
+      "Rend": 1.14,
+      "Execute": 0.98,
+      "Victory Rush": 0.6,
+      "Slam": 0.62,
+      "Spearing Strike": 0.25
+     },
+     "idle_share": 0.039,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.345,
+      "Mortal Strike": 0.211,
+      "Execute": 0.149,
+      "Overpower": 0.144,
+      "Slam": 0.053,
+      "Rend": 0.047,
+      "Deep Wounds": 0.021,
+      "Victory Rush": 0.014,
+      "Spearing Strike": 0.014
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "60": {
-     "seconds": 26.5,
+     "seconds": 25.1,
      "deaths_per_100": 0.0,
      "casts": {
-      "Bloodrage": 0.35,
+      "Bloodrage": 0.34,
       "Charge": 1.0,
-      "Melee": 5.91,
+      "Melee": 5.38,
       "Battle Shout": 0.14,
-      "Overpower": 1.17,
-      "Mortal Strike": 2.4,
-      "Rend": 1.16,
-      "Slam": 0.5,
+      "Overpower": 1.24,
+      "Mortal Strike": 2.35,
+      "Rend": 1.21,
+      "Slam": 0.74,
+      "Victory Rush": 0.65,
       "Execute": 1.03,
-      "Victory Rush": 0.67,
-      "Spearing Strike": 0.18
-     }
+      "Spearing Strike": 0.33,
+      "Heroic Strike": 0.07
+     },
+     "idle_share": 0.033,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.325,
+      "Mortal Strike": 0.208,
+      "Execute": 0.163,
+      "Overpower": 0.143,
+      "Slam": 0.06,
+      "Rend": 0.046,
+      "Deep Wounds": 0.021,
+      "Spearing Strike": 0.015,
+      "Victory Rush": 0.013,
+      "Heroic Strike": 0.006
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     }
    }
   },
@@ -212,219 +442,450 @@
    "build": "fury-open-leveling",
    "rotation": "fury-dw-raid",
    "provisional_order": false,
-   "fingerprint": "ea72bd97ac22",
+   "fingerprint": "76ca6fb700a6",
    "levels": {
     "1": {
-     "seconds": 12.8,
+     "seconds": 12.7,
      "deaths_per_100": 0.0,
      "casts": {
-      "Melee": 1.58,
-      "Melee (off-hand)": 1.39,
+      "Melee": 1.51,
+      "Melee (off-hand)": 1.33,
       "Battle Shout": 0.07,
-      "Heroic Strike": 0.46
-     }
+      "Heroic Strike": 0.49
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.507,
+      "Heroic Strike": 0.279,
+      "Melee (off-hand)": 0.214
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "4": {
-     "seconds": 14.8,
+     "seconds": 14.7,
      "deaths_per_100": 0.0,
      "casts": {
-      "Charge": 0.61,
-      "Melee": 2.32,
-      "Melee (off-hand)": 2.89,
+      "Charge": 0.59,
+      "Melee": 2.23,
+      "Melee (off-hand)": 2.85,
       "Battle Shout": 0.08,
-      "Rend": 1.07,
-      "Heroic Strike": 0.89
-     }
+      "Rend": 1.12,
+      "Heroic Strike": 0.93
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.39,
+      "Heroic Strike": 0.293,
+      "Melee (off-hand)": 0.252,
+      "Rend": 0.064
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "9": {
      "seconds": 18.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Charge": 0.9,
-      "Melee": 2.98,
-      "Melee (off-hand)": 4.52,
+      "Charge": 0.92,
+      "Melee": 2.77,
+      "Melee (off-hand)": 4.51,
       "Battle Shout": 0.1,
-      "Rend": 1.2,
-      "Heroic Strike": 1.61
-     }
+      "Rend": 1.23,
+      "Heroic Strike": 1.8
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Heroic Strike": 0.379,
+      "Melee": 0.293,
+      "Melee (off-hand)": 0.241,
+      "Rend": 0.087
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "10": {
-     "seconds": 18.2,
+     "seconds": 18.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Bloodrage": 0.26,
-      "Charge": 0.91,
-      "Melee": 2.79,
-      "Melee (off-hand)": 4.6,
+      "Charge": 0.92,
+      "Melee": 2.48,
+      "Melee (off-hand)": 4.52,
       "Battle Shout": 0.1,
       "Rend": 1.18,
-      "Heroic Strike": 1.86
-     }
+      "Heroic Strike": 2.09
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Heroic Strike": 0.407,
+      "Melee": 0.258,
+      "Melee (off-hand)": 0.223,
+      "Rend": 0.113
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "12": {
-     "seconds": 18.9,
+     "seconds": 18.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Bloodrage": 0.27,
       "Charge": 0.96,
-      "Melee": 3.06,
-      "Melee (off-hand)": 4.91,
+      "Melee": 2.69,
+      "Melee (off-hand)": 4.83,
       "Battle Shout": 0.1,
-      "Rend": 1.2,
-      "Heroic Strike": 1.88,
-      "Overpower": 0.51
-     }
+      "Rend": 1.19,
+      "Heroic Strike": 2.17,
+      "Overpower": 0.47
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Heroic Strike": 0.36,
+      "Melee": 0.254,
+      "Melee (off-hand)": 0.222,
+      "Rend": 0.099,
+      "Overpower": 0.066
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "19": {
-     "seconds": 21.0,
+     "seconds": 21.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Bloodrage": 0.3,
-      "Charge": 0.98,
-      "Melee": 3.19,
-      "Melee (off-hand)": 5.65,
+      "Charge": 0.99,
+      "Melee": 2.86,
+      "Melee (off-hand)": 5.7,
       "Battle Shout": 0.12,
       "Rend": 1.22,
-      "Heroic Strike": 2.47,
-      "Overpower": 0.56
-     }
+      "Heroic Strike": 2.84,
+      "Overpower": 0.59
+     },
+     "idle_share": 0.031,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Heroic Strike": 0.41,
+      "Melee (off-hand)": 0.223,
+      "Melee": 0.219,
+      "Rend": 0.079,
+      "Overpower": 0.069
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "20": {
-     "seconds": 20.4,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Bloodrage": 0.29,
-      "Charge": 0.99,
-      "Melee": 3.1,
-      "Melee (off-hand)": 5.54,
-      "Battle Shout": 0.11,
-      "Rend": 1.17,
-      "Heroic Strike": 2.44,
-      "Overpower": 0.58,
-      "Victory Rush": 0.34
-     }
-    },
-    "24": {
-     "seconds": 20.2,
+     "seconds": 20.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Bloodrage": 0.28,
       "Charge": 0.99,
-      "Melee": 3.98,
-      "Melee (off-hand)": 5.42,
+      "Melee": 2.78,
+      "Melee (off-hand)": 5.51,
       "Battle Shout": 0.11,
-      "Rend": 1.2,
-      "Heroic Strike": 1.44,
-      "Execute": 0.88,
-      "Victory Rush": 0.4,
-      "Overpower": 0.56
-     }
+      "Rend": 1.16,
+      "Heroic Strike": 2.73,
+      "Victory Rush": 0.51,
+      "Overpower": 0.62
+     },
+     "idle_share": 0.001,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Heroic Strike": 0.386,
+      "Melee": 0.216,
+      "Melee (off-hand)": 0.214,
+      "Rend": 0.088,
+      "Overpower": 0.071,
+      "Victory Rush": 0.024
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
+    },
+    "24": {
+     "seconds": 20.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.28,
+      "Charge": 0.99,
+      "Melee": 3.66,
+      "Melee (off-hand)": 5.31,
+      "Battle Shout": 0.11,
+      "Rend": 1.18,
+      "Heroic Strike": 1.65,
+      "Execute": 1.0,
+      "Victory Rush": 0.51,
+      "Overpower": 0.52
+     },
+     "idle_share": 0.007,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.255,
+      "Heroic Strike": 0.223,
+      "Execute": 0.193,
+      "Melee (off-hand)": 0.187,
+      "Rend": 0.066,
+      "Overpower": 0.053,
+      "Victory Rush": 0.022
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "29": {
-     "seconds": 22.1,
+     "seconds": 22.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Bloodrage": 0.32,
       "Charge": 1.0,
-      "Melee": 3.96,
-      "Melee (off-hand)": 6.14,
-      "Battle Shout": 0.12,
-      "Rend": 1.22,
-      "Heroic Strike": 2.17,
-      "Execute": 0.93,
-      "Victory Rush": 0.56,
-      "Overpower": 0.63
-     }
-    },
-    "30": {
-     "seconds": 22.1,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Bloodrage": 0.32,
-      "Death Wish": 0.11,
-      "Charge": 1.0,
-      "Melee": 3.96,
+      "Melee": 3.54,
       "Melee (off-hand)": 6.1,
       "Battle Shout": 0.12,
-      "Rend": 1.21,
-      "Heroic Strike": 2.15,
-      "Execute": 0.91,
-      "Victory Rush": 0.59,
-      "Overpower": 0.67
-     }
+      "Rend": 1.19,
+      "Heroic Strike": 2.56,
+      "Execute": 1.06,
+      "Victory Rush": 0.58,
+      "Overpower": 0.6
+     },
+     "idle_share": 0.03,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Heroic Strike": 0.271,
+      "Melee (off-hand)": 0.234,
+      "Melee": 0.215,
+      "Execute": 0.143,
+      "Rend": 0.06,
+      "Overpower": 0.054,
+      "Victory Rush": 0.022
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
+    },
+    "30": {
+     "seconds": 22.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.32,
+      "Death Wish": 0.11,
+      "Charge": 0.99,
+      "Melee": 3.54,
+      "Melee (off-hand)": 6.01,
+      "Battle Shout": 0.12,
+      "Rend": 1.17,
+      "Heroic Strike": 2.47,
+      "Execute": 1.03,
+      "Victory Rush": 0.57,
+      "Overpower": 0.6
+     },
+     "idle_share": 0.033,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Heroic Strike": 0.262,
+      "Melee (off-hand)": 0.236,
+      "Melee": 0.218,
+      "Execute": 0.141,
+      "Rend": 0.066,
+      "Overpower": 0.055,
+      "Victory Rush": 0.022
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     },
     "39": {
-     "seconds": 25.8,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Bloodrage": 0.34,
-      "Death Wish": 0.12,
-      "Charge": 1.0,
-      "Melee": 4.69,
-      "Melee (off-hand)": 8.09,
-      "Battle Shout": 0.14,
-      "Rend": 1.23,
-      "Heroic Strike": 3.37,
-      "Execute": 1.07,
-      "Victory Rush": 0.67,
-      "Overpower": 0.86
-     }
-    },
-    "40": {
-     "seconds": 23.7,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Bloodrage": 0.33,
-      "Death Wish": 0.11,
-      "Charge": 1.0,
-      "Melee": 6.59,
-      "Melee (off-hand)": 7.23,
-      "Battle Shout": 0.13,
-      "Bloodthirst": 1.97,
-      "Rend": 1.22,
-      "Heroic Strike": 0.61,
-      "Victory Rush": 0.62,
-      "Execute": 0.95,
-      "Overpower": 0.77
-     }
-    },
-    "50": {
-     "seconds": 24.9,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Bloodrage": 0.34,
-      "Death Wish": 0.12,
-      "Charge": 1.0,
-      "Melee": 6.24,
-      "Melee (off-hand)": 7.74,
-      "Reckless Swings": 0.74,
-      "Battle Shout": 0.14,
-      "Rend": 1.16,
-      "Bloodthirst": 2.37,
-      "Heroic Strike": 1.48,
-      "Execute": 1.05,
-      "Victory Rush": 0.73,
-      "Overpower": 0.87
-     }
-    },
-    "60": {
-     "seconds": 26.8,
+     "seconds": 26.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Bloodrage": 0.35,
       "Death Wish": 0.12,
       "Charge": 1.0,
-      "Melee": 6.77,
-      "Melee (off-hand)": 8.55,
-      "Reckless Swings": 0.72,
-      "Battle Shout": 0.15,
-      "Rend": 1.23,
-      "Bloodthirst": 2.62,
-      "Heroic Strike": 1.79,
-      "Overpower": 0.97,
-      "Execute": 1.03,
-      "Victory Rush": 0.78
-     }
+      "Melee": 4.13,
+      "Melee (off-hand)": 7.97,
+      "Battle Shout": 0.14,
+      "Rend": 1.22,
+      "Heroic Strike": 3.81,
+      "Execute": 1.21,
+      "Victory Rush": 0.66,
+      "Overpower": 0.83
+     },
+     "idle_share": 0.033,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Heroic Strike": 0.296,
+      "Melee (off-hand)": 0.244,
+      "Melee": 0.185,
+      "Execute": 0.144,
+      "Rend": 0.057,
+      "Overpower": 0.056,
+      "Victory Rush": 0.018
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
+    },
+    "40": {
+     "seconds": 24.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.33,
+      "Death Wish": 0.11,
+      "Charge": 1.0,
+      "Melee": 6.11,
+      "Melee (off-hand)": 7.11,
+      "Battle Shout": 0.13,
+      "Rend": 1.16,
+      "Bloodthirst": 2.09,
+      "Heroic Strike": 0.96,
+      "Victory Rush": 0.6,
+      "Overpower": 0.75,
+      "Execute": 1.06
+     },
+     "idle_share": 0.027,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.25,
+      "Melee (off-hand)": 0.207,
+      "Bloodthirst": 0.185,
+      "Execute": 0.164,
+      "Heroic Strike": 0.08,
+      "Rend": 0.051,
+      "Overpower": 0.046,
+      "Victory Rush": 0.015
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
+    },
+    "43": {
+     "seconds": 23.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.33,
+      "Death Wish": 0.11,
+      "Charge": 1.0,
+      "Melee": 5.67,
+      "Melee (off-hand)": 7.09,
+      "Reckless Swings": 0.76,
+      "Battle Shout": 0.13,
+      "Bloodthirst": 2.21,
+      "Rend": 1.16,
+      "Heroic Strike": 1.4,
+      "Victory Rush": 0.69,
+      "Execute": 1.12,
+      "Overpower": 0.78
+     },
+     "idle_share": 0.016,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.231,
+      "Melee (off-hand)": 0.205,
+      "Bloodthirst": 0.189,
+      "Execute": 0.155,
+      "Heroic Strike": 0.108,
+      "Rend": 0.048,
+      "Overpower": 0.047,
+      "Victory Rush": 0.017
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
+    },
+    "50": {
+     "seconds": 24.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.34,
+      "Death Wish": 0.11,
+      "Charge": 1.0,
+      "Melee": 5.32,
+      "Melee (off-hand)": 7.36,
+      "Reckless Swings": 0.71,
+      "Battle Shout": 0.13,
+      "Rend": 1.16,
+      "Bloodthirst": 2.42,
+      "Heroic Strike": 2.01,
+      "Execute": 1.06,
+      "Victory Rush": 0.69,
+      "Overpower": 0.82
+     },
+     "idle_share": 0.013,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.196,
+      "Melee (off-hand)": 0.194,
+      "Bloodthirst": 0.181,
+      "Execute": 0.157,
+      "Heroic Strike": 0.145,
+      "Rend": 0.063,
+      "Overpower": 0.048,
+      "Victory Rush": 0.016
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
+    },
+    "60": {
+     "seconds": 26.2,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bloodrage": 0.35,
+      "Death Wish": 0.12,
+      "Charge": 1.0,
+      "Melee": 5.81,
+      "Melee (off-hand)": 8.36,
+      "Reckless Swings": 0.65,
+      "Battle Shout": 0.14,
+      "Rend": 1.15,
+      "Bloodthirst": 2.65,
+      "Heroic Strike": 2.54,
+      "Overpower": 0.93,
+      "Execute": 1.19,
+      "Victory Rush": 0.77
+     },
+     "idle_share": 0.004,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee (off-hand)": 0.183,
+      "Melee": 0.178,
+      "Bloodthirst": 0.17,
+      "Execute": 0.159,
+      "Heroic Strike": 0.155,
+      "Overpower": 0.065,
+      "Rend": 0.061,
+      "Deep Wounds": 0.015,
+      "Victory Rush": 0.014
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Battle Stance"
     }
    }
   },
@@ -432,247 +893,431 @@
    "build": "protection-leveling",
    "rotation": "prot-leveling",
    "provisional_order": false,
-   "fingerprint": "5cbfa72db4cf",
+   "fingerprint": "2955b07b3eb1",
    "levels": {
     "1": {
-     "seconds": 13.3,
+     "seconds": 13.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Melee": 2.23,
+      "Melee": 1.85,
       "Battle Shout": 0.07,
-      "Heroic Strike": 0.15
-     }
+      "Heroic Strike": 0.52
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.712,
+      "Heroic Strike": 0.288
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Defensive Stance"
     },
     "4": {
-     "seconds": 16.3,
+     "seconds": 16.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Charge": 0.8,
-      "Melee": 3.27,
+      "Charge": 0.74,
+      "Melee": 2.83,
       "Battle Shout": 0.09,
-      "Rend": 1.09,
-      "Heroic Strike": 0.61
-     }
+      "Rend": 1.04,
+      "Heroic Strike": 1.01
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.61,
+      "Heroic Strike": 0.298,
+      "Rend": 0.092
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Defensive Stance"
     },
     "9": {
-     "seconds": 21.7,
+     "seconds": 21.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Charge": 1.0,
-      "Melee": 5.05,
+      "Melee": 4.24,
       "Battle Shout": 0.12,
       "Rend": 1.25,
-      "Heroic Strike": 1.07
-     }
+      "Heroic Strike": 1.6
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.556,
+      "Heroic Strike": 0.333,
+      "Rend": 0.11
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Defensive Stance"
     },
     "10": {
-     "seconds": 22.8,
+     "seconds": 22.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
-      "Bloodrage": 0.33,
+      "Bloodrage": 0.32,
       "Charge": 1.0,
-      "Melee": 5.49,
-      "Rend": 1.17,
-      "Defensive Stance": 1.0,
-      "Battle Shout": 0.12,
-      "Heroic Strike": 1.03
-     }
-    },
-    "12": {
-     "seconds": 25.2,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Battle Stance": 1.0,
-      "Bloodrage": 0.34,
-      "Charge": 1.0,
-      "Melee": 6.26,
+      "Melee": 4.84,
       "Rend": 1.21,
       "Defensive Stance": 1.0,
-      "Battle Shout": 0.14,
-      "Heroic Strike": 1.17,
-      "Shield Bash": 0.15
-     }
+      "Battle Shout": 0.12,
+      "Heroic Strike": 1.5
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.566,
+      "Heroic Strike": 0.271,
+      "Rend": 0.162
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Defensive Stance"
     },
-    "14": {
-     "seconds": 25.3,
+    "12": {
+     "seconds": 25.0,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
       "Bloodrage": 0.34,
       "Charge": 1.0,
-      "Melee": 6.3,
-      "Rend": 1.26,
+      "Melee": 5.45,
+      "Rend": 1.24,
       "Defensive Stance": 1.0,
       "Battle Shout": 0.14,
-      "Revenge": 1.58,
-      "Heroic Strike": 1.09,
-      "Shield Bash": 0.18
-     }
+      "Heroic Strike": 1.89,
+      "Shield Bash": 0.15
+     },
+     "idle_share": 0.002,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.04,
+     "shares": {
+      "Melee": 0.564,
+      "Heroic Strike": 0.287,
+      "Rend": 0.147
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Defensive Stance"
+    },
+    "14": {
+     "seconds": 24.2,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.34,
+      "Charge": 1.0,
+      "Melee": 5.31,
+      "Rend": 1.25,
+      "Defensive Stance": 1.0,
+      "Battle Shout": 0.13,
+      "Revenge": 1.45,
+      "Heroic Strike": 1.6,
+      "Shield Bash": 0.17
+     },
+     "idle_share": 0.004,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.08,
+     "shares": {
+      "Melee": 0.496,
+      "Heroic Strike": 0.211,
+      "Revenge": 0.165,
+      "Rend": 0.127
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Defensive Stance"
     },
     "16": {
-     "seconds": 24.4,
+     "seconds": 22.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
       "Bloodrage": 0.33,
       "Charge": 1.0,
-      "Melee": 6.18,
-      "Rend": 1.2,
+      "Melee": 5.29,
+      "Rend": 1.22,
       "Defensive Stance": 1.0,
-      "Shield Block": 2.93,
-      "Revenge": 3.02,
-      "Battle Shout": 0.13,
-      "Heroic Strike": 0.8,
-      "Shield Bash": 0.2
-     }
+      "Shield Block": 2.29,
+      "Revenge": 2.8,
+      "Battle Shout": 0.12,
+      "Heroic Strike": 1.05,
+      "Shield Bash": 0.18
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.466,
+      "Revenge": 0.278,
+      "Heroic Strike": 0.147,
+      "Rend": 0.107
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Defensive Stance"
     },
     "20": {
-     "seconds": 23.7,
+     "seconds": 22.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
-      "Bloodrage": 0.34,
+      "Bloodrage": 0.33,
       "Charge": 1.0,
-      "Melee": 6.0,
-      "Rend": 1.18,
-      "Defensive Stance": 1.0,
-      "Shield Block": 2.79,
-      "Revenge": 2.84,
-      "Battle Shout": 0.13,
-      "Heroic Strike": 0.68,
-      "Shield Bash": 0.27,
-      "Victory Rush": 0.05
-     }
-    },
-    "30": {
-     "seconds": 28.4,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Battle Stance": 1.0,
-      "Bloodrage": 0.37,
-      "Charge": 1.0,
-      "Melee": 7.33,
-      "Rend": 1.2,
-      "Defensive Stance": 1.0,
-      "Shield Block": 3.8,
-      "Revenge": 3.96,
-      "Battle Shout": 0.15,
-      "Heroic Strike": 1.07,
-      "Shield Bash": 0.3,
-      "Victory Rush": 0.1
-     }
-    },
-    "32": {
-     "seconds": 29.0,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Battle Stance": 1.0,
-      "Bloodrage": 0.39,
-      "Charge": 1.0,
-      "Melee": 7.49,
+      "Melee": 5.24,
       "Rend": 1.19,
       "Defensive Stance": 1.0,
-      "Shield Block": 3.92,
-      "Revenge": 4.08,
-      "Battle Shout": 0.15,
-      "Heroic Strike": 1.21,
-      "Shield Bash": 0.31,
-      "Victory Rush": 0.09
-     }
+      "Shield Block": 2.19,
+      "Revenge": 2.67,
+      "Battle Shout": 0.12,
+      "Heroic Strike": 1.0,
+      "Shield Bash": 0.27,
+      "Victory Rush": 0.14
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Melee": 0.462,
+      "Revenge": 0.294,
+      "Heroic Strike": 0.123,
+      "Rend": 0.113,
+      "Victory Rush": 0.006
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Defensive Stance"
     },
-    "33": {
-     "seconds": 30.0,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Battle Stance": 1.0,
-      "Bloodrage": 0.4,
-      "Charge": 1.0,
-      "Melee": 7.76,
-      "Rend": 1.2,
-      "Defensive Stance": 1.0,
-      "Shield Block": 4.07,
-      "Revenge": 4.21,
-      "Battle Shout": 0.16,
-      "Heroic Strike": 1.33,
-      "Shield Bash": 0.33,
-      "Victory Rush": 0.13
-     }
-    },
-    "39": {
-     "seconds": 34.5,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Battle Stance": 1.0,
-      "Bloodrage": 0.47,
-      "Charge": 1.0,
-      "Melee": 9.15,
-      "Rend": 1.23,
-      "Defensive Stance": 1.0,
-      "Shield Block": 4.95,
-      "Revenge": 5.13,
-      "Battle Shout": 0.19,
-      "Heroic Strike": 1.63,
-      "Shield Bash": 0.33,
-      "Victory Rush": 0.19
-     }
-    },
-    "40": {
-     "seconds": 25.2,
+    "30": {
+     "seconds": 26.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
       "Bloodrage": 0.34,
       "Charge": 1.0,
-      "Melee": 7.0,
-      "Shield Slam": 2.82,
+      "Melee": 5.93,
+      "Rend": 1.19,
       "Defensive Stance": 1.0,
-      "Rend": 1.13,
-      "Shield Block": 2.61,
-      "Revenge": 2.84,
+      "Shield Block": 2.86,
+      "Revenge": 3.54,
       "Battle Shout": 0.14,
-      "Shield Bash": 0.22,
-      "Heroic Strike": 0.17,
-      "Victory Rush": 0.12
-     }
+      "Heroic Strike": 1.65,
+      "Shield Bash": 0.29,
+      "Victory Rush": 0.18
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Revenge": 0.386,
+      "Melee": 0.373,
+      "Heroic Strike": 0.143,
+      "Rend": 0.092,
+      "Victory Rush": 0.006
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Defensive Stance"
     },
-    "50": {
-     "seconds": 27.9,
+    "32": {
+     "seconds": 26.9,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
       "Bloodrage": 0.35,
       "Charge": 1.0,
-      "Melee": 7.84,
-      "Shield Slam": 3.2,
+      "Melee": 5.96,
+      "Rend": 1.19,
       "Defensive Stance": 1.0,
-      "Rend": 1.17,
-      "Shield Block": 2.99,
+      "Shield Block": 2.97,
+      "Revenge": 3.66,
       "Battle Shout": 0.15,
-      "Revenge": 3.29,
-      "Shield Bash": 0.25,
-      "Heroic Strike": 0.37,
-      "Victory Rush": 0.27
-     }
+      "Heroic Strike": 1.85,
+      "Shield Bash": 0.29,
+      "Victory Rush": 0.2
+     },
+     "idle_share": 0.001,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.03,
+     "shares": {
+      "Revenge": 0.384,
+      "Melee": 0.356,
+      "Heroic Strike": 0.166,
+      "Rend": 0.086,
+      "Victory Rush": 0.006
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Defensive Stance"
     },
-    "60": {
-     "seconds": 29.9,
+    "33": {
+     "seconds": 27.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Battle Stance": 1.0,
-      "Bloodrage": 0.4,
+      "Bloodrage": 0.37,
       "Charge": 1.0,
-      "Melee": 8.52,
-      "Shield Slam": 3.6,
+      "Melee": 6.16,
+      "Rend": 1.2,
       "Defensive Stance": 1.0,
+      "Shield Block": 3.09,
+      "Revenge": 3.79,
+      "Battle Shout": 0.15,
+      "Heroic Strike": 2.0,
+      "Shield Bash": 0.29,
+      "Victory Rush": 0.22
+     },
+     "idle_share": 0.001,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.03,
+     "shares": {
+      "Revenge": 0.381,
+      "Melee": 0.358,
+      "Heroic Strike": 0.169,
+      "Rend": 0.085,
+      "Victory Rush": 0.006
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Defensive Stance"
+    },
+    "39": {
+     "seconds": 31.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.43,
+      "Charge": 1.0,
+      "Melee": 6.99,
+      "Rend": 1.21,
+      "Defensive Stance": 1.0,
+      "Shield Block": 3.61,
+      "Revenge": 4.44,
+      "Battle Shout": 0.17,
+      "Heroic Strike": 2.58,
+      "Shield Bash": 0.31,
+      "Victory Rush": 0.2
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Revenge": 0.39,
+      "Melee": 0.352,
+      "Heroic Strike": 0.176,
+      "Rend": 0.075
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Defensive Stance"
+    },
+    "40": {
+     "seconds": 23.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.33,
+      "Charge": 1.0,
+      "Melee": 6.11,
+      "Shield Slam": 2.73,
+      "Rend": 1.12,
+      "Defensive Stance": 1.0,
+      "Shield Block": 1.95,
+      "Revenge": 2.55,
+      "Battle Shout": 0.13,
+      "Heroic Strike": 0.46,
+      "Shield Bash": 0.2,
+      "Victory Rush": 0.17
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Shield Slam": 0.407,
+      "Melee": 0.292,
+      "Revenge": 0.217,
+      "Rend": 0.05,
+      "Heroic Strike": 0.03
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Defensive Stance"
+    },
+    "50": {
+     "seconds": 26.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.34,
+      "Charge": 1.0,
+      "Melee": 6.78,
+      "Shield Slam": 3.05,
       "Rend": 1.15,
-      "Shield Block": 3.42,
-      "Battle Shout": 0.16,
-      "Revenge": 3.71,
-      "Heroic Strike": 0.48,
-      "Shield Bash": 0.17,
-      "Victory Rush": 0.39
-     }
+      "Defensive Stance": 1.0,
+      "Shield Block": 2.25,
+      "Revenge": 3.02,
+      "Battle Shout": 0.14,
+      "Heroic Strike": 0.69,
+      "Shield Bash": 0.23,
+      "Victory Rush": 0.27
+     },
+     "idle_share": 0.001,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0.04,
+     "shares": {
+      "Shield Slam": 0.34,
+      "Melee": 0.288,
+      "Revenge": 0.241,
+      "Rend": 0.079,
+      "Heroic Strike": 0.045,
+      "Victory Rush": 0.005
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Defensive Stance"
+    },
+    "60": {
+     "seconds": 27.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Battle Stance": 1.0,
+      "Bloodrage": 0.35,
+      "Charge": 1.0,
+      "Melee": 7.12,
+      "Shield Slam": 3.35,
+      "Rend": 1.17,
+      "Defensive Stance": 1.0,
+      "Shield Block": 2.5,
+      "Revenge": 3.33,
+      "Battle Shout": 0.15,
+      "Heroic Strike": 1.01,
+      "Shield Bash": 0.15,
+      "Victory Rush": 0.32
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Shield Slam": 0.35,
+      "Melee": 0.256,
+      "Revenge": 0.251,
+      "Rend": 0.072,
+      "Heroic Strike": 0.057,
+      "Deep Wounds": 0.008,
+      "Victory Rush": 0.006
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Defensive Stance"
     }
    }
   }

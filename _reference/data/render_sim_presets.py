@@ -47,6 +47,10 @@ class Names:
             self.consumables.setdefault(i["id"], i["name"])
         self.spells = {s["id"]: s["name"] for s in db.get("spellIcons", [])}
         self.low_rank = {}
+        # a class book's rank is not on offer (trainer ranks only, raidsim/trainer-ranks.json): the trainer's top rank is the top one, so its
+        # lines carry no "(rank N)" (2026-11-22, the audit session: the warrior tank list read "Heroic Strike (rank 8)" below rank 9, a book)
+        tr = ROOT / "_reference/data/raidsim/trainer-ranks.json"
+        books = {int(b) for b in json.load(open(tr, encoding="utf-8"))["map"]} if tr.exists() else set()
         for book in (ROOT / "_reference/data/forever-spells").glob("*.json"):
             for tab in json.load(open(book, encoding="utf-8")).get("tabs", []):
                 for sp in tab.get("spells", []):
@@ -55,7 +59,7 @@ class Names:
                             self.spells.setdefault(int(r["id"]), sp["name"])
                     # 2026-10-15 page audit: a rotation line casting a lower rank (Frostfire Bolt rank 2 below 30% mana) read like the
                     # top-rank line next to it; cast lines now say "(rank N)" for any rank below the spellbook's highest
-                    rks = [r for r in sp.get("ranks", []) if r.get("id")]
+                    rks = [r for r in sp.get("ranks", []) if r.get("id") and int(r["id"]) not in books]
                     for i, r in enumerate(rks[:-1]):
                         self.low_rank.setdefault(int(r["id"]), i + 1)
         for tree in (repo / "ui/sim/talents/trees").glob("*.json"):

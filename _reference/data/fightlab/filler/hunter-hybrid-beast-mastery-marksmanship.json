@@ -3,7 +3,7 @@
  "spec": "Hybrid Beast Mastery/Marksmanship",
  "build": "beast-marks-open-leveling",
  "rotation": "bm-leveling",
- "date": "2026-11-15",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -135,127 +135,42 @@
  ],
  "steps": [
   {
-   "weighted": 22.551,
+   "weighted": 21.896,
    "values_at_60": {
-    "Bestial Discipline": -0.08,
-    "Careful Aim": -0.071,
-    "Ferocity": -0.176,
-    "Improved Tracking": -0.069,
-    "Pathfinding": 0.0,
-    "Rapid Recuperation": 0.0,
+    "Bestial Discipline": -0.144,
+    "Bestial Swiftness": 0.0,
+    "Ferocity": -0.162,
+    "Improved Tracking": -0.12,
+    "Mortal Shots": -0.085,
+    "Rapid Recuperation": -0.344,
     "Spirit Bond": 0.0
    },
    "zero": [
-    "Careful Aim",
-    "Improved Tracking",
-    "Pathfinding",
-    "Rapid Recuperation",
-    "Spirit Bond"
-   ]
-  },
-  {
-   "weighted": 22.534,
-   "values_at_60": {
-    "Barrage": 0.03,
-    "Bestial Discipline": -0.006,
-    "Careful Aim": 0.018,
-    "Ferocity": -0.122,
-    "Improved Tracking": -0.031,
-    "Pathfinding": 0.0,
-    "Rapid Recuperation": 0.0,
-    "Spirit Bond": -0.011
-   },
-   "zero": [
-    "Barrage",
-    "Bestial Discipline",
-    "Careful Aim",
-    "Improved Tracking",
-    "Pathfinding",
-    "Rapid Recuperation",
-    "Spirit Bond"
-   ]
-  },
-  {
-   "weighted": 22.534,
-   "values_at_60": {
-    "Barrage": 0.03,
-    "Bestial Discipline": -0.006,
-    "Bestial Swiftness": 0.0,
-    "Careful Aim": 0.018,
-    "Ferocity": -0.122,
-    "Improved Tracking": -0.031,
-    "Rapid Recuperation": 0.0,
-    "Spirit Bond": -0.011
-   },
-   "zero": [
-    "Barrage",
-    "Bestial Discipline",
     "Bestial Swiftness",
-    "Careful Aim",
-    "Improved Tracking",
-    "Rapid Recuperation",
     "Spirit Bond"
+   ],
+   "dead_held": [
+    "Improved Revive Pet"
    ]
   },
   {
-   "weighted": 22.532,
+   "weighted": 21.891,
    "values_at_60": {
-    "Barrage": -0.06,
-    "Bestial Discipline": -0.09,
-    "Bestial Swiftness": 0.0,
-    "Careful Aim": -0.081,
-    "Ferocity": -0.164,
-    "Hawk Eye": -0.024,
-    "Improved Tracking": -0.082,
-    "Rapid Recuperation": 0.0,
-    "Spirit Bond": -0.01
-   },
-   "zero": [
-    "Barrage",
-    "Bestial Swiftness",
-    "Hawk Eye",
-    "Rapid Recuperation",
-    "Spirit Bond"
-   ]
-  },
-  {
-   "weighted": 22.516,
-   "values_at_60": {
-    "Bestial Discipline": -0.079,
-    "Bestial Swiftness": 0.0,
-    "Careful Aim": -0.04,
-    "Ferocity": -0.17,
-    "Hawk Eye": 0.031,
-    "Improved Tracking": -0.103,
-    "Rapid Recuperation": 0.0,
-    "Spirit Bond": -0.01
-   },
-   "zero": [
-    "Bestial Swiftness",
-    "Careful Aim",
-    "Hawk Eye",
-    "Rapid Recuperation",
-    "Spirit Bond"
-   ]
-  },
-  {
-   "weighted": 22.507,
-   "values_at_60": {
-    "Bestial Discipline": -0.067,
-    "Bestial Swiftness": 0.0,
-    "Careful Aim": -0.037,
-    "Ferocity": -0.163,
+    "Bestial Discipline": -0.032,
     "Improved Tracking": -0.021,
+    "Mortal Shots": -0.05,
     "Rapid Recuperation": 0.0,
     "Spirit Bond": -0.009
    },
    "zero": [
     "Bestial Discipline",
-    "Bestial Swiftness",
-    "Careful Aim",
     "Improved Tracking",
+    "Mortal Shots",
     "Rapid Recuperation",
     "Spirit Bond"
+   ],
+   "dead_held": [
+    "Improved Revive Pet"
    ]
   }
  ],
@@ -307,8 +222,279 @@
    "seed3": -0.0001,
    "seed4": 0.0005,
    "why": "no loss"
+  },
+  {
+   "from": "Bestial Swiftness",
+   "to": "Bestial Discipline",
+   "level": 56,
+   "seed3": -0.0002,
+   "seed4": -0.0009,
+   "why": "tie-break"
   }
  ],
+ "kept_signature": [],
+ "gates_checked": {
+  "Careful Aim": {
+   "level": 32,
+   "kind": "prerequisite of Mortal Shots",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Deadly Aspects": {
+   "level": 40,
+   "kind": "tier point for Unleashed Fury (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Endurance Training",
+     "seed3": 0.0014
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Efficiency": {
+   "level": 19,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Hawk Eye",
+     "seed3": 0.005
+    },
+    {
+     "to": "Improved Concussive Shot",
+     "seed3": 0.006
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Endurance Training": {
+   "level": 44,
+   "kind": "tier point for Unleashed Fury (tier 3)",
+   "does_nothing": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 50, 60",
+   "homes": [
+    {
+     "to": "Improved Aspect of the Monkey",
+     "seed3": 0.0001
+    },
+    {
+     "to": "Improved Revive Pet",
+     "seed3": 0.0001
+    }
+   ],
+   "verdict": "no better home"
+  },
+  "Ferocity": {
+   "level": 55,
+   "kind": "tier point for Spirit Bond (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Endurance Training",
+     "seed3": 0.0016
+    },
+    {
+     "to": "Improved Aspect of the Monkey",
+     "seed3": 0.0016
+    },
+    {
+     "to": "Improved Revive Pet",
+     "seed3": 0.0016
+    },
+    {
+     "to": "Pathfinding",
+     "seed3": 0.0016
+    },
+    {
+     "to": "Improved Mend Pet",
+     "seed3": 0.0016
+    },
+    {
+     "to": "Summon Hawk",
+     "seed3": 0.0016
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Focused Fire": {
+   "level": 42,
+   "kind": "tier point for Unleashed Fury (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Endurance Training",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Improved Aspect of the Monkey",
+     "seed3": 0.0029
+    },
+    {
+     "to": "Improved Revive Pet",
+     "seed3": 0.0029
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Revive Pet": {
+   "level": 45,
+   "kind": "tier point for Unleashed Fury (tier 3)",
+   "does_nothing": "improves only Revive Pet, which the build never casts (its removal changes nothing at 50, 60)",
+   "homes": [
+    {
+     "to": "Endurance Training",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Improved Aspect of the Monkey",
+     "seed3": 0.0,
+     "same_times": true
+    }
+   ],
+   "verdict": "no better home"
+  },
+  "Improved Stings": {
+   "level": 22,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Concussive Shot",
+     "seed3": 0.0044
+    },
+    {
+     "to": "Improved Arcane Shot",
+     "seed3": 0.0044
+    },
+    {
+     "to": "Hawk Eye",
+     "seed3": 0.0048
+    },
+    {
+     "to": "Lone Wolf",
+     "seed3": 0.4982
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Lethal Attacks": {
+   "level": 14,
+   "kind": "tier point for Improved Stings (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Hawk Eye",
+     "seed3": 0.0045
+    },
+    {
+     "to": "Improved Concussive Shot",
+     "seed3": 0.0048
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Rapid Killing": {
+   "level": 29,
+   "kind": "prerequisite of Rapid Recuperation",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Trueshot Aura": {
+   "level": 25,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Hawk Eye",
+     "seed3": 0.011
+    },
+    {
+     "to": "Improved Concussive Shot",
+     "seed3": 0.0118
+    },
+    {
+     "to": "Improved Arcane Shot",
+     "seed3": 0.0118
+    },
+    {
+     "to": "Lone Wolf",
+     "seed3": 0.5092
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Unleashed Fury": {
+   "level": 50,
+   "kind": "tier point for Ferocity (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Endurance Training",
+     "seed3": 0.0029
+    },
+    {
+     "to": "Improved Aspect of the Monkey",
+     "seed3": 0.0029
+    },
+    {
+     "to": "Improved Revive Pet",
+     "seed3": 0.0029
+    },
+    {
+     "to": "Pathfinding",
+     "seed3": 0.0029
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  }
+ },
+ "no_better_home": {
+  "Bestial Discipline": {
+   "kind": "zero point",
+   "exact": false,
+   "why": "time per kill at 60 without its last rank: +0.03 s (seed 3)",
+   "homes": 17
+  },
+  "Improved Tracking": {
+   "kind": "zero point",
+   "exact": false,
+   "why": "time per kill at 60 without its last rank: +0.02 s (seed 3)",
+   "homes": 17
+  },
+  "Mortal Shots": {
+   "kind": "zero point",
+   "exact": false,
+   "why": "time per kill at 60 without its last rank: +0.05 s (seed 3)",
+   "homes": 16
+  },
+  "Rapid Recuperation": {
+   "kind": "zero point",
+   "exact": true,
+   "why": "time per kill at 60 without its last rank: -0.00 s (seed 3)",
+   "homes": 8
+  },
+  "Spirit Bond": {
+   "kind": "zero point",
+   "exact": false,
+   "why": "time per kill at 60 without its last rank: +0.01 s (seed 3)",
+   "homes": 16
+  },
+  "Endurance Training": {
+   "kind": "tier point for Unleashed Fury (tier 3)",
+   "exact": true,
+   "why": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 50, 60",
+   "homes": 2
+  },
+  "Improved Revive Pet": {
+   "kind": "tier point for Unleashed Fury (tier 3)",
+   "exact": true,
+   "why": "improves only Revive Pet, which the build never casts (its removal changes nothing at 50, 60)",
+   "homes": 2
+  }
+ },
  "final_order": [
   {
    "levels": "10-14",
@@ -425,16 +611,10 @@
    "points": 5
   },
   {
-   "levels": "56",
-   "tree": "Beast Mastery",
-   "talent": "Bestial Swiftness",
-   "points": 1
-  },
-  {
-   "levels": "57",
+   "levels": "56-57",
    "tree": "Beast Mastery",
    "talent": "Bestial Discipline",
-   "points": 1
+   "points": 2
   },
   {
    "levels": "58",
@@ -475,10 +655,6 @@
      1
     ],
     [
-     "Bestial Swiftness",
-     1
-    ],
-    [
      "Unleashed Fury",
      5
     ],
@@ -492,7 +668,7 @@
     ],
     [
      "Bestial Discipline",
-     1
+     2
     ]
    ],
    "Marksmanship": [
@@ -652,16 +828,10 @@
     "points": 5
    },
    {
-    "levels": "56",
-    "tree": "Beast Mastery",
-    "talent": "Bestial Swiftness",
-    "points": 1
-   },
-   {
-    "levels": "57",
+    "levels": "56-57",
     "tree": "Beast Mastery",
     "talent": "Bestial Discipline",
-    "points": 1
+    "points": 2
    },
    {
     "levels": "58",
@@ -682,6 +852,6 @@
     "points": 1
    }
   ],
-  "note": "2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Rapid Recuperation to Barrage at 31 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Pathfinding to Bestial Swiftness at 56 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Spirit Bond to Hawk Eye at 60 (no loss: -0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Barrage to Improved Tracking at 31 (tie-break: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill); Hawk Eye to Improved Tracking at 60 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Bestial Discipline to Mortal Shots at 58 (no loss: -0.0% seed 3, +0.1% seed 4, level-weighted time per kill)."
+  "note": "2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Bestial Swiftness to Bestial Discipline at 56 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Rapid Recuperation to Barrage at 31 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Pathfinding to Bestial Swiftness at 56 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Spirit Bond to Hawk Eye at 60 (no loss: -0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Barrage to Improved Tracking at 31 (tie-break: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill); Hawk Eye to Improved Tracking at 60 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Bestial Discipline to Mortal Shots at 58 (no loss: -0.0% seed 3, +0.1% seed 4, level-weighted time per kill)."
  }
 }

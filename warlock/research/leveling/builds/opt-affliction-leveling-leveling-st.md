@@ -22,8 +22,8 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 | **Improved Life Tap** | 2/2 | moved | Increases the amount of Mana awarded by your Life Tap spell by 20%. |
 | **Suppression** | 5/5 | changed | Improves your chance to hit by 5% and reduces all threat you generate by 20%. |
 | **Improved Corruption** | 5/5 | changed | Reduces the casting time of your Corruption spell by 2 sec and increases the damage it deals by 10%. |
-| **Amplify Curse** | 1/1 | changed | Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec. |
 | **Improved Bane of Agony** | 2/2 | **NEW** | Increases the damage done by your Bane of Agony by 10%. |
+| **Amplify Curse** | 1/1 | changed | Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec. |
 | **Pandemic** | 3/3 | **NEW** | Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by 100%. |
 | **Malevolence** | 5/5 | **NEW** | Increases the critical effect chance of your Shadow spells by 5%. |
 | **Siphon Life** | 1/1 | changed | Transfers 11 health from the target to the caster every 3 sec. Lasts 30 sec. |
@@ -34,13 +34,13 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
+| **Improved Imp** | 2/3 | changed | Increases the damage of your Imp's Firebolt spell by 20% and the effect of its Fire Shield spell by 20%. |
+| **Demonic Embrace** | 5/5 | changed | Increases your total Stamina by 15%. |
 | **Unholy Power** | 5/5 | changed | Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 10%. |
-| **Improved Imp** | 3/3 | changed | Increases the damage of your Imp's Firebolt spell by 30% and the effect of its Fire Shield spell by 30%. |
-| **Demonic Embrace** | 4/5 | changed | Increases your total Stamina by 12%. |
-| **Improved Voidwalker** | 3/3 | unchanged | Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice, and Suffering spells by 30%. |
+| **Demonic Aegis** | 2/2 | **NEW** | Increases the effectiveness of your Demon Skin and Demon Armor spells by 30%. |
+| **Fel Vitality** | 3/3 | **NEW** | Increases the maximum health and Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 15%, and increases your maximum Mana by 15%. |
 | **Demonic Energies** | 2/2 | **NEW** | You heal your pet for 15% of all spell damage you deal. When you gain Mana from Life Tap, your summoned demon gains 100% of the Mana you gain. |
 | **Demonic Sacrifice** | 1/1 | changed | When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.  Imp: Increases your Shadow damage by 15%.  Voidwalker: Restores 2% of your total Mana every 4 sec.  Succubus/Incubus: Increases your Fire damage by 15%.  Felhunter: Restores 3% of your total Health every 4 sec. |
-| **Decimation** | 2/2 | **NEW** | Reduces the cooldown of your Soul Fire spell by 90%. When you cast Shadow Bolt or Searing Pain on an enemy below 35% health, they deal 6% increased damage, and for the next 10 sec your Soul Fire spell has its cast time reduced by 40% and costs no Soul Shards. |
 | **Soul Link** | 1/1 | changed | When active, 30% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, Incubus, or Felhunter Demon instead. In addition, both the Demon and the master will inflict 3% more damage. Lasts as long as the Demon is active. |
 | **Demonic Knowledge** | 3/3 | **NEW** | Increases your spell damage and your Demon pet's spell damage by up to 100% of your level while you have a summoned Demon pet active. |
 
@@ -70,13 +70,14 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 | 35-36 | Affliction | Shadow Mastery | 2 | 27/0/0 |
 | 37-41 | Demonology | Unholy Power | 5 | 27/5/0 |
 | 42 | Demonology | Demonic Energies | 1 | 27/6/0 |
-| 43-45 | Demonology | Improved Voidwalker | 3 | 27/9/0 |
+| 43-45 | Demonology | Fel Vitality | 3 | 27/9/0 |
 | 46 | Demonology | Demonic Energies | 1 | 27/10/0 |
 | 47 | Demonology | Demonic Sacrifice | 1 | 27/11/0 |
-| 48-50 | Demonology | Improved Imp | 3 | 27/14/0 |
+| 48-49 | Demonology | Improved Imp | 2 | 27/13/0 |
+| 50 | Demonology | Demonic Aegis | 1 | 27/14/0 |
 | 51 | Demonology | Demonic Embrace | 1 | 27/15/0 |
-| 52-53 | Demonology | Decimation | 2 | 27/17/0 |
-| 54-56 | Demonology | Demonic Embrace | 3 | 27/20/0 |
+| 52 | Demonology | Demonic Aegis | 1 | 27/16/0 |
+| 53-56 | Demonology | Demonic Embrace | 4 | 27/20/0 |
 | 57 | Demonology | Soul Link | 1 | 27/21/0 |
 | 58-60 | Demonology | Demonic Knowledge | 3 | 27/24/0 |
 
@@ -101,18 +102,16 @@ What this build casts per kill ([report](../fightlab/affliction-leveling.md), al
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Wand | 6.4 | 8.7 | 11.1 | 12.4 | 12.0 | 25% |
-| Torment | 3.1 | 4.1 | 4.7 | 5.1 | 4.8 | 0% |
-| Corruption | 1.0 | 1.0 | 1.1 | 1.2 | 1.1 | 22% |
-| Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 22% |
-| Siphon Life | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 | 10% |
-| Immolate | 1.0 | 0.8 | 0.9 | 0.7 | 0.6 | 7% |
-| Drain Life | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Death Coil | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Life Tap | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Wand | 7.6 | 9.8 | 12.8 | 13.7 | 12.7 | 26% |
+| Torment | 3.4 | 4.4 | 5.3 | 5.6 | 5.3 | 0% |
+| Corruption | 1.0 | 1.0 | 1.3 | 1.4 | 1.2 | 20% |
+| Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 26% |
+| Siphon Life | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 | 11% |
+| Immolate | 1.0 | 0.9 | 0.8 | 0.7 | 0.7 | 10% |
 
 ## Notes
 
+- 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Voidwalker to Fel Vitality at 45 (gate: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Voidwalker to Fel Vitality at 44 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Voidwalker to Fel Vitality at 43 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Imp to Demonic Aegis at 50 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Decimation to Demonic Embrace at 53 (gate that did nothing, no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Decimation to Demonic Aegis at 52 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill).
 - Report: warlock/research/talents/forever/optimizer/affliction-leveling-leveling-st.md
 
 ## Open questions (verify in the live game)

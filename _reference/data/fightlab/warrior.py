@@ -57,7 +57,12 @@ TREE = json.load(open(ROOT / "_reference/data/forever-talents/warrior.json", enc
 NUM = re.compile(r"(\d+(?:\.\d+)?)")
 PLUS = re.compile(r"(?:melee damage by|weapon damage plus) (\d[\d,]*)")
 FLAT = re.compile(r"causing (\d[\d,]*) damage|for (\d[\d,]*) damage|doing (\d[\d,]*) damage")
+import tables as _T  # noqa: E402  (REVENGE_FLAT, 2026-11-21)
 RANGE = re.compile(r"(\d[\d,]*) to (\d[\d,]*) damage")
+# "for X to Y plus N% of your Attack Power damage" (Revenge): the flat part (2026-11-21, the smaller-jumps investigation: RANGE needs
+# "Y damage", so Revenge's flat part read 0 at every rank and only its attack-power share played; the Protection pick 7-9% too slow).
+# tables.REVENGE_FLAT False: the lab before (bit for bit); read when the spellbook loads, so it is set in tables before this module loads.
+RANGE_PLUS = re.compile(r"(\d[\d,]*) to (\d[\d,]*) plus \d+(?:\.\d+)?% of your Attack Power damage", re.I)
 BLEED = re.compile(r"bleed for (\d[\d,]*) damage over (\d+) sec")
 EXECUTE = re.compile(r"causing (\d[\d,]*) damage and converting each extra point of rage into (\d+) additional damage")
 CHARGE = re.compile(r"generate (\d+) Rage, and Stun it for (\d+) sec")
@@ -116,6 +121,9 @@ def load_spellbook():
                     s.rage_dmg = float(ex.group(2))
                 elif rg:
                     s.dmg_min, s.dmg_max = _num(rg.group(1)), _num(rg.group(2))
+                elif _T.REVENGE_FLAT and RANGE_PLUS.search(txt):   # the flat part of "X to Y plus N% of your Attack Power damage"
+                    rp = RANGE_PLUS.search(txt)
+                    s.dmg_min, s.dmg_max = _num(rp.group(1)), _num(rp.group(2))
                 elif fl and not bl:   # Rend's "bleed for N damage over T sec" is the bleed, not a hit as well
                     s.dmg_min = s.dmg_max = _num(fl.group(1) or fl.group(2) or fl.group(3))
                 if ap:

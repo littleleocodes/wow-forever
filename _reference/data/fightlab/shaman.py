@@ -73,6 +73,9 @@ BOLT = re.compile(r"for (\d[\d,]*) to (\d[\d,]*) Nature damage")
 LB_CLASSIC_SHARE = 0.78
 CL_LB_DAMAGE = 1.45
 CL_LB_MANA = 2.25
+# the live client's Chain Lightning costs by rank (SpellPower, wago.tools build 1.60.1.70862: ids 421, 930, 2860, 10605), taken when
+# tables.CL_CLIENT is on (2026-11-21; the export's cost field is the pre-notes 145/200/250/315 and live_spells.py takes descriptions only)
+CL_CLIENT_COST = {1: 245, 2: 360, 3: 425, 4: 495}
 
 # Lightning and Water Shield: "Only one ball/globe will fire every few seconds": 3.5 s, as the healer lab (heallab/shaman.py
 # WATER_SHIELD_ICD) and the raid simulator (sim/shaman/shields.go at db4d14a); 3.0 s before 2026-10-18 (audit 2026-10-18 #73).
@@ -178,9 +181,11 @@ def lightning_1102(book):
         if not bolts:
             continue
         lb = bolts[-1]
-        cl.dmg_min = max(cl.dmg_min, round(CL_LB_DAMAGE * lb.dmg_min))
-        cl.dmg_max = max(cl.dmg_max, round(CL_LB_DAMAGE * lb.dmg_max))
-        cl.cost = max(cl.cost, round(CL_LB_MANA * lb.cost))
+        fmin, fmax = round(CL_LB_DAMAGE * lb.dmg_min), round(CL_LB_DAMAGE * lb.dmg_max)
+        if not (_tables.CL_CLIENT and cl.dmg_min >= 0.98 * fmin and cl.dmg_max >= 0.98 * fmax):   # the live tooltip's numbers stand
+            cl.dmg_min = max(cl.dmg_min, fmin)
+            cl.dmg_max = max(cl.dmg_max, fmax)
+        cl.cost = CL_CLIENT_COST.get(cl.rank, cl.cost) if _tables.CL_CLIENT else max(cl.cost, round(CL_LB_MANA * lb.cost))
 
 
 BOOK = load_spellbook()

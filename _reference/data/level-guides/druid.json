@@ -170,7 +170,7 @@
    ],
    "between": [
     "Below 70% of your health after a fight: leave Cat Form, **Rejuvenation** (and **Regrowth** if you are still below 85%), then Cat Form again, only with the mana to shift back.",
-    "Drink when your mana is below about a third (35%): mana only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.",
+    "Drink when your mana is below 15%: mana only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.",
     "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.",
     "Visit the trainer every even level: **Claw**, **Rake**, **Rip**, **Ferocious Bite** and **Ravage** all have many ranks."
    ],
@@ -648,7 +648,7 @@
   },
   {
    "spec": "Balance",
-   "intro": "What a Balance druid presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Balance stays a caster the whole way: **Wrath** from level 1, **Moonfire** at the pull from 4, **Regrowth** from range from 12, **Starfire** woven with **Eclipse** from 30 and **Moonkin Form** from 40. The page build (36/0/15) puts 36 points in Balance and 15 in Restoration for Intellect, pushback, mana and damage; it skips **Insect Swarm**. Each stage lists the full priority, so you can jump in at your level.",
+   "intro": "What a Balance druid presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Balance stays a caster the whole way: **Wrath** from level 1, **Moonfire** at the pull from 4, **Starfire** woven with **Eclipse** from 30 and **Moonkin Form** from 40; you eat between fights, and **Regrowth** (12) is for a pull that goes wrong. The page build (36/0/15) puts 36 points in Balance and 15 in Restoration for Intellect, pushback, mana and damage; it skips **Insect Swarm**. Each stage lists the full priority, so you can jump in at your level.",
    "stages": [
     {
      "from": 1,
@@ -661,7 +661,7 @@
      "if_hurt": "**Healing Touch** below a third of your health. The mob hits you through the cast, so step back first when you can.",
      "notes": [
       "**Mark of the Wild** (1) is a buff: keep it on, no key.",
-      "Druids cannot use a wand, so mana is your limit: drink after a fight that left you below about a third."
+      "Druids cannot use a wand, so mana is your limit: drink after a fight that left you below a quarter."
      ]
     },
     {
@@ -675,7 +675,7 @@
      ],
      "if_hurt": "**Healing Touch** below a third of your health. At these levels the mob usually dies first.",
      "notes": [
-      "**Rejuvenation** (4) is your heal between fights: below 85% of your health.",
+      "**Rejuvenation** (4) is for a pull that goes wrong: the tuned rules cast no heal between fights (eating while you drink measured 2.1-2.3% faster per kill).",
       "**Thorns** (6) is a buff: keep it on, no key. Every mob that hits you takes its damage.",
       "**Entangling Roots** (8) is for the emergency of the next stage: root the mob, step out of its reach, heal. A direct hit can break it.",
       "From 10, **Improved Wrath**, one point a level: by 14 **Wrath** is a 1.5-second cast for half the mana.",
@@ -685,15 +685,15 @@
     {
      "from": 12,
      "title": "Regrowth, from range",
-     "change": "Hurt: root the mob, step out of its reach, **Regrowth**.",
+     "change": "**Regrowth** is your emergency heal: the tuned rules eat between fights and heal in no fight. Hurt in a fight: root the mob and step out of its reach.",
      "press": [
       "**Moonfire** as the mob comes, and again when it runs out, while the mob has more than a third of its health: the hit, then the burn.",
       "**Wrath** while it walks in, and after it reaches you.",
       "A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**."
      ],
-     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it, step out of its reach, then **Regrowth**. A rooted mob still hits you if you stand next to it. A mob with less left: finish it instead.",
+     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it and step out of its reach: a rooted mob still hits you if you stand next to it. A mob with less left: finish it instead. The tuned rules (2026-11-20) cast no **Regrowth** in a fight: against a mob of your level it never paid in the fight lab, which lost no fights at any level; heal if a pull goes wrong.",
      "notes": [
-      "**Regrowth** (12) between fights too: below 70% of your health, after the **Rejuvenation** below 85%.",
+      "**Regrowth** (12) is for a pull that goes wrong: between fights you eat below 40% of your health.",
       "**Moonglow** (15, 17, 19): your damage spells cost up to 25% less. **Improved Moonfire** (16, 18): **Moonfire** gets 10% more damage and critical strike chance.",
       "**Hibernate** (18) sleeps a second beast or dragonkin for up to 20 s: cast it before the pull.",
       "**Faerie Fire** (18) lowers armor, which your spells ignore: no key."
@@ -708,7 +708,7 @@
       "**Wrath** while it walks in, and after it reaches you.",
       "A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**."
      ],
-     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it, step out of its reach, then **Regrowth**. A rooted mob still hits you if you stand next to it. If the roots still hold after the heal, a **Starfire**. A mob with less left: finish it instead.",
+     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it and step out of its reach: a rooted mob still hits you if you stand next to it. While the roots hold, a **Starfire**. A mob with less left: finish it instead.",
      "notes": [
       "**Starfire** (20) is your biggest hit and a 3.5-second cast that the mob's hits push back. The fight lab casts it only into a root or a stun, so at these levels it almost never does.",
       "**Improved Starfire** (25-29): **Starfire** casts 0.5 s faster and stuns the mob for 3 s 15% of the time.",
@@ -728,7 +728,7 @@
       "**Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.",
       "A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**: not a **Starfire** it will not live through."
      ],
-     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it, step out of its reach, then **Regrowth**. A rooted mob still hits you if you stand next to it. If the roots still hold after the heal, a **Starfire**. A mob with less left: finish it instead.",
+     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it and step out of its reach: a rooted mob still hits you if you stand next to it. While the roots hold, a **Starfire**. A mob with less left: finish it instead.",
      "notes": [
       "**Eclipse** (30-32) takes 0.17 s off each charged **Starfire** at 1 point, 0.33 s at 2 and 0.5 s at 3.",
       "**Nature's Grace** (33): a spell critical hit makes your casts and your global cooldown 10% faster for 3 s.",
@@ -747,7 +747,7 @@
       "**Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.",
       "A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**: not a **Starfire** it will not live through."
      ],
-     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots**, step out of its reach, then leave **Moonkin Form** and cast **Regrowth** (no heal works in the form). Go back into **Moonkin Form** if you have half your health and the mob still has half of its own; else after the fight.",
+     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** and step out of its reach. The tuned rules heal in no fight: a **Regrowth** means leaving **Moonkin Form** (no heal works in it) and 35% of your base mana to go back. If a pull goes wrong, heal anyway and go back in once you have half your health.",
      "notes": [
       "**Moonkin Form** (40): 360% more armor from your items, 3% more critical strike chance for your party or raid within 45 yards and **Omen of Clarity** twice as often. Going in costs 35% of your base mana each time, so you stay in it.",
       "**Nature's Focus** (42-46): **Wrath** and **Starfire** ignore the mob's pushback 70% of the time at 5 points.",
@@ -770,12 +770,12 @@
       "**Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.",
       "A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**: not a **Starfire** it will not live through."
      ],
-     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots**, step out of its reach, then leave **Moonkin Form** and cast **Regrowth** (no heal works in the form). Go back into **Moonkin Form** if you have half your health and the mob still has half of its own; else after the fight.",
+     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** and step out of its reach. The tuned rules heal in no fight: a **Regrowth** means leaving **Moonkin Form** (no heal works in it) and 35% of your base mana to go back. If a pull goes wrong, heal anyway and go back in once you have half your health.",
      "notes": [
       "**Reflection** (47-49): half your mana regeneration keeps going while you cast.",
       "**Naturalist** (50-54): 10% more damage at 5 points.",
       "**Vengeance** fills to 5 points at 55 and 57-58: your Arcane and Nature critical hits do double the bonus.",
-      "**Genesis**'s third point (56: **Moonfire**'s burn 6% stronger), **Bloom** (59) and **Heart of the Wild** (60, 2% more Intellect) are the build's last points: the fight lab measures nothing for them, and no other talent it can reach there measured faster. The point at 56 was Ferocity until 2026-11-18, which only cheapens cat and bear attacks this build never uses."
+      "**Genesis**'s third point (56: **Moonfire**'s burn 6% stronger) and **Vengeance**'s last three (55, 57-58) end the damage talents. **Natural Shapeshifter** (59: shapeshifting costs 10% less mana) does something the fight lab cannot measure, and **Heart of the Wild** (60: 2% more Intellect) is the last point. The point at 56 was Ferocity until 2026-11-18, which only cheapens cat and bear attacks this build never uses; the point at 60 was **Gift of Nature** (your heals 2% stronger) until 2026-11-22, when the build stopped healing between fights."
      ],
      "unsimulated": [
       "Moonkin Form"
@@ -783,8 +783,8 @@
     }
    ],
    "between": [
-    "Before 40: **Rejuvenation** below 85% of your health and **Regrowth** below 70%, then the next pull. From 40, stay in **Moonkin Form** and eat below 40% of your health: leaving it to heal costs 35% of your base mana to go back in.",
-    "Drink when your mana is below about a third (35%). Eat below 40% of your health when there was no mana to heal.",
+    "Eat below 40% of your health and drink below a quarter of your mana, both at once: no heals (the re-tune of 2026-11-21 measured eating 2.1-2.3% faster per kill than **Rejuvenation** and **Regrowth** before 40). From 40, stay in **Moonkin Form** to eat: leaving it costs 35% of your base mana to go back in.",
+    "Drink when your mana is below a quarter (25%). Eat below 40% of your health when there was no mana to heal.",
     "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. It was 7.1% faster per kill for this build in the fight lab (2026-11-16), and the tuned rules play it.",
     "Visit the trainer every even level: **Wrath**, **Moonfire** and **Starfire** have many ranks."
    ],
@@ -840,7 +840,7 @@
        },
        {
         "key": "Mouse 5",
-        "role": "The fight heal, after the root",
+        "role": "The fight heal, after the root: not in the list (the tuned rules heal in no fight); press it to heal in a bad pull",
         "binds": [
          {
           "from": 12,
@@ -1113,7 +1113,7 @@
      ],
      "if_hurt": "**Bash** buys you 2 seconds. Below 30% of your health: leave **Bear Form**, **Regrowth**, then **Bear Form** again.",
      "notes": [
-      "**Nature's Reach** (15) is a gate point. **Nature's Majesty** (16-17): 4% more critical strike chance at 2 points. **Heart of the Wild** (18, then 22-24): at 4 points, 16% more Stamina in Bear Form, 8% more Strength in Cat Form and 8% more Intellect.",
+      "**Nature's Reach** (15) is a gate point. **Nature's Majesty** (16-17): 4% more critical strike chance at 2 points. **Genesis** (18-19) reaches 5 points: your bleeds and heals over time do 10% more.",
       "**Swipe** (16) hits three mobs for little: for pulls of two or three, never one.",
       "**Hibernate** (18) sleeps a second beast or dragonkin for up to 20 s: cast it from caster form before the pull.",
       "**Faerie Fire** (18) is not worth the shift out; the fight lab never casts it.",
@@ -1135,7 +1135,7 @@
       "**Shred** (20) needs the mob's back. A mob facing you cannot be Shredded, and the tuned rules never cast it.",
       "**Omen of Clarity** (20) is a buff: keep it on, no key. It makes an ability free now and then.",
       "Energy, not mana, limits you now. This build takes no **Furor**: each shift back into **Cat Form** starts you at no energy, so heal between fights when you can.",
-      "**Genesis** (19-20) reaches 5 points: your bleeds and heals over time do 10% more. **Nature's Splendor** (21) makes **Rejuvenation** last 3 s longer. **Heart of the Wild** fills to 4 points at 22-24: 8% more Strength in Cat Form."
+      "**Nature's Splendor** (20) makes **Rejuvenation** last 3 s longer. **Heart of the Wild** (21-24): at 4 points, 16% more Stamina in Bear Form, 8% more Strength in Cat Form and 8% more Intellect."
      ],
      "unsimulated": [
       "Cat Form",
@@ -1215,7 +1215,7 @@
    "between": [
     "Below 70% of your health after a fight: leave Cat Form, **Rejuvenation** (and **Regrowth** if you are still below 85%), then Cat Form again, only with the mana to shift back.",
     "Each shift back into Cat Form starts at no energy (this build has no **Furor**): let it fill before you prowl in.",
-    "Drink when your mana is below about a third (35%): mana only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.",
+    "Drink when your mana is below 15%: mana only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.",
     "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.",
     "Visit the trainer every even level: **Claw**, **Rake**, **Rip**, **Ferocious Bite** and **Ravage** all have many ranks, and so do your heals."
    ],
@@ -1701,5 +1701,6 @@
     ]
    }
   }
- ]
+ ],
+ "updated": "2026-11-21"
 }

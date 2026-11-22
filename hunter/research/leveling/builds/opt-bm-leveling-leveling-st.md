@@ -89,17 +89,17 @@ What this build casts per kill ([report](../fightlab/mm-raid.md), all leveling b
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Claw | 3.9 | 4.6 | 5.3 | 5.6 | 5.9 | 8% |
-| Auto Shot | 2.9 | 4.0 | 5.1 | 5.9 | 5.8 | 31% |
-| Growl | 1.3 | 1.8 | 2.5 | 2.6 | 2.8 | 0% |
-| Bite | 1.0 | 1.0 | 1.5 | 1.7 | 1.8 | 4% |
-| Aimed Shot | 0.9 | 1.0 | 1.0 | 1.1 | 1.1 | 13% |
-| Serpent Sting | 1.0 | 1.1 | 1.1 | 1.0 | 1.0 | 24% |
+| Auto Shot | 3.1 | 4.4 | 5.6 | 6.2 | 6.5 | 35% |
+| Claw | 3.9 | 4.7 | 5.3 | 5.4 | 5.8 | 8% |
+| Growl | 1.4 | 1.8 | 2.4 | 2.5 | 2.8 | 0% |
+| Bite | 1.0 | 1.0 | 1.5 | 1.6 | 1.7 | 4% |
+| Aimed Shot | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 13% |
+| Serpent Sting | 1.0 | 1.1 | 1.1 | 1.0 | 1.0 | 20% |
 | Hunter's Mark | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
 | Feign Death | 0.0 | 0.2 | 0.3 | 0.4 | 0.4 | 0% |
-| Melee | 0.0 | 0.0 | 0.1 | 0.2 | 0.3 | 1% |
-| Wing Clip | 0.0 | 0.0 | 0.1 | 0.2 | 0.2 | 0% |
-| Raptor Strike | 0.0 | 0.0 | 0.1 | 0.1 | 0.2 | 1% |
+| Melee | 0.0 | 0.0 | 0.1 | 0.2 | 0.2 | 1% |
+| Wing Clip | 0.0 | 0.0 | 0.1 | 0.2 | 0.1 | 0% |
+| Raptor Strike | 0.0 | 0.0 | 0.1 | 0.1 | 0.1 | 1% |
 | Mongoose Bite | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 0% |
 
 ## Notes

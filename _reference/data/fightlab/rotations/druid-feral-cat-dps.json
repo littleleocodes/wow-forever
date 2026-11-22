@@ -4,9 +4,13 @@
    "off": true
   }
  },
+ "knobs": {
+  "REST_TOGETHER": true
+ },
+ "drink_below": 0.15,
  "class": "druid",
  "spec": "feral-cat-dps",
- "build": "leveling-feral",
+ "build": "feral-combat-open-leveling",
  "levels": [
   15,
   20,
@@ -15,7 +19,7 @@
   50,
   60
  ],
- "date": "2026-11-06",
+ "date": "2026-11-20",
  "signature": {
   "required": [
    "Claw",
@@ -23,67 +27,75 @@
   ],
   "build_spec": "Feral Combat",
   "dropped_saved_rules": [],
-  "core_share_before": 0.8084948433142513,
-  "core_share_after": 0.8084948433142513,
+  "core_share_before": 0.9716494285287083,
+  "core_share_after": 0.9716391448390165,
   "min_share": 0.8,
-  "floor_reached": null
+  "floor_reached": null,
+  "played_before": true,
+  "played_after": true
  },
  "fights": 600,
  "confirm": 3000,
  "changes": [
   {
    "round": 1,
-   "change": "never cast Shred",
+   "change": "drink below 15% mana",
    "rule": [
-    "off",
-    "Shred",
-    true
+    "drink_below",
+    null,
+    0.15
    ],
-   "gain_seed1": 0.5025795429139845,
-   "gain_seed2": 0.5030249905351472
+   "gain_seed1": 0.013255111752648707,
+   "gain_seed2": 0.009081007521244189
   }
  ],
- "weighted_before": 21.73376252714862,
- "weighted_after": 21.591767178313,
+ "weighted_before": 23.36372706742192,
+ "weighted_after": 23.126180936289366,
  "per_level": {
   "15": {
-   "before": 23.73389999992213,
-   "after": 23.73389999992213,
+   "before": 30.502633333515234,
+   "after": 30.502633333515234,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "20": {
-   "before": 15.764866666601051,
-   "after": 15.457666666604295,
+   "before": 19.490066666564587,
+   "after": 19.490066666564587,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 19.418933333228885,
-   "after": 18.6060999999048,
+   "before": 21.626345011475088,
+   "after": 21.526663263602916,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 20.867433333213544,
-   "after": 20.867433333213544,
+   "before": 23.373604525590597,
+   "after": 22.99160879015705,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 22.047554404392383,
-   "after": 22.047554404392383,
+   "before": 23.075845633845987,
+   "after": 22.517965938252853,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 24.696834274351207,
-   "after": 24.696834274351207,
+   "before": 23.972227885025276,
+   "after": 23.890425359019684,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
  },
- "knobs": {
-  "REST_TOGETHER": true
+ "retune": {
+  "times": {
+   "saved": 23.364,
+   "from scratch": 23.141,
+   "continued": 23.126
+  },
+  "installed": "continued",
+  "reference_ok": true
  }
 }

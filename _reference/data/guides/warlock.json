@@ -40,13 +40,13 @@
      "Send the Voidwalker in first: its **Torment** holds the mob while you stand at range. **Suppression** (levels 12-15 and 31) gives 5% hit and cuts your threat by 20%, so the Voidwalker keeps the mob. **Amplify Curse** (level 20) goes on whenever it is ready (3-minute cooldown): it makes that fight's **Bane of Agony** 50% stronger.",
      "No **Shadow Bolt** once you own a wand. The re-tune of 2026-11-16 measured kills about a quarter faster without it at levels 20 and 30 (23.5 against 30.6 seconds at 20), and a check at level 10 found 15%. While the Voidwalker holds the mob, a bolt hardly shortens the fight: the dots and the wand kill it in about the same time. But it triples the mana a kill costs, and drinking that back took 3 seconds a kill at level 10 and 7 to 10 seconds at 20 and 30 in the fight lab.",
      "**Corruption**, **Bane of Agony** and **Siphon Life** (level 34) go on once each, none of them on a mob below about a third of its health: it dies before the spell pays for its mana. **Corruption** goes on only while you have more than 15% mana. **Immolate** only on a mob above about half its health, while you have more than half your mana: without bolts that is nearly every mob until 40, and from 40 **Wrack** spends that mana and the fight lab no longer casts it.",
-     "**Wrack** (level 40, changed by the hotfix of 2026-11-10) is a 6-second channel of Shadow damage, 60 a second at level 60, that makes your **Corruption**, **Bane of Agony** and **Siphon Life** tick twice as fast while you channel it. Channel it once **Corruption** is on a mob with more than a quarter of its health, and only while you have more than 30% of your mana: the re-tune measured that mana rule about 3% faster per kill. **Soul Siphon** (levels 32-33 and 41) adds 12% to it for each of your other Affliction effects on the mob, up to 36%. **Wrack** and **Siphon Life** are the build's two most valuable talents at 60: about 3.5 seconds a kill each in the open search, twice **Suppression**'s five points.",
+     "**Wrack** (level 40, changed by the hotfix of 2026-11-10) is a 6-second channel of Shadow damage, 60 a second at level 60, that makes your **Corruption**, **Bane of Agony** and **Siphon Life** tick twice as fast while you channel it. Channel it once **Corruption** is on a mob with more than a quarter of its health, and only while you have more than 30% of your mana: the re-tune measured that mana rule about 3% faster per kill. **Soul Siphon** (levels 32-33 and 41) adds 12% to it for each of your other Affliction effects on the mob, up to 36%. **Wrack** and **Siphon Life** are the build's two most valuable talents at 60: about 6.5 and 4.8 seconds a kill in the open search, three to four times **Suppression**'s five points.",
      "**Drain Life** below 60% health, and in place of the wand below 85%. **Life Tap** in a fight only when your mana is down to about 15% and you stay above 60% health; between fights tap back to about 70% mana, and eat only below 55% health. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17)."
     ],
     "caveats": [
      "No **Curse of the Elements** while leveling: the re-tune of 2026-11-04 measured about 3% faster per kill without it (a global cooldown and mana on a mob that dies quickly), and the re-tune of 2026-11-16 kept it off.",
      "No **Fear**: with the Voidwalker holding the mob the fight lab hardly needs it, and the re-tune measured kills about 0.7% faster without it over levels 20-60. At level 8, before the Voidwalker, dotting and wanding a mob that reaches you was 3% faster than fearing it. Keep it for a pull that brings a second mob.",
-     "This build has no **Nightfall** and no **Soul Link**. Its 12 Demonology points (levels 45-50, 52-55, 58 and 60) are for the Voidwalker: **Unholy Power** adds 10% to its damage, **Improved Voidwalker** makes **Torment** and **Consume Shadows** 30% stronger, **Demonic Energies** heals it for 15% of your spell damage and gives it the mana of each **Life Tap** too, and **Improved Health Funnel** (52) makes **Health Funnel** heal it 20% more for 15% less of your health. **Curse of Exhaustion** (56), **Grim Reach** (57 and 59) and **Demonic Sacrifice** (58) close the build: the fight lab measures them at about nothing, and you never sacrifice the Voidwalker while leveling. The leveling filler passes of 2026-11-16 and 2026-11-17 put into them the points that measured nothing at all: the build no longer takes Improved Shadow Bolt (this list never casts **Shadow Bolt**), Demonic Aegis, Demonic Embrace or Destructive Reach, and keeps two of the three **Improved Drains** points and one of the three **Fel Concentration** points.",
+     "This build has no Soul Link. Its 15 Demonology points (levels 42-43, 45-51, 53-56 and 58-59) are for the Voidwalker and for you: **Unholy Power** adds 8% to its damage, **Improved Voidwalker** makes **Torment** and **Consume Shadows** 30% stronger, **Demonic Energies** heals it for 15% of your spell damage and gives it all the mana of each **Life Tap**, **Demonic Embrace** adds 12% to your Stamina, **Demonic Aegis** makes **Demon Armor** 15% stronger and **Improved Health Funnel** makes **Health Funnel** heal 20% more. **Curse of Exhaustion** (52), a curse this list does not cast, **Grim Reach** (57) and **Destructive Reach** (60) close the build, and the fight lab measures them at about nothing. The leveling filler passes of 2026-11-20 and 2026-11-22 moved the points that measured nothing at all into these, no slower in the fight lab.",
      "Without **Shadow Bolt** Affliction spends little mana: the fight lab drinks well under a second a kill. When you are too hurt to **Life Tap**, drink below 15% mana.",
      "When a mob reaches you: **Death Coil** (level 42) if you are below about 60% health (it heals you for its damage); otherwise keep dotting and wanding, with **Drain Life** when you are hurt, until the Voidwalker's **Torment** takes it back."
     ],
@@ -60,8 +60,8 @@
     "written": "2026-11-16",
     "rotations": {
      "leveling:affliction-leveling": "6c5b4640a71a",
-     "leveling:demonology-leveling": "e38605e402b9",
-     "leveling:destruction-leveling": "8125bce79b04"
+     "leveling:demonology-leveling": "7b9fece8fe69",
+     "leveling:destruction-leveling": "d0371c743a51"
     }
    }
   },
@@ -99,18 +99,18 @@
     "written": "2026-11-21"
    },
    "leveling": {
-    "plan": "Demonology levels on the Voidwalker: its talents make the demon both the tank and a large share of the damage, **Demonic Brand** (levels 27-29) turns **Searing Pain** into extra Voidwalker hits, and your dots from the Affliction points and the wand do the rest. The page judges Demonology by what the demon adds, not by your own spells.",
+    "plan": "Demonology levels on the Voidwalker: its talents make the demon both the tank and a share of the damage (about a quarter at level 30 and an eighth at 60 in the fight lab, the brand's hits included), **Demonic Brand** (levels 28-29, 34) turns **Searing Pain** into extra Voidwalker hits, and your dots from the Affliction points and the wand do the rest. The page judges Demonology by what the demon adds, not by your own spells.",
     "why": [
-     "Send the Voidwalker in first: **Unholy Power** (levels 10-14), **Demonic Energies** (15 and 19), **Improved Voidwalker** (16-18), **Demonic Knowledge** (31-33) and **Master Demonologist** (38-40) make it and you stronger, and **Soul Link** (30) moves 30% of the damage you take to it and adds 3% damage for both. **Demonic Sacrifice** (25) is only the step to **Soul Link**: never sacrifice your tank.",
-     "**Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than a third of its health and you have more than 30% mana (the 2026-11-06 re-tune, about 1% faster per kill for each of the two limits): **Demonic Brand** makes the Voidwalker's next 2 attacks (at 27), 4 (28) or 6 (from 29) each deal 65 to 68 extra damage, and the brand halves **Searing Pain**'s own threat. The open search measured **Demonic Brand** among the build's most valuable talents at 60.",
-     "**Bane of Agony**, **Corruption** and, from level 60, **Siphon Life** on every mob above about a third of its health (**Corruption** only above 35%, the re-tune's rule, about 1% faster per kill). **Immolate** only while you have more than half your mana: common at level 20, rare once the brand costs mana from level 27.",
-     "The wand is your filler. **Shadow Bolt** and filler **Searing Pain** wait for 80% mana, and with the brands and dots you almost never get there: the fight lab casts almost no **Shadow Bolt** past level 20 and needs no drinking.",
+     "Send the Voidwalker in first: **Unholy Power** (levels 10-14), **Demonic Energies** (15 and 19), **Improved Voidwalker** (16-17, 24), **Demonic Knowledge** (31-33) and **Master Demonologist** (40-43) make it and you stronger, and **Soul Link** (30) moves 30% of the damage you take to it and adds 3% damage for both. **Demonic Sacrifice** (27) is only the step to **Soul Link**: never sacrifice your tank.",
+     "**Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than a third of its health and you have more than 30% mana (the 2026-11-06 re-tune, about 1% faster per kill for each of the two limits): **Demonic Brand** makes the Voidwalker's next 2 attacks (at 28), 4 (29) or 6 (from 34) each deal 65 to 68 extra damage at level 60, and the brand halves **Searing Pain**'s own threat. The open search of 2026-11-20 measured the three **Demonic Brand** points at about half a second a kill at 60.",
+     "**Bane of Agony**, **Corruption** and, from level 60, **Siphon Life** on every mob above about a third of its health (**Corruption** only above 35%, the re-tune's rule, about 1% faster per kill). **Immolate** only while you have more than half your mana: common at level 20, rare once the brand costs mana from level 28.",
+     "The wand is your filler. **Shadow Bolt** and filler **Searing Pain** wait for 80% mana, and with the brands and dots you almost never get there: the fight lab casts almost no **Shadow Bolt** from level 30 and needs no drinking.",
      "**Drain Life** below 60% health and in place of the wand below 85% (with **Soul Link** and the Voidwalker holding the mob, the fight lab rarely needs it); **Life Tap** in a fight only when you are short of mana and above 60% health. Between fights, **Life Tap** back to 70% mana, heal the Voidwalker with **Consume Shadows**, eat below 55% health. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).",
-     "The Affliction points (levels 35-60) make your dots stronger: **Improved Corruption** (35-37, 42) shortens **Corruption**'s cast to 0.4 seconds, **Amplify Curse** (50) strengthens a **Bane of Agony** every 3 minutes, **Pandemic** and **Malevolence** add to the dots' critical strikes."
+     "The Affliction points (levels 35-39 and 44-60) make your dots stronger: **Improved Corruption** (35-39) makes **Corruption** instant and adds 10% to its damage, **Amplify Curse** (50) strengthens a **Bane of Agony** every 3 minutes, **Pandemic** and **Malevolence** add to the dots' critical strikes."
     ],
     "caveats": [
-     "This build has no **Decimation** and no **Improved Health Funnel**, so the **Soul Fire** and in-fight **Health Funnel** lines do not apply.",
-     "**Fel Vitality** (levels 20-21 and 23: 15% more health and mana for the Voidwalker, 15% more mana for you) and **Demonic Aegis** (22: **Demon Armor** 15% stronger) fill the tiers on the way to **Soul Link** (30) and **Master Demonologist**; **Improved Sayaad** (24) does nothing while the Voidwalker is out. The leveling filler pass of 2026-11-17 moved Improved Imp's two points and **Demonic Aegis**'s second to **Fel Vitality** (about 0.1% faster per kill each) and the last **Improved Corruption** point to **Malevolence** (no slower), so **Corruption** keeps a 0.4-second cast.",
+     "This build has no Decimation and no Improved Health Funnel, so the **Soul Fire** and in-fight **Health Funnel** lines do not apply.",
+     "**Fel Vitality** (levels 18, 20-21: 15% more health and mana for the Voidwalker, 15% more mana for you), **Demonic Embrace** (22-23: 6% more Stamina) and **Demonic Aegis** (25-26: **Demon Armor** 30% stronger) fill the tiers on the way to **Soul Link** (30) and **Master Demonologist**. The leveling filler passes of 2026-11-20 and 2026-11-21 moved three points into **Fel Vitality** (0.1-0.2% faster per kill each), the fifth **Master Demonologist** point into **Suppression** (0.2%), and Improved Imp's three points, which only strengthen the Imp, into **Demonic Embrace** and **Improved Voidwalker** (no slower).",
      "When a mob reaches you, cast **Death Coil** (level 42) if you are below about 60% health (it heals you for its damage), otherwise **Fear** it and let the Voidwalker take it back.",
      "The Affliction/Demonology hybrid plays this same list with other talents; its page and guide show the difference."
     ],
@@ -121,8 +121,8 @@
     "written": "2026-11-08",
     "rotations": {
      "leveling:affliction-leveling": "6c5b4640a71a",
-     "leveling:demonology-leveling": "e38605e402b9",
-     "leveling:destruction-leveling": "8125bce79b04"
+     "leveling:demonology-leveling": "7b9fece8fe69",
+     "leveling:destruction-leveling": "d0371c743a51"
     }
    }
   },
@@ -158,17 +158,17 @@
     }
    },
    "leveling": {
-    "plan": "Destruction levels as a nuker behind the Voidwalker: **Immolate** on a fresh mob, **Shadow Bolt** as the filler, **Conflagrate** (level 32) whenever it is ready and **Shadowburn** (31) to finish. From level 40, with **Immolate** burning, the fight lab wands between **Conflagrate** casts: its tuned rules switch **Incinerate** off. This build has no Affliction dots and the list casts none.",
+    "plan": "Destruction levels as a nuker behind the Voidwalker: **Immolate** on a fresh mob, **Shadow Bolt** while you have more than 60% of your mana and the wand below that, **Conflagrate** (level 30) whenever it is ready and **Shadowburn** (29) to finish. The wand does a third to almost half of your damage from 10 to 39 and a quarter to a third from 40 (the fight lab, 2026-11-22): the tuned rules keep **Shadow Bolt** for spare mana and switch **Incinerate** off. This build has no Affliction dots and the list casts none.",
     "why": [
      "The Destruction points come first: **Bane** (levels 10-14) makes **Shadow Bolt** and **Immolate** 0.5 seconds faster, **Destructive Reach** (15-16) adds 20% to the range of your Destruction spells, **Cataclysm** (17-19) makes your Destruction spells 10% cheaper, **Ruin** (20-24) doubles their critical strike bonus and **Agonizing Flames** (25-27) adds 10% to their damage.",
      "Send the Voidwalker in first and put **Immolate** on a mob above about a third of its health, once it will not pull the mob off the Voidwalker.",
-     "With 5 points in **Shadow and Flame** (levels 35-39), **Conflagrate** no longer eats your **Immolate**, so cast it whenever it is ready on a burning mob; before that, cast it when **Immolate** has about 3 seconds left. **Shadow and Flame** also gives 20% more Shadow damage for 20 seconds after a **Conflagrate** and 20% more Fire damage after a **Shadowburn**; **Fire and Brimstone** (41-43) adds 25% critical strike chance to **Conflagrate**.",
-     "Fill with **Shadow Bolt** whenever you keep a small mana reserve, but never on a mob below 35% of its health (the 2026-11-07 re-tune, about 3% faster per kill): finish it with **Shadowburn** or **Conflagrate** when either would kill it, else the wand. **Conflagrate** itself is cast only on a mob above a fifth of its health.",
-     "The same re-tune switched off **Fear** (about 5% faster per kill), **Drain Life** (about 3%), **Searing Pain** (about 1%) and **Incinerate** (about 3%). **Life Tap** in a fight only when you are short of mana and above 60% health; between fights tap back to 70% mana, heal the Voidwalker with **Consume Shadows** or **Health Funnel**, eat below 40% health (the tuned rule). Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17)."
+     "With 5 points in **Shadow and Flame** (levels 35-39), **Conflagrate** no longer eats your **Immolate**, so cast it whenever it is ready on a burning mob; before that, cast it when **Immolate** has about 3 seconds left. **Shadow and Flame** also gives 20% more Shadow damage for 20 seconds after a **Conflagrate** and 20% more Fire damage after a **Shadowburn**; **Fire and Brimstone** (32-34) adds 25% critical strike chance to **Conflagrate**.",
+     "Fill with **Shadow Bolt** only while you have more than 60% of your mana (the re-tune of 2026-11-21: 3% faster per kill over levels 20-60, 18% at 35) and never on a mob below 35% of its health (the 2026-11-07 re-tune, about 3% faster per kill); otherwise the wand, and finish with **Shadowburn** or **Conflagrate** when either would kill it. **Conflagrate** itself is cast only on a mob above a fifth of its health.",
+     "The same re-tune switched off **Fear** (about 5% faster per kill), **Drain Life** (about 3%), **Searing Pain** (about 1%) and **Incinerate** (about 3%). No **Life Tap** in a fight: with **Shadow Bolt** kept for spare mana the fight lab never needs one. Between fights tap back to 70% mana, heal the Voidwalker with **Consume Shadows** or **Health Funnel**, eat below 40% health (the tuned rule). Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17)."
     ],
     "caveats": [
-     "**Suppression** (levels 45-49) is the build's most valuable talent at 60 in the open search: 5% hit and 20% less threat keep the mob on the Voidwalker while you nuke. **Unholy Power**, **Improved Voidwalker**, **Demonic Energies** and **Fel Vitality** (50-59) make the Voidwalker stronger, and **Demonic Aegis** (60) makes **Demon Armor** 15% stronger.",
-     "**Pyroclasm** (33), **Bane of Havoc** (34) and **Incinerate** (40) are tier points: the list casts no **Soul Fire** and fights one mob, and the rules never cast **Incinerate**, so none of them does anything here. **Intensity** (28-30) keeps your casts from being pushed back 70% of the time a mob hits you.",
+     "**Suppression** (levels 42-45): 4% hit and 16% less threat keep the mob on the Voidwalker while you nuke, about 1.7 seconds a kill at 60 in the open search. **Aftermath** (41, 46-49) adds 50% to **Immolate**'s first hit, and **Unholy Power** (50-54), **Improved Voidwalker** (55, 59-60), **Demonic Energies** (56-57) and **Fel Vitality** (58) make the Voidwalker stronger.",
+     "**Bane of Havoc** (31) is a tier point and does nothing here: this list fights one mob. The rules never cast **Incinerate** (40), but with it the list wands a burning mob instead of bolting it, which the fight lab measured faster: the open search of 2026-11-20 measured the build 1.8 seconds a kill slower at 60 without it. **Intensity** (28) keeps your casts from being pushed back 23% of the time a mob hits you.",
      "When a mob reaches you: **Death Coil** (level 42) below 60% health and let the Voidwalker's **Torment** take it back. The tuned rules never **Fear** it. A Healthstone below 35% health."
     ],
     "diverge": [
@@ -178,8 +178,8 @@
     "written": "2026-11-08",
     "rotations": {
      "leveling:affliction-leveling": "6c5b4640a71a",
-     "leveling:demonology-leveling": "e38605e402b9",
-     "leveling:destruction-leveling": "8125bce79b04"
+     "leveling:demonology-leveling": "7b9fece8fe69",
+     "leveling:destruction-leveling": "d0371c743a51"
     }
    }
   },
@@ -222,8 +222,8 @@
     "plan": "A Shadow Bolt hybrid would level with the Destruction list: the Voidwalker holds the mob, **Immolate** goes on a fresh mob and **Shadow Bolt** is the filler. The list casts no **Corruption** or **Bane of Agony**: the Affliction points only make your Shadow spells stronger. No leveling page has a build for this split today.",
     "why": [
      "Send the Voidwalker in first and put **Immolate** on a mob above about a third of its health, once it will not pull the mob off the Voidwalker. **Bane** and **Cataclysm** make every **Shadow Bolt** and **Immolate** faster and cheaper.",
-     "**Shadow Bolt** is the filler whenever you keep a small mana reserve, never on a mob below 35% of its health (the Destruction rules of 2026-11-07, about 3% faster per kill): finish it with the wand, or **Shadowburn** or **Conflagrate** where you have them.",
-     "No **Fear**, **Searing Pain** or **Drain Life**: the same rules measured the Destruction list faster without them. **Life Tap** in a fight only when you are short of mana and above 60% health; between fights tap back to 70% mana and eat only below 40% health. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17)."
+     "**Shadow Bolt** is the filler only while you have more than 60% of your mana (the Destruction rules of 2026-11-21; the wand below that) and never on a mob below 35% of its health (the Destruction rules of 2026-11-07, about 3% faster per kill): finish it with the wand, or **Shadowburn** or **Conflagrate** where you have them.",
+     "No **Fear**, **Searing Pain** or **Drain Life**: the same rules measured the Destruction list faster without them. **Life Tap** in a fight is rare: with the bolt kept for spare mana the Destruction rules almost never run short; between fights tap back to 70% mana and eat only below 40% health. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17)."
     ],
     "caveats": [
      "Skip the lines for spells you do not have (**Conflagrate**, **Shadowburn**, **Soul Fire**).",
@@ -236,23 +236,24 @@
     "written": "2026-11-08",
     "rotations": {
      "leveling:affliction-leveling": "6c5b4640a71a",
-     "leveling:demonology-leveling": "e38605e402b9",
-     "leveling:destruction-leveling": "8125bce79b04"
+     "leveling:demonology-leveling": "7b9fece8fe69",
+     "leveling:destruction-leveling": "d0371c743a51"
     }
    }
   },
   "Hybrid Affliction/Demonology": {
    "leveling": {
-    "plan": "The 25/26/0 split plays the Demonology list: a Voidwalker made stronger by the Demonology points holds the mob, **Searing Pain** keeps **Demonic Brand** on it, **Bane of Agony**, **Corruption** and **Siphon Life** tick, and the wand fills.",
+    "plan": "The 27/24/0 split plays the Demonology list without the brand: the Voidwalker holds the mob, **Bane of Agony**, **Corruption**, **Immolate** and from level 30 **Siphon Life** tick, and the wand fills. The Affliction points (levels 10-36) make the dots stronger; the Demonology points (37-60) make the Voidwalker stronger and end in **Soul Link** and **Demonic Knowledge**.",
     "why": [
-     "The Demonology points (levels 10-34 and 38) make the Voidwalker the main damage source: **Unholy Power** (10-14) adds 10% to its damage, **Improved Voidwalker** (16-18) makes **Torment** and **Consume Shadows** 30% stronger, **Demonic Energies** (15 and 19) heals it for 15% of your spell damage, **Soul Link** (30) moves 30% of your damage taken to it and adds 3% damage for both, **Demonic Knowledge** (31-33) adds spell damage while it is out, and **Master Demonologist** (38) takes 2% off the physical damage you both take.",
-     "**Searing Pain** whenever the brand is gone, the Voidwalker is hitting the mob, the mob has more than a third of its health and you have more than 30% mana (the 2026-11-06 re-tune, about 1% faster per kill for each of the two limits): **Demonic Brand** (levels 27-29) makes the Voidwalker's next 2, 4 and from 29 6 attacks each deal 65 to 68 extra damage and halves **Searing Pain**'s threat.",
-     "**Bane of Agony** and **Corruption** on every mob above about a third of its health (**Corruption** only above 35%, about 1% faster per kill), **Siphon Life** from level 60. **Immolate** only while you have more than half your mana: on every mob at level 20, almost none after 30.",
-     "The wand is your filler: **Shadow Bolt** waits for 80% mana, which the brands and dots never leave you, and the fight lab needs no drinking. The Affliction points (levels 35-60) make your dots stronger: **Improved Corruption** makes **Corruption** instant at 55, **Pandemic** and **Malevolence** add to their critical strikes.",
+     "Send the Voidwalker in first: its **Torment** holds the mob while you stand at range. **Suppression** (levels 12-15 and 33) gives 5% hit and cuts your threat by 20%, so the Voidwalker keeps the mob. **Amplify Curse** (level 20) goes on whenever it is ready (3-minute cooldown): it makes that fight's **Bane of Agony** 50% stronger.",
+     "**Bane of Agony** and **Corruption** on every mob above about a third of its health (**Corruption** only above 35%, the tuned rule of 2026-11-06, about 1% faster per kill), **Siphon Life** from level 30. **Immolate** only while you have more than half your mana: with no **Searing Pain** brand to pay for, the fight lab casts it on most mobs at every level.",
+     "The wand is your filler: **Shadow Bolt** waits for 80% mana, which the dots leave you on some pulls before level 30 and almost never after, and the fight lab needs no drinking.",
+     "The Affliction points make the dots hit harder: **Improved Corruption** (16-19 and 23) makes **Corruption** instant from 23 and adds 10% to it, **Improved Bane of Agony** (21-22) adds 10% to the bane, **Pandemic** (24, 28 and 31) and **Malevolence** (25-27, 29 and 32) make your dots crit more often and harder, **Shadow Mastery** (35-36) adds 4% to your Shadow damage, and **Improved Life Tap** (10-11) adds 20% to each **Life Tap**.",
+     "The Demonology points are for the Voidwalker: **Unholy Power** (37-41) adds 10% to its damage, **Demonic Energies** (42 and 46) heals it for 15% of your spell damage, **Fel Vitality** (43-45) gives it 15% more health and mana (and you 15% more mana), **Soul Link** (57) moves 30% of your damage taken to it and adds 3% damage for both, and **Demonic Knowledge** (58-60) adds spell damage while it is out.",
      "**Drain Life** below 60% health, and in place of the wand below 85%. **Life Tap** in a fight only when you are short of mana and above 60% health; between fights tap back to about 70% mana and eat only below 55% health. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17)."
     ],
     "caveats": [
-     "This build has no **Improved Health Funnel**, so the in-fight **Health Funnel** line does not apply: heal the Voidwalker between fights. **Demonic Aegis** (22-23) makes **Demon Armor** 30% stronger; **Improved Imp** (20-21), **Improved Sayaad** (24) and **Improved Felhunter** (34) only fill tiers, the Voidwalker being your demon. **Master Summoner** shortens a new summon; **Demonic Sacrifice** (25) is the step to **Soul Link**, and **Grim Reach** (46) only widens the range of your Affliction spells.",
+     "This build has no Demonic Brand, so the list's **Searing Pain** line never fires, and no Improved Health Funnel, so the in-fight **Health Funnel** line does not apply: heal the Voidwalker between fights. **Improved Imp** (48-49) and **Demonic Aegis** (50, 52) only fill tiers, the Voidwalker being your demon; **Demonic Sacrifice** (47) is the step to **Soul Link**; and **Soul Siphon** (34) only strengthens drains, which this list rarely casts.",
      "When a mob reaches you: **Death Coil** (level 42) if you are below about 60% health (it heals you for its damage), otherwise **Fear** it and **Drain Life** while it runs, until the Voidwalker's **Torment** takes it back."
     ],
     "diverge": [
@@ -260,11 +261,11 @@
      "Below about a third of your health with a mob on you, use a Healthstone (**Create Healthstone** between fights).",
      "Finish a nearly dead mob with the wand; start no new spell on it."
     ],
-    "written": "2026-11-08",
+    "written": "2026-11-21",
     "rotations": {
      "leveling:affliction-leveling": "6c5b4640a71a",
-     "leveling:demonology-leveling": "e38605e402b9",
-     "leveling:destruction-leveling": "8125bce79b04"
+     "leveling:demonology-leveling": "7b9fece8fe69",
+     "leveling:destruction-leveling": "d0371c743a51"
     }
    }
   },
@@ -274,9 +275,9 @@
     "why": [
      "The Demonology points come first: **Unholy Power**, **Improved Voidwalker**, **Demonic Energies**, **Fel Vitality**, **Soul Link** and **Demonic Knowledge** make the Voidwalker a strong tank and add spell damage while it is out. **Suppression** gives 5% hit and 20% less threat.",
      "Send the Voidwalker in first and put **Immolate** on a mob above about a third of its health, once it will not pull the mob off the Voidwalker.",
-     "**Shadow Bolt** is the filler whenever you keep a small mana reserve, never on a mob below 35% of its health (the Destruction rules of 2026-11-07). **Bane**, **Cataclysm**, **Improved Shadow Bolt**, **Ruin** and **Agonizing Flames** make it faster, cheaper and harder-hitting.",
+     "**Shadow Bolt** is the filler only while you have more than 60% of your mana (the Destruction rules of 2026-11-21; the wand below that) and never on a mob below 35% of its health (the Destruction rules of 2026-11-07). **Bane**, **Cataclysm**, **Improved Shadow Bolt**, **Ruin** and **Agonizing Flames** make it faster, cheaper and harder-hitting.",
      "**Decimation**: a **Shadow Bolt** on a mob below 35% health makes your next **Soul Fire** faster and free of a Soul Shard for 10 seconds; cast it then, while the mob has enough health left for it.",
-     "No **Fear**, **Searing Pain** or **Drain Life**: the Destruction rules measured the list faster without them. **Life Tap** in a fight only when you are short of mana and above 60% health; between fights tap back to 70% mana, heal the Voidwalker with **Consume Shadows** or **Health Funnel**, eat below 40% health. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17)."
+     "No **Fear**, **Searing Pain** or **Drain Life**: the Destruction rules measured the list faster without them. **Life Tap** in a fight is rare: with the bolt kept for spare mana the Destruction rules almost never run short; between fights tap back to 70% mana, heal the Voidwalker with **Consume Shadows** or **Health Funnel**, eat below 40% health. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17)."
     ],
     "caveats": [
      "If the build has no **Conflagrate** or **Incinerate**, skip the lines that name them. **Improved Health Funnel**, **Master Summoner** and **Fel Domination** are steps to deeper talents.",
@@ -289,8 +290,8 @@
     "written": "2026-11-08",
     "rotations": {
      "leveling:affliction-leveling": "6c5b4640a71a",
-     "leveling:demonology-leveling": "e38605e402b9",
-     "leveling:destruction-leveling": "8125bce79b04"
+     "leveling:demonology-leveling": "7b9fece8fe69",
+     "leveling:destruction-leveling": "d0371c743a51"
     }
    }
   }

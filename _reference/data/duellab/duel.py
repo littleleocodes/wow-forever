@@ -73,7 +73,10 @@ KEEPS_STEALTH = {"Stealth", "Prowl", "Sap", "Distract", "Pick Pocket", "Vanish",
 # caster gear and Seal of Command, as before).
 PVE_KNOBS = ("IMP_FROM", "MAGE_ARMOR", "POISONS", "IMBUE_EARLY", "IMBUE_LATE", "IMBUE_TOP", "IMBUE_TOP_FROM", "CASTER_GEAR_FROM", "SOR_FROM",
              "EVO_BELOW", "REST_TOGETHER", "FIRE_NOVA_SINGLE", "FIRE_NOVA_MANA",   # (2026-11-20: the shaman's single-target Fire Nova, H4;
-             "BERSERKER_FROM", "TWIST", "TWIST_MANA")                         # the warrior's Berserker Stance, H7; seal twisting, H3)
+             "BERSERKER_FROM", "TWIST", "TWIST_MANA",                        # the warrior's Berserker Stance, H7; seal twisting, H3;
+             "CONE_AT_WC", "FROSTFIRE_FROM", "CASTER_HEAL", "BOLT_ABOVE",
+             "ECLIPSE_GATE_RANK", "AIMED_FROM")   # (2026-11-22: Balance's Starfire gate by Eclipse rank; Marksmanship's Aimed Shot level)                             # the mage's cone at Winter's Chill stacks and Frostfire
+                                                                        # Bolt's first level, 2026-11-21)
 _GEAR = {"tier": None}
 _RESTORE = {}
 

@@ -3,7 +3,7 @@
  "spec": "Assassination",
  "build": "assassination-open-leveling",
  "rotation": "combat-daggers-raid",
- "date": "2026-11-16",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -159,14 +159,14 @@
  ],
  "steps": [
   {
-   "weighted": 22.053,
+   "weighted": 21.657,
    "values_at_60": {
-    "Aggression": -0.27,
-    "Flawless Execution": -1.314,
-    "Mutilate": -30.695,
-    "Weapon Expertise": -0.401
+    "Aggression": -0.219,
+    "Flawless Execution": -1.193,
+    "Weapon Expertise": -0.414
    },
-   "zero": []
+   "zero": [],
+   "dead_held": []
   }
  ],
  "moves": [
@@ -179,6 +179,345 @@
    "why": "gate"
   }
  ],
+ "kept_signature": [
+  "Mutilate"
+ ],
+ "gates_checked": {
+  "Blood Splatter": {
+   "level": 24,
+   "kind": "tier point for Cold Blood (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0001
+    },
+    {
+     "to": "Improved Expose Armor",
+     "seed3": 0.0001
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.0001
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Cold Blood": {
+   "level": 25,
+   "kind": "tier point for Mutilate (tier 7)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Vile Poisons",
+     "seed3": 0.0037
+    },
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0088
+    },
+    {
+     "to": "Improved Expose Armor",
+     "seed3": 0.0088
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.0088
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Composure": {
+   "level": 55,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0006
+    },
+    {
+     "to": "Efficient Strikes",
+     "seed3": 0.0008
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0008
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0011
+    },
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0012
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Coup de Grace": {
+   "level": 45,
+   "kind": "tier point for Puncturing Wounds (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0069
+    },
+    {
+     "to": "Efficient Strikes",
+     "seed3": 0.0073
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Deflection": {
+   "level": 53,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0002
+    },
+    {
+     "to": "Efficient Strikes",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0009
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Poisons": {
+   "level": 32,
+   "kind": "tier point for Mutilate (tier 7)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Vile Poisons",
+     "seed3": 0.0019
+    },
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0059
+    },
+    {
+     "to": "Improved Expose Armor",
+     "seed3": 0.0059
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.0059
+    },
+    {
+     "to": "Improved Kidney Shot",
+     "seed3": 0.0059
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Lethality": {
+   "level": 21,
+   "kind": "tier point for Cold Blood (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0034
+    },
+    {
+     "to": "Improved Expose Armor",
+     "seed3": 0.0034
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.0034
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Lightning Reflexes": {
+   "level": 42,
+   "kind": "tier point for Puncturing Wounds (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Efficient Strikes",
+     "seed3": 0.0004
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Malice": {
+   "level": 14,
+   "kind": "prerequisite of Lethality",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Precision": {
+   "level": 51,
+   "kind": "prerequisite of Weapon Expertise",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Puncturing Wounds": {
+   "level": 48,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": 0.0046
+    },
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0053
+    },
+    {
+     "to": "Efficient Strikes",
+     "seed3": 0.0054
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0054
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Relentless Strikes": {
+   "level": 39,
+   "kind": "tier point for Mutilate (tier 7)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Vile Poisons",
+     "seed3": 0.001
+    },
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0051
+    },
+    {
+     "to": "Improved Expose Armor",
+     "seed3": 0.0051
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.0051
+    },
+    {
+     "to": "Improved Kidney Shot",
+     "seed3": 0.0051
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Remorseless Attacks": {
+   "level": 19,
+   "kind": "tier point for Vigor (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0187
+    },
+    {
+     "to": "Improved Expose Armor",
+     "seed3": 0.0187
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.0187
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Ruthlessness": {
+   "level": 17,
+   "kind": "tier point for Vigor (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0018
+    },
+    {
+     "to": "Improved Expose Armor",
+     "seed3": 0.0018
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.0018
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Seal Fate": {
+   "level": 37,
+   "kind": "tier point for Mutilate (tier 7)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Vile Poisons",
+     "seed3": 0.0069
+    },
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0115
+    },
+    {
+     "to": "Improved Expose Armor",
+     "seed3": 0.0115
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.0115
+    },
+    {
+     "to": "Improved Kidney Shot",
+     "seed3": 0.0115
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Venom": {
+   "level": 30,
+   "kind": "prerequisite of Mutilate",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Vigor": {
+   "level": 23,
+   "kind": "tier point for Cold Blood (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0054
+    },
+    {
+     "to": "Improved Expose Armor",
+     "seed3": 0.0054
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.0054
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  }
+ },
+ "no_better_home": {},
  "final_order": [
   {
    "levels": "10-14",
@@ -323,6 +662,21 @@
    "tree": "Combat",
    "talent": "Weapon Expertise",
    "points": 2
+  }
+ ],
+ "reruns": [
+  {
+   "date": "2026-11-20",
+   "moves": 0,
+   "note": "a written run that moved nothing; its no-move record had dropped the earlier pass (start_order, moves, written), which open_builds.py re-applies; restored from the record of 2026-11-16 on 2026-11-21"
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-22",
+   "moves": 0
   }
  ],
  "written": {

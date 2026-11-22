@@ -86,23 +86,21 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `feral-ca
 
 Single-target leveling fights against normal mobs of your level. Levels 10-19 in Bear Form: walk up, Enrage, Demoralizing Roar, Maul on every swing the rage allows, Bash when low or against a casting mob. From 20 in Cat Form: prowl up behind the mob and open with Ravage from 32 (Shred from 22, Claw before; Pounce comes at 36, after Ravage), Rake once, Claw to five points (the mob faces you, so Shred is only for the opener), Ferocious Bite whenever it kills (from 32), Rip at five points on a mob above half health (before Ferocious Bite: Rip at 2 points on a mob above 40% of its health), Berserk on the pull; when low, shift out for a Regrowth (Nature's Swiftness + Healing Touch in an emergency) and shift back at 55% of base mana, Furor carrying the energy. Between fights: 2 s loot, 6 s travel, Rejuvenation / Regrowth in caster form when hurt (only with the mana to shift back) then Cat Form again, water below 35% mana (the tuned rule drinks lower).
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-06, on top of the priority below): never cast Shred. Together +0.7% time per kill saved for `leveling-feral` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-20, on top of the priority below): drink below 15% mana. Together +1.0% time per kill saved for `feral-combat-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/feral-cat-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L15 casts/kill | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|---|
-| Melee | 5.0 | 12.0 | 13.8 | 15.6 | 15.0 | 16.6 | 25% |
-| Claw | 0.0 | 4.7 | 3.7 | 3.0 | 2.9 | 3.1 | 17% |
-| Rake | 0.0 | 0.0 | 1.7 | 1.7 | 1.7 | 1.9 | 15% |
-| Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 9% |
-| Ferocious Bite | 0.0 | 0.0 | 0.9 | 1.0 | 1.0 | 0.8 | 17% |
-| Rip | 0.0 | 1.0 | 0.1 | 0.2 | 0.2 | 0.4 | 12% |
-| Regrowth | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Cat Form | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Melee | 4.5 | 9.7 | 11.3 | 12.5 | 11.7 | 13.4 | 23% |
+| Claw | 0.0 | 4.6 | 4.0 | 2.9 | 2.7 | 3.0 | 21% |
+| Rake | 0.0 | 0.0 | 1.4 | 1.4 | 1.3 | 1.5 | 12% |
+| Ferocious Bite | 0.0 | 0.0 | 0.9 | 1.0 | 1.0 | 1.0 | 21% |
+| Ravage | 0.0 | 0.0 | 0.0 | 1.0 | 1.0 | 1.0 | 17% |
+| Rip | 0.0 | 1.0 | 0.0 | 0.1 | 0.1 | 0.1 | 3% |
 | Enrage | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Demoralizing Roar | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
-| Maul | 3.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
+| Maul | 4.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 | Bash | 0.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes

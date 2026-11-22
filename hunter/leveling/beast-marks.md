@@ -6,11 +6,11 @@
 
 **Leveling from level 1?** [The rotation level by level](beast-marks-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Beast-Marks — Leveling](../research/leveling/builds/beast-marks-open-leveling.md)** (23/23/5) — [open the talent tree](https://talentsforever.com/hunter/60/52201015050101-005355200111-5-12)
+**[Beast-Marks — Leveling](../research/leveling/builds/beast-marks-open-leveling.md)** (23/23/5) — [open the talent tree](https://talentsforever.com/hunter/60/52201005050102-005355200111-5-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
-**Signature spells:** 97% of the damage at level 60 in the fight lab comes from the spec's core spells (your pet, Auto Shot, Aimed Shot, Barrage, Serpent Sting; this build never casts Arcane Shot, Multi-Shot, Sniper Shot) (the spec's rule: at least 70%; **Aimed Shot** cast at level 60).
+**Signature spells:** 98% of the damage at level 60 in the fight lab comes from the spec's core spells (your pet, Auto Shot, Aimed Shot, Barrage, Serpent Sting; this build never casts Arcane Shot, Multi-Shot, Sniper Shot) (the spec's rule: at least 70%; **Aimed Shot** cast at level 60).
 
 ## How to play
 
@@ -41,7 +41,7 @@ Beast-Marks levels like Beast Mastery without its two cooldowns: the cat tanks a
 **Caveats**
 
 - This build does not take **Bestial Wrath**, nor **Intimidation**, so the list leaves out the step that names them, and **Rapid Fire** with it: still press **Rapid Fire** at the start of a fight when it is ready.
-- **Endurance Training** (43-44), **Improved Revive Pet** (45) and **Spirit Bond** (59) measured nothing at 60 in the fight lab, where the pet rarely dies. The leveling filler pass of 2026-11-15 moved the other points that measured nothing (Pathfinding, a second **Spirit Bond**, **Rapid Recuperation**'s and **Bestial Discipline**'s second points) to **Bestial Swiftness** (56), **Mortal Shots** (58) and **Improved Tracking** (31 and 60). **Rapid Killing** measured almost nothing: its shot bonus after a kill is not in the fight lab.
+- **Endurance Training** (43-44), **Improved Revive Pet** (45) and **Spirit Bond** (59) measured nothing at 60 in the fight lab, where the pet rarely dies. The leveling filler passes moved the other points that measured nothing into **Mortal Shots** (58), **Improved Tracking** (31 and 60) and **Bestial Discipline**'s second point (56, Bestial Swiftness until 2026-11-22). **Rapid Killing** measured almost nothing: its shot bonus after a kill is not in the fight lab.
 - **Improved Tracking** (levels 33-35, 3 points) adds 1% a point, and only against the creature type you are tracking: switch tracking to what you are killing.
 - The lab drinks below 15% of your mana (the tuned rules of 2026-11-15: fewer stops measured slightly faster) and eats below 65% of your health. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17). A mob that turns on you: **Feign Death** sends it back to the pet; while it is on cooldown, **Mongoose Bite**, **Raptor Strike** and **Wing Clip** hold it until the pet's Growl takes it back.
 - Buy the new ranks: in the beta client (build 70753) the top ranks are the strongest. **Aspect of the Hawk** rank 7 gives +120 ranged attack power (rank 6 +110), **Hunter's Mark** rank 4 +143 (rank 3 +98) and **Trueshot Aura** rank 5 +100 (rank 4 +75). Cast the highest rank you know; the fight lab does.
@@ -67,21 +67,22 @@ One point per level from 10, in this order:
 | 27 | Rapid Killing (Marksmanship) | 1 |
 | 28 | Careful Aim (Marksmanship) | 1 |
 | 29 | Rapid Killing (Marksmanship) | 1 |
-| 30 | Rapid Recuperation (Marksmanship) | 1 |
+| 30 | Rapid Recuperation (Marksmanship) (no effect in the fight lab; the talent order needs a point here) | 1 |
 | 31 | Improved Tracking (Survival) | 1 |
 | 32 | Careful Aim (Marksmanship) | 1 |
 | 33-35 | Improved Tracking (Survival) | 3 |
 | 36-40 | Deadly Aspects (Beast Mastery) | 5 |
 | 41-42 | Focused Fire (Beast Mastery) | 2 |
-| 43-44 | Endurance Training (Beast Mastery) | 2 |
-| 45 | Improved Revive Pet (Beast Mastery) | 1 |
+| 43-44 | Endurance Training (Beast Mastery) (tier point: needed to reach Unleashed Fury) | 2 |
+| 45 | Improved Revive Pet (Beast Mastery) (tier point: needed to reach Unleashed Fury) | 1 |
 | 46-50 | Unleashed Fury (Beast Mastery) | 5 |
 | 51-55 | Ferocity (Beast Mastery) | 5 |
-| 56 | Bestial Swiftness (Beast Mastery) | 1 |
-| 57 | Bestial Discipline (Beast Mastery) | 1 |
+| 56-57 | Bestial Discipline (Beast Mastery) | 2 |
 | 58 | Mortal Shots (Marksmanship) | 1 |
 | 59 | Spirit Bond (Beast Mastery) | 1 |
 | 60 | Improved Tracking (Survival) | 1 |
+
+A talent marked as a tier point does nothing in the fight lab's leveling fights; it is in the build because no legal talent that helps can take that point.
 
 ## The numbers
 
@@ -90,13 +91,15 @@ One point per level from 10, in this order:
 | 20 | 16 | 13 |
 | 30 | 19 | 16 |
 | 40 | 23 | 20 |
-| 50 | 24 | 22 |
-| 60 | 26 | 22 |
+| 50 | 23 | 21 |
+| 60 | 25 | 21 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
-**Points that do nothing for this spec:** **Improved Revive Pet** (1) only counts toward the points the tree needs before **Bestial Swiftness** and **Unleashed Fury**.
+**Points that do nothing for this spec:** **Endurance Training** (2) and **Improved Revive Pet** (1) only count toward the points the tree needs before **Unleashed Fury**; **Rapid Recuperation** (1) does nothing here, and no more useful legal talent was found for its point.
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

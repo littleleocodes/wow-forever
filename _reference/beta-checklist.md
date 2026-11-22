@@ -26,7 +26,7 @@ Global checks: respec cost schedule in Forever (the planner assumes 1g then +5g,
 
 Plan: **feral-cat-dps -> level-30 build (0/21/0)** (from `druid/leveling/respec-plan.md`)
 
-- 10-14 Ferocity x5; 15-17 Thick Hide x3; 18-19 Feral Swiftness x2; 20-21 Sharpened Claws x2; 22-23 Savage Fury x2; 24 Furor; 25-27 Predatory Strikes x3; 28-29 Blood Frenzy x2
+- 10-14 Ferocity x5; 15-17 Thick Hide x3; 18-19 Feral Swiftness x2; 20-21 Sharpened Claws x2; 22-23 Savage Fury x2; 24 Furor; 25-27 Predatory Strikes x3; 28-29 Blood Frenzy x2; 30 Leader of the Pack
 
 Log per level bracket: kills per hour, deaths, drink/eat time; compare with the alternative plans on the same page.
 
@@ -386,10 +386,10 @@ Models: sb-raid, affliction-raid, fire-destro-raid, affliction-leveling. Same mo
 - A derived Demonology leveling build: check it while leveling at launch.
 - A derived Destruction leveling build: check it while leveling at launch.
 - Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on.
-- An open-search Affliction leveling build: check it while leveling at launch.
 - An open-search Affliction-Demonology leveling build: check it while leveling at launch.
 - An open-search Destruction leveling build: check it while leveling at launch.
 - An open-search Demonology leveling build: check it while leveling at launch.
+- An open-search Affliction leveling build: check it while leveling at launch.
 
 ## Warrior
 

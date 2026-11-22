@@ -33,16 +33,54 @@ def raid(cls, bid, entry=None):
     return out
 
 
-def leveling(cls, slug, order):
-    out = {}
-    if not slug:
-        return out
-    for p in (HERE / "fightlab" / "filler" / f"{cls}-{slug}.json",):
+def filler_paths(cls, spec=None, slug=None, dry=False):
+    """The leveling filler pass's record files that can hold a spec's record: fl_filler_pass.py names them after the spec's tree name
+    ("hybrid-protection-retribution"); a page slug ("prot-ret") is tried too. With dry, the dry run's records instead."""
+    names = []
+    if spec:
+        names.append(spec.lower().replace("/", "-").replace(" ", "-"))
+        try:
+            import spec_modes as SM
+            names.append(SM.spec_slug(cls, spec))
+        except Exception:   # noqa: BLE001
+            pass
+    if slug:
+        names.append(slug)
+    ext = ".dry.json" if dry else ".json"
+    out = []
+    for n in names:
+        p = HERE / "fightlab" / "filler" / f"{cls}-{n}{ext}"
+        if p not in out:
+            out.append(p)
+    return out
+
+
+def filler_record(cls, order, spec=None, slug=None, build=None, dry=False):
+    """The filler record made on this order: by the spec's names, else (a page slug that names no record) the one whose build is
+    `build`. None when there is none."""
+    paths = filler_paths(cls, spec, slug, dry)
+    if build:
+        paths += sorted(p for p in (HERE / "fightlab" / "filler").glob(f"{cls}-*{'.dry.json' if dry else '.json'}")
+                        if p not in paths and (dry or not p.name.endswith(".dry.json")) and not p.name.endswith(".dry2.json"))
+    for p in paths:
         try:
             x = json.load(open(p, encoding="utf-8"))
         except (OSError, ValueError):
             continue
         if x.get("final_order") != order:
+            continue
+        if build and x.get("build") not in (None, build):
+            continue
+        return x
+    return None
+
+
+def leveling(cls, slug, order, spec=None, build=None):
+    out = {}
+    if not (slug or spec or build):
+        return out
+    for x in [filler_record(cls, order, spec=spec, slug=slug, build=build)]:
+        if not x:
             continue
         for t, e in (x.get("no_better_home") or {}).items():
             if e.get("exact", e.get("kind") != "zero point"):

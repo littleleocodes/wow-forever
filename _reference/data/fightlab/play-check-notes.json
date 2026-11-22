@@ -1,0 +1,277 @@
+{
+ "druid": {
+  "Feral Combat": {
+   "jump": {
+    "10-14": "ordinary scaling: the mob's health grows +61%, your damage per second +45%; fight time 24.8 -> 27.5 s (+11%), downtime 0.1 -> 1.5 s (idle 0% -> 5%); mob health +61% against damage per second +45%; pressed now: Enrage; points Ferocity 1->5; ranks Bash rank 0->1, Enrage rank 0->1 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "14-19": "ordinary scaling: the mob's health grows +49%, your damage per second +33%; fight time 27.5 -> 31.0 s (+13%), downtime 1.5 -> 1.9 s (idle 5% -> 6%); mob health +49% against damage per second +33%; points Feral Swiftness 0->2, Thick Hide 0->3; ranks Maul rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "19-20": "a new tool: Claw, Rip, Claw rank 0->1, Rip rank 0->1, Sharpened Claws 0->1; fight time 31.0 -> 18.0 s (-42%), downtime 1.9 -> 1.4 s (idle 6% -> 7%); mob health +4% against damage per second +78%; pressed now: Claw, Rip; no longer pressed: Demoralizing Roar, Enrage, Maul; points Sharpened Claws 0->1; ranks Claw rank 0->1, Rip rank 0->1 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "32-39": "ordinary scaling: the mob's health grows +48%, your damage per second +28%; fight time 18.4 -> 21.2 s (+15%), downtime 1.3 -> 2.5 s (idle 7% -> 11%); mob health +48% against damage per second +28%; points Genesis 2->5, Nature's Majesty 0->2, Nature's Reach 0->2; ranks Claw rank 2->3, Rake rank 1->2, Rip rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Balance": {
+   "jump": {
+    "10-11": "ordinary scaling: the mob's health grows +11%, your damage per second +5%; fight time 22.5 -> 23.9 s (+6%), downtime 8.0 -> 8.6 s (idle 26% -> 26%); mob health +11% against damage per second +5%; points Improved Wrath 1->2; ranks none new (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "11-12": "ordinary scaling: the mob's health grows +25%, your damage per second +16%; fight time 23.9 -> 25.9 s (+8%), downtime 8.6 -> 8.8 s (idle 26% -> 26%); mob health +25% against damage per second +16%; points Improved Wrath 2->3; ranks none new (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "20-29": "ordinary scaling: the mob's health grows +104%, your damage per second +65%; fight time 28.5 -> 35.2 s (+24%), downtime 9.7 -> 13.6 s (idle 25% -> 28%); mob health +104% against damage per second +65%; points Genesis 0->2, Improved Starfire 0->5, Nature's Majesty 1->2, Nature's Splendor 0->1; ranks Moonfire rank 3->5, Wrath rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "12-19": "ordinary scaling over seven levels, the first talents' levels; points: Improved Moonfire 0->2, Improved Wrath 3->5, Moonglow 0->3; ranks: Entangling Roots rank 1->2, Moonfire rank 2->3, Wrath rank 2->3; gear main stats 32->60; mob health 243->438 (+80%), swing 17->30, armor 541->789 (the printed cause, 2026-11-22; cleared by the audit session)"
+   }
+  },
+  "Restoration": {
+   "jump": {
+    "10-14": "ordinary scaling: the mob's health grows +61%, your damage per second +44%; fight time 24.9 -> 27.8 s (+11%), downtime 0.2 -> 1.5 s (idle 1% -> 5%); mob health +61% against damage per second +44%; pressed now: Enrage; points Genesis 0->3, Improved Wrath 1->2; ranks Bash rank 0->1, Enrage rank 0->1 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "19-20": "a new tool: Claw, Rip, Claw rank 0->1, Rip rank 0->1, Nature's Splendor 0->1; fight time 30.1 -> 18.4 s (-39%), downtime 2.0 -> 1.5 s (idle 6% -> 7%); mob health +4% against damage per second +70%; pressed now: Claw, Rip; no longer pressed: Demoralizing Roar, Enrage, Maul; points Nature's Splendor 0->1; ranks Claw rank 0->1, Rip rank 0->1 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "24-30": "ordinary scaling: the mob's health grows +68%, your damage per second +42%; fight time 19.3 -> 22.9 s (+18%), downtime 1.5 -> 2.2 s (idle 7% -> 9%); mob health +68% against damage per second +42%; points Nature's Focus 0->4, Reflection 0->2; ranks Claw rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "32-39": "ordinary scaling: the mob's health grows +48%, your damage per second +23%; fight time 21.1 -> 25.4 s (+21%), downtime 2.0 -> 4.4 s (idle 9% -> 15%); mob health +48% against damage per second +23%; points Gift of Nature 0->1, Subtlety 1->3, Swiftmend 0->1, Tranquil Spirit 0->3; ranks Claw rank 2->3, Rake rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  }
+ },
+ "hunter": {
+  "Hybrid Beast Mastery/Survival": {
+   "jump": {
+    "10-15": "ordinary scaling: the mob's health grows +75%, your damage per second +45%; fight time 13.8 -> 16.7 s (+21%), downtime 0.0 -> 0.0 s (idle 0% -> 0%); mob health +75% against damage per second +45%; points Improved Tracking 1->5, Savage Strikes 0->1; ranks none new (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "20-29": "ordinary scaling: the mob's health grows +104%, your damage per second +75%; fight time 16.1 -> 18.7 s (+16%), downtime 0.0 -> 0.4 s (idle 0% -> 2%); mob health +104% against damage per second +75%; points Clever Traps 0->2, Predator's Edge 0->4, Surefooted 1->3, Survival Tactics 0->1; ranks Bite rank 3->4, Claw rank 3->4, Immolation Trap rank 1->2, Raptor Strike rank 3->4, Serpent Sting rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-39": "ordinary scaling: the mob's health grows +55%, your damage per second +41%; fight time 18.7 -> 20.7 s (+10%), downtime 0.1 -> 0.5 s (idle 0% -> 2%); mob health +55% against damage per second +41%; points Deadly Aspects 0->2, Lethal Attacks 0->4, Resourcefulness 1->2, Survivalist's Discipline 0->2; ranks Bite rank 4->5, Claw rank 4->5, Immolation Trap rank 2->3, Raptor Strike rank 4->5, Serpent Sting rank 4->5 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Beast Mastery": {
+   "jump": {
+    "10-12": "ordinary scaling: the mob's health grows +39%, your damage per second +31%; fight time 13.8 -> 14.7 s (+7%), downtime 0.0 -> 0.0 s (idle 0% -> 0%); mob health +39% against damage per second +31%; points Deadly Aspects 1->3; ranks none new (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "25-26": "ordinary scaling: the mob's health grows +14%, your damage per second +12%; fight time 15.7 -> 16.0 s (+2%), downtime 1.7 -> 2.6 s (idle 10% -> 14%); mob health +14% against damage per second +12%; points Ferocity 1->2; ranks Serpent Sting rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "34-39": "ordinary scaling: the mob's health grows +34%, your damage per second +16%; fight time 17.8 -> 20.6 s (+15%), downtime 2.6 -> 2.6 s (idle 13% -> 11%); mob health +34% against damage per second +16%; points Frenzy 0->5; ranks Aimed Shot rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Marksmanship": {
+   "jump": {
+    "10-12": "ordinary scaling: the mob's health grows +39%, your damage per second +32%; fight time 12.4 -> 13.1 s (+6%), downtime 0.0 -> 0.0 s (idle 0% -> 0%); mob health +39% against damage per second +32%; points Lethal Attacks 1->3; ranks Arcane Shot rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "12-19": "ordinary scaling: the mob's health grows +73%, your damage per second +60%; fight time 13.1 -> 14.2 s (+8%), downtime 0.0 -> 0.6 s (idle 0% -> 4%); mob health +73% against damage per second +60%; points Careful Aim 0->5, Lethal Attacks 3->5; ranks Bite rank 2->3, Claw rank 2->3, Serpent Sting rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "25-26": "ordinary scaling: the mob's health grows +14%, your damage per second +12%; fight time 14.2 -> 14.5 s (+2%), downtime 3.3 -> 4.1 s (idle 19% -> 22%); mob health +14% against damage per second +12%; points Efficiency 0->1; ranks Serpent Sting rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-39": "ordinary scaling: the mob's health grows +55%, your damage per second +30%; fight time 15.5 -> 18.5 s (+19%), downtime 3.5 -> 4.2 s (idle 18% -> 18%); mob health +55% against damage per second +30%; pressed now: Feign Death, Melee; points Barrage 0->3, Efficiency 4->5, Improved Tracking 0->1, Ranged Weapon Specialization 0->4; ranks Aimed Shot rank 2->3, Arcane Shot rank 4->5, Bite rank 4->5, Claw rank 4->5, Serpent Sting rank 4->5 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Survival": {
+   "jump": {
+    "10-15": "ordinary scaling: the mob's health grows +75%, your damage per second +45%; fight time 13.8 -> 16.7 s (+21%), downtime 0.0 -> 0.0 s (idle 0% -> 0%); mob health +75% against damage per second +45%; points Improved Tracking 1->5, Savage Strikes 0->1; ranks none new (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-39": "ordinary scaling: the mob's health grows +55%, your damage per second +41%; fight time 18.6 -> 20.5 s (+10%), downtime 0.1 -> 0.5 s (idle 0% -> 2%); mob health +55% against damage per second +41%; points Lethal Attacks 0->5, Resourcefulness 1->2, Survival Tactics 0->1, Survivalist's Discipline 0->2; ranks Bite rank 4->5, Claw rank 4->5, Immolation Trap rank 2->3, Raptor Strike rank 4->5, Serpent Sting rank 4->5 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Hybrid Beast Mastery/Marksmanship": {
+   "jump": {
+    "10-12": "ordinary scaling: the mob's health grows +39%, your damage per second +30%; fight time 13.6 -> 14.6 s (+7%), downtime 0.0 -> 0.0 s (idle 0% -> 0%); mob health +39% against damage per second +30%; points Lethal Attacks 1->3; ranks none new (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "25-26": "ordinary scaling: the mob's health grows +14%, your damage per second +14%; fight time 15.6 -> 15.7 s (+0%), downtime 1.2 -> 2.0 s (idle 7% -> 11%); mob health +14% against damage per second +14%; points Careful Aim 2->3; ranks Serpent Sting rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-37": "ordinary scaling: the mob's health grows +42%, your damage per second +29%; fight time 17.3 -> 19.2 s (+11%), downtime 1.6 -> 2.4 s (idle 8% -> 11%); mob health +42% against damage per second +29%; points Careful Aim 4->5, Deadly Aspects 0->2, Improved Tracking 0->4; ranks Aimed Shot rank 2->3, Bite rank 4->5, Claw rank 4->5, Raptor Strike rank 4->5, Serpent Sting rank 4->5 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  }
+ },
+ "mage": {
+  "Frost": {
+   "jump": {
+    "10-19": "ordinary scaling: the mob's health grows +140%, your damage per second +101%; fight time 20.4 -> 24.3 s (+19%), downtime 8.1 -> 10.7 s (idle 28% -> 31%); mob health +140% against damage per second +101%; points Ice Shards 0->3, Improved Frostbolt 0->5, Precision 1->2; ranks Fire Blast rank 1->2, Frostbolt rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "19-20": "a new tool: Ice Lance, Frostbolt rank 3->4, Ice Lance rank 0->1, Ice Lance 0->1; fight time 24.3 -> 21.6 s (-11%), downtime 10.7 -> 6.7 s (idle 31% -> 24%); mob health +4% against damage per second +17%; pressed now: Ice Lance; no longer pressed: Fire Blast; points Ice Lance 0->1; ranks Frostbolt rank 3->4, Ice Lance rank 0->1 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Hybrid Arcane/Frost": {
+   "jump": {
+    "10-19": "ordinary scaling: the mob's health grows +140%, your damage per second +94%; fight time 20.4 -> 25.2 s (+23%), downtime 8.1 -> 10.9 s (idle 28% -> 30%); mob health +140% against damage per second +94%; points Frostbite 0->1, Ice Shards 0->2, Improved Frost Nova 0->1, Improved Frostbolt 0->4, Precision 1->2; ranks Fire Blast rank 1->2, Frostbolt rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "19-20": "a new tool: Ice Lance, Frostbolt rank 3->4, Ice Lance rank 0->1, Ice Lance 0->1; fight time 25.2 -> 22.4 s (-11%), downtime 10.9 -> 5.9 s (idle 30% -> 21%); mob health +4% against damage per second +17%; pressed now: Ice Lance; no longer pressed: Fire Blast; points Ice Lance 0->1; ranks Frostbolt rank 3->4, Ice Lance rank 0->1 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Arcane": {
+   "jump": {
+    "10-19": "ordinary scaling: the mob's health grows +140%, your damage per second +80%; fight time 16.2 -> 21.7 s (+33%), downtime 9.7 -> 11.7 s (idle 37% -> 35%); mob health +140% against damage per second +80%; pressed now: Frostbolt; points Arcane Concentration 0->5, Improved Channeling 0->4; ranks Arcane Missiles rank 1->2, Fire Blast rank 1->2, Frostbolt rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Fire": {
+   "jump": {
+    "10-19": "ordinary scaling: the mob's health grows +140%, your damage per second +109%; fight time 19.6 -> 22.5 s (+15%), downtime 8.2 -> 11.6 s (idle 29% -> 34%); mob health +140% against damage per second +109%; points Accelerant 1->5, Ignite 0->5; ranks Fire Blast rank 1->2, Fireball rank 2->4 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "24-30": "ordinary scaling: the mob's health grows +68%, your damage per second +51%; fight time 25.1 -> 28.0 s (+12%), downtime 8.7 -> 11.7 s (idle 26% -> 30%); mob health +68% against damage per second +51%; no longer pressed: Counterspell; points Ice Shards 0->3, Improved Frost Nova 0->2, Precision 2->3; ranks Fire Blast rank 3->4, Fireball rank 5->6, Frost Nova rank 1->2, Pyroblast rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Hybrid Fire/Frost": {
+   "jump": {
+    "10-19": "ordinary scaling: the mob's health grows +140%, your damage per second +99%; fight time 20.4 -> 24.7 s (+21%), downtime 6.9 -> 9.7 s (idle 25% -> 28%); mob health +140% against damage per second +99%; points Frostbite 0->1, Ice Shards 0->3, Improved Frostbolt 0->4, Precision 1->2; ranks Fire Blast rank 1->2, Frostbolt rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "19-20": "a new tool: Ice Lance, Frostbolt rank 3->4, Ice Lance rank 0->1, Ice Lance 0->1; fight time 24.7 -> 22.6 s (-8%), downtime 9.7 -> 6.1 s (idle 28% -> 21%); mob health +4% against damage per second +13%; pressed now: Ice Lance; points Ice Lance 0->1; ranks Frostbolt rank 3->4, Ice Lance rank 0->1 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  }
+ },
+ "paladin": {
+  "Retribution": {
+   "jump": {
+    "10-19": "ordinary scaling: the mob's health grows +140%, your damage per second +105%; fight time 18.2 -> 21.3 s (+17%), downtime 0.0 -> 1.0 s (idle 0% -> 5%); mob health +140% against damage per second +105%; points Benediction 1->5, Conviction 0->2, Sanctified Judgement 0->3; ranks Holy Strike rank 1->2, Seal of Righteousness rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "20-30": "ordinary scaling: the mob's health grows +131%, your damage per second +117%; fight time 20.3 -> 21.7 s (+7%), downtime 0.9 -> 2.8 s (idle 4% -> 12%); mob health +131% against damage per second +117%; points Conviction 2->3, Improved Judgement 0->2, Pursuit of Justice 0->2, Sacred Arbiter 0->1, Two-Handed Weapon Specialization 0->3, Vengeance 0->1; ranks Hammer of Justice rank 1->2, Holy Strike rank 3->4, Seal of Command rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-40": "ordinary scaling: the mob's health grows +73%, your damage per second +49%; fight time 21.7 -> 25.1 s (+16%), downtime 2.8 -> 3.7 s (idle 12% -> 13%); mob health +73% against damage per second +49%; points Divine Strength 0->5, Improved Seals 0->3, Vengeance 1->3; ranks Hammer of Justice rank 2->3, Holy Strike rank 4->5, Seal of Command rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Hybrid Protection/Retribution": {
+   "jump": {
+    "10-19": "ordinary scaling: the mob's health grows +140%, your damage per second +105%; fight time 18.2 -> 21.3 s (+17%), downtime 0.0 -> 0.9 s (idle 0% -> 4%); mob health +140% against damage per second +105%; points Conviction 0->2, Deflection 1->5, Sanctified Judgement 0->3; ranks Holy Strike rank 1->2, Seal of Righteousness rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "20-30": "ordinary scaling: the mob's health grows +131%, your damage per second +114%; fight time 20.2 -> 21.8 s (+8%), downtime 0.8 -> 2.5 s (idle 4% -> 10%); mob health +131% against damage per second +114%; points Conviction 2->3, Improved Judgement 0->2, Sacred Arbiter 0->1, Two-Handed Weapon Specialization 0->3, Vengeance 0->1, Vindication 0->2; ranks Hammer of Justice rank 1->2, Holy Strike rank 3->4, Seal of Command rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-40": "ordinary scaling over ten levels; points: Divine Strength 0->5, Improved Seals 0->3, Vengeance 1->3; ranks: Hammer of Justice rank 2->3, Holy Strike rank 4->5, Seal of Command rank 2->3; gear main stats 128->176; mob health 1002->1844 (+84%), swing 48->68, armor 1200->2101 (the printed cause, 2026-11-22; cleared by the audit session)"
+   }
+  },
+  "Hybrid Holy/Retribution": {
+   "jump": {
+    "10-19": "ordinary scaling: the mob's health grows +140%, your damage per second +106%; fight time 18.5 -> 21.6 s (+17%), downtime 0.0 -> 1.1 s (idle 0% -> 5%); mob health +140% against damage per second +106%; points Divine Strength 1->5, Improved Seals 0->3, Reverence 0->2; ranks Holy Strike rank 1->2, Seal of Righteousness rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-40": "ordinary scaling: the mob's health grows +73%, your damage per second +44%; fight time 22.5 -> 27.0 s (+20%), downtime 6.8 -> 6.2 s (idle 23% -> 19%); mob health +73% against damage per second +44%; points Benediction 0->5, Conviction 0->2, Sanctified Judgement 0->3; ranks Hammer of Justice rank 2->3, Holy Shock rank 1->2, Holy Strike rank 4->5, Seal of Righteousness rank 4->5 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "27-30": "a new spell's cost: **Holy Shock** (30, the spec's signature spell, 160 mana a cast on a 10-second cooldown) is pressed from here while the mob grows +23%; points: Holy Shock 0->1, Illumination 1->3; ranks: Holy Shock rank 0->1, Holy Strike rank 3->4; gear main stats 114->128; mob health 814->1002 (+23%), swing 44->48, armor 1096->1200 (the printed cause, 2026-11-22; cleared by the audit session)"
+   }
+  },
+  "Holy": {
+   "jump": {
+    "10-19": "ordinary scaling: the mob's health grows +140%, your damage per second +100%; fight time 18.5 -> 22.1 s (+20%), downtime 0.0 -> 1.2 s (idle 0% -> 5%); mob health +140% against damage per second +100%; points Divine Strength 1->4, Purifying Power 0->2, Reverence 0->2, Spiritual Focus 0->2; ranks Holy Strike rank 1->2, Seal of Righteousness rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "20-29": "ordinary scaling: the mob's health grows +104%, your damage per second +73%; fight time 22.2 -> 26.2 s (+18%), downtime 1.1 -> 2.2 s (idle 5% -> 8%); mob health +104% against damage per second +73%; points Healing Light 0->2, Illumination 1->5, Spiritual Focus 2->5; ranks Hammer of Justice rank 1->2, Holy Strike rank 3->4, Seal of Righteousness rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-40": "ordinary scaling: the mob's health grows +73%, your damage per second +47%; fight time 23.6 -> 27.9 s (+18%), downtime 7.5 -> 8.4 s (idle 24% -> 23%); mob health +73% against damage per second +47%; points Benediction 0->5, Conviction 0->3, Deflection 0->2; ranks Hammer of Justice rank 2->3, Holy Shock rank 1->2, Holy Strike rank 4->5, Seal of Righteousness rank 4->5 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Protection": {
+   "jump": {
+    "10-19": "ordinary scaling: the mob's health grows +140%, your damage per second +101%; fight time 19.8 -> 23.7 s (+20%), downtime 0.1 -> 1.1 s (idle 0% -> 4%); mob health +140% against damage per second +101%; points Guardian's Favor 0->1, Precision 0->3, Redoubt 1->5, Sacred Duty 0->1; ranks Holy Strike rank 1->2, Seal of Fury rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "20-25": "ordinary scaling: the mob's health grows +53%, your damage per second +39%; fight time 23.8 -> 26.2 s (+10%), downtime 1.2 -> 2.4 s (idle 5% -> 8%); mob health +53% against damage per second +39%; pressed now: Swift Judgement; points Shield Specialization 0->2, Swift Judgement 0->1, Toughness 0->2; ranks Swift Judgement rank 0->1 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-40": "ordinary scaling: the mob's health grows +73%, your damage per second +41%; fight time 25.0 -> 30.6 s (+23%), downtime 4.4 -> 2.4 s (idle 15% -> 7%); mob health +73% against damage per second +41%; points Benediction 0->2, Conviction 0->2, Deflection 0->3, Sanctified Judgement 0->3; ranks Holy Shield rank 1->2, Holy Strike rank 4->5, Seal of Fury rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  }
+ },
+ "priest": {
+  "Shadow": {
+   "jump": {
+    "10-19": "ordinary scaling: the mob's health grows +140%, your damage per second +99%; fight time 21.5 -> 26.0 s (+21%), downtime 1.4 -> 3.7 s (idle 6% -> 13%); mob health +140% against damage per second +99%; points Shadow Focus 0->4, Shadow Reach 0->1, Spirit Tap 1->5; ranks Mind Blast rank 1->2, Power Word: Shield rank 1->3, Psychic Scream rank 0->1, Shadow Word: Pain rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "39-40": "Shadowform at 40 (Forever's tooltip and client effect 1134008: Shadow spells cost 50% less mana): cast mana a kill 1,104 -> 550 meets the 578 Spirit Tap's regeneration returns, so the 15% drink line is never reached; 40 without the cut 33.9 s, with it 22.4 (4,000 fights, seed 3) (the investigation of 2026-11-21, accepted by the audit session)"
+   }
+  },
+  "Discipline": {
+   "jump": {
+    "30-40": "ordinary scaling: the mob's health grows +73%, your damage per second +52%; fight time 26.8 -> 30.6 s (+14%), downtime 16.2 -> 19.2 s (idle 38% -> 39%); mob health +73% against damage per second +52%; points Divine Fury 0->1, Holy Specialization 0->5, Improved Renew 0->1, Twilight Focus 0->3; ranks Devouring Plague rank 2->3, Mind Blast rank 4->6, Penance rank 1->2, Power Word: Shield rank 5->6, Shadow Word: Pain rank 4->5, Smite rank 5->6 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "10-19": "ordinary scaling over nine levels; points: Mental Strength 0->5, Power in Light 0->1, Twin Disciplines 1->4; ranks: Mind Blast rank 1->2, Power Word: Shield rank 1->3, Shadow Word: Pain rank 2->3, Smite rank 2->3; gear main stats 24->56; mob health 187->438 (+134%), swing 13->30, armor 450->789 (the printed cause, 2026-11-22; cleared by the audit session)"
+   }
+  },
+  "Holy": {
+   "jump": {
+    "10-19": "ordinary scaling: the mob's health grows +140%, your damage per second +93%; fight time 19.9 -> 24.7 s (+25%), downtime 10.2 -> 18.4 s (idle 34% -> 43%); mob health +140% against damage per second +93%; points Mental Strength 0->5, Twin Disciplines 1->5; ranks Mind Blast rank 1->2, Power Word: Shield rank 1->3, Shadow Word: Pain rank 2->3, Smite rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "20-29": "ordinary scaling: the mob's health grows +104%, your damage per second +71%; fight time 26.7 -> 31.8 s (+19%), downtime 18.0 -> 19.1 s (idle 40% -> 38%); mob health +104% against damage per second +71%; points Improved Power Word: Shield 0->3, Inner Focus 0->1, Meditation 1->3, Silent Resolve 0->3; ranks Holy Fire rank 1->2, Mind Blast rank 2->4, Power Word: Shield rank 3->4, Shadow Word: Pain rank 3->4, Smite rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-40": "ordinary scaling: the mob's health grows +73%, your damage per second +43%; fight time 29.9 -> 36.2 s (+21%), downtime 23.7 -> 26.8 s (idle 44% -> 43%); mob health +73% against damage per second +43%; points Holy Specialization 0->5, Improved Renew 0->1, Soul Warding 0->1, Twilight Focus 0->3; ranks Holy Fire rank 3->4, Mind Blast rank 4->6, Power Word: Shield rank 5->6, Shadow Word: Pain rank 4->5, Smite rank 5->6 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Hybrid Discipline/Holy": {
+   "jump": {
+    "10-19": "ordinary scaling: the mob's health grows +140%, your damage per second +101%; fight time 19.8 -> 23.7 s (+20%), downtime 10.3 -> 17.2 s (idle 34% -> 42%); mob health +140% against damage per second +101%; points Holy Precision 0->1, Power in Light 0->5, Twin Disciplines 0->2, Wand Specialization 1->2; ranks Mind Blast rank 1->2, Power Word: Shield rank 1->3, Shadow Word: Pain rank 2->3, Smite rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-40": "ordinary scaling: the mob's health grows +73%, your damage per second +50%; fight time 29.1 -> 33.6 s (+15%), downtime 16.9 -> 22.6 s (idle 37% -> 40%); mob health +73% against damage per second +50%; points Divine Fury 0->1, Holy Specialization 0->5, Improved Mind Blast 0->1, Improved Power Word: Shield 0->1, Spirit Tap 4->5, Twilight Focus 0->1; ranks Holy Fire rank 3->4, Mind Blast rank 4->6, Power Word: Shield rank 5->6, Shadow Word: Pain rank 4->5, Smite rank 5->6 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "19-20": "a new spell's cost: **Holy Fire** (20, 85 mana and a 3.5-second cast) joins the list while the mob grows +6%; points: Mental Agility 0->1; ranks: Holy Fire rank 0->1; gear main stats 56->60; mob health 438->466 (+6%), swing 30->32, armor 789->817 (the printed cause, 2026-11-22; cleared by the audit session)"
+   }
+  }
+ },
+ "rogue": {
+  "Combat": {
+   "jump": {
+    "10-14": "ordinary scaling: the mob's health grows +61%, your damage per second +41%; fight time 15.4 -> 17.6 s (+14%), downtime 0.0 -> 0.5 s (idle 0% -> 3%); mob health +61% against damage per second +41%; pressed now: Garrote; points Coup de Grace 1->3, Efficient Strikes 0->1, Lightning Reflexes 0->1; ranks Garrote rank 0->1, Sinister Strike rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-39": "ordinary scaling: the mob's health grows +55%, your damage per second +41%; fight time 17.9 -> 19.7 s (+10%), downtime 0.6 -> 1.4 s (idle 3% -> 6%); mob health +55% against damage per second +41%; pressed now: Hack and Slash; points Dual Wield Specialization 0->2, Flash of Steel 0->5, Hack and Slash 0->2; ranks Eviscerate rank 4->5, Garrote rank 3->4, Sinister Strike rank 5->6 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Assassination": {
+   "jump": {
+    "30-39": "ordinary scaling: the mob's health grows +55%, your damage per second +40%; fight time 19.9 -> 22.1 s (+11%), downtime 1.5 -> 2.1 s (idle 7% -> 9%); mob health +55% against damage per second +40%; points Improved Poisons 4->5, Relentless Strikes 0->5, Seal Fate 0->3; ranks Eviscerate rank 4->5, Garrote rank 3->4, Sinister Strike rank 5->6 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Subtlety": {
+   "jump": {
+    "20-22": "ordinary scaling: the mob's health grows +25%, your damage per second +19%; fight time 17.0 -> 17.9 s (+5%), downtime 0.6 -> 0.9 s (idle 4% -> 5%); mob health +25% against damage per second +19%; pressed now: Garrote; points Serrated Blades 1->3; ranks Garrote rank 1->2, Sinister Strike rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Hybrid Combat/Subtlety": {
+   "jump": {
+    "20-23": "ordinary scaling: the mob's health grows +32%, your damage per second +21%; fight time 17.1 -> 18.6 s (+9%), downtime 0.6 -> 1.1 s (idle 4% -> 6%); mob health +32% against damage per second +21%; pressed now: Garrote; points Initiative 0->1, Serrated Blades 1->3; ranks Garrote rank 1->2, Sinister Strike rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "32-39": "ordinary scaling: the mob's health grows +48%, your damage per second +24%; fight time 17.6 -> 21.0 s (+19%), downtime 0.7 -> 1.6 s (idle 4% -> 7%); mob health +48% against damage per second +24%; pressed now: Garrote; points Coup de Grace 0->3, Lightning Reflexes 0->2, Precision 0->2; ranks Ambush rank 2->3, Garrote rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  }
+ },
+ "shaman": {
+  "Enhancement": {
+   "jump": {
+    "25-30": "ordinary scaling: the mob's health grows +51%, your damage per second +36%; fight time 17.5 -> 19.4 s (+11%), downtime 5.2 -> 7.0 s (idle 23% -> 27%); mob health +51% against damage per second +36%; pressed now: Windfury; points Tidal Focus 0->5; ranks Searing Totem rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "10-19": "ordinary scaling over nine levels; points: Improved Lightning Shield 0->2, Mental Dexterity 0->3, Thundering Strikes 1->5; ranks: Earth Shock rank 2->3, Lightning Shield rank 1->2; gear main stats 26->62; mob health 187->438 (+134%), swing 13->30, armor 450->789 (the printed cause, 2026-11-22; cleared by the audit session)"
+   }
+  },
+  "Elemental": {
+   "jump": {
+    "20-27": "ordinary scaling: the mob's health grows +56%, your damage per second +47%; fight time 19.5 -> 20.6 s (+6%), downtime 8.9 -> 11.9 s (idle 32% -> 37%); mob health +56% against damage per second +47%; points Improved Lightning Shield 0->2, Mental Dexterity 0->3, Thundering Strikes 3->5; ranks Earth Shock rank 3->4, Lightning Bolt rank 4->5, Lightning Shield rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "10-19": "ordinary scaling over nine levels; points: Mindfulness 0->3, Thundering Strikes 0->2, Tidal Focus 1->5; ranks: Earth Shock rank 2->3, Flame Shock rank 1->2, Lightning Bolt rank 2->3, Lightning Shield rank 1->2; gear main stats 26->62; mob health 187->438 (+134%), swing 13->30, armor 450->789 (the printed cause, 2026-11-22; cleared by the audit session)"
+   },
+   "lead": {
+    "Frost Shock": "a lead under 1% the audit session put on the optimality pass's list (2026-11-22)"
+   }
+  },
+  "Restoration": {
+   "jump": {
+    "20-27": "ordinary scaling: the mob's health grows +56%, your damage per second +41%; fight time 19.2 -> 21.1 s (+10%), downtime 6.2 -> 9.3 s (idle 24% -> 30%); mob health +56% against damage per second +41%; points Thundering Strikes 3->5, Totemic Focus 0->5; ranks Earth Shock rank 3->4, Lightning Shield rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "10-19": "ordinary scaling over nine levels; points: Mindfulness 0->3, Thundering Strikes 0->2, Tidal Focus 1->5; ranks: Earth Shock rank 2->3, Lightning Shield rank 1->2; gear main stats 26->62; mob health 187->438 (+134%), swing 13->30, armor 450->789 (the printed cause, 2026-11-22; cleared by the audit session)"
+   }
+  }
+ },
+ "warlock": {
+  "Demonology": {
+   "jump": {
+    "10-20": "ordinary scaling: the mob's health grows +149%, your damage per second +106%; fight time 20.7 -> 25.1 s (+21%), downtime 0.5 -> 0.8 s (idle 2% -> 3%); mob health +149% against damage per second +106%; points Demonic Energies 0->2, Fel Vitality 0->2, Improved Voidwalker 0->2, Unholy Power 1->5; ranks Bane of Agony rank 1->2, Corruption rank 1->2, Immolate rank 2->3, Shadow Bolt rank 2->4, Torment rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "20-27": "ordinary scaling: the mob's health grows +56%, your damage per second +33%; fight time 25.1 -> 29.2 s (+17%), downtime 0.8 -> 1.0 s (idle 3% -> 3%); mob health +56% against damage per second +33%; pressed now: Shadow Bolt; points Demonic Aegis 0->2, Demonic Embrace 0->2, Demonic Sacrifice 0->1, Fel Vitality 2->3, Improved Voidwalker 2->3; ranks Corruption rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-40": "ordinary scaling: the mob's health grows +73%, your damage per second +54%; fight time 29.7 -> 33.5 s (+13%), downtime 1.4 -> 1.4 s (idle 4% -> 4%); mob health +73% against damage per second +54%; no longer pressed: Immolate; points Demonic Brand 2->3, Demonic Knowledge 0->3, Improved Corruption 0->5, Master Demonologist 0->1; ranks Bane of Agony rank 3->4, Corruption rank 3->4, Searing Pain rank 2->3, Torment rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   },
+   "lead": {
+    "Death Coil": "a lead under 1% the audit session put on the optimality pass's list (2026-11-22)"
+   }
+  },
+  "Affliction": {
+   "jump": {
+    "10-19": "ordinary scaling: the mob's health grows +140%, your damage per second +99%; fight time 20.7 -> 25.0 s (+20%), downtime 0.5 -> 1.3 s (idle 2% -> 5%); mob health +140% against damage per second +99%; points Improved Corruption 0->4, Improved Life Tap 1->2, Suppression 0->4; ranks Bane of Agony rank 1->2, Corruption rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "20-30": "ordinary scaling: the mob's health grows +131%, your damage per second +92%; fight time 24.2 -> 29.3 s (+21%), downtime 1.4 -> 1.9 s (idle 5% -> 6%); mob health +131% against damage per second +92%; points Improved Bane of Agony 0->2, Improved Corruption 4->5, Malevolence 0->4, Pandemic 0->3; ranks Bane of Agony rank 2->3, Corruption rank 2->3, Immolate rank 3->4, Torment rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-33": "ordinary scaling: the mob's health grows +13%, your damage per second +5%; fight time 29.3 -> 31.5 s (+8%), downtime 1.9 -> 2.4 s (idle 6% -> 7%); mob health +13% against damage per second +5%; points Soul Siphon 0->2, Suppression 4->5; ranks none new (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Destruction": {
+   "jump": {
+    "10-20": "ordinary scaling: the mob's health grows +149%, your damage per second +107%; fight time 21.3 -> 25.7 s (+21%), downtime 4.8 -> 6.7 s (idle 18% -> 21%); mob health +149% against damage per second +107%; pressed now: Life Tap; points Bane 1->5, Cataclysm 0->3, Destructive Reach 0->2, Ruin 0->1; ranks Immolate rank 2->3, Life Tap rank 1->2, Shadow Bolt rank 2->4, Torment rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "20-30": "ordinary scaling: the mob's health grows +131%, your damage per second +75%; fight time 25.7 -> 33.9 s (+32%), downtime 6.7 -> 5.6 s (idle 21% -> 14%); mob health +131% against damage per second +75%; points Agonizing Flames 0->3, Intensity 0->3, Ruin 1->5; ranks Immolate rank 3->4, Life Tap rank 2->3, Shadow Bolt rank 4->5, Torment rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "20-28": "ordinary scaling over eight levels; points: Agonizing Flames 0->3, Intensity 0->1, Ruin 1->5; ranks: Create Healthstone rank 1->2, Shadow Bolt rank 4->5; gear main stats 71->121; mob health 466->876 (+88%), swing 32->45, armor 817->1130 (the printed cause, 2026-11-22; cleared by the audit session)",
+    "30-39": "ordinary scaling over nine levels; points: Bane of Havoc 0->1, Fire and Brimstone 0->3, Shadow and Flame 0->5; ranks: Conflagrate rank 1->2, Create Healthstone rank 2->3, Shadow Bolt rank 5->6, Shadowburn rank 2->3; gear main stats 133->150; mob health 1002->1737 (+73%), swing 48->65, armor 1200->1961 (the printed cause, 2026-11-22; cleared by the audit session)"
+   },
+   "lead": {
+    "Soul Fire": "the forced run cast it without its Soul Shard; the lab keeps no shards (the audit session's ruling of 2026-11-22: a note, not a fail; shards are on the optimality pass's list)"
+   }
+  },
+  "Hybrid Affliction/Demonology": {
+   "jump": {
+    "10-19": "ordinary scaling: the mob's health grows +140%, your damage per second +99%; fight time 20.7 -> 25.1 s (+21%), downtime 0.5 -> 1.3 s (idle 2% -> 5%); mob health +140% against damage per second +99%; pressed now: Shadow Bolt; points Improved Corruption 0->4, Improved Life Tap 1->2, Suppression 0->4; ranks Bane of Agony rank 1->2, Corruption rank 1->2, Shadow Bolt rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "20-29": "ordinary scaling: the mob's health grows +104%, your damage per second +69%; fight time 24.3 -> 29.4 s (+21%), downtime 1.5 -> 2.0 s (idle 6% -> 6%); mob health +104% against damage per second +69%; pressed now: Shadow Bolt; points Improved Bane of Agony 0->2, Improved Corruption 4->5, Malevolence 0->4, Pandemic 0->2; ranks Bane of Agony rank 2->3, Corruption rank 2->3, Shadow Bolt rank 4->5 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-40": "ordinary scaling: the mob's health grows +73%, your damage per second +51%; fight time 28.9 -> 33.2 s (+15%), downtime 2.8 -> 3.7 s (idle 9% -> 10%); mob health +73% against damage per second +51%; points Malevolence 4->5, Pandemic 2->3, Shadow Mastery 0->2, Soul Siphon 0->1, Suppression 4->5, Unholy Power 0->4; ranks Bane of Agony rank 3->4, Corruption rank 3->4, Immolate rank 4->5, Siphon Life rank 1->2, Torment rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   },
+   "lead": {
+    "Death Coil": "a lead under 1% the audit session put on the optimality pass's list (2026-11-22)"
+   }
+  }
+ },
+ "warrior": {
+  "Arms": {
+   "jump": {
+    "12-19": "ordinary scaling: the mob's health grows +73%, your damage per second +50%; fight time 19.6 -> 22.6 s (+15%), downtime 0.0 -> 0.9 s (idle 0% -> 4%); mob health +73% against damage per second +50%; points Deflection 0->2, Improved Charge 0->2, Improved Overpower 0->2, Improved Tactical Mastery 0->1; ranks Heroic Strike rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "25-30": "ordinary scaling: the mob's health grows +51%, your damage per second +37%; fight time 20.2 -> 22.3 s (+10%), downtime 0.2 -> 0.6 s (idle 1% -> 3%); mob health +51% against damage per second +37%; points Anger Management 0->1, Bloodthrill 0->1, Two-Handed Weapon Specialization 0->3; ranks Charge rank 1->2, Overpower rank 1->2, Rend rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "35-40": "ordinary scaling: the mob's health grows +88%, your damage per second +66%; fight time 20.0 -> 22.7 s (+13%), downtime 0.3 -> 0.6 s (idle 1% -> 3%); mob health +88% against damage per second +66%; pressed now: Mortal Strike; no longer pressed: Heroic Strike, Spearing Strike; points Impale 0->1, Mortal Strike 0->1, Sweeping Strikes 0->1, Weaponmaster 3->5; ranks Execute rank 2->3, Mortal Strike rank 0->1, Rend rank 4->5, Slam rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   },
+   "lead": {
+    "Hamstring": "a lead under 1% the audit session put on the optimality pass's list (2026-11-22)"
+   }
+  },
+  "Fury": {
+   "jump": {
+    "12-19": "ordinary scaling: the mob's health grows +73%, your damage per second +55%; fight time 18.6 -> 20.7 s (+11%), downtime 0.0 -> 0.7 s (idle 0% -> 3%); mob health +73% against damage per second +55%; points Cruelty 3->5, Unbridled Wrath 0->5; ranks Heroic Strike rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "24-29": "ordinary scaling: the mob's health grows +48%, your damage per second +35%; fight time 20.0 -> 21.9 s (+10%), downtime 0.1 -> 0.7 s (idle 1% -> 3%); mob health +48% against damage per second +35%; points Dual Wield Specialization 0->4, Furious Precision 0->1; ranks Charge rank 1->2, Overpower rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "30-39": "ordinary scaling: the mob's health grows +55%, your damage per second +33%; fight time 21.7 -> 25.2 s (+17%), downtime 0.7 -> 0.9 s (idle 3% -> 3%); mob health +55% against damage per second +33%; points Blood Craze 0->3, Dual Wield Specialization 4->5, Flurry 0->3, Furious Precision 1->3; ranks Battle Shout rank 3->4, Execute rank 1->2, Heroic Strike rank 4->5 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  },
+  "Protection": {
+   "jump": {
+    "10-12": "ordinary scaling: the mob's health grows +39%, your damage per second +24%; fight time 22.4 -> 25.0 s (+12%), downtime 0.0 -> 0.1 s (idle 0% -> 0%); mob health +39% against damage per second +24%; points Shield Specialization 1->3; ranks Battle Shout rank 1->2, Shield Bash rank 0->1 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "20-30": "ordinary scaling: the mob's health grows +131%, your damage per second +94%; fight time 23.9 -> 28.5 s (+19%), downtime 0.0 -> 0.0 s (idle 0% -> 0%); mob health +131% against damage per second +94%; points Defiance 0->3, Focused Rage 0->1, Improved Revenge 1->3, Improved Sunder Armor 0->2, Master of Defense 0->2; ranks Battle Shout rank 2->3, Charge rank 1->2, Heroic Strike rank 3->4, Rend rank 3->4, Revenge rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "33-39": "ordinary scaling: the mob's health grows +37%, your damage per second +20%; fight time 29.9 -> 34.3 s (+15%), downtime 0.0 -> 0.1 s (idle 0% -> 0%); mob health +37% against damage per second +20%; points Bastion 0->5, Improved Sunder Armor 2->3; ranks Revenge rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "39-40": "a new tool: Shield Slam, Heroic Strike rank 5->6, Rend rank 4->5, Shield Slam rank 0->1, Shield Slam 0->1; fight time 34.3 -> 24.7 s (-28%), downtime 0.1 -> 0.0 s (idle 0% -> 0%); mob health +11% against damage per second +54%; pressed now: Shield Slam; points Shield Slam 0->1; ranks Heroic Strike rank 5->6, Rend rank 4->5, Shield Slam rank 0->1 (drafted from the printed cause, 2026-11-21; read by the audit session)",
+    "40-50": "ordinary scaling: the mob's health grows +46%, your damage per second +30%; fight time 24.7 -> 27.7 s (+12%), downtime 0.0 -> 0.0 s (idle 0% -> 0%); mob health +46% against damage per second +30%; points Deflection 0->5, Improved Heroic Strike 0->1, Improved Overpower 0->1, Improved Rend 0->3; ranks Battle Shout rank 4->5, Charge rank 2->3, Heroic Strike rank 6->7, Rend rank 5->6, Revenge rank 3->4, Shield Slam rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session)"
+   }
+  }
+ },
+ "_note": "fightlab/play_check.py's Lh notes: class -> spec -> 'jump' -> 'a-c' (two measured stage levels): why the time per kill moves there. A jump with a note passes. 2026-11-21: the audit session's rulings on the first run."
+}

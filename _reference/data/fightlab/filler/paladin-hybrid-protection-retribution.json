@@ -3,20 +3,14 @@
  "spec": "Hybrid Protection/Retribution",
  "build": "prot-ret-open-leveling",
  "rotation": "ret-dps",
- "date": "2026-11-15",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
-   "levels": "10-11",
-   "tree": "Retribution",
-   "talent": "Benediction",
-   "points": 2
-  },
-  {
-   "levels": "12-14",
+   "levels": "10-14",
    "tree": "Retribution",
    "talent": "Deflection",
-   "points": 3
+   "points": 5
   },
   {
    "levels": "15-17",
@@ -43,16 +37,16 @@
    "points": 1
   },
   {
-   "levels": "22",
+   "levels": "22-23",
    "tree": "Retribution",
    "talent": "Improved Judgement",
-   "points": 1
+   "points": 2
   },
   {
-   "levels": "23-24",
+   "levels": "24",
    "tree": "Retribution",
    "talent": "Vindication",
-   "points": 2
+   "points": 1
   },
   {
    "levels": "25",
@@ -91,10 +85,16 @@
    "points": 3
   },
   {
-   "levels": "41-45",
+   "levels": "41",
    "tree": "Protection",
    "talent": "Divine Intellect",
-   "points": 5
+   "points": 1
+  },
+  {
+   "levels": "42-45",
+   "tree": "Protection",
+   "talent": "Redoubt",
+   "points": 4
   },
   {
    "levels": "46-48",
@@ -105,7 +105,7 @@
   {
    "levels": "49-50",
    "tree": "Protection",
-   "talent": "Redoubt",
+   "talent": "Sacred Duty",
    "points": 2
   },
   {
@@ -121,10 +121,22 @@
    "points": 1
   },
   {
-   "levels": "53-55",
+   "levels": "53",
+   "tree": "Protection",
+   "talent": "Redoubt",
+   "points": 1
+  },
+  {
+   "levels": "54",
+   "tree": "Protection",
+   "talent": "Shield Specialization",
+   "points": 1
+  },
+  {
+   "levels": "55",
    "tree": "Protection",
    "talent": "Toughness",
-   "points": 3
+   "points": 1
   },
   {
    "levels": "56",
@@ -139,82 +151,349 @@
    "points": 2
   },
   {
-   "levels": "59",
-   "tree": "Retribution",
-   "talent": "Deflection",
-   "points": 1
-  },
-  {
-   "levels": "60",
+   "levels": "59-60",
    "tree": "Holy",
    "talent": "Improved Seals",
-   "points": 1
+   "points": 2
   }
  ],
  "steps": [
   {
-   "weighted": 25.289,
+   "weighted": 27.2,
    "values_at_60": {
-    "Deflection": 0.079,
-    "Improved Seals": -0.297,
-    "Reverence": -0.05,
-    "Swift Judgement": -1.302,
-    "Vengeance": -0.165
+    "Improved Seals": -0.421,
+    "Reverence": -0.312,
+    "Swift Judgement": -1.464,
+    "Vengeance": -0.511
    },
-   "zero": [
-    "Deflection",
-    "Reverence"
+   "zero": [],
+   "dead_held": [
+    "Sacred Duty"
    ]
-  },
-  {
-   "weighted": 25.218,
-   "values_at_60": {
-    "Improved Seals": -0.344,
-    "Reverence": -0.385,
-    "Swift Judgement": -1.617,
-    "Vengeance": -0.665
-   },
-   "zero": []
   }
  ],
  "moves": [
   {
-   "from": "Deflection",
-   "to": "Improved Seals",
-   "level": 59,
-   "seed3": -0.0028,
-   "seed4": -0.0021,
-   "why": "tie-break"
+   "from": "Shield Specialization",
+   "to": "Toughness",
+   "level": 54,
+   "seed3": -0.0007,
+   "seed4": -0.0018,
+   "why": "gate"
   },
   {
    "from": "Redoubt",
-   "to": "Sacred Duty",
-   "level": 49,
-   "seed3": 0.0,
-   "seed4": 0.0,
-   "why": "gate swap (by hand, 2026-11-15): Redoubt needs a shield"
-  },
-  {
-   "from": "Redoubt",
-   "to": "Sacred Duty",
-   "level": 50,
-   "seed3": 0.0,
-   "seed4": 0.0,
-   "why": "gate swap (by hand, 2026-11-15): Redoubt needs a shield"
+   "to": "Toughness",
+   "level": 53,
+   "seed3": -0.0001,
+   "seed4": -0.0,
+   "why": "gate that did nothing, no loss"
   }
  ],
+ "kept_signature": [],
+ "gates_checked": {
+  "Conviction": {
+   "level": 21,
+   "kind": "tier point for Vengeance (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Vindication",
+     "seed3": 0.0159
+    },
+    {
+     "to": "Unyielding Faith",
+     "seed3": 0.0233
+    },
+    {
+     "to": "Pursuit of Justice",
+     "seed3": 0.0233
+    },
+    {
+     "to": "Benediction",
+     "seed3": 0.0241
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Deflection": {
+   "level": 14,
+   "kind": "tier point for Improved Judgement (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Benediction",
+     "seed3": 0.0021
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Divine Intellect": {
+   "level": 41,
+   "kind": "tier point for Precision (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Redoubt",
+     "seed3": -0.0005
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Divine Strength": {
+   "level": 37,
+   "kind": "tier point for Reverence (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Spiritual Focus",
+     "seed3": 0.0046
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Hammer of Justice": {
+   "kind": "tier point for Swift Judgement (tier 4)",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: utility (stun), a value the fight lab cannot see"
+  },
+  "Improved Judgement": {
+   "level": 23,
+   "kind": "tier point for Vengeance (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Vindication",
+     "seed3": 0.0023
+    },
+    {
+     "to": "Unyielding Faith",
+     "seed3": 0.0038
+    },
+    {
+     "to": "Pursuit of Justice",
+     "seed3": 0.0038
+    },
+    {
+     "to": "Benediction",
+     "seed3": 0.005
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Precision": {
+   "level": 48,
+   "kind": "tier point for Templar's Bulwark (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Divine Intellect",
+     "seed3": 0.0032
+    },
+    {
+     "to": "Redoubt",
+     "seed3": 0.0046
+    },
+    {
+     "to": "Guardian's Favor",
+     "seed3": 0.0046
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Redoubt": {
+   "level": 45,
+   "kind": "tier point for Precision (tier 2)",
+   "does_nothing": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 50, 60",
+   "homes": [
+    {
+     "to": "Divine Intellect",
+     "seed3": 0.0003
+    }
+   ],
+   "verdict": "no better home"
+  },
+  "Sacred Arbiter": {
+   "level": 25,
+   "kind": "tier point for Vengeance (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Vindication",
+     "seed3": 0.0135
+    },
+    {
+     "to": "Eye for an Eye",
+     "seed3": 0.0189
+    },
+    {
+     "to": "Benediction",
+     "seed3": 0.0199
+    },
+    {
+     "to": "Unyielding Faith",
+     "seed3": 0.0201
+    },
+    {
+     "to": "Pursuit of Justice",
+     "seed3": 0.0201
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Sacred Duty": {
+   "level": 50,
+   "kind": "tier point for Templar's Bulwark (tier 3)",
+   "does_nothing": "improves only Divine Protection, Divine Shield, Templar's Bulwark, which the build never casts (its removal changes nothing at 50, 60)",
+   "homes": [
+    {
+     "to": "Divine Intellect",
+     "seed3": -0.0008,
+     "seed4": 0.0012
+    },
+    {
+     "to": "Redoubt",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Guardian's Favor",
+     "seed3": 0.0,
+     "same_times": true
+    }
+   ],
+   "verdict": "no better home"
+  },
+  "Sanctified Judgement": {
+   "level": 17,
+   "kind": "tier point for Vengeance (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Benediction",
+     "seed3": 0.0416
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Seal of Command": {
+   "level": 20,
+   "kind": "prerequisite of Vengeance",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Templar's Bulwark": {
+   "level": 51,
+   "kind": "prerequisite of Swift Judgement",
+   "does_nothing": "a talent ability the build never presses (its removal changes nothing at 60)",
+   "homes": [],
+   "verdict": "no legal home"
+  },
+  "Toughness": {
+   "level": 55,
+   "kind": "tier point for Swift Judgement (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Divine Intellect",
+     "seed3": -0.0017
+    },
+    {
+     "to": "Redoubt",
+     "seed3": -0.0005
+    },
+    {
+     "to": "Guardian's Favor",
+     "seed3": -0.0005
+    },
+    {
+     "to": "Improved Hammer of Justice",
+     "seed3": -0.0005
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Two-Handed Weapon Specialization": {
+   "level": 28,
+   "kind": "tier point for Vengeance (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Vindication",
+     "seed3": 0.0076
+    },
+    {
+     "to": "Unyielding Faith",
+     "seed3": 0.0118
+    },
+    {
+     "to": "Pursuit of Justice",
+     "seed3": 0.0118
+    },
+    {
+     "to": "Eye for an Eye",
+     "seed3": 0.0121
+    },
+    {
+     "to": "Benediction",
+     "seed3": 0.0139
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Vindication": {
+   "level": 29,
+   "kind": "tier point for Vengeance (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Eye for an Eye",
+     "seed3": 0.0054
+    },
+    {
+     "to": "Unyielding Faith",
+     "seed3": 0.0054
+    },
+    {
+     "to": "Pursuit of Justice",
+     "seed3": 0.0054
+    },
+    {
+     "to": "Benediction",
+     "seed3": 0.0056
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  }
+ },
+ "no_better_home": {
+  "Redoubt": {
+   "kind": "tier point for Precision (tier 2)",
+   "exact": true,
+   "why": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 50, 60",
+   "homes": 1
+  },
+  "Sacred Duty": {
+   "kind": "tier point for Templar's Bulwark (tier 3)",
+   "exact": true,
+   "why": "improves only Divine Protection, Divine Shield, Templar's Bulwark, which the build never casts (its removal changes nothing at 50, 60)",
+   "homes": 3
+  },
+  "Templar's Bulwark": {
+   "kind": "prerequisite of Swift Judgement",
+   "exact": true,
+   "why": "a talent ability the build never presses (its removal changes nothing at 60)",
+   "homes": 0
+  }
+ },
  "final_order": [
   {
-   "levels": "10-11",
-   "tree": "Retribution",
-   "talent": "Benediction",
-   "points": 2
-  },
-  {
-   "levels": "12-14",
+   "levels": "10-14",
    "tree": "Retribution",
    "talent": "Deflection",
-   "points": 3
+   "points": 5
   },
   {
    "levels": "15-17",
@@ -241,16 +520,16 @@
    "points": 1
   },
   {
-   "levels": "22",
+   "levels": "22-23",
    "tree": "Retribution",
    "talent": "Improved Judgement",
-   "points": 1
+   "points": 2
   },
   {
-   "levels": "23-24",
+   "levels": "24",
    "tree": "Retribution",
    "talent": "Vindication",
-   "points": 2
+   "points": 1
   },
   {
    "levels": "25",
@@ -289,10 +568,16 @@
    "points": 3
   },
   {
-   "levels": "41-45",
+   "levels": "41",
    "tree": "Protection",
    "talent": "Divine Intellect",
-   "points": 5
+   "points": 1
+  },
+  {
+   "levels": "42-45",
+   "tree": "Protection",
+   "talent": "Redoubt",
+   "points": 4
   },
   {
    "levels": "46-48",
@@ -303,7 +588,7 @@
   {
    "levels": "49-50",
    "tree": "Protection",
-   "talent": "Redoubt",
+   "talent": "Sacred Duty",
    "points": 2
   },
   {
@@ -343,6 +628,16 @@
    "points": 2
   }
  ],
+ "reruns": [
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-22",
+   "moves": 0
+  }
+ ],
  "written": {
   "allocation": {
    "Holy": [
@@ -362,11 +657,19 @@
    "Protection": [
     [
      "Divine Intellect",
-     5
+     1
+    ],
+    [
+     "Redoubt",
+     4
     ],
     [
      "Precision",
      3
+    ],
+    [
+     "Sacred Duty",
+     2
     ],
     [
      "Templar's Bulwark",
@@ -383,24 +686,16 @@
     [
      "Swift Judgement",
      1
-    ],
-    [
-     "Sacred Duty",
-     2
     ]
    ],
    "Retribution": [
     [
      "Deflection",
-     3
-    ],
-    [
-     "Benediction",
-     2
+     5
     ],
     [
      "Improved Judgement",
-     1
+     2
     ],
     [
      "Conviction",
@@ -412,7 +707,7 @@
     ],
     [
      "Vindication",
-     3
+     2
     ],
     [
      "Seal of Command",
@@ -434,16 +729,10 @@
   },
   "order": [
    {
-    "levels": "10-11",
-    "tree": "Retribution",
-    "talent": "Benediction",
-    "points": 2
-   },
-   {
-    "levels": "12-14",
+    "levels": "10-14",
     "tree": "Retribution",
     "talent": "Deflection",
-    "points": 3
+    "points": 5
    },
    {
     "levels": "15-17",
@@ -470,16 +759,16 @@
     "points": 1
    },
    {
-    "levels": "22",
+    "levels": "22-23",
     "tree": "Retribution",
     "talent": "Improved Judgement",
-    "points": 1
+    "points": 2
    },
    {
-    "levels": "23-24",
+    "levels": "24",
     "tree": "Retribution",
     "talent": "Vindication",
-    "points": 2
+    "points": 1
    },
    {
     "levels": "25",
@@ -518,10 +807,16 @@
     "points": 3
    },
    {
-    "levels": "41-45",
+    "levels": "41",
     "tree": "Protection",
     "talent": "Divine Intellect",
-    "points": 5
+    "points": 1
+   },
+   {
+    "levels": "42-45",
+    "tree": "Protection",
+    "talent": "Redoubt",
+    "points": 4
    },
    {
     "levels": "46-48",
@@ -572,6 +867,6 @@
     "points": 2
    }
   ],
-  "note": "2026-11-15: by hand, Redoubt to Sacred Duty at 49, 50: Redoubt only adds block, which needs a shield, and this build fights with a two-hander; Sacred Duty holds the row to Templar's Bulwark open as well and takes 30 seconds a point off Divine Shield, Divine Protection and Templar's Bulwark (the fight lab measures the swap at 0.00%). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Deflection to Improved Seals at 59 (tie-break: -0.3% seed 3, -0.2% seed 4, level-weighted time per kill)."
+  "note": "2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Redoubt to Toughness at 53 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Shield Specialization to Toughness at 54 (gate: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill)."
  }
 }

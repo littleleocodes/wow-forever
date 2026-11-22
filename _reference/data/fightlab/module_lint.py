@@ -30,6 +30,7 @@ import sys
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 sys.path[:0] = [str(HERE), str(ROOT / "_reference/data"), str(ROOT / "_reference/data/scorer")]
+import tables as T  # noqa: E402  (the fight lab's tables: the live client's cost table, CLIENT_COSTS)
 CLASSES = ["druid", "hunter", "mage", "paladin", "priest", "rogue", "shaman", "warlock", "warrior"]
 PAGE = ROOT / "_reference" / "fightlab-lint.md"
 # double-quoted names may hold an apostrophe (Nature's Grace, Winter's Chill)
@@ -84,12 +85,54 @@ def field_checks(cls, mod, filled):
                 miss.append("a weapon-damage percentage")
             r = raw.get((n, getattr(s, "rank", 0) or 0))
             mc = COST.match((r or {}).get("cost") or "")
-            if mc and getattr(s, "resource", "mana") == "mana":
+            # a cost the live client's table sets (tables.CLIENT_COSTS, client_costs.json: "11% of base mana" for the hunter's Arcane
+            # Shot and Summon Hawk) is no parse fault: the module prices it from the table (2026-11-22, the audit session)
+            from_client = bool(getattr(T, "CLIENT_COSTS", False)) and int((r or {}).get("id") or 0) in (getattr(T, "CLIENT_COST_TEXT", {}) or {})
+            if mc and getattr(s, "resource", "mana") == "mana" and not from_client:
                 want = float(mc.group(1).replace(",", ""))
                 if want >= 10 and getattr(s, "cost", 0) < 0.5 * want:
                     miss.append(f"its mana cost ({want:.0f}, parsed {getattr(s, 'cost', 0):.0f})")
             if miss:
                 rows.append(f"**{n}** rank {getattr(s, 'rank', '?')}: the tooltip names {', '.join(miss)} the parsed spell lacks: \"{text[:100]}\"")
+    return rows
+
+
+# the numbers a strike's tooltip carries (2026-11-21)
+S_RANGE = re.compile(r"(\d[\d,]*) to (\d[\d,]*)\b(?! sec| yd| yards| min| seconds| minutes)", re.I)
+S_PLUS = re.compile(r"(?:damage|weapon damage) plus (\d[\d,]*)|\bplus (\d[\d,]*)\b(?! ?%)", re.I)
+S_AP = re.compile(r"(\d+(?:\.\d+)?)% of (?:your )?(?:the caster's )?(?:melee |ranged )?attack power", re.I)
+S_DOT = re.compile(r"\b(?:bleed|bleeds|bleeding|burn|burns|poison)\b[^.]*?\b(\d[\d,]*) (?:\w+ )?damage over (\d+) sec"
+                   r"|\b(\d[\d,]*) (?:\w+ )?damage over (\d+) sec", re.I)
+
+
+def strike_checks(cls, mod, filled):
+    """Rows for a melee or ranged ability's tooltip number the parsed spell lacks: a flat range or a "plus N" read as no flat damage, a
+    weapon percentage read as none, an attack-power share read as no coefficient, a damage-over-time total read as no dot."""
+    book = getattr(mod, "BOOK", None)
+    rows = []
+    if not isinstance(book, dict):
+        return rows
+    for n, ranks in sorted(book.items()):
+        if n in filled:
+            continue
+        for s in ranks:
+            if getattr(s, "kind", "spell") not in ("melee", "ranged"):
+                continue
+            text = getattr(s, "text", "") or ""
+            miss = []
+            flat = S_RANGE.search(text) or S_PLUS.search(text)
+            if flat and not (s.dmg_max or getattr(s, "dmg_min", 0)) and not re.search(r"\b(?:heal|restore|absorb)", text[max(0, flat.start() - 40):flat.start()], re.I):
+                miss.append(f"a flat damage number (\"{flat.group(0)}\")")
+            if WEAPON.search(text) and not getattr(s, "weapon_pct", 0):
+                miss.append("a weapon-damage percentage")
+            ap = S_AP.search(text)
+            if ap and not (getattr(s, "coef", 0) or getattr(s, "dot_coef", 0)):
+                miss.append(f"an attack-power share ({ap.group(1)}%)")
+            dt = S_DOT.search(text)
+            if dt and not getattr(s, "dot", 0) and not getattr(s, "dot_coef", 0):
+                miss.append(f"a damage-over-time total (\"{dt.group(0)[:50]}\")")
+            if miss:
+                rows.append(f"**{n}** rank {getattr(s, 'rank', '?')}: the tooltip names {', '.join(miss)} the parsed strike lacks: \"{text[:110]}\"")
     return rows
 
 
@@ -144,7 +187,7 @@ def lint(cls):
                 continue
             if not (s.dmg_max or s.dot or getattr(s, "heal_max", 0) or getattr(s, "weapon_pct", 0) or getattr(s, "burn", 0)):
                 zero.append(f"**{n}** (rank {s.rank}) parses to no damage: \"{text[:110]}\"")
-    return bad, zero, field_checks(cls, mod, filled), pattern_checks(cls, mod)
+    return bad, zero, field_checks(cls, mod, filled) + strike_checks(cls, mod, filled), pattern_checks(cls, mod)
 
 
 def main():

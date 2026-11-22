@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Discipline leveling build the open leveling search found on 2026-11-17: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the discipline-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). 
+The Discipline leveling build the open leveling search found on 2026-11-21: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the discipline-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). 
 
 ## Point allocation
 
@@ -81,13 +81,13 @@ The Discipline leveling build the open leveling search found on 2026-11-17: ever
 
 ## Core talents (priority order)
 
-1. **Meditation** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Spirit Tap** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Spirit Tap** — +2.7 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Meditation** — +1.9 s per kill at level 60 without it (removal, 3,000 fights).
 3. **Devouring Contagion** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Shadow Focus** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Shadow Focus** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 5. **Mental Agility** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Wand Specialization** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Twin Disciplines** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Twin Disciplines** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Wand Specialization** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
 8. **Improved Shadow Word: Pain** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
@@ -96,7 +96,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 41.25; discipline-leveling 45.88. The search simulated 23,417 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 36.60; discipline-leveling 41.87. The search simulated 23,417 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

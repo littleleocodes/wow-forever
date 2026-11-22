@@ -96,16 +96,16 @@ What this build casts per kill ([report](../fightlab/fury-dw-raid.md), all level
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee (off-hand) | 5.5 | 6.3 | 7.2 | 8.2 | 9.3 | 21% |
-| Melee | 3.1 | 4.3 | 6.6 | 7.5 | 8.3 | 26% |
-| Bloodthirst | 0.0 | 0.0 | 2.0 | 2.5 | 2.9 | 19% |
+| Melee (off-hand) | 5.5 | 6.2 | 6.9 | 7.9 | 9.0 | 20% |
+| Melee | 2.7 | 3.8 | 6.0 | 6.7 | 7.5 | 23% |
+| Bloodthirst | 0.0 | 0.0 | 2.1 | 2.5 | 3.0 | 19% |
+| Heroic Strike | 2.7 | 2.4 | 0.9 | 1.2 | 1.5 | 9% |
 | Rend | 1.2 | 1.2 | 1.2 | 1.2 | 1.2 | 7% |
-| Execute | 0.0 | 1.0 | 1.0 | 1.1 | 1.2 | 15% |
-| Overpower | 0.5 | 0.6 | 0.8 | 0.9 | 1.0 | 4% |
+| Execute | 0.0 | 1.1 | 1.1 | 1.1 | 1.2 | 16% |
 | Charge | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 0% |
-| Heroic Strike | 2.4 | 2.1 | 0.5 | 0.7 | 0.9 | 6% |
+| Overpower | 0.6 | 0.6 | 0.7 | 0.8 | 1.0 | 5% |
 | Bloodrage | 0.3 | 0.3 | 0.3 | 0.3 | 0.4 | 0% |
-| Victory Rush | 0.3 | 0.6 | 0.6 | 0.2 | 0.2 | 0% |
+| Victory Rush | 0.5 | 0.6 | 0.6 | 0.3 | 0.2 | 0% |
 | Battle Shout | 0.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0% |
 | Death Wish | 0.0 | 0.1 | 0.1 | 0.1 | 0.1 | 0% |
 

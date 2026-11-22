@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Combat leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-swords-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). 
+The Combat leveling build the open leveling search found on 2026-11-20: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-swords-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). 
 
 ## Point allocation
 
@@ -85,12 +85,12 @@ The Combat leveling build the open leveling search found on 2026-11-16: every le
 
 1. **Efficient Strikes** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
 2. **Aggression** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Venom** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Weapon Expertise** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Flash of Steel** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Coup de Grace** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Precision** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Malice** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Venom** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Flash of Steel** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Coup de Grace** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Malice** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Flawless Execution** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Weapon Expertise** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -98,7 +98,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 20.29; combat-leveling 21.73. The search simulated 42,177 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 19.87; combat-leveling 21.21. The search simulated 42,177 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

@@ -121,16 +121,16 @@ Before the pull: at -2s: if Ice Barrier is known: cast Ice Barrier.
 | # | Priority (the first line whose condition holds is cast) | [`arcane-fire-raid`](arcane-fire-raid.md) casts/min |
 |---|---|---|
 | 1 | use every other cooldown when ready | as ready |
-| 2 | if Missile Barrage is up: cast Arcane Missiles (rank 7) | 3.6 |
+| 2 | if Missile Barrage is up: cast Arcane Missiles | 3.6 |
 | 3 | cast Fire Blast | 7.9 |
 | 4 | if Arcane Blast is up and time left on Arcane Blast < cast time of Arcane Blast: cast Arcane Blast | 6.8 |
 | 5 | cast Arcane Wrath | 5.3 |
-| 6 | if stacks of Arcane Blast on you ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt (rank 10) | 2.6 |
+| 6 | if stacks of Arcane Blast on you ≥ 1.5 and time left in the fight ≥ 10s: cast Frostbolt | 2.6 |
 | 7 | cast Arcane Blast | 6.8 |
 | 8 | cast Robe of the Archmage | as ready |
 | 9 | cast Mana Citrine | as ready |
 
-Lines of the simulator's rotation these builds never cast: cast Ice Barrier (needs the Ice Barrier talent); cast Fireball (rank 11) (its condition never held in these fights).
+Lines of the simulator's rotation these builds never cast: cast Ice Barrier (needs the Ice Barrier talent); cast Fireball (its condition never held in these fights).
 
 Damage by ability:
 

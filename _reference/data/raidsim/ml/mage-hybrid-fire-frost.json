@@ -9,19 +9,19 @@
  "best_entry": "frostfire-raid",
  "best_dps": 808.15,
  "any_split": true,
- "date": "2026-11-20",
+ "date": "2026-11-22",
  "commit": "2e6e77d84",
  "gear": {
   "bis": {
    "entry": "frostfire-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-fire-frost-bis.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "setting": "raid",
-   "chosen": "all-slots",
+   "chosen": "previous",
    "ilvl": 63.4,
    "trinkets": [
     "Talisman of Ephemeral Power",
-    "Eye of the Beast"
+    "Weakness Analyzer"
    ],
    "names": [
     "Spellweaver's Turban",
@@ -44,36 +44,37 @@
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0394917762059386,
-    "keep-sets-and-effects": 1.0275017153061308
+    "all-slots": 1.0260321747315477,
+    "keep-sets-and-effects": 1.0216095910151475,
+    "previous": 1.0350123355132343,
+    "previous+trinkets": 1.0297152737280015,
+    "the prebis set": 1.0108307916784616,
+    "the prebis set+trinkets": 1.0132288232288522
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.0393849064504577
+    "previous": 1.0327090446989131
    },
    "weights": {
-    "StatCritRating": 0.6281,
-    "StatFireDamage": 0.6492,
-    "StatHasteRating": 0.7188,
-    "StatHitRating": 1.0845,
-    "StatIntellect": 0.1958,
-    "StatSpellDamage": 0.6492,
-    "StatSpellPiercing": 0.7113,
-    "StatSpirit": 0.0427
+    "StatCritRating": 0.6081,
+    "StatFireDamage": 0.6654,
+    "StatHasteRating": 0.564,
+    "StatHitRating": 1.0914,
+    "StatIntellect": 0.4536,
+    "StatSpellDamage": 0.6654,
+    "StatSpellPiercing": 0.7207,
+    "StatSpirit": 0.4439
    },
    "evaluated_on": [
-    "frostfire-raid: ml winner"
-   ],
-   "commit": "2e6e77d84",
-   "kept": true,
-   "note": "the spec's tier set as it stands, made by its last search for that search's winner; not made for this pick"
+    "frostfire-raid: frostfire-ffb-raid"
+   ]
   },
   "prebis": {
    "entry": "frostfire-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-fire-frost-prebis.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "setting": "raid",
-   "chosen": "keep-sets-and-effects",
+   "chosen": "previous",
    "ilvl": 61.9,
    "trinkets": [
     "Weakness Analyzer",
@@ -100,34 +101,31 @@
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 1.0
+    "keep-sets-and-effects": 1.0,
+    "previous": 1.0082374260101585
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0
+    "previous": 1.0
    },
    "weights": {
-    "StatCritRating": 0.5129,
-    "StatFireDamage": 0.5281,
-    "StatHasteRating": 0.403,
-    "StatHitRating": 0.7251,
-    "StatIntellect": 0.2606,
-    "StatSpellDamage": 0.5281,
-    "StatSpellPiercing": 0.3633,
-    "StatSpirit": 0.1194
+    "StatCritRating": 0.5751,
+    "StatFireDamage": 0.6816,
+    "StatHasteRating": 0.5307,
+    "StatHitRating": 0.9796,
+    "StatIntellect": 0.4633,
+    "StatSpellDamage": 0.6816,
+    "StatSpellPiercing": 0.7026,
+    "StatSpirit": 0.4258
    },
    "evaluated_on": [
-    "frostfire-raid: ml winner (bis)"
-   ],
-   "commit": "2e6e77d84",
-   "kept": true,
-   "note": "the spec's tier set as it stands, made by its last search for that search's winner; not made for this pick"
+    "frostfire-raid: frostfire-ffb-raid"
+   ]
   },
   "dungeon": {
    "entry": "frostfire-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-hybrid-fire-frost-dungeon.gear.json",
-   "date": "2026-11-20",
-   "chosen": "all-slots",
+   "date": "2026-11-22",
+   "chosen": "previous",
    "ilvl": 60.2,
    "trinkets": [
     "Eye of the Beast",
@@ -231,11 +229,11 @@
    "race_seed1": {
     "all-slots": 1.0,
     "keep-sets-and-effects": 1.0,
-    "previous": 0.9908636109812953
+    "previous": 1.0
    },
    "confirm_seed2": {
     "previous": 1.0,
-    "all-slots": 1.0056841835126236
+    "all-slots": 1.0
    },
    "weights": {
     "StatCritRating": 0.5676,
@@ -259,7 +257,7 @@
    "spec": "Hybrid Fire/Frost",
    "setting": "dummy",
    "entry": "frostfire-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Arcane": [],
@@ -363,7 +361,7 @@
    "spec": "Hybrid Fire/Frost",
    "setting": "raid",
    "entry": "frostfire-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Arcane": [],
@@ -467,7 +465,7 @@
    "spec": "Hybrid Fire/Frost",
    "setting": "dummy",
    "entry": "frostfire-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Arcane": [],
@@ -571,7 +569,7 @@
    "spec": "Hybrid Fire/Frost",
    "setting": "raid",
    "entry": "frostfire-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Arcane": [],
@@ -675,7 +673,7 @@
    "spec": "Hybrid Fire/Frost",
    "setting": "raid",
    "entry": "frostfire-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "commit": "2e6e77d84",
    "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
    "winner": {
@@ -784,12 +782,12 @@
     "prebis-raid": 701.5,
     "prebis-dummy": 700.8
    },
-   "minutes": 0.9
+   "minutes": 13.9
   }
  },
  "pick_tiers": {
   "build": "frostfire-ffb-raid",
-  "date": "2026-11-20",
+  "date": "2026-11-22",
   "note": "the page's pick in each tier's gear (the short-check method of 2026-11-20); no talent search",
   "alt": {
    "bis-dummy": {
@@ -831,156 +829,5 @@
   "gain_vs_hand": 0.0,
   "commit": "2e6e77d84",
   "pick_tiers": true
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "frostfire-raid",
-    "dps": 807.66,
-    "se": 0.192
-   },
-   "frostfire-ffb-raid": {
-    "entry": "frostfire-raid",
-    "dps": 806.85,
-    "se": 0.192
-   },
-   "frostfire-fingers-of-frost-raid": {
-    "entry": "frostfire-raid",
-    "dps": 796.16,
-    "se": 0.193
-   },
-   "frostfire-ml-raid": {
-    "entry": "frostfire-raid",
-    "dps": 806.16,
-    "se": 0.191
-   }
-  },
-  "best_hand": "frostfire-ffb-raid",
-  "gain_vs_hand": 0.001
- },
- "signature_check": {
-  "spec": "Hybrid Fire/Frost",
-  "ok": true,
-  "core_share": 0.3999,
-  "min_share": 0.3,
-  "uncast": [],
-  "missing_talents": [],
-  "why": "",
-  "entry": "frostfire-raid",
-  "setting": "raid",
-  "iterations": 6000,
-  "dps": 808.5,
-  "date": "2026-11-20",
-  "commit": "2e6e77d84",
-  "shares": {
-   "Frostfire Bolt": 0.3999,
-   "Pyroblast": 0.2299,
-   "Fire Blast": 0.1639,
-   "Ignite": 0.142,
-   "Scorch": 0.0591,
-   "Demonic Rune": 0.0052
-  },
-  "casts": {
-   "Pyroblast": 13.0,
-   "Frostfire Bolt": 40.13,
-   "Scorch": 12.94,
-   "Fire Blast": 21.28,
-   "Evocation": 1.0
-  },
-  "allocation": {
-   "Arcane": [],
-   "Fire": [
-    [
-     "Incineration",
-     4
-    ],
-    [
-     "Accelerant",
-     5
-    ],
-    [
-     "Ignite",
-     5
-    ],
-    [
-     "Pyroblast",
-     1
-    ],
-    [
-     "Improved Fire Blast",
-     2
-    ],
-    [
-     "Improved Scorch",
-     3
-    ],
-    [
-     "Heating Up",
-     1
-    ],
-    [
-     "Master of Elements",
-     2
-    ],
-    [
-     "Critical Mass",
-     3
-    ],
-    [
-     "Fire Power",
-     3
-    ]
-   ],
-   "Frost": [
-    [
-     "Frost Warding",
-     2
-    ],
-    [
-     "Precision",
-     3
-    ],
-    [
-     "Ice Shards",
-     5
-    ],
-    [
-     "Permafrost",
-     1
-    ],
-    [
-     "Frost Channeling",
-     3
-    ],
-    [
-     "Ice Lance",
-     1
-    ],
-    [
-     "Arctic Reach",
-     1
-    ],
-    [
-     "Ice Block",
-     1
-    ],
-    [
-     "Shatter",
-     3
-    ],
-    [
-     "Fingers of Frost",
-     2
-    ]
-   ]
-  }
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-11-20",
-  "setting": "raid",
-  "why": "confirms frostfire-ffb-raid (+0.10% in a full raid)"
  }
 }

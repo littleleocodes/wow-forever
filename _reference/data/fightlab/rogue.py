@@ -335,6 +335,9 @@ PIPELINE = {"variants": [{'spec': 'combat-swords-raid', 'opt': 'opt-combat-sword
             "extra_reports": [{"spec": "combat-daggers-raid", "build": "opt-combat-daggers-raid-leveling-st", "compare": ["opt-combat-swords-raid-leveling-st"]}]}
 
 
+# Rupture's damage is read from its per-combo-point table (RUPTURE_POINTS; the lint's dot check does not apply), 2026-11-21
+LINT_FILLED = ("Rupture",)
+
 class RogueModule(BaseModule):
     # rotation knobs (rotation_opt.py tunes them; the defaults are the hand-written rotation): Rupture at 5 points instead of Eviscerate while
     # the mob has more than RUPTURE_HP (default 1.01, never: Rupture at 5 points finds the mob above 60% about once in 100 kills; Combat and

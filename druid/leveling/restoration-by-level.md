@@ -171,7 +171,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Nature's Grasp** (10) can be cast in a form: the next mob that hits you is rooted. Walk away and heal.
 - **Growl** (10) is a taunt: for groups.
 
-*Fight lab, seconds per kill: 26 at level 10. Presses per kill at level 10: Melee 5.5, Maul 1.9, Demoralizing Roar 1.0.*
+*Fight lab, seconds per kill: 25 at level 10. Presses per kill at level 10: Melee 5.1, Maul 2.0, Demoralizing Roar 1.0.*
 
 ## Levels 14-19: Bash
 
@@ -179,7 +179,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Entangling Roots at 18; Healing Touch at 14; Maul at 18; Moonfire at 16; Nature's Grasp at 18; Regrowth at 18; Rejuvenation at 16; Wrath at 14.
 
-**Talents:** 14 Genesis, 15 Nature's Reach, 16-17 Nature's Majesty, 18 Heart of the Wild, 19 Genesis.
+**Talents:** 14 Genesis, 15 Nature's Reach, 16-17 Nature's Majesty, 18-19 Genesis.
 
 **Keys to set:** 3 = Cure Poison; E (bear) = Bash; 1 (bear) = Swipe (at 16); 2 = Hibernate (at 18).
 
@@ -194,13 +194,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** **Bash** buys you 2 seconds. Below 30% of your health: leave **Bear Form**, **Regrowth**, then **Bear Form** again.
 
-- **Nature's Reach** (15) is a gate point. **Nature's Majesty** (16-17): 4% more critical strike chance at 2 points. **Heart of the Wild** (18, then 22-24): at 4 points, 16% more Stamina in Bear Form, 8% more Strength in Cat Form and 8% more Intellect.
+- **Nature's Reach** (15) is a gate point. **Nature's Majesty** (16-17): 4% more critical strike chance at 2 points. **Genesis** (18-19) reaches 5 points: your bleeds and heals over time do 10% more.
 - **Swipe** (16) hits three mobs for little: for pulls of two or three, never one.
 - **Hibernate** (18) sleeps a second beast or dragonkin for up to 20 s: cast it from caster form before the pull.
 - **Faerie Fire** (18) is not worth the shift out; the fight lab never casts it.
 - **Cat Form** comes at 20 and changes everything.
 
-*Fight lab, seconds per kill: 30 at level 14, 33 at level 19. Presses per kill at level 14: Melee 5.7, Maul 3.0, Demoralizing Roar 1.0, Enrage 0.5, Bash 0.1.*
+*Fight lab, seconds per kill: 29 at level 14, 32 at level 19. Presses per kill at level 14: Melee 5.1, Maul 3.1, Demoralizing Roar 1.0, Enrage 0.5, Bash 0.1.*
 
 ## Levels 20-23: Cat Form
 
@@ -208,7 +208,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **New ranks to buy:** Demoralizing Roar at 20; Healing Touch at 20; Moonfire at 22; Rejuvenation at 22; Wrath at 22.
 
-**Talents:** 20 Genesis, 21 Nature's Splendor, 22-23 Heart of the Wild.
+**Talents:** 20 Nature's Splendor, 21-23 Heart of the Wild.
 
 **Keys to set:** Q (cat) = Claw; Mouse 4 (cat) = Rip; 1 (cat) = Prowl; Shift+Q = Cat Form.
 
@@ -226,9 +226,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Shred** (20) needs the mob's back. A mob facing you cannot be Shredded, and the tuned rules never cast it.
 - **Omen of Clarity** (20) is a buff: keep it on, no key. It makes an ability free now and then.
 - Energy, not mana, limits you now. This build takes no **Furor**: each shift back into **Cat Form** starts you at no energy, so heal between fights when you can.
-- **Genesis** (19-20) reaches 5 points: your bleeds and heals over time do 10% more. **Nature's Splendor** (21) makes **Rejuvenation** last 3 s longer. **Heart of the Wild** fills to 4 points at 22-24: 8% more Strength in Cat Form.
+- **Nature's Splendor** (20) makes **Rejuvenation** last 3 s longer. **Heart of the Wild** (21-24): at 4 points, 16% more Stamina in Bear Form, 8% more Strength in Cat Form and 8% more Intellect.
 
-*Fight lab, seconds per kill: 22 at level 20. Presses per kill at level 20: Melee 12.1, Claw 4.0, Rip 0.9.*
+*Fight lab, seconds per kill: 20 at level 20. Presses per kill at level 20: Melee 10.1, Claw 4.0, Rip 1.0.*
 
 ## Levels 24-31: Ferocious Bite and Rake
 
@@ -257,7 +257,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Travel Form** (30) is the road between mobs. **Tranquility** (30) heals your whole group: for dungeons.
 - **Cower** (28) drops your threat and **Challenging Roar** (28) is a bear taunt: groups only.
 
-*Fight lab, seconds per kill: 23 at level 24, 27 at level 30, 28 at level 31. Presses per kill at level 24: Melee 13.1, Claw 3.5, Rake 1.2, Ferocious Bite 0.7.*
+*Fight lab, seconds per kill: 21 at level 24, 25 at level 30, 26 at level 31. Presses per kill at level 24: Melee 10.9, Claw 3.5, Rake 1.2, Ferocious Bite 0.6.*
 
 ## Levels 32-39: Ravage
 
@@ -287,7 +287,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Frenzied Regeneration** (36) turns rage into health in Bear Form.
 - **Track Humanoids** (32) is a tracking: clicked, no key.
 
-*Fight lab, seconds per kill: 27 at level 32, 32 at level 39. Presses per kill at level 32: Melee 16.4, Claw 2.8, Rake 1.6, Ravage 1.0, Ferocious Bite 1.0.*
+*Fight lab, seconds per kill: 23 at level 32, 29 at level 39. Presses per kill at level 32: Melee 12.8, Claw 2.7, Rake 1.3, Ravage 1.0, Ferocious Bite 0.8.*
 
 ## Levels 40-60: The same play to 60
 
@@ -318,13 +318,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Innervate** (40): mana for a group's healer, or for you after a run of heals.
 - No **Feral Charge**, **Primal Bite**, **Furor** or **Shifting Power**: they are Feral talents this build does not take.
 
-*Fight lab, seconds per kill: 32 at level 40, 36 at level 50, 39 at level 60. Presses per kill at level 40: Melee 20.9, Claw 3.3, Rake 2.0, Ferocious Bite 1.1, Ravage 1.0.*
+*Fight lab, seconds per kill: 29 at level 40, 30 at level 50, 33 at level 60. Presses per kill at level 40: Melee 17.0, Claw 3.3, Rake 1.7, Ferocious Bite 1.0, Ravage 1.0.*
 
 ## Between fights
 
 - Below 70% of your health after a fight: leave Cat Form, **Rejuvenation** (and **Regrowth** if you are still below 85%), then Cat Form again, only with the mana to shift back.
 - Each shift back into Cat Form starts at no energy (this build has no **Furor**): let it fill before you prowl in.
-- Drink when your mana is below about a third (35%): mana only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.
+- Drink when your mana is below 15%: mana only pays for shifts and heals. Eat below two thirds of your health when there was no mana to heal.
 - Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.
 - Visit the trainer every even level: **Claw**, **Rake**, **Rip**, **Ferocious Bite** and **Ravage** all have many ranks, and so do your heals.
 
@@ -334,4 +334,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Balance stays a caster with its own rotation: [its level-by-level guide](balance-by-level.md).
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-19: the stages are hand-kept in `_reference/data/level-guides/druid.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/druid.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

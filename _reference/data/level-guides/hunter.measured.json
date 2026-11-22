@@ -1,6 +1,6 @@
 {
  "class": "hunter",
- "date": "2026-11-18",
+ "date": "2026-11-22",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -8,7 +8,7 @@
    "build": "beast-survival-open-leveling",
    "rotation": "melee-dps",
    "provisional_order": false,
-   "fingerprint": "495e0cd9d932",
+   "fingerprint": "31f0a8fc56e1",
    "levels": {
     "1": {
      "seconds": 9.8,
@@ -17,192 +17,464 @@
       "Auto Shot": 1.05,
       "Growl": 0.96,
       "Bite": 0.58,
-      "Melee": 0.81,
+      "Melee": 0.85,
       "Melee (off-hand)": 0.98,
-      "Claw": 0.72,
-      "Raptor Strike": 0.2
-     }
+      "Claw": 0.74,
+      "Raptor Strike": 0.15
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.42,
+      "Melee": 0.219,
+      "Melee (off-hand)": 0.124,
+      "Bite": 0.088,
+      "Claw": 0.065,
+      "Raptor Strike": 0.058,
+      "Cat melee": 0.027
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none"
     },
     "4": {
-     "seconds": 11.8,
+     "seconds": 12.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.07,
-      "Growl": 1.02,
+      "Growl": 1.05,
       "Bite": 0.99,
-      "Melee": 1.1,
-      "Melee (off-hand)": 1.37,
+      "Melee": 1.19,
+      "Melee (off-hand)": 1.49,
       "Serpent Sting": 0.99,
-      "Claw": 2.51,
-      "Raptor Strike": 0.31
-     }
+      "Claw": 2.75,
+      "Raptor Strike": 0.35
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.268,
+      "Melee": 0.179,
+      "Claw": 0.136,
+      "Melee (off-hand)": 0.113,
+      "Cat melee": 0.086,
+      "Raptor Strike": 0.082,
+      "Bite": 0.08,
+      "Serpent Sting": 0.056
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Monkey"
     },
     "9": {
-     "seconds": 13.3,
+     "seconds": 13.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.11,
       "Serpent Sting": 1.0,
-      "Growl": 1.16,
+      "Growl": 1.25,
       "Bite": 1.0,
-      "Claw": 3.6,
-      "Melee": 1.46,
-      "Melee (off-hand)": 1.94,
-      "Raptor Strike": 0.48
-     }
+      "Claw": 3.8,
+      "Melee": 1.58,
+      "Melee (off-hand)": 2.09,
+      "Raptor Strike": 0.52
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Claw": 0.192,
+      "Auto Shot": 0.172,
+      "Cat melee": 0.171,
+      "Melee": 0.138,
+      "Melee (off-hand)": 0.093,
+      "Bite": 0.088,
+      "Raptor Strike": 0.084,
+      "Serpent Sting": 0.062
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Monkey"
     },
     "10": {
-     "seconds": 13.5,
+     "seconds": 13.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.14,
       "Serpent Sting": 1.0,
-      "Growl": 1.16,
+      "Growl": 1.26,
       "Bite": 1.0,
-      "Claw": 3.67,
-      "Melee": 1.51,
-      "Melee (off-hand)": 1.98,
-      "Raptor Strike": 0.47
-     }
+      "Claw": 3.87,
+      "Melee": 1.62,
+      "Melee (off-hand)": 2.12,
+      "Raptor Strike": 0.51
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Claw": 0.177,
+      "Cat melee": 0.176,
+      "Auto Shot": 0.167,
+      "Melee": 0.135,
+      "Serpent Sting": 0.097,
+      "Melee (off-hand)": 0.089,
+      "Bite": 0.08,
+      "Raptor Strike": 0.079
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Monkey"
     },
     "15": {
-     "seconds": 16.2,
+     "seconds": 16.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.12,
       "Serpent Sting": 1.0,
-      "Growl": 1.87,
-      "Bite": 1.03,
-      "Claw": 4.79,
-      "Melee": 2.35,
-      "Melee (off-hand)": 3.04,
-      "Raptor Strike": 0.7
-     }
+      "Growl": 1.95,
+      "Bite": 1.04,
+      "Claw": 4.95,
+      "Melee": 2.48,
+      "Melee (off-hand)": 3.27,
+      "Raptor Strike": 0.79
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.265,
+      "Melee": 0.149,
+      "Auto Shot": 0.128,
+      "Claw": 0.126,
+      "Serpent Sting": 0.106,
+      "Melee (off-hand)": 0.1,
+      "Raptor Strike": 0.079,
+      "Bite": 0.046
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Monkey"
     },
     "16": {
-     "seconds": 15.4,
+     "seconds": 15.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.14,
       "Serpent Sting": 1.0,
-      "Growl": 1.69,
+      "Growl": 1.76,
       "Bite": 1.01,
-      "Claw": 4.57,
-      "Immolation Trap": 0.47,
-      "Melee": 2.12,
-      "Melee (off-hand)": 2.74,
-      "Raptor Strike": 0.61
-     }
+      "Claw": 4.71,
+      "Immolation Trap": 0.48,
+      "Melee": 2.24,
+      "Melee (off-hand)": 2.87,
+      "Raptor Strike": 0.63
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.227,
+      "Claw": 0.154,
+      "Melee": 0.134,
+      "Auto Shot": 0.129,
+      "Serpent Sting": 0.09,
+      "Melee (off-hand)": 0.087,
+      "Raptor Strike": 0.079,
+      "Bite": 0.065,
+      "Immolation Trap": 0.035
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Monkey"
     },
     "20": {
-     "seconds": 15.8,
+     "seconds": 16.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.2,
       "Serpent Sting": 1.0,
-      "Growl": 1.73,
+      "Growl": 1.81,
       "Bite": 1.01,
-      "Claw": 4.6,
+      "Claw": 4.7,
       "Immolation Trap": 0.48,
-      "Melee": 2.18,
-      "Melee (off-hand)": 2.81,
-      "Raptor Strike": 0.64
-     }
+      "Melee": 2.27,
+      "Melee (off-hand)": 2.96,
+      "Raptor Strike": 0.7
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.232,
+      "Melee": 0.138,
+      "Auto Shot": 0.134,
+      "Serpent Sting": 0.123,
+      "Claw": 0.122,
+      "Melee (off-hand)": 0.092,
+      "Raptor Strike": 0.081,
+      "Bite": 0.05,
+      "Immolation Trap": 0.028
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Monkey"
     },
     "29": {
-     "seconds": 18.6,
+     "seconds": 19.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 1.19,
+      "Auto Shot": 1.2,
       "Serpent Sting": 1.0,
-      "Growl": 2.23,
-      "Bite": 1.18,
-      "Claw": 5.28,
+      "Growl": 2.29,
+      "Bite": 1.25,
+      "Claw": 5.34,
       "Immolation Trap": 0.51,
-      "Melee": 3.1,
-      "Melee (off-hand)": 3.84,
-      "Raptor Strike": 0.74
-     }
+      "Melee": 3.22,
+      "Melee (off-hand)": 4.0,
+      "Raptor Strike": 0.79
+     },
+     "idle_share": 0.018,
+     "drink_per_kill": 0.3,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.225,
+      "Serpent Sting": 0.147,
+      "Melee": 0.141,
+      "Melee (off-hand)": 0.123,
+      "Auto Shot": 0.1,
+      "Claw": 0.093,
+      "Immolation Trap": 0.067,
+      "Raptor Strike": 0.063,
+      "Bite": 0.041
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Monkey"
     },
     "30": {
-     "seconds": 18.3,
+     "seconds": 18.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.18,
       "Serpent Sting": 1.0,
-      "Growl": 2.21,
-      "Bite": 1.16,
-      "Claw": 5.27,
-      "Lacerate": 0.56,
-      "Melee": 3.1,
-      "Melee (off-hand)": 3.83,
-      "Immolation Trap": 0.49,
-      "Raptor Strike": 0.73
-     }
+      "Growl": 2.29,
+      "Bite": 1.25,
+      "Claw": 5.34,
+      "Lacerate": 0.45,
+      "Melee": 3.24,
+      "Melee (off-hand)": 4.01,
+      "Immolation Trap": 0.5,
+      "Raptor Strike": 0.79
+     },
+     "idle_share": 0.003,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.219,
+      "Melee": 0.148,
+      "Serpent Sting": 0.14,
+      "Melee (off-hand)": 0.132,
+      "Auto Shot": 0.094,
+      "Claw": 0.088,
+      "Raptor Strike": 0.067,
+      "Immolation Trap": 0.059,
+      "Bite": 0.038,
+      "Lacerate": 0.014
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Beast"
     },
     "39": {
-     "seconds": 20.6,
+     "seconds": 21.1,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 1.17,
+      "Auto Shot": 1.19,
       "Serpent Sting": 1.0,
-      "Growl": 2.66,
-      "Bite": 1.5,
-      "Claw": 5.76,
-      "Lacerate": 0.12,
-      "Melee": 3.92,
-      "Melee (off-hand)": 4.76,
+      "Growl": 2.7,
+      "Bite": 1.56,
+      "Claw": 5.81,
+      "Lacerate": 0.22,
+      "Melee": 4.03,
+      "Melee (off-hand)": 4.85,
       "Immolation Trap": 1.0,
-      "Raptor Strike": 0.83
-     }
+      "Raptor Strike": 0.82
+     },
+     "idle_share": 0.022,
+     "drink_per_kill": 0.35,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.192,
+      "Immolation Trap": 0.16,
+      "Serpent Sting": 0.146,
+      "Melee": 0.143,
+      "Melee (off-hand)": 0.12,
+      "Auto Shot": 0.072,
+      "Claw": 0.072,
+      "Raptor Strike": 0.051,
+      "Bite": 0.035,
+      "Lacerate": 0.007
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Beast"
     },
     "40": {
-     "seconds": 21.0,
+     "seconds": 21.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 1.17,
+      "Auto Shot": 1.18,
       "Serpent Sting": 1.0,
-      "Growl": 2.65,
-      "Bite": 1.52,
-      "Claw": 5.79,
-      "Lacerate": 0.18,
-      "Melee": 4.07,
-      "Melee (off-hand)": 4.94,
+      "Growl": 2.74,
+      "Bite": 1.58,
+      "Claw": 5.85,
+      "Lacerate": 0.17,
+      "Melee": 4.16,
+      "Melee (off-hand)": 5.03,
       "Immolation Trap": 1.0,
-      "Raptor Strike": 0.84
-     }
+      "Raptor Strike": 0.86
+     },
+     "idle_share": 0.028,
+     "drink_per_kill": 0.43,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.187,
+      "Immolation Trap": 0.155,
+      "Melee": 0.144,
+      "Serpent Sting": 0.141,
+      "Melee (off-hand)": 0.121,
+      "Claw": 0.084,
+      "Auto Shot": 0.068,
+      "Raptor Strike": 0.053,
+      "Bite": 0.04,
+      "Lacerate": 0.008
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Beast"
     },
     "50": {
-     "seconds": 22.1,
+     "seconds": 21.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 1.15,
+      "Auto Shot": 1.18,
       "Serpent Sting": 1.0,
-      "Growl": 2.79,
-      "Bite": 1.57,
-      "Claw": 5.92,
-      "Lacerate": 0.2,
-      "Melee": 4.37,
-      "Melee (off-hand)": 5.29,
+      "Growl": 2.78,
+      "Bite": 1.56,
+      "Claw": 5.91,
+      "Lacerate": 0.23,
+      "Melee": 4.32,
+      "Melee (off-hand)": 5.21,
       "Immolation Trap": 1.0,
-      "Raptor Strike": 0.87
-     }
+      "Raptor Strike": 0.86
+     },
+     "idle_share": 0.046,
+     "drink_per_kill": 0.94,
+     "eat_per_kill": 0.03,
+     "shares": {
+      "Cat melee": 0.197,
+      "Immolation Trap": 0.165,
+      "Serpent Sting": 0.164,
+      "Melee": 0.127,
+      "Melee (off-hand)": 0.11,
+      "Claw": 0.081,
+      "Auto Shot": 0.058,
+      "Raptor Strike": 0.049,
+      "Bite": 0.038,
+      "Lacerate": 0.01
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Beast"
     },
     "60": {
      "seconds": 22.6,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 1.09,
+      "Auto Shot": 1.1,
       "Serpent Sting": 1.0,
-      "Growl": 2.94,
+      "Growl": 3.0,
       "Bite": 1.0,
-      "Claw": 8.14,
-      "Lacerate": 0.18,
-      "Melee": 4.66,
-      "Melee (off-hand)": 5.59,
+      "Claw": 8.26,
+      "Lacerate": 0.17,
+      "Melee": 4.75,
+      "Melee (off-hand)": 5.71,
       "Immolation Trap": 1.0,
-      "Raptor Strike": 0.92
-     }
+      "Raptor Strike": 0.93
+     },
+     "idle_share": 0.031,
+     "drink_per_kill": 0.7,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.216,
+      "Immolation Trap": 0.175,
+      "Serpent Sting": 0.158,
+      "Melee": 0.115,
+      "Claw": 0.111,
+      "Melee (off-hand)": 0.105,
+      "Auto Shot": 0.045,
+      "Raptor Strike": 0.041,
+      "Bite": 0.025,
+      "Lacerate": 0.008
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Beast"
     }
    }
   },
@@ -210,199 +482,464 @@
    "build": "beast-mastery-open-leveling",
    "rotation": "bm-leveling",
    "provisional_order": false,
-   "fingerprint": "fc54ad4c6823",
+   "fingerprint": "0ec807904bde",
    "levels": {
     "1": {
-     "seconds": 10.3,
+     "seconds": 10.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 1.29,
+      "Auto Shot": 1.33,
       "Growl": 0.96,
-      "Bite": 0.85,
-      "Claw": 1.14
-     }
+      "Bite": 0.87,
+      "Claw": 1.18
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.666,
+      "Bite": 0.162,
+      "Claw": 0.135,
+      "Cat melee": 0.037
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none"
     },
     "4": {
-     "seconds": 12.3,
+     "seconds": 12.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 2.24,
-      "Growl": 1.0,
+      "Auto Shot": 2.46,
+      "Growl": 1.02,
       "Bite": 0.94,
-      "Claw": 2.72,
-      "Serpent Sting": 1.01
-     }
+      "Claw": 2.87,
+      "Serpent Sting": 1.02
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.623,
+      "Claw": 0.146,
+      "Cat melee": 0.089,
+      "Bite": 0.076,
+      "Serpent Sting": 0.058,
+      "Melee": 0.008
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none"
     },
     "6": {
-     "seconds": 13.2,
+     "seconds": 13.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 2.47,
-      "Hunter's Mark": 1.0,
-      "Growl": 1.05,
-      "Bite": 0.98,
-      "Claw": 3.62,
-      "Serpent Sting": 0.99
-     }
-    },
-    "10": {
-     "seconds": 13.5,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Auto Shot": 2.61,
+      "Auto Shot": 2.8,
       "Hunter's Mark": 1.0,
       "Growl": 1.09,
+      "Bite": 0.98,
+      "Claw": 3.72,
+      "Serpent Sting": 0.99
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.604,
+      "Cat melee": 0.143,
+      "Claw": 0.136,
+      "Serpent Sting": 0.061,
+      "Bite": 0.056
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none"
+    },
+    "10": {
+     "seconds": 13.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Auto Shot": 2.87,
+      "Hunter's Mark": 1.0,
+      "Growl": 1.17,
       "Bite": 0.99,
-      "Claw": 3.75,
-      "Serpent Sting": 1.0
-     }
+      "Claw": 3.88,
+      "Serpent Sting": 1.01
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.495,
+      "Cat melee": 0.175,
+      "Claw": 0.175,
+      "Serpent Sting": 0.079,
+      "Bite": 0.075
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "12": {
-     "seconds": 14.6,
+     "seconds": 14.7,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 3.1,
+      "Auto Shot": 3.37,
       "Hunter's Mark": 1.0,
-      "Growl": 1.36,
-      "Bite": 0.99,
-      "Claw": 4.21,
+      "Growl": 1.45,
+      "Bite": 0.98,
+      "Claw": 4.3,
       "Serpent Sting": 1.01
-     }
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.503,
+      "Cat melee": 0.21,
+      "Claw": 0.149,
+      "Serpent Sting": 0.081,
+      "Bite": 0.057
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "19": {
-     "seconds": 15.7,
+     "seconds": 15.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 3.52,
+      "Auto Shot": 3.83,
       "Hunter's Mark": 1.0,
-      "Growl": 1.65,
-      "Bite": 0.99,
-      "Claw": 4.57,
+      "Growl": 1.69,
+      "Bite": 1.0,
+      "Claw": 4.61,
       "Serpent Sting": 1.01
-     }
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.485,
+      "Cat melee": 0.234,
+      "Claw": 0.128,
+      "Serpent Sting": 0.103,
+      "Bite": 0.051
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "20": {
-     "seconds": 16.2,
+     "seconds": 16.1,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 3.07,
+      "Auto Shot": 3.27,
       "Hunter's Mark": 1.0,
-      "Growl": 1.27,
+      "Growl": 1.32,
       "Bite": 0.99,
-      "Claw": 3.85,
+      "Claw": 3.82,
       "Serpent Sting": 1.01,
-      "Aimed Shot": 0.97
-     }
+      "Aimed Shot": 0.98
+     },
+     "idle_share": 0.097,
+     "drink_per_kill": 1.55,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.407,
+      "Aimed Shot": 0.187,
+      "Cat melee": 0.175,
+      "Claw": 0.101,
+      "Serpent Sting": 0.079,
+      "Bite": 0.049
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "25": {
-     "seconds": 16.9,
+     "seconds": 17.1,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 3.44,
+      "Auto Shot": 3.79,
       "Hunter's Mark": 1.0,
-      "Growl": 1.44,
-      "Bite": 1.0,
-      "Claw": 4.14,
+      "Growl": 1.52,
+      "Bite": 0.99,
+      "Claw": 4.07,
       "Serpent Sting": 1.01,
       "Aimed Shot": 0.99
-     }
+     },
+     "idle_share": 0.079,
+     "drink_per_kill": 1.35,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.42,
+      "Cat melee": 0.189,
+      "Aimed Shot": 0.153,
+      "Claw": 0.112,
+      "Serpent Sting": 0.076,
+      "Bite": 0.05
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "26": {
-     "seconds": 18.1,
+     "seconds": 17.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 3.58,
+      "Auto Shot": 3.9,
       "Hunter's Mark": 1.0,
-      "Growl": 1.53,
+      "Growl": 1.56,
       "Bite": 0.99,
-      "Claw": 4.24,
-      "Serpent Sting": 1.01,
+      "Claw": 4.11,
+      "Serpent Sting": 1.02,
       "Aimed Shot": 0.99
-     }
+     },
+     "idle_share": 0.116,
+     "drink_per_kill": 2.08,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.412,
+      "Cat melee": 0.185,
+      "Aimed Shot": 0.145,
+      "Claw": 0.106,
+      "Serpent Sting": 0.104,
+      "Bite": 0.047
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "30": {
-     "seconds": 19.3,
+     "seconds": 19.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 4.07,
+      "Auto Shot": 4.58,
       "Hunter's Mark": 1.0,
-      "Growl": 1.87,
+      "Growl": 1.82,
       "Bite": 1.0,
-      "Claw": 5.28,
+      "Claw": 5.12,
       "Serpent Sting": 1.02,
-      "Aimed Shot": 1.0
-     }
+      "Aimed Shot": 1.0,
+      "Feign Death": 0.05
+     },
+     "idle_share": 0.098,
+     "drink_per_kill": 1.89,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.413,
+      "Cat melee": 0.206,
+      "Aimed Shot": 0.139,
+      "Claw": 0.106,
+      "Serpent Sting": 0.1,
+      "Bite": 0.037
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "34": {
      "seconds": 19.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 4.25,
+      "Auto Shot": 4.81,
       "Hunter's Mark": 1.0,
-      "Growl": 1.95,
-      "Bite": 1.0,
-      "Claw": 5.52,
+      "Growl": 1.92,
+      "Bite": 0.99,
+      "Claw": 5.47,
       "Serpent Sting": 1.02,
       "Aimed Shot": 1.0
-     }
+     },
+     "idle_share": 0.104,
+     "drink_per_kill": 2.08,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.392,
+      "Cat melee": 0.208,
+      "Aimed Shot": 0.122,
+      "Claw": 0.119,
+      "Serpent Sting": 0.119,
+      "Bite": 0.039
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "39": {
+     "seconds": 22.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Auto Shot": 6.06,
+      "Hunter's Mark": 1.0,
+      "Growl": 2.41,
+      "Bite": 0.99,
+      "Claw": 6.76,
+      "Serpent Sting": 1.01,
+      "Aimed Shot": 1.01,
+      "Feign Death": 0.06
+     },
+     "idle_share": 0.096,
+     "drink_per_kill": 2.2,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.391,
+      "Cat melee": 0.242,
+      "Serpent Sting": 0.129,
+      "Aimed Shot": 0.11,
+      "Claw": 0.101,
+      "Bite": 0.027
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
+    },
+    "40": {
      "seconds": 22.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 5.47,
+      "Bestial Wrath": 0.17,
+      "Auto Shot": 5.89,
       "Hunter's Mark": 1.0,
-      "Growl": 2.45,
-      "Bite": 1.0,
-      "Claw": 6.86,
+      "Growl": 2.37,
+      "Bite": 0.99,
+      "Claw": 6.71,
       "Serpent Sting": 1.03,
-      "Aimed Shot": 1.02
-     }
+      "Aimed Shot": 0.99
+     },
+     "idle_share": 0.118,
+     "drink_per_kill": 2.71,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.376,
+      "Cat melee": 0.246,
+      "Claw": 0.123,
+      "Serpent Sting": 0.12,
+      "Aimed Shot": 0.102,
+      "Bite": 0.034
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
-    "40": {
-     "seconds": 23.3,
+    "50": {
+     "seconds": 23.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Bestial Wrath": 0.18,
-      "Auto Shot": 5.32,
+      "Auto Shot": 6.23,
       "Hunter's Mark": 1.0,
-      "Growl": 2.42,
+      "Growl": 2.46,
       "Bite": 1.0,
-      "Claw": 6.74,
+      "Claw": 6.96,
       "Serpent Sting": 1.03,
-      "Aimed Shot": 1.01
-     }
+      "Aimed Shot": 1.04
+     },
+     "idle_share": 0.099,
+     "drink_per_kill": 2.24,
+     "eat_per_kill": 0.09,
+     "shares": {
+      "Auto Shot": 0.338,
+      "Cat melee": 0.262,
+      "Serpent Sting": 0.149,
+      "Claw": 0.116,
+      "Aimed Shot": 0.106,
+      "Bite": 0.03
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
-    "50": {
+    "60": {
      "seconds": 24.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Bestial Wrath": 0.18,
-      "Auto Shot": 6.04,
+      "Auto Shot": 6.41,
       "Hunter's Mark": 1.0,
-      "Growl": 2.75,
-      "Bite": 1.0,
-      "Claw": 7.55,
+      "Growl": 2.71,
+      "Bite": 0.99,
+      "Claw": 7.58,
       "Serpent Sting": 1.03,
-      "Aimed Shot": 1.06
-     }
-    },
-    "60": {
-     "seconds": 25.3,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Bestial Wrath": 0.19,
-      "Auto Shot": 5.87,
-      "Hunter's Mark": 1.0,
-      "Growl": 2.74,
-      "Bite": 1.0,
-      "Claw": 7.75,
-      "Serpent Sting": 1.03,
-      "Aimed Shot": 1.04,
-      "Feign Death": 0.24,
-      "Melee": 0.07,
-      "Wing Clip": 0.06
-     }
+      "Aimed Shot": 1.01,
+      "Feign Death": 0.18,
+      "Melee": 0.06
+     },
+     "idle_share": 0.116,
+     "drink_per_kill": 2.84,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.324,
+      "Cat melee": 0.245,
+      "Serpent Sting": 0.185,
+      "Aimed Shot": 0.11,
+      "Claw": 0.107,
+      "Bite": 0.026
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     }
    }
   },
@@ -413,205 +950,469 @@
    "fingerprint": "9c9d42781e0d",
    "levels": {
     "1": {
-     "seconds": 10.3,
+     "seconds": 10.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 1.29,
+      "Auto Shot": 1.33,
       "Growl": 0.96,
-      "Bite": 0.85,
-      "Claw": 1.14
-     }
+      "Bite": 0.87,
+      "Claw": 1.18
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.666,
+      "Bite": 0.162,
+      "Claw": 0.135,
+      "Cat melee": 0.037
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none"
     },
     "4": {
-     "seconds": 12.3,
+     "seconds": 12.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 2.24,
-      "Growl": 1.0,
+      "Auto Shot": 2.46,
+      "Growl": 1.02,
       "Bite": 0.94,
-      "Claw": 2.72,
-      "Serpent Sting": 1.01
-     }
+      "Claw": 2.87,
+      "Serpent Sting": 1.02
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.623,
+      "Claw": 0.146,
+      "Cat melee": 0.089,
+      "Bite": 0.076,
+      "Serpent Sting": 0.058,
+      "Melee": 0.008
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none"
     },
     "6": {
-     "seconds": 11.8,
+     "seconds": 12.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 2.11,
+      "Auto Shot": 2.22,
       "Hunter's Mark": 1.0,
       "Growl": 1.0,
       "Bite": 0.97,
-      "Claw": 2.35,
-      "Arcane Shot": 0.97,
+      "Claw": 2.43,
+      "Arcane Shot": 0.98,
       "Serpent Sting": 0.99
-     }
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.467,
+      "Arcane Shot": 0.28,
+      "Cat melee": 0.088,
+      "Claw": 0.085,
+      "Bite": 0.055,
+      "Serpent Sting": 0.024
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none"
     },
     "10": {
-     "seconds": 12.2,
+     "seconds": 12.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 2.15,
+      "Auto Shot": 2.28,
       "Hunter's Mark": 1.0,
-      "Growl": 1.0,
+      "Growl": 1.01,
       "Bite": 0.99,
-      "Claw": 2.72,
+      "Claw": 2.88,
       "Arcane Shot": 0.99,
-      "Serpent Sting": 0.99
-     }
+      "Serpent Sting": 1.0
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.397,
+      "Arcane Shot": 0.227,
+      "Claw": 0.134,
+      "Cat melee": 0.125,
+      "Bite": 0.079,
+      "Serpent Sting": 0.037
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "12": {
-     "seconds": 13.0,
+     "seconds": 13.1,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Auto Shot": 2.53,
+      "Hunter's Mark": 1.0,
+      "Growl": 1.08,
+      "Bite": 0.99,
+      "Claw": 3.42,
+      "Serpent Sting": 1.03,
+      "Arcane Shot": 1.0
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.381,
+      "Arcane Shot": 0.227,
+      "Cat melee": 0.152,
+      "Claw": 0.126,
+      "Bite": 0.061,
+      "Serpent Sting": 0.052
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
+    },
+    "19": {
+     "seconds": 15.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Auto Shot": 2.98,
+      "Hunter's Mark": 1.0,
+      "Growl": 1.27,
+      "Bite": 0.99,
+      "Claw": 3.75,
+      "Serpent Sting": 1.04,
+      "Arcane Shot": 0.99
+     },
+     "idle_share": 0.058,
+     "drink_per_kill": 0.87,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.416,
+      "Arcane Shot": 0.17,
+      "Cat melee": 0.168,
+      "Claw": 0.108,
+      "Serpent Sting": 0.085,
+      "Bite": 0.053
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
+    },
+    "20": {
+     "seconds": 16.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 2.39,
       "Hunter's Mark": 1.0,
       "Growl": 1.05,
       "Bite": 0.99,
-      "Claw": 3.36,
-      "Serpent Sting": 1.02,
-      "Arcane Shot": 1.0
-     }
-    },
-    "19": {
-     "seconds": 14.6,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Auto Shot": 2.76,
-      "Hunter's Mark": 1.0,
-      "Growl": 1.22,
-      "Bite": 0.98,
-      "Claw": 3.77,
-      "Serpent Sting": 1.03,
-      "Arcane Shot": 1.0
-     }
-    },
-    "20": {
-     "seconds": 16.4,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Auto Shot": 2.29,
-      "Hunter's Mark": 1.0,
-      "Growl": 1.04,
-      "Bite": 0.99,
-      "Claw": 3.41,
-      "Serpent Sting": 1.03,
-      "Arcane Shot": 0.77,
-      "Aimed Shot": 0.92
-     }
+      "Claw": 3.44,
+      "Serpent Sting": 1.04,
+      "Arcane Shot": 0.82,
+      "Aimed Shot": 0.95
+     },
+     "idle_share": 0.172,
+     "drink_per_kill": 2.78,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.314,
+      "Aimed Shot": 0.187,
+      "Arcane Shot": 0.156,
+      "Cat melee": 0.134,
+      "Claw": 0.091,
+      "Serpent Sting": 0.069,
+      "Bite": 0.049
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "25": {
-     "seconds": 17.1,
+     "seconds": 17.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 2.7,
+      "Auto Shot": 2.9,
       "Hunter's Mark": 1.0,
-      "Growl": 1.12,
+      "Growl": 1.13,
       "Bite": 0.99,
-      "Claw": 3.48,
+      "Claw": 3.47,
       "Serpent Sting": 1.04,
-      "Arcane Shot": 0.92,
-      "Aimed Shot": 0.97
-     }
+      "Arcane Shot": 0.93,
+      "Aimed Shot": 0.98
+     },
+     "idle_share": 0.173,
+     "drink_per_kill": 2.98,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.354,
+      "Aimed Shot": 0.169,
+      "Arcane Shot": 0.141,
+      "Cat melee": 0.123,
+      "Claw": 0.086,
+      "Serpent Sting": 0.083,
+      "Bite": 0.043
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "26": {
      "seconds": 18.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 2.92,
+      "Auto Shot": 3.12,
       "Hunter's Mark": 1.0,
-      "Growl": 1.16,
-      "Bite": 0.98,
-      "Claw": 3.5,
+      "Growl": 1.15,
+      "Bite": 0.99,
+      "Claw": 3.51,
       "Serpent Sting": 1.04,
-      "Aimed Shot": 0.97,
+      "Aimed Shot": 0.99,
       "Arcane Shot": 0.92
-     }
+     },
+     "idle_share": 0.202,
+     "drink_per_kill": 3.67,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.36,
+      "Aimed Shot": 0.158,
+      "Arcane Shot": 0.13,
+      "Cat melee": 0.119,
+      "Serpent Sting": 0.111,
+      "Claw": 0.08,
+      "Bite": 0.04
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "30": {
-     "seconds": 18.9,
+     "seconds": 18.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 3.29,
+      "Auto Shot": 3.64,
       "Hunter's Mark": 1.0,
-      "Growl": 1.37,
+      "Growl": 1.31,
       "Bite": 1.0,
-      "Claw": 3.9,
+      "Claw": 3.85,
       "Serpent Sting": 1.04,
       "Aimed Shot": 1.0,
-      "Arcane Shot": 0.98,
-      "Melee": 0.18
-     }
+      "Arcane Shot": 0.99,
+      "Melee": 0.11
+     },
+     "idle_share": 0.154,
+     "drink_per_kill": 2.83,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.36,
+      "Aimed Shot": 0.154,
+      "Arcane Shot": 0.153,
+      "Cat melee": 0.122,
+      "Serpent Sting": 0.106,
+      "Claw": 0.065,
+      "Bite": 0.031,
+      "Melee": 0.009
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "39": {
-     "seconds": 22.5,
+     "seconds": 22.1,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 4.24,
+      "Auto Shot": 4.75,
       "Hunter's Mark": 1.0,
-      "Growl": 2.02,
-      "Bite": 1.22,
-      "Claw": 4.82,
-      "Serpent Sting": 1.03,
-      "Aimed Shot": 1.01,
-      "Arcane Shot": 0.98,
-      "Melee": 0.3,
-      "Feign Death": 0.18
-     }
+      "Growl": 1.91,
+      "Bite": 1.21,
+      "Claw": 4.68,
+      "Serpent Sting": 1.04,
+      "Aimed Shot": 1.0,
+      "Arcane Shot": 0.97,
+      "Feign Death": 0.22,
+      "Melee": 0.29
+     },
+     "idle_share": 0.161,
+     "drink_per_kill": 3.56,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.357,
+      "Aimed Shot": 0.147,
+      "Serpent Sting": 0.141,
+      "Arcane Shot": 0.126,
+      "Cat melee": 0.123,
+      "Claw": 0.058,
+      "Bite": 0.026,
+      "Melee": 0.017
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "40": {
-     "seconds": 22.7,
+     "seconds": 22.3,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 4.22,
+      "Auto Shot": 4.78,
       "Hunter's Mark": 1.0,
-      "Growl": 2.04,
-      "Bite": 1.25,
-      "Claw": 4.83,
+      "Growl": 1.94,
+      "Bite": 1.23,
+      "Claw": 4.72,
       "Serpent Sting": 1.02,
       "Aimed Shot": 1.01,
-      "Arcane Shot": 0.98,
-      "Feign Death": 0.19,
-      "Melee": 0.31,
-      "Raptor Strike": 0.06
-     }
+      "Arcane Shot": 0.95,
+      "Melee": 0.28,
+      "Feign Death": 0.23
+     },
+     "idle_share": 0.167,
+     "drink_per_kill": 3.74,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.359,
+      "Aimed Shot": 0.141,
+      "Serpent Sting": 0.14,
+      "Arcane Shot": 0.124,
+      "Cat melee": 0.118,
+      "Claw": 0.065,
+      "Bite": 0.029,
+      "Melee": 0.016
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "50": {
-     "seconds": 24.2,
+     "seconds": 23.1,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 4.89,
+      "Auto Shot": 5.22,
       "Hunter's Mark": 1.0,
-      "Growl": 2.23,
-      "Bite": 1.4,
-      "Claw": 5.12,
+      "Growl": 2.08,
+      "Bite": 1.29,
+      "Claw": 4.96,
       "Serpent Sting": 1.02,
-      "Aimed Shot": 1.08,
-      "Arcane Shot": 0.91,
-      "Melee": 0.35,
-      "Feign Death": 0.3,
-      "Wing Clip": 0.12,
-      "Raptor Strike": 0.12,
-      "Mongoose Bite": 0.07
-     }
+      "Aimed Shot": 1.02,
+      "Arcane Shot": 0.93,
+      "Feign Death": 0.25,
+      "Melee": 0.36,
+      "Mongoose Bite": 0.07,
+      "Wing Clip": 0.08,
+      "Raptor Strike": 0.09
+     },
+     "idle_share": 0.157,
+     "drink_per_kill": 3.61,
+     "eat_per_kill": 0.03,
+     "shares": {
+      "Auto Shot": 0.332,
+      "Serpent Sting": 0.175,
+      "Aimed Shot": 0.132,
+      "Cat melee": 0.127,
+      "Arcane Shot": 0.115,
+      "Claw": 0.062,
+      "Bite": 0.028,
+      "Melee": 0.019,
+      "Raptor Strike": 0.006
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "60": {
-     "seconds": 24.9,
+     "seconds": 24.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 4.81,
+      "Auto Shot": 5.47,
       "Hunter's Mark": 1.0,
-      "Growl": 2.35,
-      "Bite": 1.48,
-      "Claw": 5.46,
-      "Serpent Sting": 1.03,
-      "Aimed Shot": 1.06,
-      "Arcane Shot": 0.84,
-      "Melee": 0.45,
-      "Raptor Strike": 0.17,
-      "Feign Death": 0.36,
-      "Wing Clip": 0.16,
-      "Mongoose Bite": 0.08
-     }
+      "Growl": 2.29,
+      "Bite": 1.42,
+      "Claw": 5.4,
+      "Serpent Sting": 1.02,
+      "Aimed Shot": 1.03,
+      "Arcane Shot": 0.91,
+      "Feign Death": 0.31,
+      "Melee": 0.33,
+      "Wing Clip": 0.09,
+      "Raptor Strike": 0.1,
+      "Mongoose Bite": 0.07
+     },
+     "idle_share": 0.161,
+     "drink_per_kill": 3.85,
+     "eat_per_kill": 0.03,
+     "shares": {
+      "Auto Shot": 0.301,
+      "Serpent Sting": 0.17,
+      "Cat melee": 0.154,
+      "Aimed Shot": 0.138,
+      "Arcane Shot": 0.111,
+      "Claw": 0.07,
+      "Bite": 0.032,
+      "Melee": 0.013,
+      "Raptor Strike": 0.006
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     }
    }
   },
@@ -619,7 +1420,7 @@
    "build": "survival-open-leveling",
    "rotation": "melee-dps",
    "provisional_order": false,
-   "fingerprint": "874dce4e43f2",
+   "fingerprint": "13b6770f57d2",
    "levels": {
     "1": {
      "seconds": 9.8,
@@ -628,227 +1429,544 @@
       "Auto Shot": 1.05,
       "Growl": 0.96,
       "Bite": 0.58,
-      "Melee": 0.81,
+      "Melee": 0.85,
       "Melee (off-hand)": 0.98,
-      "Claw": 0.72,
-      "Raptor Strike": 0.2
-     }
+      "Claw": 0.74,
+      "Raptor Strike": 0.15
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.42,
+      "Melee": 0.219,
+      "Melee (off-hand)": 0.124,
+      "Bite": 0.088,
+      "Claw": 0.065,
+      "Raptor Strike": 0.058,
+      "Cat melee": 0.027
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none"
     },
     "4": {
-     "seconds": 11.8,
+     "seconds": 12.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.07,
-      "Growl": 1.02,
+      "Growl": 1.05,
       "Bite": 0.99,
-      "Melee": 1.1,
-      "Melee (off-hand)": 1.37,
+      "Melee": 1.19,
+      "Melee (off-hand)": 1.49,
       "Serpent Sting": 0.99,
-      "Claw": 2.51,
-      "Raptor Strike": 0.31
-     }
+      "Claw": 2.75,
+      "Raptor Strike": 0.35
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.268,
+      "Melee": 0.179,
+      "Claw": 0.136,
+      "Melee (off-hand)": 0.113,
+      "Cat melee": 0.086,
+      "Raptor Strike": 0.082,
+      "Bite": 0.08,
+      "Serpent Sting": 0.056
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Monkey"
     },
     "9": {
-     "seconds": 13.3,
+     "seconds": 13.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.11,
       "Serpent Sting": 1.0,
-      "Growl": 1.16,
+      "Growl": 1.25,
       "Bite": 1.0,
-      "Claw": 3.6,
-      "Melee": 1.46,
-      "Melee (off-hand)": 1.94,
-      "Raptor Strike": 0.48
-     }
+      "Claw": 3.8,
+      "Melee": 1.58,
+      "Melee (off-hand)": 2.09,
+      "Raptor Strike": 0.52
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Claw": 0.192,
+      "Auto Shot": 0.172,
+      "Cat melee": 0.171,
+      "Melee": 0.138,
+      "Melee (off-hand)": 0.093,
+      "Bite": 0.088,
+      "Raptor Strike": 0.084,
+      "Serpent Sting": 0.062
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Monkey"
     },
     "10": {
-     "seconds": 13.5,
+     "seconds": 13.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.14,
       "Serpent Sting": 1.0,
-      "Growl": 1.16,
+      "Growl": 1.26,
       "Bite": 1.0,
-      "Claw": 3.67,
-      "Melee": 1.51,
-      "Melee (off-hand)": 1.98,
-      "Raptor Strike": 0.47
-     }
+      "Claw": 3.87,
+      "Melee": 1.62,
+      "Melee (off-hand)": 2.12,
+      "Raptor Strike": 0.51
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Claw": 0.177,
+      "Cat melee": 0.176,
+      "Auto Shot": 0.167,
+      "Melee": 0.135,
+      "Serpent Sting": 0.097,
+      "Melee (off-hand)": 0.089,
+      "Bite": 0.08,
+      "Raptor Strike": 0.079
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Monkey"
     },
     "15": {
-     "seconds": 16.2,
+     "seconds": 16.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.12,
       "Serpent Sting": 1.0,
-      "Growl": 1.87,
-      "Bite": 1.03,
-      "Claw": 4.79,
-      "Melee": 2.35,
-      "Melee (off-hand)": 3.04,
-      "Raptor Strike": 0.7
-     }
+      "Growl": 1.95,
+      "Bite": 1.04,
+      "Claw": 4.95,
+      "Melee": 2.48,
+      "Melee (off-hand)": 3.27,
+      "Raptor Strike": 0.79
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.265,
+      "Melee": 0.149,
+      "Auto Shot": 0.128,
+      "Claw": 0.126,
+      "Serpent Sting": 0.106,
+      "Melee (off-hand)": 0.1,
+      "Raptor Strike": 0.079,
+      "Bite": 0.046
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Monkey"
     },
     "16": {
-     "seconds": 15.4,
+     "seconds": 15.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.14,
       "Serpent Sting": 1.0,
-      "Growl": 1.69,
+      "Growl": 1.76,
       "Bite": 1.01,
-      "Claw": 4.57,
-      "Immolation Trap": 0.47,
-      "Melee": 2.12,
-      "Melee (off-hand)": 2.74,
-      "Raptor Strike": 0.61
-     }
+      "Claw": 4.71,
+      "Immolation Trap": 0.48,
+      "Melee": 2.24,
+      "Melee (off-hand)": 2.87,
+      "Raptor Strike": 0.63
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.227,
+      "Claw": 0.154,
+      "Melee": 0.134,
+      "Auto Shot": 0.129,
+      "Serpent Sting": 0.09,
+      "Melee (off-hand)": 0.087,
+      "Raptor Strike": 0.079,
+      "Bite": 0.065,
+      "Immolation Trap": 0.035
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Monkey"
     },
     "20": {
-     "seconds": 15.8,
+     "seconds": 16.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.2,
       "Serpent Sting": 1.0,
-      "Growl": 1.73,
+      "Growl": 1.81,
       "Bite": 1.01,
-      "Claw": 4.6,
+      "Claw": 4.7,
       "Immolation Trap": 0.48,
-      "Melee": 2.18,
-      "Melee (off-hand)": 2.81,
-      "Raptor Strike": 0.64
-     }
+      "Melee": 2.27,
+      "Melee (off-hand)": 2.96,
+      "Raptor Strike": 0.7
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.232,
+      "Melee": 0.138,
+      "Auto Shot": 0.134,
+      "Serpent Sting": 0.123,
+      "Claw": 0.122,
+      "Melee (off-hand)": 0.092,
+      "Raptor Strike": 0.081,
+      "Bite": 0.05,
+      "Immolation Trap": 0.028
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Monkey"
     },
     "25": {
-     "seconds": 17.3,
+     "seconds": 17.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.23,
       "Serpent Sting": 1.0,
-      "Growl": 2.02,
-      "Bite": 1.06,
-      "Claw": 4.98,
+      "Growl": 2.12,
+      "Bite": 1.14,
+      "Claw": 5.08,
       "Immolation Trap": 0.5,
-      "Melee": 2.6,
-      "Melee (off-hand)": 3.39,
-      "Raptor Strike": 0.79
-     }
+      "Melee": 2.76,
+      "Melee (off-hand)": 3.58,
+      "Raptor Strike": 0.82
+     },
+     "idle_share": 0.002,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.239,
+      "Melee": 0.136,
+      "Auto Shot": 0.123,
+      "Claw": 0.122,
+      "Serpent Sting": 0.116,
+      "Melee (off-hand)": 0.098,
+      "Raptor Strike": 0.078,
+      "Bite": 0.051,
+      "Immolation Trap": 0.036
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Monkey"
     },
     "26": {
-     "seconds": 18.1,
+     "seconds": 18.3,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 1.22,
+      "Auto Shot": 1.24,
       "Serpent Sting": 1.0,
-      "Growl": 1.97,
-      "Bite": 1.05,
-      "Claw": 4.92,
-      "Immolation Trap": 0.52,
-      "Melee": 2.57,
-      "Melee (off-hand)": 3.34,
-      "Raptor Strike": 0.77
-     }
+      "Growl": 2.05,
+      "Bite": 1.09,
+      "Claw": 4.99,
+      "Immolation Trap": 0.53,
+      "Melee": 2.73,
+      "Melee (off-hand)": 3.44,
+      "Raptor Strike": 0.72
+     },
+     "idle_share": 0.05,
+     "drink_per_kill": 0.92,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.22,
+      "Serpent Sting": 0.153,
+      "Melee": 0.127,
+      "Auto Shot": 0.118,
+      "Claw": 0.11,
+      "Melee (off-hand)": 0.099,
+      "Raptor Strike": 0.066,
+      "Immolation Trap": 0.063,
+      "Bite": 0.045
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Monkey"
     },
     "30": {
-     "seconds": 18.1,
+     "seconds": 18.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.18,
       "Serpent Sting": 1.0,
-      "Growl": 2.21,
-      "Bite": 1.15,
-      "Claw": 5.23,
-      "Lacerate": 0.54,
-      "Melee": 3.06,
-      "Melee (off-hand)": 3.79,
-      "Immolation Trap": 0.49,
-      "Raptor Strike": 0.74
-     }
+      "Growl": 2.29,
+      "Bite": 1.25,
+      "Claw": 5.34,
+      "Lacerate": 0.44,
+      "Melee": 3.24,
+      "Melee (off-hand)": 4.02,
+      "Immolation Trap": 0.5,
+      "Raptor Strike": 0.79
+     },
+     "idle_share": 0.003,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.215,
+      "Melee": 0.15,
+      "Melee (off-hand)": 0.139,
+      "Serpent Sting": 0.138,
+      "Auto Shot": 0.094,
+      "Claw": 0.088,
+      "Raptor Strike": 0.069,
+      "Immolation Trap": 0.056,
+      "Bite": 0.037,
+      "Lacerate": 0.014
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Beast"
     },
     "39": {
-     "seconds": 20.7,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Auto Shot": 1.16,
-      "Serpent Sting": 1.0,
-      "Growl": 2.61,
-      "Bite": 1.5,
-      "Claw": 5.72,
-      "Lacerate": 0.14,
-      "Melee": 3.79,
-      "Melee (off-hand)": 4.6,
-      "Immolation Trap": 1.0,
-      "Raptor Strike": 0.81
-     }
-    },
-    "40": {
      "seconds": 20.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 1.16,
+      "Auto Shot": 1.17,
       "Serpent Sting": 1.0,
-      "Growl": 2.64,
-      "Bite": 1.53,
+      "Growl": 2.69,
+      "Bite": 1.55,
       "Claw": 5.75,
-      "Lacerate": 0.2,
-      "Melee": 3.82,
-      "Melee (off-hand)": 4.64,
+      "Lacerate": 0.15,
+      "Melee": 3.88,
+      "Melee (off-hand)": 4.68,
       "Immolation Trap": 1.0,
-      "Raptor Strike": 0.84
-     }
+      "Raptor Strike": 0.82
+     },
+     "idle_share": 0.019,
+     "drink_per_kill": 0.31,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.19,
+      "Immolation Trap": 0.156,
+      "Serpent Sting": 0.149,
+      "Melee": 0.144,
+      "Melee (off-hand)": 0.128,
+      "Auto Shot": 0.071,
+      "Claw": 0.071,
+      "Raptor Strike": 0.052,
+      "Bite": 0.034
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Beast"
+    },
+    "40": {
+     "seconds": 21.2,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Auto Shot": 1.17,
+      "Serpent Sting": 1.0,
+      "Growl": 2.72,
+      "Bite": 1.59,
+      "Claw": 5.79,
+      "Lacerate": 0.16,
+      "Melee": 3.97,
+      "Melee (off-hand)": 4.77,
+      "Immolation Trap": 1.0,
+      "Raptor Strike": 0.82
+     },
+     "idle_share": 0.024,
+     "drink_per_kill": 0.39,
+     "eat_per_kill": 0,
+     "shares": {
+      "Cat melee": 0.186,
+      "Immolation Trap": 0.149,
+      "Serpent Sting": 0.143,
+      "Melee": 0.143,
+      "Melee (off-hand)": 0.128,
+      "Claw": 0.082,
+      "Auto Shot": 0.069,
+      "Raptor Strike": 0.052,
+      "Bite": 0.04,
+      "Lacerate": 0.007
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Beast"
     },
     "50": {
-     "seconds": 21.8,
+     "seconds": 21.6,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.15,
       "Serpent Sting": 1.0,
-      "Growl": 2.76,
-      "Bite": 1.56,
-      "Claw": 5.87,
-      "Lacerate": 0.21,
-      "Melee": 4.04,
-      "Melee (off-hand)": 4.8,
+      "Growl": 2.73,
+      "Bite": 1.53,
+      "Claw": 5.83,
+      "Lacerate": 0.18,
+      "Melee": 3.97,
+      "Melee (off-hand)": 4.68,
       "Immolation Trap": 1.0,
-      "Raptor Strike": 0.81,
-      "Mongoose Bite": 0.09
-     }
+      "Raptor Strike": 0.79,
+      "Mongoose Bite": 0.1
+     },
+     "idle_share": 0.044,
+     "drink_per_kill": 0.84,
+     "eat_per_kill": 0.07,
+     "shares": {
+      "Serpent Sting": 0.196,
+      "Cat melee": 0.178,
+      "Immolation Trap": 0.157,
+      "Melee": 0.13,
+      "Melee (off-hand)": 0.112,
+      "Claw": 0.073,
+      "Auto Shot": 0.062,
+      "Raptor Strike": 0.046,
+      "Bite": 0.034,
+      "Lacerate": 0.007
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Beast"
     },
     "53": {
-     "seconds": 22.8,
+     "seconds": 22.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.21,
       "Serpent Sting": 1.0,
-      "Growl": 2.95,
-      "Bite": 1.68,
-      "Claw": 6.04,
-      "Lacerate": 0.23,
-      "Melee": 4.39,
-      "Melee (off-hand)": 5.17,
+      "Growl": 2.89,
+      "Bite": 1.65,
+      "Claw": 5.96,
+      "Lacerate": 0.22,
+      "Melee": 4.21,
+      "Melee (off-hand)": 4.96,
       "Immolation Trap": 1.0,
-      "Raptor Strike": 0.88,
-      "Mongoose Bite": 0.1
-     }
+      "Raptor Strike": 0.86,
+      "Mongoose Bite": 0.14
+     },
+     "idle_share": 0.042,
+     "drink_per_kill": 0.62,
+     "eat_per_kill": 0.28,
+     "shares": {
+      "Serpent Sting": 0.201,
+      "Cat melee": 0.183,
+      "Immolation Trap": 0.153,
+      "Melee": 0.128,
+      "Melee (off-hand)": 0.111,
+      "Claw": 0.067,
+      "Auto Shot": 0.062,
+      "Raptor Strike": 0.047,
+      "Bite": 0.033,
+      "Lacerate": 0.008,
+      "Mongoose Bite": 0.007
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Beast"
     },
     "54": {
-     "seconds": 23.2,
+     "seconds": 22.8,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.22,
       "Serpent Sting": 1.0,
-      "Growl": 2.92,
-      "Bite": 1.66,
-      "Claw": 5.98,
-      "Lacerate": 0.25,
-      "Melee": 4.43,
-      "Melee (off-hand)": 5.11,
+      "Growl": 2.83,
+      "Bite": 1.61,
+      "Claw": 5.91,
+      "Lacerate": 0.24,
+      "Melee": 4.3,
+      "Melee (off-hand)": 4.91,
       "Immolation Trap": 1.0,
       "Strider Kick": 0.99,
-      "Raptor Strike": 0.74,
-      "Mongoose Bite": 0.09
-     }
+      "Raptor Strike": 0.71,
+      "Mongoose Bite": 0.14
+     },
+     "idle_share": 0.059,
+     "drink_per_kill": 1.22,
+     "eat_per_kill": 0.06,
+     "shares": {
+      "Serpent Sting": 0.193,
+      "Cat melee": 0.182,
+      "Immolation Trap": 0.145,
+      "Melee": 0.126,
+      "Melee (off-hand)": 0.106,
+      "Claw": 0.064,
+      "Auto Shot": 0.062,
+      "Strider Kick": 0.039,
+      "Raptor Strike": 0.037,
+      "Bite": 0.031,
+      "Lacerate": 0.009,
+      "Mongoose Bite": 0.007
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Beast"
     },
     "60": {
      "seconds": 22.8,
@@ -856,17 +1974,41 @@
      "casts": {
       "Auto Shot": 1.09,
       "Serpent Sting": 1.0,
-      "Growl": 2.84,
-      "Bite": 1.64,
-      "Claw": 5.96,
+      "Growl": 2.95,
+      "Bite": 1.69,
+      "Claw": 6.06,
       "Lacerate": 0.27,
-      "Melee": 4.38,
-      "Melee (off-hand)": 4.96,
+      "Melee": 4.42,
+      "Melee (off-hand)": 5.01,
       "Immolation Trap": 1.0,
       "Strider Kick": 0.99,
-      "Raptor Strike": 0.71,
-      "Mongoose Bite": 0.31
-     }
+      "Raptor Strike": 0.72,
+      "Mongoose Bite": 0.18
+     },
+     "idle_share": 0.053,
+     "drink_per_kill": 1.06,
+     "eat_per_kill": 0.22,
+     "shares": {
+      "Serpent Sting": 0.205,
+      "Cat melee": 0.169,
+      "Immolation Trap": 0.164,
+      "Melee": 0.12,
+      "Melee (off-hand)": 0.102,
+      "Claw": 0.064,
+      "Auto Shot": 0.054,
+      "Strider Kick": 0.035,
+      "Raptor Strike": 0.035,
+      "Bite": 0.032,
+      "Lacerate": 0.012,
+      "Mongoose Bite": 0.008
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Beast"
     }
    }
   },
@@ -874,212 +2016,485 @@
    "build": "beast-marks-open-leveling",
    "rotation": "bm-leveling",
    "provisional_order": false,
-   "fingerprint": "03b61cfaed5c",
+   "fingerprint": "d403756158b4",
    "levels": {
     "1": {
-     "seconds": 10.3,
+     "seconds": 10.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 1.29,
+      "Auto Shot": 1.33,
       "Growl": 0.96,
-      "Bite": 0.85,
-      "Claw": 1.14
-     }
+      "Bite": 0.87,
+      "Claw": 1.18
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.666,
+      "Bite": 0.162,
+      "Claw": 0.135,
+      "Cat melee": 0.037
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none"
     },
     "4": {
-     "seconds": 12.3,
+     "seconds": 12.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 2.24,
-      "Growl": 1.0,
+      "Auto Shot": 2.46,
+      "Growl": 1.02,
       "Bite": 0.94,
-      "Claw": 2.72,
-      "Serpent Sting": 1.01
-     }
+      "Claw": 2.87,
+      "Serpent Sting": 1.02
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.623,
+      "Claw": 0.146,
+      "Cat melee": 0.089,
+      "Bite": 0.076,
+      "Serpent Sting": 0.058,
+      "Melee": 0.008
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none"
     },
     "6": {
-     "seconds": 13.2,
+     "seconds": 13.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 2.47,
+      "Auto Shot": 2.8,
       "Hunter's Mark": 1.0,
-      "Growl": 1.05,
+      "Growl": 1.09,
       "Bite": 0.98,
-      "Claw": 3.62,
+      "Claw": 3.72,
       "Serpent Sting": 0.99
-     }
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.604,
+      "Cat melee": 0.143,
+      "Claw": 0.136,
+      "Serpent Sting": 0.061,
+      "Bite": 0.056
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "none"
     },
     "10": {
-     "seconds": 13.5,
+     "seconds": 13.6,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 2.57,
+      "Auto Shot": 2.75,
       "Hunter's Mark": 1.0,
-      "Growl": 1.07,
-      "Bite": 1.0,
-      "Claw": 3.71,
-      "Serpent Sting": 0.99
-     }
+      "Growl": 1.12,
+      "Bite": 0.99,
+      "Claw": 3.84,
+      "Serpent Sting": 1.0
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.485,
+      "Claw": 0.183,
+      "Cat melee": 0.175,
+      "Bite": 0.079,
+      "Serpent Sting": 0.078
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "12": {
-     "seconds": 14.5,
+     "seconds": 14.6,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 2.96,
+      "Auto Shot": 3.16,
       "Hunter's Mark": 1.0,
-      "Growl": 1.32,
+      "Growl": 1.41,
       "Bite": 1.0,
-      "Claw": 4.21,
-      "Serpent Sting": 1.02
-     }
+      "Claw": 4.27,
+      "Serpent Sting": 1.03
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.481,
+      "Cat melee": 0.215,
+      "Claw": 0.158,
+      "Serpent Sting": 0.084,
+      "Bite": 0.062
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "19": {
-     "seconds": 15.6,
+     "seconds": 15.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 3.34,
+      "Auto Shot": 3.59,
       "Hunter's Mark": 1.0,
-      "Growl": 1.6,
+      "Growl": 1.66,
       "Bite": 1.0,
-      "Claw": 4.58,
+      "Claw": 4.56,
       "Serpent Sting": 1.04
-     }
+     },
+     "idle_share": 0.0,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.468,
+      "Cat melee": 0.235,
+      "Claw": 0.135,
+      "Serpent Sting": 0.108,
+      "Bite": 0.055
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "20": {
-     "seconds": 15.6,
+     "seconds": 15.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 2.94,
+      "Auto Shot": 3.11,
       "Hunter's Mark": 1.0,
-      "Growl": 1.29,
+      "Growl": 1.31,
       "Bite": 1.0,
-      "Claw": 3.88,
-      "Serpent Sting": 1.03,
-      "Aimed Shot": 0.95
-     }
+      "Claw": 3.84,
+      "Serpent Sting": 1.04,
+      "Aimed Shot": 0.97
+     },
+     "idle_share": 0.065,
+     "drink_per_kill": 1.01,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.396,
+      "Aimed Shot": 0.185,
+      "Cat melee": 0.175,
+      "Claw": 0.105,
+      "Serpent Sting": 0.087,
+      "Bite": 0.051
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "25": {
      "seconds": 16.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 3.32,
+      "Auto Shot": 3.6,
       "Hunter's Mark": 1.0,
-      "Growl": 1.42,
-      "Bite": 1.0,
-      "Claw": 4.06,
+      "Growl": 1.48,
+      "Bite": 0.99,
+      "Claw": 3.95,
       "Serpent Sting": 1.04,
-      "Aimed Shot": 0.98
-     }
+      "Aimed Shot": 0.99
+     },
+     "idle_share": 0.055,
+     "drink_per_kill": 0.91,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.431,
+      "Aimed Shot": 0.165,
+      "Cat melee": 0.159,
+      "Serpent Sting": 0.101,
+      "Claw": 0.099,
+      "Bite": 0.044
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "26": {
-     "seconds": 17.6,
+     "seconds": 17.3,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 3.42,
+      "Auto Shot": 3.69,
       "Hunter's Mark": 1.0,
-      "Growl": 1.51,
+      "Growl": 1.5,
       "Bite": 0.99,
-      "Claw": 4.05,
+      "Claw": 4.01,
       "Serpent Sting": 1.04,
-      "Aimed Shot": 0.98,
-      "Melee": 0.05
-     }
+      "Aimed Shot": 0.99
+     },
+     "idle_share": 0.091,
+     "drink_per_kill": 1.57,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.422,
+      "Aimed Shot": 0.156,
+      "Cat melee": 0.153,
+      "Serpent Sting": 0.135,
+      "Claw": 0.092,
+      "Bite": 0.04
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "30": {
-     "seconds": 18.6,
+     "seconds": 18.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 4.04,
+      "Auto Shot": 4.42,
       "Hunter's Mark": 1.0,
-      "Growl": 1.86,
-      "Bite": 1.01,
-      "Claw": 4.62,
+      "Growl": 1.78,
+      "Bite": 1.03,
+      "Claw": 4.6,
       "Serpent Sting": 1.04,
       "Aimed Shot": 1.0,
-      "Feign Death": 0.16
-     }
+      "Feign Death": 0.2
+     },
+     "idle_share": 0.065,
+     "drink_per_kill": 1.2,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.435,
+      "Cat melee": 0.166,
+      "Aimed Shot": 0.154,
+      "Serpent Sting": 0.132,
+      "Claw": 0.078,
+      "Bite": 0.031
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "37": {
-     "seconds": 21.4,
+     "seconds": 21.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 4.8,
+      "Auto Shot": 5.21,
       "Hunter's Mark": 1.0,
-      "Growl": 2.15,
-      "Bite": 1.25,
-      "Claw": 4.97,
+      "Growl": 2.1,
+      "Bite": 1.27,
+      "Claw": 4.98,
       "Serpent Sting": 1.02,
       "Aimed Shot": 1.0,
-      "Feign Death": 0.27,
-      "Melee": 0.07
-     }
+      "Feign Death": 0.32,
+      "Melee": 0.11,
+      "Raptor Strike": 0.05
+     },
+     "idle_share": 0.092,
+     "drink_per_kill": 1.96,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.427,
+      "Serpent Sting": 0.167,
+      "Cat melee": 0.153,
+      "Aimed Shot": 0.138,
+      "Claw": 0.069,
+      "Bite": 0.032,
+      "Melee": 0.008,
+      "Raptor Strike": 0.005
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "38": {
-     "seconds": 21.9,
+     "seconds": 21.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 5.02,
+      "Auto Shot": 5.42,
       "Hunter's Mark": 1.0,
-      "Growl": 2.21,
+      "Growl": 2.19,
       "Bite": 1.35,
-      "Claw": 5.11,
+      "Claw": 5.03,
       "Serpent Sting": 1.02,
-      "Aimed Shot": 1.01,
-      "Feign Death": 0.29,
-      "Melee": 0.1,
-      "Wing Clip": 0.06,
-      "Raptor Strike": 0.06
-     }
+      "Aimed Shot": 1.0,
+      "Feign Death": 0.34,
+      "Melee": 0.17,
+      "Wing Clip": 0.09,
+      "Raptor Strike": 0.1
+     },
+     "idle_share": 0.091,
+     "drink_per_kill": 1.99,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.427,
+      "Serpent Sting": 0.17,
+      "Cat melee": 0.151,
+      "Aimed Shot": 0.133,
+      "Claw": 0.064,
+      "Bite": 0.031,
+      "Melee": 0.011,
+      "Raptor Strike": 0.009
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "40": {
-     "seconds": 22.6,
+     "seconds": 22.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 5.39,
+      "Auto Shot": 5.83,
       "Hunter's Mark": 1.0,
-      "Growl": 2.38,
+      "Growl": 2.31,
       "Bite": 1.45,
-      "Claw": 5.25,
+      "Claw": 5.17,
       "Serpent Sting": 1.02,
-      "Aimed Shot": 1.02,
-      "Feign Death": 0.28,
-      "Melee": 0.1,
-      "Wing Clip": 0.07,
-      "Raptor Strike": 0.06
-     }
+      "Aimed Shot": 1.0,
+      "Feign Death": 0.32,
+      "Melee": 0.13,
+      "Wing Clip": 0.09,
+      "Raptor Strike": 0.08
+     },
+     "idle_share": 0.088,
+     "drink_per_kill": 1.98,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.436,
+      "Serpent Sting": 0.17,
+      "Cat melee": 0.149,
+      "Aimed Shot": 0.123,
+      "Claw": 0.07,
+      "Bite": 0.034,
+      "Melee": 0.008,
+      "Raptor Strike": 0.006
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "50": {
-     "seconds": 23.7,
+     "seconds": 23.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 5.93,
+      "Auto Shot": 6.18,
       "Hunter's Mark": 1.0,
-      "Growl": 2.58,
-      "Bite": 1.59,
-      "Claw": 5.43,
+      "Growl": 2.4,
+      "Bite": 1.49,
+      "Claw": 5.29,
       "Serpent Sting": 1.02,
-      "Aimed Shot": 1.06,
-      "Feign Death": 0.27,
-      "Melee": 0.07
-     }
+      "Aimed Shot": 1.02,
+      "Feign Death": 0.26,
+      "Melee": 0.1,
+      "Raptor Strike": 0.06,
+      "Wing Clip": 0.07
+     },
+     "idle_share": 0.086,
+     "drink_per_kill": 1.84,
+     "eat_per_kill": 0.14,
+     "shares": {
+      "Auto Shot": 0.387,
+      "Serpent Sting": 0.202,
+      "Cat melee": 0.177,
+      "Aimed Shot": 0.114,
+      "Claw": 0.073,
+      "Bite": 0.035
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     },
     "60": {
-     "seconds": 25.3,
+     "seconds": 24.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Auto Shot": 5.82,
+      "Auto Shot": 6.38,
       "Hunter's Mark": 1.0,
-      "Growl": 2.73,
-      "Bite": 1.5,
-      "Claw": 6.7,
+      "Growl": 2.71,
+      "Bite": 0.99,
+      "Claw": 7.69,
       "Serpent Sting": 1.03,
-      "Aimed Shot": 1.07,
-      "Feign Death": 0.41,
-      "Melee": 0.23,
-      "Wing Clip": 0.17,
-      "Raptor Strike": 0.14,
-      "Mongoose Bite": 0.05
-     }
+      "Aimed Shot": 1.04,
+      "Feign Death": 0.34,
+      "Melee": 0.2,
+      "Wing Clip": 0.13,
+      "Raptor Strike": 0.11
+     },
+     "idle_share": 0.103,
+     "drink_per_kill": 2.52,
+     "eat_per_kill": 0,
+     "shares": {
+      "Auto Shot": 0.346,
+      "Serpent Sting": 0.204,
+      "Cat melee": 0.187,
+      "Aimed Shot": 0.123,
+      "Claw": 0.099,
+      "Bite": 0.023,
+      "Melee": 0.008,
+      "Raptor Strike": 0.007
+     },
+     "pet_sources": [
+      "Bite",
+      "Cat melee",
+      "Claw"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Aspect of the Hawk"
     }
    }
   }

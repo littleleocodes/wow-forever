@@ -294,7 +294,7 @@ def write_report(res, name=None):
          f"mobs at player level {res['mob_level_offset']:+d}, gear tier `{res.get('gear', 'greens')}`). Spell numbers: beta client {DATA_BUILD} (`_reference/data/forever-spells/{cls}.json`); "
          "talent numbers: the beta tooltips; mob health, damage, armor and the caster share by level: the Classic 1.12 creature database "
          "(`_reference/data/fightlab/mob_stats.json`, unverified for Forever); everything else (gear, Classic combat formulas, drink rates) is an "
-         "assumption listed in `_reference/data/fightlab/tables.py`. Do not hand-edit.", ""]
+         "assumption listed in `_reference/data/fightlab/tables.py`. " + __import__("rest_rule").note() + " Do not hand-edit.", ""]
     o += ["## What was simulated", "", cm.DESCRIPTION, ""]
     levels = sorted(res["levels"], key=int)
     if any(r.get("mobs_per_pull", 1) > 1.05 for r in res["levels"].values()):

@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Marksmanship leveling build the open leveling search found on 2026-11-18: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the mm-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (mm-raid). 
+The Marksmanship leveling build the open leveling search found on 2026-11-21: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the mm-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (mm-raid). 
 
 ## Point allocation
 
@@ -71,14 +71,14 @@ The Marksmanship leveling build the open leveling search found on 2026-11-18: ev
 
 ## Core talents (priority order)
 
-1. **Efficiency** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Unleashed Fury** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Unleashed Fury** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Efficiency** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 3. **Lethal Attacks** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
 4. **Ferocity** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Improved Stings** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Rapid Recuperation** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Ranged Weapon Specialization** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Trueshot Aura** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Trueshot Aura** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Ranged Weapon Specialization** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Careful Aim** — +0.3 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Rapid Recuperation** — +0.3 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -87,8 +87,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Notes
 
 - 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Bestial Discipline to Improved Tracking at 60 (no loss: -0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Ranged Weapon Specialization to Improved Tracking at 39 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill).
-- +3.6% faster than the hand draft leveling-beast-mastery, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.74; opt-bm-leveling-solo-60 22.88, opt-bm-leveling-leveling-st 22.96, opt-mm-raid-leveling-st 23.20, leveling-beast-mastery 23.57. The search simulated 27,163 builds.
+- +4.4% faster than the hand draft leveling-beast-mastery, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.02; opt-bm-leveling-solo-60 22.20, opt-bm-leveling-leveling-st 22.24, opt-mm-raid-leveling-st 22.49, leveling-beast-mastery 22.99. The search simulated 27,163 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

@@ -4,94 +4,64 @@
 
 *Built around Frostfire Bolt, a new Forever spell that uses both trees.* (a hybrid: Fire/Frost).
 
-**Leveling from level 1?** [The rotation level by level](frostfire-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
+**Leveling from level 1?** You level as Frost: [the Frost rotation level by level](frost-by-level.md), what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Frostfire — Leveling](../research/leveling/builds/frostfire-open-leveling.md)** (2/25/24) — [open the talent tree](https://talentsforever.com/mage/60/2-55502000200033-0325320301003002-12)
+Level as **Frost** ([Frost leveling](frost.md)) and switch your talents to Frostfire at 60 ([Frostfire in a raid](../raid/frostfire.md); a respec at a class trainer). Frost kills faster on the way up; Frostfire Bolt is the raid spell.
 
-> 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
+## If you want to play Frostfire Bolt while leveling
 
-**Signature spells:** 31% of the damage at level 60 in the fight lab comes from the spec's core spells (Frostfire Bolt) (the spec's rule: at least 30%; **Frostfire Bolt** cast at level 60).
+The build that plays it: **[Frostfire — Leveling](../research/leveling/builds/frostfire-open-leveling.md)** (2/26/23) — [open the talent tree](https://talentsforever.com/mage/60/2-55501001200133-0425120301003002-12).
 
-## How to play
-
-**Before the fight:** **Frost Armor** (**Ice Armor** from level 30, **Mage Armor** from 34) and **Arcane Intellect** up. Pull from as far away as you can.
-
-**In the fight**, top to bottom:
-
-1. Your bolt: **Frostbolt** until level 40, **Frostfire Bolt** from 40, each only while the mob has more than about a third (35%) of its health (**Frostfire Bolt** also only while you have more than 15% of your mana). Cast it while the mob walks in and whenever nothing below applies; if the mob would reach you before the cast ends, **Fire Blast** (with it on cooldown and **Frost Nova** ready, wand the mob until it arrives).
-2. **Frost Nova** when it reaches you, then step back; with **Frost Nova** on cooldown, **Fire Blast**, then keep casting the bolt.
-3. **Ice Lance** into the freeze whenever it is ready (an 8-second cooldown).
-4. Below about a third of the mob's health (or, from 40, under 15% of your mana): no bolt; **Fire Blast** whenever it is ready until the mob is down to a tenth of its health, an **Ice Lance** into a freeze or one that will kill, else your wand. No Cone of Cold (the tuned rules switch it off).
-5. **Counterspell** a mob that casts spells.
-
-**Between fights:** Drink your conjured water below 15% of your mana (the tuned rule), **Evocation** in place of a drink when it is ready and you are under 15% mana, eat below 40% of your health (the tuned rule). Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full. **Evocation** is not a sit and brings no food.
-
-## Why this rotation
-
-The Frostfire leveling build is a Frost mage whose bolt changes at level 40: **Frostbolt** before, **Frostfire Bolt** after, with **Frost Nova**, a step back, **Ice Lance** into the freeze and **Fire Blast** throughout. Frost points come first (**Ice Lance** at 20, **Shatter** by 27, **Fingers of Frost** at 30-31), then **Accelerant** (35-39) and the Fire points: **Ignite** (40-44), **Impact** (45), **Improved Fire Blast**, **Incineration**, **Master of Elements** and **Critical Mass**. In the open leveling search's 20-60 race of 2026-11-16 it took about 33.4 seconds per kill level-weighted, behind the Frost page's 28.9; the page's numbers table has each level.
-
-**Why it works**
-
-- **Frostfire Bolt** (trained at level 40) counts as Frost and Fire, so both trees' talents apply (**Ice Shards**, **Frost Channeling**, **Ignite**, **Critical Mass**, **Master of Elements**), and it slows like **Frostbolt** (40%), so its chill rolls **Frostbite** (15% to freeze) and **Fingers of Frost** (15%: your next 2 spells count as cast on a frozen target). **Accelerant** cuts its 3-second cast to 2.5. The tuned rules (2026-11-15) cast it only while the mob has more than about a third (35%) of its health and you have more than 15% of your mana: below that, **Fire Blast** and the wand end the fight.
-- Before level 40 **Frostbolt** does the same job, under the same rule: no new bolt once the mob is below about a third of its health.
-- **Shatter** and **Ice Lance** are the build's two most valuable talents in the open search of 2026-11-15 (about 5.7 and 4.3 seconds per kill at 60, then **Ice Shards** 2.2, **Precision** and **Ignite** 1.5 each, and **Frostbite**, **Fingers of Frost** and **Frost Channeling** 1.4 each): a frozen mob takes 300% more damage from **Ice Lance**, with 50% more crit chance and **Ice Shards**' bigger crits. It has an 8-second cooldown, one per freeze.
-- **Frost Nova** when the mob reaches you, then step back out of melee. **Improved Frost Nova** (32, 55) brings it back 4 seconds sooner with both points.
-- **Fire Blast** is the instant: when the mob would reach you before the bolt lands (with it on cooldown and **Frost Nova** ready, wand the mob in), when the mob is on you with **Frost Nova** down, to finish a mob it will kill, and whenever it is ready on the mob's last third until the mob is down to a tenth of its health (the tune of 2026-11-17), with the wand between. The rules before 2026-11-15 switched it off; the re-tuned rules press it about 1.5 to 2 times a kill. **Cone of Cold** stays off for single pulls.
-- **Master of Elements** refunds 30% of a spell's base cost on each Fire or Frost crit, which **Shatter** makes common; **Critical Mass** adds 6% crit to your Fire spells, **Frostfire Bolt** and **Fire Blast** included, and **Incineration** adds crit to **Fire Blast** and **Ice Lance**.
-
-**Caveats**
-
-- The leveling filler pass of 2026-11-09 moved five points that measured nothing or only held a tier open (Blast Wave, Fire Power, Arcane Resilience and both Frost Warding) to **Improved Frostbolt**, **Improved Frost Nova** and **Impact**; on 2026-11-15, under **Mage Armor**, the open search and the filler pass moved the three Burning Soul points to **Improved Fire Blast** (46-47) and **Impact** (45): 2/25/24, with no Blast Wave for packs and nothing that keeps hits from pushing the bolt back. The pass of 2026-11-17 moved Flame Throwing (60) to **Impact**'s second point, at no cost.
-- The signature rule: the Frostfire spec must do at least 30% of its damage with **Frostfire Bolt** from level 40. The page shows the build at 31% at level 60 in the fight lab, just above the floor: the re-tuned rules of 2026-11-15 moved part of the damage to **Fire Blast**.
-- Mana: **Frostfire Bolt** costs 370 at top rank. Drink below 15% of your mana and eat below 40% of your health (the tuned rules), and wear **Mage Armor** from 34 (1.5-3.5% faster per kill at 34-46 in the fight lab, 1-2% at 50-60); use **Evocation** between fights in place of a drink, when it is ready and you are under 15% mana. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).
-
-**When to change it**
-
-- On a nearly dead mob (below about a third of its health), start no bolt: **Fire Blast** when it is ready (not under a tenth of its health), an **Ice Lance** into a freeze or one that will kill, else the wand.
-- Mob on you with **Frost Nova** and **Fire Blast** both down: keep casting the bolt; hits push it back (this build has no Burning Soul). With a pack, **Cone of Cold** is back in play.
-
-## Talents while leveling
-
-One point per level from 10, in this order:
+<details><summary>Its talent order (one point per level from 10)</summary>
 
 | Levels | Talent | Points |
 |---|---|---|
 | 10-11 | Precision (Frost) | 2 |
 | 12-14 | Improved Frostbolt (Frost) | 3 |
-| 15-17 | Frostbite (Frost) | 3 |
-| 18-19 | Ice Shards (Frost) | 2 |
+| 15 | Frostbite (Frost) | 1 |
+| 16 | Improved Frostbolt (Frost) | 1 |
+| 17-19 | Ice Shards (Frost) | 3 |
 | 20 | Ice Lance (Frost) | 1 |
-| 21-23 | Ice Shards (Frost) | 3 |
-| 24 | Frost Channeling (Frost) | 1 |
+| 21-22 | Ice Shards (Frost) | 2 |
+| 23-24 | Frost Channeling (Frost) | 2 |
 | 25-27 | Shatter (Frost) | 3 |
-| 28-29 | Frost Channeling (Frost) | 2 |
+| 28 | Frost Channeling (Frost) | 1 |
+| 29 | Improved Frost Nova (Frost) | 1 |
 | 30-31 | Fingers of Frost (Frost) | 2 |
-| 32 | Improved Frost Nova (Frost) | 1 |
-| 33-34 | Wand Specialization (Arcane) | 2 |
-| 35-39 | Accelerant (Fire) | 5 |
-| 40-44 | Ignite (Fire) | 5 |
-| 45 | Impact (Fire) | 1 |
-| 46-47 | Improved Fire Blast (Fire) | 2 |
-| 48-49 | Incineration (Fire) | 2 |
+| 32 | Wand Specialization (Arcane) | 1 |
+| 33-37 | Accelerant (Fire) | 5 |
+| 38-42 | Ignite (Fire) | 5 |
+| 43 | Pyroblast (Fire) | 1 |
+| 44 | Impact (Fire) | 1 |
+| 45-46 | Improved Fire Blast (Fire) | 2 |
+| 47 | Incineration (Fire) | 1 |
+| 48 | Heating Up (Fire) | 1 |
+| 49 | Incineration (Fire) | 1 |
 | 50-52 | Master of Elements (Fire) | 3 |
 | 53-54 | Incineration (Fire) | 2 |
 | 55 | Improved Frost Nova (Frost) | 1 |
 | 56-58 | Critical Mass (Fire) | 3 |
 | 59 | Incineration (Fire) | 1 |
-| 60 | Impact (Fire) | 1 |
+| 60 | Wand Specialization (Arcane) | 1 |
 
-## The numbers
+</details>
 
-| Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
-|---|---|---|
-| 20 | 27 | 15 |
-| 30 | 30 | 18 |
-| 40 | 39 | 23 |
-| 50 | 33 | 24 |
-| 60 | 29 | 22 |
+What it costs, in seconds per kill (lower is faster):
 
-**In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
+| Level | As Frost | Frostfire Bolt from 40 | Frostfire Bolt from 48 |
+|---|---|---|---|
+| 40 | 29.6 | 40.3 (+36%) | 33.7 (+14%) |
+| 44 | 25.8 | 37.7 (+46%) | 30.3 (+17%) |
+| 48 | 26.3 | 34.9 (+33%) | 34.9 (+33%) |
+| 52 | 26.5 | 34.2 (+29%) | 34.2 (+29%) |
+| 56 | 24.6 | 31.8 (+29%) | 31.8 (+29%) |
+| 60 | 24.6 | 30.7 (+25%) | 30.7 (+25%) |
+| 20-60, higher levels count more | 26.9 | 33.1 (+23%) | 31.8 (+18%) |
+
+Frostfire Bolt is trained at 40; "from 48" keeps Frostbolt until 48. The fight lab: same-level mobs one at a time, quest greens, each build's tuned rules; seeds 1 and 2, 2,000 fights a level, 2026-11-22.
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

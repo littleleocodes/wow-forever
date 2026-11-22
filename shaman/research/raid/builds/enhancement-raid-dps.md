@@ -95,17 +95,17 @@ Allocation adopted on 2026-09-27 from `opt-enhancement-dps-raid-dps`, the best b
   13. move to the top: if not Flame Shock is on the target and time left in the fight ≥ 10s: cast Flame Shock (+0.2%, pass 13)
   14. drop: if auraIsInactive: cast Rockbiter Weapon (+9.8%, pass 16)
 
-Before the pull: at -4.5s: cast Strength of Earth Totem (rank 4); at -3s: cast Grace of Air Totem (rank 2); at -1.5s: cast Searing Totem.
+Before the pull: at -4.5s: cast Strength of Earth Totem; at -3s: cast Grace of Air Totem; at -1.5s: cast Searing Totem.
 
 | # | Priority (the first line whose condition holds is cast) | [`enhancement-raid-dps`](enhancement-raid-dps.md) casts/min |
 |---|---|---|
-| 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem (rank 4) | 0.3 |
-| 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem (rank 2) | 0.3 |
+| 1 | if time left on the totem ≤ 0s: cast Strength of Earth Totem | 0.3 |
+| 2 | if time left on the totem ≤ 0s: cast Grace of Air Totem | 0.3 |
 | 3 | use every other cooldown when ready | as ready |
 | 4 | cast Stormstrike | 7.2 |
 | 5 | if stacks of Maelstrom Weapon on you ≥ 3.75: cast Lightning Bolt | 4.4 |
 | 6 | if time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.3 |
-| 7 | if not Flame Shock is on the target: cast Flame Shock (rank 5) | 4.1 |
+| 7 | if not Flame Shock is on the target: cast Flame Shock | 4.1 |
 | 8 | cast Earth Shock | 4.3 |
 | 9 | if number of targets = 1 and time left on the totem ≤ 0s: cast Searing Totem | 1.3 |
 

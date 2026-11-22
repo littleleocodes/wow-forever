@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Assassination leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-daggers-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-daggers-raid). 
+The Assassination leveling build the open leveling search found on 2026-11-20: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the combat-daggers-raid rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-daggers-raid). 
 
 ## Point allocation
 
@@ -81,14 +81,14 @@ The Assassination leveling build the open leveling search found on 2026-11-16: e
 
 ## Core talents (priority order)
 
-1. **Mutilate** — +3.0 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Flawless Execution** — +1.4 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Venom** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Coup de Grace** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Seal Fate** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Remorseless Attacks** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Weapon Expertise** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Relentless Strikes** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Mutilate** — +2.4 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Flawless Execution** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Venom** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Relentless Strikes** — +1.0 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Coup de Grace** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Seal Fate** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Weapon Expertise** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Remorseless Attacks** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -97,8 +97,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Notes
 
 - 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Vile Poisons to Improved Poisons at 26 (gate: -0.1% seed 3, -0.3% seed 4, level-weighted time per kill).
-- +6.6% faster than the hand draft leveling-combat-swords, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.46; leveling-combat-swords 22.87, opt-combat-daggers-raid-leveling-st 23.38, opt-combat-swords-raid-leveling-st 23.77, opt-combat-swords-raid-solo-60 23.81. The search simulated 64,876 builds.
+- +6.4% faster than the hand draft leveling-combat-swords, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.16; leveling-combat-swords 22.52, opt-combat-swords-raid-leveling-aoe 22.64, opt-combat-swords-raid-leveling-st 22.91, opt-combat-swords-raid-solo-60 22.94, opt-combat-daggers-raid-leveling-st 23.00. The search simulated 64,876 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
@@ -109,7 +109,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/rogue>
-- <https://talentsforever.com/rogue/60/02530021211451031-30232300020122--12>
+- <https://talentsforever.com/rogue/60/02530021201551031-30232300020122--12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

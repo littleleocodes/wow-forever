@@ -381,10 +381,29 @@ def rotation_specs(cls, rot):
     return out
 
 
+def leveling_page_specs(cls):
+    """The specs with a leveling build on the player pages: spec_modes.grid over the builds not marked `player_page: false` (as
+    render_modes.page_list)."""
+    import spec_modes as SM
+    p = HERE.parents[1] / cls / "research" / "talents" / "forever" / "proposed-builds.json"
+    try:
+        builds = json.load(open(p, encoding="utf-8")).get("builds") or []
+    except (OSError, ValueError):
+        return None
+    g = SM.grid(cls, [b for b in builds if b.get("player_page", True) is not False])
+    return {spec for spec, modes in g.items() if modes.get("leveling")}
+
+
 def rotation_required(cls, rot, mode="leveling"):
-    """{required spell: [specs]} of every spec that levels with `rot`: rotation_opt.py never switches these off or starves them."""
+    """{required spell: [specs]} of every spec that levels with `rot`: rotation_opt.py never switches these off or starves them.
+    A hybrid counts only while it has a leveling page (2026-11-21, the audit session's Destruction question: the page-less Affliction/
+    Destruction hybrid's required Shadow Bolt had held Destruction's rules to BOLT_ABOVE 0.2, 15% slower per kill at 31-35 than 0.4;
+    "each spec plays its own rotation" holds for rules too). A tree always counts: the rotation is built for it."""
     out = {}
+    pages = leveling_page_specs(cls) if mode == "leveling" else None
     for spec in rotation_specs(cls, rot):
+        if pages is not None and spec.startswith("Hybrid ") and spec not in pages:
+            continue
         rl = rule(cls, spec, mode)
         for s in (rl or {}).get("required", []):
             out.setdefault(s, []).append(spec)

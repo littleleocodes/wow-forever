@@ -7,21 +7,21 @@
  ],
  "best": "beast-mastery-ml-raid",
  "best_entry": "bm-raid",
- "best_dps": 955.98,
+ "best_dps": 955.86,
  "any_split": false,
- "date": "2026-11-20",
+ "date": "2026-11-22",
  "commit": "2e6e77d84",
  "gear": {
   "bis": {
    "entry": "bm-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-bis.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "setting": "raid",
    "chosen": "all-slots",
-   "ilvl": 63.4,
+   "ilvl": 63.5,
    "trinkets": [
     "Blackhand's Breadth",
-    "Royal Seal of Eldre'Thalas"
+    "Counterattack Lodestone"
    ],
    "names": [
     "Black Dragonscale Helm",
@@ -37,50 +37,51 @@
     "Cutthroat's Signet",
     "Warden's Signet of Ferocity",
     "Blackhand's Breadth",
-    "Royal Seal of Eldre'Thalas",
+    "Counterattack Lodestone",
     "Legionite Glaive",
     null,
     "Rhok'delar, Longbow of the Ancient Keepers"
    ],
    "race_seed1": {
     "current": 1.0,
-    "all-slots": 1.0099606844383269,
-    "keep-sets-and-effects": 1.008030253507992
+    "all-slots": 1.0100341399813815,
+    "keep-sets-and-effects": 1.0085940260056827,
+    "previous": 1.010009829066161,
+    "previous+trinkets": 1.0100341399813815,
+    "the prebis set": 0.9942887624678441,
+    "the prebis set+trinkets": 0.9941917790868274
    },
    "confirm_seed2": {
     "current": 1.0,
-    "all-slots": 1.010066616448003
+    "all-slots": 1.010757282164492
    },
    "weights": {
-    "PseudoStatRangedDps": 1.8389,
-    "StatAgility": 0.6595,
-    "StatArmorPenetration": 0.0629,
-    "StatCritRating": 0.6025,
-    "StatExpertiseRating": 0.2664,
-    "StatHasteRating": 0.4277,
-    "StatHitRating": 0.8311,
-    "StatIntellect": 0.2424,
-    "StatRangedAttackPower": 0.2202,
-    "StatSpellPiercing": 0.2788,
-    "StatSpirit": 0.0002
+    "PseudoStatRangedDps": 2.3051,
+    "StatAgility": 0.6697,
+    "StatArmorPenetration": 0.0716,
+    "StatCritRating": 0.622,
+    "StatExpertiseRating": 0.3158,
+    "StatHasteRating": 0.3774,
+    "StatHitRating": 0.8449,
+    "StatIntellect": 0.3107,
+    "StatRangedAttackPower": 0.2258,
+    "StatSpellPiercing": 0.1117,
+    "StatSpirit": 0.0524
    },
    "evaluated_on": [
-    "bm-raid: ml winner"
-   ],
-   "commit": "2e6e77d84",
-   "kept": true,
-   "note": "the spec's tier set as it stands, made by its last search for that search's winner; not made for this pick"
+    "bm-raid: beast-mastery-ml-raid"
+   ]
   },
   "prebis": {
    "entry": "bm-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-prebis.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "setting": "raid",
-   "chosen": "all-slots",
+   "chosen": "previous",
    "ilvl": 62.6,
    "trinkets": [
     "Blackhand's Breadth",
-    "Royal Seal of Eldre'Thalas"
+    "Counterattack Lodestone"
    ],
    "names": [
     "Black Dragonscale Helm",
@@ -103,36 +104,34 @@
    ],
    "race_seed1": {
     "all-slots": 1.0,
-    "keep-sets-and-effects": 0.9902183931733083
+    "keep-sets-and-effects": 0.9968090342982004,
+    "previous": 1.0085029434476873,
+    "previous+trinkets": 1.0084045736089513
    },
    "confirm_seed2": {
-    "keep-sets-and-effects": 1.0,
-    "all-slots": 1.0108725405954158
+    "previous": 1.0
    },
    "weights": {
-    "PseudoStatRangedDps": 1.828,
-    "StatAgility": 0.6501,
-    "StatArmorPenetration": 0.0589,
-    "StatCritRating": 0.583,
-    "StatExpertiseRating": 0.271,
-    "StatHasteRating": 0.5248,
-    "StatHitRating": 0.7527,
-    "StatIntellect": 0.2416,
-    "StatRangedAttackPower": 0.2196,
-    "StatSpellPiercing": 0.2748,
-    "StatSpirit": -0.0001
+    "PseudoStatRangedDps": 2.2883,
+    "StatAgility": 0.6739,
+    "StatArmorPenetration": 0.0673,
+    "StatCritRating": 0.5978,
+    "StatExpertiseRating": 0.3047,
+    "StatHasteRating": 0.3519,
+    "StatHitRating": 0.8256,
+    "StatIntellect": 0.3049,
+    "StatRangedAttackPower": 0.2254,
+    "StatSpellPiercing": 0.1084,
+    "StatSpirit": 0.041
    },
    "evaluated_on": [
-    "bm-raid: ml winner (bis)"
-   ],
-   "commit": "2e6e77d84",
-   "kept": true,
-   "note": "the spec's tier set as it stands, made by its last search for that search's winner; not made for this pick"
+    "bm-raid: beast-mastery-ml-raid"
+   ]
   },
   "dungeon": {
    "entry": "bm-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/hunter-beast-mastery-dungeon.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "chosen": "previous",
    "ilvl": 61.9,
    "trinkets": [
@@ -268,7 +267,7 @@
    "spec": "Beast Mastery",
    "setting": "dummy",
    "entry": "bm-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Beast Mastery": [
@@ -351,8 +350,8 @@
      ]
     },
     "split": "31/17/3",
-    "dps": 486.19,
-    "se": 0.138,
+    "dps": 486.75,
+    "se": 0.139,
     "iterations": 10000,
     "build": "the search's winner"
    },
@@ -365,7 +364,7 @@
    "spec": "Beast Mastery",
    "setting": "raid",
    "entry": "bm-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Beast Mastery": [
@@ -439,8 +438,8 @@
      "Survival": []
     },
     "split": "31/20/0",
-    "dps": 955.98,
-    "se": 0.28,
+    "dps": 955.86,
+    "se": 0.279,
     "iterations": 10000,
     "build": "beast-mastery-ml-raid"
    },
@@ -453,7 +452,7 @@
    "spec": "Beast Mastery",
    "setting": "dummy",
    "entry": "bm-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Beast Mastery": [
@@ -550,7 +549,7 @@
    "spec": "Beast Mastery",
    "setting": "raid",
    "entry": "bm-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "winner": {
     "allocation": {
      "Beast Mastery": [
@@ -638,7 +637,7 @@
    "spec": "Beast Mastery",
    "setting": "raid",
    "entry": "bm-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-22",
    "commit": "2e6e77d84",
    "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
    "winner": {
@@ -731,17 +730,17 @@
     "prebis-raid": 889.5,
     "prebis-dummy": 875.3
    },
-   "minutes": 6.5
+   "minutes": 4.2
   }
  },
  "pick_tiers": {
   "build": "beast-mastery-ml-raid",
-  "date": "2026-11-20",
+  "date": "2026-11-22",
   "note": "the page's pick in each tier's gear (the short-check method of 2026-11-20); no talent search",
   "alt": {
    "bis-dummy": {
-    "pick_dps": 463.44,
-    "search_winner_dps": 486.19,
+    "pick_dps": 463.91,
+    "search_winner_dps": 486.75,
     "search_winner_split": "31/17/3",
     "better": "search winner"
    },
@@ -758,143 +757,13 @@
   "dps": {
    "winner": {
     "entry": "bm-raid",
-    "dps": 486.19,
-    "se": 0.138
+    "dps": 486.75,
+    "se": 0.139
    }
   },
   "best_hand": "beast-mastery-ml-raid",
   "gain_vs_hand": 0.0,
   "commit": "2e6e77d84",
   "pick_tiers": true
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "bm-raid",
-    "dps": 955.95,
-    "se": 0.088
-   },
-   "beast-mastery-ml-raid": {
-    "entry": "bm-raid",
-    "dps": 955.95,
-    "se": 0.088
-   }
-  },
-  "best_hand": null,
-  "gain_vs_hand": null
- },
- "signature_check": {
-  "spec": "Beast Mastery",
-  "ok": true,
-  "core_share": 0.3578,
-  "min_share": 0.3,
-  "uncast": [],
-  "missing_talents": [],
-  "why": "",
-  "entry": "bm-raid",
-  "setting": "raid",
-  "iterations": 6000,
-  "dps": 955.8,
-  "date": "2026-11-20",
-  "commit": "2e6e77d84",
-  "shares": {
-   "Auto Shot": 0.3157,
-   "Pet: Auto Attack": 0.303,
-   "Aimed Shot": 0.137,
-   "Serpent Sting": 0.1132,
-   "Pet: Claw": 0.0525,
-   "Arcane Shot": 0.0468,
-   "Summon Hawk": 0.0295,
-   "Pet: Bite": 0.0023
-  },
-  "casts": {
-   "Arcane Shot": 9.78,
-   "Bestial Wrath": 2.0,
-   "Rapid Fire": 1.0,
-   "Summon Hawk": 20.0,
-   "Aimed Shot": 22.57,
-   "Serpent Sting": 12.0,
-   "Aspect of the Hawk": 1.0,
-   "Hunter's Mark": 2.0
-  },
-  "allocation": {
-   "Beast Mastery": [
-    [
-     "Deadly Aspects",
-     5
-    ],
-    [
-     "Endurance Training",
-     3
-    ],
-    [
-     "Focused Fire",
-     2
-    ],
-    [
-     "Bestial Swiftness",
-     1
-    ],
-    [
-     "Unleashed Fury",
-     5
-    ],
-    [
-     "Ferocity",
-     5
-    ],
-    [
-     "Summon Hawk",
-     1
-    ],
-    [
-     "Intimidation",
-     1
-    ],
-    [
-     "Bestial Discipline",
-     2
-    ],
-    [
-     "Frenzy",
-     5
-    ],
-    [
-     "Bestial Wrath",
-     1
-    ]
-   ],
-   "Marksmanship": [
-    [
-     "Lethal Attacks",
-     5
-    ],
-    [
-     "Improved Stings",
-     3
-    ],
-    [
-     "Careful Aim",
-     5
-    ],
-    [
-     "Improved Arcane Shot",
-     2
-    ],
-    [
-     "Mortal Shots",
-     5
-    ]
-   ],
-   "Survival": []
-  }
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-11-20",
-  "setting": "raid",
-  "why": "confirms beast-mastery-ml-raid (+0.00% in a full raid)"
  }
 }

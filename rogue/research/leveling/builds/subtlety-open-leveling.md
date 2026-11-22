@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Subtlety leveling build the open leveling search found on 2026-11-16: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the subtlety-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). 
+The Subtlety leveling build the open leveling search found on 2026-11-20: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the subtlety-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (combat-swords-raid). 
 
 ## Point allocation
 
@@ -26,7 +26,7 @@ The Subtlety leveling build the open leveling search found on 2026-11-16: every 
 | **Coup de Grace** | 3/3 | changed | Increases the damage done by your Eviscerate ability by 20%, and the damage and storage rate of your Death Mark ability by 20%. |
 | **Efficient Strikes** | 2/2 | unchanged | Reduces the Energy costs of Sinister Strike and Hemorrhage by 5. |
 | **Lightning Reflexes** | 3/5 | unchanged | Increases your Dodge chance by 3%. |
-| **Puncturing Wounds** | 2/3 | **NEW** | Increases the critical strike chance of your Backstab by 20% and your Mutilate by 10%, and gives Backstab a 30% chance to add an additional Combo Point. |
+| **Deflection** | 2/3 | changed | Increases your Parry chance by 4%. |
 | **Precision** | 3/3 | changed | Improves your chance to hit by 3%. |
 | **Composure** | 2/2 | **NEW** | Increases the Energy cost reduction of your Poised ability by 10. |
 | **Flawless Execution** | 1/1 | **NEW** | Reduces the Energy cost of your Eviscerate ability by 15. |
@@ -78,7 +78,7 @@ The Subtlety leveling build the open leveling search found on 2026-11-16: every 
 | 44-45 | Combat | Lightning Reflexes | 2 | 0/5/31 |
 | 46-48 | Combat | Precision | 3 | 0/8/31 |
 | 49-50 | Combat | Efficient Strikes | 2 | 0/10/31 |
-| 51-52 | Combat | Puncturing Wounds | 2 | 0/12/31 |
+| 51-52 | Combat | Deflection | 2 | 0/12/31 |
 | 53 | Combat | Lightning Reflexes | 1 | 0/13/31 |
 | 54-55 | Combat | Composure | 2 | 0/15/31 |
 | 56 | Combat | Flawless Execution | 1 | 0/16/31 |
@@ -87,14 +87,14 @@ The Subtlety leveling build the open leveling search found on 2026-11-16: every 
 
 ## Core talents (priority order)
 
-1. **Boot Knife** — +2.1 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Coup de Grace** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Hemorrhage** — +1.3 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Initiative** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Flawless Execution** — +0.9 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Weapon Expertise** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Efficient Strikes** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Dirty Deeds** — +0.8 s per kill at level 60 without it (removal, 3,000 fights).
+1. **Boot Knife** — +2.0 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Coup de Grace** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Initiative** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Hemorrhage** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Death Mark** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Dirty Deeds** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Efficient Strikes** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Flawless Execution** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -102,7 +102,9 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.65; subtlety-leveling 22.90. The search simulated 32,176 builds.
+- 2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Puncturing Wounds to Deflection at 51 (gate that did nothing, no loss: -0.1% seed 3, -0.0% seed 4, level-weighted time per kill).
+- 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Puncturing Wounds to Deflection at 52 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 20.76; subtlety-leveling 22.29. The search simulated 32,176 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

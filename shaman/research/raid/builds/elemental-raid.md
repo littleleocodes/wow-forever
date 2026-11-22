@@ -94,7 +94,7 @@ Before the pull: at -2s: cast Lightning Bolt.
 |---|---|---|
 | 1 | if number of targets = 1 and time left on the totem ≤ 0s and time left in the fight ≥ 20s: cast Searing Totem | 1.0 |
 | 2 | use every other cooldown when ready | as ready |
-| 3 | if not Flame Shock is on the target: cast Flame Shock (rank 5) | 3.0 |
+| 3 | if not Flame Shock is on the target: cast Flame Shock | 3.0 |
 | 4 | if (Clearcasting is up or number of targets ≥ 2 or mana ≥ (time left in the fight × 100)): cast Chain Lightning | 2.1 |
 | 5 | if mana ≥ (time left in the fight × 26.25): cast Lightning Bolt (rank 8) | 24.2 |
 | 6 | cast Lightning Bolt (rank 8) | 24.2 |

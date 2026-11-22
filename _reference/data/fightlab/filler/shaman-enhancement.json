@@ -3,7 +3,7 @@
  "spec": "Enhancement",
  "build": "enhancement-open-leveling",
  "rotation": "enhancement-dps",
- "date": "2026-11-17",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -147,31 +147,20 @@
  ],
  "steps": [
   {
-   "weighted": 26.185,
+   "weighted": 25.988,
    "values_at_60": {
-    "Call of Flame": -0.005,
-    "Elemental Focus": -0.141,
-    "Elemental Weapons": -0.17,
-    "Rage of the Farseer": -0.159,
-    "Reverberation": -0.098,
-    "Totemic Focus": -0.042
+    "Elemental Focus": -0.356,
+    "Elemental Weapons": -0.29,
+    "Flurry": -0.078,
+    "Improved Reincarnation": -0.075,
+    "Rage of the Farseer": -0.316,
+    "Reverberation": -0.117
    },
    "zero": [
-    "Call of Flame",
-    "Totemic Focus"
-   ]
-  },
-  {
-   "weighted": 26.174,
-   "values_at_60": {
-    "Call of Flame": -0.145,
-    "Elemental Focus": -0.145,
-    "Elemental Weapons": -0.217,
-    "Improved Reincarnation": -0.109,
-    "Rage of the Farseer": -0.279,
-    "Reverberation": -0.157
-   },
-   "zero": []
+    "Flurry",
+    "Improved Reincarnation"
+   ],
+   "dead_held": []
   }
  ],
  "moves": [
@@ -206,11 +195,284 @@
    "seed3": -0.0004,
    "seed4": -0.0006,
    "why": "tie-break"
+  },
+  {
+   "from": "Call of Flame",
+   "to": "Flurry",
+   "level": 60,
+   "seed3": -0.0011,
+   "seed4": -0.0007,
+   "why": "tie-break"
   }
  ],
  "kept_signature": [
   "Stormstrike"
  ],
+ "gates_checked": {
+  "Anticipation": {
+   "level": 24,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Ancestral Knowledge",
+     "seed3": 0.001
+    },
+    {
+     "to": "Earth's Grasp",
+     "seed3": 0.0032
+    },
+    {
+     "to": "Guardian Totems",
+     "seed3": 0.0032
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Concussion": {
+   "level": 50,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Convection": {
+   "level": 55,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Reverberation",
+     "seed3": -0.0004
+    },
+    {
+     "to": "Elemental Devastation",
+     "seed3": 0.0004
+    },
+    {
+     "to": "Call of Flame",
+     "seed3": 0.0011
+    },
+    {
+     "to": "Elemental Alacrity",
+     "seed3": 0.0016
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Lightning Shield": {
+   "level": 21,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Anticipation",
+     "seed3": 0.0016
+    },
+    {
+     "to": "Earth's Grasp",
+     "seed3": 0.0025
+    },
+    {
+     "to": "Guardian Totems",
+     "seed3": 0.0025
+    },
+    {
+     "to": "Ancestral Knowledge",
+     "seed3": 0.0027
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Stormstrike": {
+   "level": 39,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Flurry",
+     "seed3": 0.0143
+    },
+    {
+     "to": "Toughness",
+     "seed3": 0.0145
+    },
+    {
+     "to": "Anticipation",
+     "seed3": 0.0152
+    },
+    {
+     "to": "Ancestral Knowledge",
+     "seed3": 0.0153
+    },
+    {
+     "to": "Earth's Grasp",
+     "seed3": 0.0156
+    },
+    {
+     "to": "Guardian Totems",
+     "seed3": 0.0156
+    },
+    {
+     "to": "Improved Ghost Wolf",
+     "seed3": 0.0156
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Maelstrom Weapon": {
+   "level": 44,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Flurry",
+     "seed3": 0.0011
+    },
+    {
+     "to": "Anticipation",
+     "seed3": 0.0012
+    },
+    {
+     "to": "Toughness",
+     "seed3": 0.0016
+    },
+    {
+     "to": "Ancestral Knowledge",
+     "seed3": 0.0023
+    },
+    {
+     "to": "Earth's Grasp",
+     "seed3": 0.0024
+    },
+    {
+     "to": "Guardian Totems",
+     "seed3": 0.0024
+    },
+    {
+     "to": "Improved Ghost Wolf",
+     "seed3": 0.0024
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Mental Dexterity": {
+   "level": 17,
+   "kind": "prerequisite of Flurry",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Mental Quickness": {
+   "level": 36,
+   "kind": "prerequisite of Rage of the Farseer",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Shamanistic Focus": {
+   "level": 20,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Anticipation",
+     "seed3": 0.1155
+    },
+    {
+     "to": "Ancestral Knowledge",
+     "seed3": 0.1177
+    },
+    {
+     "to": "Earth's Grasp",
+     "seed3": 0.1193
+    },
+    {
+     "to": "Guardian Totems",
+     "seed3": 0.1193
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Spirit Weapons": {
+   "level": 37,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Anticipation",
+     "seed3": 0.0052
+    },
+    {
+     "to": "Flurry",
+     "seed3": 0.0054
+    },
+    {
+     "to": "Ancestral Knowledge",
+     "seed3": 0.0065
+    },
+    {
+     "to": "Earth's Grasp",
+     "seed3": 0.0073
+    },
+    {
+     "to": "Guardian Totems",
+     "seed3": 0.0073
+    },
+    {
+     "to": "Improved Ghost Wolf",
+     "seed3": 0.0073
+    },
+    {
+     "to": "Toughness",
+     "seed3": 0.0075
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Thundering Strikes": {
+   "level": 14,
+   "kind": "tier point for Mental Dexterity (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Ancestral Knowledge",
+     "seed3": 0.0045
+    },
+    {
+     "to": "Earth's Grasp",
+     "seed3": 0.0062
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Tidal Focus": {
+   "level": 30,
+   "kind": "tier point for Improved Reincarnation (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Healing Wave",
+     "seed3": 0.0045
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  }
+ },
+ "no_better_home": {
+  "Flurry": {
+   "kind": "zero point",
+   "exact": false,
+   "why": "time per kill at 60 without its last rank: +0.08 s (seed 3)",
+   "homes": 16
+  },
+  "Improved Reincarnation": {
+   "kind": "zero point",
+   "exact": false,
+   "why": "time per kill at 60 without its last rank: +0.08 s (seed 3)",
+   "homes": 16
+  }
+ },
  "final_order": [
   {
    "levels": "10-14",
@@ -352,9 +614,19 @@
   },
   {
    "levels": "60",
-   "tree": "Elemental",
-   "talent": "Call of Flame",
+   "tree": "Enhancement",
+   "talent": "Flurry",
    "points": 1
+  }
+ ],
+ "reruns": [
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-22",
+   "moves": 0
   }
  ],
  "written": {
@@ -370,10 +642,6 @@
     ],
     [
      "Reverberation",
-     1
-    ],
-    [
-     "Call of Flame",
      1
     ],
     [
@@ -408,7 +676,7 @@
     ],
     [
      "Flurry",
-     3
+     4
     ],
     [
      "Stormstrike",
@@ -587,11 +855,11 @@
    },
    {
     "levels": "60",
-    "tree": "Elemental",
-    "talent": "Call of Flame",
+    "tree": "Enhancement",
+    "talent": "Flurry",
     "points": 1
    }
   ],
-  "note": "2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Totemic Focus to Improved Reincarnation at 58 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Anticipation to Call of Flame at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Flurry to Spirit Weapons at 37 (gate: -0.3% seed 3, -0.3% seed 4, level-weighted time per kill); Flurry to Elemental Weapons at 34 (gate: -0.3% seed 3, -0.1% seed 4, level-weighted time per kill)."
+  "note": "2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Call of Flame to Flurry at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Totemic Focus to Improved Reincarnation at 58 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Anticipation to Call of Flame at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Flurry to Spirit Weapons at 37 (gate: -0.3% seed 3, -0.3% seed 4, level-weighted time per kill); Flurry to Elemental Weapons at 34 (gate: -0.3% seed 3, -0.1% seed 4, level-weighted time per kill)."
  }
 }

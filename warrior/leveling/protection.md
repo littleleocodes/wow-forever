@@ -4,13 +4,15 @@
 
 **Leveling from level 1?** [The rotation level by level](protection-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
+> **The fastest way to level:** as **Arms** ([Arms leveling](../leveling/arms.md)), 24 s a kill (level-weighted, 20-60) against 26 s for this tank build: 9% faster. Switch your talents to Protection at 60 (a respec at a class trainer). The build below is to level as the tank itself.
+
 **[Protection — Leveling into the raid build](../research/leveling/builds/protection-leveling.md)** (17/3/31) — [open the talent tree](https://talentsforever.com/warrior/60/35300103002-03-050530020330001351-12)
 
-> 🔬 These are your **raid talents** ([Protection — Raid tank](../raid/protection.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 28 s per kill; own tree first: 28 s per kill; own tree last: 28 s per kill). A model of the beta, to check at launch.
+> 🔬 These are your **raid talents** ([Protection — Raid tank](../raid/protection.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 26 s per kill; own tree first: 26 s per kill; own tree last: 26 s per kill). A model of the beta, to check at launch.
 
-**Signature spells:** 90% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Shield Slam, Revenge, Heroic Strike; this build never casts Thunder Clap) (the spec's rule: at least 70%; **Shield Slam** cast at level 60).
+**Signature spells:** 91% of the damage at level 60 in the fight lab comes from the spec's core spells (melee, Shield Slam, Revenge, Heroic Strike; this build never casts Thunder Clap) (the spec's rule: at least 70%; **Shield Slam** cast at level 60).
 
-**Leveling as Protection or as Arms?** This build takes 28 s per kill (level-weighted, 20-60), [Arms](../leveling/arms.md) 25 s: Protection is 13% slower. Your first Protection point comes at level 10. Level this way if you want to tank dungeons later on the way; otherwise level as Arms and switch at 60 (a respec at a class trainer).
+**Leveling as Protection or as Arms?** This build takes 26 s per kill (level-weighted, 20-60), [Arms](../leveling/arms.md) 24 s: Protection is 9% slower. Your first Protection point comes at level 10. Level this way if you want to tank dungeons later on the way; otherwise level as Arms and switch at 60 (a respec at a class trainer).
 
 ## How to play
 
@@ -22,26 +24,26 @@
 
 1. **Battle Stance**, **Charge** in, spend the rage **Tactical Mastery** cannot keep on **Shield Slam** or **Rend**, then back to **Defensive Stance** (with **Vanguard**, **Charge** straight from **Defensive Stance**).
 2. **Shield Bash** a mob that is casting.
-3. **Shield Block** whenever the mob is hitting you.
+3. **Shield Block** whenever the mob is hitting you and has more than a fifth of its health.
 4. **Battle Shout**: keep it up (it lasts 3 minutes).
 5. **Concussion Blow** when you drop below half health; **Victory Rush** after a kill when you are below 90%.
 6. **Revenge** whenever it lights up (after a block, dodge or parry), then **Shield Slam** whenever ready.
 7. **Rend** once, while the mob has more than half its health.
-8. **Heroic Strike** only once the mob is below 20% of its health (the tuned rule), keeping enough rage for **Shield Slam** and **Revenge**; two or more mobs: **Thunder Clap**, **Demoralizing Shout** and **Cleave**.
+8. **Heroic Strike** only once the mob is below 35% of its health (the tuned rule), keeping enough rage for **Shield Slam** and **Revenge**; two or more mobs: **Thunder Clap**, **Demoralizing Shout** and **Cleave**.
 
 **Between fights:** You rarely need to eat or bandage: the shield soaks most of the damage.
 
 ## Why this rotation
 
-Protection levels sword and board in **Defensive Stance**, with almost no time spent eating or bandaging. **Charge** in from **Battle Stance**, keep **Shield Block** up while the mob hits you, and spend rage on **Revenge** and **Shield Slam**; **Heroic Strike** waits until the mob is below 20% of its health.
+Protection levels sword and board in **Defensive Stance**, with almost no time spent eating or bandaging. **Charge** in from **Battle Stance**, keep **Shield Block** up while the mob hits you and has more than a fifth of its health, and spend rage on **Revenge** and **Shield Slam**; **Heroic Strike** waits until the mob is below 35% of its health.
 
 **Why it works**
 
 - **Charge** needs **Battle Stance** in this build, so every pull from level 10 starts with a swap and ends with one back to **Defensive Stance**. **Tactical Mastery** (trained at 14) keeps 10 rage through the swap, and the fight lab spends anything above that on **Shield Slam** or **Rend** before it switches back; before 14 a stance change loses all your rage.
-- **Shield Block** goes up whenever the mob is hitting you (10 rage, 5-second cooldown, off the global cooldown): 75% more block chance for 7 seconds or 2 blocks. Each block gives 5 rage with **Shield Specialization** and opens **Revenge**, so it pays for itself; the fight lab measured 3.1 seconds per kill lost at 60 without **Shield Specialization**.
+- **Shield Block** goes up whenever the mob is hitting you and has more than a fifth of its health (the tuned rules of 2026-11-20; 10 rage, 5-second cooldown, off the global cooldown): 75% more block chance for 7 seconds or 2 blocks. Each block gives 5 rage with **Shield Specialization** and opens **Revenge**, so it pays for itself; the fight lab measured 3.1 seconds per kill lost at 60 without **Shield Specialization**.
 - **Revenge** (2 rage with 3 ranks of **Focused Rage**) whenever it lights up and **Shield Slam** (from 40) on cooldown are your damage. The tuned rules are built around **Shield Slam**: they keep rage for it, and without it the fight lab's kills take three times as long. Then come **Shield Specialization** (3.1 seconds per kill at 60), **Bastion** (2.2; +10% to everything you deal while a shield is equipped), **Focused Rage** (2.1) and **Improved Revenge** (1.6).
-- **Heroic Strike** is a finisher here: the tuned rule (2026-11-06) holds it until the mob is below 20% of its health, because earlier the rage is worth more on **Shield Slam** and **Revenge**, which the fight lab keeps enough rage for. **Rend** goes on once while the mob has more than half its health.
-- From 41 the points go to the raid build's Arms and Fury talents: **Improved Rend** (41-43), **Deflection** (44-45, 47-49), **Improved Overpower** (46), **Improved Heroic Strike** (50, 55-56), **Deep Wounds** (51-53), **Cruelty** (54, 59-60) and **Impale** (57-58). Solo, **Cruelty** is worth 0.9 seconds per kill at 60, **Improved Rend** 0.5, **Impale** and **Deep Wounds** about 0.3 each; **Improved Overpower** and **Improved Heroic Strike** nothing, since this rotation never casts **Overpower** and holds **Heroic Strike** for the last 20%.
+- **Heroic Strike** is a finisher here: the tuned rule (2026-11-20) holds it until the mob is below 35% of its health, because earlier the rage is worth more on **Shield Slam** and **Revenge**, which the fight lab keeps enough rage for. **Rend** goes on once while the mob has more than half its health.
+- From 41 the points go to the raid build's Arms and Fury talents: **Improved Rend** (41-43), **Deflection** (44-45, 47-49), **Improved Overpower** (46), **Improved Heroic Strike** (50, 55-56), **Deep Wounds** (51-53), **Cruelty** (54, 59-60) and **Impale** (57-58). Solo, **Cruelty** is worth 0.9 seconds per kill at 60, **Improved Rend** 0.5, **Impale** and **Deep Wounds** about 0.3 each; **Improved Overpower** and **Improved Heroic Strike** nothing, since this rotation never casts **Overpower** and holds **Heroic Strike** for the last 35%.
 - **Thunder Clap**, **Demoralizing Shout** and **Sunder Armor** stay off on a single mob: the fight lab measured **Thunder Clap** at +1.2 seconds and **Demoralizing Shout** at +1.0 second per kill with no fewer deaths (a 2026-09-30 test), and **Sunder Armor** never beat **Heroic Strike** for the rage.
 - **Concussion Blow** (level 33: a 5-second stun, 45-second cooldown, no damage) is your emergency button below half health, and **Victory Rush** heals 10% at the start of the next fight. **Shield Bash** is for casters: it interrupts and locks that school for 6 seconds.
 
@@ -88,18 +90,20 @@ One point per level from 10, in this order:
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
-| 20 | 24 | 19 |
-| 30 | 29 | 23 |
-| 40 | 25 | 21 |
-| 50 | 28 | 24 |
-| 60 | 30 | 25 |
+| 20 | 23 | 18 |
+| 30 | 27 | 21 |
+| 40 | 24 | 20 |
+| 50 | 26 | 23 |
+| 60 | 28 | 23 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
 ## Other builds of this spec
 
-- [Protection — Leveling](../research/leveling/builds/protection-open-leveling.md) (3/17/31, 27 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/003-15222005-251133020101201351-12)
+- [Protection — Leveling](../research/leveling/builds/protection-open-leveling.md) (3/17/31, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warrior/60/003-15222005-251133020101201351-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

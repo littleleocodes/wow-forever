@@ -125,7 +125,7 @@ Allocation adopted on 2026-09-26 from `opt-arms-2h-raid-raid-dps`, the best buil
 | # | Priority (the first line whose condition holds is cast) | [`arms-2h-raid`](arms-2h-raid.md) casts/min |
 |---|---|---|
 | 1 | cast Berserker Rage | 2.0 |
-| 2 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
+| 2 | if not Battle Shout is up: cast Battle Shout | 0.3 |
 | 3 | if execute phase (E20): cast Execute | 5.0 |
 | 4 | cast Goblin Sapper Charge | as ready |
 | 5 | cast Dense Dynamite | as ready |

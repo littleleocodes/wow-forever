@@ -3,7 +3,7 @@
  "spec": "Feral Combat",
  "build": "feral-combat-open-leveling",
  "rotation": "feral-cat-dps",
- "date": "2026-11-17",
+ "date": "2026-11-21",
  "fights": 1500,
  "start_order": [
   {
@@ -135,18 +135,353 @@
  ],
  "steps": [
   {
-   "weighted": 25.819,
+   "weighted": 22.575,
    "values_at_60": {
-    "Natural Shapeshifter": -0.134,
-    "Naturalist": -0.29,
-    "Nature's Splendor": -0.77,
-    "Rend and Tear": -0.185
+    "Natural Shapeshifter": -0.156,
+    "Naturalist": -0.357,
+    "Nature's Splendor": -0.688,
+    "Rend and Tear": -0.143
    },
-   "zero": []
+   "zero": [],
+   "dead_held": [
+    "Brutal Impact",
+    "Improved Wrath"
+   ]
   }
  ],
  "moves": [],
  "kept_signature": [],
+ "gates_checked": {
+  "Blood Frenzy": {
+   "level": 29,
+   "kind": "tier point for Rend and Tear (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Furor",
+     "seed3": 0.0123
+    },
+    {
+     "to": "Feral Instinct",
+     "seed3": 0.0123
+    },
+    {
+     "to": "Brutal Impact",
+     "seed3": 0.0123
+    },
+    {
+     "to": "Shredding Attacks",
+     "seed3": 0.0123
+    },
+    {
+     "to": "Lacerate",
+     "seed3": 0.0123
+    },
+    {
+     "to": "Predatory Discipline",
+     "seed3": 0.0123
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Brutal Impact": {
+   "level": 53,
+   "kind": "tier point for Rend and Tear (tier 6)",
+   "does_nothing": "improves only Bash, Pounce, which the build never casts (its removal changes nothing at 60)",
+   "homes": [
+    {
+     "to": "Furor",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Feral Instinct",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Shredding Attacks",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Lacerate",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Predatory Discipline",
+     "seed3": 0.0,
+     "same_times": true
+    }
+   ],
+   "verdict": "no better home"
+  },
+  "Feral Charge": {
+   "kind": "tier point for Rend and Tear (tier 6)",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: utility (move), a value the fight lab cannot see"
+  },
+  "Feral Swiftness": {
+   "kind": "tier point for Rend and Tear (tier 6)",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: utility (move), a value the fight lab cannot see"
+  },
+  "Ferocity": {
+   "level": 14,
+   "kind": "tier point for Rend and Tear (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Furor",
+     "seed3": 0.0279
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Furor": {
+   "level": 24,
+   "kind": "tier point for Rend and Tear (tier 6)",
+   "does_nothing": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 30, 40, 50, 60",
+   "homes": [
+    {
+     "to": "Feral Instinct",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Brutal Impact",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Shredding Attacks",
+     "seed3": 0.0,
+     "same_times": true
+    }
+   ],
+   "verdict": "no better home"
+  },
+  "Genesis": {
+   "level": 35,
+   "kind": "tier point for Nature's Splendor (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Wrath",
+     "seed3": 0.0022
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Heart of the Wild": {
+   "level": 46,
+   "kind": "tier point for Naturalist (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Nature's Focus",
+     "seed3": 0.0011
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Wrath": {
+   "level": 59,
+   "kind": "tier point for Nature's Splendor (tier 3)",
+   "does_nothing": "improves only Wrath, which the build never casts (its removal changes nothing at 60)",
+   "homes": [
+    {
+     "to": "Moonglow",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Improved Moonfire",
+     "seed3": 0.0,
+     "same_times": true
+    }
+   ],
+   "verdict": "no better home"
+  },
+  "Leader of the Pack": {
+   "level": 30,
+   "kind": "tier point for Rend and Tear (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Furor",
+     "seed3": 0.0203
+    },
+    {
+     "to": "Feral Instinct",
+     "seed3": 0.0203
+    },
+    {
+     "to": "Brutal Impact",
+     "seed3": 0.0203
+    },
+    {
+     "to": "Shredding Attacks",
+     "seed3": 0.0203
+    },
+    {
+     "to": "Lacerate",
+     "seed3": 0.0203
+    },
+    {
+     "to": "Predatory Discipline",
+     "seed3": 0.0203
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Natural Instinct": {
+   "level": 41,
+   "kind": "tier point for Rend and Tear (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Furor",
+     "seed3": 0.0063
+    },
+    {
+     "to": "Feral Instinct",
+     "seed3": 0.0063
+    },
+    {
+     "to": "Brutal Impact",
+     "seed3": 0.0063
+    },
+    {
+     "to": "Shredding Attacks",
+     "seed3": 0.0063
+    },
+    {
+     "to": "Lacerate",
+     "seed3": 0.0063
+    },
+    {
+     "to": "Predatory Discipline",
+     "seed3": 0.0063
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Nature's Majesty": {
+   "level": 39,
+   "kind": "prerequisite of Nature's Splendor",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Nature's Reach": {
+   "level": 37,
+   "kind": "tier point for Nature's Splendor (tier 3)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Wrath",
+     "seed3": 0.0082
+    },
+    {
+     "to": "Moonglow",
+     "seed3": 0.0082
+    },
+    {
+     "to": "Improved Moonfire",
+     "seed3": 0.0082
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Predatory Strikes": {
+   "level": 27,
+   "kind": "prerequisite of Rend and Tear",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Savage Fury": {
+   "level": 23,
+   "kind": "tier point for Rend and Tear (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Furor",
+     "seed3": 0.0143
+    },
+    {
+     "to": "Feral Instinct",
+     "seed3": 0.0143
+    },
+    {
+     "to": "Brutal Impact",
+     "seed3": 0.0143
+    },
+    {
+     "to": "Shredding Attacks",
+     "seed3": 0.0143
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Sharpened Claws": {
+   "level": 21,
+   "kind": "prerequisite of Blood Frenzy",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Thick Hide": {
+   "level": 19,
+   "kind": "tier point for Rend and Tear (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Furor",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Feral Instinct",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Brutal Impact",
+     "seed3": 0.0009
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Natural Shapeshifter": {
+   "kind": "not a gate",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: utility (escape), a value the fight lab cannot see"
+  }
+ },
+ "no_better_home": {
+  "Brutal Impact": {
+   "kind": "tier point for Rend and Tear (tier 6)",
+   "exact": true,
+   "why": "improves only Bash, Pounce, which the build never casts (its removal changes nothing at 60)",
+   "homes": 5
+  },
+  "Furor": {
+   "kind": "tier point for Rend and Tear (tier 6)",
+   "exact": true,
+   "why": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 30, 40, 50, 60",
+   "homes": 3
+  },
+  "Improved Wrath": {
+   "kind": "tier point for Nature's Splendor (tier 3)",
+   "exact": true,
+   "why": "improves only Wrath, which the build never casts (its removal changes nothing at 60)",
+   "homes": 2
+  }
+ },
  "final_order": [
   {
    "levels": "10-14",

@@ -3,7 +3,7 @@
  "spec": "Fire",
  "build": "fire-open-leveling",
  "rotation": "fire-leveling",
- "date": "2026-11-17",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -61,16 +61,16 @@
    "points": 1
   },
   {
-   "levels": "32-34",
+   "levels": "32-33",
    "tree": "Frost",
    "talent": "Frost Channeling",
-   "points": 3
+   "points": 2
   },
   {
-   "levels": "35",
+   "levels": "34-35",
    "tree": "Frost",
    "talent": "Ice Shards",
-   "points": 1
+   "points": 2
   },
   {
    "levels": "36-38",
@@ -80,99 +80,430 @@
   },
   {
    "levels": "39",
-   "tree": "Frost",
-   "talent": "Ice Shards",
-   "points": 1
-  },
-  {
-   "levels": "40",
    "tree": "Arcane",
    "talent": "Wand Specialization",
    "points": 1
   },
   {
-   "levels": "41",
+   "levels": "40",
    "tree": "Fire",
    "talent": "Improved Fire Blast",
    "points": 1
   },
   {
-   "levels": "42-43",
+   "levels": "41-42",
    "tree": "Fire",
    "talent": "Burning Soul",
    "points": 2
   },
   {
-   "levels": "44",
+   "levels": "43",
    "tree": "Fire",
    "talent": "Incineration",
    "points": 1
   },
   {
-   "levels": "45",
+   "levels": "44",
    "tree": "Fire",
    "talent": "Heating Up",
    "points": 1
   },
   {
-   "levels": "46",
+   "levels": "45",
    "tree": "Fire",
    "talent": "Improved Scorch",
    "points": 1
   },
   {
-   "levels": "47-49",
+   "levels": "46-48",
    "tree": "Fire",
    "talent": "Master of Elements",
    "points": 3
   },
   {
-   "levels": "50-52",
+   "levels": "49-51",
    "tree": "Fire",
    "talent": "Critical Mass",
    "points": 3
   },
   {
-   "levels": "53-54",
+   "levels": "52-53",
    "tree": "Fire",
    "talent": "Incineration",
    "points": 2
   },
   {
-   "levels": "55-57",
+   "levels": "54-56",
    "tree": "Fire",
    "talent": "Fire Power",
    "points": 3
   },
   {
-   "levels": "58-59",
+   "levels": "57-58",
    "tree": "Fire",
    "talent": "Incineration",
    "points": 2
   },
   {
-   "levels": "60",
+   "levels": "59",
    "tree": "Fire",
    "talent": "Combustion",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Fire",
+   "talent": "Improved Fire Ward",
    "points": 1
   }
  ],
  "steps": [
   {
-   "weighted": 33.66,
+   "weighted": 33.654,
    "values_at_60": {
-    "Combustion": -0.707,
-    "Ice Shards": -0.111,
-    "Shatter": -0.696,
-    "Wand Specialization": -0.138
+    "Combustion": -1.095,
+    "Improved Fire Blast": -0.387,
+    "Shatter": -1.084,
+    "Wand Specialization": -0.196
    },
-   "zero": []
+   "zero": [],
+   "dead_held": []
   }
  ],
- "moves": [],
+ "moves": [
+  {
+   "from": "Improved Fire Ward",
+   "to": "Improved Fire Blast",
+   "level": 60,
+   "seed3": -0.0012,
+   "seed4": -0.0008,
+   "why": "tie-break"
+  },
+  {
+   "from": "Improved Scorch",
+   "to": "Burning Soul",
+   "level": 45,
+   "seed3": -0.0026,
+   "seed4": -0.0006,
+   "why": "gate"
+  }
+ ],
  "kept_signature": [
   "Pyroblast"
  ],
+ "gates_checked": {
+  "Accelerant": {
+   "level": 14,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Burning Soul": {
+   "level": 45,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Flamestrike",
+     "seed3": 0.0039
+    },
+    {
+     "to": "Improved Scorch",
+     "seed3": 0.0039
+    },
+    {
+     "to": "Improved Fire Ward",
+     "seed3": 0.0039
+    },
+    {
+     "to": "Impact",
+     "seed3": 0.004
+    },
+    {
+     "to": "Flame Throwing",
+     "seed3": 0.0042
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Critical Mass": {
+   "level": 51,
+   "kind": "prerequisite of Combustion",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Fire Power": {
+   "level": 56,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Flamestrike",
+     "seed3": 0.001
+    },
+    {
+     "to": "Improved Scorch",
+     "seed3": 0.001
+    },
+    {
+     "to": "Improved Fire Ward",
+     "seed3": 0.001
+    },
+    {
+     "to": "Impact",
+     "seed3": 0.0012
+    },
+    {
+     "to": "Blast Wave",
+     "seed3": 0.0027
+    },
+    {
+     "to": "Flame Throwing",
+     "seed3": 0.0028
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Frost Channeling": {
+   "level": 33,
+   "kind": "tier point for Shatter (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Frostbolt",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Frostbite",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Permafrost",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Improved Blizzard",
+     "seed3": 0.0028
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Frost Warding": {
+   "level": 24,
+   "kind": "tier point for Ice Shards (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Frostbolt",
+     "seed3": 0.0002
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Heating Up": {
+   "level": 44,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Impact",
+     "seed3": 0.0297
+    },
+    {
+     "to": "Improved Flamestrike",
+     "seed3": 0.03
+    },
+    {
+     "to": "Improved Scorch",
+     "seed3": 0.03
+    },
+    {
+     "to": "Improved Fire Ward",
+     "seed3": 0.03
+    },
+    {
+     "to": "Flame Throwing",
+     "seed3": 0.0301
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Ice Lance": {
+   "level": 31,
+   "kind": "tier point for Shatter (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Frostbolt",
+     "seed3": 0.0455
+    },
+    {
+     "to": "Frostbite",
+     "seed3": 0.0455
+    },
+    {
+     "to": "Permafrost",
+     "seed3": 0.0455
+    },
+    {
+     "to": "Improved Blizzard",
+     "seed3": 0.0455
+    },
+    {
+     "to": "Frost Channeling",
+     "seed3": 0.0456
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Ice Shards": {
+   "level": 35,
+   "kind": "tier point for Shatter (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Frost Channeling",
+     "seed3": 0.0024
+    },
+    {
+     "to": "Improved Frostbolt",
+     "seed3": 0.0039
+    },
+    {
+     "to": "Frostbite",
+     "seed3": 0.0039
+    },
+    {
+     "to": "Permafrost",
+     "seed3": 0.0039
+    },
+    {
+     "to": "Improved Blizzard",
+     "seed3": 0.0039
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Ignite": {
+   "level": 19,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Flame Throwing",
+     "seed3": 0.0005
+    },
+    {
+     "to": "Impact",
+     "seed3": 0.007
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Frost Nova": {
+   "level": 27,
+   "kind": "tier point for Shatter (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Frostbolt",
+     "seed3": 0.0075
+    },
+    {
+     "to": "Permafrost",
+     "seed3": 0.0075
+    },
+    {
+     "to": "Frostbite",
+     "seed3": 0.0075
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Incineration": {
+   "level": 58,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Impact",
+     "seed3": 0.0008
+    },
+    {
+     "to": "Improved Flamestrike",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Improved Scorch",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Improved Fire Ward",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Flame Throwing",
+     "seed3": 0.0028
+    },
+    {
+     "to": "Blast Wave",
+     "seed3": 0.0031
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Master of Elements": {
+   "level": 48,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Impact",
+     "seed3": 0.0056
+    },
+    {
+     "to": "Improved Flamestrike",
+     "seed3": 0.0057
+    },
+    {
+     "to": "Improved Scorch",
+     "seed3": 0.0057
+    },
+    {
+     "to": "Improved Fire Ward",
+     "seed3": 0.0057
+    },
+    {
+     "to": "Flame Throwing",
+     "seed3": 0.0081
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Precision": {
+   "level": 25,
+   "kind": "tier point for Ice Shards (tier 2)",
+   "does_nothing": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 30, 40, 50, 60",
+   "homes": [
+    {
+     "to": "Improved Frostbolt",
+     "seed3": 0.0,
+     "same_times": true
+    }
+   ],
+   "verdict": "no better home"
+  }
+ },
+ "no_better_home": {
+  "Precision": {
+   "kind": "tier point for Ice Shards (tier 2)",
+   "exact": true,
+   "why": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 30, 40, 50, 60",
+   "homes": 1
+  }
+ },
  "final_order": [
   {
    "levels": "10-14",
@@ -229,16 +560,16 @@
    "points": 1
   },
   {
-   "levels": "32-34",
+   "levels": "32-33",
    "tree": "Frost",
    "talent": "Frost Channeling",
-   "points": 3
+   "points": 2
   },
   {
-   "levels": "35",
+   "levels": "34-35",
    "tree": "Frost",
    "talent": "Ice Shards",
-   "points": 1
+   "points": 2
   },
   {
    "levels": "36-38",
@@ -248,81 +579,338 @@
   },
   {
    "levels": "39",
-   "tree": "Frost",
-   "talent": "Ice Shards",
-   "points": 1
-  },
-  {
-   "levels": "40",
    "tree": "Arcane",
    "talent": "Wand Specialization",
    "points": 1
   },
   {
-   "levels": "41",
+   "levels": "40",
    "tree": "Fire",
    "talent": "Improved Fire Blast",
    "points": 1
   },
   {
-   "levels": "42-43",
+   "levels": "41-42",
    "tree": "Fire",
    "talent": "Burning Soul",
    "points": 2
   },
   {
-   "levels": "44",
+   "levels": "43",
    "tree": "Fire",
    "talent": "Incineration",
    "points": 1
   },
   {
-   "levels": "45",
+   "levels": "44",
    "tree": "Fire",
    "talent": "Heating Up",
    "points": 1
   },
   {
-   "levels": "46",
+   "levels": "45",
    "tree": "Fire",
-   "talent": "Improved Scorch",
+   "talent": "Burning Soul",
    "points": 1
   },
   {
-   "levels": "47-49",
+   "levels": "46-48",
    "tree": "Fire",
    "talent": "Master of Elements",
    "points": 3
   },
   {
-   "levels": "50-52",
+   "levels": "49-51",
    "tree": "Fire",
    "talent": "Critical Mass",
    "points": 3
   },
   {
-   "levels": "53-54",
+   "levels": "52-53",
    "tree": "Fire",
    "talent": "Incineration",
    "points": 2
   },
   {
-   "levels": "55-57",
+   "levels": "54-56",
    "tree": "Fire",
    "talent": "Fire Power",
    "points": 3
   },
   {
-   "levels": "58-59",
+   "levels": "57-58",
    "tree": "Fire",
    "talent": "Incineration",
    "points": 2
   },
   {
-   "levels": "60",
+   "levels": "59",
    "tree": "Fire",
    "talent": "Combustion",
    "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Fire",
+   "talent": "Improved Fire Blast",
+   "points": 1
   }
- ]
+ ],
+ "reruns": [
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-22",
+   "moves": 0
+  }
+ ],
+ "written": {
+  "allocation": {
+   "Arcane": [
+    [
+     "Wand Specialization",
+     1
+    ]
+   ],
+   "Fire": [
+    [
+     "Incineration",
+     5
+    ],
+    [
+     "Accelerant",
+     5
+    ],
+    [
+     "Ignite",
+     5
+    ],
+    [
+     "Burning Soul",
+     3
+    ],
+    [
+     "Pyroblast",
+     1
+    ],
+    [
+     "Improved Fire Blast",
+     2
+    ],
+    [
+     "Heating Up",
+     1
+    ],
+    [
+     "Master of Elements",
+     3
+    ],
+    [
+     "Critical Mass",
+     3
+    ],
+    [
+     "Fire Power",
+     3
+    ],
+    [
+     "Combustion",
+     1
+    ]
+   ],
+   "Frost": [
+    [
+     "Frost Warding",
+     2
+    ],
+    [
+     "Precision",
+     3
+    ],
+    [
+     "Ice Shards",
+     5
+    ],
+    [
+     "Improved Frost Nova",
+     2
+    ],
+    [
+     "Frost Channeling",
+     2
+    ],
+    [
+     "Ice Lance",
+     1
+    ],
+    [
+     "Shatter",
+     3
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-14",
+    "tree": "Fire",
+    "talent": "Accelerant",
+    "points": 5
+   },
+   {
+    "levels": "15-19",
+    "tree": "Fire",
+    "talent": "Ignite",
+    "points": 5
+   },
+   {
+    "levels": "20",
+    "tree": "Fire",
+    "talent": "Pyroblast",
+    "points": 1
+   },
+   {
+    "levels": "21-22",
+    "tree": "Frost",
+    "talent": "Precision",
+    "points": 2
+   },
+   {
+    "levels": "23-24",
+    "tree": "Frost",
+    "talent": "Frost Warding",
+    "points": 2
+   },
+   {
+    "levels": "25",
+    "tree": "Frost",
+    "talent": "Precision",
+    "points": 1
+   },
+   {
+    "levels": "26-27",
+    "tree": "Frost",
+    "talent": "Improved Frost Nova",
+    "points": 2
+   },
+   {
+    "levels": "28-30",
+    "tree": "Frost",
+    "talent": "Ice Shards",
+    "points": 3
+   },
+   {
+    "levels": "31",
+    "tree": "Frost",
+    "talent": "Ice Lance",
+    "points": 1
+   },
+   {
+    "levels": "32-33",
+    "tree": "Frost",
+    "talent": "Frost Channeling",
+    "points": 2
+   },
+   {
+    "levels": "34-35",
+    "tree": "Frost",
+    "talent": "Ice Shards",
+    "points": 2
+   },
+   {
+    "levels": "36-38",
+    "tree": "Frost",
+    "talent": "Shatter",
+    "points": 3
+   },
+   {
+    "levels": "39",
+    "tree": "Arcane",
+    "talent": "Wand Specialization",
+    "points": 1
+   },
+   {
+    "levels": "40",
+    "tree": "Fire",
+    "talent": "Improved Fire Blast",
+    "points": 1
+   },
+   {
+    "levels": "41-42",
+    "tree": "Fire",
+    "talent": "Burning Soul",
+    "points": 2
+   },
+   {
+    "levels": "43",
+    "tree": "Fire",
+    "talent": "Incineration",
+    "points": 1
+   },
+   {
+    "levels": "44",
+    "tree": "Fire",
+    "talent": "Heating Up",
+    "points": 1
+   },
+   {
+    "levels": "45",
+    "tree": "Fire",
+    "talent": "Burning Soul",
+    "points": 1
+   },
+   {
+    "levels": "46-48",
+    "tree": "Fire",
+    "talent": "Master of Elements",
+    "points": 3
+   },
+   {
+    "levels": "49-51",
+    "tree": "Fire",
+    "talent": "Critical Mass",
+    "points": 3
+   },
+   {
+    "levels": "52-53",
+    "tree": "Fire",
+    "talent": "Incineration",
+    "points": 2
+   },
+   {
+    "levels": "54-56",
+    "tree": "Fire",
+    "talent": "Fire Power",
+    "points": 3
+   },
+   {
+    "levels": "57-58",
+    "tree": "Fire",
+    "talent": "Incineration",
+    "points": 2
+   },
+   {
+    "levels": "59",
+    "tree": "Fire",
+    "talent": "Combustion",
+    "points": 1
+   },
+   {
+    "levels": "60",
+    "tree": "Fire",
+    "talent": "Improved Fire Blast",
+    "points": 1
+   }
+  ],
+  "note": "2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Fire Ward to Improved Fire Blast at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Scorch to Burning Soul at 45 (gate: -0.3% seed 3, -0.1% seed 4, level-weighted time per kill)."
+ }
 }

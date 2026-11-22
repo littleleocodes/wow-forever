@@ -1,0 +1,546 @@
+{
+ "class": "druid",
+ "spec": "Balance",
+ "build": "balance-open-leveling",
+ "rotation": "balance-dps",
+ "date": "2026-11-21",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Balance",
+   "talent": "Improved Wrath",
+   "points": 5
+  },
+  {
+   "levels": "15",
+   "tree": "Balance",
+   "talent": "Moonglow",
+   "points": 1
+  },
+  {
+   "levels": "16",
+   "tree": "Balance",
+   "talent": "Improved Moonfire",
+   "points": 1
+  },
+  {
+   "levels": "17",
+   "tree": "Balance",
+   "talent": "Moonglow",
+   "points": 1
+  },
+  {
+   "levels": "18",
+   "tree": "Balance",
+   "talent": "Improved Moonfire",
+   "points": 1
+  },
+  {
+   "levels": "19",
+   "tree": "Balance",
+   "talent": "Moonglow",
+   "points": 1
+  },
+  {
+   "levels": "20-21",
+   "tree": "Balance",
+   "talent": "Nature's Majesty",
+   "points": 2
+  },
+  {
+   "levels": "22",
+   "tree": "Balance",
+   "talent": "Nature's Splendor",
+   "points": 1
+  },
+  {
+   "levels": "23-24",
+   "tree": "Balance",
+   "talent": "Genesis",
+   "points": 2
+  },
+  {
+   "levels": "25-29",
+   "tree": "Balance",
+   "talent": "Improved Starfire",
+   "points": 5
+  },
+  {
+   "levels": "30-32",
+   "tree": "Balance",
+   "talent": "Eclipse",
+   "points": 3
+  },
+  {
+   "levels": "33",
+   "tree": "Balance",
+   "talent": "Nature's Grace",
+   "points": 1
+  },
+  {
+   "levels": "34",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 1
+  },
+  {
+   "levels": "35-38",
+   "tree": "Balance",
+   "talent": "Moonfury",
+   "points": 4
+  },
+  {
+   "levels": "39",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Balance",
+   "talent": "Moonkin Form",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Balance",
+   "talent": "Moonfury",
+   "points": 1
+  },
+  {
+   "levels": "42-46",
+   "tree": "Restoration",
+   "talent": "Nature's Focus",
+   "points": 5
+  },
+  {
+   "levels": "47-49",
+   "tree": "Restoration",
+   "talent": "Reflection",
+   "points": 3
+  },
+  {
+   "levels": "50-54",
+   "tree": "Restoration",
+   "talent": "Naturalist",
+   "points": 5
+  },
+  {
+   "levels": "55",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 1
+  },
+  {
+   "levels": "56",
+   "tree": "Balance",
+   "talent": "Genesis",
+   "points": 1
+  },
+  {
+   "levels": "57-58",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 2
+  },
+  {
+   "levels": "59",
+   "tree": "Restoration",
+   "talent": "Natural Shapeshifter",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Restoration",
+   "talent": "Gift of Nature",
+   "points": 1
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 34.824,
+   "values_at_60": {
+    "Genesis": -0.026,
+    "Gift of Nature": 0.0,
+    "Moonfury": -0.438,
+    "Moonkin Form": -4.69,
+    "Natural Shapeshifter": 0.0,
+    "Naturalist": -0.438,
+    "Reflection": -0.551,
+    "Vengeance": -0.158
+   },
+   "zero": [
+    "Genesis",
+    "Gift of Nature",
+    "Natural Shapeshifter"
+   ],
+   "dead_held": []
+  }
+ ],
+ "moves": [],
+ "kept_signature": [],
+ "gates_checked": {
+  "Eclipse": {
+   "level": 32,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Genesis",
+     "seed3": 0.0121
+    },
+    {
+     "to": "Nature's Reach",
+     "seed3": 0.0136
+    },
+    {
+     "to": "Improved Entangling Roots",
+     "seed3": 0.0136
+    },
+    {
+     "to": "Overgrowth",
+     "seed3": 0.0136
+    },
+    {
+     "to": "Insect Swarm",
+     "seed3": 0.0155
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Moonfire": {
+   "level": 18,
+   "kind": "prerequisite of Vengeance",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Starfire": {
+   "kind": "not a gate",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: utility (stun), a value the fight lab cannot see"
+  },
+  "Improved Wrath": {
+   "level": 14,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Genesis",
+     "seed3": 0.0149
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Moonglow": {
+   "level": 19,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Genesis",
+     "seed3": 0.0329
+    },
+    {
+     "to": "Nature's Reach",
+     "seed3": 0.0355
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Nature's Focus": {
+   "level": 46,
+   "kind": "tier point for Naturalist (tier 2)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Heart of the Wild",
+     "seed3": 0.0034
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Nature's Grace": {
+   "level": 33,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Genesis",
+     "seed3": 0.0027
+    },
+    {
+     "to": "Nature's Reach",
+     "seed3": 0.0042
+    },
+    {
+     "to": "Improved Entangling Roots",
+     "seed3": 0.0042
+    },
+    {
+     "to": "Overgrowth",
+     "seed3": 0.0042
+    },
+    {
+     "to": "Insect Swarm",
+     "seed3": 0.0069
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Nature's Majesty": {
+   "level": 21,
+   "kind": "prerequisite of Nature's Splendor",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Nature's Splendor": {
+   "level": 22,
+   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Genesis",
+     "seed3": 0.0131
+    },
+    {
+     "to": "Nature's Reach",
+     "seed3": 0.0146
+    },
+    {
+     "to": "Improved Entangling Roots",
+     "seed3": 0.0146
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Natural Shapeshifter": {
+   "kind": "not a gate",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: utility (escape), a value the fight lab cannot see"
+  }
+ },
+ "no_better_home": {
+  "Genesis": {
+   "kind": "zero point",
+   "exact": false,
+   "why": "time per kill at 60 without its last rank: +0.03 s (seed 3)",
+   "homes": 11
+  },
+  "Gift of Nature": {
+   "kind": "zero point",
+   "exact": true,
+   "why": "time per kill at 60 without its last rank: -0.00 s (seed 3)",
+   "homes": 11
+  }
+ },
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Balance",
+   "talent": "Improved Wrath",
+   "points": 5
+  },
+  {
+   "levels": "15",
+   "tree": "Balance",
+   "talent": "Moonglow",
+   "points": 1
+  },
+  {
+   "levels": "16",
+   "tree": "Balance",
+   "talent": "Improved Moonfire",
+   "points": 1
+  },
+  {
+   "levels": "17",
+   "tree": "Balance",
+   "talent": "Moonglow",
+   "points": 1
+  },
+  {
+   "levels": "18",
+   "tree": "Balance",
+   "talent": "Improved Moonfire",
+   "points": 1
+  },
+  {
+   "levels": "19",
+   "tree": "Balance",
+   "talent": "Moonglow",
+   "points": 1
+  },
+  {
+   "levels": "20-21",
+   "tree": "Balance",
+   "talent": "Nature's Majesty",
+   "points": 2
+  },
+  {
+   "levels": "22",
+   "tree": "Balance",
+   "talent": "Nature's Splendor",
+   "points": 1
+  },
+  {
+   "levels": "23-24",
+   "tree": "Balance",
+   "talent": "Genesis",
+   "points": 2
+  },
+  {
+   "levels": "25-29",
+   "tree": "Balance",
+   "talent": "Improved Starfire",
+   "points": 5
+  },
+  {
+   "levels": "30-32",
+   "tree": "Balance",
+   "talent": "Eclipse",
+   "points": 3
+  },
+  {
+   "levels": "33",
+   "tree": "Balance",
+   "talent": "Nature's Grace",
+   "points": 1
+  },
+  {
+   "levels": "34",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 1
+  },
+  {
+   "levels": "35-38",
+   "tree": "Balance",
+   "talent": "Moonfury",
+   "points": 4
+  },
+  {
+   "levels": "39",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 1
+  },
+  {
+   "levels": "40",
+   "tree": "Balance",
+   "talent": "Moonkin Form",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Balance",
+   "talent": "Moonfury",
+   "points": 1
+  },
+  {
+   "levels": "42-46",
+   "tree": "Restoration",
+   "talent": "Nature's Focus",
+   "points": 5
+  },
+  {
+   "levels": "47-49",
+   "tree": "Restoration",
+   "talent": "Reflection",
+   "points": 3
+  },
+  {
+   "levels": "50-54",
+   "tree": "Restoration",
+   "talent": "Naturalist",
+   "points": 5
+  },
+  {
+   "levels": "55",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 1
+  },
+  {
+   "levels": "56",
+   "tree": "Balance",
+   "talent": "Genesis",
+   "points": 1
+  },
+  {
+   "levels": "57-58",
+   "tree": "Balance",
+   "talent": "Vengeance",
+   "points": 2
+  },
+  {
+   "levels": "59",
+   "tree": "Restoration",
+   "talent": "Natural Shapeshifter",
+   "points": 1
+  },
+  {
+   "levels": "60",
+   "tree": "Restoration",
+   "talent": "Gift of Nature",
+   "points": 1
+  }
+ ],
+ "undone": [
+  {
+   "talent": "Natural Shapeshifter",
+   "level": 59,
+   "moves": [
+    [
+     "Natural Shapeshifter",
+     "Bloom",
+     59
+    ],
+    [
+     "Bloom",
+     "Genesis",
+     59
+    ]
+   ],
+   "date": "2026-11-21"
+  },
+  {
+   "talent": "Gift of Nature",
+   "level": 60,
+   "moves": [
+    [
+     "Gift of Nature",
+     "Heart of the Wild",
+     60
+    ]
+   ],
+   "date": "2026-11-21"
+  }
+ ],
+ "reruns": [
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  }
+ ]
+}

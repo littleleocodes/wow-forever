@@ -3,7 +3,7 @@
  "spec": "Combat",
  "build": "combat-open-leveling",
  "rotation": "combat-swords-raid",
- "date": "2026-11-16",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -153,15 +153,492 @@
  ],
  "steps": [
   {
-   "weighted": 20.393,
+   "weighted": 19.968,
    "values_at_60": {
-    "Flash of Steel": -0.231,
-    "Venom": -0.867
+    "Flash of Steel": -0.122,
+    "Venom": -0.825
    },
-   "zero": []
+   "zero": [],
+   "dead_held": [
+    "Improved Expose Armor"
+   ]
   }
  ],
  "moves": [],
+ "kept_signature": [],
+ "gates_checked": {
+  "Aggression": {
+   "level": 30,
+   "kind": "tier point for Flash of Steel (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Hack and Slash",
+     "seed3": 0.0104
+    },
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0119
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0131
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0131
+    },
+    {
+     "to": "Improved Kick",
+     "seed3": 0.0131
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0132
+    },
+    {
+     "to": "Blade Flurry",
+     "seed3": 0.0134
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Cold Blood": {
+   "level": 55,
+   "kind": "tier point for Venom (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Poisons",
+     "seed3": 0.0017
+    },
+    {
+     "to": "Vile Poisons",
+     "seed3": 0.0023
+    },
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0033
+    },
+    {
+     "to": "Improved Expose Armor",
+     "seed3": 0.0033
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.0033
+    },
+    {
+     "to": "Blood Splatter",
+     "seed3": 0.0033
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Composure": {
+   "level": 24,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0115
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0132
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0132
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0132
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Coup de Grace": {
+   "level": 12,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.006
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Deflection": {
+   "level": 20,
+   "kind": "prerequisite of Riposte",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Dual Wield Specialization": {
+   "level": 32,
+   "kind": "tier point for Flash of Steel (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Hack and Slash",
+     "seed3": 0.008
+    },
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0098
+    },
+    {
+     "to": "Blade Flurry",
+     "seed3": 0.011
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.011
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0111
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0111
+    },
+    {
+     "to": "Improved Kick",
+     "seed3": 0.0111
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Efficient Strikes": {
+   "level": 22,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0206
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0217
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0217
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0218
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Flawless Execution": {
+   "level": 25,
+   "kind": "tier point for Flash of Steel (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0366
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0377
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0377
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0377
+    },
+    {
+     "to": "Improved Kick",
+     "seed3": 0.0377
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Hack and Slash": {
+   "level": 34,
+   "kind": "tier point for Flash of Steel (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0012
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0021
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0021
+    },
+    {
+     "to": "Improved Kick",
+     "seed3": 0.0021
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0021
+    },
+    {
+     "to": "Blade Flurry",
+     "seed3": 0.0035
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Improved Expose Armor": {
+   "level": 54,
+   "kind": "tier point for Vile Poisons (tier 4)",
+   "does_nothing": "improves only Expose Armor, which the build never casts (its removal changes nothing at 60)",
+   "homes": [
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Blood Splatter",
+     "seed3": 0.0,
+     "same_times": true
+    }
+   ],
+   "verdict": "no better home"
+  },
+  "Improved Poisons": {
+   "level": 57,
+   "kind": "tier point for Venom (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Vile Poisons",
+     "seed3": 0.0004
+    },
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.001
+    },
+    {
+     "to": "Improved Expose Armor",
+     "seed3": 0.001
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.001
+    },
+    {
+     "to": "Blood Splatter",
+     "seed3": 0.001
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Lethality": {
+   "level": 53,
+   "kind": "tier point for Vile Poisons (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Improved Expose Armor",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.0009
+    },
+    {
+     "to": "Blood Splatter",
+     "seed3": 0.0009
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Lightning Reflexes": {
+   "level": 13,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Malice": {
+   "level": 46,
+   "kind": "prerequisite of Lethality",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Precision": {
+   "level": 17,
+   "kind": "prerequisite of Weapon Expertise",
+   "does_nothing": null,
+   "homes": [],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Remorseless Attacks": {
+   "level": 41,
+   "kind": "tier point for Vile Poisons (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0046
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Riposte": {
+   "level": 21,
+   "kind": "tier point for Flawless Execution (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.0079
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.0087
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.0087
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.0087
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Ruthlessness": {
+   "level": 49,
+   "kind": "tier point for Vile Poisons (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0005
+    },
+    {
+     "to": "Improved Expose Armor",
+     "seed3": 0.0005
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.0005
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Vigor": {
+   "level": 51,
+   "kind": "tier point for Vile Poisons (tier 4)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0012
+    },
+    {
+     "to": "Improved Expose Armor",
+     "seed3": 0.0012
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.0012
+    },
+    {
+     "to": "Blood Splatter",
+     "seed3": 0.0012
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Vile Poisons": {
+   "level": 59,
+   "kind": "tier point for Venom (tier 5)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Improved Poisons",
+     "seed3": -0.0002
+    },
+    {
+     "to": "Improved Gouge",
+     "seed3": 0.0005
+    },
+    {
+     "to": "Improved Expose Armor",
+     "seed3": 0.0005
+    },
+    {
+     "to": "Improved Slice and Dice",
+     "seed3": 0.0005
+    },
+    {
+     "to": "Blood Splatter",
+     "seed3": 0.0005
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  },
+  "Weapon Expertise": {
+   "level": 27,
+   "kind": "tier point for Flash of Steel (tier 6)",
+   "does_nothing": null,
+   "homes": [
+    {
+     "to": "Lightning Reflexes",
+     "seed3": 0.008
+    },
+    {
+     "to": "Endurance",
+     "seed3": 0.009
+    },
+    {
+     "to": "Puncturing Wounds",
+     "seed3": 0.009
+    },
+    {
+     "to": "Improved Sprint",
+     "seed3": 0.009
+    },
+    {
+     "to": "Improved Kick",
+     "seed3": 0.009
+    }
+   ],
+   "verdict": "kept: no home faster on both seeds"
+  }
+ },
+ "no_better_home": {
+  "Improved Expose Armor": {
+   "kind": "tier point for Vile Poisons (tier 4)",
+   "exact": true,
+   "why": "improves only Expose Armor, which the build never casts (its removal changes nothing at 60)",
+   "homes": 3
+  }
+ },
  "final_order": [
   {
    "levels": "10-12",

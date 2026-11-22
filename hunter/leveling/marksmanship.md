@@ -2,13 +2,15 @@
 
 [Hunter](../README.md) > [Leveling (solo)](README.md) > Marksmanship
 
+> **Being checked:** Training Aimed Shot at 20 makes the pick slower (the play check: 15.0 seconds a kill at 19, 16.2 at 20); Aimed Shot is being moved to the level it pays. The build and numbers on this page may change when it is done.
+
 **Leveling from level 1?** [The rotation level by level](marksmanship-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
 **[Marksmanship — Leveling](../research/leveling/builds/marksmanship-open-leveling.md)** (20/29/2) — [open the talent tree](https://talentsforever.com/hunter/60/5122000505-005355200101304-2-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Marksmanship with a pet). A model of the beta, to check at launch.
 
-**Signature spells:** 72% of the damage at level 60 in the fight lab comes from the spec's core spells (Auto Shot, Aimed Shot, Arcane Shot, Barrage, Serpent Sting; this build never casts Multi-Shot, Sniper Shot) (the spec's rule: at least 60%; **Aimed Shot** cast at level 60).
+**Signature spells:** 97% of the damage at level 60 in the fight lab comes from the spec's core spells (Auto Shot, Aimed Shot, Arcane Shot, Barrage, Serpent Sting; this build never casts Multi-Shot, Sniper Shot) (the spec's rule: at least 60%; **Aimed Shot** cast at level 60). The rule costs about 4% a kill here, all of it drinking: **Aimed Shot** shortens the fight, but its mana adds more drinking than that saves (the fight lab, levels 20-60, 2026-11-22).
 
 ## How to play
 
@@ -51,6 +53,7 @@ Marksmanship levels with the pet tanking, but more of the damage is your own: **
 
 - Several mobs: **Multi-Shot** and **Volley** (no cooldown in Forever) instead of single-target shots.
 - A mob on you while the pet is down: slow it with **Wing Clip** or **Concussive Shot**, step back past 8 yards and shoot.
+- If you would rather sit less, hold **Aimed Shot** until you have half your mana: about 3% faster a kill in the fight lab (levels 20-60), because **Aimed Shot** shortens the fight but its mana adds more drinking than that saves. The page keeps it on cooldown: the spec's rule asks for it in every fight.
 
 ## Talents while leveling
 
@@ -71,11 +74,13 @@ One point per level from 10, in this order:
 | 39 | Improved Tracking (Survival) | 1 |
 | 40-44 | Deadly Aspects (Beast Mastery) | 5 |
 | 45-46 | Focused Fire (Beast Mastery) | 2 |
-| 47 | Endurance Training (Beast Mastery) | 1 |
-| 48-49 | Improved Aspect of the Monkey (Beast Mastery) | 2 |
+| 47 | Endurance Training (Beast Mastery) (tier point: needed to reach Unleashed Fury) | 1 |
+| 48-49 | Improved Aspect of the Monkey (Beast Mastery) (tier point: needed to reach Unleashed Fury) | 2 |
 | 50-54 | Unleashed Fury (Beast Mastery) | 5 |
 | 55-59 | Ferocity (Beast Mastery) | 5 |
 | 60 | Improved Tracking (Survival) | 1 |
+
+A talent marked as a tier point does nothing in the fight lab's leveling fights; it is in the build because no legal talent that helps can take that point.
 
 ## The numbers
 
@@ -83,19 +88,21 @@ One point per level from 10, in this order:
 |---|---|---|
 | 20 | 16 | 13 |
 | 30 | 19 | 15 |
-| 40 | 23 | 19 |
-| 50 | 24 | 21 |
-| 60 | 25 | 21 |
+| 40 | 22 | 18 |
+| 50 | 23 | 20 |
+| 60 | 24 | 20 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
-**Points that do nothing for this spec:** **Improved Aspect of the Monkey** (2) only counts toward the points the tree needs before **Ferocity** and **Unleashed Fury**.
+**Points that do nothing for this spec:** **Endurance Training** (1) and **Improved Aspect of the Monkey** (2) only count toward the points the tree needs before **Unleashed Fury**.
 
 ## Other builds of this spec
 
-- [Marksmanship (optimized, solo at 60)](../research/leveling/builds/opt-bm-leveling-solo-60.md) (20/31/0, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/5320020503-0053542001022151--12)
+- [Marksmanship (optimized, solo at 60)](../research/leveling/builds/opt-bm-leveling-solo-60.md) (20/31/0, 22 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/5320020503-0053542001022151--12)
 - [Marksmanship (optimized)](../research/leveling/builds/opt-mm-raid-leveling-st.md) (13/33/5, 23 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/5120221-0053552001122151-5-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

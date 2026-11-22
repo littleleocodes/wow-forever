@@ -2,9 +2,11 @@
 
 [Druid](../README.md) > [Leveling (solo)](README.md) > Balance
 
+> **Being checked:** The first point of Eclipse makes the pick slower at 30 (the play check: 33.3 seconds a kill at 29, 35.9 at 30), and the rotation is being checked for why. The build and numbers on this page may change when it is done.
+
 **Leveling from level 1?** [The rotation level by level](balance-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Balance — Leveling](../research/leveling/builds/balance-open-leveling.md)** (36/0/15) — [open the talent tree](https://talentsforever.com/druid/60/5332200105501351--51530001-12)
+**[Balance — Leveling](../research/leveling/builds/balance-open-leveling.md)** (36/0/15) — [open the talent tree](https://talentsforever.com/druid/60/5332200105501351--51531-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
@@ -19,14 +21,14 @@
 1. **Moonfire** on a mob above a third of its health.
 2. **Wrath** while the mob walks in and whenever nothing below applies: each one stores **Eclipse** charges.
 3. **Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.
-4. A nearly dead mob: finish it with **Moonfire** or **Wrath**.
-5. Low on health: **Entangling Roots** on the mob, step out of melee, then **Regrowth** (it drops **Moonkin Form**; go back in while you have half your health and the mob still has half of its own).
+4. A nearly dead mob: finish it with **Wrath**.
+5. Low on health: **Entangling Roots** on the mob, step out of melee. The tuned rules cast no heal in a fight.
 
-**Between fights:** In **Moonkin Form**, stay in it and eat when your health is below 40%. Before 40: **Rejuvenation** below 85% health, **Regrowth** below 70%. Drink when your mana is below about a third (35%). Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
+**Between fights:** Eat when your health is below 40%, in **Moonkin Form** from 40 (stay in it). No heals between fights either: the tuned rules of 2026-11-21 eat instead, about 2% faster per kill. Drink when your mana is below a quarter (25%). Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
 
 ## Why this rotation
 
-Pull with an instant, then cast: **Moonfire** on the mob, **Wrath** while it runs in, then **Starfire** whenever **Eclipse** has shortened it or the mob cannot hit you, **Wrath** otherwise. Finish with an instant, and heal from range when you must.
+Pull with an instant, then cast: **Moonfire** on the mob, **Wrath** while it runs in, then **Starfire** whenever **Eclipse** has shortened it or the mob cannot hit you, **Wrath** otherwise, and **Wrath** to finish. Eat between fights below 40% health: the tuned rules cast no heal, in a fight or between fights.
 
 **Why it works**
 
@@ -36,13 +38,13 @@ Pull with an instant, then cast: **Moonfire** on the mob, **Wrath** while it run
 - **Starfire** is your hardest hit. It takes 3 seconds with **Improved Starfire** (2.5 on a full **Eclipse** charge), so it waits for a charge or a safe moment: when the mob is rooted or stunned (**Improved Starfire** stuns for 3 seconds 15% of the time). **Nature's Focus** (levels 42-46) lets your casts ignore pushback 70% of the time.
 - **Moonglow** (levels 15, 17 and 19: damage spells cost 25% less), **Moonfury** (10% more Arcane and Nature damage at 5 points) and **Moonkin Form** (40) are the next most valuable talents in the fight lab.
 - Keep **Thorns** and **Mark of the Wild** up between fights (no key).
-- Low on health (below 35%): **Entangling Roots** holds the mob in place but it still hits you if you stand next to it, so step away, then cast **Regrowth** from range. A direct hit can break the roots.
+- Low on health (below 35%): **Entangling Roots** holds the mob in place but it still hits you if you stand next to it, so step away. A direct hit can break the roots. The tuned rules of 2026-11-20 cast no **Regrowth** in a fight (against mobs of your level it never paid); cast one if a pull goes wrong.
 
 **Caveats**
 
-- **Moonkin Form** blocks healing spells: to cast **Regrowth** you must leave it, and going back costs 35% of your base mana. So stay in the form between fights and eat; leave it only for an emergency heal, and go back in while you have half your health and the mob still has half of its own (the fight lab plays it that way).
-- Mana: **Moonglow** cuts your damage spells' cost by 25% and **Reflection** (levels 47-49) keeps up to half your regeneration going while you cast. The tuned fight lab drinks below about a third of your mana (35%) and eats below 40% of your health (the tuned rule of 2026-11-06), and does both together whenever it sits down for one: the other bar fills at no extra time (the tuned rules of 2026-11-17; 7% faster per kill in the fight lab). Druids cannot use a wand, so an empty bar means waiting.
-- Until **Moonkin Form** arrives at level 40, the fight lab heals between fights instead of eating: **Rejuvenation** below 85% health, **Regrowth** below 70%.
+- **Moonkin Form** blocks healing spells: to cast **Regrowth** you must leave it, and going back costs 35% of your base mana. So stay in the form between fights and eat; leave it only for an emergency heal, which the tuned rules never cast, and go back in once you have half your health.
+- Mana: **Moonglow** cuts your damage spells' cost by 25% and **Reflection** (levels 47-49) keeps up to half your regeneration going while you cast. The tuned fight lab drinks below a quarter of your mana (25%, the tuned rules of 2026-11-20) and eats below 40% of your health (the tuned rule of 2026-11-06), and does both together whenever it sits down for one: the other bar fills at no extra time (the tuned rules of 2026-11-17; 7% faster per kill in the fight lab). Druids cannot use a wand, so an empty bar means waiting.
+- Before **Moonkin Form** (40) you could heal between fights with **Rejuvenation** and **Regrowth**, but eating while you drink measured faster: the re-tune of 2026-11-21 switched those heals off, 2.1-2.3% faster per kill over the levels.
 
 **When to change it**
 
@@ -77,23 +79,25 @@ One point per level from 10, in this order:
 | 55 | Vengeance (Balance) | 1 |
 | 56 | Genesis (Balance) | 1 |
 | 57-58 | Vengeance (Balance) | 2 |
-| 59 | Bloom (Restoration) | 1 |
+| 59 | Natural Shapeshifter (Restoration) | 1 |
 | 60 | Heart of the Wild (Restoration) | 1 |
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) |
 |---|---|
-| 20 | 36 |
-| 30 | 41 |
-| 40 | 40 |
-| 50 | 32 |
-| 60 | 29 |
+| 20 | 29 |
+| 30 | 34 |
+| 40 | 37 |
+| 50 | 30 |
+| 60 | 28 |
 
 ## Other builds of this spec
 
-- [Balance (optimized)](../research/leveling/builds/opt-balance-dps-leveling-st.md) (36/0/15, 35 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/5332200105501351--5253-12)
+- [Balance (optimized)](../research/leveling/builds/opt-balance-dps-leveling-st.md) (36/0/15, 32 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/5332200105501351--5253-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

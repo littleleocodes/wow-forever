@@ -6,11 +6,11 @@
 
 **Leveling from level 1?** [The rotation level by level](shadow-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Shadow — Leveling](../research/leveling/builds/shadow-open-leveling.md)** (13/2/36) — [open the talent tree](https://talentsforever.com/priest/60/20500300003-2-40550201251300251-12)
+**[Shadow — Leveling](../research/leveling/builds/shadow-open-leveling.md)** (12/3/36) — [open the talent tree](https://talentsforever.com/priest/60/02510210001-3-40550201251300251-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60); it beat the hand-made build (Leveling — Shadow), which stays below as the alternative. A model of the beta, to check at launch.
 
-**Signature spells:** 82% of the damage at level 60 in the fight lab comes from the spec's core spells (Shadow Word: Pain, Mind Blast, Mind Flay; this build never casts Devouring Plague) (the spec's rule: at least 60%; **Shadow Word: Pain**, **Mind Blast**, **Mind Flay** cast at level 60).
+**Signature spells:** 99% of the damage at level 60 in the fight lab comes from the spec's core spells (Shadow Word: Pain, Mind Blast, Mind Flay, Shadow Word: Death; this build never casts Devouring Plague) (the spec's rule: at least 60%; **Shadow Word: Pain**, **Mind Blast**, **Mind Flay** cast at level 60).
 
 ## How to play
 
@@ -44,7 +44,7 @@ Shadow levels on a short loop: **Shadow Word: Pain** and **Mind Blast** land whi
 
 - The tuned rules never cast **Devouring Plague** (it costs a lot of mana and most mobs die before its 24 seconds end) nor **Smite**.
 - **Shadowform** blocks your heals but cuts the physical damage you take by 15%: from 40 your only healing in a fight is **Vampiric Embrace**, and between fights you eat (below 40% of your health, the tuned rule) instead of casting **Renew**. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).
-- Most points go into Shadow damage and hit: **Shadow Focus** (15-18), **Darkness** (36-38, 41-42, up to 10% Shadow damage), **Shadow Weaving** (28-30), **Dark Inspiration** (25-27, 43-44). The last 16 points (45-60) go to mana and filler: **Twin Disciplines** (45-49), **Twilight Focus** (50-51), a second **Early Demise** (52), **Mental Strength** (53-55), **Power in Light** (56-57, a **Smite** and **Penance** talent this rotation never uses) and **Meditation** (58-60).
+- Most points go into Shadow damage and hit: **Shadow Focus** (15-18), **Darkness** (36-38, 41-42, up to 10% Shadow damage), **Shadow Weaving** (28-30), **Dark Inspiration** (25-27, 43-44). The last 16 points (45-60) go to mana and filler: **Twin Disciplines** (45-49), **Twilight Focus** (50-52), **Mental Strength** (53-54), **Wand Specialization** (55, 60), **Silent Resolve** (56: 10% less threat and shorter stuns, fears and silences on you), **Martyrdom** (57), **Meditation** (58) and **Early Demise**'s second point (59).
 - Two or three mobs at once: put **Shadow Word: Pain** on each and use **Psychic Scream** (below 40% of your health with a mob on you) to buy time. The rules were tuned on single pulls.
 
 **When to change it**
@@ -66,7 +66,7 @@ One point per level from 10, in this order:
 | 21-22 | Improved Mind Flay (Shadow) | 2 |
 | 23 | Shadow Reach (Shadow) | 1 |
 | 24 | Improved Mind Blast (Shadow) | 1 |
-| 25-27 | Dark Inspiration (Shadow) | 3 |
+| 25-27 | Dark Inspiration (Shadow) (tier point: needed to reach Early Demise) | 3 |
 | 28-30 | Shadow Weaving (Shadow) | 3 |
 | 31-34 | Improved Mind Blast (Shadow) | 4 |
 | 35 | Early Demise (Shadow) | 1 |
@@ -74,32 +74,41 @@ One point per level from 10, in this order:
 | 39 | Vampiric Embrace (Shadow) | 1 |
 | 40 | Shadowform (Shadow) | 1 |
 | 41-42 | Darkness (Shadow) | 2 |
-| 43-44 | Dark Inspiration (Shadow) | 2 |
+| 43-44 | Dark Inspiration (Shadow) (tier point: needed to reach Early Demise) | 2 |
 | 45-49 | Twin Disciplines (Discipline) | 5 |
-| 50-51 | Twilight Focus (Holy) | 2 |
-| 52 | Early Demise (Shadow) | 1 |
-| 53-55 | Mental Strength (Discipline) | 3 |
-| 56-57 | Power in Light (Discipline) | 2 |
-| 58-60 | Meditation (Discipline) | 3 |
+| 50-52 | Twilight Focus (Holy) | 3 |
+| 53-54 | Mental Strength (Discipline) | 2 |
+| 55 | Wand Specialization (Discipline) | 1 |
+| 56 | Silent Resolve (Discipline) | 1 |
+| 57 | Martyrdom (Discipline) | 1 |
+| 58 | Meditation (Discipline) | 1 |
+| 59 | Early Demise (Shadow) | 1 |
+| 60 | Wand Specialization (Discipline) | 1 |
+
+A talent marked as a tier point does nothing in the fight lab's leveling fights; it is in the build because no legal talent that helps can take that point.
 
 ## The numbers
 
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
 | 20 | 30 | 16 |
-| 30 | 34 | 18 |
+| 30 | 32 | 18 |
 | 40 | 22 | 18 |
 | 50 | 21 | 19 |
 | 60 | 20 | 19 |
 
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
+**Points that do nothing for this spec:** **Dark Inspiration** (5) does nothing here, and no more useful legal talent was found for its points.
+
 ## Other builds of this spec
 
 - [Shadow (optimized, solo at 60)](../research/leveling/builds/opt-shadow-dps-solo-60.md) (16/2/33, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/02500302103-2-55510201201300251-12)
-- [Leveling — Shadow](../research/leveling/builds/leveling-shadow.md) (18/0/33, 26 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/00500323131--53502201201310251-12)
-- [Shadow (optimized, AoE pulls)](../research/leveling/builds/opt-shadow-dps-leveling-aoe.md) (20/0/31, 29 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/02400520133--55102221201310231-12)
+- [Leveling — Shadow](../research/leveling/builds/leveling-shadow.md) (18/0/33, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/00500323131--53502201201310251-12)
+- [Shadow (optimized, AoE pulls)](../research/leveling/builds/opt-shadow-dps-leveling-aoe.md) (20/0/31, 28 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/priest/60/02400520133--55102221201310231-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-19 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753). Simulations, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

@@ -132,7 +132,7 @@ Before the pull: at -1s: cast Battle Stance.
 | 13 | cast Mortal Strike | 2.8 |
 | 14 | if not Rend is on the target: cast Rend | 2.4 |
 | 15 | cast Slam | 3.5 |
-| 16 | if not Battle Shout is up: cast Battle Shout (rank 6) | 0.3 |
+| 16 | if not Battle Shout is up: cast Battle Shout | 0.3 |
 | 17 | if stacks of Sunder Armor on the target < 5: cast Sunder Armor | 5.5 |
 | 18 | if not Berserker Stance is up: cast Berserker Stance | 26.2 |
 | 19 | cast Spearing Strike | 1.2 |

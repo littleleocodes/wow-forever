@@ -1,6 +1,6 @@
 {
  "class": "paladin",
- "updated": "2026-11-16",
+ "updated": "2026-11-21",
  "guides": [
   {
    "spec": "Retribution",
@@ -118,7 +118,7 @@
    ],
    "between": [
     "Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.",
-    "Drink when you are below about a third of your mana: the fight lab's default, which the tuned rules of 2026-11-09 keep (the 2026-11-02 tune drank below 15%, about 0.4% faster per kill; the re-tune did not keep it). Eat only if you are still below 65% of your health after the heals.",
+    "Drink when you are below 15% of your mana (the tuned rules of 2026-11-20). Eat only if you are still below 65% of your health after the heals.",
     "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.",
     "Re-cast **Blessing of Might** when it runs out, and your seal just before each pull.",
     "Visit the trainer every even level for new ranks of your seal and **Holy Strike**."
@@ -284,7 +284,7 @@
        },
        {
         "key": "Shift+R",
-        "role": "Finisher from range",
+        "role": "Finisher from range: not in the list; press it to finish a runner",
         "binds": [
          {
           "from": 44,
@@ -483,7 +483,7 @@
      "notes": [
       "**Hammer of Wrath** (44) hits a mob below 20% health from range. The tuned rules of 2026-11-09 switch it off against single mobs: kills measured faster without it. Use it on a mob that runs.",
       "From 49 the build parts from the Retribution page's: it takes Protection's **Sacred Duty** (49-50, a minute off the cooldown of your bubble), **Templar's Bulwark** (51), **Improved Hammer of Justice** (52, the stun combo 5 seconds sooner), **Toughness** (53-55, armor) and **Swift Judgement** (56) where Retribution takes **Repentance** and **Champion of the Light**.",
-      "**Sacred Duty** and **Toughness** fill Protection's rows on the way to **Swift Judgement**. The build takes no **Redoubt**, the other choice there: it adds block, which needs a shield, and with a two-hander it does nothing.",
+      "**Redoubt** (42-45), **Sacred Duty** (49-50) and **Toughness** (53-55) fill Protection's rows on the way to **Swift Judgement** (56). **Redoubt** adds block, which needs a shield: with a two-hander it does nothing, and the leveling filler pass found no more useful legal talent for its points.",
       "**Templar's Bulwark** (51) goes on the middle mouse button: an absorb as large as your health for 8 seconds. The Retribution list never presses it, so the fight lab has not measured it. It shares Forbearance with **Divine Shield** and **Blessing of Protection**: one of the three a minute.",
       "**Holy Wrath** (50) only works on Undead and Demons, like **Exorcism**."
      ],
@@ -510,7 +510,7 @@
    ],
    "between": [
     "Heal yourself back to about 80% with **Holy Light**, or with **Flash of Light** from level 20.",
-    "Drink when you are below about a third of your mana: the fight lab's default, which the tuned rules of 2026-11-09 keep. Eat only if you are still below 65% of your health after the heals.",
+    "Drink when you are below 15% of your mana (the tuned rules of 2026-11-20). Eat only if you are still below 65% of your health after the heals.",
     "Whenever you sit down to drink, eat as well if your health is not full, and drink while you eat if your mana is not full: the other bar fills in the same seconds at no extra time. Stand up once the bar you sat down for is full. This build seldom sits down, so it saves almost nothing (under 0.3% per kill in the fight lab, 2026-11-16), but it never costs time.",
     "Re-cast **Blessing of Might** when it runs out, and your seal just before each pull.",
     "Visit the trainer every even level for new ranks of your seal and **Holy Strike**."
@@ -680,7 +680,7 @@
        },
        {
         "key": "Shift+R",
-        "role": "Finisher from range",
+        "role": "Finisher from range: not in the list; press it to finish a runner",
         "binds": [
          {
           "from": 44,
@@ -859,7 +859,7 @@
      "notes": [
       "**Consecration** (20): the Holy list never casts it against a single mob. It is for packs.",
       "**Exorcism** (20) only works on Undead and Demons. Use it on cooldown against those; the fight lab does not model it.",
-      "The Holy talents go on: **Holy Conduit** (20-21) makes **Exorcism**, **Consecration** and **Hammer of Wrath** 40% cheaper, **Purifying Power** (22) takes 17% off the cooldown of **Exorcism** and **Holy Wrath**, **Divine Precision** (25-26) adds 8% hit to Holy spells such as **Holy Shock**."
+      "The Holy talents go on: **Holy Conduit** (20-21) makes **Exorcism**, **Consecration** and **Hammer of Wrath** 40% cheaper, **Illumination** (22) can give back half a heal's base mana cost when it crits, **Divine Precision** (25-26) adds 8% hit to Holy spells such as **Holy Shock**."
      ],
      "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Divine Protection** first if you are below 30%, then **Hammer of Justice**, then **Holy Light**. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
     },
@@ -875,7 +875,7 @@
      ],
      "notes": [
       "**Divine Favor** is off the global cooldown, on a 2-minute cooldown: press it, then the heal.",
-      "**Illumination** (28) and **Oath of Light** (29) are the last points **Holy Shock**'s row asks for: neither changes what you press."
+      "**Illumination**'s second and third points (28-29) are the last points **Holy Shock**'s row asks for: they change nothing you press."
      ],
      "if_hurt": "Below 40% of your health, with the mob above a fifth of its own: **Divine Protection** first if you are below 30%, then **Hammer of Justice**, then **Holy Light**; **Divine Favor** before the heal if it is ready. **Flash of Light** below a quarter when you cannot afford **Holy Light**. **Lay on Hands** below 15%."
     },
@@ -1807,7 +1807,7 @@
        },
        {
         "key": "E",
-        "role": "Control: the stun (the tuned Protection list never presses it; keep it for a bad pull)",
+        "role": "Control: the stun, not in the list; press it to stop a cast or a runner in a bad pull",
         "binds": [
          {
           "from": 8,
@@ -1950,7 +1950,7 @@
        },
        {
         "key": "Shift+R",
-        "role": "Finisher from range (the tuned list leaves it out)",
+        "role": "Finisher from range: not in the list; press it to finish a runner",
         "binds": [
          {
           "from": 44,

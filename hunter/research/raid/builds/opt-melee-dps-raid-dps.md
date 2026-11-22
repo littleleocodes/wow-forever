@@ -82,7 +82,7 @@ Before the pull: at -22s: cast Hunter's Mark; at -20s: cast Aspect of the Beast;
 | 2 | cast Raptor Strike | 8.2 |
 | 3 | if not Hunter's Mark is on the target: cast Hunter's Mark | 0.7 |
 | 4 | if Strider Kick is up and not Serpent Sting is on the target and mana % > 30%: move to “Shoot spot” yd | as ready |
-| 5 | if unitDistance > “Melee range” and not Serpent Sting is on the target: cast Serpent Sting (rank 8) | 2.2 |
+| 5 | if unitDistance > “Melee range” and not Serpent Sting is on the target: cast Serpent Sting | 2.2 |
 | 6 | if unitDistance > “Melee range”: cast Arcane Shot | 0.7 |
 | 7 | if unitDistance > “Melee range”: cast Multi-Shot | 0.3 |
 | 8 | if unitDistance > “Melee range” and not (Arcane Shot is in range and (“Windup close” or “Just shot”)): move to “Melee range” yd | as ready |

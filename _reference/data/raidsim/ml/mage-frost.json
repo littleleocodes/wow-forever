@@ -7,17 +7,22 @@
  ],
  "best": "frost-med-raid",
  "best_entry": "frost-raid",
- "best_dps": 818.47,
+ "best_dps": 813.18,
  "any_split": false,
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "commit": "2e6e77d84",
  "gear": {
   "bis": {
    "entry": "frost-raid",
-   "setting": "raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-frost-bis.gear.json",
-   "date": "2026-11-20",
-   "kept": true,
+   "date": "2026-11-21",
+   "setting": "raid",
+   "chosen": "all-slots",
+   "ilvl": 64.1,
+   "trinkets": [
+    "Talisman of Ephemeral Power",
+    "Weakness Analyzer"
+   ],
    "names": [
     "Spellweaver's Turban",
     "Choker of the Fire Lord",
@@ -27,25 +32,53 @@
     "Sorcerer's Bindings",
     "Sorcerer's Gauntlets",
     "Belt of the Archmage",
-    "Flarecore Leggings",
+    "Sorcerer's Leggings",
     "Kayser's Boots of Precision",
-    "Ring of Spell Power",
+    "Channeler's Ring",
     "Ring of Spell Power",
     "Talisman of Ephemeral Power",
     "Weakness Analyzer",
     "Sageblade",
-    "Obsidian Bauble",
-    "Bonecreeper Stylus"
+    "Scepter of Interminable Focus",
+    "Wand of Biting Cold"
    ],
-   "ilvl": 64.1,
-   "note": "the spec's tier set as it stands, made by its last search for that search's winner; not made for this pick"
+   "race_seed1": {
+    "current": 1.0,
+    "all-slots": 1.0148841994862814,
+    "keep-sets-and-effects": 1.0148841994862814,
+    "previous": 1.0083661692177617,
+    "the prebis set": 0.9775870187684307,
+    "the prebis set+trinkets": 0.9828361558583072
+   },
+   "confirm_seed2": {
+    "current": 1.0,
+    "all-slots": 1.0143709471046394
+   },
+   "weights": {
+    "StatCritRating": 0.4352,
+    "StatFrostDamage": 0.611,
+    "StatHasteRating": 0.4319,
+    "StatHitRating": 1.2072,
+    "StatIntellect": 0.3536,
+    "StatSpellDamage": 0.611,
+    "StatSpellPiercing": 1.4366,
+    "StatSpirit": 0.3165
+   },
+   "evaluated_on": [
+    "frost-raid: frost-med-raid"
+   ]
   },
   "prebis": {
    "entry": "frost-raid",
-   "setting": "raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-frost-prebis.gear.json",
-   "date": "2026-11-20",
-   "kept": true,
+   "date": "2026-11-21",
+   "setting": "raid",
+   "chosen": "previous",
+   "ilvl": 62.2,
+   "trinkets": [
+    "Weakness Analyzer",
+    "Eye of the Beast"
+   ],
    "names": [
     "Spellweaver's Turban",
     "Nacreous Shell Necklace",
@@ -65,13 +98,32 @@
     "Obsidian Bauble",
     "Wand of Biting Cold"
    ],
-   "ilvl": 62.2,
-   "note": "the spec's tier set as it stands, made by its last search for that search's winner; not made for this pick"
+   "race_seed1": {
+    "all-slots": 1.0,
+    "keep-sets-and-effects": 1.0,
+    "previous": 1.0045995292857126
+   },
+   "confirm_seed2": {
+    "previous": 1.0
+   },
+   "weights": {
+    "StatCritRating": 0.4064,
+    "StatFrostDamage": 0.6336,
+    "StatHasteRating": 0.4218,
+    "StatHitRating": 1.0734,
+    "StatIntellect": 0.307,
+    "StatSpellDamage": 0.6336,
+    "StatSpellPiercing": 1.4301,
+    "StatSpirit": 0.2538
+   },
+   "evaluated_on": [
+    "frost-raid: frost-med-raid"
+   ]
   },
   "dungeon": {
    "entry": "frost-raid",
    "gear": "_reference/data/raidsim/gear_sets/forever/tiers/mage-frost-dungeon.gear.json",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "chosen": "previous",
    "ilvl": 59.6,
    "trinkets": [
@@ -204,7 +256,7 @@
    "spec": "Frost",
    "setting": "dummy",
    "entry": "frost-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Arcane": [
@@ -290,8 +342,8 @@
      ]
     },
     "split": "18/0/33",
-    "dps": 684.76,
-    "se": 0.457,
+    "dps": 681.74,
+    "se": 0.426,
     "iterations": 10000,
     "build": "the search's winner"
    },
@@ -304,7 +356,7 @@
    "spec": "Frost",
    "setting": "raid",
    "entry": "frost-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Arcane": [
@@ -395,8 +447,8 @@
      ]
     },
     "split": "17/2/32",
-    "dps": 818.47,
-    "se": 0.538,
+    "dps": 813.18,
+    "se": 0.491,
     "iterations": 10000,
     "build": "the search's winner"
    },
@@ -409,7 +461,7 @@
    "spec": "Frost",
    "setting": "dummy",
    "entry": "frost-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Arcane": [
@@ -505,7 +557,7 @@
    "spec": "Frost",
    "setting": "raid",
    "entry": "frost-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "winner": {
     "allocation": {
      "Arcane": [
@@ -610,7 +662,7 @@
    "spec": "Frost",
    "setting": "raid",
    "entry": "frost-raid",
-   "date": "2026-11-20",
+   "date": "2026-11-21",
    "commit": "2e6e77d84",
    "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
    "winner": {
@@ -722,23 +774,23 @@
     "prebis-dummy": 732.8,
     "bis-dummy": 732.0
    },
-   "minutes": 6.2
+   "minutes": 32.0
   }
  },
  "pick_tiers": {
   "build": "frost-med-raid",
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "note": "the page's pick in each tier's gear (the short-check method of 2026-11-20); no talent search",
   "alt": {
    "bis-dummy": {
-    "pick_dps": 621.05,
-    "search_winner_dps": 684.76,
+    "pick_dps": 653.86,
+    "search_winner_dps": 681.74,
     "search_winner_split": "18/0/33",
     "better": "search winner"
    },
    "bis-raid": {
-    "pick_dps": 801.56,
-    "search_winner_dps": 818.47,
+    "pick_dps": 807.64,
+    "search_winner_dps": 813.18,
     "search_winner_split": "17/2/32",
     "better": "search winner"
    },
@@ -762,164 +814,13 @@
   "dps": {
    "winner": {
     "entry": "frost-raid",
-    "dps": 684.76,
-    "se": 0.457
+    "dps": 681.74,
+    "se": 0.426
    }
   },
   "best_hand": "frost-med-raid",
   "gain_vs_hand": 0.0,
   "commit": "2e6e77d84",
   "pick_tiers": true
- },
- "compare_raid": {
-  "setting": "raid",
-  "dps": {
-   "winner": {
-    "entry": "frost-raid",
-    "dps": 818.23,
-    "se": 0.17
-   },
-   "frost-med-raid": {
-    "entry": "frost-raid",
-    "dps": 801.65,
-    "se": 0.184
-   },
-   "frost-winters-chill-raid": {
-    "entry": "frost-raid",
-    "dps": 516.16,
-    "se": 0.082
-   },
-   "frost-ml-raid": {
-    "entry": "frost-raid",
-    "dps": 818.15,
-    "se": 0.17
-   }
-  },
-  "best_hand": "frost-med-raid",
-  "gain_vs_hand": 0.0207
- },
- "signature_check": {
-  "spec": "Frost",
-  "ok": true,
-  "core_share": 0.9998,
-  "min_share": 0.6,
-  "uncast": [],
-  "missing_talents": [],
-  "why": "",
-  "entry": "frost-raid",
-  "setting": "raid",
-  "iterations": 6000,
-  "dps": 818.9,
-  "date": "2026-11-20",
-  "commit": "2e6e77d84",
-  "shares": {
-   "Frostbolt": 0.6664,
-   "Cone of Cold": 0.2492,
-   "Ice Lance": 0.0842,
-   "Demonic Rune": 0.0002
-  },
-  "casts": {
-   "Ice Lance": 5.57,
-   "Evocation": 0.01,
-   "Cone of Cold": 11.94,
-   "Ice Barrier": 4.0,
-   "Frostbolt": 60.39,
-   "Cold Snap": 1.0
-  },
-  "allocation": {
-   "Arcane": [
-    [
-     "Wand Specialization",
-     2
-    ],
-    [
-     "Improved Channeling",
-     1
-    ],
-    [
-     "Arcane Resilience",
-     2
-    ],
-    [
-     "Arcane Subtlety",
-     2
-    ],
-    [
-     "Magic Absorption",
-     2
-    ],
-    [
-     "Arcane Concentration",
-     5
-    ],
-    [
-     "Arcane Geometry",
-     1
-    ],
-    [
-     "Arcane Meditation",
-     2
-    ]
-   ],
-   "Fire": [
-    [
-     "Incineration",
-     2
-    ]
-   ],
-   "Frost": [
-    [
-     "Improved Frostbolt",
-     5
-    ],
-    [
-     "Precision",
-     3
-    ],
-    [
-     "Ice Shards",
-     5
-    ],
-    [
-     "Frost Channeling",
-     3
-    ],
-    [
-     "Ice Lance",
-     1
-    ],
-    [
-     "Shatter",
-     3
-    ],
-    [
-     "Improved Cone of Cold",
-     3
-    ],
-    [
-     "Cold Snap",
-     1
-    ],
-    [
-     "Fingers of Frost",
-     2
-    ],
-    [
-     "Winter's Chill",
-     5
-    ],
-    [
-     "Ice Barrier",
-     1
-    ]
-   ]
-  }
- },
- "builds": {
-  "written": [],
-  "superseded": [],
-  "date": "2026-11-20",
-  "setting": "raid",
-  "why": "confirms frost-ml-raid (+0.01% in a full raid)"
  }
 }

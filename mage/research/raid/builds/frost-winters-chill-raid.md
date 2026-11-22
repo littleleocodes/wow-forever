@@ -109,7 +109,7 @@ Winter's Chill now buffs Frostbolt and Ice Lance crit (demo text says it stacks 
   5. move to the top: if Missile Barrage is known and Missile Barrage is up: cast Arcane Missiles (rank 7) (+2.2%, pass 7)
   6. only with 20s or more of the fight left: cast Arcane Wrath (+0.4%, pass 7)
 
-Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
+Before the pull: cast Ice Barrier; cast Frostbolt.
 
 | # | Priority (the first line whose condition holds is cast) | [`frost-winters-chill-raid`](frost-winters-chill-raid.md) casts/min |
 |---|---|---|
@@ -119,7 +119,7 @@ Before the pull: cast Ice Barrier; cast Frostbolt (rank 10).
 | 4 | if number of targets ≥ 3 and time until Cone of Cold is ready ≥ 5: cast Cold Snap | 0.3 |
 | 5 | if time until Cone of Cold is ready ≥ 7: cast Cold Snap | 0.3 |
 | 6 | if stacks of Winter's Chill on the target = 5: cast Cone of Cold | 3.9 |
-| 7 | cast Frostbolt (rank 10) | 20.9 |
+| 7 | cast Frostbolt | 20.9 |
 
 Lines of the simulator's rotation these builds never cast: cast Read Leyline, cast Blizzard (its condition never held in these fights); cast Ice Lance (needs the Ice Lance talent); cast Ice Barrier (needs the Ice Barrier talent).
 

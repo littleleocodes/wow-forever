@@ -1,5 +1,5 @@
 {
- "date": "2026-11-20",
+ "date": "2026-11-22",
  "rows": [
   {
    "class": "hunter",
@@ -13,7 +13,7 @@
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "hunter",
@@ -27,7 +27,7 @@
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "hunter",
@@ -43,7 +43,7 @@
     "Bestial Wrath"
    ],
    "advice": "taken because Bestial Wrath requires it",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "hunter",
@@ -57,7 +57,7 @@
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "hunter",
@@ -73,7 +73,7 @@
     "Sniper Shot"
    ],
    "advice": "turn it on before the pull",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "hunter",
@@ -83,13 +83,13 @@
    "talent": "Trueshot Aura",
    "ranks": 1,
    "setting": "dummy",
-   "removal_loss": 0.0338,
+   "removal_loss": 0.0337,
    "kind": "automatic",
    "needed_by": [
     "Sniper Shot"
    ],
    "advice": "turn it on before the pull",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "hunter",
@@ -105,7 +105,7 @@
     "Sniper Shot"
    ],
    "advice": "turn it on before the pull",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "hunter",
@@ -121,7 +121,7 @@
     "Sniper Shot"
    ],
    "advice": "turn it on before the pull",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "hunter",
@@ -137,7 +137,7 @@
     "Sniper Shot"
    ],
    "advice": "turn it on before the pull",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "hunter",
@@ -151,7 +151,7 @@
    "kind": "automatic",
    "needed_by": [],
    "advice": "turn it on before the pull",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "hunter",
@@ -167,7 +167,7 @@
     "Bestial Wrath"
    ],
    "advice": "taken because Bestial Wrath requires it",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "hunter",
@@ -181,303 +181,7 @@
    "kind": "wasted",
    "needed_by": [],
    "advice": "not cast by the rotation",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "priest",
-   "entry": "shadow-dps",
-   "build": "opt-shadow-dps-raid-dps",
-   "spec": "Shadow",
-   "talent": "Vampiric Embrace",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.0,
-   "kind": "prerequisite",
-   "needed_by": [
-    "Shadowform"
-   ],
-   "advice": "taken because Shadowform requires it",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "priest",
-   "entry": "shadow-dps",
-   "build": "shadow-ml-raid",
-   "spec": "Shadow",
-   "talent": "Vampiric Embrace",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.0,
-   "kind": "prerequisite",
-   "needed_by": [
-    "Shadowform"
-   ],
-   "advice": "taken because Shadowform requires it",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "priest",
-   "entry": "smite-dps",
-   "build": "smite-discipline-raid",
-   "spec": "Hybrid Discipline/Holy",
-   "talent": "Holy Nova",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.0,
-   "kind": "situational",
-   "needed_by": [],
-   "advice": "a defensive or healing spell: cast it when you need it, it is not part of the damage rotation",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "priest",
-   "entry": "smite-dps",
-   "build": "smite-open-raid",
-   "spec": "Hybrid Discipline/Holy",
-   "talent": "Holy Nova",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.0,
-   "kind": "situational",
-   "needed_by": [],
-   "advice": "a defensive or healing spell: cast it when you need it, it is not part of the damage rotation",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warlock",
-   "entry": "affliction-wrack-raid",
-   "build": "affliction-wrack-raid",
-   "spec": "Affliction",
-   "talent": "Demonic Sacrifice",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.1304,
-   "kind": "automatic",
-   "needed_by": [],
-   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warlock",
-   "entry": "destro-raid",
-   "build": "destruction-succubus-raid",
-   "spec": "Destruction",
-   "talent": "Bane of Havoc",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.0,
-   "kind": "prerequisite",
-   "needed_by": [
-    "Incinerate"
-   ],
-   "advice": "taken because Incinerate requires it",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warlock",
-   "entry": "fire-destro-raid",
-   "build": "destruction-fire-raid",
-   "spec": "Hybrid Affliction/Destruction",
-   "talent": "Demonic Sacrifice",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.1151,
-   "kind": "automatic",
-   "needed_by": [],
-   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warlock",
-   "entry": "fire-destro-raid",
-   "build": "opt-fire-destro-raid-raid-dps",
-   "spec": "Hybrid Affliction/Destruction",
-   "talent": "Demonic Sacrifice",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.1151,
-   "kind": "automatic",
-   "needed_by": [],
-   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warlock",
-   "entry": "fire-destro-raid",
-   "build": "shadow-bolt-hybrid-fire-open-raid",
-   "spec": "Hybrid Affliction/Destruction",
-   "talent": "Demonic Sacrifice",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.1044,
-   "kind": "automatic",
-   "needed_by": [],
-   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warlock",
-   "entry": "sb-raid",
-   "build": "ds-ruin-raid",
-   "spec": "Hybrid Affliction/Destruction",
-   "talent": "Demonic Sacrifice",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.1158,
-   "kind": "automatic",
-   "needed_by": [],
-   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warlock",
-   "entry": "sb-raid",
-   "build": "opt-sb-raid-raid-dps",
-   "spec": "Hybrid Affliction/Destruction",
-   "talent": "Demonic Sacrifice",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.1159,
-   "kind": "automatic",
-   "needed_by": [],
-   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warlock",
-   "entry": "sb-raid",
-   "build": "destruction-ml-raid",
-   "spec": "Destruction",
-   "talent": "Demonic Sacrifice",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.1054,
-   "kind": "automatic",
-   "needed_by": [],
-   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warlock",
-   "entry": "demonology-raid",
-   "build": "demonology-pact-raid",
-   "spec": "Demonology",
-   "talent": "Demonic Sacrifice",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.1073,
-   "kind": "automatic",
-   "needed_by": [
-    "Soul Link"
-   ],
-   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice), then summon your Succubus: Demonic Pact keeps the Imp's buff while another demon is out",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warlock",
-   "entry": "demonology-raid",
-   "build": "demonology-pact-raid",
-   "spec": "Demonology",
-   "talent": "Soul Link",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.0291,
-   "kind": "automatic",
-   "needed_by": [
-    "Demonic Pact"
-   ],
-   "advice": "turn it on with your demon out (it lasts while the demon lives)",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warlock",
-   "entry": "demonology-raid",
-   "build": "demonology-ml-raid",
-   "spec": "Demonology",
-   "talent": "Demonic Sacrifice",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.1072,
-   "kind": "automatic",
-   "needed_by": [
-    "Soul Link"
-   ],
-   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice), then summon your Succubus: Demonic Pact keeps the Imp's buff while another demon is out",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warlock",
-   "entry": "demonology-raid",
-   "build": "demonology-ml-raid",
-   "spec": "Demonology",
-   "talent": "Soul Link",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.0291,
-   "kind": "automatic",
-   "needed_by": [
-    "Demonic Pact"
-   ],
-   "advice": "turn it on with your demon out (it lasts while the demon lives)",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warlock",
-   "entry": "incinerate-raid",
-   "build": "destruction-incinerate-raid",
-   "spec": "Destruction",
-   "talent": "Bane of Havoc",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.0,
-   "kind": "prerequisite",
-   "needed_by": [
-    "Incinerate"
-   ],
-   "advice": "taken because Incinerate requires it",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warlock",
-   "entry": "incinerate-raid",
-   "build": "destruction-incinerate-raid",
-   "spec": "Destruction",
-   "talent": "Demonic Sacrifice",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.1015,
-   "kind": "automatic",
-   "needed_by": [],
-   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warlock",
-   "entry": "incinerate-raid",
-   "build": "destruction-incinerate-open-raid",
-   "spec": "Destruction",
-   "talent": "Demonic Sacrifice",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.1046,
-   "kind": "automatic",
-   "needed_by": [],
-   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
-   "date": "2026-11-20"
-  },
-  {
-   "class": "warrior",
-   "entry": "fury-dw-raid",
-   "build": "opt-fury-dw-raid-raid-dps",
-   "spec": "Fury",
-   "talent": "Spearing Strike",
-   "ranks": 1,
-   "setting": "dummy",
-   "removal_loss": 0.0,
-   "kind": "wasted",
-   "needed_by": [],
-   "advice": "not cast by the rotation",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "mage",
@@ -491,7 +195,7 @@
    "kind": "wasted",
    "needed_by": [],
    "advice": "not cast by the rotation",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "mage",
@@ -507,7 +211,7 @@
     "Arcane Wrath"
    ],
    "advice": "taken because Arcane Wrath requires it",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "mage",
@@ -521,7 +225,7 @@
    "kind": "wasted",
    "needed_by": [],
    "advice": "not cast by the rotation",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "mage",
@@ -537,7 +241,7 @@
     "Fingers of Frost"
    ],
    "advice": "taken because Fingers of Frost requires it",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "mage",
@@ -553,7 +257,7 @@
     "Fingers of Frost"
    ],
    "advice": "taken because Fingers of Frost requires it",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "mage",
@@ -569,7 +273,7 @@
     "Fingers of Frost"
    ],
    "advice": "taken because Fingers of Frost requires it",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "paladin",
@@ -585,7 +289,7 @@
     "Unsealed Wrath"
    ],
    "advice": "taken because Unsealed Wrath requires it",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "paladin",
@@ -601,7 +305,7 @@
     "Unsealed Wrath"
    ],
    "advice": "taken because Unsealed Wrath requires it",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "paladin",
@@ -617,7 +321,7 @@
     "Vengeance"
    ],
    "advice": "taken because Vengeance requires it",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   {
    "class": "paladin",
@@ -633,7 +337,289 @@
     "Vengeance"
    ],
    "advice": "taken because Vengeance requires it",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
+  },
+  {
+   "class": "priest",
+   "entry": "shadow-dps",
+   "build": "opt-shadow-dps-raid-dps",
+   "spec": "Shadow",
+   "talent": "Vampiric Embrace",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "prerequisite",
+   "needed_by": [
+    "Shadowform"
+   ],
+   "advice": "taken because Shadowform requires it",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "priest",
+   "entry": "shadow-dps",
+   "build": "shadow-ml-raid",
+   "spec": "Shadow",
+   "talent": "Vampiric Embrace",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "prerequisite",
+   "needed_by": [
+    "Shadowform"
+   ],
+   "advice": "taken because Shadowform requires it",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "priest",
+   "entry": "smite-dps",
+   "build": "smite-discipline-raid",
+   "spec": "Hybrid Discipline/Holy",
+   "talent": "Holy Nova",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "situational",
+   "needed_by": [],
+   "advice": "a defensive or healing spell: cast it when you need it, it is not part of the damage rotation",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "priest",
+   "entry": "smite-dps",
+   "build": "smite-open-raid",
+   "spec": "Hybrid Discipline/Holy",
+   "talent": "Holy Nova",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "situational",
+   "needed_by": [],
+   "advice": "a defensive or healing spell: cast it when you need it, it is not part of the damage rotation",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "warlock",
+   "entry": "affliction-wrack-raid",
+   "build": "affliction-wrack-raid",
+   "spec": "Affliction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1304,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "warlock",
+   "entry": "destro-raid",
+   "build": "destruction-succubus-raid",
+   "spec": "Destruction",
+   "talent": "Bane of Havoc",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "prerequisite",
+   "needed_by": [
+    "Incinerate"
+   ],
+   "advice": "taken because Incinerate requires it",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "warlock",
+   "entry": "fire-destro-raid",
+   "build": "destruction-fire-raid",
+   "spec": "Hybrid Affliction/Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1151,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "warlock",
+   "entry": "fire-destro-raid",
+   "build": "opt-fire-destro-raid-raid-dps",
+   "spec": "Hybrid Affliction/Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1151,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "warlock",
+   "entry": "fire-destro-raid",
+   "build": "shadow-bolt-hybrid-fire-open-raid",
+   "spec": "Hybrid Affliction/Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1044,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "warlock",
+   "entry": "sb-raid",
+   "build": "ds-ruin-raid",
+   "spec": "Hybrid Affliction/Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1158,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "warlock",
+   "entry": "sb-raid",
+   "build": "opt-sb-raid-raid-dps",
+   "spec": "Hybrid Affliction/Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1159,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "warlock",
+   "entry": "sb-raid",
+   "build": "destruction-ml-raid",
+   "spec": "Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1054,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "warlock",
+   "entry": "demonology-raid",
+   "build": "demonology-pact-raid",
+   "spec": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1073,
+   "kind": "automatic",
+   "needed_by": [
+    "Soul Link"
+   ],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice), then summon your Succubus: Demonic Pact keeps the Imp's buff while another demon is out",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "warlock",
+   "entry": "demonology-raid",
+   "build": "demonology-pact-raid",
+   "spec": "Demonology",
+   "talent": "Soul Link",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0291,
+   "kind": "automatic",
+   "needed_by": [
+    "Demonic Pact"
+   ],
+   "advice": "turn it on with your demon out (it lasts while the demon lives)",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "warlock",
+   "entry": "demonology-raid",
+   "build": "demonology-ml-raid",
+   "spec": "Demonology",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1072,
+   "kind": "automatic",
+   "needed_by": [
+    "Soul Link"
+   ],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice), then summon your Succubus: Demonic Pact keeps the Imp's buff while another demon is out",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "warlock",
+   "entry": "demonology-raid",
+   "build": "demonology-ml-raid",
+   "spec": "Demonology",
+   "talent": "Soul Link",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0291,
+   "kind": "automatic",
+   "needed_by": [
+    "Demonic Pact"
+   ],
+   "advice": "turn it on with your demon out (it lasts while the demon lives)",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "warlock",
+   "entry": "incinerate-raid",
+   "build": "destruction-incinerate-raid",
+   "spec": "Destruction",
+   "talent": "Bane of Havoc",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.0,
+   "kind": "prerequisite",
+   "needed_by": [
+    "Incinerate"
+   ],
+   "advice": "taken because Incinerate requires it",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "warlock",
+   "entry": "incinerate-raid",
+   "build": "destruction-incinerate-raid",
+   "spec": "Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1015,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
+   "date": "2026-11-22"
+  },
+  {
+   "class": "warlock",
+   "entry": "incinerate-raid",
+   "build": "destruction-incinerate-open-raid",
+   "spec": "Destruction",
+   "talent": "Demonic Sacrifice",
+   "ranks": 1,
+   "setting": "dummy",
+   "removal_loss": 0.1046,
+   "kind": "automatic",
+   "needed_by": [],
+   "advice": "before the pull, summon your Imp and sacrifice it (+15% Shadow damage: Forever swapped Classic's aspects, so the Imp, not the Succubus, is the Shadow sacrifice for 2 hours; summoning any demon cancels it)",
+   "date": "2026-11-22"
   }
  ]
 }

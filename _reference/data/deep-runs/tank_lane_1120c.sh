@@ -9,6 +9,7 @@
 # An upstream rotation 0.5% ahead on both seeds, or a simulator preset as the best arm, is flagged for Claude (base change, credited build).
 # Markers deep-runs/tl1120/. BelowNormal on 10 of 12. Log deep-runs/tank-lane-1120c.log.
 cd F:/wow-forever || exit 1
+export PATH="/usr/bin:/bin:$PATH"   # 2026-11-21: a non-login bash started from Windows had no date, tr, touch or sleep (empty markers)
 export PYTHONIOENCODING=utf-8
 export WOW_FOREVER_NO_RACIALS=1
 export WOW_FOREVER_SIM="$HOME/.wow-forever-tools/wowsims-forever-y"

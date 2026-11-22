@@ -93,8 +93,8 @@ Before the pull: at -5s: cast Amplify Curse; at -1.5s: cast Life Tap.
 | 5 | if time left in the fight ≤ 3.5: cast Searing Pain | 0.4 |
 | 6 | if mana % < 10%: cast Life Tap | 6.2 |
 | 7 | if time left on Bane of Agony ≤ cast time of Bane of Agony: cast Bane of Agony | 2.7 |
-| 8 | if time left on Corruption ≤ cast time of Corruption: cast Corruption (rank 6) | 3.3 |
-| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate (rank 7) | 3.4 |
+| 8 | if time left on Corruption ≤ cast time of Corruption: cast Corruption | 3.3 |
+| 9 | if time left on Immolate ≤ cast time of Immolate and time left in the fight ≥ 20s: cast Immolate | 3.4 |
 | 10 | cast Conflagrate | 3.9 |
 | 11 | if mana % ≥ 25%: cast Talisman of Ephemeral Power | as ready |
 | 12 | cast Shadow Bolt | 12.4 |

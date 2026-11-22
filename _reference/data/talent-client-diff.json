@@ -1,0 +1,41 @@
+{
+ "ours_against": "1.60.1.71037",
+ "diffs": {
+  "druid": [
+   "Feral Charge: wording differs (client adds ['bear', 'cffff', 'dire'], ours has ['behind', 'cat', 'cooldown', 'feral', 'instant', 'leap', 'range', 'yd'])",
+   "Swiftmend: wording differs (client adds [], ours has ['consumed', 'spell'])"
+  ],
+  "hunter": [
+   "Summon Hawk: wording differs (client adds [], ours has ['attack', 'plus', 'power', 'ranged'])"
+  ],
+  "priest": [
+   "Vampiric Embrace: wording differs (client adds ['effect', 'from', 'healing', 'increased', 'on', 'receive', 'this', 'yourself'], ours has [])"
+  ],
+  "rogue": [
+   "Lethality: wording differs (client adds ['bonus', 'increases'], ours has ['grants', 'increased'])",
+   "Mutilate: wording differs (client adds [], ours has ['also', 'amount', 'blizzard', 'points', 'was'])",
+   "Efficient Strikes: wording differs (client adds ['abilities', 'cost'], ours has ['costs'])",
+   "Aggression: wording differs (client adds ['abilities'], ours has [])",
+   "Hack and Slash: wording differs (client adds ['cffffffffaxe', 'cffffffffdagger', 'cffffffffmace'], ours has ['axe', 'dagger', 'mace'])",
+   "Camouflage: wording differs (client adds ['ability', 'from', 'its', 'penalty'], ours has ['grants', 'in', 'increased', 'movement', 'seconds', \"stealth's\"])",
+   "Ghostly Strike: wording differs (client adds [], ours has ['also', 'point', 'seconds'])",
+   "Hemorrhage: wording differs (client adds ['causes', 'from', 'increased', 'rogue', 'take', 'target'], ours has ['abilities', \"caster's\", 'increases', 'point'])",
+   "Boot Knife: wording differs (client adds ['grants'], ours has ['gives'])",
+   "Death Mark: wording differs (client adds ['cap', 'points'], ours has [])"
+  ],
+  "shaman": [
+   "Call of Thunder: wording differs (client adds ['spells'], ours has [])",
+   "Lightning Mastery: wording differs (client adds ['spell'], ours has ['fire'])",
+   "Maelstrom Weapon: wording differs (client adds ['based', 'on', 'speed', 'weapon'], ours has [])"
+  ],
+  "warlock": [
+   "Soul Siphon: wording differs (client adds ['agony', 'bane', 'corruption', 'siphon'], ours has ['affliction', 'other'])"
+  ],
+  "warrior": [
+   "Weaponmaster: wording differs (client adds ['cffffffffaxe', 'cffffffffmace', 'cffffffffsword'], ours has ['axe', 'mace', 'sword'])",
+   "Improved Slam: wording differs (client adds [], ours has ['addition', 'in', 'is', 'reduced', \"slam's\"])",
+   "Booming Voice: wording differs (client adds ['howls'], ours has ['also', 'howl', 'piercing', 'their'])",
+   "Gore Drinker: wording differs (client adds ['reckless', 'swings'], ours has [])"
+  ]
+ }
+}

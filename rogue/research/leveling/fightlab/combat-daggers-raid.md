@@ -10,46 +10,46 @@ Single-target leveling fights against normal mobs of your level with two swords 
 
 | Level | Talents | Fight mean | median | p90 | Downtime/kill | Deaths/100 kills | Time/kill | Kills/hour | Energy/kill | Pushbacks/kill |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 20 | 11 | 11.9s | 12.1s | 15.9s | 0.5s | 0.0 | 20.4s | 176 | 84 | 0.00 |
-| 30 | 21 | 14.3s | 14.2s | 18.2s | 1.2s | 0.0 | 23.4s | 154 | 91 | 0.00 |
-| 40 | 31 | 14.8s | 14.2s | 20.2s | 1.5s | 0.0 | 24.4s | 148 | 91 | 0.00 |
-| 50 | 41 | 14.8s | 14.2s | 20.2s | 1.8s | 0.0 | 24.7s | 146 | 94 | 0.00 |
-| 60 | 51 | 13.2s | 13.2s | 18.2s | 1.4s | 0.0 | 22.7s | 159 | 89 | 0.00 |
+| 20 | 11 | 11.1s | 11.4s | 14.2s | 1.0s | 0.0 | 20.1s | 179 | 83 | 0.00 |
+| 30 | 21 | 13.0s | 13.2s | 16.2s | 1.4s | 0.0 | 22.5s | 160 | 89 | 0.00 |
+| 40 | 31 | 14.2s | 14.2s | 19.7s | 1.9s | 0.0 | 24.1s | 149 | 90 | 0.00 |
+| 50 | 41 | 14.1s | 14.0s | 19.0s | 2.0s | 0.0 | 24.2s | 149 | 90 | 0.00 |
+| 60 | 51 | 13.1s | 13.2s | 18.1s | 1.5s | 0.0 | 22.6s | 159 | 87 | 0.00 |
 
 ## Measured damage shares (vs. the spec model's assumed shares)
 
 | Level | Eviscerate | Garrote | Instant Poison | Melee | Melee (off-hand) | Mutilate | Riposte | Shank | Sinister Strike |
 |---|---|---|---|---|---|---|---|---|---|
-| 20 | 5% | 15% | 9% | 32% | 15% | 0% | 0% | 0% | 24% |
-| 30 | 8% | 17% | 9% | 27% | 12% | 0% | 0% | 2% | 26% |
-| 40 | 22% | 12% | 16% | 19% | 9% | 21% | 0% | 1% | 0% |
-| 50 | 24% | 11% | 16% | 16% | 7% | 23% | 0% | 1% | 0% |
-| 60 | 30% | 9% | 20% | 12% | 6% | 20% | 3% | 1% | 0% |
+| 20 | 8% | 19% | 8% | 28% | 13% | 0% | 0% | 0% | 24% |
+| 30 | 10% | 20% | 8% | 23% | 11% | 0% | 0% | 2% | 27% |
+| 40 | 23% | 16% | 14% | 18% | 8% | 20% | 0% | 1% | 0% |
+| 50 | 25% | 15% | 15% | 15% | 7% | 23% | 0% | 1% | 0% |
+| 60 | 28% | 12% | 18% | 12% | 6% | 21% | 3% | 1% | 0% |
 
 Spec model (`_reference/data/scorer/specs`) assumes: white_mh 37%, white_oh 20%, backstab 41%, eviscerate 2%, poisons 0%, rupture 0%.
 
 ## Realized crit rates and player at each level
 
-- **Level 20**: 1138 health, 0 mana, 25 Int, 33 Spirit, 48 Str, 90 Agi, 158 AP, melee crit 15.8%, 0 spell power, base spell crit 0.0%, armor 490 (Instant Poison / Instant Poison); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Garrote 15%, Melee 16%, Melee (off-hand) 16%, Sinister Strike 16%, Eviscerate 17%. Health after a fight 77%, mana 100%.
-- **Level 30**: 1664 health, 0 mana, 27 Int, 48 Spirit, 55 Str, 130 Agi, 225 AP, melee crit 14.7%, 0 spell power, base spell crit 0.0%, armor 563 (Instant Poison / Instant Poison); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Garrote 14%, Melee 15%, Melee (off-hand) 15%, Shank 15%, Sinister Strike 24%, Cold Blood 0%, Eviscerate 24%, Evasion 0%. Health after a fight 72%, mana 100%.
-- **Level 40**: 2161 health, 0 mana, 30 Int, 46 Spirit, 83 Str, 182 Agi, 325 AP, melee crit 14.8%, 0 spell power, base spell crit 0.0%, armor 670 (Instant Poison / Instant Poison); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Garrote 15%, Melee 15%, Melee (off-hand) 15%, Shank 15%, Mutilate 52%, Cold Blood 0%, Eviscerate 21%, Evasion 0%. Health after a fight 73%, mana 100%.
-- **Level 50**: 2562 health, 0 mana, 32 Int, 48 Spirit, 123 Str, 224 Agi, 427 AP, melee crit 14.3%, 0 spell power, base spell crit 0.0%, armor 794 (Instant Poison / Instant Poison); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Garrote 14%, Melee 14%, Melee (off-hand) 14%, Shank 14%, Mutilate 74%, Cold Blood 0%, Eviscerate 20%, Evasion 0%. Health after a fight 72%, mana 100%.
-- **Level 60**: 3228 health, 0 mana, 35 Int, 53 Spirit, 108 Str, 289 Agi, 498 AP, melee crit 14.7%, 0 spell power, base spell crit 0.0%, armor 922 (Instant Poison / Instant Poison); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Garrote 15%, Melee 15%, Melee (off-hand) 14%, Shank 14%, Mutilate 78%, Cold Blood 0%, Eviscerate 20%, Riposte 16%, Evasion 0%. Health after a fight 74%, mana 100%.
+- **Level 20**: 622 health, 0 mana, 24 Int, 30 Spirit, 43 Str, 83 Agi, 146 AP, melee crit 15.0%, 0 spell power, base spell crit 0.0%, armor 490 (Instant Poison / Instant Poison); mob 466 health, hits for 32, casters 19% of pulls (0.00 interrupts per kill). Crit rates: Garrote 57%, Melee 15%, Melee (off-hand) 14%, Sinister Strike 16%, Eviscerate 15%, Evasion 0%. Health after a fight 75%, mana 100%.
+- **Level 30**: 1083 health, 0 mana, 26 Int, 45 Spirit, 50 Str, 122 Agi, 212 AP, melee crit 14.1%, 0 spell power, base spell crit 0.0%, armor 563 (Instant Poison / Instant Poison); mob 1002 health, hits for 48, casters 16% of pulls (0.00 interrupts per kill). Crit rates: Garrote 62%, Melee 14%, Melee (off-hand) 14%, Shank 14%, Sinister Strike 24%, Eviscerate 19%, Cold Blood 0%, Evasion 0%. Health after a fight 72%, mana 100%.
+- **Level 40**: 1613 health, 0 mana, 29 Int, 43 Spirit, 78 Str, 174 Agi, 312 AP, melee crit 14.3%, 0 spell power, base spell crit 0.0%, armor 670 (Instant Poison / Instant Poison); mob 1844 health, hits for 68, casters 15% of pulls (0.00 interrupts per kill). Crit rates: Garrote 67%, Melee 15%, Melee (off-hand) 14%, Shank 15%, Mutilate 50%, Cold Blood 0%, Eviscerate 19%, Evasion 0%. Health after a fight 70%, mana 100%.
+- **Level 50**: 2148 health, 0 mana, 32 Int, 47 Spirit, 120 Str, 219 Agi, 419 AP, melee crit 14.1%, 0 spell power, base spell crit 0.0%, armor 794 (Instant Poison / Instant Poison); mob 2672 health, hits for 95, casters 14% of pulls (0.00 interrupts per kill). Crit rates: Garrote 69%, Melee 15%, Melee (off-hand) 14%, Shank 14%, Mutilate 73%, Cold Blood 0%, Eviscerate 20%, Evasion 0%. Health after a fight 70%, mana 100%.
+- **Level 60**: 3048 health, 0 mana, 35 Int, 53 Spirit, 108 Str, 289 Agi, 498 AP, melee crit 14.7%, 0 spell power, base spell crit 0.0%, armor 922 (Instant Poison / Instant Poison); mob 3878 health, hits for 117, casters 9% of pulls (0.00 interrupts per kill). Crit rates: Garrote 69%, Melee 15%, Melee (off-hand) 15%, Shank 14%, Mutilate 79%, Cold Blood 0%, Eviscerate 20%, Riposte 14%, Evasion 0%. Health after a fight 73%, mana 100%.
 
 ## Other builds (same mobs, same seeds)
 
 | Level | Build | Time/kill | vs. main | Fight mean | Deaths/100 | Downtime/kill |
 |---|---|---|---|---|---|---|
-| 20 | opt-combat-daggers-raid-leveling-st | 20.4s | - | 11.9s | 0.0 | 0.5s |
-| 20 | opt-combat-swords-raid-leveling-st (played as `combat-swords-raid`) | 18.2s | -10.7% | 10.1s | 0.0 | 0.1s |
-| 30 | opt-combat-daggers-raid-leveling-st | 23.4s | - | 14.3s | 0.0 | 1.2s |
-| 30 | opt-combat-swords-raid-leveling-st (played as `combat-swords-raid`) | 20.0s | -14.7% | 11.6s | 0.0 | 0.4s |
-| 40 | opt-combat-daggers-raid-leveling-st | 24.4s | - | 14.8s | 0.0 | 1.5s |
-| 40 | opt-combat-swords-raid-leveling-st (played as `combat-swords-raid`) | 23.4s | -4.0% | 14.2s | 0.0 | 1.2s |
-| 50 | opt-combat-daggers-raid-leveling-st | 24.7s | - | 14.8s | 0.0 | 1.8s |
-| 50 | opt-combat-swords-raid-leveling-st (played as `combat-swords-raid`) | 23.7s | -3.8% | 14.2s | 0.0 | 1.5s |
-| 60 | opt-combat-daggers-raid-leveling-st | 22.7s | - | 13.2s | 0.0 | 1.4s |
-| 60 | opt-combat-swords-raid-leveling-st (played as `combat-swords-raid`) | 24.2s | +6.9% | 14.6s | 0.0 | 1.7s |
+| 20 | opt-combat-daggers-raid-leveling-st | 20.1s | - | 11.1s | 0.0 | 1.0s |
+| 20 | opt-combat-swords-raid-leveling-st (played as `combat-swords-raid`) | 17.9s | -10.6% | 9.6s | 0.0 | 0.4s |
+| 30 | opt-combat-daggers-raid-leveling-st | 22.5s | - | 13.0s | 0.0 | 1.4s |
+| 30 | opt-combat-swords-raid-leveling-st (played as `combat-swords-raid`) | 19.5s | -13.3% | 10.8s | 0.0 | 0.7s |
+| 40 | opt-combat-daggers-raid-leveling-st | 24.1s | - | 14.2s | 0.0 | 1.9s |
+| 40 | opt-combat-swords-raid-leveling-st (played as `combat-swords-raid`) | 22.5s | -6.8% | 13.0s | 0.0 | 1.5s |
+| 50 | opt-combat-daggers-raid-leveling-st | 24.2s | - | 14.1s | 0.0 | 2.0s |
+| 50 | opt-combat-swords-raid-leveling-st (played as `combat-swords-raid`) | 22.7s | -6.1% | 13.0s | 0.0 | 1.7s |
+| 60 | opt-combat-daggers-raid-leveling-st | 22.6s | - | 13.1s | 0.0 | 1.5s |
+| 60 | opt-combat-swords-raid-leveling-st (played as `combat-swords-raid`) | 23.2s | +2.8% | 13.6s | 0.0 | 1.6s |
 
 ## Talent values at level 30
 
@@ -57,15 +57,15 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Malice | 5 | +3.2% | +4.5% ± 0.2 | +0.6% | +3.2% | 0.0 |
-| Remorseless Attacks | 2 | +2.0% | +2.9% ± 0.1 | +1.0% | +0.5% | 0.0 |
-| Lethality | 2 | +1.0% | +1.4% ± 0.1 | +0.5% | +0.4% | 0.0 |
-| Vigor | 2 | +0.5% | +0.4% ± 0.4 | +0.2% | +0.7% | 0.0 |
-| Cold Blood | 1 | +0.3% | +0.4% ± 0.1 | +0.3% | +0.4% | 0.0 |
-| Ruthlessness | 3 | +0.0% | +0.0% ± 0.0 | +0.0% | +2.1% | 0.0 |
+| Malice | 5 | +3.1% | +4.4% ± 0.2 | +0.6% | +3.2% | 0.0 |
+| Remorseless Attacks | 2 | +2.1% | +2.7% ± 0.1 | +1.1% | +0.5% | 0.0 |
+| Vigor | 2 | +1.6% | +2.2% ± 0.3 | +0.8% | +0.7% | 0.0 |
+| Lethality | 2 | +0.9% | +1.2% ± 0.1 | +0.5% | +0.4% | 0.0 |
+| Cold Blood | 1 | +0.4% | +0.5% ± 0.1 | +0.4% | +0.4% | 0.0 |
+| Relentless Strikes | 1 | +0.1% | +0.1% ± 0.1 | +0.1% | +2.1% | 0.0 |
+| Ruthlessness | 3 | +0.1% | +0.0% ± 0.1 | +0.0% | +2.1% | 0.0 |
 | Improved Gouge | 3 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.7% | 0.0 |
 | Improved Slice and Dice | 2 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.4% | 0.0 |
-| Relentless Strikes | 1 | -0.0% | -0.0% ± 0.0 | -0.0% | +2.1% | 0.0 |
 
 ## Talent values at level 60
 
@@ -73,26 +73,26 @@ Sim: how much longer each kill takes (fight + downtime + deaths) when the talent
 
 | Talent | Ranks | Sim time/kill | Sim fight time | per point | EV scorer | Deaths/100 without |
 |---|---|---|---|---|---|---|
-| Mutilate | 1 | +12.7% | +19.4% ± 0.7 | +12.7% | +7.2% | 0.0 |
-| Venom | 1 | +7.9% | +12.0% ± 0.5 | +7.9% | +0.0% | 0.0 |
-| Flawless Execution | 1 | +5.8% | +8.9% ± 0.5 | +5.8% | +2.7% | 0.0 |
-| Remorseless Attacks | 2 | +4.0% | +6.0% ± 0.5 | +2.0% | +0.5% | 0.0 |
-| Seal Fate | 3 | +3.5% | +5.5% ± 0.6 | +1.2% | +0.5% | 0.0 |
-| Malice | 5 | +3.4% | +5.2% ± 0.4 | +0.7% | +2.3% | 0.0 |
-| Precision | 3 | +3.1% | +4.9% ± 0.5 | +1.0% | +1.9% | 0.0 |
-| Puncturing Wounds | 3 | +3.0% | +4.6% ± 0.4 | +1.0% | +12.3% | 0.0 |
-| Aggression | 2 | +2.2% | +3.4% ± 0.3 | +1.1% | +1.6% | 0.0 |
-| Opportunity | 2 | +1.8% | +2.8% ± 0.3 | +0.9% | +3.7% | 0.0 |
-| Cold Blood | 1 | +1.5% | +2.1% ± 0.2 | +1.5% | +0.4% | 0.0 |
-| Vigor | 2 | +1.4% | +2.3% ± 0.4 | +0.7% | +0.8% | 0.0 |
-| Riposte | 1 | +1.3% | +2.1% ± 0.5 | +1.3% | +1.7% | 0.0 |
-| Vile Poisons | 2 | +1.2% | +1.8% ± 0.3 | +0.6% | +0.0% | 0.0 |
-| Ruthlessness | 3 | +1.2% | +1.8% ± 0.5 | +0.4% | +2.3% | 0.0 |
-| Lethality | 2 | +1.1% | +1.6% ± 0.3 | +0.5% | +0.9% | 0.0 |
-| Deflection | 3 | +0.8% | -0.0% ± 0.4 | +0.3% | +0.9% | 0.0 |
-| Lightning Reflexes | 5 | +0.6% | -0.1% ± 0.3 | +0.1% | +0.7% | 0.0 |
-| Relentless Strikes | 1 | +0.5% | +0.8% ± 0.4 | +0.5% | +2.3% | 0.0 |
-| Blood Splatter | 1 | +0.0% | +0.0% ± 0.2 | +0.0% | +0.0% | 0.0 |
+| Mutilate | 1 | +8.7% | +13.5% ± 0.6 | +8.7% | +7.2% | 0.0 |
+| Venom | 1 | +7.3% | +11.1% ± 0.5 | +7.3% | +0.0% | 0.0 |
+| Flawless Execution | 1 | +5.0% | +7.7% ± 0.4 | +5.0% | +2.7% | 0.0 |
+| Remorseless Attacks | 2 | +3.5% | +5.3% ± 0.5 | +1.7% | +0.5% | 0.0 |
+| Malice | 5 | +3.3% | +5.1% ± 0.4 | +0.7% | +2.3% | 0.0 |
+| Seal Fate | 3 | +3.2% | +5.2% ± 0.6 | +1.1% | +0.5% | 0.0 |
+| Puncturing Wounds | 3 | +3.0% | +4.7% ± 0.4 | +1.0% | +12.3% | 0.0 |
+| Precision | 3 | +2.8% | +4.4% ± 0.5 | +0.9% | +1.9% | 0.0 |
+| Opportunity | 2 | +2.0% | +3.1% ± 0.3 | +1.0% | +3.7% | 0.0 |
+| Aggression | 2 | +1.9% | +3.1% ± 0.2 | +1.0% | +1.6% | 0.0 |
+| Vigor | 2 | +1.7% | +2.7% ± 0.4 | +0.9% | +0.8% | 0.0 |
+| Riposte | 1 | +1.2% | +2.0% ± 0.4 | +1.2% | +1.7% | 0.0 |
+| Vile Poisons | 2 | +1.0% | +1.6% ± 0.2 | +0.5% | +0.0% | 0.0 |
+| Cold Blood | 1 | +1.0% | +1.6% ± 0.2 | +1.0% | +0.4% | 0.0 |
+| Deflection | 3 | +1.0% | +0.3% ± 0.3 | +0.3% | +0.9% | 0.0 |
+| Lethality | 2 | +0.8% | +1.3% ± 0.2 | +0.4% | +0.9% | 0.0 |
+| Ruthlessness | 3 | +0.8% | +1.4% ± 0.4 | +0.3% | +2.3% | 0.0 |
+| Lightning Reflexes | 5 | +0.7% | -0.0% ± 0.3 | +0.1% | +0.7% | 0.0 |
+| Relentless Strikes | 1 | +0.4% | +0.8% ± 0.4 | +0.4% | +2.3% | 0.0 |
+| Blood Splatter | 1 | +0.2% | +0.2% ± 0.1 | +0.2% | +0.0% | 0.0 |
 | Improved Expose Armor | 1 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.0% | 0.0 |
 | Improved Gouge | 3 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.9% | 0.0 |
 | Improved Slice and Dice | 3 | +0.0% | +0.0% ± 0.0 | +0.0% | +0.6% | 0.0 |
