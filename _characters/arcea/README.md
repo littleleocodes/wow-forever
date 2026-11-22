@@ -232,6 +232,28 @@ Every potion shares one 2-minute cooldown (the mana and Free Action potions too)
 
 Plain Shoot stops the wand on a second press; the ! keeps it shooting.
 
+**Side bar**: Eat and drink (no key: a click between fights)
+
+```
+#showtooltip
+/use item:8079
+/use item:8078
+/use item:8077
+/use item:3772
+/use item:2136
+/use item:2288
+/use item:5350
+/use item:22895
+/use item:8076
+/use item:8075
+/use item:1487
+/use item:1114
+/use item:1113
+/use item:5349
+```
+
+One click drinks the best conjured water and eats the best conjured food you carry: every conjured water shares one cooldown and every conjured food another (Forever's client data), and neither is on the global cooldown, so the first of each you own goes off and the lines after it fail. The numbers are item ids (best water first, then the best food): the names would not fit in 255 characters; this is 223. With RestCue 0.5.0 the button shows the best item you carry: it rewrites the first line, so keep #showtooltip there.
+
 **Options:**
 
 - Counterspell your focus: make the Mouse 4 macro's last line /cast [mod:ctrl,@focus,harm,nodead][] Counterspell, and Ctrl+Mouse 4 interrupts your focus without changing target (clear any binding on Ctrl+Mouse 4 first).
@@ -251,7 +273,7 @@ Plain Shoot stops the wand on a second press; the ! keeps it shooting.
 - **Slow Fall**: 30 seconds of slow falling, a Light Feather each. In PvP, click it as you jump off a ledge to break a chase: a melee player who follows takes the fall damage.
 - **Frost Armor, Ice Armor, Mage Armor**: Clicked between fights: Mage Armor for questing; against melee players Ice Armor (armor, and a chill on whoever hits you), against casters Mage Armor (resistances).
 - **Arcane Intellect, Arcane Brilliance**: Buffs, between fights.
-- **Conjure Water, Conjure Food, the Conjure Mana gems**: Between fights; the gem itself is on 2.
+- **Conjure Water, Conjure Food, the Conjure Mana gems**: Between fights; the gem itself is on 2, and you eat and drink with the side-bar macro below.
 - **Teleports and portals**: Travel.
 - **Talents you do not take**: Pyroblast, Presence of Mind, Arcane Power, Blast Wave, Combustion, Arcane Blast and Arcane Wrath are not on your path.
 
@@ -342,21 +364,21 @@ Count a piece's stats in spell power: 1 intellect = 0.13, 1 spirit = 0.55, 1 sta
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 2.0 hours old). "For your trip": enough to keep it up for about 4.5 hours of play, to your next training at level 44 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 1.3 hours old). "For your trip": enough to keep it up for about 4.5 hours of play, to your next training at level 44 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
-| Weapon oil | Wizard Oil | +24 spell power | 4.1% | 30 min | buy (you make it at Enchanting 275; you have 165) | 34s 98c | ×9 (3g 14s 82c) | no: saves 1.2 min an hour, costs 6.4 |
+| Weapon oil | Wizard Oil | +24 spell power | 4.1% | 30 min | buy (you make it at Enchanting 275; you have 165) | 33s 98c | ×9 (3g 5s 82c) | no: saves 1.2 min an hour, costs 6.2 |
 | Weapon oil | Lesser Wizard Oil | +16 spell power | 2.7% | 30 min | buy (you make it at Enchanting 200; you have 165) | 10s 79c | ×9 (97s 11c) | no: saves 0.8 min an hour, costs 2.0 |
-| Weapon oil | Minor Wizard Oil | +8 spell power | 1.4% | 30 min | make it (Enchanting 45) | 3s 4c | ×9 (27s 36c) | no: saves 0.4 min an hour, costs 0.6 |
+| Weapon oil | Minor Wizard Oil | +8 spell power | 1.4% | 30 min | make it (Enchanting 45) | 3s 14c | ×9 (28s 26c) | no: saves 0.4 min an hour, costs 0.6 |
 | Food | Spotted Yellowtail | +22 spell power, +5% kill experience | 3.8% | 15 min | buy (you make it at Cooking 225; you have 161) | 80c | ×18 (14s 40c) | yes: saves 2.6 min an hour, costs 0.3 |
-| Food | Nightfin Soup | +22 spell power, +5% kill experience | 3.8% | 15 min | buy (you make it at Cooking 250; you have 161) | 5s 47c | ×18 (98s 46c) | yes: saves 2.6 min an hour, costs 2.0 |
-| Food | Briny Seafood Stew | +14 spell power, +5% kill experience | 2.4% | 15 min | buy | 11s 34c | ×18 (2g 4s 12c) | no: saves 2.2 min an hour, costs 4.1 |
-| Elixir | Arcane Elixir | +20 spell power | 3.4% | 30 min | buy | 21s 51c | ×9 (1g 93s 59c) | no: saves 1.0 min an hour, costs 3.9 |
-| Elixir | Lesser Arcane Elixir | +15 spell power | 2.6% | 30 min | buy | 10s 7c | ×9 (90s 63c) | no: saves 0.8 min an hour, costs 1.8 |
+| Food | Nightfin Soup | +22 spell power, +5% kill experience | 3.8% | 15 min | buy (you make it at Cooking 250; you have 161) | 5s 41c | ×18 (97s 38c) | yes: saves 2.6 min an hour, costs 2.0 |
+| Food | Briny Seafood Stew | +14 spell power, +5% kill experience | 2.4% | 15 min | buy | 10s 99c | ×18 (1g 97s 82c) | no: saves 2.2 min an hour, costs 4.0 |
+| Elixir | Arcane Elixir | +20 spell power | 3.4% | 30 min | buy | 21s 55c | ×9 (1g 93s 95c) | no: saves 1.0 min an hour, costs 3.9 |
+| Elixir | Lesser Arcane Elixir | +15 spell power | 2.6% | 30 min | buy | 11s 88c | ×9 (1g 6s 92c) | no: saves 0.8 min an hour, costs 2.2 |
 | Elixir | Elixir of Frost Power | +12.75 spell power | 2.2% | 30 min | buy | no price | ? | ? |
-| Scroll | Scroll of Spirit III | +11 spirit | 1.0% | 30 min | buy | 4s 9c | ×9 (36s 81c) | no: saves 0.3 min an hour, costs 0.7 |
-| Scroll | Scroll of Spirit II | +7 spirit | 0.7% | 30 min | buy | 1s 25c | ×9 (11s 25c) | no: saves 0.2 min an hour, costs 0.2 |
+| Scroll | Scroll of Spirit III | +11 spirit | 1.0% | 30 min | buy | 2s 99c | ×9 (26s 91c) | no: saves 0.3 min an hour, costs 0.5 |
+| Scroll | Scroll of Spirit II | +7 spirit | 0.7% | 30 min | buy | 1s 24c | ×9 (11s 16c) | no: saves 0.2 min an hour, costs 0.2 |
 
 One food at a time (well fed), one weapon oil, scrolls by stat. Kill experience is extra: a food's +5% speeds up the experience you get from kills, not from quests. Elixirs: Classic lets several stack; Forever's rule is not confirmed.
 
@@ -393,53 +415,57 @@ The cheapest way up with the recipes you know, materials at today's prices (auct
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 177-200 | Crimson Silk Pantaloons | 75 | 30g 94s 53c |
+| 177-200 | Crimson Silk Pantaloons | 75 | 30g 60s 5c |
 
-You spend about 30g 94s 53c in all to reach 200, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 200 no recipe you know gives points: learn new ones at the trainer.
+You spend about 30g 60s 5c in all to reach 200, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 200 no recipe you know gives points: learn new ones at the trainer.
 Materials: Bolt of Silk Cloth x300, Silken Thread x150, Red Dye x150.
 
 ### Enchanting 165 to 225
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 165-170 | Minor Mana Oil | 8 | 31s 12c |
-| 170-210 | Enchant Gloves - Fishing | 171 | 14g 23s 90c |
-| 210-215 | Runed Golden Rod | 91 | 46g 38s 82c |
+| 165-170 | Minor Mana Oil | 8 | 30s 97c |
+| 170-209 | Enchant Gloves - Fishing | 131 | 11g 40s 93c |
+| 209-215 | Runed Golden Rod | 98 | 48g 20s 62c |
 
-You spend about 60g 93s 84c in all to reach 215, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 215 no recipe you know gives points: learn new ones at the trainer.
-Materials: Greater Astral Essence x91, Golden Rod x91, Soul Dust x270, Iridescent Pearl x91, Blackmouth Oil x171, Maple Seed x16.
+You spend about 59g 92s 52c in all to reach 215, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 215 no recipe you know gives points: learn new ones at the trainer.
+Materials: Greater Astral Essence x98, Golden Rod x98, Soul Dust x237, Iridescent Pearl x98, Blackmouth Oil x131, Maple Seed x16.
 
 ### Cooking 161 to 225
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 161-162 | Succulent Pork Ribs | 4 | makes 3s 51c |
-| 162-167 | Gooey Spider Cake | 8 | makes 1s 9c |
-| 167-173 | Crocolisk Gumbo | 8 | makes 9c |
-| 173-178 | Goblin Deviled Clams | 7 | 11c |
-| 178-184 | Curiously Tasty Omelet | 8 | 76c |
-| 184-195 | Goblin Deviled Clams | 29 | 24s 90c |
-| 195-201 | Tasty Lion Steak | 7 | 22s 72c |
-| 201-203 | Curiously Tasty Omelet | 9 | 13s 98c |
-| 203-204 | Tasty Lion Steak | 1 | 7s 89c |
-| 204-205 | Curiously Tasty Omelet | 7 | 9s 87c |
-| 205-225 | Tasty Lion Steak | 61 | 4g 19s 33c |
+| 161-162 | Succulent Pork Ribs | 4 | makes 3s 6c |
+| 162-163 | Murloc Fin Soup | 5 | makes 64c |
+| 163-171 | Curiously Tasty Omelet | 8 | makes 2s 4c |
+| 171-174 | Gooey Spider Cake | 7 | makes 67c |
+| 174-179 | Goblin Deviled Clams | 7 | makes 57c |
+| 179-182 | Crocolisk Gumbo | 6 | 83c |
+| 182-183 | Goblin Deviled Clams | 2 | 44c |
+| 183-184 | Crocolisk Gumbo | 2 | 73c |
+| 184-194 | Goblin Deviled Clams | 25 | 20s 27c |
+| 194-195 | Curiously Tasty Omelet | 2 | 2s 90c |
+| 195-201 | Tasty Lion Steak | 7 | 19s 90c |
+| 201-204 | Curiously Tasty Omelet | 15 | 17s 58c |
+| 204-205 | Tasty Lion Steak | 2 | 7s 68c |
+| 205-206 | Curiously Tasty Omelet | 8 | 9s 28c |
+| 206-225 | Tasty Lion Steak | 60 | 3g 84s 50c |
 
-You spend about 4g 94s 87c in all to reach 225, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
-Materials: Lion Meat x140, Soothing Spices x70, Hot Spices x80, Raptor Egg x24, Tangy Clam Meat x35, Boar Ribs x9.
+You spend about 4g 57s 11c in all to reach 225, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold).
+Materials: Lion Meat x137, Soothing Spices x69, Hot Spices x92, Raptor Egg x34, Tangy Clam Meat x34, Boar Ribs x9.
 
 ### First Aid 56 to 150
 
 | Skill | Recipe | Crafts (expected) | Cost after selling what you make |
 |---|---|---|---|
-| 56-64 | Minor Healing Potion | 9 | 3s 48c |
+| 56-64 | Minor Healing Potion | 9 | 3s 56c |
 | 64-69 | Heavy Linen Bandage | 7 | 3s 9c |
 | 69-86 | Minor Healing Potion | 41 | 18s 87c |
 | 86-87 | Heavy Linen Bandage | 4 | 2s 3c |
 | 87-88 | Minor Healing Potion | 5 | 2s 30c |
 | 88-100 | Heavy Linen Bandage | 155 | 93s 10c |
 
-You spend about 1g 22s 86c in all to reach 100, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 100 no recipe you know gives points: learn new ones at the trainer.
+You spend about 1g 22s 94c in all to reach 100, after selling what you make (its usual sale price, or under today's cheapest listing when that is lower) (at most 8 of each, and no more than a day's sales; products without a sales history count as unsold); from 100 no recipe you know gives points: learn new ones at the trainer.
 Materials: Linen Cloth x332, Peacebloom x55, Empty Vial x55, Mild Spices x55.
 
 ## Your gear

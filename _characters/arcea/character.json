@@ -671,6 +671,28 @@
      "/cast !Shoot"
     ],
     "note": "Plain Shoot stops the wand on a second press; the ! keeps it shooting."
+   },
+   {
+    "key": "Side bar",
+    "name": "Eat and drink (no key: a click between fights)",
+    "lines": [
+     "#showtooltip",
+     "/use item:8079",
+     "/use item:8078",
+     "/use item:8077",
+     "/use item:3772",
+     "/use item:2136",
+     "/use item:2288",
+     "/use item:5350",
+     "/use item:22895",
+     "/use item:8076",
+     "/use item:8075",
+     "/use item:1487",
+     "/use item:1114",
+     "/use item:1113",
+     "/use item:5349"
+    ],
+    "note": "One click drinks the best conjured water and eats the best conjured food you carry: every conjured water shares one cooldown and every conjured food another (Forever's client data), and neither is on the global cooldown, so the first of each you own goes off and the lines after it fail. The numbers are item ids (best water first, then the best food): the names would not fit in 255 characters; this is 223. With RestCue 0.5.0 the button shows the best item you carry: it rewrites the first line, so keep #showtooltip there."
    }
   ],
   "options": [
@@ -722,7 +744,7 @@
    ],
    [
     "Conjure Water, Conjure Food, the Conjure Mana gems",
-    "Between fights; the gem itself is on 2."
+    "Between fights; the gem itself is on 2, and you eat and drink with the side-bar macro below."
    ],
    [
     "Teleports and portals",
