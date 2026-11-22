@@ -59,7 +59,7 @@ One layout for questing and for fighting players: your two bars and three keys o
 | Shift+2 | Frost Ward | once a fight | Frost Ward: against a Frost mage or a shaman's Frost Shock. The same reason. |
 | Shift+3 | Remove Lesser Curse | once a fight | Remove Lesser Curse: Curse of Tongues, Curse of Exhaustion, a Bane. With an enemy targeted it lands on you (Auto Self Cast). Your habit. |
 | Shift+4 | free | free | Left free. |
-| Shift+C | Healing potion (macro) | restore | The best healing potion you carry: every potion shares one 2-minute cooldown. Your habit. |
+| Shift+C | Healing potion (macro) | restore | The best healing potion you carry: ten of them, Forever's Discolored ones too, best first. Every potion shares one 2-minute cooldown. Your habit. |
 | Shift+X | Mana Shield | once a fight | Mana Shield: the shield when Ice Barrier is down, against melee players and hunters only (Forever's Mana Shield absorbs physical damage only). A key of its own, so X never spends mana on it while Ice Barrier still holds. |
 
 **Third bar: V, X and Shift+V**
@@ -213,15 +213,47 @@ Blocks at once, even in the middle of a cast. To leave the block early, press F 
 
 ```
 #showtooltip
-/use Major Healing Potion
-/use Superior Healing Potion
-/use Greater Healing Potion
-/use Healing Potion
-/use Lesser Healing Potion
-/use Minor Healing Potion
+/use item:18253
+/use item:13446
+/use item:18839
+/use item:3928
+/use item:241650
+/use item:1710
+/use item:247242
+/use item:929
+/use item:247241
+/use item:247240
 ```
 
-Every potion shares one 2-minute cooldown (the mana and Free Action potions too), so only the best one you carry goes off.
+Every healing potion you can get from 42 to 60, ranked by the health you keep. Forever's Discolored potions heal more at once, then hand 75% back as a 6-second poison or a 12-second disease, so they rank by the quarter you keep. Every potion shares one 2-minute cooldown, so only the best one you carry goes off. Left out: Minor and Lesser Healing Potion (not worth the shared cooldown at your level); the battleground draughts (they work only inside a battleground); Restored and Perishable Healing Potion, Forever's own (no source found); and a second Major Healing Potion (item 223913, not confirmed in Forever). 172 characters; with RestCue the first line becomes #showtooltip item:N (184).
+
+| Line | Potion: health, level, where from |
+|---|---|
+| item:18253 | Major Rejuvenation Potion: 1,440-1,760 health and as much mana; level 50; Alchemy, or the auction house. |
+| item:13446 | Major Healing Potion: 1,050-1,750; level 45; First Aid, or the auction house. |
+| item:18839 | Combat Healing Potion: 700-900; level 35; battleground vendors (Alterac Mountains, Stormwind, the battlegrounds); bind on pickup. |
+| item:3928 | Superior Healing Potion: 700-900; level 35; First Aid, or the auction house. |
+| item:241650 | Major Discolored Healing Potion: 2,625-2,975 at once, 75% back as a poison or disease: about 700 kept; level 60; Alchemy, or the auction house. |
+| item:1710 | Greater Healing Potion: 455-585; level 21; First Aid, or the auction house. |
+| item:247242 | Superior Discolored Healing Potion: 1,500-1,700 at once: about 400 kept; level 35; Alchemy, or the auction house. |
+| item:929 | Healing Potion: 280-360; level 12; First Aid, or the auction house. |
+| item:247241 | Greater Discolored Healing Potion: 975-1,105 at once: about 260 kept; level 21; Alchemy, or the auction house. |
+| item:247240 | Discolored Healing Potion: 600-680 at once: about 160 kept; level 12; Alchemy, or the auction house. |
+
+**Shift+C, fallback**: Best healing potion, by name
+
+```
+#showtooltip
+/use Major Rejuvenation Potion
+/use Major Healing Potion
+/use Combat Healing Potion
+/use Superior Healing Potion
+/use Major Discolored Healing Potion
+/use Greater Healing Potion
+/use Healing Potion
+```
+
+Use this one instead if the item-id version shows a question mark or no count on its button: nobody has yet seen Forever's client draw #showtooltip item:N (your eat-and-drink button will show it). Names fit seven of the ten: the three smaller Discolored potions fall off. 210 characters; 242 with RestCue's rewrite.
 
 **Middle mouse**: A wand that stays on
 
@@ -364,7 +396,7 @@ Count a piece's stats in spell power: 1 intellect = 0.13, 1 spirit = 0.55, 1 sta
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 1.3 hours old). "For your trip": enough to keep it up for about 4.5 hours of play, to your next training at level 44 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 1.5 hours old). "For your trip": enough to keep it up for about 4.5 hours of play, to your next training at level 44 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|

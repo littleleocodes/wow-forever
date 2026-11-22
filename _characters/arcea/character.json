@@ -442,7 +442,7 @@
       "key": "Shift+C",
       "kind": "restore",
       "role": "The best healing potion you carry",
-      "why": "The best healing potion you carry: every potion shares one 2-minute cooldown. Your habit.",
+      "why": "The best healing potion you carry: ten of them, Forever's Discolored ones too, best first. Every potion shares one 2-minute cooldown. Your habit.",
       "binds": [
        {
         "from": 1,
@@ -654,14 +654,79 @@
     "name": "Best healing potion",
     "lines": [
      "#showtooltip",
-     "/use Major Healing Potion",
-     "/use Superior Healing Potion",
-     "/use Greater Healing Potion",
-     "/use Healing Potion",
-     "/use Lesser Healing Potion",
-     "/use Minor Healing Potion"
+     "/use item:18253",
+     "/use item:13446",
+     "/use item:18839",
+     "/use item:3928",
+     "/use item:241650",
+     "/use item:1710",
+     "/use item:247242",
+     "/use item:929",
+     "/use item:247241",
+     "/use item:247240"
     ],
-    "note": "Every potion shares one 2-minute cooldown (the mana and Free Action potions too), so only the best one you carry goes off."
+    "note": "Every healing potion you can get from 42 to 60, ranked by the health you keep. Forever's Discolored potions heal more at once, then hand 75% back as a 6-second poison or a 12-second disease, so they rank by the quarter you keep. Every potion shares one 2-minute cooldown, so only the best one you carry goes off. Left out: Minor and Lesser Healing Potion (not worth the shared cooldown at your level); the battleground draughts (they work only inside a battleground); Restored and Perishable Healing Potion, Forever's own (no source found); and a second Major Healing Potion (item 223913, not confirmed in Forever). 172 characters; with RestCue the first line becomes #showtooltip item:N (184).",
+    "table": [
+     [
+      "Line",
+      "Potion: health, level, where from"
+     ],
+     [
+      "item:18253",
+      "Major Rejuvenation Potion: 1,440-1,760 health and as much mana; level 50; Alchemy, or the auction house."
+     ],
+     [
+      "item:13446",
+      "Major Healing Potion: 1,050-1,750; level 45; First Aid, or the auction house."
+     ],
+     [
+      "item:18839",
+      "Combat Healing Potion: 700-900; level 35; battleground vendors (Alterac Mountains, Stormwind, the battlegrounds); bind on pickup."
+     ],
+     [
+      "item:3928",
+      "Superior Healing Potion: 700-900; level 35; First Aid, or the auction house."
+     ],
+     [
+      "item:241650",
+      "Major Discolored Healing Potion: 2,625-2,975 at once, 75% back as a poison or disease: about 700 kept; level 60; Alchemy, or the auction house."
+     ],
+     [
+      "item:1710",
+      "Greater Healing Potion: 455-585; level 21; First Aid, or the auction house."
+     ],
+     [
+      "item:247242",
+      "Superior Discolored Healing Potion: 1,500-1,700 at once: about 400 kept; level 35; Alchemy, or the auction house."
+     ],
+     [
+      "item:929",
+      "Healing Potion: 280-360; level 12; First Aid, or the auction house."
+     ],
+     [
+      "item:247241",
+      "Greater Discolored Healing Potion: 975-1,105 at once: about 260 kept; level 21; Alchemy, or the auction house."
+     ],
+     [
+      "item:247240",
+      "Discolored Healing Potion: 600-680 at once: about 160 kept; level 12; Alchemy, or the auction house."
+     ]
+    ]
+   },
+   {
+    "key": "Shift+C, fallback",
+    "name": "Best healing potion, by name",
+    "lines": [
+     "#showtooltip",
+     "/use Major Rejuvenation Potion",
+     "/use Major Healing Potion",
+     "/use Combat Healing Potion",
+     "/use Superior Healing Potion",
+     "/use Major Discolored Healing Potion",
+     "/use Greater Healing Potion",
+     "/use Healing Potion"
+    ],
+    "note": "Use this one instead if the item-id version shows a question mark or no count on its button: nobody has yet seen Forever's client draw #showtooltip item:N (your eat-and-drink button will show it). Names fit seven of the ten: the three smaller Discolored potions fall off. 210 characters; 242 with RestCue's rewrite."
    },
    {
     "key": "Middle mouse",

@@ -141,8 +141,14 @@ def own_keys_html(k, lv):
         out.append('<details class="keynotes"><summary>Set up once</summary><ol class="small">'
                    + "".join(f"<li>{md(x)}</li>" for x in k["setup"]) + "</ol></details>")
     if k.get("macros"):
+        def table(t):   # (an item-id macro's key: which item each id is)
+            if not t:
+                return ""
+            head = "".join(f"<th>{esc(c)}</th>" for c in t[0])
+            rows = "".join("<tr>" + "".join(f"<td>{md(str(c))}</td>" for c in r) + "</tr>" for r in t[1:])
+            return f'<div class="tablewrap"><table class="small"><thead><tr>{head}</tr></thead><tbody>{rows}</tbody></table></div>'
         mac = "".join(f'<div class="macro"><h4><span class="kbd">{esc(m["key"])}</span> {esc(m["name"])}</h4>'
-                      f'<pre>{esc(chr(10).join(m["lines"]))}</pre><p class="small muted">{md(m.get("note", ""))}</p></div>'
+                      f'<pre>{esc(chr(10).join(m["lines"]))}</pre><p class="small muted">{md(m.get("note", ""))}</p>{table(m.get("table"))}</div>'
                       for m in k["macros"])
         out.append(f'<details class="keynotes"><summary>Your macros (none tested in game yet)</summary>{mac}</details>')
     return "".join(out)

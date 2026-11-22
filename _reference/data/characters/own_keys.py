@@ -99,6 +99,10 @@ def readme(cfg, lv, worn=None):
         for m in k["macros"]:
             o += [f"**{m['key']}**: {m['name']}", "", "```"] + m["lines"] + ["```", ""]
             o += [m["note"], ""] if m.get("note") else []
+            if m.get("table"):   # (an item-id macro's key: which item each id is)
+                head = m["table"][0]
+                o += ["| " + " | ".join(head) + " |", "|" + "---|" * len(head)]
+                o += ["| " + " | ".join(_cell(c) for c in row) + " |" for row in m["table"][1:]] + [""]
     if k.get("options"):
         o += ["**Options:**", ""] + [f"- {x}" for x in k["options"]] + [""]
     if k.get("no_key"):
