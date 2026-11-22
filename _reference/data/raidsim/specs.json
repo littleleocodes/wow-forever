@@ -1235,6 +1235,7 @@
       "rotation_note": "2026-11-20 night: base switched to the official simulator's own rotation (cat_sub_parity_1120.py, the audit session's condition for the raid push): full raid, 10,000 fights, seeds 1 / 2: feral-cat-dps 758.99 / 758.14 against ours 738.99 / 739.27; opt-feral-cat-dps-raid-dps 772.33 / 772.55 against ours 760.42 / 759.9; feral-combat-shifting-power-raid 918.72 / 918.43 against ours 911.43 / 911.49; feral-combat-open-raid 935.26 / 934.96 against ours 927.84 / 927.9. Earlier notes describe the rotation it replaces."
     },
     "feral-bear-tank": {
+      "apl_opt_raid": "_reference/data/raidsim/apls/druid/feral-bear-tank-raid.apl.json",
       "sim_class": "ClassDruid",
       "sim_spec": "druid/feralbear",
       "profile": "raid-tank",
@@ -1266,7 +1267,7 @@
         "dragonbreathChili": true,
         "foodId": 20452
       },
-      "builds": ["feral-bear-tank", "opt-feral-bear-tank-raid-tank", "feral-combat-ml-tank"],
+      "builds": ["feral-bear-tank", "opt-feral-bear-tank-raid-tank", "feral-combat-ml-tank", "feral-combat-bear-preset-tank"],
       "buffs_off": ["leader_of_the_pack"],
       "rotation_note": "2026-11-20 night: base switched to the official simulator's own bear rotation (bear_upstream_switch_1120.py, the audit's D12): our tuned raid rotation had cast Maul's swing-damage spell (9881 tag 1) since 2026-10-27, about seven times the threat; with the queue spell it trails the simulator's rotation in every arm. Earlier notes describe the rotation it replaces."
     }

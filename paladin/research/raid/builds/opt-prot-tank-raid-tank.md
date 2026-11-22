@@ -65,18 +65,19 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `prot-tan
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/35/16 | 1.025 | +0.0% | 1096 | 299 |
-| 2 | [`prot-tank`](prot-tank.md) | ours: hand draft | 0/33/18 | 1.000 | -2.4% | 1032 | 295 |
-| 3 | *Default* | community simulator | - | 0.996 | -2.8% | 1069 | 309 |
-| 4 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 1/34/16 | 0.976 | -4.7% | 979 | 294 |
+| 1 | [`protection-ml-tank`](protection-ml-tank.md) | ours: derived (ML search) | 0/35/16 | 1.017 | +0.0% | 1110 | 302 |
+| 2 | [`prot-tank`](prot-tank.md) | ours: hand draft | 0/33/18 | 1.000 | -1.7% | 1053 | 296 |
+| 3 | *Default* | community simulator | - | 0.991 | -2.5% | 1085 | 310 |
+| 4 | **[`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md)** | ours: optimizer | 1/34/16 | 0.977 | -4.0% | 1001 | 295 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 4 passes, the last 2026-11-10, 4 changes to the base rotation; third-seed check: protection-ml-tank 475 -> 501 DPS (+5.4%), sim preset: Default 464 -> 492 DPS (+6.0%), prot-tank 444 -> 464 DPS (+4.5%), opt-prot-tank-raid-tank 424 -> 441 DPS (+4.1%)):
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-10-31, 5 passes, the last 2026-11-22, 5 changes to the base rotation; third-seed check: protection-ml-tank 422 -> 440 DPS (+4.1%), sim preset: Default 413 -> 430 DPS (+4.2%), prot-tank 394 -> 408 DPS (+3.6%), opt-prot-tank-raid-tank 375 -> 389 DPS (+3.7%)):
   1. insert before the filler: cast Lay on Hands (+1.9%, pass 1)
   2. insert before the filler: if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath (+0.8%, pass 1)
   3. insert at the top: if autoTimeSinceLast ≥ 0.1s and time to the next auto attack ≥ 0.1s and not Judgement is ready and time until Judgement is ready ≤ (spellFullCooldown − inputDelay): cast Holy Strike (+0.6%, pass 1)
   4. insert in the middle: cast Holy Shield (+2.3%, pass 3)
+  5. only above 25% mana: cast Consecration (+0.5%, pass 5)
 
 Before the pull: at -20s: cast Righteous Fury; at -18.5s: cast Retribution Aura; at -1.5s: cast Seal of the Crusader.
 
@@ -86,12 +87,12 @@ Before the pull: at -20s: cast Righteous Fury; at -18.5s: cast Retribution Aura;
 | 2 | use every other cooldown when ready | as ready |
 | 3 | cast Judgement | 0.3 |
 | 4 | if time left on Seal of Fury < time to the next auto attack and not Seal of Fury is up: cast Seal of Fury | 2.0 |
-| 5 | cast Consecration | 4.9 |
-| 6 | cast Holy Shield | 4.7 |
-| 7 | cast Holy Shield (rank 3) | 0.7 |
+| 5 | if mana % ≥ 25%: cast Consecration | 4.3 |
+| 6 | cast Holy Shield | 5.6 |
+| 7 | cast Holy Shield (rank 3) | 0.1 |
 | 8 | cast Holy Strike | 9.7 |
 | 9 | cast Lay on Hands | 0.3 |
-| 10 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 0.5 |
+| 10 | if (cast time of Hammer of Wrath = 0s or autoTimeSinceLast < 0.2s): cast Hammer of Wrath | 1.0 |
 
 Lines of the simulator's rotation these builds never cast: cast Swift Judgement (needs the Swift Judgement talent); cast Holy Shock (needs the Holy Shock talent); cast Exorcism (its condition never held in these fights).
 
@@ -99,16 +100,16 @@ Damage by ability (threat for tanks):
 
 | Ability | [`opt-prot-tank-raid-tank`](opt-prot-tank-raid-tank.md) |
 |---|---|
-| Holy Shield | 21% |
+| Holy Shield | 22% |
 | Holy Strike | 20% |
 | Auto Attack | 13% |
 | Judgement of Fury | 10% |
-| Consecration | 10% |
-| Seal of Fury | 10% |
+| Seal of Fury | 9% |
+| Consecration | 8% |
 | Lay on Hands | 6% |
+| Hammer of Wrath | 3% |
 | Windfury Totem | 3% |
 | Retribution Aura | 2% |
-| Judgement of Light | 2% |
 
 ## Notes
 

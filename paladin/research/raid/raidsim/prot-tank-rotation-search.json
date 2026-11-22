@@ -2,8 +2,8 @@
  "raid": {
   "class": "paladin",
   "spec": "prot-tank",
-  "date": "2026-11-10",
-  "commit": "16e85426c",
+  "date": "2026-11-22",
+  "commit": "2e6e77d84",
   "setting": "raid",
   "tank": true,
   "simulator_apl": "_reference/data/raidsim/apls/paladin/sim-presets/protection-default.apl.json",
@@ -66,45 +66,53 @@
     "gain_seed2": 0.02278488451998606,
     "candidates": 267,
     "pass": 3
+   },
+   {
+    "round": 5,
+    "change": "only above 25% mana: cast Consecration",
+    "gain_seed1": 0.0030053823591533746,
+    "gain_seed2": 0.004861901129693091,
+    "candidates": 262,
+    "pass": 5
    }
   ],
   "final": {
    "raid": {
     "protection-ml-tank": {
-     "before": 474.92317808287277,
-     "after": 500.7923848949074,
-     "base": 474.92317808287277,
+     "before": 422.0532791250217,
+     "after": 439.5043916527248,
+     "base": 422.0532791250217,
      "before_value": 1.0,
-     "after_value": 1.0,
-     "oom_before": 8.567641061422215,
-     "oom_after": 8.567641061422215
+     "after_value": 1.0037455946439764,
+     "oom_before": 24.282735069107428,
+     "oom_after": 0.8090568202123998
     },
     "sim preset: Default": {
-     "before": 464.3559913332971,
-     "after": 492.204577348861,
-     "base": 464.3559913332971,
+     "before": 412.90282937877515,
+     "after": 430.2812691693023,
+     "base": 412.90282937877515,
      "before_value": 1.0,
-     "after_value": 1.0,
-     "oom_before": 4.3397731226303815,
-     "oom_after": 4.3397731226303815
+     "after_value": 1.005584265421974,
+     "oom_before": 19.233791909486634,
+     "oom_after": 0.418273879052561
     },
     "prot-tank": {
-     "before": 444.38649379825034,
-     "after": 464.38756889144287,
-     "base": 444.38649379825034,
+     "before": 393.58550730381654,
+     "after": 407.74129120397305,
+     "base": 393.58550730381654,
      "before_value": 1.0,
-     "after_value": 1.0,
-     "oom_before": 18.032954542175485,
-     "oom_after": 18.032954542175485
+     "after_value": 1.00789081536651,
+     "oom_before": 36.97735643492145,
+     "oom_after": 1.353195266502697
     },
     "opt-prot-tank-raid-tank": {
-     "before": 423.7993986656092,
-     "after": 440.9847672359349,
-     "base": 423.7993986656092,
+     "before": 374.6296754402985,
+     "after": 388.54689237721385,
+     "base": 374.6296754402985,
      "before_value": 1.0,
-     "after_value": 1.0,
-     "oom_before": 23.639088093097996,
-     "oom_after": 23.639088093097996
+     "after_value": 1.0101047461683061,
+     "oom_before": 43.34165885123123,
+     "oom_after": 1.3216132524251953
     }
    }
   },
@@ -116,13 +124,13 @@
     "Holy Shield"
    ],
    "rejected": {
-    "structure": 15,
+    "structure": 30,
     "casts": 0,
     "core_share": 0
    },
    "on": true
   },
   "first_date": "2026-10-31",
-  "passes": 4
+  "passes": 5
  }
 }

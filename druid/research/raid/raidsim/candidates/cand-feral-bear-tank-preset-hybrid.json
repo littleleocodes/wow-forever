@@ -1,0 +1,94 @@
+{
+ "id": "cand-feral-bear-tank-preset-hybrid",
+ "allocation": {
+  "Balance": [
+   [
+    "Genesis",
+    5
+   ],
+   [
+    "Nature's Majesty",
+    1
+   ],
+   [
+    "Nature's Reach",
+    2
+   ]
+  ],
+  "Feral Combat": [
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Feral Swiftness",
+    2
+   ],
+   [
+    "Feral Instinct",
+    3
+   ],
+   [
+    "Thick Hide",
+    3
+   ],
+   [
+    "Savage Fury",
+    2
+   ],
+   [
+    "Feral Charge",
+    1
+   ],
+   [
+    "Sharpened Claws",
+    2
+   ],
+   [
+    "Predatory Strikes",
+    3
+   ],
+   [
+    "Lacerate",
+    1
+   ],
+   [
+    "Predatory Discipline",
+    1
+   ],
+   [
+    "Leader of the Pack",
+    1
+   ],
+   [
+    "Natural Instinct",
+    2
+   ],
+   [
+    "Rend and Tear",
+    5
+   ],
+   [
+    "Primal Bite",
+    1
+   ],
+   [
+    "Shifting Power",
+    1
+   ]
+  ],
+  "Restoration": [
+   [
+    "Heart of the Wild",
+    5
+   ],
+   [
+    "Naturalist",
+    5
+   ]
+  ]
+ },
+ "preset": "Hybrid",
+ "talents": "050012-50230302123110125011-055",
+ "note": "The community simulator's preset 'Hybrid' (druid/feralbear/presets.ts), a raid candidate since it ran within 6% of the best build of feral-bear-tank (1.825 vs 1.88 in the race of 2026-11-22)."
+}

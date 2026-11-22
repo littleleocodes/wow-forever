@@ -1,0 +1,343 @@
+{
+ "paladin": {
+  "entry": "prot-tank",
+  "fights": 10000,
+  "commit": "2e6e77d84",
+  "rotations": {
+   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\paladin\\prot-tank-raid.apl.json",
+   "upstream": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\paladin\\upstream\\protection-default.apl.json"
+  },
+  "builds": {
+   "prot-tank": "-15310112513501031-50233300011",
+   "opt-prot-tank-raid-tank": "01-25300132503501031-50033310001",
+   "protection-ml-tank": "-05311102513301531-52233000001",
+   "sim preset: Default": "050050002-05302102213301531-502"
+  },
+  "rows": {
+   "ours|prot-tank": {
+    "1": {
+     "dps": 407.9777844257066,
+     "threat": 1051.4011763818544,
+     "dtps": 294.87449629539555
+    },
+    "2": {
+     "dps": 407.88971608264325,
+     "threat": 1050.9644968341886,
+     "dtps": 294.58701470177164
+    }
+   },
+   "ours|opt-prot-tank-raid-tank": {
+    "1": {
+     "dps": 388.707006587087,
+     "threat": 1001.4320876950084,
+     "dtps": 295.10942994617454
+    },
+    "2": {
+     "dps": 388.736382887401,
+     "threat": 1001.3944568273965,
+     "dtps": 295.02781268905846
+    }
+   },
+   "ours|protection-ml-tank": {
+    "1": {
+     "dps": 439.4944126706804,
+     "threat": 1109.9384362178157,
+     "dtps": 301.41421732924664
+    },
+    "2": {
+     "dps": 439.4246161716839,
+     "threat": 1109.9859596045744,
+     "dtps": 300.8836480538137
+    }
+   },
+   "ours|sim preset: Default": {
+    "1": {
+     "dps": 430.47149126933385,
+     "threat": 1084.0032998753577,
+     "dtps": 309.906418852605
+    },
+    "2": {
+     "dps": 430.3873883491831,
+     "threat": 1083.8354463503674,
+     "dtps": 309.1273881573836
+    }
+   },
+   "upstream|prot-tank": {
+    "1": {
+     "dps": 411.88168098512364,
+     "threat": 1002.0261848371454,
+     "dtps": 291.3904858258219
+    },
+    "2": {
+     "dps": 412.0176424985357,
+     "threat": 1002.3009523000255,
+     "dtps": 291.483804833716
+    }
+   },
+   "upstream|opt-prot-tank-raid-tank": {
+    "1": {
+     "dps": 390.79351122628964,
+     "threat": 946.6443993876226,
+     "dtps": 291.74416819086366
+    },
+    "2": {
+     "dps": 391.4945368580955,
+     "threat": 948.3010610030757,
+     "dtps": 291.5565991705904
+    }
+   },
+   "upstream|protection-ml-tank": {
+    "1": {
+     "dps": 443.0542457497404,
+     "threat": 1058.7433931609182,
+     "dtps": 297.17576773217627
+    },
+    "2": {
+     "dps": 442.70769186149363,
+     "threat": 1058.101788865183,
+     "dtps": 296.83651377751085
+    }
+   },
+   "upstream|sim preset: Default": {
+    "1": {
+     "dps": 433.95327367503523,
+     "threat": 1034.3544201223604,
+     "dtps": 305.1448882466107
+    },
+    "2": {
+     "dps": 433.65243690954986,
+     "threat": 1033.875181190704,
+     "dtps": 304.7468429570541
+    }
+   }
+  },
+  "value": {
+   "ours|prot-tank": {
+    "1": 1.0,
+    "2": 1.0
+   },
+   "ours|opt-prot-tank-raid-tank": {
+    "1": 0.9758388616371658,
+    "2": 0.9756698369508194
+   },
+   "ours|protection-ml-tank": {
+    "1": 1.0169893423692056,
+    "2": 1.0176160968216232
+   },
+   "ours|sim preset: Default": {
+    "1": 0.991251773611033,
+    "2": 0.9921200514009574
+   },
+   "upstream|prot-tank": {
+    "1": 0.9824976832097301,
+    "2": 0.982171275817928
+   },
+   "upstream|opt-prot-tank-raid-tank": {
+    "1": 0.9555471510980056,
+    "2": 0.9563544740205725
+   },
+   "upstream|protection-ml-tank": {
+    "1": 0.9996197313750004,
+    "2": 0.9996064701722907
+   },
+   "upstream|sim preset: Default": {
+    "1": 0.9750646012682171,
+    "2": 0.9752004068302311
+   }
+  },
+  "reference": "ours|prot-tank",
+  "our_best": "ours|protection-ml-tank",
+  "best": "ours|protection-ml-tank",
+  "gain": [
+   0.0,
+   0.0
+  ]
+ },
+ "druid": {
+  "entry": "feral-bear-tank",
+  "fights": 10000,
+  "commit": "2e6e77d84",
+  "rotations": {
+   "ours": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\druid\\feral-bear-tank-raid.apl.json",
+   "upstream": "F:\\wow-forever\\_reference\\data\\raidsim\\apls\\druid\\upstream\\feralbear-adaptive.apl.json"
+  },
+  "builds": {
+   "feral-bear-tank": "05002-550003301230010255-054",
+   "opt-feral-bear-tank-raid-tank": "050022-5020033212300212551-05",
+   "feral-combat-ml-tank": "500022-550003300230011255-052",
+   "sim preset: Bear": "050022-5023030212310112501-055",
+   "sim preset: Hybrid": "050012-50230302123110125011-055"
+  },
+  "rows": {
+   "ours|feral-bear-tank": {
+    "1": {
+     "dps": 256.7898815989826,
+     "threat": 986.7426125360262,
+     "dtps": 410.09865079914755
+    },
+    "2": {
+     "dps": 256.6425556335154,
+     "threat": 986.156216263477,
+     "dtps": 410.5413291383603
+    }
+   },
+   "ours|opt-feral-bear-tank-raid-tank": {
+    "1": {
+     "dps": 363.4685765842304,
+     "threat": 1599.6456835116937,
+     "dtps": 394.6157803391263
+    },
+    "2": {
+     "dps": 363.47401432169676,
+     "threat": 1600.1498808066383,
+     "dtps": 395.50125865352413
+    }
+   },
+   "ours|feral-combat-ml-tank": {
+    "1": {
+     "dps": 262.3559760477675,
+     "threat": 1005.4705623140011,
+     "dtps": 409.9316704899412
+    },
+    "2": {
+     "dps": 262.24370436620916,
+     "threat": 1005.2487341119111,
+     "dtps": 410.8019494791471
+    }
+   },
+   "ours|sim preset: Bear": {
+    "1": {
+     "dps": 561.4160931561573,
+     "threat": 2791.5653517092237,
+     "dtps": 438.1685670606527
+    },
+    "2": {
+     "dps": 560.8305701214917,
+     "threat": 2790.440910304886,
+     "dtps": 438.38332585218836
+    }
+   },
+   "ours|sim preset: Hybrid": {
+    "1": {
+     "dps": 541.9012555237182,
+     "threat": 2679.843342106276,
+     "dtps": 438.0807139969804
+    },
+    "2": {
+     "dps": 541.8094352513974,
+     "threat": 2679.258156614155,
+     "dtps": 438.3264433120082
+    }
+   },
+   "upstream|feral-bear-tank": {
+    "1": {
+     "dps": 256.7898815989826,
+     "threat": 986.7426842026929,
+     "dtps": 410.09876529522415
+    },
+    "2": {
+     "dps": 256.6425556335154,
+     "threat": 986.156216263477,
+     "dtps": 410.5413291383603
+    }
+   },
+   "upstream|opt-feral-bear-tank-raid-tank": {
+    "1": {
+     "dps": 363.5145351549187,
+     "threat": 1599.9055306133212,
+     "dtps": 394.61768284424085
+    },
+    "2": {
+     "dps": 363.52220763846964,
+     "threat": 1600.3242211555603,
+     "dtps": 395.6274299289096
+    }
+   },
+   "upstream|feral-combat-ml-tank": {
+    "1": {
+     "dps": 262.3559760477675,
+     "threat": 1005.4706578695566,
+     "dtps": 409.9317312594497
+    },
+    "2": {
+     "dps": 262.24370436620916,
+     "threat": 1005.2487209117782,
+     "dtps": 410.8019494791471
+    }
+   },
+   "upstream|sim preset: Bear": {
+    "1": {
+     "dps": 564.2346043713887,
+     "threat": 2810.6882464540877,
+     "dtps": 446.7763333765444
+    },
+    "2": {
+     "dps": 564.0413878028768,
+     "threat": 2810.6927404273147,
+     "dtps": 446.30757273148197
+    }
+   },
+   "upstream|sim preset: Hybrid": {
+    "1": {
+     "dps": 544.5486433355596,
+     "threat": 2696.39026782331,
+     "dtps": 444.0864864382837
+    },
+    "2": {
+     "dps": 543.8068255781683,
+     "threat": 2693.0474273675645,
+     "dtps": 443.07231380163756
+    }
+   }
+  },
+  "value": {
+   "ours|feral-bear-tank": {
+    "1": 1.0,
+    "2": 1.0
+   },
+   "ours|opt-feral-bear-tank-raid-tank": {
+    "1": 1.3301865197459035,
+    "2": 1.3303204270683369
+   },
+   "ours|feral-combat-ml-tank": {
+    "1": 1.0096934531071895,
+    "2": 1.0093630612646967
+   },
+   "ours|sim preset: Bear": {
+    "1": 1.882504767941499,
+    "2": 1.883051423725383
+   },
+   "ours|sim preset: Hybrid": {
+    "1": 1.8259870891021848,
+    "2": 1.826740413304654
+   },
+   "upstream|feral-bear-tank": {
+    "1": 0.999999896719038,
+    "2": 1.0
+   },
+   "upstream|opt-feral-bear-tank-raid-tank": {
+    "1": 1.3303156837386774,
+    "2": 1.33024329994275
+   },
+   "upstream|feral-combat-ml-tank": {
+    "1": 1.0096934273751947,
+    "2": 1.0093630545719776
+   },
+   "upstream|sim preset: Bear": {
+    "1": 1.8831786049029364,
+    "2": 1.8850057444953925
+   },
+   "upstream|sim preset: Hybrid": {
+    "1": 1.8280416836688043,
+    "2": 1.828715686762514
+   }
+  },
+  "reference": "ours|feral-bear-tank",
+  "our_best": "ours|opt-feral-bear-tank-raid-tank",
+  "best": "upstream|sim preset: Bear",
+  "gain": [
+   0.4157,
+   0.417
+  ]
+ }
+}

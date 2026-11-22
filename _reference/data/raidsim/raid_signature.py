@@ -305,8 +305,8 @@ def fight_seconds():
     import sys
     sys.path.insert(0, str(HERE))
     try:
-        import run
-        return float(run.FIGHT)
+        import flags_bench as _FB   # the raid sim's run.py by its path (2026-11-21: a bare `import run` can find the fight lab's)
+        return float(_FB._raidrun().FIGHT)
     except Exception:
         return 180.0
 

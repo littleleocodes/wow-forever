@@ -399,6 +399,23 @@ GEAR_MISSING = set()
 FLOOR = [None]   # (spell, seconds) when the line just parsed is an always-ready spell cast while more than that many seconds are left
 
 
+def _swing_guard(p):
+    """A realism guard on the swing timer ("autoTimeSinceLast ≥ 0.1s", "time to the next auto attack ≥ 0.1s"; 0.25 s or less): it keeps a
+    cast off the instant of a swing and tells a player nothing (2026-11-22, the audit session: the paladin tank's top Holy Strike line, cast
+    while Judgement cools down, had been read as swing-timed and dropped for the plain Holy Strike line further down)."""
+    m = re.fullmatch(r"(?:autoTimeSinceLast|time to the next auto attack) (?:≥|>) ([\d.]+)s?", _unwrap(p).strip())
+    return bool(m) and float(m.group(1)) <= 0.25
+
+
+def _own_refresh(cond, sp):
+    """True when every swing-timer part of a seal's condition is the seal's own renewal before the next swing ("time left on Seal of Fury
+    < time to the next auto attack"): a seal kept up, not seal twisting (2026-11-22, the audit session: the paladin tank's Seal of Fury had
+    gone to the Advanced list, and "Keep up all fight" named no seal)."""
+    parts = [_unwrap(p).strip() for p in _cond_parts(cond or "")]
+    sw = [p for p in parts if "time to the next auto attack" in p and not _swing_guard(p)]
+    return bool(sw) and all(re.fullmatch(r"time left on " + re.escape(sp) + r" < time to the next auto attack", p) for p in sw)
+
+
 def _window(cond):
     """A cooldown cast only at the pull or near the end: "(time left in the fight ≤ A or time left in the fight ≥ B)" -> plain words."""
     m = re.fullmatch(r"\(?time left in the fight ≤ ([\d.]+)s? or time left in the fight ≥ ([\d.]+)s?\)?", _unwrap(cond or ""))
@@ -418,7 +435,7 @@ def _parse(cls, t):
     if not m:
         return None
     cond, act = m.group(1), m.group(2)
-    swing = bool(cond and "time to the next auto attack" in cond)
+    swing = bool(cond and any("time to the next auto attack" in p for p in _cond_parts(cond) if not _swing_guard(p)))
     if "every other cooldown" in act:
         return None
     if act.lower().startswith(("strict sequence", "sequence")):
@@ -447,8 +464,8 @@ def _parse(cls, t):
     nts = [re.fullmatch(r"number of targets (≥|>) ([\d.]+)", _unwrap(p).strip()) for p in (_cond_parts(cond) if cond else [])]
     if any(nt and _count(nt.group(1), nt.group(2)) >= 2 for nt in nts):
         return None
-    if swing and sp.startswith("Seal of"):   # seal twisting (a second seal timed to the swing): the Advanced list explains it
-        return None
+    if swing and sp.startswith("Seal of") and not _own_refresh(cond, sp):   # seal twisting (a second seal timed to the swing): the
+        return None                                                          # Advanced list explains it
     if sp.startswith("Seal of") and cond:
         other = re.search(r"(Seal of [A-Z][\w' ]+?) is up", cond)
         if other and other.group(1) != sp:   # a seal cast while another is up: seal twisting, not a second seal to keep up

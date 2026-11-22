@@ -2955,12 +2955,12 @@
    "date": "2026-11-20"
   },
   "prot-tank": {
-   "fingerprint": "3d9b2decb0e5fd79",
+   "fingerprint": "386a9b0f85fd5178",
    "fights": 3000,
    "rotation": "_reference/data/raidsim/apls/paladin/prot-tank-raid.apl.json",
    "builds": {
     "prot-tank": {
-     "dps": 401.33,
+     "dps": 408.42,
      "never_cast": [
       "priority[3] Swift Judgement (1310994): used: its casts are booked under another id (removing it changes the result)",
       "priority[7] Holy Shock (25903): talent not taken",
@@ -2974,43 +2974,58 @@
      "fail": [],
      "physical": {
       "queued_hits": 0,
-      "white_mh_swings": 77.4,
+      "white_mh_swings": 76.6,
       "mh_speed": 2.4,
-      "gcd_casts": 72.5
+      "gcd_casts": 72.8
+     },
+     "simulator_rotation": {
+      "DPS": [
+       408.42,
+       411.94,
+       "protection-default.apl.json"
+      ],
+      "threat": [
+       1052.94,
+       1002.04,
+       "protection-default.apl.json"
+      ]
      },
      "casts": {
-      "Judgement of Fury": 49.22,
-      "Holy Strike": 29.05,
-      "Holy Shield": 16.35,
-      "Consecration": 15.67,
-      "Seal of Fury": 6.0,
-      "Hammer of Wrath": 1.4,
-      "Judgement of the Crusader": 1.0,
-      "Retribution Aura": 1.0,
-      "Seal of the Crusader": 1.0,
-      "Templar's Bulwark": 1.0,
-      "Lay on Hands": 1.0,
-      "Righteous Fury": 1.0
+      "Holy Strike": 29.0,
+      "Holy Shield": 16.92,
+      "Consecration": 13.96,
+      "Seal of Fury": 6,
+      "Hammer of Wrath": 2.93,
+      "Retribution Aura": 1,
+      "Seal of the Crusader": 1,
+      "Righteous Fury": 1,
+      "Lay on Hands": 1
      },
+     "procs_and_triggered": {
+      "Judgement of Fury": 49.84,
+      "Judgement of the Crusader": 1,
+      "Templar's Bulwark": 1
+     },
+     "pet_casts": {},
      "casts_by_id": {
-      "10333": 29.05,
-      "20414": 24.61,
-      "20232": 24.61,
-      "20924": 15.67,
-      "1239570": 14.59,
+      "10333": 29.0,
+      "20414": 24.92,
+      "20232": 24.92,
+      "1239570": 16.72,
+      "20924": 13.96,
       "20423": 6.0,
-      "20928": 1.76,
-      "24239": 1.4,
-      "20303": 1.0,
+      "24239": 2.93,
       "10301": 1.0,
       "20308": 1.0,
+      "25780": 1.0,
+      "20303": 1.0,
       "1311015": 1.0,
       "10310": 1.0,
-      "25780": 1.0
+      "20928": 0.2
      }
     },
     "opt-prot-tank-raid-tank": {
-     "dps": 381.44,
+     "dps": 388.51,
      "never_cast": [
       "priority[3] Swift Judgement (1310994): talent not taken",
       "priority[7] Holy Shock (25903): talent not taken",
@@ -3022,43 +3037,58 @@
      "fail": [],
      "physical": {
       "queued_hits": 0,
-      "white_mh_swings": 77.4,
+      "white_mh_swings": 76.6,
       "mh_speed": 2.4,
-      "gcd_casts": 71.5
+      "gcd_casts": 71.9
+     },
+     "simulator_rotation": {
+      "DPS": [
+       388.51,
+       390.51,
+       "protection-default.apl.json"
+      ],
+      "threat": [
+       1000.55,
+       946.3,
+       "protection-default.apl.json"
+      ]
      },
      "casts": {
-      "Judgement of Fury": 33.75,
-      "Holy Strike": 29.1,
-      "Holy Shield": 16.2,
-      "Consecration": 14.85,
-      "Seal of Fury": 6.0,
-      "Hammer of Wrath": 1.39,
-      "Righteous Fury": 1.0,
-      "Lay on Hands": 1.0,
-      "Seal of the Crusader": 1.0,
-      "Retribution Aura": 1.0,
-      "Templar's Bulwark": 1.0,
-      "Judgement of the Crusader": 1.0
+      "Holy Strike": 29.06,
+      "Holy Shield": 16.94,
+      "Consecration": 13.01,
+      "Seal of Fury": 6,
+      "Hammer of Wrath": 2.92,
+      "Lay on Hands": 1,
+      "Righteous Fury": 1,
+      "Retribution Aura": 1,
+      "Seal of the Crusader": 1
      },
+     "procs_and_triggered": {
+      "Judgement of Fury": 33.99,
+      "Templar's Bulwark": 1,
+      "Judgement of the Crusader": 1
+     },
+     "pet_casts": {},
      "casts_by_id": {
-      "10333": 29.1,
-      "20232": 16.88,
-      "20414": 16.88,
-      "20924": 14.85,
-      "1239570": 14.12,
+      "10333": 29.06,
+      "20414": 17.0,
+      "20232": 17.0,
+      "1239570": 16.74,
+      "20924": 13.01,
       "20423": 6.0,
-      "20928": 2.08,
-      "24239": 1.39,
-      "25780": 1.0,
+      "24239": 2.92,
       "10310": 1.0,
-      "20308": 1.0,
-      "10301": 1.0,
+      "25780": 1.0,
       "1311015": 1.0,
-      "20303": 1.0
+      "10301": 1.0,
+      "20303": 1.0,
+      "20308": 1.0,
+      "20928": 0.19
      }
     },
     "protection-ml-tank": {
-     "dps": 434.86,
+     "dps": 439.46,
      "never_cast": [
       "priority[3] Swift Judgement (1310994): used: its casts are booked under another id (removing it changes the result)",
       "priority[7] Holy Shock (25903): talent not taken",
@@ -3072,46 +3102,61 @@
      "fail": [],
      "physical": {
       "queued_hits": 0,
-      "white_mh_swings": 77.4,
+      "white_mh_swings": 76.7,
       "mh_speed": 2.4,
-      "gcd_casts": 74.5
+      "gcd_casts": 74.6
+     },
+     "simulator_rotation": {
+      "DPS": [
+       439.46,
+       443.13,
+       "protection-default.apl.json"
+      ],
+      "threat": [
+       1110.25,
+       1058.87,
+       "protection-default.apl.json"
+      ]
      },
      "casts": {
-      "Judgement of Fury": 49.51,
       "Holy Strike": 28.99,
-      "Consecration": 17.44,
-      "Holy Shield": 16.57,
-      "Seal of Fury": 6.0,
-      "Hammer of Wrath": 1.53,
-      "Judgement of the Crusader": 1.0,
-      "Templar's Bulwark": 1.0,
-      "Seal of the Crusader": 1.0,
-      "Retribution Aura": 1.0,
-      "Lay on Hands": 1.0,
-      "Righteous Fury": 1.0
+      "Holy Shield": 16.91,
+      "Consecration": 15.8,
+      "Seal of Fury": 6,
+      "Hammer of Wrath": 2.94,
+      "Seal of the Crusader": 1,
+      "Lay on Hands": 1,
+      "Righteous Fury": 1,
+      "Retribution Aura": 1
      },
+     "procs_and_triggered": {
+      "Judgement of Fury": 49.91,
+      "Judgement of the Crusader": 1,
+      "Templar's Bulwark": 1
+     },
+     "pet_casts": {},
      "casts_by_id": {
       "10333": 28.99,
-      "20414": 24.76,
-      "20232": 24.76,
-      "20924": 17.44,
-      "1239570": 15.31,
+      "20232": 24.95,
+      "20414": 24.95,
+      "1239570": 16.78,
+      "20924": 15.8,
       "20423": 6.0,
-      "24239": 1.53,
-      "20928": 1.26,
-      "20303": 1.0,
-      "1311015": 1.0,
+      "24239": 2.94,
       "20308": 1.0,
-      "10301": 1.0,
+      "20303": 1.0,
       "10310": 1.0,
-      "25780": 1.0
+      "25780": 1.0,
+      "1311015": 1.0,
+      "10301": 1.0,
+      "20928": 0.13
      }
     }
    },
    "rotation_fail": [],
-   "simulator_rotation": "the official simulator ships no rotation for this spec (protection-default.apl.json missing)",
+   "simulator_rotation": "protection-default.apl.json",
    "fail": [],
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   "shockadin-raid": {
    "fingerprint": "adbe1a261c5ea671",
@@ -4980,20 +5025,20 @@
    "date": "2026-11-20"
   },
   "feral-bear-tank": {
-   "fingerprint": "aa932b37b3f5b10c",
+   "fingerprint": "d39b89ac211b9004",
    "fights": 3000,
-   "rotation": "_reference/data/raidsim/apls/druid/upstream/feralbear-adaptive.apl.json",
+   "rotation": "_reference/data/raidsim/apls/druid/feral-bear-tank-raid.apl.json",
    "builds": {
     "feral-bear-tank": {
      "dps": 257.17,
      "never_cast": [
       "priority[0] Feral Charge (Bear) (16979): used: its casts are booked under another id (removing it changes the result)",
-      "priority[5] Elune's Light (1259799): racial (racials are off)",
-      "priority[13] Faerie Fire (9907): condition never held",
-      "priority[14] Demoralizing Roar (9898): condition never held",
-      "priority[15] Lacerate (1235827): talent not taken",
-      "priority[17] Swipe (9908): condition never held",
-      "priority[18] Primal Bite (1238070): talent not taken"
+      "priority[4] Elune's Light (1259799): racial (racials are off)",
+      "priority[12] Faerie Fire (9907): condition never held",
+      "priority[13] Demoralizing Roar (9898): condition never held",
+      "priority[14] Lacerate (1235827): talent not taken",
+      "priority[16] Swipe (9908): condition never held",
+      "priority[17] Primal Bite (1238070): talent not taken"
      ],
      "abilities": [
       "Feral Charge: used: its casts are booked under another id (removing it changes the result)"
@@ -5007,13 +5052,28 @@
       "mh_speed": 2.5,
       "gcd_casts": 5
      },
-     "casts": {
-      "Maul": 71.6,
-      "Enrage": 4.0,
-      "Barkskin": 3.0,
-      "Dire Bear Form": 1.0,
-      "Frenzied Regeneration": 1.0
+     "simulator_rotation": {
+      "DPS": [
+       257.17,
+       257.17,
+       "feralbear-adaptive.apl.json"
+      ],
+      "threat": [
+       988.19,
+       988.19,
+       "feralbear-adaptive.apl.json"
+      ]
      },
+     "casts": {
+      "Enrage": 4,
+      "Barkskin": 3,
+      "Dire Bear Form": 1,
+      "Frenzied Regeneration": 1
+     },
+     "procs_and_triggered": {
+      "Maul": 71.6
+     },
+     "pet_casts": {},
      "casts_by_id": {
       "9881": 71.6,
       "5229": 4.0,
@@ -5027,11 +5087,11 @@
      "never_cast": [
       "prepull[0] Dire Bear Form (9634): cast by another build of the entry (the line serves builds that reach it)",
       "priority[0] Feral Charge (Bear) (16979): used: its casts are booked under another id (removing it changes the result)",
-      "priority[5] Elune's Light (1259799): racial (racials are off)",
-      "priority[13] Faerie Fire (9907): condition never held",
-      "priority[14] Demoralizing Roar (9898): condition never held",
-      "priority[15] Lacerate (1235827): talent not taken",
-      "priority[17] Swipe (9908): condition never held"
+      "priority[4] Elune's Light (1259799): racial (racials are off)",
+      "priority[12] Faerie Fire (9907): condition never held",
+      "priority[13] Demoralizing Roar (9898): condition never held",
+      "priority[14] Lacerate (1235827): talent not taken",
+      "priority[16] Swipe (9908): condition never held"
      ],
      "abilities": [
       "Feral Charge: used: its casts are booked under another id (removing it changes the result)"
@@ -5045,15 +5105,30 @@
       "mh_speed": 2.5,
       "gcd_casts": 34.0
      },
-     "casts": {
-      "Maul": 70.54,
-      "Primal Bite": 30.0,
-      "Enrage": 4.0,
-      "Barkskin": 3.0,
-      "Frenzied Regeneration": 1.0
+     "simulator_rotation": {
+      "DPS": [
+       363.55,
+       363.55,
+       "feralbear-adaptive.apl.json"
+      ],
+      "threat": [
+       1600.25,
+       1600.5,
+       "feralbear-adaptive.apl.json"
+      ]
      },
+     "casts": {
+      "Primal Bite": 30.0,
+      "Enrage": 4,
+      "Barkskin": 3,
+      "Frenzied Regeneration": 1
+     },
+     "procs_and_triggered": {
+      "Maul": 70.53
+     },
+     "pet_casts": {},
      "casts_by_id": {
-      "9881": 70.54,
+      "9881": 70.53,
       "1238070": 30.0,
       "5229": 4.0,
       "22812": 3.0,
@@ -5064,12 +5139,12 @@
      "dps": 262.68,
      "never_cast": [
       "priority[0] Feral Charge (Bear) (16979): talent not taken",
-      "priority[5] Elune's Light (1259799): racial (racials are off)",
-      "priority[13] Faerie Fire (9907): condition never held",
-      "priority[14] Demoralizing Roar (9898): condition never held",
-      "priority[15] Lacerate (1235827): talent not taken",
-      "priority[17] Swipe (9908): condition never held",
-      "priority[18] Primal Bite (1238070): talent not taken"
+      "priority[4] Elune's Light (1259799): racial (racials are off)",
+      "priority[12] Faerie Fire (9907): condition never held",
+      "priority[13] Demoralizing Roar (9898): condition never held",
+      "priority[14] Lacerate (1235827): talent not taken",
+      "priority[16] Swipe (9908): condition never held",
+      "priority[17] Primal Bite (1238070): talent not taken"
      ],
      "abilities": [],
      "zero_talents": [],
@@ -5081,26 +5156,95 @@
       "mh_speed": 2.5,
       "gcd_casts": 5
      },
-     "casts": {
-      "Maul": 71.59,
-      "Enrage": 4.0,
-      "Barkskin": 3.0,
-      "Frenzied Regeneration": 1.0,
-      "Dire Bear Form": 1.0
+     "simulator_rotation": {
+      "DPS": [
+       262.68,
+       262.68,
+       "feralbear-adaptive.apl.json"
+      ],
+      "threat": [
+       1006.58,
+       1006.58,
+       "feralbear-adaptive.apl.json"
+      ]
      },
+     "casts": {
+      "Enrage": 4,
+      "Barkskin": 3,
+      "Dire Bear Form": 1,
+      "Frenzied Regeneration": 1
+     },
+     "procs_and_triggered": {
+      "Maul": 71.59
+     },
+     "pet_casts": {},
      "casts_by_id": {
       "9881": 71.59,
       "5229": 4.0,
       "22812": 3.0,
-      "22842": 1.0,
-      "9634": 1.0
+      "9634": 1.0,
+      "22842": 1.0
+     }
+    },
+    "feral-combat-bear-preset-tank": {
+     "dps": 561.07,
+     "never_cast": [
+      "prepull[0] Dire Bear Form (9634): cast by another build of the entry (the line serves builds that reach it)",
+      "priority[0] Feral Charge (Bear) (16979): used: its casts are booked under another id (removing it changes the result)",
+      "priority[4] Elune's Light (1259799): racial (racials are off)",
+      "priority[12] Faerie Fire (9907): condition never held",
+      "priority[13] Demoralizing Roar (9898): condition never held",
+      "priority[16] Swipe (9908): condition never held"
+     ],
+     "abilities": [
+      "Feral Charge: used: its casts are booked under another id (removing it changes the result)"
+     ],
+     "zero_talents": [],
+     "inert_switches": [],
+     "fail": [],
+     "physical": {
+      "queued_hits": 59.7,
+      "white_mh_swings": 12.3,
+      "mh_speed": 2.5,
+      "gcd_casts": 114.1
+     },
+     "simulator_rotation": {
+      "DPS": [
+       561.07,
+       563.46,
+       "feralbear-adaptive.apl.json"
+      ],
+      "threat": [
+       2790.85,
+       2805.55,
+       "feralbear-adaptive.apl.json"
+      ]
+     },
+     "casts": {
+      "Lacerate": 80.65,
+      "Primal Bite": 29.43,
+      "Barkskin": 3,
+      "Enrage": 2.68,
+      "Frenzied Regeneration": 1
+     },
+     "procs_and_triggered": {
+      "Maul": 59.7
+     },
+     "pet_casts": {},
+     "casts_by_id": {
+      "1235827": 80.65,
+      "9881": 59.7,
+      "1238070": 29.43,
+      "22812": 3.0,
+      "5229": 2.68,
+      "22842": 1.0
      }
     }
    },
    "rotation_fail": [],
-   "simulator_rotation": "the entry's raid rotation is the simulator's own (feralbear-adaptive.apl.json)",
+   "simulator_rotation": "feralbear-adaptive.apl.json",
    "fail": [],
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   }
  },
  "warrior": {

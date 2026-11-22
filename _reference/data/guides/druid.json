@@ -71,7 +71,7 @@
     "caveats": [
      "**Shred** and **Ravage** only work from behind. When the boss faces you, the rotation builds with **Claw** instead (\"Claw can replace Shred\").",
      "Mana: **Shifting Power** spends more than half your base mana, so the list leans on a raid's mana buffs, a mana potion and **Innervate** on yourself below 1,400 mana with the fight still going. Without Blessing of Wisdom or Mana Spring (a dungeon group, or alone) you run dry fast; solo, the fight lab found that drinking the mana back costs more time than the energy saves.",
-     "The bear builds under Other builds are tank builds with their own list in **Dire Bear Form**: since 2026-11-20 the simulator's own bear rotation (ours had cast Maul's damage spell off the swing timer). Their section is being checked until the tank runs are redone.",
+     "The bear, under Tanking, plays the simulator's own tank list in **Dire Bear Form** on the simulator's own build: **Primal Bite** whenever it is ready; **Lacerate** on every other global cooldown, built to five stacks and refreshed before the five-stack bleed runs out; **Maul** queued with the rage left over, keeping enough for the next **Primal Bite**; **Faerie Fire** and **Demoralizing Roar** kept up when the raid does not supply them. **Lacerate** and **Primal Bite** carry most of the threat (39% and 20% of it in the simulator, **Maul** 30%): a bear without their talents can only queue **Maul**.",
      "The rotation casts **Ferocious Bite** at rank 5, the rank the simulator's spell data carries."
     ],
     "diverge": [
@@ -81,12 +81,9 @@
     ],
     "rotations": {
      "feral-cat-dps": "61765dae54fe",
-     "feral-bear-tank": "9ce9e90baadb"
+     "feral-bear-tank": "5065a32aa1af"
     },
-    "written": "2026-11-21",
-    "rewrite": {
-     "feral-bear-tank": "2026-11-20"
-    }
+    "written": "2026-11-21"
    },
    "leveling": {
     "plan": "Level 10-19 as a bear, then as a cat: open every pull from **Prowl** behind the mob, bleed it with **Rake**, build combo points with **Claw** and finish with **Ferocious Bite** when it will kill. Heal in caster form between fights.",

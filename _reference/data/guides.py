@@ -237,7 +237,8 @@ def stamp(cls, spec=None, mode=None):
             g["rotations"] = fp
             g["written"] = g.get("written") or TODAY
             g.pop("rewrite", None)   # stamped: the text fits the rotations again, the placeholder goes
-    (DIR / f"{cls}.json").write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    # LF, as the hand-kept files are (2026-11-22: a stamp on Windows wrote CRLF, and each stamp had to be converted back)
+    (DIR / f"{cls}.json").write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     print(f"stamped {cls}")
 
 

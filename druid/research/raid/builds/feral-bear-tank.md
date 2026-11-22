@@ -67,51 +67,63 @@ Allocation adopted on 2026-09-27 from `opt-feral-bear-tank-raid-tank`, the best 
 
 ## Rank among our builds and the community simulator's
 
-**4 of 5** for `feral-bear-tank` by tank value in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
+**6 of 6** for `feral-bear-tank` by tank value in the community simulator (wowsims/forever 2e6e77d (client 70938)); full ranking and the other builds' rotations: [raid README](../README.md), [raid rotations](../rotation.md).
 
 | Rank | Build | By | Split | Tank value | vs best | Threat/s | Damage taken/s |
 |---|---|---|---|---|---|---|---|
-| 1 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 9/37/5 | 1.143 | +0.0% | 8049 | 501 |
-| 2 | *Bear* | community simulator | - | 1.060 | -7.3% | 7110 | 511 |
-| 3 | [`feral-combat-ml-tank`](feral-combat-ml-tank.md) | ours: derived (ML search) | 9/35/7 | 1.017 | -11.1% | 6622 | 516 |
-| 4 | **[`feral-bear-tank`](feral-bear-tank.md)** | ours: hand draft | 7/35/9 | 1.000 | -12.5% | 6415 | 517 |
-| 5 | *Hybrid* | community simulator | - | 0.985 | -13.9% | 5987 | 498 |
+| 1 | [`feral-combat-bear-preset-tank`](feral-combat-bear-preset-tank.md) | ours: derived (simulator preset) | 9/32/10 | 1.880 | +0.0% | 2791 | 438 |
+| 2 | *Bear* | community simulator | - | 1.880 | +0.0% | 2791 | 438 |
+| 3 | *Hybrid* | community simulator | - | 1.825 | -2.9% | 2680 | 437 |
+| 4 | [`opt-feral-bear-tank-raid-tank`](opt-feral-bear-tank-raid-tank.md) | ours: optimizer | 9/37/5 | 1.329 | -29.3% | 1600 | 395 |
+| 5 | [`feral-combat-ml-tank`](feral-combat-ml-tank.md) | ours: derived (ML search) | 9/35/7 | 1.009 | -46.3% | 1007 | 410 |
+| 6 | **[`feral-bear-tank`](feral-bear-tank.md)** | ours: hand draft | 7/35/9 | 1.000 | -46.8% | 988 | 410 |
 
 ## Rotation (community simulator, raid setting)
 
-- **A fully buffed raid:** the entry's base rotation (`_reference/data/raidsim/apls/druid/upstream/feralbear-adaptive.apl.json`), untuned. The rotation search of 2026-09-28 to 2026-10-29 (8 changes, `feral-bear-tank-rotation-search.json`) tuned an earlier base that this entry no longer plays.
+- **A fully buffed raid:** our tuned rotation (`raidsim/apl_opt.py`, 2026-09-28, 14 passes, the last 2026-11-22, 9 changes to the base rotation; third-seed check: opt-feral-bear-tank-raid-tank 364 -> 364 DPS (-0.0%), sim preset: Bear 564 -> 561 DPS (-0.4%), feral-bear-tank 257 -> 257 DPS (+0.0%), feral-combat-ml-tank 263 -> 263 DPS (+0.0%)):
+  1. threshold 25 -> 50: if rage ≥ 25: cast Maul (+0.9%, pass 1)
+  2. move down below 'if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate': cast Primal Bite (+0.6%, pass 1)
+  3. insert before the filler: cast Barkskin (+2.2%, pass 3)
+  4. only with 20s or more of the fight left: cast Lacerate (+1.2%, pass 11)
+  5. drop the condition: if rage ≥ 50: cast Maul (+6.6%, pass 12)
+  6. drop: cast Primal Bite (+2.2%, pass 12)
+  7. insert before the filler: if rage < 20: cast Enrage (+1.2%, pass 12)
+  8. drop 'stacks of Lacerate < 5' from the condition: if (stacks of Lacerate < 5 or time left on Lacerate ≤ 4.5s): cast Lacerate (+0.3%, pass 12)
+  9. drop: if unitDistance > 5: move to 5 yd (+0.3%, pass 14)
 
 Before the pull: at -10s: if Furor is taken and rage < 10: cast Dire Bear Form; at -10s: cast Enrage; at -33s: if Manual Crowd Pummeler is known: swap to the Swap1 item set; at -0.01s: if not activeItemSwapSet: swap to the Main item set; at -250ms: if number of targets = 3 and rage ≥ current cost: cast Maul.
 
 | # | Priority (the first line whose condition holds is cast) | [`feral-bear-tank`](feral-bear-tank.md) casts/min |
 |---|---|---|
-| 1 | if unitDistance > 5: move to 5 yd | as ready |
-| 2 | if unitDistance > 5: wait until not (unitDistance > 5) | as ready |
-| 3 | if unitDistance ≤ 5: cast Manual Crowd Pummeler | as ready |
-| 4 | if health % ≤ “Barkskin health threshold”: cast Barkskin | 1.0 |
-| 5 | if Goblin Sapper Charge is known: cast Goblin Sapper Charge | as ready |
-| 6 | if DefensivePotion is known: cast DefensivePotion | as ready |
-| 7 | if “Offensive potion is useful without a defensive potion”: cast OffensivePotion | as ready |
-| 8 | if selectedConjured and health % ≤ “Healthstone health threshold”: cast Major Healthstone on self | as ready |
-| 9 | if “Enrage can rescue the next attack”: cast Enrage | 1.0 |
+| 1 | if unitDistance > 5: wait until not (unitDistance > 5) | as ready |
+| 2 | if unitDistance ≤ 5: cast Manual Crowd Pummeler | as ready |
+| 3 | if health % ≤ “Barkskin health threshold”: cast Barkskin | 1.0 |
+| 4 | if Goblin Sapper Charge is known: cast Goblin Sapper Charge | as ready |
+| 5 | if DefensivePotion is known: cast DefensivePotion | as ready |
+| 6 | if “Offensive potion is useful without a defensive potion”: cast OffensivePotion | as ready |
+| 7 | if selectedConjured and health % ≤ “Healthstone health threshold”: cast Major Healthstone on self | as ready |
+| 8 | if health % < “Frenzied Regeneration health threshold”: cast Frenzied Regeneration | 0.3 |
+| 9 | if “Enrage can rescue the next attack”: cast Enrage | 1.3 |
 | 10 | if “Ready to return to the main weapon”: swap to the Main item set | as ready |
-| 11 | if number of targets = 2 and “Enough rage to queue Maul in cleave”: cast Maul | 161.8 |
-| 12 | if number of targets = 3 and “Enough rage to queue Maul for three-target Swipe”: cast Maul | 161.8 |
-| 13 | if not (number of targets = 3) and not (number of targets = 2) and “Enough rage to queue Maul”: cast Maul | 161.8 |
+| 11 | if number of targets = 2 and “Enough rage to queue Maul in cleave”: cast Maul | 23.9 |
+| 12 | if number of targets = 3 and “Enough rage to queue Maul for three-target Swipe”: cast Maul | 23.9 |
+| 13 | if not (number of targets = 3) and not (number of targets = 2) and “Enough rage to queue Maul”: cast Maul | 23.9 |
 
-Lines of the simulator's rotation these builds never cast: cast Feral Charge (Bear), cast Elune's Light, cast Frenzied Regeneration, cast Faerie Fire, cast Demoralizing Roar, cast Swipe (its condition never held in these fights); cast Lacerate on currenttarget, cast Lacerate (needs the Lacerate talent); cast Primal Bite (rank 3) (needs the Primal Bite talent).
+Lines of the simulator's rotation these builds never cast: cast Feral Charge (Bear), cast Elune's Light, cast Faerie Fire, cast Demoralizing Roar, cast Swipe (its condition never held in these fights); cast Lacerate on currenttarget, cast Lacerate (needs the Lacerate talent); cast Primal Bite (rank 3) (needs the Primal Bite talent).
 
 Damage by ability (threat for tanks):
 
 | Ability | [`feral-bear-tank`](feral-bear-tank.md) |
 |---|---|
-| Maul | 89% |
+| Maul | 85% |
+| Frenzied Regeneration | 6% |
 | Windfury Totem | 5% |
-| Auto Attack | 4% |
+| Retribution Aura | 1% |
 | Judgement of Light | 1% |
-| OtherActionRageGain | 0% |
-| Retribution Aura | 0% |
-| Thorns | 0% |
+| Thorns | 1% |
+| OtherActionRageGain | 1% |
+| Auto Attack | 0% |
+| OtherActionManaGain | 0% |
 
 ## Notes
 

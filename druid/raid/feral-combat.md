@@ -2,8 +2,6 @@
 
 [Druid](../README.md) > [Raid (group)](README.md) > Feral Combat
 
-> **Being checked:** The bear's rotation cast Maul's swing damage off the swing timer from 2026-11-16 (the audit's D12): the bear now starts from the simulator's own rotation and the tank lane redoes it. The builds and numbers on this page may change when it is done.
-
 **✅ Recommended** for raid (the best druid spec here, or within 3% of it).
 
 **[Feral Combat — Raid](../research/raid/builds/feral-combat-open-raid.md)** (9/32/10) — [open the talent tree](https://talentsforever.com/druid/60/050022-52000332123012025001-055-12)
@@ -46,7 +44,7 @@ A raid cat opens from **Prowl** with **Ravage**, keeps **Rip** and **Rake** blee
 
 - **Shred** and **Ravage** only work from behind. When the boss faces you, the rotation builds with **Claw** instead ("Claw can replace Shred").
 - Mana: **Shifting Power** spends more than half your base mana, so the list leans on a raid's mana buffs, a mana potion and **Innervate** on yourself below 1,400 mana with the fight still going. Without Blessing of Wisdom or Mana Spring (a dungeon group, or alone) you run dry fast; solo, the fight lab found that drinking the mana back costs more time than the energy saves.
-- The bear builds under Other builds are tank builds with their own list in **Dire Bear Form**: since 2026-11-20 the simulator's own bear rotation (ours had cast Maul's damage spell off the swing timer). Their section is being checked until the tank runs are redone.
+- The bear, under Tanking, plays the simulator's own tank list in **Dire Bear Form** on the simulator's own build: **Primal Bite** whenever it is ready; **Lacerate** on every other global cooldown, built to five stacks and refreshed before the five-stack bleed runs out; **Maul** queued with the rage left over, keeping enough for the next **Primal Bite**; **Faerie Fire** and **Demoralizing Roar** kept up when the raid does not supply them. **Lacerate** and **Primal Bite** carry most of the threat (39% and 20% of it in the simulator, **Maul** 30%): a bear without their talents can only queue **Maul**.
 - The rotation casts **Ferocious Bite** at rank 5, the rank the simulator's spell data carries.
 
 **When to change it**
@@ -112,9 +110,11 @@ A talent marked as a tier point measures nothing in the simulator's raid fight; 
 
 ## Tanking
 
-**[Feral Combat (optimized, tank)](../research/raid/builds/opt-feral-bear-tank-raid-tank.md)** (9/37/5) — [open the talent tree](https://talentsforever.com/druid/60/050022-5020033212300212551-05-12)
+**[Feral Combat — Raid tank](../research/raid/builds/feral-combat-bear-preset-tank.md)** (9/32/10) — [open the talent tree](https://talentsforever.com/druid/60/050022-5023030212310112501-055-12)
 
-Tank value 1.143 (threat and damage taken under a boss, relative to our reference tank build): 8049 threat and 501 damage taken per second in a full raid.
+Tank value 1.880 (threat and damage taken under a boss, relative to our reference tank build): 2791 threat and 438 damage taken per second in a full raid.
+
+**How this pick was checked:** a short check on 2026-11-22 (the simulator's build; every one-move and chain-move neighbour raced in a full raid, two rounds; it found +1.76% in 2 moves, above the 0.5% bar: a full search follows). The full search, talents and rotation in turns until stable, runs in the optimality pass.
 
 **The gear** (average item level: Pre-BiS 62.0; Raid BiS 62.4; chosen in the community simulator on tank value, threat and damage taken, for this build in a full raid. The simulator's item database lists base armor for only about one armor item in five; this project's patch fills in the rest from Classic's values (our assumption: Forever may have changed some); each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -137,6 +137,8 @@ Tank value 1.143 (threat and damage taken under a boss, relative to our referenc
 | Main hand | [Unyielding Maul](https://www.wowhead.com/forever/item=18531) · *Tribute, Dire Maul*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) | [Unyielding Maul](https://www.wowhead.com/forever/item=18531) · *Tribute, Dire Maul*<br>+ [Enchant Weapon - Crusader](https://www.wowhead.com/forever/spell=20007) |
 | Ranged/relic | [Idol of the Moon](https://www.wowhead.com/forever/item=23197) | [Idol of the Moon](https://www.wowhead.com/forever/item=23197) |
 
+*These sets were chosen for the bear's earlier pick; they are being made again for this build, the simulator's Bear preset (2026-11-22).*
+
 **Open in the simulator** (the community's Forever simulator on the web, loaded with the gear, enchants, talents, rotation, consumables and buffs we simulate): Pre-BiS: [full raid](https://wowsims.com/forever/druid/feralbear/#eJzEVE9IFGEUn/fN7M7zM9bxI2qclL48xLYw8u1na+plV09RCNGpQ5CjO+uu2e4yu4HRRQqhg5F0Sis8WBRLRfQP6VqIhQch6uAlSw8dkoounSJmdCuq69rv8Hjze7/h/ea94dEmBANM4BCFfshCEcYALgDcBmDbghLxS51g3dNRN+qt01TH1+ON5lo91XD2ClANXy0aVMf1S2C+i1Adnz1qMFf9ZP4cmFd1quPiomG+jVAVnw9RHe9fBv9tHV9Owgb96Ww13DpOVbx4iuq4OgnmxwhVqIbXH0NrszGfi67NwDTUzTp3nOWemZtQgfBE7kvLeK4XA6eQgqekRSSEkNJOCClEe7uMy3YhZFwmEnFbJBaItkTwPVkKMc0i3QrbbbXQ7cukkar4sI8RI2SFqUaJLFmhDeo3QeVvQaWPTQDLOMWRE4VimUshO+y4sOWBbj6YdfJDbpoXPO6k026aD5zh5azLvULZKecKeV5yHW8wy6Ml1+UZ13NG7AHX8eyykz9pV0X2hqhtuFTI77NaqRnbgRrD4TDV8OuTwxbSMNX2tyVK1ibDSlvmps7SaYgDTvUx74+mosuWXTVpisGHXnsA7PzWzb2JGrEIqox4yub2RfB7rEfZ+L9cdNTExS7aGGvAMCOHFH/yVJXi59pN9QNZgM8k/Y1ARdUsYkLrd1Kn+BjLpJqmp3y8SO7JBHiTlCvE1HgyNkeU/4JyqprVFHvv1qxPVxCP3kj1bBKpfv9wTkHwoKwkYyrO7ewmBvQ2/7qxAjohBQfhCByDLBRhFEbJjwEApoEqVA==); Raid BiS: [full raid](https://wowsims.com/forever/druid/feralbear/#eJzEVE9IFG8Ynveb2Z3X1x/rOPyocVKaPMS2MPLtZ2vqZVdPUQjRqUOQozvrrtnuMruE0UWKhQ5GUpe0woNFsRRF/5CuhVh4EKIOXrL00CGp6NIpYkatqK5rz2F453mfj/f53vfjpSYEDQywIAr9kIUijAGcA7gFoP8XpJif6gTzroqqVm+eJBVfVRqN1XpScOYykIIvFzRSce0CGG8jpOLThw3Gih/MnQHjikoqLixoxpsIyfhsiFS8dxH80yq+mACfVrByCUjGj6dJxptHScbzJ0jFlQkwPkRIIgWvPYLWZm0uF12dhimom3FuO0s90zegCuHx3OeWSq4XA6uQgieshSc4F8JOcMF5e7uIi3bORVwkEnGbJ+aZssjwHVsM6YrJuiV9p9lC/y+xRpLxQZ/OtJAZJoWYKJmhdeoXQfVPQbVPHwc94xRHjhWKZUtw0WHHuS32dVuDWSc/5Katgmc56bSbtgZOWeWsa3mFslPOFfJWyXW8wawVLbmulXE9Z8QecB3PLjv54/amyF4XtQ2XCvk9ZisZsW2o6DgcJgW/PD5oIoVJ2duWKJkbjF7aMjd1pkohC3CyT/d+K8q7bNFVk6IYXPTqfdDPbl3fm0iLRVDWmSdtTJ8Hz2Mtqlf+5qKjJi52UGOsAcM6OyD5nSdZ8B9jN+T3bB4+sfRXBlVZMZkBrd9YneRjLJNqmpr08Ty5KxPgdVIsM0OxkrFZJv0TlFObUU2x+07N6nQF38PXUz0bRKrf35yTEPxIy8mYjLPbu5kGvc0/lyyHTkjBfjgERyALRRiFUfZ9AD5cKgY=).
 
 ## Other builds of this spec
@@ -144,10 +146,10 @@ Tank value 1.143 (threat and damage taken under a boss, relative to our referenc
 - [Feral Combat — Shifting Power](../research/raid/builds/feral-combat-shifting-power-raid.md) (9/33/9, 918 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000032123012125001-054-12)
 - [Feral Combat (optimized)](../research/raid/builds/opt-feral-cat-dps-raid-dps.md) (9/30/12, 772 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-25000332023002125-0552-12)
 - [Feral — Cat DPS](../research/raid/builds/feral-cat-dps.md) (9/32/10, 758 DPS in a full raid) — [open the talent tree](https://talentsforever.com/druid/60/050022-55000332123002123-055-12)
-- [Feral Combat (optimized, tank)](../research/raid/builds/opt-feral-bear-tank-raid-tank.md) (9/37/5) — [open the talent tree](https://talentsforever.com/druid/60/050022-5020033212300212551-05-12)
-- [Feral Combat — Raid tank](../research/raid/builds/feral-combat-ml-tank.md) (9/35/7) — [open the talent tree](https://talentsforever.com/druid/60/500022-550003300230011255-052-12)
-- [Feral — Bear Tank](../research/raid/builds/feral-bear-tank.md) (7/35/9) — [open the talent tree](https://talentsforever.com/druid/60/05002-550003301230010255-054-12)
+- [Feral Combat — Raid tank](../research/raid/builds/feral-combat-bear-preset-tank.md) (9/32/10) — [open the talent tree](https://talentsforever.com/druid/60/050022-5023030212310112501-055-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-21 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Spell ranks: trainer ranks only. The class books' ranks (Grimoire of Shadow Bolt X, Tome of Frostbolt XI and the like) are not in Forever on the evidence there is (2026-11-20): in Classic every one drops in the Ruins of Ahn'Qiraj, which Forever's roadmap does not have; Wowhead's Forever pages list no source for them; the simulator's own authors leave them off by default. Checked again when the raids of 2026-12-09 open. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Spell ranks: trainer ranks only. The class books' ranks (Grimoire of Shadow Bolt X, Tome of Frostbolt XI and the like) are not in Forever on the evidence there is (2026-11-20): in Classic every one drops in the Ruins of Ahn'Qiraj, which Forever's roadmap does not have; Wowhead's Forever pages list no source for them; the simulator's own authors leave them off by default. Checked again when the raids of 2026-12-09 open. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows. Windfury Totem's buff changed in client 1.60.1.71037 and the raid simulator used here predates it: full-raid numbers of melee builds assume the old totem.*
 

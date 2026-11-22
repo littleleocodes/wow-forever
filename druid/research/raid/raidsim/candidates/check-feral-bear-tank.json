@@ -1,0 +1,128 @@
+{
+ "id": "check-feral-bear-tank",
+ "allocation": {
+  "Balance": [
+   [
+    "Genesis",
+    5
+   ],
+   [
+    "Nature's Majesty",
+    2
+   ],
+   [
+    "Nature's Reach",
+    2
+   ]
+  ],
+  "Feral Combat": [
+   [
+    "Ferocity",
+    5
+   ],
+   [
+    "Feral Swiftness",
+    2
+   ],
+   [
+    "Feral Instinct",
+    1
+   ],
+   [
+    "Thick Hide",
+    3
+   ],
+   [
+    "Savage Fury",
+    2
+   ],
+   [
+    "Feral Charge",
+    1
+   ],
+   [
+    "Sharpened Claws",
+    2
+   ],
+   [
+    "Predatory Strikes",
+    3
+   ],
+   [
+    "Lacerate",
+    1
+   ],
+   [
+    "Blood Frenzy",
+    2
+   ],
+   [
+    "Leader of the Pack",
+    1
+   ],
+   [
+    "Natural Instinct",
+    2
+   ],
+   [
+    "Rend and Tear",
+    5
+   ],
+   [
+    "Primal Bite",
+    1
+   ],
+   [
+    "Natural Reaction",
+    1
+   ]
+  ],
+  "Restoration": [
+   [
+    "Heart of the Wild",
+    5
+   ],
+   [
+    "Naturalist",
+    5
+   ]
+  ]
+ },
+ "note": "Simulator talent search (raidsim/talent_opt.py, 2026-11-22) for feral-bear-tank from sim preset: Bear in the raid setting: 561.3 -> 570.6 DPS on a third seed.",
+ "search": {
+  "start": "sim preset: Bear",
+  "setting": "raid",
+  "kept": [
+   "Feral Instinct"
+  ],
+  "moves": [
+   {
+    "round": 1,
+    "move": "1 point Feral Instinct -> Blood Frenzy",
+    "gain_seed1": 0.010009834055507483,
+    "gain_seed2": 0.01082379223231511,
+    "split": "9/32/10"
+   },
+   {
+    "round": 2,
+    "move": "1 point Feral Instinct -> Natural Reaction",
+    "gain_seed1": 0.007652712882983526,
+    "gain_seed2": 0.007485261925952447,
+    "split": "9/32/10"
+   }
+  ],
+  "dps_start": 561.2972228467495,
+  "dps_end": 570.6450922336941,
+  "gain": 0.017630452967277055,
+  "tank": true,
+  "date": "2026-11-22",
+  "sim": {
+   "repo": "C:\\Users\\leohu\\.wow-forever-tools\\wowsims-forever-y",
+   "racials": "off",
+   "pet_normalize": true,
+   "patch_hash": "125d59c4f975f5df",
+   "simulator": "wowsims/forever",
+   "client": "1.60.1.70938"
+  }
+ }
+}

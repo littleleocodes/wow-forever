@@ -26,6 +26,23 @@ import sys
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path[:0] = [str(HERE), str(HERE.parent)]
 OUT = HERE / "flags-check.json"
+
+
+def _raidrun():
+    """The raid sim's run.py, never the fight lab's (2026-11-21: `import run` inside a function took whichever run.py stood first on
+    sys.path when it ran; apl_opt.py loads the raid sim's as "raidrun", and the tank lane's three rotation tunes stopped on the fight
+    lab's run.py, which has no sim_path). An already loaded copy of the raid sim's module is reused."""
+    import importlib.util
+    want = (HERE / "run.py").resolve()
+    for name in ("raidrun", "run"):
+        m = sys.modules.get(name)
+        if m is not None and getattr(m, "__file__", None) and pathlib.Path(m.__file__).resolve() == want:
+            return m
+    spec = importlib.util.spec_from_file_location("raidrun", want)
+    m = importlib.util.module_from_spec(spec)
+    sys.modules["raidrun"] = m
+    spec.loader.exec_module(m)
+    return m
 EXE = "foreverbench-flags.exe" if sys.platform.startswith("win") else "foreverbench-flags"
 
 OLD = """				for _, s := range u.Spellbook {
@@ -75,7 +92,7 @@ def build(repo):
 
 def registered(entry, repo, builds, setting="raid"):
     """{label: {(id, tag): flagged}} for builds [{label, talents}], the entry's character as the races set it up."""
-    import run as R
+    R = _raidrun()
     exe = repo / EXE
     if not exe.exists():
         raise SystemExit(f"no {EXE} in {repo}: python _reference/data/raidsim/flags_bench.py --build")
@@ -130,7 +147,7 @@ def casts(apl):
 
 def verdicts(cls, ename, entry, repo, names=None):
     """{rotation file: [(part, i, id, tag, verdict)]} for the entry's raid and dummy rotations, judged on every talent at full rank."""
-    import run as R
+    R = _raidrun()
     trees = R.load_trees(repo, cls)
     full = "-".join("".join(str(t["maxPoints"]) for t in tr["talents"]) for tr in trees)
     out = {}
@@ -161,7 +178,7 @@ def main():
     ap.add_argument("--build", action="store_true")
     ap.add_argument("--write", action="store_true")
     a = ap.parse_args()
-    import run as R
+    R = _raidrun()
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=None))
     if a.build:

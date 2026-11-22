@@ -2,8 +2,6 @@
 
 [Paladin](../README.md) > [Raid (group)](README.md) > Protection
 
-> **Being checked:** The tank lane re-tunes, checks and races the tanks after the audit's D12 (2026-11-20). The builds and numbers on this page may change when it is done.
-
 **[Protection — Raid tank](../research/raid/builds/protection-ml-tank.md)** (0/35/16) — [open the talent tree](https://talentsforever.com/paladin/60/-05311102513301531-52233000001-12)
 
 > 🔬 Derived build: found by this project's deep search over every legal build of the spec in the community's raid simulator, on tank value (threat and damage taken), then raced against the spec's builds. A model of the beta, to check at launch.
@@ -12,21 +10,20 @@
 
 **Before the pull:** **Righteous Fury**, **Retribution Aura**, **Seal of the Crusader**.
 
-**Keep up all fight:** **Righteous Fury**, **Retribution Aura**.
+**Keep up all fight:** **Seal of Fury**, **Righteous Fury**, **Retribution Aura**.
 
 **Then press the first one that is ready**, top to bottom:
 
-1. **Judgement**; no global cooldown, so press it alongside the others
-2. **Consecration**
-3. **Holy Shield**
-4. **Holy Strike**
+1. **Holy Strike** when Judgement is on cooldown
+2. **Judgement**; no global cooldown, so press it alongside the others
+3. **Consecration** when you have at least 25% mana
+4. **Holy Shield**
 5. **Hammer of Wrath** when the target is below 20% health
 
 Between these, your white swings do the rest.
 
 **Advanced: your cooldowns and extras.** Once the list above feels easy, add these:
 
-- **Seal of Fury**: part of the rotation (about 6 times a fight)
 - **Templar's Bulwark**: a cooldown, use it at the start of the fight and again whenever it is ready (about 1 time a fight)
 - **Lay on Hands**: when you are about to die: a full heal on a long cooldown that empties your mana
 - Use your trinkets and a potion together with your big cooldowns.
@@ -35,28 +32,31 @@ Between these, your white swings do the rest.
 
 ## Why this rotation
 
-Most of your threat is Holy damage, and **Righteous Fury** makes it 90% more threat. Keep **Holy Shield** up, judge **Seal of Righteousness** on cooldown and press **Consecration** and **Holy Strike** whenever they are ready; **Templar's Bulwark** and **Lay on Hands** are your big defensive buttons.
+Most of your threat is Holy damage: **Righteous Fury** adds a third to all your threat and 90% more to your Holy threat. Keep **Seal of Fury** and **Holy Shield** up, judge on cooldown, and press **Holy Strike** and **Consecration** (while you have a quarter of your mana or more) whenever they are ready; **Templar's Bulwark** and **Lay on Hands** are your big defensive buttons.
 
 **Why it works**
 
-- Before the pull: **Righteous Fury** (it lasts 30 minutes, and **Improved Righteous Fury** and **Iron Creed** only work while it is up), then **Seal of Righteousness** and **Holy Shield** in the last seconds, so the first hits already meet both.
-- **Holy Shield** lasts 10 seconds and comes back every 10, so keep it up all fight: 30% more block for 4 blocks, and every block deals Holy damage with 20% extra threat and can trigger **Redoubt** and **Shield Specialization**'s mana. The simulator measured 1.3% more tank value with it at the top of the list.
-- Press **Judgement** on cooldown, whether or not the short list shows it: it is off the global cooldown, judges **Seal of Righteousness** for about a tenth of your threat, and no longer uses up the seal in Forever. Judging every time it is ready, instead of only before the seal runs out, measured 4.3% more tank value; **Swift Judgement** is a second, free **Judgement** on its own 1-minute cooldown: use it whenever it is ready.
-- **Consecration** and **Holy Strike** fill the rest: **Consecration** threatens everything standing in it, and **Holy Strike** with **Iron Creed** makes up to 30% more threat and cuts your damage taken by up to 6% for 6 seconds (rank 3). Refresh **Seal of Righteousness** when it has about a second left.
-- **Templar's Bulwark** sits at the top because the simulator's 3-minute fight fits one use: it absorbs damage equal to your maximum health for 8 seconds, off the global cooldown, and using it at the pull measured 1.4% more tank value. It applies Forbearance for a minute, which locks you out of **Divine Protection**, **Divine Shield** and **Blessing of Protection**.
-- **Lay on Hands** is last in the list with no health condition: in the simulator's fights nobody heals you, and casting it whenever nothing else is ready measured 0.4% more tank value than keeping it for 10% health (8% more than not using it). It heals you for your maximum health but drains all your mana, and its cooldown is 20 minutes: in a raid with healers, keep it for when you are about to die.
+- Before the pull: **Righteous Fury** (30 minutes; **Improved Righteous Fury** and **Iron Creed** only work while it is up), **Retribution Aura** and **Seal of the Crusader**. Your first **Judgement** judges the Crusader seal: the boss takes up to 161 more Holy damage, and your melee hits keep that judgement up all fight. Then **Seal of Fury** goes up and stays.
+- **Seal of Fury** (30 seconds) adds 35 Holy damage to every swing, and while you hold a shield each swing also gives you an absorb of half of that damage. Renew it just before it runs out (about 6 times a fight). The list starts from the official simulator's own Protection rotation (since 2026-10-31), which tanks with this seal.
+- Press **Judgement** (10-second cooldown) whenever it is ready, and **Swift Judgement**, a second **Judgement** on its own 1-minute cooldown, whenever that is: both are off the global cooldown and do not use up the seal in Forever. Each judges **Seal of Fury** for 153 to 167 Holy damage and a 3-second taunt: about 25 judgements a fight in the simulator, the two together.
+- **Holy Shield** (10-second cooldown, 4 charges): 30% more block for 10 seconds, and every block deals 221 Holy damage with 20% extra threat and can trigger **Redoubt** and **Shield Specialization**'s mana. Forever's rank 4 is not in the official rotation; adding it measured 2.3-2.4% more tank value.
+- **Holy Strike** and **Consecration** fill the rest. **Shieldsworn** takes 4 seconds off **Holy Strike**'s cooldown, so it comes back every 6 seconds (29 times a fight in the simulator). It also strikes with your shield: while **Holy Shield** is up, each one that lands deals its damage without spending a charge, it can return **Shield Specialization**'s mana, and for 6 seconds after it you can block spells. It goes right after **Judgement** when both are ready (0.4-0.6% more tank value with it at the top of the list), and with **Iron Creed** it makes up to 30% more threat and cuts your damage taken by up to 6% for 6 seconds (rank 3). **Consecration** threatens everything standing in it; the list keeps it for when you have a quarter of your mana or more (the re-tune of 2026-11-22: 0.3-0.5% more tank value).
+- **Hammer of Wrath** (474 to 522 Holy damage, only below 20% of the boss's health) goes right after a white swing: 0.8% more tank value.
+- **Templar's Bulwark** absorbs damage equal to your maximum health for 8 seconds, off the global cooldown; the simulator uses it as soon as it is ready, which its 3-minute fight allows once, at the pull (5-minute cooldown). It applies Forbearance for a minute, which locks you out of **Divine Protection**, **Divine Shield** and **Blessing of Protection**.
+- **Lay on Hands** is near the end of the list with no health condition: in the simulator's fights nobody heals you, and using it whenever nothing above is ready measured 1.9-2.0% more tank value. It heals you for your maximum health but drains all your mana, and its cooldown is 20 minutes: in a raid with healers, keep it for when you are about to die.
 
 **Caveats**
 
-- The simulator tanks with **Seal of Righteousness**. **Seal of Fury** (35 Holy damage a swing, plus an absorb of half of it while you hold a shield) is not part of its tuned rotation, so whether it is better for you was not measured.
-- Mana: you run dry for a few seconds of each 3-minute fight in the simulator. **Consecration** is the expensive button (565 mana); blocks give mana back through **Shield Specialization** and judgements through **Sanctified Judgement**.
+- Every **Judgement** of **Seal of Fury** taunts for 3 seconds. As the boss's main tank that costs nothing; as the second tank, it pulls the boss off the main tank. While another tank holds the boss, switch to **Seal of Righteousness** (its **Judgement** deals 170 to 186 Holy damage and does not taunt) or do not judge.
+- **Seal of Righteousness** is in the simulator's list but switched off: the official rotation tanks with **Seal of Fury**, and turning the other seal on was among the rotation searches' tries and was never kept.
+- Mana: you run dry for about a second of each 3-minute fight in the simulator. **Consecration** is the expensive button (565 mana); blocks give mana back through **Shield Specialization** and judgements through **Sanctified Judgement**.
 - The simulator measures one boss. **Consecration** and **Holy Shield** work on everything that hits you; **Holy Strike** and **Judgement** only on your target.
 
 **When to change it**
 
-- To taunt (a tank swap, a loose add), put up **Seal of Fury** and judge: its judgement taunts for 4 seconds. Use **Swift Judgement** if **Judgement** is on cooldown, then go back to **Seal of Righteousness**.
+- To taunt (a tank swap, a loose add), judge it: with **Seal of Fury** up every **Judgement** taunts for 3 seconds, and **Swift Judgement** is a second one when **Judgement** is on cooldown.
 - Hold **Templar's Bulwark** for a known damage spike or a healer death when the fight has one: the simulator spends it at the pull only because its fight fits a single use.
-- Undead or Demon packs: **Holy Wrath** (a 2-second cast) hits and stuns every Undead and Demon within 20 yards, and **Exorcism** hits one hard. Neither was measured: the simulator's boss is an Elemental.
+- Undead or Demons: **Exorcism** is in the list for them (the simulator's boss is an Elemental, so it never casts it), and **Holy Wrath** (a 2-second cast) hits and stuns every Undead and Demon within 20 yards. Neither was measured.
 
 ## Talents
 
@@ -67,9 +67,9 @@ Most of your threat is Holy damage, and **Righteous Fury** makes it 90% more thr
 
 ## The numbers
 
-Tank value 1.025 (threat and damage taken under a boss, relative to our reference tank build).
+Tank value 1.017 (threat and damage taken under a boss, relative to our reference tank build).
 
-**How this pick was checked:** a full search on 2026-11-02 (the talent search that found this build).
+**How this pick was checked:** a short check on 2026-11-22 (every one-move and chain-move neighbour raced in a full raid, two rounds; nothing better). A full search, talents and rotation in turns until stable, follows in the optimality pass.
 
 **The gear** (average item level: Pre-BiS 61.9; Raid BiS 61.9; chosen in the community simulator on tank value, threat and damage taken, for this build in a full raid. The simulator's item database lists base armor for only about one armor item in five; this project's patch fills in the rest from Classic's values (our assumption: Forever may have changed some); each item opens its Wowhead page, with where it drops and its enchant):
 
@@ -101,5 +101,7 @@ Tank value 1.025 (threat and damage taken under a boss, relative to our referenc
 - [Protection (optimized)](../research/raid/builds/opt-prot-tank-raid-tank.md) (1/34/16) — [open the talent tree](https://talentsforever.com/paladin/60/01-25300132503501031-50033310001-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-21 from this project's builds and simulations of the WoW: Forever beta (talent and spell data: client build 1.60.1.70753; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Spell ranks: trainer ranks only. The class books' ranks (Grimoire of Shadow Bolt X, Tome of Frostbolt XI and the like) are not in Forever on the evidence there is (2026-11-20): in Classic every one drops in the Ruins of Ahn'Qiraj, which Forever's roadmap does not have; Wowhead's Forever pages list no source for them; the simulator's own authors leave them off by default. Checked again when the raids of 2026-12-09 open. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938; raid numbers: the official wowsims/forever simulator at 2e6e77d (client 1.60.1.70938)). Simulations, not in-game measurements. Spell ranks: trainer ranks only. The class books' ranks (Grimoire of Shadow Bolt X, Tome of Frostbolt XI and the like) are not in Forever on the evidence there is (2026-11-20): in Classic every one drops in the Ruins of Ahn'Qiraj, which Forever's roadmap does not have; Wowhead's Forever pages list no source for them; the simulator's own authors leave them off by default. Checked again when the raids of 2026-12-09 open. Do not hand-edit.*
+
+*The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows. Windfury Totem's buff changed in client 1.60.1.71037 and the raid simulator used here predates it: full-raid numbers of melee builds assume the old totem.*
 

@@ -280,7 +280,9 @@
       ],
       "notes": ["Adopted from the community simulator on 2026-09-27: opt-feral-bear-tank-raid-tank beat the previous draft by +10.4% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Adopted from the community simulator on 2026-09-26: cand-feral-bear-tank-r1 beat the previous draft by +7.4% DPS; the rationale below predates the adoption where it names talents no longer taken.", "Faerie Fire (Feral) is baseline now; Lacerate (a bear bleed) exists in Forever (Shredding Attacks names it).", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 7/35/9 -> 7/35/9; +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); -1 Feral Swiftness (over 51); -1 Feral Swiftness (over 51); -1 Savage Fury (over 51); -1 Savage Fury (over 51); -1 Blood Frenzy (over 51) (refill: the feral-bear-tank model, raid-dps).", "2026-11-09 page audit: core entries for talents the allocation no longer holds removed (Feral Swiftness; a tree change or a repair took them out)."],
       "open_questions": ["Mangle threat modifier; whether Dire Bear armor multiplier changed with the reworked Thick Hide."],
-      "sources": ["https://warcraftforever.games/talents/druid"]
+      "sources": ["https://warcraftforever.games/talents/druid"],
+      "player_page": false,
+      "player_page_why": "2026-11-22 (the audit session): trails the simulator's Bear preset (feral-combat-bear-preset-tank) by 47-86% in tank value in a full raid; it presses only Maul (no Lacerate or Primal Bite talents: its search ran while Maul's damage was cast off the swing timer, fixed on 2026-11-20). Kept in research."
     },
     {
       "id": "balance-moonkin-raid",
@@ -1157,7 +1159,9 @@
       "flex": [],
       "notes": ["Report: druid/research/talents/forever/optimizer/feral-bear-tank-raid-tank.md", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 9/42/0 -> 9/37/5;  (refill: the feral-bear-tank model, raid-tank)."],
       "open_questions": ["Hand-entered effect values (see the manual effect file) are the weakest inputs — verify the ones this build leans on."],
-      "sources": ["https://warcraftforever.games/talents/druid"]
+      "sources": ["https://warcraftforever.games/talents/druid"],
+      "player_page": false,
+      "player_page_why": "2026-11-22 (the audit session): trails the simulator's Bear preset (feral-combat-bear-preset-tank) by 47-86% in tank value in a full raid; it presses only Maul (no Lacerate or Primal Bite talents: its search ran while Maul's damage was cast off the swing timer, fixed on 2026-11-20). Kept in research."
     },
     {
       "id": "feral-combat-ml-tank",
@@ -1198,7 +1202,53 @@
       "notes": ["+5.5% tank value over the hand draft feral-bear-tank (over the 2% bar: the spec's tank pick; the hand draft stays as the alternative).", "Final race over 100,000 fights: tank value 1.055 ± 0.000 (relative to feral-bear-tank over 20,000 fights); feral-combat-ml-tank 1.055, opt-feral-bear-tank-raid-tank 1.044, feral-bear-tank 1.000.", "Independent runs agreeing in the last cycle: 3/3; two-move check: 350 one-move and 47,117 two-move builds, none better.", "2026-10-29 filler audit (raidsim/filler_audit.py, user question on zero-value fillers): points the simulator measures at 0 moved, one at a time, to talents that help in a real raid (interrupt protection, threat, mana, range, survival; the simulator cannot see these, so the order is our judgment) or that gain DPS: Genesis -> Improved Wrath (range); Genesis -> Improved Wrath (range); Genesis -> Improved Wrath (range); Genesis -> Improved Wrath (range); Genesis -> Improved Wrath (range). Net -0.03% on a third seed.", "2026-10-30 (repair_builds.py, client build 1.60.1.70707 trees): 9/35/7 -> 9/35/7; +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); +1 Heart of the Wild (tier gating for Naturalist); -1 Feral Swiftness (over 51); -1 Feral Swiftness (over 51); -1 Savage Fury (over 51); -1 Savage Fury (over 51); -1 Blood Frenzy (over 51) (refill: the feral-bear-tank model, raid-dps)."],
       "open_questions": ["A machine-searched Feral Combat tank build: check its threat and survival against the community's tank builds at launch (the simulator models no threat from other players, taunts or tank swaps)."],
       "sources": [],
-      "replaces": "feral-bear-tank"
+      "replaces": "feral-bear-tank",
+      "player_page": false,
+      "player_page_why": "2026-11-22 (the audit session): trails the simulator's Bear preset (feral-combat-bear-preset-tank) by 47-86% in tank value in a full raid; it presses only Maul (no Lacerate or Primal Bite talents: its search ran while Maul's damage was cast off the swing timer, fixed on 2026-11-20). Kept in research."
+    },
+    {
+      "id": "feral-combat-bear-preset-tank",
+      "name": "Feral Combat — Raid tank (the simulator's Bear 9/32/10)",
+      "role": "tank",
+      "content": "raid",
+      "tier": "draft",
+      "spec": "Feral Combat",
+      "generated": "2026-11-22",
+      "derived": "raid",
+      "preset": "Bear",
+      "summary": "The official simulator's own Bear preset (9/32/10), raced against our bear builds in a full raid in front of the boss on 2026-11-22: tank value 1.88 against 1.33 for our best and 1.01 for the old pick (threat 2,791 against 1,007 per second, damage taken 438 against 410). It presses **Lacerate** (kept at five stacks) and **Primal Bite** on the global cooldown and queues **Maul** with the rage left over; our bear builds, searched while Maul's damage was cast off the swing timer (fixed on 2026-11-20), took neither talent and pressed only Maul. A short check from it kept two moves for +1.76% tank value; a full search follows in the optimality pass. The simulator's model of the beta, not an in-game measurement.",
+      "allocation": {
+        "Balance": [
+          ["Genesis", 5],
+          ["Nature's Majesty", 2],
+          ["Nature's Reach", 2]
+        ],
+        "Feral Combat": [
+          ["Ferocity", 5],
+          ["Feral Swiftness", 2],
+          ["Feral Instinct", 3],
+          ["Thick Hide", 3],
+          ["Savage Fury", 2],
+          ["Feral Charge", 1],
+          ["Sharpened Claws", 2],
+          ["Predatory Strikes", 3],
+          ["Lacerate", 1],
+          ["Blood Frenzy", 1],
+          ["Leader of the Pack", 1],
+          ["Natural Instinct", 2],
+          ["Rend and Tear", 5],
+          ["Primal Bite", 1]
+        ],
+        "Restoration": [
+          ["Heart of the Wild", 5],
+          ["Naturalist", 5]
+        ]
+      },
+      "core": [],
+      "flex": [],
+      "notes": ["2026-11-22: the simulator's build, the bear's pick by \"simulator build first\" (the audit session's ruling the same day); the tank lane's parity race: upstream's rotation and ours level on it (1.8832 against 1.8825)."],
+      "open_questions": ["Lacerate's stacking threat and Primal Bite in Forever: check the bear's threat against these numbers at launch."],
+      "sources": ["https://github.com/wowsims/forever (ui/druid/feralbear/presets.ts: Bear)"]
     },
     {
       "id": "feral-combat-open-raid",

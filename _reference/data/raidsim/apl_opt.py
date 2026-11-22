@@ -337,7 +337,7 @@ def neighbors(apl, pool, N):
         # its full spell power coefficient, where Classic's rule cuts it by 3.75% a level below 20 (Smite rank 2, level 6: x0.475), so
         # a low rank won as a mana tool on a model gap; the rule goes in as a simulator patch at the next re-pin, and the low ranks with it
         lower = sorted({r for r in (rk - 1, rk - 2, max(1, rk // 2)) if any(r == x for x, _ in ranks) and r < rk
-                        and rank_level(cls, next(i2 for x, i2 in ranks if x == r)) >= 20}, reverse=True)
+                        and rank_level(CLASS[0], next(i2 for x, i2 in ranks if x == r)) >= 20}, reverse=True)
         for r in lower:
             rid = next(i2 for x, i2 in ranks if x == r)
             low = copy.deepcopy(it)
@@ -525,6 +525,45 @@ def class_pool(repo, entry):
                 seen.add(k)
                 pool.append(it)
     return pool
+
+
+BOOK_SPELL = re.compile(r'("spellId"\s*:\s*)(\d+)(\s*,\s*"rank"\s*:\s*\d+)?')
+
+
+def book_map():
+    """{class-book rank id: (the trainer's top rank id, its rank number)} from trainer-ranks.json (2026-11-19, the audit's H18)."""
+    tr = HERE / "trainer-ranks.json"
+    if not tr.exists():
+        return {}
+    return {int(b): (v["trainer"], v["trainer_rank"]) for b, v in json.load(open(tr, encoding="utf-8"))["map"].items()}
+
+
+def book_casts(apl):
+    """The class-book rank ids a rotation names anywhere (casts and conditions), as text."""
+    mp = book_map()
+    return sorted({m.group(2) for m in BOOK_SPELL.finditer(json.dumps(apl)) if int(m.group(2)) in mp})
+
+
+def trainer_pool(pool):
+    """The pool with every class-book rank swapped for the trainer's top rank, casts and conditions alike (2026-11-22, the audit session:
+    the simulator's own rotations cast book ranks, and the warrior tank tune of 2026-11-21 inserted Revenge 25288 and Heroic Strike 25286
+    from them); duplicates the swap makes are dropped."""
+    mp = book_map()
+
+    def sub(m):
+        old = int(m.group(2))
+        if old not in mp:
+            return m.group(0)
+        new, rank = mp[old]
+        return f"{m.group(1)}{new}" + (re.sub(r"\d+$", str(rank), m.group(3)) if m.group(3) else "")
+    out, seen = [], set()
+    for c in pool:
+        c = json.loads(BOOK_SPELL.sub(sub, json.dumps(c)))
+        k = key(c)
+        if k not in seen:
+            seen.add(k)
+            out.append(c)
+    return out
 
 
 def explicit_ids(apl):
@@ -814,7 +853,10 @@ def search(cls, spec, a, repo, N, where=None):
     if bad_base:
         raise SystemExit(f"{base_path.name} casts spells the simulator registers only as internal sub-actions (flags_bench.py; the audit's "
                          f"D12): {', '.join(f'{p}[{i}] {sid} tag {t}' for p, i, sid, t in bad_base)}: fix the rotation before tuning it")
-    pool = class_pool(repo, entry)
+    books = book_casts(base)
+    if books:
+        raise SystemExit(f"{base_path.name} casts class-book ranks ({', '.join(books)}): map them with trainer_ranks.py --apply before tuning")
+    pool = trainer_pool(class_pool(repo, entry))
     tag = f"{cls}-{spec}"
     sim_apl = sim_base(entry, repo)
     cds = cooldown_pool(entry, repo, builds, setting, tag, [base] + ([sim_apl] if sim_apl and key_list(sim_apl) != key_list(base) else []))

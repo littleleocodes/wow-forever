@@ -460,6 +460,13 @@ def check_entry(cls, ename, entry, repo, fights, switches=True):
     sr = A.spell_ranks(cls)
     res["rotation_fail"] += [f"{part}[{i}] casts {sr[sid][0]} rank {sr[sid][1]} (taught at level {lv}): below-20 rank, penalty not modelled"
                              for part, i, sid, lv in A.low_ranks(cls, apl)]
+    # a: a class book's rank (2026-11-22, the audit session): trainer ranks only (trainer-ranks.json). The warrior tank tune of 2026-11-21
+    # had inserted Heroic Strike 25286 and Revenge 25288 from the simulator's own rotations; the only book check, rule e, looked for book
+    # ranks the simulator does not register, and it registers these
+    bk = json.loads((pathlib.Path(__file__).resolve().parent / "trainer-ranks.json").read_text(encoding="utf-8"))["map"]
+    res["rotation_fail"] += [f"{part}[{i}] casts {bk[str(sid)]['spell']} rank {bk[str(sid)]['book_rank']} ({sid}), a class book's rank "
+                             f"({bk[str(sid)]['book']}): the trainer's top rank is {bk[str(sid)]['trainer_rank']} ({bk[str(sid)]['trainer']})"
+                             for part, i, sid, _tag in FB.casts(apl) if str(sid) in bk]
     # c2: the simulator's own rotation on the same builds and fights
     sims, simname = simulator_rotations(cls, ename, repo, apl)
     sim_rows = {}   # {build: [row under each simulator rotation]}
