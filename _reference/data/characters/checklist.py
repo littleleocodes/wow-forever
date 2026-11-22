@@ -104,6 +104,27 @@ def guide(cls, spec):
     return next((g for g in json.load(open(p, encoding="utf-8"))["guides"] if g.get("spec") == spec), None)
 
 
+def with_own_keys(g, extra):
+    """The guide with a chosen talent path's own keys put on its bars (2026-11-22, Arcea's path for open-world PvP: Ice Block, Ice Barrier,
+    Cold Snap): each {"key", "spell", "from", "role"} joins the slot of that key from its level, or a slot of its own on the last bar."""
+    if not g or not extra or not g.get("keys"):
+        return g
+    import copy
+    g = copy.deepcopy(g)
+    bars = g["keys"].get("bars") or []
+    for k in extra:
+        slot = next((s for bar in bars for s in bar.get("slots") or [] if s.get("key") == k["key"]), None)
+        if slot is None and bars:
+            slot = {"key": k["key"], "role": k.get("role", ""), "binds": []}
+            bars[-1].setdefault("slots", []).append(slot)
+        if slot is not None:
+            binds = [b for b in slot.get("binds") or [] if b["from"] < k.get("from", 1)]
+            slot["binds"] = binds + [{"from": k.get("from", 1), "spell": k["spell"]}]
+            if k.get("role"):
+                slot["role"] = k["role"]
+    return g
+
+
 def bars_html(g, lv):
     """The guide's keys at this level, and what arrives on them in the next six levels."""
     if not g or not g.get("keys"):
@@ -126,7 +147,7 @@ def bars_html(g, lv):
     return "".join(out), sorted(coming)
 
 
-def stage_html(g, lv):
+def stage_html(g, lv, notes_on=True):
     if not g:
         return ""
     st = [s for s in g.get("stages") or [] if s["from"] <= lv]
@@ -135,7 +156,8 @@ def stage_html(g, lv):
     s = st[-1]
     nxt = next((x for x in g["stages"] if x["from"] > lv), None)
     press = "".join(f"<li>{md(x)}</li>" for x in s.get("press") or [])
-    notes = "".join(f"<li>{md(x)}</li>" for x in (s.get("notes") or [])[:3])
+    # (a chosen talent path plays the guide's rotation, but the stage notes are about the page build's talents: left out, 2026-11-22)
+    notes = "".join(f"<li>{md(x)}</li>" for x in (s.get("notes") or [])[:3]) if notes_on else ""
     return (f'<p class="stage-title">{md(s["title"])} <span class="muted">from level {s["from"]}</span></p><ol class="press">{press}</ol>'
             + (f'<ul class="notes">{notes}</ul>' if notes else "")
             + (f'<p class="muted small">Next change at {nxt["from"]}: {md(nxt["title"])}.</p>' if nxt else ""))
@@ -408,6 +430,7 @@ def render(cfg, C):
     lv = h["level"]
     g = (json.load(open(DATA.parent.parent / cfg["guide"], encoding="utf-8")) if cfg.get("guide") and (DATA.parent.parent / cfg["guide"]).exists()
          else guide(cfg["class"], h["spec"]))
+    g = with_own_keys(g, C.get("keys_extra"))
     soon, later = C.get("soon") or [], C.get("later") or []
     gold = C.get("gold") or {}
     town, road = steps_html(C, lv)
@@ -484,7 +507,7 @@ def render(cfg, C):
         ah=ah, profs=profs, changes=changes, town=town, road=road or '<p class="muted">Nothing to leave the guide for in the next levels.</p>',
         legacy=leg, legacy_badge=f' <span class="count" aria-label="{leg_n} points">{leg_n}</span>' if leg_n else "", bars=bars or '<p class="muted">No keybind plan for this spec yet.</p>',
         coming=f'<h4>Coming to your bars</h4><ul class="coming">{coming_html}</ul>' if coming_html else "",
-        stage=stage_html(g, lv), jrows=jrows,
+        stage=stage_html(g, lv, not h.get("chosen")), jrows=jrows,
         rates=esc(", ".join((f"{k} = {v}" if k[:1].isdigit() else f"1 {k.replace('mp5', 'mana per 5 sec')} = {v}")   # ("1 100 armor", 2026-11-14)
                             for k, v in rates.items() if k != "armor")),
         unit=esc(C.get("unit", "spell power")),

@@ -126,8 +126,8 @@
     "display_string": "Item Level 32"
    },
    "durability": {
-    "value": 36,
-    "display_string": "Durability 36 / 45"
+    "value": 0,
+    "display_string": "Durability 0 / 45"
    }
   },
   {
@@ -219,26 +219,26 @@
   {
    "item": {
     "key": {
-     "href": "https://us.api.blizzard.com/data/wow/item/273051?namespace=static-1.60.1_70399-forever-us"
+     "href": "https://us.api.blizzard.com/data/wow/item/11884?namespace=static-1.60.1_70399-forever-us"
     },
-    "id": 273051
+    "id": 11884
    },
    "slot": {
     "type": "SHOULDER",
     "name": "Shoulders"
    },
    "quantity": 1,
-   "context": 1,
+   "context": 11,
    "quality": {
-    "type": "RARE",
-    "name": "Rare"
+    "type": "UNCOMMON",
+    "name": "Uncommon"
    },
-   "name": "Violet Sorcerer's Mantle",
+   "name": "Moonlit Amice",
    "media": {
     "key": {
-     "href": "https://us.api.blizzard.com/data/wow/media/item/273051?namespace=static-1.60.1_70399-forever-us"
+     "href": "https://us.api.blizzard.com/data/wow/media/item/11884?namespace=static-1.60.1_70399-forever-us"
     },
-    "id": 273051
+    "id": 11884
    },
    "item_class": {
     "key": {
@@ -263,9 +263,9 @@
     "name": "Binds when picked up"
    },
    "armor": {
-    "value": 38,
+    "value": 34,
     "display": {
-     "display_string": "38 Armor",
+     "display_string": "34 Armor",
      "color": {
       "r": 255,
       "g": 255,
@@ -277,12 +277,12 @@
    "stats": [
     {
      "type": {
-      "type": "INTELLECT",
-      "name": "Intellect"
+      "type": "STAMINA",
+      "name": "Stamina"
      },
-     "value": 9,
+     "value": 7,
      "display": {
-      "display_string": "+9 Intellect",
+      "display_string": "+7 Stamina",
       "color": {
        "r": 255,
        "g": 255,
@@ -293,13 +293,13 @@
     },
     {
      "type": {
-      "type": "SPELL_PENETRATION",
-      "name": "Spell Piercing"
+      "type": "SPELL_POWER",
+      "name": "Spell Power"
      },
-     "value": 4,
+     "value": 7,
      "is_equip_bonus": true,
      "display": {
-      "display_string": "+4 Spell Piercing",
+      "display_string": "+7 Spell Power",
       "color": {
        "r": 0,
        "g": 255,
@@ -310,103 +310,21 @@
     }
    ],
    "sell_price": {
-    "value": 2659,
+    "value": 1846,
     "display_strings": {
      "header": "Sell Price:",
      "gold": "0",
-     "silver": "26",
-     "copper": "59"
+     "silver": "18",
+     "copper": "46"
     }
-   },
-   "requirements": {
-    "level": {
-     "value": 30,
-     "display_string": "Requires Level 30"
-    }
-   },
-   "set": {
-    "item_set": {
-     "key": {
-      "href": "https://us.api.blizzard.com/data/wow/item-set/2134?namespace=static-1.60.1_70399-forever-us"
-     },
-     "name": "Violet Sorcerer's Vestments",
-     "id": 2134
-    },
-    "items": [
-     {
-      "item": {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item/273051?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Violet Sorcerer's Mantle",
-       "id": 273051
-      },
-      "is_equipped": true
-     },
-     {
-      "item": {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item/286988?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Violet Sorcerer's Leggings",
-       "id": 286988
-      }
-     },
-     {
-      "item": {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item/286987?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Violet Sorcerer's Sandals",
-       "id": 286987
-      }
-     },
-     {
-      "item": {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item/286989?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Violet Sorcerer's Wraps",
-       "id": 286989
-      }
-     },
-     {
-      "item": {
-       "key": {
-        "href": "https://us.api.blizzard.com/data/wow/item/273044?namespace=static-1.60.1_70399-forever-us"
-       },
-       "name": "Violet Sorcerer's Robes",
-       "id": 273044
-      }
-     }
-    ],
-    "effects": [
-     {
-      "display_string": "(2) Set: +5 Arcane Resistance.",
-      "required_count": 2
-     },
-     {
-      "display_string": "(3) Set: +10 Spirit.",
-      "required_count": 3
-     },
-     {
-      "display_string": "(4) Set: Chance on damaging spell to allow 15% of your Mana regeneration to continue while casting for 15 sec. This Mana Regeneration is doubled in Strongholds and Cities.",
-      "required_count": 4
-     },
-     {
-      "display_string": "(5) Set: Chance on damaging spell to summon an Arcane elemental to aid you in combat.",
-      "required_count": 5
-     }
-    ],
-    "display_string": "Violet Sorcerer's Vestments (1/5)"
    },
    "level": {
-    "value": 35,
-    "display_string": "Item Level 35"
+    "value": 33,
+    "display_string": "Item Level 33"
    },
    "durability": {
-    "value": 38,
-    "display_string": "Durability 38 / 50"
+    "value": 36,
+    "display_string": "Durability 36 / 45"
    }
   },
   {
@@ -578,8 +496,8 @@
     "display_string": "Item Level 37"
    },
    "durability": {
-    "value": 50,
-    "display_string": "Durability 50 / 70"
+    "value": 0,
+    "display_string": "Durability 0 / 70"
    }
   },
   {
@@ -682,8 +600,8 @@
     "display_string": "Item Level 31"
    },
    "durability": {
-    "value": 20,
-    "display_string": "Durability 20 / 25"
+    "value": 3,
+    "display_string": "Durability 3 / 25"
    }
   },
   {
@@ -786,8 +704,8 @@
     "display_string": "Item Level 33"
    },
    "durability": {
-    "value": 42,
-    "display_string": "Durability 42 / 55"
+    "value": 0,
+    "display_string": "Durability 0 / 55"
    }
   },
   {
@@ -918,8 +836,8 @@
     "display_string": "Item Level 25"
    },
    "durability": {
-    "value": 34,
-    "display_string": "Durability 34 / 40"
+    "value": 4,
+    "display_string": "Durability 4 / 40"
    }
   },
   {
@@ -1036,8 +954,8 @@
     "display_string": "Item Level 34"
    },
    "durability": {
-    "value": 23,
-    "display_string": "Durability 23 / 30"
+    "value": 3,
+    "display_string": "Durability 3 / 30"
    }
   },
   {
@@ -1147,8 +1065,8 @@
     "display_string": "Item Level 28"
    },
    "durability": {
-    "value": 20,
-    "display_string": "Durability 20 / 25"
+    "value": 0,
+    "display_string": "Durability 0 / 25"
    }
   },
   {
@@ -1669,8 +1587,8 @@
     "display_string": "Item Level 31"
    },
    "durability": {
-    "value": 81,
-    "display_string": "Durability 81 / 90"
+    "value": 32,
+    "display_string": "Durability 32 / 90"
    }
   },
   {
@@ -1878,87 +1796,9 @@
     "display_string": "Item Level 32"
    },
    "durability": {
-    "value": 48,
-    "display_string": "Durability 48 / 55"
+    "value": 15,
+    "display_string": "Durability 15 / 55"
    }
-  }
- ],
- "equipped_item_sets": [
-  {
-   "item_set": {
-    "key": {
-     "href": "https://us.api.blizzard.com/data/wow/item-set/2134?namespace=static-1.60.1_70399-forever-us"
-    },
-    "name": "Violet Sorcerer's Vestments",
-    "id": 2134
-   },
-   "items": [
-    {
-     "item": {
-      "key": {
-       "href": "https://us.api.blizzard.com/data/wow/item/273051?namespace=static-1.60.1_70399-forever-us"
-      },
-      "name": "Violet Sorcerer's Mantle",
-      "id": 273051
-     },
-     "is_equipped": true
-    },
-    {
-     "item": {
-      "key": {
-       "href": "https://us.api.blizzard.com/data/wow/item/286988?namespace=static-1.60.1_70399-forever-us"
-      },
-      "name": "Violet Sorcerer's Leggings",
-      "id": 286988
-     }
-    },
-    {
-     "item": {
-      "key": {
-       "href": "https://us.api.blizzard.com/data/wow/item/286987?namespace=static-1.60.1_70399-forever-us"
-      },
-      "name": "Violet Sorcerer's Sandals",
-      "id": 286987
-     }
-    },
-    {
-     "item": {
-      "key": {
-       "href": "https://us.api.blizzard.com/data/wow/item/286989?namespace=static-1.60.1_70399-forever-us"
-      },
-      "name": "Violet Sorcerer's Wraps",
-      "id": 286989
-     }
-    },
-    {
-     "item": {
-      "key": {
-       "href": "https://us.api.blizzard.com/data/wow/item/273044?namespace=static-1.60.1_70399-forever-us"
-      },
-      "name": "Violet Sorcerer's Robes",
-      "id": 273044
-     }
-    }
-   ],
-   "effects": [
-    {
-     "display_string": "(2) Set: +5 Arcane Resistance.",
-     "required_count": 2
-    },
-    {
-     "display_string": "(3) Set: +10 Spirit.",
-     "required_count": 3
-    },
-    {
-     "display_string": "(4) Set: Chance on damaging spell to allow 15% of your Mana regeneration to continue while casting for 15 sec. This Mana Regeneration is doubled in Strongholds and Cities.",
-     "required_count": 4
-    },
-    {
-     "display_string": "(5) Set: Chance on damaging spell to summon an Arcane elemental to aid you in combat.",
-     "required_count": 5
-    }
-   ],
-   "display_string": "Violet Sorcerer's Vestments (1/5)"
   }
  ]
 }

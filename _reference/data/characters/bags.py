@@ -55,15 +55,27 @@ def _close(text, start):
 
 
 def _block(text, table, name):
-    """The character's block of ForeverTapeDB.<table> (its "<Name>-<Realm>" key, looked up inside that table only), or None."""
+    """The character's block of ForeverTapeDB.<table> (its "<Name>-<Realm>" key, looked up inside that table only), or None. When the
+    character has several keys, the one with the newest top-level ["t"] (2026-11-21, the Addons session: since Forever switched on
+    regional unique names on 2026-11-20, GetNormalizedRealmName() returns "" and ForeverTape up to v0.10.2 wrote "Arcea-" beside the old
+    "Arcea-CAMWOWUS1Realm8PvP"; the first key found was the old one, a day and a half and two levels behind; v0.10.3 merges them)."""
     i = text.find(f'["{table}"] = {{')
     if i < 0:
         return None
     body = text[i:_close(text, i + len(f'["{table}"] = {{'))]
-    m = re.search(r'\["' + re.escape(name) + r'-[^"|]*"\] = \{', body)
-    if not m:
-        return None
-    return body[m.end():_close(body, m.end())]
+    best, best_t = None, -1
+    for m in re.finditer(r'\["' + re.escape(name) + r'-[^"|]*"\] = \{', body):
+        block = body[m.end():_close(body, m.end())]
+        sub = next((k for k in ('["spells"] = {', '["items"] = {') if k in block), None)
+        top = block
+        if sub:
+            k = block.find(sub)
+            top = block[:k] + block[_close(block, k + len(sub)):]
+        t = re.search(r'\["t"\] = (\d+)', top)
+        t = int(t.group(1)) if t else 0
+        if t > best_t:
+            best, best_t = block, t
+    return best
 
 
 def _entries(block):

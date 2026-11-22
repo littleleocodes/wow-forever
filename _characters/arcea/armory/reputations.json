@@ -23,8 +23,8 @@
     "id": 47
    },
    "standing": {
-    "raw": 14425,
-    "value": 5425,
+    "raw": 15425,
+    "value": 6425,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -39,11 +39,27 @@
     "id": 577
    },
    "standing": {
-    "raw": 827,
-    "value": 827,
+    "raw": 1207,
+    "value": 1207,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"
+   }
+  },
+  {
+   "faction": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/reputation-faction/92?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Gelkis Clan Centaur",
+    "id": 92
+   },
+   "standing": {
+    "raw": 4290,
+    "value": 1290,
+    "max": 6000,
+    "tier": 4,
+    "name": "Friendly"
    }
   },
   {
@@ -55,8 +71,8 @@
     "id": 87
    },
    "standing": {
-    "raw": -6625,
-    "value": 35375,
+    "raw": -10000,
+    "value": 32000,
     "max": 36000,
     "tier": 0,
     "name": "Hated"
@@ -71,8 +87,8 @@
     "id": 470
    },
    "standing": {
-    "raw": 1027,
-    "value": 1027,
+    "raw": 1445,
+    "value": 1445,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"
@@ -87,8 +103,8 @@
     "id": 69
    },
    "standing": {
-    "raw": 11002,
-    "value": 2002,
+    "raw": 11815,
+    "value": 2815,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -103,8 +119,8 @@
     "id": 72
    },
    "standing": {
-    "raw": 15033,
-    "value": 6033,
+    "raw": 15846,
+    "value": 6846,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -119,8 +135,8 @@
     "id": 21
    },
    "standing": {
-    "raw": 955,
-    "value": 955,
+    "raw": 1677,
+    "value": 1677,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"
@@ -135,8 +151,8 @@
     "id": 54
    },
    "standing": {
-    "raw": 13801,
-    "value": 4801,
+    "raw": 14338,
+    "value": 5338,
     "max": 12000,
     "tier": 5,
     "name": "Honored"
@@ -167,8 +183,8 @@
     "id": 529
    },
    "standing": {
-    "raw": 550,
-    "value": 550,
+    "raw": 800,
+    "value": 800,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"
@@ -183,11 +199,27 @@
     "id": 369
    },
    "standing": {
-    "raw": 927,
-    "value": 927,
+    "raw": 1307,
+    "value": 1307,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"
+   }
+  },
+  {
+   "faction": {
+    "key": {
+     "href": "https://us.api.blizzard.com/data/wow/reputation-faction/93?namespace=static-1.60.1_70399-forever-us"
+    },
+    "name": "Magram Clan Centaur",
+    "id": 93
+   },
+   "standing": {
+    "raw": -9450,
+    "value": 32550,
+    "max": 36000,
+    "tier": 0,
+    "name": "Hated"
    }
   },
   {
@@ -215,8 +247,8 @@
     "id": 2827
    },
    "standing": {
-    "raw": 827,
-    "value": 827,
+    "raw": 1207,
+    "value": 1207,
     "max": 3000,
     "tier": 3,
     "name": "Neutral"

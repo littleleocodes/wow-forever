@@ -75,6 +75,22 @@
       },
       {
        "talent": {
+        "name": "Arcane Subtlety",
+        "id": 135342
+       },
+       "spell_tooltip": {
+        "spell": {
+         "name": "Arcane Subtlety",
+         "id": 11210
+        },
+        "description": "Reduces your target's resistance to all your spells by 8 and reduces the threat caused by your Arcane spells by 15%.",
+        "cast_time": "Passive",
+        "power_cost": null
+       },
+       "talent_rank": 1
+      },
+      {
+       "talent": {
         "name": "Missile Barrage",
         "id": 135339
        },
@@ -90,7 +106,7 @@
       }
      ],
      "specialization_name": "Arcane",
-     "spent_points": 7
+     "spent_points": 8
     },
     {
      "specialization": {
@@ -111,11 +127,11 @@
          "name": "Improved Frostbolt",
          "id": 11070
         },
-        "description": "Reduces the casting time of your Frostbolt spell by 0.3 sec.",
+        "description": "Reduces the casting time of your Frostbolt spell by 0.4 sec.",
         "cast_time": "Passive",
         "power_cost": null
        },
-       "talent_rank": 3
+       "talent_rank": 4
       },
       {
        "talent": {
@@ -232,7 +248,7 @@
       }
      ],
      "specialization_name": "Frost",
-     "spent_points": 22
+     "spent_points": 23
     }
    ]
   }

@@ -46,5 +46,130 @@
   ],
   "why": "Your main, leveled solo most of the time. Thrill of Adventure first: each point is about 3% less time per kill from the moment you spend it (less drinking and eating). Well Rested is small for a character you play daily, but it is the price of Talented (it needs Well Rested 5/5). Talented gives your talents five levels early: worth a lot at 26, little past 50 and nothing at 60, so it pays only if the points come before about 45. The 16th point goes anywhere (Gourmand). At 60, respec into an endgame build.",
   "note": "user decision 2026-11-10: leveling builds now, respec at 60"
+ },
+ "talent_order": {
+  "kind": "chosen",
+  "name": "Deep Frost with the defensive tools",
+  "decided": "2026-11-22",
+  "why": "one build for questing and open-world PvP. At your next city visit, respec to 31 Frost points with Ice Block, Cold Snap and Ice Barrier, then take Arcane from 41 for Missile Barrage. In the fight lab it kills about as fast as the Frost page's order from 40 to 60 (the audit session's measurement: 3,000 fights, seeds 1 and 2).",
+  "notes": [
+   "No simulator plays open-world PvP: Ice Block, Cold Snap, Ice Barrier and the full Improved Frost Nova and Permafrost are your choice for it, not a measurement.",
+   "You play the Frost page's rotation until 46, then the Arcane-Frost one from 47 (Arcane Missiles on Missile Barrage).",
+   "Item values stay the Arcane-Frost page build's (the stats a frost mage wants are the same)."
+  ],
+  "respec_to": [
+   [
+    "Improved Frostbolt",
+    5
+   ],
+   [
+    "Precision",
+    2
+   ],
+   [
+    "Ice Shards",
+    5
+   ],
+   [
+    "Frostbite",
+    3
+   ],
+   [
+    "Improved Frost Nova",
+    1
+   ],
+   [
+    "Permafrost",
+    1
+   ],
+   [
+    "Frost Channeling",
+    3
+   ],
+   [
+    "Ice Lance",
+    1
+   ],
+   [
+    "Arctic Reach",
+    2
+   ],
+   [
+    "Shatter",
+    3
+   ],
+   [
+    "Ice Block",
+    1
+   ],
+   [
+    "Cold Snap",
+    1
+   ],
+   [
+    "Fingers of Frost",
+    2
+   ],
+   [
+    "Ice Barrier",
+    1
+   ]
+  ],
+  "then": [
+   "Wand Specialization",
+   "Wand Specialization",
+   "Improved Channeling",
+   "Improved Channeling",
+   "Arcane Resilience",
+   "Missile Barrage",
+   "Missile Barrage",
+   "Improved Frost Nova",
+   "Permafrost",
+   "Permafrost",
+   "Arcane Concentration",
+   "Arcane Concentration",
+   "Arcane Concentration",
+   "Arcane Concentration",
+   "Arcane Concentration",
+   "Arcane Subtlety",
+   "Arcane Subtlety",
+   "Magic Absorption",
+   "Improved Counterspell",
+   "Improved Counterspell"
+  ],
+  "rotations": [
+   [
+    10,
+    "frost-leveling",
+    "Frost"
+   ],
+   [
+    47,
+    "barrage-frost-leveling",
+    "Hybrid Arcane/Frost"
+   ]
+  ],
+  "keys": [
+   {
+    "key": "Shift+F",
+    "spell": "Ice Block",
+    "from": 40,
+    "role": "PvP: the big escape (Shift on your escape key)"
+   },
+   {
+    "key": "Shift+1",
+    "spell": "Ice Barrier",
+    "from": 40,
+    "role": "The shield before a pull (the fight lab presses it)"
+   },
+   {
+    "key": "Shift+2",
+    "spell": "Cold Snap",
+    "from": 40,
+    "role": "PvP: a second Frost Nova or Ice Block"
+   }
+  ],
+  "note": "Hand-kept (2026-11-22). plan.py: chosen_order builds the order (the respec's points row by row from 10, then one a level from 41; every level checked legal); a respec is shown until Blizzard's talents match the path at your level; no race of the next points.",
+  "source": "the user, 2026-11-22, relayed by the audit session: \"I participate in a lot of open world PvP, and want to be able to fight back but also want to be able to quest somewhat fast\"; the audit session's recommendation, which the user took"
  }
 }

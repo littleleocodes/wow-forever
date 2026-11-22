@@ -16,17 +16,17 @@
  "in_progress": [
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/191?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/1187?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Panther Mastery",
-   "id": 191
+   "name": "Razzeric's Tweaking",
+   "id": 1187
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/92457?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/1373?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Starving Arcane",
-   "id": 92457
+   "name": "Ongeku",
+   "id": 1373
   },
   {
    "key": {
@@ -44,10 +44,17 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/605?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/577?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Singing Blue Shards",
-   "id": 605
+   "name": "Some Assembly Required",
+   "id": 577
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/97048?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Returning to Port",
+   "id": 97048
   },
   {
    "key": {
@@ -72,24 +79,17 @@
   },
   {
    "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/94213?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Craftsman's Writ: Lesser Mana Potion",
+   "id": 94213
+  },
+  {
+   "key": {
     "href": "https://us.api.blizzard.com/data/wow/quest/1177?namespace=static-1.60.1_70399-forever-us"
    },
    "name": "Hungry!",
    "id": 1177
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/578?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "The Stone of the Tides",
-   "id": 578
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/213?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Hostile Takeover",
-   "id": 213
   },
   {
    "key": {
@@ -100,52 +100,10 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/92489?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/195?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Power Overwhelming",
-   "id": 92489
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/1041?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "The Caravan Road",
-   "id": 1041
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/514?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Letter to Stormpike",
-   "id": 514
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/563?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Reassignment",
-   "id": 563
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/1112?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Parts for Kravel",
-   "id": 1112
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/201?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Investigate the Camp",
-   "id": 201
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/2928?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Gyrodrillmatic Excavationators",
-   "id": 2928
+   "name": "Raptor Mastery",
+   "id": 195
   },
   {
    "key": {
@@ -163,10 +121,17 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/187?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/601?namespace=static-1.60.1_70399-forever-us"
+   },
+   "name": "Water Elementals",
+   "id": 601
+  },
+  {
+   "key": {
+    "href": "https://us.api.blizzard.com/data/wow/quest/188?namespace=static-1.60.1_70399-forever-us"
    },
    "name": "Tiger Mastery",
-   "id": 187
+   "id": 188
   },
   {
    "key": {
@@ -177,59 +142,38 @@
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/194?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/192?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Raptor Mastery",
-   "id": 194
+   "name": "Panther Mastery",
+   "id": 192
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/210?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/574?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Krazek's Cookery",
-   "id": 210
+   "name": "Special Forces",
+   "id": 574
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/1437?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/1457?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Vahlarriel's Search",
-   "id": 1437
+   "name": "The Karnitol Shipwreck",
+   "id": 1457
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/1453?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/207?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Reclaimers' Business in Desolace",
-   "id": 1453
+   "name": "Kurzen's Mystery",
+   "id": 207
   },
   {
    "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/1182?namespace=static-1.60.1_70399-forever-us"
+    "href": "https://us.api.blizzard.com/data/wow/quest/1106?namespace=static-1.60.1_70399-forever-us"
    },
-   "name": "Goblin Sponsorship",
-   "id": 1182
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/575?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "Supply and Demand",
-   "id": 575
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/92456?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "A Green Sample",
-   "id": 92456
-  },
-  {
-   "key": {
-    "href": "https://us.api.blizzard.com/data/wow/quest/689?namespace=static-1.60.1_70399-forever-us"
-   },
-   "name": "A King's Tribute",
-   "id": 689
+   "name": "Martek the Exiled",
+   "id": 1106
   },
   {
    "key": {

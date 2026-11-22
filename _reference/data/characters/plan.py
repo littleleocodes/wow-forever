@@ -1717,16 +1717,75 @@ def best_chain(evs, at):
 
 
 # ---------------------------------------------------------------------------------------------------------------- page
-def pick(cfg):
+def pick(cfg, level=None):
     """(build, order, provisional, rotation): the spec's leveling page pick (level_guides.pick), or for a character with
-    "talent_order": {"kind": "tank", "build", "entry", "tree"} that tank build in the tank-first order (2026-11-09, Tara)."""
+    "talent_order": {"kind": "tank", "build", "entry", "tree"} that tank build in the tank-first order (2026-11-09, Tara), or with
+    {"kind": "chosen", ...} the character's own path (chosen_order; the page pick's id stays, so item values are the page build's) and
+    the rotation it plays at `level`."""
     t = cfg.get("talent_order")
     if t and t.get("kind") == "tank":
         import tank_order as TO
         return TO.build_of(cfg["class"], t["build"]), TO.order(cfg["class"], t["build"], t["entry"], t["tree"]), False, t.get("rotation", "group tank")
     sys.path.insert(0, str(DATA))
     import level_guides as LG
+    if t and t.get("kind") == "chosen":
+        b, _, _, rot = LG.pick(cfg["class"], cfg["spec"])
+        alloc, order = chosen_order(cfg)
+        return dict(b, allocation=alloc, chosen=t.get("name", "your own path")), order, False, rotation_at(cfg, level, rot)
     return LG.pick(cfg["class"], cfg["spec"])
+
+
+def chosen(cfg):
+    """The character's chosen talent path (talent_order {"kind": "chosen"}, 2026-11-22: Arcea's own build for questing and open-world
+    PvP, the user's decision over the page's order), else None. A chosen path keeps its order: no race of the next points, no respec
+    check against the page."""
+    t = cfg.get("talent_order") or {}
+    return t if t.get("kind") == "chosen" else None
+
+
+def guide_spec(cfg, L=None):
+    """The spec whose by-level guide the character plays at level L: a chosen path's "rotations" ([from, rotation, spec]; Arcea: the Frost
+    page's until 46, the Arcane-Frost one from 47, once Missile Barrage is in), else the character's spec."""
+    t = chosen(cfg)
+    if t and t.get("rotations") and L is not None:   # (below the first entry's level: the first entry)
+        return ([s for f, _, s in t["rotations"] if f <= L] or [t["rotations"][0][2]])[-1]
+    return cfg["spec"]
+
+
+def rotation_at(cfg, L, default):
+    t = chosen(cfg)
+    if t and t.get("rotations"):
+        return ([r for f, r, _ in t["rotations"] if f <= (L or 60)] or [t["rotations"][0][1]])[-1]
+    return default
+
+
+def chosen_order(cfg):
+    """(allocation, order) of a chosen path: "respec_to" [[talent, ranks]] (the build at the respec level) from level 10, row by row (any
+    legal order holds the same build at the respec level), then "then" (one talent a level). Every level is checked legal
+    (validate_builds.check_state); a path that is not raises."""
+    import page_lint as PL
+    import validate_builds as VB
+    t = chosen(cfg)
+    where = {x["name"]: (tr["name"], x["row"], i) for tr in PL.talents(cfg["class"]) for i, x in enumerate(tr["talents"])}
+    first = sorted(t["respec_to"], key=lambda p: (where[p[0]][1], where[p[0]][2]))
+    pts = [n for n, k in first for _ in range(k)] + list(t["then"])
+    if len(pts) != 51:
+        raise ValueError(f"{cfg['name']}: the chosen path holds {len(pts)} points, not 51")
+    trees, errs, state, order = VB.load_forever()[cfg["class"]], [], {}, []
+    for L, n in enumerate(pts, start=10):
+        tree = where[n][0]
+        state.setdefault(tree, {})[n] = state.get(tree, {}).get(n, 0) + 1
+        VB.check_state(trees, {k: dict(v) for k, v in state.items()}, f"{cfg['name']} chosen path at {L}", errs)
+        if order and order[-1]["talent"] == n and order[-1]["_to"] == L - 1:
+            order[-1]["_to"], order[-1]["points"] = L, order[-1]["points"] + 1
+        else:
+            order.append({"_from": L, "_to": L, "tree": tree, "talent": n, "points": 1})
+    if errs:
+        raise ValueError("; ".join(errs[:3]))
+    order = [{"levels": f"{e['_from']}" if e["_from"] == e["_to"] else f"{e['_from']}-{e['_to']}", "tree": e["tree"], "talent": e["talent"],
+              "points": e["points"]} for e in order]
+    alloc = {tr: [[n, k] for n, k in v.items()] for tr, v in state.items()}
+    return alloc, order
 
 
 def fightlab_run():
@@ -1750,7 +1809,7 @@ LAST_RESPEC = {}           # the last talents_check's respec check ({"r": respec
 
 def talents_check(cfg, snap, level):
     FR = fightlab_run()
-    b, order, prov, rot = pick(cfg)
+    b, order, prov, rot = pick(cfg, level)
     want = FR.allocation_at({"allocation": b["allocation"], "order": order}, level)
     have = {}
     for g in snap["specializations"].get("specialization_groups") or []:
@@ -1790,7 +1849,7 @@ def talents_check(cfg, snap, level):
     # off the page's order: the next points raced in the fight lab from the character's own talents (2026-11-17, user: "Yes, test the
     # options"; next_talents.py). The same remaining points, so the destination stays the page's build; the rest keeps the page's order.
     LAST_TALENT_RACE.clear()
-    if rows and path and cfg.get("metric") != "tank" and (cfg.get("talent_order") or {}).get("kind") != "tank":
+    if rows and path and cfg.get("metric") != "tank" and (cfg.get("talent_order") or {}).get("kind") not in ("tank", "chosen"):
         import next_talents as NT
         k = min(NT.POINTS, len(path))
         try:
@@ -1808,7 +1867,8 @@ def talents_check(cfg, snap, level):
     # up to its level to take after the respec, and the order's next points from there
     respec = []
     match = sum(min(have.get(n, 0), w) for n, w in want.items())
-    if want and match < 0.5 * sum(want.values()):
+    # a chosen path: a respec while you hold a point it does not have at your level (until Blizzard's data show the respec)
+    if want and (match < 0.5 * sum(want.values()) or (chosen(cfg) and any(k > want.get(n, 0) for n, k in have.items()))):
         pts = [n for _, n in FL.expand(order)]
         for n in pts[:max(0, level - 9)]:
             if respec and respec[-1][0] == n:
@@ -1819,7 +1879,7 @@ def talents_check(cfg, snap, level):
     # off the page's order with points of its own: whether a respec to the page's order pays (2026-11-20; the user, on Arcea: "Even if I
     # have to respec"; characters/respec_value.py): her path against the page's order, measured at her level and every 5 levels to 60
     LAST_RESPEC.clear()
-    if rows and not respec and have and cfg.get("metric") != "tank" and (cfg.get("talent_order") or {}).get("kind") != "tank":
+    if rows and not respec and have and cfg.get("metric") != "tank" and (cfg.get("talent_order") or {}).get("kind") not in ("tank", "chosen"):
         import respec_value as RV
         try:
             LAST_RESPEC["r"] = RV.check(cfg["class"], rot, have, path,
@@ -1875,13 +1935,19 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
         o = [f"# {name}", "",
              f"> Generated by `_reference/data/characters/plan.py {cfg['name']}` from Blizzard's character API (fetched {fetched}{f'; your character as of {seen}' if seen else ''}). Do not hand-edit:",
              "> refresh with the same command. Item values are seconds per kill from this project's fight lab for the leveling page build",
-             f"> ([{cfg['spec']}](../../{cfg['class']}/leveling/{cfg['page']}.md), rotation `{rot}`), a model of the beta, not a measurement.", ""]
+             f"> ([{cfg['spec']}](../../{cfg['class']}/leveling/{cfg['page']}.md)"
+             + (", its own rotation; your talent path plays `" + rot + "` at this level" if chosen(cfg) else f", rotation `{rot}`")
+             + "), a model of the beta, not a measurement.", ""]
     race, cls = snap["profile"]["race"]["name"], snap["profile"]["character_class"]["name"]
     o += [f"Level **{lv}** {race} {cls}, {snap['profile']['faction']['name']}. Professions: " +
           ", ".join(f"{k} {v[0]}/{v[1]}" for k, v in profs.items()) + "." +
           (f" Gold: **{AH.money(GOLD)}**." if GOLD is not None else " Gold: unknown (log in with bnet_login.py; the login lasts a day)."), ""]
     # talents
     o += ["## Talents", ""]
+    if chosen(cfg):   # (2026-11-22: the user's own path; the page names its reason and what no simulator measures)
+        t = chosen(cfg)
+        o += [f"Your own talent path, **{t.get('name')}** (chosen {t.get('decided')}): {t.get('why')}", ""]
+        o += [f"- {x}" for x in t.get("notes", [])] + ([""] if t.get("notes") else [])
     if tstale:
         o += [f"Blizzard's talents are from your logout at {tstale['seen']} and show "
               + (f"{tstale['api']} points" if tstale["api"] else "none spent")
@@ -1891,11 +1957,13 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
         trees, link = build_at(cfg["class"], twant)
         first = (f"You have no talent points spent. Spend these {sum(n for _, n in respec)} points in this order (it keeps every tier "
                  "legal): " if have_n == 0 else
+                 (f"Your {have_n} points are not your chosen path yet. Respec at a trainer on your next city visit, then take these "
+                  f"{sum(n for _, n in respec)} points in this order: ") if chosen(cfg) else
                  f"Your {have_n} points follow another build. Respec at a trainer, then take these {sum(n for _, n in respec)} points in this order: ")
         o += [first + ", ".join(f"**{t}** {n}" for t, n in respec) + ".", "",
               f"The build at level {lv}: " + "; ".join(f"**{tn}** {pts} ({', '.join(f'{t} {n}' for t, n in got)})" for tn, pts, got in trees)
               + f". [Open it in the talent calculator]({link}).", "",
-              "Your next talents: " + ", ".join(f"{L} {n}" for L, n in tpath[:6]) + ".", ""]
+              ("After your respec, your next talents: " if chosen(cfg) else "Your next talents: ") + ", ".join(f"{L} {n}" for L, n in tpath[:6]) + ".", ""]
     elif not tdiff:
         o += [f"Your {have_n} talent points match the page's order at level {lv}.", ""]
     else:
@@ -1930,12 +1998,13 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     o += lo
     CTX.update({"head": {"name": name, "level": lv, "race": race, "class": cls, "gold": GOLD, "fetched": fetched, "seen": seen,
                          "faction": snap["profile"]["faction"]["name"], "professions": {k: list(v) for k, v in profs.items()},
-                         "ah_age": PRICES.age_hours() if PRICES else None, "spec": cfg["spec"], "page": cfg["page"],
-                         "short": SHORT, "faster": FASTER},
+                         "ah_age": PRICES.age_hours() if PRICES else None, "spec": guide_spec(cfg, lv), "page": cfg["page"],
+                         "short": SHORT, "faster": FASTER, "chosen": bool(chosen(cfg))},
                 "talents": {"diff": tdiff, "path": tpath[:6], "drop": tdrop, "have": have_n, "want": want_n, "respec": respec, "stale": tstale,
                             "respec_value": LAST_RESPEC.get("r"),
                              "raced": __import__("next_talents").note(LAST_TALENT_RACE["race"]) if LAST_TALENT_RACE.get("race") else None,
-                             "link": build_at(cfg["class"], twant)[1] if respec else None}})
+                             "link": build_at(cfg["class"], twant)[1] if respec else None},
+                "keys_extra": (chosen(cfg) or {}).get("keys") or []})
     o += change_lines(d, events, lv)
     # now: the upgrades to go after at this level or within LOOKAHEAD levels, by what you do for them
     wl = at(lv)
@@ -1943,8 +2012,7 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
     global SPENDABLE
     gs, SPENDABLE = gold_plan(cfg, snap, at, lv)
     o += gs
-    o += [f"> **Heads up:** {n}" for n in NOTICES] + ([""] if NOTICES else [])
-    CTX["notices"] = list(NOTICES)
+    CTX["notices"] = list(NOTICES)   # the page shows them under the level line (at the write, below), the checklist on its Town tab
     o += [f"## Now (level {lv})", "",
           f"Everything below is worth doing at your level or within {LOOKAHEAD} levels: items you can wear now, and items you can get now "
           "and wear a level or two later. "
@@ -2097,6 +2165,11 @@ def write_page(cfg, d, snap, fetched, at, eq, events, ench, profs, wfile):
           f"for {DATAVER['weights_build']}.",
           "- Raid preparation (items worth keeping for 60) waits for the mage raid lane's gear redo: today's pre-raid set still holds "
           "Naxxramas and Ahn'Qiraj quest rewards (the gear pool fault of 2026-11-05).", ""]
+    # the heads-up notices at the top, under the level line (2026-11-21, the audit session: "if Blizzard's data lag behind what the
+    # add-ons show ... say so at the top"; they had sat after the gold plan, about 75 lines down)
+    if NOTICES:
+        i = next((k for k, line in enumerate(o) if line.startswith("Level **")), 4) + 1
+        o[i:i] = [""] + [f"> **Heads up:** {n}" for n in NOTICES]
     (d / "README.md").write_text("\n".join(o) + "\n", encoding="utf-8")
 
 
@@ -2271,29 +2344,36 @@ def needed_at(cfg, L):
     essentials. A spell the guide drops is optional from then on: a frost mage's Fireball after level 4, Flamestrike after 19 (the first
     spellbook read had put their ranks in the training "you need")."""
     if not NEED_AT:
-        x = guide_of(cfg)
         bold = lambda v: set(re.findall(r"\*\*([^*]+)\*\*", json.dumps(v)))
-        always = bold({k: x.get(k) for k in ("intro", "between", "other")}) | ESSENTIALS.get(cfg["class"], set())
-        spans = []
-        stages = sorted(x.get("stages") or [], key=lambda s: s["from"])
-        for i, st in enumerate(stages):
-            spans.append((stages[i + 1]["from"] - 1 if i + 1 < len(stages) else 60, bold(st)))
-        keys = x.get("keys") or {}
-        for slot in [s for bar in keys.get("bars") or [] for s in bar.get("slots") or []] + list(keys.get("slots") or []):
-            binds = sorted(slot.get("binds") or [], key=lambda b: b["from"])
-            for i, b in enumerate(binds):
-                spans.append((binds[i + 1]["from"] - 1 if i + 1 < len(binds) else 60, ({b["spell"]} if b.get("spell") else set()) | bold(b)))
+        sets = {}
         for lv in range(1, 61):
+            spec = guide_spec(cfg, lv)   # (a chosen path plays one guide, then another: Arcea, Frost until 46, Arcane-Frost from 47)
+            if spec not in sets:
+                x = guide_of(cfg, lv)
+                always = bold({k: x.get(k) for k in ("intro", "between", "other")}) | ESSENTIALS.get(cfg["class"], set())
+                always |= {k["spell"] for k in (chosen(cfg) or {}).get("keys") or []}   # a chosen path's own keys (Ice Block for PvP)
+                spans = []
+                stages = sorted(x.get("stages") or [], key=lambda s: s["from"])
+                for i, st in enumerate(stages):
+                    spans.append((stages[i + 1]["from"] - 1 if i + 1 < len(stages) else 60, bold(st)))
+                keys = x.get("keys") or {}
+                for slot in [s for bar in keys.get("bars") or [] for s in bar.get("slots") or []] + list(keys.get("slots") or []):
+                    binds = sorted(slot.get("binds") or [], key=lambda b: b["from"])
+                    for i, b in enumerate(binds):
+                        spans.append((binds[i + 1]["from"] - 1 if i + 1 < len(binds) else 60, ({b["spell"]} if b.get("spell") else set()) | bold(b)))
+                sets[spec] = (always, spans)
+            always, spans = sets[spec]
             NEED_AT[lv] = always.union(*[names for end, names in spans if end >= lv])
     return NEED_AT[min(max(int(L), 1), 60)]
 
 
-def guide_of(cfg):
-    """The character's by-level guide: its own (Tara the group tank, 2026-11-09) or its spec's."""
+def guide_of(cfg, L=None):
+    """The character's by-level guide: its own (Tara the group tank, 2026-11-09) or its spec's (at level L, a chosen path's: guide_spec)."""
     if cfg.get("guide") and (DATA.parent.parent / cfg["guide"]).exists():
         return json.load(open(DATA.parent.parent / cfg["guide"], encoding="utf-8"))
     g = json.load(open(DATA / "level-guides" / f"{cfg['class']}.json", encoding="utf-8"))
-    return next((x for x in g["guides"] if x["spec"] == cfg["spec"]), {})
+    spec = guide_spec(cfg, L)
+    return next((x for x in g["guides"] if x["spec"] == spec), {})
 
 
 def needed_spells(cfg):
@@ -2303,8 +2383,10 @@ def needed_spells(cfg):
         x = json.load(open(DATA.parent.parent / cfg["guide"], encoding="utf-8"))
     else:
         g = json.load(open(DATA / "level-guides" / f"{cfg['class']}.json", encoding="utf-8"))
-        x = next((x for x in g["guides"] if x["spec"] == cfg["spec"]), {})
-    return set(re.findall(r"\*\*([^*]+)\*\*", json.dumps(x))) | ESSENTIALS.get(cfg["class"], set())
+        specs = {cfg["spec"]} | {s for _, _, s in (chosen(cfg) or {}).get("rotations") or []}   # (every guide a chosen path plays)
+        x = [x for x in g["guides"] if x["spec"] in specs]
+    return (set(re.findall(r"\*\*([^*]+)\*\*", json.dumps(x))) | ESSENTIALS.get(cfg["class"], set())
+            | {k["spell"] for k in (chosen(cfg) or {}).get("keys") or []})
 
 
 def loot_value(item, quality, klass, sell):
@@ -3003,8 +3085,16 @@ def main():
     cfg = json.load(open(d / "character.json", encoding="utf-8"))
     snap, fetched = snapshot(cfg, d, not a.no_refresh)
     addon_gold = fresher(cfg, snap, d, a.level)   # the add-ons' newer level and gold, or your word (2026-11-14)
+    # which state the numbers come from while the project's model is being updated (2026-11-21, the audit session: "say on the page
+    # which state the numbers come from"): the hand-kept characters/model-note.json {"text", "until"}, up front until its date
+    try:
+        mn = json.load(open(HERE / "model-note.json", encoding="utf-8"))
+        if mn.get("text") and datetime.date.today().isoformat() <= (mn.get("until") or "9999"):
+            NOTICES.append(mn["text"])
+    except (OSError, ValueError):
+        pass
     sys.path.insert(0, str(DATA))
-    b, order, prov, rot = pick(cfg)
+    b, order, prov, rot = pick(cfg, snap["profile"].get("level"))
     # who learns which trainer spells (train_level): the race, and the level the build takes each talent (a talent's ability ranks)
     TRAIN["race"] = (snap["profile"].get("race") or {}).get("id")
     FR = fightlab_run()
@@ -3086,6 +3176,18 @@ def main():
     print(f"spellbook: ForeverTape {BOOK['when']}, {BOOK['n']} spells (level {BOOK['level']}); lacks "
           + (", ".join(rank_label(n, r) for L, n, r, c in owe[0]) or "nothing the build uses") if BOOK else
           "spellbook: none on this PC (ForeverTape 0.9.5 writes it after a /reload or logout): the Train step lists the level's ranks")
+    # a spellbook from a lower level than Blizzard's data (2026-11-21: Arcea's was level 38 of 2026-11-20 06:52 at a level-40 logout
+    # the next day, while ForeverTape kept saving the other characters): said up front, so the Train step's list is read as possibly stale
+    if BOOK and int(BOOK.get("level") or 0) < int(snap["profile"].get("level") or 0):
+        # the add-on's file saved after the record (a /reload, a logout) without the record: its recording is broken, not just unsaved
+        # (2026-11-21: ForeverTape.lua saved at 20:31 after a /reload, every character's spellbook and bag record still of 11-20 or older)
+        saved = max((pathlib.Path(f).stat().st_mtime for f in BG.saved_files(cfg)), default=0)
+        tail = (f" ForeverTape saved its file at {datetime.datetime.fromtimestamp(saved).strftime('%Y-%m-%d %H:%M')} without updating it: its "
+                "spellbook and bag recording is not working, so until it is fixed the Train step may list ranks you already have and the gold "
+                "is that day's." if saved > BOOK["t"] + 3600 else
+                " A /reload in game writes it again; until then the Train step may list ranks you already have.")
+        NOTICES.append(f"Your spellbook add-on's record is from {BOOK['when']} at level {BOOK['level']}, older than Blizzard's level "
+                       f"{snap['profile']['level']}." + tail)
     have = {(p.get("name") or "").lower() for p in pool}
     db = IP.sim_db()
     byname = {it["name"].lower(): it for it in db["items"]}
