@@ -176,6 +176,17 @@ def rules_ctx(zones, repo=None):
     return GL.context(G, t, zones, repo or R.repo_path(argparse.Namespace(repo=None)))
 
 
+def easy_check(tier, db, zones, repo=None):
+    """Stop before an Easy Pre-BiS set when any Easy item asks more than Honored (gear_lists.easy_violations; the audit session's
+    check, 2026-11-23)."""
+    if tier != "dungeon":
+        return
+    bad = GL.easy_violations(db, rules_ctx(zones, repo))
+    if bad:
+        raise SystemExit(f"gear_tiers: {len(bad)} Easy Pre-BiS items ask more than Honored (the standing check): "
+                         + "; ".join(f"{n} ({i}, {r}, {s})" for i, n, r, s in bad[:8]))
+
+
 def pool_of(tier, zones, repo=None):
     """The list's item pool (2026-11-23): raidsim/gear_lists.py's rules, "bis" = True BiS, "prebis" = True Pre-BiS, "dungeon" = Easy
     Pre-BiS (any other name: True Pre-BiS). Until then three tiers with their own rules (Raid BiS, Pre-raid, Quests and dungeons; the
@@ -577,6 +588,7 @@ def refit(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=
     replaced by the slot's stat pick, even at a loss), the filed items with the stat picks and with the raced map, and the refit set with
     the raced map. The best is written. Returns the record (make()'s keys plus weapons, set_pieces, enchants, refit)."""
     e = R.SPECS[cls][entry_name]
+    easy_check(tier, db, zones, repo)
     p = path or set_path(cls, spec, tier)
     filed = norm17(json.load(open(p, encoding="utf-8"))["items"])
     pool = pool_of(tier, zones, repo)
@@ -734,6 +746,7 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
     written, the record is returned (a test of the rules). Since 2026-11-23 the record names the list and its rules (`list`, `rules`:
     raidsim/gear_lists.py) and carries the other faction's alternatives for its one-faction items (`faction_alternatives`)."""
     e = R.SPECS[cls][entry_name]
+    easy_check(tier, db, zones, repo)
     cur = json.load(open(R.sim_path(e["gear"]) if pathlib.Path(R.sim_path(e["gear"])).is_absolute() else repo / e["gear"], encoding="utf-8"))["items"]
     pool = pool_of(tier, zones, repo)
     p = path or set_path(cls, spec, tier)

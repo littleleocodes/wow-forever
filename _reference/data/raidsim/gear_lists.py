@@ -494,6 +494,15 @@ def marks(items, lst, db, ctx):
     return out
 
 
+def easy_violations(db, ctx):
+    """Easy Pre-BiS items that ask more than Honored by any source (the client's, Classic's or the database's standing): the audit
+    session's standing check (2026-11-23, 0 at 99ebe62a); gear_tiers.make and refit stop before an Easy set when it is not empty."""
+    if "easy_violations" not in ctx:
+        ctx["easy_violations"] = [(i, it.get("name"), RANKS.get(r, r), src) for i, it in db.items() if in_list(it, E, ctx)
+                                  for _, r, src in [standing(it, ctx["bind"].get(i) or {})] if r is not None and r > CLIENT_HONORED]
+    return ctx["easy_violations"]
+
+
 def pvp_alternatives(cls, items, w, lst, db, ctx, G, fits):
     """For every item of a set that only PvP puts in the list: the best item of the same list by the set's weights `w` that fits the slot
     and that something else puts there (the audit session, 2026-11-23: a list leaning on rank gear the player cannot have yet needs a
