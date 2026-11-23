@@ -239,7 +239,7 @@
       "key": "1",
       "kind": "set-up cast",
       "role": "Arcane Missiles when Missile Barrage lights up (from 47)",
-      "why": "Arcane Missiles from 47, when Missile Barrage lights up (0.65 a kill questing with the Arcane-Frost rotation). PvP rarely presses it, so a slow key is enough.",
+      "why": "Arcane Missiles from 47, when Missile Barrage lights up (0.65 a kill questing with the Arcane-Frost rotation). PvP rarely presses it, so a slow key is enough. Not yet pressed in game: it starts at 47.",
       "binds": [
        {
         "from": 47,
@@ -320,7 +320,7 @@
       "key": "Shift+Q",
       "kind": "set-up cast, quick",
       "role": "Frostbolt Rank 1: fish for procs, a quick cheap slow",
-      "why": "Frostbolt Rank 1, your choice: with Improved Frostbolt a 1.0-second cast for 25 mana that puts the 40% slow on. Questing and PvP: fish for Fingers of Frost now, and Missile Barrage from 46-47. PvP: the fast, cheap slow on a runner. Shift on your bolt key: the small bolt. Whether a Rank 1 bolt rolls Fingers of Frost, Frostbite and Missile Barrage at their full chance in Forever is unknown: the official simulator gives every rank the full chance, but Warcraft Logs show the server scaling another spell-hit proc (the Revelation enchant) by the spell's level, which would give a Rank 1 bolt no chance at your level. Watch for the procs in game.",
+      "why": "Frostbolt Rank 1, your choice: with Improved Frostbolt a 1.0-second cast for 25 mana that puts the 40% slow on. Questing and PvP: fish for Fingers of Frost now, and Missile Barrage from 46-47. PvP: the fast, cheap slow on a runner. Shift on your bolt key: the small bolt. A Rank 1 Frostbolt does roll Fingers of Frost in game at level 42 (you, 2026-11-22); the rate, full or reduced, is not counted yet, and Missile Barrage is untested until you take it at 46-47.",
       "binds": [
        {
         "from": 42,
@@ -567,7 +567,7 @@
      "#showtooltip",
      "/cast Frostbolt(Rank 1)"
     ],
-    "note": "Or drag Rank 1 itself from the spellbook: tick show all spell ranks in its settings menu (Forever's spellbook has the option). The (Rank 1) syntax is untested in Forever's client; if the macro casts your top rank, use the dragged spell. Whether a Rank 1 bolt rolls Fingers of Frost, Frostbite and Missile Barrage at their full chance in Forever is unknown: the official simulator gives every rank the full chance, but Warcraft Logs show the server scaling another spell-hit proc (the Revelation enchant) by the spell's level, which would give a Rank 1 bolt no chance at your level. Watch for the procs in game."
+    "note": "Or drag Rank 1 itself from the spellbook: tick show all spell ranks in its settings menu (Forever's spellbook has the option). If the macro ever casts your top rank instead, use the dragged spell. A Rank 1 Frostbolt does roll Fingers of Frost in game at level 42 (you, 2026-11-22); the rate, full or reduced, is not counted yet, and Missile Barrage is untested until you take it at 46-47."
    },
    {
     "key": "E",
@@ -628,7 +628,7 @@
      "#showtooltip 13",
      "/use 13"
     ],
-    "note": "Uses the trinket in your top slot: Satchel of Potions today. A lone number after /use is an equipment slot in Forever's UI code (13 the top trinket, 14 the bottom one), so the key uses whatever you wear there; #showtooltip with a slot number is untested in Forever's client."
+    "note": "Uses the trinket in your top slot: Satchel of Potions today. A lone number after /use is an equipment slot in Forever's UI code (13 the top trinket, 14 the bottom one), so the key uses whatever you wear there."
    },
    {
     "key": "Shift+F",
@@ -637,7 +637,7 @@
      "#showtooltip 14",
      "/use 14"
     ],
-    "note": "Uses the trinket in your bottom slot: wear the PvP insignia there. A lone number after /use is an equipment slot in Forever's UI code (13 the top trinket, 14 the bottom one), so the key uses whatever you wear there; #showtooltip with a slot number is untested in Forever's client."
+    "note": "Uses the trinket in your bottom slot: wear the PvP insignia there. A lone number after /use is an equipment slot in Forever's UI code (14 the bottom trinket). Untested in game: nothing is worn there yet."
    },
    {
     "key": "Shift+Mouse 4",
@@ -726,7 +726,7 @@
      "/use Greater Healing Potion",
      "/use Healing Potion"
     ],
-    "note": "Use this one instead if the item-id version shows a question mark or no count on its button: nobody has yet seen Forever's client draw #showtooltip item:N (your eat-and-drink button will show it). Names fit seven of the ten: the three smaller Discolored potions fall off. 210 characters; 242 with RestCue's rewrite."
+    "note": "Item ids are confirmed to display in Forever's client (your eat-and-drink button, 2026-11-22), so keep the item-id version; use this one only if that button ever misbehaves. Names fit seven of the ten: the three smaller Discolored potions fall off. 210 characters; 242 with RestCue's rewrite."
    },
    {
     "key": "Middle mouse",
@@ -757,12 +757,12 @@
      "/use item:1113",
      "/use item:5349"
     ],
-    "note": "One click drinks the best conjured water and eats the best conjured food you carry: every conjured water shares one cooldown and every conjured food another (Forever's client data), and neither is on the global cooldown, so the first of each you own goes off and the lines after it fail. The numbers are item ids (best water first, then the best food): the names would not fit in 255 characters; this is 223. With RestCue 0.5.0 the button shows the best item you carry: it rewrites the first line, so keep #showtooltip there."
+    "note": "One click drinks the best conjured water and eats the best conjured food you carry: every conjured water shares one cooldown and every conjured food another (Forever's client data), and neither is on the global cooldown, so the first of each you own goes off and the lines after it fail. The numbers are item ids (best water first, then the best food): the names would not fit in 255 characters; this is 223. With RestCue the button shows the best item you carry (seen working in game, 2026-11-22): it rewrites the first line, so keep #showtooltip there."
    }
   ],
   "options": [
-   "Counterspell your focus: make the Mouse 4 macro's last line /cast [mod:ctrl,@focus,harm,nodead][] Counterspell, and Ctrl+Mouse 4 interrupts your focus without changing target (clear any binding on Ctrl+Mouse 4 first).",
-   "Ice Block that leaves on a second press: put /cancelaura Ice Block above /cast Ice Block in the Shift+Mouse 4 macro. A panicked double tap then leaves the block at once.",
+   "Counterspell your focus: make the Mouse 4 macro's last line /cast [mod:ctrl,@focus,harm,nodead][] Counterspell, and Ctrl+Mouse 4 interrupts your focus without changing target (clear any binding on Ctrl+Mouse 4 first). Untested in game.",
+   "Ice Block that leaves on a second press: put /cancelaura Ice Block above /cast Ice Block in the Shift+Mouse 4 macro. A panicked double tap then leaves the block at once. Untested in game.",
    "If a middle click is hard with the right mouse button held, the wand moves to 1 until 47 and to Shift+4 from 47.",
    "Plain Frost Nova on E, if the mid-cast macro costs you bolts while questing."
   ],
@@ -826,8 +826,10 @@
    "Conjure Mana Citrine",
    "Conjure Mana Ruby"
   ],
-  "ranking": "How fast each key is to press while strafing with A/D and steering with the right button held, fastest first: Mouse 5 and Mouse 4; Shift+Mouse 5 and Shift+Mouse 4 (the pinky on Shift is not a movement finger); E, Q, F, R; C, V, X; the middle button; Shift+E, Shift+C, Shift+V, Shift+X, Shift+Q, Shift+F, Shift+R; 4, 1, 3, 2; Shift+4, Shift+1, Shift+3, Shift+2. This order is our assumption: your own reach test overrides it.",
-  "source": "The user, 2026-11-22, to the audit session: \"I want the keybinds to be both practical for Arcea questing and PvP. This doesn't need tyo be the default for everything, just specific for this case\", then \"I think X, C, and V can be utlized more.\" Then, for Shift+Q: \"Sihft+Q is going to be frostbolt rank 1 because you can use it to fish for Fingers and Missile Barrage procs\". Drafted by the lane session, read by the audit session (six changes taken).",
-  "note": "Hand-kept (2026-11-22). _reference/data/characters/own_keys.py reads it: it replaces the guide's keys on the checklist and writes \"Your keys\" in the README. Set rebound to true once the user has rebound in game (the rebind list then leaves the pages). The class keybinds pages and the by-level guides are untouched."
+  "ranking": "How fast each key is to press while strafing with A/D and steering with the right button held, fastest first: Mouse 5 and Mouse 4; Shift+Mouse 5 and Shift+Mouse 4 (the pinky on Shift is not a movement finger); E, Q, F, R; C, V, X; the middle button; Shift+E, Shift+C, Shift+V, Shift+X, Shift+Q, Shift+F, Shift+R; 4, 1, 3, 2; Shift+4, Shift+1, Shift+3, Shift+2. This order is our assumption: your own reach test overrides it. The user found no key hard to reach (2026-11-22).",
+  "source": "The user, 2026-11-22, to the audit session: \"I want the keybinds to be both practical for Arcea questing and PvP. This doesn't need tyo be the default for everything, just specific for this case\", then \"I think X, C, and V can be utlized more.\" Then, for Shift+Q: \"Sihft+Q is going to be frostbolt rank 1 because you can use it to fish for Fingers and Missile Barrage procs\". Drafted by the lane session, read by the audit session (six changes taken). Tested in game by the user on 2026-11-22: \"All good\".",
+  "note": "Hand-kept (2026-11-22). _reference/data/characters/own_keys.py reads it: it replaces the guide's keys on the checklist and writes \"Your keys\" in the README. Set rebound to true once the user has rebound in game (the rebind list then leaves the pages). The class keybinds pages and the by-level guides are untouched.",
+  "macros_status": "reported working in game by the user, 2026-11-22, except the bottom-trinket macro on Shift+F (nothing worn there yet), Arcane Missiles on 1 (from 47), the options below and the Discolored potions' take-back",
+  "macros_status_short": "reported working in game, 2026-11-22"
  }
 }

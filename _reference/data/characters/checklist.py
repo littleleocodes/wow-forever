@@ -150,7 +150,8 @@ def own_keys_html(k, lv):
         mac = "".join(f'<div class="macro"><h4><span class="kbd">{esc(m["key"])}</span> {esc(m["name"])}</h4>'
                       f'<pre>{esc(chr(10).join(m["lines"]))}</pre><p class="small muted">{md(m.get("note", ""))}</p>{table(m.get("table"))}</div>'
                       for m in k["macros"])
-        out.append(f'<details class="keynotes"><summary>Your macros (none tested in game yet)</summary>{mac}</details>')
+        out.append(f'<details class="keynotes"><summary>Your macros ({esc(k.get("macros_status_short", "none tested in game yet"))})'
+                   f'</summary>{mac}</details>')
     return "".join(out)
 
 

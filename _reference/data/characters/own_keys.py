@@ -95,7 +95,8 @@ def readme(cfg, lv, worn=None):
     if k.get("setup"):
         o += ["**Set up once:**", ""] + [f"{i}. {x}" for i, x in enumerate(k["setup"], 1)] + [""]
     if k.get("macros"):
-        o += ["**Macros** (Esc, Macros, New; pick the question-mark icon so the button shows the spell; none is tested in game yet):", ""]
+        o += ["**Macros** (Esc, Macros, New; pick the question-mark icon so the button shows the spell; "
+              + k.get("macros_status", "none is tested in game yet") + "):", ""]
         for m in k["macros"]:
             o += [f"**{m['key']}**: {m['name']}", "", "```"] + m["lines"] + ["```", ""]
             o += [m["note"], ""] if m.get("note") else []
