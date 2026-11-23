@@ -58,6 +58,7 @@ else:
         sys.modules["gear_opt"] = G
     _s.loader.exec_module(G)
 R = G.R
+import gear_lists as GL  # noqa: E402   (the three lists' rules, 2026-11-23)
 SETS = HERE / "gear_sets" / "forever" / "tiers"
 TIERS = ("prebis", "bis")
 TODAY = datetime.date.today().isoformat()
@@ -167,47 +168,21 @@ def crafted_ok(it, tier):
     return it.get("scalingOptions", {}).get("0", {}).get("ilvl", 0) <= CRAFTED_MAX_ILVL
 
 
+def rules_ctx(zones, repo=None):
+    """raidsim/gear_lists.py's context for this copy of the module (its constants, VETTED_PRE and the enchant data are this copy's)."""
+    import types
+    t = types.SimpleNamespace(CMANGOS=CMANGOS, VETTED_PRE=VETTED_PRE, DUNGEONS=DUNGEONS, UBRS_BOSSES=UBRS_BOSSES, DROP_MIN=DROP_MIN,
+                              NO_QUEST_ZONES=NO_QUEST_ZONES, T05_SETS=T05_SETS, CRAFTED_MAX_ILVL=CRAFTED_MAX_ILVL, REP_MAX=REP_MAX, _ENCH=_ENCH)
+    return GL.context(G, t, zones, repo or R.repo_path(argparse.Namespace(repo=None)))
+
+
 def pool_of(tier, zones, repo=None):
-    def bis(it):
-        return G.in_pool(it, zones) and crafted_ok(it, "bis")
-
-    def dungeon(it):
-        if (it.get("phase") or 1) >= 2:   # what Forever has now only (gear_opt.later_phase)
-            return False
-        if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or it.get("name") in RAID_QUEST or it.get("setName") in T05_SETS \
-                or it.get("id") in G.SUSPECT_ITEMS or G.later_rep(it) or not crafted_ok(it, "prebis"):
-            return False
-        if it["id"] in G.VENDOR_ITEMS:
-            return True
-        data = dungeon_data(repo or R.repo_path(argparse.Namespace(repo=None)))
-        return any(dungeon_source(s, it, zones, data) for s in it.get("sources") or [])
-
-    def prebis(it):
-        if it.get("quality", 0) >= 5 or it.get("quality", 0) < 2 or it.get("name") in RAID_QUEST or not crafted_ok(it, "prebis")                 or it.get("id") in G.SUSPECT_ITEMS or G.later_rep(it):   # (2026-11-06: gear_opt.LATER_FACTIONS)
-            return False
-        if it.get("setName") in T05_SETS:   # 2026-11-18: Tier 0.5 is in neither pre-raid tier (T05_SETS)
-            return False
-        if (it.get("phase") or 1) >= 2:   # 2026-11-18: a pre-raid set holds what Forever has now (gear_opt.later_phase)
-            return False
-        srcs = G.dated_sources(it)
-        drops = [s["drop"] for s in srcs if s.get("drop")]
-        zs = {zones.get(d.get("zoneId")) for d in drops} - {None}
-        if drops and len(drops) == len(srcs) and zs and zs <= RAID_ZONES:
-            return False   # dropped only in raids
-        npcs = {d.get("npcId") for d in drops}
-        if npcs and npcs <= G.WORLD_BOSSES | G.EVENT_NPCS:
-            return False
-        if it["id"] in G.VENDOR_ITEMS:
-            return True
-        if not srcs and G.later_reward(it):   # 2026-11-07: Zul'Gurub quest rewards and battleground items (gear_opt.later_reward)
-            return False
-        if not srcs:
-            so = it.get("scalingOptions", {}).get("0", {})
-            if not VETTED_PRE:   # 2026-11-20 (0q): an empty list shut every launch item out of the pre-raid pools without a word
-                raise SystemExit("gear_tiers.VETTED_PRE is empty: load the database through gear_tiers.load_db first")
-            return it["id"] in VETTED_PRE and so.get("ilvl", 0) <= G.SOURCELESS_MAX_ILVL
-        return True
-    return {"bis": bis, "dungeon": dungeon}.get(tier, prebis)
+    """The list's item pool (2026-11-23): raidsim/gear_lists.py's rules, "bis" = True BiS, "prebis" = True Pre-BiS, "dungeon" = Easy
+    Pre-BiS (any other name: True Pre-BiS). Until then three tiers with their own rules (Raid BiS, Pre-raid, Quests and dungeons; the
+    module docstring and crafted_ok / dungeon_source above, kept for the record)."""
+    ctx = rules_ctx(zones, repo)
+    lst = tier if tier in GL.LISTS else "prebis"
+    return lambda it: GL.in_list(it, lst, ctx)
 
 
 # ------------------------------------------------------------------------------------------------ weapons, set pieces, enchants (2026-11-22)
@@ -306,26 +281,8 @@ def enchant_ok(e, tier, zones):
     key = (e.get("type"), e["effectId"])
     if key in ENCHANTS_OUT or key in ENCHANTS_HELD or any(s in e.get("name", "") for s in SLAYERS):
         return False
-    srcs = e.get("sources") or []
-    drops = [s["drop"] for s in srcs if s.get("drop")]
-    zs = {zones.get(d.get("zoneId")) for d in drops} - {None}
-    if (e.get("phase") or 1) >= 2 and not (tier == "bis" and zs & G.RAID_OK):
-        return False
-    if G.later_rep(e) or G.later_reward(e):
-        return False
-    if drops and len(drops) == len(srcs) and zs and zs <= (G.RAID_NO if tier == "bis" else G.RAID_NO | G.RAID_OK):
-        return False   # dropped only in later raids (or, below Raid BiS, in any raid)
-    if drops and len(drops) == len(srcs) and {d.get("npcId") for d in drops} <= G.WORLD_BOSSES | G.EVENT_NPCS:
-        return False
-    if tier == "dungeon":
-        reps = [int(s["rep"].get("repLevel") or 0) for s in srcs if s.get("rep")]
-        if reps and min(reps) > REP_MAX and not any(s.get("drop") or s.get("crafted") or s.get("quest") for s in srcs):
-            return False
-    if srcs:
-        return True
-    if int(e.get("spellId") or 0) in _ENCH["taught"]:
-        return True
-    return key in _ENCH["vetted"]["bis" if tier == "bis" else "prebis"]
+    # 2026-11-23: the three lists' enchant rules (raidsim/gear_lists.py ENCHANT_KINDS; Easy Pre-BiS: trainer-taught and quest modifiers)
+    return (tier if tier in GL.LISTS else "prebis") in GL.enchant_lists(e, rules_ctx(zones))
 
 
 def enchant_allowed(eid, item_type, tier, zones):
@@ -768,11 +725,13 @@ def set_path(cls, spec, tier):
     return SETS / f"{cls}-{SM.slug(spec)}-{tier}.gear.json"
 
 
-def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=None, setting="raid"):
+def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=None, setting="raid", write=True):
     """The tier's set for one spec: written to its gear file (`path`: another file, e.g. the full-raid winner's set of a spec whose
     full-raid winner plays another entry; ml_pipeline.final), returned as the record. Chosen in a full raid (`setting`, since
     2026-10-31: the pages rank by full-raid DPS; sets chosen on the training dummy, short of mana, had weighed haste below zero for the
-    Frostfire mage, and its full-raid set measured +2.7% over the dummy's, confirmed on seed 2)."""
+    Frostfire mage, and its full-raid set measured +2.7% over the dummy's, confirmed on seed 2). `write=False` (2026-11-23): nothing is
+    written, the record is returned (a test of the rules). Since 2026-11-23 the record names the list and its rules (`list`, `rules`:
+    raidsim/gear_lists.py) and carries the other faction's alternatives for its one-faction items (`faction_alternatives`)."""
     e = R.SPECS[cls][entry_name]
     cur = json.load(open(R.sim_path(e["gear"]) if pathlib.Path(R.sim_path(e["gear"])).is_absolute() else repo / e["gear"], encoding="utf-8"))["items"]
     pool = pool_of(tier, zones, repo)
@@ -826,17 +785,29 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
             print(f"  REFUSED {p.name}: the new set ({r.get('chosen')}, item level {r.get('ilvl')}) scores {nv:.1f} against the "
                   f"{'repaired ' if out_of_pool else ''}previous set's {ov:.1f} on seed 2" + (f" and empties slots {empty}" if empty else "")
                   + ("; the repaired previous set is written" if out_of_pool else "; the previous set stays"), flush=True)
-            if out_of_pool:
+            if out_of_pool and write:
                 p.write_text(json.dumps({"items": ref}, indent=1) + "\n", encoding="utf-8")
-            return dict(r, items=ref, chosen=what,
+            return dict(r, items=ref, chosen=what, **list_fields(cls, ref, r["weights"], tier, db, zones, repo, pool),
                         refused={"new_dps": round(nv, 2), "previous_dps": round(ov, 2), "empty_slots": empty, "repaired_slots": out_of_pool,
                                  "new_ilvl": r.get("ilvl"), "new_names": r.get("names")},
                         names=[db.get(x.get("id"), {}).get("name") if x.get("id") else None for x in ref],
                         entry=entry_name, gear=p.relative_to(ROOT).as_posix(), date=TODAY, setting=setting)
         r["guard"] = {"new_dps": round(nv, 2), "previous_dps": round(ov, 2), "repaired_slots": out_of_pool}
-    p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(json.dumps({"items": r["items"]}, indent=1) + "\n", encoding="utf-8")
-    return dict(r, entry=entry_name, gear=p.relative_to(ROOT).as_posix(), date=TODAY, setting=setting)
+    if write:
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(json.dumps({"items": r["items"]}, indent=1) + "\n", encoding="utf-8")
+    return dict(r, entry=entry_name, gear=p.relative_to(ROOT).as_posix(), date=TODAY, setting=setting,
+                **list_fields(cls, r["items"], r["weights"], tier, db, zones, repo, pool), **({} if write else {"written": False}))
+
+
+def list_fields(cls, items, w, tier, db, zones, repo, pool):
+    """The record's list fields (2026-11-23): the list's name and rules, each item's kinds (why it is in the list) and the other
+    faction's alternatives (raidsim/gear_lists.py)."""
+    ctx = rules_ctx(zones, repo)
+    _, _, greedy = G.class_picker(repo, cls, db, pool)
+    kinds = {str(i): [k for k, _ in GL.item_kinds(db[x["id"]], ctx)] for i, x in enumerate(items[:17]) if x and x.get("id") in db}
+    return {"list": GL.LABEL.get(tier, tier), "rules": GL.RULES, "kinds": kinds,
+            "faction_alternatives": GL.alternatives(cls, items, w, tier, db, ctx, G, greedy.fits)}
 
 
 def load_db(repo):
