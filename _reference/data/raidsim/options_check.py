@@ -190,6 +190,21 @@ def siml_defaults(repo, sim_spec):
     return cls, pl
 
 
+BUILD_PLAYER = ("distanceFromTarget", "reactionTimeMs", "profession1", "profession2", "inFrontOfTarget", "channelClipDelay")
+
+
+def build_json_defaults(repo, sim_spec):
+    """The settings of ui/specs/<sim_spec>/builds/default.build.json (2026-11-23: upstream moved the shaman's defaults there from
+    presets.ts at 57df2a7a5; "The Enhancement sim starts from the Default build"): (class options, player options), or (None, None)."""
+    f = pathlib.Path(repo) / "ui" / "specs" / sim_spec / "builds" / "default.build.json"
+    if not f.exists():
+        return None, None
+    pl = (json.loads(f.read_text(encoding="utf-8")) or {}).get("player") or {}
+    spec_key = next((k for k, v in pl.items() if isinstance(v, dict) and "options" in v), None)
+    opts = (pl.get(spec_key) or {}).get("options") or {}
+    return opts, {k: pl[k] for k in BUILD_PLAYER if k in pl}
+
+
 def legacy(opts):
     """The bench's translation of the fork's warlock options (foreverbench legacySpec): sacrificeSummon / pactSacrifice ->
     sacrificedDemon."""
@@ -271,7 +286,7 @@ def main():
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=a.repo))
     specs = json.load(open(HERE / "specs.json", encoding="utf-8"))
-    rows_gap, rows_diff, rows_player, notes = [], [], [], []
+    rows_gap, rows_diff, rows_player, notes, missing = [], [], [], [], []
     cache = {}
     for cls, ents in specs.items():
         if not isinstance(ents, dict):
@@ -283,13 +298,22 @@ def main():
             if ss not in cache:
                 cache[ss] = defaults(repo, ss)
             dopt, other, src = cache[ss]
+            if dopt is not None or other is not None:   # (2026-11-23) every entry's source is named in the notes
+                notes.append(f"{cls}/{e}: {ss} keeps its defaults in presets.ts (read: DefaultOptions and OtherDefaults)")
             if dopt is None and other is None:
                 scls, spl = siml_defaults(repo, ss)
+                how = "defaults.siml (read: its settings block)"
                 if scls is None:
-                    notes.append(f"{cls}/{e}: no defaults found for {ss}")
-                    continue
-                dopt, other = {"classOptions": scls}, spl
-                notes.append(f"{cls}/{e}: {ss} keeps its defaults in defaults.siml (read: its settings block)")
+                    bopt, spl = build_json_defaults(repo, ss)
+                    if bopt is None:
+                        notes.append(f"{cls}/{e}: no defaults found for {ss}")
+                        missing.append(f"{cls}/{e} ({ss})")
+                        continue
+                    dopt, other = bopt, spl
+                    notes.append(f"{cls}/{e}: {ss} keeps its defaults in builds/default.build.json (read: the player's options and settings)")
+                else:
+                    dopt, other = {"classOptions": scls}, spl
+                    notes.append(f"{cls}/{e}: {ss} keeps its defaults in {how}")
             frag = R.raid_spec(ent) or {}   # the pages' setting: the full raid, with the entry's raid-only options
             ours = legacy(next(iter(frag.values()), {}).get("options", {}) if frag else {})
             for path, uv in leaves(dopt or {}):
@@ -334,7 +358,12 @@ def main():
     print(text)
     if a.write:
         (ROOT / "_reference" / "options-check.md").write_text(text, encoding="utf-8")
+    if missing:   # (2026-11-23, the audit session: a spec whose defaults the tool cannot find is a failure, not a line in the diff; upstream
+        # moves specs to build files, as it did the shaman's at 57df2a7a5)
+        print("FAIL: no defaults found for " + ", ".join(missing), file=sys.stderr)
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
