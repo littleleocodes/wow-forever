@@ -2,7 +2,7 @@
 
 [Warlock](../README.md) > [Leveling (solo)](README.md) > [Destruction](destruction.md) > Level by level
 
-What a Destruction warlock presses from level 1 to 60, stage by stage. Destruction levels as a nuker behind the Voidwalker (from 10), and your wand is the filler: between casts you wand the mob. **Immolate**, **Bane of Agony** on every pull from 8, **Shadow Bolt** only while you have more than 60% of your mana and the mob has more than 35% of its health, **Shadowburn** (29) to finish and **Conflagrate** from 31 (on its cooldown from 39). No **Corruption**, no **Fear** and no **Drain Life**: the tuned rules level faster without them. Each stage lists the full priority, so you can jump in at your level.
+What a Destruction warlock presses from level 1 to 60, stage by stage. Destruction levels as a nuker behind the Voidwalker (from 10), and your wand is the filler: between casts you wand the mob. **Immolate**, **Bane of Agony** on every pull from 8, **Shadow Bolt** only while you have more than 60% of your mana and the mob has more than 35% of its health, **Shadowburn** (29) to finish and **Conflagrate** on its cooldown from 39 (the talent comes at 31, but until **Shadow and Flame** is 5/5 it uses up your **Immolate**, so it waits). No **Corruption**, no **Fear** and no **Drain Life**: the tuned rules level faster without them. Each stage lists the full priority, so you can jump in at your level.
 
 **The build:** 6/9/36 ([open the talent tree](https://talentsforever.com/warlock/60/24-00050112-2150355103101351-12)), the one on the [Destruction leveling page](destruction.md), which has the full talent table and the reasons behind the level-60 rotation.
 
@@ -15,8 +15,8 @@ What a Destruction warlock presses from level 1 to 60, stage by stage. Destructi
 | 10-19 | **Summon Voidwalker** holds the mob while you nuke. Talent points start: **Bane** makes your casts faster. |
 | 20-28 | Nothing new to press: **Ruin** (20-24) doubles your Destruction spells' critical strike bonus, and **Demon Armor** (20) replaces **Demon Skin**. |
 | 29-30 | **Shadowburn** (talent) finishes a mob instantly. Cast it only when it will kill: the Soul Shard comes back. |
-| 31-38 | **Conflagrate** (talent): an instant hit on a burning mob every 10 seconds. Until **Shadow and Flame** is 5/5 (39) it uses up your **Immolate**, so it waits for **Immolate**'s last seconds. |
-| 39 | **Shadow and Flame** 5/5 (39): **Conflagrate** no longer uses up your **Immolate**, so cast it whenever it is ready; it also adds 20% to your Shadow damage for 20 seconds. |
+| 31-38 | **Conflagrate** (talent): an instant hit on a burning mob every 10 seconds. Until **Shadow and Flame** is 5/5 (39) it uses up your **Immolate**, so hold it until then. The rest stays. |
+| 39 | **Shadow and Flame** 5/5 (39): **Conflagrate** no longer uses up your **Immolate**, so start pressing it now, whenever it is ready; it also adds 20% to your Shadow damage for 20 seconds. |
 | 40-41 | **Conflagrate** whenever it is ready. On a burning mob the wand fills between casts; **Shadow Bolt** opens the pull. |
 | 42-60 | **Death Coil** (F) is the save for a mob that reaches you while you are hurt: the fight lab presses it about once in 33 kills. The rest stays. |
 
@@ -30,7 +30,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 |---|---|---|---|---|---|---|---|---|---|---|
 | Q | Your bolt | **Shadow Bolt** | Shadow Bolt | Shadow Bolt | Shadow Bolt | Shadow Bolt | Shadow Bolt | Shadow Bolt | Shadow Bolt | Shadow Bolt |
 | E | Control: not in the list; press it to send a second mob running in a bad pull | — | **Fear** | Fear | Fear | Fear | Fear | Fear | Fear | Fear |
-| R | The payoff after Immolate, on its cooldown | — | — | — | — | — | **Conflagrate** | Conflagrate | Conflagrate | Conflagrate |
+| R | The payoff after Immolate: it waits until 39 (Shadow and Flame 5/5), then on its cooldown | — | — | — | — | — | **Conflagrate** | Conflagrate | Conflagrate | Conflagrate |
 | F | The save: a horror and a heal in one press | — | — | — | — | — | — | — | — | **Death Coil** |
 | Mouse 5 | Thumb: the finisher | — | — | — | — | **Shadowburn** | Shadowburn | Shadowburn | Shadowburn | Shadowburn |
 | Mouse 4 | Thumb: the pull, with your demon | — | — | **Shadow Bolt pull macro** | Shadow Bolt pull macro | Shadow Bolt pull macro | Shadow Bolt pull macro | Shadow Bolt pull macro | Shadow Bolt pull macro | Shadow Bolt pull macro |
@@ -60,7 +60,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - Every spell Destruction shares with Demonology keeps its key from the [keybinds page](keybinds.md): Q **Shadow Bolt**, 2 **Immolate**, E **Fear**, F **Death Coil**, 4 **Life Tap**, C the Healthstone, the wand on the middle mouse button.
 - Mouse 4's pull macro casts **Shadow Bolt** in place of **Corruption** from 10: the fight lab opens with a bolt while the Voidwalker takes the mob, then **Bane of Agony** and **Immolate**. 1 holds **Bane of Agony** from 8, as in the other specs; 3 stays free.
-- R holds **Conflagrate** from 31: the tuned rules never cast **Drain Life**, so Demonology's R is free here. Mouse 5 holds **Shadowburn** from 29, the finisher.
+- R holds **Conflagrate** from 31, where it waits until **Shadow and Flame** is 5/5 (39): the tuned rules never cast **Drain Life**, so Demonology's R is free here. Mouse 5 holds **Shadowburn** from 29, the finisher.
 - **Fear** keeps E for a pull that brings a second mob. The tuned rules of 2026-11-07 never cast it against one mob.
 - No key: **Demon Skin** and **Demon Armor**, **Summon Imp** and **Summon Voidwalker**, **Create Healthstone**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights. The Voidwalker's **Torment** casts by itself; **Consume Shadows** and **Sacrifice** stay on the pet bar.
 
@@ -189,7 +189,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 *Fight lab, seconds per kill: 32 at level 29, 32 at level 30. Presses per kill at level 29: Wand 11.9, Torment 4.0, Immolate 1.1, Bane of Agony 1.0, Shadowburn 1.0, Shadow Bolt 0.6.*
 
-## Levels 31-38: Conflagrate
+## Levels 31-38: Conflagrate, held until 39
 
 **The trainer teaches:** Lesser Invisibility (32), Shadow Ward (32), Tainted Blood (32), Create Spellstone (36), Spell Lock (36).
 
@@ -199,24 +199,21 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** R = Conflagrate; Shift+Mouse 5 = Shadow Ward (at 32).
 
-**Your keys in this stage:** Q Shadow Bolt, R Conflagrate, Mouse 5 Shadowburn, 1 Bane of Agony, 2 Immolate.
+**Your keys in this stage:** Q Shadow Bolt, Mouse 5 Shadowburn, 1 Bane of Agony, 2 Immolate.
 
 **What to press**, top to bottom:
 
 1. **Shadowburn** on a mob it would kill.
 2. Send the Voidwalker in and open with **Shadow Bolt** (Mouse 4's macro) while its **Torment** takes the mob, then **Bane of Agony** on a mob above 35% of its health and **Immolate** on a mob above 30%, once it will not pull the mob off the Voidwalker.
-3. **Conflagrate** (R) on a burning mob above a fifth of its health, when **Immolate** has about 3 seconds left.
-4. Between casts your wand is the filler: **Shadow Bolt** only while you have more than 60% of your mana and the mob has more than 35% of its health.
+3. Between casts your wand is the filler: **Shadow Bolt** only while you have more than 60% of your mana and the mob has more than 35% of its health.
 
 **If the fight goes wrong:** A mob on you: **Shadowburn** if it would kill, otherwise wand it until the Voidwalker's taunt takes it back. Your Healthstone below 35% health.
 
-- **Conflagrate** is no kill shot: the tuned rules cast it only on a mob above a fifth of its health.
-- Before **Shadow and Flame** 5/5 (39) **Conflagrate** uses up your **Immolate**: the fight lab is 4-6% slower a kill at 31-35 pressing it than holding it until 39 (2026-11-23). The page presses it as Destruction's signature spell; hold it until 39 if you only want speed.
-- **Fire and Brimstone** (32-34) adds 25% critical strike chance to **Conflagrate**.
-- From 31 to 38 **Bane of Agony** costs 1.5-2% a kill (the fight lab, 2026-11-23: **Conflagrate** still uses up **Immolate** there), and the list keeps it: one rule for 20-60 is 6% faster overall.
-- From 31 to 39 the wand does 28-37% of your damage, with **Shadow Bolt** at 7% at most (the fight lab, 2026-11-23). The list keeps **Shadow Bolt** for when you have more than 60% of your mana and spends the rest on **Immolate**, **Bane of Agony**, **Conflagrate** and **Shadowburn**: the wand costs nothing, and a bolt's mana has to be drunk back, so the re-tune of 2026-11-21 measured level 35 18% faster per kill that way (44.7 to 36.5 seconds) than bolting through it.
+- Why it waits: before **Shadow and Flame** 5/5 a **Conflagrate** ends the **Immolate** it hits, and the burn is worth more than the hit. Pressing it even in **Immolate**'s last 3 seconds costs 5.2% a kill at 31, 6.3% at 33, 4.3% at 35 and 0.5% at 38 (the fight lab, 2026-11-23, 3,000 fights on each of two seeds).
+- **Fire and Brimstone** (32-34) adds 25% critical strike chance to **Conflagrate**, from 39 when you start pressing it.
+- From 31 to 38 the wand does 44% of your damage, with **Shadow Bolt** at 4% at most (the fight lab, 2026-11-23). The list keeps **Shadow Bolt** for when you have more than 60% of your mana and spends the rest on **Immolate**, **Bane of Agony** and **Shadowburn**: the wand costs nothing, and a bolt's mana has to be drunk back, so the re-tune of 2026-11-21 measured level 35 18% faster per kill that way (44.7 to 36.5 seconds) than bolting through it.
 
-*Fight lab, seconds per kill: 35 at level 31, 38 at level 38. Presses per kill at level 31: Wand 10.3, Torment 4.1, Immolate 1.1, Bane of Agony 1.1, Shadowburn 1.0, Conflagrate 0.8, Shadow Bolt 0.7.*
+*Fight lab, seconds per kill: 33 at level 31, 38 at level 38. Presses per kill at level 31: Wand 12.4, Torment 4.4, Immolate 1.2, Bane of Agony 1.0, Shadowburn 1.0, Shadow Bolt 0.4.*
 
 ## Level 39: Shadow and Flame 5/5: Conflagrate on its cooldown
 
@@ -233,6 +230,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** A mob on you: **Shadowburn** if it would kill, **Conflagrate** if it is ready, otherwise wand it until the Voidwalker's taunt takes it back. Your Healthstone below 35% health.
 
+- **Conflagrate** is no kill shot: the tuned rules cast it only on a mob above a fifth of its health.
 - **Shadow and Flame** also adds 20% to your Fire damage for 20 seconds after a **Shadowburn**.
 
 *Fight lab, seconds per kill: 37 at level 39. Presses per kill at level 39: Wand 10.2, Torment 3.9, Conflagrate 1.6, Immolate 1.1, Bane of Agony 1.0, Shadowburn 1.0, Shadow Bolt 0.8, Create Healthstone 0.1.*
@@ -258,7 +256,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** A mob on you: **Shadowburn** if it would kill, **Conflagrate** if it is ready, otherwise wand it until the Voidwalker's taunt takes it back. Your Healthstone below 35% health.
 
-- **Incinerate** (40): the tuned rules never cast it. From 40 the list wands a burning mob instead of casting a bolt at it: about half a **Shadow Bolt** a kill from here, and 5-12% faster per kill at levels 40-60 than bolting the burning mob (a check on 2026-11-07, 400 fights a level). The fight lab plays that only because the build holds **Incinerate**; in game you can wand a burning mob without the talent.
+- **Incinerate** (40): the tuned rules never cast it. From 40 the list wands a burning mob instead of casting a bolt at it: about half a **Shadow Bolt** a kill from here, and 5-12% faster per kill at levels 40-60 than bolting the burning mob (a check on 2026-11-07, 400 fights a level). The fight lab plays that only because the build holds **Incinerate**, which the tuned rules never cast; in game you can wand a burning mob without the talent.
 - **Aftermath**'s first point (41) adds 10% to **Immolate**'s first hit and gives **Conflagrate** a 20% chance to daze the mob.
 - **Howl of Terror** (40) fears every mob near you: the escape from a pull that brings friends (Shift+F).
 

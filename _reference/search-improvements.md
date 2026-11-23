@@ -163,20 +163,33 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+1r. **The play check's record does not see the guide texts (2026-11-23; a correctness guard, first in the list by the audit session's
+    ruling).** Destruction's level-40 note gained a sentence after warlock's
+    04:46 play check ("... the build holds **Incinerate**; in game ...") that fails Ld, and the record stayed "pass" because the
+    level-guides and guides texts are in no fingerprint; it went out in a6ffe026 and was fixed with the Conflagrate gate. For the
+    optimality pass, first: the class's guide texts (level-guides, guides, leveling-steps) in play_check's fingerprint, so a text
+    edit makes the record stale. Until then the rule for both sessions: a text edit after a play check means the play check runs
+    again before the go, whether or not a fingerprint moved.
 1h. **The leveling signature floor is judged at level 60 only, and a forced window below 60 escapes it (2026-11-23, the audit session's read
     of the held push).** signature_audit.py's core share is the level-60 share. With Shadow Word: Death forced at 32-49 (the held push's
     priest rules), Smite + Holy Fire are 37-39% of the damage on the Holy page at 32-49 (floor 40%) and 39-43% on the Smite page (floor
     50%), while the stored verdicts read 43% and 50% at 60, where the window is closed. The ruling for the push: the window stays (a
     finisher under 20% health; Smite and Holy Fire are cast as often a kill as before; the kill ends sooner), and no text claims a share
     that is false where it stands. For the optimality pass: judge the floor at every race level or level-weighted, and check a
-    forced-window knob against it at the window's own levels.
+    forced-window knob against it at the window's own levels. The page's signature line has the same blind spot: its "never casts"
+    is read from the level-60 casts, so a spell the rules hold for some levels (Conflagrate at 31-38 since the gate) reads as cast.
 1i. **A tune's level grid can skip the levels a knob acts on (2026-11-23).** The rules tunes race levels 20, 25, 30 ... 60. With druid
     Balance's order back (Eclipse 31-33), one or two Eclipse points live only at 31-32, so ECLIPSE_GATE_RANK could never win there; it
     went in by hand (2.7-2.9% a kill at 31, bit-identical elsewhere). For the optimality pass: a knob whose effect is confined to levels
     the grid skips (a one-point talent level, a forced window's edge) is raced at those levels too.
-1j. **A forced line takes one window (2026-11-23).** Destruction's Bane of Agony is forced at 20-60 although it costs 1.5-2% a kill at
-    31-38, where Conflagrate still uses up Immolate (6.0-6.1% faster level-weighted overall). A two-window knob (or a skip window) would
-    gain about 0.3% level-weighted. For the optimality pass.
+1u. **The Conflagrate gate leaves four points idle at 31-38 (2026-11-23, with 1i).** Conflagrate (31) is Shadow and Flame's prerequisite
+    and stays; Fire and Brimstone (32-34) pays only from 39, when Conflagrate is pressed. Lc checks the race levels 30/40/50/60 and does
+    not see it. An order that takes Fire and Brimstone after Shadow and Flame, or useful points at 32-34, is untried: the same shape as
+    Fire's orders (each wins at some levels; 1n). For the optimality pass's order polish, at the levels the gate covers.
+1j. **A forced line takes one window (2026-11-23; moot since the Conflagrate gate the same day).** Destruction's Bane of Agony cost
+    1.5-2% a kill at 31-38 while Conflagrate still used up Immolate; with Conflagrate held until 39 the window pays there too (the
+    gate without the window is 0.1-10.9% slower at every level from 30 on). A two-window knob (or a skip window) stays an idea for
+    the optimality pass, with no case open.
 1l. **Rules are never tuned or forced below 20 (2026-11-23, the audit session's read).** The tunes race levels 20-60 and the forced runs start
     at 20, so a forced window that starts at the grid's first level is the mark: Destruction's Bane of Agony window starts at 20 although
     the spell is trained at 8 and Affliction casts it from 8; [10, 61] and [20, 61] score the same on every tune level, so the tune
@@ -184,14 +197,37 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
     Word: Death is not trained before its window, and Flame Shock's [30, 50] was compared with the windows starting at 20 (engine
     FORCE_WINDOWS: starts 10, 20, 30, 40, 50) on the tune's levels 20 and 25. For the optimality pass: race the grid's first level's
     lower neighbours, or the spell's training level, whenever a window starts at the grid's first level. One more row from the same data (the audit session, 2026-11-23): Destruction at 9 is 29.5 s a kill with the wand 69% of the damage and no pet damage in the shares at 1-9, while the by-level guide says to summon the Imp at 1 (its Firebolt casts by itself); whether the lab plays the Imp before 10 is open.
-1m. **Destruction's Conflagrate before Shadow and Flame 5/5 (2026-11-23).** Until 39 the list casts it when Immolate has about 3 s
-    left, and it uses up Immolate: holding it until 39 (the rules knob CONFLAG_LEFT -1, by setattr) is 5.2/5.1% faster a kill at 31,
-    6.3/6.2% at 33, 4.3/4.6% at 35, 0.5/0.4% at 38, bit-identical at 30 and 39-60, -1.32% level-weighted (3,000 fights, seeds 1/2,
-    conflag_gate_1123.py). Not installed (the audit session, 2026-11-23): Conflagrate is the spec's signature talent and the gate equals its
-    veto for eight levels, which the stored verdict (level 60's share) cannot see (1h); the page presses it and says what it costs. It
-    goes to the user as one general question with Shadow Word: Death's window: when the lab finds a signature spell slower at some
-    levels, press it and show the cost, or hold it there and say so. For the optimality pass: CONFLAG_LEFT in warlock.ROTATION_KNOBS
-    ([-1, 0, 1.5, 3]: a cast in Immolate's last second was never compared either).
+1m. **Destruction's Conflagrate before Shadow and Flame 5/5 (2026-11-23; installed by hand the same day).** Until 39 the list cast it when
+    Immolate had about 3 s left, and it used up Immolate: holding it until 39 (the rules knob CONFLAG_LEFT -1, by setattr) is 5.2/5.1%
+    faster a kill at 31, 6.3/6.2% at 33, 4.3/4.6% at 35, 0.5/0.4% at 38, bit-identical at 30 and 39-60, -1.32% level-weighted (3,000
+    fights, seeds 1/2, conflag_gate_1123.py). First held back as the spec's signature talent; the audit session reversed that the same
+    morning (signature_spells.json names no required spell for Destruction, and a talent whose play waits for its points has the
+    precedent of Balance's ECLIPSE_GATE_RANK 3), and the knob went in by hand with the texts. Still for the optimality pass:
+    CONFLAG_LEFT in warlock.ROTATION_KNOBS ([-1, 0, 1.5, 3]: a cast in Immolate's last second was never compared), and a cast while
+    Shadow and Flame is 4/5 (an 80% keep).
+1n. **open_builds.py should hold an unchanged build's order unless the record's is 0.5% faster on two seeds (2026-11-23, the audit
+    session).** The fix of 2f355e9d makes the record's order win whenever the record's winner is the filler pass's end state: right for
+    Fire (-1.51% / -1.25% on seeds 3 / 4), a coin flip for Frostfire (-0.10% / +0.48%). Frostfire's record now carries `order_kept`
+    (open_builds reads it and writes the page's order, saying why); the general rule is for the optimality pass. A lead for the order
+    polish from the same race: Fire's record order wins at 30 and 40 (-5% and -8%) and loses at 50 (+5.7% / +5.6%), so neither order is
+    the best one; an order that plays own-tree-first into the 40s and holds the Frost points by 50, as the page's does, is untried.
+1o. **Destruction's burning-mob wand is keyed on a talent the rules switch off (2026-11-23, the held push's read).** From 40 the module
+    wands a burning mob instead of bolting it only because the build holds Incinerate, which the rules veto; the page says so. For the
+    optimality pass: a knob for the behaviour, independent of the talent, so a build without Incinerate plays it too and a tune can
+    compare it.
+1p. **page_lint's quoted-number check misses three forms (2026-11-23, the audit session's read of the held texts).** It reads "N s a
+    kill" and "N% faster"; the held texts also quote "N seconds level-weighted", "N times a kill" and "reaches N%", which nothing
+    checks against the data. For the next page_lint change.
+1q. **Survival's leveling list does not name Mongoose Bite (2026-11-23, the audit session's read).** The lab casts it after a dodge,
+    under Le's half-a-kill line, so no check asks for it. A line for the next Survival text read.
+1s. **A rank is listed only in the stage that presses or keys its spell (2026-11-23).** With R bound from 39, Conflagrate's rank 2 (32)
+    was in no stage's "New ranks to buy", and a player would reach 39 with rank 1. R holds it from 31 again, with a role that says it
+    waits. For the optimality pass: a stage that first presses a spell lists the ranks it missed ("Conflagrate rank 2, from 32").
+1t. **The gear picker values hit with one linear weight (2026-11-23, the list test's attribution).** Survival's no-PvP set carried 13.5%
+    hit from items against an 8% cap because the weights were measured on the first pick (hit 1.02, agility 0.60); measured again at
+    the picked set, hit is 0.29. REWEIGH (the picks from those weights race as variants) fixed it: the no-PvP True Pre-BiS went from
+    933 to 967, ahead of the site's like-for-like list (950). For the optimality pass (the audit session): a cap-aware hit value in the
+    picker, the under-cap weight up to the cap and the over-cap weight past it, would remove the second measurement.
 1k. **A stage's press list against its top-damage spell (2026-11-23).** Balance's 20-29 stage said Wrath stays the nuke and Starfire
     "almost never" casts, while the lab cast Starfire 3.2 times a kill (75% of the damage) since druid.STARFIRE_NO_ECLIPSE of
     2026-11-21: La and Le passed because both spells were named and cast. The audit session's scan of every stage (each pressed spell with

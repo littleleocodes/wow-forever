@@ -97,7 +97,7 @@ Before the fight: **Demon Skin** (**Demon Armor** from level 20) up, **Summon Vo
 1. Finish first: **Shadowburn** on a mob it would kill, your wand for the last sliver of health.
 2. From level 8, **Bane of Agony** on every mob (from 10 right after your opening **Shadow Bolt**), on a mob above 35% of its health: one cast a kill (the tuned rules: from 20 since 2026-11-22, from 8 by hand since 2026-11-23).
 3. **Immolate** on a fresh mob above 30% of its health, unless it would pull the mob off the Voidwalker or a mob is already hitting you.
-4. **Conflagrate** when **Immolate** has about 3 seconds left (whenever it is ready with 5 points in **Shadow and Flame**, which keeps **Immolate** burning), while the mob has more than a fifth of its health. Before **Shadow and Flame** 5/5 (39) **Conflagrate** uses up your **Immolate**: the fight lab is 4-6% slower a kill at 31-35 pressing it than holding it until 39 (2026-11-23). The page presses it as Destruction's signature spell; hold it until 39 if you only want speed.
+4. **Conflagrate** from 39, when **Shadow and Flame** is 5/5 and keeps **Immolate** burning: whenever it is ready, while the mob has more than a fifth of its health. Hold it before that: until then it uses up your **Immolate**, and pressing it even in **Immolate**'s last 3 seconds costs 4-6% a kill at 31-35 (the fight lab, 2026-11-23).
 5. With **Decimation**: **Soul Fire** while its buff lasts. With **Shadow Trance**: the free **Shadow Bolt** at once.
 6. Between casts your wand is the filler. **Shadow Bolt** only while you have more than 60% of your mana and the mob has more than 35% of its health. From level 40, while **Immolate** burns, the wand instead of the bolt: with Incinerate switched off, the fight lab levels faster wanding a burning mob. No Corruption, Searing Pain, Drain Life or Incinerate: the fight lab levels faster without them.
 7. No **Life Tap** in a fight: with **Shadow Bolt** kept for spare mana the fight lab almost never needs one.
@@ -105,7 +105,7 @@ Before the fight: **Demon Skin** (**Demon Armor** from level 20) up, **Summon Vo
 
 Between fights: **Life Tap** back to 70% mana while your health stays above 60%, heal the Voidwalker with **Consume Shadows** (or **Health Funnel**) when it is below 60%, eat only below 40% health (the tuned rule), and drink only below 15% mana (when you are too hurt to **Life Tap**). Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-22, on top of the priority below): FORCE_BANE_OF_AGONY_LEVELS = [20, 61]; Bane of Agony only while the mob has more than 35% health; FORCE_BANE_OF_AGONY_LEVELS = [8, 61]. Together +5.3% time per kill saved for `destruction-open-leveling` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-22, on top of the priority below): FORCE_BANE_OF_AGONY_LEVELS = [20, 61]; Bane of Agony only while the mob has more than 35% health; FORCE_BANE_OF_AGONY_LEVELS = [8, 61]; CONFLAG_LEFT = -1. Together +5.3% time per kill saved for `destruction-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 Casts per kill of [`destruction-open-leveling`](builds/destruction-open-leveling.md): not recorded (its times per kill come from the race records of the search that found it, which keep times only; the table above has them).
 

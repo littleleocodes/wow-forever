@@ -29,7 +29,8 @@
   "FORCE_BANE_OF_AGONY_LEVELS": [
    8,
    61
-  ]
+  ],
+  "CONFLAG_LEFT": -1
  },
  "class": "warlock",
  "spec": "destruction-leveling",
@@ -97,7 +98,7 @@
      61
     ]
    ],
-   "why": "By hand under the delegator's pre-approved bar (2026-11-23: install the earliest start 0.5% or more faster on both seeds at 15 and 19 and never 0.5% slower at a level it adds). The tune could not see it: its levels start at 20, where [8, 61], [10, 61] and [20, 61] score the same (Bane of Agony is trained at 8; Affliction and Aff-Demo cast it from 8). A/B, the installed [20, 61] against [10, 61] and [8, 61], 3,000 fights, seeds 1/2 (scratchpad bane_below20_1123.py): [8, 61] 8 -11.65% / -11.61%, 9 -12.50% / -12.40%, 10 -5.70% / -6.06%, 15 -3.45% / -3.14%, 19 -8.34% / -8.40%; 20, 31, 40 and 60 bit-identical; [10, 61] the same from 10 and nothing at 8-9.",
+   "why": "By hand under the audit session's pre-approved bar (2026-11-23: install the earliest start 0.5% or more faster on both seeds at 15 and 19 and never 0.5% slower at a level it adds). The tune could not see it: its levels start at 20, where [8, 61], [10, 61] and [20, 61] score the same (Bane of Agony is trained at 8; Affliction and Aff-Demo cast it from 8). A/B, the installed [20, 61] against [10, 61] and [8, 61], 3,000 fights, seeds 1/2 (scratchpad bane_below20_1123.py): [8, 61] 8 -11.65% / -11.61%, 9 -12.50% / -12.40%, 10 -5.70% / -6.06%, 15 -3.45% / -3.14%, 19 -8.34% / -8.40%; 20, 31, 40 and 60 bit-identical; [10, 61] the same from 10 and nothing at 8-9.",
    "ab": {
     "names": [
      "[20, 61] installed",
@@ -222,6 +223,179 @@
        36.063,
        36.063,
        36.063
+      ]
+     }
+    }
+   }
+  },
+  {
+   "round": "by hand",
+   "date": "2026-11-23",
+   "change": "CONFLAG_LEFT = -1",
+   "rule": [
+    "knob",
+    "CONFLAG_LEFT",
+    -1
+   ],
+   "why": "By hand, the audit session's ruling (2026-11-23): Conflagrate outside the kill shot only once Shadow and Flame keeps Immolate burning, i.e. from 39 (the module's default 3.0 cast it once Immolate had 3 seconds or less to run, and before Shadow and Flame 5/5 a Conflagrate ends the burn). No rule names Conflagrate (signature_spells.json gives Destruction no required spell, only a 60% share of seven core spells), and a talent whose play waits until its points are in has the precedent of Balance's ECLIPSE_GATE_RANK 3. A/B, the rules installed at 04:1x against CONFLAG_LEFT -1, 3,000 fights, seeds 1/2 (scratchpad conflag_gate_1123.py): 31 -5.2% / -5.1%, 33 -6.3% / -6.2%, 35 -4.3% / -4.6%, 38 -0.5% / -0.4%; 30 and 39-60 bit-identical; -1.32% / -1.32% level-weighted over 30-60. The Bane of Agony window of the same night ([8, 61] for [20, 61]) changes nothing from 20 on, so the A/B holds for these rules. The tune could not find it: CONFLAG_LEFT is not in warlock.ROTATION_KNOBS (for the optimality pass, with a cast while Shadow and Flame is 4/5, an 80% keep).",
+   "ab": {
+    "names": [
+     "installed",
+     "CONFLAG_LEFT -1",
+     "Conflagrate off",
+     "CONFLAG_LEFT -1, no Bane window"
+    ],
+    "levels": [
+     30,
+     31,
+     33,
+     35,
+     38,
+     39,
+     40,
+     45,
+     50,
+     60
+    ],
+    "seconds_per_kill": {
+     "30": {
+      "1": [
+       32.292,
+       32.292,
+       32.292,
+       35.011
+      ],
+      "2": [
+       32.24,
+       32.24,
+       32.24,
+       34.784
+      ]
+     },
+     "31": {
+      "1": [
+       35.006,
+       33.176,
+       33.176,
+       35.815
+      ],
+      "2": [
+       34.879,
+       33.108,
+       33.108,
+       35.744
+      ]
+     },
+     "33": {
+      "1": [
+       36.348,
+       34.047,
+       34.047,
+       36.431
+      ],
+      "2": [
+       36.265,
+       34.016,
+       34.016,
+       36.288
+      ]
+     },
+     "35": {
+      "1": [
+       36.549,
+       34.969,
+       34.969,
+       37.558
+      ],
+      "2": [
+       36.583,
+       34.899,
+       34.899,
+       37.387
+      ]
+     },
+     "38": {
+      "1": [
+       38.217,
+       38.044,
+       38.044,
+       42.375
+      ],
+      "2": [
+       38.156,
+       38.004,
+       38.004,
+       42.283
+      ]
+     },
+     "39": {
+      "1": [
+       37.611,
+       37.611,
+       39.498,
+       40.375
+      ],
+      "2": [
+       37.473,
+       37.473,
+       39.511,
+       40.186
+      ]
+     },
+     "40": {
+      "1": [
+       38.427,
+       38.427,
+       41.129,
+       40.667
+      ],
+      "2": [
+       38.245,
+       38.245,
+       41.01,
+       40.697
+      ]
+     },
+     "45": {
+      "1": [
+       38.422,
+       38.422,
+       40.889,
+       40.286
+      ],
+      "2": [
+       38.275,
+       38.275,
+       40.893,
+       40.32
+      ]
+     },
+     "50": {
+      "1": [
+       37.42,
+       37.42,
+       41.16,
+       40.574
+      ],
+      "2": [
+       37.359,
+       37.359,
+       41.169,
+       40.592
+      ]
+     },
+     "60": {
+      "1": [
+       36.148,
+       36.148,
+       40.884,
+       39.388
+      ],
+      "2": [
+       36.063,
+       36.063,
+       40.817,
+       39.377
       ]
      }
     }

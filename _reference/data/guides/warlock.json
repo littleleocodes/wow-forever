@@ -61,7 +61,7 @@
     "rotations": {
      "leveling:affliction-leveling": "6c5b4640a71a",
      "leveling:demonology-leveling": "7b9fece8fe69",
-     "leveling:destruction-leveling": "07943c930006"
+     "leveling:destruction-leveling": "9e7a0708be0b"
     }
    }
   },
@@ -122,7 +122,7 @@
     "rotations": {
      "leveling:affliction-leveling": "6c5b4640a71a",
      "leveling:demonology-leveling": "7b9fece8fe69",
-     "leveling:destruction-leveling": "07943c930006"
+     "leveling:destruction-leveling": "9e7a0708be0b"
     }
    }
   },
@@ -158,12 +158,12 @@
     }
    },
    "leveling": {
-    "plan": "Destruction levels as a nuker behind the Voidwalker, and the wand is the filler: between casts you wand the mob. **Immolate** on a fresh mob, **Bane of Agony** on every pull from level 8, **Shadow Bolt** only while you have more than 60% of your mana and the mob has more than 35% of its health, **Conflagrate** from level 31 (whenever it is ready from 39, when **Shadow and Flame** is 5/5) and **Shadowburn** (29) to finish. The wand does 35-45% of your damage from 10 to 30 and 22-28% from 39 (the fight lab, 2026-11-23): the tuned rules keep **Shadow Bolt** for spare mana and switch **Incinerate** off. The list casts no **Corruption**.",
+    "plan": "Destruction levels as a nuker behind the Voidwalker, and the wand is the filler: between casts you wand the mob. **Immolate** on a fresh mob, **Bane of Agony** on every pull from level 8, **Shadow Bolt** only while you have more than 60% of your mana and the mob has more than 35% of its health, **Conflagrate** from level 39, whenever it is ready (the talent comes at 31, but until **Shadow and Flame** is 5/5 it uses up your **Immolate**, so it waits) and **Shadowburn** (29) to finish. The wand does 35-45% of your damage from 10 to 30 and 22-28% from 39 (the fight lab, 2026-11-23): the tuned rules keep **Shadow Bolt** for spare mana and switch **Incinerate** off. The list casts no **Corruption**.",
     "why": [
      "The Destruction points come first: **Bane** (levels 10-14) makes **Shadow Bolt** and **Immolate** 0.5 seconds faster, **Destructive Reach** (15-16) adds 20% to the range of your Destruction spells, **Cataclysm** (17-19) makes your Destruction spells 10% cheaper, **Ruin** (20-24) doubles their critical strike bonus, **Agonizing Flames** (25-27) adds 10% to their damage and **Improved Shadow Bolt** (28) makes a **Shadow Bolt** critical strike raise the Shadow damage the mob takes from you by 4% for 12 seconds.",
-     "Send the Voidwalker in first and put **Immolate** on a mob above 30% of its health, once it will not pull the mob off the Voidwalker. From level 8 **Bane of Agony** goes on every mob (from 10 right after your opening **Shadow Bolt**), on a mob above 35% of its health: the tuned rules force it, from 20 since 2026-11-22 (6% faster per kill over levels 20-60 in the fight lab) and from 8 by hand since 2026-11-23 (11.6-12.5% faster at 8-9, 3-8% at 10-19), though it is 1.5-2% slower at 31-38 while **Conflagrate** still uses up **Immolate**.",
-     "With 5 points in **Shadow and Flame** (levels 35-39), **Conflagrate** no longer eats your **Immolate**, so cast it whenever it is ready on a burning mob; before that, cast it when **Immolate** has about 3 seconds left. **Shadow and Flame** also gives 20% more Shadow damage for 20 seconds after a **Conflagrate** and 20% more Fire damage after a **Shadowburn**; **Fire and Brimstone** (32-34) adds 25% critical strike chance to **Conflagrate**. Before **Shadow and Flame** 5/5 (39) **Conflagrate** uses up your **Immolate**: the fight lab is 4-6% slower a kill at 31-35 pressing it than holding it until 39 (2026-11-23). The page presses it as Destruction's signature spell; hold it until 39 if you only want speed.",
-     "Between casts the wand is the filler. **Shadow Bolt** only while you have more than 60% of your mana (the re-tune of 2026-11-21: 3% faster per kill over levels 20-60, 18% at 35) and never on a mob below 35% of its health (the 2026-11-07 re-tune, about 3% faster per kill). Finish with **Shadowburn** or **Conflagrate** when either would kill it; **Conflagrate** itself is cast only on a mob above a fifth of its health.",
+     "Send the Voidwalker in first and put **Immolate** on a mob above 30% of its health, once it will not pull the mob off the Voidwalker. From level 8 **Bane of Agony** goes on every mob (from 10 right after your opening **Shadow Bolt**), on a mob above 35% of its health: the tuned rules force it, from 20 since 2026-11-22 (6% faster per kill over levels 20-60 in the fight lab) and from 8 by hand since 2026-11-23 (11.6-12.5% faster at 8-9, 3-8% at 10-19).",
+     "With 5 points in **Shadow and Flame** (levels 35-39), **Conflagrate** no longer eats your **Immolate**, so from 39 cast it whenever it is ready on a burning mob. Before that, hold it: a **Conflagrate** ends the **Immolate** it hits, and pressing it even in **Immolate**'s last 3 seconds costs 4-6% a kill at 31-35 and 0.5% at 38 (the fight lab, 2026-11-23; the rules hold it since the same day). **Shadow and Flame** also gives 20% more Shadow damage for 20 seconds after a **Conflagrate** and 20% more Fire damage after a **Shadowburn**; **Fire and Brimstone** (32-34) adds 25% critical strike chance to **Conflagrate**.",
+     "Between casts the wand is the filler. **Shadow Bolt** only while you have more than 60% of your mana (the re-tune of 2026-11-21: 3% faster per kill over levels 20-60, 18% at 35) and never on a mob below 35% of its health (the 2026-11-07 re-tune, about 3% faster per kill). Finish with **Shadowburn** (or **Conflagrate** from 39) when either would kill it; **Conflagrate** itself is cast only on a mob above a fifth of its health.",
      "The same re-tune switched off **Fear** (about 5% faster per kill), **Drain Life** (about 3%), **Searing Pain** (about 1%) and **Incinerate** (about 3%). No **Life Tap** in a fight: with **Shadow Bolt** kept for spare mana the fight lab almost never needs one. **Corruption** stays off as well: forced in from level 20 it was 4% slower per kill (2026-11-22). Between fights tap back to 70% mana, heal the Voidwalker with **Consume Shadows** or **Health Funnel**, eat below 40% health (the tuned rule). Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17)."
     ],
     "caveats": [
@@ -179,7 +179,7 @@
     "rotations": {
      "leveling:affliction-leveling": "6c5b4640a71a",
      "leveling:demonology-leveling": "7b9fece8fe69",
-     "leveling:destruction-leveling": "07943c930006"
+     "leveling:destruction-leveling": "9e7a0708be0b"
     }
    }
   },
@@ -237,7 +237,7 @@
     "rotations": {
      "leveling:affliction-leveling": "6c5b4640a71a",
      "leveling:demonology-leveling": "7b9fece8fe69",
-     "leveling:destruction-leveling": "07943c930006"
+     "leveling:destruction-leveling": "9e7a0708be0b"
     }
    }
   },
@@ -265,7 +265,7 @@
     "rotations": {
      "leveling:affliction-leveling": "6c5b4640a71a",
      "leveling:demonology-leveling": "7b9fece8fe69",
-     "leveling:destruction-leveling": "07943c930006"
+     "leveling:destruction-leveling": "9e7a0708be0b"
     }
    }
   },
@@ -291,7 +291,7 @@
     "rotations": {
      "leveling:affliction-leveling": "6c5b4640a71a",
      "leveling:demonology-leveling": "7b9fece8fe69",
-     "leveling:destruction-leveling": "07943c930006"
+     "leveling:destruction-leveling": "9e7a0708be0b"
     }
    }
   }

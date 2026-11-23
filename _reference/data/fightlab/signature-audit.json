@@ -1874,7 +1874,7 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "5b64fe398f92",
+    "fingerprint": "118dc4588df3",
     "date": "2026-11-23",
     "fights": 300
    },
@@ -1882,8 +1882,8 @@
     "spec": "Destruction",
     "rotation": "destruction-leveling",
     "ok": false,
-    "verdict": "FAIL: core share 37% < 60%",
-    "core_share": 0.3715,
+    "verdict": "FAIL: core share 33% < 60%",
+    "core_share": 0.3276,
     "min_share": 0.6,
     "required": [],
     "core": [
@@ -1898,7 +1898,7 @@
     "casts_60": {},
     "missing_talents": [],
     "uncast": [],
-    "fingerprint": "2582f50b8fe0",
+    "fingerprint": "22eeb11e377c",
     "date": "2026-11-23",
     "fights": 300
    },
@@ -5006,20 +5006,20 @@
     ],
     "rule_issues": [],
     "casts_60": {},
-    "core_share": 0.3715,
+    "core_share": 0.3276,
     "min_share": 0.6,
-    "weighted": 39.73,
-    "verdict": "FAIL: core share 37% < 60%",
+    "weighted": 39.69,
+    "verdict": "FAIL: core share 33% < 60%",
     "ok": false,
     "missing_talents": [],
     "uncast": [],
     "top_shares": {
-     "Wand": 0.349,
-     "Bane of Agony": 0.229,
-     "Immolate": 0.206,
-     "Conflagrate": 0.091,
-     "Voidwalker melee": 0.078,
-     "Shadow Bolt": 0.046
+     "Wand": 0.383,
+     "Immolate": 0.257,
+     "Bane of Agony": 0.232,
+     "Voidwalker melee": 0.083,
+     "Shadow Bolt": 0.043,
+     "Death Coil": 0.001
     }
    },
    {

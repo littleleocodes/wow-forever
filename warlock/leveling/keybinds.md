@@ -74,9 +74,9 @@ Each spec's level-by-level guide has its own keybinds table. They keep the keys 
   brings a second mob. The Amplify Curse macro takes 1 at 20 and Siphon Life takes 3 at 34; key 2's Immolate goes quiet from 40,
   when Wrack takes its mana. R's Drain Life is the heal, F's Death Coil the save.
 - [Destruction](destruction-by-level.md): Mouse 4's pull macro casts Shadow Bolt in place of Corruption, from 10 (the fight lab opens with
-  a bolt while the Voidwalker takes the mob, then Immolate). R holds Conflagrate (30) and Mouse 5 Shadowburn (29): the tuned rules of
-  2026-11-07 never cast Drain Life, Searing Pain or Fear. 1 and 3 stay free (no Affliction dots). E keeps Fear for a pull that brings a
-  second mob, though those rules never cast it.
+  a bolt while the Voidwalker takes the mob, then Immolate). R holds Conflagrate from 31 (it waits until Shadow and Flame is
+  5/5, at 39) and Mouse 5 Shadowburn (29): the tuned rules of 2026-11-07 never cast Drain Life, Searing Pain or Fear. 1 and 3 stay
+  free (no Affliction dots). E keeps Fear for a pull that brings a second mob, though those rules never cast it.
 - [Affliction-Demonology](affliction-demonology-by-level.md) (27/24/0): this layout without the brand. Mouse 5 stays free (no Demonic
   Brand, so the list casts no Searing Pain), the Amplify Curse macro takes 1 at 20 and Siphon Life takes 3 at 30; Health Funnel on Shift+R heals the Voidwalker between fights (no Improved Health Funnel).
 

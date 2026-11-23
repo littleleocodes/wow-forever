@@ -113,7 +113,7 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 | Demonology | page | demonology-open-leveling (22/29/0) | demonology-leveling | - | - | 13% (min 0%) | 34.4 | OK |
 | Demonology | slot | demonology-leveling (21/30/0) | demonology-leveling | - | - | 13% (min 0%) | 34.8 | OK |
 | Destruction | page | destruction-open-leveling (6/9/36) | destruction-leveling | - | - | 60% (min 60%) | 35.4 | OK |
-| Destruction | slot | destruction-leveling (21/0/30) | destruction-leveling | - | - | 37% (min 60%) | 39.7 | FAIL: core share 37% < 60% |
+| Destruction | slot | destruction-leveling (21/0/30) | destruction-leveling | - | - | 33% (min 60%) | 39.7 | FAIL: core share 33% < 60% |
 | Affliction-Demonology | page | opt-affliction-leveling-leveling-st (27/24/0) | demonology-leveling | - | Corruption 1.28 | 64% (min 50%) | 34.6 | OK |
 | Affliction-Demonology | slot | leveling-affliction (23/26/2) | demonology-leveling | - | Corruption 1.33 | 64% (min 50%) | 35.1 | OK |
 | Affliction-Demonology | slot | affliction-demonology-open-leveling (27/24/0) | demonology-leveling | - | Corruption 1.24 | 67% (min 50%) | 33.9 | OK |

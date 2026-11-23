@@ -7,7 +7,7 @@
     "rotation": "feral-cat-dps",
     "provisional_order": false,
     "fingerprint": "f467f23fc86a6674",
-    "inputs_fingerprint": "6bc3f77e99ced46c",
+    "inputs_fingerprint": "a21cf8b4d1f678be",
     "guide_fingerprint": "da3531482a1b",
     "fail": [],
     "notes": [
@@ -346,7 +346,7 @@
     "rotation": "balance-dps",
     "provisional_order": false,
     "fingerprint": "0b5844f13664bbfc",
-    "inputs_fingerprint": "d5a33aad7483d83f",
+    "inputs_fingerprint": "69b4807974c5929b",
     "guide_fingerprint": "eb26ec048bad",
     "fail": [],
     "notes": [
@@ -671,7 +671,7 @@
     "rotation": "feral-cat-dps",
     "provisional_order": false,
     "fingerprint": "f467f23fc86a6674",
-    "inputs_fingerprint": "492669e905f8a571",
+    "inputs_fingerprint": "857ef28b93f15311",
     "guide_fingerprint": "7b7899d156b0",
     "fail": [],
     "notes": [
@@ -1013,7 +1013,7 @@
     "rotation": "melee-dps",
     "provisional_order": false,
     "fingerprint": "1c518aadc30a4769",
-    "inputs_fingerprint": "12cdfb5774c2a9d8",
+    "inputs_fingerprint": "1db20864b6008e91",
     "guide_fingerprint": "d64d91bc149a",
     "fail": [],
     "notes": [
@@ -1433,7 +1433,7 @@
     "rotation": "bm-leveling",
     "provisional_order": false,
     "fingerprint": "6eebc3778ab45261",
-    "inputs_fingerprint": "0b87640b4a41ca13",
+    "inputs_fingerprint": "57edbc210f47fde8",
     "guide_fingerprint": "0ec807904bde",
     "fail": [],
     "notes": [
@@ -1841,14 +1841,14 @@
     "rotation": "mm-raid",
     "provisional_order": false,
     "fingerprint": "44f1c473b6cf9be9",
-    "inputs_fingerprint": "2d99b0308f4f66bb",
+    "inputs_fingerprint": "07db1b36593d34cc",
     "guide_fingerprint": "9c9d42781e0d",
     "fail": [],
     "notes": [
      "Ld: the rules file's veto takes Multi-Shot off; the guide names it only to say it is not cast",
      "Lh: 12.4 s a kill at 10, 13.1 at 12 (+6%): ordinary scaling: the mob's health grows +39%, your damage per second +32%; fight time 12.4 -> 13.1 s (+6%), downtime 0.0 -> 0.0 s (idle 0% -> 0%); mob health +39% against damage per second +32%; points Lethal Attacks 1->3; ranks Arcane Shot rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Lethal Attacks 1->3; ranks: Arcane Shot rank 1->2; gear main stats 25->27; mob health 187->243 (+30%), swing 13->17, armor 450->541]",
      "Lh: 13.1 s a kill at 12, 15.0 at 19 (+15%): ordinary scaling: the mob's health grows +73%, your damage per second +60%; fight time 13.1 -> 14.2 s (+8%), downtime 0.0 -> 0.6 s (idle 0% -> 4%); mob health +73% against damage per second +60%; points Careful Aim 0->5, Lethal Attacks 3->5; ranks Bite rank 2->3, Claw rank 2->3, Serpent Sting rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Careful Aim 0->5, Lethal Attacks 3->5; ranks: Bite rank 2->3, Claw rank 2->3, Serpent Sting rank 2->3; gear main stats 27->57; mob health 243->438 (+80%), swing 17->30, armor 541->789]",
-     "Lh: 15.0 s a kill at 19, 16.2 at 20 (+8%): Aimed Shot arrives at 20 and the signature rule has the list press it (0.95 a kill, 19% of the damage at 20): the fight is shorter, but its mana adds about 1.9 s of drinking a kill (0.87 -> 2.78 s; idle 6% -> 17%), so a kill takes 1.2 s longer. The audit session's ruling (a) of 2026-11-22 keeps the rule, and the page's signature line says what it costs (render_modes.SIG_COST: about 4% a kill over 20-60, all of it drinking). The rest is ordinary scaling: mob health +6%, gear main stats 57->64, Improved Stings 0->1 (drafted from the printed cause, 2026-11-23; for the delegator's read) [points: Improved Stings 0->1; ranks: Aimed Shot rank 0->1, Arcane Shot rank 2->3, Growl rank 2->3; gear main stats 57->64; mob health 438->466 (+6%), swing 30->32, armor 789->817]",
+     "Lh: 15.0 s a kill at 19, 16.2 at 20 (+8%): Aimed Shot arrives at 20 and the signature rule has the list press it (0.95 a kill, 19% of the damage at 20): the fight is shorter, but its mana adds about 1.9 s of drinking a kill (0.87 -> 2.78 s; idle 6% -> 17%), so a kill takes 1.2 s longer. The audit session's ruling (a) of 2026-11-22 keeps the rule, and the page's signature line says what it costs (render_modes.SIG_COST: about 4% a kill over 20-60, all of it drinking). The rest is ordinary scaling: mob health +6%, gear main stats 57->64, Improved Stings 0->1 (drafted from the printed cause, 2026-11-23; read by the audit session) [points: Improved Stings 0->1; ranks: Aimed Shot rank 0->1, Arcane Shot rank 2->3, Growl rank 2->3; gear main stats 57->64; mob health 438->466 (+6%), swing 30->32, armor 789->817]",
      "Lh: 16.2 s a kill at 20, 17.2 at 25 (+6%): ordinary scaling over four or more levels [points: Improved Stings 1->3, Rapid Killing 0->2, Trueshot Aura 0->1; ranks: Bite rank 3->4, Claw rank 3->4, Hunter's Mark rank 1->2; gear main stats 64->95; mob health 466->688 (+48%), swing 32->41, armor 817->1026]",
      "Lh: 17.2 s a kill at 25, 18.2 at 26 (+6%): ordinary scaling: the mob's health grows +14%, your damage per second +12%; fight time 14.2 -> 14.5 s (+2%), downtime 3.3 -> 4.1 s (idle 19% -> 22%); mob health +14% against damage per second +12%; points Efficiency 0->1; ranks Serpent Sting rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Efficiency 0->1; ranks: Serpent Sting rank 3->4; gear main stats 95->101; mob health 688->751 (+9%), swing 41->42, armor 1026->1061]",
      "Lh: 18.4 s a kill at 30, 22.1 at 39 (+20%): ordinary scaling: the mob's health grows +55%, your damage per second +30%; fight time 15.5 -> 18.5 s (+19%), downtime 3.5 -> 4.2 s (idle 18% -> 18%); mob health +55% against damage per second +30%; pressed now: Feign Death, Melee; points Barrage 0->3, Efficiency 4->5, Improved Tracking 0->1, Ranged Weapon Specialization 0->4; ranks Aimed Shot rank 2->3, Arcane Shot rank 4->5, Bite rank 4->5, Claw rank 4->5, Serpent Sting rank 4->5 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Barrage 0->3, Efficiency 4->5, Improved Tracking 0->1, Ranged Weapon Specialization 0->4; ranks: Aimed Shot rank 2->3, Arcane Shot rank 4->5, Bite rank 4->5, Claw rank 4->5, Raptor Strike rank 4->5, Serpent Sting rank 4->5, Wing Clip rank 1->2; gear main stats 125->153; mob health 1002->1737 (+73%), swing 48->65, armor 1200->1961]",
@@ -2265,7 +2265,7 @@
     "rotation": "melee-dps",
     "provisional_order": false,
     "fingerprint": "1c518aadc30a4769",
-    "inputs_fingerprint": "524ee4c5be283fdd",
+    "inputs_fingerprint": "361959d2aaa4dfe5",
     "guide_fingerprint": "6b800a134da4",
     "fail": [],
     "notes": [
@@ -2788,7 +2788,7 @@
     "rotation": "bm-leveling",
     "provisional_order": false,
     "fingerprint": "6eebc3778ab45261",
-    "inputs_fingerprint": "c446a787d5d9f65b",
+    "inputs_fingerprint": "4356cc1aac4759af",
     "guide_fingerprint": "d403756158b4",
     "fail": [],
     "notes": [
@@ -3218,14 +3218,14 @@
   }
  },
  "mage": {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "specs": {
    "Frost": {
     "build": "frost-open-leveling",
     "rotation": "frost-leveling",
     "provisional_order": false,
-    "fingerprint": "74cc1d13c4fe90a3",
-    "inputs_fingerprint": "c4d660df70cb5c2e",
+    "fingerprint": "498754eb5d034477",
+    "inputs_fingerprint": "326a5365c431ebc4",
     "guide_fingerprint": "07d551a6216b",
     "fail": [],
     "notes": [
@@ -3519,8 +3519,8 @@
     "build": "arcane-frost-open-leveling",
     "rotation": "barrage-frost-leveling",
     "provisional_order": false,
-    "fingerprint": "8ce342ce48f45518",
-    "inputs_fingerprint": "71d954ae036d1186",
+    "fingerprint": "161e2939bde65e04",
+    "inputs_fingerprint": "bf178391440a9d59",
     "guide_fingerprint": "327a3a6a8630",
     "fail": [],
     "notes": [
@@ -3888,8 +3888,8 @@
     "build": "arcane-open-leveling",
     "rotation": "arcane-leveling",
     "provisional_order": false,
-    "fingerprint": "16b1ae397504adbb",
-    "inputs_fingerprint": "736df0ecdecacaca",
+    "fingerprint": "d87ed6c49c2a4e3a",
+    "inputs_fingerprint": "3a162f5a48dd38b3",
     "guide_fingerprint": "d05871a38da7",
     "fail": [],
     "notes": [
@@ -4256,8 +4256,8 @@
     "build": "fire-open-leveling",
     "rotation": "fire-leveling",
     "provisional_order": false,
-    "fingerprint": "93d956aa47e0a0bb",
-    "inputs_fingerprint": "9aefaaf03d47e237",
+    "fingerprint": "0598303590ac2bf4",
+    "inputs_fingerprint": "82955a8e91c5b9f0",
     "guide_fingerprint": "2c0efc374f80",
     "fail": [],
     "notes": [
@@ -4650,14 +4650,14 @@
   }
  },
  "paladin": {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "specs": {
    "Retribution": {
     "build": "leveling-retribution",
     "rotation": "ret-dps",
     "provisional_order": false,
-    "fingerprint": "61ba0176d2aca770",
-    "inputs_fingerprint": "b149d71699ef25f4",
+    "fingerprint": "1d117f6f047fac1c",
+    "inputs_fingerprint": "3a92c2e3321e0f04",
     "guide_fingerprint": "17494794f957",
     "fail": [],
     "notes": [
@@ -4946,8 +4946,8 @@
     "build": "prot-ret-open-leveling",
     "rotation": "ret-dps",
     "provisional_order": false,
-    "fingerprint": "61ba0176d2aca770",
-    "inputs_fingerprint": "475d87257f9c4de2",
+    "fingerprint": "1d117f6f047fac1c",
+    "inputs_fingerprint": "112edc268f7c87d8",
     "guide_fingerprint": "3ccbad7bb710",
     "fail": [],
     "notes": [
@@ -5280,8 +5280,8 @@
     "build": "shockadin-open-leveling",
     "rotation": "holy-leveling",
     "provisional_order": false,
-    "fingerprint": "9793ced9f1b5c4e5",
-    "inputs_fingerprint": "891e18e8a362a08f",
+    "fingerprint": "b132761f0a8c4c93",
+    "inputs_fingerprint": "8cbd232d95b78790",
     "guide_fingerprint": "c8b6e7f28e09",
     "fail": [],
     "notes": [
@@ -5630,8 +5630,8 @@
     "build": "holy-leveling",
     "rotation": "holy-leveling",
     "provisional_order": false,
-    "fingerprint": "9793ced9f1b5c4e5",
-    "inputs_fingerprint": "7e4cd2ca31edf761",
+    "fingerprint": "b132761f0a8c4c93",
+    "inputs_fingerprint": "1fbb2b05399c5ff9",
     "guide_fingerprint": "461e0edfa4a5",
     "fail": [],
     "notes": [
@@ -5989,8 +5989,8 @@
     "build": "protection-leveling",
     "rotation": "prot-leveling",
     "provisional_order": false,
-    "fingerprint": "c5d378a2d27ac207",
-    "inputs_fingerprint": "2303fbcf1f847601",
+    "fingerprint": "d70b1bc5c1ddcd61",
+    "inputs_fingerprint": "e6a5ba21a6e3e205",
     "guide_fingerprint": "875bb8b6a9ff",
     "fail": [],
     "notes": [
@@ -6385,7 +6385,7 @@
     "rotation": "shadow-dps",
     "provisional_order": false,
     "fingerprint": "f793002ef791f561",
-    "inputs_fingerprint": "9f8dc26e66fc3c18",
+    "inputs_fingerprint": "94959e0f6b58e081",
     "guide_fingerprint": "226dc9c2a411",
     "fail": [],
     "notes": [
@@ -6695,7 +6695,7 @@
     "rotation": "discipline-leveling",
     "provisional_order": false,
     "fingerprint": "78d44d032fc14d17",
-    "inputs_fingerprint": "c81b445d07b10e3f",
+    "inputs_fingerprint": "7b76a3d578fd717e",
     "guide_fingerprint": "bd9382472f84",
     "fail": [],
     "notes": [
@@ -6964,7 +6964,7 @@
     "rotation": "holy-leveling",
     "provisional_order": false,
     "fingerprint": "2d16fc1379dd25f2",
-    "inputs_fingerprint": "23186106529c9846",
+    "inputs_fingerprint": "197dec1198da9a6b",
     "guide_fingerprint": "5d7b06d238ed",
     "fail": [],
     "notes": [
@@ -6972,7 +6972,7 @@
      "Ld: the rules file's veto takes Penance off; the guide names it only to say it is not cast",
      "Lh: 26.5 s a kill at 10, 37.6 at 19 (+42%): ordinary scaling: the mob's health grows +140%, your damage per second +93%; fight time 19.9 -> 24.7 s (+25%), downtime 10.2 -> 18.4 s (idle 34% -> 43%); mob health +140% against damage per second +93%; points Mental Strength 0->5, Twin Disciplines 1->5; ranks Mind Blast rank 1->2, Power Word: Shield rank 1->3, Shadow Word: Pain rank 2->3, Smite rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Mental Strength 0->5, Twin Disciplines 1->5; ranks: Mind Blast rank 1->2, Power Word: Shield rank 1->3, Shadow Word: Pain rank 2->3, Smite rank 2->3; gear main stats 24->56; mob health 187->438 (+134%), swing 13->30, armor 450->789]",
      "Lh: 39.3 s a kill at 20, 45.6 at 29 (+16%): ordinary scaling: the mob's health grows +104%, your damage per second +71%; fight time 26.7 -> 31.8 s (+19%), downtime 18.0 -> 19.1 s (idle 40% -> 38%); mob health +104% against damage per second +71%; points Improved Power Word: Shield 0->3, Inner Focus 0->1, Meditation 1->3, Silent Resolve 0->3; ranks Holy Fire rank 1->2, Mind Blast rank 2->4, Power Word: Shield rank 3->4, Shadow Word: Pain rank 3->4, Smite rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Improved Power Word: Shield 0->3, Inner Focus 0->1, Meditation 1->3, Silent Resolve 0->3; ranks: Holy Fire rank 1->2, Mind Blast rank 2->4, Power Word: Shield rank 3->4, Shadow Word: Pain rank 3->4, Smite rank 3->4; gear main stats 60->130; mob health 466->939 (+102%), swing 32->46, armor 817->1165]",
-     "Lh: 45.3 s a kill at 32, 51.0 at 40 (+13%): ordinary scaling over eight levels: the mob's health grows +64%, your damage per second +49%; fight time 29.1 -> 31.9 s (+10%), idle 36% -> 37%; points Holy Specialization 0->5, Improved Renew 0->1, Twilight Focus 1->3; ranks Holy Fire 3->4, Mind Blast 4->6, Power Word: Shield 5->6, Shadow Word: Death 1->2, Shadow Word: Pain 4->5, Smite 5->6; gear main stats 152->168. The stage edge moved to 32 with Shadow Word: Death (30->32 reads -2%); 30->40 had read +11% (drafted from the printed cause, 2026-11-23; for the delegator's read) [points: Holy Specialization 0->5, Improved Renew 0->1, Twilight Focus 1->3; ranks: Holy Fire rank 3->4, Mind Blast rank 4->6, Power Word: Shield rank 5->6, Shadow Word: Death rank 1->2, Shadow Word: Pain rank 4->5, Smite rank 5->6; gear main stats 152->168; mob health 1125->1844 (+64%), swing 51->68, armor 1280->2101]",
+     "Lh: 45.3 s a kill at 32, 51.0 at 40 (+13%): ordinary scaling over eight levels: the mob's health grows +64%, your damage per second +49%; fight time 29.1 -> 31.9 s (+10%), idle 36% -> 37%; points Holy Specialization 0->5, Improved Renew 0->1, Twilight Focus 1->3; ranks Holy Fire 3->4, Mind Blast 4->6, Power Word: Shield 5->6, Shadow Word: Death 1->2, Shadow Word: Pain 4->5, Smite 5->6; gear main stats 152->168. The stage edge moved to 32 with Shadow Word: Death (30->32 reads -2%); 30->40 had read +11% (drafted from the printed cause, 2026-11-23; read by the audit session) [points: Holy Specialization 0->5, Improved Renew 0->1, Twilight Focus 1->3; ranks: Holy Fire rank 3->4, Mind Blast rank 4->6, Power Word: Shield rank 5->6, Shadow Word: Death rank 1->2, Shadow Word: Pain rank 4->5, Smite rank 5->6; gear main stats 152->168; mob health 1125->1844 (+64%), swing 51->68, armor 1280->2101]",
      "Lg: Chastise never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
      "Lg: Contingency Plan never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
      "Lg: Feedback never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
@@ -7279,7 +7279,7 @@
     "rotation": "holy-leveling",
     "provisional_order": false,
     "fingerprint": "2d16fc1379dd25f2",
-    "inputs_fingerprint": "1959f561708a71c3",
+    "inputs_fingerprint": "59b56a023ee6faef",
     "guide_fingerprint": "2c73f75e0f1b",
     "fail": [],
     "notes": [
@@ -7288,7 +7288,7 @@
      "Lh: 26.5 s a kill at 10, 35.6 at 19 (+34%): ordinary scaling: the mob's health grows +140%, your damage per second +101%; fight time 19.8 -> 23.7 s (+20%), downtime 10.3 -> 17.2 s (idle 34% -> 42%); mob health +140% against damage per second +101%; points Holy Precision 0->1, Power in Light 0->5, Twin Disciplines 0->2, Wand Specialization 1->2; ranks Mind Blast rank 1->2, Power Word: Shield rank 1->3, Shadow Word: Pain rank 2->3, Smite rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Holy Precision 0->1, Power in Light 0->5, Twin Disciplines 0->2, Wand Specialization 1->2; ranks: Mind Blast rank 1->2, Power Word: Shield rank 1->3, Shadow Word: Pain rank 2->3, Smite rank 2->3; gear main stats 24->56; mob health 187->438 (+134%), swing 13->30, armor 450->789]",
      "Lh: 35.6 s a kill at 19, 37.9 at 20 (+6%): a new spell's cost: **Holy Fire** (20, 85 mana and a 3.5-second cast) joins the list while the mob grows +6%; points: Mental Agility 0->1; ranks: Holy Fire rank 0->1; gear main stats 56->60; mob health 438->466 (+6%), swing 30->32, armor 789->817 (the printed cause, 2026-11-22; cleared by the audit session) [points: Mental Agility 0->1; ranks: Holy Fire rank 0->1; gear main stats 56->60; mob health 438->466 (+6%), swing 30->32, armor 789->817]",
      "Lh: 37.9 s a kill at 20, 40.8 at 29 (+8%): ordinary scaling over four or more levels [points: Meditation 0->3, Mental Agility 1->3, Spirit Tap 0->4; ranks: Holy Fire rank 1->2, Mind Blast rank 2->4, Power Word: Shield rank 3->4, Shadow Word: Pain rank 3->4, Smite rank 3->4; gear main stats 60->130; mob health 466->939 (+102%), swing 32->46, armor 817->1165]",
-     "Lh: 38.5 s a kill at 32, 44.4 at 40 (+15%): ordinary scaling over eight levels: the mob's health grows +64%, your damage per second +54%; fight time 28.3 -> 30.1 s (+7%), idle 27% -> 32%; points Divine Fury 0->1, Holy Specialization 0->5, Improved Power Word: Shield 0->1, Twilight Focus 0->1; ranks Holy Fire 3->4, Mind Blast 4->6, Power Word: Shield 5->6, Shadow Word: Death 1->2, Shadow Word: Pain 4->5, Smite 5->6. The stage edge moved to 32 with Shadow Word: Death (30->32 reads -3%) (drafted from the printed cause, 2026-11-23; for the delegator's read) [points: Divine Fury 0->1, Holy Specialization 0->5, Improved Power Word: Shield 0->1, Twilight Focus 0->1; ranks: Holy Fire rank 3->4, Mind Blast rank 4->6, Power Word: Shield rank 5->6, Shadow Word: Death rank 1->2, Shadow Word: Pain rank 4->5, Smite rank 5->6; gear main stats 152->168; mob health 1125->1844 (+64%), swing 51->68, armor 1280->2101]",
+     "Lh: 38.5 s a kill at 32, 44.4 at 40 (+15%): ordinary scaling over eight levels: the mob's health grows +64%, your damage per second +54%; fight time 28.3 -> 30.1 s (+7%), idle 27% -> 32%; points Divine Fury 0->1, Holy Specialization 0->5, Improved Power Word: Shield 0->1, Twilight Focus 0->1; ranks Holy Fire 3->4, Mind Blast 4->6, Power Word: Shield 5->6, Shadow Word: Death 1->2, Shadow Word: Pain 4->5, Smite 5->6. The stage edge moved to 32 with Shadow Word: Death (30->32 reads -3%) (drafted from the printed cause, 2026-11-23; read by the audit session) [points: Divine Fury 0->1, Holy Specialization 0->5, Improved Power Word: Shield 0->1, Twilight Focus 0->1; ranks: Holy Fire rank 3->4, Mind Blast rank 4->6, Power Word: Shield rank 5->6, Shadow Word: Death rank 1->2, Shadow Word: Pain rank 4->5, Smite rank 5->6; gear main stats 152->168; mob health 1125->1844 (+64%), swing 51->68, armor 1280->2101]",
      "Lg: Chastise never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
      "Lg: Contingency Plan never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
      "Lg: Feedback never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
@@ -7587,14 +7587,14 @@
   }
  },
  "rogue": {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "specs": {
    "Combat": {
     "build": "combat-open-leveling",
     "rotation": "combat-swords-raid",
     "provisional_order": false,
-    "fingerprint": "d8787679481b9b21",
-    "inputs_fingerprint": "6ba802a2f6739940",
+    "fingerprint": "b1a9bc8101e146f4",
+    "inputs_fingerprint": "a452bc4f5d99fb8f",
     "guide_fingerprint": "ff30c7919b52",
     "fail": [],
     "notes": [
@@ -8010,8 +8010,8 @@
     "build": "assassination-open-leveling",
     "rotation": "combat-daggers-raid",
     "provisional_order": false,
-    "fingerprint": "4696e00c0df08a47",
-    "inputs_fingerprint": "e639be6ed5711865",
+    "fingerprint": "b5737416f659d82f",
+    "inputs_fingerprint": "50a86ccb945f0bf5",
     "guide_fingerprint": "fe0161f47e4d",
     "fail": [],
     "notes": [
@@ -8349,8 +8349,8 @@
     "build": "subtlety-open-leveling",
     "rotation": "subtlety-leveling",
     "provisional_order": false,
-    "fingerprint": "fdee586b345a9a8b",
-    "inputs_fingerprint": "31e8c5706baf16a4",
+    "fingerprint": "01dc8b1f30a5ed2a",
+    "inputs_fingerprint": "e5c73dbaa1364b7a",
     "guide_fingerprint": "4f08fcff235e",
     "fail": [],
     "notes": [
@@ -8744,8 +8744,8 @@
     "build": "combat-subtlety-open-leveling",
     "rotation": "subtlety-leveling",
     "provisional_order": false,
-    "fingerprint": "fdee586b345a9a8b",
-    "inputs_fingerprint": "50d176ae45eb3b29",
+    "fingerprint": "01dc8b1f30a5ed2a",
+    "inputs_fingerprint": "2acfa1c9229365e2",
     "guide_fingerprint": "50bd281c6cf1",
     "fail": [],
     "notes": [
@@ -9171,7 +9171,7 @@
     "rotation": "enhancement-dps",
     "provisional_order": false,
     "fingerprint": "bb304a58b193094c",
-    "inputs_fingerprint": "883769d8a3f851c3",
+    "inputs_fingerprint": "e266d4a2142d7ced",
     "guide_fingerprint": "1c937dde4991",
     "fail": [],
     "notes": [
@@ -9464,7 +9464,7 @@
     "rotation": "elemental-dps",
     "provisional_order": false,
     "fingerprint": "de9d5cbe9c591e4b",
-    "inputs_fingerprint": "fa45bd50cdd7ef81",
+    "inputs_fingerprint": "9d7373580c51782b",
     "guide_fingerprint": "20abbd8bad39",
     "fail": [],
     "notes": [
@@ -9849,7 +9849,7 @@
     "rotation": "enhancement-dps",
     "provisional_order": false,
     "fingerprint": "bb304a58b193094c",
-    "inputs_fingerprint": "97575e92c43b84cf",
+    "inputs_fingerprint": "bfcaceac3d3ea78a",
     "guide_fingerprint": "e3ce7af2d8a3",
     "fail": [
      "Lg: Mana Tide Totem (from level 30) is never pressed; forced: never cast when forced (not in the module, never in reach, or never affordable)"
@@ -10157,7 +10157,7 @@
     "rotation": "demonology-leveling",
     "provisional_order": false,
     "fingerprint": "465337fa636bfc13",
-    "inputs_fingerprint": "ae5ad0c22bd313d8",
+    "inputs_fingerprint": "89d9c3abf92aa54a",
     "guide_fingerprint": "c378a7202b62",
     "fail": [],
     "notes": [
@@ -10538,7 +10538,7 @@
     "rotation": "affliction-leveling",
     "provisional_order": false,
     "fingerprint": "7f0e40cbc8e47adf",
-    "inputs_fingerprint": "b09c9975b55d7799",
+    "inputs_fingerprint": "e5eb03dd282df1a1",
     "guide_fingerprint": "9f75d29403f4",
     "fail": [],
     "notes": [
@@ -10886,19 +10886,18 @@
     "build": "destruction-open-leveling",
     "rotation": "destruction-leveling",
     "provisional_order": false,
-    "fingerprint": "db538d6097c7e5f4",
-    "inputs_fingerprint": "fc47154c42b72405",
-    "guide_fingerprint": "07021f86d808",
+    "fingerprint": "2d155f546fd35869",
+    "inputs_fingerprint": "f45a52a980387a07",
+    "guide_fingerprint": "8edbd97f0877",
     "fail": [],
     "notes": [
      "Ld: the rules file's veto takes Drain Life off; the guide names it only to say it is not cast",
      "Ld: the rules file's veto takes Fear off; the guide names it only to say it is not cast",
      "Ld: the rules file's veto takes Incinerate off; the guide names it only to say it is not cast",
      "Ld: the rules file's veto takes Searing Pain off; the guide names it only to say it is not cast",
-     "Lh: 21.4 s a kill at 10, 28.0 at 19 (+31%): ordinary scaling over nine levels: the mob's health grows +134%, your damage per second +83%; fight time 20.4 -> 26.0 s (+28%), idle 5% -> 7%; points Bane 1->5, Cataclysm 0->3, Destructive Reach 0->2; ranks Shadow Bolt 2->3; gear main stats 27->65. With Bane of Agony forced from 8 (by hand, 2026-11-23, bane_below20_1123.py) the row reads 21.4 -> 28.0 s (+31%), against 22.7 -> 30.5 (+34%) before: the window takes 6% off at 10 and 8% at 19, and the rest is the mob's growth. The stage now ends at 19 (the 20-28 stage starts at 20); 10->20 had read +19% (drafted from the printed cause, 2026-11-23; for the delegator's read) [points: Bane 1->5, Cataclysm 0->3, Destructive Reach 0->2; ranks: Bane of Agony rank 1->2, Shadow Bolt rank 2->3; gear main stats 27->65; mob health 187->438 (+134%), swing 13->30, armor 450->789]",
+     "Lh: 21.4 s a kill at 10, 28.0 at 19 (+31%): ordinary scaling over nine levels: the mob's health grows +134%, your damage per second +83%; fight time 20.4 -> 26.0 s (+28%), idle 5% -> 7%; points Bane 1->5, Cataclysm 0->3, Destructive Reach 0->2; ranks Shadow Bolt 2->3; gear main stats 27->65. With Bane of Agony forced from 8 (by hand, 2026-11-23, bane_below20_1123.py) the row reads 21.4 -> 28.0 s (+31%), against 22.7 -> 30.5 (+34%) before: the window takes 6% off at 10 and 8% at 19, and the rest is the mob's growth. The stage now ends at 19 (the 20-28 stage starts at 20); 10->20 had read +19% (drafted from the printed cause, 2026-11-23; read by the audit session) [points: Bane 1->5, Cataclysm 0->3, Destructive Reach 0->2; ranks: Bane of Agony rank 1->2, Shadow Bolt rank 2->3; gear main stats 27->65; mob health 187->438 (+134%), swing 13->30, armor 450->789]",
      "Lh: 27.1 s a kill at 20, 33.0 at 28 (+22%): ordinary scaling over eight levels; points: Agonizing Flames 0->3, Intensity 0->1, Ruin 1->5; ranks: Create Healthstone rank 1->2, Shadow Bolt rank 4->5; gear main stats 71->121; mob health 466->876 (+88%), swing 32->45, armor 817->1130 (the printed cause, 2026-11-22; cleared by the audit session) [points: Agonizing Flames 0->3, Improved Shadow Bolt 0->1, Ruin 1->5; ranks: Bane of Agony rank 2->3, Create Healthstone rank 1->2, Shadow Bolt rank 4->5; gear main stats 71->121; mob health 466->876 (+88%), swing 32->45, armor 817->1130]",
-     "Lh: 32.0 s a kill at 30, 34.6 at 31 (+8%): Conflagrate arrives and is pressed (its veto is 5.2% / 5.1% faster at 31, 3,000 fights, seeds 1/2: it uses up Immolate before Shadow and Flame 5/5); time out of the fight 7% -> 16% (drinking 0 -> 3.5 s a kill); the rest is +2.8%. The page presses it as Destruction's signature spell and says what it costs, as Marksmanship's Aimed Shot (drafted from the printed cause; cleared by the audit session, 2026-11-23) [points: Conflagrate 0->1; ranks: none new; gear main stats 133->138; mob health 1002->1064 (+6%), swing 48->49, armor 1200->1240]",
-     "Lh: 34.6 s a kill at 31, 37.9 at 38 (+10%): ordinary scaling over four or more levels [points: Fire and Brimstone 0->3, Shadow and Flame 0->4; ranks: Bane of Agony rank 3->4, Conflagrate rank 1->2, Create Healthstone rank 2->3, Life Tap rank 3->4, Shadow Bolt rank 5->6, Shadowburn rank 2->3; gear main stats 138->151; mob health 1064->1630 (+53%), swing 49->63, armor 1240->1821]",
+     "Lh: 32.8 s a kill at 31, 37.8 at 38 (+15%): the gate: Conflagrate waits from 31 to 39 (CONFLAG_LEFT -1, the audit session's ruling of 2026-11-23), so these eight levels add no damage tool: Fire and Brimstone (32-34) and Shadow and Flame (35-38) pay from 39, when Conflagrate is pressed. The mob's health grows 53% (1064 -> 1630), its swing 49 -> 63 and its armor 1240 -> 1821, against Shadow Bolt rank 6, Shadowburn rank 3, Bane of Agony rank 4 and gear main stats 138 -> 151. 31 is 5% faster than with Conflagrate pressed there, which makes the climb steeper; 39 takes some of it back (37.1 s) (drafted from the printed cause, 2026-11-23; for the audit session's read) [points: Fire and Brimstone 0->3, Shadow and Flame 0->4; ranks: Bane of Agony rank 3->4, Create Healthstone rank 2->3, Shadow Bolt rank 5->6, Shadowburn rank 2->3; gear main stats 138->151; mob health 1064->1630 (+53%), swing 49->63, armor 1240->1821]",
      "Lg: Bane of Doom never pressed: situational: its hit lands a minute after the cast, after every leveling fight has ended (the lane session, 2026-11-21)",
      "Lg: Corruption never pressed; forced: LEAD: top at 20: -0.88%; filler at 20: -1.13%; the tune compared it as a rules knob (FORCE_CORRUPTION_LEVELS) and left it off; forced at levels 20-60 on the installed rules: -4.10% seed 1, -4.10% seed 2 per kill (faster is +)",
      "Lg: Drain Soul never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 31.7% at least",
@@ -11101,56 +11100,50 @@
       }
      },
      "31": {
-      "seconds": 34.6,
+      "seconds": 32.8,
       "deaths_per_100": 0.0,
-      "idle_share": 0.163,
+      "idle_share": 0.075,
       "casts": {
-       "Shadow Bolt": 0.72,
-       "Bane of Agony": 1.05,
-       "Immolate": 1.15,
-       "Wand": 10.3,
-       "Shadowburn": 1.0,
-       "Conflagrate": 0.76,
-       "Life Tap": 0.04
+       "Shadow Bolt": 0.42,
+       "Bane of Agony": 1.04,
+       "Immolate": 1.18,
+       "Wand": 12.45,
+       "Shadowburn": 1.0
       },
       "pet_casts": {
-       "Torment": 4.08
+       "Torment": 4.36
       },
       "shares": {
-       "Wand": 0.368,
-       "Immolate": 0.156,
-       "Bane of Agony": 0.128,
-       "Voidwalker melee": 0.11,
-       "Shadowburn": 0.093,
-       "Conflagrate": 0.08,
-       "Shadow Bolt": 0.065
+       "Wand": 0.441,
+       "Immolate": 0.174,
+       "Bane of Agony": 0.136,
+       "Voidwalker melee": 0.12,
+       "Shadowburn": 0.092,
+       "Shadow Bolt": 0.036
       }
      },
      "38": {
-      "seconds": 37.9,
+      "seconds": 37.8,
       "deaths_per_100": 0.0,
-      "idle_share": 0.173,
+      "idle_share": 0.091,
       "casts": {
-       "Shadow Bolt": 0.79,
-       "Bane of Agony": 1.05,
-       "Immolate": 1.19,
-       "Wand": 11.53,
-       "Shadowburn": 0.99,
-       "Conflagrate": 0.88,
-       "Create Healthstone": 0.06,
-       "Life Tap": 0.02
+       "Shadow Bolt": 0.29,
+       "Bane of Agony": 1.06,
+       "Immolate": 1.51,
+       "Wand": 15.06,
+       "Shadowburn": 1.0,
+       "Create Healthstone": 0.07
       },
       "pet_casts": {
-       "Torment": 4.26
+       "Torment": 4.84
       },
       "shares": {
-       "Wand": 0.335,
-       "Bane of Agony": 0.166,
-       "Immolate": 0.143,
-       "Shadowburn": 0.104,
-       "Conflagrate": 0.102,
-       "Voidwalker melee": 0.086,
-       "Shadow Bolt": 0.064
+       "Wand": 0.439,
+       "Immolate": 0.177,
+       "Bane of Agony": 0.168,
+       "Voidwalker melee": 0.1,
+       "Shadowburn": 0.092,
+       "Shadow Bolt": 0.024
       }
      },
      "39": {
@@ -11313,7 +11306,7 @@
     "rotation": "demonology-leveling",
     "provisional_order": false,
     "fingerprint": "465337fa636bfc13",
-    "inputs_fingerprint": "62427f0185bb52e2",
+    "inputs_fingerprint": "92bb922a36a13b72",
     "guide_fingerprint": "dce26229c18c",
     "fail": [],
     "notes": [
@@ -11642,14 +11635,14 @@
   }
  },
  "warrior": {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "specs": {
    "Arms": {
     "build": "arms-open-leveling",
     "rotation": "arms-2h-raid",
     "provisional_order": false,
-    "fingerprint": "c9e704c90980bbf5",
-    "inputs_fingerprint": "12f555b06f7feb6d",
+    "fingerprint": "0dfe3f577cb386a8",
+    "inputs_fingerprint": "b2b4fbce21e431bd",
     "guide_fingerprint": "b0ec2e558e04",
     "fail": [],
     "notes": [
@@ -12055,8 +12048,8 @@
     "build": "fury-open-leveling",
     "rotation": "fury-dw-raid",
     "provisional_order": false,
-    "fingerprint": "22ccbcc8e9812cb8",
-    "inputs_fingerprint": "d357329bb8b0fd75",
+    "fingerprint": "06f8a3453d3744e5",
+    "inputs_fingerprint": "3aa8688cc56b6b57",
     "guide_fingerprint": "76ca6fb700a6",
     "fail": [],
     "notes": [
@@ -12478,8 +12471,8 @@
     "build": "protection-leveling",
     "rotation": "prot-leveling",
     "provisional_order": false,
-    "fingerprint": "8870598d69bef1b5",
-    "inputs_fingerprint": "444869737b4cb74a",
+    "fingerprint": "eb4a0929d9a4d7b4",
+    "inputs_fingerprint": "0fd073319e51e388",
     "guide_fingerprint": "2955b07b3eb1",
     "fail": [],
     "notes": [

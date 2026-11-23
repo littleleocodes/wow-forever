@@ -26,5 +26,5 @@
 ## client
 
 - all: The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows. (talents 1.60.1.70753, spells 1.60.1.70938; the pages' footers say so)
-- all: the official simulator's upstream is 624 commits ahead of the pin 2e6e77d84 (head ac1c1d4ed, 2026-11-23): a re-pin is due
+- all: the official simulator's upstream is 626 commits ahead of the pin 2e6e77d84 (head 57df2a7a5, 2026-11-23): a re-pin is due
 
