@@ -63,6 +63,9 @@ NEW_RAID_MATS = {274030: "Malleable Essence of Nature (disenchanted from Hyjal S
 # - "Yes, I don't consider Upper Blackrock Spire a raid. It's within the dungeon and quests realm": its bosses' drops and the quests whose
 #   objective is inside it are in Easy Pre-BiS (the user's decision; the switch stays for the record);
 UBRS_EASY = True
+# quests whose turn-in item comes from the auction house (2026-11-23, the audit session's rule): the Darkmoon Faire's four deck quests
+# (Classic's ids; the deck is eight cards that drop rarely in the world and are traded); their rewards are True lists only
+TRADED_TURNIN_QUESTS = {7907: "Darkmoon Beast Deck", 7927: "Darkmoon Portals Deck", 7928: "Darkmoon Warlords Deck", 7929: "Darkmoon Elementals Deck"}
 # - Warsong Gulch and Arathi Basin "Yes they are" open, with their reputation vendors: all three battlegrounds follow one rule (the audit
 #   session's reading): rewards up to Honored in Easy (battleground_easy, marked PvP), Revered and Exalted in the True lists, a standing no
 #   source gives out of Easy. True open, None as the database dates them (the True lists), False closed (no list);
@@ -87,6 +90,8 @@ ITEM_KINDS = [
     ("world_drop", TRUE2, "a drop in the open world (one that binds when equipped sells on the auction house)", "database drop"),
     ("quest", ALL3, "a quest reward of the game now (Alterac Valley's included; Forever's own quests count)",
      "database quest; cmangos quests.csv zone"),
+    ("quest_traded", TRUE2, "a quest whose turn-in item comes from the auction house (TRADED_TURNIN_QUESTS: the Darkmoon decks), not "
+     "Easy (the audit session, 2026-11-23)", "TRADED_TURNIN_QUESTS"),
     ("quest_ubrs", TRUE2, "a quest whose objective is inside Upper Blackrock Spire, only if UBRS_EASY were off (the user put the Spire "
      "in Easy, so no item takes this kind)", "cmangos quest_geo.csv objectives, quest_item_sources.csv"),
     ("tier05", TRUE2, "Tier 0.5 (the level-58 chain: 10-player Upper Blackrock Spire, the vendors' gold), and the loot of the bosses its "
@@ -438,6 +443,8 @@ def item_kinds(it, ctx):
                             f"{ctx['quest_rep'][int(q['id'])][1]:,}"))
             elif not UBRS_EASY and int(q.get("id") or 0) in ctx["ubrs_quests"]:
                 out.append(("quest_ubrs", qn))
+            elif int(q.get("id") or 0) in TRADED_TURNIN_QUESTS or qn in TRADED_TURNIN_QUESTS.values():
+                out.append(("quest_traded", qn))
             else:
                 out.append(("quest", qn))
         elif "crafted" in s:

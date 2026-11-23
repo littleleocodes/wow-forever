@@ -134,6 +134,7 @@ LIST_DEF = {"dungeon": "dungeons and quests: no crafting recipes, no auction hou
             "bis": "everything obtainable: True Pre-BiS plus the raids open now (none until The Barrow Deeps, Hyjal Summit and Onyxia's "
                    "Lair on 2026-12-09)"}
 KIND_WORDS = {"dungeon_drop_easy": "dungeon", "dungeon_drop": "dungeon", "world_drop": "world drop", "quest": "quest", "quest_ubrs": "quest",
+              "quest_traded": "quest (its turn-in comes from the auction house)",
               "tier05": "Tier 0.5 chain", "craft": "crafted", "rep_to_honored": "reputation (Honored or below)",
               "rep_above_honored": "reputation (Revered or Exalted)", "battleground_easy": "battleground (Honored or below)",
               "battleground": "battleground (Revered or Exalted)", "pvp": "honor rank", "vendor": "vendor",
