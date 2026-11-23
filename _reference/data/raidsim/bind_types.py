@@ -80,6 +80,53 @@ def extract_client(path, build):
     print(f"{(out_dir / 'ItemSparse-bind.csv').relative_to(ROOT)}: {n} of the simulator database's {len(keep)} items")
 
 
+CLIENT_REAGENTS = ROOT / "_reference/data/raw/2026-11-23-wago-1.60.1.71037"
+_REAG = {}
+
+
+def extract_reagents(reagents_csv, effects_csv, build):
+    """The client's reagents of every spell that makes an item of the simulator's database (2026-11-23, the audit session: Forever's own
+    recipes are unknown to Classic's dump, and 97 of them take Malleable Essence of Nature, disenchanted from the new raids' items):
+    SpellReagents (Reagent_0-7, ReagentCount_0-7) joined to SpellEffect's create-item effects (24). Writes SpellReagents-crafts.csv:
+    spell, creates, reagents ("item:count;...")."""
+    keep = sim_item_ids()
+    creates = {}
+    for r in csv.DictReader(open(effects_csv, encoding="utf-8")):
+        if r["Effect"] == "24" and int(r["EffectItemType"] or 0) in keep:
+            creates[int(r["SpellID"])] = int(r["EffectItemType"])
+    import setup   # the database's own recipe spells too (a create effect the client lacks for the item)
+    for it in json.load(open(pathlib.Path(setup.checkout()) / "assets" / "database" / "db.json", encoding="utf-8"))["items"]:
+        for s in it.get("sources") or []:
+            sp = int((s.get("crafted") or {}).get("spellId") or 0)
+            if sp and sp not in creates:
+                creates[sp] = it["id"]
+    out_dir = ROOT / f"_reference/data/raw/2026-11-23-wago-{build}"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    rows = []
+    for r in csv.DictReader(open(reagents_csv, encoding="utf-8")):
+        sp = int(r["SpellID"])
+        if sp in creates:
+            rs = [f"{int(r[f'Reagent_{k}'])}:{int(r[f'ReagentCount_{k}'])}" for k in range(8) if int(r[f"Reagent_{k}"] or 0)]
+            rows.append((sp, creates[sp], ";".join(rs)))
+    with open(out_dir / "SpellReagents-crafts.csv", "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["spell", "creates", "reagents"])
+        w.writerows(sorted(rows))
+    print(f"{(out_dir / 'SpellReagents-crafts.csv').relative_to(ROOT)}: {len(rows)} crafting spells of {len(set(creates.values()))} items")
+
+
+def reagents():
+    """({spell: {reagent item ids}}, {item: [spells that make it]}) from the client (CLIENT_REAGENTS)."""
+    if not _REAG:
+        by_spell, by_item = {}, {}
+        for r in csv.DictReader(open(CLIENT_REAGENTS / "SpellReagents-crafts.csv", encoding="utf-8")):
+            sp, it = int(r["spell"]), int(r["creates"])
+            by_spell[sp] = {int(x.split(":")[0]) for x in r["reagents"].split(";") if x}
+            by_item.setdefault(it, []).append(sp)
+        _REAG.update(spell=by_spell, item=by_item)
+    return _REAG["spell"], _REAG["item"]
+
+
 def load():
     """{item id: {"client": bind or None, "classic": bind or None, "bind": the client's else Classic's, "races": mask or None,
     "opposite": item id or 0, "holiday": id or 0, "min_faction": id or 0, "min_rep": rank or 0}}."""
@@ -134,6 +181,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--extract-cmangos")
     ap.add_argument("--extract-client")
+    ap.add_argument("--extract-reagents", nargs=2, metavar=("SPELLREAGENTS_CSV", "SPELLEFFECT_CSV"))
     ap.add_argument("--build")
     ap.add_argument("--compare", action="store_true")
     a = ap.parse_args()
@@ -141,6 +189,8 @@ def main():
         extract_cmangos(a.extract_cmangos)
     if a.extract_client:
         extract_client(a.extract_client, a.build)
+    if a.extract_reagents:
+        extract_reagents(a.extract_reagents[0], a.extract_reagents[1], a.build)
     if a.compare:
         ids = sim_item_ids()
         counts, dis = compare(ids)

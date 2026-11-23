@@ -55,22 +55,37 @@ HONOR_VENDORS = {"Mokvar", "Deliana", "Ironforge Guard", "Kor'kron Elite", "Serg
 EVENT_VENDORS = {"Lhara": "the Darkmoon Faire"}
 CLIENT_HONORED = 5   # ItemSparse MinReputation: 4 Friendly, 5 Honored, 6 Revered, 7 Exalted
 QUEST_REVERED = 21000   # Classic's quest_template RequiredMinRepValue at Revered (3,000 Friendly, 9,000 Honored, 42,000 Exalted)
+# Forever's raid materials (2026-11-23, the audit session from Wowhead's Forever pages; the client's tooltips): a craft whose client
+# reagents hold one is a raid item (the accepted reading 3), True BiS from 2026-12-09. Only this reagent's tooltip names the new raids.
+NEW_RAID_MATS = {274030: "Malleable Essence of Nature (disenchanted from Hyjal Summit and Barrow Deeps items)"}
+# The user's open questions (put by the audit session, 2026-11-23); the defaults apply until the user answers.
+UBRS_EASY = True   # A: Upper Blackrock Spire counts for Easy Pre-BiS: its bosses' drops and the quests whose objective is inside it
+BG_OPEN = {"Alterac Valley": True, "Warsong Gulch": None, "Arathi Basin": None}   # B: True open (Easy to Honored, like Alterac Valley),
+# None as the database dates them (the True lists), False closed (no list)
 
 # (kind, lists, what it is, where the fact comes from): items
 ITEM_KINDS = [
-    ("dungeon_drop_easy", ALL3, "a named creature's drop in a 5-player dungeon at 5% or more, not an Upper Blackrock Spire boss (10 "
-     "players in Forever); a pair Classic's dump lacks counts", "database drop (zone, creature); cmangos dungeon_drops.csv chance"),
-    ("dungeon_drop", TRUE2, "any other dungeon drop: trash, drops under 5%, Upper Blackrock Spire's bosses", "database drop"),
+    ("dungeon_drop_easy", ALL3, "a named creature's drop in a 5-player dungeon at 5% or more (Upper Blackrock Spire's bosses too while "
+     "UBRS_EASY, the user's question A, default yes); a pair Classic's dump lacks counts",
+     "database drop (zone, creature); cmangos dungeon_drops.csv chance"),
+    ("dungeon_drop", TRUE2, "any other dungeon drop: trash, drops under 5% (Upper Blackrock Spire's bosses when UBRS_EASY is off)",
+     "database drop"),
     ("world_drop", TRUE2, "a drop in the open world (one that binds when equipped sells on the auction house)", "database drop"),
     ("quest", ALL3, "a quest reward of the game now (Alterac Valley's included; Forever's own quests count)",
      "database quest; cmangos quests.csv zone"),
+    ("quest_ubrs", TRUE2, "a quest whose objective is inside Upper Blackrock Spire (one of its bosses to kill, or an item one drops), "
+     "while UBRS_EASY is off", "cmangos quest_geo.csv objectives, quest_item_sources.csv"),
     ("tier05", TRUE2, "Tier 0.5 (the level-58 chain: 10-player Upper Blackrock Spire, the vendors' gold)", "item set name (gear_tiers.T05_SETS)"),
     ("craft", TRUE2, "a craft whose recipe and materials the game has now (from a trainer, a vendor, a drop or a reputation)",
-     "database crafted; cmangos craft_spells.csv reagents"),
+     "database crafted; client SpellReagents 71037 (Classic's craft_spells.csv where the client has no row)"),
     ("rep_to_honored", ALL3, "a reputation reward at Friendly or Honored", "database rep (standing), client MinReputation"),
     ("rep_above_honored", TRUE2, "a reputation reward at Revered or Exalted", "database rep, client MinReputation"),
-    ("battleground", TRUE2, "a battleground quartermaster's or battleground reputation's reward (Alterac Valley, Warsong Gulch, Arathi "
-     "Basin), labelled PvP", "database soldBy / rep"),
+    ("battleground_easy", ALL3, "a battleground quartermaster's or reputation's reward up to Honored, for a battleground the user "
+     "confirmed open (Alterac Valley; question B for the others), labelled PvP", "database soldBy / rep; client MinReputation"),
+    ("battleground", TRUE2, "any other battleground reward: above Honored, a standing the client does not give, or a battleground the "
+     "database dates and the user has not confirmed (Warsong Gulch, Arathi Basin until question B), labelled PvP",
+     "database soldBy / rep"),
+    ("bg_closed", NONE, "a battleground the user says is closed (question B)", "BG_OPEN"),
     ("pvp", TRUE2, "honor rank gear the database dates phase 1, labelled PvP", "database pvp, honor vendors"),
     ("vendor", TRUE2, "a vendor's stock for gold or a currency (Booty Bay's Tarnished Undermine Reals)", "database soldBy"),
     ("auction", TRUE2, "no source in the database, binds when equipped and Classic's world creatures drop it: the auction house",
@@ -79,7 +94,9 @@ ITEM_KINDS = [
      "the simulator's presets"),
     ("onyxia", BIS, "Onyxia's Lair: her quest rewards (Dragonslayer's Signet, Onyxia Tooth Pendant, Onyxia Blood Talisman), her drops "
      "when the database lists them (none at this pin), crafts from Scale of Onyxia", "database quest / drop; cmangos reagents"),
-    ("new_raid", BIS, "a drop in The Barrow Deeps or Hyjal Summit (none in the database at this pin)", "database drop zone"),
+    ("new_raid", BIS, "The Barrow Deeps and Hyjal Summit, from 2026-12-09: their drops (none in the database at this pin) and crafts "
+     "from their materials (Malleable Essence of Nature: 97 Forever recipes, the Hyjal vendor's 72 item-level-61 patterns and 25 "
+     "item-level-65 epics)", "database drop zone; client SpellReagents 71037; the reagent's tooltip"),
     ("molten_core", NONE, "Molten Core: its drops, its quest rewards (Rhok'delar, Lok'delar), crafts from its materials (Fiery Core, Lava "
      "Core, Core Leather, Sulfuron Ingot: Flarecore, Corehound, Molten, Fiery Chain, Dark Iron, Thorium Brotherhood's weapons)",
      "database drop zone / quest zone; cmangos reagents; gear_opt.PHASE1_RAID_MADE"),
@@ -90,7 +107,8 @@ ITEM_KINDS = [
     ("event", NONE, "events: the Scourge Invasion's bosses, the Darkmoon Faire's vendors, items the client ties to a holiday",
      "gear_opt.EVENT_NPCS; client RequiredHoliday"),
     ("later", NONE, "later content: the database's phase 2, a later reputation (Brood of Nozdormu), a later quest (Paragons of Power, "
-     "A Collection of Heads), a raid's or Silithus's quest, a crafted-only item of item level 65+ no preset uses",
+     "A Collection of Heads), a raid's or Silithus's quest, a crafted-only item of item level 65+ no preset uses whose reagents the "
+     "client does not give",
      "database phase; gear_opt.LATER_FACTIONS, LATER_QUESTS; gear_tiers.NO_QUEST_ZONES, CRAFTED_MAX_ILVL"),
 ]
 ITEM_LISTS = {k: l for k, l, _, _ in ITEM_KINDS}
@@ -133,10 +151,41 @@ def context(G, Tm, zones, repo):
     taught = set(trainer) | {int(r["learns"]) for r in csv.DictReader(open(cm / "learn_spells.csv", encoding="utf-8")) if int(r["spell"]) in trainer}
     if not Tm.VETTED_PRE:
         raise SystemExit("gear_lists: gear_tiers.VETTED_PRE is empty: load the database through gear_tiers.load_db first")
+    # quests whose objective is inside Upper Blackrock Spire: one of its bosses to kill, or an item one of them drops (Classic's dump)
+    cnames = {int(r["id"]): r["name"] for r in csv.DictReader(open(cm / "source_names.csv", encoding="utf-8")) if r["kind"] == "c"}
+    ubrs_ids = {i for i, n in cnames.items() if n in Tm.UBRS_BOSSES}
+    item_from = {}
+    for r in csv.DictReader(open(cm / "quest_item_sources.csv", encoding="utf-8")):
+        if r["kind"] == "c":
+            item_from.setdefault(int(r["item"]), set()).add(int(r["id"]))
+    ubrs_quests = set()
+    for r in csv.DictReader(open(cm / "quest_geo.csv", encoding="utf-8")):
+        for part in (r["objectives"] or "").split(";"):
+            k, _, rest = part.partition(":")
+            oid = int(rest.split(":")[0]) if rest else 0
+            if (k == "c" and oid in ubrs_ids) or (k == "i" and item_from.get(oid, set()) & ubrs_ids):
+                ubrs_quests.add(int(r["quest"]))
     ctx = {"G": G, "T": Tm, "zones": zones, "npcs": npcs, "chance": chance, "quests": quests, "reagents": reagents,
-           "world_loot": world_loot, "quest_rep": quest_rep, "taught": taught, "bind": BT.load()}
+           "world_loot": world_loot, "quest_rep": quest_rep, "taught": taught, "bind": BT.load(), "client_reagents": BT.reagents(),
+           "ubrs_quests": ubrs_quests, "professions": professions(repo)}
     _CTX[key] = ctx
     return ctx
+
+
+def professions(repo):
+    """{number: name} of the simulator proto's Profession enum (as raidsim/gear_links.professions reads it)."""
+    import re
+    txt = (pathlib.Path(repo) / "proto" / "common.proto").read_text(encoding="utf-8")
+    m = re.search(r"enum Profession [{]([^}]*)[}]", txt)
+    return {int(n): name for name, n in re.findall(r"([A-Za-z]+) = ([0-9]+);", m.group(1) if m else "")}
+
+
+def bg_kind(bg, to_honored):
+    """A battleground reward's kind by the user's answer to question B (BG_OPEN) and the standing it asks."""
+    st = BG_OPEN.get(bg)
+    if st is False:
+        return "bg_closed"
+    return "battleground_easy" if st is True and to_honored else "battleground"
 
 
 def ilvl(it):
@@ -169,7 +218,7 @@ def item_kinds(it, ctx):
             elif z in LATER_RAIDS:
                 out.append(("later_raid", z))
             elif z in Tm.DUNGEONS:
-                easy = bool(npc) and npcs.get(npc) not in Tm.UBRS_BOSSES
+                easy = bool(npc) and (UBRS_EASY or npcs.get(npc) not in Tm.UBRS_BOSSES)
                 c = ctx["chance"].get((int(npc), int(iid))) if npc else None
                 easy = easy and (c is None or c >= Tm.DROP_MIN)
                 out.append(("dungeon_drop_easy" if easy else "dungeon_drop", f"{z}, {npcs.get(npc) or d.get('otherName') or 'trash'}"
@@ -191,30 +240,39 @@ def item_kinds(it, ctx):
             elif ctx["quest_rep"].get(int(q.get("id") or 0), (0, 0))[1] >= QUEST_REVERED:
                 out.append(("rep_above_honored", f"quest {qn} asks reputation {ctx['quest_rep'][int(q['id'])][0]} at "
                             f"{ctx['quest_rep'][int(q['id'])][1]:,}"))
+            elif not UBRS_EASY and int(q.get("id") or 0) in ctx["ubrs_quests"]:
+                out.append(("quest_ubrs", qn))
             else:
                 out.append(("quest", qn))
         elif "crafted" in s:
             sp = int(s["crafted"].get("spellId") or 0)
-            mats = ctx["reagents"].get(sp, set())
-            if mats & set(MC_MATS) or (name in G.PHASE1_RAID_MADE and name not in ONY_MADE):
+            cmats = ctx["client_reagents"][0].get(sp)
+            if cmats is None:   # the client's other spells that make the item
+                cs = [ctx["client_reagents"][0][x] for x in ctx["client_reagents"][1].get(iid, []) if x in ctx["client_reagents"][0]]
+                cmats = set().union(*cs) if cs else None
+            mats = cmats if cmats is not None else ctx["reagents"].get(sp, set())
+            prof = ctx["professions"].get(int(s["crafted"].get("profession") or 0), "")
+            if mats & set(NEW_RAID_MATS):
+                out.append(("new_raid", "craft from " + ", ".join(NEW_RAID_MATS[m].split(" (")[0] for m in mats & set(NEW_RAID_MATS))))
+            elif mats & set(MC_MATS) or (name in G.PHASE1_RAID_MADE and name not in ONY_MADE):
                 out.append(("molten_core", "craft"))
             elif mats & set(ONY_MATS) or name in ONY_MADE:
                 out.append(("onyxia", "craft"))
             elif name.startswith(G.LATER_PREFIXES):
                 out.append(("later_raid", "craft"))
-            elif ilvl(it) > Tm.CRAFTED_MAX_ILVL and iid not in Tm.VETTED_PRE:
-                out.append(("later", f"craft, item level {ilvl(it)}"))
+            elif cmats is None and ilvl(it) > Tm.CRAFTED_MAX_ILVL and iid not in Tm.VETTED_PRE:
+                out.append(("later", f"craft, item level {ilvl(it)}, reagents unknown"))
             elif it.get("setName") in Tm.T05_SETS:
                 out.append(("tier05", "craft"))
             else:
-                out.append(("craft", str(s["crafted"].get("profession") or "")))
+                out.append(("craft", prof))
         elif "rep" in s:
             r = s["rep"]
             fid, lvl = r.get("repFactionId"), int(r.get("repLevel") or 0)
             if fid in G.LATER_FACTIONS:
                 out.append(("later", "reputation " + str(fid)))
             elif fid in BG_FACTIONS:
-                out.append(("battleground", BG_FACTIONS[fid]))
+                out.append((bg_kind(BG_FACTIONS[fid], lvl <= Tm.REP_MAX), BG_FACTIONS[fid]))
             else:
                 out.append(("rep_to_honored" if lvl <= Tm.REP_MAX else "rep_above_honored", f"reputation {fid}, standing {lvl}"))
         elif "soldBy" in s:
@@ -222,12 +280,15 @@ def item_kinds(it, ctx):
             vn = v.get("npcName")
             if vn in EVENT_VENDORS:
                 out.append(("event", EVENT_VENDORS[vn]))
-            elif vn in BG_VENDORS:
-                out.append(("battleground", BG_VENDORS[vn]))
+            elif vn in BG_VENDORS:   # a quartermaster's item: the client's reputation requirement gives the standing; none known: above
+                bg = BG_VENDORS[vn]
+                known = b.get("client") is not None   # the client's row: no reputation asked, or the standing it asks
+                to_honored = known and (b.get("min_faction") not in BG_FACTIONS or b.get("min_rep", 0) <= CLIENT_HONORED)
+                out.append((bg_kind(bg, to_honored), f"{bg}, {vn}" + ("" if known else ", standing unknown")))
             elif has_pvp or vn in HONOR_VENDORS:
                 out.append(("pvp", vn))
             elif b.get("min_faction") in BG_FACTIONS:
-                out.append(("battleground", BG_FACTIONS[b["min_faction"]]))
+                out.append((bg_kind(BG_FACTIONS[b["min_faction"]], b.get("min_rep", 0) <= CLIENT_HONORED), BG_FACTIONS[b["min_faction"]]))
             elif b.get("min_faction"):
                 out.append(("rep_to_honored" if b.get("min_rep", 0) <= CLIENT_HONORED else "rep_above_honored",
                             f"reputation {b['min_faction']} (client), vendor {vn}"))
@@ -250,7 +311,7 @@ def item_kinds(it, ctx):
             if iid in Tm.VETTED_PRE and ilvl(it) <= G.SOURCELESS_MAX_ILVL:
                 out.append(("vetted", "a launch or pre-raid preset"))
     if it.get("setName") in Tm.T05_SETS:   # a Tier 0.5 piece is Tier 0.5 whatever entry names it (the database gives some legs a pvp one)
-        out = [("tier05", d) if k in ITEM_LISTS and ITEM_LISTS[k] and k != "onyxia" else (k, d) for k, d in out]
+        out = [("tier05", d) if k in ITEM_LISTS and ITEM_LISTS[k] and k not in ("onyxia", "new_raid") else (k, d) for k, d in out]
     if (it.get("phase") or 1) >= 2:   # later content, but for True BiS's raids
         out = [x if x[0] in ("onyxia", "new_raid", "molten_core", "later_raid", "world_boss", "event") else ("later", "phase 2: " + x[0])
                for x in out] or [("later", "phase 2")]
@@ -364,6 +425,62 @@ def alternatives(cls, items, w, lst, db, ctx, G, fits):
         out.append({"slot": slot, "item": it["id"], "name": it.get("name"), "faction": f, "for": other, "how": how,
                     "alternative": alt["id"] if alt else None, "alternative_name": alt.get("name") if alt else None,
                     "value": round(G.value(it, w, slot), 2), "alternative_value": round(G.value(alt, w, slot), 2) if alt else None})
+    return out
+
+
+PVP_KINDS = {"pvp", "battleground", "battleground_easy"}
+
+
+def admitting(it, lst, ctx):
+    """The kinds that put the item in the list."""
+    return {k for k, _ in item_kinds(it, ctx) if lst in ITEM_LISTS.get(k, NONE)}
+
+
+def pvp_only(it, lst, ctx):
+    a = admitting(it, lst, ctx)
+    return bool(a) and a <= PVP_KINDS
+
+
+def marks(items, lst, db, ctx):
+    """{slot: {...}} the page marks a set's items with (the audit session, 2026-11-23): "pvp" for an item only PvP puts in the list (a
+    rank or a battleground standing the player may not have yet), "profession" for a crafted-only item that binds when picked up (you
+    must have the profession yourself)."""
+    out = {}
+    for slot, x in enumerate(items[:17]):
+        it = db.get((x or {}).get("id"))
+        if not it:
+            continue
+        m = {}
+        if pvp_only(it, lst, ctx):
+            m["pvp"] = True
+        srcs = it.get("sources") or []
+        if srcs and all("crafted" in s for s in srcs) and (ctx["bind"].get(it["id"]) or {}).get("bind") == 1:
+            m["profession"] = ctx["professions"].get(int(srcs[0]["crafted"].get("profession") or 0), "the profession")
+        if m:
+            out[str(slot)] = m
+    return out
+
+
+def pvp_alternatives(cls, items, w, lst, db, ctx, G, fits):
+    """For every item of a set that only PvP puts in the list: the best item of the same list by the set's weights `w` that fits the slot
+    and that something else puts there (the audit session, 2026-11-23: a list leaning on rank gear the player cannot have yet needs a
+    fallback); not raced. [{slot, item, name, alternative, alternative_name, value, alternative_value}]."""
+    out = []
+    for slot, x in enumerate(items[:17]):
+        it = db.get((x or {}).get("id"))
+        if not it or not pvp_only(it, lst, ctx):
+            continue
+        best = None
+        for cand in db.values():
+            if cand["id"] == it["id"] or cand.get("type") != it.get("type") or not fits(cand, slot, it) or pvp_only(cand, lst, ctx):
+                continue
+            v = G.value(cand, w, slot)
+            if best is None or v > best[0]:
+                best = (v, cand)
+        alt = best[1] if best else None
+        out.append({"slot": slot, "item": it["id"], "name": it.get("name"), "alternative": alt["id"] if alt else None,
+                    "alternative_name": alt.get("name") if alt else None, "value": round(G.value(it, w, slot), 2),
+                    "alternative_value": round(best[0], 2) if best else None})
     return out
 
 

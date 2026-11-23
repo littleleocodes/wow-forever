@@ -807,8 +807,9 @@ def list_fields(cls, items, w, tier, db, zones, repo, pool):
     ctx = rules_ctx(zones, repo)
     _, _, greedy = G.class_picker(repo, cls, db, pool)
     kinds = {str(i): [k for k, _ in GL.item_kinds(db[x["id"]], ctx)] for i, x in enumerate(items[:17]) if x and x.get("id") in db}
-    return {"list": GL.LABEL.get(tier, tier), "rules": GL.RULES, "kinds": kinds,
-            "faction_alternatives": GL.alternatives(cls, items, w, tier, db, ctx, G, greedy.fits)}
+    return {"list": GL.LABEL.get(tier, tier), "rules": GL.RULES, "kinds": kinds, "marks": GL.marks(items, tier, db, ctx),
+            "faction_alternatives": GL.alternatives(cls, items, w, tier, db, ctx, G, greedy.fits),
+            "pvp_alternatives": GL.pvp_alternatives(cls, items, w, tier, db, ctx, G, greedy.fits)}
 
 
 def load_db(repo):
