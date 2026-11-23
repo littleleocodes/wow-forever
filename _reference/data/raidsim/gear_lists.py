@@ -646,9 +646,26 @@ def _uses(it, G):
     return {("id", it["id"])} | G.unique_keys(it)
 
 
+def mirror_key(it):
+    """What makes two items twins: slot type, hand, weapon or ranged type, armor type, speed, item level, damage and stats."""
+    so = it.get("scalingOptions", {}).get("0", {})
+    return (it.get("type"), it.get("handType"), it.get("weaponType"), it.get("rangedWeaponType"), it.get("armorType"), it.get("weaponSpeed"),
+            so.get("ilvl"), so.get("weaponDamageMin"), so.get("weaponDamageMax"), tuple(sorted((so.get("stats") or {}).items())))
+
+
+def mirrors(it, db, ctx, side):
+    """`side`'s items with the same slot, type, speed, item level and stats as `it` (2026-11-23, the audit session's ruling: the client's
+    other-faction field is empty for the rank weapons, and the fallback by the weights tied the Premier High Warlord's Blade, a 2.9
+    sword, with the Premier Grand Marshal's Dirk, a 2.0 dagger of the same stats, and took the dagger: the Alliance swap read 942.9
+    against the Horde set's 998.9)."""
+    k = mirror_key(it)
+    return [c for c in db.values() if c["id"] != it["id"] and faction_of(c, ctx) == side and mirror_key(c) == k]
+
+
 def alternatives(cls, items, w, lst, db, ctx, G, fits):
     """The other faction's alternative for every one-faction item of a set (the reading (6)): the client's OppositeFactionItemID when
-    that item is in the list, else the best item by the set's weights `w` that fits the slot (`fits(item, slot, current item)`) and the
+    that item is in the list, else its stat mirror on the other side (mirrors, 2026-11-23; a mismatch with the client's field is
+    printed), else the best item by the set's weights `w` that fits the slot (`fits(item, slot, current item)`) and the
     other faction can use; not raced. Each side's set is built slot by slot, so an alternative never repeats a unique-equipped item
     (or a limit category) the set already wears, nor one an earlier slot's alternative took (2026-11-23, the list test: a ring's
     alternative was the signet the other ring slot held). [{slot, item, faction, for, how, alternative, alternative_value, value}]."""
@@ -662,8 +679,14 @@ def alternatives(cls, items, w, lst, db, ctx, G, fits):
                 continue
             taken = _taken(work, slot, db, G)
             opp = (ctx["bind"].get(it["id"]) or {}).get("opposite")
+            mir = [m for m in mirrors(it, db, ctx, other) if in_list(m, lst, ctx) and fits(m, slot, it) and not (_uses(m, G) & taken)]
+            if opp and mir and opp not in {m["id"] for m in mir}:
+                print(f"  gear_lists: {it.get('name')} ({it['id']}): the client's other-faction item is {opp}, its stat mirror "
+                      f"{', '.join(m['name'] + ' (' + str(m['id']) + ')' for m in mir)}", flush=True)
             alt = db.get(opp) if opp and db.get(opp) and in_list(db[opp], lst, ctx) and not (_uses(db[opp], G) & taken) else None
             how = "the client's other-faction item" if alt else "the best other item by the weights"
+            if not alt and mir:
+                alt, how = mir[0], "the other side's item with the same stats"
             if not alt:
                 best = None
                 for cand in db.values():

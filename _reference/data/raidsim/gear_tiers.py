@@ -187,13 +187,28 @@ def easy_check(tier, db, zones, repo=None):
                          + "; ".join(f"{n} ({i}, {r}, {s})" for i, n, r, s in bad[:8]))
 
 
-def pool_of(tier, zones, repo=None):
+WITHOUT_PVP = ("honor rank gear and every battleground reward (gear_lists.PVP_KINDS: an item only those put in the list), whatever "
+               "its standing")
+
+
+def pool_of(tier, zones, repo=None, nopvp=False, side=None):
     """The list's item pool (2026-11-23): raidsim/gear_lists.py's rules, "bis" = True BiS, "prebis" = True Pre-BiS, "dungeon" = Easy
     Pre-BiS (any other name: True Pre-BiS). Until then three tiers with their own rules (Raid BiS, Pre-raid, Quests and dungeons; the
-    module docstring and crafted_ok / dungeon_source above, kept for the record)."""
+    module docstring and crafted_ok / dungeon_source above, kept for the record). `nopvp` (2026-11-23, the delegator's ruling on the
+    list test: the no-PvP set is the one most players wear, so it is a made set): without what only PvP puts in the list (WITHOUT_PVP).
+    `side` ("Alliance" / "Horde"): without the other side's items (gear_lists.faction_of), the faction check of the same ruling."""
     ctx = rules_ctx(zones, repo)
     lst = tier if tier in GL.LISTS else "prebis"
-    return lambda it: GL.in_list(it, lst, ctx)
+    if not nopvp and not side:
+        return lambda it: GL.in_list(it, lst, ctx)
+
+    def ok(it):
+        if not GL.in_list(it, lst, ctx):
+            return False
+        if nopvp and GL.pvp_only(it, lst, ctx):
+            return False
+        return not side or GL.faction_of(it, ctx) in (None, side)
+    return ok
 
 
 # ------------------------------------------------------------------------------------------------ weapons, set pieces, enchants (2026-11-22)
@@ -207,9 +222,26 @@ def pool_of(tier, zones, repo=None):
 #   enchants (no necklace enchant at all; Cloak +3 Agility for +5, Bracer +9 Strength for +9 Agility, Gloves +7 for +10: +1.1% together).
 #   Stat enchants are chosen by the weights, as items are; an enchant with an effect, a proc, a pseudo-stat or weapon damage (Crusader,
 #   the scopes, Arcanum of Rapidity) is raced against the slot's stat pick.
-WEAPON_TOP, WEAPON_EFFECTS_FROM, WEAPON_RERACE = 8, 20, 4   # per hand: the best 8 by the weights, any with an effect among the best 20;
+WEAPON_TOP, WEAPON_EFFECTS_FROM, WEAPON_RERACE = 12, 20, 4   # per hand: the best 12 by the weights, any with an effect among the best 20;
 WEAPON_DPS_MIN = 0.1   # the main hand raced again on its pass-1 best 4 after the off hand changed; a hand whose dps the weights value
-SET_MAX_LOSS, SET_RACE_MAX = 0.10, 10   # a set's pieces raced when they cost at most 10% of the replaced items' value by the weights
+SET_MAX_LOSS, SET_RACE_MAX = 0.10, 16   # a set's pieces raced when they cost at most 10% of the replaced items' value by the weights
+PAIR_ANY = True   # a two-piece unit races whatever it costs by the weights (the bonus is what the weights cannot see)
+# The three rules above as widened on 2026-11-23 (the audit session's ruling on the list test's attribution: Survival's no-PvP True Pre-BiS
+# against wowtbc.gg's like-for-like list, the site's choice put into our set one slot or linked group at a time, 6,000 fights, seeds 1/2):
+# - WEAPON_TOP 8 -> 12: Distracting Dagger, the site's off hand, ranked 9th by the weights (29.0; the 8th 29.2) and never raced; +0.68% /
+#   +0.72% in our set;
+# - PAIR_ANY: the Devilsaur pair cost 30% of the replaced items' value by the weights and never raced; the pair +1.07% / +1.08%, its
+#   pieces alone +0.42% / +0.52% and -0.31% / -0.23%, so the bonus about +0.9%; SET_RACE_MAX 10 -> 16 for the pairs it admits;
+# - REWEIGH (below): hit past the cap.
+REWEIGH = True   # the weights measured again at the picked set, and the picks from them (and from the mean of both) race as variants:
+# our set carried 135 hit rating from items, 13.5% against the 8% cap of yellow and ranged attacks on raid bosses (_reference/forever-stats.md
+# rule 3), where the weights, measured on the first pick, valued hit above agility (1.02 against 0.60); the site's items that trade hit for
+# agility or attack power gained 0.3-1.0% each in six slots (head, neck, back, wrist, hands, feet). A linear weight cannot see a cap; the
+# simulator's weights at the picked set can, and the race decides.
+KNOWN_FILE = pathlib.Path.home() / ".wow-forever-tools" / "gear-research-1122" / "wowtbc_sets.json"   # outside the repository
+KNOWN_SOURCE = "wowtbc.gg's Warcraft Forever BiS lists, read by the audit session 2026-11-22 (gear-research)"
+KNOWN_ALIASES = {("hunter", "Survival"): ("survival-melee-hunter", "survival-hunter"), ("druid", "Feral Combat"): ("feral-dps-druid",),
+                 ("druid", "Feral Bear"): ("feral-tank-druid",), ("paladin", "Hybrid Holy/Retribution"): ("shockadin-paladin",)}
 # The enchant pool (the items' rules, applied to enchants; agreed with the audit session on 2026-11-22):
 # - what Forever has now: the database's phase 1; the Raid BiS tier also takes Molten Core's and Onyxia's drops, which it marks phase 2
 #   (Enchant Weapon - Spell Power, +30, and Healing Power: Molten Core formulas, so in no pre-raid tier);
@@ -409,7 +441,16 @@ def race_weapons(cls, items, w, greedy, race, its, db):
         if best != "current" and r[best] > 1.0:
             items = sets[best]
             if slot == 15 and 14 in first:   # the off hand changed: the main hand's pass-1 best again, next to it
-                passes.append((14, [int(c) for c in first[14] if int(c) != items[15].get("id")]))
+                again = [int(c) for c in first[14] if int(c) != items[15].get("id")]
+                # and the item the off hand gave up, when it fits the main hand (2026-11-23, the audit session's Alliance finding: the
+                # greedy pass put the Premier Grand Marshal's Longsword in the Alliance Survival set's off hand, tied by the weights
+                # with the Dirk it put in the main hand, so the main hand's race never had it; the off hand took Distracting Dagger,
+                # and the Longsword in the main hand is 2.2% ahead of the Dal'Rend's Sacred Charge the set kept, 1000.3 / 999.2
+                # against 979.0 / 979.4)
+                mh = db.get(items[14].get("id")) if items[14].get("id") else None
+                if cur and cur in db and cur != items[14].get("id") and cur not in again and greedy.fits(db[cur], 14, mh):
+                    again.append(cur)
+                passes.append((14, again))
     return items, rec
 
 
@@ -455,7 +496,8 @@ def race_set_pieces(cls, items, w, greedy, race, its, db, pool):
         for ss in cands:
             tot = sum(base[s] for s in ss)
             ls = sum(loss[s] for s in ss)
-            if ls <= SET_MAX_LOSS * max(tot, 1e-9) and not all(items[s].get("id") == pick[s]["id"] for s in ss):
+            if ((ls <= SET_MAX_LOSS * max(tot, 1e-9) or (PAIR_ANY and len(ss) == 2))
+                    and not all(items[s].get("id") == pick[s]["id"] for s in ss)):
                 units.append((ls / max(tot, 1e-9), sn, {s: pick[s] for s in ss}))
     units.sort(key=lambda u: u[0])
     units = units[:SET_RACE_MAX]
@@ -491,9 +533,11 @@ def race_set_pieces(cls, items, w, greedy, race, its, db, pool):
     return items, rec
 
 
-def enchants_for(cls, items, w, tier, zones, db, emap=None):
+def enchants_for(cls, items, w, tier, zones, db, emap=None, own_first=False):
     """The set's enchants within the tier's pool: per slot the enchant of `emap` ({slot: effect id}) when it goes on the item, else the
-    slot's own when the tier allows it, else the slot's stat pick by the weights (an enchant the tier does not allow never stays)."""
+    slot's own when the tier allows it, else the slot's stat pick by the weights (an enchant the tier does not allow never stays).
+    `own_first` (2026-11-23, the audit session's ruling on the ladder guard: a lower list's set competes as it was made, and a known
+    positive as its source lists it): the slot's own enchant first when the tier allows it, then `emap`'s, then the stat pick."""
     items = norm17(items)
     for slot in range(17):
         x = items[slot]
@@ -503,7 +547,9 @@ def enchants_for(cls, items, w, tier, zones, db, emap=None):
         pool, _ = slot_enchants(cls, it, slot, tier, zones)
         ids = {e["effectId"] for e in pool}
         want = (emap or {}).get(slot)
-        if want in ids:
+        if own_first and x.get("enchant") in ids:
+            pass
+        elif want in ids:
             x["enchant"] = want
         elif x.get("enchant") in ids:
             pass
@@ -634,8 +680,75 @@ def refit(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=
                       "iterations": a.iterations, "confirm": a.confirm}}
 
 
+LADDER_MARGIN = 0.005   # a lower list's set this close to the seed-1 leader races again on seed 2 (optimize_set's ladder guard)
+
+
+def known_lists(cls, spec):
+    """The known positives of a spec (2026-11-23, the audit session's ruling on the list test's finding 2a: the site's lists compete in
+    every make, the same rule as the simulator's presets in the talent races): ({name: {"items", "source"}}, why there is none). Every
+    list the site has for the spec (KNOWN_ALIASES, else "<spec slug>-<class>"), from KNOWN_FILE (outside the repository; none when the
+    file is not on this machine)."""
+    if not KNOWN_FILE.exists():
+        return {}, "no known positive (the site's lists are not on this machine)"
+    data = json.load(open(KNOWN_FILE, encoding="utf-8"))
+    out = {}
+    for key in KNOWN_ALIASES.get((cls, spec), (f"{SM.slug(spec)}-{cls}",)):
+        for variant, v in (data.get(key) or {}).items():
+            if isinstance(v, dict) and v.get("items"):
+                out[f"wowtbc {key} {variant}"] = {"items": norm17(v["items"]), "source": v.get("url") or KNOWN_SOURCE}
+    return out, (None if out else f"no known positive (the site has no list for {cls} {spec})")
+
+
+def pool_swap(items, w, greedy, db, pool, base):
+    """A known positive inside the list's pool (2026-11-23, the same ruling: only items that pass the list's pool): each item the pool
+    does not admit, or the database lacks, replaced by the best item by the weights `w` that fits the slot and the pool (greedy.fits:
+    the way gear_lists.pvp_alternatives replaces a PvP item); a trinket by the picker's raced trinket (`base`); an empty slot filled
+    from `base`. Unique-equipped items and limit categories once, slot by slot. Returns (items, [{slot, from, to, how}])."""
+    work, base = norm17(items), norm17(base)
+    swaps = []
+    for slot in range(17):
+        x = work[slot]
+        it = db.get(x.get("id")) if x.get("id") else None
+        if slot == 15 and (db.get(work[14].get("id")) or {}).get("handType") == 4:   # no off hand next to a two-hander
+            if x.get("id"):
+                work[15] = {}
+                swaps.append({"slot": 15, "from": it.get("name") if it else x["id"], "to": None, "how": "the main hand is a two-hander"})
+            continue
+        taken = GL._taken(work, slot, db, G)
+        if it is not None and pool(it) and not (GL._uses(it, G) & taken):
+            continue
+        if not x.get("id") and not base[slot].get("id"):
+            continue   # (an empty slot our set leaves empty too)
+        alt, how = None, None
+        if slot in (12, 13) or not x.get("id"):
+            for b in ([base[slot], base[25 - slot]] if slot in (12, 13) else [base[slot]]):
+                bi = db.get(b.get("id")) if b.get("id") else None
+                if bi is not None and pool(bi) and not (GL._uses(bi, G) & taken):
+                    alt, how = bi, ("the picker's trinket" if slot in (12, 13) else "the picker's item (the list leaves the slot empty)")
+                    break
+        else:
+            shape = it or (db.get(base[slot].get("id")) if base[slot].get("id") else None)
+            best = None
+            for cand in db.values():
+                if not greedy.fits(cand, slot, shape) or GL._uses(cand, G) & taken:
+                    continue
+                v = G.value(cand, w, slot)
+                if best is None or v > best[0]:
+                    best = (v, cand)
+            if best:
+                alt, how = best[1], "the best in the pool by the weights"
+        frm = it.get("name") if it else (f"item {x['id']} (not in the database)" if x.get("id") else None)
+        if alt is None:
+            swaps.append({"slot": slot, "from": frm, "to": None, "how": "no item fits"})
+            continue
+        ench = x.get("enchant")
+        work[slot] = {"id": alt["id"], **({"enchant": ench} if ench else {})}
+        swaps.append({"slot": slot, "from": frm, "to": alt.get("name"), "how": how})
+    return work, swaps
+
+
 def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, weights_fn=None, score=None, extra=None, refine=None,
-                 zones=None, tank=False):
+                 zones=None, tank=False, ladder=(), known=None, no_known=None):
     """The best set for the evaluations [(entry name, entry, setting, talents, label)] from `pool`: the same steps as gear_opt.optimize
     (weights, greedy per slot in two variants, weights again, trinket pairs raced, variants raced, seed-2 confirmation), except that the
     current item of a slot competes only when `keep_current` or the pool admits it (a pre-raid set must not keep raid items).
@@ -646,7 +759,13 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     replaced, which never raced it). `refine` (a tier name, 2026-11-22, the audit session's G1-G3): the weapons raced per hand after the
     greedy pass, the item-set pieces raced after the trinkets, the enchants chosen from the tier's enchant pool and put on every set
     that competes (race_weapons, race_set_pieces, choose_enchants); the stat picks alone compete as one more variant. `tank`: the
-    enchant race takes absorb, heal and defensive enchants too (tank_gear.py)."""
+    enchant race takes absorb, heal and defensive enchants too (tank_gear.py).
+    2026-11-23 (the audit session's rulings on the list test): a lower list's set (`ladder`) competes as it was made and as the copy
+    with this list's enchants, the better on seed 2 stands, ties to the set as made; `known` {name: {"items", "source", "prep"}}: known
+    positives (known_lists, or a side's full set), each put inside the pool (pool_swap, after an optional `prep(items, w, greedy)` ->
+    (items, notes)), competing with this list's enchants, as listed and with the raced trinkets; one ahead of the chosen set on seed 2
+    stands. REWEIGH: the picks from the weights measured at the picked set compete. The picker's best variant and the best known
+    positive always race on seed 2, and the record keeps every competitor's scores (`competitors`, relative to `bases`)."""
     main = evals[0]
     cur_items = [dict(x) if x else {} for x in cur_items] + [{}] * (17 - len(cur_items))
     sc = score or (lambda row: row.get("dps") or 0)
@@ -701,44 +820,206 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     emap = None
     if refine:
         v1, steps["set_pieces"] = race_set_pieces(cls, v1, w, greedy, race, a.iterations, db, pool)
+    # REWEIGH (2026-11-23): the weights measured at the picked set, and the picks from them and from the mean of both weights (set pieces
+    # and items with effects kept; weapons, ranged and trinkets as raced: the picks re-fill the other slots only)
+    rew = {}
+    if REWEIGH:
+        w3 = weights(v1)
+        wm = {k: (w.get(k, 0.0) + w3.get(k, 0.0)) / 2 for k in set(w) | set(w3)}
+        for name, ww in (("all-slots, weights at the pick", w3), ("all-slots, mean weights", wm)):
+            x = greedy(v1, ww, True)
+            for s in (12, 13, 14, 15, 16):
+                x[s] = dict(v1[s])
+            if x != v1 and x not in rew.values():
+                rew[name] = x
+        steps["reweigh"] = {"weights_at_pick": {k: round(v, 4) for k, v in w3.items() if abs(v) > 1e-6}, "variants": list(rew)}
+    # the known positives (2026-11-23), inside the pool, filled from the picker's set where they leave a slot or a trinket out
+    known_sets, known_rec = {}, []
+    for name, kp in (known or {}).items():
+        its, notes = norm17(kp["items"]), []
+        if kp.get("prep"):
+            its, notes = kp["prep"](its, w, greedy)
+        its, swaps = pool_swap(its, w, greedy, db, pool, v1)
+        known_sets[name] = its
+        known_rec.append({"name": name, "source": kp.get("source"), **({"prep": notes} if notes else {}), "swapped": swaps})
+    made, kmade = {}, {}
+    if refine:
         statmap, emap, steps["enchants"] = choose_enchants(cls, v1, w, refine, zones, race, a.iterations, db, tank=tank)
         steps["enchants"]["map"] = {str(k): v for k, v in emap.items()}
         v1s = enchants_for(cls, v1, w, refine, zones, db, statmap)
         v1, v2 = (enchants_for(cls, x, w, refine, zones, db, emap) for x in (v1, v2))
+        rew = {k: enchants_for(cls, x, w, refine, zones, db, emap) for k, x in rew.items()}
         cur_items = enchants_for(cls, cur_items, w, refine, zones, db, emap)
+        made = {k: enchants_for(cls, x, w, refine, zones, db, emap, own_first=True) for k, x in (extra or {}).items() if k in (ladder or ())}
         extra = {k: enchants_for(cls, x, w, refine, zones, db, emap) for k, x in (extra or {}).items()} or None
-    in_tier = all(x["id"] in db and pool(db[x["id"]]) for x in cur_items if x.get("id"))   # a missing item is out of the pool (2026-10-22)
+        kmade = {k: enchants_for(cls, x, w, refine, zones, db, emap, own_first=True) for k, x in known_sets.items()}
+        known_sets = {k: enchants_for(cls, x, w, refine, zones, db, emap) for k, x in known_sets.items()}
+    inpool = lambda its: all(x["id"] in db and pool(db[x["id"]]) for x in its if x.get("id"))   # noqa: E731
+    in_tier = inpool(cur_items)   # a missing item is out of the pool (2026-10-22)
     keep_current = keep_current and in_tier   # the current set competes only when every item is in the tier's pool
     sets = ({"current": cur_items} if keep_current else {}) | {"all-slots": v1, "keep-sets-and-effects": v2}
     if refine and v1s != v1:
         sets["all-slots, stat enchants"] = v1s
+    sets.update(rew)
+    picker = [k for k in sets if k != "current"]   # the picker's own variants
     for name, its in (extra or {}).items():
         its = [dict(x) if x else {} for x in its] + [{}] * (17 - len(its))
-        if its == cur_items or not all(x["id"] in db and pool(db[x["id"]]) for x in its if x.get("id")):
+        if its == cur_items or not inpool(its):
+            continue
+        low, m = ((ladder.get(name) if isinstance(ladder, dict) else None) or (None, None)), made.get(name)
+        if low[0] and m is not None:
+            # a lower list's set (2026-11-23, the re-run for the merge: Survival's True BiS took the True Pre-BiS set with True BiS's
+            # main-hand enchant, Agility for Crusader, both in the True Pre-BiS pool: 0.04% ahead on the 3,000-fight confirm and 0.02%
+            # behind it at 6,000 on seed 2): it races as made, and with this list's enchants or the raced trinkets only when they bring
+            # something its own list could not take (the lower list raced its own enchants and trinkets on these items)
+            lt, lpool = low
+            new_ench = any(its[s].get("enchant") and its[s].get("enchant") != m[s].get("enchant") and its[s].get("id") in db
+                           and not enchant_allowed(its[s]["enchant"], db[its[s]["id"]].get("type"), lt, zones) for s in range(17))
+            new_trk = (all(pair) and (m[12].get("id"), m[13].get("id")) != pair
+                       and any(not (t in db and lpool(db[t])) for t in pair))
+            sets[f"{name} (as made)"] = m
+            if new_ench and its != m:
+                sets[name] = its
+            if new_trk:
+                sets[f"{name}+trinkets"] = with_trinkets(its if new_ench else m, pair)
             continue
         sets[name] = its
         if all(pair) and (its[12].get("id"), its[13].get("id")) != pair:
             sets[f"{name}+trinkets"] = with_trinkets(its, pair)
+        m = made.get(name)
+        if m is not None and m != its:
+            sets[f"{name} (as made)"] = m
+    for rec in known_rec:
+        key, its = f"known: {rec['name']}", known_sets[rec["name"]]
+        if not inpool(its):
+            rec["left_out"] = "an item no swap could replace stays outside the pool"
+            continue
+        sets[key] = its
+        if all(pair) and (its[12].get("id"), its[13].get("id")) != pair:
+            sets[f"{key}+trinkets"] = with_trinkets(its, pair)
+        m = kmade.get(rec["name"])
+        if m is not None and m != its:
+            sets[f"{key} (as listed)"] = m
     r1 = race(sets, a.iterations, 1)
     lead = max(r1, key=r1.get)
     ref = ("current" if keep_current else "previous" if "previous" in sets
            else ("keep-sets-and-effects" if lead == "all-slots" else "all-slots"))
-    r2 = race({ref: sets[ref], lead: sets[lead]}, a.confirm, 2) if lead != ref else {ref: 1.0}
+    # the ladder guard (2026-11-23, the delegator's ruling on the list test: Survival's True BiS raced the True Pre-BiS set on seed 1
+    # only, 0.08% behind at 1,000 fights, and ended 0.2-0.3% below it at 6,000 on both seeds): every lower list's set within
+    # LADDER_MARGIN of the seed-1 leader races in the seed-2 confirm too, and stays unless the chosen set beats it there (ties go to
+    # the lower list, whose pool nests in this one). Since the same day each lower list's set races as made and with this list's
+    # enchants (the guarded True BiS had chosen the True Pre-BiS set, re-enchanted, 0.12-0.18% below it), ties to the set as made.
+    # The known positives within LADDER_MARGIN race on seed 2 too, the best of them always, and the picker's best variant always.
+    is_lad = lambda k: any(k in (n, f"{n}+trinkets", f"{n} (as made)") for n in (ladder or ()))   # noqa: E731
+    is_known = lambda k: k.startswith("known: ")   # noqa: E731
+    near = lambda k: r1[k] >= r1[lead] * (1 - LADDER_MARGIN)   # noqa: E731
+    lad = [k for k in sets if k != lead and is_lad(k) and near(k)]
+    kn = [k for k in sets if k != lead and is_known(k) and near(k)]
+    pbest = max(picker, key=r1.get) if picker else None
+    kbest = max((k for k in sets if is_known(k)), key=r1.get, default=None)
+    conf = [k for k in dict.fromkeys([ref, lead, pbest, kbest] + lad + kn) if k is not None]
+    r2 = race({k: sets[k] for k in conf}, a.confirm, 2) if len(conf) > 1 else {ref: 1.0}
     gain = r2.get(lead, 1.0) - 1
     chosen = lead if (lead != ref and gain > (a.min_gain if ref == "current" else 0.0)) else ref
+    kb = max((k for k in r2 if is_known(k)), key=r2.get, default=None)
+    if kb is not None and r2[kb] > r2[chosen]:   # a known positive ahead of the chosen set on seed 2 stands
+        chosen = kb
+    ladder_case = None
+    low = max((k for k in lad if k in r2), key=lambda k: (r2[k], k.endswith(" (as made)")), default=None)
+    if low is not None and r2[low] >= r2[chosen]:
+        chosen = low
+    if is_lad(chosen):
+        own = max((k for k in r2 if not is_lad(k)), key=r2.get, default=None)
+        ladder_case = (f"{chosen}: no item of the larger pool beat it on seed 2"
+                       + (f" ({own} {r2[own]:.4f} against {r2[chosen]:.4f})" if own else ""))
+    elif any(sets[chosen] == sets[k] for k in sets if is_lad(k)):
+        ladder_case = "the same items as a lower list's set: no item of the larger pool beat it"
+    case = ("own make" if not is_lad(chosen) else "the lower list's set as made" if chosen.endswith(" (as made)")
+            else "the lower list's set, re-enchanted" + (", with the raced trinkets" if chosen.endswith("+trinkets") else ""))
+    for rec in known_rec:
+        key = f"known: {rec['name']}"
+        rec["scores"] = {k: {"seed1": round(r1[k], 4), **({"seed2": round(r2[k], 4)} if k in r2 else {})}
+                         for k in (key, f"{key}+trinkets", f"{key} (as listed)") if k in sets}
+    src = ("the current set" if chosen == "current" else "the previous set" + (", with the raced trinkets" if chosen != "previous" else "")
+           if chosen.startswith("previous") else "a lower list's set" if is_lad(chosen) else "the picker" if chosen in picker else chosen)
+    if is_known(chosen):
+        rec = next(x for x in known_rec if chosen.startswith(f"known: {x['name']}"))
+        n = sum(1 for s in rec["swapped"] if s.get("to"))
+        src = (f"a known positive: {rec['name']} ({rec['source']})" + (f", {n} items swapped into the pool by our rule" if n else "")
+               + (", with the picker's raced trinkets" if chosen.endswith("+trinkets") else ""))
     items = sets[chosen]
     ilvl = lambda its: round(sum(db[x["id"]]["scalingOptions"]["0"].get("ilvl", 0) for x in its if x.get("id") in db) / max(1, sum(1 for x in its if x.get("id") in db)), 1)  # noqa: E731
     return {"evaluated_on": [f"{n}: {lab}" for n, _, _, _, lab in evals], "weights": {k: round(v, 4) for k, v in w.items() if abs(v) > 1e-6},
             "trinkets": [db[i]["name"] for i in pair if i in db], "trinket_screen": screen, **({"relic_race": relic_race} if relic_race else {}),
-            "race_seed1": r1, "confirm_seed2": r2, "chosen": chosen, **steps, **({"enchant_map": emap} if emap is not None else {}),
+            "race_seed1": r1, "confirm_seed2": r2, "chosen": chosen, "chosen_source": src, "ladder_case": case,
+            **({"ladder": ladder_case} if ladder_case else {}),
+            "picker_best": {"name": pbest, "seed1": round(r1[pbest], 4), **({"seed2": round(r2[pbest], 4)} if pbest in r2 else {})} if pbest else None,
+            "known_positives": known_rec or (no_known or "no known positive"),
+            "competitors": {k: {"seed1": round(r1[k], 4), **({"seed2": round(r2[k], 4)} if k in r2 else {})} for k in sets},
+            "bases": {"seed1": next(iter(sets)), "seed2": conf[0] if len(conf) > 1 else ref},
+            **steps, **({"enchant_map": emap} if emap is not None else {}),
             "ilvl": ilvl(items), "items": items, "names": [db.get(x.get("id"), {}).get("name") if x.get("id") else None for x in items]}
 
 
-def set_path(cls, spec, tier):
-    return SETS / f"{cls}-{SM.slug(spec)}-{tier}.gear.json"
+def set_path(cls, spec, tier, nopvp=False, side=None):
+    return SETS / f"{cls}-{SM.slug(spec)}-{tier}{'-nopvp' if nopvp else ''}{'-' + side.lower() if side else ''}.gear.json"
 
 
-def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=None, setting="raid", write=True, lower_sets=None):
+def list_guard(items, tier, db, zones, repo, nopvp=False, side=None):
+    """The lists' fatal guard (2026-11-23, the audit session: a side's set holding the other side's items should have stopped the run;
+    the same day, for Easy Pre-BiS and every list: "every item passes the Easy pool and the Easy enchant rule"): every item of the set
+    is in the database and in the list's pool (pool_of, with the no-PvP and the side filters), every enchant is in the list's enchant
+    pool for its slot (enchant_allowed), every item of a side's set passes gear_lists.faction_of for that side and every item of a
+    no-PvP set has a source besides PvP. Checked when make() returns or writes a set, and by the scan (gear_check.py) on every set
+    file made under the lists. [] or the offending items."""
+    ctx = rules_ctx(zones, repo)
+    lst = tier if tier in GL.LISTS else "prebis"
+    pool = pool_of(tier, zones, repo, nopvp=nopvp, side=side)
+    bad = []
+    for i, x in enumerate(norm17(items)):
+        if not x.get("id"):
+            continue
+        it = db.get(x["id"])
+        if it is None:
+            bad.append(f"slot {i} item {x['id']}: not in the database")
+            continue
+        f = GL.faction_of(it, ctx)
+        side_bad = bool(side and f not in (None, side))
+        pvp_bad = bool(nopvp and GL.pvp_only(it, lst, ctx))
+        if side_bad:
+            bad.append(f"slot {i} {it.get('name')}: {f} only")
+        if pvp_bad:
+            bad.append(f"slot {i} {it.get('name')}: only PvP puts it in the list")
+        if not (side_bad or pvp_bad) and not pool(it):
+            bad.append(f"slot {i} {it.get('name')}: not in {GL.LABEL.get(lst, lst)}")
+        e = x.get("enchant")
+        if e and not enchant_allowed(e, G.SLOT_TYPE[i], tier, zones):
+            bad.append(f"slot {i} {it.get('name')}: enchant {e} is not in {GL.LABEL.get(lst, lst)}'s enchants for the slot")
+    return bad
+
+
+def slot_swap_prep(cls, tier, db, zones, repo, nopvp=False, side=None):
+    """prep(items, w, greedy) for a no-PvP or a side make's known positive "the list's full set, slot by slot" (2026-11-23, the audit
+    session's ruling on the faction check: rebuilt from the current alternatives, so a side's set is the better of the made set and the
+    swap and never below the swap): gear_lists.alternatives for the side (the client's other-faction item when it is in the list, else
+    the best other item by the weights), gear_lists.pvp_alternatives without PvP; pool_swap then covers anything left."""
+    ctx = rules_ctx(zones, repo)
+    lst = tier if tier in GL.LISTS else "prebis"
+
+    def prep(items, w, greedy):
+        work, notes = norm17(items), []
+        rows = GL.alternatives(cls, work, w, lst, db, ctx, G, greedy.fits) if side else []
+        rows = [x for x in rows if x.get("for") == side] + (GL.pvp_alternatives(cls, work, w, lst, db, ctx, G, greedy.fits) if nopvp else [])
+        for x in rows:
+            if x.get("alternative"):
+                work[x["slot"]] = dict(work[x["slot"]], id=x["alternative"])
+            notes.append({"slot": x["slot"], "from": x.get("name"), "to": x.get("alternative_name"), "how": x.get("how", "the PvP rule")})
+        return work, notes
+    return prep
+
+
+def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=None, setting="raid", write=True, lower_sets=None,
+         nopvp=False, side=None, known_positives=True, full_set=None):
     """The tier's set for one spec: written to its gear file (`path`: another file, e.g. the full-raid winner's set of a spec whose
     full-raid winner plays another entry; ml_pipeline.final), returned as the record. Chosen in a full raid (`setting`, since
     2026-10-31: the pages rank by full-raid DPS; sets chosen on the training dummy, short of mana, had weighed haste below zero for the
@@ -748,12 +1029,18 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
     Every lower list's set competes (the ladder below), read from its file; so make the lists from the bottom, Easy Pre-BiS, then True
     Pre-BiS, then True BiS (2026-11-23, the list test: Survival's True BiS, made before its True Pre-BiS, raced the old pre-raid set
     and ended 0.2-0.3% below the new True Pre-BiS set on both seeds, though every item of that set is in True BiS). `lower_sets`
-    {tier: items}: the lower lists' sets to race instead of their files (a test with write=False writes none)."""
+    {tier: items}: the lower lists' sets to race instead of their files (a test with write=False writes none). `nopvp`, `side`: the
+    list without what only PvP puts in it, or without the other side's items (pool_of); such a set has a file of its own (set_path), so
+    neither the guard nor the ladder ever races it against a set holding what it leaves out.
+    2026-11-23 (the audit session's rulings on the list test): the spec's known positives compete (`known_positives`: known_lists, the
+    site's lists inside the pool; the record says "no known positive" when there is none); a no-PvP or a side make also races the list's
+    full set swapped slot by slot (`full_set`, else its file; slot_swap_prep); a lower list's set races as made (no template fill) and
+    re-enchanted; a side's or a no-PvP set that fails list_guard stops the run (SystemExit), written or not."""
     e = R.SPECS[cls][entry_name]
     easy_check(tier, db, zones, repo)
     cur = json.load(open(R.sim_path(e["gear"]) if pathlib.Path(R.sim_path(e["gear"])).is_absolute() else repo / e["gear"], encoding="utf-8"))["items"]
-    pool = pool_of(tier, zones, repo)
-    p = path or set_path(cls, spec, tier)
+    pool = pool_of(tier, zones, repo, nopvp=nopvp, side=side)
+    p = path or set_path(cls, spec, tier, nopvp, side)
     # 2026-10-09: empty enchant slots are filled from the role's template before and after the search (fill_enchants.py: a set grown
     # from a preset without enchants kept none, the Balance, feral, Retribution, Arms and Fury sets)
     import fill_enchants as FE
@@ -766,20 +1053,29 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
     extra = {"previous": prev} if prev else {}
     ladder = ("dungeon", "prebis", "bis")   # every lower tier's set competes (2026-11-21, the audit session): the pools nest, so it is
     for lower in ladder[:ladder.index(tier)] if tier in ladder else ():   # legal here; when it wins, this tier's set is that set
-        if lower in (lower_sets or {}):
-            li = [dict(x) if x else {} for x in lower_sets[lower]]
-            if tmpl:
-                FE.fill(li, tmpl)
-            extra[f"the {lower} set"] = li
+        if lower in (lower_sets or {}):   # (as made: no template fill since 2026-11-23; the re-enchanted copy gets this list's enchants)
+            extra[f"the {lower} set"] = [dict(x) if x else {} for x in lower_sets[lower]]
             continue
-        lp = path.parent / path.name.replace(f"-{tier}.gear.json", f"-{lower}.gear.json") if path else set_path(cls, spec, lower)
+        lp = path.parent / path.name.replace(f"-{tier}.gear.json", f"-{lower}.gear.json") if path else set_path(cls, spec, lower, nopvp, side)
         if lp.exists() and lp.name != p.name:   # a named set file ("...-bis-raid") has no lower tier of its own
-            li = json.load(open(lp, encoding="utf-8"))["items"]
-            if tmpl:
-                FE.fill(li, tmpl)
-            extra[f"the {lower} set"] = li
+            extra[f"the {lower} set"] = json.load(open(lp, encoding="utf-8"))["items"]
+    known, no_known = known_lists(cls, spec) if known_positives else ({}, "no known positive (not asked for)")
+    if nopvp or side:   # the list's full set, slot by slot (its file unless given): a no-PvP or a side's set is never below that swap
+        fp = set_path(cls, spec, tier, nopvp=bool(nopvp and side))   # (a side's set without PvP swaps the no-PvP set)
+        full = full_set if full_set is not None else (json.load(open(fp, encoding="utf-8"))["items"] if fp.exists() else None)
+        if full:
+            what = " and ".join(x for x in (f"for the {side}" if side else "", "without PvP" if nopvp else "") if x)
+            known[f"the full {GL.LABEL.get(tier, tier)} set, slot by slot {what}"] = {
+                "items": full, "source": "the list's full set, swapped slot by slot (gear_lists.alternatives / pvp_alternatives, current rules)",
+                "prep": slot_swap_prep(cls, tier, db, zones, repo, nopvp=nopvp, side=side)}
     r = optimize_set(cls, [(entry_name, e, setting, talents, label)], cur, pool, repo, db, a, f"{cls}-{SM.slug(spec)}-{tier}", keep_current=(tier == "bis"),
-                     extra=extra or None, refine=tier, zones=zones)
+                     extra=extra or None, refine=tier, zones=zones,
+                     ladder={k: (k.split()[1], pool_of(k.split()[1], zones, repo, nopvp=nopvp, side=side))
+                             for k in extra if k.startswith("the ") and k.endswith(" set")},
+                     known=known or None, no_known=no_known)
+    bad = list_guard(r["items"], tier, db, zones, repo, nopvp=nopvp, side=side)
+    if bad:
+        raise SystemExit(f"FATAL {p.name}: the chosen set ({r.get('chosen')}) breaks its list's rule: " + "; ".join(bad))
     emap = r.pop("enchant_map", None)   # the tier's enchants are on every set that raced (2026-11-22): no template fill after them
     dropped = G.drop_missing_enchants(r["items"], repo)   # an enchant carried from a set the official database lacks (2026-10-22)
     if dropped:
@@ -810,18 +1106,25 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
                   f"{'repaired ' if out_of_pool else ''}previous set's {ov:.1f} on seed 2" + (f" and empties slots {empty}" if empty else "")
                   + ("; the repaired previous set is written" if out_of_pool else "; the previous set stays"), flush=True)
             if out_of_pool and write:
-                p.write_text(json.dumps({"items": ref}, indent=1) + "\n", encoding="utf-8")
+                bad = list_guard(ref, tier, db, zones, repo, nopvp=nopvp, side=side)
+                if bad:
+                    raise SystemExit(f"FATAL {p.name}: the repaired previous set breaks its list's rule: " + "; ".join(bad))
+                p.write_text(json.dumps({"items": ref, "list": GL.LABEL.get(tier, tier), "rules": GL.RULES, **({"without_pvp": True} if nopvp else {}),
+                                         **({"side": side} if side else {})}, indent=1) + "\n", encoding="utf-8")
             return dict(r, items=ref, chosen=what, **list_fields(cls, ref, r["weights"], tier, db, zones, repo, pool),
                         refused={"new_dps": round(nv, 2), "previous_dps": round(ov, 2), "empty_slots": empty, "repaired_slots": out_of_pool,
                                  "new_ilvl": r.get("ilvl"), "new_names": r.get("names")},
                         names=[db.get(x.get("id"), {}).get("name") if x.get("id") else None for x in ref],
                         entry=entry_name, gear=p.relative_to(ROOT).as_posix(), date=TODAY, setting=setting)
         r["guard"] = {"new_dps": round(nv, 2), "previous_dps": round(ov, 2), "repaired_slots": out_of_pool}
-    if write:
+    if write:   # the ladder's case goes in the set's file (the delegator, 2026-11-23): a page says "True BiS is the True Pre-BiS set" once
         p.parent.mkdir(parents=True, exist_ok=True)
-        p.write_text(json.dumps({"items": r["items"]}, indent=1) + "\n", encoding="utf-8")
+        p.write_text(json.dumps({"items": r["items"], "list": GL.LABEL.get(tier, tier), "rules": GL.RULES, **({"without_pvp": True} if nopvp else {}),
+                                 **({"side": side} if side else {}), **({"ladder": r["ladder"]} if r.get("ladder") else {})}, indent=1) + "\n",
+                     encoding="utf-8")
     return dict(r, entry=entry_name, gear=p.relative_to(ROOT).as_posix(), date=TODAY, setting=setting,
-                **list_fields(cls, r["items"], r["weights"], tier, db, zones, repo, pool), **({} if write else {"written": False}))
+                **list_fields(cls, r["items"], r["weights"], tier, db, zones, repo, pool), **({} if write else {"written": False}),
+                **({"without_pvp": WITHOUT_PVP} if nopvp else {}), **({"side": side} if side else {}))
 
 
 def list_fields(cls, items, w, tier, db, zones, repo, pool):

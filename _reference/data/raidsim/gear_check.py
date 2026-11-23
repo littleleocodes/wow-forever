@@ -16,6 +16,7 @@ day, so fix the set first (gear_opt.py <class> --write --fresh, then --apply; ta
 listed only: gear_tiers.py and the ML final step re-make them. Run it after every re-pin, next to spec_check.py.
 """
 import argparse
+import re
 import json
 import pathlib
 import sys
@@ -39,6 +40,18 @@ def resolve(repo, rel):
     return p if p.is_absolute() else pathlib.Path(repo) / rel
 
 
+LIST_FILE = re.compile(r"-(dungeon|prebis|bis)(-nopvp)?(?:-(alliance|horde))?\.gear\.json$")
+_GT = {}
+
+
+def list_rule(repo, items, tier, nopvp, side):
+    """gear_tiers.list_guard on a set file (the database and the lists' context loaded once, through gear_tiers)."""
+    if "GT" not in _GT:
+        import gear_tiers as GT
+        _GT["GT"], (_GT["db"], _GT["zones"]) = GT, GT.load_db(repo)
+    return _GT["GT"].list_guard(items, tier, _GT["db"], _GT["zones"], repo, nopvp=nopvp, side=side)
+
+
 def check_set(path, db, edb):
     """(missing items and enchants, number of filled slots) of a gear file; (["no file"], 0) when it does not exist."""
     if not path.exists():
@@ -60,7 +73,7 @@ def main():
     specs = json.load(open(HERE / "specs.json", encoding="utf-8"))
     classes = a.classes or [c for c in specs if not c.startswith("_")]
     print(f"gear check on {repo} ({R.git_commit(repo)}; {len(db)} items in the database)")
-    bad = 0
+    bad, older = 0, 0
     for cls in classes:
         seen = {}
         for name, e in specs.get(cls, {}).items():
@@ -75,9 +88,23 @@ def main():
                       + ("MISSING " + ", ".join(f"{m} ({G.item_name(db, int(m.split(':')[1])) if m.startswith('item:') else 'enchant'})" for m in miss)
                          if miss and miss != ["no file"] else "NO FILE" if miss else "complete"))
         tier_files = sorted(TIERS.glob(f"{cls}-*.gear.json"))
-        tb = 0
+        tb, before = 0, []
         for f in tier_files:
             miss, n = check_set(f, db, edb)
+            # 2026-11-23 (the audit session's rulings on the list test): a set file made under the lists (it carries "rules") passes its
+            # list's rule: every item in the list's pool and every enchant in its enchant pool, a side's set only items its side can
+            # use, a no-PvP set no item only PvP puts in its list (gear_tiers.list_guard, also run when the set is made); a failure is
+            # fatal. A file without "rules" was made before the lists: counted, never skipped silently (after the all-class makes the
+            # count must be 0 for every spec a page shows)
+            m = LIST_FILE.search(f.name)
+            if m:
+                if json.load(open(f, encoding="utf-8")).get("rules"):
+                    broken = list_rule(repo, items_of(f), m.group(1), bool(m.group(2)), (m.group(3) or "").capitalize() or None)
+                    if broken:
+                        bad += 1
+                        print(f"    LIST RULE BROKEN {f.name}: " + "; ".join(broken))
+                else:
+                    before.append(f.name)
             out = []
             if a.pool:
                 out = [db[x["id"]]["name"] for x in items_of(f) if x and x.get("id") in db and not G.in_pool(db[x["id"]], zones)]
@@ -87,7 +114,12 @@ def main():
                       + ("outside the pool: " + ", ".join(out) if out else ""))
         if tier_files and not a.quiet:
             print(f"    {cls}: {len(tier_files)} tier sets, {tb} with a missing item" + (" or an item outside the pool" if a.pool else ""))
-    print("entry sets failing:", bad)
+        if before:
+            older += len(before)
+            print(f"    {cls}: {len(before)} tier sets made before the lists (no \"rules\" in the file, the list rule not checked)"
+                  + ("" if a.quiet else ": " + ", ".join(before)))
+    print(f"tier sets made before the lists: {older}")
+    print("sets failing (entry sets missing gear, list rules broken):", bad)
     return 1 if bad else 0
 
 
