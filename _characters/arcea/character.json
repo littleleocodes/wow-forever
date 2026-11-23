@@ -320,7 +320,7 @@
       "key": "Shift+Q",
       "kind": "set-up cast, quick",
       "role": "Frostbolt Rank 1: fish for procs, a quick cheap slow",
-      "why": "Frostbolt Rank 1, your choice: with Improved Frostbolt a 1.0-second cast for 25 mana that puts the 40% slow on. Questing and PvP: fish for Fingers of Frost now, and Missile Barrage from 46-47. PvP: the fast, cheap slow on a runner. Shift on your bolt key: the small bolt. A Rank 1 Frostbolt does roll Fingers of Frost in game at level 42 (you, 2026-11-22); the rate, full or reduced, is not counted yet, and Missile Barrage is untested until you take it at 46-47.",
+      "why": "Frostbolt Rank 1, your choice: with Improved Frostbolt a 1.0-second cast for 25 mana that puts the 40% slow on. Questing and PvP: fish for Fingers of Frost now, and Missile Barrage from 46-47. PvP: the fast, cheap slow on a runner. Shift on your bolt key: the small bolt. A Rank 1 Frostbolt rolls your procs at the full chance: Blizzard removed the low-rank penalty in its 2 November notes, and you saw Fingers of Frost proc at 42. Missile Barrage from 46-47 is assumed the same.",
       "binds": [
        {
         "from": 42,
@@ -345,7 +345,7 @@
       "key": "Shift+R",
       "kind": "set-up cast",
       "role": "Blizzard: packs and battleground groups",
-      "why": "Blizzard: packs, and groups in battlegrounds. Your habit.",
+      "why": "Blizzard: packs, and groups in battlegrounds. Your habit. Low ranks of Blizzard keep a reduced chance to trigger Frostbite, Fingers of Frost and Arcane Concentration (Blizzard's 2 November notes), so this key holds your top rank: fish for procs with Frostbolt Rank 1, not Blizzard.",
       "binds": [
        {
         "from": 20,
@@ -567,7 +567,7 @@
      "#showtooltip",
      "/cast Frostbolt(Rank 1)"
     ],
-    "note": "Or drag Rank 1 itself from the spellbook: tick show all spell ranks in its settings menu (Forever's spellbook has the option). If the macro ever casts your top rank instead, use the dragged spell. A Rank 1 Frostbolt does roll Fingers of Frost in game at level 42 (you, 2026-11-22); the rate, full or reduced, is not counted yet, and Missile Barrage is untested until you take it at 46-47."
+    "note": "Or drag Rank 1 itself from the spellbook: tick show all spell ranks in its settings menu (Forever's spellbook has the option). If the macro ever casts your top rank instead, use the dragged spell. A Rank 1 Frostbolt rolls your procs at the full chance: Blizzard removed the low-rank penalty in its 2 November notes, and you saw Fingers of Frost proc at 42. Missile Barrage from 46-47 is assumed the same."
    },
    {
     "key": "E",

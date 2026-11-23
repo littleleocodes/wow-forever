@@ -49,9 +49,9 @@ One layout for questing and for fighting players: your two bars and three keys o
 
 | Key | At level 43 | How you press it | Why here |
 |---|---|---|---|
-| Shift+Q | Frostbolt Rank 1 | set-up cast, quick | Frostbolt Rank 1, your choice: with Improved Frostbolt a 1.0-second cast for 25 mana that puts the 40% slow on. Questing and PvP: fish for Fingers of Frost now, and Missile Barrage from 46-47. PvP: the fast, cheap slow on a runner. Shift on your bolt key: the small bolt. A Rank 1 Frostbolt does roll Fingers of Frost in game at level 42 (you, 2026-11-22); the rate, full or reduced, is not counted yet, and Missile Barrage is untested until you take it at 46-47. |
+| Shift+Q | Frostbolt Rank 1 | set-up cast, quick | Frostbolt Rank 1, your choice: with Improved Frostbolt a 1.0-second cast for 25 mana that puts the 40% slow on. Questing and PvP: fish for Fingers of Frost now, and Missile Barrage from 46-47. PvP: the fast, cheap slow on a runner. Shift on your bolt key: the small bolt. A Rank 1 Frostbolt rolls your procs at the full chance: Blizzard removed the low-rank penalty in its 2 November notes, and you saw Fingers of Frost proc at 42. Missile Barrage from 46-47 is assumed the same. |
 | Shift+E | Arcane Explosion | while moving | Arcane Explosion: packs in questing; in PvP, a rogue or druid vanishing or stealthing within 10 yards. Your habit. |
-| Shift+R | Blizzard | set-up cast | Blizzard: packs, and groups in battlegrounds. Your habit. |
+| Shift+R | Blizzard | set-up cast | Blizzard: packs, and groups in battlegrounds. Your habit. Low ranks of Blizzard keep a reduced chance to trigger Frostbite, Fingers of Frost and Arcane Concentration (Blizzard's 2 November notes), so this key holds your top rank: fish for procs with Frostbolt Rank 1, not Blizzard. |
 | Shift+F | Bottom trinket (macro): nothing worn | reaction | Your bottom trinket's on-use (slot 14). Empty today, so the key does nothing yet: wear the PvP insignia in the bottom slot when you get it (fear, Polymorph and slows; 5 minutes), and Shift+F is always your break-out key. Feared or sheeped you cannot move, so the key's speed matters less than finding it: F frees you from stuns and roots, Shift+F from fear, Polymorph and slows. |
 | Shift+Mouse 5 | Escape Artist | reaction | Escape Artist, your Gnome racial: out of a slow or a root and 3 seconds immune, every 2 minutes. You press it while running, and a thumb leaves the movement keys alone. A Fire Blast pressed with Shift still held fires this instead: the cost is a 2-minute racial. |
 | Shift+Mouse 4 | Ice Block (macro) | reaction | Ice Block: the costliest late press in PvP, on a thumb with no movement finger. It sits under Counterspell (pressed once in 30 seconds), not under Fire Blast, so a Shift held from Shift+E never fires it. The macro blocks in the middle of a cast; to leave early, press F or right-click the buff. |
@@ -127,7 +127,7 @@ Eureka! (your Gnome racial, every 2 minutes) has no global cooldown, so it goes 
 /cast Frostbolt(Rank 1)
 ```
 
-Or drag Rank 1 itself from the spellbook: tick show all spell ranks in its settings menu (Forever's spellbook has the option). If the macro ever casts your top rank instead, use the dragged spell. A Rank 1 Frostbolt does roll Fingers of Frost in game at level 42 (you, 2026-11-22); the rate, full or reduced, is not counted yet, and Missile Barrage is untested until you take it at 46-47.
+Or drag Rank 1 itself from the spellbook: tick show all spell ranks in its settings menu (Forever's spellbook has the option). If the macro ever casts your top rank instead, use the dragged spell. A Rank 1 Frostbolt rolls your procs at the full chance: Blizzard removed the low-rank penalty in its 2 November notes, and you saw Fingers of Frost proc at 42. Missile Barrage from 46-47 is assumed the same.
 
 **E**: Frost Nova, mid-cast
 
@@ -395,7 +395,7 @@ Count a piece's stats in spell power: 1 intellect = 0.13, 1 spirit = 0.54, 1 sta
 
 ### Oils, food and elixirs
 
-The best three of each kind you can use now, with today's prices (auction house snapshot 1.2 hours old). "For your trip": enough to keep it up for about 2.8 hours of play, to your next training at level 44 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
+The best three of each kind you can use now, with today's prices (auction house snapshot 1.3 hours old). "For your trip": enough to keep it up for about 2.8 hours of play, to your next training at level 44 (character.json "hours_out" sets your own). "Earns its price back": the play minutes an hour of it saves against the play minutes an hour of it costs to earn at your income.
 
 | Kind | Item | Effect | Faster kills | Lasts | How | One costs | For your trip | Earns its price back |
 |---|---|---|---|---|---|---|---|---|
