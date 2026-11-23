@@ -38,6 +38,9 @@ GLOBAL = [
         "session): where do they come from? No tooltip ties them to Hyjal Summit or The Barrow Deeps, so the gear lists count their crafts "
         "as plain crafts (raidsim/gear_lists.WATCH_MATS marks them); if either comes only from the raids or from content that opens with "
         "them, those crafts are True BiS items from 2026-12-09, like the 97 made with Malleable Essence of Nature.",
+        "Which honor ranks can a player hold now, and does the rank gear need them? (2026-11-23: the user is not sure.) The gear lists "
+        "keep the rank gear the simulator's database dates phase 1 in both True lists, marked PvP, with a non-PvP alternative beside each "
+        "piece (raidsim/gear_lists.pvp_alternatives); no rank cap is assumed until this is known.",
         "Threat values of new abilities (Holy Strike, Mangle, Stormstrike, Shield Slam changes).",
         "Hunter's Mark: our beta tooltip gives rank 4 +143 ranged attack power, the simulator's spell data +71 (2026-11-21, the audit "
         "session's C17). Read the rank the trainer teaches at 60 and its bonus in game; until then the hunter raid guides say to take "

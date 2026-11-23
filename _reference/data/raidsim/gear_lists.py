@@ -58,37 +58,42 @@ QUEST_REVERED = 21000   # Classic's quest_template RequiredMinRepValue at Revere
 # Forever's raid materials (2026-11-23, the audit session from Wowhead's Forever pages; the client's tooltips): a craft whose client
 # reagents hold one is a raid item (the accepted reading 3), True BiS from 2026-12-09. Only this reagent's tooltip names the new raids.
 NEW_RAID_MATS = {274030: "Malleable Essence of Nature (disenchanted from Hyjal Summit and Barrow Deeps items)"}
-# The user's open questions (put by the audit session, 2026-11-23); the defaults apply until the user answers.
-UBRS_EASY = True   # A: Upper Blackrock Spire counts for Easy Pre-BiS: its bosses' drops and the quests whose objective is inside it
-BG_OPEN = {"Alterac Valley": True, "Warsong Gulch": None, "Arathi Basin": None}   # B: True open (Easy to Honored, like Alterac Valley),
-# None as the database dates them (the True lists), False closed (no list)
+# The user's answers (2026-11-23, first-hand to the audit session, which put the three questions):
+# - "Yes, I don't consider Upper Blackrock Spire a raid. It's within the dungeon and quests realm": its bosses' drops and the quests whose
+#   objective is inside it are in Easy Pre-BiS (the user's decision; the switch stays for the record);
+UBRS_EASY = True
+# - Warsong Gulch and Arathi Basin "Yes they are" open, with their reputation vendors: all three battlegrounds follow one rule (the audit
+#   session's reading): rewards up to Honored in Easy (battleground_easy, marked PvP), Revered and Exalted in the True lists, a standing no
+#   source gives out of Easy. True open, None as the database dates them (the True lists), False closed (no list);
+BG_OPEN = {"Alterac Valley": True, "Warsong Gulch": True, "Arathi Basin": True}
+# - which honor ranks and rank gear a player can have now: "Not sure". The rank gear the database dates phase 1 stays in both True lists,
+#   marked PvP, with a non-PvP alternative (pvp_alternatives); no rank cap is guessed (the launch checklist asks).
 
 STANDING_FROM = ("the standing, in this order: the client's MinReputation when set (empty on the Alterac Valley rewards that ask "
                  "Honored to Exalted), Classic's item_template RequiredReputationRank, the database's rep source")
 # (kind, lists, what it is, where the fact comes from): items
 ITEM_KINDS = [
-    ("dungeon_drop_easy", ALL3, "a named creature's drop in a 5-player dungeon at 5% or more (Upper Blackrock Spire's bosses too while "
-     "UBRS_EASY, the user's question A, default yes); a pair Classic's dump lacks counts",
+    ("dungeon_drop_easy", ALL3, "a named creature's drop in a dungeon at 5% or more (our reading), Upper Blackrock Spire's bosses "
+     "included (the user: \"I don't consider Upper Blackrock Spire a raid\"); a pair Classic's dump lacks counts",
      "database drop (zone, creature); cmangos dungeon_drops.csv chance"),
-    ("dungeon_drop", TRUE2, "any other dungeon drop: trash, drops under 5% (Upper Blackrock Spire's bosses when UBRS_EASY is off)",
-     "database drop"),
+    ("dungeon_drop", TRUE2, "any other dungeon drop: trash, drops under 5%", "database drop"),
     ("world_drop", TRUE2, "a drop in the open world (one that binds when equipped sells on the auction house)", "database drop"),
     ("quest", ALL3, "a quest reward of the game now (Alterac Valley's included; Forever's own quests count)",
      "database quest; cmangos quests.csv zone"),
-    ("quest_ubrs", TRUE2, "a quest whose objective is inside Upper Blackrock Spire (one of its bosses to kill, or an item one drops), "
-     "while UBRS_EASY is off", "cmangos quest_geo.csv objectives, quest_item_sources.csv"),
+    ("quest_ubrs", TRUE2, "a quest whose objective is inside Upper Blackrock Spire, only if UBRS_EASY were off (the user put the Spire "
+     "in Easy, so no item takes this kind)", "cmangos quest_geo.csv objectives, quest_item_sources.csv"),
     ("tier05", TRUE2, "Tier 0.5 (the level-58 chain: 10-player Upper Blackrock Spire, the vendors' gold)", "item set name (gear_tiers.T05_SETS)"),
     ("craft", TRUE2, "a craft whose recipe and materials the game has now (from a trainer, a vendor, a drop or a reputation)",
      "database crafted; client SpellReagents 71037 (Classic's craft_spells.csv where the client has no row)"),
     ("rep_to_honored", ALL3, "a reputation reward at Friendly or Honored", STANDING_FROM),
     ("rep_above_honored", TRUE2, "a reputation reward at Revered or Exalted, or one whose standing no source gives", STANDING_FROM),
-    ("battleground_easy", ALL3, "a battleground quartermaster's or reputation's reward that a source puts at Honored or below, for a "
-     "battleground the user confirmed open (Alterac Valley; question B for the others), labelled PvP", "database soldBy / rep; " + STANDING_FROM),
-    ("battleground", TRUE2, "any other battleground reward: above Honored, a standing no source gives, or a battleground the "
-     "database dates and the user has not confirmed (Warsong Gulch, Arathi Basin until question B), labelled PvP",
+    ("battleground_easy", ALL3, "a battleground quartermaster's or reputation's reward that a source puts at Honored or below (Alterac "
+     "Valley, Warsong Gulch, Arathi Basin: the user says all three are open), labelled PvP", "database soldBy / rep; " + STANDING_FROM),
+    ("battleground", TRUE2, "any other battleground reward: Revered or Exalted, or a standing no source gives, labelled PvP",
      "database soldBy / rep; " + STANDING_FROM),
-    ("bg_closed", NONE, "a battleground the user says is closed (question B)", "BG_OPEN"),
-    ("pvp", TRUE2, "honor rank gear the database dates phase 1, labelled PvP", "database pvp, honor vendors"),
+    ("bg_closed", NONE, "a battleground the user says is closed (none: BG_OPEN)", "BG_OPEN"),
+    ("pvp", TRUE2, "honor rank gear the database dates phase 1, labelled PvP, each piece with a non-PvP alternative (the user is not "
+     "sure which ranks a player can hold now; no rank cap is guessed)", "database pvp, honor vendors"),
     ("vendor", TRUE2, "a vendor's stock for gold or a currency (Booty Bay's Tarnished Undermine Reals)", "database soldBy"),
     ("auction", TRUE2, "no source in the database, binds when equipped and Classic's world creatures drop it: the auction house",
      "bind type (client ItemSparse, else Classic item_template); cmangos mob_loot.csv"),
