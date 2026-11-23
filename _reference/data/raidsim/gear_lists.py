@@ -77,7 +77,7 @@ STANDING_FROM = ("the standing, in this order: the client's MinReputation when s
 # (kind, lists, what it is, where the fact comes from): items
 ITEM_KINDS = [
     ("dungeon_drop_easy", ALL3, "a named creature's drop in a dungeon at 5% or more (our reading), Upper Blackrock Spire's bosses "
-     "included (the user: \"I don't consider Upper Blackrock Spire a raid\"); the chance must be known (since 2026-11-23, the delegator's "
+     "included (the user: \"I don't consider Upper Blackrock Spire a raid\"); the chance must be known (since 2026-11-23, the audit session's "
      "G13: the creature's own row, spawned or summoned, else the item's best row in the dungeon, a chest included)",
      "database drop (zone, creature); cmangos dungeon_loot.csv chance (drop_chance)"),
     ("dungeon_drop", TRUE2, "any other dungeon drop: trash, drops under 5% or of unknown chance (unknown_chances), a class quest's "
@@ -90,7 +90,7 @@ ITEM_KINDS = [
     ("quest_ubrs", TRUE2, "a quest whose objective is inside Upper Blackrock Spire, only if UBRS_EASY were off (the user put the Spire "
      "in Easy, so no item takes this kind)", "cmangos quest_geo.csv objectives, quest_item_sources.csv"),
     ("tier05", TRUE2, "Tier 0.5 (the level-58 chain: 10-player Upper Blackrock Spire, the vendors' gold), and the loot of the bosses its "
-     "braziers and banner summon (T05_SUMMONS, T05_CHESTS; 2026-11-23, the delegator's G13)", "item set name (gear_tiers.T05_SETS); database drop"),
+     "braziers and banner summon (T05_SUMMONS, T05_CHESTS; 2026-11-23, the audit session's G13)", "item set name (gear_tiers.T05_SETS); database drop"),
     ("craft", TRUE2, "a craft whose recipe and materials the game has now (from a trainer, a vendor, a drop or a reputation)",
      "database crafted; client SpellReagents 71037 (Classic's craft_spells.csv where the client has no row)"),
     ("rep_to_honored", ALL3, "a reputation reward at Friendly or Honored", STANDING_FROM),
@@ -105,8 +105,8 @@ ITEM_KINDS = [
     ("vendor", TRUE2, "a vendor's stock for gold or a currency", "database soldBy"),
     ("dungeon_currency", TRUE2, "a currency vendor's stock whose currency dungeon bosses drop (CURRENCY_VENDORS: Pix Xizzix in Booty Bay, "
      "Tarnished Undermine Reals from the bosses of Blackrock Depths, Blackrock Spire, Scholomance, Stratholme and the Temple of "
-     "Atal'Hakkar); the True lists until the Reals a boss drops are known (the delegator, 2026-11-23)",
-     "database soldBy; Wowhead Forever's vendor and currency pages, read by the delegator session 2026-11-23"),
+     "Atal'Hakkar); the True lists until the Reals a boss drops are known (the audit session, 2026-11-23)",
+     "database soldBy; Wowhead Forever's vendor and currency pages, read by the audit session 2026-11-23"),
     ("auction", TRUE2, "no source in the database, binds when equipped and Classic's world creatures drop it: the auction house",
      "bind type (client ItemSparse, else Classic item_template); cmangos mob_loot.csv"),
     ("vetted", TRUE2, "no source in the database, used by a launch or pre-raid preset of the simulator, item level 70 at most",
@@ -158,7 +158,7 @@ def context(G, Tm, zones, repo):
     raw = json.load(open(pathlib.Path(repo) / "assets" / "database" / "db.json", encoding="utf-8"))
     npcs = {n["id"]: n.get("name") for n in raw.get("npcs", [])}
     cm = Tm.CMANGOS
-    # drop chances (2026-11-23, the delegator's G13): dungeon_loot.csv, every creature with loot spawned in a dungeon or spawned nowhere
+    # drop chances (2026-11-23, the audit session's G13): dungeon_loot.csv, every creature with loot spawned in a dungeon or spawned nowhere
     # and every chest, by CMaNGOS's rules (dungeon_drops.csv, the planner's, holds spawned creatures at 1% or more only)
     chance, loot_rows, map_best, by_name, rank = {}, set(), {}, {}, {}
     for r in csv.DictReader(open(cm / "dungeon_loot.csv", encoding="utf-8")):
@@ -257,33 +257,33 @@ ZONE_MAP = {"Ragefire Chasm": 389, "Wailing Caverns": 43, "The Deadmines": 36, "
             "The Stockade": 34, "Gnomeregan": 90, "Razorfen Kraul": 47, "Scarlet Monastery": 189, "Razorfen Downs": 129, "Uldaman": 70,
             "Zul'Farrak": 209, "Maraudon": 349, "Sunken Temple": 109, "The Temple of Atal'Hakkar": 109, "Blackrock Depths": 230,
             "Blackrock Spire": 229, "Dire Maul": 429, "Scholomance": 289, "Stratholme": 329}
-# Summons that are not plain dungeon content (the delegator's G13, 2026-11-23): the Tier 0.5 chain's (its braziers and the Banner of
+# Summons that are not plain dungeon content (the audit session's G13, 2026-11-23): the Tier 0.5 chain's (its braziers and the Banner of
 # Provocation; Jarien and Sothos's loot is the database's "Sothos and Jarien's Heirlooms") are Tier 0.5, out of Easy by the reading (4);
 # a class quest's (the warlock's Dreadsteed, the paladin's Charger) needs that class in the group: True lists only.
 T05_SUMMONS = {16042: "Lord Valthalak", 16080: "Mor Grayhoof", 16097: "Isalien", 16118: "Kormok", 16059: "Theldren"}
 T05_CHESTS = {"Sothos and Jarien's Heirlooms"}
 CLASS_SUMMONS = {14506: "Lord Hel'nurath (the warlock's Dreadsteed quest)", 14516: "Death Knight Darkreaver (the paladin's Charger quest)"}
-# Rare spawns (the delegator, 2026-11-23): a creature Classic ranks rare (creature_template Rank 2 rare elite, 4 rare) is no Easy source,
+# Rare spawns (the audit session, 2026-11-23): a creature Classic ranks rare (creature_template Rank 2 rare elite, 4 rare) is no Easy source,
 # whatever its chance per kill: the chance per run is not known (Phase Blade, 50% from the Burning Felguard), unless the dump shows it
-# is a set encounter (the delegator's test: "a creature in a pool with a chance or with alternatives is a rare spawn; one spawned
+# is a set encounter (the audit session's test: "a creature in a pool with a chance or with alternatives is a rare spawn; one spawned
 # outright is not"; dungeon_loot.csv's spawn column): spawned outright (Edwin VanCleef, Lord Roccor, Pyromancer Loregrain, Warder
 # Stilgiss, Verek, Quartermaster Zigris, Razorfen Spearhide, and Hearthsinger Forresten at one of his four spots) or summoned by a db
-# script (Urok Doomhowl, the Challenge's event). Timmy the Cruel is summoned by a C++ script the dump does not hold; the delegator
+# script (Urok Doomhowl, the Challenge's event). Timmy the Cruel is summoned by a C++ script the dump does not hold; the audit session
 # accepted him as an encounter (ENCOUNTER_RARES). By the same test a creature a spawn pool can leave out is a rare spawn whatever its
 # rank (Tsu'zee in Dire Maul, Ragglesnout in Razorfen Downs: Classic ranks them elite).
 RARE_RANKS = {"2", "4"}
 SET_SPAWNS = {"outright", "event script"}
-# Timmy the Cruel: the dump holds no summon of his (a C++ script); the delegator's reading, from its memory of Classic and not a
+# Timmy the Cruel: the dump holds no summon of his (a C++ script); the audit session's reading, from its memory of Classic and not a
 # source: he appears when the square is entered (2026-11-23)
 ENCOUNTER_RARES = {"Timmy the Cruel"}
-# Spawns the sources disagree on: not Easy (the delegator, 2026-11-23: "Where sources disagree the item is not Easy"); a third source (a
+# Spawns the sources disagree on: not Easy (the audit session, 2026-11-23: "Where sources disagree the item is not Easy"); a third source (a
 # Classic sniff, Wowhead Forever's kill counts against a sure boss of the same run) reopens one
 CONTESTED_SPAWNS = {"Hearthsinger Forresten": "the dump's pool keeps him up at one of four spots, always; Classic ranks him rare elite "
                                               "and players knew him as not always there"}
-# A vendor whose currency dungeon bosses drop (the delegator's read of Wowhead Forever, 2026-11-23: Pix Xizzix sells 54 items, every one
+# A vendor whose currency dungeon bosses drop (the audit session's read of Wowhead Forever, 2026-11-23: Pix Xizzix sells 54 items, every one
 # for currency 3469, Tarnished Undermine Real, which 42 bosses of Blackrock Depths, Blackrock Spire, Scholomance, Stratholme and the
 # Temple of Atal'Hakkar drop; how many a boss drops is not shown): {vendor: (currency, where, how you get it)}, prices {item: Reals}
-# from his "Sells" list (the delegator's browser read the same day; 272400 and 272412 were not in it; the five flask recipes, 50 each,
+# from his "Sells" list (the audit session's browser read the same day; 272400 and 272412 were not in it; the five flask recipes, 50 each,
 # are not gear)
 CURRENCY_VENDORS = {"Pix Xizzix": ("Tarnished Undermine Reals", "Pix Xizzix in Booty Bay", "dungeon bosses drop the Reals")}
 CURRENCY_PRICES = {**{i: 100 for i in (272393, 272394, 272395, 272396, 272397, 272398, 272399, 272401, 272402, 272403, 272404, 272405,
@@ -296,14 +296,14 @@ CURRENCY_PRICES = {**{i: 100 for i in (272393, 272394, 272395, 272396, 272397, 2
 
 def currency_text(iid, vendor):
     """The record's and the page's words for a currency vendor's item: "125 Tarnished Undermine Reals from Pix Xizzix in Booty Bay;
-    dungeon bosses drop the Reals" (the delegator's wording)."""
+    dungeon bosses drop the Reals" (the audit session's wording)."""
     cur, where, how = CURRENCY_VENDORS[vendor]
     price = CURRENCY_PRICES.get(iid)
     return f"{price} {cur} from {where}; {how}" if price else f"{cur} (the price not read) from {where}; {how}"
 
 
 def currency_cost(items, db):
-    """What a set costs in each vendor currency (the delegator, 2026-11-23: "the page should say what the set costs in Reals"):
+    """What a set costs in each vendor currency (the audit session, 2026-11-23: "the page should say what the set costs in Reals"):
     {currency: total} over the set's items a currency vendor sells, and the items whose price is not read."""
     total, unpriced = {}, []
     for x in items[:17]:
@@ -319,8 +319,8 @@ def currency_cost(items, db):
                 break
     return {"total": total, **({"unpriced": unpriced} if unpriced else {})} if total or unpriced else {}
 # Drop chances Classic's dump cannot give (Forever's own loot), read from Wowhead's Forever item pages ("Dropped by": count of outof) by
-# the delegator session on 2026-11-23 and decided Easy there (its G13 (c) decisions): {item: (creature, count, outof)}
-WOWHEAD_READ = "Wowhead Forever, read by the delegator session 2026-11-23"
+# the audit session on 2026-11-23 and decided Easy there (its G13 (c) decisions): {item: (creature, count, outof)}
+WOWHEAD_READ = "Wowhead Forever, read by the audit session 2026-11-23"
 EASY_DECIDED = {276456: ("Black Guard Swordsmith", 120, 371), 276419: ("Crimson Hammersmith", 158, 484),
                 276403: ("Crimson Hammersmith", 158, 484), 276396: ("Ezra Grimm", 131, 443), 276395: ("Ezra Grimm", 118, 443),
                 276394: ("Ezra Grimm", 132, 443), 276397: ("Malor the Zealous", 242, 726), 276399: ("Malor the Zealous", 216, 726),
@@ -352,7 +352,7 @@ def drop_chance(iid, npc, z, ctx):
 
 
 def dungeon_kind(it, npc, z, d, ctx):
-    """(kind, detail) of a drop in a dungeon (2026-11-23, the delegator's G13: until then a drop whose chance Classic's dump did not give
+    """(kind, detail) of a drop in a dungeon (2026-11-23, the audit session's G13: until then a drop whose chance Classic's dump did not give
     counted as Easy; 463 of the 2,548 Easy items were in by that alone): Easy needs a named creature (the database's) and a known chance
     of DROP_MIN or more; the Tier 0.5 summons' loot is tier05, a class quest's summon is a plain dungeon drop, and an unknown chance is a
     plain dungeon drop (unknown_chances lists them; EASY_DECIDED gives Wowhead's chance for the ones decided); a creature Classic ranks
@@ -587,7 +587,7 @@ RANK_SIDE = {"Grand Marshal": "Alliance", "Field Marshal": "Alliance", "Marshal"
              "Centurion": "Horde", "Legionnaire": "Horde", "Blood Guard": "Horde", "Stone Guard": "Horde", "First Sergeant": "Horde",
              "Senior Sergeant": "Horde"}
 RANK_TITLE = re.compile(r"^(?:Premier )?(" + "|".join(sorted(map(re.escape, RANK_SIDE), key=len, reverse=True)) + r")'s ")
-# Rank 3 is "Sergeant" on both sides; its items differ by name (the delegator, 2026-11-23)
+# Rank 3 is "Sergeant" on both sides; its items differ by name (the audit session, 2026-11-23)
 RANK_NAME_SIDE = {"Sergeant's Cape": "Alliance", "Sergeant's Cloak": "Horde"}
 
 

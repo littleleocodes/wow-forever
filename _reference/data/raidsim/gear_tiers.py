@@ -194,7 +194,7 @@ WITHOUT_PVP = ("honor rank gear and every battleground reward (gear_lists.PVP_KI
 def pool_of(tier, zones, repo=None, nopvp=False, side=None):
     """The list's item pool (2026-11-23): raidsim/gear_lists.py's rules, "bis" = True BiS, "prebis" = True Pre-BiS, "dungeon" = Easy
     Pre-BiS (any other name: True Pre-BiS). Until then three tiers with their own rules (Raid BiS, Pre-raid, Quests and dungeons; the
-    module docstring and crafted_ok / dungeon_source above, kept for the record). `nopvp` (2026-11-23, the delegator's ruling on the
+    module docstring and crafted_ok / dungeon_source above, kept for the record). `nopvp` (2026-11-23, the audit session's ruling on the
     list test: the no-PvP set is the one most players wear, so it is a made set): without what only PvP puts in the list (WITHOUT_PVP).
     `side` ("Alliance" / "Horde"): without the other side's items (gear_lists.faction_of), the faction check of the same ruling."""
     ctx = rules_ctx(zones, repo)
@@ -681,6 +681,7 @@ def refit(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=
 
 
 LADDER_MARGIN = 0.005   # a lower list's set this close to the seed-1 leader races again on seed 2 (optimize_set's ladder guard)
+KNOWN_MARGIN = 0.002    # a known positive replaces the picker's best only when this far ahead of it on seed 2 (2026-11-23)
 
 
 def known_lists(cls, spec):
@@ -827,7 +828,7 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
         w3 = weights(v1)
         wm = {k: (w.get(k, 0.0) + w3.get(k, 0.0)) / 2 for k in set(w) | set(w3)}
         for name, ww in (("all-slots, weights at the pick", w3), ("all-slots, mean weights", wm)):
-            x = greedy(v1, ww, True)
+            x = greedy(v1, ww, True)   # keep_special: every item with a setName or an effect stays, so a raced set unit is kept
             for s in (12, 13, 14, 15, 16):
                 x[s] = dict(v1[s])
             if x != v1 and x not in rew.values():
@@ -904,7 +905,7 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     lead = max(r1, key=r1.get)
     ref = ("current" if keep_current else "previous" if "previous" in sets
            else ("keep-sets-and-effects" if lead == "all-slots" else "all-slots"))
-    # the ladder guard (2026-11-23, the delegator's ruling on the list test: Survival's True BiS raced the True Pre-BiS set on seed 1
+    # the ladder guard (2026-11-23, the audit session's ruling on the list test: Survival's True BiS raced the True Pre-BiS set on seed 1
     # only, 0.08% behind at 1,000 fights, and ended 0.2-0.3% below it at 6,000 on both seeds): every lower list's set within
     # LADDER_MARGIN of the seed-1 leader races in the seed-2 confirm too, and stays unless the chosen set beats it there (ties go to
     # the lower list, whose pool nests in this one). Since the same day each lower list's set races as made and with this list's
@@ -924,6 +925,14 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     kb = max((k for k in r2 if is_known(k)), key=r2.get, default=None)
     if kb is not None and r2[kb] > r2[chosen]:   # a known positive ahead of the chosen set on seed 2 stands
         chosen = kb
+    # ... by more than KNOWN_MARGIN against the picker's best (2026-11-23, the audit session: Frost's Easy set took the site's list, 14 of
+    # its 17 slots swapped into the pool by our rule, at 1.0150 against the picker's 1.0153 on the confirm); inside that the picker's
+    # set stands, and the record says the known positive tied
+    known_tie = None
+    if is_known(chosen) and pbest in r2 and r2[chosen] <= r2[pbest] * (1 + KNOWN_MARGIN):
+        known_tie = {"known": chosen, "seed2": round(r2[chosen], 4), "picker": pbest, "picker_seed2": round(r2[pbest], 4),
+                     "margin": KNOWN_MARGIN}
+        chosen = pbest if (pbest != ref and r2[pbest] - 1 > (a.min_gain if ref == "current" else 0.0)) else ref
     ladder_case = None
     low = max((k for k in lad if k in r2), key=lambda k: (r2[k], k.endswith(" (as made)")), default=None)
     if low is not None and r2[low] >= r2[chosen]:
@@ -945,13 +954,20 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     if is_known(chosen):
         rec = next(x for x in known_rec if chosen.startswith(f"known: {x['name']}"))
         n = sum(1 for s in rec["swapped"] if s.get("to"))
-        src = (f"a known positive: {rec['name']} ({rec['source']})" + (f", {n} items swapped into the pool by our rule" if n else "")
-               + (", with the picker's raced trinkets" if chosen.endswith("+trinkets") else ""))
+        filled = sum(1 for x in sets[chosen] if x.get("id"))
+        if 2 * n > filled:   # mostly our own picks (2026-11-23, the audit session): a page credits the site only when most of the set is its
+            src = f"the picker's set: {rec['name']} ({rec['source']}) supplied {filled - n} of its {filled} items, the rest swapped in by our rule"
+        else:
+            src = (f"a known positive: {rec['name']} ({rec['source']})" + (f", {n} items swapped into the pool by our rule" if n else "")
+                   + (", with the picker's raced trinkets" if chosen.endswith("+trinkets") else ""))
+    elif known_tie:
+        src += f" ({known_tie['known'][7:]} tied: {known_tie['seed2']} against {known_tie['picker_seed2']} on seed 2, inside {KNOWN_MARGIN:.1%})"
     items = sets[chosen]
     ilvl = lambda its: round(sum(db[x["id"]]["scalingOptions"]["0"].get("ilvl", 0) for x in its if x.get("id") in db) / max(1, sum(1 for x in its if x.get("id") in db)), 1)  # noqa: E731
     return {"evaluated_on": [f"{n}: {lab}" for n, _, _, _, lab in evals], "weights": {k: round(v, 4) for k, v in w.items() if abs(v) > 1e-6},
             "trinkets": [db[i]["name"] for i in pair if i in db], "trinket_screen": screen, **({"relic_race": relic_race} if relic_race else {}),
             "race_seed1": r1, "confirm_seed2": r2, "chosen": chosen, "chosen_source": src, "ladder_case": case,
+            **({"known_tie": known_tie} if known_tie else {}),
             **({"ladder": ladder_case} if ladder_case else {}),
             "picker_best": {"name": pbest, "seed1": round(r1[pbest], 4), **({"seed2": round(r2[pbest], 4)} if pbest in r2 else {})} if pbest else None,
             "known_positives": known_rec or (no_known or "no known positive"),
@@ -1117,7 +1133,7 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
                         names=[db.get(x.get("id"), {}).get("name") if x.get("id") else None for x in ref],
                         entry=entry_name, gear=p.relative_to(ROOT).as_posix(), date=TODAY, setting=setting)
         r["guard"] = {"new_dps": round(nv, 2), "previous_dps": round(ov, 2), "repaired_slots": out_of_pool}
-    if write:   # the ladder's case goes in the set's file (the delegator, 2026-11-23): a page says "True BiS is the True Pre-BiS set" once
+    if write:   # the ladder's case goes in the set's file (the audit session, 2026-11-23): a page says "True BiS is the True Pre-BiS set" once
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(json.dumps({"items": r["items"], "list": GL.LABEL.get(tier, tier), "rules": GL.RULES, **({"without_pvp": True} if nopvp else {}),
                                  **({"side": side} if side else {}), **({"ladder": r["ladder"]} if r.get("ladder") else {})}, indent=1) + "\n",

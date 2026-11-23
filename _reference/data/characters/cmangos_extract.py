@@ -66,7 +66,7 @@ def loot_chances(table, refs, entry, depth=0):
 
 def loot_chances_cmangos(table, refs, entry, depth=0, group=0):
     """{item: chance} of one loot entry by CMaNGOS's own rules (game/Loot/LootMgr.cpp: LootTemplate::AddEntry, Process, LootGroup::Roll),
-    which loot_chances above departs from in two ways (2026-11-23, found with the delegator's G13; loot_chances stays as it is for the
+    which loot_chances above departs from in two ways (2026-11-23, found with the audit session's G13; loot_chances stays as it is for the
     planner's files, whose numbers would move: an open item):
     - a reference (negative mincountOrRef) is an entry of its own whatever its groupid (AddEntry keeps only rows with groupid > 0 and a
       positive mincountOrRef in a group); loot_chances counted a reference's chance in its group, so a group whose reference row reads 100
@@ -247,7 +247,7 @@ def main():
                 continue
             rows.append([spawned[e], e, r["Name"], r["Rank"], r["MaxLevel"], it, x["name"], round(ch, 4)])
     write(out / "dungeon_drops.csv", ["map", "creature", "name", "rank", "level", "item", "item_name", "chance"], sorted(rows))
-    # dungeon loot for the gear lists (2026-11-23, the delegator's G13: an unknown drop chance had counted as Easy, and dungeon_drops.csv
+    # dungeon loot for the gear lists (2026-11-23, the audit session's G13: an unknown drop chance had counted as Easy, and dungeon_drops.csv
     # holds only spawned creatures at 1% or more): every creature with loot spawned in a leveling dungeon or spawned nowhere (the
     # script-summoned: Warchief Rend Blackhand, Darkmaster Gandling, Kirtonos the Herald, the Tier 0.5 summons), and every chest
     # (gameobject type 3, its loot in data1) spawned in a leveling dungeon or nowhere (the Gordok Tribute, the Chest of The Seven, Arena
@@ -264,7 +264,7 @@ def main():
         x = items.get(it)
         return x if ch >= LOOT_FLOOR and x and int(x["Quality"]) >= 2 and x["class"] in ("2", "4") else None
 
-    # how the dump spawns a creature (2026-11-23, the delegator's test for rare spawns: "a creature in a pool with a chance or with
+    # how the dump spawns a creature (2026-11-23, the audit session's test for rare spawns: "a creature in a pool with a chance or with
     # alternatives is a rare spawn; one spawned outright is not"): "pool" (a spawn pool can leave it out: its spawns there carry chances
     # that add up to under 100, or it shares the pool with other creatures and the pool spawns fewer than all its members; a pool of its
     # own spots only, Hearthsinger Forresten's four with one up, always has it; nested pools, pool_pool, are not followed: none of the

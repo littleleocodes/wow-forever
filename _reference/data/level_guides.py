@@ -183,7 +183,7 @@ def _job(a):
     # 2026-11-20 (the leveling play check, fightlab/play_check.py: Li survival and idle, Lj the pet): the share of the time per kill spent
     # out of the fight (drinking, eating, waiting), the damage shares (a pet's sources included) and the pet's deaths per 100 pulls
     return {"seconds": round(r["time_per_kill"], 1), "deaths_per_100": r.get("deaths_per_100"),
-            # every cast down to 0.01 a kill (2026-11-23, the delegator's read of Destruction: Death Coil held 0.8% of the damage at 42
+            # every cast down to 0.01 a kill (2026-11-23, the audit session's read of Destruction: Death Coil held 0.8% of the damage at 42
             # with no cast listed, so the play check's La and Lg read "never" for a press under the old 0.05 cut; the page prints 0.05 up)
             "casts": {s: round(n / k, 2) for s, n in (r.get("casts") or {}).items() if n / k >= 0.01},
             "idle_share": round((r.get("downtime_per_kill") or 0) / t, 3) if t else None,
