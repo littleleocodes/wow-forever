@@ -266,8 +266,10 @@ CLASS_SUMMONS = {14506: "Lord Hel'nurath (the warlock's Dreadsteed quest)", 1451
 # whatever its chance per kill: the chance per run is not known (Phase Blade, 50% from the Burning Felguard), unless the dump shows it
 # is a set encounter (the delegator's test: "a creature in a pool with a chance or with alternatives is a rare spawn; one spawned
 # outright is not"; dungeon_loot.csv's spawn column): spawned outright (Edwin VanCleef, Lord Roccor, Pyromancer Loregrain, Warder
-# Stilgiss, Verek, Quartermaster Zigris, Razorfen Spearhide) or summoned by a db script (Urok Doomhowl, the Challenge's event). Timmy
-# the Cruel is summoned by a C++ script the dump does not hold; the delegator accepted him as an encounter (ENCOUNTER_RARES).
+# Stilgiss, Verek, Quartermaster Zigris, Razorfen Spearhide, and Hearthsinger Forresten at one of his four spots) or summoned by a db
+# script (Urok Doomhowl, the Challenge's event). Timmy the Cruel is summoned by a C++ script the dump does not hold; the delegator
+# accepted him as an encounter (ENCOUNTER_RARES). By the same test a creature a spawn pool can leave out is a rare spawn whatever its
+# rank (Tsu'zee in Dire Maul, Ragglesnout in Razorfen Downs: Classic ranks them elite).
 RARE_RANKS = {"2", "4"}
 SET_SPAWNS = {"outright", "event script"}
 ENCOUNTER_RARES = {"Timmy the Cruel"}
@@ -357,8 +359,9 @@ def dungeon_kind(it, npc, z, d, ctx):
     ch, src = drop_chance(it["id"], npc, z, ctx)
     say = ("chance unknown" if ch is None else "under 0.1%" if ch == 0 else f"{ch:.1%}" + (f" from {src}" if src else ""))
     rk, spawn = ctx["rank"].get(int(npc), ctx["rank"].get(who, ("", ""))) if npc else ("", "")
-    if rk in RARE_RANKS and spawn not in SET_SPAWNS and who not in ENCOUNTER_RARES:
-        return "dungeon_drop", f"{z}, {who}, {say}, a rare spawn (Classic's rank; the dump spawns it: {spawn})"
+    if spawn == "pool" or (rk in RARE_RANKS and spawn not in SET_SPAWNS and who not in ENCOUNTER_RARES):
+        return "dungeon_drop", f"{z}, {who}, {say}, a rare spawn (" + ("a spawn pool can leave it out" if spawn == "pool" else
+                                                                       f"Classic's rank; the dump spawns it: {spawn}") + ")"
     easy = bool(npc) and (UBRS_EASY or who not in Tm.UBRS_BOSSES) and ch is not None and ch >= Tm.DROP_MIN
     return ("dungeon_drop_easy" if easy else "dungeon_drop"), f"{z}, {who}, {say}"
 

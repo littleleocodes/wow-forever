@@ -265,17 +265,27 @@ def main():
         return x if ch >= LOOT_FLOOR and x and int(x["Quality"]) >= 2 and x["class"] in ("2", "4") else None
 
     # how the dump spawns a creature (2026-11-23, the delegator's test for rare spawns: "a creature in a pool with a chance or with
-    # alternatives is a rare spawn; one spawned outright is not"): "pool" (a spawn of it, or its entry, sits in a spawn pool that picks:
-    # a member chance between 0 and 100, or more members than the pool's max_limit; nested pools, pool_pool, are not followed), "spawn
-    # point" (one of several entries a spawn point rolls, creature_spawn_entry), "outright" (a creature row of its own in no such pool),
-    # "event script" (spawned nowhere, a db script summons it), "nowhere" (spawned nowhere, no db script: a C++ script or a spell)
+    # alternatives is a rare spawn; one spawned outright is not"): "pool" (a spawn pool can leave it out: its spawns there carry chances
+    # that add up to under 100, or it shares the pool with other creatures and the pool spawns fewer than all its members; a pool of its
+    # own spots only, Hearthsinger Forresten's four with one up, always has it; nested pools, pool_pool, are not followed: none of the
+    # dungeon rares' pools is nested), "spawn point" (one of several entries a spawn point rolls, creature_spawn_entry), "outright" (a
+    # creature row of its own that no pool can leave out), "event script" (spawned nowhere, a db script summons it), "nowhere" (spawned
+    # nowhere and no db script: a C++ script or a spell summons it, which the dump does not hold)
+    entry_of = {int(r["guid"]): int(r["id"]) for r in d["creature"]}
     members, limit = {}, {int(r["entry"]): int(r["max_limit"] or 0) for r in d["pool_template"]}
-    for t, key in (("pool_creature", "guid"), ("pool_creature_template", "id")):
-        for r in d[t]:
-            members.setdefault(int(r["pool_entry"]), []).append((t, int(r[key]), float(r["chance"] or 0)))
-    picking = {p for p, ms in members.items() if any(0 < ch < 100 for _, _, ch in ms) or 0 < limit.get(p, 0) < len(ms)}
-    pooled_guids = {k for p in picking for t, k, _ in members[p] if t == "pool_creature"}
-    pooled_entries = {k for p in picking for t, k, _ in members[p] if t == "pool_creature_template"}
+    for r in d["pool_creature"]:
+        members.setdefault(int(r["pool_entry"]), []).append((entry_of.get(int(r["guid"]), 0), float(r["chance"] or 0)))
+    for r in d["pool_creature_template"]:
+        members.setdefault(int(r["pool_entry"]), []).append((int(r["id"]), float(r["chance"] or 0)))
+
+    def leaves_out(p, e):
+        ms = members[p]
+        mine = [ch for x, ch in ms if x == e]
+        if any(ch > 0 for ch in mine) and sum(mine) < 100:
+            return True
+        return any(x != e for x, _ in ms) and 0 < limit.get(p, 0) < len(ms)
+
+    rare_pool = {e for p, ms in members.items() for e in {x for x, _ in ms} if leaves_out(p, e)}
     points = {}
     for r in d["creature_spawn_entry"]:
         points.setdefault(int(r["guid"]), set()).add(int(r["entry"]))
@@ -286,7 +296,7 @@ def main():
     scripted = {int(r["datalong"] or 0) for t in SCRIPT_TABLES for r in d[t] if r.get("command") == "10"}
 
     def spawn_of(e):
-        if own.get(e, set()) & pooled_guids or e in pooled_entries:
+        if e in rare_pool:
             return "pool"
         if e in alt_entries:
             return "spawn point"
