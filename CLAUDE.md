@@ -943,11 +943,12 @@ for the first matrix of 2026-11-15: 62% -> 26% against the druid). The same nigh
   Forever's rage rules (`tables.RAGE_MODEL`: normalized swing rage, double crit rage, rage taken over the expected creature health, 1.25
   decay; Arms leveling up to 7% faster at 60). Stacked temporary enchants (`extraMhImbueId` / `extraOhImbueId` in an entry's consumables:
   rogues' stones over poisons, the warlock's Spellstone over Wizard Oil; `raidsim/build_next_bench.py` builds a patched bench under another
-  name so it can be swapped in by rename while a queue runs). Open (not modelled, in `_reference/search-improvements.md`): the lower proc
-  chance of low ranks, the client's
+  name so it can be swapped in by rename while a queue runs). Open (not modelled, in `_reference/search-improvements.md`): the client's
   ExpectedStat creature health for leveling mobs (7-35% above the lab's Classic medians; whether the server uses it is unknown, so
   `MOB_HP_MULT` stays a sensitivity), glancing and crit suppression against bosses, negative resistance from debuffs, Forever's Spirit
-  regeneration, leveling gear from Forever's item database. Done the same night in the lab: crit per Agility and Intellect by level
+  regeneration, leveling gear from Forever's item database. (The lower proc chance of low ranks is gone since Blizzard's 2 Nov notes:
+  "Various talents no longer have a penalty to their chance to trigger when casting spells of a low rank"; only low ranks of Blizzard
+  keep a reduced chance; search-improvements 1g.) Done the same night in the lab: crit per Agility and Intellect by level
   from the client's PlayerExpectedStat (`fightlab/player_expected_stat.json`, `tables.CRIT_PER_STAT_TABLE`); the client tables the audit
   used are archived in `raw/2026-10-08-beta-70291/client-tables/`.
 - **New-builds survey** (2026-09-28, user request): `_reference/data/new-builds.json` (hand-kept: per class the targets searched

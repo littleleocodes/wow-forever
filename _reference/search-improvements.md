@@ -161,6 +161,55 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 ## Open ideas, ranked by what they could still find
 
+1g. **Proc fishing with Frostbolt Rank 1 (2026-11-22; Arcea's Shift+Q, the user's choice; the rate resolved the same night; the lab
+    idea open for the optimality pass)**. The user binds Rank 1 "to fish for Fingers and Missile Barrage procs". With Improved
+    Frostbolt it is a 1.0-s cast for 25 mana that chills. The fight lab and the raid simulator cast top ranks only.
+    - **Resolved: a low rank rolls talent procs at the full chance, as in Classic, except low ranks of Blizzard.** The user: "The
+      proc rate is similar to wow classic, dom the research and assume it's the same until something official for Foprever comes
+      out". The audit session found the official word in Blizzard's beta notes thread (us.forums.blizzard.com/en/wow/t/2360696)
+      and the Mage and Shaman deep dive:
+      - 1 Oct notes: spells "vastly below your current level ... have a reduced chance to activate your Class abilities and
+        Talents"; a Rank 1 Frostbolt at 60 gave 0% Frostbite.
+      - 7 Oct deep dive: Arcane Concentration reduced for low ranks, and "any similar talents" too.
+      - 16 Oct notes: Frost Blast added to replace Rank 1 Frostbolt under the penalty.
+      - 2 Nov notes (posted 3 Nov): "Various talents no longer have a penalty to their chance to trigger when casting spells of
+        a low rank"; Frost Blast removed. The spell Blizzard keeps a reduced chance for Arcane Concentration, Frostbite and
+        Fingers of Frost on ranks learned more than 12 levels below the caster. That wording comes from a summary of the
+        post; no session has read it verbatim.
+      - The user's test agrees: "It does proc" at level 42 (one report, no count; 2026-11-22).
+      - Missile Barrage is not named and is assumed to fall under "various talents".
+      - Upstream EV-0149's level ramp is the Revelation enchant's rule, not a talent rule.
+    - **The miss**: this evening's "unknown" overlooked our own record. fightlab/hunter.py (the Improved Wing Clip line, 2026-11-03)
+      quotes the 2 Nov sentence. When a mechanics question comes up, grep the labs' comments and the notes thread before calling
+      it unknown. CLAUDE.md's open item "the lower proc chance of low ranks" (2026-10-09 audit) had been stale since 2 Nov;
+      corrected on 2026-11-22 at the user's yes (their own word in the lane session).
+    - The lab knob is open for the optimality pass, with no counted test needed: a Rank 1 Frostbolt line in the Frost and
+      Arcane-Frost leveling rotations, while Fingers of Frost and Missile Barrage are down, at the full proc chance. No lab or
+      rules change before then.
+
+1f. **The fight lab's Summon Hawk predates the live logs (2026-11-22; found on the Addons session's hawk-timer question; open)**.
+    hunter.py's hawk is the raid simulator's fit of 2026-10 to two beta logs at levels 25/30. Against the client data and upstream's
+    log notes (docs/evidence at 07648faf) it has three gaps:
+    - the dive rolls a ranged miss, and a missed dive leaves no hawk; the cast's row is "always hit" (SpellMisc Attributes_3 0x40000),
+      and the raid simulator's dive rolls hit or crit only;
+    - a swing is 0.35 of the dive's base. EV-0073, made after the 2026-11-10 hotfix that raised the hawk's melee by about 80%, fits
+      0.136-0.153 of the creature dps over 2.5 s, plus 2.5/60 of the hawk's attack power (80% of the owner's ranged attack power plus
+      14 a point of the main hand's dps). A rough estimate, not run: 1.8 times the lab's swing at 30, 1.2-1.3 times at 48-60 in
+      leveling gear;
+    - the swings never crit, where EV-0074 reads half the tamed pet's crit (10 plus half the owner's with Ferocity 5/5).
+    No leveling guide names Summon Hawk, so no page moves; the open leveling searches under-value it. Fix with the hunter's next
+    leveling pass, never while a hunter lane runs. Then re-tune the ranged rotations and redo their records from the race on. The
+    audit session agreed on 2026-11-22 and set two conditions:
+    - Every verdict on the hawk so far was made on the old hawk model. That includes the melee rotation's of 2026-10-09
+      (hunter.py decide_melee: a hawk line cost Beast-Survival 5.6% a kill at 60, and still 0.6% when cast only above 80% mana).
+      Try that line again with the fix. hunter.py's comment changes with the fix, not before: the class module's bytes are in the
+      lab's fingerprints (fl_open_search.sim_fingerprint, play_check). On 2026-11-22 no hunter leveling pick held the talent, and
+      never-tried.json and forced-leads.json had no hawk row.
+    - After the fix, race the known positive 17/10/24 and every Summon Hawk start again on two seeds before a hunter leveling page
+      is called optimal. A rules or record change goes through the 0.5% bar.
+    The hawk's summon (1293248, creature 264850) is a guardian in totem slot 2 (SummonProperties 6837) for 18 s from the dive's landing,
+    about 1.0 s after the cast (EV-0127).
+
 1e. **The filler pass's ping-pong guard had two holes (2026-11-22; the audit session's question on Arcane's level-10 point; fixed the
     same day)**. The record chain (2026-11-21) loaded only when the record's order was the build's order, so every redo that re-raced the
     order (the mechanics pass of 2026-11-20, the rest-rule redo of 2026-11-22) started a new chain without saying so; and the gate path (a
