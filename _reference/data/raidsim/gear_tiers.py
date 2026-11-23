@@ -738,13 +738,17 @@ def set_path(cls, spec, tier):
     return SETS / f"{cls}-{SM.slug(spec)}-{tier}.gear.json"
 
 
-def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=None, setting="raid", write=True):
+def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=None, setting="raid", write=True, lower_sets=None):
     """The tier's set for one spec: written to its gear file (`path`: another file, e.g. the full-raid winner's set of a spec whose
     full-raid winner plays another entry; ml_pipeline.final), returned as the record. Chosen in a full raid (`setting`, since
     2026-10-31: the pages rank by full-raid DPS; sets chosen on the training dummy, short of mana, had weighed haste below zero for the
     Frostfire mage, and its full-raid set measured +2.7% over the dummy's, confirmed on seed 2). `write=False` (2026-11-23): nothing is
     written, the record is returned (a test of the rules). Since 2026-11-23 the record names the list and its rules (`list`, `rules`:
-    raidsim/gear_lists.py) and carries the other faction's alternatives for its one-faction items (`faction_alternatives`)."""
+    raidsim/gear_lists.py) and carries the other faction's alternatives for its one-faction items (`faction_alternatives`).
+    Every lower list's set competes (the ladder below), read from its file; so make the lists from the bottom, Easy Pre-BiS, then True
+    Pre-BiS, then True BiS (2026-11-23, the list test: Survival's True BiS, made before its True Pre-BiS, raced the old pre-raid set
+    and ended 0.2-0.3% below the new True Pre-BiS set on both seeds, though every item of that set is in True BiS). `lower_sets`
+    {tier: items}: the lower lists' sets to race instead of their files (a test with write=False writes none)."""
     e = R.SPECS[cls][entry_name]
     easy_check(tier, db, zones, repo)
     cur = json.load(open(R.sim_path(e["gear"]) if pathlib.Path(R.sim_path(e["gear"])).is_absolute() else repo / e["gear"], encoding="utf-8"))["items"]
@@ -762,6 +766,12 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
     extra = {"previous": prev} if prev else {}
     ladder = ("dungeon", "prebis", "bis")   # every lower tier's set competes (2026-11-21, the audit session): the pools nest, so it is
     for lower in ladder[:ladder.index(tier)] if tier in ladder else ():   # legal here; when it wins, this tier's set is that set
+        if lower in (lower_sets or {}):
+            li = [dict(x) if x else {} for x in lower_sets[lower]]
+            if tmpl:
+                FE.fill(li, tmpl)
+            extra[f"the {lower} set"] = li
+            continue
         lp = path.parent / path.name.replace(f"-{tier}.gear.json", f"-{lower}.gear.json") if path else set_path(cls, spec, lower)
         if lp.exists() and lp.name != p.name:   # a named set file ("...-bis-raid") has no lower tier of its own
             li = json.load(open(lp, encoding="utf-8"))["items"]

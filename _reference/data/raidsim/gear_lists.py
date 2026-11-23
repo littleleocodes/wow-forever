@@ -24,6 +24,7 @@ import argparse
 import csv
 import json
 import pathlib
+import re
 import sys
 
 HERE = pathlib.Path(__file__).resolve().parent
@@ -414,55 +415,106 @@ def enchant_lists(e, ctx):
     return frozenset(out)
 
 
+# The rank titles of the honor system's gear (Classic's ranks 4-14 of each side; Forever's rank gear adds "Premier "): the database's
+# PvP listing names no side and the client's race mask is -1 on Forever's, so the title is what says who can buy it (2026-11-23, the
+# list test: Premier High Warlord's Blade had no Alliance alternative; its twin is Premier Grand Marshal's Longsword, the same stats).
+RANK_SIDE = {"Grand Marshal": "Alliance", "Field Marshal": "Alliance", "Marshal": "Alliance", "Lieutenant Commander": "Alliance",
+             "Commander": "Alliance", "Knight-Champion": "Alliance", "Knight-Captain": "Alliance", "Knight-Lieutenant": "Alliance",
+             "Sergeant Major": "Alliance", "Master Sergeant": "Alliance",
+             "High Warlord": "Horde", "Warlord": "Horde", "Lieutenant General": "Horde", "General": "Horde", "Champion": "Horde",
+             "Centurion": "Horde", "Legionnaire": "Horde", "Blood Guard": "Horde", "Stone Guard": "Horde", "First Sergeant": "Horde",
+             "Senior Sergeant": "Horde"}
+RANK_TITLE = re.compile(r"^(?:Premier )?(" + "|".join(sorted(map(re.escape, RANK_SIDE), key=len, reverse=True)) + r")'s ")
+
+
 def faction_of(it, ctx):
     """"Alliance" or "Horde" for a one-faction item: the database's factionRestriction (1 Alliance, 2 Horde), else the client's race
-    mask, else every source being one faction's (a quest's or a vendor's faction field); None otherwise."""
+    mask, else every source that names a side naming the same one (a quest's or a vendor's faction field, a reputation's factionId;
+    a PvP listing and a reputation without a factionId name none and are passed over, so Outrider's Chain Leggings, sold by a Horde
+    vendor and listed as PvP, is the Horde's; a drop or a craft makes the item anyone's), else, for rank gear (PvP listings only), the
+    rank title in its name (RANK_SIDE) or "of the Alliance" / "of the Horde"; None otherwise (2026-11-23: until then a PvP listing or
+    a reputation source made any item anyone's)."""
     fr = it.get("factionRestriction")
     if fr in (1, 2):
         return "Alliance" if fr == 1 else "Horde"
     f = BT.race_faction((ctx["bind"].get(it["id"]) or {}).get("races"))
     if f:
         return f
-    fs = set()
-    for s in it.get("sources") or []:
+    fs, srcs = set(), it.get("sources") or []
+    for s in srcs:
+        if "pvp" in s:
+            continue
+        if "rep" in s:
+            if s["rep"].get("factionId") in (1, 2):
+                fs.add(s["rep"]["factionId"])
+            continue
         v = (s.get("quest") or s.get("soldBy") or {}).get("faction")
         if v not in (1, 2):
             return None
         fs.add(v)
-    return ("Alliance" if fs == {1} else "Horde") if len(fs) == 1 else None
+    if fs:
+        return ("Alliance" if fs == {1} else "Horde") if len(fs) == 1 else None
+    if srcs and all("pvp" in s for s in srcs):
+        name = it.get("name", "")
+        m = RANK_TITLE.match(name)
+        if m:
+            return RANK_SIDE[m.group(1)]
+        for side in ("Alliance", "Horde"):
+            if name.endswith(f"of the {side}"):
+                return side
+    return None
+
+
+def _taken(items, slot, db, G):
+    """What the set's other slots use up: each item's id (the set builder never wears one id twice: gear_opt.class_picker's greedy;
+    the Easy Frost set wears the Alliance's and the Horde's quest rings, and each side's alternative had been the ring the other slot
+    already held) and its unique-equipped keys (gear_opt.unique_keys: its id when unique, its limitCategory)."""
+    out = set()
+    for j, y in enumerate(items[:17]):
+        if j != slot and y and y.get("id") in db:
+            out |= {("id", y["id"])} | G.unique_keys(db[y["id"]])
+    return out
+
+
+def _uses(it, G):
+    return {("id", it["id"])} | G.unique_keys(it)
 
 
 def alternatives(cls, items, w, lst, db, ctx, G, fits):
     """The other faction's alternative for every one-faction item of a set (the reading (6)): the client's OppositeFactionItemID when
     that item is in the list, else the best item by the set's weights `w` that fits the slot (`fits(item, slot, current item)`) and the
-    other faction can use; not raced. [{slot, item, faction, alternative, alternative_value, value}]."""
+    other faction can use; not raced. Each side's set is built slot by slot, so an alternative never repeats a unique-equipped item
+    (or a limit category) the set already wears, nor one an earlier slot's alternative took (2026-11-23, the list test: a ring's
+    alternative was the signet the other ring slot held). [{slot, item, faction, for, how, alternative, alternative_value, value}]."""
     out = []
-    for slot, x in enumerate(items[:17]):
-        it = db.get((x or {}).get("id"))
-        if not it:
-            continue
-        f = faction_of(it, ctx)
-        if not f:
-            continue
-        other = "Horde" if f == "Alliance" else "Alliance"
-        opp = (ctx["bind"].get(it["id"]) or {}).get("opposite")
-        alt = db.get(opp) if opp and db.get(opp) and in_list(db[opp], lst, ctx) else None
-        how = "the client's other-faction item" if alt else "the best other item by the weights"
-        if not alt:
-            best = None
-            for cand in db.values():
-                if cand["id"] == it["id"] or cand.get("type") != it.get("type") or faction_of(cand, ctx) == f:
-                    continue
-                if not fits(cand, slot, it):
-                    continue
-                v = G.value(cand, w, slot)
-                if best is None or v > best[0]:
-                    best = (v, cand)
-            alt = best[1] if best else None
-        out.append({"slot": slot, "item": it["id"], "name": it.get("name"), "faction": f, "for": other, "how": how,
-                    "alternative": alt["id"] if alt else None, "alternative_name": alt.get("name") if alt else None,
-                    "value": round(G.value(it, w, slot), 2), "alternative_value": round(G.value(alt, w, slot), 2) if alt else None})
-    return out
+    for other in ("Horde", "Alliance"):
+        f = "Alliance" if other == "Horde" else "Horde"
+        work = [dict(x) if x else {} for x in items[:17]]
+        for slot, x in enumerate(items[:17]):
+            it = db.get((x or {}).get("id"))
+            if not it or faction_of(it, ctx) != f:
+                continue
+            taken = _taken(work, slot, db, G)
+            opp = (ctx["bind"].get(it["id"]) or {}).get("opposite")
+            alt = db.get(opp) if opp and db.get(opp) and in_list(db[opp], lst, ctx) and not (_uses(db[opp], G) & taken) else None
+            how = "the client's other-faction item" if alt else "the best other item by the weights"
+            if not alt:
+                best = None
+                for cand in db.values():
+                    if cand["id"] == it["id"] or cand.get("type") != it.get("type") or faction_of(cand, ctx) == f:
+                        continue
+                    if not fits(cand, slot, it) or _uses(cand, G) & taken:
+                        continue
+                    v = G.value(cand, w, slot)
+                    if best is None or v > best[0]:
+                        best = (v, cand)
+                alt = best[1] if best else None
+            if alt:
+                work[slot] = dict(work[slot], id=alt["id"])
+            out.append({"slot": slot, "item": it["id"], "name": it.get("name"), "faction": f, "for": other, "how": how,
+                        "alternative": alt["id"] if alt else None, "alternative_name": alt.get("name") if alt else None,
+                        "value": round(G.value(it, w, slot), 2), "alternative_value": round(G.value(alt, w, slot), 2) if alt else None})
+    return sorted(out, key=lambda r: (r["slot"], r["for"]))
 
 
 PVP_KINDS = {"pvp", "battleground", "battleground_easy"}
@@ -517,20 +569,29 @@ def easy_violations(db, ctx):
 def pvp_alternatives(cls, items, w, lst, db, ctx, G, fits):
     """For every item of a set that only PvP puts in the list: the best item of the same list by the set's weights `w` that fits the slot
     and that something else puts there (the audit session, 2026-11-23: a list leaning on rank gear the player cannot have yet needs a
-    fallback); not raced. [{slot, item, name, alternative, alternative_name, value, alternative_value}]."""
+    fallback); not raced. The set without PvP is built slot by slot, so an alternative never repeats a unique-equipped item (or a limit
+    category) the set already wears or an earlier slot's alternative took (2026-11-23, the list test: Don Julio's Band's alternative was
+    the Warden's Signet of Ferocity in the other ring slot, and both hands' was Heartseeker, which is unique).
+    [{slot, item, name, alternative, alternative_name, value, alternative_value}]."""
     out = []
+    work = [dict(x) if x else {} for x in items[:17]]
     for slot, x in enumerate(items[:17]):
         it = db.get((x or {}).get("id"))
         if not it or not pvp_only(it, lst, ctx):
             continue
+        taken = _taken(work, slot, db, G)
         best = None
         for cand in db.values():
             if cand["id"] == it["id"] or cand.get("type") != it.get("type") or not fits(cand, slot, it) or pvp_only(cand, lst, ctx):
+                continue
+            if _uses(cand, G) & taken:
                 continue
             v = G.value(cand, w, slot)
             if best is None or v > best[0]:
                 best = (v, cand)
         alt = best[1] if best else None
+        if alt:
+            work[slot] = dict(work[slot], id=alt["id"])
         out.append({"slot": slot, "item": it["id"], "name": it.get("name"), "alternative": alt["id"] if alt else None,
                     "alternative_name": alt.get("name") if alt else None, "value": round(G.value(it, w, slot), 2),
                     "alternative_value": round(best[0], 2) if best else None})

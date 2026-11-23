@@ -8,8 +8,10 @@ Writes the spec's ML-shaped record raidsim/ml/<class>-<spec slug>.json (the fini
 ml_pipeline.py --fresh does): the pre-BiS and BiS sets made for the pick in its entry (ml_pipeline.gear: gear_tiers.make, chosen in a
 full raid), the pick raced in each set on the training dummy and in a full raid (seed 1, --iterations) as the tier's "winner", and a
 "compare" naming only the pick, so ml_builds.py writes no build from it. render_modes.py's tier table and gear_links.py read it as they
-read a search's record; `pick_tiers` marks it (the table then says the numbers are the page's pick, not a search's best). Then run
-dungeon_tier.py <class> --spec "<spec>" --fresh for the quests-and-dungeons tier.
+read a search's record; `pick_tiers` marks it (the table then says the numbers are the page's pick, not a search's best). The lists
+are made from the bottom (2026-11-23, the gear lists' test: each list's make races the set of the list below it, gear_tiers.make's
+ladder): run dungeon_tier.py <class> --spec "<spec>" --fresh for Easy Pre-BiS first, then this script with --make (True Pre-BiS, then
+True BiS); the record keeps dungeon_tier's keys.
 --refit (2026-11-22, the audit session's gear findings G1-G3): each tier's set file as it stands goes through gear_tiers.refit (weapons
 raced per hand, item-set pieces raced, enchants from the tier's enchant pool; written when ahead on seed 2) before the pick is raced in
 it; the record keeps the set's make() fields when they name the filed items, plus the refit's.
@@ -81,7 +83,13 @@ def main():
     # it through its own copy, so the copy that picked the items had an empty stat map and no vetted items, valued every item at 0 and
     # took each slot's first item in the database (Frost Med's level-30 set)
     db, zones = MP.GT.load_db(repo)
-    for tier in ("bis", "prebis"):
+    # the Easy Pre-BiS list's set and race stay in the record (dungeon_tier.py's keys): the lists are made from the bottom since
+    # 2026-11-23, dungeon_tier.py first, and this fresh record had dropped them
+    if prev_gear.get("dungeon"):
+        rec["gear"]["dungeon"] = prev_gear["dungeon"]
+    if (old.get("search") or {}).get("dungeon-raid"):
+        rec["search"]["dungeon-raid"] = old["search"]["dungeon-raid"]
+    for tier in ("prebis", "bis"):   # from the bottom (2026-11-23): the BiS make races the pre-BiS set just made (gear_tiers.make's ladder)
         sp = GT.set_path(a.cls, a.spec, tier)
         if sp.exists() and a.refit and not a.make:
             # (2026-11-22) the set as it stands, refit: its make() fields stay when they name the filed items, the refit's are added
