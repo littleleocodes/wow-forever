@@ -433,7 +433,8 @@ def run_class(cls, tiers, repo, db, zones, edb, a, rec):
             ench = {k: v for k, v in (pre.get("enchants_by_weight") or {}).items()}
             wench = pre.get("weapon_enchant")
         s = out["standard"]
-        rt = dict(r, names=[db.get(x.get("id"), {}).get("name") if x.get("id") else None for x in items], items=items,
+        rt = dict(r, **GT.list_fields(cls, items, r["weights"], tier, db, zones, repo, GT.pool_of(tier, zones)),   # (2026-11-23: the lists)
+                  names=[db.get(x.get("id"), {}).get("name") if x.get("id") else None for x in items], items=items,
                   weights_unit="threat per second equivalents of tank value (threat weight - k x damage-taken weight)", raw_weights=wf.last,
                   enchants_by_weight={str(k): v for k, v in ench.items()}, weapon_enchant=wench, gear=p.relative_to(ROOT).as_posix(),
                   pick=m | {"stats": gear_stats(items, db, edb)},

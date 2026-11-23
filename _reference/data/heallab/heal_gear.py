@@ -464,8 +464,12 @@ def run_spec(cls, spec, a, B, rec, out_dir):
             p.parent.mkdir(parents=True, exist_ok=True)
             p.write_text(json.dumps({"items": chosen}, indent=1) + "\n", encoding="utf-8")
             weights[tier] = {"gear": lab_gear(st1), "capacity": c1, "capacity_se": c1se, "weights": w1}
+            ctx = GT.rules_ctx(gs[1], repo())   # (2026-11-23: the three lists; healer-lab weights are not the simulator's, so no alternatives)
             sets[tier] = {"gear": p.relative_to(ROOT).as_posix(), "items": chosen, "names": names, "ilvl": ilvl, "rows": rows,
-                          "stats": gear_stats(chosen), "notes": notes, "refresh_race": race, "pool_items": len(items)}
+                          "stats": gear_stats(chosen), "notes": notes, "refresh_race": race, "pool_items": len(items),
+                          "list": GT.GL.LABEL.get(tier, tier), "rules": GT.GL.RULES,
+                          "kinds": {str(i): [k for k, _ in GT.GL.item_kinds(gs[0][x["id"]], ctx)] for i, x in enumerate(chosen)
+                                    if x and x.get("id") in gs[0]}}
             log(f"  {tier}: wrote {p.relative_to(ROOT).as_posix()} (item level {ilvl}): " + "; ".join(n for n in names if n))
         # the check: the build in the lab's assumed gear and in both sets, on fresh seeds and on the lab's standard seeds
         gears = {"default": lab_gear(default), **{t: lab_gear(sets[t]["stats"]) for t in TIERS}}

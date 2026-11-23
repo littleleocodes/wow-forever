@@ -79,13 +79,14 @@ def main():
             g = GT.refit(cls, spec, "dungeon", entry, R.talents_string(trees, base), "ml winner (pre-BiS, full raid)", repo, db, zones, ga,
                          path=dpath, write=not a.smoke)
             gd = dict(pg) if pg.get("names") == names else {}
-            gd.update({k: g[k] for k in ("entry", "gear", "date", "setting", "chosen", "ilvl", "names", "confirm_seed2", "weights", "weapons", "set_pieces", "enchants", "changes", "refit") if k in g})
+            gd.update({k: g[k] for k in ("entry", "gear", "date", "setting", "chosen", "ilvl", "names", "confirm_seed2", "weights", "weapons", "set_pieces", "enchants", "changes", "refit",
+                                          "list", "rules", "kinds", "faction_alternatives") if k in g})
             rec.setdefault("gear", {})["dungeon"] = dict(gd, commit=commit)
         else:
             g = GT.make(cls, spec, "dungeon", entry, R.talents_string(trees, base), "ml winner (pre-BiS, full raid)", repo, db, zones, ga,
                         path=dpath)
             keep = ("entry", "gear", "date", "chosen", "ilvl", "trinkets", "trinket_screen", "names", "race_seed1", "confirm_seed2", "weights",
-                    "evaluated_on", "enchants_dropped", "weapons", "set_pieces", "enchants")
+                    "evaluated_on", "enchants_dropped", "weapons", "set_pieces", "enchants", "list", "rules", "kinds", "faction_alternatives")
             rec.setdefault("gear", {})["dungeon"] = dict({k: g[k] for k in keep if k in g}, commit=commit)
         # the candidates: every tier winner of the record, distinct talents, raced in the new set in a full raid
         cands, seen = [], set()

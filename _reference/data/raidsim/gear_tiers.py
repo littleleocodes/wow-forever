@@ -616,6 +616,7 @@ def refit(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=
             "items": out, "names": [db.get(x.get("id"), {}).get("name") if x.get("id") else None for x in out],
             "weights": {k: round(v, 4) for k, v in w.items() if abs(v) > 1e-6}, "confirm_seed2": {k: round(v, 4) for k, v in r2.items()},
             "weapons": wrec, "set_pieces": srec, "enchants": erec, "changes": changes,
+            **list_fields(cls, out, w, tier, db, zones, repo, pool),
             "refit": {"date": TODAY, "why": "the audit session's gear findings G1-G3 (2026-11-22): weapons raced per hand, item-set pieces "
                       "raced, enchants from the database by the tier's rules", "filed_enchants_allowed": allowed,
                       "iterations": a.iterations, "confirm": a.confirm}}
