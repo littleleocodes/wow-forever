@@ -57,6 +57,8 @@ CORE_SECONDS = 0.3  # leveling: a talent saving this many seconds per kill at 60
 CORE_MAX = 8
 KEPT = {}           # {build id: why}: hybrids' open leveling builds kept as they are (leveling_candidates' keep rule, 2026-11-18)
 KEPT_RAID = {}      # {build id: why}: hybrids' raid builds kept from the hybrid check (raid_kept, 2026-11-19)
+STRICT = []         # [True] under --write: a record's kept order that no longer holds its winner stops the run (2026-11-23, the audit
+                    # session: "a kept order that has silently stopped applying is how tonight's bug class starts")
 HYBRID_CHECK = HERE / "hybrid-check.json"
 
 
@@ -615,7 +617,7 @@ def make_leveling_build(cls, rot, r, spec, allr, rivals, best_hand, hand_t, repl
     known = {**rivals, **allr}   # every build raced with it and the spec's builds on the pages
     b = {"id": f"{SM.spec_slug(cls, spec)}-open-leveling", "name": f"{name} — Leveling (open talent search)",
          "role": "dps", "content": "leveling", "tier": "draft", "spec": spec, "generated": TODAY, "derived": "leveling",
-         "summary": (f"The {family_text(cls, spec)} leveling build the open leveling search found on {TODAY}: every legal 51-point build with no tree "
+         "summary": (f"The {family_text(cls, spec)} leveling build the open leveling search found on {r.get('date') or TODAY}: every legal 51-point build with no tree "
                      f"rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and "
                      f"deaths included) playing the {rot} rotation, the winner picked by a race at levels 20-60 among the level-60 finalists "
                      f"(fightlab/fl_open_search.py); the talent order is the stats model's ({r.get('model')}). "
@@ -639,6 +641,23 @@ def make_leveling_build(cls, rot, r, spec, allr, rivals, best_hand, hand_t, repl
         b["notes"].append("The talent order takes the spec's signature talents at the earliest level their tree allows (the signature "
                           "rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.")
     b["notes"].append("Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.")
+    # 2026-11-23 (the audit session's ruling on Frostfire): a record may keep the page's order (`order_kept` {date, order, why, race}) when
+    # the record's own order is no 0.5% faster on two seeds; the build is written with it while it holds the winner's allocation
+    kept = r.get("order_kept") or {}
+    if kept.get("order"):
+        try:
+            ka = {k: v for k, v in dict(lev_sig().SG.order_alloc(kept["order"])).items() if v}
+        except Exception:  # noqa: BLE001  (an order the trees no longer allow)
+            ka = None
+        if ka == {k: v for k, v in flat_of(r["winner"]["allocation"]).items() if v}:
+            b["order"] = kept["order"]
+            print(f"  {b['id']}: the page's order kept ({kept.get('date')}: {kept.get('why')})")
+        else:
+            msg = (f"{b['id']}: the record's kept order of {kept.get('date')} does not hold the winner's allocation (the record changed since "
+                   "it was kept): remove `order_kept` or keep the new winner's order")
+            if STRICT:
+                raise SystemExit(f"open_builds: FATAL {msg}")
+            print(f"  {b['id']}: WARNING: {msg}; the record's order is written")
     # 2026-11-09: a leveling filler pass written onto this build (fightlab/fl_filler_pass.py --write: points that measured nothing moved to
     # talents that do something, at no measured cost) survives the rewrite while it started from the order the record still carries
     for f in sorted((HERE / "fightlab" / "filler").glob(f"{cls}-*.json")):
@@ -646,13 +665,14 @@ def make_leveling_build(cls, rot, r, spec, allr, rivals, best_hand, hand_t, repl
         if fr.get("build") == b["id"] and fr.get("written") and filler_applies(fr, r):
             b["notes"].insert(0, fr["written"]["note"])
             end = {k: v for k, v in flat_of(fr["written"]["allocation"]).items() if v}
-            if end == {k: v for k, v in flat_of(r["winner"]["allocation"]).items() if v} and fr["written"]["order"] != r["order"]:
-                # 2026-11-23: the record's winner is the pass's end state, so its moves are in the winner already, and the record's order
-                # (raced after the pass, perhaps polished) stays. Taking the pass's written order had dropped the order polish of druid
-                # Balance (Nature's Grace 30, Eclipse 31-33: 31.40 against 31.57 s per kill at 20-60) and mage Fire's own-tree-first
-                # order (32.83 against 33.34).
-                print(f"  {b['id']}: the leveling filler pass of {fr['date']} is in the record's winner already ({len(fr['moves'])} moves); "
-                      f"the record's order stays")
+            if end == {k: v for k, v in flat_of(r["winner"]["allocation"]).items() if v}:
+                # 2026-11-23: the record's winner is the pass's end state, so its moves are in the winner already, and the build's order
+                # (the record's, raced after the pass and perhaps polished, or the order the record keeps) stays. Taking the pass's
+                # written order had dropped the order polish of druid Balance (Nature's Grace 30, Eclipse 31-33: 31.40 against 31.57 s
+                # per kill at 20-60) and mage Fire's own-tree-first order (32.83 against 33.34).
+                if fr["written"]["order"] != b["order"]:
+                    print(f"  {b['id']}: the leveling filler pass of {fr['date']} is in the record's winner already ({len(fr['moves'])} moves); "
+                          + ("the kept order stays" if kept.get("order") and b["order"] == kept["order"] else "the record's order stays"))
                 continue
             b["allocation"], b["order"] = fr["written"]["allocation"], fr["written"]["order"]
             print(f"  {b['id']}: the leveling filler pass of {fr['date']} re-applied ({len(fr['moves'])} moves)")
@@ -676,6 +696,8 @@ def main():
     ap.add_argument("--kept-only", action="store_true", help="write only the hybrids' raid builds the keep rule keeps (raid_kept), "
                     "leaving every other build and verdict as it is (2026-11-19: a full write would also rewrite builds from older records)")
     a = ap.parse_args()
+    if a.write:
+        STRICT.append(True)
     import render_modes as RM
     ML = _load("ml_builds_open", HERE / "raidsim" / "ml_builds.py")
     for cls in a.classes or SM.CLASSES:

@@ -5781,9 +5781,9 @@
   }
  },
  "last_run": {
-  "date": "2026-11-23T07:16:01",
+  "date": "2026-11-23T07:38:07",
   "classes": [
-   "warlock"
+   "mage"
   ],
   "steps": [
    "regen"
@@ -5794,13 +5794,13 @@
    "report": 2000,
    "sensitivity": 1000
   },
-  "seconds": 274,
+  "seconds": 379,
   "refresh": null,
   "regen_log": [
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\client_gap.py --write",
     "rc": 0,
-    "seconds": 5,
+    "seconds": 4,
     "tail": [
      "live client 1.60.1.71037 (2026-11-20)",
      "  spell numbers on 1.60.1.70938  << BEHIND",
@@ -5811,36 +5811,36 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_trees.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_trees.py mage",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote F:\\wow-forever\\warlock\\research\\talents\\forever\\talent-trees.md"
+     "wrote F:\\wow-forever\\mage\\research\\talents\\forever\\talent-trees.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_fightlab_sections.py mage",
     "rc": 0,
     "seconds": 1,
     "tail": [
-     "formatted F:\\wow-forever\\warlock\\research\\talents\\forever\\proposed-builds.json",
-     "warlock: README section + leveling-affliction note written"
+     "formatted F:\\wow-forever\\mage\\research\\talents\\forever\\proposed-builds.json",
+     "mage: README section + leveling-frost note written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_raidsim_sections.py mage",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "warlock: raid sim section written (7 specs)",
+     "mage: raid sim section written (5 specs)",
      "wrote _reference\\raidsim-summary.md"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_heallab_sections.py mage",
     "rc": 0,
     "seconds": 1,
     "tail": [
@@ -5849,29 +5849,29 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_leveling_guides.py mage",
     "rc": 0,
     "seconds": 1,
     "tail": [
-     "warlock: leveling/guide.md written (affliction-open-leveling)"
+     "mage: leveling/guide.md written (arcane-open-leveling)"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_sim_presets.py mage",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "warlock: raid gear and consumables written"
+     "mage: raid gear and consumables written"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_rotations.py mage",
     "rc": 0,
     "seconds": 1,
     "tail": [
-     "warlock: raid and leveling rotations, DPS ranking written"
+     "mage: raid and leveling rotations, DPS ranking written"
     ],
     "stderr": []
    },
@@ -5916,16 +5916,16 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\duellab\\render_pvp_research.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\duellab\\render_pvp_research.py mage",
     "rc": 0,
     "seconds": 0,
     "tail": [
-     "wrote warlock\\research\\pvp\\README.md (Duel lab)"
+     "wrote mage\\research\\pvp\\README.md (Duel lab)"
     ],
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py warlock",
+    "cmd": "F:\\wow-forever\\_reference\\data\\render_new_builds.py mage",
     "rc": 0,
     "seconds": 1,
     "tail": [
@@ -5935,20 +5935,20 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\signature_audit.py warlock --write --no-default",
+    "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\signature_audit.py mage --write --no-default",
     "rc": 0,
-    "seconds": 78,
+    "seconds": 15,
     "tail": [
-     "  Affliction-Demonology [page: opt-affliction-leveling-leveling-st 27/24/0] demonology-leveling (tuned): casts/kill at 60 {'Corruption': 1.28}, core 64% (min 50%), 34.6 s/kill; rules: -; OK",
-     "      shares at 60: {'Wand': 0.268, 'Bane of Agony': 0.261, 'Corruption': 0.203, 'Siphon Life': 0.104, 'Immolate': 0.088, 'Voidwalker melee': 0.076}",
-     "  Affliction-Demonology [slot: leveling-affliction 23/26/2] demonology-leveling (tuned): casts/kill at 60 {'Corruption': 1.33}, core 64% (min 50%), 35.1 s/kill; rules: -; OK",
-     "      shares at 60: {'Wand': 0.278, 'Bane of Agony': 0.256, 'Corruption': 0.196, 'Siphon Life': 0.105, 'Immolate': 0.086, 'Voidwalker melee': 0.078}",
-     "  Affliction-Demonology [slot: affliction-demonology-open-leveling 27/24/0] demonology-leveling (tuned): casts/kill at 60 {'Corruption': 1.24}, core 67% (min 50%), 33.9 s/kill; rules: -; OK",
-     "      shares at 60: {'Wand': 0.264, 'Bane of Agony': 0.251, 'Corruption': 0.196, 'Siphon Life': 0.098, 'Voidwalker melee': 0.075, 'Searing Pain': 0.063}",
-     "  Affliction-Demonology [slot: opt-affliction-leveling-solo-60 27/24/0] demonology-leveling (tuned): casts/kill at 60 {'Corruption': 1.25}, core 64% (min 50%), 34.8 s/kill; rules: -; OK",
-     "      shares at 60: {'Wand': 0.267, 'Bane of Agony': 0.261, 'Corruption': 0.197, 'Siphon Life': 0.104, 'Immolate': 0.095, 'Voidwalker melee': 0.076}",
-     "  Affliction-Demonology [slot: opt-affliction-leveling-leveling-aoe 21/24/6] demonology-leveling (tuned): casts/kill at 60 {'Corruption': 1.35}, core 63% (min 50%), 35.5 s/kill; rules: -; OK",
-     "      shares at 60: {'Wand': 0.294, 'Bane of Agony': 0.239, 'Corruption': 0.202, 'Siphon Life': 0.108, 'Voidwalker melee': 0.08, 'Immolate': 0.076}",
+     "  Frost [slot: leveling-frost 17/0/34] frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 3.44}, core 93% (min 60%), 27.7 s/kill; rules: -; OK",
+     "      shares at 60: {'Frostbolt': 0.562, 'Ice Lance': 0.373, 'Wand': 0.04, 'Frost Nova': 0.017, 'Fire Blast': 0.008}",
+     "  Frost [slot: opt-frost-aoe-leveling-aoe 7/3/41] frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 3.59}, core 94% (min 60%), 30.2 s/kill; rules: -; OK",
+     "      shares at 60: {'Frostbolt': 0.567, 'Ice Lance': 0.378, 'Wand': 0.028, 'Frost Nova': 0.023, 'Fire Blast': 0.004}",
+     "  Arcane-Frost [page: arcane-frost-open-leveling 28/0/23] barrage-frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 3.3, 'Arcane Missiles': 0.69}, core 95% (min 60%), 26.9 s/kill; rules: -; OK",
+     "      shares at 60: {'Frostbolt': 0.462, 'Ice Lance': 0.3, 'Arcane Missiles': 0.185, 'Wand': 0.027, 'Frost Nova': 0.017, 'Fire Blast': 0.008}",
+     "  Arcane-Frost [slot: opt-frost-leveling-leveling-st 22/3/26] barrage-frost-leveling (tuned): casts/kill at 60 {'Frostbolt': 3.36, 'Arcane Missiles': 0.6}, core 93% (min 60%), 28.3 s/kill; rules: -; OK",
+     "      shares at 60: {'Frostbolt': 0.457, 'Ice Lance': 0.326, 'Arcane Missiles': 0.15, 'Wand': 0.036, 'Frost Nova': 0.016, 'Fire Blast': 0.015}",
+     "  Frostfire [page: frostfire-open-leveling 2/26/23] frostfire-leveling (tuned): casts/kill at 60 {'Frostfire Bolt': 2.7}, core 33% (min 30%), 32.7 s/kill; rules: -; OK",
+     "      shares at 60: {'Frostfire Bolt': 0.298, 'Ice Lance': 0.256, 'Fire Blast': 0.173, 'Pyroblast': 0.091, 'Wand': 0.061, 'Ignite': 0.057}",
      "wrote _reference\\signature-audit.md",
      "wrote _reference\\data\\fightlab\\signature-audit.json"
     ],
@@ -5957,7 +5957,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_modes.py",
     "rc": 0,
-    "seconds": 21,
+    "seconds": 19,
     "tail": [
      "druid: README.md sections and 3 mode folders written",
      "hunter: README.md sections and 3 mode folders written",
@@ -5982,15 +5982,15 @@
     "stderr": []
    },
    {
-    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py warlock --write",
+    "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\respec.py mage --write",
     "rc": 0,
-    "seconds": 145,
+    "seconds": 316,
     "tail": [
-     "| affliction-leveling -> level-20 build (11/0/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.7% |",
-     "| affliction-leveling -> level-30 build (21/0/0) | +1.2% | +5.2% | +7.7% | +9.3% | +16.9% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.7% |",
-     "| affliction-leveling -> level-40 build (31/0/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +25.9% |",
-     "| affliction-leveling -> level-50 build (32/9/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +22.4% | +23.0% | +25.1% | +25.4% | +26.0% |",
-     "| affliction-leveling -> level-60 build (27/24/0) | +1.2% | +5.2% | +7.7% | +9.6% | +16.8% | +18.9% | +20.3% | +22.4% | +22.5% | +22.7% | +28.3% |",
+     "| fire-leveling -> level-20 build (0/0/11) | +2.0% | +4.2% | +43.2% | +47.7% | +55.4% | +58.9% | +62.6% | +63.6% | +65.2% | +68.3% | +69.5% |",
+     "| fire-leveling -> level-30 build (0/10/11) | +1.8% | +13.1% | +25.5% | +25.9% | +55.4% | +58.9% | +62.6% | +63.6% | +65.2% | +68.3% | +69.5% |",
+     "| fire-leveling -> level-40 build (0/20/11) | +1.8% | +13.1% | +26.3% | +30.1% | +36.6% | +38.1% | +62.6% | +63.5% | +65.7% | +68.3% | +69.5% |",
+     "| fire-leveling -> level-50 build (0/30/11) | +1.8% | +13.1% | +26.3% | +30.1% | +36.6% | +39.4% | +43.3% | +43.6% | +65.8% | +68.3% | +69.5% |",
+     "| fire-leveling -> level-60 build (0/35/16) | +1.8% | +13.1% | +26.3% | +30.1% | +36.6% | +39.4% | +42.3% | +47.7% | +48.0% | +68.3% | +69.5% |",
      "",
      "## Reading it",
      "",
@@ -6004,7 +6004,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\render_optimizer_sections.py",
     "rc": 0,
-    "seconds": 0,
+    "seconds": 1,
     "tail": [
      "updated hunter/leveling/README.md and hunter/raid/README.md",
      "updated mage/leveling/README.md and mage/raid/README.md",
@@ -6038,7 +6038,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\scorer\\loop_audit.py",
     "rc": 0,
-    "seconds": 3,
+    "seconds": 2,
     "tail": [
      "druid    flagged 32/100  open 1",
      "hunter   flagged 23/62  open 6",
@@ -6074,7 +6074,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\fightlab\\summary.py --write",
     "rc": 0,
-    "seconds": 1,
+    "seconds": 0,
     "tail": [
      "wrote _reference\\fightlab-summary.md"
     ],
@@ -6100,7 +6100,7 @@
    {
     "cmd": "F:\\wow-forever\\_reference\\data\\page_lint.py --write",
     "rc": 0,
-    "seconds": 3,
+    "seconds": 2,
     "tail": [
      "| keys | 0 |",
      "| steps | 0 |",

@@ -1,6 +1,6 @@
 {
  "class": "mage",
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -292,6 +292,7 @@
       "Wand": 1.32,
       "Frost Nova": 0.72,
       "Ice Lance": 1.36,
+      "Fire Blast": 0.04,
       "Ice Barrier": 0.17,
       "Counterspell": 0.08
      },
@@ -770,7 +771,8 @@
      "casts": {
       "Arcane Missiles": 2.2,
       "Fire Blast": 0.41,
-      "Wand": 0.09
+      "Wand": 0.09,
+      "Frostbolt": 0.03
      },
      "idle_share": 0.275,
      "drink_per_kill": 5.52,
@@ -899,7 +901,8 @@
       "Fire Blast": 0.53,
       "Counterspell": 0.15,
       "Wand": 0.08,
-      "Frostbolt": 0.05
+      "Frostbolt": 0.05,
+      "Cone of Cold": 0.03
      },
      "idle_share": 0.203,
      "drink_per_kill": 4.28,
@@ -925,7 +928,10 @@
       "Arcane Missiles": 1.7,
       "Fire Blast": 0.43,
       "Frost Nova": 0.6,
-      "Counterspell": 0.14
+      "Counterspell": 0.14,
+      "Cone of Cold": 0.04,
+      "Wand": 0.01,
+      "Frostbolt": 0.01
      },
      "idle_share": 0.193,
      "drink_per_kill": 2.15,
@@ -950,7 +956,9 @@
       "Arcane Missiles": 1.71,
       "Fire Blast": 0.44,
       "Frost Nova": 0.63,
-      "Counterspell": 0.14
+      "Counterspell": 0.14,
+      "Cone of Cold": 0.02,
+      "Wand": 0.02
      },
      "idle_share": 0.198,
      "drink_per_kill": 1.81,
@@ -975,7 +983,10 @@
       "Arcane Missiles": 1.68,
       "Frost Nova": 0.62,
       "Counterspell": 0.14,
-      "Fire Blast": 0.45
+      "Fire Blast": 0.45,
+      "Wand": 0.03,
+      "Frostbolt": 0.01,
+      "Cone of Cold": 0.03
      },
      "idle_share": 0.195,
      "drink_per_kill": 1.72,
@@ -1000,7 +1011,9 @@
       "Fire Blast": 0.43,
       "Arcane Missiles": 1.53,
       "Frost Nova": 0.72,
-      "Counterspell": 0.13
+      "Counterspell": 0.13,
+      "Wand": 0.02,
+      "Frostbolt": 0.03
      },
      "idle_share": 0.189,
      "drink_per_kill": 2.51,
@@ -1025,7 +1038,10 @@
       "Arcane Missiles": 1.63,
       "Frost Nova": 0.76,
       "Fire Blast": 0.47,
-      "Counterspell": 0.15
+      "Counterspell": 0.15,
+      "Frostbolt": 0.03,
+      "Wand": 0.04,
+      "Cone of Cold": 0.01
      },
      "idle_share": 0.186,
      "drink_per_kill": 2.5,
@@ -1052,7 +1068,9 @@
       "Ice Lance": 0.75,
       "Counterspell": 0.17,
       "Fire Blast": 0.18,
-      "Wand": 0.06
+      "Wand": 0.06,
+      "Frostbolt": 0.03,
+      "Cone of Cold": 0.02
      },
      "idle_share": 0.192,
      "drink_per_kill": 2.4,
@@ -1080,7 +1098,9 @@
       "Ice Lance": 0.65,
       "Counterspell": 0.08,
       "Wand": 0.08,
-      "Fire Blast": 0.21
+      "Fire Blast": 0.21,
+      "Cone of Cold": 0.03,
+      "Frostbolt": 0.03
      },
      "idle_share": 0.191,
      "drink_per_kill": 2.62,
@@ -1103,7 +1123,7 @@
    "build": "fire-open-leveling",
    "rotation": "fire-leveling",
    "provisional_order": false,
-   "fingerprint": "2c0efc374f80",
+   "fingerprint": "a8431eb550dc",
    "levels": {
     "1": {
      "seconds": 12.1,
@@ -1220,266 +1240,226 @@
      "standing": "Frost Armor"
     },
     "24": {
-     "seconds": 31.6,
+     "seconds": 32.3,
      "deaths_per_100": 0.0,
      "casts": {
       "Pyroblast": 1.0,
-      "Frost Nova": 0.88,
-      "Fireball": 1.57,
-      "Fire Blast": 1.43,
-      "Wand": 1.84,
+      "Frost Nova": 0.91,
+      "Fireball": 1.62,
+      "Fire Blast": 1.62,
+      "Counterspell": 0.21,
+      "Wand": 1.8
+     },
+     "idle_share": 0.218,
+     "drink_per_kill": 4.19,
+     "eat_per_kill": 2.99,
+     "shares": {
+      "Fireball": 0.31,
+      "Fire Blast": 0.256,
+      "Pyroblast": 0.212,
+      "Wand": 0.085,
+      "Pyroblast burn": 0.066,
+      "Frost Nova": 0.031,
+      "Fireball burn": 0.021,
+      "Ignite": 0.02
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Frost Armor"
+    },
+    "25": {
+     "seconds": 31.2,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Pyroblast": 1.29,
+      "Frost Nova": 0.85,
+      "Fireball": 1.3,
+      "Fire Blast": 1.84,
+      "Wand": 1.82,
       "Counterspell": 0.21
      },
-     "idle_share": 0.204,
-     "drink_per_kill": 3.67,
-     "eat_per_kill": 2.82,
+     "idle_share": 0.24,
+     "drink_per_kill": 4.86,
+     "eat_per_kill": 2.71,
      "shares": {
-      "Fireball": 0.311,
-      "Fire Blast": 0.238,
-      "Pyroblast": 0.222,
-      "Wand": 0.087,
-      "Pyroblast burn": 0.067,
-      "Frost Nova": 0.031,
-      "Ignite": 0.023,
-      "Fireball burn": 0.02
+      "Fire Blast": 0.277,
+      "Pyroblast": 0.26,
+      "Fireball": 0.242,
+      "Wand": 0.085,
+      "Pyroblast burn": 0.072,
+      "Frost Nova": 0.027,
+      "Ignite": 0.021,
+      "Fireball burn": 0.017
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,
      "standing": "Frost Armor"
     },
     "30": {
-     "seconds": 36.8,
+     "seconds": 34.6,
      "deaths_per_100": 0.0,
      "casts": {
-      "Pyroblast": 1.0,
-      "Frost Nova": 0.97,
-      "Fireball": 1.83,
-      "Fire Blast": 1.58,
-      "Wand": 3.0,
-      "Counterspell": 0.15
+      "Pyroblast": 1.32,
+      "Frost Nova": 0.92,
+      "Fireball": 1.32,
+      "Fire Blast": 2.02,
+      "Wand": 2.38,
+      "Counterspell": 0.16
      },
-     "idle_share": 0.238,
-     "drink_per_kill": 5.46,
-     "eat_per_kill": 3.58,
+     "idle_share": 0.28,
+     "drink_per_kill": 7.01,
+     "eat_per_kill": 3.11,
      "shares": {
-      "Fireball": 0.282,
-      "Fire Blast": 0.261,
-      "Pyroblast": 0.195,
-      "Wand": 0.106,
-      "Pyroblast burn": 0.067,
-      "Frost Nova": 0.036,
-      "Fireball burn": 0.032,
-      "Ignite": 0.021
+      "Fire Blast": 0.323,
+      "Pyroblast": 0.248,
+      "Fireball": 0.198,
+      "Wand": 0.084,
+      "Pyroblast burn": 0.069,
+      "Frost Nova": 0.032,
+      "Ignite": 0.025,
+      "Fireball burn": 0.02
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,
      "standing": "Ice Armor"
     },
-    "31": {
-     "seconds": 36.6,
+    "39": {
+     "seconds": 35.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Pyroblast": 1.0,
-      "Frost Nova": 0.97,
-      "Ice Lance": 0.84,
-      "Fireball": 1.82,
-      "Wand": 2.33,
-      "Fire Blast": 1.25,
-      "Counterspell": 0.16
+      "Pyroblast": 1.49,
+      "Frost Nova": 0.93,
+      "Fireball": 1.45,
+      "Fire Blast": 2.33,
+      "Wand": 2.71,
+      "Counterspell": 0.14
      },
-     "idle_share": 0.227,
-     "drink_per_kill": 4.48,
-     "eat_per_kill": 4.0,
+     "idle_share": 0.256,
+     "drink_per_kill": 3.67,
+     "eat_per_kill": 5.71,
      "shares": {
-      "Fireball": 0.268,
-      "Fire Blast": 0.197,
-      "Pyroblast": 0.188,
-      "Ice Lance": 0.122,
-      "Wand": 0.081,
-      "Pyroblast burn": 0.065,
-      "Frost Nova": 0.035,
-      "Fireball burn": 0.026,
-      "Ignite": 0.018
+      "Fire Blast": 0.361,
+      "Pyroblast": 0.234,
+      "Fireball": 0.18,
+      "Wand": 0.074,
+      "Pyroblast burn": 0.068,
+      "Ignite": 0.049,
+      "Frost Nova": 0.019,
+      "Fireball burn": 0.015
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,
-     "standing": "Ice Armor"
+     "standing": "Mage Armor"
     },
     "40": {
-     "seconds": 39.2,
-     "deaths_per_100": 0.75,
-     "casts": {
-      "Pyroblast": 1.01,
-      "Frost Nova": 0.99,
-      "Ice Lance": 0.86,
-      "Fireball": 1.86,
-      "Fire Blast": 1.58,
-      "Wand": 3.17,
-      "Counterspell": 0.16
-     },
-     "idle_share": 0.214,
-     "drink_per_kill": 0.2,
-     "eat_per_kill": 8.02,
-     "shares": {
-      "Fireball": 0.242,
-      "Fire Blast": 0.219,
-      "Pyroblast": 0.154,
-      "Ice Lance": 0.148,
-      "Wand": 0.094,
-      "Pyroblast burn": 0.056,
-      "Ignite": 0.039,
-      "Frost Nova": 0.031,
-      "Fireball burn": 0.018
-     },
-     "pet_sources": [],
-     "pet_deaths_per_100": 0.0,
-     "standing": "Mage Armor"
-    },
-    "43": {
-     "seconds": 34.8,
-     "deaths_per_100": 0.25,
-     "casts": {
-      "Pyroblast": 1.0,
-      "Frost Nova": 0.98,
-      "Ice Lance": 0.86,
-      "Fireball": 1.54,
-      "Fire Blast": 1.33,
-      "Wand": 2.77,
-      "Counterspell": 0.17
-     },
-     "idle_share": 0.204,
-     "drink_per_kill": 0.65,
-     "eat_per_kill": 6.26,
-     "shares": {
-      "Fireball": 0.223,
-      "Ice Lance": 0.212,
-      "Fire Blast": 0.173,
-      "Pyroblast": 0.168,
-      "Wand": 0.084,
-      "Pyroblast burn": 0.058,
-      "Ignite": 0.039,
-      "Frost Nova": 0.027,
-      "Fireball burn": 0.016
-     },
-     "pet_sources": [],
-     "pet_deaths_per_100": 0.0,
-     "standing": "Mage Armor"
-    },
-    "44": {
-     "seconds": 32.9,
+     "seconds": 35.1,
      "deaths_per_100": 0.0,
      "casts": {
-      "Pyroblast": 1.38,
-      "Frost Nova": 0.97,
-      "Ice Lance": 0.81,
-      "Fireball": 1.05,
-      "Fire Blast": 1.46,
-      "Wand": 2.76,
-      "Counterspell": 0.17
+      "Pyroblast": 1.45,
+      "Frost Nova": 0.93,
+      "Fireball": 1.49,
+      "Fire Blast": 2.32,
+      "Wand": 2.62,
+      "Counterspell": 0.14
      },
-     "idle_share": 0.208,
-     "drink_per_kill": 1.57,
-     "eat_per_kill": 5.16,
+     "idle_share": 0.258,
+     "drink_per_kill": 3.66,
+     "eat_per_kill": 5.56,
      "shares": {
-      "Pyroblast": 0.245,
-      "Ice Lance": 0.197,
-      "Fire Blast": 0.187,
-      "Fireball": 0.144,
-      "Wand": 0.082,
-      "Pyroblast burn": 0.064,
-      "Ignite": 0.041,
+      "Fire Blast": 0.352,
+      "Pyroblast": 0.226,
+      "Fireball": 0.186,
+      "Wand": 0.068,
+      "Ignite": 0.065,
+      "Pyroblast burn": 0.063,
       "Frost Nova": 0.027,
-      "Fireball burn": 0.012
+      "Fireball burn": 0.014
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,
      "standing": "Mage Armor"
     },
     "50": {
-     "seconds": 31.5,
+     "seconds": 33.6,
      "deaths_per_100": 0.0,
      "casts": {
-      "Pyroblast": 1.44,
-      "Frost Nova": 0.98,
-      "Ice Lance": 0.83,
-      "Fireball": 0.95,
-      "Wand": 2.52,
-      "Fire Blast": 1.4,
+      "Pyroblast": 1.49,
+      "Frost Nova": 0.96,
+      "Fireball": 1.23,
+      "Fire Blast": 2.17,
+      "Wand": 2.57,
       "Counterspell": 0.14
      },
-     "idle_share": 0.193,
-     "drink_per_kill": 1.91,
-     "eat_per_kill": 4.11,
+     "idle_share": 0.243,
+     "drink_per_kill": 4.0,
+     "eat_per_kill": 4.38,
      "shares": {
-      "Pyroblast": 0.261,
-      "Ice Lance": 0.2,
-      "Fire Blast": 0.196,
-      "Fireball": 0.137,
-      "Wand": 0.064,
-      "Pyroblast burn": 0.062,
-      "Ignite": 0.048,
-      "Frost Nova": 0.021,
-      "Fireball burn": 0.009
-     },
-     "pet_sources": [],
-     "pet_deaths_per_100": 0.0,
-     "standing": "Mage Armor"
-    },
-    "58": {
-     "seconds": 30.6,
-     "deaths_per_100": 0.0,
-     "casts": {
-      "Pyroblast": 1.43,
-      "Frost Nova": 0.98,
-      "Ice Lance": 0.81,
-      "Wand": 2.35,
-      "Fire Blast": 1.4,
-      "Fireball": 0.88,
-      "Counterspell": 0.14
-     },
-     "idle_share": 0.196,
-     "drink_per_kill": 2.58,
-     "eat_per_kill": 3.42,
-     "shares": {
-      "Pyroblast": 0.25,
-      "Ice Lance": 0.217,
-      "Fire Blast": 0.216,
-      "Fireball": 0.126,
+      "Fire Blast": 0.34,
+      "Pyroblast": 0.264,
+      "Fireball": 0.172,
+      "Pyroblast burn": 0.069,
+      "Ignite": 0.065,
       "Wand": 0.057,
-      "Pyroblast burn": 0.056,
-      "Ignite": 0.05,
-      "Frost Nova": 0.021,
-      "Fireball burn": 0.007
+      "Frost Nova": 0.02,
+      "Fireball burn": 0.014
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,
      "standing": "Mage Armor"
     },
-    "59": {
-     "seconds": 30.4,
+    "51": {
+     "seconds": 34.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Pyroblast": 1.43,
-      "Frost Nova": 0.99,
-      "Ice Lance": 0.8,
-      "Fireball": 0.86,
-      "Wand": 2.48,
-      "Fire Blast": 1.44,
-      "Counterspell": 0.1
+      "Pyroblast": 1.54,
+      "Frost Nova": 0.97,
+      "Fireball": 1.22,
+      "Fire Blast": 2.19,
+      "Wand": 2.75,
+      "Counterspell": 0.15
      },
-     "idle_share": 0.189,
-     "drink_per_kill": 2.41,
-     "eat_per_kill": 3.31,
+     "idle_share": 0.237,
+     "drink_per_kill": 3.86,
+     "eat_per_kill": 4.47,
      "shares": {
-      "Pyroblast": 0.248,
-      "Fire Blast": 0.221,
-      "Ice Lance": 0.207,
-      "Fireball": 0.123,
-      "Ignite": 0.06,
-      "Wand": 0.058,
-      "Pyroblast burn": 0.056,
-      "Frost Nova": 0.021,
-      "Fireball burn": 0.007
+      "Fire Blast": 0.337,
+      "Pyroblast": 0.267,
+      "Fireball": 0.168,
+      "Pyroblast burn": 0.069,
+      "Ignite": 0.066,
+      "Wand": 0.061,
+      "Frost Nova": 0.02,
+      "Fireball burn": 0.013
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Mage Armor"
+    },
+    "52": {
+     "seconds": 33.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Pyroblast": 1.45,
+      "Frost Nova": 0.97,
+      "Ice Lance": 0.81,
+      "Fireball": 1.11,
+      "Fire Blast": 1.75,
+      "Wand": 2.69,
+      "Counterspell": 0.17
+     },
+     "idle_share": 0.219,
+     "drink_per_kill": 2.71,
+     "eat_per_kill": 4.74,
+     "shares": {
+      "Fire Blast": 0.259,
+      "Pyroblast": 0.247,
+      "Fireball": 0.151,
+      "Ice Lance": 0.13,
+      "Pyroblast burn": 0.066,
+      "Wand": 0.061,
+      "Ignite": 0.056,
+      "Frost Nova": 0.019,
+      "Fireball burn": 0.011
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,

@@ -56,28 +56,27 @@ The Fire leveling build the open leveling search found on 2026-11-21: every lega
 | 10-14 | Fire | Accelerant | 5 | 0/5/0 |
 | 15-19 | Fire | Ignite | 5 | 0/10/0 |
 | 20 | Fire | Pyroblast | 1 | 0/11/0 |
-| 21-22 | Frost | Precision | 2 | 0/11/2 |
-| 23-24 | Frost | Frost Warding | 2 | 0/11/4 |
-| 25 | Frost | Precision | 1 | 0/11/5 |
-| 26-27 | Frost | Improved Frost Nova | 2 | 0/11/7 |
-| 28-30 | Frost | Ice Shards | 3 | 0/11/10 |
-| 31 | Frost | Ice Lance | 1 | 0/11/11 |
-| 32-33 | Frost | Frost Channeling | 2 | 0/11/13 |
-| 34-35 | Frost | Ice Shards | 2 | 0/11/15 |
-| 36-38 | Frost | Shatter | 3 | 0/11/18 |
-| 39 | Arcane | Wand Specialization | 1 | 1/11/18 |
-| 40 | Fire | Improved Fire Blast | 1 | 1/12/18 |
-| 41-42 | Fire | Burning Soul | 2 | 1/14/18 |
-| 43 | Fire | Incineration | 1 | 1/15/18 |
-| 44 | Fire | Heating Up | 1 | 1/16/18 |
-| 45 | Fire | Burning Soul | 1 | 1/17/18 |
-| 46-48 | Fire | Master of Elements | 3 | 1/20/18 |
-| 49-51 | Fire | Critical Mass | 3 | 1/23/18 |
-| 52-53 | Fire | Incineration | 2 | 1/25/18 |
-| 54-56 | Fire | Fire Power | 3 | 1/28/18 |
-| 57-58 | Fire | Incineration | 2 | 1/30/18 |
-| 59 | Fire | Combustion | 1 | 1/31/18 |
-| 60 | Fire | Improved Fire Blast | 1 | 1/32/18 |
+| 21-22 | Fire | Improved Fire Blast | 2 | 0/13/0 |
+| 23-24 | Fire | Burning Soul | 2 | 0/15/0 |
+| 25 | Fire | Heating Up | 1 | 0/16/0 |
+| 26 | Fire | Burning Soul | 1 | 0/17/0 |
+| 27-29 | Fire | Master of Elements | 3 | 0/20/0 |
+| 30-32 | Fire | Critical Mass | 3 | 0/23/0 |
+| 33-34 | Fire | Incineration | 2 | 0/25/0 |
+| 35-37 | Fire | Fire Power | 3 | 0/28/0 |
+| 38-39 | Fire | Incineration | 2 | 0/30/0 |
+| 40 | Fire | Combustion | 1 | 0/31/0 |
+| 41 | Fire | Incineration | 1 | 0/32/0 |
+| 42-43 | Frost | Precision | 2 | 0/32/2 |
+| 44-45 | Frost | Frost Warding | 2 | 0/32/4 |
+| 46 | Frost | Precision | 1 | 0/32/5 |
+| 47-48 | Frost | Improved Frost Nova | 2 | 0/32/7 |
+| 49-51 | Frost | Ice Shards | 3 | 0/32/10 |
+| 52 | Frost | Ice Lance | 1 | 0/32/11 |
+| 53-54 | Frost | Frost Channeling | 2 | 0/32/13 |
+| 55-56 | Frost | Ice Shards | 2 | 0/32/15 |
+| 57-59 | Frost | Shatter | 3 | 0/32/18 |
+| 60 | Arcane | Wand Specialization | 1 | 1/32/18 |
 
 ## Core talents (priority order)
 

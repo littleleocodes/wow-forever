@@ -1,0 +1,379 @@
+{
+ "class": "mage",
+ "spec": "Fire",
+ "build": "fire-open-leveling",
+ "rotation": "fire-leveling",
+ "date": "2026-11-23",
+ "fights": 1500,
+ "start_order": [
+  {
+   "levels": "10-14",
+   "tree": "Fire",
+   "talent": "Accelerant",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Fire",
+   "talent": "Ignite",
+   "points": 5
+  },
+  {
+   "levels": "20",
+   "tree": "Fire",
+   "talent": "Pyroblast",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Fire",
+   "talent": "Improved Fire Blast",
+   "points": 2
+  },
+  {
+   "levels": "23-24",
+   "tree": "Fire",
+   "talent": "Burning Soul",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Fire",
+   "talent": "Heating Up",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Fire",
+   "talent": "Burning Soul",
+   "points": 1
+  },
+  {
+   "levels": "27-29",
+   "tree": "Fire",
+   "talent": "Master of Elements",
+   "points": 3
+  },
+  {
+   "levels": "30-32",
+   "tree": "Fire",
+   "talent": "Critical Mass",
+   "points": 3
+  },
+  {
+   "levels": "33-34",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 2
+  },
+  {
+   "levels": "35-37",
+   "tree": "Fire",
+   "talent": "Fire Power",
+   "points": 3
+  },
+  {
+   "levels": "38-39",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 2
+  },
+  {
+   "levels": "40",
+   "tree": "Fire",
+   "talent": "Combustion",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 1
+  },
+  {
+   "levels": "42-43",
+   "tree": "Frost",
+   "talent": "Precision",
+   "points": 2
+  },
+  {
+   "levels": "44-45",
+   "tree": "Frost",
+   "talent": "Frost Warding",
+   "points": 2
+  },
+  {
+   "levels": "46",
+   "tree": "Frost",
+   "talent": "Precision",
+   "points": 1
+  },
+  {
+   "levels": "47-48",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
+   "points": 2
+  },
+  {
+   "levels": "49-51",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 3
+  },
+  {
+   "levels": "52",
+   "tree": "Frost",
+   "talent": "Ice Lance",
+   "points": 1
+  },
+  {
+   "levels": "53-54",
+   "tree": "Frost",
+   "talent": "Frost Channeling",
+   "points": 2
+  },
+  {
+   "levels": "55-56",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 2
+  },
+  {
+   "levels": "57-59",
+   "tree": "Frost",
+   "talent": "Shatter",
+   "points": 3
+  },
+  {
+   "levels": "60",
+   "tree": "Arcane",
+   "talent": "Wand Specialization",
+   "points": 1
+  }
+ ],
+ "steps": [
+  {
+   "weighted": 33.654,
+   "values_at_60": {
+    "Combustion": -1.095,
+    "Improved Fire Blast": -0.387,
+    "Shatter": -1.084,
+    "Wand Specialization": -0.196
+   },
+   "zero": [],
+   "dead_held": []
+  }
+ ],
+ "moves": [],
+ "kept_signature": [
+  "Pyroblast"
+ ],
+ "model": "ac35364171dc1e05377139ed517f376b8194c58d",
+ "chain": "new: no model recorded and the order changed",
+ "gates_checked": {
+  "Frost Warding": {
+   "level": 45,
+   "kind": "tier point for Ice Shards (tier 2)",
+   "does_nothing": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 50, 60",
+   "homes": [
+    {
+     "to": "Improved Frostbolt",
+     "seed3": 0.0,
+     "same_times": true
+    }
+   ],
+   "verdict": "no better home"
+  },
+  "Precision": {
+   "level": 46,
+   "kind": "tier point for Ice Shards (tier 2)",
+   "does_nothing": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 50, 60",
+   "homes": [
+    {
+     "to": "Improved Frostbolt",
+     "seed3": 0.0,
+     "same_times": true
+    }
+   ],
+   "verdict": "no better home"
+  }
+ },
+ "no_better_home": {
+  "Frost Warding": {
+   "kind": "tier point for Ice Shards (tier 2)",
+   "exact": true,
+   "why": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 50, 60",
+   "homes": 1
+  },
+  "Precision": {
+   "kind": "tier point for Ice Shards (tier 2)",
+   "exact": true,
+   "why": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 50, 60",
+   "homes": 1
+  }
+ },
+ "final_order": [
+  {
+   "levels": "10-14",
+   "tree": "Fire",
+   "talent": "Accelerant",
+   "points": 5
+  },
+  {
+   "levels": "15-19",
+   "tree": "Fire",
+   "talent": "Ignite",
+   "points": 5
+  },
+  {
+   "levels": "20",
+   "tree": "Fire",
+   "talent": "Pyroblast",
+   "points": 1
+  },
+  {
+   "levels": "21-22",
+   "tree": "Fire",
+   "talent": "Improved Fire Blast",
+   "points": 2
+  },
+  {
+   "levels": "23-24",
+   "tree": "Fire",
+   "talent": "Burning Soul",
+   "points": 2
+  },
+  {
+   "levels": "25",
+   "tree": "Fire",
+   "talent": "Heating Up",
+   "points": 1
+  },
+  {
+   "levels": "26",
+   "tree": "Fire",
+   "talent": "Burning Soul",
+   "points": 1
+  },
+  {
+   "levels": "27-29",
+   "tree": "Fire",
+   "talent": "Master of Elements",
+   "points": 3
+  },
+  {
+   "levels": "30-32",
+   "tree": "Fire",
+   "talent": "Critical Mass",
+   "points": 3
+  },
+  {
+   "levels": "33-34",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 2
+  },
+  {
+   "levels": "35-37",
+   "tree": "Fire",
+   "talent": "Fire Power",
+   "points": 3
+  },
+  {
+   "levels": "38-39",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 2
+  },
+  {
+   "levels": "40",
+   "tree": "Fire",
+   "talent": "Combustion",
+   "points": 1
+  },
+  {
+   "levels": "41",
+   "tree": "Fire",
+   "talent": "Incineration",
+   "points": 1
+  },
+  {
+   "levels": "42-43",
+   "tree": "Frost",
+   "talent": "Precision",
+   "points": 2
+  },
+  {
+   "levels": "44-45",
+   "tree": "Frost",
+   "talent": "Frost Warding",
+   "points": 2
+  },
+  {
+   "levels": "46",
+   "tree": "Frost",
+   "talent": "Precision",
+   "points": 1
+  },
+  {
+   "levels": "47-48",
+   "tree": "Frost",
+   "talent": "Improved Frost Nova",
+   "points": 2
+  },
+  {
+   "levels": "49-51",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 3
+  },
+  {
+   "levels": "52",
+   "tree": "Frost",
+   "talent": "Ice Lance",
+   "points": 1
+  },
+  {
+   "levels": "53-54",
+   "tree": "Frost",
+   "talent": "Frost Channeling",
+   "points": 2
+  },
+  {
+   "levels": "55-56",
+   "tree": "Frost",
+   "talent": "Ice Shards",
+   "points": 2
+  },
+  {
+   "levels": "57-59",
+   "tree": "Frost",
+   "talent": "Shatter",
+   "points": 3
+  },
+  {
+   "levels": "60",
+   "tree": "Arcane",
+   "talent": "Wand Specialization",
+   "points": 1
+  }
+ ],
+ "reruns": [
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-22",
+   "moves": 0
+  }
+ ]
+}

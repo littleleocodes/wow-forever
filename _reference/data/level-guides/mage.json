@@ -1282,7 +1282,7 @@
   },
   {
    "spec": "Fire",
-   "intro": "What a Fire mage presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Fire levels with **Fireball** at range and **Fire Blast** up close, opens every pull from 20 with a hard-cast **Pyroblast**, and borrows the Frost tree's freeze: **Frost Nova**, a step back and, from 31, **Ice Lance** into the frozen mob. Each stage lists the full priority, so you can jump in at your level.",
+   "intro": "What a Fire mage presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Fire levels with **Fireball** at range and **Fire Blast** up close, opens every pull from 20 with a hard-cast **Pyroblast**, and borrows the Frost tree's freeze: **Frost Nova**, a step back and, from 52, **Ice Lance** into the frozen mob. Each stage lists the full priority, so you can jump in at your level.",
    "stages": [
     {
      "from": 1,
@@ -1342,13 +1342,13 @@
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
      "notes": [
       "The opener is a tuned rule: **Pyroblast** is the Fire signature spell, so every pull starts with one. The fight lab lets the mob run at you from the first second of the cast; a mob that only notices you when the **Pyroblast** lands gives you more time.",
-      "**Scorch** (22): the tuned rules never cast it. Leave it off your bar. **Precision** (21-22) adds hit.",
+      "**Scorch** (22): the tuned rules never cast it. Leave it off your bar. **Improved Fire Blast** (21-22) brings **Fire Blast** back 1 second sooner and adds 8 yards of range at 21, 2 seconds and 15 yards at 22; **Burning Soul** (23-24) gives a hit a 47% chance not to push your Fire casts back.",
       "**Evocation** (20) is for between fights: channel it in place of a drink, whenever it is ready and you are under 15% mana. **Blink** (20) and **Mana Shield** (20) are for a pull that goes wrong."
      ]
     },
     {
      "from": 24,
-     "title": "Counterspell and the Frost points",
+     "title": "Counterspell",
      "change": "**Counterspell** for mobs that cast.",
      "press": [
       "**Counterspell** a mob that starts casting: it stops standing back and walks to you.",
@@ -1360,59 +1360,56 @@
       "Below about a third of its health, or under 15% of your mana: **Fire Blast** whenever it is ready, else your wand. No new **Fireball**: a long cast on a dying mob is wasted, and the last of your mana is for **Fire Blast**."
      ],
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
-     "notes": [
-      "**Ice Shards** (28-30) comes ahead of **Ice Lance** (31): your Frost crits, the **Ice Lance** into a freeze above all, hit harder. Since the open search of 2026-11-17 this build takes no Frostbite, so only **Frost Nova** freezes the mob.",
-      "**Frost Warding** (23-24) adds armor to **Frost Armor**; **Precision** (25) gets its third point and **Improved Frost Nova** (26-27) brings **Frost Nova** back 4 seconds sooner. **Cone of Cold** (26) goes on C for packs: the Fire list never casts it.",
-      "**Ice Armor** (30) replaces **Frost Armor** as your armor spell until **Mage Armor** (34): half your mana regeneration then keeps going while you cast, so you drink less. The rules of 2026-11-15 had kept Ice Armor to 60; once you eat while you drink, **Mage Armor** was about 1.2% faster per kill (the tune of 2026-11-17)."
-     ]
+     "notes": []
     },
     {
-     "from": 31,
-     "title": "Ice Lance into every freeze",
-     "change": "**Ice Lance** (talent): an instant that deals four times its damage to a frozen mob.",
-     "press": [
-      "**Counterspell** a mob that starts casting.",
-      "Open every pull with a hard-cast **Pyroblast** from maximum range. The mob runs at you during the 6-second cast: finish it, then go on.",
-      "**Fireball** while the mob walks in, and whenever nothing below applies, while the mob has more than about a third of its health and you have more than 15% of your mana.",
-      "**Fire Blast** when the mob would reach you before a **Fireball** finishes. With **Fire Blast** on cooldown and **Frost Nova** ready, wand it until it arrives.",
-      "**Frost Nova** when it reaches you, then step back out of its reach. Skip it on a mob that is almost dead.",
-      "**Ice Lance** the moment **Frost Nova** has frozen the mob. One per freeze: it has an 8-second cooldown, and **Fire Blast** shares it.",
-      "If it reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting **Fireball**.",
-      "Below about a third of its health, or under 15% of your mana: **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No new **Fireball**."
-     ],
-     "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
-     "notes": [
-      "**Frost Channeling** (32-33) makes your Frost spells 10% cheaper. **Ice Shards** (34-35, after 28-30) and **Shatter** (36-38) make the **Ice Lance** into a freeze your biggest hit.",
-      "**Wand Specialization** (39) makes your wand hit harder for the finish.",
-      "**Improved Fire Blast** (40) brings **Fire Blast** back 1 second sooner and adds 8 yards of range; **Burning Soul** (41-42) gives a hit a 47% chance not to push your Fire casts back; **Incineration** (43) adds 2% crit to **Fire Blast** and **Ice Lance**. **Frostfire Bolt** (40) is not part of the Fire list."
-     ]
-    },
-    {
-     "from": 44,
+     "from": 25,
      "title": "Heating Up: fast Pyroblasts",
      "change": "**Heating Up** (talent): Fire crits and every **Fire Blast** add stacks, each a quarter off your next **Pyroblast**'s cast, so more of them fit into a fight.",
      "press": [
       "**Counterspell** a mob that starts casting.",
       "Open every pull with a hard-cast **Pyroblast** from maximum range. The mob runs at you during the 6-second cast: finish it, then go on.",
-      "**Pyroblast** again at 3 stacks of **Heating Up**, and whenever its cast, shortened by your stacks, will end before the mob can hit you (in a **Frost Nova** freeze, after the **Ice Lance**), while the mob has more than about a third of its health.",
+      "**Pyroblast** again at 3 stacks of **Heating Up**, and whenever its cast, shortened by your stacks, will end before the mob can hit you (in a **Frost Nova** freeze), while the mob has more than about a third of its health.",
       "**Fireball** while the mob walks in, and whenever nothing below applies, while the mob has more than about a third of its health and you have more than 15% of your mana.",
       "**Fire Blast** when the mob would reach you before a **Fireball** finishes. With **Fire Blast** on cooldown and **Frost Nova** ready, wand it until it arrives.",
       "**Frost Nova** when it reaches you, then step back out of its reach. Skip it on a mob that is almost dead.",
-      "**Ice Lance** the moment **Frost Nova** has frozen the mob. One per freeze: it has an 8-second cooldown, and **Fire Blast** shares it.",
       "If it reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting **Fireball**.",
-      "Below about a third of its health, or under 15% of your mana: **Fire Blast** whenever it is ready, an **Ice Lance** into a freeze or one that will kill, else your wand. No new **Fireball**."
+      "Below about a third of its health, or under 15% of your mana: **Fire Blast** whenever it is ready, else your wand. No new **Fireball**: a long cast on a dying mob is wasted, and the last of your mana is for **Fire Blast**."
      ],
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
      "notes": [
       "On one mob the 3 stacks rarely come together before it dies, but one or two make a **Pyroblast** short enough (4.5 or 3 seconds) to fit into a **Frost Nova** freeze: the hard-cast rule of the tune of 2026-11-20. The opener stays your main **Pyroblast**.",
-      "**Burning Soul** (45) gets its third point: a 70% chance. **Master of Elements** (46-48) refunds mana on your Fire and Frost crits, **Critical Mass** (49-51) adds Fire crit.",
-      "**Incineration** (52-53, 57-58) adds crit to **Fire Blast** and **Ice Lance**, 2% a point: its first point came at 43, all five by 58. **Fire Power** (54-56) adds Fire damage for each Fire effect on the mob."
+      "**Burning Soul** (26) gets its third point: a 70% chance. **Master of Elements** (27-29) refunds mana on your Fire and Frost crits, **Critical Mass** (30-32) adds Fire crit.",
+      "**Incineration** (33-34, 38-39, 41) adds crit to **Fire Blast**, 2% a point (and to **Ice Lance**, once you have it). **Fire Power** (35-37) adds Fire damage for each Fire effect on the mob.",
+      "**Ice Armor** (30) replaces **Frost Armor** as your armor spell until **Mage Armor** (34): half your mana regeneration then keeps going while you cast, so you drink less. The rules of 2026-11-15 had kept Ice Armor to 60; once you eat while you drink, **Mage Armor** was about 1.2% faster per kill (the tune of 2026-11-17).",
+      "**Cone of Cold** (26) goes on C for packs: the Fire list never casts it."
      ]
     },
     {
-     "from": 59,
+     "from": 40,
      "title": "Combustion on the pull",
      "change": "**Combustion** (talent): every 3 minutes, more Fire crit for the opening **Pyroblast** and the hits after it.",
+     "press": [
+      "Open every pull with a hard-cast **Pyroblast** from maximum range; when Combustion is ready, the Shift+Q macro adds it.",
+      "**Counterspell** a mob that starts casting.",
+      "**Pyroblast** again at 3 stacks of **Heating Up**, and whenever its cast, shortened by your stacks, will end before the mob can hit you (in a **Frost Nova** freeze), while the mob has more than about a third of its health.",
+      "**Fireball** while the mob walks in, and whenever nothing below applies, while the mob has more than about a third of its health and you have more than 15% of your mana.",
+      "**Fire Blast** when the mob would reach you before a **Fireball** finishes. With **Fire Blast** on cooldown and **Frost Nova** ready, wand it until it arrives.",
+      "**Frost Nova** when it reaches you, then step back out of its reach. Skip it on a mob that is almost dead.",
+      "If it reaches you with **Frost Nova** on cooldown: **Fire Blast**, then keep casting **Fireball**.",
+      "Below about a third of its health, or under 15% of your mana: **Fire Blast** whenever it is ready, else your wand. No new **Fireball**: a long cast on a dying mob is wasted, and the last of your mana is for **Fire Blast**."
+     ],
+     "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
+     "notes": [
+      "**Combustion** (40) raises your Fire crit with every Fire hit until 3 crits; the fight lab uses it at the pull whenever it is ready. **Incineration** gets its fifth point at 41.",
+      "From 42 the Frost points: **Precision** (42-43, 46) adds hit, **Frost Warding** (44-45) adds armor to your armor spell, **Improved Frost Nova** (47-48) brings **Frost Nova** back 4 seconds sooner and **Ice Shards** (49-51) comes ahead of **Ice Lance** (52): your Frost crits hit harder, the **Ice Lance** into a freeze above all. Since the open search of 2026-11-17 this build takes no Frostbite, so only **Frost Nova** freezes the mob.",
+      "**Frostfire Bolt** (40) is not part of the Fire list."
+     ]
+    },
+    {
+     "from": 52,
+     "title": "Ice Lance into every freeze",
+     "change": "**Ice Lance** (talent): an instant that deals four times its damage to a frozen mob.",
      "press": [
       "Open every pull with a hard-cast **Pyroblast** from maximum range; when Combustion is ready, the Shift+Q macro adds it.",
       "**Counterspell** a mob that starts casting.",
@@ -1426,7 +1423,8 @@
      ],
      "if_hurt": "Mob on you, **Frost Nova** on cooldown and your health low: **Blink** out of its reach and keep casting; **Mana Shield** if it still hits you.",
      "notes": [
-      "**Combustion** (59) raises your Fire crit with every Fire hit until 3 crits; the fight lab uses it at the pull whenever it is ready. **Improved Fire Blast** gets its second point at 60: 2 seconds off **Fire Blast**'s cooldown and 15 yards more range."
+      "**Frost Channeling** (53-54) makes your Frost spells 10% cheaper. **Ice Shards** (55-56, after 49-51) and **Shatter** (57-59) make the **Ice Lance** into a freeze your biggest hit.",
+      "**Wand Specialization** (60) makes your wand hit harder for the finish."
      ]
     }
    ],
@@ -1472,7 +1470,7 @@
         "role": "The big hit into a freeze",
         "binds": [
          {
-          "from": 31,
+          "from": 52,
           "spell": "Ice Lance"
          }
         ]
@@ -1577,7 +1575,7 @@
         "role": "The opener with your cooldown: Combustion and Pyroblast",
         "binds": [
          {
-          "from": 59,
+          "from": 40,
           "spell": "Combustion",
           "only": "macro"
          }
@@ -1674,9 +1672,9 @@
     "no_key": [],
     "notes": [
      "The [Frost guide](frost-by-level.md)'s keys, with the changes Fire needs: Q keeps **Fireball** to 60 (Fire never casts **Frostbolt**), **Pyroblast** goes on 1 (the free-Missiles key of the Arcane-Frost build), **Flamestrike** takes Shift+R in place of **Blizzard**, and Shift+Q holds the **Combustion** macro.",
-     "**Ice Lance** stays on R, as in every mage guide; it arrives at 31 in this build.",
+     "**Ice Lance** stays on R, as in every mage guide; it arrives at 52 in this build.",
      "Levels 1-9 fight with three keys: Q, Mouse 5 and the middle mouse button. Add a key when its spell arrives.",
-     "The Shift+Q macro from 59, one line each: `#showtooltip Pyroblast`, `/cast Combustion`, `/cast Pyroblast`. **Combustion** is off the global cooldown, so one press fires both; while it is on cooldown the second line still casts **Pyroblast**, so Shift+Q can open every pull.",
+     "The Shift+Q macro from 40, one line each: `#showtooltip Pyroblast`, `/cast Combustion`, `/cast Pyroblast`. **Combustion** is off the global cooldown, so one press fires both; while it is on cooldown the second line still casts **Pyroblast**, so Shift+Q can open every pull.",
      "No key: **Frost Armor**, **Ice Armor** and **Mage Armor**, **Arcane Intellect**, **Conjure Water** and **Conjure Food**, food, drink, the mount and the Hearthstone. Put them on a side bar and click them between fights.",
      "**Evocation** on 4 is the one between-fights spell with a key: it has a cooldown and a mana rule, so it is a decision, not a chore. Click it instead if you want 4 free.",
      "The single-target rotation never casts **Cone of Cold**, **Arcane Explosion**, **Flamestrike** or **Scorch**. The first three are there for a pull that brings friends; **Scorch** has no key."

@@ -40,7 +40,7 @@ Rows: **page** = the build the leveling page shows (before the rule), in the rot
 |---|---|---|---|---|---|---|---|---|
 | Arcane | page | arcane-open-leveling (33/0/18) | arcane-leveling | - | Arcane Blast 1.82 | 77% (min 50%) | 26.3 | OK |
 | Arcane | slot | arcane-leveling (29/0/22) | arcane-leveling | - | Arcane Blast 0.00 | 70% (min 50%) | 32.4 | FAIL: lacks Arcane Blast |
-| Fire | page | fire-open-leveling (1/32/18) | fire-leveling | - | Fireball 0.80, Pyroblast 1.36 | 72% (min 60%) | 33.5 | OK |
+| Fire | page | fire-open-leveling (1/32/18) | fire-leveling | - | Fireball 0.80, Pyroblast 1.36 | 72% (min 60%) | 33.0 | OK |
 | Fire | slot | fire-leveling (1/32/18) | fire-leveling | - | Fireball 0.80, Pyroblast 1.35 | 72% (min 60%) | 34.1 | OK |
 | Fire | slot | opt-fire-leveling-leveling-st (4/31/16) | fire-leveling | - | Fireball 1.06, Pyroblast 1.30 | 77% (min 60%) | 34.8 | OK |
 | Frost | page | frost-open-leveling (18/1/32) | frost-leveling | - | Frostbolt 3.52 | 94% (min 60%) | 26.8 | OK |
