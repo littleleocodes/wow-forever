@@ -81,8 +81,9 @@ ITEM_KINDS = [
      "G13: the creature's own row, spawned or summoned, else the item's best row in the dungeon, a chest included)",
      "database drop (zone, creature); cmangos dungeon_loot.csv chance (drop_chance)"),
     ("dungeon_drop", TRUE2, "any other dungeon drop: trash, drops under 5% or of unknown chance (unknown_chances), a class quest's "
-     "summon (CLASS_SUMMONS), a rare spawn (a creature Classic ranks rare that the dump does not spawn outright or by an event script; "
-     "ENCOUNTER_RARES aside)", "database drop; cmangos dungeon_loot.csv rank and spawn"),
+     "summon (CLASS_SUMMONS), a rare spawn (a creature a spawn pool can leave out, or one Classic ranks rare that the dump does not "
+     "spawn outright or by an event script; ENCOUNTER_RARES aside), a contested spawn (CONTESTED_SPAWNS)",
+     "database drop; cmangos dungeon_loot.csv rank and spawn"),
     ("world_drop", TRUE2, "a drop in the open world (one that binds when equipped sells on the auction house)", "database drop"),
     ("quest", ALL3, "a quest reward of the game now (Alterac Valley's included; Forever's own quests count)",
      "database quest; cmangos quests.csv zone"),
@@ -272,7 +273,13 @@ CLASS_SUMMONS = {14506: "Lord Hel'nurath (the warlock's Dreadsteed quest)", 1451
 # rank (Tsu'zee in Dire Maul, Ragglesnout in Razorfen Downs: Classic ranks them elite).
 RARE_RANKS = {"2", "4"}
 SET_SPAWNS = {"outright", "event script"}
+# Timmy the Cruel: the dump holds no summon of his (a C++ script); the delegator's reading, from its memory of Classic and not a
+# source: he appears when the square is entered (2026-11-23)
 ENCOUNTER_RARES = {"Timmy the Cruel"}
+# Spawns the sources disagree on: not Easy (the delegator, 2026-11-23: "Where sources disagree the item is not Easy"); a third source (a
+# Classic sniff, Wowhead Forever's kill counts against a sure boss of the same run) reopens one
+CONTESTED_SPAWNS = {"Hearthsinger Forresten": "the dump's pool keeps him up at one of four spots, always; Classic ranks him rare elite "
+                                              "and players knew him as not always there"}
 # A vendor whose currency dungeon bosses drop (the delegator's read of Wowhead Forever, 2026-11-23: Pix Xizzix sells 54 items, every one
 # for currency 3469, Tarnished Undermine Real, which 42 bosses of Blackrock Depths, Blackrock Spire, Scholomance, Stratholme and the
 # Temple of Atal'Hakkar drop; how many a boss drops is not shown): {vendor: (currency, where, how you get it)}, prices {item: Reals}
@@ -359,6 +366,8 @@ def dungeon_kind(it, npc, z, d, ctx):
     ch, src = drop_chance(it["id"], npc, z, ctx)
     say = ("chance unknown" if ch is None else "under 0.1%" if ch == 0 else f"{ch:.1%}" + (f" from {src}" if src else ""))
     rk, spawn = ctx["rank"].get(int(npc), ctx["rank"].get(who, ("", ""))) if npc else ("", "")
+    if who in CONTESTED_SPAWNS:
+        return "dungeon_drop", f"{z}, {who}, {say}, a contested spawn ({CONTESTED_SPAWNS[who]})"
     if spawn == "pool" or (rk in RARE_RANKS and spawn not in SET_SPAWNS and who not in ENCOUNTER_RARES):
         return "dungeon_drop", f"{z}, {who}, {say}, a rare spawn (" + ("a spawn pool can leave it out" if spawn == "pool" else
                                                                        f"Classic's rank; the dump spawns it: {spawn}") + ")"
