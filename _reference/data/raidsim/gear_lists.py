@@ -70,7 +70,9 @@ BG_OPEN = {"Alterac Valley": True, "Warsong Gulch": True, "Arathi Basin": True}
 #   marked PvP, with a non-PvP alternative (pvp_alternatives); no rank cap is guessed (the launch checklist asks).
 
 STANDING_FROM = ("the standing, in this order: the client's MinReputation when set (empty on the Alterac Valley rewards that ask "
-                 "Honored to Exalted), Classic's item_template RequiredReputationRank, the database's rep source")
+                 "Honored to Exalted), Classic's item_template RequiredReputationRank, else Classic's vendor condition (npc_vendor "
+                 "condition_id, type 5: where the dump keeps the Warsong Gulch gates), the database's rep source, Wowhead's Forever "
+                 "tooltip from the archive (bind_types.WOWHEAD_REP; nothing left to pull at this pin)")
 # (kind, lists, what it is, where the fact comes from): items
 ITEM_KINDS = [
     ("dungeon_drop_easy", ALL3, "a named creature's drop in a dungeon at 5% or more (our reading), Upper Blackrock Spire's bosses "
@@ -202,10 +204,14 @@ def standing(it, b):
         return b["min_faction"], b.get("min_rep", 0), "client"
     if b.get("classic_rep_faction"):
         return b["classic_rep_faction"], b.get("classic_rep_rank", 0), "Classic"
+    if b.get("vendor_rep_faction"):   # Classic's vendor condition (the Warsong Gulch quartermasters' gates live there, not in the item)
+        return b["vendor_rep_faction"], b.get("vendor_rep_rank", 0), "Classic vendor"
     reps = [s["rep"] for s in it.get("sources") or [] if s.get("rep") and s["rep"].get("repFactionId")]
     if reps:
         r = max(reps, key=lambda x: int(x.get("repLevel") or 0))
         return r["repFactionId"], int(r.get("repLevel") or 0) - 1, "database"
+    if b.get("wowhead_rep_rank") is not None:   # the fourth source: Wowhead's Forever tooltip, archived (bind_types.WOWHEAD_REP)
+        return b.get("wowhead_rep_faction"), b["wowhead_rep_rank"], "Wowhead"
     return None, None, None
 
 
