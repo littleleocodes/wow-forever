@@ -14,7 +14,7 @@ Source: https://github.com/cmangos/classic-db, Full_DB/ClassicDB_1_12_1_z2815.sq
   quality, class, sell: every item a level's mobs drop, expected count per kill), quest_chain.csv (quest, prev, next_in_chain, givers),
   dungeon_quests.csv (quest, map, how: a creature to kill, an item that drops, or a giver in a leveling dungeon)
 - dungeon_loot.csv (2026-11-23, the gear lists' drop chances): source (creature or object), id, name, map (0: spawned nowhere), item,
-  item_name, chance; see main() and loot_chances_cmangos
+  item_name, chance, rank (a creature's creature_template Rank); see main() and loot_chances_cmangos
 Classic Era data: WoW: Forever changed some items and recipes; the planner takes item stats and sources from the simulator's Forever
 database and only skill levels, quest levels and reagents from here.
 """
@@ -262,14 +262,15 @@ def main():
     for r in d["creature_template"]:
         e, lid = int(r["Entry"]), int(r.get("LootId") or 0)
         if lid and (e in spawned or e not in anywhere):
-            lrows += [["creature", e, r["Name"], spawned.get(e, 0), it, x["name"], round(ch, 4)]
+            lrows += [["creature", e, r["Name"], spawned.get(e, 0), it, x["name"], round(ch, 4), r["Rank"]]
                       for it, ch in loot_chances_cmangos(cl, rl, lid).items() for x in [gear(it, ch)] if x]
     for r in d["gameobject_template"]:
         g, lid, ms = int(r["entry"]), int(r.get("data1") or 0), gmaps.get(int(r["entry"]), set())
         if r.get("type") == "3" and lid and (ms & DUNGEON_MAPS or not ms):
-            lrows += [["object", g, r["name"], min(ms & DUNGEON_MAPS) if ms else 0, it, x["name"], round(ch, 4)]
+            lrows += [["object", g, r["name"], min(ms & DUNGEON_MAPS) if ms else 0, it, x["name"], round(ch, 4), ""]
                       for it, ch in loot_chances_cmangos(gl, rl, lid).items() for x in [gear(it, ch)] if x]
-    write(out / "dungeon_loot.csv", ["source", "id", "name", "map", "item", "item_name", "chance"], sorted(lrows))
+    # rank: creature_template Rank (0 normal, 1 elite, 2 rare elite, 3 boss, 4 rare; the gear lists' rare-spawn rule reads it)
+    write(out / "dungeon_loot.csv", ["source", "id", "name", "map", "item", "item_name", "chance", "rank"], sorted(lrows))
     # class training (2026-11-09, the planner's gold budget: "how much training costs"): every spell a class trainer teaches, its level
     # and price (copper), by class (TrainerType 0 = class trainer; npc_trainer rows by creature, npc_trainer_template rows by template)
     names = {int(r["Id"]): r.get("SpellName", "") for r in d["spell_template"]}

@@ -81,7 +81,7 @@ ITEM_KINDS = [
      "G13: the creature's own row, spawned or summoned, else the item's best row in the dungeon, a chest included)",
      "database drop (zone, creature); cmangos dungeon_loot.csv chance (drop_chance)"),
     ("dungeon_drop", TRUE2, "any other dungeon drop: trash, drops under 5% or of unknown chance (unknown_chances), a class quest's "
-     "summon (CLASS_SUMMONS)", "database drop"),
+     "summon (CLASS_SUMMONS), a rare spawn (a creature Classic ranks rare, ENCOUNTER_RARES aside)", "database drop"),
     ("world_drop", TRUE2, "a drop in the open world (one that binds when equipped sells on the auction house)", "database drop"),
     ("quest", ALL3, "a quest reward of the game now (Alterac Valley's included; Forever's own quests count)",
      "database quest; cmangos quests.csv zone"),
@@ -100,7 +100,11 @@ ITEM_KINDS = [
     ("bg_closed", NONE, "a battleground the user says is closed (none: BG_OPEN)", "BG_OPEN"),
     ("pvp", TRUE2, "honor rank gear the database dates phase 1, labelled PvP, each piece with a non-PvP alternative (the user is not "
      "sure which ranks a player can hold now; no rank cap is guessed)", "database pvp, honor vendors"),
-    ("vendor", TRUE2, "a vendor's stock for gold or a currency (Booty Bay's Tarnished Undermine Reals)", "database soldBy"),
+    ("vendor", TRUE2, "a vendor's stock for gold or a currency", "database soldBy"),
+    ("dungeon_currency", TRUE2, "a currency vendor's stock whose currency dungeon bosses drop (CURRENCY_VENDORS: Pix Xizzix in Booty Bay, "
+     "Tarnished Undermine Reals from the bosses of Blackrock Depths, Blackrock Spire, Scholomance, Stratholme and the Temple of "
+     "Atal'Hakkar); the True lists until the Reals a boss drops are known (the delegator, 2026-11-23)",
+     "database soldBy; Wowhead Forever's vendor and currency pages, read by the delegator session 2026-11-23"),
     ("auction", TRUE2, "no source in the database, binds when equipped and Classic's world creatures drop it: the auction house",
      "bind type (client ItemSparse, else Classic item_template); cmangos mob_loot.csv"),
     ("vetted", TRUE2, "no source in the database, used by a launch or pre-raid preset of the simulator, item level 70 at most",
@@ -154,7 +158,7 @@ def context(G, Tm, zones, repo):
     cm = Tm.CMANGOS
     # drop chances (2026-11-23, the delegator's G13): dungeon_loot.csv, every creature with loot spawned in a dungeon or spawned nowhere
     # and every chest, by CMaNGOS's rules (dungeon_drops.csv, the planner's, holds spawned creatures at 1% or more only)
-    chance, loot_rows, map_best, by_name = {}, set(), {}, {}
+    chance, loot_rows, map_best, by_name, rank = {}, set(), {}, {}, {}
     for r in csv.DictReader(open(cm / "dungeon_loot.csv", encoding="utf-8")):
         i, it, ch, m = int(r["id"]), int(r["item"]), float(r["chance"]), int(r["map"])
         if r["source"] == "creature":
@@ -162,6 +166,7 @@ def context(G, Tm, zones, repo):
             loot_rows.add(i)
             loot_rows.add(r["name"])   # a name with rows (drop_chance's same-name fallback)
             by_name[(r["name"], it)] = max(ch, by_name.get((r["name"], it), 0.0))
+            rank[i] = rank[r["name"]] = r["rank"]
         if m and ch > map_best.get((m, it), (0.0, None))[0]:
             map_best[(m, it)] = (ch, r["name"])
     loot_rows |= {("classic item", int(r["item"])) for r in csv.DictReader(open(cm / "item_names.csv", encoding="utf-8"))}
@@ -190,7 +195,7 @@ def context(G, Tm, zones, repo):
             oid = int(rest.split(":")[0]) if rest else 0
             if (k == "c" and oid in ubrs_ids) or (k == "i" and item_from.get(oid, set()) & ubrs_ids):
                 ubrs_quests.add(int(r["quest"]))
-    ctx = {"G": G, "T": Tm, "zones": zones, "npcs": npcs, "chance": chance, "loot_rows": loot_rows, "map_best": map_best, "by_name": by_name,
+    ctx = {"G": G, "T": Tm, "zones": zones, "npcs": npcs, "chance": chance, "loot_rows": loot_rows, "map_best": map_best, "by_name": by_name, "rank": rank,
            "quests": quests, "reagents": reagents,
            "world_loot": world_loot, "quest_rep": quest_rep, "taught": taught, "bind": BT.load(), "client_reagents": BT.reagents(),
            "ubrs_quests": ubrs_quests, "professions": professions(repo)}
@@ -256,6 +261,33 @@ ZONE_MAP = {"Ragefire Chasm": 389, "Wailing Caverns": 43, "The Deadmines": 36, "
 T05_SUMMONS = {16042: "Lord Valthalak", 16080: "Mor Grayhoof", 16097: "Isalien", 16118: "Kormok", 16059: "Theldren"}
 T05_CHESTS = {"Sothos and Jarien's Heirlooms"}
 CLASS_SUMMONS = {14506: "Lord Hel'nurath (the warlock's Dreadsteed quest)", 14516: "Death Knight Darkreaver (the paladin's Charger quest)"}
+# Rare spawns (the delegator, 2026-11-23): a creature Classic ranks rare (creature_template Rank 2 rare elite, 4 rare) is no Easy source,
+# whatever its chance per kill: the chance per run is not known (Phase Blade, 50% from the Burning Felguard). Classic also ranks eight set
+# encounters rare elite, which every run meets or summons at will; they stay Easy sources (Claude's reading, put to the delegator):
+RARE_RANKS = {"2", "4"}
+# A vendor whose currency dungeon bosses drop (the delegator's read of Wowhead Forever, 2026-11-23: Pix Xizzix sells 54 items, every one
+# for currency 3469, Tarnished Undermine Real, which 42 bosses of Blackrock Depths, Blackrock Spire, Scholomance, Stratholme and the
+# Temple of Atal'Hakkar drop; how many a boss drops is not shown): {vendor: (currency, where, how you get it)}, prices {item: Reals}
+CURRENCY_VENDORS = {"Pix Xizzix": ("Tarnished Undermine Reals", "Pix Xizzix in Booty Bay", "dungeon bosses drop the Reals")}
+CURRENCY_PRICES = {272437: 125, 272408: 75, 17010: 15, 17011: 15, 17012: 10}   # Adaptive Combat Assistant, Cutthroat's Signet, Fiery Core,
+#                                                                                Lava Core, Core Leather
+
+
+def currency_text(iid, vendor):
+    """The record's and the page's words for a currency vendor's item: "125 Tarnished Undermine Reals from Pix Xizzix in Booty Bay;
+    dungeon bosses drop the Reals" (the delegator's wording)."""
+    cur, where, how = CURRENCY_VENDORS[vendor]
+    price = CURRENCY_PRICES.get(iid)
+    return f"{price} {cur} from {where}; {how}" if price else f"{cur} (the price not read) from {where}; {how}"
+ENCOUNTER_RARES = {"Edwin VanCleef", "Lord Roccor", "Pyromancer Loregrain", "Warder Stilgiss", "Verek", "Quartermaster Zigris",
+                   "Urok Doomhowl", "Timmy the Cruel"}
+# Drop chances Classic's dump cannot give (Forever's own loot), read from Wowhead's Forever item pages ("Dropped by": count of outof) by
+# the delegator session on 2026-11-23 and decided Easy there (its G13 (c) decisions): {item: (creature, count, outof)}
+WOWHEAD_READ = "Wowhead Forever, read by the delegator session 2026-11-23"
+EASY_DECIDED = {276456: ("Black Guard Swordsmith", 120, 371), 276419: ("Crimson Hammersmith", 158, 484),
+                276403: ("Crimson Hammersmith", 158, 484), 276396: ("Ezra Grimm", 131, 443), 276395: ("Ezra Grimm", 118, 443),
+                276394: ("Ezra Grimm", 132, 443), 276397: ("Malor the Zealous", 242, 726), 276399: ("Malor the Zealous", 216, 726),
+                276398: ("Malor the Zealous", 236, 726), 275864: ("Lord Vyletongue", 247, 1184)}
 
 
 def drop_chance(iid, npc, z, ctx):
@@ -276,6 +308,9 @@ def drop_chance(iid, npc, z, ctx):
     # "under 0.1%" only for an item Classic has: Forever's own items on a Classic creature (Idol of the Dream on Hazzas) are unknown
     if npc and (int(npc) in ctx["loot_rows"] or who in ctx["loot_rows"]) and ("classic item", iid) in ctx["loot_rows"]:
         return 0.0, None
+    dec = EASY_DECIDED.get(iid)   # Forever's own loot: Wowhead's count, for the creature it names
+    if dec and dec[0] == who:
+        return dec[1] / dec[2], f"{WOWHEAD_READ}: {dec[1]} of {dec[2]}"
     return None, None
 
 
@@ -283,7 +318,8 @@ def dungeon_kind(it, npc, z, d, ctx):
     """(kind, detail) of a drop in a dungeon (2026-11-23, the delegator's G13: until then a drop whose chance Classic's dump did not give
     counted as Easy; 463 of the 2,548 Easy items were in by that alone): Easy needs a named creature (the database's) and a known chance
     of DROP_MIN or more; the Tier 0.5 summons' loot is tier05, a class quest's summon is a plain dungeon drop, and an unknown chance is a
-    plain dungeon drop (unknown_chances lists them for a decision; EASY_DECIDED puts one back)."""
+    plain dungeon drop (unknown_chances lists them; EASY_DECIDED gives Wowhead's chance for the ones decided); a creature Classic ranks
+    rare is no Easy source unless it is a set encounter (RARE_RANKS, ENCOUNTER_RARES)."""
     Tm, npcs = ctx["T"], ctx["npcs"]
     who = npcs.get(npc) or d.get("otherName") or "trash"
     if npc in T05_SUMMONS or d.get("otherName") in T05_CHESTS:
@@ -292,14 +328,11 @@ def dungeon_kind(it, npc, z, d, ctx):
         return "dungeon_drop", f"{z}, {CLASS_SUMMONS[npc]}"
     ch, src = drop_chance(it["id"], npc, z, ctx)
     say = ("chance unknown" if ch is None else "under 0.1%" if ch == 0 else f"{ch:.1%}" + (f" from {src}" if src else ""))
-    if ch is None and it["id"] in EASY_DECIDED and npc:
-        return "dungeon_drop_easy", f"{z}, {who}, {say}: {EASY_DECIDED[it['id']]}"
+    rare = npc and ctx["rank"].get(int(npc), ctx["rank"].get(who)) in RARE_RANKS and who not in ENCOUNTER_RARES
+    if rare:
+        return "dungeon_drop", f"{z}, {who}, {say}, a rare spawn (Classic's rank)"
     easy = bool(npc) and (UBRS_EASY or who not in Tm.UBRS_BOSSES) and ch is not None and ch >= Tm.DROP_MIN
     return ("dungeon_drop_easy" if easy else "dungeon_drop"), f"{z}, {who}, {say}"
-
-
-# Unknown chances decided one by one ({item: why}; the delegator's G13 (c): an epic stays out, the rest each get a decision)
-EASY_DECIDED = {}
 
 
 def unknown_chances(db, ctx):
@@ -419,6 +452,8 @@ def item_kinds(it, ctx):
                             f"reputation {f}, {RANKS.get(rank, rank)} ({src}), vendor {vn}"))
             elif it.get("setName") in Tm.T05_SETS:
                 out.append(("tier05", vn))
+            elif vn in CURRENCY_VENDORS:
+                out.append(("dungeon_currency", currency_text(iid, vn)))
             else:
                 out.append(("vendor", vn))
         elif "pvp" in s:
