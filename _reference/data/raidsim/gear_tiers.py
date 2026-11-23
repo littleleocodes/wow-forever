@@ -1111,7 +1111,7 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
                     raise SystemExit(f"FATAL {p.name}: the repaired previous set breaks its list's rule: " + "; ".join(bad))
                 p.write_text(json.dumps({"items": ref, "list": GL.LABEL.get(tier, tier), "rules": GL.RULES, **({"without_pvp": True} if nopvp else {}),
                                          **({"side": side} if side else {})}, indent=1) + "\n", encoding="utf-8")
-            return dict(r, items=ref, chosen=what, **list_fields(cls, ref, r["weights"], tier, db, zones, repo, pool),
+            return dict(r, items=ref, chosen=what, **list_fields(cls, ref, r["weights"], tier, db, zones, repo, pool, side=side),
                         refused={"new_dps": round(nv, 2), "previous_dps": round(ov, 2), "empty_slots": empty, "repaired_slots": out_of_pool,
                                  "new_ilvl": r.get("ilvl"), "new_names": r.get("names")},
                         names=[db.get(x.get("id"), {}).get("name") if x.get("id") else None for x in ref],
@@ -1123,20 +1123,20 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
                                  **({"side": side} if side else {}), **({"ladder": r["ladder"]} if r.get("ladder") else {})}, indent=1) + "\n",
                      encoding="utf-8")
     return dict(r, entry=entry_name, gear=p.relative_to(ROOT).as_posix(), date=TODAY, setting=setting,
-                **list_fields(cls, r["items"], r["weights"], tier, db, zones, repo, pool), **({} if write else {"written": False}),
+                **list_fields(cls, r["items"], r["weights"], tier, db, zones, repo, pool, side=side), **({} if write else {"written": False}),
                 **({"without_pvp": WITHOUT_PVP} if nopvp else {}), **({"side": side} if side else {}))
 
 
-def list_fields(cls, items, w, tier, db, zones, repo, pool):
+def list_fields(cls, items, w, tier, db, zones, repo, pool, side=None):
     """The record's list fields (2026-11-23): the list's name and rules, each item's kinds (why it is in the list), the other
     faction's alternatives, and what the set costs in a vendor currency (`currency_cost`: Pix Xizzix's Tarnished Undermine Reals;
-    raidsim/gear_lists.py)."""
+    raidsim/gear_lists.py). A side's set (`side`) lists no other-faction alternatives: the other side has its own set (2026-11-23)."""
     ctx = rules_ctx(zones, repo)
     _, _, greedy = G.class_picker(repo, cls, db, pool)
     kinds = {str(i): [k for k, _ in GL.item_kinds(db[x["id"]], ctx)] for i, x in enumerate(items[:17]) if x and x.get("id") in db}
     cost = GL.currency_cost(items, db)
     return {"list": GL.LABEL.get(tier, tier), "rules": GL.RULES, "kinds": kinds, "marks": GL.marks(items, tier, db, ctx),
-            "faction_alternatives": GL.alternatives(cls, items, w, tier, db, ctx, G, greedy.fits),
+            "faction_alternatives": [] if side else GL.alternatives(cls, items, w, tier, db, ctx, G, greedy.fits),
             "pvp_alternatives": GL.pvp_alternatives(cls, items, w, tier, db, ctx, G, greedy.fits), **({"currency_cost": cost} if cost else {})}
 
 
