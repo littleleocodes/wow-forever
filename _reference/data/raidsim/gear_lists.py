@@ -65,6 +65,7 @@ NEW_RAID_MATS = {274030: "Malleable Essence of Nature (disenchanted from Hyjal S
 UBRS_EASY = True
 # quests whose turn-in item comes from the auction house (2026-11-23, the audit session's rule): the Darkmoon Faire's four deck quests
 # (Classic's ids; the deck is eight cards that drop rarely in the world and are traded); their rewards are True lists only
+TURNIN_GATHER = {(7, 9): "a herb (herbalism)", (7, 7): "metal or stone (mining)", (7, 6): "leather (skinning)"}
 TRADED_TURNIN_QUESTS = {7907: "Darkmoon Beast Deck", 7927: "Darkmoon Portals Deck", 7928: "Darkmoon Warlords Deck", 7929: "Darkmoon Elementals Deck"}
 # - Warsong Gulch and Arathi Basin "Yes they are" open, with their reputation vendors: all three battlegrounds follow one rule (the audit
 #   session's reading): rewards up to Honored in Easy (battleground_easy, marked PvP), Revered and Exalted in the True lists, a standing no
@@ -202,7 +203,34 @@ def context(G, Tm, zones, repo):
             oid = int(rest.split(":")[0]) if rest else 0
             if (k == "c" and oid in ubrs_ids) or (k == "i" and item_from.get(oid, set()) & ubrs_ids):
                 ubrs_quests.add(int(r["quest"]))
+    # quests whose turn-in needs a bought or crafted item (2026-11-23, the audit session's rule; TURNIN_GATHER): a profession's craft,
+    # a gathering profession's material, a drop under 5% at its best source
+    item_cls = {int(r["item"]): (int(r["class"] or 0), int(r["subclass"] or 0)) for r in csv.DictReader(open(cm / "item_names.csv", encoding="utf-8"))}
+    recipe_teaches = {int(r["teaches"]) for r in csv.DictReader(open(cm / "recipe_items.csv", encoding="utf-8")) if (r["teaches"] or "").isdigit()}
+    prof_made = {}
+    for r in csv.DictReader(open(cm / "craft_spells.csv", encoding="utf-8")):
+        if (r["creates"] or "").isdigit() and (int(r["spell"]) in taught or int(r["spell"]) in recipe_teaches):
+            prof_made[int(r["creates"])] = r["name"]
+    best_drop = {}
+    for (_, it_), ch in chance.items():
+        best_drop[it_] = max(ch, best_drop.get(it_, 0.0))
+    for r in csv.DictReader(open(cm / "quest_item_sources.csv", encoding="utf-8")):
+        try:
+            best_drop[int(r["item"])] = max(float(r["chance"] or 0), best_drop.get(int(r["item"]), 0.0))
+        except ValueError:
+            pass
+    traded_turnins = {}
+    for r in csv.DictReader(open(cm / "quest_geo.csv", encoding="utf-8")):
+        for part in (r["objectives"] or "").split(";"):
+            if not part.startswith("i:"):
+                continue
+            iid = int(part.split(":")[1])
+            why = (f"crafted ({prof_made[iid]})" if iid in prof_made else TURNIN_GATHER.get(item_cls.get(iid))
+                   or (f"a drop at {best_drop[iid]:.1f}% at best" if 0 < best_drop.get(iid, 0) < 5 else None))
+            if why:
+                traded_turnins.setdefault(int(r["quest"]), []).append((iid, why))
     ctx = {"G": G, "T": Tm, "zones": zones, "npcs": npcs, "chance": chance, "loot_rows": loot_rows, "map_best": map_best, "by_name": by_name, "rank": rank,
+           "traded_turnins": traded_turnins,
            "quests": quests, "reagents": reagents,
            "world_loot": world_loot, "quest_rep": quest_rep, "taught": taught, "bind": BT.load(), "client_reagents": BT.reagents(),
            "ubrs_quests": ubrs_quests, "professions": professions(repo)}
@@ -444,6 +472,8 @@ def item_kinds(it, ctx):
             elif not UBRS_EASY and int(q.get("id") or 0) in ctx["ubrs_quests"]:
                 out.append(("quest_ubrs", qn))
             elif int(q.get("id") or 0) in TRADED_TURNIN_QUESTS or qn in TRADED_TURNIN_QUESTS.values():
+                out.append(("quest_traded", qn))
+            elif int(q.get("id") or 0) in ctx.get("traded_turnins", {}):   # a bought or crafted turn-in (2026-11-23)
                 out.append(("quest_traded", qn))
             else:
                 out.append(("quest", qn))

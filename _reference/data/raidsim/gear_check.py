@@ -159,6 +159,26 @@ def main():
                 if diff:
                     bad += 1
                     print(f"    RECORD AND FILE DIFFER {mf.name} {key}: " + "; ".join(f"slot {i}: record {w_}, file {h_}" for i, w_, h_ in diff[:6]))
+            if a.lists_final:   # (2026-11-23) a feedback the record names must be the set in the file
+                lists = rec.get("lists") or {}
+                for tier, fb in (lists.get("side_feedback") or {}).items():
+                    src = str(((rec.get("gear") or {}).get(tier) or {}).get("chosen_source") or "")
+                    if fb.get("taken") and not src.startswith("the side feedback"):
+                        bad += 1
+                        print(f"    FEEDBACK NOT IN THE RECORD {mf.name} {tier}: the side feedback took {fb['taken']}, the record says {src[:80]}")
+                for tier, fb in (lists.get("down_feedback") or {}).items():
+                    g = (rec.get("gear") or {}).get(tier) or {}
+                    src = str(g.get("chosen_source") or "")
+                    ff = json.load(open(ROOT / g["gear"], encoding="utf-8")).get("feedback") if g.get("gear") and (ROOT / g["gear"]).exists() else None
+                    if fb.get("taken") and not (src.startswith("the list above's set") and ff):
+                        bad += 1
+                        print(f"    FEEDBACK NOT IN THE RECORD {mf.name} {tier}: the top-down feedback took the list above's set; record {src[:60]}, "
+                              f"file {'has' if ff else 'lacks'} the feedback line")
+        if a.lists_final:   # (2026-11-23) a list file made under the lists that no record names: its tables would never reach a page
+            for f in tier_files:
+                if LIST_FILE.search(f.name) and json.load(open(f, encoding="utf-8")).get("rules") and f.resolve() not in shown:
+                    bad += 1
+                    print(f"    FILE WITHOUT ITS RECORD {f.name} (--lists-final)")
         if tier_files and not a.quiet:
             print(f"    {cls}: {len(tier_files)} tier sets, {tb} with a missing item" + (" or an item outside the pool" if a.pool else ""))
         if before:
