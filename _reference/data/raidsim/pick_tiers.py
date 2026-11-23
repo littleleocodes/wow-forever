@@ -166,6 +166,12 @@ def main():
     rec["best_dps"] = rec["search"]["bis-raid"]["winner"]["dps"]
     rec["compare"] = {"setting": "dummy", "dps": {"winner": {"entry": a.entry, "dps": bd["dps"], "se": bd["se"]}}, "best_hand": a.build,
                       "gain_vs_hand": 0.0, "commit": commit, "pick_tiers": True}
+    # the lists' other sets and the record's lists entry stay (2026-11-23, the sandbox: a race after a side or top-down feedback had
+    # rebuilt the record from the three tiers and dropped the no-PvP and side sets and the feedback records)
+    for k, v in (old.get("gear") or {}).items():
+        rec["gear"].setdefault(k, v)
+    if old.get("lists"):
+        rec["lists"] = old["lists"]
     path.write_text(json.dumps(rec, indent=1) + "\n", encoding="utf-8")
     print(f"wrote {path.relative_to(ROOT)}", flush=True)
 

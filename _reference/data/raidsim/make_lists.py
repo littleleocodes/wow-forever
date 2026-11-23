@@ -99,7 +99,7 @@ def key(s, step):
 
 
 PHASE_STEPS = {"lists": ["easy", "true"], "nopvp": ["nopvp"], "sides": ["sides"]}
-ORDER = ["easy", "true", "nopvp", "sides", "tanks", "healers", "check"]
+ORDER = ["easy", "true", "down", "nopvp", "sides", "tanks", "healers", "check"]
 
 
 def done(st, s, step, fresh):
@@ -151,6 +151,10 @@ def plan(sp, st, fresh, phases, db, ctx):
             for step, what in (("easy", "Easy Pre-BiS (dungeon_tier.py --fresh)"), ("true", "True Pre-BiS, then True BiS (pick_tiers.py --make)")):
                 lines.append(f"    {'done' if done(st, s, step, fresh) else 'to do'}: {what}")
                 n += 0 if done(st, s, step, fresh) else (1 if step == "easy" else 2)
+        if "down" in phases:
+            d = done(st, s, "down", fresh)
+            lines.append(f"    {'done' if d else 'to do'}: the top-down feedback (True BiS into True Pre-BiS's pool, then into Easy's; "
+                         "two races, 0.1% on both seeds to replace)")
         if "nopvp" in phases:
             d = done(st, s, "nopvp", fresh)
             lines.append(f"    {'done' if d else 'to do'}: True Pre-BiS and True BiS without PvP")
@@ -200,6 +204,89 @@ def nopvp(s, repo, db, zones, a, st):
               f"{made[f'{tier}-nopvp']['minutes']} min", flush=True)
     update_record(s, lambda rec: (rec["gear"].update(made), rec.setdefault("lists", {}).update(rules=GL.RULES)))
     mark(st, s, "nopvp")
+
+
+def redescribe(s, g, new, tier, db, zones, repo, how, race):
+    """The record entry of a set a feedback put in the file (2026-11-23): the list fields on the new items, names and item level, the hit
+    report and the set check of the new set (the simulator's sheet), the chosen source, the race, and the set before the feedback."""
+    import stats_bench as SB
+    pool = GT.pool_of(tier.split("-")[0], zones, repo)
+    lf = GT.list_fields(s["cls"], new, g.get("weights") or {}, tier.split("-")[0], db, zones, repo, pool)
+    its = [x for x in GT.norm17(new) if x and x.get("id") in db]
+    ilvl = round(sum(db[x["id"]]["scalingOptions"]["0"].get("ilvl", 0) for x in its) / max(1, len(its)), 1)
+    try:
+        hit = SB.hit_report(s["cls"], s["spec"], R.SPECS[s["cls"]][s["entry"]], repo, talents_of(s, repo), GT.norm17(new), "raid",
+                            bench_cfg=G.bench_cfg)
+    except SystemExit as ex:
+        hit = {"error": str(ex)[:300]}
+    sc = GT.set_check(new, db, repo, hit.get("sets") if "error" not in hit else None)
+    return dict({k: v for k, v in g.items() if k not in ("before_feedback", "confirm_margin")}, **lf, ilvl=ilvl, hit=hit, set_check=sc,
+                names=[db.get(x.get("id"), {}).get("name") if x and x.get("id") else None for x in GT.norm17(new)],
+                chosen=how, chosen_source=how, feedback_race=race,
+                before_feedback={k: g.get(k) for k in ("chosen", "chosen_source", "names", "ilvl") if k in g})
+
+
+def above_in_pool(s, k, above, shown, weights, db, zones, repo):
+    """The list above's set swapped into list `k`'s pool (pool_swap from `shown`; an enchant `k` does not allow falls back to the shown set's
+    enchant on the same item, else none): (items, why not) for the check's challenger and the top-down feedback (2026-11-23)."""
+    pool = GT.pool_of(k, zones, repo)
+    _, _, greedy = G.class_picker(repo, s["cls"], db, pool)
+    shown = GT.norm17(shown)
+    sw, _ = GT.pool_swap(GT.norm17(above), weights or {}, greedy, db, pool, shown)
+    sw = [dict(x) for x in GT.norm17(sw)]
+    for i, x in enumerate(sw):
+        if x.get("enchant") and not GT.enchant_allowed(x["enchant"], G.SLOT_TYPE[i], k, zones):
+            e2 = shown[i].get("enchant") if shown[i].get("id") == x.get("id") else None
+            sw[i] = {"id": x["id"], **({"enchant": e2} if e2 else {})}
+    bad = GT.list_guard(sw, k, db, zones, repo, cls=s["cls"])
+    if bad:
+        return None, "breaks the list's rule after the swap: " + "; ".join(bad)[:200]
+    if [y.get("id") for y in sw] == [y.get("id") for y in shown]:
+        return None, "the same items as the shown set"
+    return sw, None
+
+
+def down(s, repo, db, zones, a, st):
+    """The top-down feedback (see the module's phase list): True BiS into True Pre-BiS's pool, then True Pre-BiS into Easy's."""
+    tal = talents_of(s, repo)
+    entry = R.SPECS[s["cls"]][s["entry"]]
+    fb, changed = {}, False
+    for ab, k in (("bis", "prebis"), ("prebis", "dungeon")):
+        rec = json.load(open(s["record"], encoding="utf-8"))
+        g, ga = (rec.get("gear") or {}).get(k) or {}, (rec.get("gear") or {}).get(ab) or {}
+        if not (g.get("gear") and ga.get("gear") and (ROOT / g["gear"]).exists() and (ROOT / ga["gear"]).exists()):
+            fb[k] = {"why": "no set file"}
+            continue
+        shown = set_items(ROOT / g["gear"])
+        cand, why = above_in_pool(s, k, set_items(ROOT / ga["gear"]), shown, g.get("weights") or ga.get("weights"), db, zones, repo)
+        if why:
+            fb[k] = {"why": why}
+            continue
+        sets = {"shown": GT.norm17(shown), "above": cand}
+        res = {}
+        for seed in (1, 2):
+            rows = G.run_bench(repo, G.bench_cfg(entry, repo, [{"label": x, "talents": tal, "gear_json": {"items": v}} for x, v in sets.items()],
+                                                 a.confirm, seed, "raid"), f"downfb-{s['cls']}-{GT.SM.slug(s['spec'])}-{k}-{seed}")
+            res[seed] = {x: round((rows.get(x) or {}).get("dps") or 0.0, 2) for x in sets}
+        win = all(res[sd]["above"] > res[sd]["shown"] * (1 + FEEDBACK_BAR) for sd in (1, 2))
+        race = {"fights": a.confirm, "dps": res, "taken": bool(win)}
+        fb[k] = race
+        print(f"  {s['cls']} {s['spec']} {GL.LABEL[k]}: the {GL.LABEL[ab]} set in this pool {res[1]['above']} / {res[2]['above']} against "
+              f"{res[1]['shown']} / {res[2]['shown']}" + (": taken" if win else ""), flush=True)
+        if win:
+            p_ = ROOT / g["gear"]
+            how = f"the list above's set, in this pool (the {GL.LABEL[ab]} set swapped into {GL.LABEL[k]}'s pool)"
+            p_.write_text(json.dumps({"items": cand, "list": GL.LABEL.get(k, k), "rules": GL.RULES,
+                                      "feedback": f"{how}, ahead on both seeds ({res[1]['above']} / {res[2]['above']} against "
+                                                  f"{res[1]['shown']} / {res[2]['shown']}, {a.confirm} fights)"}, indent=1) + "\n",
+                          encoding="utf-8")
+            new_entry = redescribe(s, g, cand, k, db, zones, repo, how, race)
+            update_record(s, lambda r, k=k, ne=new_entry: r["gear"].__setitem__(k, ne))
+            changed = True
+    update_record(s, lambda r: r.setdefault("lists", {}).update(down_feedback=fb))
+    if changed:
+        run([str(HERE / "pick_tiers.py"), s["cls"], s["spec"], "--entry", s["entry"], "--build", s["build"]], f"{s['spec']}'s race")
+    mark(st, s, "down", changed=changed)
 
 
 def sides(s, repo, db, zones, ctx, a, st):
@@ -270,12 +357,7 @@ def sides(s, repo, db, zones, ctx, a, st):
         # the feedback stays under before_feedback; gear_check checks every list's record against its file
         for tier, (best, new, race) in took.items():
             g = rec["gear"].get(tier) or {}
-            pool = GT.pool_of(tier, zones, repo)
-            lf = GT.list_fields(s["cls"], new, g.get("weights") or {}, tier, db, zones, repo, pool)
-            rec["gear"][tier] = dict({k: v for k, v in g.items() if k not in ("before_feedback",)}, **lf,
-                                     names=[db.get(x.get("id"), {}).get("name") if x and x.get("id") else None for x in GT.norm17(new)],
-                                     chosen=f"the side feedback: {best}", chosen_source=f"the side feedback: {best}", side_feedback=race,
-                                     before_feedback={k: g.get(k) for k in ("chosen", "chosen_source", "names", "ilvl") if k in g})
+            rec["gear"][tier] = dict(redescribe(s, g, new, tier, db, zones, repo, f"the side feedback: {best}", race), side_feedback=race)
     update_record(s, lambda rec: (rewrite(rec), rec["gear"].update(made), rec.setdefault("lists", {}).update(
         rules=GL.RULES, skipped=skipped, side_feedback=feedback,
         feedback_cause="the weapon passes depend on their order (main hand, off hand, ranged, main hand again), and a side's make can "
@@ -285,7 +367,7 @@ def sides(s, repo, db, zones, ctx, a, st):
     mark(st, s, "sides", changed=changed)
 
 
-PHASE_KEYS = {"lists": ("dungeon", "prebis", "bis"), "nopvp": ("prebis-nopvp", "bis-nopvp"),
+PHASE_KEYS = {"lists": ("dungeon", "prebis", "bis"), "down": (), "nopvp": ("prebis-nopvp", "bis-nopvp"),
               "sides": tuple(f"{t}-{s}" for t in LISTS for s in ("alliance", "horde"))}
 
 
@@ -371,20 +453,9 @@ def missed_sets(s, repo, db, zones, st):
         ab = {"dungeon": "prebis", "prebis": "bis"}.get(k)   # (2026-11-23, the audit session's item 6) the list above's set in this pool
         ga = (rec.get("gear") or {}).get(ab) or {} if ab else {}
         if ga.get("gear") and (ROOT / ga["gear"]).exists():
-            pool = GT.pool_of(k, zones, repo)
-            _, _, greedy = G.class_picker(repo, s["cls"], db, pool)
-            shown = GT.norm17(sets["shown"])
-            sw, _ = GT.pool_swap(GT.norm17(set_items(ROOT / ga["gear"])), g.get("weights") or ga.get("weights") or {}, greedy, db, pool, shown)
-            sw = [dict(x) for x in GT.norm17(sw)]
-            for i, x in enumerate(sw):   # an enchant this list does not allow: this set's enchant on the same item, else none
-                if x.get("enchant") and not GT.enchant_allowed(x["enchant"], G.SLOT_TYPE[i], k, zones):
-                    e2 = shown[i].get("enchant") if shown[i].get("id") == x.get("id") else None
-                    sw[i] = {"id": x["id"], **({"enchant": e2} if e2 else {})}
-            bad = GT.list_guard(sw, k, db, zones, repo, cls=s["cls"])
-            if bad:
-                why["above"] = "breaks the list's rule after the swap: " + "; ".join(bad)[:200]
-            elif [y.get("id") for y in sw] == [y.get("id") for y in shown]:
-                why["above"] = "the same items as the shown set"
+            sw, w_ = above_in_pool(s, k, set_items(ROOT / ga["gear"]), sets["shown"], g.get("weights") or ga.get("weights"), db, zones, repo)
+            if w_:
+                why["above"] = w_
             else:
                 sets[f"the {GL.LABEL[ab]} set in this list's pool"] = sw
         pp = PREV_DIR / pathlib.Path(g["gear"]).name
@@ -467,7 +538,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("classes", nargs="*")
     ap.add_argument("--spec", nargs="*", default=[])
-    ap.add_argument("--phases", default="lists,nopvp,sides,tanks-healers,check")
+    ap.add_argument("--phases", default="lists,down,nopvp,sides,tanks-healers,check")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--fresh", action="store_true")
     ap.add_argument("--exclude-fails", help="a play gate's play-fails.json (tonight_1123.sh): the specs whose raid page pick fails the play "
@@ -502,7 +573,7 @@ def main():
     a = GT.args_ns()
     if "lists" in phases:
         snapshot(st)
-    for phase in ("lists", "nopvp", "sides", "tanks-healers", "check"):
+    for phase in ("lists", "down", "nopvp", "sides", "tanks-healers", "check"):
         if phase not in phases:
             continue
         if phase == "check":
@@ -544,6 +615,8 @@ def main():
                     run([str(HERE / "pick_tiers.py"), s["cls"], s["spec"], "--entry", s["entry"], "--build", s["build"], "--make"],
                         f"{s['spec']}'s True lists")
                     mark(st, s, "true")
+            elif phase == "down" and not done(st, s, "down", a0.fresh):
+                down(s, repo, db, zones, a, st)
             elif phase == "nopvp" and not done(st, s, "nopvp", a0.fresh):
                 nopvp(s, repo, db, zones, a, st)
             elif phase == "sides" and not done(st, s, "sides", a0.fresh):
