@@ -103,6 +103,12 @@ class DB:
         self.zones = {z["id"]: z["name"] for z in d.get("zones", [])}
         self.npcs = {n["id"]: n for n in d.get("npcs", [])}
         self.prof = professions(repo)
+        # the battlegrounds' reputations the database's list lacks (Classic's faction ids), by side (2026-11-23, the page items)
+        self.factions = {729: "Frostwolf Clan", 730: "Stormpike Guard", 889: "Warsong Outriders", 890: "Silverwing Sentinels",
+                         **{f["id"]: f.get("name") for f in d.get("factions", [])}}
+        import bind_types as BT
+        import gear_lists as GLs
+        self.bind, self.standing_of, self.ranks = BT.load(), GLs.standing, GLs.RANKS
 
     def raid(self, item, made=()):
         """The raid an item or enchant entry belongs to (RAID_ZONES), or None; `made`: the names made from raid materials."""
@@ -120,9 +126,33 @@ class DB:
             return "Molten Core"
         return None
 
-    def source(self, item):
-        """Where an item comes from, in a few words (the first source the database lists; empty when it lists none)."""
-        for s in item.get("sources") or []:
+    BG_PAIR = {730: (730, 729), 729: (730, 729), 890: (890, 889), 889: (890, 889), 509: (509, 510), 510: (509, 510)}
+
+    def standing(self, item, both=False):
+        """"<faction>, <standing>" an item's reputation asks (gear_lists.standing's order of trust), or None; `both` for a set both sides
+        wear: a battleground's two reputations ("Stormpike Guard (Alliance) or Frostwolf Clan (Horde), Exalted")."""
+        f, r, _ = self.standing_of(item, self.bind.get(item.get("id")) or {})
+        if f is None or r is None:
+            return None
+        if both and f in self.BG_PAIR:
+            a, h = self.BG_PAIR[f]
+            return f"{self.factions.get(a)} (Alliance) or {self.factions.get(h)} (Horde), {self.ranks.get(r, r)}"
+        return f"{self.factions.get(f, f'faction {f}')}, {self.ranks.get(r, r)}"
+
+    def source(self, item, side=None):
+        """Where an item comes from, in a few words: for a side's set the first source that side can use; for a set both sides wear, both
+        sides' sources when they differ by side ("... (Alliance) or ... (Horde)", 2026-11-23, the audit session's page item 2)."""
+        side_of = lambda s: {1: "Alliance", 2: "Horde"}.get((s.get("quest") or s.get("soldBy") or {}).get("faction"))   # noqa: E731
+        srcs = item.get("sources") or []
+        if side:
+            srcs = [s for s in srcs if side_of(s) in (None, side)] or srcs
+        elif {side_of(s) for s in srcs} >= {"Alliance", "Horde"}:
+            a = next(s for s in srcs if side_of(s) == "Alliance")
+            h = next(s for s in srcs if side_of(s) == "Horde")
+            return f"{self.source({'sources': [a]})} (Alliance) or {self.source({'sources': [h]})} (Horde)"
+        for s in srcs:
+            if "rep" in s and (s["rep"].get("repFactionId")):
+                return f"{self.factions.get(s['rep']['repFactionId'], 'a faction')} reputation"
             if "drop" in s:
                 x = s["drop"]
                 npc = self.npcs.get(x.get("npcId")) or {}
@@ -156,8 +186,8 @@ class DB:
             url = f"{WOWHEAD}/item={e['itemId']}" if e.get("itemId") else None
         return {"name": e.get("name", f"enchant {effect_id}"), "url": url, "effect": effect_id}   # (effect: page_lint's gear row)
 
-    def rows(self, gear_path):
-        """[{slot, id, name, url, ilvl, quality, source, enchant?}] for a gear set file, empty slots left out."""
+    def rows(self, gear_path, side=None):
+        """[{slot, id, name, url, ilvl, quality, source, enchant?}] for a gear set file, empty slots left out; `side` for a side's set."""
         g = json.load(open(resolve(gear_path), encoding="utf-8"))
         out = []
         for i, it in enumerate(g.get("items", [])):
@@ -166,7 +196,8 @@ class DB:
             item = self.items.get(it["id"], {})
             row = {"slot": MB.SLOTS[i] if i < len(MB.SLOTS) else "?", "index": i, "id": it["id"], "name": item.get("name", f"item {it['id']}"),
                    "url": f"{WOWHEAD}/item={it['id']}", "ilvl": ((item.get("scalingOptions") or {}).get("0") or {}).get("ilvl"),
-                   "quality": item.get("quality"), "source": self.source(item)}
+                   "quality": item.get("quality"), "source": self.source(item, side),
+                   **({"standing": st} if (st := self.standing(item, both=side is None)) else {})}
             ench = self.enchant(it["enchant"], item) if it.get("enchant") else None
             if ench:
                 er = next((self.raid(e) for e in self.enchants.get(it["enchant"]) or [] if self.raid(e)), None)
@@ -224,7 +255,7 @@ def list_sets(r, db, skipped):
             g = gear.get(t + v)
             if not isinstance(g, dict) or not g.get("rules") or not g.get("gear"):
                 continue
-            rows = db.rows(g["gear"])
+            rows = db.rows(g["gear"], side={"-alliance": "Alliance", "-horde": "Horde"}.get(v.replace("-nopvp", "")))
             kinds, marks = g.get("kinds") or {}, g.get("marks") or {}
             alts = {(a.get("slot"), a.get("item")): a for a in g.get("faction_alternatives") or []}
             for row in rows:

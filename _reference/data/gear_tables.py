@@ -132,7 +132,7 @@ LIST_DEF = {"dungeon": "dungeons and quests: no crafting recipes, no auction hou
             "prebis": "everything in the game now that doesn't come from a raid: dungeons, quests, crafts, the auction house, reputation, "
                       "PvP rewards, the Tier 0.5 chain",
             "bis": "everything obtainable: True Pre-BiS plus the raids open now (none until The Barrow Deeps, Hyjal Summit and Onyxia's "
-                   "Lair on 2026-12-09)"}
+                   "Lair on 2026-12-09); the set differs from True Pre-BiS only where a raid item wins"}
 KIND_WORDS = {"dungeon_drop_easy": "dungeon", "dungeon_drop": "dungeon", "world_drop": "world drop", "quest": "quest", "quest_ubrs": "quest",
               "quest_traded": "quest (its turn-in comes from the auction house)",
               "tier05": "Tier 0.5 chain", "craft": "crafted", "rep_to_honored": "reputation (Honored or below)",
@@ -151,9 +151,15 @@ def has_lists(cls, spec_name, role=None):
 def source_words(row):
     """Where an item comes from, in a player's words: the list kind first (dungeon, quest, crafted, reputation, battleground, honor rank,
     auction house ...), then the database's detail (the boss and dungeon, the quest, the profession, the vendor)."""
-    words = [KIND_WORDS[k] for k in row.get("kinds") or [] if k in KIND_WORDS]
-    kind = words[0] if words else ""
+    kinds = [k for k in row.get("kinds") or [] if k in KIND_WORDS]
+    kind = KIND_WORDS[kinds[0]] if kinds else ""
+    if kinds and row.get("standing") and kinds[0] in ("rep_to_honored", "rep_above_honored", "battleground_easy", "battleground"):
+        kind = ("reputation" if kinds[0].startswith("rep") else "battleground") + f" ({row['standing']})"   # the faction and standing
     detail = row.get("source") or ""
+    if detail.startswith("sold by ") and detail[8:] in kind:   # "Pix Xizzix, for Tarnished Undermine Reals" says the vendor once
+        detail = ""
+    if detail.endswith(" reputation") and kind.startswith("reputation ("):
+        detail = ""
     if detail.startswith("quest: ") and kind == "quest":
         return "quest: " + detail[7:]
     return ", ".join(x for x in (kind, detail) if x) or "-"
