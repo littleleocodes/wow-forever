@@ -84,10 +84,17 @@ def main():
     # took each slot's first item in the database (Frost Med's level-30 set)
     db, zones = MP.GT.load_db(repo)
     # the Easy Pre-BiS list's set and race stay in the record (dungeon_tier.py's keys): the lists are made from the bottom since
-    # 2026-11-23, dungeon_tier.py first, and this fresh record had dropped them
-    if prev_gear.get("dungeon"):
-        rec["gear"]["dungeon"] = prev_gear["dungeon"]
-    if (old.get("search") or {}).get("dungeon-raid"):
+    # 2026-11-23, dungeon_tier.py first, and this fresh record had dropped them. With --make they must be the current rules' (the
+    # delegator, the same day): a new pre-BiS and BiS beside an Easy set made under other rules would mix two rule sets in one record.
+    # Without --make the sets are raced as they stand, the Easy one included.
+    dg = prev_gear.get("dungeon") or {}
+    if a.make and dg.get("rules") != MP.GT.GL.RULES:
+        raise SystemExit(f"pick_tiers --make: the record's Easy Pre-BiS set was made under "
+                         f"{dg.get('rules') or ('the rules before the three lists' if dg else 'no rules (there is none)')}, not "
+                         f"{MP.GT.GL.RULES}: run dungeon_tier.py {a.cls} --spec \"{a.spec}\" --fresh first (the lists are made from the bottom)")
+    if dg:
+        rec["gear"]["dungeon"] = dg
+    if dg and (old.get("search") or {}).get("dungeon-raid"):
         rec["search"]["dungeon-raid"] = old["search"]["dungeon-raid"]
     for tier in ("prebis", "bis"):   # from the bottom (2026-11-23): the BiS make races the pre-BiS set just made (gear_tiers.make's ladder)
         sp = GT.set_path(a.cls, a.spec, tier)

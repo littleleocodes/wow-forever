@@ -13,6 +13,8 @@ Source: https://github.com/cmangos/classic-db, Full_DB/ClassicDB_1_12_1_z2815.sq
 - dungeon_drops.csv, class_training.csv, mob_income.csv (coin and vendor value per kill by level) and mob_loot.csv (level, item, per_kill,
   quality, class, sell: every item a level's mobs drop, expected count per kill), quest_chain.csv (quest, prev, next_in_chain, givers),
   dungeon_quests.csv (quest, map, how: a creature to kill, an item that drops, or a giver in a leveling dungeon)
+- dungeon_loot.csv (2026-11-23, the gear lists' drop chances): source (creature or object), id, name, map (0: spawned nowhere), item,
+  item_name, chance; see main() and loot_chances_cmangos
 Classic Era data: WoW: Forever changed some items and recipes; the planner takes item stats and sources from the simulator's Forever
 database and only skill levels, quest levels and reagents from here.
 """
@@ -24,9 +26,10 @@ import sys
 
 WANT = {"npc_trainer", "npc_trainer_template", "quest_template", "item_template", "spell_template", "npc_vendor", "npc_vendor_template",
         "creature_loot_template", "reference_loot_template", "gameobject_loot_template", "instance_template", "creature_template", "creature",
-        "creature_questrelation", "gameobject_questrelation", "gameobject_template", "creature_involvedrelation"}
+        "creature_questrelation", "gameobject_questrelation", "gameobject_template", "creature_involvedrelation", "gameobject"}
 # the leveling dungeons' map ids (Classic)
 DUNGEON_MAPS = {389, 43, 36, 33, 48, 34, 90, 47, 189, 129, 70, 209, 349, 109, 230, 229, 429, 289, 329}
+LOOT_FLOOR = 0.001   # dungeon_loot.csv keeps every chance from 0.1%: below it the gear lists read "under 0.1%" for a source with rows
 
 
 def loot_chances(table, refs, entry, depth=0):
@@ -52,6 +55,43 @@ def loot_chances(table, refs, entry, depth=0):
             elif ref >= 0:
                 it = int(r["item"])
                 out[it] = 1 - (1 - out.get(it, 0.0)) * (1 - ch)
+    return out
+
+
+def loot_chances_cmangos(table, refs, entry, depth=0, group=0):
+    """{item: chance} of one loot entry by CMaNGOS's own rules (game/Loot/LootMgr.cpp: LootTemplate::AddEntry, Process, LootGroup::Roll),
+    which loot_chances above departs from in two ways (2026-11-23, found with the delegator's G13; loot_chances stays as it is for the
+    planner's files, whose numbers would move: an open item):
+    - a reference (negative mincountOrRef) is an entry of its own whatever its groupid (AddEntry keeps only rows with groupid > 0 and a
+      positive mincountOrRef in a group); loot_chances counted a reference's chance in its group, so a group whose reference row reads 100
+      left nothing for its equal-chance rows: Princess Theradras's Gemshard Heart, Charstone Dirk and Elemental Rockridge Leggings (a third
+      each) and Jandice Barov's six items read 0;
+    - a reference rolls once with its chance, then processes the referenced template maxcount times, and a reference that names a group
+      processes only that group of the referenced template (Process with groupId: one item of that group); loot_chances rolled the whole
+      referenced template, and rolled the reference's chance once per pass.
+    An ungrouped row rolls on its own; a group drops one row (explicit chances first, then the equal-chance rows share what is left)."""
+    out = {}
+    groups = {}
+    for r in table.get(entry, []):
+        g, ref = int(r["groupid"]), int(r["mincountOrRef"])
+        if group and (g != group or ref < 0):
+            continue   # a group reference: only that group's own rows
+        if ref < 0:
+            if depth < 3:
+                ch = abs(float(r["ChanceOrQuestChance"])) / 100.0
+                times = max(1, int(r["maxcount"] or 1))
+                for it, c in loot_chances_cmangos(refs, refs, -ref, depth + 1, g).items():
+                    out[it] = 1 - (1 - out.get(it, 0.0)) * (1 - ch * (1 - (1 - c) ** times))
+            continue
+        groups.setdefault(g, []).append(r)
+    for g, rs in groups.items():
+        fixed = [r for r in rs if float(r["ChanceOrQuestChance"]) != 0]
+        equal = [r for r in rs if float(r["ChanceOrQuestChance"]) == 0]
+        left = max(0.0, 100.0 - sum(abs(float(r["ChanceOrQuestChance"])) for r in fixed)) if g else 0.0
+        for r in rs:
+            ch = abs(float(r["ChanceOrQuestChance"])) if float(r["ChanceOrQuestChance"]) != 0 else (left / len(equal) if g and equal else 0.0)
+            it = int(r["item"])
+            out[it] = 1 - (1 - out.get(it, 0.0)) * (1 - min(1.0, ch / 100.0))
     return out
 
 
@@ -201,6 +241,35 @@ def main():
                 continue
             rows.append([spawned[e], e, r["Name"], r["Rank"], r["MaxLevel"], it, x["name"], round(ch, 4)])
     write(out / "dungeon_drops.csv", ["map", "creature", "name", "rank", "level", "item", "item_name", "chance"], sorted(rows))
+    # dungeon loot for the gear lists (2026-11-23, the delegator's G13: an unknown drop chance had counted as Easy, and dungeon_drops.csv
+    # holds only spawned creatures at 1% or more): every creature with loot spawned in a leveling dungeon or spawned nowhere (the
+    # script-summoned: Warchief Rend Blackhand, Darkmaster Gandling, Kirtonos the Herald, the Tier 0.5 summons), and every chest
+    # (gameobject type 3, its loot in data1) spawned in a leveling dungeon or nowhere (the Gordok Tribute, the Chest of The Seven, Arena
+    # Spoils), each equippable green or better item at LOOT_FLOOR or more, by CMaNGOS's own rules (loot_chances_cmangos); map 0 = nowhere
+    gl = {}
+    for r in d["gameobject_loot_template"]:
+        gl.setdefault(int(r["entry"]), []).append(r)
+    anywhere = {int(r["id"]) for r in d["creature"]}
+    gmaps = {}
+    for r in d["gameobject"]:
+        gmaps.setdefault(int(r["id"]), set()).add(int(r["map"]))
+
+    def gear(it, ch):
+        x = items.get(it)
+        return x if ch >= LOOT_FLOOR and x and int(x["Quality"]) >= 2 and x["class"] in ("2", "4") else None
+
+    lrows = []
+    for r in d["creature_template"]:
+        e, lid = int(r["Entry"]), int(r.get("LootId") or 0)
+        if lid and (e in spawned or e not in anywhere):
+            lrows += [["creature", e, r["Name"], spawned.get(e, 0), it, x["name"], round(ch, 4)]
+                      for it, ch in loot_chances_cmangos(cl, rl, lid).items() for x in [gear(it, ch)] if x]
+    for r in d["gameobject_template"]:
+        g, lid, ms = int(r["entry"]), int(r.get("data1") or 0), gmaps.get(int(r["entry"]), set())
+        if r.get("type") == "3" and lid and (ms & DUNGEON_MAPS or not ms):
+            lrows += [["object", g, r["name"], min(ms & DUNGEON_MAPS) if ms else 0, it, x["name"], round(ch, 4)]
+                      for it, ch in loot_chances_cmangos(gl, rl, lid).items() for x in [gear(it, ch)] if x]
+    write(out / "dungeon_loot.csv", ["source", "id", "name", "map", "item", "item_name", "chance"], sorted(lrows))
     # class training (2026-11-09, the planner's gold budget: "how much training costs"): every spell a class trainer teaches, its level
     # and price (copper), by class (TrainerType 0 = class trainer; npc_trainer rows by creature, npc_trainer_template rows by template)
     names = {int(r["Id"]): r.get("SpellName", "") for r in d["spell_template"]}

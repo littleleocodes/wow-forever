@@ -77,15 +77,18 @@ STANDING_FROM = ("the standing, in this order: the client's MinReputation when s
 # (kind, lists, what it is, where the fact comes from): items
 ITEM_KINDS = [
     ("dungeon_drop_easy", ALL3, "a named creature's drop in a dungeon at 5% or more (our reading), Upper Blackrock Spire's bosses "
-     "included (the user: \"I don't consider Upper Blackrock Spire a raid\"); a pair Classic's dump lacks counts",
-     "database drop (zone, creature); cmangos dungeon_drops.csv chance"),
-    ("dungeon_drop", TRUE2, "any other dungeon drop: trash, drops under 5%", "database drop"),
+     "included (the user: \"I don't consider Upper Blackrock Spire a raid\"); the chance must be known (since 2026-11-23, the delegator's "
+     "G13: the creature's own row, spawned or summoned, else the item's best row in the dungeon, a chest included)",
+     "database drop (zone, creature); cmangos dungeon_loot.csv chance (drop_chance)"),
+    ("dungeon_drop", TRUE2, "any other dungeon drop: trash, drops under 5% or of unknown chance (unknown_chances), a class quest's "
+     "summon (CLASS_SUMMONS)", "database drop"),
     ("world_drop", TRUE2, "a drop in the open world (one that binds when equipped sells on the auction house)", "database drop"),
     ("quest", ALL3, "a quest reward of the game now (Alterac Valley's included; Forever's own quests count)",
      "database quest; cmangos quests.csv zone"),
     ("quest_ubrs", TRUE2, "a quest whose objective is inside Upper Blackrock Spire, only if UBRS_EASY were off (the user put the Spire "
      "in Easy, so no item takes this kind)", "cmangos quest_geo.csv objectives, quest_item_sources.csv"),
-    ("tier05", TRUE2, "Tier 0.5 (the level-58 chain: 10-player Upper Blackrock Spire, the vendors' gold)", "item set name (gear_tiers.T05_SETS)"),
+    ("tier05", TRUE2, "Tier 0.5 (the level-58 chain: 10-player Upper Blackrock Spire, the vendors' gold), and the loot of the bosses its "
+     "braziers and banner summon (T05_SUMMONS, T05_CHESTS; 2026-11-23, the delegator's G13)", "item set name (gear_tiers.T05_SETS); database drop"),
     ("craft", TRUE2, "a craft whose recipe and materials the game has now (from a trainer, a vendor, a drop or a reputation)",
      "database crafted; client SpellReagents 71037 (Classic's craft_spells.csv where the client has no row)"),
     ("rep_to_honored", ALL3, "a reputation reward at Friendly or Honored", STANDING_FROM),
@@ -149,7 +152,18 @@ def context(G, Tm, zones, repo):
     raw = json.load(open(pathlib.Path(repo) / "assets" / "database" / "db.json", encoding="utf-8"))
     npcs = {n["id"]: n.get("name") for n in raw.get("npcs", [])}
     cm = Tm.CMANGOS
-    chance = {(int(r["creature"]), int(r["item"])): float(r["chance"]) for r in csv.DictReader(open(cm / "dungeon_drops.csv", encoding="utf-8"))}
+    # drop chances (2026-11-23, the delegator's G13): dungeon_loot.csv, every creature with loot spawned in a dungeon or spawned nowhere
+    # and every chest, by CMaNGOS's rules (dungeon_drops.csv, the planner's, holds spawned creatures at 1% or more only)
+    chance, loot_rows, map_best, by_name = {}, set(), {}, {}
+    for r in csv.DictReader(open(cm / "dungeon_loot.csv", encoding="utf-8")):
+        i, it, ch, m = int(r["id"]), int(r["item"]), float(r["chance"]), int(r["map"])
+        if r["source"] == "creature":
+            chance[(i, it)] = ch
+            loot_rows.add(i)
+            loot_rows.add(r["name"])   # a name with rows (drop_chance's same-name fallback)
+            by_name[(r["name"], it)] = max(ch, by_name.get((r["name"], it), 0.0))
+        if m and ch > map_best.get((m, it), (0.0, None))[0]:
+            map_best[(m, it)] = (ch, r["name"])
     quests = {int(r["quest"]): (int(r["zone_or_sort"] or 0), int(r["quest_level"] or 0), int(r["required_races"] or 0))
               for r in csv.DictReader(open(cm / "quests.csv", encoding="utf-8"))}
     reagents = {}
@@ -175,7 +189,8 @@ def context(G, Tm, zones, repo):
             oid = int(rest.split(":")[0]) if rest else 0
             if (k == "c" and oid in ubrs_ids) or (k == "i" and item_from.get(oid, set()) & ubrs_ids):
                 ubrs_quests.add(int(r["quest"]))
-    ctx = {"G": G, "T": Tm, "zones": zones, "npcs": npcs, "chance": chance, "quests": quests, "reagents": reagents,
+    ctx = {"G": G, "T": Tm, "zones": zones, "npcs": npcs, "chance": chance, "loot_rows": loot_rows, "map_best": map_best, "by_name": by_name,
+           "quests": quests, "reagents": reagents,
            "world_loot": world_loot, "quest_rep": quest_rep, "taught": taught, "bind": BT.load(), "client_reagents": BT.reagents(),
            "ubrs_quests": ubrs_quests, "professions": professions(repo)}
     _CTX[key] = ctx
@@ -228,6 +243,80 @@ def ilvl(it):
     return it.get("scalingOptions", {}).get("0", {}).get("ilvl", 0)
 
 
+# The dungeons' Classic map ids (cmangos_extract.DUNGEON_MAPS): a drop with no row for its own creature takes the item's best row in its
+# dungeon's map (a chest there, such as the Gordok Tribute, or another creature). Forever's own dungeons have no Classic map.
+ZONE_MAP = {"Ragefire Chasm": 389, "Wailing Caverns": 43, "The Deadmines": 36, "Shadowfang Keep": 33, "Blackfathom Deeps": 48,
+            "The Stockade": 34, "Gnomeregan": 90, "Razorfen Kraul": 47, "Scarlet Monastery": 189, "Razorfen Downs": 129, "Uldaman": 70,
+            "Zul'Farrak": 209, "Maraudon": 349, "Sunken Temple": 109, "The Temple of Atal'Hakkar": 109, "Blackrock Depths": 230,
+            "Blackrock Spire": 229, "Dire Maul": 429, "Scholomance": 289, "Stratholme": 329}
+# Summons that are not plain dungeon content (the delegator's G13, 2026-11-23): the Tier 0.5 chain's (its braziers and the Banner of
+# Provocation; Jarien and Sothos's loot is the database's "Sothos and Jarien's Heirlooms") are Tier 0.5, out of Easy by the reading (4);
+# a class quest's (the warlock's Dreadsteed, the paladin's Charger) needs that class in the group: True lists only.
+T05_SUMMONS = {16042: "Lord Valthalak", 16080: "Mor Grayhoof", 16097: "Isalien", 16118: "Kormok", 16059: "Theldren"}
+T05_CHESTS = {"Sothos and Jarien's Heirlooms"}
+CLASS_SUMMONS = {14506: "Lord Hel'nurath (the warlock's Dreadsteed quest)", 14516: "Death Knight Darkreaver (the paladin's Charger quest)"}
+
+
+def drop_chance(iid, npc, z, ctx):
+    """(chance, where it comes from) of a dungeon drop, from Classic's dump by CMaNGOS's loot rules (dungeon_loot.csv: creatures spawned
+    in a dungeon or nowhere, chests, every equippable green or better at 0.1% or more): the creature's own row; else a row of a creature
+    of the same name (the database's 10812 is "Balnazzar", Classic's 10812 is Grand Crusader Dathrohan and its Balnazzar 10813 holds
+    the loot); else the item's best row in the dungeon's map (a chest, or another creature: the database names Cho'Rush the Observer for
+    the Gordok Tribute's Tarnished Elven Ring); else 0.0 when the creature has rows and none for this item (under 0.1%); else
+    (None, None): unknown."""
+    if npc and (int(npc), iid) in ctx["chance"]:
+        return ctx["chance"][(int(npc), iid)], None
+    who = ctx["npcs"].get(npc)
+    if who and (who, iid) in ctx["by_name"]:
+        return ctx["by_name"][(who, iid)], None
+    best = ctx["map_best"].get((ZONE_MAP.get(z), iid))
+    if best:
+        return best
+    if npc and (int(npc) in ctx["loot_rows"] or who in ctx["loot_rows"]):
+        return 0.0, None
+    return None, None
+
+
+def dungeon_kind(it, npc, z, d, ctx):
+    """(kind, detail) of a drop in a dungeon (2026-11-23, the delegator's G13: until then a drop whose chance Classic's dump did not give
+    counted as Easy; 463 of the 2,548 Easy items were in by that alone): Easy needs a named creature (the database's) and a known chance
+    of DROP_MIN or more; the Tier 0.5 summons' loot is tier05, a class quest's summon is a plain dungeon drop, and an unknown chance is a
+    plain dungeon drop (unknown_chances lists them for a decision; EASY_DECIDED puts one back)."""
+    Tm, npcs = ctx["T"], ctx["npcs"]
+    who = npcs.get(npc) or d.get("otherName") or "trash"
+    if npc in T05_SUMMONS or d.get("otherName") in T05_CHESTS:
+        return "tier05", f"{z}, {who} (a Tier 0.5 summon)"
+    if npc in CLASS_SUMMONS:
+        return "dungeon_drop", f"{z}, {CLASS_SUMMONS[npc]}"
+    ch, src = drop_chance(it["id"], npc, z, ctx)
+    say = ("chance unknown" if ch is None else "under 0.1%" if ch == 0 else f"{ch:.1%}" + (f" from {src}" if src else ""))
+    if ch is None and it["id"] in EASY_DECIDED and npc:
+        return "dungeon_drop_easy", f"{z}, {who}, {say}: {EASY_DECIDED[it['id']]}"
+    easy = bool(npc) and (UBRS_EASY or who not in Tm.UBRS_BOSSES) and ch is not None and ch >= Tm.DROP_MIN
+    return ("dungeon_drop_easy" if easy else "dungeon_drop"), f"{z}, {who}, {say}"
+
+
+# Unknown chances decided one by one ({item: why}; the delegator's G13 (c): an epic stays out, the rest each get a decision)
+EASY_DECIDED = {}
+
+
+def unknown_chances(db, ctx):
+    """The dungeon drops a named creature gives whose chance no Classic row gives (the creature has no rows and the dungeon's map has no
+    row for the item: Forever's own dungeons, creatures the dump lacks), not Tier 0.5 or a class quest's summon: [(item, name, quality,
+    zone, creature)], the list for the G13 decisions."""
+    zones, npcs = ctx["zones"], ctx["npcs"]
+    out = []
+    for iid, it in db.items():
+        for s in it.get("sources") or []:
+            d = s.get("drop") or {}
+            z, npc = zones.get(d.get("zoneId")), d.get("npcId")
+            if not npc or z not in ctx["T"].DUNGEONS or npc in T05_SUMMONS or npc in CLASS_SUMMONS:
+                continue
+            if drop_chance(iid, npc, z, ctx)[0] is None:
+                out.append((iid, it.get("name"), it.get("quality"), z, npcs.get(npc)))
+    return sorted(set(out), key=lambda x: (x[3], x[4] or "", x[1] or ""))
+
+
 def item_kinds(it, ctx):
     """[(kind, detail)] for every source of the item (see ITEM_KINDS), the phase gate and the vetoes applied."""
     G, Tm, zones, npcs = ctx["G"], ctx["T"], ctx["zones"], ctx["npcs"]
@@ -254,11 +343,7 @@ def item_kinds(it, ctx):
             elif z in LATER_RAIDS:
                 out.append(("later_raid", z))
             elif z in Tm.DUNGEONS:
-                easy = bool(npc) and (UBRS_EASY or npcs.get(npc) not in Tm.UBRS_BOSSES)
-                c = ctx["chance"].get((int(npc), int(iid))) if npc else None
-                easy = easy and (c is None or c >= Tm.DROP_MIN)
-                out.append(("dungeon_drop_easy" if easy else "dungeon_drop", f"{z}, {npcs.get(npc) or d.get('otherName') or 'trash'}"
-                            + (f", {c:.0%}" if c is not None else "")))
+                out.append(dungeon_kind(it, npc, z, d, ctx))
             else:
                 out.append(("world_drop", z or d.get("otherName") or "world"))
         elif "quest" in s:
@@ -425,6 +510,8 @@ RANK_SIDE = {"Grand Marshal": "Alliance", "Field Marshal": "Alliance", "Marshal"
              "Centurion": "Horde", "Legionnaire": "Horde", "Blood Guard": "Horde", "Stone Guard": "Horde", "First Sergeant": "Horde",
              "Senior Sergeant": "Horde"}
 RANK_TITLE = re.compile(r"^(?:Premier )?(" + "|".join(sorted(map(re.escape, RANK_SIDE), key=len, reverse=True)) + r")'s ")
+# Rank 3 is "Sergeant" on both sides; its items differ by name (the delegator, 2026-11-23)
+RANK_NAME_SIDE = {"Sergeant's Cape": "Alliance", "Sergeant's Cloak": "Horde"}
 
 
 def faction_of(it, ctx):
@@ -456,6 +543,8 @@ def faction_of(it, ctx):
         return ("Alliance" if fs == {1} else "Horde") if len(fs) == 1 else None
     if srcs and all("pvp" in s for s in srcs):
         name = it.get("name", "")
+        if name.removeprefix("Premier ") in RANK_NAME_SIDE:
+            return RANK_NAME_SIDE[name.removeprefix("Premier ")]
         m = RANK_TITLE.match(name)
         if m:
             return RANK_SIDE[m.group(1)]
