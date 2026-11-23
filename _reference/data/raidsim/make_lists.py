@@ -368,6 +368,25 @@ def missed_sets(s, repo, db, zones, st):
             sets[f"known: {kb['name']}"] = kb["items"]
         else:
             why["known"] = "no known positive raced in the make"
+        ab = {"dungeon": "prebis", "prebis": "bis"}.get(k)   # (2026-11-23, the audit session's item 6) the list above's set in this pool
+        ga = (rec.get("gear") or {}).get(ab) or {} if ab else {}
+        if ga.get("gear") and (ROOT / ga["gear"]).exists():
+            pool = GT.pool_of(k, zones, repo)
+            _, _, greedy = G.class_picker(repo, s["cls"], db, pool)
+            shown = GT.norm17(sets["shown"])
+            sw, _ = GT.pool_swap(GT.norm17(set_items(ROOT / ga["gear"])), g.get("weights") or ga.get("weights") or {}, greedy, db, pool, shown)
+            sw = [dict(x) for x in GT.norm17(sw)]
+            for i, x in enumerate(sw):   # an enchant this list does not allow: this set's enchant on the same item, else none
+                if x.get("enchant") and not GT.enchant_allowed(x["enchant"], G.SLOT_TYPE[i], k, zones):
+                    e2 = shown[i].get("enchant") if shown[i].get("id") == x.get("id") else None
+                    sw[i] = {"id": x["id"], **({"enchant": e2} if e2 else {})}
+            bad = GT.list_guard(sw, k, db, zones, repo, cls=s["cls"])
+            if bad:
+                why["above"] = "breaks the list's rule after the swap: " + "; ".join(bad)[:200]
+            elif [y.get("id") for y in sw] == [y.get("id") for y in shown]:
+                why["above"] = "the same items as the shown set"
+            else:
+                sets[f"the {GL.LABEL[ab]} set in this list's pool"] = sw
         pp = PREV_DIR / pathlib.Path(g["gear"]).name
         if pp.exists():
             prev = set_items(pp)

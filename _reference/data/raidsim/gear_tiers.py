@@ -924,7 +924,7 @@ CLOSE_CALL = 0.002      # a make whose chosen set leads the best set that lost o
 # the record fields every list's make keeps (2026-11-23: ml_pipeline.gear, dungeon_tier and make_lists read this one tuple)
 LIST_RECORD_FIELDS = ("chosen_source", "ladder_case", "ladder", "known_tie", "picker_best", "known_positives", "competitors", "bases",
                       "reweigh", "hit", "set_check", "budget", "confirm_margin", "guard", "refused", "without_pvp", "side", "effect_items",
-                      "racials_off")
+                      "racials_off", "enchant_consistency")
 
 
 def known_lists(cls, spec):
@@ -1326,6 +1326,28 @@ def swap_fits(greedy, it, slot, cur):
     return greedy.fits(it, slot, cur or it)
 
 
+def enchant_consistency(r, ref, tier, zones, evals, repo, a, tag):
+    """The audit session's item 5 (2026-11-23): a player reading two lists asks which enchant is right when the same item carries another
+    one a list below (the enchant race's noise at 1,000 fights). Where the set holds `ref`'s item in a slot with another enchant this list
+    allows, the set with `ref`'s enchants there races the chosen set on seed 2 at the confirm's fights; the chosen enchants stay only when
+    they beat it. Changes r["items"] in place; returns the record or None."""
+    if not ref:
+        return None
+    items, ref = norm17(r["items"]), norm17(ref)
+    slots = [i for i in range(17) if items[i].get("id") and items[i].get("id") == ref[i].get("id") and ref[i].get("enchant")
+             and items[i].get("enchant") != ref[i].get("enchant") and enchant_allowed(ref[i]["enchant"], G.SLOT_TYPE[i], tier, zones)]
+    if not slots:
+        return {"slots": []}
+    var = [dict(x) for x in items]
+    for i in slots:
+        var[i] = dict(var[i], enchant=ref[i]["enchant"])
+    res = racer(evals, repo, None, tag + "-ench")({"own": items, "reference": var}, a.confirm, 2)
+    own = res["own"] > res["reference"]
+    if not own:
+        r["items"] = var
+    return {"slots": slots, "race_seed2": {k: round(v, 5) for k, v in res.items()}, "fights": a.confirm, "kept": "own" if own else "reference"}
+
+
 def list_guard(items, tier, db, zones, repo, nopvp=False, side=None, cls=None):
     """The lists' fatal guard (2026-11-23, the audit session: a side's set holding the other side's items should have stopped the run;
     the same day, for Easy Pre-BiS and every list: "every item passes the Easy pool and the Easy enchant rule"): every item of the set
@@ -1436,6 +1458,11 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
                      ladder={k: (k.split()[1], pool_of(k.split()[1], zones, repo, nopvp=nopvp, side=side))
                              for k in extra if k.startswith("the ") and k.endswith(" set")},
                      known=known or None, no_known=no_known)
+    # enchant consistency (2026-11-23, the audit session's item 5): the reference is the list below's set, for a no-PvP or a side's set
+    # the list's full set
+    eref = (full if (nopvp or side) else extra.get(f"the {dict(prebis='dungeon', bis='prebis').get(tier)} set"))
+    r["enchant_consistency"] = enchant_consistency(r, eref, tier, zones, [(entry_name, e, setting, talents, label)], repo, a,
+                                                   f"{cls}-{SM.slug(spec)}-{tier}")
     bad = list_guard(r["items"], tier, db, zones, repo, nopvp=nopvp, side=side, cls=cls)
     if bad:
         raise SystemExit(f"FATAL {p.name}: the chosen set ({r.get('chosen')}) breaks its list's rule: " + "; ".join(bad))
