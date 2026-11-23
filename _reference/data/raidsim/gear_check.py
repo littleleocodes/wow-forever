@@ -60,11 +60,34 @@ def check_set(path, db, edb):
     return G.missing_in(items, db, edb), sum(1 for x in items if x and x.get("id"))
 
 
+def page_files():
+    """{path}: every set file a record the pages read names (the ML records' gear entries, the tanks' and healers' gear records)."""
+    out = set()
+
+    def walk(x):
+        if isinstance(x, dict):
+            for k, v in x.items():
+                if k == "gear" and isinstance(v, str) and v.endswith(".gear.json"):
+                    out.add((ROOT / v).resolve())
+                else:
+                    walk(v)
+        elif isinstance(x, list):
+            for v in x:
+                walk(v)
+    for f in list(ML_DIR.glob("*.json")) + [HERE / "tank-gear.json", HERE.parent / "heallab" / "heal-gear.json"]:
+        if f.exists():
+            walk(json.load(open(f, encoding="utf-8")))
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("classes", nargs="*")
     ap.add_argument("--pool", action="store_true", help="also list tier-set items outside the phase-1 pool (gear_opt.in_pool)")
     ap.add_argument("--quiet", action="store_true", help="print only the sets that fail")
+    ap.add_argument("--lists-final", action="store_true",
+                    help="after the all-class makes (make_lists.py's step 4): a list file a page reads that was made before the lists (no "
+                         "\"rules\") fails too; before it such files are counted only (2026-11-23)")
     a = ap.parse_args()
     repo = R.SETUP.checkout("forever")
     (db, zones), edb = G.load_db(repo), G.enchant_db(repo)
@@ -74,6 +97,7 @@ def main():
     classes = a.classes or [c for c in specs if not c.startswith("_")]
     print(f"gear check on {repo} ({R.git_commit(repo)}; {len(db)} items in the database)")
     bad, older = 0, 0
+    shown = page_files() if a.lists_final else set()
     for cls in classes:
         seen = {}
         for name, e in specs.get(cls, {}).items():
@@ -105,6 +129,9 @@ def main():
                         print(f"    LIST RULE BROKEN {f.name}: " + "; ".join(broken))
                 else:
                     before.append(f.name)
+                    if f.resolve() in shown:
+                        bad += 1
+                        print(f"    MADE BEFORE THE LISTS, READ BY A PAGE {f.name} (--lists-final)")
             out = []
             if a.pool:
                 out = [db[x["id"]]["name"] for x in items_of(f) if x and x.get("id") in db and not G.in_pool(db[x["id"]], zones)]
@@ -112,6 +139,26 @@ def main():
                 tb += 1
                 print(f"    tier set {f.name}: " + ("missing " + ", ".join(miss) if miss else "") + ("; " if miss and out else "")
                       + ("outside the pool: " + ", ".join(out) if out else ""))
+        # 2026-11-23 (the audit session's read of make_lists.py): a record made under the lists describes the set in its file (the pages
+        # and gear_links read records; the side feedback rewrites a file and then its record): every list entry of the class's ML
+        # records with "rules" must name the file's items slot by slot, else fatal
+        for mf in sorted(ML_DIR.glob(f"{cls}-*.json")):
+            rec = json.load(open(mf, encoding="utf-8"))
+            for key, g in (rec.get("gear") or {}).items():
+                if not isinstance(g, dict) or not g.get("rules") or not g.get("gear") or g.get("names") is None:
+                    continue
+                gf = ROOT / g["gear"]
+                if not gf.exists():
+                    bad += 1
+                    print(f"    RECORD WITHOUT ITS FILE {mf.name} {key}: {g['gear']}")
+                    continue
+                its = items_of(gf)
+                have = [(db.get(x.get("id")) or {}).get("name") if x and x.get("id") else None for x in its]
+                want = list(g["names"]) + [None] * (len(have) - len(g["names"]))
+                diff = [(i, w_, h_) for i, (w_, h_) in enumerate(zip(want, have)) if (w_ or None) != (h_ or None)]
+                if diff:
+                    bad += 1
+                    print(f"    RECORD AND FILE DIFFER {mf.name} {key}: " + "; ".join(f"slot {i}: record {w_}, file {h_}" for i, w_, h_ in diff[:6]))
         if tier_files and not a.quiet:
             print(f"    {cls}: {len(tier_files)} tier sets, {tb} with a missing item" + (" or an item outside the pool" if a.pool else ""))
         if before:

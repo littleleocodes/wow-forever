@@ -237,7 +237,7 @@ def support_sets(classes, db, repo, apiv):
     for cls, spec in sorted(SM.TANK_TREE.items()):
         if classes and cls not in classes:
             continue
-        sets = {t: TG.tier_gear(cls, spec, t) for t in ("prebis", "bis")}   # plain sets: the armor patch (fill_armor.py) is in the simulator since 2026-10-15
+        sets = {t: TG.tier_gear(cls, spec, t) for t in ("dungeon", "prebis", "bis")}   # (2026-11-23: Easy Pre-BiS too)   # plain sets: the armor patch (fill_armor.py) is in the simulator since 2026-10-15
         sets = {t: p for t, p in sets.items() if p}
         if not sets:
             continue

@@ -44,7 +44,11 @@ def main():
     ap.add_argument("--iterations", type=int, default=30000)
     ap.add_argument("--smoke", action="store_true", help="small budgets; the ML record is not written (a test)")
     ap.add_argument("--refit", action="store_true", help="refit the tier's set as it stands (gear_tiers.refit) instead of making it again")
+    ap.add_argument("--build", help="make the set for this build (the page's pick; one spec) instead of the record's pre-BiS full-raid winner")
+    ap.add_argument("--entry", help="the build's entry (with --build)")
     a = ap.parse_args()
+    if bool(a.build) != bool(a.entry) or (a.build and len(a.spec) != 1):
+        raise SystemExit("dungeon_tier: --build and --entry go together, with one --spec")
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=None))
     db, zones = GT.load_db(repo)
@@ -58,7 +62,7 @@ def main():
         if (a.classes and cls not in a.classes) or (a.spec and spec not in a.spec):
             continue
         s = rec.get("search") or {}
-        if not (s.get("prebis-raid") or {}).get("winner"):
+        if not a.build and not (s.get("prebis-raid") or {}).get("winner"):
             print(f"== {f.name}: no full-raid pre-BiS winner; skipped", flush=True)
             continue
         done = s.get("dungeon-raid") or {}
@@ -68,28 +72,42 @@ def main():
         t0 = time.time()
         trees = R.load_trees(repo, cls)
         known = {R.talent_key(t) for tr in trees for t in tr["talents"]}
-        entry = s["prebis-raid"]["entry"]
+        pick = None
+        if a.build:   # (2026-11-23) the page's pick: the lists are made for the build the raid page shows
+            pick = {x["id"]: x for x in json.loads((HERE.parents[2] / cls / "research" / "talents" / "forever" / "proposed-builds.json")
+                                                     .read_text(encoding="utf-8"))["builds"]}[a.build]
+            entry = a.entry
+            base = {n: r for n, r in flat(pick["allocation"]).items() if n in known}
+            label = f"the page's pick ({a.build})"
+        else:
+            entry = s["prebis-raid"]["entry"]
+            base = {n: r for n, r in flat(s["prebis-raid"]["winner"]["allocation"]).items() if n in known}
+            label = "ml winner (pre-BiS, full raid)"
         e = R.SPECS[cls][entry]
-        base = {n: r for n, r in flat(s["prebis-raid"]["winner"]["allocation"]).items() if n in known}
-        print(f"== {f.name}: the quests-and-dungeons set in {entry} for the pre-BiS full-raid winner", flush=True)
+        print(f"== {f.name}: the quests-and-dungeons set in {entry} for {label}", flush=True)
         dpath = GT.SETS / f"{cls}-{rec['slug']}-dungeon.gear.json"
         if a.refit and dpath.exists():   # (2026-11-22) the set as it stands, refit; its make() fields stay when they name the filed items
             names = [db[x["id"]]["name"] if x and x.get("id") in db else None for x in json.load(open(dpath, encoding="utf-8"))["items"]]
             pg = (rec.get("gear") or {}).get("dungeon") or {}
-            g = GT.refit(cls, spec, "dungeon", entry, R.talents_string(trees, base), "ml winner (pre-BiS, full raid)", repo, db, zones, ga,
+            g = GT.refit(cls, spec, "dungeon", entry, R.talents_string(trees, base), label, repo, db, zones, ga,
                          path=dpath, write=not a.smoke)
             gd = dict(pg) if pg.get("names") == names else {}
             gd.update({k: g[k] for k in ("entry", "gear", "date", "setting", "chosen", "ilvl", "names", "confirm_seed2", "weights", "weapons", "set_pieces", "enchants", "changes", "refit",
                                           "list", "rules", "kinds", "marks", "faction_alternatives", "pvp_alternatives", "currency_cost") if k in g})
             rec.setdefault("gear", {})["dungeon"] = dict(gd, commit=commit)
         else:
-            g = GT.make(cls, spec, "dungeon", entry, R.talents_string(trees, base), "ml winner (pre-BiS, full raid)", repo, db, zones, ga,
+            g = GT.make(cls, spec, "dungeon", entry, R.talents_string(trees, base), label, repo, db, zones, ga,
                         path=dpath)
             keep = ("entry", "gear", "date", "chosen", "ilvl", "trinkets", "trinket_screen", "names", "race_seed1", "confirm_seed2", "weights",
-                    "evaluated_on", "enchants_dropped", "weapons", "set_pieces", "enchants", "list", "rules", "kinds", "marks", "faction_alternatives", "pvp_alternatives", "currency_cost")
+                    "evaluated_on", "enchants_dropped", "weapons", "set_pieces", "enchants", "list", "rules", "kinds", "marks", "faction_alternatives",
+                    "pvp_alternatives", "currency_cost") + GT.LIST_RECORD_FIELDS
             rec.setdefault("gear", {})["dungeon"] = dict({k: g[k] for k in keep if k in g}, commit=commit)
         # the candidates: every tier winner of the record, distinct talents, raced in the new set in a full raid
         cands, seen = [], set()
+        if pick:
+            fl = dict(base)
+            seen.add(tuple(sorted(fl.items())))
+            cands.append(("page pick", pick["allocation"], fl))
         for k in KEYS:
             w = (s.get(k) or {}).get("winner")
             if not w:
@@ -111,6 +129,7 @@ def main():
         rec.setdefault("search", {})["dungeon-raid"] = {
             "class": cls, "spec": spec, "setting": "raid", "entry": entry, "date": TODAY, "commit": commit,
             "method": "the record's tier winners raced in the tier's set in a full raid (no search of its own)",
+            **({"made_for": {"build": a.build, "entry": entry, "why": "the page's pick (make_lists.py, 2026-11-23)"}} if pick else {}),
             "winner": {"allocation": al, "split": split, "dps": round(dps, 1), "from": k},
             "race": [{"iterations": a.iterations, "seed": 1, "dps": sorted((round(x[2], 1) for x in scored), reverse=True)}],
             "candidates": {kk: round(d, 1) for kk, _, d in scored}, "minutes": round((time.time() - t0) / 60, 1)}

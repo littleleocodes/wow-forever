@@ -55,7 +55,7 @@ import spec_modes as SM  # noqa: E402
 
 TANK_ENTRY = {"warrior": "prot-tank", "paladin": "prot-tank", "druid": "feral-bear-tank"}
 FILE_SLUG = {"warrior": "protection", "paladin": "protection", "druid": "feral-combat-tank"}
-TIERS = ("prebis", "bis")
+TIERS = ("dungeon", "prebis", "bis")   # (2026-11-23: Easy Pre-BiS too, made first)
 SETS = HERE / "gear_sets" / "forever" / "tiers"
 RECORD = HERE / "tank-gear.json"
 SMOKE_DIR = HERE / "deep-smoke" / "tank-gear"   # git-ignored
@@ -74,7 +74,7 @@ def set_path(cls, tier, smoke=False, armor=False):
 
 def tier_gear(cls, spec, tier, armor=False):
     """The tank's set for a tier (absolute path), or None: `spec` the tank page's spec (spec_modes.TANK_TREE: Protection, Feral Combat),
-    `tier` prebis or bis; `armor=True` the sensitivity set chosen with Classic base armor filled in (`--armor`). For gear_links.py /
+    `tier` dungeon (Easy Pre-BiS), prebis or bis; `armor=True` the sensitivity set chosen with Classic base armor filled in (`--armor`). For gear_links.py /
     render_modes.py."""
     if cls not in TANK_ENTRY or SM.TANK_TREE.get(cls) != spec or tier not in TIERS:
         return None
@@ -417,18 +417,25 @@ def run_class(cls, tiers, repo, db, zones, edb, a, rec):
             wench = race_weapon_enchant(e, repo, talents, items, db, ref, a, tag, tier, zones)
         else:
             ench, wench = {}, None
+        guard(cls, tier, items, p, db, zones, repo)
         p.parent.mkdir(parents=True, exist_ok=True)
-        p.write_text(json.dumps({"items": items}, indent=1) + "\n", encoding="utf-8")
+        p.write_text(json.dumps(set_file(items, tier), indent=1) + "\n", encoding="utf-8")
         m = measure(e, repo, talents, items, a.final, 3, ref, f"m-{cls}")
-        pre = out.get("prebis") if tier == "bis" else None
+        lower = TIERS[TIERS.index(tier) - 1] if TIERS.index(tier) else None
+        pre = out.get(lower) if lower else None
+        if pre and pre.get("items") and GT.list_guard(GT.norm17(pre["items"]), tier, db, zones, repo):
+            pre = None   # the lower list's set breaks this list's rule (a list's pool holds the lower list's: never seen; checked anyway)
         if pre and (pre.get("pick") or {}).get("value", 0) > m["value"] and pre.get("items"):
-            # the BiS pool holds every pre-BiS item, so the pre-BiS set is a BiS set too: a BiS search that ends below it takes it
-            # (2026-11-11: the paladin's BiS search ended at tank value 1.1836, its pre-BiS set measured 1.1917 on the same fights)
-            log(f"  bis: the search's set measures {m['value']:.4f}, below the pre-BiS set's {pre['pick']['value']:.4f}: the pre-BiS set is kept")
+            # each list's pool holds the list below's items, so the lower set is a set of this list too: a search that ends below it takes
+            # it (2026-11-11: the paladin's BiS search ended at tank value 1.1836, its pre-BiS set measured 1.1917 on the same fights;
+            # 2026-11-23: every list, Easy Pre-BiS under True Pre-BiS too)
+            log(f"  {tier}: the search's set measures {m['value']:.4f}, below the {lower} set's {pre['pick']['value']:.4f}: the {lower} set is kept")
             items = [dict(x) for x in pre["items"]]
-            p.write_text(json.dumps({"items": items}, indent=1) + "\n", encoding="utf-8")
+            guard(cls, tier, items, p, db, zones, repo)
+            p.write_text(json.dumps(set_file(items, tier), indent=1) + "\n", encoding="utf-8")
             m = {k: v for k, v in pre["pick"].items() if k != "stats"}
-            r = dict(r, items=items, chosen="the pre-BiS set (the BiS search ended below it)", trinkets=pre.get("trinkets") or r.get("trinkets"),
+            r = dict(r, items=items, chosen=f"the {GT.GL.LABEL.get(lower, lower)} set (this list's search ended below it)",
+                     trinkets=pre.get("trinkets") or r.get("trinkets"),
                      ilvl=pre.get("ilvl", r.get("ilvl")))
             ench = {k: v for k, v in (pre.get("enchants_by_weight") or {}).items()}
             wench = pre.get("weapon_enchant")
@@ -454,6 +461,18 @@ def run_class(cls, tiers, repo, db, zones, edb, a, rec):
         log("    " + "; ".join(n for n in rt["names"] if n))
         yield
     out["minutes"] = round((time.time() - t0) / 60, 1)
+
+
+def set_file(items, tier):
+    """A tank set file as the lists write them (2026-11-23): the items, the list and the rules it was made under."""
+    return {"items": items, "list": GT.GL.LABEL.get(tier, tier), "rules": GT.GL.RULES}
+
+
+def guard(cls, tier, items, p, db, zones, repo):
+    """The list's rule on the chosen set before it is written (gear_tiers.list_guard; fatal, as for the damage specs' makes)."""
+    bad = GT.list_guard(GT.norm17(items), tier, db, zones, repo)
+    if bad:
+        raise SystemExit(f"FATAL {p.name}: the {cls} tank's set breaks its list's rule: " + "; ".join(bad))
 
 
 def main():

@@ -35,6 +35,7 @@ import datetime
 import importlib.util
 import itertools
 import json
+import os
 import pathlib
 import sys
 import time
@@ -224,7 +225,7 @@ def pool_of(tier, zones, repo=None, nopvp=False, side=None):
 #   the scopes, Arcanum of Rapidity) is raced against the slot's stat pick.
 WEAPON_TOP, WEAPON_EFFECTS_FROM, WEAPON_RERACE = 12, 20, 4   # per hand: the best 12 by the weights, any with an effect among the best 20;
 WEAPON_DPS_MIN = 0.1   # the main hand raced again on its pass-1 best 4 after the off hand changed; a hand whose dps the weights value
-SET_MAX_LOSS, SET_RACE_MAX = 0.10, 16   # a set's pieces raced when they cost at most 10% of the replaced items' value by the weights
+SET_MAX_LOSS, SET_RACE_MAX = 0.10, 80   # (SET_MAX_LOSS is history: since 2026-11-23 every bonus step races; 80 units a round at most)
 PAIR_ANY = True   # a two-piece unit races whatever it costs by the weights (the bonus is what the weights cannot see)
 # The three rules above as widened on 2026-11-23 (the audit session's ruling on the list test's attribution: Survival's no-PvP True Pre-BiS
 # against wowtbc.gg's like-for-like list, the site's choice put into our set one slot or linked group at a time, 6,000 fights, seeds 1/2):
@@ -454,83 +455,184 @@ def race_weapons(cls, items, w, greedy, race, its, db):
     return items, rec
 
 
-def race_set_pieces(cls, items, w, greedy, race, its, db, pool):
-    """G3: each item set the class can wear two or more pieces of from the pool, its pieces put in as a unit and raced in the set on
-    seed 1: all of its pieces, and its two cheapest by the weights when it has more; only units that cost at most SET_MAX_LOSS of the
-    replaced items' value by the weights, the cheapest SET_RACE_MAX. The best unit is taken when ahead. The bonuses themselves are the
-    simulator's (the database lists the pieces, not the bonus). Returns (items, record)."""
-    items = norm17(items)
-    held = {x.get("id") for x in items if x.get("id")}
-    slots_of = {}
-    for it in db.values():
-        sn = it.get("setName")
-        if not sn or not pool(it):
-            continue
-        for slot in range(17):
-            if G.SLOT_TYPE[slot] == 12:
+_SET_STEPS = {}
+
+
+def sim_set_steps(repo):
+    """{set id: {"name", "steps"}}: the bonus steps the simulator at `repo` registers for each item set (its Go NewItemSet calls and the
+    helpers that call it with an id and a name), read once per checkout (2026-11-23). A set the database lists and this does not has no
+    simulated bonus."""
+    import re
+    key = str(repo)
+    if key in _SET_STEPS:
+        return _SET_STEPS[key]
+    sets, helpers, texts = {}, {}, {}
+    for f in (pathlib.Path(repo) / "sim").rglob("*.go"):
+        texts[f] = f.read_text(encoding="utf-8", errors="replace")
+    for f, t in texts.items():
+        for m in re.finditer(r"core\.NewItemSet\(core\.ItemSet\{", t):
+            i, depth = m.end(), 1
+            while depth and i < len(t):
+                depth += {"{": 1, "}": -1}.get(t[i], 0)
+                i += 1
+            block = t[m.end():i]
+            keys = []
+            bm = re.search(r"Bonuses:\s*map\[int32\][\w.]+\{", block)
+            if bm:
+                j, d2 = bm.end(), 1
+                while d2 and j < len(block):
+                    d2 += {"{": 1, "}": -1}.get(block[j], 0)
+                    j += 1
+                depth2 = 0
+                for line in block[bm.end():j].splitlines():
+                    km = re.match(r"\s*(\d+):", line) if depth2 == 0 else None
+                    if km:
+                        keys.append(int(km.group(1)))
+                    depth2 += line.count("{") - line.count("}")
+            idm, nm = re.search(r"\bID:\s*(\d+)", block), re.search(r'\bName:\s*"([^"]+)"', block)
+            if idm:
+                sets[int(idm.group(1))] = {"name": nm.group(1) if nm else None, "steps": sorted(set(keys))}
+            else:
+                fm = list(re.finditer(r"func (\w+)\(id int32, name string\)", t[:m.start()]))
+                if fm:
+                    helpers[fm[-1].group(1)] = sorted(set(keys))
+    for f, t in texts.items():
+        for h, keys in helpers.items():
+            for m in re.finditer(h + r'\((\d+),\s*"([^"]+)"\)', t):
+                sets[int(m.group(1))] = {"name": m.group(2), "steps": keys}
+    _SET_STEPS[key] = sets
+    return sets
+
+
+def race_set_pieces(cls, items, w, greedy, race, its, db, pool, repo=None, confirm=None):
+    """G3, widened on 2026-11-23 (the user: "fix looking at sets for their bonuses and not just looking at set pieces individually"; the
+    audit session's item 2): every bonus step the simulator registers for an item set (sim_set_steps) that the pool's pieces can reach
+    races as a unit, whatever it costs by the weights: the pieces of the set the set already wears plus the fewest more to reach the
+    step, those that cost least by the weights, with the slots around them kept legal (a two-hander empties the off hand; a piece that
+    clashes with another slot's unique item leaves the unit out). Every unit races on seed 1; the best is taken when ahead, and the steps
+    are measured once more from it (a step taken can open the next). A pool set the simulator gives no bonus races nothing and the
+    record names it (the game may give a bonus the simulator lacks: part of the effects work). Frost's True Pre-BiS had held four
+    Sorcerer's Regalia pieces, and the site's Crown and Mantle completing six, each worse alone (-0.5% to -0.8%), were +0.5% / +0.6%
+    together; the old rule raced all of a set's pieces or its two cheapest. Trinkets race on their own (screen_trinkets). Returns
+    (items, record {units, no_bonus, taken}). A unit is taken only when it is ahead on seed 2 as well (2026-11-23, the audit session: with
+    15 to 48 units a class at 1,000 fights, the best of the noise is above 1.0 more often than not when a few units cost almost nothing):
+    the top three by seed 1, each ahead there, race the current set on seed 2 at `confirm` fights (the make's confirm; `its` without it),
+    and the best of them there is taken when ahead of the current set; those three keep both seeds."""
+    steps_of = sim_set_steps(repo) if repo else {}
+    rec = {"units": [], "no_bonus": [], "taken": []}
+    for rnd in (1, 2):
+        items = norm17(items)
+        held_ids = {x.get("id") for x in items if x.get("id")}
+        by = {}
+        for it in db.values():
+            sid = it.get("setId")
+            if not sid or not pool(it):
                 continue
-            shape = db.get(items[slot].get("id")) if items[slot].get("id") else None
-            if slot >= 14 and not shape:
+            for slot in range(17):
+                if G.SLOT_TYPE[slot] == 12 or G.SLOT_TYPE[slot] != it.get("type"):
+                    continue
+                shape = db.get(items[slot].get("id")) if items[slot].get("id") else None
+                if slot >= 14 and not shape:
+                    continue
+                if greedy.fits(it, slot, shape):
+                    by.setdefault(sid, {}).setdefault(slot, []).append(it)
+        units = []
+        for sid, slots in by.items():
+            name = next(iter(slots.values()))[0].get("setName") or str(sid)
+            wearing = {s for s in range(17) if (db.get(items[s].get("id")) or {}).get("setId") == sid}
+            held = len(wearing)
+            if len({it["id"] for v in slots.values() for it in v} | {items[s]["id"] for s in wearing}) < 2:
                 continue
-            if greedy.fits(it, slot, shape):
-                slots_of.setdefault(sn, {}).setdefault(slot, []).append(it)
-    units = []
-    for sn, by in slots_of.items():
-        if len(by) < 2 or all(any(it["id"] in held for it in v) for v in by.values()):
-            continue
-        # per slot the piece worth most; a ring or weapon piece fits two slots: each piece once
-        pick, used = {}, set()
-        for slot, v in sorted(by.items(), key=lambda kv: -max(G.value(it, w, kv[0]) for it in kv[1])):
-            v = [it for it in v if it["id"] not in used]
-            if v:
-                it = max(v, key=lambda it: G.value(it, w, slot))
-                pick[slot] = it
-                used.add(it["id"])
-        if len(pick) < 2:
-            continue
-        loss = {s: G.value(db[items[s]["id"]], w, s) - G.value(it, w, s) if items[s].get("id") in db else -G.value(it, w, s) for s, it in pick.items()}
-        base = {s: G.value(db[items[s]["id"]], w, s) if items[s].get("id") in db else 0.0 for s in pick}
-        cands = [tuple(sorted(pick))]
-        if len(pick) > 2:
-            cands.append(tuple(sorted(sorted(pick, key=lambda s: loss[s])[:2])))
-        for ss in cands:
-            tot = sum(base[s] for s in ss)
-            ls = sum(loss[s] for s in ss)
-            if ((ls <= SET_MAX_LOSS * max(tot, 1e-9) or (PAIR_ANY and len(ss) == 2))
-                    and not all(items[s].get("id") == pick[s]["id"] for s in ss)):
-                units.append((ls / max(tot, 1e-9), sn, {s: pick[s] for s in ss}))
-    units.sort(key=lambda u: u[0])
-    units = units[:SET_RACE_MAX]
-    if not units:
-        return items, []
-    sets = {"current": items}
-    keyed = {}
-    for rel, sn, pk in units:
-        x = [dict(y) for y in items]
-        ukeys = set()
-        for s, it in pk.items():
-            ench = x[s].get("enchant")
-            x[s] = {"id": it["id"], **({"enchant": ench} if ench else {})}
-        for y in x:   # the unit must keep the set legal: unique items and limit categories once
-            if y.get("id"):
-                k = G.unique_keys(db.get(y["id"]))
-                if k & ukeys:
-                    break
-                ukeys |= k
+            st = (steps_of.get(sid) or {}).get("steps") or []
+            if not st:
+                if rnd == 1 and name not in rec["no_bonus"]:
+                    rec["no_bonus"].append(name)
+                continue
+            for k in st:
+                if k <= held:
+                    if rnd == 1:
+                        rec["units"].append({"set": name, "step": k, "raced": False, "why": f"worn already ({held} pieces)"})
+                    continue
+                cand = []
+                for slot, v in slots.items():
+                    if slot in wearing:
+                        continue
+                    best = max(v, key=lambda it, s=slot: G.value(it, w, s))
+                    cur = db.get(items[slot].get("id")) if items[slot].get("id") else None
+                    cand.append(((G.value(cur, w, slot) if cur else 0.0) - G.value(best, w, slot), slot, best))
+                cand.sort(key=lambda c: c[0])
+                pick, used = [], set()
+                for loss, slot, it in cand:
+                    if it["id"] in used or it["id"] in held_ids or any(s == slot for s, _ in pick):
+                        continue
+                    pick.append((slot, it))
+                    used.add(it["id"])
+                    if len(pick) == k - held:
+                        break
+                if len(pick) < k - held:
+                    if rnd == 1:
+                        rec["units"].append({"set": name, "step": k, "raced": False, "why": f"the pool reaches {held + len(pick)} pieces"})
+                    continue
+                x = [dict(y) for y in items]
+                for slot, it in pick:
+                    ench = x[slot].get("enchant")
+                    x[slot] = {"id": it["id"], **({"enchant": ench} if ench else {})}
+                if any(s == 14 and it.get("handType") == 4 for s, it in pick):
+                    x[15] = {}
+                ukeys, clash = set(), False
+                for y in x:
+                    if y.get("id"):
+                        kk = G.unique_keys(db.get(y["id"]))
+                        clash = clash or bool(kk & ukeys)
+                        ukeys |= kk
+                if clash:
+                    if rnd == 1:
+                        rec["units"].append({"set": name, "step": k, "raced": False, "why": "a piece clashes with a unique item the set wears"})
+                    continue
+                units.append((name, k, held, x, [it["name"] for _, it in pick], round(sum(l for l, _, _ in cand[:len(pick)]), 2)))
+        units = units[:SET_RACE_MAX]
+        if not units:
+            break
+        sets = {"current": items}
+        for name, k, held, x, pieces, loss in units:
+            sets[f"{name} ({k})"] = x
+        r = race(sets, its, 1)
+        top = [k for k in sorted((k for k in r if k != "current"), key=lambda k: -r[k])[:3] if r[k] > 1.0]
+        r2 = race({"current": items, **{k: sets[k] for k in top}}, confirm or its, 2) if top else {}
+        for name, k, held, x, pieces, loss in units:
+            lab = f"{name} ({k})"
+            rec["units"].append({"set": name, "step": k, "held": held, "pieces": pieces, "weights_loss": loss, "raced": True,
+                                 "round": rnd, "race_seed1": round(r[lab], 4), **({"race_seed2": round(r2[lab], 4)} if lab in r2 else {})})
+        best = max(top, key=lambda k: r2.get(k, 0.0)) if top else None
+        if best and r2.get(best, 0.0) > 1.0:
+            items = sets[best]
+            rec["taken"].append(best)
         else:
-            name = f"{sn} ({len(pk)})"
-            sets[name] = x
-            keyed[name] = (rel, pk)
-    if len(sets) < 2:
-        return items, []
-    r = race(sets, its, 1)
-    best = max(r, key=r.get)
-    rec = [{"unit": k, "pieces": [p["name"] for p in keyed[k][1].values()], "weights_loss": round(keyed[k][0], 4), "race_seed1": round(r[k], 4)}
-           for k in keyed]
-    if best != "current" and r[best] > 1.0:
-        items = sets[best]
-        rec.append({"taken": best})
+            break
     return items, rec
+
+
+def set_check(items, db, repo, active):
+    """The simulator's sheet against the parser (2026-11-23, the audit session's guard on sim_set_steps): every step the set's pieces
+    reach (sim_set_steps) must be active on the sheet (stats_bench's `sets`, "<name> (<k>pc)"), and every active set must be a step the
+    parser knows. A miss means the parser reads a step the simulator does not apply, or misses one it does: a warning in the record,
+    printed by make_lists at the end of each phase."""
+    if active is None:
+        return {"warning": "no sheet: the hit report did not run"}
+    steps = sim_set_steps(repo)
+    worn = {}
+    for x in norm17(items):
+        sid = (db.get(x.get("id")) or {}).get("setId") if x and x.get("id") else None
+        if sid:
+            worn[sid] = worn.get(sid, 0) + 1
+    expected = sorted(f"{steps[sid]['name']} ({k}pc)" for sid, n in worn.items() if sid in steps for k in steps[sid]["steps"] if k <= n)
+    missing = [s for s in expected if s not in active]
+    unexpected = [s for s in active if s not in expected]
+    out = {"expected": expected, "active": list(active)}
+    if missing or unexpected:
+        out["warning"] = ("the sheet lacks " + ", ".join(missing) if missing else "") + ("; " if missing and unexpected else "") + \
+                         ("the sheet has steps the parser does not know: " + ", ".join(unexpected) if unexpected else "")
+    return out
 
 
 def enchants_for(cls, items, w, tier, zones, db, emap=None, own_first=False):
@@ -648,7 +750,7 @@ def refit(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=
     w = row["weights"]
     t0 = time.time()
     items, wrec = race_weapons(cls, filed, w, greedy, race, a.iterations, db)
-    items, srec = race_set_pieces(cls, items, w, greedy, race, a.iterations, db, pool)
+    items, srec = race_set_pieces(cls, items, w, greedy, race, a.iterations, db, pool, repo=repo, confirm=a.confirm)
     statmap, raced, erec = choose_enchants(cls, items, w, tier, zones, race, a.iterations, db)
     sets = {"filed": enchants_for(cls, filed, w, tier, zones, db)}
     for name, its_, m in (("filed, stat enchants", filed, statmap), ("filed, raced enchants", filed, raced), ("refit", items, raced)):
@@ -682,6 +784,10 @@ def refit(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=
 
 LADDER_MARGIN = 0.005   # a lower list's set this close to the seed-1 leader races again on seed 2 (optimize_set's ladder guard)
 KNOWN_MARGIN = 0.002    # a known positive replaces the picker's best only when this far ahead of it on seed 2 (2026-11-23)
+CLOSE_CALL = 0.002      # a make whose chosen set leads the best set that lost on the confirm by less is a close call (2026-11-23)
+# the record fields every list's make keeps (2026-11-23: ml_pipeline.gear, dungeon_tier and make_lists read this one tuple)
+LIST_RECORD_FIELDS = ("chosen_source", "ladder_case", "ladder", "known_tie", "picker_best", "known_positives", "competitors", "bases",
+                      "reweigh", "hit", "set_check", "budget", "confirm_margin", "guard", "refused", "without_pvp", "side")
 
 
 def known_lists(cls, spec):
@@ -816,11 +922,23 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     if all(pair):
         v1, v2 = with_trinkets(v1, pair), with_trinkets(v2, pair)
     vs = {"v1": v1, "v2": v2}
-    relic, relic_race = G.race_relics(greedy.relic_candidates(cur_items), vs, race, a.iterations)   # a re-filled relic slot (2026-10-22)
+    # a relic outside the list's pool counts as no relic (2026-11-23, the tanks' Easy smoke run: the standard set's Libram of Fervor
+    # stayed in the paladin's Easy Pre-BiS set, relic_candidates offering nothing while the old relic is in the database, and list_guard
+    # stopped the make): the slot's relics in the presets and the pool race, and with none the slot is left empty
+    rc_items = cur_items
+    x16 = cur_items[16] if len(cur_items) > 16 and cur_items[16] else {}
+    if x16.get("id") in db and not pool(db[x16["id"]]):
+        rc_items = [dict(y) if y else {} for y in cur_items]
+        rc_items[16] = {}
+    relic, relic_race = G.race_relics(greedy.relic_candidates(rc_items), vs, race, a.iterations)   # a re-filled relic slot (2026-10-22)
+    for v in vs.values():
+        y = v[16] if len(v) > 16 and v[16] else {}
+        if y.get("id") in db and db[y["id"]].get("rangedWeaponType") in (6, 7, 8, 9) and not pool(db[y["id"]]):
+            v[16] = {}
     v1, v2 = vs["v1"], vs["v2"]
     emap = None
     if refine:
-        v1, steps["set_pieces"] = race_set_pieces(cls, v1, w, greedy, race, a.iterations, db, pool)
+        v1, steps["set_pieces"] = race_set_pieces(cls, v1, w, greedy, race, a.iterations, db, pool, repo=repo, confirm=a.confirm)
     # REWEIGH (2026-11-23): the weights measured at the picked set, and the picks from them and from the mean of both weights (set pieces
     # and items with effects kept; weapons, ranged and trinkets as raced: the picks re-fill the other slots only)
     rew = {}
@@ -963,11 +1081,27 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     elif known_tie:
         src += f" ({known_tie['known'][7:]} tied: {known_tie['seed2']} against {known_tie['picker_seed2']} on seed 2, inside {KNOWN_MARGIN:.1%})"
     items = sets[chosen]
+    # the confirm's margin (2026-11-23, the audit session's budget ruling): the chosen set against the best set that lost to it on seed 2;
+    # under CLOSE_CALL, with other items, and neither a ladder tie nor a known-positive tie, the make is a close call: made again at the
+    # default budgets in the second pass (make_lists.py lists them)
+    losers = [k for k in r2 if k != chosen and k in sets]
+    conf_margin = None
+    if losers and chosen in r2:
+        lk = max(losers, key=r2.get)
+        mg = r2[chosen] / r2[lk] - 1 if r2[lk] else 0.0
+        same = [x.get("id") for x in sets[chosen]] == [x.get("id") for x in sets[lk]]
+        conf_margin = {"over": lk, "margin": round(mg, 5), "same_items": same,
+                       "close_call": bool(mg < CLOSE_CALL and not same and not known_tie and not (is_lad(chosen) or is_lad(lk)))}
+    for x in known_rec:   # the known positive as it raced (its best variant), for make_lists' missed-set check (2026-11-23)
+        vs = [k for k in sets if k == f"known: {x['name']}" or k.startswith(f"known: {x['name']}+")]
+        if vs:
+            kb = max(vs, key=lambda k: (r2.get(k, -1.0), r1.get(k, -1.0)))
+            x.update(raced_as=kb, items=sets[kb], seed1=round(r1.get(kb, 0.0), 4), **({"seed2": round(r2[kb], 4)} if kb in r2 else {}))
     ilvl = lambda its: round(sum(db[x["id"]]["scalingOptions"]["0"].get("ilvl", 0) for x in its if x.get("id") in db) / max(1, sum(1 for x in its if x.get("id") in db)), 1)  # noqa: E731
     return {"evaluated_on": [f"{n}: {lab}" for n, _, _, _, lab in evals], "weights": {k: round(v, 4) for k, v in w.items() if abs(v) > 1e-6},
             "trinkets": [db[i]["name"] for i in pair if i in db], "trinket_screen": screen, **({"relic_race": relic_race} if relic_race else {}),
             "race_seed1": r1, "confirm_seed2": r2, "chosen": chosen, "chosen_source": src, "ladder_case": case,
-            **({"known_tie": known_tie} if known_tie else {}),
+            **({"known_tie": known_tie} if known_tie else {}), **({"confirm_margin": conf_margin} if conf_margin else {}),
             **({"ladder": ladder_case} if ladder_case else {}),
             "picker_best": {"name": pbest, "seed1": round(r1[pbest], 4), **({"seed2": round(r2[pbest], 4)} if pbest in r2 else {})} if pbest else None,
             "known_positives": known_rec or (no_known or "no known positive"),
@@ -1092,6 +1226,15 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
     bad = list_guard(r["items"], tier, db, zones, repo, nopvp=nopvp, side=side)
     if bad:
         raise SystemExit(f"FATAL {p.name}: the chosen set ({r.get('chosen')}) breaks its list's rule: " + "; ".join(bad))
+    # the hit report (2026-11-23, the user's hit ask, the audit session's item 1): the chosen set's hits from the simulator's own sheet
+    # against the caps, flagged past the last useful cap by more than 1% (stats_bench.py; the record says so when it is not built)
+    try:
+        import stats_bench as SB
+        r["hit"] = SB.hit_report(cls, spec, e, repo, talents, norm17(r["items"]), setting, bench_cfg=G.bench_cfg)
+    except SystemExit as ex:
+        r["hit"] = {"error": str(ex)[:300]}
+    r["set_check"] = set_check(r["items"], db, repo, (r.get("hit") or {}).get("sets") if "error" not in (r.get("hit") or {}) else None)
+    r["budget"] = os.environ.get("WOW_FOREVER_GEAR_BUDGET", "default")
     emap = r.pop("enchant_map", None)   # the tier's enchants are on every set that raced (2026-11-22): no template fill after them
     dropped = G.drop_missing_enchants(r["items"], repo)   # an enchant carried from a set the official database lacks (2026-10-22)
     if dropped:
@@ -1164,8 +1307,18 @@ def load_db(repo):
     return db, zones
 
 
+BUDGETS = {"default": dict(iterations=3000, confirm=12000, weight_iterations=3000, min_gain=0.0, max_pairs=28),
+           # the list tests' budgets (2026-11-23, test_lists_1123c-g, whose sets the audit session accepted): about a third of the time
+           "tests": dict(iterations=1000, confirm=3000, weight_iterations=1000, min_gain=0.0, max_pairs=12),
+           # the first pass of the all-class makes (the audit session's ruling, 2026-11-23): the tests' budgets with the confirm doubled
+           # (the one failure seen at the tests' budgets was a confirm at 3,000: 0.04% ahead, 0.02% behind at 6,000); close calls are
+           # made again at "default" in the second pass (make_lists.py lists them)
+           "first-pass": dict(iterations=1000, confirm=6000, weight_iterations=1000, min_gain=0.0, max_pairs=12)}
+
+
 def args_ns(**kw):
-    d = dict(iterations=3000, confirm=12000, weight_iterations=3000, min_gain=0.0, max_pairs=28)
+    """The set maker's budgets: BUDGETS["default"], or the set WOW_FOREVER_GEAR_BUDGET names (make_lists.py's runs, 2026-11-23)."""
+    d = dict(BUDGETS[os.environ.get("WOW_FOREVER_GEAR_BUDGET", "default")])
     d.update(kw)
     return argparse.Namespace(**d)
 

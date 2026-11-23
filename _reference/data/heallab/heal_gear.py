@@ -49,7 +49,7 @@ for _p in (str(DATA), str(HERE)):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
-TIERS = ("prebis", "bis")
+TIERS = ("dungeon", "prebis", "bis")   # (2026-11-23: Easy Pre-BiS too, made first)
 SETS = DATA / "raidsim" / "gear_sets" / "forever" / "tiers"
 RECORD = HERE / "heal-gear.json"
 SMOKE_DIR = HERE / "deep-smoke" / "heal-gear"
@@ -459,14 +459,29 @@ def run_spec(cls, spec, a, B, rec, out_dir):
                     + ("refreshed" if chosen is s2 else "first"))
             else:
                 log(f"  {tier}: the refreshed weights choose the same set")
+            # the ladder (2026-11-23, as the damage specs' make() and the tanks): the list below's set, when it passes this list's rule,
+            # races the chosen set on capacity and is kept when ahead (each list's pool holds the list below's items)
+            lower = TIERS[TIERS.index(tier) - 1] if TIERS.index(tier) else None
+            ladder = None
+            if lower in sets and not GT.list_guard(GT.norm17(sets[lower]["items"]), tier, gs[0], gs[1], repo()):
+                lc = lab.caps({"chosen": lab_gear(gear_stats(chosen)), "lower": lab_gear(sets[lower]["stats"])}, vseeds, B["verify_steps"])
+                ladder = {"lower": lower, "ratio": tail_mean(lc["lower"]) / tail_mean(lc["chosen"])}
+                if ladder["ratio"] > 1.0:
+                    chosen, notes = [dict(x) for x in sets[lower]["items"]], list(sets[lower]["notes"] or [])
+                    ladder["taken"] = True
+                log(f"  {tier}: the {lower} set races the chosen set: ratio {ladder['ratio']:.4f} -> " + ("the lower set" if ladder.get("taken") else "the chosen set"))
             names, ilvl, rows = describe(chosen)
             p = out_dir / f"{cls}-{spec_slug(cls, spec)}-{tier}.gear.json"
+            bad = GT.list_guard(GT.norm17(chosen), tier, gs[0], gs[1], repo())   # (2026-11-23) fatal before the file is written
+            if bad:
+                raise SystemExit(f"FATAL {p.name}: the healer's set breaks its list's rule: " + "; ".join(bad))
             p.parent.mkdir(parents=True, exist_ok=True)
-            p.write_text(json.dumps({"items": chosen}, indent=1) + "\n", encoding="utf-8")
+            p.write_text(json.dumps({"items": chosen, "list": GT.GL.LABEL.get(tier, tier), "rules": GT.GL.RULES}, indent=1) + "\n",
+                         encoding="utf-8")
             weights[tier] = {"gear": lab_gear(st1), "capacity": c1, "capacity_se": c1se, "weights": w1}
             ctx = GT.rules_ctx(gs[1], repo())   # (2026-11-23: the three lists; healer-lab weights are not the simulator's, so no alternatives)
             sets[tier] = {"gear": p.relative_to(ROOT).as_posix(), "items": chosen, "names": names, "ilvl": ilvl, "rows": rows,
-                          "stats": gear_stats(chosen), "notes": notes, "refresh_race": race, "pool_items": len(items),
+                          "stats": gear_stats(chosen), "notes": notes, "refresh_race": race, "ladder": ladder, "pool_items": len(items),
                           "list": GT.GL.LABEL.get(tier, tier), "rules": GT.GL.RULES,
                           **({"currency_cost": cc} if (cc := GT.GL.currency_cost(chosen, gs[0])) else {}),   # (Pix Xizzix's Reals)
                           "kinds": {str(i): [k for k, _ in GT.GL.item_kinds(gs[0][x["id"]], ctx)] for i, x in enumerate(chosen)
@@ -526,8 +541,10 @@ def render(cls, rec):
             cells.append(f"{fmt_w(crit)} ({ww['crit_gear']['hp_eq'] / 100:.2f})")
             o.append(f"| {lab} | " + " | ".join(cells) + f" | {x['capacity']:.3f} |")
         o += ["", "### Sets", "", "| Tier | Capacity | vs the lab's assumed gear | Healing | Intellect | Spirit | mp5 | Crit | Item level |", "|---|---|---|---|---|---|---|---|---|"]
-        for k, lab in (("default", "the lab's assumed gear"), ("prebis", "pre-BiS"), ("bis", "BiS (phase 1)")):
-            c = r["check"][k]
+        for k, lab in (("default", "the lab's assumed gear"), ("dungeon", "Easy Pre-BiS"), ("prebis", "pre-BiS"), ("bis", "BiS (phase 1)")):
+            c = r["check"].get(k)
+            if not c:
+                continue
             st = c["stats"]
             il = r["sets"][k]["ilvl"] if k in r["sets"] else "-"
             o.append(f"| {lab} | {c['capacity']:.3f} ± {c['capacity_se']:.3f} | x{c['vs_default']:.3f} ± {c['vs_default_se']:.3f} | {st['healing']:g} | "
@@ -535,8 +552,10 @@ def render(cls, rec):
         o += ["", f"Capacities on {r['budgets']['verify_seeds']} fresh seeds (common to the three rows); the lab's standard 60 seeds (the "
               "pages' convention): " + ", ".join(f"{k} {v['standard_seeds']:.3f}" for k, v in r["check"].items()) + ".", ""]
         for t in TIERS:
-            s = r["sets"][t]
-            o += [f"#### {'Pre-BiS' if t == 'prebis' else 'BiS (phase 1)'}: `{s['gear']}`", "", "| Slot | Item | Item level | Source | Enchant |", "|---|---|---|---|---|"]
+            s = r["sets"].get(t)
+            if not s:
+                continue
+            o += [f"#### {({'dungeon': 'Easy Pre-BiS', 'prebis': 'Pre-BiS'}).get(t, 'BiS (phase 1)')}: `{s['gear']}`", "", "| Slot | Item | Item level | Source | Enchant |", "|---|---|---|---|---|"]
             for row in s["rows"]:
                 tag = (" (effect not valued)" if row["effects"] else "") + (f" ({row['set']}: set bonus not valued)" if row["set"] else "")
                 o.append(f"| {row['slot']} | [{row['name']}](https://www.wowhead.com/forever/item={row['id']}){tag} | {row['ilvl']} | {row['source'] or '-'} | {row['enchant'] or '-'} |")
