@@ -468,6 +468,7 @@ def run_spec(cls, spec, a, B, rec, out_dir):
             sets[tier] = {"gear": p.relative_to(ROOT).as_posix(), "items": chosen, "names": names, "ilvl": ilvl, "rows": rows,
                           "stats": gear_stats(chosen), "notes": notes, "refresh_race": race, "pool_items": len(items),
                           "list": GT.GL.LABEL.get(tier, tier), "rules": GT.GL.RULES,
+                          **({"currency_cost": cc} if (cc := GT.GL.currency_cost(chosen, gs[0])) else {}),   # (Pix Xizzix's Reals)
                           "kinds": {str(i): [k for k, _ in GT.GL.item_kinds(gs[0][x["id"]], ctx)] for i, x in enumerate(chosen)
                                     if x and x.get("id") in gs[0]}}
             log(f"  {tier}: wrote {p.relative_to(ROOT).as_posix()} (item level {ilvl}): " + "; ".join(n for n in names if n))

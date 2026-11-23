@@ -159,7 +159,7 @@ def gear(rec, tier, alloc, label, entry, repo, db, zones, raid=False):
     g = GT.make(rec["class"], rec["spec"], tier, entry, R.talents_string(trees, alloc), label, repo, db, zones, GT.args_ns(), path=path)
     keep = ("entry", "gear", "date", "setting", "chosen", "ilvl", "trinkets", "names", "race_seed1", "confirm_seed2", "weights", "evaluated_on",
             "weapons", "set_pieces", "enchants",   # (2026-11-22: the set maker's three steps, gear_tiers.optimize_set's refine)
-            "list", "rules", "kinds", "marks", "faction_alternatives", "pvp_alternatives")   # (2026-11-23: the three lists, raidsim/gear_lists.py)
+            "list", "rules", "kinds", "marks", "faction_alternatives", "pvp_alternatives", "currency_cost")   # (2026-11-23: the three lists, raidsim/gear_lists.py)
     return {k: g[k] for k in keep if k in g}
 
 

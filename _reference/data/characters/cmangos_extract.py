@@ -14,7 +14,8 @@ Source: https://github.com/cmangos/classic-db, Full_DB/ClassicDB_1_12_1_z2815.sq
   quality, class, sell: every item a level's mobs drop, expected count per kill), quest_chain.csv (quest, prev, next_in_chain, givers),
   dungeon_quests.csv (quest, map, how: a creature to kill, an item that drops, or a giver in a leveling dungeon)
 - dungeon_loot.csv (2026-11-23, the gear lists' drop chances): source (creature or object), id, name, map (0: spawned nowhere), item,
-  item_name, chance, rank (a creature's creature_template Rank); see main() and loot_chances_cmangos
+  item_name, chance, rank (a creature's creature_template Rank), spawn (how the dump spawns it: pool, spawn point, outright, event
+  script, nowhere); see main() and loot_chances_cmangos
 Classic Era data: WoW: Forever changed some items and recipes; the planner takes item stats and sources from the simulator's Forever
 database and only skill levels, quest levels and reagents from here.
 """
@@ -24,9 +25,14 @@ import pathlib
 import re
 import sys
 
+# the db scripts that can summon a creature (command 10, SCRIPT_COMMAND_TEMP_SUMMON_CREATURE: datalong = the creature)
+SCRIPT_TABLES = ("dbscripts_on_event", "dbscripts_on_creature_death", "dbscripts_on_go_use", "dbscripts_on_go_template_use",
+                 "dbscripts_on_quest_start", "dbscripts_on_quest_end", "dbscripts_on_relay", "dbscripts_on_spell", "dbscripts_on_gossip",
+                 "dbscripts_on_creature_movement")
 WANT = {"npc_trainer", "npc_trainer_template", "quest_template", "item_template", "spell_template", "npc_vendor", "npc_vendor_template",
         "creature_loot_template", "reference_loot_template", "gameobject_loot_template", "instance_template", "creature_template", "creature",
-        "creature_questrelation", "gameobject_questrelation", "gameobject_template", "creature_involvedrelation", "gameobject"}
+        "creature_questrelation", "gameobject_questrelation", "gameobject_template", "creature_involvedrelation", "gameobject",
+        "pool_creature", "pool_creature_template", "pool_template", "creature_spawn_entry", *SCRIPT_TABLES}
 # the leveling dungeons' map ids (Classic)
 DUNGEON_MAPS = {389, 43, 36, 33, 48, 34, 90, 47, 189, 129, 70, 209, 349, 109, 230, 229, 429, 289, 329}
 LOOT_FLOOR = 0.001   # dungeon_loot.csv keeps every chance from 0.1%: below it the gear lists read "under 0.1%" for a source with rows
@@ -258,19 +264,50 @@ def main():
         x = items.get(it)
         return x if ch >= LOOT_FLOOR and x and int(x["Quality"]) >= 2 and x["class"] in ("2", "4") else None
 
+    # how the dump spawns a creature (2026-11-23, the delegator's test for rare spawns: "a creature in a pool with a chance or with
+    # alternatives is a rare spawn; one spawned outright is not"): "pool" (a spawn of it, or its entry, sits in a spawn pool that picks:
+    # a member chance between 0 and 100, or more members than the pool's max_limit; nested pools, pool_pool, are not followed), "spawn
+    # point" (one of several entries a spawn point rolls, creature_spawn_entry), "outright" (a creature row of its own in no such pool),
+    # "event script" (spawned nowhere, a db script summons it), "nowhere" (spawned nowhere, no db script: a C++ script or a spell)
+    members, limit = {}, {int(r["entry"]): int(r["max_limit"] or 0) for r in d["pool_template"]}
+    for t, key in (("pool_creature", "guid"), ("pool_creature_template", "id")):
+        for r in d[t]:
+            members.setdefault(int(r["pool_entry"]), []).append((t, int(r[key]), float(r["chance"] or 0)))
+    picking = {p for p, ms in members.items() if any(0 < ch < 100 for _, _, ch in ms) or 0 < limit.get(p, 0) < len(ms)}
+    pooled_guids = {k for p in picking for t, k, _ in members[p] if t == "pool_creature"}
+    pooled_entries = {k for p in picking for t, k, _ in members[p] if t == "pool_creature_template"}
+    points = {}
+    for r in d["creature_spawn_entry"]:
+        points.setdefault(int(r["guid"]), set()).add(int(r["entry"]))
+    alt_entries = {e for es in points.values() if len(es) > 1 for e in es}
+    own = {}
+    for r in d["creature"]:
+        own.setdefault(int(r["id"]), set()).add(int(r["guid"]))
+    scripted = {int(r["datalong"] or 0) for t in SCRIPT_TABLES for r in d[t] if r.get("command") == "10"}
+
+    def spawn_of(e):
+        if own.get(e, set()) & pooled_guids or e in pooled_entries:
+            return "pool"
+        if e in alt_entries:
+            return "spawn point"
+        if e in own:
+            return "outright"
+        return "event script" if e in scripted else "nowhere"
+
     lrows = []
     for r in d["creature_template"]:
         e, lid = int(r["Entry"]), int(r.get("LootId") or 0)
         if lid and (e in spawned or e not in anywhere):
-            lrows += [["creature", e, r["Name"], spawned.get(e, 0), it, x["name"], round(ch, 4), r["Rank"]]
+            lrows += [["creature", e, r["Name"], spawned.get(e, 0), it, x["name"], round(ch, 4), r["Rank"], spawn_of(e)]
                       for it, ch in loot_chances_cmangos(cl, rl, lid).items() for x in [gear(it, ch)] if x]
     for r in d["gameobject_template"]:
         g, lid, ms = int(r["entry"]), int(r.get("data1") or 0), gmaps.get(int(r["entry"]), set())
         if r.get("type") == "3" and lid and (ms & DUNGEON_MAPS or not ms):
-            lrows += [["object", g, r["name"], min(ms & DUNGEON_MAPS) if ms else 0, it, x["name"], round(ch, 4), ""]
+            lrows += [["object", g, r["name"], min(ms & DUNGEON_MAPS) if ms else 0, it, x["name"], round(ch, 4), "", ""]
                       for it, ch in loot_chances_cmangos(gl, rl, lid).items() for x in [gear(it, ch)] if x]
-    # rank: creature_template Rank (0 normal, 1 elite, 2 rare elite, 3 boss, 4 rare; the gear lists' rare-spawn rule reads it)
-    write(out / "dungeon_loot.csv", ["source", "id", "name", "map", "item", "item_name", "chance", "rank"], sorted(lrows))
+    # rank: creature_template Rank (0 normal, 1 elite, 2 rare elite, 3 boss, 4 rare); spawn: spawn_of above (the gear lists' rare-spawn
+    # rule reads both)
+    write(out / "dungeon_loot.csv", ["source", "id", "name", "map", "item", "item_name", "chance", "rank", "spawn"], sorted(lrows))
     # class training (2026-11-09, the planner's gold budget: "how much training costs"): every spell a class trainer teaches, its level
     # and price (copper), by class (TrainerType 0 = class trainer; npc_trainer rows by creature, npc_trainer_template rows by template)
     names = {int(r["Id"]): r.get("SpellName", "") for r in d["spell_template"]}

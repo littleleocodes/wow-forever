@@ -81,7 +81,8 @@ ITEM_KINDS = [
      "G13: the creature's own row, spawned or summoned, else the item's best row in the dungeon, a chest included)",
      "database drop (zone, creature); cmangos dungeon_loot.csv chance (drop_chance)"),
     ("dungeon_drop", TRUE2, "any other dungeon drop: trash, drops under 5% or of unknown chance (unknown_chances), a class quest's "
-     "summon (CLASS_SUMMONS), a rare spawn (a creature Classic ranks rare, ENCOUNTER_RARES aside)", "database drop"),
+     "summon (CLASS_SUMMONS), a rare spawn (a creature Classic ranks rare that the dump does not spawn outright or by an event script; "
+     "ENCOUNTER_RARES aside)", "database drop; cmangos dungeon_loot.csv rank and spawn"),
     ("world_drop", TRUE2, "a drop in the open world (one that binds when equipped sells on the auction house)", "database drop"),
     ("quest", ALL3, "a quest reward of the game now (Alterac Valley's included; Forever's own quests count)",
      "database quest; cmangos quests.csv zone"),
@@ -166,7 +167,7 @@ def context(G, Tm, zones, repo):
             loot_rows.add(i)
             loot_rows.add(r["name"])   # a name with rows (drop_chance's same-name fallback)
             by_name[(r["name"], it)] = max(ch, by_name.get((r["name"], it), 0.0))
-            rank[i] = rank[r["name"]] = r["rank"]
+            rank[i] = rank[r["name"]] = (r["rank"], r.get("spawn") or "")
         if m and ch > map_best.get((m, it), (0.0, None))[0]:
             map_best[(m, it)] = (ch, r["name"])
     loot_rows |= {("classic item", int(r["item"])) for r in csv.DictReader(open(cm / "item_names.csv", encoding="utf-8"))}
@@ -262,15 +263,26 @@ T05_SUMMONS = {16042: "Lord Valthalak", 16080: "Mor Grayhoof", 16097: "Isalien",
 T05_CHESTS = {"Sothos and Jarien's Heirlooms"}
 CLASS_SUMMONS = {14506: "Lord Hel'nurath (the warlock's Dreadsteed quest)", 14516: "Death Knight Darkreaver (the paladin's Charger quest)"}
 # Rare spawns (the delegator, 2026-11-23): a creature Classic ranks rare (creature_template Rank 2 rare elite, 4 rare) is no Easy source,
-# whatever its chance per kill: the chance per run is not known (Phase Blade, 50% from the Burning Felguard). Classic also ranks eight set
-# encounters rare elite, which every run meets or summons at will; they stay Easy sources (Claude's reading, put to the delegator):
+# whatever its chance per kill: the chance per run is not known (Phase Blade, 50% from the Burning Felguard), unless the dump shows it
+# is a set encounter (the delegator's test: "a creature in a pool with a chance or with alternatives is a rare spawn; one spawned
+# outright is not"; dungeon_loot.csv's spawn column): spawned outright (Edwin VanCleef, Lord Roccor, Pyromancer Loregrain, Warder
+# Stilgiss, Verek, Quartermaster Zigris, Razorfen Spearhide) or summoned by a db script (Urok Doomhowl, the Challenge's event). Timmy
+# the Cruel is summoned by a C++ script the dump does not hold; the delegator accepted him as an encounter (ENCOUNTER_RARES).
 RARE_RANKS = {"2", "4"}
+SET_SPAWNS = {"outright", "event script"}
+ENCOUNTER_RARES = {"Timmy the Cruel"}
 # A vendor whose currency dungeon bosses drop (the delegator's read of Wowhead Forever, 2026-11-23: Pix Xizzix sells 54 items, every one
 # for currency 3469, Tarnished Undermine Real, which 42 bosses of Blackrock Depths, Blackrock Spire, Scholomance, Stratholme and the
 # Temple of Atal'Hakkar drop; how many a boss drops is not shown): {vendor: (currency, where, how you get it)}, prices {item: Reals}
+# from his "Sells" list (the delegator's browser read the same day; 272400 and 272412 were not in it; the five flask recipes, 50 each,
+# are not gear)
 CURRENCY_VENDORS = {"Pix Xizzix": ("Tarnished Undermine Reals", "Pix Xizzix in Booty Bay", "dungeon bosses drop the Reals")}
-CURRENCY_PRICES = {272437: 125, 272408: 75, 17010: 15, 17011: 15, 17012: 10}   # Adaptive Combat Assistant, Cutthroat's Signet, Fiery Core,
-#                                                                                Lava Core, Core Leather
+CURRENCY_PRICES = {**{i: 100 for i in (272393, 272394, 272395, 272396, 272397, 272398, 272399, 272401, 272402, 272403, 272404, 272405,
+                                       272410)},   # the belts
+                   **{i: 75 for i in (272406, 272407, 272408, 272409, 272411, 272413, 272414, 272415)},   # the rings and the cloaks
+                   **{i: 50 for i in range(272427, 272437)},   # the idols, totems and librams
+                   **{i: 125 for i in (272437, 272438, 272439, 272440)},   # the trinkets
+                   228175: 15, 228176: 15, 17010: 15, 17011: 15, 17012: 10}   # two relics, Fiery Core, Lava Core, Core Leather
 
 
 def currency_text(iid, vendor):
@@ -279,8 +291,24 @@ def currency_text(iid, vendor):
     cur, where, how = CURRENCY_VENDORS[vendor]
     price = CURRENCY_PRICES.get(iid)
     return f"{price} {cur} from {where}; {how}" if price else f"{cur} (the price not read) from {where}; {how}"
-ENCOUNTER_RARES = {"Edwin VanCleef", "Lord Roccor", "Pyromancer Loregrain", "Warder Stilgiss", "Verek", "Quartermaster Zigris",
-                   "Urok Doomhowl", "Timmy the Cruel"}
+
+
+def currency_cost(items, db):
+    """What a set costs in each vendor currency (the delegator, 2026-11-23: "the page should say what the set costs in Reals"):
+    {currency: total} over the set's items a currency vendor sells, and the items whose price is not read."""
+    total, unpriced = {}, []
+    for x in items[:17]:
+        it = db.get((x or {}).get("id"))
+        for s in (it or {}).get("sources") or []:
+            vn = (s.get("soldBy") or {}).get("npcName")
+            if vn in CURRENCY_VENDORS:
+                cur = CURRENCY_VENDORS[vn][0]
+                if it["id"] in CURRENCY_PRICES:
+                    total[cur] = total.get(cur, 0) + CURRENCY_PRICES[it["id"]]
+                else:
+                    unpriced.append(it["name"])
+                break
+    return {"total": total, **({"unpriced": unpriced} if unpriced else {})} if total or unpriced else {}
 # Drop chances Classic's dump cannot give (Forever's own loot), read from Wowhead's Forever item pages ("Dropped by": count of outof) by
 # the delegator session on 2026-11-23 and decided Easy there (its G13 (c) decisions): {item: (creature, count, outof)}
 WOWHEAD_READ = "Wowhead Forever, read by the delegator session 2026-11-23"
@@ -319,7 +347,7 @@ def dungeon_kind(it, npc, z, d, ctx):
     counted as Easy; 463 of the 2,548 Easy items were in by that alone): Easy needs a named creature (the database's) and a known chance
     of DROP_MIN or more; the Tier 0.5 summons' loot is tier05, a class quest's summon is a plain dungeon drop, and an unknown chance is a
     plain dungeon drop (unknown_chances lists them; EASY_DECIDED gives Wowhead's chance for the ones decided); a creature Classic ranks
-    rare is no Easy source unless it is a set encounter (RARE_RANKS, ENCOUNTER_RARES)."""
+    rare is no Easy source unless the dump spawns it outright or by an event script (RARE_RANKS, SET_SPAWNS, ENCOUNTER_RARES)."""
     Tm, npcs = ctx["T"], ctx["npcs"]
     who = npcs.get(npc) or d.get("otherName") or "trash"
     if npc in T05_SUMMONS or d.get("otherName") in T05_CHESTS:
@@ -328,9 +356,9 @@ def dungeon_kind(it, npc, z, d, ctx):
         return "dungeon_drop", f"{z}, {CLASS_SUMMONS[npc]}"
     ch, src = drop_chance(it["id"], npc, z, ctx)
     say = ("chance unknown" if ch is None else "under 0.1%" if ch == 0 else f"{ch:.1%}" + (f" from {src}" if src else ""))
-    rare = npc and ctx["rank"].get(int(npc), ctx["rank"].get(who)) in RARE_RANKS and who not in ENCOUNTER_RARES
-    if rare:
-        return "dungeon_drop", f"{z}, {who}, {say}, a rare spawn (Classic's rank)"
+    rk, spawn = ctx["rank"].get(int(npc), ctx["rank"].get(who, ("", ""))) if npc else ("", "")
+    if rk in RARE_RANKS and spawn not in SET_SPAWNS and who not in ENCOUNTER_RARES:
+        return "dungeon_drop", f"{z}, {who}, {say}, a rare spawn (Classic's rank; the dump spawns it: {spawn})"
     easy = bool(npc) and (UBRS_EASY or who not in Tm.UBRS_BOSSES) and ch is not None and ch >= Tm.DROP_MIN
     return ("dungeon_drop_easy" if easy else "dungeon_drop"), f"{z}, {who}, {say}"
 

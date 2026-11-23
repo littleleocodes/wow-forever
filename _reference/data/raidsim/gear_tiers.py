@@ -825,14 +825,16 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
 
 
 def list_fields(cls, items, w, tier, db, zones, repo, pool):
-    """The record's list fields (2026-11-23): the list's name and rules, each item's kinds (why it is in the list) and the other
-    faction's alternatives (raidsim/gear_lists.py)."""
+    """The record's list fields (2026-11-23): the list's name and rules, each item's kinds (why it is in the list), the other
+    faction's alternatives, and what the set costs in a vendor currency (`currency_cost`: Pix Xizzix's Tarnished Undermine Reals;
+    raidsim/gear_lists.py)."""
     ctx = rules_ctx(zones, repo)
     _, _, greedy = G.class_picker(repo, cls, db, pool)
     kinds = {str(i): [k for k, _ in GL.item_kinds(db[x["id"]], ctx)] for i, x in enumerate(items[:17]) if x and x.get("id") in db}
+    cost = GL.currency_cost(items, db)
     return {"list": GL.LABEL.get(tier, tier), "rules": GL.RULES, "kinds": kinds, "marks": GL.marks(items, tier, db, ctx),
             "faction_alternatives": GL.alternatives(cls, items, w, tier, db, ctx, G, greedy.fits),
-            "pvp_alternatives": GL.pvp_alternatives(cls, items, w, tier, db, ctx, G, greedy.fits)}
+            "pvp_alternatives": GL.pvp_alternatives(cls, items, w, tier, db, ctx, G, greedy.fits), **({"currency_cost": cost} if cost else {})}
 
 
 def load_db(repo):

@@ -38,6 +38,12 @@ GLOBAL = [
         "session): where do they come from? No tooltip ties them to Hyjal Summit or The Barrow Deeps, so the gear lists count their crafts "
         "as plain crafts (raidsim/gear_lists.WATCH_MATS marks them); if either comes only from the raids or from content that opens with "
         "them, those crafts are True BiS items from 2026-12-09, like the 97 made with Malleable Essence of Nature.",
+        "Molten Core's materials for Tarnished Undermine Reals (2026-11-23, the delegator's G14): Pix Xizzix in Booty Bay sells Fiery "
+        "Core and Lava Core (15 Reals) and Core Leather (10); can they be traded, and can the Thorium Brotherhood's recipes (Lokhtos "
+        "Darkbargainer: Fiery Chain Girdle, Molten Helm, Corehound Boots, Flarecore Gloves, Dark Iron Bracers, Lava Belt and 19 more, "
+        "Friendly to Exalted) be made now? The simulator's database dates those crafts phase 2 and the Alliance auction house showed no "
+        "core and none of the 31 crafts from 2026-11-05 to 2026-11-22, so the gear lists keep them out (raidsim/gear_lists.MC_MATS); if "
+        "the answer is yes, the three cores leave MC_MATS and the crafts join the True lists by the craft rule.",
         "Which honor ranks can a player hold now, and does the rank gear need them? (2026-11-23: the user is not sure.) The gear lists "
         "keep the rank gear the simulator's database dates phase 1 in both True lists, marked PvP, with a non-PvP alternative beside each "
         "piece (raidsim/gear_lists.pvp_alternatives); no rank cap is assumed until this is known.",
