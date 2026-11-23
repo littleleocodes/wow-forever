@@ -164,6 +164,7 @@ def context(G, Tm, zones, repo):
             by_name[(r["name"], it)] = max(ch, by_name.get((r["name"], it), 0.0))
         if m and ch > map_best.get((m, it), (0.0, None))[0]:
             map_best[(m, it)] = (ch, r["name"])
+    loot_rows |= {("classic item", int(r["item"])) for r in csv.DictReader(open(cm / "item_names.csv", encoding="utf-8"))}
     quests = {int(r["quest"]): (int(r["zone_or_sort"] or 0), int(r["quest_level"] or 0), int(r["required_races"] or 0))
               for r in csv.DictReader(open(cm / "quests.csv", encoding="utf-8"))}
     reagents = {}
@@ -272,7 +273,8 @@ def drop_chance(iid, npc, z, ctx):
     best = ctx["map_best"].get((ZONE_MAP.get(z), iid))
     if best:
         return best
-    if npc and (int(npc) in ctx["loot_rows"] or who in ctx["loot_rows"]):
+    # "under 0.1%" only for an item Classic has: Forever's own items on a Classic creature (Idol of the Dream on Hazzas) are unknown
+    if npc and (int(npc) in ctx["loot_rows"] or who in ctx["loot_rows"]) and ("classic item", iid) in ctx["loot_rows"]:
         return 0.0, None
     return None, None
 
