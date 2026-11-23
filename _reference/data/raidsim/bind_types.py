@@ -45,11 +45,14 @@ def extract_cmangos(dump):
     spec.loader.exec_module(cx)
     cx.WANT = {"item_template", "quest_template"}
     d = cx.load(pathlib.Path(dump))
-    rows = sorted((int(r["entry"]), int(r.get("bonding") or 0), int(r.get("AllowableRace") or -1)) for r in d["item_template"])
+    # (2026-11-23) RequiredReputationFaction / Rank too: the client's MinReputation is empty on items that ask a standing (Don Julio's
+    # Band asks Exalted with Stormpike Guard or Frostwolf Clan; the audit session from Wowhead's Forever tooltip)
+    rows = sorted((int(r["entry"]), int(r.get("bonding") or 0), int(r.get("AllowableRace") or -1), int(r.get("RequiredReputationFaction") or 0),
+                   int(r.get("RequiredReputationRank") or 0)) for r in d["item_template"])
     out = CMANGOS / "item_bonding.csv"
     with open(out, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["item", "bonding", "allowable_race"])
+        w.writerow(["item", "bonding", "allowable_race", "rep_faction", "rep_rank"])
         w.writerows(rows)
     print(f"{out.relative_to(ROOT)}: {len(rows)} items")
     # a quest's reputation requirement (2026-11-23: Alterac Valley's insignia quests ask Honored to Exalted; Easy Pre-BiS stops at
@@ -133,7 +136,8 @@ def load():
     if _CACHE:
         return _CACHE
     for row in csv.DictReader(open(CMANGOS / "item_bonding.csv", encoding="utf-8")):
-        _CACHE[int(row["item"])] = {"classic": int(row["bonding"]), "classic_races": int(row["allowable_race"])}
+        _CACHE[int(row["item"])] = {"classic": int(row["bonding"]), "classic_races": int(row["allowable_race"]),
+                                    "classic_rep_faction": int(row.get("rep_faction") or 0), "classic_rep_rank": int(row.get("rep_rank") or 0)}
     for row in csv.DictReader(open(CLIENT / "ItemSparse-bind.csv", encoding="utf-8")):
         e = _CACHE.setdefault(int(row["ID"]), {})
         e.update(client=int(row["Bonding"]), races=int(row["AllowableRace_0"]), opposite=int(row["OppositeFactionItemID"] or 0),

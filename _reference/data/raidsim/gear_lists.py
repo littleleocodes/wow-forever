@@ -63,6 +63,8 @@ UBRS_EASY = True   # A: Upper Blackrock Spire counts for Easy Pre-BiS: its bosse
 BG_OPEN = {"Alterac Valley": True, "Warsong Gulch": None, "Arathi Basin": None}   # B: True open (Easy to Honored, like Alterac Valley),
 # None as the database dates them (the True lists), False closed (no list)
 
+STANDING_FROM = ("the standing, in this order: the client's MinReputation when set (empty on the Alterac Valley rewards that ask "
+                 "Honored to Exalted), Classic's item_template RequiredReputationRank, the database's rep source")
 # (kind, lists, what it is, where the fact comes from): items
 ITEM_KINDS = [
     ("dungeon_drop_easy", ALL3, "a named creature's drop in a 5-player dungeon at 5% or more (Upper Blackrock Spire's bosses too while "
@@ -78,13 +80,13 @@ ITEM_KINDS = [
     ("tier05", TRUE2, "Tier 0.5 (the level-58 chain: 10-player Upper Blackrock Spire, the vendors' gold)", "item set name (gear_tiers.T05_SETS)"),
     ("craft", TRUE2, "a craft whose recipe and materials the game has now (from a trainer, a vendor, a drop or a reputation)",
      "database crafted; client SpellReagents 71037 (Classic's craft_spells.csv where the client has no row)"),
-    ("rep_to_honored", ALL3, "a reputation reward at Friendly or Honored", "database rep (standing), client MinReputation"),
-    ("rep_above_honored", TRUE2, "a reputation reward at Revered or Exalted", "database rep, client MinReputation"),
-    ("battleground_easy", ALL3, "a battleground quartermaster's or reputation's reward up to Honored, for a battleground the user "
-     "confirmed open (Alterac Valley; question B for the others), labelled PvP", "database soldBy / rep; client MinReputation"),
-    ("battleground", TRUE2, "any other battleground reward: above Honored, a standing the client does not give, or a battleground the "
+    ("rep_to_honored", ALL3, "a reputation reward at Friendly or Honored", STANDING_FROM),
+    ("rep_above_honored", TRUE2, "a reputation reward at Revered or Exalted, or one whose standing no source gives", STANDING_FROM),
+    ("battleground_easy", ALL3, "a battleground quartermaster's or reputation's reward that a source puts at Honored or below, for a "
+     "battleground the user confirmed open (Alterac Valley; question B for the others), labelled PvP", "database soldBy / rep; " + STANDING_FROM),
+    ("battleground", TRUE2, "any other battleground reward: above Honored, a standing no source gives, or a battleground the "
      "database dates and the user has not confirmed (Warsong Gulch, Arathi Basin until question B), labelled PvP",
-     "database soldBy / rep"),
+     "database soldBy / rep; " + STANDING_FROM),
     ("bg_closed", NONE, "a battleground the user says is closed (question B)", "BG_OPEN"),
     ("pvp", TRUE2, "honor rank gear the database dates phase 1, labelled PvP", "database pvp, honor vendors"),
     ("vendor", TRUE2, "a vendor's stock for gold or a currency (Booty Bay's Tarnished Undermine Reals)", "database soldBy"),
@@ -180,6 +182,28 @@ def professions(repo):
     return {int(n): name for name, n in re.findall(r"([A-Za-z]+) = ([0-9]+);", m.group(1) if m else "")}
 
 
+RANKS = {0: "Hated", 1: "Hostile", 2: "Unfriendly", 3: "Neutral", 4: "Friendly", 5: "Honored", 6: "Revered", 7: "Exalted"}
+# Reagents to watch (the audit session, 2026-11-23): not tied to the raids by any tooltip, but Hyjal by name; an item made with one that
+# a True Pre-BiS set takes is named to the audit session before the push (the launch checklist asks where they come from)
+WATCH_MATS = {248822: "Death Lotus", 260823: "Dimensional Transporter - Mt. Hyjal"}
+
+
+def standing(it, b):
+    """(faction, rank on the client's scale, source) of the reputation an item asks, in the audit session's order of trust (2026-11-23:
+    Don Julio's Band asks Exalted, and the client's MinReputation is empty on it): the client's MinFactionID / MinReputation when set;
+    Classic's item_template RequiredReputationFaction / Rank; the database's rep source (its RepLevel is one above the client's scale);
+    else (None, None, None): unknown, which never puts an item in Easy."""
+    if b.get("min_faction"):
+        return b["min_faction"], b.get("min_rep", 0), "client"
+    if b.get("classic_rep_faction"):
+        return b["classic_rep_faction"], b.get("classic_rep_rank", 0), "Classic"
+    reps = [s["rep"] for s in it.get("sources") or [] if s.get("rep") and s["rep"].get("repFactionId")]
+    if reps:
+        r = max(reps, key=lambda x: int(x.get("repLevel") or 0))
+        return r["repFactionId"], int(r.get("repLevel") or 0) - 1, "database"
+    return None, None, None
+
+
 def bg_kind(bg, to_honored):
     """A battleground reward's kind by the user's answer to question B (BG_OPEN) and the standing it asks."""
     st = BG_OPEN.get(bg)
@@ -267,31 +291,33 @@ def item_kinds(it, ctx):
             else:
                 out.append(("craft", prof))
         elif "rep" in s:
-            r = s["rep"]
-            fid, lvl = r.get("repFactionId"), int(r.get("repLevel") or 0)
+            fid = s["rep"].get("repFactionId")
+            f, rank, src = standing(it, b)   # the client's or Classic's requirement before the database's (the audit's order)
             if fid in G.LATER_FACTIONS:
                 out.append(("later", "reputation " + str(fid)))
             elif fid in BG_FACTIONS:
-                out.append((bg_kind(BG_FACTIONS[fid], lvl <= Tm.REP_MAX), BG_FACTIONS[fid]))
+                out.append((bg_kind(BG_FACTIONS[fid], rank is not None and rank <= CLIENT_HONORED),
+                            f"{BG_FACTIONS[fid]}, {RANKS.get(rank, 'standing unknown')} ({src})"))
             else:
-                out.append(("rep_to_honored" if lvl <= Tm.REP_MAX else "rep_above_honored", f"reputation {fid}, standing {lvl}"))
+                out.append(("rep_to_honored" if rank is not None and rank <= CLIENT_HONORED else "rep_above_honored",
+                            f"reputation {fid}, {RANKS.get(rank, 'standing unknown')} ({src})"))
         elif "soldBy" in s:
             v = s["soldBy"]
             vn = v.get("npcName")
+            f, rank, src = standing(it, b)
             if vn in EVENT_VENDORS:
                 out.append(("event", EVENT_VENDORS[vn]))
-            elif vn in BG_VENDORS:   # a quartermaster's item: the client's reputation requirement gives the standing; none known: above
+            elif vn in BG_VENDORS:   # a quartermaster's item: Easy only when a source gives a standing up to Honored
                 bg = BG_VENDORS[vn]
-                known = b.get("client") is not None   # the client's row: no reputation asked, or the standing it asks
-                to_honored = known and (b.get("min_faction") not in BG_FACTIONS or b.get("min_rep", 0) <= CLIENT_HONORED)
-                out.append((bg_kind(bg, to_honored), f"{bg}, {vn}" + ("" if known else ", standing unknown")))
+                out.append((bg_kind(bg, rank is not None and rank <= CLIENT_HONORED),
+                            f"{bg}, {vn}, " + (f"{RANKS.get(rank, rank)} ({src})" if rank is not None else "standing unknown")))
             elif has_pvp or vn in HONOR_VENDORS:
                 out.append(("pvp", vn))
-            elif b.get("min_faction") in BG_FACTIONS:
-                out.append((bg_kind(BG_FACTIONS[b["min_faction"]], b.get("min_rep", 0) <= CLIENT_HONORED), BG_FACTIONS[b["min_faction"]]))
-            elif b.get("min_faction"):
-                out.append(("rep_to_honored" if b.get("min_rep", 0) <= CLIENT_HONORED else "rep_above_honored",
-                            f"reputation {b['min_faction']} (client), vendor {vn}"))
+            elif f in BG_FACTIONS and rank is not None:
+                out.append((bg_kind(BG_FACTIONS[f], rank <= CLIENT_HONORED), f"{BG_FACTIONS[f]}, {RANKS.get(rank, rank)} ({src})"))
+            elif f and rank is not None:   # a reputation vendor's item: its standing from the client, Classic or the database
+                out.append(("rep_to_honored" if rank <= CLIENT_HONORED else "rep_above_honored",
+                            f"reputation {f}, {RANKS.get(rank, rank)} ({src}), vendor {vn}"))
             elif it.get("setName") in Tm.T05_SETS:
                 out.append(("tier05", vn))
             else:
@@ -429,6 +455,7 @@ def alternatives(cls, items, w, lst, db, ctx, G, fits):
 
 
 PVP_KINDS = {"pvp", "battleground", "battleground_easy"}
+NEW_RAID_PAGE_NOTE = "from 2026-12-09 (made with a material from Hyjal Summit or The Barrow Deeps)"   # the audit session's wording
 
 
 def admitting(it, lst, ctx):
@@ -456,6 +483,12 @@ def marks(items, lst, db, ctx):
         srcs = it.get("sources") or []
         if srcs and all("crafted" in s for s in srcs) and (ctx["bind"].get(it["id"]) or {}).get("bind") == 1:
             m["profession"] = ctx["professions"].get(int(srcs[0]["crafted"].get("profession") or 0), "the profession")
+        by_spell, by_item = ctx["client_reagents"]
+        watch = sorted({WATCH_MATS[r] for sp in by_item.get(it["id"], []) for r in by_spell.get(sp, set()) if r in WATCH_MATS})
+        if watch:
+            m["watch"] = watch   # name it to the audit session before the push when a True Pre-BiS set takes it
+        if any(k == "new_raid" and d.startswith("craft") for k, d in item_kinds(it, ctx)):
+            m["raid_craft"] = NEW_RAID_PAGE_NOTE
         if m:
             out[str(slot)] = m
     return out
