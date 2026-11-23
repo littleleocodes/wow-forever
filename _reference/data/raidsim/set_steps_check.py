@@ -31,13 +31,16 @@ def main():
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=None))
     steps = GT.sim_set_steps(repo)
-    names = {str(k): {"name": v["name"], "steps": v["steps"]} for k, v in sorted(steps.items())}
+    names = {str(k): {"name": v["name"], "steps": v["steps"], "path": "generated" if v.get("generated") else "hand"} for k, v in sorted(steps.items())}
     n_sets, n_steps = len(names), sum(len(v["steps"]) for v in names.values())
+    by_path = {p: {"sets": sum(1 for v in names.values() if v["path"] == p), "steps": sum(len(v["steps"]) for v in names.values() if v["path"] == p)}
+               for p in ("hand", "generated")}
     commit = R.git_commit(repo)
-    print(f"set steps on {repo} ({commit}): {n_sets} sets, {n_steps} steps")
+    print(f"set steps on {repo} ({commit}): {n_sets} sets, {n_steps} steps; hand-written {by_path['hand']['sets']} / {by_path['hand']['steps']}, "
+          f"generated {by_path['generated']['sets']} / {by_path['generated']['steps']}")
     if a.write:
         BASELINE.write_text(json.dumps({"commit": commit, "date": datetime.date.today().isoformat(), "sets": n_sets, "steps": n_steps,
-                                        "by_id": names}, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+                                        "by_path": by_path, "by_id": names}, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         print(f"wrote {BASELINE.name}")
         return 0
     if not BASELINE.exists():
@@ -52,6 +55,11 @@ def main():
         if xs:
             print(f"  {label}: " + "; ".join(xs))
     bad = n_sets < b["sets"] - TOL_SETS or n_steps < b["steps"] - TOL_STEPS
+    for p, v in (b.get("by_path") or {}).items():   # (2026-11-23, the audit session) each parser path apart: a drop in either fails
+        now = by_path.get(p) or {"sets": 0, "steps": 0}
+        if now["sets"] < v["sets"] - TOL_SETS or now["steps"] < v["steps"] - TOL_STEPS:
+            print(f"FAIL: the {p} path reads {now['sets']} sets / {now['steps']} steps against the baseline's {v['sets']} / {v['steps']}")
+            bad = True
     print("FAIL: the parser reads fewer sets or steps than the baseline allows" if bad else "ok")
     return 1 if bad else 0
 

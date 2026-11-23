@@ -54,6 +54,11 @@ NEW = """			res := core.ComputeStats(&proto.ComputeStatsRequest{Raid: raid, Enco
 						ps[proto.PseudoStat(i).String()] = v
 					}
 					out["pseudo_stats"] = ps
+					st := map[string]float64{}
+					for i, v := range pl.FinalStats.Stats {
+						st[proto.Stat(i).String()] = v
+					}
+					out["stats"] = st
 					out["sets"] = pl.Sets
 				}
 			}"""
@@ -127,7 +132,7 @@ def final_stats(entry, repo, builds, setting="raid", bench_cfg=None):
     for line in r.stdout.splitlines():
         if line.startswith("{"):
             x = json.loads(line)
-            out[x["label"]] = {"pseudo_stats": x.get("pseudo_stats") or {}, "sets": x.get("sets") or []}
+            out[x["label"]] = {"pseudo_stats": x.get("pseudo_stats") or {}, "stats": x.get("stats") or {}, "sets": x.get("sets") or []}
     return out
 
 

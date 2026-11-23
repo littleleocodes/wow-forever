@@ -1,0 +1,1000 @@
+{
+ "class": "warlock",
+ "spec": "Affliction",
+ "build": "affliction-wrack-raid",
+ "entry": "affliction-wrack-raid",
+ "base": "_reference/data/raidsim/gear_sets/forever/tiers/warlock-affliction-prebis.gear.json",
+ "fights": 1000,
+ "seed": 1,
+ "setting": "raid",
+ "candidates": 167,
+ "items": 123,
+ "rows": [
+  {
+   "id": 20534,
+   "name": "Abyss Shard",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9946
+  },
+  {
+   "id": 15108,
+   "name": "Orb of Dar'Orahil",
+   "group": "weapon",
+   "slot": 15,
+   "kind": "use",
+   "score": 0.9941
+  },
+  {
+   "id": 22268,
+   "name": "Draconic Infused Emblem",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "proc",
+   "score": 0.9929
+  },
+  {
+   "id": 274425,
+   "name": "White Obsidian Wand",
+   "group": "ranged/relic",
+   "slot": 16,
+   "kind": "proc",
+   "score": 0.9927
+  },
+  {
+   "id": 249469,
+   "name": "Frozen Heart of the Mountain",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9907
+  },
+  {
+   "id": 11302,
+   "name": "Uther's Strength",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "proc",
+   "score": 0.9891
+  },
+  {
+   "id": 13213,
+   "name": "Smolderweb's Eye",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9889
+  },
+  {
+   "id": 6898,
+   "name": "Orb of Soran'ruk",
+   "group": "weapon",
+   "slot": 15,
+   "kind": "use",
+   "score": 0.9888
+  },
+  {
+   "id": 11819,
+   "name": "Second Wind",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9886
+  },
+  {
+   "id": 11625,
+   "name": "Enthralled Sphere",
+   "group": "weapon",
+   "slot": 15,
+   "kind": "use",
+   "score": 0.9876
+  },
+  {
+   "id": 18483,
+   "name": "Mana Channeling Wand",
+   "group": "ranged/relic",
+   "slot": 16,
+   "kind": "proc",
+   "score": 0.9874
+  },
+  {
+   "id": 5243,
+   "name": "Firebelcher",
+   "group": "ranged/relic",
+   "slot": 16,
+   "kind": "proc",
+   "score": 0.9873
+  },
+  {
+   "id": 272439,
+   "name": "Serenity Field",
+   "group": "trinket",
+   "slot": 12,
+   "kind": "use",
+   "score": 0.9847
+  },
+  {
+   "id": 11832,
+   "name": "Burst of Knowledge",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9842
+  },
+  {
+   "id": 274760,
+   "name": "Everlook Delivery Bot",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9842
+  },
+  {
+   "id": 274641,
+   "name": "Theka's Last Breath",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.984
+  },
+  {
+   "id": 744,
+   "name": "Thunderbrew's Boot Flask",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9838
+  },
+  {
+   "id": 1713,
+   "name": "Ankh of Life",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9838
+  },
+  {
+   "id": 273643,
+   "name": "Worgenbane Talisman",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9838
+  },
+  {
+   "id": 1490,
+   "name": "Guardian Talisman",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 2802,
+   "name": "Blazing Emblem",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 3456,
+   "name": "Dog Whistle",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 4130,
+   "name": "Smotts' Compass",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 5079,
+   "name": "Cold Basilisk Eye",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 10418,
+   "name": "Glimmering Mithril Insignia",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 11810,
+   "name": "Force of Will",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "proc",
+   "score": 0.9837
+  },
+  {
+   "id": 11811,
+   "name": "Smoking Heart of the Mountain",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 11815,
+   "name": "Hand of Justice",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "proc",
+   "score": 0.9837
+  },
+  {
+   "id": 13966,
+   "name": "Mark of Tyranny",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 14557,
+   "name": "The Lion Horn of Stormwind",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "proc",
+   "score": 0.9837
+  },
+  {
+   "id": 18370,
+   "name": "Vigilance Charm",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 18537,
+   "name": "Counterattack Lodestone",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 18634,
+   "name": "Gyrofreeze Ice Reflector",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 18638,
+   "name": "Hyper-Radiant Flame Reflector",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 18639,
+   "name": "Ultra-Flash Shadow Reflector",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 20071,
+   "name": "Talisman of Arathor",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 20072,
+   "name": "Defiler's Talisman",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 21115,
+   "name": "Defiler's Talisman",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 21116,
+   "name": "Defiler's Talisman",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 21117,
+   "name": "Talisman of Arathor",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 21118,
+   "name": "Talisman of Arathor",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 21119,
+   "name": "Talisman of Arathor",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 21120,
+   "name": "Defiler's Talisman",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 22321,
+   "name": "Heart of Wyrmthalak",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "proc",
+   "score": 0.9837
+  },
+  {
+   "id": 249473,
+   "name": "Dormant Heart of the Mountain",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "proc",
+   "score": 0.9837
+  },
+  {
+   "id": 274152,
+   "name": "Roogug's Severed Head",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 274759,
+   "name": "Everlook Pathcarver",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9837
+  },
+  {
+   "id": 273137,
+   "name": "Skum's Bucket",
+   "group": "weapon",
+   "slot": 15,
+   "kind": "use",
+   "score": 0.9834
+  },
+  {
+   "id": 4696,
+   "name": "Lapidis Tankard of Tidesippe",
+   "group": "weapon",
+   "slot": 15,
+   "kind": "use",
+   "score": 0.9827
+  },
+  {
+   "id": 249470,
+   "name": "Molten Heart of the Mountain",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9825
+  },
+  {
+   "id": 4984,
+   "name": "Skull of Impending Doom",
+   "group": "weapon",
+   "slot": 15,
+   "kind": "use",
+   "score": 0.9818
+  },
+  {
+   "id": 15107,
+   "name": "Orb of Noh'Orahil",
+   "group": "weapon",
+   "slot": 15,
+   "kind": "use",
+   "score": 0.9815
+  },
+  {
+   "id": 16768,
+   "name": "Furbolg Medicine Pouch",
+   "group": "weapon",
+   "slot": 15,
+   "kind": "use",
+   "score": 0.9807
+  },
+  {
+   "id": 1315,
+   "name": "Lei of Lilies",
+   "group": "neck",
+   "slot": 1,
+   "kind": "use",
+   "score": 0.9801
+  },
+  {
+   "id": 18340,
+   "name": "Eidolon Talisman",
+   "group": "neck",
+   "slot": 1,
+   "kind": "use",
+   "score": 0.98
+  },
+  {
+   "id": 9397,
+   "name": "Energy Cloak",
+   "group": "back",
+   "slot": 3,
+   "kind": "use",
+   "score": 0.9794
+  },
+  {
+   "id": 10518,
+   "name": "Parachute Cloak",
+   "group": "back",
+   "slot": 3,
+   "kind": "use",
+   "score": 0.9794
+  },
+  {
+   "id": 14134,
+   "name": "Cloak of Fire",
+   "group": "back",
+   "slot": 3,
+   "kind": "use",
+   "score": 0.9794
+  },
+  {
+   "id": 942,
+   "name": "Freezing Band",
+   "group": "ring",
+   "slot": 11,
+   "kind": "proc",
+   "score": 0.9784
+  },
+  {
+   "id": 1447,
+   "name": "Ring of Saviors",
+   "group": "ring",
+   "slot": 11,
+   "kind": "use",
+   "score": 0.9784
+  },
+  {
+   "id": 272437,
+   "name": "Adaptive Combat Assistant",
+   "group": "trinket",
+   "slot": 12,
+   "kind": "use",
+   "score": 0.9782
+  },
+  {
+   "id": 272440,
+   "name": "Defender's Grip Stabilizer",
+   "group": "trinket",
+   "slot": 12,
+   "kind": "use",
+   "score": 0.9782
+  },
+  {
+   "id": 18371,
+   "name": "Mindtap Talisman",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9775
+  },
+  {
+   "id": 22332,
+   "name": "Blade of Necromancy",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9742
+  },
+  {
+   "id": 17780,
+   "name": "Blade of Eternal Darkness",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9681
+  },
+  {
+   "id": 273827,
+   "name": "Debt Collector",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9399
+  },
+  {
+   "id": 2163,
+   "name": "Shadowblade",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9138
+  },
+  {
+   "id": 2912,
+   "name": "Claw of the Shadowmancer",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9097
+  },
+  {
+   "id": 754,
+   "name": "Shortsword of Vengeance",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 809,
+   "name": "Bloodrazor",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 869,
+   "name": "Dazzling Longsword",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 1265,
+   "name": "Scorpion Sting",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 1482,
+   "name": "Shadowfang",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 1727,
+   "name": "Sword of Decay",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 2164,
+   "name": "Gut Ripper",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 5756,
+   "name": "Sliverblade",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 6220,
+   "name": "Meteor Shard",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 6622,
+   "name": "Sword of Zeal",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 6660,
+   "name": "Julie's Dagger",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 6681,
+   "name": "Thornspike",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 6831,
+   "name": "Black Menace",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 6904,
+   "name": "Bite of Serra'kis",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 7961,
+   "name": "Phantom Blade",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 8006,
+   "name": "The Ziggler",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 8190,
+   "name": "Hanzo Sword",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 8223,
+   "name": "Blade of the Basilisk",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 8225,
+   "name": "Tainted Pierce",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 9379,
+   "name": "Sang'thraze the Deflector",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 9446,
+   "name": "Electrocutioner Leg",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 9453,
+   "name": "Toxic Revenger",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 10625,
+   "name": "Stealthblade",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "use",
+   "score": 0.9093
+  },
+  {
+   "id": 10750,
+   "name": "Lifeforce Dirk",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 10761,
+   "name": "Coldrage Dagger",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 10797,
+   "name": "Firebreather",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 10803,
+   "name": "Blade of the Wretched",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 10847,
+   "name": "Dragon's Call",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 11086,
+   "name": "Jang'thraze the Protector",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 11121,
+   "name": "Darkwater Talwar",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 11635,
+   "name": "Hookfang Shanker",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 11817,
+   "name": "Lord General's Sword",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 11902,
+   "name": "Linken's Sword of Mastery",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 12582,
+   "name": "Keris of Zul'Serak",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 12590,
+   "name": "Felstriker",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 12777,
+   "name": "Blazing Rapier",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 12791,
+   "name": "Barman Shanker",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 12797,
+   "name": "Frostguard",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 12974,
+   "name": "The Black Knight",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 13032,
+   "name": "Sword of Corruption",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 13035,
+   "name": "Serpent Slicer",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 13218,
+   "name": "Fang of the Crystal Spider",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 13246,
+   "name": "Argent Avenger",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 13361,
+   "name": "Skullforge Reaver",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 13984,
+   "name": "Darrowspike",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 14145,
+   "name": "Cursed Felblade",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 15814,
+   "name": "Hameya's Slayer",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 17705,
+   "name": "Thrash Blade",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 17752,
+   "name": "Satyr's Lash",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 19099,
+   "name": "Glacial Blade",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 19100,
+   "name": "Electrified Dagger",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 19324,
+   "name": "The Lobotomizer",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 273003,
+   "name": "Searing Dagger",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 274952,
+   "name": "Jom-jom's Gabbar",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  },
+  {
+   "id": 284386,
+   "name": "Whipfang's Skinsearer",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9093
+  }
+ ],
+ "date": "2026-11-23",
+ "commit": "57df2a7a5"
+}

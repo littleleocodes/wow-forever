@@ -1,0 +1,3103 @@
+{
+ "date": "2026-11-23",
+ "commit": "57df2a7a5",
+ "client": "1.60.1.71037",
+ "lists": {
+  "dungeon": {
+   "sets": [
+    {
+     "set": "Battlegear of Valor",
+     "id": 189,
+     "pieces_in_pool": 6,
+     "classes": [
+      "paladin",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302721,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat, has a $h% chance to remove a Disarm effect from yourself. Can only occur once every $proccooldown sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 21347,
+       "kind": "effect",
+       "what": "effect 6 aura 161",
+       "text": "Restores 15 health per 5 sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Beaststalker Armor",
+     "id": 186,
+     "pieces_in_pool": 6,
+     "classes": [
+      "hunter",
+      "paladin",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302712,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat, has a $h% chance to remove a Root effect from yourself. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Chain of the Scarlet Crusade",
+     "id": 163,
+     "pieces_in_pool": 1,
+     "classes": [
+      "hunter",
+      "paladin",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 6,
+       "spell": 1293670,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "Taking damage while at or below 20% health grants you a shield, absorbing $1293733s2 damage for $1293733d. This effect can only trigger once every ${$proccooldown/60} min."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Dreadmist Raiment",
+     "id": 183,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 27780,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat has a $h% chance of causing the attacker to flee in terror for $21330d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Embrace of the Viper",
+     "id": 162,
+     "pieces_in_pool": 4,
+     "classes": [
+      "druid",
+      "hunter",
+      "paladin",
+      "rogue",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1291796,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "Taking damage while at or below 25% health causes you to restore $1291797o1 health and mana over $1291797d. This effect can only trigger once every ${$proccooldown/60} min."
+      },
+      {
+       "pieces": 5,
+       "spell": 1291807,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "Grants your melee attacks a chance to inflict Dream Venom, stunning the target for $1291806d."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Ironweave Battlesuit",
+     "id": 520,
+     "pieces_in_pool": 2,
+     "classes": [
+      "mage",
+      "priest",
+      "warlock"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 27733,
+       "kind": "effect",
+       "what": "effect 6 aura 117",
+       "text": "Reduces the hit chance of Silence and Interrupt effects against you by 10%."
+      },
+      {
+       "pieces": 6,
+       "spell": 1302374,
+       "kind": "effect",
+       "what": "effect 6 aura 255",
+       "text": "The Ironweave hardens under duress, reducing damage taken while Stunned by 15%."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Lightforge Armor",
+     "id": 188,
+     "pieces_in_pool": 7,
+     "classes": [
+      "paladin",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302716,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck by a harmful spell, has a $h% chance of Silencing the caster for $1302715d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Magister's Regalia",
+     "id": 181,
+     "pieces_in_pool": 5,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 18679,
+       "kind": "plain",
+       "what": "armor or resistance",
+       "text": "+8 All Resistances."
+      },
+      {
+       "pieces": 4,
+       "spell": 27867,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat has a $h% chance of freezing the attacker in place for $27868d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 1,
+     "effect": 1
+    },
+    {
+     "set": "Shadowcraft Armor",
+     "id": 184,
+     "pieces_in_pool": 7,
+     "classes": [
+      "druid",
+      "hunter",
+      "paladin",
+      "rogue",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302698,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat, has a $h% chance to remove a Snare effect from yourself. Can only occur once every $proccooldown sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 21347,
+       "kind": "effect",
+       "what": "effect 6 aura 161",
+       "text": "Restores 15 health per 5 sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "The Elements",
+     "id": 187,
+     "pieces_in_pool": 6,
+     "classes": [
+      "hunter",
+      "paladin",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302718,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in melee combat, has a $h% chance of Disarming the attacker for $1302717d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "The Gladiator",
+     "id": 1,
+     "pieces_in_pool": 5,
+     "classes": [
+      "hunter",
+      "paladin",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 1301126,
+       "kind": "effect",
+       "what": "effect 6 aura 117",
+       "text": "Reduces the hit chance of Fear effects against you by 8%."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "The Postmaster",
+     "id": 81,
+     "pieces_in_pool": 4,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 1302376,
+       "kind": "effect",
+       "what": "effect 6 aura 31",
+       "text": "Increases run speed by 8%."
+      },
+      {
+       "pieces": 4,
+       "spell": 1302380,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "Falling below 25% health grants Return to Sender, reflecting the next spell cast on you within $1302378d. Can only occur once every ${$proccooldown/60} min."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Vestments of the Devout",
+     "id": 182,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 27778,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat has a $h% chance of shielding the wearer in a protective shield which will absorb $27779s1 damage. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    }
+   ],
+   "count": 13,
+   "reachable": 11,
+   "plain_steps": 1,
+   "effect_steps": 15
+  },
+  "prebis": {
+   "sets": [
+    {
+     "set": "Battlegear of Heroism",
+     "id": 1778,
+     "pieces_in_pool": 16,
+     "classes": [
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 21347,
+       "kind": "effect",
+       "what": "effect 6 aura 161",
+       "text": "Restores 15 health per 5 sec."
+      },
+      {
+       "pieces": 5,
+       "spell": 1302721,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat, has a $h% chance to remove a Disarm effect from yourself. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Battlegear of Valor",
+     "id": 189,
+     "pieces_in_pool": 8,
+     "classes": [
+      "paladin",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302721,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat, has a $h% chance to remove a Disarm effect from yourself. Can only occur once every $proccooldown sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 21347,
+       "kind": "effect",
+       "what": "effect 6 aura 161",
+       "text": "Restores 15 health per 5 sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Beastmaster Armor",
+     "id": 1669,
+     "pieces_in_pool": 8,
+     "classes": [
+      "hunter"
+     ],
+     "bonuses": [
+      {
+       "pieces": 5,
+       "spell": 1302712,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat, has a $h% chance to remove a Root effect from yourself. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Beaststalker Armor",
+     "id": 186,
+     "pieces_in_pool": 8,
+     "classes": [
+      "hunter",
+      "paladin",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302712,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat, has a $h% chance to remove a Root effect from yourself. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Blessed Plate",
+     "id": 1968,
+     "pieces_in_pool": 8,
+     "classes": [
+      "paladin",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302375,
+       "kind": "effect",
+       "what": "effect 35 aura 161",
+       "text": "All party members within $a1 yds are blessed, restoring 20 health every 5 sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Blessing of Kalimdor",
+     "id": 2132,
+     "pieces_in_pool": 3,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 1318244,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases movement speed by 5% in The Barrens and Stonetalon Mountains."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Chain of the Scarlet Crusade",
+     "id": 163,
+     "pieces_in_pool": 6,
+     "classes": [
+      "hunter",
+      "paladin",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 6,
+       "spell": 1293670,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "Taking damage while at or below 20% health grants you a shield, absorbing $1293733s2 damage for $1293733d. This effect can only trigger once every ${$proccooldown/60} min."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Champion's Investiture",
+     "id": 2072,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 467550,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases healing done by up to 44 and damage done by up to 15 for all magical spells and effects."
+      },
+      {
+       "pieces": 4,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Champion's Raiment",
+     "id": 549,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      },
+      {
+       "pieces": 4,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Champion's Refuge",
+     "id": 539,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Champion's Sanctuary",
+     "id": 382,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Champion's Threads",
+     "id": 345,
+     "pieces_in_pool": 6,
+     "classes": [
+      "warlock"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      },
+      {
+       "pieces": 4,
+       "spell": 23047,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Reduces the casting time of your Immolate spell by 0.2  sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Champion's Wildhide",
+     "id": 2080,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Darkmantle Armor",
+     "id": 1676,
+     "pieces_in_pool": 8,
+     "classes": [
+      "rogue"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 21347,
+       "kind": "effect",
+       "what": "effect 6 aura 161",
+       "text": "Restores 15 health per 5 sec."
+      },
+      {
+       "pieces": 5,
+       "spell": 1302698,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat, has a $h% chance to remove a Snare effect from yourself. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Deathmist Raiment",
+     "id": 1681,
+     "pieces_in_pool": 8,
+     "classes": [
+      "warlock"
+     ],
+     "bonuses": [
+      {
+       "pieces": 5,
+       "spell": 27780,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat has a $h% chance of causing the attacker to flee in terror for $21330d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Dreadmist Raiment",
+     "id": 183,
+     "pieces_in_pool": 8,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 27780,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat has a $h% chance of causing the attacker to flee in terror for $21330d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Embrace of the Viper",
+     "id": 162,
+     "pieces_in_pool": 5,
+     "classes": [
+      "druid",
+      "hunter",
+      "paladin",
+      "rogue",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1291796,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "Taking damage while at or below 25% health causes you to restore $1291797o1 health and mana over $1291797d. This effect can only trigger once every ${$proccooldown/60} min."
+      },
+      {
+       "pieces": 5,
+       "spell": 1291807,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "Grants your melee attacks a chance to inflict Dream Venom, stunning the target for $1291806d."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Field Marshal's Investiture",
+     "id": 2074,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      },
+      {
+       "pieces": 3,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 467550,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases healing done by up to 44 and damage done by up to 15 for all magical spells and effects."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Field Marshal's Raiment",
+     "id": 389,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      },
+      {
+       "pieces": 3,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Field Marshal's Refuge",
+     "id": 2077,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Field Marshal's Sanctuary",
+     "id": 397,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Field Marshal's Threads",
+     "id": 392,
+     "pieces_in_pool": 6,
+     "classes": [
+      "warlock"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      },
+      {
+       "pieces": 3,
+       "spell": 23047,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Reduces the casting time of your Immolate spell by 0.2  sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Field Marshal's Wildhide",
+     "id": 2078,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Imperial Plate",
+     "id": 321,
+     "pieces_in_pool": 8,
+     "classes": [
+      "paladin",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302372,
+       "kind": "effect",
+       "what": "effect 6 aura 305",
+       "text": "Imperial discipline prevents your movement speed from being reduced below 80%."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Ironweave Battlesuit",
+     "id": 520,
+     "pieces_in_pool": 8,
+     "classes": [
+      "mage",
+      "priest",
+      "warlock"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 27733,
+       "kind": "effect",
+       "what": "effect 6 aura 117",
+       "text": "Reduces the hit chance of Silence and Interrupt effects against you by 10%."
+      },
+      {
+       "pieces": 6,
+       "spell": 1302374,
+       "kind": "effect",
+       "what": "effect 6 aura 255",
+       "text": "The Ironweave hardens under duress, reducing damage taken while Stunned by 15%."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Lieutenant Commander's Investiture",
+     "id": 2075,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 467550,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases healing done by up to 44 and damage done by up to 15 for all magical spells and effects."
+      },
+      {
+       "pieces": 4,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Lieutenant Commander's Raiment",
+     "id": 344,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      },
+      {
+       "pieces": 4,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Lieutenant Commander's Refuge",
+     "id": 551,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Lieutenant Commander's Sanctuary",
+     "id": 381,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Lieutenant Commander's Threads",
+     "id": 346,
+     "pieces_in_pool": 6,
+     "classes": [
+      "warlock"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      },
+      {
+       "pieces": 4,
+       "spell": 23047,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Reduces the casting time of your Immolate spell by 0.2  sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Lieutenant Commander's Wildhide",
+     "id": 2081,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Lightforge Armor",
+     "id": 188,
+     "pieces_in_pool": 8,
+     "classes": [
+      "paladin",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302716,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck by a harmful spell, has a $h% chance of Silencing the caster for $1302715d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Magister's Regalia",
+     "id": 181,
+     "pieces_in_pool": 8,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 18679,
+       "kind": "plain",
+       "what": "armor or resistance",
+       "text": "+8 All Resistances."
+      },
+      {
+       "pieces": 4,
+       "spell": 27867,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat has a $h% chance of freezing the attacker in place for $27868d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 1,
+     "effect": 1
+    },
+    {
+     "set": "Rotmender's Raiment",
+     "id": 2133,
+     "pieces_in_pool": 5,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 5,
+       "spell": 1321587,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "Grants your healing spells a chance to heal for an additional $1321586s1 Health every $1321586t1 sec for $1321586d."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Shadowcraft Armor",
+     "id": 184,
+     "pieces_in_pool": 8,
+     "classes": [
+      "druid",
+      "hunter",
+      "paladin",
+      "rogue",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302698,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat, has a $h% chance to remove a Snare effect from yourself. Can only occur once every $proccooldown sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 21347,
+       "kind": "effect",
+       "what": "effect 6 aura 161",
+       "text": "Restores 15 health per 5 sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Sorcerer's Regalia",
+     "id": 1671,
+     "pieces_in_pool": 8,
+     "classes": [
+      "mage"
+     ],
+     "bonuses": [
+      {
+       "pieces": 5,
+       "spell": 27867,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat has a $h% chance of freezing the attacker in place for $27868d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Soulforge Armor",
+     "id": 1673,
+     "pieces_in_pool": 24,
+     "classes": [
+      "paladin"
+     ],
+     "bonuses": [
+      {
+       "pieces": 5,
+       "spell": 1302716,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck by a harmful spell, has a $h% chance of Silencing the caster for $1302715d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "The Elements",
+     "id": 187,
+     "pieces_in_pool": 8,
+     "classes": [
+      "hunter",
+      "paladin",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302718,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in melee combat, has a $h% chance of Disarming the attacker for $1302717d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "The Five Thunders",
+     "id": 1679,
+     "pieces_in_pool": 24,
+     "classes": [
+      "shaman"
+     ],
+     "bonuses": [
+      {
+       "pieces": 5,
+       "spell": 1302718,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in melee combat, has a $h% chance of Disarming the attacker for $1302717d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "The Gladiator",
+     "id": 1,
+     "pieces_in_pool": 5,
+     "classes": [
+      "hunter",
+      "paladin",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 1301126,
+       "kind": "effect",
+       "what": "effect 6 aura 117",
+       "text": "Reduces the hit chance of Fear effects against you by 8%."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "The Postmaster",
+     "id": 81,
+     "pieces_in_pool": 5,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 1302376,
+       "kind": "effect",
+       "what": "effect 6 aura 31",
+       "text": "Increases run speed by 8%."
+      },
+      {
+       "pieces": 4,
+       "spell": 1302380,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "Falling below 25% health grants Return to Sender, reflecting the next spell cast on you within $1302378d. Can only occur once every ${$proccooldown/60} min."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Twilight Trappings",
+     "id": 492,
+     "pieces_in_pool": 3,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 24746,
+       "kind": "effect",
+       "what": "effect 35 aura 4",
+       "text": "Bestows the wearer with the evil aura of a Twilight's Hammer cultist."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Vestments of the Devout",
+     "id": 182,
+     "pieces_in_pool": 8,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 27778,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat has a $h% chance of shielding the wearer in a protective shield which will absorb $27779s1 damage. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Vestments of the Virtuous",
+     "id": 1675,
+     "pieces_in_pool": 16,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 5,
+       "spell": 27778,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat has a $h% chance of shielding the wearer in a protective shield which will absorb $27779s1 damage. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Warlord's Investiture",
+     "id": 2073,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      },
+      {
+       "pieces": 3,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 467550,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases healing done by up to 44 and damage done by up to 15 for all magical spells and effects."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Warlord's Raiment",
+     "id": 390,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      },
+      {
+       "pieces": 3,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Warlord's Refuge",
+     "id": 2076,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Warlord's Sanctuary",
+     "id": 398,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Warlord's Threads",
+     "id": 391,
+     "pieces_in_pool": 6,
+     "classes": [
+      "warlock"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      },
+      {
+       "pieces": 3,
+       "spell": 23047,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Reduces the casting time of your Immolate spell by 0.2  sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Warlord's Wildhide",
+     "id": 2079,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    }
+   ],
+   "count": 50,
+   "reachable": 50,
+   "plain_steps": 25,
+   "effect_steps": 57
+  },
+  "bis": {
+   "sets": [
+    {
+     "set": "Battlegear of Heroism",
+     "id": 1778,
+     "pieces_in_pool": 16,
+     "classes": [
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 21347,
+       "kind": "effect",
+       "what": "effect 6 aura 161",
+       "text": "Restores 15 health per 5 sec."
+      },
+      {
+       "pieces": 5,
+       "spell": 1302721,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat, has a $h% chance to remove a Disarm effect from yourself. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Battlegear of Valor",
+     "id": 189,
+     "pieces_in_pool": 8,
+     "classes": [
+      "paladin",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302721,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat, has a $h% chance to remove a Disarm effect from yourself. Can only occur once every $proccooldown sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 21347,
+       "kind": "effect",
+       "what": "effect 6 aura 161",
+       "text": "Restores 15 health per 5 sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Beastmaster Armor",
+     "id": 1669,
+     "pieces_in_pool": 8,
+     "classes": [
+      "hunter"
+     ],
+     "bonuses": [
+      {
+       "pieces": 5,
+       "spell": 1302712,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat, has a $h% chance to remove a Root effect from yourself. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Beaststalker Armor",
+     "id": 186,
+     "pieces_in_pool": 8,
+     "classes": [
+      "hunter",
+      "paladin",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302712,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat, has a $h% chance to remove a Root effect from yourself. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Blessed Plate",
+     "id": 1968,
+     "pieces_in_pool": 8,
+     "classes": [
+      "paladin",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302375,
+       "kind": "effect",
+       "what": "effect 35 aura 161",
+       "text": "All party members within $a1 yds are blessed, restoring 20 health every 5 sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Blessing of Kalimdor",
+     "id": 2132,
+     "pieces_in_pool": 3,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 1318244,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases movement speed by 5% in The Barrens and Stonetalon Mountains."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Chain of the Scarlet Crusade",
+     "id": 163,
+     "pieces_in_pool": 6,
+     "classes": [
+      "hunter",
+      "paladin",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 6,
+       "spell": 1293670,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "Taking damage while at or below 20% health grants you a shield, absorbing $1293733s2 damage for $1293733d. This effect can only trigger once every ${$proccooldown/60} min."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Champion's Investiture",
+     "id": 2072,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 467550,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases healing done by up to 44 and damage done by up to 15 for all magical spells and effects."
+      },
+      {
+       "pieces": 4,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Champion's Raiment",
+     "id": 549,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      },
+      {
+       "pieces": 4,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Champion's Refuge",
+     "id": 539,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Champion's Sanctuary",
+     "id": 382,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Champion's Threads",
+     "id": 345,
+     "pieces_in_pool": 6,
+     "classes": [
+      "warlock"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      },
+      {
+       "pieces": 4,
+       "spell": 23047,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Reduces the casting time of your Immolate spell by 0.2  sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Champion's Wildhide",
+     "id": 2080,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Darkmantle Armor",
+     "id": 1676,
+     "pieces_in_pool": 8,
+     "classes": [
+      "rogue"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 21347,
+       "kind": "effect",
+       "what": "effect 6 aura 161",
+       "text": "Restores 15 health per 5 sec."
+      },
+      {
+       "pieces": 5,
+       "spell": 1302698,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat, has a $h% chance to remove a Snare effect from yourself. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Deathmist Raiment",
+     "id": 1681,
+     "pieces_in_pool": 8,
+     "classes": [
+      "warlock"
+     ],
+     "bonuses": [
+      {
+       "pieces": 5,
+       "spell": 27780,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat has a $h% chance of causing the attacker to flee in terror for $21330d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Demonheart Raiment",
+     "id": 2100,
+     "pieces_in_pool": 4,
+     "classes": [
+      "warlock"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 1301068,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Reduces the cast time of your Banish spell by ${$m1/-1000}.1 sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Dreadmist Raiment",
+     "id": 183,
+     "pieces_in_pool": 8,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 27780,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat has a $h% chance of causing the attacker to flee in terror for $21330d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Embrace of the Viper",
+     "id": 162,
+     "pieces_in_pool": 5,
+     "classes": [
+      "druid",
+      "hunter",
+      "paladin",
+      "rogue",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1291796,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "Taking damage while at or below 25% health causes you to restore $1291797o1 health and mana over $1291797d. This effect can only trigger once every ${$proccooldown/60} min."
+      },
+      {
+       "pieces": 5,
+       "spell": 1291807,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "Grants your melee attacks a chance to inflict Dream Venom, stunning the target for $1291806d."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Field Marshal's Investiture",
+     "id": 2074,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      },
+      {
+       "pieces": 3,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 467550,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases healing done by up to 44 and damage done by up to 15 for all magical spells and effects."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Field Marshal's Raiment",
+     "id": 389,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      },
+      {
+       "pieces": 3,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Field Marshal's Refuge",
+     "id": 2077,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Field Marshal's Sanctuary",
+     "id": 397,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Field Marshal's Threads",
+     "id": 392,
+     "pieces_in_pool": 6,
+     "classes": [
+      "warlock"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      },
+      {
+       "pieces": 3,
+       "spell": 23047,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Reduces the casting time of your Immolate spell by 0.2  sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Field Marshal's Wildhide",
+     "id": 2078,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Grovekeeper Eclipse",
+     "id": 2114,
+     "pieces_in_pool": 4,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 1300975,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Reduces the cooldown of your Nature's Grasp spell by ${$m1/-1000} sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Grovekeeper Ferocity",
+     "id": 2115,
+     "pieces_in_pool": 4,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 1300999,
+       "kind": "effect",
+       "what": "effect 6 aura 107, effect 6 aura 275",
+       "text": "Your Hibernate spell is now castable in Cat Form and its cast time is reduced by ${$m1/-1000}.1 sec while you are in Cat Form, but Hibernate gains a cooldown of ${$m2/1000} sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Grovekeeper Rage",
+     "id": 2113,
+     "pieces_in_pool": 4,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 1301005,
+       "kind": "effect",
+       "what": "effect 6 aura 107, effect 6 aura 275",
+       "text": "Your Rebirth spell is now castable in Bear Form and Dire Bear Form and its cast time is reduced by ${$m1/-1000}.1 sec while you are in Bear Form or Dire Bear Form."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Imperial Plate",
+     "id": 321,
+     "pieces_in_pool": 8,
+     "classes": [
+      "paladin",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302372,
+       "kind": "effect",
+       "what": "effect 6 aura 305",
+       "text": "Imperial discipline prevents your movement speed from being reduced below 80%."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Ironweave Battlesuit",
+     "id": 520,
+     "pieces_in_pool": 8,
+     "classes": [
+      "mage",
+      "priest",
+      "warlock"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 27733,
+       "kind": "effect",
+       "what": "effect 6 aura 117",
+       "text": "Reduces the hit chance of Silence and Interrupt effects against you by 10%."
+      },
+      {
+       "pieces": 6,
+       "spell": 1302374,
+       "kind": "effect",
+       "what": "effect 6 aura 255",
+       "text": "The Ironweave hardens under duress, reducing damage taken while Stunned by 15%."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Justice Armor",
+     "id": 2107,
+     "pieces_in_pool": 4,
+     "classes": [
+      "paladin"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 1301014,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Reduces the cooldown of your Blessing of Protection spell by ${$m1/-1000} sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Justice Battlegear",
+     "id": 2106,
+     "pieces_in_pool": 4,
+     "classes": [
+      "paladin"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 1301036,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Reduces the cooldown of your Hammer of Justice spell by ${$m1/-1000} sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Justice Battleplate",
+     "id": 2108,
+     "pieces_in_pool": 4,
+     "classes": [
+      "paladin"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 1301015,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Reduces the cast time on your Turn Undead spell by ${$m1/-1000}.1 sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Lieutenant Commander's Investiture",
+     "id": 2075,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 467550,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases healing done by up to 44 and damage done by up to 15 for all magical spells and effects."
+      },
+      {
+       "pieces": 4,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Lieutenant Commander's Raiment",
+     "id": 344,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      },
+      {
+       "pieces": 4,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Lieutenant Commander's Refuge",
+     "id": 551,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Lieutenant Commander's Sanctuary",
+     "id": 381,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Lieutenant Commander's Threads",
+     "id": 346,
+     "pieces_in_pool": 6,
+     "classes": [
+      "warlock"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      },
+      {
+       "pieces": 4,
+       "spell": 23047,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Reduces the casting time of your Immolate spell by 0.2  sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Lieutenant Commander's Wildhide",
+     "id": 2081,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Lightforge Armor",
+     "id": 188,
+     "pieces_in_pool": 8,
+     "classes": [
+      "paladin",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302716,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck by a harmful spell, has a $h% chance of Silencing the caster for $1302715d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Magister's Regalia",
+     "id": 181,
+     "pieces_in_pool": 8,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 18679,
+       "kind": "plain",
+       "what": "armor or resistance",
+       "text": "+8 All Resistances."
+      },
+      {
+       "pieces": 4,
+       "spell": 27867,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat has a $h% chance of freezing the attacker in place for $27868d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 1,
+     "effect": 1
+    },
+    {
+     "set": "Raiments of Conviction",
+     "id": 2105,
+     "pieces_in_pool": 4,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 1301045,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Shackle Undead spell by ${$m1/1000} sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Rotmender's Raiment",
+     "id": 2133,
+     "pieces_in_pool": 5,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 5,
+       "spell": 1321587,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "Grants your healing spells a chance to heal for an additional $1321586s1 Health every $1321586t1 sec for $1321586d."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Shadowcraft Armor",
+     "id": 184,
+     "pieces_in_pool": 8,
+     "classes": [
+      "druid",
+      "hunter",
+      "paladin",
+      "rogue",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302698,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat, has a $h% chance to remove a Snare effect from yourself. Can only occur once every $proccooldown sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 21347,
+       "kind": "effect",
+       "what": "effect 6 aura 161",
+       "text": "Restores 15 health per 5 sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "Sorcerer's Regalia",
+     "id": 1671,
+     "pieces_in_pool": 8,
+     "classes": [
+      "mage"
+     ],
+     "bonuses": [
+      {
+       "pieces": 5,
+       "spell": 27867,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat has a $h% chance of freezing the attacker in place for $27868d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Soulforge Armor",
+     "id": 1673,
+     "pieces_in_pool": 24,
+     "classes": [
+      "paladin"
+     ],
+     "bonuses": [
+      {
+       "pieces": 5,
+       "spell": 1302716,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck by a harmful spell, has a $h% chance of Silencing the caster for $1302715d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "The Elements",
+     "id": 187,
+     "pieces_in_pool": 8,
+     "classes": [
+      "hunter",
+      "paladin",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 1302718,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in melee combat, has a $h% chance of Disarming the attacker for $1302717d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "The Five Thunders",
+     "id": 1679,
+     "pieces_in_pool": 24,
+     "classes": [
+      "shaman"
+     ],
+     "bonuses": [
+      {
+       "pieces": 5,
+       "spell": 1302718,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in melee combat, has a $h% chance of Disarming the attacker for $1302717d. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "The Gladiator",
+     "id": 1,
+     "pieces_in_pool": 5,
+     "classes": [
+      "hunter",
+      "paladin",
+      "shaman",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 1301126,
+       "kind": "effect",
+       "what": "effect 6 aura 117",
+       "text": "Reduces the hit chance of Fear effects against you by 8%."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "The Postmaster",
+     "id": 81,
+     "pieces_in_pool": 5,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 1302376,
+       "kind": "effect",
+       "what": "effect 6 aura 31",
+       "text": "Increases run speed by 8%."
+      },
+      {
+       "pieces": 4,
+       "spell": 1302380,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "Falling below 25% health grants Return to Sender, reflecting the next spell cast on you within $1302378d. Can only occur once every ${$proccooldown/60} min."
+      }
+     ],
+     "plain": 0,
+     "effect": 2
+    },
+    {
+     "set": "The Spiritcaller",
+     "id": 2109,
+     "pieces_in_pool": 4,
+     "classes": [
+      "shaman"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 1301059,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the radius of effect of your beneficial Fire and Water totems by 10 yds."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "The Spiritcaller's Rage",
+     "id": 2110,
+     "pieces_in_pool": 4,
+     "classes": [
+      "shaman"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 1301051,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the radius of effect of your beneficial Air and Earth totems by 10 yds."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Twilight Trappings",
+     "id": 492,
+     "pieces_in_pool": 3,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 24746,
+       "kind": "effect",
+       "what": "effect 35 aura 4",
+       "text": "Bestows the wearer with the evil aura of a Twilight's Hammer cultist."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Vestments of Conviction",
+     "id": 2104,
+     "pieces_in_pool": 4,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 1301041,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Reduces the cooldown of your Fear Ward spell by ${$m1/-1000} sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Vestments of the Devout",
+     "id": 182,
+     "pieces_in_pool": 8,
+     "classes": [
+      "druid",
+      "hunter",
+      "mage",
+      "paladin",
+      "priest",
+      "rogue",
+      "shaman",
+      "warlock",
+      "warrior"
+     ],
+     "bonuses": [
+      {
+       "pieces": 4,
+       "spell": 27778,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat has a $h% chance of shielding the wearer in a protective shield which will absorb $27779s1 damage. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Vestments of the Virtuous",
+     "id": 1675,
+     "pieces_in_pool": 16,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 5,
+       "spell": 27778,
+       "kind": "effect",
+       "what": "effect 6 aura 42",
+       "text": "When struck in combat has a $h% chance of shielding the wearer in a protective shield which will absorb $27779s1 damage. Can only occur once every $proccooldown sec."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Warlord's Investiture",
+     "id": 2073,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      },
+      {
+       "pieces": 3,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 467550,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases healing done by up to 44 and damage done by up to 15 for all magical spells and effects."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Warlord's Raiment",
+     "id": 390,
+     "pieces_in_pool": 6,
+     "classes": [
+      "priest"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      },
+      {
+       "pieces": 3,
+       "spell": 23044,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Increases the duration of your Psychic Scream spell by $/1000;s1 sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Warlord's Refuge",
+     "id": 2076,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Warlord's Sanctuary",
+     "id": 398,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    },
+    {
+     "set": "Warlord's Threads",
+     "id": 391,
+     "pieces_in_pool": 6,
+     "classes": [
+      "warlock"
+     ],
+     "bonuses": [
+      {
+       "pieces": 2,
+       "spell": 14467,
+       "kind": "plain",
+       "what": "a stat",
+       "text": "+20 Stamina."
+      },
+      {
+       "pieces": 3,
+       "spell": 23047,
+       "kind": "effect",
+       "what": "effect 6 aura 107",
+       "text": "Reduces the casting time of your Immolate spell by 0.2  sec."
+      },
+      {
+       "pieces": 6,
+       "spell": 14047,
+       "kind": "plain",
+       "what": "healing, spell damage",
+       "text": "Increases damage and healing done by magical spells and effects by up to 23."
+      }
+     ],
+     "plain": 2,
+     "effect": 1
+    },
+    {
+     "set": "Warlord's Wildhide",
+     "id": 2079,
+     "pieces_in_pool": 6,
+     "classes": [
+      "druid"
+     ],
+     "bonuses": [
+      {
+       "pieces": 3,
+       "spell": 23218,
+       "kind": "effect",
+       "what": "effect 6 aura 129",
+       "text": "Increases your movement speed by 15% while in Bear, Cat, or Travel Form.  Only active outdoors."
+      }
+     ],
+     "plain": 0,
+     "effect": 1
+    }
+   ],
+   "count": 61,
+   "reachable": 61,
+   "plain_steps": 25,
+   "effect_steps": 68
+  }
+ }
+}

@@ -1,0 +1,824 @@
+{
+ "class": "warrior",
+ "spec": "Arms",
+ "build": "arms-battle-raid",
+ "entry": "arms-battle-raid",
+ "base": "_reference/data/raidsim/gear_sets/forever/tiers/warrior-arms-prebis.gear.json",
+ "fights": 1000,
+ "seed": 1,
+ "setting": "raid",
+ "candidates": 147,
+ "items": 101,
+ "rows": [
+  {
+   "id": 647,
+   "name": "Destiny",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 1.1231
+  },
+  {
+   "id": 12592,
+   "name": "Blackblade of Shahram",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 1.0967
+  },
+  {
+   "id": 12790,
+   "name": "Arcanite Champion",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 1.087
+  },
+  {
+   "id": 13348,
+   "name": "Demonshear",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 1.0797
+  },
+  {
+   "id": 13982,
+   "name": "Warblade of Caer Darrow",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 1.0727
+  },
+  {
+   "id": 13285,
+   "name": "The Blackrock Slicer",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 1.0623
+  },
+  {
+   "id": 1263,
+   "name": "Brain Hacker",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 1.0522
+  },
+  {
+   "id": 9418,
+   "name": "Stoneslayer",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 1.0431
+  },
+  {
+   "id": 13393,
+   "name": "Malown's Slam",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 1.0256
+  },
+  {
+   "id": 2915,
+   "name": "Taran Icebreaker",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 1.0163
+  },
+  {
+   "id": 1982,
+   "name": "Nightblade",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 1.0154
+  },
+  {
+   "id": 2291,
+   "name": "Kang the Decapitator",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 1.004
+  },
+  {
+   "id": 13983,
+   "name": "Gravestone War Axe",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 1.0026
+  },
+  {
+   "id": 22321,
+   "name": "Heart of Wyrmthalak",
+   "group": "trinket",
+   "slot": 12,
+   "kind": "proc",
+   "score": 1.0023
+  },
+  {
+   "id": 13213,
+   "name": "Smolderweb's Eye",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 1.0011
+  },
+  {
+   "id": 18324,
+   "name": "Waveslicer",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.998
+  },
+  {
+   "id": 249469,
+   "name": "Frozen Heart of the Mountain",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9979
+  },
+  {
+   "id": 18537,
+   "name": "Counterattack Lodestone",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9942
+  },
+  {
+   "id": 2824,
+   "name": "Hurricane",
+   "group": "ranged/relic",
+   "slot": 16,
+   "kind": "proc",
+   "score": 0.9933
+  },
+  {
+   "id": 2825,
+   "name": "Bow of Searing Arrows",
+   "group": "ranged/relic",
+   "slot": 16,
+   "kind": "proc",
+   "score": 0.9933
+  },
+  {
+   "id": 3078,
+   "name": "Naga Heartpiercer",
+   "group": "ranged/relic",
+   "slot": 16,
+   "kind": "proc",
+   "score": 0.9933
+  },
+  {
+   "id": 6469,
+   "name": "Venomstrike",
+   "group": "ranged/relic",
+   "slot": 16,
+   "kind": "proc",
+   "score": 0.9933
+  },
+  {
+   "id": 10567,
+   "name": "Quillshooter",
+   "group": "ranged/relic",
+   "slot": 16,
+   "kind": "proc",
+   "score": 0.9933
+  },
+  {
+   "id": 17753,
+   "name": "Verdant Keeper's Aim",
+   "group": "ranged/relic",
+   "slot": 16,
+   "kind": "proc",
+   "score": 0.9933
+  },
+  {
+   "id": 12969,
+   "name": "Seeping Willow",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9923
+  },
+  {
+   "id": 18370,
+   "name": "Vigilance Charm",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9917
+  },
+  {
+   "id": 10518,
+   "name": "Parachute Cloak",
+   "group": "back",
+   "slot": 3,
+   "kind": "use",
+   "score": 0.9905
+  },
+  {
+   "id": 272437,
+   "name": "Adaptive Combat Assistant",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9897
+  },
+  {
+   "id": 942,
+   "name": "Freezing Band",
+   "group": "ring",
+   "slot": 11,
+   "kind": "proc",
+   "score": 0.9894
+  },
+  {
+   "id": 1447,
+   "name": "Ring of Saviors",
+   "group": "ring",
+   "slot": 11,
+   "kind": "use",
+   "score": 0.9894
+  },
+  {
+   "id": 249470,
+   "name": "Molten Heart of the Mountain",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9887
+  },
+  {
+   "id": 274759,
+   "name": "Everlook Pathcarver",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9887
+  },
+  {
+   "id": 15418,
+   "name": "Shimmering Platinum Warhammer",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9885
+  },
+  {
+   "id": 9397,
+   "name": "Energy Cloak",
+   "group": "back",
+   "slot": 3,
+   "kind": "use",
+   "score": 0.9871
+  },
+  {
+   "id": 14134,
+   "name": "Cloak of Fire",
+   "group": "back",
+   "slot": 3,
+   "kind": "use",
+   "score": 0.9871
+  },
+  {
+   "id": 744,
+   "name": "Thunderbrew's Boot Flask",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 1490,
+   "name": "Guardian Talisman",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 1713,
+   "name": "Ankh of Life",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 2802,
+   "name": "Blazing Emblem",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 3456,
+   "name": "Dog Whistle",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 4130,
+   "name": "Smotts' Compass",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 5079,
+   "name": "Cold Basilisk Eye",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 10418,
+   "name": "Glimmering Mithril Insignia",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 11302,
+   "name": "Uther's Strength",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "proc",
+   "score": 0.9851
+  },
+  {
+   "id": 11810,
+   "name": "Force of Will",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "proc",
+   "score": 0.9851
+  },
+  {
+   "id": 11811,
+   "name": "Smoking Heart of the Mountain",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 11819,
+   "name": "Second Wind",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 11832,
+   "name": "Burst of Knowledge",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 13966,
+   "name": "Mark of Tyranny",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 14557,
+   "name": "The Lion Horn of Stormwind",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "proc",
+   "score": 0.9851
+  },
+  {
+   "id": 18371,
+   "name": "Mindtap Talisman",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 18634,
+   "name": "Gyrofreeze Ice Reflector",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 18638,
+   "name": "Hyper-Radiant Flame Reflector",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 18639,
+   "name": "Ultra-Flash Shadow Reflector",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 20071,
+   "name": "Talisman of Arathor",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 20072,
+   "name": "Defiler's Talisman",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 21115,
+   "name": "Defiler's Talisman",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 21116,
+   "name": "Defiler's Talisman",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 21117,
+   "name": "Talisman of Arathor",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 21118,
+   "name": "Talisman of Arathor",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 21119,
+   "name": "Talisman of Arathor",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 21120,
+   "name": "Defiler's Talisman",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 22268,
+   "name": "Draconic Infused Emblem",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "proc",
+   "score": 0.9851
+  },
+  {
+   "id": 249473,
+   "name": "Dormant Heart of the Mountain",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "proc",
+   "score": 0.9851
+  },
+  {
+   "id": 272438,
+   "name": "Weakness Analyzer",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 272439,
+   "name": "Serenity Field",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 272440,
+   "name": "Defender's Grip Stabilizer",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 273643,
+   "name": "Worgenbane Talisman",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 274152,
+   "name": "Roogug's Severed Head",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 274641,
+   "name": "Theka's Last Breath",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 274760,
+   "name": "Everlook Delivery Bot",
+   "group": "trinket",
+   "slot": 13,
+   "kind": "use",
+   "score": 0.9851
+  },
+  {
+   "id": 1315,
+   "name": "Lei of Lilies",
+   "group": "neck",
+   "slot": 1,
+   "kind": "use",
+   "score": 0.9833
+  },
+  {
+   "id": 18340,
+   "name": "Eidolon Talisman",
+   "group": "neck",
+   "slot": 1,
+   "kind": "use",
+   "score": 0.9833
+  },
+  {
+   "id": 13053,
+   "name": "Doombringer",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.977
+  },
+  {
+   "id": 870,
+   "name": "Fiery War Axe",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9703
+  },
+  {
+   "id": 17730,
+   "name": "Gatorbite Axe",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9684
+  },
+  {
+   "id": 11803,
+   "name": "Force of Magma",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9666
+  },
+  {
+   "id": 17766,
+   "name": "Princess Theradras' Scepter",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.963
+  },
+  {
+   "id": 12463,
+   "name": "Drakefang Butcher",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.96
+  },
+  {
+   "id": 2801,
+   "name": "Blade of Hanna",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9515
+  },
+  {
+   "id": 11816,
+   "name": "Angerforge's Battle Axe",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9486
+  },
+  {
+   "id": 10758,
+   "name": "X'caliboar",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9473
+  },
+  {
+   "id": 14541,
+   "name": "Barovian Family Sword",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9311
+  },
+  {
+   "id": 279480,
+   "name": "Bigger Rock on Bigger Stick",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9214
+  },
+  {
+   "id": 13051,
+   "name": "Witchfury",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.9146
+  },
+  {
+   "id": 6909,
+   "name": "Strike of the Hydra",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.8671
+  },
+  {
+   "id": 288900,
+   "name": "Earthshaker",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.8671
+  },
+  {
+   "id": 2299,
+   "name": "Burning War Axe",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.8542
+  },
+  {
+   "id": 2205,
+   "name": "Duskbringer",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.8417
+  },
+  {
+   "id": 7730,
+   "name": "Cobalt Crusher",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.8346
+  },
+  {
+   "id": 273817,
+   "name": "Graverobber's Shovel",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "use",
+   "score": 0.8345
+  },
+  {
+   "id": 13016,
+   "name": "Killmaim",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.8219
+  },
+  {
+   "id": 7753,
+   "name": "Bloodspiller",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.8216
+  },
+  {
+   "id": 1318,
+   "name": "Night Reaver",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.8128
+  },
+  {
+   "id": 9486,
+   "name": "Supercharger Battle Axe",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.8128
+  },
+  {
+   "id": 273841,
+   "name": "Twilight Maul",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.8097
+  },
+  {
+   "id": 12992,
+   "name": "Searing Blade",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.7889
+  },
+  {
+   "id": 3194,
+   "name": "Black Malice",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.7871
+  },
+  {
+   "id": 9449,
+   "name": "Manual Crowd Pummeler",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "use",
+   "score": 0.7822
+  },
+  {
+   "id": 279895,
+   "name": "Ironforge Greathammer",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.7734
+  },
+  {
+   "id": 7717,
+   "name": "Ravager",
+   "group": "weapon",
+   "slot": 14,
+   "kind": "proc",
+   "score": 0.7706
+  }
+ ],
+ "date": "2026-11-23",
+ "commit": "57df2a7a5"
+}

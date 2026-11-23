@@ -164,7 +164,7 @@ class DB:
             if not it.get("id"):
                 continue
             item = self.items.get(it["id"], {})
-            row = {"slot": MB.SLOTS[i] if i < len(MB.SLOTS) else "?", "id": it["id"], "name": item.get("name", f"item {it['id']}"),
+            row = {"slot": MB.SLOTS[i] if i < len(MB.SLOTS) else "?", "index": i, "id": it["id"], "name": item.get("name", f"item {it['id']}"),
                    "url": f"{WOWHEAD}/item={it['id']}", "ilvl": ((item.get("scalingOptions") or {}).get("0") or {}).get("ilvl"),
                    "quality": item.get("quality"), "source": self.source(item)}
             ench = self.enchant(it["enchant"], item) if it.get("enchant") else None
@@ -178,6 +178,76 @@ class DB:
                 row["raid"] = rr
             out.append(row)
         return out
+
+
+LIST_KEYS = ("dungeon", "prebis", "bis")
+
+
+def skipped_ids():
+    """The item ids whose effect the simulator leaves for manual implementation (effects_inventory.py's record), or an empty set."""
+    p = HERE / "effects-inventory.json"
+    if not p.exists():
+        return set()
+    d = json.load(open(p, encoding="utf-8"))
+    return {x["id"] for lst in d.get("lists", {}).values() for c in lst.get("classes", {}).values() for x in c.get("skipped_matters") or []}
+
+
+def support_lists(sets_rec, files, db, skipped):
+    """{list key: {...}} for a tank's or healer's sets made under the lists (2026-11-23): `sets_rec` {tier: the maker's record of the set}
+    (tank-gear.json's class entry, heal-gear.json's sets), `files` {tier: set file}; the rows with kinds and marks, the currency."""
+    out = {}
+    for t in LIST_KEYS:
+        g, f = sets_rec.get(t) or {}, files.get(t)
+        if not g.get("rules") or not f:
+            continue
+        rows = db.rows(f)
+        kinds, marks = g.get("kinds") or {}, g.get("marks") or {}
+        for row in rows:
+            row["kinds"] = kinds.get(str(row["index"])) or []
+            row["marks"] = marks.get(str(row["index"])) or {}
+            if row["id"] in skipped:
+                row["effect_not_simulated"] = True
+        out[t] = {"list": g.get("list"), "rules": g.get("rules"), "rows": rows, "ilvl": g.get("ilvl"), "currency_cost": g.get("currency_cost"),
+                  "faction_alternatives": g.get("faction_alternatives") or [], "pvp_alternatives": g.get("pvp_alternatives") or []}
+    return out
+
+
+def list_sets(r, db, skipped):
+    """{list key: {...}} the pages' three lists for a record made under the lists (2026-11-23, the audit session's page spec): each list's
+    set and its no-PvP and side sets as the record names them, every row with its kinds (where it comes from), marks (PvP, a profession)
+    and whether its effect is simulated; the set's hit against the caps, its set bonuses (simulated and not), its currency cost, the
+    faction alternatives, the budget, a close call, and the build's full-raid DPS in it on the missed-set check's fights."""
+    out = {}
+    gear = r.get("gear") or {}
+    for t in LIST_KEYS:
+        for v in ("", "-nopvp", "-alliance", "-horde", "-nopvp-alliance", "-nopvp-horde"):
+            g = gear.get(t + v)
+            if not isinstance(g, dict) or not g.get("rules") or not g.get("gear"):
+                continue
+            rows = db.rows(g["gear"])
+            kinds, marks = g.get("kinds") or {}, g.get("marks") or {}
+            alts = {(a.get("slot"), a.get("item")): a for a in g.get("faction_alternatives") or []}
+            for row in rows:
+                row["kinds"] = kinds.get(str(row["index"])) or []
+                row["marks"] = marks.get(str(row["index"])) or {}
+                if row["id"] in skipped:
+                    row["effect_not_simulated"] = True
+                a = alts.get((row["index"], row["id"]))
+                if a and a.get("alternative"):   # (2026-11-23) the other side's item for a one-faction item, named in the row
+                    row["faction_alt"] = {"faction": a.get("faction"), "for": a.get("for"), "name": a.get("alternative_name"),
+                                          "url": f"{WOWHEAD}/item={a['alternative']}", "twin": a.get("value") == a.get("alternative_value")}
+            hit = g.get("hit") or {}
+            sc = g.get("set_check") or {}
+            mc = (g.get("miss_check") or {}).get("dps") or {}
+            dps = [mc[s]["shown"] for s in mc if (mc[s] or {}).get("shown")]
+            out[t + v] = {"list": g.get("list"), "rules": g.get("rules"), "rows": rows, "ilvl": g.get("ilvl"),
+                          "hit": {k: hit.get(k) for k in ("used", "flags", "notes") if hit.get(k)},
+                          "sets_on": hit.get("sets") or sc.get("active") or [], "unsimulated": sc.get("unsimulated") or [],
+                          "currency_cost": g.get("currency_cost"), "faction_alternatives": g.get("faction_alternatives") or [],
+                          "pvp_alternatives": g.get("pvp_alternatives") or [], "budget": g.get("budget"),
+                          "close_call": bool((g.get("confirm_margin") or {}).get("close_call")), "chosen_source": g.get("chosen_source"),
+                          **({"dps": round(sum(dps) / len(dps), 1), "dps_seeds": len(dps)} if dps else {})}
+    return out
 
 
 def sim_links(r, repo, apiv):
@@ -256,7 +326,7 @@ def support_sets(classes, db, repo, apiv):
                     if row.get("link"):
                         sim[f"{t}-raid"] = f"{SITE}/{e['sim_spec']}/#{row['link']}"
         out[f"{cls}|{spec}|tank"] = {"class": cls, "spec": spec, "role": "tank", "gear": gear, "ilvl": ilvl, "sim": sim,
-                                     "build": r.get("build")}
+                                     "build": r.get("build"), "lists": support_lists(r, sets, db, skipped_ids())}
     hg = ROOT / "_reference/data/heallab/heal_gear.py"
     if hg.exists():
         HG = _load("heal_gear", hg)
@@ -269,7 +339,10 @@ def support_sets(classes, db, repo, apiv):
                     continue
                 gear = {t: db.rows(v["gear"]) for t, v in sets.items()}
                 ilvl = {t: v.get("ilvl") for t, v in sets.items()}
-                out[f"{cls}|{spec}|heal"] = {"class": cls, "spec": spec, "role": "heal", "gear": gear, "ilvl": ilvl, "sim": {}}
+                hrec = ((json.load(open(hg.parent / "heal-gear.json", encoding="utf-8")) if (hg.parent / "heal-gear.json").exists() else {})
+                        .get("specs") or {}).get(f"{cls}|{spec}") or {}
+                lists = support_lists(hrec.get("sets") or {}, {t: v["gear"] for t, v in sets.items()}, db, skipped_ids())
+                out[f"{cls}|{spec}|heal"] = {"class": cls, "spec": spec, "role": "heal", "gear": gear, "ilvl": ilvl, "sim": {}, "lists": lists}
     return out
 
 
@@ -284,13 +357,14 @@ def main():
     db = DB(repo)
     old = json.load(open(OUT, encoding="utf-8")) if OUT.exists() else {}
     specs = dict(old.get("specs", {})) if a.classes else {}
+    skipped = skipped_ids()
     for r in page_records(a.classes or None):
         sets = {t: (MB.page_gear(r, t) or {}) for t in ("dungeon", "prebis", "bis")}   # the pages' sets (full raid)
         gear = {t: db.rows(v["gear"]) for t, v in sets.items() if v.get("gear")}
         key = f"{r['class']}|{r['spec']}"
         specs[key] = {"class": r["class"], "spec": r["spec"], "gear": gear, "ilvl": {t: sets[t].get("ilvl") for t in gear},
                       "files": {t: sets[t]["gear"] for t in gear},   # (2026-11-22, G6: page_lint compares the table with these files)
-                      "sim": sim_links(r, repo, apiv)}
+                      "sim": sim_links(r, repo, apiv), "lists": list_sets(r, db, skipped)}
         if r.get("_prev"):
             specs[key]["prev"] = r.get("date")
         print(f"{key}: {sum(len(v) for v in gear.values())} items, {len(specs[key]['sim'])} simulator links", flush=True)

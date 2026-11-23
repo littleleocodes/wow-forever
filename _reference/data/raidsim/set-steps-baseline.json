@@ -1,16 +1,146 @@
 {
- "commit": "2e6e77d84",
+ "commit": "57df2a7a5",
  "date": "2026-11-23",
- "sets": 68,
- "steps": 171,
+ "sets": 189,
+ "steps": 478,
+ "by_path": {
+  "hand": {
+   "sets": 89,
+   "steps": 237
+  },
+  "generated": {
+   "sets": 100,
+   "steps": 241
+  }
+ },
  "by_id": {
+  "1": {
+   "name": "The Gladiator",
+   "steps": [
+    3,
+    4,
+    5
+   ],
+   "path": "hand"
+  },
+  "41": {
+   "name": "Dal'Rend's Arms",
+   "steps": [
+    2
+   ],
+   "path": "generated"
+  },
+  "65": {
+   "name": "Spider's Kiss",
+   "steps": [
+    2
+   ],
+   "path": "hand"
+  },
+  "81": {
+   "name": "The Postmaster",
+   "steps": [
+    3,
+    5
+   ],
+   "path": "generated"
+  },
   "121": {
    "name": "Cadaverous Garb",
    "steps": [
     3,
     4,
     5
-   ]
+   ],
+   "path": "hand"
+  },
+  "122": {
+   "name": "Necropile Raiment",
+   "steps": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "path": "hand"
+  },
+  "123": {
+   "name": "Bloodmail Regalia",
+   "steps": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "path": "hand"
+  },
+  "124": {
+   "name": "Deathbone Guardian",
+   "steps": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "path": "hand"
+  },
+  "141": {
+   "name": "Volcanic Armor",
+   "steps": [
+    3
+   ],
+   "path": "generated"
+  },
+  "142": {
+   "name": "Stormshroud Armor",
+   "steps": [
+    2,
+    3,
+    4
+   ],
+   "path": "generated"
+  },
+  "143": {
+   "name": "Devilsaur Armor",
+   "steps": [
+    2
+   ],
+   "path": "generated"
+  },
+  "144": {
+   "name": "Ironfeather Armor",
+   "steps": [
+    2
+   ],
+   "path": "generated"
+  },
+  "161": {
+   "name": "Defias Leather",
+   "steps": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "path": "hand"
+  },
+  "162": {
+   "name": "Embrace of the Viper",
+   "steps": [
+    2,
+    3
+   ],
+   "path": "generated"
+  },
+  "163": {
+   "name": "Chain of the Scarlet Crusade",
+   "steps": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "path": "hand"
   },
   "181": {
    "name": "Magister's Regalia",
@@ -18,7 +148,8 @@
     3,
     5,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "182": {
    "name": "Vestments of the Devout",
@@ -27,7 +158,8 @@
     3,
     5,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "183": {
    "name": "Dreadmist Raiment",
@@ -36,7 +168,8 @@
     3,
     5,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "184": {
    "name": "Shadowcraft Armor",
@@ -44,16 +177,19 @@
     2,
     3,
     5
-   ]
+   ],
+   "path": "hand"
   },
   "185": {
    "name": "Wildheart Raiment",
    "steps": [
     2,
     3,
+    4,
     5,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "186": {
    "name": "Beaststalker Armor",
@@ -62,30 +198,37 @@
     3,
     5,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "187": {
    "name": "The Elements",
    "steps": [
     2,
     3,
+    5,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "188": {
    "name": "Lightforge Armor",
    "steps": [
     2,
     3,
+    5,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "189": {
    "name": "Battlegear of Valor",
    "steps": [
     2,
-    3
-   ]
+    3,
+    5
+   ],
+   "path": "hand"
   },
   "201": {
    "name": "Arcanist Regalia",
@@ -93,7 +236,8 @@
     3,
     5,
     8
-   ]
+   ],
+   "path": "hand"
   },
   "209": {
    "name": "Battlegear of Might",
@@ -101,13 +245,15 @@
     3,
     5,
     8
-   ]
+   ],
+   "path": "hand"
   },
   "210": {
    "name": "Netherwind Regalia",
    "steps": [
     8
-   ]
+   ],
+   "path": "hand"
   },
   "218": {
    "name": "Battlegear of Wrath",
@@ -115,7 +261,42 @@
     3,
     5,
     8
-   ]
+   ],
+   "path": "hand"
+  },
+  "221": {
+   "name": "Garb of Thero-shan",
+   "steps": [
+    6
+   ],
+   "path": "generated"
+  },
+  "281": {
+   "name": "Champion's Battlegear",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "282": {
+   "name": "Lieutenant Commander's Battlegear",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "301": {
+   "name": "Champion's Earthshaker",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
   },
   "321": {
    "name": "Imperial Plate",
@@ -124,36 +305,310 @@
     3,
     5,
     6
-   ]
+   ],
+   "path": "hand"
+  },
+  "343": {
+   "name": "Lieutenant Commander's Regalia",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
   },
   "345": {
    "name": "Champion's Threads",
-   "steps": []
+   "steps": [],
+   "path": "hand"
   },
   "346": {
    "name": "Lieutenant Commander's Threads",
-   "steps": []
+   "steps": [],
+   "path": "hand"
+  },
+  "348": {
+   "name": "Lieutenant Commander's Vestments",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "361": {
+   "name": "Champion's Pursuit",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "362": {
+   "name": "Lieutenant Commander's Pursuit",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "381": {
+   "name": "Lieutenant Commander's Sanctuary",
+   "steps": [
+    2,
+    6
+   ],
+   "path": "generated"
+  },
+  "382": {
+   "name": "Champion's Sanctuary",
+   "steps": [
+    2,
+    6
+   ],
+   "path": "generated"
+  },
+  "383": {
+   "name": "Warlord's Battlegear",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "384": {
+   "name": "Field Marshal's Battlegear",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "386": {
+   "name": "Warlord's Earthshaker",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "387": {
+   "name": "Warlord's Regalia",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "388": {
+   "name": "Field Marshal's Regalia",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
   },
   "391": {
    "name": "Warlord's Threads",
-   "steps": []
+   "steps": [],
+   "path": "hand"
   },
   "392": {
    "name": "Field Marshal's Threads",
-   "steps": []
+   "steps": [],
+   "path": "hand"
+  },
+  "393": {
+   "name": "Warlord's Vestments",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "394": {
+   "name": "Field Marshal's Vestments",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "395": {
+   "name": "Field Marshal's Pursuit",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "396": {
+   "name": "Warlord's Pursuit",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "397": {
+   "name": "Field Marshal's Sanctuary",
+   "steps": [
+    2,
+    6
+   ],
+   "path": "generated"
+  },
+  "398": {
+   "name": "Warlord's Sanctuary",
+   "steps": [
+    2,
+    6
+   ],
+   "path": "generated"
+  },
+  "401": {
+   "name": "Lieutenant Commander's Aegis",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "402": {
+   "name": "Field Marshal's Aegis",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "443": {
+   "name": "Bloodsoul Embrace",
+   "steps": [
+    3
+   ],
+   "path": "generated"
   },
   "462": {
    "name": "Zanzil's Concentration",
    "steps": [
     2
-   ]
+   ],
+   "path": "hand"
+  },
+  "467": {
+   "name": "The Highlander's Resolution",
+   "steps": [
+    2,
+    3
+   ],
+   "path": "generated"
+  },
+  "468": {
+   "name": "The Highlander's Resolve",
+   "steps": [
+    2,
+    3
+   ],
+   "path": "generated"
+  },
+  "469": {
+   "name": "The Highlander's Determination",
+   "steps": [
+    2,
+    3
+   ],
+   "path": "generated"
+  },
+  "470": {
+   "name": "The Highlander's Fortitude",
+   "steps": [
+    2,
+    3
+   ],
+   "path": "generated"
   },
   "471": {
    "name": "The Highlander's Purpose",
    "steps": [
     2,
     3
-   ]
+   ],
+   "path": "hand"
+  },
+  "472": {
+   "name": "The Highlander's Will",
+   "steps": [
+    2,
+    3
+   ],
+   "path": "generated"
+  },
+  "473": {
+   "name": "The Highlander's Intent",
+   "steps": [
+    2,
+    3
+   ],
+   "path": "generated"
+  },
+  "474": {
+   "name": "Vindicator's Battlegear",
+   "steps": [
+    2,
+    3,
+    5
+   ],
+   "path": "generated"
+  },
+  "475": {
+   "name": "Freethinker's Armor",
+   "steps": [
+    2,
+    3,
+    5
+   ],
+   "path": "generated"
+  },
+  "476": {
+   "name": "Augur's Regalia",
+   "steps": [
+    2,
+    3,
+    5
+   ],
+   "path": "generated"
+  },
+  "477": {
+   "name": "Predator's Armor",
+   "steps": [
+    2,
+    3,
+    5
+   ],
+   "path": "generated"
+  },
+  "478": {
+   "name": "Madcap's Outfit",
+   "steps": [
+    2,
+    3,
+    5
+   ],
+   "path": "generated"
   },
   "479": {
    "name": "Haruspex's Garb",
@@ -161,14 +616,16 @@
     2,
     3,
     5
-   ]
+   ],
+   "path": "hand"
   },
   "480": {
    "name": "Confessor's Raiment",
    "steps": [
     2,
     3
-   ]
+   ],
+   "path": "hand"
   },
   "481": {
    "name": "Demoniac's Threads",
@@ -176,66 +633,251 @@
     2,
     3,
     5
-   ]
+   ],
+   "path": "hand"
   },
   "482": {
    "name": "Illusionist's Attire",
    "steps": [
     2,
     5
-   ]
+   ],
+   "path": "hand"
+  },
+  "483": {
+   "name": "The Defiler's Determination",
+   "steps": [
+    2,
+    3
+   ],
+   "path": "generated"
+  },
+  "484": {
+   "name": "The Defiler's Fortitude",
+   "steps": [
+    2,
+    3
+   ],
+   "path": "generated"
+  },
+  "485": {
+   "name": "The Defiler's Intent",
+   "steps": [
+    2,
+    3
+   ],
+   "path": "generated"
   },
   "486": {
    "name": "The Defiler's Purpose",
    "steps": [
     2,
     3
-   ]
+   ],
+   "path": "hand"
+  },
+  "487": {
+   "name": "The Defiler's Resolution",
+   "steps": [
+    2,
+    3
+   ],
+   "path": "generated"
+  },
+  "488": {
+   "name": "The Defiler's Will",
+   "steps": [
+    2,
+    3
+   ],
+   "path": "generated"
+  },
+  "489": {
+   "name": "Black Dragon Mail",
+   "steps": [
+    2,
+    3
+   ],
+   "path": "generated"
+  },
+  "490": {
+   "name": "Green Dragon Mail",
+   "steps": [
+    2,
+    3
+   ],
+   "path": "generated"
+  },
+  "491": {
+   "name": "Blue Dragon Mail",
+   "steps": [
+    2,
+    3
+   ],
+   "path": "generated"
+  },
+  "492": {
+   "name": "Twilight Trappings",
+   "steps": [],
+   "path": "generated"
+  },
+  "493": {
+   "name": "Genesis Raiment",
+   "steps": [
+    3,
+    5
+   ],
+   "path": "generated"
+  },
+  "494": {
+   "name": "Symbols of Unending Life",
+   "steps": [
+    3
+   ],
+   "path": "hand"
+  },
+  "495": {
+   "name": "Battlegear of Unyielding Strength",
+   "steps": [
+    3
+   ],
+   "path": "generated"
   },
   "496": {
    "name": "Conqueror's Battlegear",
    "steps": [
     3,
     5
-   ]
+   ],
+   "path": "hand"
+  },
+  "497": {
+   "name": "Deathdealer's Embrace",
+   "steps": [
+    3,
+    5
+   ],
+   "path": "generated"
+  },
+  "498": {
+   "name": "Emblems of Veiled Shadows",
+   "steps": [
+    3
+   ],
+   "path": "generated"
   },
   "499": {
    "name": "Doomcaller's Attire",
    "steps": [
     3,
     5
-   ]
+   ],
+   "path": "hand"
   },
   "500": {
    "name": "Implements of Unspoken Names",
    "steps": [
     3
-   ]
+   ],
+   "path": "hand"
+  },
+  "501": {
+   "name": "Stormcaller's Garb",
+   "steps": [
+    3,
+    5
+   ],
+   "path": "hand"
+  },
+  "502": {
+   "name": "Gift of the Gathering Storm",
+   "steps": [
+    3
+   ],
+   "path": "hand"
   },
   "503": {
    "name": "Enigma Vestments",
    "steps": [
     5
-   ]
+   ],
+   "path": "hand"
+  },
+  "504": {
+   "name": "Trappings of Vaulted Secrets",
+   "steps": [
+    3
+   ],
+   "path": "generated"
+  },
+  "505": {
+   "name": "Avenger's Battlegear",
+   "steps": [
+    3,
+    5
+   ],
+   "path": "generated"
+  },
+  "506": {
+   "name": "Battlegear of Eternal Justice",
+   "steps": [
+    3
+   ],
+   "path": "hand"
   },
   "507": {
    "name": "Garments of the Oracle",
    "steps": [
     5
-   ]
+   ],
+   "path": "hand"
   },
   "508": {
    "name": "Finery of Infinite Wisdom",
    "steps": [
     3
-   ]
+   ],
+   "path": "hand"
   },
   "509": {
    "name": "Striker's Garb",
    "steps": [
     3,
     5
-   ]
+   ],
+   "path": "hand"
+  },
+  "510": {
+   "name": "Trappings of the Unseen Path",
+   "steps": [
+    3
+   ],
+   "path": "hand"
+  },
+  "520": {
+   "name": "Ironweave Battlesuit",
+   "steps": [
+    2,
+    3,
+    5
+   ],
+   "path": "generated"
+  },
+  "521": {
+   "name": "Dreamwalker Raiment",
+   "steps": [
+    4
+   ],
+   "path": "generated"
+  },
+  "522": {
+   "name": "Champion's Vestments",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
   },
   "523": {
    "name": "Dreadnaught's Battlegear",
@@ -244,7 +886,17 @@
     4,
     6,
     8
-   ]
+   ],
+   "path": "hand"
+  },
+  "524": {
+   "name": "Bonescythe Armor",
+   "steps": [
+    4,
+    6,
+    8
+   ],
+   "path": "hand"
   },
   "525": {
    "name": "Vestments of Faith",
@@ -252,7 +904,8 @@
     2,
     6,
     8
-   ]
+   ],
+   "path": "hand"
   },
   "526": {
    "name": "Frostfire Regalia",
@@ -260,14 +913,32 @@
     2,
     6,
     8
-   ]
+   ],
+   "path": "hand"
+  },
+  "527": {
+   "name": "The Earthshatterer",
+   "steps": [
+    2,
+    4,
+    8
+   ],
+   "path": "hand"
+  },
+  "528": {
+   "name": "Redemption Armor",
+   "steps": [
+    4
+   ],
+   "path": "generated"
   },
   "529": {
    "name": "Plagueheart Raiment",
    "steps": [
     4,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "530": {
    "name": "Cryptstalker Armor",
@@ -276,29 +947,143 @@
     4,
     6,
     8
-   ]
+   ],
+   "path": "hand"
+  },
+  "533": {
+   "name": "Battlegear of Undead Slaying",
+   "steps": [
+    3
+   ],
+   "path": "generated"
+  },
+  "534": {
+   "name": "Undead Slayer's Armor",
+   "steps": [
+    3
+   ],
+   "path": "generated"
+  },
+  "535": {
+   "name": "Garb of the Undead Slayer",
+   "steps": [
+    3
+   ],
+   "path": "generated"
+  },
+  "536": {
+   "name": "Regalia of Undead Cleansing",
+   "steps": [
+    3
+   ],
+   "path": "generated"
+  },
+  "537": {
+   "name": "Champion's Battlearmor",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "538": {
+   "name": "Champion's Stormcaller",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
   },
   "539": {
    "name": "Champion's Refuge",
    "steps": [
     2,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "541": {
    "name": "Champion's Dreadgear",
-   "steps": []
+   "steps": [],
+   "path": "hand"
+  },
+  "542": {
+   "name": "Champion's Arcanum",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "543": {
+   "name": "Champion's Pursuance",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "544": {
+   "name": "Lieutenant Commander's Redoubt",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "545": {
+   "name": "Lieutenant Commander's Battlearmor",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "546": {
+   "name": "Champion's Regalia",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
   },
   "547": {
    "name": "Lieutenant Commander's Dreadgear",
-   "steps": []
+   "steps": [],
+   "path": "hand"
+  },
+  "548": {
+   "name": "Lieutenant Commander's Guard",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "550": {
+   "name": "Lieutenant Commander's Pursuance",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
   },
   "551": {
    "name": "Lieutenant Commander's Refuge",
    "steps": [
     2,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "1667": {
    "name": "Feralheart Raiment",
@@ -306,8 +1091,10 @@
     2,
     3,
     4,
+    5,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "1669": {
    "name": "Beastmaster Armor",
@@ -316,7 +1103,8 @@
     3,
     4,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "1671": {
    "name": "Sorcerer's Regalia",
@@ -325,15 +1113,18 @@
     3,
     4,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "1673": {
    "name": "Soulforge Armor",
    "steps": [
     2,
     3,
+    4,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "1675": {
    "name": "Vestments of the Virtuous",
@@ -342,7 +1133,8 @@
     3,
     4,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "1676": {
    "name": "Darkmantle Armor",
@@ -350,15 +1142,18 @@
     2,
     4,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "1679": {
    "name": "The Five Thunders",
    "steps": [
     2,
     3,
+    4,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "1681": {
    "name": "Deathmist Raiment",
@@ -367,14 +1162,17 @@
     3,
     4,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "1778": {
    "name": "Battlegear of Heroism",
    "steps": [
     2,
+    4,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "1968": {
    "name": "Blessed Plate",
@@ -383,56 +1181,244 @@
     3,
     5,
     6
-   ]
+   ],
+   "path": "hand"
+  },
+  "1972": {
+   "name": "Stormcloth Regalia",
+   "steps": [
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "2071": {
+   "name": "Teachings of the Furbolgs",
+   "steps": [
+    2
+   ],
+   "path": "hand"
   },
   "2076": {
    "name": "Warlord's Refuge",
    "steps": [
     2,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "2077": {
    "name": "Field Marshal's Refuge",
    "steps": [
     2,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "2078": {
    "name": "Field Marshal's Wildhide",
    "steps": [
     2,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "2079": {
    "name": "Warlord's Wildhide",
    "steps": [
     2,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "2080": {
    "name": "Champion's Wildhide",
    "steps": [
     2,
     6
-   ]
+   ],
+   "path": "hand"
   },
   "2081": {
    "name": "Lieutenant Commander's Wildhide",
    "steps": [
     2,
     6
-   ]
+   ],
+   "path": "hand"
+  },
+  "2082": {
+   "name": "Champion's Aegis",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "2083": {
+   "name": "Warlord's Aegis",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "2084": {
+   "name": "Champion's Vindication",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "2085": {
+   "name": "Warlord's Vindication",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "2086": {
+   "name": "Lieutenant Commander's Vindication",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "2087": {
+   "name": "Field Marshal's Vindication",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "2088": {
+   "name": "Lieutenant Commander's Earthshaker",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "2089": {
+   "name": "Field Marshal's Earthshaker",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "2090": {
+   "name": "Champion's Wartide",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "2091": {
+   "name": "Warlord's Wartide",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "2092": {
+   "name": "Lieutenant Commander's Wartide",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "2093": {
+   "name": "Field Marshal's Wartide",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "2094": {
+   "name": "Champion's Thunderfist",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "2095": {
+   "name": "Warlord's Thunderfist",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "2096": {
+   "name": "Lieutenant Commander's Thunderfist",
+   "steps": [
+    2,
+    4,
+    6
+   ],
+   "path": "generated"
+  },
+  "2097": {
+   "name": "Field Marshal's Thunderfist",
+   "steps": [
+    2,
+    3,
+    6
+   ],
+   "path": "generated"
+  },
+  "2098": {
+   "name": "Manaflare Regalia",
+   "steps": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "path": "hand"
+  },
+  "2099": {
+   "name": "Grimstitch Armor",
+   "steps": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "path": "generated"
   },
   "2100": {
    "name": "Demonheart Raiment",
    "steps": [
     2,
-    4
-   ]
+    4,
+    5
+   ],
+   "path": "hand"
   },
   "2101": {
    "name": "Wildstalker Armor",
@@ -441,7 +1427,8 @@
     3,
     4,
     5
-   ]
+   ],
+   "path": "hand"
   },
   "2102": {
    "name": "Battlegear of Glory",
@@ -450,7 +1437,8 @@
     3,
     4,
     5
-   ]
+   ],
+   "path": "hand"
   },
   "2103": {
    "name": "Battleplate of Glory",
@@ -459,7 +1447,8 @@
     3,
     4,
     5
-   ]
+   ],
+   "path": "hand"
   },
   "2104": {
    "name": "Vestments of Conviction",
@@ -467,7 +1456,8 @@
     2,
     4,
     5
-   ]
+   ],
+   "path": "hand"
   },
   "2105": {
    "name": "Raiments of Conviction",
@@ -475,7 +1465,8 @@
     2,
     4,
     5
-   ]
+   ],
+   "path": "hand"
   },
   "2106": {
    "name": "Justice Battlegear",
@@ -483,7 +1474,8 @@
     2,
     4,
     5
-   ]
+   ],
+   "path": "hand"
   },
   "2107": {
    "name": "Justice Armor",
@@ -491,7 +1483,8 @@
     2,
     4,
     5
-   ]
+   ],
+   "path": "hand"
   },
   "2108": {
    "name": "Justice Battleplate",
@@ -499,7 +1492,55 @@
     2,
     4,
     5
-   ]
+   ],
+   "path": "hand"
+  },
+  "2109": {
+   "name": "The Spiritcaller",
+   "steps": [
+    2,
+    4,
+    5
+   ],
+   "path": "generated"
+  },
+  "2110": {
+   "name": "The Spiritcaller's Rage",
+   "steps": [
+    2,
+    4,
+    5
+   ],
+   "path": "generated"
+  },
+  "2111": {
+   "name": "The Spiritcaller's Storm",
+   "steps": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "path": "generated"
+  },
+  "2112": {
+   "name": "Grovekeeper Raiment",
+   "steps": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "path": "generated"
+  },
+  "2113": {
+   "name": "Grovekeeper Rage",
+   "steps": [
+    2,
+    4,
+    5
+   ],
+   "path": "generated"
   },
   "2114": {
    "name": "Grovekeeper Eclipse",
@@ -507,7 +1548,75 @@
     2,
     4,
     5
-   ]
+   ],
+   "path": "hand"
+  },
+  "2115": {
+   "name": "Grovekeeper Ferocity",
+   "steps": [
+    2,
+    4,
+    5
+   ],
+   "path": "generated"
+  },
+  "2130": {
+   "name": "Rider of the Plaguelands",
+   "steps": [
+    3
+   ],
+   "path": "generated"
+  },
+  "2131": {
+   "name": "Partners in Crime",
+   "steps": [
+    2
+   ],
+   "path": "hand"
+  },
+  "2132": {
+   "name": "Blessing of Kalimdor",
+   "steps": [],
+   "path": "generated"
+  },
+  "2133": {
+   "name": "Rotmender's Raiment",
+   "steps": [
+    2,
+    3,
+    4
+   ],
+   "path": "hand"
+  },
+  "2134": {
+   "name": "Violet Sorcerer's Vestments",
+   "steps": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "path": "hand"
+  },
+  "2135": {
+   "name": "Krol'dok Battlegear",
+   "steps": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "path": "hand"
+  },
+  "2136": {
+   "name": "Defias Enforcer's Garb",
+   "steps": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "path": "hand"
   }
  }
 }

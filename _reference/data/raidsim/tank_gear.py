@@ -423,7 +423,7 @@ def run_class(cls, tiers, repo, db, zones, edb, a, rec):
         m = measure(e, repo, talents, items, a.final, 3, ref, f"m-{cls}")
         lower = TIERS[TIERS.index(tier) - 1] if TIERS.index(tier) else None
         pre = out.get(lower) if lower else None
-        if pre and pre.get("items") and GT.list_guard(GT.norm17(pre["items"]), tier, db, zones, repo):
+        if pre and pre.get("items") and GT.list_guard(GT.norm17(pre["items"]), tier, db, zones, repo, cls=cls):
             pre = None   # the lower list's set breaks this list's rule (a list's pool holds the lower list's: never seen; checked anyway)
         if pre and (pre.get("pick") or {}).get("value", 0) > m["value"] and pre.get("items"):
             # each list's pool holds the list below's items, so the lower set is a set of this list too: a search that ends below it takes
@@ -470,7 +470,7 @@ def set_file(items, tier):
 
 def guard(cls, tier, items, p, db, zones, repo):
     """The list's rule on the chosen set before it is written (gear_tiers.list_guard; fatal, as for the damage specs' makes)."""
-    bad = GT.list_guard(GT.norm17(items), tier, db, zones, repo)
+    bad = GT.list_guard(GT.norm17(items), tier, db, zones, repo, cls=cls)
     if bad:
         raise SystemExit(f"FATAL {p.name}: the {cls} tank's set breaks its list's rule: " + "; ".join(bad))
 

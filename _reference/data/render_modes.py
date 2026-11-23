@@ -443,6 +443,11 @@ def tier_best_lines(cls, spec, src, top, tb, r):
 
 def tier_lines(cls, spec, src, top):
     """A spec raid page's DPS by gear tier: the best talents per tier and setting in the spec's own gear, and that gear."""
+    if gear_tables.has_lists(cls, spec):   # (2026-11-23) the three gear lists replace the tier table and the tier sets
+        o = ["**Gear: the three lists** (each list's own set for this build, chosen in a full raid in the community simulator; each item "
+             "opens its Wowhead page):", ""] + gear_tables.lists_section(cls, spec)
+        sl = gear_tables.sim_line(cls, spec)
+        return o + ([sl, ""] if sl else [])
     r = TIERS.get((cls, spec))
     tb = (TIER_BEST.get(cls) or {}).get(spec)
     if tb and tb.get("build") == top.get("id") and tb.get("tiers"):
@@ -506,10 +511,22 @@ def tier_lines(cls, spec, src, top):
     return o + [""]
 
 
+SUPPORT_LACKS = {
+    "tank": "Tank sets are chosen on tank value (threat and damage taken) in the community simulator, with the lists' pools and rules, "
+            "the set bonuses and each list taking the list below's set when that is better; not yet for tanks: no-PvP and faction sets, "
+            "a check against published lists, the hit line and the effect race (the next pass).",
+    "heal": "Healer sets are chosen by the stat weights of this project's healer lab (healers are in no community simulator), with the "
+            "lists' pools and rules and each list taking the list below's set when that is better; not yet for healers: set bonuses and "
+            "item effects (the lab does not value them), no-PvP and faction sets, a check against published lists (the next pass)."}
+
+
 def support_gear(cls, spec, role):
     """A healer or tank raid page's pre-BiS and BiS sets (2026-10-15, user decision of 2026-10-14: real sets for both, the same linked
     table as the damage pages). Tanks: chosen in the community simulator on tank value (raidsim/tank_gear.py); healers: chosen by stat
     weights measured in this project's healer lab (heallab/heal_gear.py)."""
+    if gear_tables.has_lists(cls, spec, role):   # (2026-11-23) the three lists, with what the tank's or healer's maker does not apply yet
+        return (["**Gear: the three lists** (each list's own set for this build; each item opens its Wowhead page):", ""]
+                + gear_tables.lists_section(cls, spec, role, lacks=SUPPORT_LACKS[role]))
     gt = gear_tables.table(cls, spec, role)
     if not gt:
         return []

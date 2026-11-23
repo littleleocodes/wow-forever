@@ -500,6 +500,27 @@ def sim_set_steps(repo):
         for h, keys in helpers.items():
             for m in re.finditer(h + r'\((\d+),\s*"([^"]+)"\)', t):
                 sets[int(m.group(1))] = {"name": m.group(2), "steps": keys}
+    # the second path (2026-11-23, the audit session's Devilsaur contradiction: Gauntlets and Leggings together were 0.8-0.96% more than
+    # apart on two seeds): sets generated from the item-set data, shared.NewParsedItemSet(id, "name", slots, map[int32][]int32{k: {...}})
+    # in sim/common/forever/item_sets_auto_gen.go; a step upstream leaves for manual implementation is a comment line ("// 2: {...}")
+    for f, t in texts.items():
+        for m in re.finditer(r'NewParsedItemSet\((\d+),\s*"([^"]+)"', t):
+            mm = re.compile(r"map\[int32\]\[\]int32\{").search(t, m.end())
+            if not mm:
+                continue
+            j, d2 = mm.end(), 1
+            while d2 and j < len(t):
+                d2 += {"{": 1, "}": -1}.get(t[j], 0)
+                j += 1
+            keys = []
+            for line in t[mm.end():j].splitlines():
+                s = line.strip()
+                km = None if s.startswith("//") else re.match(r"(\d+):\s*\{", s)
+                if km:
+                    keys.append(int(km.group(1)))
+            sid = int(m.group(1))
+            if sid not in sets:   # a hand-written set wins (upstream: "A set written by hand leaves this file on the next db run")
+                sets[sid] = {"name": m.group(2), "steps": sorted(set(keys)), "generated": True}
     _SET_STEPS[key] = sets
     return sets
 
@@ -532,9 +553,7 @@ def race_set_pieces(cls, items, w, greedy, race, its, db, pool, repo=None, confi
                 if G.SLOT_TYPE[slot] == 12 or G.SLOT_TYPE[slot] != it.get("type"):
                     continue
                 shape = db.get(items[slot].get("id")) if items[slot].get("id") else None
-                if slot >= 14 and not shape:
-                    continue
-                if greedy.fits(it, slot, shape):
+                if swap_fits(greedy, it, slot, shape):
                     by.setdefault(sid, {}).setdefault(slot, []).append(it)
         units = []
         for sid, slots in by.items():
@@ -544,10 +563,16 @@ def race_set_pieces(cls, items, w, greedy, race, its, db, pool, repo=None, confi
             if len({it["id"] for v in slots.values() for it in v} | {items[s]["id"] for s in wearing}) < 2:
                 continue
             st = (steps_of.get(sid) or {}).get("steps") or []
-            if not st:
+            if sid in steps_of and not st:   # registered, every step left for manual implementation: no simulated bonus
                 if rnd == 1 and name not in rec["no_bonus"]:
                     rec["no_bonus"].append(name)
                 continue
+            if sid not in steps_of:   # the safety net (2026-11-23, the audit session): a set the parser does not know races as before
+                # the rewrite, all its pool pieces as one unit and its two cheapest as another; the race judges whether a bonus exists
+                free = {s for s in slots if s not in wearing}
+                st = sorted({k for k in (2, held + len(free)) if k > held})
+                if rnd == 1 and name not in rec.setdefault("unknown_to_parser", []):
+                    rec["unknown_to_parser"].append(name)
             for k in st:
                 if k <= held:
                     if rnd == 1:
@@ -602,7 +627,8 @@ def race_set_pieces(cls, items, w, greedy, race, its, db, pool, repo=None, confi
         for name, k, held, x, pieces, loss in units:
             lab = f"{name} ({k})"
             rec["units"].append({"set": name, "step": k, "held": held, "pieces": pieces, "weights_loss": loss, "raced": True,
-                                 "round": rnd, "race_seed1": round(r[lab], 4), **({"race_seed2": round(r2[lab], 4)} if lab in r2 else {})})
+                                 "round": rnd, "race_seed1": round(r[lab], 4), **({"race_seed2": round(r2[lab], 4)} if lab in r2 else {}),
+                                 **({"unknown_to_parser": True} if name in rec.get("unknown_to_parser", []) else {})})
         best = max(top, key=lambda k: r2.get(k, 0.0)) if top else None
         if best and r2.get(best, 0.0) > 1.0:
             items = sets[best]
@@ -610,6 +636,18 @@ def race_set_pieces(cls, items, w, greedy, race, its, db, pool, repo=None, confi
         else:
             break
     return items, rec
+
+
+_SBI = {}
+
+
+def _set_bonus_inventory():
+    """{set id: {"set", "bonuses"}} from raidsim/set-bonus-inventory.json (the True BiS list holds every list's sets), or {}."""
+    if "x" not in _SBI:
+        p = HERE / "set-bonus-inventory.json"
+        rows = json.load(open(p, encoding="utf-8"))["lists"]["bis"]["sets"] if p.exists() else []
+        _SBI["x"] = {r["id"]: r for r in rows}
+    return _SBI["x"]
 
 
 def set_check(items, db, repo, active):
@@ -626,13 +664,111 @@ def set_check(items, db, repo, active):
         if sid:
             worn[sid] = worn.get(sid, 0) + 1
     expected = sorted(f"{steps[sid]['name']} ({k}pc)" for sid, n in worn.items() if sid in steps for k in steps[sid]["steps"] if k <= n)
+    # the worn sets the simulator gives no bonus (2026-11-23, the audit session: transparency in the first pass): each step the pieces
+    # reach in game, and a plain-stat step one piece short, from the client's tables (set_bonus_inventory.py's record)
+    unsim = []
+    inv = _set_bonus_inventory()
+    for sid, n in worn.items():
+        if sid not in inv:
+            continue
+        simulated = set((steps.get(sid) or {}).get("steps") or [])   # a step the simulator applies is not "unsimulated" (step by step)
+        bs = [b for b in inv[sid]["bonuses"] if b["pieces"] not in simulated]
+        if not bs:
+            continue
+        reached = [{"pieces": b["pieces"], "kind": b["kind"], "text": b["text"]} for b in bs if b["pieces"] <= n]
+        short = [{"pieces": b["pieces"], "text": b["text"]} for b in bs if b["kind"] == "plain" and b["pieces"] == n + 1]
+        if reached or short:
+            unsim.append({"set": inv[sid]["set"], "worn": n, "reached": reached, "one_short": short})
     missing = [s for s in expected if s not in active]
     unexpected = [s for s in active if s not in expected]
-    out = {"expected": expected, "active": list(active)}
+    out = {"expected": expected, "active": list(active), **({"unsimulated": unsim} if unsim else {}),
+           **({"unknown_to_parser": unexpected} if unexpected else {})}
     if missing or unexpected:
         out["warning"] = ("the sheet lacks " + ", ".join(missing) if missing else "") + ("; " if missing and unexpected else "") + \
                          ("the sheet has steps the parser does not know: " + ", ".join(unexpected) if unexpected else "")
     return out
+
+
+EFFECT_SLOTS = {"trinket": (12, 13), "ring": (10, 11), "neck": (1,), "back": (3,), "ranged/relic": (16,), "weapon": (14, 15)}
+EFFECT_MIN = 0.995   # a screened item races in a make when its screen score is at least this (the screen's set is not the make's)
+EFFECT_TOP = {"trinket": 6, "ring": 4, "weapon": 6, "neck": 3, "back": 3, "ranged/relic": 3}
+EFFECT_DIR = HERE / "effect-screen"
+
+
+def effect_variants(it, base, db, greedy):
+    """[(label "<id>@<slot>", items)]: the item in each scope slot it fits (both trinket slots, both rings, main hand and off hand), the
+    slot's enchant kept when the slot held an item of the same type; a two-hander empties the off hand; none when the set wears the item
+    already or a unique item would clash (2026-11-23, 3b: effect_screen.py and race_effect_items)."""
+    out = []
+    if any(x.get("id") == it["id"] for x in base):
+        return out
+    for g, slots in EFFECT_SLOTS.items():
+        for s in slots:
+            if G.SLOT_TYPE[s] != it.get("type"):
+                continue
+            cur = db.get(base[s].get("id")) if base[s].get("id") else None
+            # a weapon or ranged slot swaps only where the set holds an item of that shape (2026-11-23: the Balance screen had put Hand of
+            # Edward the Odd in the empty off hand next to a two-handed staff, +8.8% for an impossible set; swap_fits, race_set_pieces' rule)
+            if not swap_fits(greedy, it, s, cur):
+                continue
+            x = [dict(y) for y in base]
+            ench = x[s].get("enchant") if cur and cur.get("type") == it.get("type") else None
+            x[s] = {"id": it["id"], **({"enchant": ench} if ench else {})}
+            if s == 14 and it.get("handType") == 4:
+                x[15] = {}
+            keys, clash = set(), False
+            for y in x:
+                if y.get("id"):
+                    k = G.unique_keys(db.get(y["id"]))
+                    clash = clash or bool(k & keys)
+                    keys |= k
+            if not clash:
+                out.append((f"{it['id']}@{s}", x))
+    return out
+
+
+def effect_screen_of(cls, spec):
+    """The spec's 3b screen (raidsim/effect-screen/<class>-<spec slug>.json, effect_screen.py), or None."""
+    p = EFFECT_DIR / f"{cls}-{SM.slug(spec)}.json"
+    return json.load(open(p, encoding="utf-8")) if p.exists() else None
+
+
+def race_effect_items(cls, items, greedy, race, its, db, pool, screen, confirm=None):
+    """3b in the make (2026-11-23, the user: "correctly test things like trinkets or rings or weapons ... that has proc chances"): the
+    screen's items with a modelled proc or on-use (score at least EFFECT_MIN in the screen's set, the best EFFECT_TOP of each slot group,
+    in this list's pool) are swapped into this set in every scope slot they fit and raced on seed 1; the top three ahead race the current
+    set on seed 2 at the confirm's fights, and the best there is taken when ahead; then once more from it. Returns (items, record)."""
+    rec = {"screen": (screen or {}).get("base"), "screen_commit": (screen or {}).get("commit"), "units": [], "taken": []}
+    if not screen:
+        rec["why"] = "no effect screen for the spec"
+        return items, rec
+    rows = [r for r in screen.get("rows") or [] if r.get("score", 0) >= EFFECT_MIN and r["id"] in db and pool(db[r["id"]])]
+    by = {}
+    for r in sorted(rows, key=lambda r: -r["score"]):
+        by.setdefault(r["group"], []).append(r)
+    pick = [r for g, rs in by.items() for r in rs[:EFFECT_TOP.get(g, 3)]]
+    rec["candidates"] = [{"name": r["name"], "group": r["group"], "screen": r["score"]} for r in pick]
+    for rnd in (1, 2):
+        items = norm17(items)
+        sets = {"current": items}
+        for r in pick:
+            for lab, x in effect_variants(db[r["id"]], items, db, greedy):
+                sets[f"{r['name']} @{lab.split('@')[1]}"] = x
+        if len(sets) == 1:
+            break
+        r1 = race(sets, its, 1)
+        top = [k for k in sorted((k for k in r1 if k != "current"), key=lambda k: -r1[k])[:3] if r1[k] > 1.0]
+        r2 = race({"current": items, **{k: sets[k] for k in top}}, confirm or its, 2) if top else {}
+        for k in sets:
+            if k != "current":
+                rec["units"].append({"swap": k, "round": rnd, "race_seed1": round(r1[k], 4), **({"race_seed2": round(r2[k], 4)} if k in r2 else {})})
+        best = max(top, key=lambda k: r2.get(k, 0.0)) if top else None
+        if best and r2.get(best, 0.0) > 1.0:
+            items = sets[best]
+            rec["taken"].append(best)
+        else:
+            break
+    return items, rec
 
 
 def enchants_for(cls, items, w, tier, zones, db, emap=None, own_first=False):
@@ -787,7 +923,8 @@ KNOWN_MARGIN = 0.002    # a known positive replaces the picker's best only when 
 CLOSE_CALL = 0.002      # a make whose chosen set leads the best set that lost on the confirm by less is a close call (2026-11-23)
 # the record fields every list's make keeps (2026-11-23: ml_pipeline.gear, dungeon_tier and make_lists read this one tuple)
 LIST_RECORD_FIELDS = ("chosen_source", "ladder_case", "ladder", "known_tie", "picker_best", "known_positives", "competitors", "bases",
-                      "reweigh", "hit", "set_check", "budget", "confirm_margin", "guard", "refused", "without_pvp", "side")
+                      "reweigh", "hit", "set_check", "budget", "confirm_margin", "guard", "refused", "without_pvp", "side", "effect_items",
+                      "racials_off")
 
 
 def known_lists(cls, spec):
@@ -855,7 +992,7 @@ def pool_swap(items, w, greedy, db, pool, base):
 
 
 def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, weights_fn=None, score=None, extra=None, refine=None,
-                 zones=None, tank=False, ladder=(), known=None, no_known=None):
+                 zones=None, tank=False, ladder=(), known=None, no_known=None, effect_screen=None):
     """The best set for the evaluations [(entry name, entry, setting, talents, label)] from `pool`: the same steps as gear_opt.optimize
     (weights, greedy per slot in two variants, weights again, trinket pairs raced, variants raced, seed-2 confirmation), except that the
     current item of a slot competes only when `keep_current` or the pool admits it (a pre-raid set must not keep raid items).
@@ -939,6 +1076,7 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     emap = None
     if refine:
         v1, steps["set_pieces"] = race_set_pieces(cls, v1, w, greedy, race, a.iterations, db, pool, repo=repo, confirm=a.confirm)
+        v1, steps["effect_items"] = race_effect_items(cls, v1, greedy, race, a.iterations, db, pool, effect_screen, confirm=a.confirm)
     # REWEIGH (2026-11-23): the weights measured at the picked set, and the picks from them and from the mean of both weights (set pieces
     # and items with effects kept; weapons, ranged and trinkets as raced: the picks re-fill the other slots only)
     rew = {}
@@ -959,6 +1097,10 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
         if kp.get("prep"):
             its, notes = kp["prep"](its, w, greedy)
         its, swaps = pool_swap(its, w, greedy, db, pool, v1)
+        worn = wear_check(cls, its, db)
+        if worn:   # (2026-11-23) a known positive nobody can wear is dropped, never raced as listed
+            known_rec.append({"name": name, "source": kp.get("source"), "dropped": "cannot be worn: " + "; ".join(worn)[:300]})
+            continue
         known_sets[name] = its
         known_rec.append({"name": name, "source": kp.get("source"), **({"prep": notes} if notes else {}), "swapped": swaps})
     made, kmade = {}, {}
@@ -1089,7 +1231,9 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     if losers and chosen in r2:
         lk = max(losers, key=r2.get)
         mg = r2[chosen] / r2[lk] - 1 if r2[lk] else 0.0
-        same = [x.get("id") for x in sets[chosen]] == [x.get("id") for x in sets[lk]]
+        canon = lambda its: ([x.get("id") for x in norm17(its)[:10]] + sorted((x.get("id") or 0) for x in norm17(its)[10:12])   # noqa: E731
+                             + sorted((x.get("id") or 0) for x in norm17(its)[12:14]) + [x.get("id") for x in norm17(its)[14:]])
+        same = canon(sets[chosen]) == canon(sets[lk])   # rings and trinkets in either order are the same set (2026-11-23, the sandbox)
         conf_margin = {"over": lk, "margin": round(mg, 5), "same_items": same,
                        "close_call": bool(mg < CLOSE_CALL and not same and not known_tie and not (is_lad(chosen) or is_lad(lk)))}
     for x in known_rec:   # the known positive as it raced (its best variant), for make_lists' missed-set check (2026-11-23)
@@ -1115,7 +1259,74 @@ def set_path(cls, spec, tier, nopvp=False, side=None):
     return SETS / f"{cls}-{SM.slug(spec)}-{tier}{'-nopvp' if nopvp else ''}{'-' + side.lower() if side else ''}.gear.json"
 
 
-def list_guard(items, tier, db, zones, repo, nopvp=False, side=None):
+# wearing rules (2026-11-23, the audit session: "A SET NOBODY CAN WEAR"): Classic's weapon proficiencies by the database's WeaponType
+# (1 axe, 2 dagger, 3 fist, 4 mace, 5 held in off hand, 6 polearm, 7 shield, 8 staff, 9 sword) and ranged types (1 bow, 2 crossbow,
+# 3 gun, 4 thrown, 5 wand, 6 idol, 7 libram, 8 totem); held-in-off-hand items any class; a two-hander's type as its one-handed type
+WEAPONS = {"warrior": {1, 2, 3, 4, 5, 6, 7, 8, 9}, "paladin": {1, 4, 5, 6, 7, 9}, "hunter": {1, 2, 3, 5, 6, 8, 9},
+           "rogue": {2, 3, 4, 5, 9}, "priest": {2, 4, 5, 8}, "shaman": {1, 2, 3, 4, 5, 7, 8}, "mage": {2, 5, 8, 9},
+           "warlock": {2, 5, 8, 9}, "druid": {2, 3, 4, 5, 6, 8}}
+RANGED = {"warrior": {1, 2, 3, 4}, "rogue": {1, 2, 3, 4}, "hunter": {1, 2, 3}, "mage": {5}, "priest": {5}, "warlock": {5},
+          "paladin": {7}, "shaman": {8}, "druid": {6}}
+TWO_HANDERS = {"warrior": {1, 4, 6, 8, 9}, "paladin": {1, 4, 6, 9}, "hunter": {1, 6, 8, 9}, "shaman": {1, 4, 8}, "druid": {4, 6, 8},
+               "priest": {8}, "mage": {8}, "warlock": {8}, "rogue": set()}
+DUAL_WIELD = {"warrior", "rogue", "hunter"}
+
+
+def wear_check(cls, items, db):
+    """[] or why a character of `cls` at level 60 cannot wear the set: an item's slot type, the class allowlist, the armor type, the
+    weapon or ranged type, a two-hander with anything in the off hand, an off-hand weapon for a class that cannot dual-wield, a shield
+    for a class without one, a main-hand-only item in the off hand or the reverse, the level, a unique item or limit category twice."""
+    bad, keys = [], set()
+    x = norm17(items)
+    mh = db.get(x[14].get("id")) if x[14].get("id") else None
+    for i, y in enumerate(x):
+        it = db.get(y.get("id")) if y.get("id") else None
+        if not it:
+            continue
+        n = it.get("name")
+        if it.get("type") != G.SLOT_TYPE[i]:
+            bad.append(f"slot {i} {n}: its type does not go in this slot")
+        if it.get("classAllowlist") and G.CLASS_ID[cls] not in it["classAllowlist"]:
+            bad.append(f"slot {i} {n}: not for a {cls}")
+        if it.get("armorType", 0) > G.ARMOR_MAX[cls]:
+            bad.append(f"slot {i} {n}: armor a {cls} cannot wear")
+        if (it.get("requiredLevel") or 0) > 60:
+            bad.append(f"slot {i} {n}: needs level {it['requiredLevel']}")
+        if it.get("type") == 13:
+            wt, ht = it.get("weaponType"), it.get("handType")
+            if wt not in WEAPONS[cls]:
+                bad.append(f"slot {i} {n}: a {cls} cannot use this weapon type")
+            if ht == 4 and wt not in TWO_HANDERS[cls]:
+                bad.append(f"slot {i} {n}: a {cls} cannot use this two-hander")
+            if i == 15:
+                if mh and mh.get("handType") == 4:
+                    bad.append(f"slot 15 {n}: beside a two-handed main hand")
+                if ht in (1, 4):
+                    bad.append(f"slot 15 {n}: a main-hand or two-handed item in the off hand")
+                if wt == 7 and cls not in ("warrior", "paladin", "shaman"):
+                    bad.append(f"slot 15 {n}: a {cls} cannot use a shield")
+                if wt not in (5, 7) and cls not in DUAL_WIELD:
+                    bad.append(f"slot 15 {n}: an off-hand weapon, and a {cls} cannot dual-wield")
+            if i == 14 and ht == 3:
+                bad.append(f"slot 14 {n}: an off-hand item in the main hand")
+        if it.get("type") == 14 and it.get("rangedWeaponType") not in RANGED[cls]:
+            bad.append(f"slot {i} {n}: a {cls} cannot use this ranged or relic type")
+        k = G.unique_keys(it)
+        if k & keys:
+            bad.append(f"slot {i} {n}: a unique item or limit category twice")
+        keys |= k
+    return bad
+
+
+def swap_fits(greedy, it, slot, cur):
+    """The one slot rule of the swaps (2026-11-23, the audit session: effect_variants and race_set_pieces had it in two places): a weapon or
+    ranged slot takes an item only where the set holds one of that shape (greedy.fits against it); other slots against the item itself."""
+    if slot >= 14 and not cur:
+        return False
+    return greedy.fits(it, slot, cur or it)
+
+
+def list_guard(items, tier, db, zones, repo, nopvp=False, side=None, cls=None):
     """The lists' fatal guard (2026-11-23, the audit session: a side's set holding the other side's items should have stopped the run;
     the same day, for Easy Pre-BiS and every list: "every item passes the Easy pool and the Easy enchant rule"): every item of the set
     is in the database and in the list's pool (pool_of, with the no-PvP and the side filters), every enchant is in the list's enchant
@@ -1145,6 +1356,8 @@ def list_guard(items, tier, db, zones, repo, nopvp=False, side=None):
         e = x.get("enchant")
         if e and not enchant_allowed(e, G.SLOT_TYPE[i], tier, zones):
             bad.append(f"slot {i} {it.get('name')}: enchant {e} is not in {GL.LABEL.get(lst, lst)}'s enchants for the slot")
+    if cls:   # (2026-11-23) the set can be worn
+        bad += wear_check(cls, items, db)
     return bad
 
 
@@ -1219,11 +1432,11 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
                 "items": full, "source": "the list's full set, swapped slot by slot (gear_lists.alternatives / pvp_alternatives, current rules)",
                 "prep": slot_swap_prep(cls, tier, db, zones, repo, nopvp=nopvp, side=side)}
     r = optimize_set(cls, [(entry_name, e, setting, talents, label)], cur, pool, repo, db, a, f"{cls}-{SM.slug(spec)}-{tier}", keep_current=(tier == "bis"),
-                     extra=extra or None, refine=tier, zones=zones,
+                     extra=extra or None, refine=tier, zones=zones, effect_screen=effect_screen_of(cls, spec),
                      ladder={k: (k.split()[1], pool_of(k.split()[1], zones, repo, nopvp=nopvp, side=side))
                              for k in extra if k.startswith("the ") and k.endswith(" set")},
                      known=known or None, no_known=no_known)
-    bad = list_guard(r["items"], tier, db, zones, repo, nopvp=nopvp, side=side)
+    bad = list_guard(r["items"], tier, db, zones, repo, nopvp=nopvp, side=side, cls=cls)
     if bad:
         raise SystemExit(f"FATAL {p.name}: the chosen set ({r.get('chosen')}) breaks its list's rule: " + "; ".join(bad))
     # the hit report (2026-11-23, the user's hit ask, the audit session's item 1): the chosen set's hits from the simulator's own sheet
@@ -1234,7 +1447,12 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
     except SystemExit as ex:
         r["hit"] = {"error": str(ex)[:300]}
     r["set_check"] = set_check(r["items"], db, repo, (r.get("hit") or {}).get("sets") if "error" not in (r.get("hit") or {}) else None)
+    if r["set_check"].get("unknown_to_parser"):   # (2026-11-23, the audit session) the parser is behind the simulator: every spec's set
+        # steps are suspect, so the make stops (make_lists stops with it)
+        raise SystemExit(f"FATAL {p.name}: the simulator's sheet has set steps gear_tiers.sim_set_steps does not know: "
+                         + ", ".join(r["set_check"]["unknown_to_parser"]))
     r["budget"] = os.environ.get("WOW_FOREVER_GEAR_BUDGET", "default")
+    r["racials_off"] = os.environ.get("WOW_FOREVER_NO_RACIALS") == "1"   # (2026-11-23) the pages' numbers are made with racials off
     emap = r.pop("enchant_map", None)   # the tier's enchants are on every set that raced (2026-11-22): no template fill after them
     dropped = G.drop_missing_enchants(r["items"], repo)   # an enchant carried from a set the official database lacks (2026-10-22)
     if dropped:
@@ -1265,7 +1483,7 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
                   f"{'repaired ' if out_of_pool else ''}previous set's {ov:.1f} on seed 2" + (f" and empties slots {empty}" if empty else "")
                   + ("; the repaired previous set is written" if out_of_pool else "; the previous set stays"), flush=True)
             if out_of_pool and write:
-                bad = list_guard(ref, tier, db, zones, repo, nopvp=nopvp, side=side)
+                bad = list_guard(ref, tier, db, zones, repo, nopvp=nopvp, side=side, cls=cls)
                 if bad:
                     raise SystemExit(f"FATAL {p.name}: the repaired previous set breaks its list's rule: " + "; ".join(bad))
                 p.write_text(json.dumps({"items": ref, "list": GL.LABEL.get(tier, tier), "rules": GL.RULES, **({"without_pvp": True} if nopvp else {}),

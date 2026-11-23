@@ -252,7 +252,7 @@ def sides(s, repo, db, zones, ctx, a, st):
         feedback[tier] = {"fights": a.confirm, "dps": res, "taken": best}
         if best:
             new = sets[best]
-            bad = GT.list_guard(new, tier, db, zones, repo)
+            bad = GT.list_guard(new, tier, db, zones, repo, cls=s["cls"])
             if bad:
                 raise SystemExit(f"make_lists: {best} for {GL.LABEL[tier]} breaks the list's rule: " + "; ".join(bad))
             p.write_text(json.dumps({"items": new, "list": GL.LABEL.get(tier, tier), "rules": GL.RULES,
@@ -371,7 +371,7 @@ def missed_sets(s, repo, db, zones, st):
         pp = PREV_DIR / pathlib.Path(g["gear"]).name
         if pp.exists():
             prev = set_items(pp)
-            bad = GT.list_guard(GT.norm17(prev), k, db, zones, repo)
+            bad = GT.list_guard(GT.norm17(prev), k, db, zones, repo, cls=s["cls"])
             if bad:
                 why["previous"] = "breaks the list's rule: " + "; ".join(bad)[:200]
             elif [x.get("id") for x in GT.norm17(prev)] != [x.get("id") for x in GT.norm17(sets["shown"])]:
@@ -430,6 +430,17 @@ def close_calls(sp, phase, st, header=True):
     st[f"set-check|{phase}"] = {"at": datetime.datetime.now().isoformat(timespec="seconds"), "rules": GL.RULES, "warnings": warn}
     save_state(st)
     print(f"== set-bonus check after phase {phase}: {len(warn)} warnings" + "".join(f"\n   {x}" for x in warn), flush=True)
+    near = []
+    for s in sp:   # unsimulated set bonuses (2026-11-23): the made sets one piece short of a plain-stat bonus the simulator lacks
+        rec = json.load(open(s["record"], encoding="utf-8"))
+        for k in PHASE_KEYS[phase]:
+            for u in (((rec.get("gear") or {}).get(k) or {}).get("set_check") or {}).get("unsimulated") or []:
+                for b in u.get("one_short") or []:
+                    near.append(f"{s['cls']} {s['spec']} {k}: {u['set']} ({u['worn']} worn; {b['pieces']} pc: {b['text'][:90]})")
+    st[f"one-short|{phase}"] = {"at": datetime.datetime.now().isoformat(timespec="seconds"), "rules": GL.RULES, "rows": near}
+    save_state(st)
+    print(f"== one piece short of an unsimulated plain-stat set bonus after phase {phase}: {len(near)}"
+          + "".join(f"\n   {x}" for x in near), flush=True)
     return rows
 
 
@@ -444,6 +455,8 @@ def main():
                                             "check are left out, the tanks among them too (2026-11-23, the audit session: their lists wait "
                                             "until the FAIL is fixed and read)")
     a0 = ap.parse_args()
+    if os.environ.get("WOW_FOREVER_NO_RACIALS") != "1" and not a0.dry_run:   # (2026-11-23) the pages' numbers are made with racials off
+        raise SystemExit("make_lists: STOP: WOW_FOREVER_NO_RACIALS is not 1 (the pages' numbers are made with racials off)")
     phases = [p for p in a0.phases.split(",") if p]
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=None))

@@ -463,7 +463,7 @@ def run_spec(cls, spec, a, B, rec, out_dir):
             # races the chosen set on capacity and is kept when ahead (each list's pool holds the list below's items)
             lower = TIERS[TIERS.index(tier) - 1] if TIERS.index(tier) else None
             ladder = None
-            if lower in sets and not GT.list_guard(GT.norm17(sets[lower]["items"]), tier, gs[0], gs[1], repo()):
+            if lower in sets and not GT.list_guard(GT.norm17(sets[lower]["items"]), tier, gs[0], gs[1], repo(), cls=cls):
                 lc = lab.caps({"chosen": lab_gear(gear_stats(chosen)), "lower": lab_gear(sets[lower]["stats"])}, vseeds, B["verify_steps"])
                 ladder = {"lower": lower, "ratio": tail_mean(lc["lower"]) / tail_mean(lc["chosen"])}
                 if ladder["ratio"] > 1.0:
@@ -472,7 +472,7 @@ def run_spec(cls, spec, a, B, rec, out_dir):
                 log(f"  {tier}: the {lower} set races the chosen set: ratio {ladder['ratio']:.4f} -> " + ("the lower set" if ladder.get("taken") else "the chosen set"))
             names, ilvl, rows = describe(chosen)
             p = out_dir / f"{cls}-{spec_slug(cls, spec)}-{tier}.gear.json"
-            bad = GT.list_guard(GT.norm17(chosen), tier, gs[0], gs[1], repo())   # (2026-11-23) fatal before the file is written
+            bad = GT.list_guard(GT.norm17(chosen), tier, gs[0], gs[1], repo(), cls=cls)   # (2026-11-23) fatal before the file is written
             if bad:
                 raise SystemExit(f"FATAL {p.name}: the healer's set breaks its list's rule: " + "; ".join(bad))
             p.parent.mkdir(parents=True, exist_ok=True)

@@ -44,12 +44,12 @@ LIST_FILE = re.compile(r"-(dungeon|prebis|bis)(-nopvp)?(?:-(alliance|horde))?\.g
 _GT = {}
 
 
-def list_rule(repo, items, tier, nopvp, side):
+def list_rule(repo, items, tier, nopvp, side, cls=None):
     """gear_tiers.list_guard on a set file (the database and the lists' context loaded once, through gear_tiers)."""
     if "GT" not in _GT:
         import gear_tiers as GT
         _GT["GT"], (_GT["db"], _GT["zones"]) = GT, GT.load_db(repo)
-    return _GT["GT"].list_guard(items, tier, _GT["db"], _GT["zones"], repo, nopvp=nopvp, side=side)
+    return _GT["GT"].list_guard(items, tier, _GT["db"], _GT["zones"], repo, nopvp=nopvp, side=side, cls=cls)
 
 
 def check_set(path, db, edb):
@@ -123,7 +123,7 @@ def main():
             m = LIST_FILE.search(f.name)
             if m:
                 if json.load(open(f, encoding="utf-8")).get("rules"):
-                    broken = list_rule(repo, items_of(f), m.group(1), bool(m.group(2)), (m.group(3) or "").capitalize() or None)
+                    broken = list_rule(repo, items_of(f), m.group(1), bool(m.group(2)), (m.group(3) or "").capitalize() or None, cls=cls)
                     if broken:
                         bad += 1
                         print(f"    LIST RULE BROKEN {f.name}: " + "; ".join(broken))
