@@ -2,11 +2,9 @@
 
 [Warlock](../README.md) > [Leveling (solo)](README.md) > [Affliction](affliction.md) > Level by level
 
-> **Being checked:** Two points had been moved into talents the build does not use at those levels (Improved Shadow Bolt and Nightfall, which only help Shadow Bolt); the build, its filler record and its texts are being made again. The build and numbers on this page may change when it is done.
-
 What an Affliction warlock presses from level 1 to 60, stage by stage. Affliction levels on its damage-over-time spells and the wand while the Voidwalker (from 10) holds the mob: **Corruption**, **Bane of Agony** and **Immolate** on every healthy mob, **Siphon Life** from 34, and from 40 **Wrack**, whose channel makes your other dots tick twice as fast. You never cast **Shadow Bolt** once you own a wand: the fight lab's re-tune of 2026-11-16 measured every level faster without it (a bolt hardly shortens the fight, and the mana it costs took 3 to 10 seconds of drinking a kill to win back at levels 10-30). Each stage lists the full priority, so you can jump in at your level.
 
-**The build:** 35/16/0 ([open the talent tree](https://talentsforever.com/warlock/60/25510120135001351-10451302--12)), the one on the [Affliction leveling page](affliction.md), which has the full talent table and the reasons behind the level-60 rotation.
+**The build:** 35/14/2 ([open the talent tree](https://talentsforever.com/warlock/60/25510020135011351-00450302-101-12)), the one on the [Affliction leveling page](affliction.md), which has the full talent table and the reasons behind the level-60 rotation.
 
 ## The short version
 
@@ -80,6 +78,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Summon Imp** (1) before the first pull: its **Firebolt** casts by itself. Keep **Demon Skin** up at all times, from here to 20.
 - The fight lab gives you a wand from level 1. Buy one as soon as you can: until then cast Shadow Bolt, the only time this guide does: with a wand, the fight lab never casts **Shadow Bolt** (it measured slower at every level, 6% at level 1).
 
+*Fight lab, seconds per kill: 14 at level 1. Presses per kill at level 1: Wand 2.8, Immolate 1.0.*
+
 ## Levels 4-7: Corruption, the pull
 
 **The trainer teaches:** Blood Pact (4), **Corruption** (4), Curse of Weakness (4), Life Tap (6).
@@ -97,6 +97,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Life Tap** (6): between fights, turn health into mana until you have about 70% of your mana, while your health stays above 60%. The next pull then starts with mana, and you rest the health back.
 - **Curse of Weakness** (4) is not part of the list.
 
+*Fight lab, seconds per kill: 19 at level 4. Presses per kill at level 4: Wand 4.3, Corruption 1.0, Immolate 1.0.*
+
 ## Levels 8-9: Bane of Agony
 
 **The trainer teaches:** **Bane of Agony** (8), Fear (8).
@@ -112,6 +114,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 3. Your wand while the dots finish the mob, also once it has reached you.
 
 - No **Fear** when the mob reaches you: at level 8 the fight lab killed 3% faster dotting and wanding it where it stands (you eat a little more between fights instead). The Voidwalker arrives at 10.
+
+*Fight lab, seconds per kill: 23 at level 8. Presses per kill at level 8: Wand 6.4, Bane of Agony 1.1, Corruption 1.0, Immolate 0.1.*
 
 ## Levels 10-19: The Voidwalker tanks: three dots and the wand
 
@@ -140,6 +144,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - No **Shadow Bolt** here either: at level 10 the fight lab killed 15% faster without it. A bolt hardly shortens a fight the Voidwalker holds, and the mana it costs took 3 seconds of drinking a kill to win back.
 - **Drain Life** (14) goes on R: your heal in a fight.
 
+*Fight lab, seconds per kill: 21 at level 10, 26 at level 19. Presses per kill at level 10: Wand 4.8, Torment 2.7, Bane of Agony 1.1, Immolate 1.0, Corruption 1.0.*
+
 ## Levels 20-33: Amplify Curse
 
 **The trainer teaches:** Curse of the Elements (20), Demon Armor (20), Lash of Pain (20), Rain of Fire (20), Ritual of Summoning (20), Summon Incubus (20), Summon Succubus (20), Eye of Kilrogg (22), Soothing Kiss (22), Drain Mana (24), Sense Demons (24), Suffering (24), Curse of Tongues (26), Detect Invisibility (26), Seduction (26), Banish (28), Create Firestone (28), Devour Magic (30), Hellfire (30), Subjugate Demon (30), Summon Felhunter (30), Lesser Invisibility (32), Shadow Ward (32), Tainted Blood (32).
@@ -167,6 +173,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Curse of the Elements** (20) is not part of the list: the tuned rules measured about 2-3% faster kills without it.
 - Without **Shadow Bolt** a kill costs a third of the mana: at 20-30 the fight lab neither drinks nor taps in a fight, and the Voidwalker keeps every mob, so **Drain Life** is rare too. The re-tune of 2026-11-16 measured kills about a quarter faster than with bolts at 20 and 30.
 
+*Fight lab, seconds per kill: 26 at level 20, 31 at level 30, 34 at level 33. Presses per kill at level 20: Wand 7.7, Torment 3.4, Corruption 1.0, Bane of Agony 1.0, Immolate 1.0.*
+
 ## Levels 34-39: Siphon Life
 
 **The trainer teaches:** Create Spellstone (36), Spell Lock (36).
@@ -190,6 +198,8 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 - **Soul Siphon** (32-33) waits for **Wrack** at 40. **Shadow Mastery** (35-39) adds 10% to your Shadow damage.
 - **Siphon Life** is worth about 4.8 seconds a kill at 60 in the fight lab, the build's second most valuable talent.
+
+*Fight lab, seconds per kill: 34 at level 34, 36 at level 39. Presses per kill at level 34: Wand 11.0, Torment 4.7, Corruption 1.1, Bane of Agony 1.0, Siphon Life 1.0, Immolate 0.9.*
 
 ## Levels 40-41: Wrack
 
@@ -217,13 +227,15 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Immolate** keeps its rule (above half your mana), but after the three dots and **Wrack** the fight lab never has that much mana from 40: key 2 goes quiet.
 - **Howl of Terror** (40) fears every mob near you: the escape from a pull that brings friends (Shift+F).
 
+*Fight lab, seconds per kill: 34 at level 40. Presses per kill at level 40: Wand 8.2, Torment 4.6, Corruption 1.1, Bane of Agony 1.0, Siphon Life 1.0, Wrack 1.0, Life Tap 0.1.*
+
 ## Levels 42-60: Death Coil
 
 **The trainer teaches:** Death Coil (42), Paranoia (42), Soul Fire (48), Inferno (50), Bane of Doom (60), Ritual of Doom (60).
 
 **New ranks to buy:** Bane of Agony at 48, 58; Banish at 48; Corruption at 44, 54, 60; Death Coil at 50, 58; Drain Life at 46, 54; Drain Soul at 52; Fear at 56; Health Funnel at 44, 52, 60; Howl of Terror at 54; Immolate at 50, 60; Life Tap at 46, 56; Rain of Fire at 46, 58; Shadow Ward at 42, 52, 60; Siphon Life at 48, 58; Torment at 50, 60.
 
-**Talents:** 42-43 Demonic Embrace, 44 Malevolence, 45-48 Unholy Power, 49-50 Demonic Energies, 51 Demonic Aegis, 52 Improved Drains, 53-55 Improved Voidwalker, 56 Demonic Embrace, 57 Grim Reach, 58 Improved Health Funnel, 59 Demonic Embrace, 60 Unholy Power.
+**Talents:** 42-43 Demonic Embrace, 44 Malevolence, 45-48 Unholy Power, 49-50 Demonic Energies, 51 Destructive Reach, 52 Curse of Exhaustion, 53-55 Improved Voidwalker, 56 Demonic Embrace, 57 Grim Reach, 58 Bane, 59 Demonic Embrace, 60 Unholy Power.
 
 **Keys to set:** F = Death Coil.
 
@@ -240,7 +252,9 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 **If the fight goes wrong:** Below 60% health: **Death Coil** if a mob is on you, otherwise **Drain Life**; below 85%, **Drain Life** in place of the wand. Your Healthstone below 35% health.
 
 - **Malevolence**'s last point (44) adds 1% to your Shadow spells' critical strike chance.
-- The 15 Demonology points are for the Voidwalker and for you: **Unholy Power** (45-48) adds 8% to its damage, **Demonic Energies** (49-50) heals it for 15% of your spell damage and gives it all the mana of each **Life Tap**, **Improved Voidwalker** (53-55) makes **Torment** and **Consume Shadows** 30% stronger, **Demonic Embrace** (42-43, 56, 59) adds 12% to your Stamina, **Demonic Aegis** (51) makes **Demon Armor** 15% stronger and **Improved Health Funnel** (58) makes **Health Funnel** heal 20% more. The rest do nothing in the fight lab: **Curse of Exhaustion** (52) is a curse this list does not cast, and **Grim Reach** (57) and **Destructive Reach** (60) only lengthen the range of your Affliction and Destruction spells. The leveling filler passes of 2026-11-20 and 2026-11-22 moved the points that measured nothing into these, no slower in the fight lab.
+- The 14 Demonology points are for the Voidwalker and for you: **Unholy Power** (45-48, 60) adds 10% to its damage, **Demonic Energies** (49-50) heals it for 15% of your spell damage and gives it all the mana of each **Life Tap**, **Improved Voidwalker** (53-55) makes **Torment** and **Consume Shadows** 30% stronger and **Demonic Embrace** (42-43, 56, 59) adds 12% to your Stamina. **Bane** (58) takes 0.1 seconds off **Immolate**'s cast. The rest do nothing in the fight lab: **Curse of Exhaustion** (52) is a curse this list does not cast, and **Destructive Reach** (51) and **Grim Reach** (57) only lengthen the range of your Destruction and Affliction spells. The leveling filler passes of 2026-11-20 to 2026-11-23 moved the points that measured nothing into these, no slower in the fight lab.
+
+*Fight lab, seconds per kill: 34 at level 42, 32 at level 50, 30 at level 60. Presses per kill at level 42: Wand 7.8, Torment 4.5, Corruption 1.1, Wrack 1.1, Bane of Agony 1.0, Siphon Life 1.0, Life Tap 0.1.*
 
 ## Between fights
 
@@ -257,4 +271,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - The Affliction/Demonology hybrid plays the Demonology list, not this one: see its own guide.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/warlock.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-23: the stages are hand-kept in `_reference/data/level-guides/warlock.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

@@ -7,8 +7,8 @@ Every legal 51-point build, no tree rule, searched in each leveling rotation of 
 | Rotation | Trees that level with it | Open winner | Family | Seconds per kill (20-60) | vs our fastest there |
 |---|---|---|---|---|---|
 | affliction-leveling | Affliction | [38/11/2](https://talentsforever.com/warlock/60/25510122135101351-00250301-101-12) | Affliction | 31.18 | +14.8% faster than affliction-leveling |
-| demonology-leveling | Demonology | [27/24/0](https://talentsforever.com/warlock/60/2551002013500102-00250332011003013--12) | Hybrid Affliction/Demonology | 33.86 | +1.5% faster than demonology-open-leveling |
-| destruction-leveling | Destruction | [4/11/36](https://talentsforever.com/warlock/60/04-00050312-2050355113101351-12) | Destruction | 38.02 | +2.4% faster than destruction-open-leveling |
+| demonology-leveling | Demonology | [27/24/0](https://talentsforever.com/warlock/60/2551002013500102-00250332011003013--12) | Hybrid Affliction/Demonology | 33.86 | +0.0% faster than affliction-demonology-open-leveling |
+| destruction-leveling | Destruction | [4/11/36](https://talentsforever.com/warlock/60/04-00050312-2050355113101351-12) | Destruction | 35.45 | +0.9% faster than destruction-open-leveling |
 
 ## affliction-leveling
 
@@ -44,7 +44,7 @@ Race at levels 20-60 (seconds per kill): affliction-open-leveling (the build thi
 
 **Synergy certificate** (2026-11-21, fightlab/fl_synergy.py): 46 relevant talents, 27 the winner lacks; 957 pairs measured around 38/11/2 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Shadowburn + Siphon Life +13.0% (build -9.8%), Shadowburn + Wrack +10.2% (build -18.1%), Shadowburn + Improved Life Tap +4.6% (build -10.8%), Shadowburn + Suppression +2.6% (build -12.5%), Shadowburn + Shadow Mastery +2.2% (build -13.0%), Shadowburn + Improved Voidwalker +1.5% (build -10.5%). No pair build within 1% of the winner. The certificate confirms the winner.
 
-Build (2026-11-21, open_builds.py): `affliction-open-leveling`.
+Build (2026-11-22, open_builds.py): `affliction-open-leveling`.
 
 ## demonology-leveling
 
@@ -73,42 +73,40 @@ Build (2026-11-21, open_builds.py): `affliction-open-leveling`.
 | Master Summoner | 1 | +0.00 | +0.00 |
 | Fel Vitality | 3 | -0.17 | -0.06 |
 
-Race at levels 20-60 (seconds per kill): affliction-demonology-open-leveling (the build this search wrote) 33.86, open winner 33.86, finalist 27/24/0 (own tree last order) 33.95, demonology-open-leveling 34.35, finalist 27/24/0 34.48, finalist 27/24/0 (stats model order) 34.49, opt-affliction-leveling-leveling-st 34.66, opt-affliction-leveling-solo-60 34.68, demonology-leveling 34.70, leveling-affliction 34.88, opt-affliction-leveling-leveling-aoe 35.41.
+Race at levels 20-60 (seconds per kill): affliction-demonology-open-leveling 33.86, open winner 33.86, finalist 27/24/0 (own tree last order) 33.95, finalist 27/24/0 (the previous record's winner) 33.97, demonology-open-leveling 34.35, finalist 27/24/0 34.48, finalist 27/24/0 (stats model order) 34.49, opt-affliction-leveling-leveling-st 34.52, opt-affliction-leveling-solo-60 34.68, demonology-leveling 34.70, leveling-affliction 34.88, opt-affliction-leveling-leveling-aoe 35.41.
 
-**Signature spells** (Hybrid Affliction/Demonology, levels 20-60, 2026-11-21): OK; core share at 60 67% (rule 50%: Corruption, Bane of Agony, Siphon Life, Drain Life, Wrack, pet).
+**Signature spells** (Hybrid Affliction/Demonology, levels 20-60, 2026-11-22): OK; core share at 60 67% (rule 50%: Corruption, Bane of Agony, Siphon Life, Drain Life, Wrack, pet).
 
-**Synergy certificate** (2026-11-21, fightlab/fl_synergy.py): 46 relevant talents, 29 the winner lacks; 925 pairs measured around 27/24/0 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Shadowburn + Siphon Life +3.2% (build -5.7%), Shadowburn + Demonic Brand +2.2% (build -0.5%), Shadowburn + Improved Corruption +1.9% (build -3.3%), Cataclysm + Shadowburn +1.6% (build -0.8%), Shadowburn + Improved Bane of Agony +1.2% (build -3.1%), Shadowburn + Malevolence +1.0% (build -3.6%). No pair build within 1% of the winner. The certificate confirms the winner.
-
-Build (2026-11-21, open_builds.py): `affliction-demonology-open-leveling`.
+**Synergy certificate** (2026-11-22, fightlab/fl_synergy.py): 46 relevant talents, 29 the winner lacks; 925 pairs measured around 27/24/0 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Shadowburn + Siphon Life +3.2% (build -5.7%), Shadowburn + Demonic Brand +2.2% (build -0.5%), Shadowburn + Improved Corruption +1.9% (build -3.3%), Cataclysm + Shadowburn +1.6% (build -0.8%), Shadowburn + Improved Bane of Agony +1.2% (build -3.1%), Shadowburn + Malevolence +1.0% (build -3.6%). No pair build within 1% of the winner. The certificate confirms the winner.
 
 ## destruction-leveling
 
-**Open winner 4/11/36** (Destruction): talent values at level 60 (seconds per kill lost without the talent; the build: 39.32 s):
+**Open winner 4/11/36** (Destruction): talent values at level 60 (seconds per kill lost without the talent; the build: 36.50 s):
 
 | Talent | Ranks | Seconds lost without it | Per point |
 |---|---|---|---|
-| Conflagrate | 1 | +6.90 | +6.90 |
-| Shadow and Flame | 5 | +5.70 | +1.14 |
-| Shadowburn | 1 | +4.67 | +4.67 |
-| Agonizing Flames | 3 | +2.43 | +0.81 |
-| Fire and Brimstone | 3 | +2.08 | +0.69 |
-| Demonic Energies | 2 | +1.65 | +0.82 |
-| Ruin | 5 | +1.59 | +0.32 |
-| Cataclysm | 3 | +1.40 | +0.47 |
-| Aftermath | 5 | +1.39 | +0.28 |
-| Suppression | 4 | +1.28 | +0.32 |
-| Bane | 5 | +1.15 | +0.23 |
-| Improved Voidwalker | 3 | +0.68 | +0.23 |
-| Unholy Power | 5 | +0.31 | +0.06 |
-| Fel Vitality | 1 | +0.24 | +0.24 |
-| Destructive Reach | 2 | +0.15 | +0.07 |
+| Conflagrate | 1 | +4.44 | +4.44 |
+| Shadow and Flame | 5 | +4.43 | +0.89 |
+| Shadowburn | 1 | +3.70 | +3.70 |
+| Agonizing Flames | 3 | +1.70 | +0.57 |
+| Fire and Brimstone | 3 | +1.23 | +0.41 |
+| Demonic Energies | 2 | +1.09 | +0.54 |
+| Cataclysm | 3 | +0.86 | +0.29 |
+| Ruin | 5 | +0.71 | +0.14 |
+| Aftermath | 5 | +0.70 | +0.14 |
+| Suppression | 4 | +0.55 | +0.14 |
+| Bane | 5 | +0.25 | +0.05 |
+| Incinerate | 1 | +0.25 | +0.25 |
+| Unholy Power | 5 | +0.23 | +0.05 |
+| Fel Vitality | 1 | +0.00 | +0.00 |
 | Intensity | 1 | -0.00 | -0.00 |
 | Bane of Havoc | 1 | +0.00 | +0.00 |
-| Incinerate | 1 | -0.15 | -0.15 |
+| Improved Voidwalker | 3 | -0.11 | -0.04 |
+| Destructive Reach | 2 | -0.78 | -0.39 |
 
-Race at levels 20-60 (seconds per kill): open winner 38.02, finalist 4/11/36 (own tree first order) 38.88, destruction-open-leveling 38.92, finalist 4/9/38 (before the 20-60 polish) 38.92, finalist 4/9/38 40.20, finalist 4/11/36 (stats model order) 40.30, finalist 4/11/36 (own tree last order) 40.40, finalist 7/12/32 41.74, finalist 5/24/22 (the previous record's winner) 43.11, destruction-leveling 45.96.
+Race at levels 20-60 (seconds per kill): open winner 35.45, destruction-open-leveling 35.75, finalist 4/11/36 (previous order, before the order polish) 35.75, finalist 4/11/36 (own tree first order) 36.20, finalist 4/11/36 36.84, finalist 4/11/36 (stats model order) 36.84, finalist 4/11/36 (own tree last order) 36.89, finalist 5/24/22 (the previous record's winner) 37.50, finalist 7/12/32 38.17, destruction-leveling 39.62.
 
-**Signature spells** (Destruction, levels 20-60, 2026-11-22): OK; core share at 60 71% (rule 60%: Shadow Bolt, Immolate, Conflagrate, Incinerate, Searing Pain, Soul Fire, Shadowburn).
+**Signature spells** (Destruction, levels 20-60, 2026-11-22): OK; core share at 60 61% (rule 60%: Shadow Bolt, Immolate, Conflagrate, Incinerate, Searing Pain, Soul Fire, Shadowburn).
 
-**Synergy certificate** (2026-11-22, fightlab/fl_synergy.py): 46 relevant talents, 29 the winner lacks; 946 pairs measured around 4/11/36 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Demonic Knowledge + Agonizing Flames +1.8% (build +0.6%), Demonic Knowledge + Destructive Reach +1.3% (build +5.9%), Demonic Knowledge + Fire and Brimstone +1.1% (build +0.7%), Shadow Mastery + Demonic Knowledge +1.0% (build +8.2%), Demonic Knowledge + Conflagrate +0.9% (build -30.0%), Master Demonologist + Aftermath +0.8% (build -2.3%). No pair build within 1% of the winner. The certificate confirms the winner.
+**Synergy certificate** (2026-11-22, fightlab/fl_synergy.py): 46 relevant talents, 29 the winner lacks; 946 pairs measured around 4/11/36 at level 60 on 400 fights. Largest interactions (kills per hour of both against the two alone): Soul Link + Destructive Reach +13.1% (build +4.1%), Demonic Knowledge + Destructive Reach +12.4% (build +8.0%), Soul Link + Agonizing Flames +11.9% (build -2.2%), Malevolence + Fire and Brimstone +11.4% (build -2.9%), Shadow Mastery + Fire and Brimstone +11.2% (build -0.6%), Demonic Knowledge + Fire and Brimstone +11.2% (build +3.4%). Leads polished and raced at 20-60: Soul Link + Destructive Reach -> 0/21/30 -4.3%. The certificate confirms the winner.
 

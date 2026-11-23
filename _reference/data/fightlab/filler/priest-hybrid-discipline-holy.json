@@ -3,7 +3,7 @@
  "spec": "Hybrid Discipline/Holy",
  "build": "smite-open-leveling",
  "rotation": "holy-leveling",
- "date": "2026-11-21",
+ "date": "2026-11-22",
  "fights": 1500,
  "start_order": [
   {
@@ -165,7 +165,7 @@
  ],
  "steps": [
   {
-   "weighted": 43.286,
+   "weighted": 42.113,
    "values_at_60": {
     "Improved Mind Blast": -0.309,
     "Improved Shadow Word: Pain": -0.228,
@@ -233,6 +233,8 @@
   }
  ],
  "kept_signature": [],
+ "model": "78886aceeae542642b0be2ba1adb35834bb32a4b",
+ "chain": "kept: no model recorded, the same order",
  "gates_checked": {
   "Divine Fury": {
    "level": 49,
@@ -248,15 +250,15 @@
    "homes": [
     {
      "to": "Twin Disciplines",
-     "seed3": 0.0159
-    },
-    {
-     "to": "Martyrdom",
-     "seed3": 0.0168
+     "seed3": 0.0154
     },
     {
      "to": "Mental Strength",
-     "seed3": 0.0176
+     "seed3": 0.0164
+    },
+    {
+     "to": "Martyrdom",
+     "seed3": 0.017
     },
     {
      "to": "Silent Resolve",
@@ -272,11 +274,11 @@
    "homes": [
     {
      "to": "Improved Renew",
-     "seed3": 0.0016
+     "seed3": 0.0013
     },
     {
      "to": "Spell Warding",
-     "seed3": 0.0016
+     "seed3": 0.0014
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -323,15 +325,15 @@
    "homes": [
     {
      "to": "Twin Disciplines",
-     "seed3": 0.0034
+     "seed3": 0.0031
+    },
+    {
+     "to": "Mental Strength",
+     "seed3": 0.0044
     },
     {
      "to": "Martyrdom",
      "seed3": 0.0045
-    },
-    {
-     "to": "Mental Strength",
-     "seed3": 0.0055
     },
     {
      "to": "Silent Resolve",
@@ -424,11 +426,11 @@
    "homes": [
     {
      "to": "Shadow Focus",
-     "seed3": 0.0077
+     "seed3": 0.0092
     },
     {
      "to": "Blackout",
-     "seed3": 0.0114
+     "seed3": 0.0133
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -483,7 +485,7 @@
    "homes": [
     {
      "to": "Twin Disciplines",
-     "seed3": 0.0025
+     "seed3": 0.002
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -671,6 +673,16 @@
    "tree": "Shadow",
    "talent": "Improved Shadow Word: Pain",
    "points": 2
+  }
+ ],
+ "reruns": [
+  {
+   "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-22",
+   "moves": 0
   }
  ],
  "written": {
@@ -927,11 +939,5 @@
    }
   ],
   "note": "2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Healing to Spell Warding at 54 (gate that did nothing, tie-break by utility (survival): +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Improved Healing to Spell Warding at 53 (gate that did nothing, tie-break by utility (survival): +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Healing to Twilight Focus at 55 (gate that did nothing, no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Inner Fire to Shadow Focus at 47 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Renew to Twilight Focus at 34 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Holy Nova to Twilight Focus at 44 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill)."
- },
- "reruns": [
-  {
-   "date": "2026-11-21",
-   "moves": 0
-  }
- ]
+ }
 }

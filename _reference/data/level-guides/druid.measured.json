@@ -1,6 +1,6 @@
 {
  "class": "druid",
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -174,7 +174,8 @@
       "Rake": 1.31,
       "Melee": 11.38,
       "Claw": 3.94,
-      "Ferocious Bite": 0.88
+      "Ferocious Bite": 0.88,
+      "Rip": 0.02
      },
      "idle_share": 0.076,
      "drink_per_kill": 0,
@@ -197,7 +198,8 @@
       "Rake": 1.37,
       "Melee": 11.85,
       "Claw": 4.04,
-      "Ferocious Bite": 0.89
+      "Ferocious Bite": 0.89,
+      "Rip": 0.03
      },
      "idle_share": 0.078,
      "drink_per_kill": 0.06,
@@ -301,7 +303,8 @@
       "Melee": 11.7,
       "Rake": 1.27,
       "Claw": 2.69,
-      "Ferocious Bite": 1.0
+      "Ferocious Bite": 1.0,
+      "Rip": 0.04
      },
      "idle_share": 0.114,
      "drink_per_kill": 0.9,
@@ -352,7 +355,7 @@
    "build": "balance-open-leveling",
    "rotation": "balance-dps",
    "provisional_order": false,
-   "fingerprint": "7b73a6ee56f9",
+   "fingerprint": "eb26ec048bad",
    "levels": {
     "1": {
      "seconds": 14.1,
@@ -431,7 +434,8 @@
      "deaths_per_100": 0.0,
      "casts": {
       "Moonfire": 1.18,
-      "Wrath": 8.62
+      "Wrath": 8.62,
+      "Entangling Roots": 0.03
      },
      "idle_share": 0.147,
      "drink_per_kill": 1.26,
@@ -471,7 +475,8 @@
      "casts": {
       "Moonfire": 1.07,
       "Starfire": 3.17,
-      "Wrath": 0.45
+      "Wrath": 0.45,
+      "Entangling Roots": 0.02
      },
      "idle_share": 0.184,
      "drink_per_kill": 0.7,
@@ -486,43 +491,67 @@
      "pet_deaths_per_100": 0.0,
      "standing": "caster"
     },
-    "29": {
-     "seconds": 33.3,
+    "30": {
+     "seconds": 34.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Moonfire": 1.05,
-      "Starfire": 4.22,
-      "Wrath": 0.43
+      "Starfire": 4.45,
+      "Wrath": 0.51,
+      "Entangling Roots": 0.04
      },
-     "idle_share": 0.221,
-     "drink_per_kill": 3.44,
-     "eat_per_kill": 5.68,
+     "idle_share": 0.218,
+     "drink_per_kill": 3.75,
+     "eat_per_kill": 5.61,
      "shares": {
-      "Starfire": 0.739,
-      "Moonfire": 0.189,
+      "Starfire": 0.742,
+      "Moonfire": 0.182,
       "Thorns": 0.051,
-      "Wrath": 0.02
+      "Wrath": 0.024
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,
      "standing": "caster"
     },
-    "30": {
-     "seconds": 35.9,
-     "deaths_per_100": 0.25,
+    "31": {
+     "seconds": 35.8,
+     "deaths_per_100": 0.0,
      "casts": {
-      "Moonfire": 1.07,
-      "Wrath": 2.28,
-      "Starfire": 3.93
+      "Moonfire": 1.05,
+      "Starfire": 4.77,
+      "Wrath": 0.51,
+      "Entangling Roots": 0.04
      },
-     "idle_share": 0.216,
-     "drink_per_kill": 2.84,
-     "eat_per_kill": 6.57,
+     "idle_share": 0.221,
+     "drink_per_kill": 3.0,
+     "eat_per_kill": 6.66,
      "shares": {
-      "Starfire": 0.653,
-      "Moonfire": 0.184,
-      "Wrath": 0.107,
-      "Thorns": 0.054
+      "Starfire": 0.753,
+      "Moonfire": 0.173,
+      "Thorns": 0.051,
+      "Wrath": 0.022
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "caster"
+    },
+    "33": {
+     "seconds": 37.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Moonfire": 1.16,
+      "Wrath": 2.54,
+      "Starfire": 4.72,
+      "Entangling Roots": 0.11
+     },
+     "idle_share": 0.222,
+     "drink_per_kill": 2.49,
+     "eat_per_kill": 7.25,
+     "shares": {
+      "Starfire": 0.677,
+      "Moonfire": 0.168,
+      "Wrath": 0.103,
+      "Thorns": 0.048
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,
@@ -578,7 +607,8 @@
      "casts": {
       "Moonfire": 1.04,
       "Wrath": 2.29,
-      "Starfire": 4.19
+      "Starfire": 4.19,
+      "Entangling Roots": 0.02
      },
      "idle_share": 0.229,
      "drink_per_kill": 4.39,
@@ -599,7 +629,8 @@
      "casts": {
       "Moonfire": 1.04,
       "Wrath": 2.25,
-      "Starfire": 4.28
+      "Starfire": 4.28,
+      "Entangling Roots": 0.04
      },
      "idle_share": 0.237,
      "drink_per_kill": 5.74,
@@ -620,7 +651,8 @@
      "casts": {
       "Moonfire": 1.04,
       "Wrath": 2.24,
-      "Starfire": 4.18
+      "Starfire": 4.18,
+      "Entangling Roots": 0.02
      },
      "idle_share": 0.189,
      "drink_per_kill": 3.9,
@@ -950,7 +982,8 @@
       "Melee": 18.04,
       "Rake": 1.87,
       "Claw": 3.4,
-      "Ferocious Bite": 1.13
+      "Ferocious Bite": 1.13,
+      "Rip": 0.01
      },
      "idle_share": 0.125,
      "drink_per_kill": 1.38,

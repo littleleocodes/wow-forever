@@ -1,6 +1,6 @@
 {
  "class": "warlock",
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -83,6 +83,7 @@
       "Corruption": 1.03,
       "Bane of Agony": 1.05,
       "Immolate": 1.04,
+      "Shadow Bolt": 0.02,
       "Wand": 4.77
      },
      "idle_share": 0.025,
@@ -165,6 +166,7 @@
       "Corruption": 1.03,
       "Searing Pain": 1.98,
       "Bane of Agony": 1.03,
+      "Immolate": 0.03,
       "Wand": 9.96
      },
      "idle_share": 0.047,
@@ -223,6 +225,7 @@
       "Torment": 5.2,
       "Searing Pain": 1.7,
       "Bane of Agony": 1.04,
+      "Immolate": 0.02,
       "Wand": 13.19
      },
      "idle_share": 0.041,
@@ -251,6 +254,7 @@
       "Torment": 5.21,
       "Searing Pain": 1.75,
       "Bane of Agony": 1.05,
+      "Immolate": 0.04,
       "Wand": 13.12
      },
      "idle_share": 0.044,
@@ -279,6 +283,7 @@
       "Torment": 5.32,
       "Searing Pain": 1.63,
       "Bane of Agony": 1.04,
+      "Immolate": 0.02,
       "Wand": 13.59
      },
      "idle_share": 0.044,
@@ -307,6 +312,7 @@
       "Torment": 5.6,
       "Searing Pain": 1.5,
       "Bane of Agony": 1.0,
+      "Immolate": 0.02,
       "Wand": 14.63
      },
      "idle_share": 0.04,
@@ -335,6 +341,7 @@
       "Torment": 5.7,
       "Searing Pain": 1.42,
       "Bane of Agony": 1.0,
+      "Immolate": 0.01,
       "Wand": 14.92
      },
      "idle_share": 0.037,
@@ -363,6 +370,7 @@
       "Torment": 5.75,
       "Searing Pain": 1.17,
       "Bane of Agony": 1.0,
+      "Immolate": 0.01,
       "Wand": 15.46
      },
      "idle_share": 0.022,
@@ -420,7 +428,7 @@
    "build": "affliction-open-leveling",
    "rotation": "affliction-leveling",
    "provisional_order": false,
-   "fingerprint": "91a1151d883e",
+   "fingerprint": "9f75d29403f4",
    "levels": {
     "1": {
      "seconds": 13.7,
@@ -756,27 +764,27 @@
      "standing": "Demon Armor"
     },
     "60": {
-     "seconds": 30.4,
+     "seconds": 30.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Corruption": 1.08,
-      "Torment": 4.44,
+      "Corruption": 1.1,
+      "Torment": 4.47,
       "Bane of Agony": 1.0,
       "Siphon Life": 1.0,
-      "Wrack": 1.18,
-      "Wand": 6.66,
-      "Life Tap": 0.28
+      "Wrack": 1.17,
+      "Wand": 6.72,
+      "Life Tap": 0.29
      },
      "idle_share": 0.029,
      "drink_per_kill": 0,
-     "eat_per_kill": 0,
+     "eat_per_kill": 0.03,
      "shares": {
       "Bane of Agony": 0.267,
-      "Wrack": 0.217,
-      "Corruption": 0.203,
-      "Wand": 0.139,
-      "Siphon Life": 0.115,
-      "Voidwalker melee": 0.059
+      "Wrack": 0.213,
+      "Corruption": 0.207,
+      "Wand": 0.14,
+      "Siphon Life": 0.113,
+      "Voidwalker melee": 0.06
      },
      "pet_sources": [
       "Voidwalker melee"
@@ -790,7 +798,7 @@
    "build": "destruction-open-leveling",
    "rotation": "destruction-leveling",
    "provisional_order": false,
-   "fingerprint": "01bdca91e139",
+   "fingerprint": "07021f86d808",
    "levels": {
     "1": {
      "seconds": 14.4,
@@ -812,43 +820,93 @@
      "pet_deaths_per_100": 0.0,
      "standing": "Demon Skin"
     },
-    "9": {
-     "seconds": 29.5,
+    "7": {
+     "seconds": 24.4,
      "deaths_per_100": 0.0,
      "casts": {
       "Immolate": 1.03,
-      "Shadow Bolt": 1.31,
-      "Wand": 8.46
+      "Shadow Bolt": 1.17,
+      "Wand": 6.74
      },
-     "idle_share": 0.135,
+     "idle_share": 0.072,
      "drink_per_kill": 0,
-     "eat_per_kill": 3.96,
+     "eat_per_kill": 1.75,
      "shares": {
-      "Wand": 0.693,
-      "Shadow Bolt": 0.17,
-      "Immolate": 0.136
+      "Wand": 0.668,
+      "Shadow Bolt": 0.184,
+      "Immolate": 0.149
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Demon Skin"
+    },
+    "8": {
+     "seconds": 24.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Bane of Agony": 1.03,
+      "Immolate": 1.0,
+      "Wand": 6.62,
+      "Shadow Bolt": 0.26
+     },
+     "idle_share": 0.089,
+     "drink_per_kill": 0,
+     "eat_per_kill": 2.12,
+     "shares": {
+      "Wand": 0.594,
+      "Bane of Agony": 0.255,
+      "Immolate": 0.115,
+      "Shadow Bolt": 0.036
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,
      "standing": "Demon Skin"
     },
     "10": {
-     "seconds": 22.7,
+     "seconds": 21.4,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 2.77,
-      "Shadow Bolt": 2.39,
-      "Immolate": 1.04,
-      "Wand": 4.68
+      "Bane of Agony": 1.04,
+      "Torment": 2.62,
+      "Immolate": 1.03,
+      "Shadow Bolt": 1.23,
+      "Wand": 4.46
      },
-     "idle_share": 0.053,
+     "idle_share": 0.047,
      "drink_per_kill": 0,
-     "eat_per_kill": 0.25,
+     "eat_per_kill": 0.06,
      "shares": {
-      "Wand": 0.361,
-      "Shadow Bolt": 0.302,
-      "Immolate": 0.178,
-      "Voidwalker melee": 0.158
+      "Wand": 0.349,
+      "Bane of Agony": 0.188,
+      "Immolate": 0.169,
+      "Shadow Bolt": 0.155,
+      "Voidwalker melee": 0.139
+     },
+     "pet_sources": [
+      "Voidwalker melee"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Demon Skin"
+    },
+    "19": {
+     "seconds": 28.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Torment": 3.42,
+      "Shadow Bolt": 2.18,
+      "Bane of Agony": 1.05,
+      "Immolate": 1.02,
+      "Wand": 6.84
+     },
+     "idle_share": 0.07,
+     "drink_per_kill": 0,
+     "eat_per_kill": 0,
+     "shares": {
+      "Wand": 0.358,
+      "Shadow Bolt": 0.216,
+      "Bane of Agony": 0.177,
+      "Voidwalker melee": 0.148,
+      "Immolate": 0.101
      },
      "pet_sources": [
       "Voidwalker melee"
@@ -857,22 +915,24 @@
      "standing": "Demon Skin"
     },
     "20": {
-     "seconds": 28.6,
+     "seconds": 27.1,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 3.5,
-      "Shadow Bolt": 1.92,
+      "Torment": 3.37,
+      "Shadow Bolt": 1.25,
+      "Bane of Agony": 1.04,
       "Immolate": 1.03,
-      "Wand": 8.35
+      "Wand": 7.45
      },
-     "idle_share": 0.073,
+     "idle_share": 0.071,
      "drink_per_kill": 0,
-     "eat_per_kill": 0.04,
+     "eat_per_kill": 0,
      "shares": {
-      "Wand": 0.423,
-      "Shadow Bolt": 0.245,
-      "Immolate": 0.185,
-      "Voidwalker melee": 0.148
+      "Wand": 0.376,
+      "Immolate": 0.166,
+      "Shadow Bolt": 0.16,
+      "Bane of Agony": 0.157,
+      "Voidwalker melee": 0.142
      },
      "pet_sources": [
       "Voidwalker melee"
@@ -881,23 +941,25 @@
      "standing": "Demon Armor"
     },
     "28": {
-     "seconds": 36.2,
+     "seconds": 33.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 4.37,
-      "Shadow Bolt": 2.29,
-      "Immolate": 1.19,
-      "Wand": 11.93,
-      "Create Healthstone": 0.07
+      "Torment": 3.94,
+      "Shadow Bolt": 1.47,
+      "Bane of Agony": 1.05,
+      "Immolate": 1.03,
+      "Wand": 10.65,
+      "Create Healthstone": 0.04
      },
-     "idle_share": 0.086,
+     "idle_share": 0.076,
      "drink_per_kill": 0,
-     "eat_per_kill": 1.31,
+     "eat_per_kill": 0.84,
      "shares": {
-      "Wand": 0.479,
-      "Shadow Bolt": 0.24,
-      "Immolate": 0.148,
-      "Voidwalker melee": 0.133
+      "Wand": 0.428,
+      "Bane of Agony": 0.165,
+      "Shadow Bolt": 0.156,
+      "Immolate": 0.131,
+      "Voidwalker melee": 0.121
      },
      "pet_sources": [
       "Voidwalker melee"
@@ -906,25 +968,27 @@
      "standing": "Demon Armor"
     },
     "29": {
-     "seconds": 35.6,
-     "deaths_per_100": 0.25,
+     "seconds": 32.3,
+     "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 4.39,
-      "Shadow Bolt": 1.46,
-      "Immolate": 1.36,
-      "Wand": 12.84,
+      "Torment": 3.97,
+      "Shadow Bolt": 0.62,
+      "Bane of Agony": 1.04,
+      "Immolate": 1.14,
+      "Wand": 11.88,
       "Shadowburn": 1.0,
-      "Create Healthstone": 0.06
+      "Create Healthstone": 0.04
      },
-     "idle_share": 0.079,
+     "idle_share": 0.068,
      "drink_per_kill": 0,
-     "eat_per_kill": 0.88,
+     "eat_per_kill": 0.47,
      "shares": {
-      "Wand": 0.484,
-      "Immolate": 0.146,
-      "Shadow Bolt": 0.143,
-      "Voidwalker melee": 0.126,
-      "Shadowburn": 0.101
+      "Wand": 0.447,
+      "Bane of Agony": 0.153,
+      "Immolate": 0.125,
+      "Voidwalker melee": 0.115,
+      "Shadowburn": 0.101,
+      "Shadow Bolt": 0.06
      },
      "pet_sources": [
       "Voidwalker melee"
@@ -933,26 +997,89 @@
      "standing": "Demon Armor"
     },
     "30": {
-     "seconds": 33.5,
+     "seconds": 32.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 4.53,
-      "Shadow Bolt": 0.26,
-      "Immolate": 1.46,
-      "Wand": 12.58,
-      "Shadowburn": 1.0,
-      "Conflagrate": 0.94
+      "Torment": 4.24,
+      "Shadow Bolt": 0.29,
+      "Bane of Agony": 1.06,
+      "Immolate": 1.13,
+      "Wand": 12.23,
+      "Shadowburn": 1.0
      },
-     "idle_share": 0.091,
-     "drink_per_kill": 0.39,
+     "idle_share": 0.073,
+     "drink_per_kill": 0,
      "eat_per_kill": 0.04,
      "shares": {
-      "Wand": 0.454,
-      "Immolate": 0.195,
-      "Voidwalker melee": 0.126,
-      "Conflagrate": 0.103,
-      "Shadowburn": 0.099,
-      "Shadow Bolt": 0.023
+      "Wand": 0.442,
+      "Immolate": 0.176,
+      "Bane of Agony": 0.141,
+      "Voidwalker melee": 0.118,
+      "Shadowburn": 0.095,
+      "Shadow Bolt": 0.027
+     },
+     "pet_sources": [
+      "Voidwalker melee"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Demon Armor"
+    },
+    "31": {
+     "seconds": 34.6,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Torment": 4.08,
+      "Shadow Bolt": 0.72,
+      "Bane of Agony": 1.05,
+      "Immolate": 1.15,
+      "Wand": 10.3,
+      "Shadowburn": 1.0,
+      "Conflagrate": 0.76,
+      "Life Tap": 0.04
+     },
+     "idle_share": 0.163,
+     "drink_per_kill": 3.52,
+     "eat_per_kill": 0,
+     "shares": {
+      "Wand": 0.368,
+      "Immolate": 0.156,
+      "Bane of Agony": 0.128,
+      "Voidwalker melee": 0.11,
+      "Shadowburn": 0.093,
+      "Conflagrate": 0.08,
+      "Shadow Bolt": 0.065
+     },
+     "pet_sources": [
+      "Voidwalker melee"
+     ],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Demon Armor"
+    },
+    "38": {
+     "seconds": 37.9,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Torment": 4.26,
+      "Shadow Bolt": 0.79,
+      "Bane of Agony": 1.05,
+      "Immolate": 1.19,
+      "Wand": 11.53,
+      "Shadowburn": 0.99,
+      "Conflagrate": 0.88,
+      "Create Healthstone": 0.06,
+      "Life Tap": 0.02
+     },
+     "idle_share": 0.173,
+     "drink_per_kill": 4.62,
+     "eat_per_kill": 0.48,
+     "shares": {
+      "Wand": 0.335,
+      "Bane of Agony": 0.166,
+      "Immolate": 0.143,
+      "Shadowburn": 0.104,
+      "Conflagrate": 0.102,
+      "Voidwalker melee": 0.086,
+      "Shadow Bolt": 0.064
      },
      "pet_sources": [
       "Voidwalker melee"
@@ -961,27 +1088,29 @@
      "standing": "Demon Armor"
     },
     "39": {
-     "seconds": 39.9,
-     "deaths_per_100": 0.25,
+     "seconds": 37.1,
+     "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 4.7,
-      "Shadow Bolt": 0.88,
-      "Immolate": 1.31,
-      "Conflagrate": 1.97,
-      "Wand": 12.56,
+      "Torment": 3.93,
+      "Shadow Bolt": 0.84,
+      "Bane of Agony": 1.03,
+      "Immolate": 1.06,
+      "Conflagrate": 1.6,
+      "Wand": 10.22,
       "Shadowburn": 0.99,
-      "Create Healthstone": 0.12
+      "Create Healthstone": 0.14
      },
-     "idle_share": 0.156,
-     "drink_per_kill": 3.85,
-     "eat_per_kill": 1.46,
+     "idle_share": 0.192,
+     "drink_per_kill": 5.73,
+     "eat_per_kill": 1.84,
      "shares": {
-      "Wand": 0.345,
-      "Conflagrate": 0.231,
-      "Immolate": 0.155,
-      "Shadowburn": 0.106,
-      "Voidwalker melee": 0.09,
-      "Shadow Bolt": 0.073
+      "Wand": 0.282,
+      "Conflagrate": 0.19,
+      "Bane of Agony": 0.15,
+      "Immolate": 0.13,
+      "Shadowburn": 0.104,
+      "Voidwalker melee": 0.074,
+      "Shadow Bolt": 0.069
      },
      "pet_sources": [
       "Voidwalker melee"
@@ -990,26 +1119,29 @@
      "standing": "Demon Armor"
     },
     "40": {
-     "seconds": 40.3,
+     "seconds": 37.7,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 4.87,
-      "Shadow Bolt": 0.51,
-      "Immolate": 1.32,
-      "Wand": 12.29,
-      "Conflagrate": 1.98,
-      "Shadowburn": 0.99
+      "Torment": 4.11,
+      "Shadow Bolt": 0.55,
+      "Bane of Agony": 1.04,
+      "Immolate": 1.05,
+      "Wand": 9.85,
+      "Conflagrate": 1.69,
+      "Shadowburn": 0.96,
+      "Life Tap": 0.03
      },
-     "idle_share": 0.208,
-     "drink_per_kill": 5.89,
-     "eat_per_kill": 0,
+     "idle_share": 0.238,
+     "drink_per_kill": 7.25,
+     "eat_per_kill": 0.07,
      "shares": {
-      "Wand": 0.325,
-      "Conflagrate": 0.249,
-      "Immolate": 0.177,
-      "Shadowburn": 0.117,
-      "Voidwalker melee": 0.09,
-      "Shadow Bolt": 0.042
+      "Wand": 0.261,
+      "Conflagrate": 0.219,
+      "Immolate": 0.146,
+      "Bane of Agony": 0.138,
+      "Shadowburn": 0.115,
+      "Voidwalker melee": 0.076,
+      "Shadow Bolt": 0.046
      },
      "pet_sources": [
       "Voidwalker melee"
@@ -1018,26 +1150,30 @@
      "standing": "Demon Armor"
     },
     "42": {
-     "seconds": 40.1,
+     "seconds": 37.9,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 4.84,
-      "Shadow Bolt": 0.51,
-      "Immolate": 1.32,
-      "Wand": 12.29,
-      "Conflagrate": 2.01,
-      "Shadowburn": 0.98
+      "Torment": 4.21,
+      "Shadow Bolt": 0.54,
+      "Bane of Agony": 1.03,
+      "Immolate": 1.08,
+      "Wand": 10.15,
+      "Conflagrate": 1.75,
+      "Shadowburn": 0.98,
+      "Life Tap": 0.04,
+      "Death Coil": 0.04
      },
-     "idle_share": 0.202,
-     "drink_per_kill": 5.46,
-     "eat_per_kill": 0.04,
+     "idle_share": 0.227,
+     "drink_per_kill": 6.67,
+     "eat_per_kill": 0,
      "shares": {
-      "Wand": 0.328,
-      "Conflagrate": 0.247,
-      "Immolate": 0.179,
+      "Wand": 0.268,
+      "Conflagrate": 0.212,
+      "Immolate": 0.151,
+      "Bane of Agony": 0.132,
       "Shadowburn": 0.111,
-      "Voidwalker melee": 0.085,
-      "Shadow Bolt": 0.041,
+      "Voidwalker melee": 0.074,
+      "Shadow Bolt": 0.044,
       "Death Coil": 0.008
      },
      "pet_sources": [
@@ -1047,28 +1183,31 @@
      "standing": "Demon Armor"
     },
     "50": {
-     "seconds": 40.4,
+     "seconds": 37.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 4.91,
-      "Shadow Bolt": 0.54,
-      "Immolate": 1.3,
-      "Wand": 12.57,
-      "Conflagrate": 2.04,
-      "Shadowburn": 0.98,
-      "Death Coil": 0.06
+      "Torment": 4.16,
+      "Shadow Bolt": 0.59,
+      "Bane of Agony": 1.0,
+      "Immolate": 1.02,
+      "Wand": 9.82,
+      "Conflagrate": 1.69,
+      "Shadowburn": 0.96,
+      "Life Tap": 0.06,
+      "Death Coil": 0.04
      },
-     "idle_share": 0.197,
-     "drink_per_kill": 5.44,
+     "idle_share": 0.221,
+     "drink_per_kill": 6.21,
      "eat_per_kill": 0,
      "shares": {
-      "Wand": 0.284,
-      "Conflagrate": 0.251,
-      "Immolate": 0.222,
-      "Shadowburn": 0.114,
-      "Voidwalker melee": 0.073,
-      "Shadow Bolt": 0.046,
-      "Death Coil": 0.01
+      "Wand": 0.219,
+      "Conflagrate": 0.216,
+      "Immolate": 0.184,
+      "Bane of Agony": 0.149,
+      "Shadowburn": 0.112,
+      "Voidwalker melee": 0.062,
+      "Shadow Bolt": 0.051,
+      "Death Coil": 0.006
      },
      "pet_sources": [
       "Voidwalker melee"
@@ -1077,26 +1216,30 @@
      "standing": "Demon Armor"
     },
     "60": {
-     "seconds": 39.0,
+     "seconds": 35.7,
      "deaths_per_100": 0.0,
      "casts": {
-      "Torment": 5.1,
-      "Shadow Bolt": 0.51,
-      "Immolate": 1.36,
-      "Conflagrate": 2.15,
-      "Wand": 12.93,
-      "Shadowburn": 0.99
+      "Torment": 4.42,
+      "Shadow Bolt": 0.57,
+      "Bane of Agony": 1.0,
+      "Immolate": 1.03,
+      "Wand": 10.4,
+      "Conflagrate": 1.73,
+      "Shadowburn": 0.97,
+      "Life Tap": 0.06,
+      "Death Coil": 0.01
      },
-     "idle_share": 0.147,
-     "drink_per_kill": 5.21,
+     "idle_share": 0.168,
+     "drink_per_kill": 5.62,
      "eat_per_kill": 0,
      "shares": {
-      "Conflagrate": 0.272,
-      "Wand": 0.265,
-      "Immolate": 0.23,
-      "Shadowburn": 0.11,
-      "Voidwalker melee": 0.069,
-      "Shadow Bolt": 0.052
+      "Conflagrate": 0.217,
+      "Wand": 0.215,
+      "Immolate": 0.183,
+      "Bane of Agony": 0.156,
+      "Shadowburn": 0.106,
+      "Shadow Bolt": 0.06,
+      "Voidwalker melee": 0.06
      },
      "pet_sources": [
       "Voidwalker melee"
@@ -1110,7 +1253,7 @@
    "build": "opt-affliction-leveling-leveling-st",
    "rotation": "demonology-leveling",
    "provisional_order": false,
-   "fingerprint": "14e28ef7a6ba",
+   "fingerprint": "dce26229c18c",
    "levels": {
     "1": {
      "seconds": 14.3,
@@ -1185,6 +1328,7 @@
       "Corruption": 1.03,
       "Bane of Agony": 1.05,
       "Immolate": 1.04,
+      "Shadow Bolt": 0.02,
       "Wand": 4.79
      },
      "idle_share": 0.022,
@@ -1400,26 +1544,26 @@
      "standing": "Demon Armor"
     },
     "50": {
-     "seconds": 36.9,
+     "seconds": 37.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Corruption": 1.32,
-      "Torment": 5.51,
+      "Corruption": 1.35,
+      "Torment": 5.52,
       "Bane of Agony": 1.0,
       "Siphon Life": 1.0,
-      "Immolate": 0.71,
-      "Wand": 13.72
+      "Immolate": 0.69,
+      "Wand": 13.75
      },
      "idle_share": 0.058,
      "drink_per_kill": 0,
      "eat_per_kill": 0,
      "shares": {
-      "Wand": 0.313,
-      "Bane of Agony": 0.234,
-      "Corruption": 0.172,
-      "Siphon Life": 0.103,
+      "Wand": 0.314,
+      "Bane of Agony": 0.233,
+      "Corruption": 0.174,
+      "Siphon Life": 0.104,
       "Voidwalker melee": 0.092,
-      "Immolate": 0.086
+      "Immolate": 0.083
      },
      "pet_sources": [
       "Voidwalker melee"
@@ -1428,26 +1572,26 @@
      "standing": "Demon Armor"
     },
     "60": {
-     "seconds": 34.6,
+     "seconds": 34.7,
      "deaths_per_100": 0.0,
      "casts": {
-      "Corruption": 1.22,
-      "Torment": 5.21,
+      "Corruption": 1.23,
+      "Torment": 5.27,
       "Bane of Agony": 1.0,
       "Siphon Life": 1.0,
-      "Immolate": 0.7,
-      "Wand": 12.9
+      "Immolate": 0.72,
+      "Wand": 12.83
      },
-     "idle_share": 0.036,
+     "idle_share": 0.037,
      "drink_per_kill": 0,
      "eat_per_kill": 0,
      "shares": {
-      "Wand": 0.271,
-      "Bane of Agony": 0.262,
-      "Corruption": 0.196,
-      "Siphon Life": 0.105,
-      "Immolate": 0.09,
-      "Voidwalker melee": 0.076
+      "Wand": 0.268,
+      "Bane of Agony": 0.259,
+      "Corruption": 0.197,
+      "Siphon Life": 0.106,
+      "Immolate": 0.094,
+      "Voidwalker melee": 0.077
      },
      "pet_sources": [
       "Voidwalker melee"

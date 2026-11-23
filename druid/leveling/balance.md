@@ -2,8 +2,6 @@
 
 [Druid](../README.md) > [Leveling (solo)](README.md) > Balance
 
-> **Being checked:** The first point of Eclipse makes the pick slower at 30 (the play check: 33.3 seconds a kill at 29, 35.9 at 30), and the rotation is being checked for why. The build and numbers on this page may change when it is done.
-
 **Leveling from level 1?** [The rotation level by level](balance-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
 **[Balance — Leveling](../research/leveling/builds/balance-open-leveling.md)** (36/0/15) — [open the talent tree](https://talentsforever.com/druid/60/5332200105501351--51531-12)
@@ -19,22 +17,23 @@
 **In the fight**, top to bottom:
 
 1. **Moonfire** on a mob above a third of its health.
-2. **Wrath** while the mob walks in and whenever nothing below applies: each one stores **Eclipse** charges.
-3. **Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.
-4. A nearly dead mob: finish it with **Wrath**.
-5. Low on health: **Entangling Roots** on the mob, step out of melee. The tuned rules cast no heal in a fight.
+2. Through level 32: **Starfire** whenever you can afford it, while the mob has more than about half a **Starfire** hit of health left; **Wrath** to finish.
+3. From 33 (**Eclipse** 3/3), **Wrath** while the mob walks in and whenever nothing below applies: each one stores **Eclipse** charges.
+4. **Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.
+5. A nearly dead mob: finish it with **Wrath**.
+6. Low on health: **Entangling Roots** on the mob, step out of melee. The tuned rules cast no heal in a fight.
 
 **Between fights:** Eat when your health is below 40%, in **Moonkin Form** from 40 (stay in it). No heals between fights either: the tuned rules of 2026-11-21 eat instead, about 2% faster per kill. Drink when your mana is below a quarter (25%). Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
 
 ## Why this rotation
 
-Pull with an instant, then cast: **Moonfire** on the mob, **Wrath** while it runs in, then **Starfire** whenever **Eclipse** has shortened it or the mob cannot hit you, **Wrath** otherwise, and **Wrath** to finish. Eat between fights below 40% health: the tuned rules cast no heal, in a fight or between fights.
+From 20 to 32 **Starfire** is your nuke whenever you can afford it, with **Moonfire** at the pull and **Wrath** to finish. From 33 (**Eclipse** 3/3) pull with an instant, then cast: **Moonfire** on the mob, **Wrath** while it runs in, then **Starfire** whenever **Eclipse** has shortened it or the mob cannot hit you, **Wrath** otherwise, and **Wrath** to finish. Eat between fights below 40% health: the tuned rules cast no heal, in a fight or between fights.
 
 **Why it works**
 
 - **Moonfire** first: it is instant, so it ticks while the mob is still running at you. The fight lab puts it only on a mob above about a third of its health: a mob below that dies before the burn pays off. This build skips Insect Swarm (a Balance tier 4 talent), so **Moonfire** is the only damage over time you cast; **Genesis** (levels 23-24 and 56) makes its burn 4% stronger, 6% from 56.
-- **Wrath** is the default nuke and, until level 26, almost the only one: with **Improved Wrath** (levels 10-14) it is a 1.5-second cast for half the mana, and a short cast loses little to pushback once the mob is hitting you.
-- **Eclipse** (levels 30-32) is the build's most valuable talent in the fight lab: each **Wrath** takes up to 0.5 seconds off your next 2 **Starfire** casts (0.17 s at 1 point, 0.33 at 2, 0.5 at 3; up to 4 charges, 15 seconds). So the fight lab weaves: **Wrath**, then **Starfire** while charges last, about two **Starfire** casts for each **Wrath**.
+- **Wrath** is your nuke until 19: with **Improved Wrath** (levels 10-14) it is a 1.5-second cast for half the mana, and a short cast loses little to pushback once the mob is hitting you. From 20 **Starfire** takes over (three quarters of your damage), and from 33 **Wrath** comes back to charge **Eclipse** (8-10% of the damage).
+- **Eclipse** (levels 31-33) is the build's most valuable talent in the fight lab: each **Wrath** takes up to 0.5 seconds off your next 2 **Starfire** casts (0.17 s at 1 point, 0.33 at 2, 0.5 at 3; up to 4 charges, 15 seconds). So the fight lab weaves: **Wrath**, then **Starfire** while charges last, about two **Starfire** casts for each **Wrath**. The list weaves only once all three points are in (33): one or two take too little off a charged **Starfire** to pay for the **Wrath** casts, and without the weave level 31 was 2.7-2.9% faster per kill (2026-11-23).
 - **Starfire** is your hardest hit. It takes 3 seconds with **Improved Starfire** (2.5 on a full **Eclipse** charge), so it waits for a charge or a safe moment: when the mob is rooted or stunned (**Improved Starfire** stuns for 3 seconds 15% of the time). **Nature's Focus** (levels 42-46) lets your casts ignore pushback 70% of the time.
 - **Moonglow** (levels 15, 17 and 19: damage spells cost 25% less), **Moonfury** (10% more Arcane and Nature damage at 5 points) and **Moonkin Form** (40) are the next most valuable talents in the fight lab.
 - Keep **Thorns** and **Mark of the Wild** up between fights (no key).
@@ -66,8 +65,8 @@ One point per level from 10, in this order:
 | 22 | Nature's Splendor (Balance) | 1 |
 | 23-24 | Genesis (Balance) | 2 |
 | 25-29 | Improved Starfire (Balance) | 5 |
-| 30-32 | Eclipse (Balance) | 3 |
-| 33 | Nature's Grace (Balance) | 1 |
+| 30 | Nature's Grace (Balance) | 1 |
+| 31-33 | Eclipse (Balance) | 3 |
 | 34 | Vengeance (Balance) | 1 |
 | 35-38 | Moonfury (Balance) | 4 |
 | 39 | Vengeance (Balance) | 1 |
@@ -97,7 +96,7 @@ One point per level from 10, in this order:
 - [Balance (optimized)](../research/leveling/builds/opt-balance-dps-leveling-st.md) (36/0/15, 32 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/druid/60/5332200105501351--5253-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-23 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
 
 *The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

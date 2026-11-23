@@ -67,6 +67,44 @@ def table(cls, spec_name, role=None):
     return o
 
 
+ONYXIA = "Onyxia's Lair"
+
+
+def raid_gear(s):
+    """{tier: {raid: [item and enchant names]}} of a spec's sets, from gear_links.py's raid tags."""
+    out = {}
+    for t, rows in (s.get("gear") or {}).items():
+        for row in rows or []:
+            for name, raid in ((row.get("name"), row.get("raid")), ((row.get("enchant") or {}).get("name"), (row.get("enchant") or {}).get("raid"))):
+                if raid:
+                    out.setdefault(t, {}).setdefault(raid, []).append(name)
+    return out
+
+
+def raid_note(cls, spec_name, role=None):
+    """One line under a gear table whose sets hold raid gear (2026-11-22, the user first-hand to the audit session: "Molten Core is not in
+    Forever right now. No raid is. And the only raids coming are the 3 you mentioned": The Barrow Deeps, Hyjal Summit and Onyxia's Lair,
+    2026-12-09). Each column's Molten Core and Onyxia's Lair items and enchants (a pre-raid caster set's Enchant Weapon - Spell Power is
+    a Molten Core formula), from gear_links.py's raid tags; [] when the sets hold none."""
+    found = raid_gear(spec(cls, spec_name, role) or {})
+    if not found:
+        return []
+    cols = []
+    for t in TIERS:
+        for raid in ("Molten Core", ONYXIA):
+            if (found.get(t) or {}).get(raid):
+                cols.append(f"{TIER_NAME[t]}: {', '.join(dict.fromkeys(found[t][raid]))} ({raid})")
+    mc = any("Molten Core" in v for v in found.values())
+    head = ("Molten Core is not in Forever: no raid is open yet, and the raids of 2026-12-09 are The Barrow Deeps, Hyjal Summit and "
+            "Onyxia's Lair." if mc else "No raid is open yet: Onyxia's Lair opens on 2026-12-09.")
+    return [f"*{head} These sets still count raid gear ({'; '.join(cols)}). The gear lists are being made again.*", ""]
+
+
+def any_mc(cls, spec_names):
+    """True when a set of any of the specs holds Molten Core gear (the class raid index's note)."""
+    return any("Molten Core" in v for n in spec_names for v in raid_gear(spec(cls, n) or {}).values())
+
+
 def sim_line(cls, spec_name, raid_first=True, role=None):
     """'Open in the simulator' links for every tier, or ''."""
     s = spec(cls, spec_name, role)

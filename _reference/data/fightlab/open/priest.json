@@ -9966,7 +9966,7 @@
     ],
     "why": null,
     "spec": "Discipline",
-    "date": "2026-11-21"
+    "date": "2026-11-22"
    }
   },
   "holy-leveling": {
@@ -10717,113 +10717,113 @@
    ],
    "order_stats_split": "21/21/9",
    "race": {
-    "finalist 22/21/8": {
-     "weighted": 43.26,
+    "finalist 21/21/9": {
+     "weighted": 42.54,
      "levels": {
       "20": 38.0,
       "30": 40.09,
-      "40": 48.87,
-      "50": 44.44,
-      "60": 41.88
+      "40": 44.36,
+      "50": 45.13,
+      "60": 41.89
      },
      "signature": "OK"
     },
     "finalist 22/17/12": {
-     "weighted": 43.5,
+     "weighted": 42.55,
      "levels": {
       "20": 38.0,
       "30": 40.09,
-      "40": 48.67,
+      "40": 43.94,
       "50": 45.92,
       "60": 41.56
      },
      "signature": "OK"
     },
     "finalist 25/17/9": {
-     "weighted": 43.85,
+     "weighted": 42.96,
      "levels": {
       "20": 38.19,
       "30": 40.56,
-      "40": 49.35,
+      "40": 44.88,
       "50": 46.18,
       "60": 41.79
      },
      "signature": "OK"
     },
     "finalist 25/13/13 (the previous record's winner)": {
-     "weighted": 45.17,
+     "weighted": 44.31,
      "levels": {
       "20": 38.54,
       "30": 44.22,
-      "40": 49.28,
+      "40": 44.99,
       "50": 47.03,
       "60": 43.55
      },
      "signature": "FAIL: core share 47% < 50%"
     },
     "smite-open-leveling": {
-     "weighted": 43.18,
+     "weighted": 42.37,
      "levels": {
       "20": 38.0,
       "30": 40.09,
-      "40": 48.58,
+      "40": 44.54,
       "50": 44.34,
       "60": 41.89
      }
     },
     "holy-leveling": {
-     "weighted": 50.81,
+     "weighted": 50.01,
      "levels": {
       "20": 39.45,
       "30": 46.64,
-      "40": 55.46,
+      "40": 51.49,
       "50": 53.09,
       "60": 51.68
      }
     },
     "open winner": {
-     "weighted": 43.18,
+     "weighted": 42.37,
      "levels": {
       "20": 38.0,
       "30": 40.09,
-      "40": 48.58,
+      "40": 44.54,
       "50": 44.34,
       "60": 41.89
      }
     },
     "finalist 21/21/9 (stats model order)": {
-     "weighted": 43.35,
+     "weighted": 42.54,
      "levels": {
       "20": 38.0,
       "30": 40.09,
-      "40": 48.44,
+      "40": 44.36,
       "50": 45.13,
       "60": 41.89
      }
     },
     "finalist 21/21/9 (own tree first order)": {
-     "weighted": 43.68,
+     "weighted": 42.86,
      "levels": {
       "20": 38.0,
       "30": 42.67,
-      "40": 48.15,
+      "40": 44.06,
       "50": 45.13,
       "60": 41.89
      }
     },
     "finalist 21/21/9 (own tree last order)": {
-     "weighted": 44.9,
+     "weighted": 44.21,
      "levels": {
       "20": 37.03,
       "30": 44.19,
-      "40": 51.7,
+      "40": 48.29,
       "50": 46.63,
       "60": 41.89
      }
     }
    },
    "level_polish": {
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "levels": [
      40,
      50,
@@ -10833,7 +10833,7 @@
     "steps": [],
     "neighbours_tried": 40,
     "twins_skipped": 0,
-    "minutes": 0.9,
+    "minutes": 0.8,
     "changed": false,
     "neighbour_orders": {
      "carried": 40,
@@ -10842,7 +10842,7 @@
    },
    "orders_raced": "21/21/9",
    "order_polish": {
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "levels": [
      30,
      40,
@@ -10850,10 +10850,10 @@
     ],
     "from": "previous",
     "steps": [],
-    "orders_scored": 16,
+    "orders_scored": 17,
     "twins_skipped": 0,
     "repeats_skipped": 0,
-    "minutes": 0.7,
+    "minutes": 1.3,
     "changed": false
    },
    "split": "21/21/9",
@@ -10965,7 +10965,7 @@
    },
    "values_base": 41.95,
    "synergy": {
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "winner": "21/21/9",
     "relevant": 39,
     "missing": 21,
@@ -19622,12 +19622,12 @@
       "gain": -0.01487
      }
     },
-    "minutes": 17.3
+    "minutes": 16.5
    },
    "signature": {
     "spec": "Hybrid Discipline/Holy",
     "rotation": "holy-leveling",
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "fights": 600,
     "split": "21/21/9",
     "ok": true,
@@ -19649,7 +19649,7 @@
      "Smite": {
       "20": 3.31,
       "30": 4.16,
-      "40": 5.04,
+      "40": 4.03,
       "50": 5.67,
       "60": 5.27
      },
@@ -19661,18 +19661,18 @@
       "60": 1.31
      }
     },
-    "fingerprint": "bfa1c6846469"
+    "fingerprint": "d4470a9f723d"
    },
-   "minutes": 36.5,
+   "minutes": 46.4,
    "done": true,
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "builds": {
     "written": [
      "smite-open-leveling"
     ],
     "why": null,
     "spec": "Hybrid Discipline/Holy",
-    "date": "2026-11-21"
+    "date": "2026-11-22"
    }
   },
   "shadow-dps": {
@@ -29474,7 +29474,7 @@
     ],
     "why": null,
     "spec": "Shadow",
-    "date": "2026-11-21"
+    "date": "2026-11-22"
    }
   }
  },

@@ -96,12 +96,13 @@
     {
      "from": 30,
      "title": "Windfury Weapon",
-     "change": "**Windfury Weapon** replaces Rockbiter on your weapon: a chance on every hit for extra swings.",
+     "change": "**Windfury Weapon** replaces Rockbiter on your weapon: a chance on every hit for extra swings. **Flame Shock** joins the list from 30 to 49: the tuned rules of 2026-11-22 cast it whenever the shock cooldown is free and its burn is not on the mob (0.6% faster per kill over levels 20-60).",
      "press": [
       "**Searing Totem** as you pull, while you have more than half your mana.",
       "**Lightning Shield** up before the pull.",
+      "**Flame Shock** (Shift+Q) whenever the shock cooldown is free and its burn is not on the mob.",
       "**Stormstrike** whenever it is ready.",
-      "**Earth Shock** whenever the shock cooldown is free."
+      "**Earth Shock** on the other shock cooldowns."
      ],
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
@@ -117,8 +118,9 @@
      "press": [
       "**Searing Totem** as you pull, while you have more than half your mana.",
       "**Lightning Shield** up before the pull.",
+      "**Flame Shock** (Shift+Q) whenever the shock cooldown is free and its burn is not on the mob.",
       "**Stormstrike** whenever it is ready.",
-      "**Earth Shock** whenever the shock cooldown is free."
+      "**Earth Shock** on the other shock cooldowns."
      ],
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
@@ -133,9 +135,10 @@
      "press": [
       "**Searing Totem** as you pull, while you have more than half your mana.",
       "**Lightning Shield** up before the pull.",
+      "**Flame Shock** (Shift+Q) whenever the shock cooldown is free and its burn is not on the mob.",
       "With 5 stacks of **Maelstrom Weapon**: an instant **Lightning Bolt**, once the mob is under 35% of its health.",
       "**Stormstrike** whenever it is ready.",
-      "**Earth Shock** whenever the shock cooldown is free."
+      "**Earth Shock** on the other shock cooldowns."
      ],
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
@@ -151,15 +154,34 @@
       "**Rage of the Farseer** at the start of a fight whenever it is ready.",
       "**Searing Totem** as you pull, while you have more than half your mana.",
       "**Lightning Shield** up before the pull.",
+      "**Flame Shock** (Shift+Q) whenever the shock cooldown is free and its burn is not on the mob.",
       "With 5 stacks of **Maelstrom Weapon**: an instant **Lightning Bolt**, once the mob is under 35% of its health.",
       "**Stormstrike** whenever it is ready.",
-      "**Earth Shock** whenever the shock cooldown is free."
+      "**Earth Shock** on the other shock cooldowns."
      ],
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
       "The remaining points go to Elemental for harder, cheaper shocks: **Concussion** (46-50) and **Convection** (51-55).",
       "Train **Rockbiter Weapon**'s new ranks at 44 and 54: it stays on your weapon from 40."
      ],
+     "unsimulated": [
+      "Rage of the Farseer"
+     ]
+    },
+    {
+     "from": 50,
+     "title": "Earth Shock only",
+     "change": "From 50 the tuned rules drop **Flame Shock** again: **Earth Shock** takes every shock cooldown. Pressed on to 60 it measured 0.8-1.4% slower a kill at 50 and 0.5-1.1% faster at 55-60 (the fight lab, 2026-11-23): no clear gain either way. The rest stays.",
+     "press": [
+      "**Rage of the Farseer** at the start of a fight whenever it is ready.",
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull.",
+      "With 5 stacks of **Maelstrom Weapon**: an instant **Lightning Bolt**, once the mob is under 35% of its health.",
+      "**Stormstrike** whenever it is ready.",
+      "**Earth Shock** whenever the shock cooldown is free."
+     ],
+     "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
+     "notes": [],
      "unsimulated": [
       "Rage of the Farseer"
      ]
@@ -303,7 +325,7 @@
       "slots": [
        {
         "key": "Shift+Q",
-        "role": "Packs: the fire shock to spread",
+        "role": "The fire shock: on every mob from 30 to 49, and to spread in packs",
         "binds": [
          {
           "from": 10,
@@ -422,7 +444,7 @@
      "**Lightning Shield** and your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30, **Rockbiter Weapon** again from 40) are buffs: click them between fights. The fight lab puts the shield back before a pull, about every second kill, and never in the fight.",
      "No key: **Lightning Shield**, the weapon imbue, **Ghost Wolf**, food, water, the mount and the Hearthstone. **Strength of Earth Totem** and the other buff totems cost more than they return against one mob.",
      "Right-click the mob to start swinging at levels 1-3. From 4, Q is a macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free.",
-     "The single-target rotation never casts **Flame Shock**, **Fire Nova**, **Chain Lightning** or **Magma Totem**. They are there for a pull that brings friends."
+     "From 30 to 49 the single-target rotation casts **Flame Shock** (Shift+Q) on the shock cooldowns its burn is off. It never casts **Fire Nova**, **Chain Lightning** or **Magma Totem**: they are there for a pull that brings friends."
     ]
    }
   },
@@ -927,11 +949,12 @@
     {
      "from": 30,
      "title": "Windfury Weapon and Mana Tide Totem",
-     "change": "**Windfury Weapon** replaces Rockbiter on your weapon. **Mana Tide Totem** (talent) is a long cooldown for mana.",
+     "change": "**Windfury Weapon** replaces Rockbiter on your weapon. **Mana Tide Totem** (talent) is a long cooldown for mana. **Flame Shock** joins the list from 30 to 49: the tuned rules of 2026-11-22 cast it whenever the shock cooldown is free and its burn is not on the mob (0.6% faster per kill over levels 20-60).",
      "press": [
       "**Searing Totem** as you pull, while you have more than half your mana.",
       "**Lightning Shield** up before the pull; when you are under 60% of your mana, Water Shield instead.",
-      "**Earth Shock** whenever it is ready."
+      "**Flame Shock** (Shift+Q) whenever the shock cooldown is free and its burn is not on the mob.",
+      "**Earth Shock** on the other shock cooldowns."
      ],
      "if_hurt": "Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.",
      "notes": [
@@ -948,7 +971,8 @@
      "press": [
       "**Searing Totem** as you pull, while you have more than half your mana.",
       "**Lightning Shield** up before the pull; when you are under 60% of your mana, Water Shield instead.",
-      "**Earth Shock** whenever it is ready."
+      "**Flame Shock** (Shift+Q) whenever the shock cooldown is free and its burn is not on the mob.",
+      "**Earth Shock** on the other shock cooldowns."
      ],
      "if_hurt": "Under 30% of your health: **Nature's Swiftness**, then **Healing Wave**: an instant big heal. With it on cooldown, drop **Stoneclaw Totem** instead. Under 40%: **Lesser Healing Wave**.",
      "notes": [
@@ -956,6 +980,18 @@
       "**Chain Heal** (40) and **Riptide** (60) heal a group in a dungeon. Solo, the fight lab never casts them.",
       "**Rockbiter Weapon** is back on your weapon from 40, in place of Windfury (rank 5; rank 6 at 44, rank 7 at 54): its attack power on every swing beats Windfury's extra attacks there in the fight lab (the Enhancement rules re-tuned on 2026-11-16, which this page plays). Windfury Weapon's ranks 2-4 (40, 50, 60) are not needed."
      ]
+    },
+    {
+     "from": 50,
+     "title": "Earth Shock only",
+     "change": "From 50 the tuned rules drop **Flame Shock** again: **Earth Shock** takes every shock cooldown. Pressed on to 60 it measured, on the Enhancement build whose rules this page plays, 0.8-1.4% slower a kill at 50 and 0.5-1.1% faster at 55-60 (the fight lab, 2026-11-23): no clear gain either way. The rest stays.",
+     "press": [
+      "**Searing Totem** as you pull, while you have more than half your mana.",
+      "**Lightning Shield** up before the pull; when you are under 60% of your mana, Water Shield instead.",
+      "**Earth Shock** whenever the shock cooldown is free."
+     ],
+     "if_hurt": "Under 30% of your health: **Nature's Swiftness**, then **Healing Wave**: an instant big heal. With it on cooldown, drop **Stoneclaw Totem** instead. Under 40%: **Lesser Healing Wave**.",
+     "notes": []
     }
    ],
    "between": [
@@ -1096,7 +1132,7 @@
       "slots": [
        {
         "key": "Shift+Q",
-        "role": "Packs: the fire shock to spread",
+        "role": "The fire shock: on every mob from 30 to 49, and to spread in packs",
         "binds": [
          {
           "from": 10,
@@ -1227,7 +1263,7 @@
      "The Instant big heal macro on the [macro page](../macros.md) casts **Nature's Swiftness** and **Healing Wave** in one press on C, and frees 3.",
      "**Lightning Shield** and **Water Shield** are buffs, like your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30, **Rockbiter Weapon** again from 40): click them between fights. No key either: **Ghost Wolf**, food, water, the mount and the Hearthstone.",
      "Right-click the mob to start swinging at levels 1-3. From 4, Q is the Earth Shock macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free.",
-     "The single-target rotation never casts **Lightning Bolt** after level 3, nor **Flame Shock**, **Fire Nova**, **Chain Lightning** or **Magma Totem**. **Lightning Bolt** stays on 1 to pull a mob from range; the others are for a pull that brings friends."
+     "The single-target rotation never casts **Lightning Bolt** after level 3, casts **Flame Shock** (Shift+Q) from 30 to 49, and never **Fire Nova**, **Chain Lightning** or **Magma Totem**. **Lightning Bolt** stays on 1 to pull a mob from range; the others are for a pull that brings friends."
     ]
    }
   }

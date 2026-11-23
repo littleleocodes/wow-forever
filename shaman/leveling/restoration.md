@@ -2,17 +2,17 @@
 
 [Shaman](../README.md) > [Leveling (solo)](README.md) > Restoration
 
-> **Being checked:** The play check's forced runs found Frost Shock and Flame Shock faster when pressed (2.8% at 20, 1.4% at 30); the rotation is being tuned again with them. The build and numbers on this page may change when it is done.
+> **Being checked:** Mana Tide Totem (talent, 30) is never pressed: the leveling fight lab cannot cast it yet. It is being added behind a rules knob and judged by a forced run; the rest of the page passed the play check on 2026-11-23. The build and numbers on this page may change when it is done.
 
 **Leveling from level 1?** [The rotation level by level](restoration-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-> **The fastest way to level:** as **Enhancement** ([Enhancement leveling](../leveling/enhancement.md)), 26 s a kill (level-weighted, 20-60) against 36 s for this healer build: 38% faster. Switch your talents to Restoration at 60 (a respec at a class trainer). The build below is to level as the healer itself.
+> **The fastest way to level:** as **Enhancement** ([Enhancement leveling](../leveling/enhancement.md)), 26 s a kill (level-weighted, 20-60) against 35 s for this healer build: 38% faster. Switch your talents to Restoration at 60 (a respec at a class trainer). The build below is to level as the healer itself.
 
 **[Restoration — Leveling into the raid build](../research/leveling/builds/restoration-leveling.md)** (0/10/41) — [open the talent tree](https://talentsforever.com/shaman/60/-055-0530503315513151-12)
 
-> 🔬 These are your **raid talents** ([Restoration — Raid Healer](../raid/restoration.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 36 s per kill; own tree last: 36 s per kill; own tree first: 36 s per kill). A model of the beta, to check at launch.
+> 🔬 These are your **raid talents** ([Restoration — Raid Healer](../raid/restoration.md)), taken in the order that levels fastest: the fight lab raced three orders to them (stats model's order: 35 s per kill; own tree last: 36 s per kill; own tree first: 36 s per kill). A model of the beta, to check at launch.
 
-**Leveling as Restoration or as Enhancement?** This build takes 36 s per kill (level-weighted, 20-60), [Enhancement](../leveling/enhancement.md) 26 s: Restoration is 38% slower. Your first Restoration point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Enhancement and switch at 60 (a respec at a class trainer).
+**Leveling as Restoration or as Enhancement?** This build takes 35 s per kill (level-weighted, 20-60), [Enhancement](../leveling/enhancement.md) 26 s: Restoration is 38% slower. Your first Restoration point comes at level 10. Level this way if you want to heal dungeons later on the way; otherwise level as Enhancement and switch at 60 (a respec at a class trainer).
 
 ## How to play
 
@@ -23,19 +23,19 @@
 **In the fight**, top to bottom:
 
 1. **Earth Shock** a caster mob's spell: it interrupts and brings the mob to you.
-2. **Earth Shock** whenever the shock cooldown is free: it takes **Stormstrike**'s 20%. It shares that cooldown with **Flame Shock**, which the fight lab therefore never casts on one mob.
+2. From 30 to 49, **Flame Shock** whenever the shock cooldown is free and its burn is not on the mob (the tuned rules of 2026-11-22); **Earth Shock** on every other shock cooldown: it takes **Stormstrike**'s 20%.
 3. Low on health at any point: under 30% drop **Stoneclaw Totem** (or **Nature's Swiftness** and **Healing Wave** if you have it), under 40% cast **Lesser Healing Wave**.
 
 **Between fights:** Heal back to 80% health with **Lesser Healing Wave** (**Healing Wave** for a big gap); eat if you are still under 90%; drink below 15% of your mana. Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
 
 ## Why this rotation
 
-You level with the raid healer's talents in the fastest order and play a simple melee shaman: a weapon imbue, a shield, **Searing Totem** at each pull and **Earth Shock** whenever the shock cooldown is free. It is about 40% slower than leveling as Enhancement (38 against 27 seconds per kill in the fight lab, levels 20-60, level-weighted): the price of arriving at 60 ready to heal.
+You level with the raid healer's talents in the fastest order and play a simple melee shaman: a weapon imbue, a shield, **Searing Totem** at each pull and **Earth Shock** whenever the shock cooldown is free (from 30 to 49 **Flame Shock** first, while its burn is off). It is about 38% slower than leveling as Enhancement (35 against 26 seconds per kill in the fight lab, levels 20-60, level-weighted): the price of arriving at 60 ready to heal.
 
 **Why it works**
 
 - This build takes none of Enhancement's melee talents (the "Not in this build" line names them): skip the lines that use them. In the fight lab it opens no fight with a **Lightning Bolt**: the tuned rule allows a bolt only once the mob is under 35% health, and with no Maelstrom Weapon there is no instant one.
-- **Earth Shock** takes every free shock (it shares the cooldown with **Flame Shock**, which the list therefore never reaches on one mob), and it interrupts a caster mob.
+- **Earth Shock** takes the free shocks and interrupts a caster mob. From 30 to 49 **Flame Shock** takes the shock cooldowns its burn is off (the Enhancement rules of 2026-11-22, which this page plays), and **Earth Shock** the others.
 - Your damage is your weapon: **Rockbiter Weapon** until 30, **Windfury Weapon** from 30 and **Rockbiter Weapon** again from 40, on a slow two-hander, and **Lightning Shield** strikes back each time a mob hits you. From 28 you also have **Water Shield**: when your shield is gone and you are under 60% mana, the fight lab puts up Water Shield instead (only one shield can be up).
 - The first points are **Tidal Focus** (10-14: 5% more chance to hit), **Mindfulness** (15-17) and **Thundering Strikes** (18-22: 5% crit); **Totemic Focus** (23-27) makes **Searing Totem** a quarter cheaper. Drop it at each pull while you have more than half your mana.
 - Low on health: **Stoneclaw Totem** taunts the mob onto itself for a few hits, then **Lesser Healing Wave**. From 35, **Nature's Swiftness** makes a **Healing Wave** instant when you drop under 30%.
@@ -80,7 +80,7 @@ One point per level from 10, in this order:
 | Level | Seconds per kill (same-level mobs, eating and drinking included) | In good Forever gear |
 |---|---|---|
 | 20 | 24 | 17 |
-| 30 | 31 | 22 |
+| 30 | 30 | 21 |
 | 40 | 35 | 29 |
 | 50 | 38 | 32 |
 | 60 | 41 | 33 |
@@ -88,7 +88,7 @@ One point per level from 10, in this order:
 **In good Forever gear**: the same build in the best greens and blues Forever's own item list offers at each level (its random-suffix greens such as "of Frozen Wrath" included, which the fight lab's standard Classic-style gear leaves out), raced the same way (`characters/forever_race.py`, 3,000 fights x 2 seeds, levels 20-60) and scaled to this page's numbers. Casters gain the most (25-40% faster), physical specs 9-20%. The ranking stays on the standard gear, the same gear for every spec; real gear sits in between.
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-23 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
 
 *The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

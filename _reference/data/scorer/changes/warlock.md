@@ -102,9 +102,9 @@ For each Forever `opt-<spec>-<profile>` build: the Classic community build it wa
 
 ### `opt-affliction-leveling-leveling-st` (27/24/0) vs Classic `leveling-affliction-demo` (30/21/0)
 
-- **Drops:** Fel Concentration 2, Fel Domination 1, Grim Reach 2, Improved Voidwalker 3, Nightfall 2
-- **Adds:** Demonic Aegis 2 (new), Demonic Energies 2 (new), Demonic Knowledge 3 (new), Demonic Sacrifice 1, Fel Vitality 3 (new), Improved Bane of Agony 2 (new), Improved Imp 2, Malevolence 5 (new), Pandemic 3 (new), Soul Link 1, Soul Siphon 1 (new)
-- **Fewer ranks:** Shadow Mastery 5->2
+- **Drops:** Fel Concentration 2, Fel Domination 1, Grim Reach 2, Nightfall 2
+- **Adds:** Demonic Aegis 2 (new), Demonic Energies 2 (new), Demonic Knowledge 3 (new), Demonic Sacrifice 1, Fel Vitality 3 (new), Improved Bane of Agony 2 (new), Malevolence 5 (new), Pandemic 3 (new), Soul Link 1, Soul Siphon 1 (new)
+- **Fewer ranks:** Improved Voidwalker 3->2, Shadow Mastery 5->2
 
 ### `opt-affliction-leveling-solo-60` (27/24/0) vs Classic `leveling-affliction-demo` (30/21/0)
 

@@ -11,7 +11,7 @@
 
 ## Summary
 
-Level with the talents of the Restoration raid build (resto-raid-healer) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 36 s per kill over levels 20-60, the enhancement-dps rotation).
+Level with the talents of the Restoration raid build (resto-raid-healer) so you arrive at 60 ready to heal; the order is the fastest of three the fight lab raced (stats model's order: 35 s per kill over levels 20-60, the enhancement-dps rotation).
 
 ## Point allocation
 
@@ -83,7 +83,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-21 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 36 s; own tree first 36 s; own tree last 36 s. First Restoration point at level 10.
+- 2026-11-23 (raid_path_leveling.py, user decision): healer and tank specs level into their raid build. Orders raced (fight lab, seed 3, 3000 fights per level, level-weighted): stats model's order 35 s; own tree first 36 s; own tree last 36 s. First Restoration point at level 10.
 - Fight-lab numbers are a model of the beta, not in-game measurements.
 
 ## Open questions (verify in the live game)

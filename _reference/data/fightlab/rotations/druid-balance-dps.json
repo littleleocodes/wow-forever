@@ -2,7 +2,8 @@
  "eat_below": 0.4,
  "knobs": {
   "REST_TOGETHER": true,
-  "CASTER_HEAL": 0
+  "CASTER_HEAL": 0,
+  "ECLIPSE_GATE_RANK": 3
  },
  "drink_below": 0.25,
  "veto": {
@@ -55,6 +56,143 @@
    ],
    "gain_seed1": 0.021073279348597262,
    "gain_seed2": 0.022983850249276294
+  },
+  {
+   "round": "by hand",
+   "date": "2026-11-23",
+   "change": "ECLIPSE_GATE_RANK = 3",
+   "rule": [
+    "knob",
+    "ECLIPSE_GATE_RANK",
+    3
+   ],
+   "gain_seed1": 0.0035,
+   "gain_seed2": 0.0029,
+   "why": "By hand (the delegator's yes, 2026-11-23): the held play check's Balance jump. With the record's order back (Nature's Grace 30, Eclipse 31-33; open_builds.py 2f355e9d) the first Eclipse point gated Starfire on Eclipse charges and wove Wrath for them at 31 (one point takes 0.17 s off a charged Starfire): 34.2 s a kill at 30, 36.9 at 31 (+8%). The tune could not see it: its levels are 20, 25, 30 ... 60, and one or two Eclipse points live only at 31-32. A/B, installed rules against the gate at ranks 2 and 3, the record's build and order, 3,000 fights, seeds 1/2 (scratchpad eclipse_gate_1123.py): levels 29, 30, 33, 35, 40, 50 and 60 bit-identical; 31 -2.9% / -2.7% (gate 2 and 3 alike); 32 gate 3 -0.6% / -0.2%, gate 2 +0.0% / +0.0%; level-weighted over those levels gate 3 -0.35% / -0.29% (the gains here). The 30-31 rise becomes +3.9% / +3.8%. Gate 3: the Wrath weave starts when Eclipse is 3/3.",
+   "ab": {
+    "fights": 3000,
+    "levels": [
+     29,
+     30,
+     31,
+     32,
+     33,
+     35,
+     40,
+     50,
+     60
+    ],
+    "seconds_per_kill": {
+     "29": {
+      "seed 1": {
+       "gate 1": 33.62,
+       "gate 2": 33.62,
+       "gate 3": 33.62
+      },
+      "seed 2": {
+       "gate 1": 33.53,
+       "gate 2": 33.53,
+       "gate 3": 33.53
+      }
+     },
+     "30": {
+      "seed 1": {
+       "gate 1": 34.71,
+       "gate 2": 34.71,
+       "gate 3": 34.71
+      },
+      "seed 2": {
+       "gate 1": 34.61,
+       "gate 2": 34.61,
+       "gate 3": 34.61
+      }
+     },
+     "31": {
+      "seed 1": {
+       "gate 1": 37.16,
+       "gate 2": 36.07,
+       "gate 3": 36.07
+      },
+      "seed 2": {
+       "gate 1": 36.92,
+       "gate 2": 35.92,
+       "gate 3": 35.92
+      }
+     },
+     "32": {
+      "seed 1": {
+       "gate 1": 37.36,
+       "gate 2": 37.36,
+       "gate 3": 37.14
+      },
+      "seed 2": {
+       "gate 1": 37.06,
+       "gate 2": 37.06,
+       "gate 3": 36.98
+      }
+     },
+     "33": {
+      "seed 1": {
+       "gate 1": 37.75,
+       "gate 2": 37.75,
+       "gate 3": 37.75
+      },
+      "seed 2": {
+       "gate 1": 37.51,
+       "gate 2": 37.51,
+       "gate 3": 37.51
+      }
+     },
+     "35": {
+      "seed 1": {
+       "gate 1": 36.27,
+       "gate 2": 36.27,
+       "gate 3": 36.27
+      },
+      "seed 2": {
+       "gate 1": 36.04,
+       "gate 2": 36.04,
+       "gate 3": 36.04
+      }
+     },
+     "40": {
+      "seed 1": {
+       "gate 1": 37.03,
+       "gate 2": 37.03,
+       "gate 3": 37.03
+      },
+      "seed 2": {
+       "gate 1": 36.86,
+       "gate 2": 36.86,
+       "gate 3": 36.86
+      }
+     },
+     "50": {
+      "seed 1": {
+       "gate 1": 30.1,
+       "gate 2": 30.1,
+       "gate 3": 30.1
+      },
+      "seed 2": {
+       "gate 1": 29.98,
+       "gate 2": 29.98,
+       "gate 3": 29.98
+      }
+     },
+     "60": {
+      "seed 1": {
+       "gate 1": 28.04,
+       "gate 2": 28.04,
+       "gate 3": 28.04
+      },
+      "seed 2": {
+       "gate 1": 27.99,
+       "gate 2": 27.99,
+       "gate 3": 27.99
+      }
+     }
+    }
+   }
   }
  ],
  "weighted_before": 32.565356018730576,

@@ -64,6 +64,7 @@ import gate_kind as GK  # noqa: E402
 OUT = HERE / "play-check.json"
 VERDICTS = HERE / "never-tried.json"
 NOTES = HERE / "play-check-notes.json"
+FORCED = HERE / "forced-leads.json"   # forced_leads.py (2026-11-22)
 DAMAGE = re.compile(r"\d+ (?:to \d+ )?(?:\w+ ){0,2}damage|\babsorb|restores? [^.]*\b(?:mana|rage|energy)\b|\bgains? \d+ (?:rage|energy|mana)",
                     re.I)
 CHECK_LEVELS = [20, 30, 40, 50, 60]
@@ -151,7 +152,7 @@ def inputs_fingerprint(cls, spec):
     """What a pick's Lc and Lg verdicts read besides the lab (2026-11-21, the audit session: the four filler records whose written pass
     was dropped and restored that night): the spec's filler records, the forced-run verdicts, the notes, the gate and utility rules."""
     import zero_talents as ZT   # the record files by the names fl_filler_pass.py writes (2026-11-21)
-    files = ZT.filler_paths(cls, spec) + ZT.filler_paths(cls, spec, dry=True) + [VERDICTS, NOTES, DATA / "gate_kind.py", DATA / "utility_tags.py"]
+    files = ZT.filler_paths(cls, spec) + ZT.filler_paths(cls, spec, dry=True) + [VERDICTS, NOTES, FORCED, DATA / "gate_kind.py", DATA / "utility_tags.py"]
     h = hashlib.sha1()
     for f in files:
         h.update(f.name.encode("utf-8"))
@@ -373,6 +374,8 @@ def check_class(cls, pool, fights, removal):
     rows = LG.check(cls)
     verdicts = (json.load(open(VERDICTS, encoding="utf-8")).get(cls) or {}) if VERDICTS.exists() else {}
     notes = (json.load(open(NOTES, encoding="utf-8")).get(cls) or {}) if NOTES.exists() else {}
+    # the forced-run leads beside the tuned rules (forced_leads.py, 2026-11-22): {rotation: {spell: {"verdict", "text", ...}}}
+    forced = (json.load(open(FORCED, encoding="utf-8")).get(cls) or {}) if FORCED.exists() else {}
     use = UT.usefulness(cls, True)   # leveling: the character is hit, avoidance counts (the tank order)
     book = book_levels(cls)
     aoe = aoe_names()
@@ -518,6 +521,10 @@ def check_class(cls, pool, fights, removal):
                 f["notes"].append(f"Lg: {sp}{why} never pressed: " + " | ".join(vs))
             elif vs and lead_note and all(x.startswith("LEAD") for x in open_):   # (2026-11-22: under 1%, a note, not a fail)
                 f["notes"].append(f"Lg: {sp}{why} never pressed; forced: " + " | ".join(open_) + f": {lead_note}")
+            elif vs and all(x.startswith("LEAD") for x in open_) and ((forced.get(rot) or {}).get(sp) or {}).get("verdict") == "agrees":
+                # (2026-11-22, the audit session's ruling: the tune compared the lead as a rules knob and left it off, and an A/B on the
+                # installed rules agrees: not 0.5% faster on both seeds. A "missed" lead stays a fail until its window is installed)
+                f["notes"].append(f"Lg: {sp}{why} never pressed; forced: " + " | ".join(open_) + "; " + forced[rot][sp]["text"])
             elif vs:   # faster when forced (a lead for the rotation tune), or the module could not cast it: still open
                 f["fail"].append(f"Lg: {sp}{why} (from level {arrive}) is never pressed; forced: " + " | ".join(open_))
             else:

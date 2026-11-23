@@ -206,7 +206,7 @@ def floor_phase(pool, cls, spec, bid, levels, a, rot, base1, spells, mod_cls, ma
         s0 = core_share_of(base1, rl)
         if s0 is None or s0 >= floor:
             break
-        cands = candidates(rot, spells, mod_cls, keep_main)
+        cands = candidates(rot, spells, mod_cls, keep_main, spec)
         res = evaluate(pool, cls, spec, bid, levels, [apply_change(rot, c) for c in cands], a.fights, 1)
         up = [i for i, r in enumerate(res) if (core_share_of(r, rl) or 0) >= s0 + SHARE_STEP and not cast_bad(levels, base1, r, req)]
         if not up:
@@ -256,7 +256,7 @@ def sig_factor(res, rl, build=None, spec_b=None, cls=None):
     return 0.5 if (v["uncast"] or v["missing_talents"]) else 1.0
 
 
-def candidates(rot, spells, mod_cls, main=()):
+def candidates(rot, spells, mod_cls, main=(), spec=None):
     """Rule candidates. The main attacks (MAIN_SHARE) are never switched off, limited to a dying mob or held above more than the
     lowest mana share: a Balance druid without Starfire could not kill, and every fight ran to the timeout (a 9-hour search, 2026-09-28)."""
     out = []
@@ -274,7 +274,9 @@ def candidates(rot, spells, mod_cls, main=()):
     cur_e = rot.get("eat_below", mod_cls.eat_below or tables.EAT_BELOW)
     out += [("drink_below", None, x) for x in DRINK if abs(x - cur_d) > 1e-9]
     out += [("eat_below", None, x) for x in EAT if abs(x - cur_e) > 1e-9]
-    for k, vals in (getattr(mod_cls, "ROTATION_KNOBS", {}) or {}).items():
+    # the spec's forced lines too (engine.BaseModule.rotation_knobs, 2026-11-22)
+    knobs = mod_cls.rotation_knobs(spec, rot.get("knobs") or {}) if hasattr(mod_cls, "rotation_knobs") else (getattr(mod_cls, "ROTATION_KNOBS", {}) or {})
+    for k, vals in knobs.items():
         cur = rot.get("knobs", {}).get(k, getattr(mod_cls, k, None))
         out += [("knob", k, v) for v in vals if v != cur]
     return out
@@ -315,7 +317,7 @@ def search(pool, cls, spec, bid, levels, a):
         rot, base1, reached = floor_phase(pool, cls, spec, bid, levels, a, rot, base1, spells, mod_cls, main, req, rl, log)
         print(f"  floor phase: " + ("floor reached" if reached else f"floor NOT reached ({core_share_of(base1, rl):.0%})"), flush=True)
     for rnd in range(1, a.rounds + 1):
-        cands = candidates(rot, spells, mod_cls, main)
+        cands = candidates(rot, spells, mod_cls, main, spec)
         res = evaluate(pool, cls, spec, bid, levels, [apply_change(rot, c) for c in cands], a.fights, 1)
         w0 = wsig(base1, levels, rl)
         bad = {i: signature_bad(levels, base1, r, req, rl) for i, r in enumerate(res)} if FS.enabled() else {}
@@ -354,6 +356,9 @@ def search(pool, cls, spec, bid, levels, a):
               + (", signature-weighted" if FS.enabled() and rl else "") + f"; {len(cands)} candidates)", flush=True)
         rot = apply_change(rot, ch)
         base1 = res[i]
+        # a forced line the kept change turned on gets its own rule candidates from the next round (2026-11-22)
+        forced = set((getattr(mod_cls, "FORCE_SPELLS", {}) or {}).get(spec, ()))
+        spells = sorted(set(spells) | {s for L in levels for s, n in base1[L]["casts"].items() if n and s in forced})
     # final check on a third seed
     fin = evaluate(pool, cls, spec, bid, levels, [rot0, rot], a.confirm, 3)
     wb, wa = weighted({L: fin[0][L]["time_per_kill"] for L in levels}), weighted({L: fin[1][L]["time_per_kill"] for L in levels})

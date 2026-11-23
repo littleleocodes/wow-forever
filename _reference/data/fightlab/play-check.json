@@ -1,13 +1,13 @@
 {
  "druid": {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "specs": {
    "Feral Combat": {
     "build": "feral-combat-open-leveling",
     "rotation": "feral-cat-dps",
     "provisional_order": false,
-    "fingerprint": "2011639bcb6b0dcd",
-    "inputs_fingerprint": "985fe6ee2a0321dc",
+    "fingerprint": "f467f23fc86a6674",
+    "inputs_fingerprint": "6bc3f77e99ced46c",
     "guide_fingerprint": "da3531482a1b",
     "fail": [],
     "notes": [
@@ -15,7 +15,7 @@
      "Lh: 24.9 s a kill at 10, 29.0 at 14 (+16%): ordinary scaling: the mob's health grows +61%, your damage per second +45%; fight time 24.8 -> 27.5 s (+11%), downtime 0.1 -> 1.5 s (idle 0% -> 5%); mob health +61% against damage per second +45%; pressed now: Enrage; points Ferocity 1->5; ranks Bash rank 0->1, Enrage rank 0->1 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Ferocity 1->5; ranks: Bash rank 0->1, Enrage rank 0->1; gear main stats 30->34; mob health 187->300 (+60%), swing 13->22, armor 450->632]",
      "Lh: 29.0 s a kill at 14, 32.9 at 19 (+13%): ordinary scaling: the mob's health grows +49%, your damage per second +33%; fight time 27.5 -> 31.0 s (+13%), downtime 1.5 -> 1.9 s (idle 5% -> 6%); mob health +49% against damage per second +33%; points Feral Swiftness 0->2, Thick Hide 0->3; ranks Maul rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Feral Swiftness 0->2, Thick Hide 0->3; ranks: Maul rank 1->2; gear main stats 34->60; mob health 300->438 (+46%), swing 22->30, armor 632->789]",
      "Lh: 32.9 s a kill at 19, 19.4 at 20 (-41%): a new tool: Claw, Rip, Claw rank 0->1, Rip rank 0->1, Sharpened Claws 0->1; fight time 31.0 -> 18.0 s (-42%), downtime 1.9 -> 1.4 s (idle 6% -> 7%); mob health +4% against damage per second +78%; pressed now: Claw, Rip; no longer pressed: Demoralizing Roar, Enrage, Maul; points Sharpened Claws 0->1; ranks Claw rank 0->1, Rip rank 0->1 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Sharpened Claws 0->1; ranks: Claw rank 0->1, Rip rank 0->1; gear main stats 60->66; mob health 438->466 (+6%), swing 30->32, armor 789->817]",
-     "Lh: 19.6 s a kill at 24, 21.3 at 30 (+9%): ordinary scaling over four or more levels [points: Blood Frenzy 0->2, Leader of the Pack 0->1, Predatory Strikes 0->3; ranks: Claw rank 1->2; gear main stats 90->118; mob health 644->1002 (+56%), swing 39->48, armor 984->1200]",
+     "Lh: 19.6 s a kill at 24, 21.3 at 30 (+9%): ordinary scaling over four or more levels [points: Blood Frenzy 0->2, Leader of the Pack 0->1, Predatory Strikes 0->3; ranks: Claw rank 1->2, Rip rank 1->2; gear main stats 90->118; mob health 644->1002 (+56%), swing 39->48, armor 984->1200]",
      "Lh: 19.7 s a kill at 32, 23.5 at 39 (+19%): ordinary scaling: the mob's health grows +48%, your damage per second +28%; fight time 18.4 -> 21.2 s (+15%), downtime 1.3 -> 2.5 s (idle 7% -> 11%); mob health +48% against damage per second +28%; points Genesis 2->5, Nature's Majesty 0->2, Nature's Reach 0->2; ranks Claw rank 2->3, Rake rank 1->2, Rip rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Genesis 2->5, Nature's Majesty 0->2, Nature's Reach 0->2; ranks: Claw rank 2->3, Rake rank 1->2, Rip rank 2->3; gear main stats 131->168; mob health 1125->1737 (+54%), swing 51->65, armor 1280->1961]",
      "Lh: 22.7 s a kill at 50, 23.9 at 60 (+5%): ordinary scaling over four or more levels [points: Brutal Impact 0->1, Feral Charge 0->1, Improved Wrath 0->1, Natural Shapeshifter 0->1, Naturalist 4->5, Nature's Splendor 0->1, Rend and Tear 0->4; ranks: Claw rank 4->5, Ferocious Bite rank 4->6, Rake rank 3->4, Ravage rank 3->4, Rip rank 4->6; gear main stats 255->286; mob health 2672->3878 (+45%), swing 95->117, armor 2999->3489]",
      "Lg: Entangling Roots never pressed: not castable in the form the rotation plays (the audit session, 2026-11-21)",
@@ -176,7 +176,8 @@
        "Rake": 1.31,
        "Melee": 11.38,
        "Claw": 3.94,
-       "Ferocious Bite": 0.88
+       "Ferocious Bite": 0.88,
+       "Rip": 0.02
       },
       "pet_casts": null,
       "shares": {
@@ -195,7 +196,8 @@
        "Rake": 1.37,
        "Melee": 11.85,
        "Claw": 4.04,
-       "Ferocious Bite": 0.89
+       "Ferocious Bite": 0.89,
+       "Rip": 0.03
       },
       "pet_casts": null,
       "shares": {
@@ -283,7 +285,8 @@
        "Melee": 11.7,
        "Rake": 1.27,
        "Claw": 2.69,
-       "Ferocious Bite": 1.0
+       "Ferocious Bite": 1.0,
+       "Rip": 0.04
       },
       "pet_casts": null,
       "shares": {
@@ -342,26 +345,24 @@
     "build": "balance-open-leveling",
     "rotation": "balance-dps",
     "provisional_order": false,
-    "fingerprint": "bc95917655078b43",
-    "inputs_fingerprint": "d5aa9d119a6a013e",
-    "guide_fingerprint": "7b73a6ee56f9",
-    "fail": [
-     "Lh: 35.6 s a kill at 19, 30.0 at 20 (-16%) [points: Nature's Majesty 0->1; ranks: Starfire rank 0->1; gear main stats 60->66; mob health 438->466 (+6%), swing 30->32, armor 789->817]",
-     "Lh: 33.3 s a kill at 29, 35.9 at 30 (+8%) [points: Eclipse 0->1; ranks: Wrath rank 4->5; gear main stats 114->118; mob health 939->1002 (+7%), swing 46->48, armor 1165->1200]"
-    ],
+    "fingerprint": "0b5844f13664bbfc",
+    "inputs_fingerprint": "d5a33aad7483d83f",
+    "guide_fingerprint": "eb26ec048bad",
+    "fail": [],
     "notes": [
      "Ld: the rules file's veto takes Regrowth off; the guide names it only to say it is not cast",
      "Lh: 26.3 s a kill at 10, 27.7 at 11 (+5%): ordinary scaling: the mob's health grows +11%, your damage per second +5%; fight time 22.5 -> 23.9 s (+6%), downtime 8.0 -> 8.6 s (idle 26% -> 26%); mob health +11% against damage per second +5%; points Improved Wrath 1->2; ranks none new (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Improved Wrath 1->2; ranks: none new; gear main stats 30->30; mob health 187->215 (+15%), swing 13->15, armor 450->495]",
      "Lh: 27.7 s a kill at 11, 30.3 at 12 (+9%): ordinary scaling: the mob's health grows +25%, your damage per second +16%; fight time 23.9 -> 25.9 s (+8%), downtime 8.6 -> 8.8 s (idle 26% -> 26%); mob health +25% against damage per second +16%; points Improved Wrath 2->3; ranks none new (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Improved Wrath 2->3; ranks: none new; gear main stats 30->32; mob health 215->243 (+13%), swing 15->17, armor 495->541]",
      "Lh: 30.3 s a kill at 12, 35.6 at 19 (+17%): ordinary scaling over seven levels, the first talents' levels; points: Improved Moonfire 0->2, Improved Wrath 3->5, Moonglow 0->3; ranks: Entangling Roots rank 1->2, Moonfire rank 2->3, Wrath rank 2->3; gear main stats 32->60; mob health 243->438 (+80%), swing 17->30, armor 541->789 (the printed cause, 2026-11-22; cleared by the audit session) [points: Improved Moonfire 0->2, Improved Wrath 3->5, Moonglow 0->3; ranks: Entangling Roots rank 1->2, Moonfire rank 2->3, Wrath rank 2->3; gear main stats 32->60; mob health 243->438 (+80%), swing 17->30, armor 541->789]",
-     "Lh: 30.0 s a kill at 20, 33.3 at 29 (+11%): ordinary scaling: the mob's health grows +104%, your damage per second +65%; fight time 28.5 -> 35.2 s (+24%), downtime 9.7 -> 13.6 s (idle 25% -> 28%); mob health +104% against damage per second +65%; points Genesis 0->2, Improved Starfire 0->5, Nature's Majesty 1->2, Nature's Splendor 0->1; ranks Moonfire rank 3->5, Wrath rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Genesis 0->2, Improved Starfire 0->5, Nature's Majesty 1->2, Nature's Splendor 0->1; ranks: Moonfire rank 3->5, Starfire rank 1->2, Wrath rank 3->4; gear main stats 66->114; mob health 466->939 (+102%), swing 32->46, armor 817->1165]",
-     "Lh: 35.9 s a kill at 30, 38.8 at 39 (+8%): ordinary scaling over four or more levels [points: Eclipse 1->3, Moonfury 0->4, Nature's Grace 0->1, Vengeance 0->2; ranks: Entangling Roots rank 3->4, Moonfire rank 5->6, Starfire rank 2->3, Wrath rank 5->6; gear main stats 118->168; mob health 1002->1737 (+73%), swing 48->65, armor 1200->1961]",
+     "Lh: 35.6 s a kill at 19, 30.0 at 20 (-16%): Too good, explained: Starfire arrives at 20 and becomes the nuke (druid.STARFIRE_NO_ECLIPSE, 2026-11-21: until Eclipse is 3/3 the list casts it whenever it is affordable): 3.2 Starfire a kill at 20, 75% of the damage, where 19 had Wrath alone (9.6 a kill); eating falls from 7.2 to 5.0 s a kill with the shorter fights. Nature's Majesty 0->1, gear main stats 60->66, mob health +6% (drafted from the printed cause; cleared by the audit session, 2026-11-23) [points: Nature's Majesty 0->1; ranks: Starfire rank 0->1; gear main stats 60->66; mob health 438->466 (+6%), swing 30->32, armor 789->817]",
+     "Lh: 30.0 s a kill at 20, 34.2 at 30 (+14%): ordinary scaling over ten levels: the mob's health grows +115%, your damage per second +97%; fight time 24.5 -> 26.7 s (+9%), idle 18% -> 22%; points Genesis 0->2, Improved Starfire 0->5, Nature's Grace 0->1, Nature's Majesty 1->2, Nature's Splendor 0->1; ranks Moonfire 3->5, Starfire 1->2, Wrath 3->5; gear main stats 66->118. The stage now spans Nature's Grace at 30 (Eclipse moved to 31-33); 20->29 had read +11% (drafted from the printed cause; cleared by the audit session, 2026-11-23) [points: Genesis 0->2, Improved Starfire 0->5, Nature's Grace 0->1, Nature's Majesty 1->2, Nature's Splendor 0->1; ranks: Entangling Roots rank 2->3, Moonfire rank 3->5, Starfire rank 1->2, Wrath rank 3->5; gear main stats 66->118; mob health 466->1002 (+115%), swing 32->48, armor 817->1200]",
+     "Lh: 35.8 s a kill at 31, 37.7 at 33 (+5%): ordinary scaling over two levels and the Wrath weave from 33 (Eclipse 3/3, ECLIPSE_GATE_RANK 3): the mob's health grows +12%, your damage per second +6%; Wrath 0.5 -> 2.5 a kill. 400 fights read +5.3%; the A/B of 2026-11-23 at 3,000 fights reads +4.7% (seed 1) and +4.4% (seed 2), under the line, and never weaving (gate 4) is 2.6% / 2.8% slower at 33, 1.8% / 1.9% at 34 and 2.1% / 1.4% at 35, so the weave is the faster play from 33 (drafted from the printed cause; cleared by the audit session, 2026-11-23) [points: Eclipse 1->3; ranks: none new; gear main stats 125->137; mob health 1064->1187 (+12%), swing 49->53, armor 1240->1321]",
      "Lg: Ferocious Bite never pressed: not castable in the form the rotation plays (the audit session, 2026-11-21)",
      "Lg: Maul never pressed: not castable in the form the rotation plays (the audit session, 2026-11-21)",
      "Lg: Pounce never pressed: not castable in the form the rotation plays (the audit session, 2026-11-21)",
      "Lg: Rake never pressed: not castable in the form the rotation plays (the audit session, 2026-11-21)",
      "Lg: Rip never pressed: not castable in the form the rotation plays (the audit session, 2026-11-21)",
-     "Lg: Thorns never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 204.7% at least",
+     "Lg: Thorns never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 204.7% at least",
      "Ll: **Lacerate** rank 1: the tooltip names a weapon-damage percentage the parsed spell lacks: \"Lacerates the enemy target, making them bleed for 20 damage over 15 sec plus 10% weapon damage per e\" (no leveling module casts it: the druid plays Maul and Swipe in Bear Form at 10-19 and Cat Form from 20)",
      "Ll: **Lacerate** rank 2: the tooltip names a weapon-damage percentage the parsed spell lacks: \"Lacerates the enemy target, making them bleed for 30 damage over 15 sec plus 10% weapon damage per e\" (no leveling module casts it: the druid plays Maul and Swipe in Bear Form at 10-19 and Cat Form from 20)",
      "Ll: **Lacerate** rank 3: the tooltip names a weapon-damage percentage the parsed spell lacks: \"Lacerates the enemy target, making them bleed for 50 damage over 15 sec plus 10% weapon damage per e\" (no leveling module casts it: the druid plays Maul and Swipe in Bear Form at 10-19 and Cat Form from 20)",
@@ -440,7 +441,8 @@
       "idle_share": 0.147,
       "casts": {
        "Moonfire": 1.18,
-       "Wrath": 8.62
+       "Wrath": 8.62,
+       "Entangling Roots": 0.03
       },
       "pet_casts": null,
       "shares": {
@@ -472,7 +474,8 @@
       "casts": {
        "Moonfire": 1.07,
        "Starfire": 3.17,
-       "Wrath": 0.45
+       "Wrath": 0.45,
+       "Entangling Roots": 0.02
       },
       "pet_casts": null,
       "shares": {
@@ -482,38 +485,58 @@
        "Wrath": 0.03
       }
      },
-     "29": {
-      "seconds": 33.3,
+     "30": {
+      "seconds": 34.2,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.218,
+      "casts": {
+       "Moonfire": 1.05,
+       "Starfire": 4.45,
+       "Wrath": 0.51,
+       "Entangling Roots": 0.04
+      },
+      "pet_casts": null,
+      "shares": {
+       "Starfire": 0.742,
+       "Moonfire": 0.182,
+       "Thorns": 0.051,
+       "Wrath": 0.024
+      }
+     },
+     "31": {
+      "seconds": 35.8,
       "deaths_per_100": 0.0,
       "idle_share": 0.221,
       "casts": {
        "Moonfire": 1.05,
-       "Starfire": 4.22,
-       "Wrath": 0.43
+       "Starfire": 4.77,
+       "Wrath": 0.51,
+       "Entangling Roots": 0.04
       },
       "pet_casts": null,
       "shares": {
-       "Starfire": 0.739,
-       "Moonfire": 0.189,
+       "Starfire": 0.753,
+       "Moonfire": 0.173,
        "Thorns": 0.051,
-       "Wrath": 0.02
+       "Wrath": 0.022
       }
      },
-     "30": {
-      "seconds": 35.9,
-      "deaths_per_100": 0.25,
-      "idle_share": 0.216,
+     "33": {
+      "seconds": 37.7,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.222,
       "casts": {
-       "Moonfire": 1.07,
-       "Wrath": 2.28,
-       "Starfire": 3.93
+       "Moonfire": 1.16,
+       "Wrath": 2.54,
+       "Starfire": 4.72,
+       "Entangling Roots": 0.11
       },
       "pet_casts": null,
       "shares": {
-       "Starfire": 0.653,
-       "Moonfire": 0.184,
-       "Wrath": 0.107,
-       "Thorns": 0.054
+       "Starfire": 0.677,
+       "Moonfire": 0.168,
+       "Wrath": 0.103,
+       "Thorns": 0.048
       }
      },
      "39": {
@@ -559,7 +582,8 @@
       "casts": {
        "Moonfire": 1.04,
        "Wrath": 2.29,
-       "Starfire": 4.19
+       "Starfire": 4.19,
+       "Entangling Roots": 0.02
       },
       "pet_casts": null,
       "shares": {
@@ -576,7 +600,8 @@
       "casts": {
        "Moonfire": 1.04,
        "Wrath": 2.25,
-       "Starfire": 4.28
+       "Starfire": 4.28,
+       "Entangling Roots": 0.04
       },
       "pet_casts": null,
       "shares": {
@@ -593,7 +618,8 @@
       "casts": {
        "Moonfire": 1.04,
        "Wrath": 2.24,
-       "Starfire": 4.18
+       "Starfire": 4.18,
+       "Entangling Roots": 0.02
       },
       "pet_casts": null,
       "shares": {
@@ -629,8 +655,9 @@
      "12": "caster",
      "19": "caster",
      "20": "caster",
-     "29": "caster",
      "30": "caster",
+     "31": "caster",
+     "33": "caster",
      "39": "caster",
      "40": "caster",
      "45": "caster",
@@ -643,8 +670,8 @@
     "build": "restoration-leveling",
     "rotation": "feral-cat-dps",
     "provisional_order": false,
-    "fingerprint": "2011639bcb6b0dcd",
-    "inputs_fingerprint": "b59ef637c78e1f14",
+    "fingerprint": "f467f23fc86a6674",
+    "inputs_fingerprint": "492669e905f8a571",
     "guide_fingerprint": "7b7899d156b0",
     "fail": [],
     "notes": [
@@ -921,7 +948,8 @@
        "Melee": 18.04,
        "Rake": 1.87,
        "Claw": 3.4,
-       "Ferocious Bite": 1.13
+       "Ferocious Bite": 1.13,
+       "Rip": 0.01
       },
       "pet_casts": null,
       "shares": {
@@ -978,25 +1006,23 @@
   }
  },
  "hunter": {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "specs": {
    "Hybrid Beast Mastery/Survival": {
     "build": "beast-survival-open-leveling",
     "rotation": "melee-dps",
     "provisional_order": false,
-    "fingerprint": "75c754268b55c097",
-    "inputs_fingerprint": "c8d7342a99209153",
-    "guide_fingerprint": "31f0a8fc56e1",
-    "fail": [
-     "Lg: Arcane Shot (from level 6) is never pressed; forced: LEAD: top at 20: -2.65%",
-     "Lc: Entrapment worth nothing at 20, 30, 40, 50, 60: only a tier point for Clever Traps (tier 3), and no filler record on this build shows a more useful legal home was tried (fightlab/fl_filler_pass.py)"
-    ],
+    "fingerprint": "1c518aadc30a4769",
+    "inputs_fingerprint": "12cdfb5774c2a9d8",
+    "guide_fingerprint": "d64d91bc149a",
+    "fail": [],
     "notes": [
      "Lh: 13.8 s a kill at 10, 16.7 at 15 (+21%): ordinary scaling: the mob's health grows +75%, your damage per second +45%; fight time 13.8 -> 16.7 s (+21%), downtime 0.0 -> 0.0 s (idle 0% -> 0%); mob health +75% against damage per second +45%; points Improved Tracking 1->5, Savage Strikes 0->1; ranks none new (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Improved Tracking 1->5, Savage Strikes 0->1; ranks: none new; gear main stats 25->30; mob health 187->328 (+75%), swing 13->24, armor 450->677]",
      "Lh: 16.1 s a kill at 20, 19.0 at 29 (+18%): ordinary scaling: the mob's health grows +104%, your damage per second +75%; fight time 16.1 -> 18.7 s (+16%), downtime 0.0 -> 0.4 s (idle 0% -> 2%); mob health +104% against damage per second +75%; points Clever Traps 0->2, Predator's Edge 0->4, Surefooted 1->3, Survival Tactics 0->1; ranks Bite rank 3->4, Claw rank 3->4, Immolation Trap rank 1->2, Raptor Strike rank 3->4, Serpent Sting rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Clever Traps 0->2, Predator's Edge 0->4, Surefooted 1->3, Survival Tactics 0->1; ranks: Bite rank 3->4, Claw rank 3->4, Immolation Trap rank 1->2, Raptor Strike rank 3->4, Serpent Sting rank 3->4; gear main stats 64->119; mob health 466->939 (+102%), swing 32->46, armor 817->1165]",
      "Lh: 18.8 s a kill at 30, 21.1 at 39 (+12%): ordinary scaling: the mob's health grows +55%, your damage per second +41%; fight time 18.7 -> 20.7 s (+10%), downtime 0.1 -> 0.5 s (idle 0% -> 2%); mob health +55% against damage per second +41%; points Deadly Aspects 0->2, Lethal Attacks 0->4, Resourcefulness 1->2, Survivalist's Discipline 0->2; ranks Bite rank 4->5, Claw rank 4->5, Immolation Trap rank 2->3, Raptor Strike rank 4->5, Serpent Sting rank 4->5 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Deadly Aspects 0->2, Lethal Attacks 0->4, Resourcefulness 1->2, Survivalist's Discipline 0->2; ranks: Bite rank 4->5, Claw rank 4->5, Immolation Trap rank 2->3, Raptor Strike rank 4->5, Serpent Sting rank 4->5; gear main stats 125->153; mob health 1002->1737 (+73%), swing 48->65, armor 1200->1961]",
-     "Lg: Explosive Trap never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 1.0% at least",
-     "Lg: Wing Clip never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 8.0% at least",
+     "Lg: Arcane Shot never pressed; forced: LEAD: top at 20: -2.65%; the tune compared it as a rules knob (FORCE_ARCANE_SHOT_LEVELS) and left it off; forced at levels 20-60 on the installed rules: -2.68% seed 1, -2.32% seed 2 per kill (faster is +)",
+     "Lg: Explosive Trap never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 1.0% at least",
+     "Lg: Wing Clip never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 7.7% at least",
      "Ll: parses to 0: **Savage Rend** (rank 5) parses to no damage: \"Slash an enemy with razor talons, causing the target to Bleed for 156 damage over 18 sec.\" (a pet ability the lab's pet never uses (the cat presses Claw, Bite and Growl))",
      "Ll: parses to 0: **Scorpid Poison** (rank 4) parses to no damage: \"Inflicts 25 Nature damage over 10 sec. Effect can stack up to 5 times on a single target.\" (a pet ability the lab's pet never uses (the cat presses Claw, Bite and Growl))",
      "Ll: parses to 0: **Tendon Rip** (rank 5) parses to no damage: \"Tears at an enemy's legs for 60 damage over 9 sec and reduces movement speed by 50% for 9 sec.\" (a pet ability the lab's pet never uses (the cat presses Claw, Bite and Growl))",
@@ -1206,7 +1232,8 @@
        "Immolation Trap": 0.51,
        "Melee": 3.22,
        "Melee (off-hand)": 4.0,
-       "Raptor Strike": 0.79
+       "Raptor Strike": 0.79,
+       "Mongoose Bite": 0.01
       },
       "pet_casts": {
        "Growl": 2.29,
@@ -1267,7 +1294,8 @@
        "Melee": 4.03,
        "Melee (off-hand)": 4.85,
        "Immolation Trap": 1.0,
-       "Raptor Strike": 0.82
+       "Raptor Strike": 0.82,
+       "Mongoose Bite": 0.03
       },
       "pet_casts": {
        "Growl": 2.7,
@@ -1298,7 +1326,8 @@
        "Melee": 4.16,
        "Melee (off-hand)": 5.03,
        "Immolation Trap": 1.0,
-       "Raptor Strike": 0.86
+       "Raptor Strike": 0.86,
+       "Mongoose Bite": 0.02
       },
       "pet_casts": {
        "Growl": 2.74,
@@ -1313,7 +1342,7 @@
        "Melee (off-hand)": 0.121,
        "Claw": 0.084,
        "Auto Shot": 0.068,
-       "Raptor Strike": 0.053,
+       "Raptor Strike": 0.052,
        "Bite": 0.04,
        "Lacerate": 0.008
       }
@@ -1329,7 +1358,8 @@
        "Melee": 4.32,
        "Melee (off-hand)": 5.21,
        "Immolation Trap": 1.0,
-       "Raptor Strike": 0.86
+       "Raptor Strike": 0.86,
+       "Mongoose Bite": 0.03
       },
       "pet_casts": {
        "Growl": 2.78,
@@ -1360,10 +1390,11 @@
        "Melee": 4.75,
        "Melee (off-hand)": 5.71,
        "Immolation Trap": 1.0,
-       "Raptor Strike": 0.93
+       "Raptor Strike": 0.93,
+       "Mongoose Bite": 0.03
       },
       "pet_casts": {
-       "Growl": 3.0,
+       "Growl": 3.01,
        "Bite": 1.0,
        "Claw": 8.26
       },
@@ -1401,8 +1432,8 @@
     "build": "beast-mastery-open-leveling",
     "rotation": "bm-leveling",
     "provisional_order": false,
-    "fingerprint": "14dfcdff121002f0",
-    "inputs_fingerprint": "0dd013caa567e193",
+    "fingerprint": "6eebc3778ab45261",
+    "inputs_fingerprint": "0b87640b4a41ca13",
     "guide_fingerprint": "0ec807904bde",
     "fail": [],
     "notes": [
@@ -1416,7 +1447,6 @@
      "Lg: Explosive Trap never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 0.1% at least",
      "Lg: Immolation Trap never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): within noise at best (-0.01%), never faster by the bar",
      "Lg: Lacerate never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): within noise at best (-0.21%), never faster by the bar",
-     "Lg: Wing Clip never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): within noise at best (-0.10%), never faster by the bar",
      "Ll: parses to 0: **Savage Rend** (rank 5) parses to no damage: \"Slash an enemy with razor talons, causing the target to Bleed for 156 damage over 18 sec.\" (a pet ability the lab's pet never uses (the cat presses Claw, Bite and Growl))",
      "Ll: parses to 0: **Scorpid Poison** (rank 4) parses to no damage: \"Inflicts 25 Nature damage over 10 sec. Effect can stack up to 5 times on a single target.\" (a pet ability the lab's pet never uses (the cat presses Claw, Bite and Growl))",
      "Ll: parses to 0: **Tendon Rip** (rank 5) parses to no damage: \"Tears at an enemy's legs for 60 damage over 9 sec and reduces movement speed by 50% for 9 sec.\" (a pet ability the lab's pet never uses (the cat presses Claw, Bite and Growl))",
@@ -1452,7 +1482,8 @@
       "idle_share": 0.0,
       "casts": {
        "Auto Shot": 2.46,
-       "Serpent Sting": 1.02
+       "Serpent Sting": 1.02,
+       "Melee": 0.03
       },
       "pet_casts": {
        "Growl": 1.02,
@@ -1612,7 +1643,8 @@
        "Auto Shot": 3.9,
        "Hunter's Mark": 1.0,
        "Serpent Sting": 1.02,
-       "Aimed Shot": 0.99
+       "Aimed Shot": 0.99,
+       "Melee": 0.01
       },
       "pet_casts": {
        "Growl": 1.56,
@@ -1661,7 +1693,8 @@
        "Auto Shot": 4.81,
        "Hunter's Mark": 1.0,
        "Serpent Sting": 1.02,
-       "Aimed Shot": 1.0
+       "Aimed Shot": 1.0,
+       "Feign Death": 0.04
       },
       "pet_casts": {
        "Growl": 1.92,
@@ -1711,7 +1744,8 @@
        "Auto Shot": 5.89,
        "Hunter's Mark": 1.0,
        "Serpent Sting": 1.03,
-       "Aimed Shot": 0.99
+       "Aimed Shot": 0.99,
+       "Feign Death": 0.03
       },
       "pet_casts": {
        "Growl": 2.37,
@@ -1736,7 +1770,8 @@
        "Auto Shot": 6.23,
        "Hunter's Mark": 1.0,
        "Serpent Sting": 1.03,
-       "Aimed Shot": 1.04
+       "Aimed Shot": 1.04,
+       "Feign Death": 0.03
       },
       "pet_casts": {
        "Growl": 2.46,
@@ -1763,7 +1798,10 @@
        "Serpent Sting": 1.03,
        "Aimed Shot": 1.01,
        "Feign Death": 0.18,
-       "Melee": 0.06
+       "Melee": 0.06,
+       "Mongoose Bite": 0.02,
+       "Wing Clip": 0.03,
+       "Raptor Strike": 0.02
       },
       "pet_casts": {
        "Growl": 2.71,
@@ -1802,22 +1840,21 @@
     "build": "marksmanship-open-leveling",
     "rotation": "mm-raid",
     "provisional_order": false,
-    "fingerprint": "877388cc78640ac8",
-    "inputs_fingerprint": "89603e67f5acec4b",
+    "fingerprint": "44f1c473b6cf9be9",
+    "inputs_fingerprint": "2d99b0308f4f66bb",
     "guide_fingerprint": "9c9d42781e0d",
-    "fail": [
-     "Lh: 15.0 s a kill at 19, 16.2 at 20 (+8%) [points: Improved Stings 0->1; ranks: Aimed Shot rank 0->1, Arcane Shot rank 2->3, Growl rank 2->3; gear main stats 57->64; mob health 438->466 (+6%), swing 30->32, armor 789->817]"
-    ],
+    "fail": [],
     "notes": [
      "Ld: the rules file's veto takes Multi-Shot off; the guide names it only to say it is not cast",
      "Lh: 12.4 s a kill at 10, 13.1 at 12 (+6%): ordinary scaling: the mob's health grows +39%, your damage per second +32%; fight time 12.4 -> 13.1 s (+6%), downtime 0.0 -> 0.0 s (idle 0% -> 0%); mob health +39% against damage per second +32%; points Lethal Attacks 1->3; ranks Arcane Shot rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Lethal Attacks 1->3; ranks: Arcane Shot rank 1->2; gear main stats 25->27; mob health 187->243 (+30%), swing 13->17, armor 450->541]",
      "Lh: 13.1 s a kill at 12, 15.0 at 19 (+15%): ordinary scaling: the mob's health grows +73%, your damage per second +60%; fight time 13.1 -> 14.2 s (+8%), downtime 0.0 -> 0.6 s (idle 0% -> 4%); mob health +73% against damage per second +60%; points Careful Aim 0->5, Lethal Attacks 3->5; ranks Bite rank 2->3, Claw rank 2->3, Serpent Sting rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Careful Aim 0->5, Lethal Attacks 3->5; ranks: Bite rank 2->3, Claw rank 2->3, Serpent Sting rank 2->3; gear main stats 27->57; mob health 243->438 (+80%), swing 17->30, armor 541->789]",
+     "Lh: 15.0 s a kill at 19, 16.2 at 20 (+8%): Aimed Shot arrives at 20 and the signature rule has the list press it (0.95 a kill, 19% of the damage at 20): the fight is shorter, but its mana adds about 1.9 s of drinking a kill (0.87 -> 2.78 s; idle 6% -> 17%), so a kill takes 1.2 s longer. The audit session's ruling (a) of 2026-11-22 keeps the rule, and the page's signature line says what it costs (render_modes.SIG_COST: about 4% a kill over 20-60, all of it drinking). The rest is ordinary scaling: mob health +6%, gear main stats 57->64, Improved Stings 0->1 (drafted from the printed cause, 2026-11-23; for the delegator's read) [points: Improved Stings 0->1; ranks: Aimed Shot rank 0->1, Arcane Shot rank 2->3, Growl rank 2->3; gear main stats 57->64; mob health 438->466 (+6%), swing 30->32, armor 789->817]",
      "Lh: 16.2 s a kill at 20, 17.2 at 25 (+6%): ordinary scaling over four or more levels [points: Improved Stings 1->3, Rapid Killing 0->2, Trueshot Aura 0->1; ranks: Bite rank 3->4, Claw rank 3->4, Hunter's Mark rank 1->2; gear main stats 64->95; mob health 466->688 (+48%), swing 32->41, armor 817->1026]",
      "Lh: 17.2 s a kill at 25, 18.2 at 26 (+6%): ordinary scaling: the mob's health grows +14%, your damage per second +12%; fight time 14.2 -> 14.5 s (+2%), downtime 3.3 -> 4.1 s (idle 19% -> 22%); mob health +14% against damage per second +12%; points Efficiency 0->1; ranks Serpent Sting rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Efficiency 0->1; ranks: Serpent Sting rank 3->4; gear main stats 95->101; mob health 688->751 (+9%), swing 41->42, armor 1026->1061]",
-     "Lh: 18.4 s a kill at 30, 22.1 at 39 (+20%): ordinary scaling: the mob's health grows +55%, your damage per second +30%; fight time 15.5 -> 18.5 s (+19%), downtime 3.5 -> 4.2 s (idle 18% -> 18%); mob health +55% against damage per second +30%; pressed now: Feign Death, Melee; points Barrage 0->3, Efficiency 4->5, Improved Tracking 0->1, Ranged Weapon Specialization 0->4; ranks Aimed Shot rank 2->3, Arcane Shot rank 4->5, Bite rank 4->5, Claw rank 4->5, Serpent Sting rank 4->5 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Barrage 0->3, Efficiency 4->5, Improved Tracking 0->1, Ranged Weapon Specialization 0->4; ranks: Aimed Shot rank 2->3, Arcane Shot rank 4->5, Bite rank 4->5, Claw rank 4->5, Serpent Sting rank 4->5; gear main stats 125->153; mob health 1002->1737 (+73%), swing 48->65, armor 1200->1961]",
-     "Lg: Explosive Trap never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 1.6% at least",
-     "Lg: Immolation Trap never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 0.3% at least",
-     "Lg: Lacerate never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 0.1% at least",
+     "Lh: 18.4 s a kill at 30, 22.1 at 39 (+20%): ordinary scaling: the mob's health grows +55%, your damage per second +30%; fight time 15.5 -> 18.5 s (+19%), downtime 3.5 -> 4.2 s (idle 18% -> 18%); mob health +55% against damage per second +30%; pressed now: Feign Death, Melee; points Barrage 0->3, Efficiency 4->5, Improved Tracking 0->1, Ranged Weapon Specialization 0->4; ranks Aimed Shot rank 2->3, Arcane Shot rank 4->5, Bite rank 4->5, Claw rank 4->5, Serpent Sting rank 4->5 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Barrage 0->3, Efficiency 4->5, Improved Tracking 0->1, Ranged Weapon Specialization 0->4; ranks: Aimed Shot rank 2->3, Arcane Shot rank 4->5, Bite rank 4->5, Claw rank 4->5, Raptor Strike rank 4->5, Serpent Sting rank 4->5, Wing Clip rank 1->2; gear main stats 125->153; mob health 1002->1737 (+73%), swing 48->65, armor 1200->1961]",
+     "Lg: Explosive Trap never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 1.6% at least",
+     "Lg: Immolation Trap never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 0.3% at least",
+     "Lg: Lacerate never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 0.1% at least",
      "Ll: parses to 0: **Savage Rend** (rank 5) parses to no damage: \"Slash an enemy with razor talons, causing the target to Bleed for 156 damage over 18 sec.\" (a pet ability the lab's pet never uses (the cat presses Claw, Bite and Growl))",
      "Ll: parses to 0: **Scorpid Poison** (rank 4) parses to no damage: \"Inflicts 25 Nature damage over 10 sec. Effect can stack up to 5 times on a single target.\" (a pet ability the lab's pet never uses (the cat presses Claw, Bite and Growl))",
      "Ll: parses to 0: **Tendon Rip** (rank 5) parses to no damage: \"Tears at an enemy's legs for 60 damage over 9 sec and reduces movement speed by 50% for 9 sec.\" (a pet ability the lab's pet never uses (the cat presses Claw, Bite and Growl))",
@@ -1825,7 +1862,7 @@
      "Ll: `NUM` matches **Disengage** ranks [2, 3] but not ranks [1] (no leveling module casts it: a threat drop with no damage)",
      "Ll: `NUM` matches **Distracting Shot** ranks [2, 3, 4, 5, 6] but not ranks [1] (no leveling module casts it: a taunt with no damage)",
      "Lc: Endurance Training worth nothing at 50, 60 (tier point for Unleashed Fury (tier 3); the filler pass: no better home, worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 50, 60; 2 legal homes tried (2026-11-22))",
-     "Lc: Improved Aspect of the Monkey worth nothing at 50, 60 (tier point for Unleashed Fury (tier 3); the filler pass: no better home, improves only Aspect of the Monkey, which the build never casts (its removal changes nothing at 50, 60); 2 legal homes tried (2026-11-22))"
+     "Lc: Improved Aspect of the Monkey worth nothing at 50, 60 (tier point for Unleashed Fury (tier 3); the filler pass: no better home, improves only Aspect of the Monkey, which the build never casts from level 49 on (its removal changes nothing at 50, 60); 2 legal homes tried (2026-11-22))"
     ],
     "levels": {
      "1": {
@@ -1853,7 +1890,8 @@
       "idle_share": 0.0,
       "casts": {
        "Auto Shot": 2.46,
-       "Serpent Sting": 1.02
+       "Serpent Sting": 1.02,
+       "Melee": 0.03
       },
       "pet_casts": {
        "Growl": 1.02,
@@ -2000,7 +2038,8 @@
        "Hunter's Mark": 1.0,
        "Serpent Sting": 1.04,
        "Arcane Shot": 0.93,
-       "Aimed Shot": 0.98
+       "Aimed Shot": 0.98,
+       "Melee": 0.01
       },
       "pet_casts": {
        "Growl": 1.13,
@@ -2026,7 +2065,8 @@
        "Hunter's Mark": 1.0,
        "Serpent Sting": 1.04,
        "Aimed Shot": 0.99,
-       "Arcane Shot": 0.92
+       "Arcane Shot": 0.92,
+       "Melee": 0.01
       },
       "pet_casts": {
        "Growl": 1.15,
@@ -2053,6 +2093,7 @@
        "Serpent Sting": 1.04,
        "Aimed Shot": 1.0,
        "Arcane Shot": 0.99,
+       "Feign Death": 0.02,
        "Melee": 0.11
       },
       "pet_casts": {
@@ -2082,7 +2123,10 @@
        "Aimed Shot": 1.0,
        "Arcane Shot": 0.97,
        "Feign Death": 0.22,
-       "Melee": 0.29
+       "Melee": 0.29,
+       "Wing Clip": 0.04,
+       "Mongoose Bite": 0.03,
+       "Raptor Strike": 0.04
       },
       "pet_casts": {
        "Growl": 1.91,
@@ -2111,7 +2155,10 @@
        "Aimed Shot": 1.01,
        "Arcane Shot": 0.95,
        "Melee": 0.28,
-       "Feign Death": 0.23
+       "Feign Death": 0.23,
+       "Wing Clip": 0.04,
+       "Mongoose Bite": 0.04,
+       "Raptor Strike": 0.04
       },
       "pet_casts": {
        "Growl": 1.94,
@@ -2217,20 +2264,18 @@
     "build": "survival-open-leveling",
     "rotation": "melee-dps",
     "provisional_order": false,
-    "fingerprint": "75c754268b55c097",
-    "inputs_fingerprint": "c5a218004755df71",
-    "guide_fingerprint": "13b6770f57d2",
-    "fail": [
-     "Lg: Arcane Shot (from level 6) is never pressed; forced: LEAD: top at 20: -2.65%",
-     "Lc: Entrapment worth nothing at 20, 30, 40, 50, 60: only a tier point for Clever Traps (tier 3), and no filler record on this build shows a more useful legal home was tried (fightlab/fl_filler_pass.py)"
-    ],
+    "fingerprint": "1c518aadc30a4769",
+    "inputs_fingerprint": "524ee4c5be283fdd",
+    "guide_fingerprint": "6b800a134da4",
+    "fail": [],
     "notes": [
      "Ld: the rules file's veto takes Hunter's Mark off; the guide names it only to say it is not cast",
      "Lh: 13.8 s a kill at 10, 16.7 at 15 (+21%): ordinary scaling: the mob's health grows +75%, your damage per second +45%; fight time 13.8 -> 16.7 s (+21%), downtime 0.0 -> 0.0 s (idle 0% -> 0%); mob health +75% against damage per second +45%; points Improved Tracking 1->5, Savage Strikes 0->1; ranks none new (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Improved Tracking 1->5, Savage Strikes 0->1; ranks: none new; gear main stats 25->30; mob health 187->328 (+75%), swing 13->24, armor 450->677]",
      "Lh: 16.1 s a kill at 20, 17.8 at 25 (+11%): ordinary scaling over four or more levels [points: Clever Traps 0->2, Predator's Edge 0->1, Surefooted 1->3; ranks: Bite rank 3->4, Claw rank 3->4, Raptor Strike rank 3->4; gear main stats 64->95; mob health 466->688 (+48%), swing 32->41, armor 817->1026]",
      "Lh: 18.7 s a kill at 30, 20.9 at 39 (+12%): ordinary scaling: the mob's health grows +55%, your damage per second +41%; fight time 18.6 -> 20.5 s (+10%), downtime 0.1 -> 0.5 s (idle 0% -> 2%); mob health +55% against damage per second +41%; points Lethal Attacks 0->5, Resourcefulness 1->2, Survival Tactics 0->1, Survivalist's Discipline 0->2; ranks Bite rank 4->5, Claw rank 4->5, Immolation Trap rank 2->3, Raptor Strike rank 4->5, Serpent Sting rank 4->5 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Lethal Attacks 0->5, Resourcefulness 1->2, Survival Tactics 0->1, Survivalist's Discipline 0->2; ranks: Bite rank 4->5, Claw rank 4->5, Immolation Trap rank 2->3, Raptor Strike rank 4->5, Serpent Sting rank 4->5; gear main stats 125->153; mob health 1002->1737 (+73%), swing 48->65, armor 1200->1961]",
-     "Lg: Explosive Trap never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 1.0% at least",
-     "Lg: Wing Clip never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 8.0% at least",
+     "Lg: Arcane Shot never pressed; forced: LEAD: top at 20: -2.65%; the tune compared it as a rules knob (FORCE_ARCANE_SHOT_LEVELS) and left it off; forced at levels 20-60 on the installed rules: -2.68% seed 1, -2.32% seed 2 per kill (faster is +)",
+     "Lg: Explosive Trap never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 1.0% at least",
+     "Lg: Wing Clip never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 7.7% at least",
      "Ll: parses to 0: **Savage Rend** (rank 5) parses to no damage: \"Slash an enemy with razor talons, causing the target to Bleed for 156 damage over 18 sec.\" (a pet ability the lab's pet never uses (the cat presses Claw, Bite and Growl))",
      "Ll: parses to 0: **Scorpid Poison** (rank 4) parses to no damage: \"Inflicts 25 Nature damage over 10 sec. Effect can stack up to 5 times on a single target.\" (a pet ability the lab's pet never uses (the cat presses Claw, Bite and Growl))",
      "Ll: parses to 0: **Tendon Rip** (rank 5) parses to no damage: \"Tears at an enemy's legs for 60 damage over 9 sec and reduces movement speed by 50% for 9 sec.\" (a pet ability the lab's pet never uses (the cat presses Claw, Bite and Growl))",
@@ -2526,58 +2571,61 @@
       "casts": {
        "Auto Shot": 1.17,
        "Serpent Sting": 1.0,
-       "Lacerate": 0.15,
-       "Melee": 3.88,
-       "Melee (off-hand)": 4.68,
-       "Immolation Trap": 1.0,
-       "Raptor Strike": 0.82
+       "Lacerate": 0.16,
+       "Melee": 3.9,
+       "Melee (off-hand)": 4.69,
+       "Immolation Trap": 0.99,
+       "Raptor Strike": 0.82,
+       "Mongoose Bite": 0.01
       },
       "pet_casts": {
-       "Growl": 2.69,
+       "Growl": 2.7,
        "Bite": 1.55,
        "Claw": 5.75
       },
       "shares": {
-       "Cat melee": 0.19,
+       "Cat melee": 0.191,
        "Immolation Trap": 0.156,
-       "Serpent Sting": 0.149,
-       "Melee": 0.144,
-       "Melee (off-hand)": 0.128,
-       "Auto Shot": 0.071,
+       "Serpent Sting": 0.148,
+       "Melee": 0.143,
+       "Melee (off-hand)": 0.127,
        "Claw": 0.071,
-       "Raptor Strike": 0.052,
-       "Bite": 0.034
+       "Auto Shot": 0.071,
+       "Raptor Strike": 0.053,
+       "Bite": 0.034,
+       "Lacerate": 0.005
       }
      },
      "40": {
-      "seconds": 21.2,
+      "seconds": 21.1,
       "deaths_per_100": 0.0,
-      "idle_share": 0.024,
+      "idle_share": 0.022,
       "casts": {
        "Auto Shot": 1.17,
        "Serpent Sting": 1.0,
-       "Lacerate": 0.16,
+       "Lacerate": 0.14,
        "Melee": 3.97,
        "Melee (off-hand)": 4.77,
-       "Immolation Trap": 1.0,
-       "Raptor Strike": 0.82
+       "Immolation Trap": 0.99,
+       "Raptor Strike": 0.82,
+       "Mongoose Bite": 0.02
       },
       "pet_casts": {
-       "Growl": 2.72,
+       "Growl": 2.73,
        "Bite": 1.59,
-       "Claw": 5.79
+       "Claw": 5.78
       },
       "shares": {
        "Cat melee": 0.186,
-       "Immolation Trap": 0.149,
+       "Immolation Trap": 0.15,
        "Serpent Sting": 0.143,
        "Melee": 0.143,
-       "Melee (off-hand)": 0.128,
+       "Melee (off-hand)": 0.126,
        "Claw": 0.082,
-       "Auto Shot": 0.069,
-       "Raptor Strike": 0.052,
+       "Auto Shot": 0.068,
+       "Raptor Strike": 0.055,
        "Bite": 0.04,
-       "Lacerate": 0.007
+       "Lacerate": 0.006
       }
      },
      "50": {
@@ -2591,7 +2639,7 @@
        "Melee": 3.97,
        "Melee (off-hand)": 4.68,
        "Immolation Trap": 1.0,
-       "Raptor Strike": 0.79,
+       "Raptor Strike": 0.8,
        "Mongoose Bite": 0.1
       },
       "pet_casts": {
@@ -2619,99 +2667,99 @@
       "casts": {
        "Auto Shot": 1.21,
        "Serpent Sting": 1.0,
-       "Lacerate": 0.22,
-       "Melee": 4.21,
+       "Lacerate": 0.24,
+       "Melee": 4.22,
        "Melee (off-hand)": 4.96,
        "Immolation Trap": 1.0,
-       "Raptor Strike": 0.86,
-       "Mongoose Bite": 0.14
+       "Raptor Strike": 0.88,
+       "Mongoose Bite": 0.15
       },
       "pet_casts": {
        "Growl": 2.89,
        "Bite": 1.65,
-       "Claw": 5.96
+       "Claw": 5.97
       },
       "shares": {
        "Serpent Sting": 0.201,
-       "Cat melee": 0.183,
-       "Immolation Trap": 0.153,
-       "Melee": 0.128,
-       "Melee (off-hand)": 0.111,
+       "Cat melee": 0.182,
+       "Immolation Trap": 0.152,
+       "Melee": 0.127,
+       "Melee (off-hand)": 0.112,
        "Claw": 0.067,
        "Auto Shot": 0.062,
-       "Raptor Strike": 0.047,
+       "Raptor Strike": 0.049,
        "Bite": 0.033,
        "Lacerate": 0.008,
        "Mongoose Bite": 0.007
       }
      },
      "54": {
-      "seconds": 22.8,
+      "seconds": 22.7,
       "deaths_per_100": 0.0,
-      "idle_share": 0.059,
+      "idle_share": 0.058,
       "casts": {
        "Auto Shot": 1.22,
        "Serpent Sting": 1.0,
        "Lacerate": 0.24,
-       "Melee": 4.3,
-       "Melee (off-hand)": 4.91,
+       "Melee": 4.31,
+       "Melee (off-hand)": 4.88,
        "Immolation Trap": 1.0,
        "Strider Kick": 0.99,
-       "Raptor Strike": 0.71,
+       "Raptor Strike": 0.69,
        "Mongoose Bite": 0.14
       },
       "pet_casts": {
-       "Growl": 2.83,
-       "Bite": 1.61,
-       "Claw": 5.91
+       "Growl": 2.85,
+       "Bite": 1.6,
+       "Claw": 5.92
       },
       "shares": {
        "Serpent Sting": 0.193,
-       "Cat melee": 0.182,
+       "Cat melee": 0.181,
        "Immolation Trap": 0.145,
-       "Melee": 0.126,
+       "Melee": 0.127,
        "Melee (off-hand)": 0.106,
-       "Claw": 0.064,
+       "Claw": 0.065,
        "Auto Shot": 0.062,
        "Strider Kick": 0.039,
-       "Raptor Strike": 0.037,
+       "Raptor Strike": 0.035,
        "Bite": 0.031,
-       "Lacerate": 0.009,
-       "Mongoose Bite": 0.007
+       "Lacerate": 0.01,
+       "Mongoose Bite": 0.006
       }
      },
      "60": {
       "seconds": 22.8,
       "deaths_per_100": 0.0,
-      "idle_share": 0.053,
+      "idle_share": 0.054,
       "casts": {
        "Auto Shot": 1.09,
        "Serpent Sting": 1.0,
-       "Lacerate": 0.27,
-       "Melee": 4.42,
-       "Melee (off-hand)": 5.01,
+       "Lacerate": 0.28,
+       "Melee": 4.45,
+       "Melee (off-hand)": 5.03,
        "Immolation Trap": 1.0,
        "Strider Kick": 0.99,
-       "Raptor Strike": 0.72,
-       "Mongoose Bite": 0.18
+       "Raptor Strike": 0.71,
+       "Mongoose Bite": 0.19
       },
       "pet_casts": {
-       "Growl": 2.95,
-       "Bite": 1.69,
-       "Claw": 6.06
+       "Growl": 2.96,
+       "Bite": 1.68,
+       "Claw": 6.07
       },
       "shares": {
-       "Serpent Sting": 0.205,
-       "Cat melee": 0.169,
+       "Serpent Sting": 0.203,
+       "Cat melee": 0.17,
        "Immolation Trap": 0.164,
        "Melee": 0.12,
-       "Melee (off-hand)": 0.102,
+       "Melee (off-hand)": 0.103,
        "Claw": 0.064,
        "Auto Shot": 0.054,
-       "Strider Kick": 0.035,
+       "Strider Kick": 0.036,
        "Raptor Strike": 0.035,
        "Bite": 0.032,
-       "Lacerate": 0.012,
+       "Lacerate": 0.011,
        "Mongoose Bite": 0.008
       }
      }
@@ -2739,8 +2787,8 @@
     "build": "beast-marks-open-leveling",
     "rotation": "bm-leveling",
     "provisional_order": false,
-    "fingerprint": "14dfcdff121002f0",
-    "inputs_fingerprint": "ab5422049fc29bc7",
+    "fingerprint": "6eebc3778ab45261",
+    "inputs_fingerprint": "c446a787d5d9f65b",
     "guide_fingerprint": "d403756158b4",
     "fail": [],
     "notes": [
@@ -2751,7 +2799,7 @@
      "Lh: 15.5 s a kill at 20, 16.5 at 25 (+6%): ordinary scaling over four or more levels [points: Careful Aim 0->2, Improved Stings 1->3, Trueshot Aura 0->1; ranks: Bite rank 3->4, Claw rank 3->4, Hunter's Mark rank 1->2; gear main stats 64->95; mob health 466->688 (+48%), swing 32->41, armor 817->1026]",
      "Lh: 17.3 s a kill at 26, 18.5 at 30 (+7%): ordinary scaling over four or more levels [points: Careful Aim 3->4, Rapid Killing 0->2, Rapid Recuperation 0->1; ranks: Aimed Shot rank 1->2, Feign Death rank 0->1, Growl rank 3->4; gear main stats 101->125; mob health 751->1002 (+33%), swing 42->48, armor 1061->1200]",
      "Lh: 18.5 s a kill at 30, 21.2 at 37 (+15%): ordinary scaling: the mob's health grows +42%, your damage per second +29%; fight time 17.3 -> 19.2 s (+11%), downtime 1.6 -> 2.4 s (idle 8% -> 11%); mob health +42% against damage per second +29%; points Careful Aim 4->5, Deadly Aspects 0->2, Improved Tracking 0->4; ranks Aimed Shot rank 2->3, Bite rank 4->5, Claw rank 4->5, Raptor Strike rank 4->5, Serpent Sting rank 4->5 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Careful Aim 4->5, Deadly Aspects 0->2, Improved Tracking 0->4; ranks: Aimed Shot rank 2->3, Bite rank 4->5, Claw rank 4->5, Raptor Strike rank 4->5, Serpent Sting rank 4->5; gear main stats 125->148; mob health 1002->1524 (+52%), swing 48->61, armor 1200->1681]",
-     "Lh: 23.0 s a kill at 50, 24.4 at 60 (+6%): ordinary scaling over four or more levels [points: Bestial Discipline 0->2, Ferocity 0->5, Improved Tracking 4->5, Mortal Shots 0->1, Spirit Bond 0->1; ranks: Aimed Shot rank 4->6, Bite rank 7->8, Claw rank 7->8, Growl rank 6->7, Hunter's Mark rank 3->4, Raptor Strike rank 7->8, Serpent Sting rank 7->9, Wing Clip rank 2->3; gear main stats 210->246; mob health 2672->3878 (+45%), swing 95->117, armor 2999->3489]",
+     "Lh: 23.0 s a kill at 50, 24.4 at 60 (+6%): ordinary scaling over four or more levels [points: Bestial Discipline 0->2, Ferocity 0->5, Improved Tracking 4->5, Mortal Shots 0->1, Spirit Bond 0->1; ranks: Aimed Shot rank 4->6, Bite rank 7->8, Claw rank 7->8, Growl rank 6->7, Hunter's Mark rank 3->4, Mongoose Bite rank 3->4, Raptor Strike rank 7->8, Serpent Sting rank 7->9, Wing Clip rank 2->3; gear main stats 210->246; mob health 2672->3878 (+45%), swing 95->117, armor 2999->3489]",
      "Lg: Explosive Trap never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 0.1% at least",
      "Lg: Immolation Trap never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): within noise at best (-0.01%), never faster by the bar",
      "Lg: Lacerate never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): within noise at best (-0.21%), never faster by the bar",
@@ -2790,7 +2838,8 @@
       "idle_share": 0.0,
       "casts": {
        "Auto Shot": 2.46,
-       "Serpent Sting": 1.02
+       "Serpent Sting": 1.02,
+       "Melee": 0.03
       },
       "pet_casts": {
        "Growl": 1.02,
@@ -2926,7 +2975,8 @@
        "Auto Shot": 3.6,
        "Hunter's Mark": 1.0,
        "Serpent Sting": 1.04,
-       "Aimed Shot": 0.99
+       "Aimed Shot": 0.99,
+       "Melee": 0.01
       },
       "pet_casts": {
        "Growl": 1.48,
@@ -2950,7 +3000,8 @@
        "Auto Shot": 3.69,
        "Hunter's Mark": 1.0,
        "Serpent Sting": 1.04,
-       "Aimed Shot": 0.99
+       "Aimed Shot": 0.99,
+       "Melee": 0.02
       },
       "pet_casts": {
        "Growl": 1.5,
@@ -2975,7 +3026,8 @@
        "Hunter's Mark": 1.0,
        "Serpent Sting": 1.04,
        "Aimed Shot": 1.0,
-       "Feign Death": 0.2
+       "Feign Death": 0.2,
+       "Melee": 0.03
       },
       "pet_casts": {
        "Growl": 1.78,
@@ -3002,7 +3054,9 @@
        "Aimed Shot": 1.0,
        "Feign Death": 0.32,
        "Melee": 0.11,
-       "Raptor Strike": 0.05
+       "Raptor Strike": 0.05,
+       "Mongoose Bite": 0.02,
+       "Wing Clip": 0.04
       },
       "pet_casts": {
        "Growl": 2.1,
@@ -3032,7 +3086,8 @@
        "Feign Death": 0.34,
        "Melee": 0.17,
        "Wing Clip": 0.09,
-       "Raptor Strike": 0.1
+       "Raptor Strike": 0.1,
+       "Mongoose Bite": 0.03
       },
       "pet_casts": {
        "Growl": 2.19,
@@ -3061,6 +3116,7 @@
        "Aimed Shot": 1.0,
        "Feign Death": 0.32,
        "Melee": 0.13,
+       "Mongoose Bite": 0.03,
        "Wing Clip": 0.09,
        "Raptor Strike": 0.08
       },
@@ -3091,6 +3147,7 @@
        "Aimed Shot": 1.02,
        "Feign Death": 0.26,
        "Melee": 0.1,
+       "Mongoose Bite": 0.03,
        "Raptor Strike": 0.06,
        "Wing Clip": 0.07
       },
@@ -3119,6 +3176,7 @@
        "Aimed Shot": 1.04,
        "Feign Death": 0.34,
        "Melee": 0.2,
+       "Mongoose Bite": 0.04,
        "Wing Clip": 0.13,
        "Raptor Strike": 0.11
       },
@@ -6320,21 +6378,21 @@
   }
  },
  "priest": {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "specs": {
    "Shadow": {
     "build": "shadow-open-leveling",
     "rotation": "shadow-dps",
     "provisional_order": false,
-    "fingerprint": "b75463669c4a2ad2",
-    "inputs_fingerprint": "fa0f3c2b3cd30c1b",
+    "fingerprint": "f793002ef791f561",
+    "inputs_fingerprint": "9f8dc26e66fc3c18",
     "guide_fingerprint": "226dc9c2a411",
     "fail": [],
     "notes": [
      "Ld: the rules file's veto takes Devouring Plague off; the guide names it only to say it is not cast",
      "Ld: the rules file's veto takes Smite off; the guide names it only to say it is not cast",
      "Lh: 22.8 s a kill at 10, 29.0 at 19 (+27%): ordinary scaling: the mob's health grows +140%, your damage per second +99%; fight time 21.5 -> 26.0 s (+21%), downtime 1.4 -> 3.7 s (idle 6% -> 13%); mob health +140% against damage per second +99%; points Shadow Focus 0->4, Shadow Reach 0->1, Spirit Tap 1->5; ranks Mind Blast rank 1->2, Power Word: Shield rank 1->3, Psychic Scream rank 0->1, Shadow Word: Pain rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Shadow Focus 0->4, Shadow Reach 0->1, Spirit Tap 1->5; ranks: Mind Blast rank 1->2, Power Word: Shield rank 1->3, Psychic Scream rank 0->1, Shadow Word: Pain rank 2->3; gear main stats 24->56; mob health 187->438 (+134%), swing 13->30, armor 450->789]",
-     "Lh: 30.4 s a kill at 20, 32.5 at 30 (+7%): ordinary scaling over four or more levels [points: Dark Inspiration 0->3, Improved Mind Blast 0->1, Improved Mind Flay 0->2, Shadow Reach 1->2, Shadow Weaving 0->3; ranks: Mind Blast rank 2->4, Mind Flay rank 1->2, Shadow Word: Pain rank 3->4; gear main stats 60->135; mob health 466->1002 (+115%), swing 32->48, armor 817->1200]",
+     "Lh: 30.4 s a kill at 20, 32.5 at 30 (+7%): ordinary scaling over four or more levels [points: Dark Inspiration 0->3, Improved Mind Blast 0->1, Improved Mind Flay 0->2, Shadow Reach 1->2, Shadow Weaving 0->3; ranks: Mind Blast rank 2->4, Mind Flay rank 1->2, Psychic Scream rank 1->2, Shadow Word: Pain rank 3->4; gear main stats 60->135; mob health 466->1002 (+115%), swing 32->48, armor 817->1200]",
      "Lh: 33.6 s a kill at 39, 22.3 at 40 (-34%): Shadowform at 40 (Forever's tooltip and client effect 1134008: Shadow spells cost 50% less mana): cast mana a kill 1,104 -> 550 meets the 578 Spirit Tap's regeneration returns, so the 15% drink line is never reached; 40 without the cut 33.9 s, with it 22.4 (4,000 fights, seed 3) (the investigation of 2026-11-21, accepted by the audit session) [points: Shadowform 0->1; ranks: Mind Blast rank 5->6, Shadow Word: Death rank 1->2; gear main stats 170->168; mob health 1737->1844 (+6%), swing 65->68, armor 1961->2101]",
      "Lg: Chastise never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
      "Lg: Contingency Plan never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
@@ -6373,7 +6431,8 @@
       "idle_share": 0.021,
       "casts": {
        "Shadow Word: Pain": 1.03,
-       "Wand": 6.01
+       "Wand": 6.01,
+       "Lesser Heal": 0.01
       },
       "pet_casts": null,
       "shares": {
@@ -6387,7 +6446,9 @@
       "idle_share": 0.074,
       "casts": {
        "Shadow Word: Pain": 1.03,
-       "Wand": 10.37
+       "Wand": 10.37,
+       "Lesser Heal": 0.01,
+       "Power Word: Shield": 0.02
       },
       "pet_casts": null,
       "shares": {
@@ -6456,7 +6517,8 @@
        "Shadow Word: Pain": 1.02,
        "Mind Blast": 2.24,
        "Mind Flay": 2.06,
-       "Wand": 5.11
+       "Wand": 5.11,
+       "Psychic Scream": 0.01
       },
       "pet_casts": null,
       "shares": {
@@ -6474,7 +6536,9 @@
        "Shadow Word: Pain": 1.03,
        "Mind Blast": 2.32,
        "Mind Flay": 2.19,
-       "Wand": 5.3
+       "Wand": 5.3,
+       "Psychic Scream": 0.04,
+       "Flash Heal": 0.01
       },
       "pet_casts": null,
       "shares": {
@@ -6630,8 +6694,8 @@
     "build": "discipline-leveling",
     "rotation": "discipline-leveling",
     "provisional_order": false,
-    "fingerprint": "aa208faeeec29526",
-    "inputs_fingerprint": "7355dc918b5a1715",
+    "fingerprint": "78d44d032fc14d17",
+    "inputs_fingerprint": "c81b445d07b10e3f",
     "guide_fingerprint": "bd9382472f84",
     "fail": [],
     "notes": [
@@ -6844,7 +6908,8 @@
        "Penance": 1.06,
        "Mind Blast": 1.99,
        "Smite": 1.37,
-       "Wand": 7.56
+       "Wand": 7.56,
+       "Power Word: Shield": 0.04
       },
       "pet_casts": null,
       "shares": {
@@ -6898,23 +6963,21 @@
     "build": "holy-leveling",
     "rotation": "holy-leveling",
     "provisional_order": false,
-    "fingerprint": "c6a80cb55acb6b7d",
-    "inputs_fingerprint": "9654492c1fa4c444",
-    "guide_fingerprint": "f47d9d59e480",
-    "fail": [
-     "Lg: Shadow Word: Death (from level 32) is never pressed; forced: LEAD: top at 40: -10.49%; top at 50: -6.34%; top at 60: -1.65%; filler at 40: -9.96%; filler at 50: -6.51%"
-    ],
+    "fingerprint": "2d16fc1379dd25f2",
+    "inputs_fingerprint": "23186106529c9846",
+    "guide_fingerprint": "5d7b06d238ed",
+    "fail": [],
     "notes": [
      "Ld: the rules file's veto takes Devouring Plague off; the guide names it only to say it is not cast",
      "Ld: the rules file's veto takes Penance off; the guide names it only to say it is not cast",
      "Lh: 26.5 s a kill at 10, 37.6 at 19 (+42%): ordinary scaling: the mob's health grows +140%, your damage per second +93%; fight time 19.9 -> 24.7 s (+25%), downtime 10.2 -> 18.4 s (idle 34% -> 43%); mob health +140% against damage per second +93%; points Mental Strength 0->5, Twin Disciplines 1->5; ranks Mind Blast rank 1->2, Power Word: Shield rank 1->3, Shadow Word: Pain rank 2->3, Smite rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Mental Strength 0->5, Twin Disciplines 1->5; ranks: Mind Blast rank 1->2, Power Word: Shield rank 1->3, Shadow Word: Pain rank 2->3, Smite rank 2->3; gear main stats 24->56; mob health 187->438 (+134%), swing 13->30, armor 450->789]",
      "Lh: 39.3 s a kill at 20, 45.6 at 29 (+16%): ordinary scaling: the mob's health grows +104%, your damage per second +71%; fight time 26.7 -> 31.8 s (+19%), downtime 18.0 -> 19.1 s (idle 40% -> 38%); mob health +104% against damage per second +71%; points Improved Power Word: Shield 0->3, Inner Focus 0->1, Meditation 1->3, Silent Resolve 0->3; ranks Holy Fire rank 1->2, Mind Blast rank 2->4, Power Word: Shield rank 3->4, Shadow Word: Pain rank 3->4, Smite rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Improved Power Word: Shield 0->3, Inner Focus 0->1, Meditation 1->3, Silent Resolve 0->3; ranks: Holy Fire rank 1->2, Mind Blast rank 2->4, Power Word: Shield rank 3->4, Shadow Word: Pain rank 3->4, Smite rank 3->4; gear main stats 60->130; mob health 466->939 (+102%), swing 32->46, armor 817->1165]",
-     "Lh: 46.1 s a kill at 30, 55.3 at 40 (+20%): ordinary scaling: the mob's health grows +73%, your damage per second +43%; fight time 29.9 -> 36.2 s (+21%), downtime 23.7 -> 26.8 s (idle 44% -> 43%); mob health +73% against damage per second +43%; points Holy Specialization 0->5, Improved Renew 0->1, Soul Warding 0->1, Twilight Focus 0->3; ranks Holy Fire rank 3->4, Mind Blast rank 4->6, Power Word: Shield rank 5->6, Shadow Word: Pain rank 4->5, Smite rank 5->6 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Holy Specialization 0->5, Improved Renew 0->1, Soul Warding 0->1, Twilight Focus 0->3; ranks: Holy Fire rank 3->4, Mind Blast rank 4->6, Power Word: Shield rank 5->6, Shadow Word: Pain rank 4->5, Smite rank 5->6; gear main stats 135->168; mob health 1002->1844 (+84%), swing 48->68, armor 1200->2101]",
+     "Lh: 45.3 s a kill at 32, 51.0 at 40 (+13%): ordinary scaling over eight levels: the mob's health grows +64%, your damage per second +49%; fight time 29.1 -> 31.9 s (+10%), idle 36% -> 37%; points Holy Specialization 0->5, Improved Renew 0->1, Twilight Focus 1->3; ranks Holy Fire 3->4, Mind Blast 4->6, Power Word: Shield 5->6, Shadow Word: Death 1->2, Shadow Word: Pain 4->5, Smite 5->6; gear main stats 152->168. The stage edge moved to 32 with Shadow Word: Death (30->32 reads -2%); 30->40 had read +11% (drafted from the printed cause, 2026-11-23; for the delegator's read) [points: Holy Specialization 0->5, Improved Renew 0->1, Twilight Focus 1->3; ranks: Holy Fire rank 3->4, Mind Blast rank 4->6, Power Word: Shield rank 5->6, Shadow Word: Death rank 1->2, Shadow Word: Pain rank 4->5, Smite rank 5->6; gear main stats 152->168; mob health 1125->1844 (+64%), swing 51->68, armor 1280->2101]",
      "Lg: Chastise never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
      "Lg: Contingency Plan never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
      "Lg: Feedback never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
      "Lg: Mana Burn never pressed: situational: its damage is half the mana it drains, and the fight lab's mobs have no mana (the lane session, 2026-11-21)",
-     "Lg: Renew never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 4.0% at least",
+     "Lg: Renew never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 4.0% at least",
      "Lg: Shadowguard never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
      "Lg: Starshards never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
      "Lg: Touch of Weakness never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
@@ -7083,25 +7146,73 @@
        "Wand": 0.04
       }
      },
-     "40": {
-      "seconds": 55.3,
+     "32": {
+      "seconds": 45.3,
       "deaths_per_100": 0.0,
-      "idle_share": 0.346,
+      "idle_share": 0.358,
+      "casts": {
+       "Power Word: Shield": 1.0,
+       "Holy Fire": 1.67,
+       "Shadow Word: Pain": 1.03,
+       "Mind Blast": 1.84,
+       "Smite": 3.73,
+       "Shadow Word: Death": 0.88,
+       "Wand": 0.84
+      },
+      "pet_casts": null,
+      "shares": {
+       "Smite": 0.248,
+       "Mind Blast": 0.235,
+       "Shadow Word: Death": 0.215,
+       "Holy Fire": 0.143,
+       "Shadow Word: Pain": 0.134,
+       "Wand": 0.026
+      }
+     },
+     "40": {
+      "seconds": 51.0,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.374,
+      "casts": {
+       "Power Word: Shield": 1.0,
+       "Holy Fire": 1.84,
+       "Shadow Word: Pain": 1.05,
+       "Mind Blast": 1.85,
+       "Smite": 3.98,
+       "Shadow Word: Death": 0.84,
+       "Wand": 1.99
+      },
+      "pet_casts": null,
+      "shares": {
+       "Mind Blast": 0.259,
+       "Smite": 0.227,
+       "Shadow Word: Death": 0.167,
+       "Shadow Word: Pain": 0.157,
+       "Holy Fire": 0.14,
+       "Wand": 0.051
+      }
+     },
+     "49": {
+      "seconds": 51.2,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.354,
       "casts": {
        "Power Word: Shield": 1.0,
        "Holy Fire": 1.85,
-       "Shadow Word: Pain": 1.05,
-       "Mind Blast": 1.99,
-       "Smite": 4.86,
+       "Shadow Word: Pain": 1.06,
+       "Mind Blast": 1.83,
+       "Smite": 3.88,
+       "Shadow Word: Death": 0.86,
        "Wand": 3.29
       },
       "pet_casts": null,
       "shares": {
-       "Smite": 0.291,
-       "Mind Blast": 0.289,
-       "Shadow Word: Pain": 0.178,
-       "Holy Fire": 0.155,
-       "Wand": 0.086
+       "Mind Blast": 0.238,
+       "Smite": 0.22,
+       "Shadow Word: Pain": 0.175,
+       "Holy Fire": 0.15,
+       "Shadow Word: Death": 0.142,
+       "Wand": 0.075
       }
      },
      "50": {
@@ -7156,7 +7267,9 @@
      "20": "Inner Fire",
      "29": "Inner Fire",
      "30": "Inner Fire",
+     "32": "Inner Fire",
      "40": "Inner Fire",
+     "49": "Inner Fire",
      "50": "Inner Fire",
      "60": "Inner Fire"
     }
@@ -7165,24 +7278,22 @@
     "build": "smite-open-leveling",
     "rotation": "holy-leveling",
     "provisional_order": false,
-    "fingerprint": "c6a80cb55acb6b7d",
-    "inputs_fingerprint": "c8f6f204f3c59b50",
-    "guide_fingerprint": "e09a5646e2ae",
-    "fail": [
-     "Lg: Shadow Word: Death (from level 32) is never pressed; forced: LEAD: top at 40: -10.49%; top at 50: -6.34%; top at 60: -1.65%; filler at 40: -9.96%; filler at 50: -6.51%"
-    ],
+    "fingerprint": "2d16fc1379dd25f2",
+    "inputs_fingerprint": "1959f561708a71c3",
+    "guide_fingerprint": "2c73f75e0f1b",
+    "fail": [],
     "notes": [
      "Ld: the rules file's veto takes Devouring Plague off; the guide names it only to say it is not cast",
      "Ld: the rules file's veto takes Penance off; the guide names it only to say it is not cast",
      "Lh: 26.5 s a kill at 10, 35.6 at 19 (+34%): ordinary scaling: the mob's health grows +140%, your damage per second +101%; fight time 19.8 -> 23.7 s (+20%), downtime 10.3 -> 17.2 s (idle 34% -> 42%); mob health +140% against damage per second +101%; points Holy Precision 0->1, Power in Light 0->5, Twin Disciplines 0->2, Wand Specialization 1->2; ranks Mind Blast rank 1->2, Power Word: Shield rank 1->3, Shadow Word: Pain rank 2->3, Smite rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Holy Precision 0->1, Power in Light 0->5, Twin Disciplines 0->2, Wand Specialization 1->2; ranks: Mind Blast rank 1->2, Power Word: Shield rank 1->3, Shadow Word: Pain rank 2->3, Smite rank 2->3; gear main stats 24->56; mob health 187->438 (+134%), swing 13->30, armor 450->789]",
      "Lh: 35.6 s a kill at 19, 37.9 at 20 (+6%): a new spell's cost: **Holy Fire** (20, 85 mana and a 3.5-second cast) joins the list while the mob grows +6%; points: Mental Agility 0->1; ranks: Holy Fire rank 0->1; gear main stats 56->60; mob health 438->466 (+6%), swing 30->32, armor 789->817 (the printed cause, 2026-11-22; cleared by the audit session) [points: Mental Agility 0->1; ranks: Holy Fire rank 0->1; gear main stats 56->60; mob health 438->466 (+6%), swing 30->32, armor 789->817]",
      "Lh: 37.9 s a kill at 20, 40.8 at 29 (+8%): ordinary scaling over four or more levels [points: Meditation 0->3, Mental Agility 1->3, Spirit Tap 0->4; ranks: Holy Fire rank 1->2, Mind Blast rank 2->4, Power Word: Shield rank 3->4, Shadow Word: Pain rank 3->4, Smite rank 3->4; gear main stats 60->130; mob health 466->939 (+102%), swing 32->46, armor 817->1165]",
-     "Lh: 39.6 s a kill at 30, 48.3 at 40 (+22%): ordinary scaling: the mob's health grows +73%, your damage per second +50%; fight time 29.1 -> 33.6 s (+15%), downtime 16.9 -> 22.6 s (idle 37% -> 40%); mob health +73% against damage per second +50%; points Divine Fury 0->1, Holy Specialization 0->5, Improved Mind Blast 0->1, Improved Power Word: Shield 0->1, Spirit Tap 4->5, Twilight Focus 0->1; ranks Holy Fire rank 3->4, Mind Blast rank 4->6, Power Word: Shield rank 5->6, Shadow Word: Pain rank 4->5, Smite rank 5->6 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Divine Fury 0->1, Holy Specialization 0->5, Improved Mind Blast 0->1, Improved Power Word: Shield 0->1, Spirit Tap 4->5, Twilight Focus 0->1; ranks: Holy Fire rank 3->4, Mind Blast rank 4->6, Power Word: Shield rank 5->6, Shadow Word: Pain rank 4->5, Smite rank 5->6; gear main stats 135->168; mob health 1002->1844 (+84%), swing 48->68, armor 1200->2101]",
+     "Lh: 38.5 s a kill at 32, 44.4 at 40 (+15%): ordinary scaling over eight levels: the mob's health grows +64%, your damage per second +54%; fight time 28.3 -> 30.1 s (+7%), idle 27% -> 32%; points Divine Fury 0->1, Holy Specialization 0->5, Improved Power Word: Shield 0->1, Twilight Focus 0->1; ranks Holy Fire 3->4, Mind Blast 4->6, Power Word: Shield 5->6, Shadow Word: Death 1->2, Shadow Word: Pain 4->5, Smite 5->6. The stage edge moved to 32 with Shadow Word: Death (30->32 reads -3%) (drafted from the printed cause, 2026-11-23; for the delegator's read) [points: Divine Fury 0->1, Holy Specialization 0->5, Improved Power Word: Shield 0->1, Twilight Focus 0->1; ranks: Holy Fire rank 3->4, Mind Blast rank 4->6, Power Word: Shield rank 5->6, Shadow Word: Death rank 1->2, Shadow Word: Pain rank 4->5, Smite rank 5->6; gear main stats 152->168; mob health 1125->1844 (+64%), swing 51->68, armor 1280->2101]",
      "Lg: Chastise never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
      "Lg: Contingency Plan never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
      "Lg: Feedback never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
      "Lg: Mana Burn never pressed: situational: its damage is half the mana it drains, and the fight lab's mobs have no mana (the lane session, 2026-11-21)",
-     "Lg: Renew never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 4.0% at least",
+     "Lg: Renew never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 4.0% at least",
      "Lg: Shadowguard never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
      "Lg: Starshards never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
      "Lg: Touch of Weakness never pressed: a racial spell (one race learns it): the fight lab plays without racials, as the raid play check does (the lane session, 2026-11-21)",
@@ -7193,8 +7304,8 @@
      "Ll: **Prayer of Mending** rank 1: the tooltip names a heal the parsed spell lacks: \"Places a spell on the target that heals them for 172 the next time they take damage or receive non-p\" (a healer's spell: no leveling module casts it, and the healer lab reads it from its own book (heallab/engine.load_book))",
      "Ll: **Prayer of Mending** rank 2: the tooltip names a heal the parsed spell lacks: \"Places a spell on the target that heals them for 298 the next time they take damage or receive non-p\" (a healer's spell: no leveling module casts it, and the healer lab reads it from its own book (heallab/engine.load_book))",
      "Ll: **Prayer of Mending** rank 3: the tooltip names a heal the parsed spell lacks: \"Places a spell on the target that heals them for 413 the next time they take damage or receive non-p\" (a healer's spell: no leveling module casts it, and the healer lab reads it from its own book (heallab/engine.load_book))",
-     "Lc: Inspiration worth nothing at 50, 60 (tier point for Spiritual Guidance (tier 5); the filler pass: no better home, worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 60; 4 legal homes tried (2026-11-21))",
-     "Lc: Spell Warding worth nothing at 60 (tier point for Spiritual Guidance (tier 5); the filler pass: no better home, worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 60; 6 legal homes tried (2026-11-21))"
+     "Lc: Inspiration worth nothing at 50, 60 (tier point for Spiritual Guidance (tier 5); the filler pass: no better home, worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 60; 4 legal homes tried (2026-11-22))",
+     "Lc: Spell Warding worth nothing at 60 (tier point for Spiritual Guidance (tier 5); the filler pass: no better home, worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 60; 6 legal homes tried (2026-11-22))"
     ],
     "levels": {
      "1": {
@@ -7345,25 +7456,73 @@
        "Wand": 0.052
       }
      },
-     "40": {
-      "seconds": 48.3,
+     "32": {
+      "seconds": 38.5,
       "deaths_per_100": 0.0,
-      "idle_share": 0.306,
+      "idle_share": 0.266,
       "casts": {
        "Power Word: Shield": 1.0,
-       "Holy Fire": 1.68,
-       "Shadow Word: Pain": 1.05,
-       "Mind Blast": 2.04,
-       "Smite": 4.98,
-       "Wand": 1.71
+       "Holy Fire": 1.44,
+       "Shadow Word: Pain": 1.03,
+       "Mind Blast": 1.88,
+       "Smite": 3.56,
+       "Shadow Word: Death": 0.77,
+       "Wand": 0.86
       },
       "pet_casts": null,
       "shares": {
-       "Smite": 0.337,
-       "Mind Blast": 0.296,
-       "Shadow Word: Pain": 0.168,
-       "Holy Fire": 0.143,
-       "Wand": 0.056
+       "Smite": 0.277,
+       "Mind Blast": 0.242,
+       "Shadow Word: Death": 0.183,
+       "Holy Fire": 0.135,
+       "Shadow Word: Pain": 0.128,
+       "Wand": 0.035
+      }
+     },
+     "40": {
+      "seconds": 44.4,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.321,
+      "casts": {
+       "Power Word: Shield": 1.0,
+       "Holy Fire": 1.69,
+       "Shadow Word: Pain": 1.06,
+       "Mind Blast": 1.83,
+       "Smite": 3.96,
+       "Shadow Word: Death": 0.84,
+       "Wand": 1.35
+      },
+      "pet_casts": null,
+      "shares": {
+       "Smite": 0.258,
+       "Mind Blast": 0.254,
+       "Shadow Word: Death": 0.166,
+       "Shadow Word: Pain": 0.148,
+       "Holy Fire": 0.132,
+       "Wand": 0.042
+      }
+     },
+     "49": {
+      "seconds": 43.7,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.343,
+      "casts": {
+       "Power Word: Shield": 1.0,
+       "Holy Fire": 1.5,
+       "Shadow Word: Pain": 1.03,
+       "Mind Blast": 1.88,
+       "Smite": 4.67,
+       "Shadow Word: Death": 0.77,
+       "Wand": 1.53
+      },
+      "pet_casts": null,
+      "shares": {
+       "Smite": 0.306,
+       "Mind Blast": 0.246,
+       "Shadow Word: Pain": 0.153,
+       "Holy Fire": 0.127,
+       "Shadow Word: Death": 0.124,
+       "Wand": 0.044
       }
      },
      "50": {
@@ -7418,7 +7577,9 @@
      "20": "Inner Fire",
      "29": "Inner Fire",
      "30": "Inner Fire",
+     "32": "Inner Fire",
      "40": "Inner Fire",
+     "49": "Inner Fire",
      "50": "Inner Fire",
      "60": "Inner Fire"
     }
@@ -9003,28 +9164,26 @@
   }
  },
  "shaman": {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "specs": {
    "Enhancement": {
     "build": "enhancement-open-leveling",
     "rotation": "enhancement-dps",
     "provisional_order": false,
-    "fingerprint": "972b54579995d22c",
-    "inputs_fingerprint": "aa176505f1904a44",
-    "guide_fingerprint": "61de15ba24dc",
-    "fail": [
-     "Lg: Flame Shock (from level 10) is never pressed; forced: LEAD: top at 30: -1.39%; top at 60: -0.65%",
-     "Lg: Frost Shock (from level 20) is never pressed; forced: LEAD: top at 20: -2.83%"
-    ],
+    "fingerprint": "bb304a58b193094c",
+    "inputs_fingerprint": "883769d8a3f851c3",
+    "guide_fingerprint": "1c937dde4991",
+    "fail": [],
     "notes": [
      "Lh: 18.0 s a kill at 10, 24.7 at 19 (+37%): ordinary scaling over nine levels; points: Improved Lightning Shield 0->2, Mental Dexterity 0->3, Thundering Strikes 1->5; ranks: Earth Shock rank 2->3, Lightning Shield rank 1->2; gear main stats 26->62; mob health 187->438 (+134%), swing 13->30, armor 450->789 (the printed cause, 2026-11-22; cleared by the audit session) [points: Improved Lightning Shield 0->2, Mental Dexterity 0->3, Thundering Strikes 1->5; ranks: Earth Shock rank 2->3, Lightning Shield rank 1->2; gear main stats 26->62; mob health 187->438 (+134%), swing 13->30, armor 450->789]",
-     "Lh: 21.6 s a kill at 25, 25.1 at 30 (+16%): ordinary scaling: the mob's health grows +51%, your damage per second +36%; fight time 17.5 -> 19.4 s (+11%), downtime 5.2 -> 7.0 s (idle 23% -> 27%); mob health +51% against damage per second +36%; pressed now: Windfury; points Tidal Focus 0->5; ranks Searing Totem rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Tidal Focus 0->5; ranks: Searing Totem rank 2->3; gear main stats 98->116; mob health 688->1002 (+46%), swing 41->48, armor 1026->1200]",
-     "Lh: 25.1 s a kill at 30, 26.8 at 35 (+7%): ordinary scaling over four or more levels [points: Elemental Weapons 1->2, Flurry 0->3, Mental Quickness 0->1; ranks: Lightning Shield rank 3->4; gear main stats 116->149; mob health 1002->1310 (+31%), swing 48->56, armor 1200->1401]",
+     "Lh: 21.6 s a kill at 25, 24.8 at 30 (+15%): ordinary scaling: the mob's health grows +51%, your damage per second +36%; fight time 17.5 -> 19.4 s (+11%), downtime 5.2 -> 7.0 s (idle 23% -> 27%); mob health +51% against damage per second +36%; pressed now: Windfury; points Tidal Focus 0->5; ranks Searing Totem rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Tidal Focus 0->5; ranks: Flame Shock rank 2->3, Searing Totem rank 2->3; gear main stats 98->116; mob health 688->1002 (+46%), swing 41->48, armor 1026->1200]",
+     "Lh: 24.8 s a kill at 30, 26.2 at 35 (+6%): ordinary scaling over four or more levels [points: Elemental Weapons 1->2, Flurry 0->3, Mental Quickness 0->1; ranks: Lightning Shield rank 3->4; gear main stats 116->149; mob health 1002->1310 (+31%), swing 48->56, armor 1200->1401]",
      "Lg: Chain Lightning (a single-target tool with Stormstrike) never pressed: forced into the priority on 2026-11-21 (top and filler, levels 40-60, seeds 1/2, 2000 fights): slower at every level, by 13.9% at least",
-     "Lg: Flametongue Totem never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 85.5% at least",
+     "Lg: Flametongue Totem never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 75.1% at least",
      "Lg: Flametongue Weapon never pressed: an imbue the rules knobs compare (IMBUE_EARLY, IMBUE_LATE, IMBUE_TOP): the tune kept Rockbiter and Windfury (the lane session, 2026-11-21)",
+     "Lg: Frost Shock never pressed; forced: LEAD: top at 20: -2.83%; the tune compared it as a rules knob (FORCE_FROST_SHOCK_LEVELS) and left it off; forced at levels 20-60 on the installed rules: -3.14% seed 1, -3.06% seed 2 per kill (faster is +)",
      "Lg: Frostbrand Weapon never pressed: an imbue the rules knobs compare (IMBUE_EARLY, IMBUE_LATE, IMBUE_TOP): the tune kept Rockbiter and Windfury (the lane session, 2026-11-21)",
-     "Lg: Mana Spring Totem never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 70.0% at least"
+     "Lg: Mana Spring Totem never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 47.9% at least"
     ],
     "levels": {
      "1": {
@@ -9144,91 +9303,99 @@
       }
      },
      "30": {
-      "seconds": 25.1,
+      "seconds": 24.8,
       "deaths_per_100": 0.0,
-      "idle_share": 0.23,
+      "idle_share": 0.246,
       "casts": {
-       "Lightning Shield": 0.62,
-       "Searing Totem": 0.88,
-       "Melee": 3.25,
-       "Stormstrike": 1.55,
-       "Earth Shock": 1.78,
-       "Windfury": 1.66
+       "Lightning Shield": 0.59,
+       "Searing Totem": 0.83,
+       "Flame Shock": 1.13,
+       "Melee": 3.1,
+       "Stormstrike": 1.5,
+       "Earth Shock": 0.94,
+       "Windfury": 1.59
       },
       "pet_casts": null,
       "shares": {
-       "Melee": 0.286,
-       "Earth Shock": 0.265,
-       "Windfury": 0.159,
-       "Stormstrike": 0.131,
-       "Searing Totem": 0.08,
-       "Lightning Shield": 0.079
+       "Melee": 0.26,
+       "Flame Shock": 0.169,
+       "Windfury": 0.153,
+       "Earth Shock": 0.147,
+       "Stormstrike": 0.126,
+       "Lightning Shield": 0.075,
+       "Searing Totem": 0.07
       }
      },
      "35": {
-      "seconds": 26.8,
+      "seconds": 26.2,
       "deaths_per_100": 0.0,
-      "idle_share": 0.243,
+      "idle_share": 0.254,
       "casts": {
-       "Lightning Shield": 0.67,
-       "Searing Totem": 0.82,
-       "Melee": 3.68,
-       "Stormstrike": 1.72,
-       "Earth Shock": 1.97,
-       "Windfury": 1.83
+       "Lightning Shield": 0.62,
+       "Searing Totem": 0.78,
+       "Flame Shock": 1.23,
+       "Melee": 3.44,
+       "Stormstrike": 1.7,
+       "Earth Shock": 0.95,
+       "Windfury": 1.88
       },
       "pet_casts": null,
       "shares": {
-       "Melee": 0.294,
-       "Earth Shock": 0.232,
-       "Windfury": 0.168,
-       "Stormstrike": 0.135,
-       "Lightning Shield": 0.108,
-       "Searing Totem": 0.063
+       "Melee": 0.264,
+       "Windfury": 0.177,
+       "Flame Shock": 0.153,
+       "Stormstrike": 0.13,
+       "Earth Shock": 0.117,
+       "Lightning Shield": 0.102,
+       "Searing Totem": 0.056
       }
      },
      "40": {
-      "seconds": 25.6,
+      "seconds": 25.5,
       "deaths_per_100": 0.0,
-      "idle_share": 0.238,
+      "idle_share": 0.26,
       "casts": {
-       "Lightning Shield": 0.66,
-       "Searing Totem": 0.77,
-       "Melee": 3.4,
-       "Stormstrike": 1.89,
-       "Earth Shock": 1.79,
-       "Lightning Bolt": 0.21
+       "Lightning Shield": 0.59,
+       "Searing Totem": 0.74,
+       "Flame Shock": 1.11,
+       "Melee": 3.17,
+       "Stormstrike": 1.88,
+       "Earth Shock": 0.96,
+       "Lightning Bolt": 0.17
       },
       "pet_casts": null,
       "shares": {
-       "Melee": 0.333,
-       "Earth Shock": 0.285,
-       "Stormstrike": 0.182,
-       "Lightning Shield": 0.118,
-       "Searing Totem": 0.056,
-       "Lightning Bolt": 0.027
+       "Melee": 0.312,
+       "Stormstrike": 0.178,
+       "Flame Shock": 0.17,
+       "Earth Shock": 0.161,
+       "Lightning Shield": 0.107,
+       "Searing Totem": 0.05,
+       "Lightning Bolt": 0.022
       }
      },
      "45": {
-      "seconds": 26.5,
+      "seconds": 26.2,
       "deaths_per_100": 0.0,
-      "idle_share": 0.235,
+      "idle_share": 0.251,
       "casts": {
-       "Lightning Shield": 0.66,
-       "Searing Totem": 0.77,
-       "Melee": 3.73,
-       "Stormstrike": 1.97,
-       "Earth Shock": 1.9,
-       "Lightning Bolt": 0.42
+       "Lightning Shield": 0.63,
+       "Searing Totem": 0.79,
+       "Flame Shock": 1.18,
+       "Melee": 3.5,
+       "Stormstrike": 1.94,
+       "Earth Shock": 0.95,
+       "Lightning Bolt": 0.4
       },
       "pet_casts": null,
       "shares": {
-       "Melee": 0.35,
-       "Earth Shock": 0.26,
-       "Stormstrike": 0.185,
-       "Lightning Shield": 0.101,
-       "Lightning Bolt": 0.055,
-       "Searing Totem": 0.051
+       "Melee": 0.328,
+       "Stormstrike": 0.176,
+       "Flame Shock": 0.162,
+       "Earth Shock": 0.137,
+       "Lightning Shield": 0.098,
+       "Lightning Bolt": 0.051,
+       "Searing Totem": 0.05
       }
      },
      "50": {
@@ -9296,8 +9463,8 @@
     "build": "elemental-open-leveling",
     "rotation": "elemental-dps",
     "provisional_order": false,
-    "fingerprint": "838798d22ff0c617",
-    "inputs_fingerprint": "da3572946961c32e",
+    "fingerprint": "de9d5cbe9c591e4b",
+    "inputs_fingerprint": "fa45bd50cdd7ef81",
     "guide_fingerprint": "20abbd8bad39",
     "fail": [],
     "notes": [
@@ -9681,25 +9848,24 @@
     "build": "restoration-leveling",
     "rotation": "enhancement-dps",
     "provisional_order": false,
-    "fingerprint": "972b54579995d22c",
-    "inputs_fingerprint": "29803bb0fb78c5a8",
-    "guide_fingerprint": "62925a22148c",
+    "fingerprint": "bb304a58b193094c",
+    "inputs_fingerprint": "97575e92c43b84cf",
+    "guide_fingerprint": "e3ce7af2d8a3",
     "fail": [
-     "Lh: 29.2 s a kill at 28, 30.8 at 30 (+5%) [points: Ancestral Healing 0->1, Mana Tide Totem 0->1; ranks: Searing Totem rank 2->3; gear main stats 109->116; mob health 876->1002 (+14%), swing 45->48, armor 1130->1200]",
-     "Lg: Flame Shock (from level 10) is never pressed; forced: LEAD: top at 30: -1.39%; top at 60: -0.65%",
-     "Lg: Frost Shock (from level 20) is never pressed; forced: LEAD: top at 20: -2.83%",
      "Lg: Mana Tide Totem (from level 30) is never pressed; forced: never cast when forced (not in the module, never in reach, or never affordable)"
     ],
     "notes": [
      "Lh: 18.1 s a kill at 10, 24.4 at 19 (+35%): ordinary scaling over nine levels; points: Mindfulness 0->3, Thundering Strikes 0->2, Tidal Focus 1->5; ranks: Earth Shock rank 2->3, Lightning Shield rank 1->2; gear main stats 26->62; mob health 187->438 (+134%), swing 13->30, armor 450->789 (the printed cause, 2026-11-22; cleared by the audit session) [points: Mindfulness 0->3, Thundering Strikes 0->2, Tidal Focus 1->5; ranks: Earth Shock rank 2->3, Lightning Shield rank 1->2; gear main stats 26->62; mob health 187->438 (+134%), swing 13->30, armor 450->789]",
      "Lh: 24.0 s a kill at 20, 28.7 at 27 (+20%): ordinary scaling: the mob's health grows +56%, your damage per second +41%; fight time 19.2 -> 21.1 s (+10%), downtime 6.2 -> 9.3 s (idle 24% -> 30%); mob health +56% against damage per second +41%; points Thundering Strikes 3->5, Totemic Focus 0->5; ranks Earth Shock rank 3->4, Lightning Shield rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Thundering Strikes 3->5, Totemic Focus 0->5; ranks: Earth Shock rank 3->4, Lightning Shield rank 2->3; gear main stats 70->105; mob health 466->814 (+75%), swing 32->44, armor 817->1096]",
-     "Lh: 30.8 s a kill at 30, 34.3 at 35 (+11%): ordinary scaling over four or more levels [points: Nature's Swiftness 0->1, Restorative Totems 0->4; ranks: Lightning Shield rank 3->4; gear main stats 116->149; mob health 1002->1310 (+31%), swing 48->56, armor 1200->1401]",
-     "Lh: 35.1 s a kill at 40, 37.7 at 50 (+7%): ordinary scaling over four or more levels [points: Ancestral Healing 1->3, Ancestral Knowledge 4->5, Healing Focus 0->3, Tidal Mastery 0->4; ranks: Earth Shock rank 5->6, Lightning Shield rank 5->6, Searing Totem rank 4->5; gear main stats 186->216; mob health 1844->2672 (+45%), swing 68->95, armor 2101->2999]",
+     "Lh: 30.1 s a kill at 30, 33.0 at 35 (+10%): ordinary scaling over four or more levels [points: Nature's Swiftness 0->1, Restorative Totems 0->4; ranks: Lightning Shield rank 3->4; gear main stats 116->149; mob health 1002->1310 (+31%), swing 48->56, armor 1200->1401]",
+     "Lh: 33.0 s a kill at 35, 34.8 at 40 (+5%): ordinary scaling over four or more levels [points: Ancestral Knowledge 0->4, Restorative Totems 4->5; ranks: Earth Shock rank 4->5, Flame Shock rank 3->4, Lightning Shield rank 4->5, Searing Totem rank 3->4; gear main stats 149->186; mob health 1310->1844 (+41%), swing 56->68, armor 1401->2101]",
+     "Lh: 34.8 s a kill at 40, 37.8 at 49 (+9%): ordinary scaling over four or more levels [points: Ancestral Healing 1->3, Ancestral Knowledge 4->5, Healing Focus 0->3, Tidal Mastery 0->3; ranks: Earth Shock rank 5->6, Lightning Shield rank 5->6; gear main stats 186->210; mob health 1844->2573 (+40%), swing 68->93, armor 2101->2944]",
      "Lh: 37.7 s a kill at 50, 40.5 at 60 (+7%): ordinary scaling over four or more levels [points: Healing Way 0->3, Purification 0->5, Riptide 0->1, Tidal Mastery 4->5; ranks: Earth Shock rank 6->7, Lightning Shield rank 6->7, Searing Totem rank 5->6; gear main stats 216->245; mob health 2672->3878 (+45%), swing 95->117, armor 2999->3489]",
-     "Lg: Flametongue Totem never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 85.5% at least",
+     "Lg: Flametongue Totem never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 75.1% at least",
      "Lg: Flametongue Weapon never pressed: an imbue the rules knobs compare (IMBUE_EARLY, IMBUE_LATE, IMBUE_TOP): the tune kept Rockbiter and Windfury (the lane session, 2026-11-21)",
+     "Lg: Frost Shock never pressed; forced: LEAD: top at 20: -2.83%; the tune compared it as a rules knob (FORCE_FROST_SHOCK_LEVELS) and left it off; forced at levels 20-60 on the installed rules: -3.14% seed 1, -3.06% seed 2 per kill (faster is +)",
      "Lg: Frostbrand Weapon never pressed: an imbue the rules knobs compare (IMBUE_EARLY, IMBUE_LATE, IMBUE_TOP): the tune kept Rockbiter and Windfury (the lane session, 2026-11-21)",
-     "Lg: Mana Spring Totem never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 70.0% at least",
+     "Lg: Mana Spring Totem never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 47.9% at least",
      "Lc: Ancestral Healing worth nothing at 30, 40, 50, 60 (the raid build's point: this page levels as its raid build (the user's decision of 2026-09-30))",
      "Lc: Healing Focus worth nothing at 50, 60 (the raid build's point: this page levels as its raid build (the user's decision of 2026-09-30))",
      "Lc: Healing Way worth nothing at 60 (the raid build's point: this page levels as its raid build (the user's decision of 2026-09-30))",
@@ -9844,61 +10010,87 @@
       }
      },
      "30": {
-      "seconds": 30.8,
+      "seconds": 30.1,
       "deaths_per_100": 0.0,
-      "idle_share": 0.241,
+      "idle_share": 0.263,
       "casts": {
        "Lightning Shield": 0.55,
-       "Searing Totem": 0.77,
-       "Melee": 4.56,
-       "Earth Shock": 2.63,
-       "Windfury": 1.56
+       "Searing Totem": 0.84,
+       "Flame Shock": 1.57,
+       "Melee": 4.14,
+       "Earth Shock": 1.05,
+       "Windfury": 1.55
       },
       "pet_casts": null,
       "shares": {
-       "Earth Shock": 0.357,
-       "Melee": 0.352,
-       "Windfury": 0.133,
+       "Melee": 0.317,
+       "Flame Shock": 0.241,
+       "Earth Shock": 0.145,
+       "Windfury": 0.139,
        "Searing Totem": 0.097,
        "Lightning Shield": 0.061
       }
      },
      "35": {
-      "seconds": 34.3,
+      "seconds": 33.0,
       "deaths_per_100": 0.0,
-      "idle_share": 0.251,
+      "idle_share": 0.264,
       "casts": {
-       "Lightning Shield": 0.57,
-       "Searing Totem": 0.71,
-       "Melee": 5.29,
-       "Earth Shock": 3.04,
-       "Windfury": 1.9
+       "Lightning Shield": 0.52,
+       "Searing Totem": 0.75,
+       "Flame Shock": 1.81,
+       "Melee": 4.76,
+       "Earth Shock": 1.26,
+       "Windfury": 1.77
       },
       "pet_casts": null,
       "shares": {
-       "Melee": 0.371,
-       "Earth Shock": 0.32,
-       "Windfury": 0.155,
-       "Lightning Shield": 0.078,
-       "Searing Totem": 0.076
+       "Melee": 0.34,
+       "Flame Shock": 0.23,
+       "Windfury": 0.149,
+       "Earth Shock": 0.134,
+       "Searing Totem": 0.076,
+       "Lightning Shield": 0.072
       }
      },
      "40": {
-      "seconds": 35.1,
+      "seconds": 34.8,
       "deaths_per_100": 0.0,
-      "idle_share": 0.293,
+      "idle_share": 0.321,
       "casts": {
-       "Lightning Shield": 0.6,
-       "Searing Totem": 0.75,
-       "Melee": 5.03,
-       "Earth Shock": 2.78
+       "Lightning Shield": 0.65,
+       "Searing Totem": 0.8,
+       "Flame Shock": 1.76,
+       "Melee": 4.53,
+       "Earth Shock": 1.09
       },
       "pet_casts": null,
       "shares": {
-       "Melee": 0.449,
-       "Earth Shock": 0.383,
-       "Lightning Shield": 0.091,
-       "Searing Totem": 0.077
+       "Melee": 0.408,
+       "Flame Shock": 0.262,
+       "Earth Shock": 0.154,
+       "Lightning Shield": 0.099,
+       "Searing Totem": 0.078
+      }
+     },
+     "49": {
+      "seconds": 37.8,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.303,
+      "casts": {
+       "Lightning Shield": 0.65,
+       "Searing Totem": 0.7,
+       "Flame Shock": 1.95,
+       "Melee": 5.34,
+       "Earth Shock": 1.3
+      },
+      "pet_casts": null,
+      "shares": {
+       "Melee": 0.431,
+       "Flame Shock": 0.222,
+       "Earth Shock": 0.198,
+       "Lightning Shield": 0.096,
+       "Searing Totem": 0.054
       }
      },
      "50": {
@@ -9950,6 +10142,7 @@
      "30": "Windfury Weapon, Lightning Shield",
      "35": "Windfury Weapon, Lightning Shield",
      "40": "Rockbiter Weapon, Lightning Shield",
+     "49": "Rockbiter Weapon, Lightning Shield",
      "50": "Rockbiter Weapon, Lightning Shield",
      "60": "Rockbiter Weapon, Lightning Shield"
     }
@@ -9957,20 +10150,20 @@
   }
  },
  "warlock": {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "specs": {
    "Demonology": {
     "build": "demonology-open-leveling",
     "rotation": "demonology-leveling",
     "provisional_order": false,
-    "fingerprint": "538342e27c9e710f",
-    "inputs_fingerprint": "70c3b6d58fcad6c9",
+    "fingerprint": "465337fa636bfc13",
+    "inputs_fingerprint": "ae5ad0c22bd313d8",
     "guide_fingerprint": "c378a7202b62",
     "fail": [],
     "notes": [
      "Lh: 21.2 s a kill at 10, 25.9 at 20 (+22%): ordinary scaling: the mob's health grows +149%, your damage per second +106%; fight time 20.7 -> 25.1 s (+21%), downtime 0.5 -> 0.8 s (idle 2% -> 3%); mob health +149% against damage per second +106%; points Demonic Energies 0->2, Fel Vitality 0->2, Improved Voidwalker 0->2, Unholy Power 1->5; ranks Bane of Agony rank 1->2, Corruption rank 1->2, Immolate rank 2->3, Shadow Bolt rank 2->4, Torment rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Demonic Energies 0->2, Fel Vitality 0->2, Improved Voidwalker 0->2, Unholy Power 1->5; ranks: Bane of Agony rank 1->2, Corruption rank 1->2, Immolate rank 2->3, Shadow Bolt rank 2->4, Torment rank 1->2; gear main stats 27->71; mob health 187->466 (+149%), swing 13->32, armor 450->817]",
      "Lh: 25.9 s a kill at 20, 30.2 at 27 (+17%): ordinary scaling: the mob's health grows +56%, your damage per second +33%; fight time 25.1 -> 29.2 s (+17%), downtime 0.8 -> 1.0 s (idle 3% -> 3%); mob health +56% against damage per second +33%; pressed now: Shadow Bolt; points Demonic Aegis 0->2, Demonic Embrace 0->2, Demonic Sacrifice 0->1, Fel Vitality 2->3, Improved Voidwalker 2->3; ranks Corruption rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Demonic Aegis 0->2, Demonic Embrace 0->2, Demonic Sacrifice 0->1, Fel Vitality 2->3, Improved Voidwalker 2->3; ranks: Corruption rank 2->3; gear main stats 71->115; mob health 466->814 (+75%), swing 32->44, armor 817->1096]",
-     "Lh: 31.1 s a kill at 30, 34.9 at 40 (+12%): ordinary scaling: the mob's health grows +73%, your damage per second +54%; fight time 29.7 -> 33.5 s (+13%), downtime 1.4 -> 1.4 s (idle 4% -> 4%); mob health +73% against damage per second +54%; no longer pressed: Immolate; points Demonic Brand 2->3, Demonic Knowledge 0->3, Improved Corruption 0->5, Master Demonologist 0->1; ranks Bane of Agony rank 3->4, Corruption rank 3->4, Searing Pain rank 2->3, Torment rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Demonic Brand 2->3, Demonic Knowledge 0->3, Improved Corruption 0->5, Master Demonologist 0->1; ranks: Bane of Agony rank 3->4, Corruption rank 3->4, Searing Pain rank 2->3, Torment rank 3->4; gear main stats 133->148; mob health 1002->1844 (+84%), swing 48->68, armor 1200->2101]",
+     "Lh: 31.1 s a kill at 30, 34.9 at 40 (+12%): ordinary scaling: the mob's health grows +73%, your damage per second +54%; fight time 29.7 -> 33.5 s (+13%), downtime 1.4 -> 1.4 s (idle 4% -> 4%); mob health +73% against damage per second +54%; no longer pressed: Immolate; points Demonic Brand 2->3, Demonic Knowledge 0->3, Improved Corruption 0->5, Master Demonologist 0->1; ranks Bane of Agony rank 3->4, Corruption rank 3->4, Searing Pain rank 2->3, Torment rank 3->4 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Demonic Brand 2->3, Demonic Knowledge 0->3, Improved Corruption 0->5, Master Demonologist 0->1; ranks: Bane of Agony rank 3->4, Corruption rank 3->4, Immolate rank 4->5, Searing Pain rank 2->3, Torment rank 3->4; gear main stats 133->148; mob health 1002->1844 (+84%), swing 48->68, armor 1200->2101]",
      "Lg: Bane of Doom never pressed: situational: its hit lands a minute after the cast, after every leveling fight has ended (the lane session, 2026-11-21)",
      "Lg: Death Coil never pressed; forced: LEAD: top at 60: -0.51%; filler at 60: -0.73%: a lead under 1% the audit session put on the optimality pass's list (2026-11-22)",
      "Lg: Demonic Sacrifice never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 76.5% at least",
@@ -10051,6 +10244,7 @@
        "Corruption": 1.03,
        "Bane of Agony": 1.05,
        "Immolate": 1.04,
+       "Shadow Bolt": 0.02,
        "Wand": 4.77
       },
       "pet_casts": {
@@ -10118,6 +10312,7 @@
        "Corruption": 1.03,
        "Searing Pain": 1.98,
        "Bane of Agony": 1.03,
+       "Immolate": 0.03,
        "Wand": 9.96
       },
       "pet_casts": {
@@ -10164,6 +10359,7 @@
        "Corruption": 1.25,
        "Searing Pain": 1.7,
        "Bane of Agony": 1.04,
+       "Immolate": 0.02,
        "Wand": 13.19
       },
       "pet_casts": {
@@ -10186,6 +10382,7 @@
        "Corruption": 1.27,
        "Searing Pain": 1.75,
        "Bane of Agony": 1.05,
+       "Immolate": 0.04,
        "Wand": 13.12
       },
       "pet_casts": {
@@ -10208,6 +10405,7 @@
        "Corruption": 1.28,
        "Searing Pain": 1.63,
        "Bane of Agony": 1.04,
+       "Immolate": 0.02,
        "Wand": 13.59
       },
       "pet_casts": {
@@ -10230,6 +10428,7 @@
        "Corruption": 1.33,
        "Searing Pain": 1.5,
        "Bane of Agony": 1.0,
+       "Immolate": 0.02,
        "Wand": 14.63
       },
       "pet_casts": {
@@ -10252,6 +10451,7 @@
        "Corruption": 1.35,
        "Searing Pain": 1.42,
        "Bane of Agony": 1.0,
+       "Immolate": 0.01,
        "Wand": 14.92
       },
       "pet_casts": {
@@ -10274,6 +10474,7 @@
        "Corruption": 1.35,
        "Searing Pain": 1.17,
        "Bane of Agony": 1.0,
+       "Immolate": 0.01,
        "Wand": 15.46
       },
       "pet_casts": {
@@ -10336,39 +10537,25 @@
     "build": "affliction-open-leveling",
     "rotation": "affliction-leveling",
     "provisional_order": false,
-    "fingerprint": "3361cc55e5e5887b",
-    "inputs_fingerprint": "66f39f409f1621bd",
-    "guide_fingerprint": "2d91b9ab291f",
-    "fail": [
-     "the guide's fight-lab numbers are not current: run level_guides.py <class> --measure first"
-    ],
-    "notes": [],
-    "levels": {}
-   },
-   "Destruction": {
-    "build": "destruction-open-leveling",
-    "rotation": "destruction-leveling",
-    "provisional_order": false,
-    "fingerprint": "9538fe2dbd67a9be",
-    "inputs_fingerprint": "551db2d44c33367e",
-    "guide_fingerprint": "01bdca91e139",
-    "fail": [
-     "Lg: Bane of Agony (from level 8) is never pressed; forced: LEAD: top at 20: -5.67%; top at 40: -4.15%; top at 50: -6.83%; top at 60: -5.93%; filler at 20: -5.24%; filler at 40: -4.90%; filler at 50: -6.91%; filler at 60: -6.79%",
-     "Lg: Corruption (from level 4) is never pressed; forced: LEAD: filler at 20: -0.51%"
-    ],
+    "fingerprint": "7f0e40cbc8e47adf",
+    "inputs_fingerprint": "b09c9975b55d7799",
+    "guide_fingerprint": "9f75d29403f4",
+    "fail": [],
     "notes": [
-     "Ld: the rules file's veto takes Drain Life off; the guide names it only to say it is not cast",
+     "Ld: the rules file's veto takes Curse of the Elements off; the guide names it only to say it is not cast",
      "Ld: the rules file's veto takes Fear off; the guide names it only to say it is not cast",
-     "Ld: the rules file's veto takes Incinerate off; the guide names it only to say it is not cast",
-     "Ld: the rules file's veto takes Searing Pain off; the guide names it only to say it is not cast",
-     "Lh: 22.7 s a kill at 10, 28.6 at 20 (+26%): ordinary scaling: the mob's health grows +149%, your damage per second +107%; fight time 21.3 -> 25.7 s (+21%), downtime 4.8 -> 6.7 s (idle 18% -> 21%); mob health +149% against damage per second +107%; pressed now: Life Tap; points Bane 1->5, Cataclysm 0->3, Destructive Reach 0->2, Ruin 0->1; ranks Immolate rank 2->3, Life Tap rank 1->2, Shadow Bolt rank 2->4, Torment rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Bane 1->5, Cataclysm 0->3, Destructive Reach 0->2, Ruin 0->1; ranks: Immolate rank 2->3, Shadow Bolt rank 2->4, Torment rank 1->2; gear main stats 27->71; mob health 187->466 (+149%), swing 13->32, armor 450->817]",
-     "Lh: 28.6 s a kill at 20, 36.2 at 28 (+27%): ordinary scaling over eight levels; points: Agonizing Flames 0->3, Intensity 0->1, Ruin 1->5; ranks: Create Healthstone rank 1->2, Shadow Bolt rank 4->5; gear main stats 71->121; mob health 466->876 (+88%), swing 32->45, armor 817->1130 (the printed cause, 2026-11-22; cleared by the audit session) [points: Agonizing Flames 0->3, Intensity 0->1, Ruin 1->5; ranks: Create Healthstone rank 1->2, Shadow Bolt rank 4->5; gear main stats 71->121; mob health 466->876 (+88%), swing 32->45, armor 817->1130]",
-     "Lh: 33.5 s a kill at 30, 39.9 at 39 (+19%): ordinary scaling over nine levels; points: Bane of Havoc 0->1, Fire and Brimstone 0->3, Shadow and Flame 0->5; ranks: Conflagrate rank 1->2, Create Healthstone rank 2->3, Shadow Bolt rank 5->6, Shadowburn rank 2->3; gear main stats 133->150; mob health 1002->1737 (+73%), swing 48->65, armor 1200->1961 (the printed cause, 2026-11-22; cleared by the audit session) [points: Bane of Havoc 0->1, Fire and Brimstone 0->3, Shadow and Flame 0->5; ranks: Conflagrate rank 1->2, Create Healthstone rank 2->3, Shadow Bolt rank 5->6, Shadowburn rank 2->3; gear main stats 133->150; mob health 1002->1737 (+73%), swing 48->65, armor 1200->1961]",
+     "Ld: the rules file's veto takes Shadow Bolt off; the guide names it only to say it is not cast",
+     "Lh: 21.2 s a kill at 10, 26.3 at 19 (+24%): ordinary scaling: the mob's health grows +140%, your damage per second +99%; fight time 20.7 -> 25.0 s (+20%), downtime 0.5 -> 1.3 s (idle 2% -> 5%); mob health +140% against damage per second +99%; points Improved Corruption 0->4, Improved Life Tap 1->2, Suppression 0->4; ranks Bane of Agony rank 1->2, Corruption rank 1->2 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Improved Corruption 0->4, Improved Life Tap 1->2, Suppression 0->4; ranks: Bane of Agony rank 1->2, Corruption rank 1->2; gear main stats 27->65; mob health 187->438 (+134%), swing 13->30, armor 450->789]",
+     "Lh: 25.6 s a kill at 20, 31.2 at 30 (+22%): ordinary scaling: the mob's health grows +131%, your damage per second +92%; fight time 24.2 -> 29.3 s (+21%), downtime 1.4 -> 1.9 s (idle 5% -> 6%); mob health +131% against damage per second +92%; points Improved Bane of Agony 0->2, Improved Corruption 4->5, Malevolence 0->4, Pandemic 0->3; ranks Bane of Agony rank 2->3, Corruption rank 2->3, Immolate rank 3->4, Torment rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Improved Bane of Agony 0->2, Improved Corruption 4->5, Malevolence 0->4, Pandemic 0->3; ranks: Bane of Agony rank 2->3, Corruption rank 2->3, Immolate rank 3->4, Torment rank 2->3; gear main stats 71->133; mob health 466->1002 (+115%), swing 32->48, armor 817->1200]",
+     "Lh: 31.2 s a kill at 30, 33.9 at 33 (+9%): ordinary scaling: the mob's health grows +13%, your damage per second +5%; fight time 29.3 -> 31.5 s (+8%), downtime 1.9 -> 2.4 s (idle 6% -> 7%); mob health +13% against damage per second +5%; points Soul Siphon 0->2, Suppression 4->5; ranks none new (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Soul Siphon 0->2, Suppression 4->5; ranks: none new; gear main stats 133->147; mob health 1002->1187 (+18%), swing 48->53, armor 1200->1321]",
+     "Lh: 33.7 s a kill at 34, 35.7 at 39 (+6%): ordinary scaling over four or more levels [points: Shadow Mastery 0->5; ranks: Bane of Agony rank 3->4, Siphon Life rank 1->2; gear main stats 152->150; mob health 1248->1737 (+39%), swing 54->65, armor 1361->1961]",
      "Lg: Bane of Doom never pressed: situational: its hit lands a minute after the cast, after every leveling fight has ended (the lane session, 2026-11-21)",
-     "Lg: Drain Soul never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 44.2% at least",
+     "Lg: Death Coil never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 1.3% at least",
+     "Lg: Drain Soul never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 22.4% at least",
      "Lg: Inferno never pressed: situational: a one-hour cooldown that summons an Infernal the fight lab does not model (the lane session, 2026-11-21)",
+     "Lg: Searing Pain never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 7.3% at least",
      "Lg: Shadow Ward never pressed: situational: absorbs one school (the audit session, 2026-11-21)",
-     "Lg: Soul Fire never pressed; forced: LEAD: top at 50: -1.23%; top at 60: -0.80%; filler at 50: -1.53%; filler at 60: -1.03%: the forced run cast it without its Soul Shard; the lab keeps no shards (the audit session's ruling of 2026-11-22: a note, not a fail; shards are on the optimality pass's list)",
+     "Lg: Soul Fire never pressed: forced into the priority on 2026-11-22 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 8.0% at least",
      "Ll: parses to 0: **Bane of Doom** (rank 1) parses to no damage: \"Afflicts the target with impending doom, causing 1,742 Shadow damage after 1 min. If the target dies from this\" (its hit lands a minute after the cast, after every leveling fight has ended (a recorded Lg verdict))",
      "Ll: parses to 0: **Fire Shield** (rank 5) parses to no damage: \"Surrounds the target in a shield of fire. Every strike against the target causes 13 Fire damage to the attacke\" (a demon's spell the lab never casts (the Voidwalker presses Torment; the Imp's Firebolt is its swing))",
      "Ll: parses to 0: **Inferno** (rank 1) parses to no damage: \"Summons a meteor from the Twisting Nether, causing 200 Fire damage and stunning all enemy targets in the area \" (a one-hour cooldown that summons an Infernal the lab does not model (a recorded Lg verdict))",
@@ -10378,7 +10565,357 @@
      "Ll: `NUM` matches **Torment** ranks [2, 3, 4, 5, 6] but not ranks [1] (rank 1's client tooltip has no number; the lab reads Torment's threat from the client's table (warlock.TORMENT_TABLE))",
      "Ll: `TICK` (`(?:dealing|inflicting) (\\d[\\d,]*) (\\w+) damage every (\\d+) sec.*?(?:La`) matches no spell or talent tooltip of the current warlock data (an unused pattern: the module reads periodic damage through TICK_FOR)",
      "Ll: `WRACK_DEBUFF` (`increasing the damage they take from your other (\\w+) damage over time`) matches no spell or talent tooltip of the current warlock data (Wrack's wording before 2026-11-10 (a debuff on the target); Wrack now speeds up the dots, read by WRACK_SPEED)",
-     "Lc: Bane of Havoc worth nothing at 40, 50, 60 (gate: prerequisite of Incinerate)"
+     "Lc: Curse of Exhaustion worth nothing at 60 (recorded filler)",
+     "Lc: Destructive Reach worth nothing at 60 (utility: survival)"
+    ],
+    "levels": {
+     "1": {
+      "seconds": 13.7,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.0,
+      "casts": {
+       "Immolate": 1.03,
+       "Wand": 2.83
+      },
+      "pet_casts": null,
+      "shares": {
+       "Wand": 0.794,
+       "Immolate": 0.206
+      }
+     },
+     "4": {
+      "seconds": 18.6,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.002,
+      "casts": {
+       "Corruption": 1.03,
+       "Immolate": 0.97,
+       "Wand": 4.34
+      },
+      "pet_casts": null,
+      "shares": {
+       "Wand": 0.607,
+       "Corruption": 0.253,
+       "Immolate": 0.139
+      }
+     },
+     "8": {
+      "seconds": 22.9,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.074,
+      "casts": {
+       "Corruption": 1.03,
+       "Bane of Agony": 1.05,
+       "Wand": 6.43,
+       "Immolate": 0.1
+      },
+      "pet_casts": null,
+      "shares": {
+       "Wand": 0.58,
+       "Corruption": 0.214,
+       "Bane of Agony": 0.197,
+       "Immolate": 0.009
+      }
+     },
+     "10": {
+      "seconds": 21.2,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.022,
+      "casts": {
+       "Corruption": 1.03,
+       "Bane of Agony": 1.05,
+       "Immolate": 1.04,
+       "Wand": 4.83
+      },
+      "pet_casts": {
+       "Torment": 2.69
+      },
+      "shares": {
+       "Wand": 0.367,
+       "Corruption": 0.174,
+       "Bane of Agony": 0.161,
+       "Immolate": 0.15,
+       "Voidwalker melee": 0.147
+      }
+     },
+     "19": {
+      "seconds": 26.3,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.051,
+      "casts": {
+       "Corruption": 1.01,
+       "Bane of Agony": 1.0,
+       "Immolate": 1.0,
+       "Wand": 8.14
+      },
+      "pet_casts": {
+       "Torment": 3.35
+      },
+      "shares": {
+       "Wand": 0.42,
+       "Bane of Agony": 0.175,
+       "Corruption": 0.164,
+       "Voidwalker melee": 0.141,
+       "Immolate": 0.1
+      }
+     },
+     "20": {
+      "seconds": 25.6,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.053,
+      "casts": {
+       "Corruption": 1.0,
+       "Bane of Agony": 1.0,
+       "Immolate": 1.0,
+       "Wand": 7.65
+      },
+      "pet_casts": {
+       "Torment": 3.37
+      },
+      "shares": {
+       "Wand": 0.385,
+       "Bane of Agony": 0.167,
+       "Immolate": 0.16,
+       "Corruption": 0.15,
+       "Voidwalker melee": 0.138
+      }
+     },
+     "30": {
+      "seconds": 31.2,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.062,
+      "casts": {
+       "Corruption": 1.0,
+       "Bane of Agony": 1.0,
+       "Immolate": 1.0,
+       "Wand": 11.01
+      },
+      "pet_casts": {
+       "Torment": 4.33
+      },
+      "shares": {
+       "Wand": 0.399,
+       "Bane of Agony": 0.173,
+       "Corruption": 0.158,
+       "Immolate": 0.148,
+       "Voidwalker melee": 0.122
+      }
+     },
+     "33": {
+      "seconds": 33.9,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.07,
+      "casts": {
+       "Corruption": 1.05,
+       "Bane of Agony": 1.0,
+       "Immolate": 1.0,
+       "Wand": 12.48
+      },
+      "pet_casts": {
+       "Torment": 4.76
+      },
+      "shares": {
+       "Wand": 0.439,
+       "Bane of Agony": 0.162,
+       "Corruption": 0.14,
+       "Immolate": 0.133,
+       "Voidwalker melee": 0.126
+      }
+     },
+     "34": {
+      "seconds": 33.7,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.091,
+      "casts": {
+       "Corruption": 1.06,
+       "Bane of Agony": 1.0,
+       "Siphon Life": 1.0,
+       "Immolate": 0.94,
+       "Wand": 10.96
+      },
+      "pet_casts": {
+       "Torment": 4.67
+      },
+      "shares": {
+       "Wand": 0.384,
+       "Corruption": 0.17,
+       "Bane of Agony": 0.151,
+       "Voidwalker melee": 0.12,
+       "Immolate": 0.115,
+       "Siphon Life": 0.06
+      }
+     },
+     "39": {
+      "seconds": 35.7,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.093,
+      "casts": {
+       "Corruption": 1.18,
+       "Bane of Agony": 1.0,
+       "Siphon Life": 1.0,
+       "Immolate": 0.87,
+       "Wand": 12.12
+      },
+      "pet_casts": {
+       "Torment": 4.68
+      },
+      "shares": {
+       "Wand": 0.339,
+       "Bane of Agony": 0.217,
+       "Corruption": 0.166,
+       "Siphon Life": 0.096,
+       "Voidwalker melee": 0.094,
+       "Immolate": 0.088
+      }
+     },
+     "40": {
+      "seconds": 33.7,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.09,
+      "casts": {
+       "Corruption": 1.08,
+       "Bane of Agony": 1.0,
+       "Siphon Life": 1.0,
+       "Wrack": 0.98,
+       "Wand": 8.25,
+       "Life Tap": 0.14
+      },
+      "pet_casts": {
+       "Torment": 4.62
+      },
+      "shares": {
+       "Bane of Agony": 0.247,
+       "Wand": 0.222,
+       "Corruption": 0.192,
+       "Wrack": 0.14,
+       "Siphon Life": 0.11,
+       "Voidwalker melee": 0.088
+      }
+     },
+     "42": {
+      "seconds": 33.5,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.094,
+      "casts": {
+       "Corruption": 1.11,
+       "Bane of Agony": 1.0,
+       "Siphon Life": 1.0,
+       "Wrack": 1.07,
+       "Wand": 7.77,
+       "Life Tap": 0.06
+      },
+      "pet_casts": {
+       "Torment": 4.53
+      },
+      "shares": {
+       "Bane of Agony": 0.234,
+       "Wand": 0.211,
+       "Corruption": 0.192,
+       "Wrack": 0.176,
+       "Siphon Life": 0.104,
+       "Voidwalker melee": 0.081
+      }
+     },
+     "50": {
+      "seconds": 31.5,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.035,
+      "casts": {
+       "Corruption": 1.1,
+       "Bane of Agony": 1.0,
+       "Siphon Life": 1.0,
+       "Wrack": 0.94,
+       "Wand": 8.01,
+       "Life Tap": 0.29
+      },
+      "pet_casts": {
+       "Torment": 4.51
+      },
+      "shares": {
+       "Bane of Agony": 0.264,
+       "Corruption": 0.196,
+       "Wand": 0.185,
+       "Wrack": 0.169,
+       "Siphon Life": 0.112,
+       "Voidwalker melee": 0.073
+      }
+     },
+     "60": {
+      "seconds": 30.5,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.029,
+      "casts": {
+       "Corruption": 1.1,
+       "Bane of Agony": 1.0,
+       "Siphon Life": 1.0,
+       "Wrack": 1.17,
+       "Wand": 6.72,
+       "Life Tap": 0.29
+      },
+      "pet_casts": {
+       "Torment": 4.47
+      },
+      "shares": {
+       "Bane of Agony": 0.267,
+       "Wrack": 0.213,
+       "Corruption": 0.207,
+       "Wand": 0.14,
+       "Siphon Life": 0.113,
+       "Voidwalker melee": 0.06
+      }
+     }
+    },
+    "standing": {
+     "1": "Demon Skin",
+     "4": "Demon Skin",
+     "8": "Demon Skin",
+     "10": "Demon Skin",
+     "19": "Demon Skin",
+     "20": "Demon Armor",
+     "30": "Demon Armor",
+     "33": "Demon Armor",
+     "34": "Demon Armor",
+     "39": "Demon Armor",
+     "40": "Demon Armor",
+     "42": "Demon Armor",
+     "50": "Demon Armor",
+     "60": "Demon Armor"
+    }
+   },
+   "Destruction": {
+    "build": "destruction-open-leveling",
+    "rotation": "destruction-leveling",
+    "provisional_order": false,
+    "fingerprint": "db538d6097c7e5f4",
+    "inputs_fingerprint": "fc47154c42b72405",
+    "guide_fingerprint": "07021f86d808",
+    "fail": [],
+    "notes": [
+     "Ld: the rules file's veto takes Drain Life off; the guide names it only to say it is not cast",
+     "Ld: the rules file's veto takes Fear off; the guide names it only to say it is not cast",
+     "Ld: the rules file's veto takes Incinerate off; the guide names it only to say it is not cast",
+     "Ld: the rules file's veto takes Searing Pain off; the guide names it only to say it is not cast",
+     "Lh: 21.4 s a kill at 10, 28.0 at 19 (+31%): ordinary scaling over nine levels: the mob's health grows +134%, your damage per second +83%; fight time 20.4 -> 26.0 s (+28%), idle 5% -> 7%; points Bane 1->5, Cataclysm 0->3, Destructive Reach 0->2; ranks Shadow Bolt 2->3; gear main stats 27->65. With Bane of Agony forced from 8 (by hand, 2026-11-23, bane_below20_1123.py) the row reads 21.4 -> 28.0 s (+31%), against 22.7 -> 30.5 (+34%) before: the window takes 6% off at 10 and 8% at 19, and the rest is the mob's growth. The stage now ends at 19 (the 20-28 stage starts at 20); 10->20 had read +19% (drafted from the printed cause, 2026-11-23; for the delegator's read) [points: Bane 1->5, Cataclysm 0->3, Destructive Reach 0->2; ranks: Bane of Agony rank 1->2, Shadow Bolt rank 2->3; gear main stats 27->65; mob health 187->438 (+134%), swing 13->30, armor 450->789]",
+     "Lh: 27.1 s a kill at 20, 33.0 at 28 (+22%): ordinary scaling over eight levels; points: Agonizing Flames 0->3, Intensity 0->1, Ruin 1->5; ranks: Create Healthstone rank 1->2, Shadow Bolt rank 4->5; gear main stats 71->121; mob health 466->876 (+88%), swing 32->45, armor 817->1130 (the printed cause, 2026-11-22; cleared by the audit session) [points: Agonizing Flames 0->3, Improved Shadow Bolt 0->1, Ruin 1->5; ranks: Bane of Agony rank 2->3, Create Healthstone rank 1->2, Shadow Bolt rank 4->5; gear main stats 71->121; mob health 466->876 (+88%), swing 32->45, armor 817->1130]",
+     "Lh: 32.0 s a kill at 30, 34.6 at 31 (+8%): Conflagrate arrives and is pressed (its veto is 5.2% / 5.1% faster at 31, 3,000 fights, seeds 1/2: it uses up Immolate before Shadow and Flame 5/5); time out of the fight 7% -> 16% (drinking 0 -> 3.5 s a kill); the rest is +2.8%. The page presses it as Destruction's signature spell and says what it costs, as Marksmanship's Aimed Shot (drafted from the printed cause; cleared by the audit session, 2026-11-23) [points: Conflagrate 0->1; ranks: none new; gear main stats 133->138; mob health 1002->1064 (+6%), swing 48->49, armor 1200->1240]",
+     "Lh: 34.6 s a kill at 31, 37.9 at 38 (+10%): ordinary scaling over four or more levels [points: Fire and Brimstone 0->3, Shadow and Flame 0->4; ranks: Bane of Agony rank 3->4, Conflagrate rank 1->2, Create Healthstone rank 2->3, Life Tap rank 3->4, Shadow Bolt rank 5->6, Shadowburn rank 2->3; gear main stats 138->151; mob health 1064->1630 (+53%), swing 49->63, armor 1240->1821]",
+     "Lg: Bane of Doom never pressed: situational: its hit lands a minute after the cast, after every leveling fight has ended (the lane session, 2026-11-21)",
+     "Lg: Corruption never pressed; forced: LEAD: top at 20: -0.88%; filler at 20: -1.13%; the tune compared it as a rules knob (FORCE_CORRUPTION_LEVELS) and left it off; forced at levels 20-60 on the installed rules: -4.10% seed 1, -4.10% seed 2 per kill (faster is +)",
+     "Lg: Drain Soul never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): slower at every level, by 31.7% at least",
+     "Lg: Inferno never pressed: situational: a one-hour cooldown that summons an Infernal the fight lab does not model (the lane session, 2026-11-21)",
+     "Lg: Shadow Ward never pressed: situational: absorbs one school (the audit session, 2026-11-21)",
+     "Lg: Soul Fire never pressed: forced into the priority on 2026-11-23 (top and filler, levels 20-60, seeds 1/2, 2000 fights): within noise at best (-0.55%), never faster by the bar",
+     "Ll: parses to 0: **Bane of Doom** (rank 1) parses to no damage: \"Afflicts the target with impending doom, causing 1,742 Shadow damage after 1 min. If the target dies from this\" (its hit lands a minute after the cast, after every leveling fight has ended (a recorded Lg verdict))",
+     "Ll: parses to 0: **Fire Shield** (rank 5) parses to no damage: \"Surrounds the target in a shield of fire. Every strike against the target causes 13 Fire damage to the attacke\" (a demon's spell the lab never casts (the Voidwalker presses Torment; the Imp's Firebolt is its swing))",
+     "Ll: parses to 0: **Inferno** (rank 1) parses to no damage: \"Summons a meteor from the Twisting Nether, causing 200 Fire damage and stunning all enemy targets in the area \" (a one-hour cooldown that summons an Infernal the lab does not model (a recorded Lg verdict))",
+     "Ll: parses to 0: **Lash of Pain** (rank 6) parses to no damage: \"An instant attack that lashes the target, causing 50 Shadow damage.\" (a demon's spell the lab never casts (the Voidwalker presses Torment; the Imp's Firebolt is its swing))",
+     "Ll: **Inferno** rank 1: the tooltip names a stun the parsed spell lacks: \"Summons a meteor from the Twisting Nether, causing 200 Fire damage and stunning all enemy targets in\" (a one-hour cooldown that summons an Infernal the lab does not model (a recorded Lg verdict))",
+     "Ll: `NUM` matches **Soothing Kiss** ranks [2, 3, 4] but not ranks [1] (a demon's spell the lab never casts (the Voidwalker presses Torment; the Imp's Firebolt is its swing))",
+     "Ll: `NUM` matches **Torment** ranks [2, 3, 4, 5, 6] but not ranks [1] (rank 1's client tooltip has no number; the lab reads Torment's threat from the client's table (warlock.TORMENT_TABLE))",
+     "Ll: `TICK` (`(?:dealing|inflicting) (\\d[\\d,]*) (\\w+) damage every (\\d+) sec.*?(?:La`) matches no spell or talent tooltip of the current warlock data (an unused pattern: the module reads periodic damage through TICK_FOR)",
+     "Ll: `WRACK_DEBUFF` (`increasing the damage they take from your other (\\w+) damage over time`) matches no spell or talent tooltip of the current warlock data (Wrack's wording before 2026-11-10 (a debuff on the target); Wrack now speeds up the dots, read by WRACK_SPEED)",
+     "Lc: Bane of Havoc worth nothing at 30, 40, 50, 60 (gate: prerequisite of Incinerate)",
+     "Lc: Fel Vitality worth nothing at 60 (utility: interrupt)"
     ],
     "levels": {
      "1": {
@@ -10397,253 +10934,373 @@
        "Immolate": 0.214
       }
      },
-     "9": {
-      "seconds": 29.5,
+     "7": {
+      "seconds": 24.4,
       "deaths_per_100": 0.0,
-      "idle_share": 0.135,
+      "idle_share": 0.072,
       "casts": {
        "Immolate": 1.03,
-       "Shadow Bolt": 1.31,
-       "Wand": 8.46
+       "Shadow Bolt": 1.17,
+       "Wand": 6.74
       },
       "pet_casts": null,
       "shares": {
-       "Wand": 0.693,
-       "Shadow Bolt": 0.17,
-       "Immolate": 0.136
+       "Wand": 0.668,
+       "Shadow Bolt": 0.184,
+       "Immolate": 0.149
+      }
+     },
+     "8": {
+      "seconds": 24.3,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.089,
+      "casts": {
+       "Bane of Agony": 1.03,
+       "Immolate": 1.0,
+       "Wand": 6.62,
+       "Shadow Bolt": 0.26
+      },
+      "pet_casts": null,
+      "shares": {
+       "Wand": 0.594,
+       "Bane of Agony": 0.255,
+       "Immolate": 0.115,
+       "Shadow Bolt": 0.036
       }
      },
      "10": {
-      "seconds": 22.7,
+      "seconds": 21.4,
       "deaths_per_100": 0.0,
-      "idle_share": 0.053,
+      "idle_share": 0.047,
       "casts": {
-       "Shadow Bolt": 2.39,
-       "Immolate": 1.04,
-       "Wand": 4.68
+       "Bane of Agony": 1.04,
+       "Immolate": 1.03,
+       "Shadow Bolt": 1.23,
+       "Wand": 4.46
       },
       "pet_casts": {
-       "Torment": 2.77
+       "Torment": 2.62
       },
       "shares": {
-       "Wand": 0.361,
-       "Shadow Bolt": 0.302,
-       "Immolate": 0.178,
-       "Voidwalker melee": 0.158
+       "Wand": 0.349,
+       "Bane of Agony": 0.188,
+       "Immolate": 0.169,
+       "Shadow Bolt": 0.155,
+       "Voidwalker melee": 0.139
+      }
+     },
+     "19": {
+      "seconds": 28.0,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.07,
+      "casts": {
+       "Shadow Bolt": 2.18,
+       "Bane of Agony": 1.05,
+       "Immolate": 1.02,
+       "Wand": 6.84
+      },
+      "pet_casts": {
+       "Torment": 3.42
+      },
+      "shares": {
+       "Wand": 0.358,
+       "Shadow Bolt": 0.216,
+       "Bane of Agony": 0.177,
+       "Voidwalker melee": 0.148,
+       "Immolate": 0.101
       }
      },
      "20": {
-      "seconds": 28.6,
+      "seconds": 27.1,
       "deaths_per_100": 0.0,
-      "idle_share": 0.073,
+      "idle_share": 0.071,
       "casts": {
-       "Shadow Bolt": 1.92,
+       "Shadow Bolt": 1.25,
+       "Bane of Agony": 1.04,
        "Immolate": 1.03,
-       "Wand": 8.35
+       "Wand": 7.45
       },
       "pet_casts": {
-       "Torment": 3.5
+       "Torment": 3.37
       },
       "shares": {
-       "Wand": 0.423,
-       "Shadow Bolt": 0.245,
-       "Immolate": 0.185,
-       "Voidwalker melee": 0.148
+       "Wand": 0.376,
+       "Immolate": 0.166,
+       "Shadow Bolt": 0.16,
+       "Bane of Agony": 0.157,
+       "Voidwalker melee": 0.142
       }
      },
      "28": {
-      "seconds": 36.2,
+      "seconds": 33.0,
       "deaths_per_100": 0.0,
-      "idle_share": 0.086,
+      "idle_share": 0.076,
       "casts": {
-       "Shadow Bolt": 2.29,
-       "Immolate": 1.19,
-       "Wand": 11.93,
-       "Create Healthstone": 0.07
+       "Shadow Bolt": 1.47,
+       "Bane of Agony": 1.05,
+       "Immolate": 1.03,
+       "Wand": 10.65,
+       "Create Healthstone": 0.04
       },
       "pet_casts": {
-       "Torment": 4.37
+       "Torment": 3.94
       },
       "shares": {
-       "Wand": 0.479,
-       "Shadow Bolt": 0.24,
-       "Immolate": 0.148,
-       "Voidwalker melee": 0.133
+       "Wand": 0.428,
+       "Bane of Agony": 0.165,
+       "Shadow Bolt": 0.156,
+       "Immolate": 0.131,
+       "Voidwalker melee": 0.121
       }
      },
      "29": {
-      "seconds": 35.6,
-      "deaths_per_100": 0.25,
-      "idle_share": 0.079,
+      "seconds": 32.3,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.068,
       "casts": {
-       "Shadow Bolt": 1.46,
-       "Immolate": 1.36,
-       "Wand": 12.84,
+       "Shadow Bolt": 0.62,
+       "Bane of Agony": 1.04,
+       "Immolate": 1.14,
+       "Wand": 11.88,
        "Shadowburn": 1.0,
-       "Create Healthstone": 0.06
+       "Create Healthstone": 0.04
       },
       "pet_casts": {
-       "Torment": 4.39
+       "Torment": 3.97
       },
       "shares": {
-       "Wand": 0.484,
-       "Immolate": 0.146,
-       "Shadow Bolt": 0.143,
-       "Voidwalker melee": 0.126,
-       "Shadowburn": 0.101
+       "Wand": 0.447,
+       "Bane of Agony": 0.153,
+       "Immolate": 0.125,
+       "Voidwalker melee": 0.115,
+       "Shadowburn": 0.101,
+       "Shadow Bolt": 0.06
       }
      },
      "30": {
-      "seconds": 33.5,
+      "seconds": 32.0,
       "deaths_per_100": 0.0,
-      "idle_share": 0.091,
+      "idle_share": 0.073,
       "casts": {
-       "Shadow Bolt": 0.26,
-       "Immolate": 1.46,
-       "Wand": 12.58,
-       "Shadowburn": 1.0,
-       "Conflagrate": 0.94
+       "Shadow Bolt": 0.29,
+       "Bane of Agony": 1.06,
+       "Immolate": 1.13,
+       "Wand": 12.23,
+       "Shadowburn": 1.0
       },
       "pet_casts": {
-       "Torment": 4.53
+       "Torment": 4.24
       },
       "shares": {
-       "Wand": 0.454,
-       "Immolate": 0.195,
-       "Voidwalker melee": 0.126,
-       "Conflagrate": 0.103,
-       "Shadowburn": 0.099,
-       "Shadow Bolt": 0.023
+       "Wand": 0.442,
+       "Immolate": 0.176,
+       "Bane of Agony": 0.141,
+       "Voidwalker melee": 0.118,
+       "Shadowburn": 0.095,
+       "Shadow Bolt": 0.027
+      }
+     },
+     "31": {
+      "seconds": 34.6,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.163,
+      "casts": {
+       "Shadow Bolt": 0.72,
+       "Bane of Agony": 1.05,
+       "Immolate": 1.15,
+       "Wand": 10.3,
+       "Shadowburn": 1.0,
+       "Conflagrate": 0.76,
+       "Life Tap": 0.04
+      },
+      "pet_casts": {
+       "Torment": 4.08
+      },
+      "shares": {
+       "Wand": 0.368,
+       "Immolate": 0.156,
+       "Bane of Agony": 0.128,
+       "Voidwalker melee": 0.11,
+       "Shadowburn": 0.093,
+       "Conflagrate": 0.08,
+       "Shadow Bolt": 0.065
+      }
+     },
+     "38": {
+      "seconds": 37.9,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.173,
+      "casts": {
+       "Shadow Bolt": 0.79,
+       "Bane of Agony": 1.05,
+       "Immolate": 1.19,
+       "Wand": 11.53,
+       "Shadowburn": 0.99,
+       "Conflagrate": 0.88,
+       "Create Healthstone": 0.06,
+       "Life Tap": 0.02
+      },
+      "pet_casts": {
+       "Torment": 4.26
+      },
+      "shares": {
+       "Wand": 0.335,
+       "Bane of Agony": 0.166,
+       "Immolate": 0.143,
+       "Shadowburn": 0.104,
+       "Conflagrate": 0.102,
+       "Voidwalker melee": 0.086,
+       "Shadow Bolt": 0.064
       }
      },
      "39": {
-      "seconds": 39.9,
-      "deaths_per_100": 0.25,
-      "idle_share": 0.156,
+      "seconds": 37.1,
+      "deaths_per_100": 0.0,
+      "idle_share": 0.192,
       "casts": {
-       "Shadow Bolt": 0.88,
-       "Immolate": 1.31,
-       "Conflagrate": 1.97,
-       "Wand": 12.56,
+       "Shadow Bolt": 0.84,
+       "Bane of Agony": 1.03,
+       "Immolate": 1.06,
+       "Conflagrate": 1.6,
+       "Wand": 10.22,
        "Shadowburn": 0.99,
-       "Create Healthstone": 0.12
+       "Create Healthstone": 0.14
       },
       "pet_casts": {
-       "Torment": 4.7
+       "Torment": 3.93
       },
       "shares": {
-       "Wand": 0.345,
-       "Conflagrate": 0.231,
-       "Immolate": 0.155,
-       "Shadowburn": 0.106,
-       "Voidwalker melee": 0.09,
-       "Shadow Bolt": 0.073
+       "Wand": 0.282,
+       "Conflagrate": 0.19,
+       "Bane of Agony": 0.15,
+       "Immolate": 0.13,
+       "Shadowburn": 0.104,
+       "Voidwalker melee": 0.074,
+       "Shadow Bolt": 0.069
       }
      },
      "40": {
-      "seconds": 40.3,
+      "seconds": 37.7,
       "deaths_per_100": 0.0,
-      "idle_share": 0.208,
+      "idle_share": 0.238,
       "casts": {
-       "Shadow Bolt": 0.51,
-       "Immolate": 1.32,
-       "Wand": 12.29,
-       "Conflagrate": 1.98,
-       "Shadowburn": 0.99
+       "Shadow Bolt": 0.55,
+       "Bane of Agony": 1.04,
+       "Immolate": 1.05,
+       "Wand": 9.85,
+       "Conflagrate": 1.69,
+       "Shadowburn": 0.96,
+       "Life Tap": 0.03
       },
       "pet_casts": {
-       "Torment": 4.87
+       "Torment": 4.11
       },
       "shares": {
-       "Wand": 0.325,
-       "Conflagrate": 0.249,
-       "Immolate": 0.177,
-       "Shadowburn": 0.117,
-       "Voidwalker melee": 0.09,
-       "Shadow Bolt": 0.042
+       "Wand": 0.261,
+       "Conflagrate": 0.219,
+       "Immolate": 0.146,
+       "Bane of Agony": 0.138,
+       "Shadowburn": 0.115,
+       "Voidwalker melee": 0.076,
+       "Shadow Bolt": 0.046
       }
      },
      "42": {
-      "seconds": 40.1,
+      "seconds": 37.9,
       "deaths_per_100": 0.0,
-      "idle_share": 0.202,
+      "idle_share": 0.227,
       "casts": {
-       "Shadow Bolt": 0.51,
-       "Immolate": 1.32,
-       "Wand": 12.29,
-       "Conflagrate": 2.01,
-       "Shadowburn": 0.98
+       "Shadow Bolt": 0.54,
+       "Bane of Agony": 1.03,
+       "Immolate": 1.08,
+       "Wand": 10.15,
+       "Conflagrate": 1.75,
+       "Shadowburn": 0.98,
+       "Life Tap": 0.04,
+       "Death Coil": 0.04
       },
       "pet_casts": {
-       "Torment": 4.84
+       "Torment": 4.21
       },
       "shares": {
-       "Wand": 0.328,
-       "Conflagrate": 0.247,
-       "Immolate": 0.179,
+       "Wand": 0.268,
+       "Conflagrate": 0.212,
+       "Immolate": 0.151,
+       "Bane of Agony": 0.132,
        "Shadowburn": 0.111,
-       "Voidwalker melee": 0.085,
-       "Shadow Bolt": 0.041,
+       "Voidwalker melee": 0.074,
+       "Shadow Bolt": 0.044,
        "Death Coil": 0.008
       }
      },
      "50": {
-      "seconds": 40.4,
+      "seconds": 37.0,
       "deaths_per_100": 0.0,
-      "idle_share": 0.197,
+      "idle_share": 0.221,
       "casts": {
-       "Shadow Bolt": 0.54,
-       "Immolate": 1.3,
-       "Wand": 12.57,
-       "Conflagrate": 2.04,
-       "Shadowburn": 0.98,
-       "Death Coil": 0.06
+       "Shadow Bolt": 0.59,
+       "Bane of Agony": 1.0,
+       "Immolate": 1.02,
+       "Wand": 9.82,
+       "Conflagrate": 1.69,
+       "Shadowburn": 0.96,
+       "Life Tap": 0.06,
+       "Death Coil": 0.04
       },
       "pet_casts": {
-       "Torment": 4.91
+       "Torment": 4.16
       },
       "shares": {
-       "Wand": 0.284,
-       "Conflagrate": 0.251,
-       "Immolate": 0.222,
-       "Shadowburn": 0.114,
-       "Voidwalker melee": 0.073,
-       "Shadow Bolt": 0.046,
-       "Death Coil": 0.01
+       "Wand": 0.219,
+       "Conflagrate": 0.216,
+       "Immolate": 0.184,
+       "Bane of Agony": 0.149,
+       "Shadowburn": 0.112,
+       "Voidwalker melee": 0.062,
+       "Shadow Bolt": 0.051,
+       "Death Coil": 0.006
       }
      },
      "60": {
-      "seconds": 39.0,
+      "seconds": 35.7,
       "deaths_per_100": 0.0,
-      "idle_share": 0.147,
+      "idle_share": 0.168,
       "casts": {
-       "Shadow Bolt": 0.51,
-       "Immolate": 1.36,
-       "Conflagrate": 2.15,
-       "Wand": 12.93,
-       "Shadowburn": 0.99
+       "Shadow Bolt": 0.57,
+       "Bane of Agony": 1.0,
+       "Immolate": 1.03,
+       "Wand": 10.4,
+       "Conflagrate": 1.73,
+       "Shadowburn": 0.97,
+       "Life Tap": 0.06,
+       "Death Coil": 0.01
       },
       "pet_casts": {
-       "Torment": 5.1
+       "Torment": 4.42
       },
       "shares": {
-       "Conflagrate": 0.272,
-       "Wand": 0.265,
-       "Immolate": 0.23,
-       "Shadowburn": 0.11,
-       "Voidwalker melee": 0.069,
-       "Shadow Bolt": 0.052
+       "Conflagrate": 0.217,
+       "Wand": 0.215,
+       "Immolate": 0.183,
+       "Bane of Agony": 0.156,
+       "Shadowburn": 0.106,
+       "Shadow Bolt": 0.06,
+       "Voidwalker melee": 0.06
       }
      }
     },
     "standing": {
      "1": "Demon Skin",
-     "9": "Demon Skin",
+     "7": "Demon Skin",
+     "8": "Demon Skin",
      "10": "Demon Skin",
+     "19": "Demon Skin",
      "20": "Demon Armor",
      "28": "Demon Armor",
      "29": "Demon Armor",
      "30": "Demon Armor",
+     "31": "Demon Armor",
+     "38": "Demon Armor",
      "39": "Demon Armor",
      "40": "Demon Armor",
      "42": "Demon Armor",
@@ -10655,13 +11312,10 @@
     "build": "opt-affliction-leveling-leveling-st",
     "rotation": "demonology-leveling",
     "provisional_order": false,
-    "fingerprint": "538342e27c9e710f",
-    "inputs_fingerprint": "6606913d760c4d70",
-    "guide_fingerprint": "14e28ef7a6ba",
-    "fail": [
-     "Lc: Improved Imp worth nothing at 50, 60: only a tier point for Soul Link (tier 5), and no filler record on this build shows a more useful legal home was tried (fightlab/fl_filler_pass.py)",
-     "Lc: Soul Siphon worth nothing at 40, 50, 60: only a tier point for Shadow Mastery (tier 6), and no filler record on this build shows a more useful legal home was tried (fightlab/fl_filler_pass.py)"
-    ],
+    "fingerprint": "465337fa636bfc13",
+    "inputs_fingerprint": "62427f0185bb52e2",
+    "guide_fingerprint": "dce26229c18c",
+    "fail": [],
     "notes": [
      "Lh: 21.2 s a kill at 10, 26.4 at 19 (+25%): ordinary scaling: the mob's health grows +140%, your damage per second +99%; fight time 20.7 -> 25.1 s (+21%), downtime 0.5 -> 1.3 s (idle 2% -> 5%); mob health +140% against damage per second +99%; pressed now: Shadow Bolt; points Improved Corruption 0->4, Improved Life Tap 1->2, Suppression 0->4; ranks Bane of Agony rank 1->2, Corruption rank 1->2, Shadow Bolt rank 2->3 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Improved Corruption 0->4, Improved Life Tap 1->2, Suppression 0->4; ranks: Bane of Agony rank 1->2, Corruption rank 1->2, Shadow Bolt rank 2->3; gear main stats 27->65; mob health 187->438 (+134%), swing 13->30, armor 450->789]",
      "Lh: 25.8 s a kill at 20, 31.3 at 29 (+21%): ordinary scaling: the mob's health grows +104%, your damage per second +69%; fight time 24.3 -> 29.4 s (+21%), downtime 1.5 -> 2.0 s (idle 6% -> 6%); mob health +104% against damage per second +69%; pressed now: Shadow Bolt; points Improved Bane of Agony 0->2, Improved Corruption 4->5, Malevolence 0->4, Pandemic 0->2; ranks Bane of Agony rank 2->3, Corruption rank 2->3, Shadow Bolt rank 4->5 (drafted from the printed cause, 2026-11-21; read by the audit session) [points: Improved Bane of Agony 0->2, Improved Corruption 4->5, Malevolence 0->4, Pandemic 0->2; ranks: Bane of Agony rank 2->3, Corruption rank 2->3, Shadow Bolt rank 4->5; gear main stats 71->127; mob health 466->939 (+102%), swing 32->46, armor 817->1165]",
@@ -10682,7 +11336,8 @@
      "Ll: `NUM` matches **Torment** ranks [2, 3, 4, 5, 6] but not ranks [1] (rank 1's client tooltip has no number; the lab reads Torment's threat from the client's table (warlock.TORMENT_TABLE))",
      "Ll: `TICK` (`(?:dealing|inflicting) (\\d[\\d,]*) (\\w+) damage every (\\d+) sec.*?(?:La`) matches no spell or talent tooltip of the current warlock data (an unused pattern: the module reads periodic damage through TICK_FOR)",
      "Ll: `WRACK_DEBUFF` (`increasing the damage they take from your other (\\w+) damage over time`) matches no spell or talent tooltip of the current warlock data (Wrack's wording before 2026-11-10 (a debuff on the target); Wrack now speeds up the dots, read by WRACK_SPEED)",
-     "Lc: Demonic Sacrifice worth nothing at 50, 60 (gate: prerequisite of Soul Link)"
+     "Lc: Demonic Sacrifice worth nothing at 50, 60 (gate: prerequisite of Soul Link)",
+     "Lc: Soul Siphon worth nothing at 40, 50, 60 (tier point for Shadow Mastery (tier 6); the filler pass: no better home, improves only Drain Life, Drain Soul, Wrack, which the build never casts from level 34 on (its removal changes nothing at 40, 50, 60); 6 legal homes tried (2026-11-23))"
     ],
     "levels": {
      "1": {
@@ -10746,6 +11401,7 @@
        "Corruption": 1.03,
        "Bane of Agony": 1.05,
        "Immolate": 1.04,
+       "Shadow Bolt": 0.02,
        "Wand": 4.79
       },
       "pet_casts": {
@@ -10921,49 +11577,49 @@
       }
      },
      "50": {
-      "seconds": 36.9,
+      "seconds": 37.0,
       "deaths_per_100": 0.0,
       "idle_share": 0.058,
       "casts": {
-       "Corruption": 1.32,
+       "Corruption": 1.35,
        "Bane of Agony": 1.0,
        "Siphon Life": 1.0,
-       "Immolate": 0.71,
-       "Wand": 13.72
+       "Immolate": 0.69,
+       "Wand": 13.75
       },
       "pet_casts": {
-       "Torment": 5.51
+       "Torment": 5.52
       },
       "shares": {
-       "Wand": 0.313,
-       "Bane of Agony": 0.234,
-       "Corruption": 0.172,
-       "Siphon Life": 0.103,
+       "Wand": 0.314,
+       "Bane of Agony": 0.233,
+       "Corruption": 0.174,
+       "Siphon Life": 0.104,
        "Voidwalker melee": 0.092,
-       "Immolate": 0.086
+       "Immolate": 0.083
       }
      },
      "60": {
-      "seconds": 34.6,
+      "seconds": 34.7,
       "deaths_per_100": 0.0,
-      "idle_share": 0.036,
+      "idle_share": 0.037,
       "casts": {
-       "Corruption": 1.22,
+       "Corruption": 1.23,
        "Bane of Agony": 1.0,
        "Siphon Life": 1.0,
-       "Immolate": 0.7,
-       "Wand": 12.9
+       "Immolate": 0.72,
+       "Wand": 12.83
       },
       "pet_casts": {
-       "Torment": 5.21
+       "Torment": 5.27
       },
       "shares": {
-       "Wand": 0.271,
-       "Bane of Agony": 0.262,
-       "Corruption": 0.196,
-       "Siphon Life": 0.105,
-       "Immolate": 0.09,
-       "Voidwalker melee": 0.076
+       "Wand": 0.268,
+       "Bane of Agony": 0.259,
+       "Corruption": 0.197,
+       "Siphon Life": 0.106,
+       "Immolate": 0.094,
+       "Voidwalker melee": 0.077
       }
      }
     },

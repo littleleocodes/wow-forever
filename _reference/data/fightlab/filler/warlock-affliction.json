@@ -3,7 +3,7 @@
  "spec": "Affliction",
  "build": "affliction-open-leveling",
  "rotation": "affliction-leveling",
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "fights": 1500,
  "start_order": [
   {
@@ -165,135 +165,107 @@
  ],
  "steps": [
   {
-   "weighted": 31.52,
+   "weighted": 31.508,
    "values_at_60": {
-    "Curse of Exhaustion": 0.0,
-    "Demonic Aegis": 0.0,
-    "Demonic Embrace": 0.034,
-    "Demonic Energies": -0.014,
-    "Destructive Reach": 0.0,
-    "Grim Reach": -0.033,
+    "Demonic Aegis": 0.001,
+    "Demonic Embrace": -0.008,
+    "Demonic Energies": -0.017,
+    "Grim Reach": -0.034,
+    "Improved Drains": 0.0,
     "Improved Health Funnel": 0.0,
-    "Improved Voidwalker": 0.031,
-    "Malevolence": -0.008,
+    "Improved Voidwalker": -0.11,
+    "Malevolence": -0.194,
     "Soul Siphon": -0.112,
-    "Unholy Power": -0.008,
-    "Wrack": -6.548
+    "Unholy Power": -0.038,
+    "Wrack": -6.523
    },
    "zero": [
+    "Demonic Aegis",
+    "Demonic Embrace",
+    "Demonic Energies",
+    "Grim Reach",
+    "Improved Drains",
+    "Improved Health Funnel",
+    "Unholy Power"
+   ],
+   "dead_held": []
+  },
+  {
+   "weighted": 31.508,
+   "values_at_60": {
+    "Bane": -0.0,
+    "Demonic Aegis": 0.001,
+    "Demonic Embrace": -0.008,
+    "Demonic Energies": -0.017,
+    "Grim Reach": -0.056,
+    "Improved Drains": 0.0,
+    "Improved Voidwalker": -0.11,
+    "Malevolence": -0.194,
+    "Soul Siphon": -0.114,
+    "Unholy Power": -0.038,
+    "Wrack": -6.515
+   },
+   "zero": [
+    "Bane",
+    "Demonic Aegis",
+    "Demonic Embrace",
+    "Demonic Energies",
+    "Grim Reach",
+    "Improved Drains",
+    "Unholy Power"
+   ],
+   "dead_held": []
+  },
+  {
+   "weighted": 31.513,
+   "values_at_60": {
+    "Bane": -0.0,
+    "Curse of Exhaustion": 0.0,
+    "Demonic Aegis": 0.001,
+    "Demonic Embrace": 0.015,
+    "Demonic Energies": -0.017,
+    "Grim Reach": -0.056,
+    "Improved Voidwalker": -0.008,
+    "Malevolence": -0.194,
+    "Soul Siphon": -0.114,
+    "Unholy Power": -0.038,
+    "Wrack": -6.515
+   },
+   "zero": [
+    "Bane",
     "Curse of Exhaustion",
     "Demonic Aegis",
     "Demonic Embrace",
     "Demonic Energies",
-    "Destructive Reach",
     "Grim Reach",
-    "Improved Health Funnel",
     "Improved Voidwalker",
-    "Malevolence",
     "Unholy Power"
    ],
    "dead_held": []
   },
   {
-   "weighted": 31.515,
+   "weighted": 31.519,
    "values_at_60": {
-    "Demonic Aegis": 0.0,
-    "Demonic Embrace": 0.034,
-    "Demonic Energies": -0.014,
+    "Bane": -0.0,
+    "Curse of Exhaustion": 0.0,
+    "Demonic Embrace": 0.014,
+    "Demonic Energies": -0.081,
     "Destructive Reach": 0.0,
-    "Grim Reach": -0.01,
-    "Improved Drains": 0.0,
-    "Improved Health Funnel": 0.0,
-    "Improved Voidwalker": -0.1,
-    "Malevolence": -0.008,
-    "Soul Siphon": -0.145,
-    "Unholy Power": -0.008,
-    "Wrack": -6.548
+    "Grim Reach": -0.057,
+    "Improved Voidwalker": -0.027,
+    "Malevolence": -0.195,
+    "Soul Siphon": -0.115,
+    "Unholy Power": -0.039,
+    "Wrack": -6.55
    },
    "zero": [
-    "Demonic Aegis",
+    "Bane",
+    "Curse of Exhaustion",
     "Demonic Embrace",
     "Demonic Energies",
     "Destructive Reach",
     "Grim Reach",
-    "Improved Drains",
-    "Improved Health Funnel",
-    "Malevolence",
-    "Unholy Power"
-   ],
-   "dead_held": []
-  },
-  {
-   "weighted": 31.504,
-   "values_at_60": {
-    "Demonic Aegis": 0.0,
-    "Demonic Embrace": -0.113,
-    "Demonic Energies": -0.036,
-    "Destructive Reach": 0.0,
-    "Grim Reach": 0.031,
-    "Improved Drains": 0.0,
-    "Improved Voidwalker": -0.184,
-    "Malevolence": -0.257,
-    "Nightfall": -0.061,
-    "Soul Siphon": -0.137,
-    "Unholy Power": -0.115,
-    "Wrack": -6.701
-   },
-   "zero": [
-    "Demonic Aegis",
-    "Demonic Energies",
-    "Destructive Reach",
-    "Grim Reach",
-    "Improved Drains",
-    "Nightfall"
-   ],
-   "dead_held": []
-  },
-  {
-   "weighted": 31.506,
-   "values_at_60": {
-    "Demonic Aegis": 0.0,
-    "Demonic Embrace": -0.005,
-    "Demonic Energies": -0.12,
-    "Grim Reach": -0.106,
-    "Improved Drains": 0.0,
-    "Improved Voidwalker": -0.068,
-    "Malevolence": -0.17,
-    "Nightfall": -0.01,
-    "Soul Siphon": -0.167,
-    "Unholy Power": 0.013,
-    "Wrack": -6.561
-   },
-   "zero": [
-    "Demonic Aegis",
-    "Demonic Embrace",
-    "Improved Drains",
     "Improved Voidwalker",
-    "Nightfall",
-    "Unholy Power"
-   ],
-   "dead_held": []
-  },
-  {
-   "weighted": 31.512,
-   "values_at_60": {
-    "Demonic Embrace": -0.005,
-    "Demonic Energies": -0.164,
-    "Grim Reach": -0.106,
-    "Improved Drains": 0.0,
-    "Improved Shadow Bolt": 0.0,
-    "Improved Voidwalker": -0.102,
-    "Malevolence": -0.17,
-    "Nightfall": -0.009,
-    "Soul Siphon": -0.167,
-    "Unholy Power": 0.013,
-    "Wrack": -6.571
-   },
-   "zero": [
-    "Demonic Embrace",
-    "Improved Drains",
-    "Improved Shadow Bolt",
-    "Nightfall",
     "Unholy Power"
    ],
    "dead_held": []
@@ -515,34 +487,41 @@
    "seed3": 0.0001,
    "seed4": -0.0002,
    "why": "no loss"
+  },
+  {
+   "from": "Improved Health Funnel",
+   "to": "Bane",
+   "level": 58,
+   "seed3": -0.0,
+   "seed4": -0.0007,
+   "why": "no loss"
+  },
+  {
+   "from": "Improved Drains",
+   "to": "Curse of Exhaustion",
+   "level": 52,
+   "seed3": 0.0002,
+   "seed4": 0.0,
+   "why": "no loss"
+  },
+  {
+   "from": "Demonic Aegis",
+   "to": "Destructive Reach",
+   "level": 51,
+   "seed3": 0.0002,
+   "seed4": 0.0002,
+   "why": "no loss"
   }
  ],
  "kept_signature": [],
- "model": "d0f2d95045a07c789f4313b7efaa2e1f4e80f9b3",
- "chain": "kept: no model recorded, the same order",
+ "model": "12029c371b19337aefb9c0b56d001ef0f16f6d79",
+ "chain": "new: the model changed since the last pass",
  "gates_checked": {
   "Amplify Curse": {
    "level": 20,
-   "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
+   "kind": "prerequisite of Curse of Exhaustion",
    "does_nothing": null,
-   "homes": [
-    {
-     "to": "Grim Reach",
-     "seed3": 0.0059
-    },
-    {
-     "to": "Improved Drains",
-     "seed3": 0.0078
-    },
-    {
-     "to": "Soul Harvest",
-     "seed3": 0.0078
-    },
-    {
-     "to": "Fel Concentration",
-     "seed3": 0.0079
-    }
-   ],
+   "homes": [],
    "verdict": "kept: no home faster on both seeds"
   },
   "Improved Bane of Agony": {
@@ -551,20 +530,16 @@
    "does_nothing": null,
    "homes": [
     {
-     "to": "Improved Drains",
-     "seed3": 0.0049
+     "to": "Fel Concentration",
+     "seed3": 0.0048
     },
     {
      "to": "Grim Reach",
-     "seed3": 0.0049
-    },
-    {
-     "to": "Soul Harvest",
      "seed3": 0.0052
     },
     {
-     "to": "Fel Concentration",
-     "seed3": 0.0055
+     "to": "Soul Harvest",
+     "seed3": 0.0056
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -576,19 +551,15 @@
    "homes": [
     {
      "to": "Soul Harvest",
-     "seed3": 0.0019
-    },
-    {
-     "to": "Improved Drains",
-     "seed3": 0.0019
+     "seed3": 0.0012
     },
     {
      "to": "Fel Concentration",
-     "seed3": 0.002
+     "seed3": 0.0016
     },
     {
      "to": "Grim Reach",
-     "seed3": 0.002
+     "seed3": 0.0016
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -607,23 +578,19 @@
    "homes": [
     {
      "to": "Soul Harvest",
-     "seed3": 0.0057
-    },
-    {
-     "to": "Nightfall",
-     "seed3": 0.0058
-    },
-    {
-     "to": "Improved Drains",
-     "seed3": 0.0059
+     "seed3": 0.0056
     },
     {
      "to": "Fel Concentration",
-     "seed3": 0.0062
+     "seed3": 0.0057
     },
     {
      "to": "Grim Reach",
-     "seed3": 0.0063
+     "seed3": 0.006
+    },
+    {
+     "to": "Nightfall",
+     "seed3": 0.0065
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -635,23 +602,19 @@
    "homes": [
     {
      "to": "Grim Reach",
-     "seed3": 0.0064
+     "seed3": 0.0056
+    },
+    {
+     "to": "Nightfall",
+     "seed3": 0.0059
     },
     {
      "to": "Fel Concentration",
-     "seed3": 0.0068
-    },
-    {
-     "to": "Improved Drains",
-     "seed3": 0.007
+     "seed3": 0.0063
     },
     {
      "to": "Soul Harvest",
      "seed3": 0.007
-    },
-    {
-     "to": "Nightfall",
-     "seed3": 0.0071
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -670,58 +633,72 @@
    "homes": [
     {
      "to": "Fel Concentration",
-     "seed3": 0.0018
+     "seed3": 0.0011
     },
     {
      "to": "Soul Harvest",
-     "seed3": 0.0024
+     "seed3": 0.0018
     },
     {
      "to": "Grim Reach",
      "seed3": 0.0025
     },
     {
-     "to": "Improved Drains",
-     "seed3": 0.0027
-    },
-    {
      "to": "Nightfall",
-     "seed3": 0.0032
+     "seed3": 0.0031
     }
    ],
    "verdict": "kept: no home faster on both seeds"
   }
  },
  "no_better_home": {
+  "Bane": {
+   "kind": "zero point",
+   "exact": true,
+   "why": "time per kill at 60 without its last rank: +0.00 s (seed 3)",
+   "homes": 15
+  },
+  "Curse of Exhaustion": {
+   "kind": "zero point",
+   "exact": true,
+   "why": "time per kill at 60 without its last rank: -0.00 s (seed 3)",
+   "homes": 13
+  },
   "Demonic Embrace": {
    "kind": "zero point",
    "exact": false,
-   "why": "time per kill at 60 without its last rank: +0.01 s (seed 3)",
-   "homes": 16
+   "why": "time per kill at 60 without its last rank: -0.01 s (seed 3)",
+   "homes": 15
   },
-  "Improved Drains": {
-   "kind": "zero point",
-   "exact": true,
-   "why": "time per kill at 60 without its last rank: -0.00 s (seed 3)",
-   "homes": 13
-  },
-  "Improved Shadow Bolt": {
-   "kind": "zero point",
-   "exact": true,
-   "why": "time per kill at 60 without its last rank: -0.00 s (seed 3)",
-   "homes": 13
-  },
-  "Nightfall": {
+  "Demonic Energies": {
    "kind": "zero point",
    "exact": false,
-   "why": "time per kill at 60 without its last rank: +0.01 s (seed 3)",
+   "why": "time per kill at 60 without its last rank: +0.08 s (seed 3)",
+   "homes": 13
+  },
+  "Destructive Reach": {
+   "kind": "zero point",
+   "exact": true,
+   "why": "time per kill at 60 without its last rank: -0.00 s (seed 3)",
+   "homes": 12
+  },
+  "Grim Reach": {
+   "kind": "zero point",
+   "exact": false,
+   "why": "time per kill at 60 without its last rank: +0.06 s (seed 3)",
+   "homes": 15
+  },
+  "Improved Voidwalker": {
+   "kind": "zero point",
+   "exact": false,
+   "why": "time per kill at 60 without its last rank: +0.03 s (seed 3)",
    "homes": 16
   },
   "Unholy Power": {
    "kind": "zero point",
    "exact": false,
-   "why": "time per kill at 60 without its last rank: -0.01 s (seed 3)",
-   "homes": 17
+   "why": "time per kill at 60 without its last rank: +0.04 s (seed 3)",
+   "homes": 16
   }
  },
  "final_order": [
@@ -853,14 +830,14 @@
   },
   {
    "levels": "51",
-   "tree": "Demonology",
-   "talent": "Demonic Aegis",
+   "tree": "Destruction",
+   "talent": "Destructive Reach",
    "points": 1
   },
   {
    "levels": "52",
    "tree": "Affliction",
-   "talent": "Improved Drains",
+   "talent": "Curse of Exhaustion",
    "points": 1
   },
   {
@@ -883,8 +860,8 @@
   },
   {
    "levels": "58",
-   "tree": "Demonology",
-   "talent": "Improved Health Funnel",
+   "tree": "Destruction",
+   "talent": "Bane",
    "points": 1
   },
   {
@@ -926,10 +903,6 @@
      1
     ],
     [
-     "Improved Drains",
-     1
-    ],
-    [
      "Improved Bane of Agony",
      2
     ],
@@ -944,6 +917,10 @@
     [
      "Malevolence",
      5
+    ],
+    [
+     "Curse of Exhaustion",
+     1
     ],
     [
      "Siphon Life",
@@ -964,10 +941,6 @@
    ],
    "Demonology": [
     [
-     "Improved Health Funnel",
-     1
-    ],
-    [
      "Demonic Embrace",
      4
     ],
@@ -976,16 +949,22 @@
      5
     ],
     [
-     "Demonic Aegis",
-     1
-    ],
-    [
      "Improved Voidwalker",
      3
     ],
     [
      "Demonic Energies",
      2
+    ]
+   ],
+   "Destruction": [
+    [
+     "Destructive Reach",
+     1
+    ],
+    [
+     "Bane",
+     1
     ]
    ]
   },
@@ -1118,14 +1097,14 @@
    },
    {
     "levels": "51",
-    "tree": "Demonology",
-    "talent": "Demonic Aegis",
+    "tree": "Destruction",
+    "talent": "Destructive Reach",
     "points": 1
    },
    {
     "levels": "52",
     "tree": "Affliction",
-    "talent": "Improved Drains",
+    "talent": "Curse of Exhaustion",
     "points": 1
    },
    {
@@ -1148,8 +1127,8 @@
    },
    {
     "levels": "58",
-    "tree": "Demonology",
-    "talent": "Improved Health Funnel",
+    "tree": "Destruction",
+    "talent": "Bane",
     "points": 1
    },
    {
@@ -1165,24 +1144,6 @@
     "points": 1
    }
   ],
-  "note": "2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Curse of Exhaustion to Improved Drains at 52 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Health Funnel to Nightfall at 58 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Destructive Reach to Unholy Power at 60 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Demonic Aegis to Improved Shadow Bolt at 51 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Unholy Power to Demonic Energies at 49 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Drains to Demonic Embrace at 42 (no loss: -0.1% seed 3, +0.0% seed 4, level-weighted time per kill); Nightfall to Curse of Exhaustion at 52 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Fel Concentration to Demonic Embrace at 59 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Fel Concentration to Demonic Aegis at 51 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Bane to Improved Health Funnel at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Curse of Exhaustion to Demonic Embrace at 56 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Improved Health Funnel to Nightfall at 52 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Sacrifice to Bane at 58 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Grim Reach to Fel Concentration at 59 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Drains to Demonic Embrace at 43 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Energies to Destructive Reach at 60 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Destructive Reach to Curse of Exhaustion at 56 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Fel Concentration to Improved Health Funnel at 52 (no loss: +0.1% seed 3, +0.1% seed 4, level-weighted time per kill); Improved Drains to Demonic Sacrifice at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Shadow Bolt to Demonic Energies at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Demonic Aegis to Curse of Exhaustion at 58 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Curse of Exhaustion to Improved Drains at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Fel Concentration to Destructive Reach at 56 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Demonic Embrace to Grim Reach at 57 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing moved: Improved Drains to Malevolence at 44 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Energies to Fel Concentration at 56 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Sacrifice to Grim Reach at 59 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Embrace to Demonic Aegis at 58 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Sayaad to Improved Shadow Bolt at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill)."
- },
- "corrections": [
-  {
-   "date": "2026-11-22",
-   "undone": [
-    {
-     "from": "Demonic Aegis",
-     "to": "Improved Shadow Bolt",
-     "level": 51
-    },
-    {
-     "from": "Improved Health Funnel",
-     "to": "Nightfall",
-     "level": 58
-    }
-   ],
-   "why": "2026-11-22: two of that pass's moves undone (Improved Shadow Bolt back to Demonic Aegis at 51, Nightfall back to Improved Health Funnel at 58): both only help Shadow Bolt, which this build never casts at those levels; the pass's guard had counted the Shadow Bolts it casts at 20-35 (fl_filler_pass.dead_from_levels judges a point at the levels it is held since). The pass then ran again."
-  }
- ]
+  "note": "2026-11-23: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Health Funnel to Bane at 58 (no loss: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Drains to Curse of Exhaustion at 52 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Aegis to Destructive Reach at 51 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Curse of Exhaustion to Improved Drains at 52 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Health Funnel to Nightfall at 58 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Destructive Reach to Unholy Power at 60 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Demonic Aegis to Improved Shadow Bolt at 51 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Unholy Power to Demonic Energies at 49 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Drains to Demonic Embrace at 42 (no loss: -0.1% seed 3, +0.0% seed 4, level-weighted time per kill); Nightfall to Curse of Exhaustion at 52 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Fel Concentration to Demonic Embrace at 59 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Fel Concentration to Demonic Aegis at 51 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Bane to Improved Health Funnel at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Curse of Exhaustion to Demonic Embrace at 56 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Improved Health Funnel to Nightfall at 52 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Sacrifice to Bane at 58 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Grim Reach to Fel Concentration at 59 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Drains to Demonic Embrace at 43 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Energies to Destructive Reach at 60 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Destructive Reach to Curse of Exhaustion at 56 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Fel Concentration to Improved Health Funnel at 52 (no loss: +0.1% seed 3, +0.1% seed 4, level-weighted time per kill); Improved Drains to Demonic Sacrifice at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Shadow Bolt to Demonic Energies at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Demonic Aegis to Curse of Exhaustion at 58 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Curse of Exhaustion to Improved Drains at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Fel Concentration to Destructive Reach at 56 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Demonic Embrace to Grim Reach at 57 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing moved: Improved Drains to Malevolence at 44 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Energies to Fel Concentration at 56 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Sacrifice to Grim Reach at 59 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Embrace to Demonic Aegis at 58 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Sayaad to Improved Shadow Bolt at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill)."
+ }
 }

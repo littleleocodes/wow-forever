@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Smite (a Discipline/Holy hybrid) leveling build the open leveling search found on 2026-11-21: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the holy-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). 
+The Smite (a Discipline/Holy hybrid) leveling build the open leveling search found on 2026-11-22: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the holy-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (shadow-dps). 
 
 ## Point allocation
 
@@ -100,7 +100,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Notes
 
 - 2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Healing to Spell Warding at 54 (gate that did nothing, tie-break by utility (survival): +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Improved Healing to Spell Warding at 53 (gate that did nothing, tie-break by utility (survival): +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Healing to Twilight Focus at 55 (gate that did nothing, no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Inner Fire to Shadow Focus at 47 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Renew to Twilight Focus at 34 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Holy Nova to Twilight Focus at 44 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill).
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 43.18; holy-leveling 50.81. The search simulated 40,040 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 42.37; holy-leveling 50.01. The search simulated 40,040 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

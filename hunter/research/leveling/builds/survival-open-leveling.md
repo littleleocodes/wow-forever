@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Survival leveling build the open leveling search found on 2026-11-21: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the melee-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (melee-dps). 
+The Survival leveling build the open leveling search found on 2026-11-22: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the melee-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (melee-dps). 
 
 ## Point allocation
 
@@ -34,8 +34,7 @@ The Survival leveling build the open leveling search found on 2026-11-21: every 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
 | **Improved Tracking** | 5/5 | **NEW** | While tracking Beasts, Demons, Dragonkin, Elementals, Giants, Humanoids, or Undead, all damage you deal to the tracked creature type is increased by 5%. |
-| **Deflection** | 1/5 | unchanged | Increases your Parry chance by 1%. |
-| **Entrapment** | 2/5 | changed | When your traps are triggered, all affected targets are Entrapped, preventing them from moving for 2 sec. |
+| **Deflection** | 3/5 | unchanged | Increases your Parry chance by 3%. |
 | **Savage Strikes** | 2/2 | changed | Increases the critical strike chance of all your melee abilities by 4%. |
 | **Clever Traps** | 2/2 | unchanged | Increases the duration of Freezing and Frost trap effects by 30% and the damage of Immolation and Explosive trap effects by 30%. |
 | **Surefooted** | 3/3 | changed | Increases your hit chance by 3% and reduces the duration of movement impairing effects on you by 30%. |
@@ -52,8 +51,7 @@ The Survival leveling build the open leveling search found on 2026-11-21: every 
 |---|---|---|---|---|
 | 10-14 | Survival | Improved Tracking | 5 | 0/0/5 |
 | 15-16 | Survival | Savage Strikes | 2 | 0/0/7 |
-| 17 | Survival | Deflection | 1 | 0/0/8 |
-| 18-19 | Survival | Entrapment | 2 | 0/0/10 |
+| 17-19 | Survival | Deflection | 3 | 0/0/10 |
 | 20-22 | Survival | Surefooted | 3 | 0/0/13 |
 | 23-24 | Survival | Clever Traps | 2 | 0/0/15 |
 | 25-29 | Survival | Predator's Edge | 5 | 0/0/20 |
@@ -76,13 +74,13 @@ The Survival leveling build the open leveling search found on 2026-11-21: every 
 ## Core talents (priority order)
 
 1. **Resourcefulness** — +2.3 s per kill at level 60 without it (removal, 3,000 fights).
-2. **Survivalist's Discipline** — +1.1 s per kill at level 60 without it (removal, 3,000 fights).
-3. **Lethal Attacks** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
-4. **Clever Traps** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
-5. **Predator's Edge** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
-6. **Improved Stings** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
-7. **Surefooted** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
-8. **Improved Tracking** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
+2. **Survivalist's Discipline** — +1.2 s per kill at level 60 without it (removal, 3,000 fights).
+3. **Lethal Attacks** — +0.7 s per kill at level 60 without it (removal, 3,000 fights).
+4. **Clever Traps** — +0.6 s per kill at level 60 without it (removal, 3,000 fights).
+5. **Improved Tracking** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+6. **Predator's Edge** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+7. **Improved Stings** — +0.5 s per kill at level 60 without it (removal, 3,000 fights).
+8. **Surefooted** — +0.4 s per kill at level 60 without it (removal, 3,000 fights).
 
 ## Leveling rotation
 
@@ -90,9 +88,9 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Endurance Training to Efficiency at 50 (no loss: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Survivalist to Entrapment at 19 (gate that did nothing, no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Survivalist to Entrapment at 18 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill).
-- 2026-11-21: undone from the leveling filler pass: Survival Tactics back at 53 (it held Efficiency). Its value is one the fight lab cannot see (the stats model's kinds, scorer/kinds.json: travel, control, escape), so the lab's times, a gain or a tie, do not weigh it against the talent that took its point (the audit session's ruling). 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Deflection to Efficiency at 51 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Deadly Aspects to Endurance Training at 50 (no loss: -0.1% seed 3, +0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Endurance Training to Improved Stings at 52 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Efficiency to Deterrence at 59 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Deterrence to Careful Aim at 59 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Deadly Aspects to Deflection at 51 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Survival Tactics to Efficiency at 53 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Rapid Killing to Careful Aim at 58 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Stings to Trueshot Aura at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Deadly Aspects to Endurance Training at 52 (no loss: +0.1% seed 3, -0.0% seed 4, level-weighted time per kill).
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.06; opt-melee-dps-solo-60 22.20, opt-melee-dps-leveling-st 22.20, leveling-melee 22.33, opt-bm-leveling-leveling-aoe 24.56. The search simulated 60,489 builds.
+- 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Entrapment to Deflection at 19 (gate that did nothing, no loss: +0.1% seed 3, +0.0% seed 4, level-weighted time per kill); Entrapment to Deflection at 18 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill).
+- 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Endurance Training to Efficiency at 50 (no loss: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Survivalist to Entrapment at 19 (gate that did nothing, no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Survivalist to Entrapment at 18 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-21: undone from the leveling filler pass: Survival Tactics back at 53 (it held Efficiency). Its value is one the fight lab cannot see (the stats model's kinds, scorer/kinds.json: travel, control, escape), so the lab's times, a gain or a tie, do not weigh it against the talent that took its point (the audit session's ruling). 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Deflection to Efficiency at 51 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Deadly Aspects to Endurance Training at 50 (no loss: -0.1% seed 3, +0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Endurance Training to Improved Stings at 52 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Efficiency to Deterrence at 59 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Deterrence to Careful Aim at 59 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Deadly Aspects to Deflection at 51 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Survival Tactics to Efficiency at 53 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Rapid Killing to Careful Aim at 58 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Stings to Trueshot Aura at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Deadly Aspects to Endurance Training at 52 (no loss: +0.1% seed 3, -0.0% seed 4, level-weighted time per kill).
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 21.03; opt-melee-dps-solo-60 22.20, opt-melee-dps-leveling-st 22.20, leveling-melee 22.33, opt-bm-leveling-leveling-aoe 24.56. The search simulated 60,489 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)
@@ -102,7 +100,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 ## Sources
 
 - <https://talentsforever.com/hunter>
-- <https://talentsforever.com/hunter/60/01-0053450001-51022023025020215-12>
+- <https://talentsforever.com/hunter/60/-0053550001-51220023025020215-12>
 
 ---
 *Generated from `builds.json` by `_reference/data/render_builds.py` — edit the JSON, not this file.*

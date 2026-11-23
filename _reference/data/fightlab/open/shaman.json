@@ -8456,7 +8456,7 @@
     ],
     "why": null,
     "spec": "Elemental",
-    "date": "2026-11-21"
+    "date": "2026-11-22"
    }
   },
   "enhancement-dps": {
@@ -8870,7 +8870,7 @@
     }
    ],
    "order_signature_first": {
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "moved_in": [
      "own tree last"
     ]
@@ -9158,132 +9158,132 @@
    ],
    "order_stats_split": "12/33/6",
    "race": {
-    "finalist 13/32/6": {
-     "weighted": 26.47,
+    "finalist 12/33/6": {
+     "weighted": 26.36,
      "levels": {
       "20": 22.36,
-      "30": 24.89,
-      "40": 27.35,
-      "50": 27.59,
-      "60": 27.11
+      "30": 24.56,
+      "40": 26.93,
+      "50": 27.72,
+      "60": 27.09
      },
      "signature": "OK"
     },
     "finalist 15/31/5": {
-     "weighted": 26.34,
+     "weighted": 26.18,
      "levels": {
       "20": 22.36,
-      "30": 24.89,
-      "40": 27.35,
+      "30": 24.56,
+      "40": 26.79,
       "50": 27.06,
       "60": 27.11
      },
      "signature": "OK"
     },
     "finalist 13/32/6 (the previous record's winner)": {
-     "weighted": 26.24,
+     "weighted": 26.14,
      "levels": {
       "20": 22.36,
-      "30": 25.37,
-      "40": 26.45,
+      "30": 25.04,
+      "40": 26.18,
       "50": 26.72,
       "60": 27.45
      },
      "signature": "OK"
     },
     "leveling-enhancement": {
-     "weighted": 26.34,
+     "weighted": 26.26,
      "levels": {
       "20": 22.45,
-      "30": 25.42,
-      "40": 26.17,
+      "30": 25.14,
+      "40": 25.95,
       "50": 26.93,
       "60": 27.73
      }
     },
     "opt-enhancement-dps-leveling-st": {
-     "weighted": 26.96,
+     "weighted": 26.74,
      "levels": {
       "20": 22.36,
-      "30": 25.4,
-      "40": 26.9,
+      "30": 25.03,
+      "40": 26.12,
       "50": 28.17,
       "60": 28.29
      }
     },
     "opt-enhancement-dps-solo-60": {
-     "weighted": 26.96,
+     "weighted": 26.74,
      "levels": {
       "20": 22.36,
-      "30": 25.4,
-      "40": 26.9,
+      "30": 25.03,
+      "40": 26.12,
       "50": 28.17,
       "60": 28.29
      }
     },
     "enhancement-open-leveling": {
-     "weighted": 25.88,
+     "weighted": 25.8,
      "levels": {
       "20": 22.36,
-      "30": 24.89,
-      "40": 25.61,
+      "30": 24.56,
+      "40": 25.47,
       "50": 26.64,
       "60": 27.09
      }
     },
     "restoration-leveling": {
-     "weighted": 35.6,
+     "weighted": 35.5,
      "levels": {
       "20": 23.75,
-      "30": 30.66,
-      "40": 35.09,
+      "30": 30.28,
+      "40": 34.86,
       "50": 37.74,
       "60": 40.58
      }
     },
     "open winner": {
-     "weighted": 25.88,
+     "weighted": 25.8,
      "levels": {
       "20": 22.36,
-      "30": 24.89,
-      "40": 25.61,
+      "30": 24.56,
+      "40": 25.47,
       "50": 26.64,
       "60": 27.09
      }
     },
     "finalist 12/33/6 (stats model order)": {
-     "weighted": 26.51,
+     "weighted": 26.36,
      "levels": {
       "20": 22.36,
-      "30": 24.89,
-      "40": 27.42,
+      "30": 24.56,
+      "40": 26.93,
       "50": 27.72,
       "60": 27.09
      }
     },
     "finalist 12/33/6 (own tree first order)": {
-     "weighted": 26.17,
+     "weighted": 26.08,
      "levels": {
       "20": 22.36,
-      "30": 25.28,
-      "40": 26.97,
+      "30": 25.04,
+      "40": 26.69,
       "50": 26.48,
       "60": 27.09
      }
     },
     "finalist 12/33/6 (own tree last order)": {
-     "weighted": 26.67,
+     "weighted": 26.5,
      "levels": {
       "20": 22.36,
-      "30": 24.89,
-      "40": 27.55,
+      "30": 24.56,
+      "40": 26.93,
       "50": 28.26,
       "60": 27.09
      }
     }
    },
    "level_polish": {
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "levels": [
      40,
      50,
@@ -9293,7 +9293,7 @@
     "steps": [],
     "neighbours_tried": 240,
     "twins_skipped": 0,
-    "minutes": 5.3,
+    "minutes": 5.6,
     "changed": false,
     "neighbour_orders": {
      "carried": 240,
@@ -9302,7 +9302,7 @@
    },
    "orders_raced": "12/33/6",
    "order_polish": {
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "levels": [
      30,
      40,
@@ -9313,7 +9313,7 @@
     "orders_scored": 19,
     "twins_skipped": 0,
     "repeats_skipped": 0,
-    "minutes": 0.4,
+    "minutes": 0.6,
     "changed": false
    },
    "split": "12/33/6",
@@ -9420,7 +9420,7 @@
    },
    "values_base": 27.07,
    "synergy": {
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "winner": "12/33/6",
     "relevant": 36,
     "missing": 20,
@@ -17293,12 +17293,12 @@
       "gain": -0.67613
      }
     },
-    "minutes": 9.9
+    "minutes": 8.9
    },
    "signature": {
     "spec": "Enhancement",
     "rotation": "enhancement-dps",
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "fights": 600,
     "split": "12/33/6",
     "ok": true,
@@ -17322,24 +17322,24 @@
     "casts": {
      "Stormstrike": {
       "20": 0.0,
-      "30": 1.59,
-      "40": 1.92,
+      "30": 1.51,
+      "40": 1.85,
       "50": 1.92,
       "60": 2.1
      }
     },
-    "fingerprint": "8034c16b1fa1"
+    "fingerprint": "6a54a31c353f"
    },
-   "minutes": 27.6,
+   "minutes": 32.3,
    "done": true,
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "builds": {
     "written": [
      "enhancement-open-leveling"
     ],
     "why": null,
     "spec": "Enhancement",
-    "date": "2026-11-21"
+    "date": "2026-11-22"
    }
   }
  },

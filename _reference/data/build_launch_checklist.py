@@ -29,6 +29,11 @@ GLOBAL = [
         "Class books (book-only spell ranks: Tome of Frostbolt XI, Grimoire of Shadow Bolt X ...; Ruins of Ahn'Qiraj in Classic): on "
         "2026-12-09 check whether The Barrow Deeps or Hyjal Summit drop them (or new ones). If they do, `raidsim/trainer_ranks.py "
         "--reverse` and re-tune the raid rotations (the pages assume trainer ranks; the audit's research of 2026-11-20).",
+        "Enchants the gear lists leave out (2026-11-22, the audit session; raidsim/gear_tiers.ENCHANTS_OUT): do enchanters have Gloves - "
+        "Superior Agility (+15) and Classic's other Ahn'Qiraj formulas (Gloves - Fire, Frost, Shadow and Healing Power, Cloak - Dodge), "
+        "which the simulator's database lists as phase 1 with no source, and Forever's sourceless enchants (Chest - Living Stats, Bracer - "
+        "Spell Power, the Grand Crusader / Sorcerer / Arcanist / Inquisitor weapon enchants, the off-hand and shield ones)? Each is raced "
+        "where it fits and recorded with what it would have gained.",
         "Threat values of new abilities (Holy Strike, Mangle, Stormstrike, Shield Slam changes).",
         "Hunter's Mark: our beta tooltip gives rank 4 +143 ranged attack power, the simulator's spell data +71 (2026-11-21, the audit "
         "session's C17). Read the rank the trainer teaches at 60 and its bonus in game; until then the hunter raid guides say to take "

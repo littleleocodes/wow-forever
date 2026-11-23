@@ -142,6 +142,8 @@
   }
  ],
  "kept_signature": [],
+ "model": "26815a110a2002940c353ed8ea9ae28209d07dc4",
+ "chain": "kept: no model recorded, the same order",
  "gates_checked": {
   "Barrage": {
    "level": 34,
@@ -284,7 +286,7 @@
   "Improved Aspect of the Monkey": {
    "level": 49,
    "kind": "tier point for Unleashed Fury (tier 3)",
-   "does_nothing": "improves only Aspect of the Monkey, which the build never casts (its removal changes nothing at 50, 60)",
+   "does_nothing": "improves only Aspect of the Monkey, which the build never casts from level 49 on (its removal changes nothing at 50, 60)",
    "homes": [
     {
      "to": "Endurance Training",
@@ -445,7 +447,7 @@
   "Improved Aspect of the Monkey": {
    "kind": "tier point for Unleashed Fury (tier 3)",
    "exact": true,
-   "why": "improves only Aspect of the Monkey, which the build never casts (its removal changes nothing at 50, 60)",
+   "why": "improves only Aspect of the Monkey, which the build never casts from level 49 on (its removal changes nothing at 50, 60)",
    "homes": 2
   }
  },
@@ -579,6 +581,10 @@
   },
   {
    "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-22",
    "moves": 0
   },
   {

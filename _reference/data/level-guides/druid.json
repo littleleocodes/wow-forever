@@ -648,7 +648,7 @@
   },
   {
    "spec": "Balance",
-   "intro": "What a Balance druid presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Balance stays a caster the whole way: **Wrath** from level 1, **Moonfire** at the pull from 4, **Starfire** woven with **Eclipse** from 30 and **Moonkin Form** from 40; you eat between fights, and **Regrowth** (12) is for a pull that goes wrong. The page build (36/0/15) puts 36 points in Balance and 15 in Restoration for Intellect, pushback, mana and damage; it skips **Insect Swarm**. Each stage lists the full priority, so you can jump in at your level.",
+   "intro": "What a Balance druid presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. Balance stays a caster the whole way: **Wrath** from level 1, **Moonfire** at the pull from 4, **Starfire** as your nuke from 20, woven with **Eclipse** charges from 33 and **Moonkin Form** from 40; you eat between fights, and **Regrowth** (12) is for a pull that goes wrong. The page build (36/0/15) puts 36 points in Balance and 15 in Restoration for Intellect, pushback, mana and damage; it skips **Insect Swarm**. Each stage lists the full priority, so you can jump in at your level.",
    "stages": [
     {
      "from": 1,
@@ -701,27 +701,43 @@
     },
     {
      "from": 20,
-     "title": "Starfire waits",
-     "change": "**Starfire** arrives; **Wrath** stays your nuke until **Eclipse** at 30.",
+     "title": "Starfire, your nuke",
+     "change": "**Starfire** (20) becomes your nuke: the fight lab casts it on every mob, and **Wrath** finishes a mob a **Starfire** would overkill.",
      "press": [
       "**Moonfire** as the mob comes, and again when it runs out, while the mob has more than a third of its health: the hit, then the burn.",
-      "**Wrath** while it walks in, and after it reaches you.",
+      "**Starfire** while the mob has more than about half a **Starfire** hit of health left, from the pull on.",
       "A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**."
      ],
      "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it and step out of its reach: a rooted mob still hits you if you stand next to it. While the roots hold, a **Starfire**. A mob with less left: finish it instead.",
      "notes": [
-      "**Starfire** (20) is your biggest hit and a 3.5-second cast that the mob's hits push back. The fight lab casts it only into a root or a stun, so at these levels it almost never does.",
+      "**Starfire** (20) is your biggest hit, a 3.5-second cast (3 seconds with all five points of **Improved Starfire**, 29) that the mob's hits push back. From 20 it does three quarters of your damage in the fight lab, **Wrath** almost none (2026-11-23).",
       "**Improved Starfire** (25-29): **Starfire** casts 0.5 s faster and stuns the mob for 3 s 15% of the time.",
       "**Nature's Majesty** (20-21): 4% more critical strike chance. **Nature's Splendor** (22): **Moonfire** burns 3 s longer.",
+      "**Nature's Grace** (30): a spell critical hit makes your casts and your global cooldown 10% faster for 3 s.",
       "**Genesis** (23-24): **Moonfire**'s burn and your heals over time do 2% more a point. Small; its two points open the rows above.",
       "**Omen of Clarity** (20) is a buff: keep it on, no key. **Cat Form** (20) is for the Feral build.",
+      "**Travel Form** (30) is the road between mobs.",
       "**Insect Swarm** is a talent this build skips."
      ]
     },
     {
-     "from": 30,
-     "title": "Wrath, then Starfire",
-     "change": "**Eclipse**: each **Wrath** speeds up your next two **Starfire** casts. About two **Starfire** to each **Wrath**.",
+     "from": 31,
+     "title": "Eclipse's first points",
+     "change": "**Eclipse** (31-32, talent): its first two points change nothing you press. The list keeps **Starfire** as your nuke until all three are in (33): one or two take too little off a charged **Starfire** to pay for the **Wrath** casts (the fight lab, 2026-11-23: 2.7-2.9% faster per kill at 31 without the weave).",
+     "press": [
+      "**Moonfire** as the mob comes, and again when it runs out, while the mob has more than a third of its health: the hit, then the burn.",
+      "**Starfire** while the mob has more than about half a **Starfire** hit of health left, from the pull on.",
+      "A nearly dead mob: **Moonfire** when its hit will kill it, else **Wrath**."
+     ],
+     "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it and step out of its reach: a rooted mob still hits you if you stand next to it. While the roots hold, a **Starfire**. A mob with less left: finish it instead.",
+     "notes": [
+      "**Eclipse** (31-33) takes 0.17 s off each charged **Starfire** at 1 point, 0.33 s at 2 and 0.5 s at 3."
+     ]
+    },
+    {
+     "from": 33,
+     "title": "Eclipse 3/3: Wrath, then Starfire",
+     "change": "**Eclipse** 3/3: each **Wrath** speeds up your next two **Starfire** casts by half a second. About two **Starfire** to each **Wrath**.",
      "press": [
       "**Moonfire** as the mob comes, and again when it runs out, while the mob has more than a third of its health: the hit, then the burn.",
       "**Wrath** whenever **Eclipse** has no charges: each one stores 2 (up to 4, for 15 s). So the first **Wrath** comes as the mob walks in.",
@@ -730,10 +746,7 @@
      ],
      "if_hurt": "Below 35% of your health while the mob has more than 30% of its own: **Entangling Roots** on it and step out of its reach: a rooted mob still hits you if you stand next to it. While the roots hold, a **Starfire**. A mob with less left: finish it instead.",
      "notes": [
-      "**Eclipse** (30-32) takes 0.17 s off each charged **Starfire** at 1 point, 0.33 s at 2 and 0.5 s at 3.",
-      "**Nature's Grace** (33): a spell critical hit makes your casts and your global cooldown 10% faster for 3 s.",
-      "**Vengeance** (34 and 39, then 55 and 57-58): your Arcane and Nature critical hits do more damage. **Moonfury** (35-38, then 41): 10% more Arcane and Nature damage at 5 points.",
-      "**Travel Form** (30) is the road between mobs."
+      "**Vengeance** (34 and 39, then 55 and 57-58): your Arcane and Nature critical hits do more damage. **Moonfury** (35-38, then 41): 10% more Arcane and Nature damage at 5 points."
      ]
     },
     {
@@ -1027,7 +1040,7 @@
     ],
     "notes": [
      "Two changes from the Feral layout, both for Balance's own spells. **Starfire** takes R, the payoff after **Entangling Roots** on E and from 30 the spell you press most, so **Moonfire** sits on the middle mouse button from 4 (R at levels 1-9 in the Feral layout). **Moonkin Form** takes Shift+Q, the key of the form you fight in (Cat Form in the Feral layout). Every other spell is where the Feral guide puts it.",
-     "**Wrath** stays on Q from 1 to 60: from 30 it is every other cast, the one that charges **Eclipse**.",
+     "**Wrath** stays on Q from 1 to 60: from 33 it is every other cast, the one that charges **Eclipse**.",
      "The emergency heal in **Moonkin Form**: E (**Entangling Roots**), step back, Shift+Q (leave the form), Mouse 5 (**Regrowth**), Shift+Q (back in). The same Shift+Q, Mouse 5, Shift+Q as the cat's. The [macros page](../macros.md) has a **Regrowth** macro that leaves the form for you.",
      "Moonkin Form uses this same bar 1. If your bar changes when you shift into it, set the new one up as a copy of this one.",
      "Bear Form and Cat Form have no key: this build never fights in them. **Travel Form** on Shift+R is your road between mobs.",

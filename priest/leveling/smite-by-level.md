@@ -2,8 +2,6 @@
 
 [Priest](../README.md) > [Leveling (solo)](README.md) > [Smite](smite.md) > Level by level
 
-> **Being checked:** The play check's forced runs found Shadow Word: Death faster when pressed (10.5% at 40, 6.3% at 50); the rotation is being tuned again with it. The build and numbers on this page may change when it is done.
-
 What a Smite priest presses from level 1 to 60, stage by stage, as the trainer and the talent tree hand you new buttons. **Smite** and **Holy Fire** are your damage, carried by Discipline's talents, Holy's crit and cast speed and **Spirit Tap** from Shadow for mana. A shield before every pull keeps your casts from being pushed back, **Shadow Word: Pain** and **Mind Blast** add damage, and the wand takes the last hit. Each stage lists the full priority, so you can jump in at your level.
 
 **The build:** 21/21/9 ([open the talent tree](https://talentsforever.com/priest/60/52201003133001-305250030020001-10512-12)), the one on the [Smite leveling page](smite.md), which has the full talent table and the reasons behind the level-60 rotation.
@@ -16,7 +14,9 @@ What a Smite priest presses from level 1 to 60, stage by stage, as the trainer a
 | 4-9 | **Shadow Word: Pain** opens the pull. From 6, **Power Word: Shield** on yourself before every pull. |
 | 10-19 | **Mind Blast** whenever it is ready. Talent points start with **Wand Specialization**. |
 | 20-29 | **Holy Fire** opens every pull from range: a hard hit and a burn for 10 seconds more. |
-| 30-60 | **Inner Focus** (talent) as the pull starts: the opening **Holy Fire** is free and more likely to crit. |
+| 30-31 | **Inner Focus** (talent) as the pull starts: the opening **Holy Fire** is free and more likely to crit. |
+| 32-49 | **Shadow Word: Death** (32) finishes a mob below 20% of its health: the tuned rules of 2026-11-22 put it at the top of the list from 32 to 49, 2.7% faster per kill over levels 20-60 in the fight lab. |
+| 50-60 | From 50 the tuned rules no longer press **Shadow Word: Death**. Pressed on to 60 it would be faster at 50 and 55 (3.5% and 2.3% a kill in the fight lab, 2026-11-23) and 0.6-0.8% slower at 60, and **Smite** and **Holy Fire** would fall to 43% of your damage at 60, under this spec's rule of half: that is what the signature rule costs here. The rest stays. |
 
 ## Keybinds by level
 
@@ -24,37 +24,37 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Action bar 1: the fight**
 
-| Key | Its job | 1-3 | 4-9 | 10-19 | 20-29 | 30-60 |
-|---|---|---|---|---|---|---|
-| Q | Your filler, pressed most | **Smite** | Smite | Smite | Smite | Smite |
-| E | Control: fear what is on you | — | — | **Psychic Scream** from 14 | Psychic Scream | Psychic Scream |
-| R | The big hit, on cooldown | — | — | **Mind Blast** | Mind Blast | Mind Blast |
-| F | The shield: before every pull, and the save | — | **Power Word: Shield** from 6 | Power Word: Shield | Power Word: Shield | Power Word: Shield |
-| Mouse 5 | Free: Penance's key in the Discipline guide; this build has none | — | — | — | — | — |
-| Mouse 4 | Thumb: the damage over time, at the pull | — | **Shadow Word: Pain** | Shadow Word: Pain | Shadow Word: Pain | Shadow Word: Pain |
-| 1 | The opener cooldown | — | — | — | — | **Inner Focus** |
-| 2 | The opener from range | — | — | — | **Holy Fire** | Holy Fire |
-| 3 | The emergency heal | **Lesser Heal** | Lesser Heal | Lesser Heal | **Flash Heal** | Flash Heal |
-| 4 | The panic heal, on a long cooldown (a Dwarf's spell) | — | — | **Desperate Prayer** | Desperate Prayer | Desperate Prayer |
-| C | Free | — | — | — | — | — |
-| Middle mouse | The wand: the last hit | **Wand** | Wand | Wand | Wand | Wand |
+| Key | Its job | 1-3 | 4-9 | 10-19 | 20-29 | 30-31 | 32-49 | 50-60 |
+|---|---|---|---|---|---|---|---|---|
+| Q | Your filler, pressed most | **Smite** | Smite | Smite | Smite | Smite | Smite | Smite |
+| E | Control: fear what is on you | — | — | **Psychic Scream** from 14 | Psychic Scream | Psychic Scream | Psychic Scream | Psychic Scream |
+| R | The big hit, on cooldown | — | — | **Mind Blast** | Mind Blast | Mind Blast | Mind Blast | Mind Blast |
+| F | The shield: before every pull, and the save | — | **Power Word: Shield** from 6 | Power Word: Shield | Power Word: Shield | Power Word: Shield | Power Word: Shield | Power Word: Shield |
+| Mouse 5 | The finisher: a mob below 20% of its health, from 32 to 49 | — | — | — | — | — | **Shadow Word: Death** | Shadow Word: Death |
+| Mouse 4 | Thumb: the damage over time, at the pull | — | **Shadow Word: Pain** | Shadow Word: Pain | Shadow Word: Pain | Shadow Word: Pain | Shadow Word: Pain | Shadow Word: Pain |
+| 1 | The opener cooldown | — | — | — | — | **Inner Focus** | Inner Focus | Inner Focus |
+| 2 | The opener from range | — | — | — | **Holy Fire** | Holy Fire | Holy Fire | Holy Fire |
+| 3 | The emergency heal | **Lesser Heal** | Lesser Heal | Lesser Heal | **Flash Heal** | Flash Heal | Flash Heal | Flash Heal |
+| 4 | The panic heal, on a long cooldown (a Dwarf's spell) | — | — | **Desperate Prayer** | Desperate Prayer | Desperate Prayer | Desperate Prayer | Desperate Prayer |
+| C | Free | — | — | — | — | — | — | — |
+| Middle mouse | The wand: the last hit | **Wand** | Wand | Wand | Wand | Wand | Wand | Wand |
 
 **Action bar 2: the same keys with Shift**
 
-| Key | Its job | 1-3 | 4-9 | 10-19 | 20-29 | 30-60 |
-|---|---|---|---|---|---|---|
-| Shift+Q | Free: this build takes no Holy Nova | — | — | — | — | — |
-| Shift+E | Control a second Undead mob | — | — | — | **Shackle Undead** | Shackle Undead |
-| Shift+R | Free | — | — | — | — | — |
-| Shift+F | Free | — | — | — | — | — |
-| Shift+Mouse 5 | Strip a mob's buff or your debuff | — | — | **Dispel Magic** from 18 | Dispel Magic | Dispel Magic |
-| Shift+Mouse 4 | Cure a disease | — | — | **Cure Disease** from 14 | Cure Disease | Cure Disease |
-| Shift+1 | Free | — | — | — | — | — |
-| Shift+2 | Free | — | — | — | — | — |
-| Shift+3 | The heal over time, above the fast heal | — | **Renew** from 8 | Renew | Renew | Renew |
-| Shift+4 | Free | — | — | — | — | — |
-| Shift+C | Free | — | — | — | — | — |
-| Shift+X | Free | — | — | — | — | — |
+| Key | Its job | 1-3 | 4-9 | 10-19 | 20-29 | 30-31 | 32-49 | 50-60 |
+|---|---|---|---|---|---|---|---|---|
+| Shift+Q | Free: this build takes no Holy Nova | — | — | — | — | — | — | — |
+| Shift+E | Control a second Undead mob | — | — | — | **Shackle Undead** | Shackle Undead | Shackle Undead | Shackle Undead |
+| Shift+R | Free | — | — | — | — | — | — | — |
+| Shift+F | Free | — | — | — | — | — | — | — |
+| Shift+Mouse 5 | Strip a mob's buff or your debuff | — | — | **Dispel Magic** from 18 | Dispel Magic | Dispel Magic | Dispel Magic | Dispel Magic |
+| Shift+Mouse 4 | Cure a disease | — | — | **Cure Disease** from 14 | Cure Disease | Cure Disease | Cure Disease | Cure Disease |
+| Shift+1 | Free | — | — | — | — | — | — | — |
+| Shift+2 | Free | — | — | — | — | — | — | — |
+| Shift+3 | The heal over time, above the fast heal | — | **Renew** from 8 | Renew | Renew | Renew | Renew | Renew |
+| Shift+4 | Free | — | — | — | — | — | — | — |
+| Shift+C | Free | — | — | — | — | — | — | — |
+| Shift+X | Free | — | — | — | — | — | — | — |
 
 - Same keys as the [Shadow guide](shadow-by-level.md) for every spell both play: **Smite** on Q, **Psychic Scream** on E, **Mind Blast** on R, **Power Word: Shield** on F, **Shadow Word: Pain** on Mouse 4, **Flash Heal** on 3, **Desperate Prayer** on 4, the wand on the middle mouse button, and the Shift bar's **Shackle Undead**, **Dispel Magic** and **Cure Disease**.
 - What moves: 1 holds **Inner Focus** (Shadow's **Vampiric Embrace**), 2 holds **Holy Fire**, 3 holds **Lesser Heal** until **Flash Heal** arrives at 20, and **Renew** gets Shift+3 because this rotation casts it in a fight. Mouse 5 stays free: it is **Penance** in the Discipline guide and **Shadow Word: Death** in Shadow's, and this rotation casts neither.
@@ -62,7 +62,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - One swap on bar 1: **Flash Heal** takes 3 at 20 and **Lesser Heal** leaves the bar. **Smite** stays on Q all the way.
 - 4 holds **Desperate Prayer** only for a Dwarf: in Forever it is a Dwarf's spell, and the fight lab plays without racial spells. Other races leave 4 free.
 - C stays free for the healing potion macro on the [macros page](../macros.md).
-- No key: **Power Word: Fortitude**, **Inner Fire**, food, water, the mount and the Hearthstone. **Devouring Plague** and **Shadow Word: Death** are never cast by this rotation.
+- No key: **Power Word: Fortitude**, **Inner Fire**, food, water, the mount and the Hearthstone. **Devouring Plague** is never cast by this rotation. **Shadow Word: Death** has Mouse 5 from 32, as in the Shadow guide: the tuned rules press it from 32 to 49.
 
 ## Levels 1-3: Smite
 
@@ -132,7 +132,7 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Wand Specialization** (10-11) makes your wand hit harder.
 - **Power in Light** (14-18) makes **Smite** stronger while your **Shadow Word: Pain** burns on the mob, and from 20 while **Holy Fire** burns.
 - **Psychic Scream** (14): when a mob is on you and you are below 40% of your health, fear it and heal.
-- **Mind Blast** goes out at any mana: until 2026-11-17 the tuned rules held it below 30% of your mana, and once you eat while you drink that hold only cost time (about 2.5% per kill for this build). **Smite** and, from 20, **Holy Fire** still do half your damage, the spec's rule.
+- **Mind Blast** goes out at any mana: until 2026-11-17 the tuned rules held it below 30% of your mana, and once you eat while you drink that hold only cost time (about 2.5% per kill for this build). **Smite** and, from 20, **Holy Fire** still do 47-54% of your damage from 10 to 30 in the fight lab; the spec's rule asks half at level 60.
 - Racial spells in the list above: Divine Grace (Human), Desperate Prayer (Dwarf), Starshards (Night Elf), Confounding Flash (Gnome), Touch of Weakness (Undead), Hex of Weakness (Troll). Only that race can learn its own.
 
 *Fight lab, seconds per kill: 26 at level 10, 36 at level 19. Presses per kill at level 10: Smite 3.4, Mind Blast 1.1, Wand 1.1, Shadow Word: Pain 1.0, Power Word: Shield 0.9.*
@@ -168,13 +168,13 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 *Fight lab, seconds per kill: 38 at level 20, 41 at level 29. Presses per kill at level 20: Smite 3.3, Wand 1.6, Mind Blast 1.3, Shadow Word: Pain 1.0, Power Word: Shield 1.0, Holy Fire 1.0.*
 
-## Levels 30-60: Inner Focus, then the damage talents
+## Levels 30-31: Inner Focus, then the damage talents
 
-**The trainer teaches:** Divine Spirit (30), Mind Control (30), Prayer of Healing (30), Shadow Protection (30), Abolish Disease (32), Shadow Word: Death (32), Levitate (34), Greater Heal (40), Prayer of Fortitude (48), Prayer of Shadow Protection (56), Prayer of Spirit (60).
+**The trainer teaches:** Divine Spirit (30), Mind Control (30), Prayer of Healing (30), Shadow Protection (30).
 
-**New ranks to buy:** Desperate Prayer at 34, 42, 50, 58; Dispel Magic at 36; Flash Heal at 32, 38, 44, 50, 56; Holy Fire at 30, 36, 42, 48, 54, 60; Mind Blast at 34, 40, 46, 52, 58; Power Word: Shield at 30, 36, 42, 48, 54, 60; Psychic Scream at 42, 56; Renew at 32, 38, 44, 50, 56, 60; Shackle Undead at 40, 60; Shadow Word: Pain at 34, 42, 50, 58; Smite at 30, 38, 46, 54.
+**New ranks to buy:** Holy Fire at 30; Power Word: Shield at 30; Smite at 30.
 
-**Talents:** 30 Inner Focus, 31 Spirit Tap, 32 Improved Mind Blast, 33 Improved Power Word: Shield, 34 Twilight Focus, 35-39 Holy Specialization, 40-43 Divine Fury, 44 Twilight Focus, 45-46 Improved Power Word: Shield, 47 Shadow Focus, 48 Soul Warding, 49 Divine Fury, 50-52 Inspiration, 53-54 Spell Warding, 55 Twilight Focus, 56-57 Searing Light, 58 Spiritual Guidance, 59-60 Improved Shadow Word: Pain.
+**Talents:** 30 Inner Focus, 31 Spirit Tap.
 
 **Keys to set:** 1 = Inner Focus.
 
@@ -191,13 +191,65 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **If the fight goes wrong:** In melee below 80% of your health: **Power Word: Shield** again once Weakened Soul has worn off (below half at any time). **Flash Heal** below a third of your health, **Renew** below 60% if it is not already on you. **Psychic Scream** if a mob is on you and you are below 40%.
 
+- This build takes no Holy Nova: pull one mob at a time, and with two on you, **Psychic Scream** sends them running.
+- This build has no **Penance**, and the [Holy guide](holy-by-level.md)'s rotation never casts it either: Mouse 5 holds **Shadow Word: Death** from 32, as in the Shadow guide.
+
+*Fight lab, seconds per kill: 40 at level 30. Presses per kill at level 30: Smite 4.1, Mind Blast 1.8, Holy Fire 1.3, Wand 1.2, Shadow Word: Pain 1.0, Power Word: Shield 1.0.*
+
+## Levels 32-49: Shadow Word: Death to finish
+
+**The trainer teaches:** Abolish Disease (32), **Shadow Word: Death** (32), Levitate (34), Greater Heal (40), Prayer of Fortitude (48).
+
+**New ranks to buy:** Desperate Prayer at 34, 42; Dispel Magic at 36; Flash Heal at 32, 38, 44; Holy Fire at 36, 42, 48; Mind Blast at 34, 40, 46; Power Word: Shield at 36, 42, 48; Psychic Scream at 42; Renew at 32, 38, 44; Shackle Undead at 40; Shadow Word: Death at 40, 48; Shadow Word: Pain at 34, 42; Smite at 38, 46.
+
+**Talents:** 32 Improved Mind Blast, 33 Improved Power Word: Shield, 34 Twilight Focus, 35-39 Holy Specialization, 40-43 Divine Fury, 44 Twilight Focus, 45-46 Improved Power Word: Shield, 47 Shadow Focus, 48 Soul Warding, 49 Divine Fury.
+
+**Keys to set:** Mouse 5 = Shadow Word: Death.
+
+**Your keys in this stage:** Q Smite, E Psychic Scream, R Mind Blast, F Power Word: Shield, Mouse 5 Shadow Word: Death, Mouse 4 Shadow Word: Pain, 1 Inner Focus, 2 Holy Fire, 3 Flash Heal, Shift+3 Renew.
+
+**What to press**, top to bottom:
+
+1. Before the pull: **Power Word: Shield** on yourself. As the pull starts: **Inner Focus** when it is ready.
+2. **Shadow Word: Death** (Mouse 5) on a mob below 20% of its health, whenever it is ready: it finishes the mob, and it hurts you for 30% of your maximum health if the mob survives it.
+3. Open with **Holy Fire** from range. Cast it again once its burn has ended while the mob has more than 40% of its health; in melee only while your shield holds.
+4. **Shadow Word: Pain** next, and again if it runs out while the mob has more than 30% of its health.
+5. **Mind Blast** whenever it is ready, at any mana. It also finishes a mob one cast will kill.
+6. **Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit.
+7. Your wand for the last hit.
+
+**If the fight goes wrong:** In melee below 80% of your health: **Power Word: Shield** again once Weakened Soul has worn off (below half at any time). **Flash Heal** below a third of your health, **Renew** below 60% if it is not already on you. **Psychic Scream** if a mob is on you and you are below 40%.
+
 - **Soul Warding** (48) shortens the shield's cooldown and cost. **Twilight Focus** (34, 44, 55) keeps most hits from pushing your casts back once the shield breaks.
 - **Holy Specialization** (35-39) adds crit to your Holy spells, **Divine Fury** (40-43, 49) takes half a second off the cast of **Smite** and **Holy Fire**, and **Searing Light** (56-57) adds Holy damage.
-- This build takes no Holy Nova: pull one mob at a time, and with two on you, **Psychic Scream** sends them running.
-- **Improved Shadow Word: Pain** (59-60) makes it last 3 seconds longer, and **Spiritual Guidance** (58) adds 3% of your Spirit to your spell damage.
-- This build has no **Penance**, and the [Holy guide](holy-by-level.md)'s rotation never casts it either: Mouse 5 stays free.
+- **Shadow Word: Death** is about one press a kill: the mob has to be below 20% of its health and the spell ready.
 
-*Fight lab, seconds per kill: 40 at level 30, 48 at level 40, 44 at level 50, 42 at level 60. Presses per kill at level 30: Smite 4.1, Mind Blast 1.8, Holy Fire 1.3, Wand 1.2, Shadow Word: Pain 1.0, Power Word: Shield 1.0.*
+*Fight lab, seconds per kill: 38 at level 32, 44 at level 40, 44 at level 49. Presses per kill at level 32: Smite 3.6, Mind Blast 1.9, Holy Fire 1.4, Shadow Word: Pain 1.0, Power Word: Shield 1.0, Wand 0.9, Shadow Word: Death 0.8.*
+
+## Levels 50-60: Shadow Word: Death off again
+
+**The trainer teaches:** Prayer of Shadow Protection (56), Prayer of Spirit (60).
+
+**New ranks to buy:** Desperate Prayer at 50, 58; Flash Heal at 50, 56; Holy Fire at 54, 60; Mind Blast at 52, 58; Power Word: Shield at 54, 60; Psychic Scream at 56; Renew at 50, 56, 60; Shackle Undead at 60; Shadow Word: Death at 56; Shadow Word: Pain at 50, 58; Smite at 54.
+
+**Talents:** 50-52 Inspiration, 53-54 Spell Warding, 55 Twilight Focus, 56-57 Searing Light, 58 Spiritual Guidance, 59-60 Improved Shadow Word: Pain.
+
+**Your keys in this stage:** Q Smite, E Psychic Scream, R Mind Blast, F Power Word: Shield, Mouse 4 Shadow Word: Pain, 1 Inner Focus, 2 Holy Fire, 3 Flash Heal, Shift+3 Renew.
+
+**What to press**, top to bottom:
+
+1. Before the pull: **Power Word: Shield** on yourself. As the pull starts: **Inner Focus** when it is ready.
+2. Open with **Holy Fire** from range. Cast it again once its burn has ended while the mob has more than 40% of its health; in melee only while your shield holds.
+3. **Shadow Word: Pain** next, and again if it runs out while the mob has more than 30% of its health.
+4. **Mind Blast** whenever it is ready, at any mana. It also finishes a mob one cast will kill.
+5. **Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit.
+6. Your wand for the last hit.
+
+**If the fight goes wrong:** In melee below 80% of your health: **Power Word: Shield** again once Weakened Soul has worn off (below half at any time). **Flash Heal** below a third of your health, **Renew** below 60% if it is not already on you. **Psychic Scream** if a mob is on you and you are below 40%.
+
+- **Improved Shadow Word: Pain** (59-60) makes it last 3 seconds longer, and **Spiritual Guidance** (58) adds 3% of your Spirit to your spell damage.
+
+*Fight lab, seconds per kill: 44 at level 50, 42 at level 60. Presses per kill at level 50: Smite 5.6, Mind Blast 1.9, Wand 1.6, Holy Fire 1.4, Shadow Word: Pain 1.0, Power Word: Shield 1.0.*
 
 ## Between fights
 
@@ -213,4 +265,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - The [Holy guide](holy-by-level.md) plays this same list on the Holy raid healer's talents. The [Discipline guide](discipline-by-level.md) plays the Discipline list, with **Penance**, **Devouring Plague** and no **Holy Fire**.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/priest.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-23: the stages are hand-kept in `_reference/data/level-guides/priest.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

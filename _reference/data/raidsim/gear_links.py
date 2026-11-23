@@ -38,6 +38,7 @@ def _load(name, path):
 
 A = _load("apl_opt_links", HERE / "apl_opt.py")
 R = A.R
+MADE = set(_load("gear_opt_links", HERE / "gear_opt.py").PHASE1_RAID_MADE)   # (2026-11-22: raid materials' crafts, for DB.raid)
 MB = _load("ml_builds_links", HERE / "ml_builds.py")
 import paths  # noqa: E402
 import spec_modes as SM  # noqa: E402
@@ -78,6 +79,15 @@ def clean(name):
             name = name[:k]
     return name.strip(" -,")
 
+# Raid items (2026-11-22, the user: no raid is in Forever yet, and Molten Core is not coming; The Barrow Deeps, Hyjal Summit and Onyxia's
+# Lair open on 2026-12-09): an item counts as the raid's when it drops there, is made from its materials (gear_opt.PHASE1_RAID_MADE:
+# the Scale of Onyxia items are Onyxia's, the rest Molten Core's) or is its quest's reward (gear_opt.PHASE1_QUEST: Molten Core's
+# hunter quest; gear_opt.RAID_QUEST: Onyxia's); an enchant when its formula drops there. The pages' Raid BiS note reads the tags.
+RAID_ZONES = ("Molten Core", "Onyxia's Lair")
+MC_QUEST = {"Rhok'delar, Longbow of the Ancient Keepers", "Lok'delar, Stave of the Ancient Keepers"}
+ONY_QUEST = {"Dragonslayer's Signet", "Onyxia Tooth Pendant", "Onyxia Blood Talisman"}
+
+
 class DB:
     """The simulator's item database (assets/database/db.json): items, enchants, zones and bosses."""
 
@@ -93,6 +103,22 @@ class DB:
         self.zones = {z["id"]: z["name"] for z in d.get("zones", [])}
         self.npcs = {n["id"]: n for n in d.get("npcs", [])}
         self.prof = professions(repo)
+
+    def raid(self, item, made=()):
+        """The raid an item or enchant entry belongs to (RAID_ZONES), or None; `made`: the names made from raid materials."""
+        for s in item.get("sources") or []:
+            x = s.get("drop") or {}
+            zone = self.zones.get(x.get("zoneId") or (self.npcs.get(x.get("npcId")) or {}).get("zoneId"))
+            if zone in RAID_ZONES:
+                return zone
+        name = item.get("name") or ""
+        if name in MC_QUEST:
+            return "Molten Core"
+        if name in ONY_QUEST or name.startswith("Onyxia Scale"):
+            return "Onyxia's Lair"
+        if name in made:
+            return "Molten Core"
+        return None
 
     def source(self, item):
         """Where an item comes from, in a few words (the first source the database lists; empty when it lists none)."""
@@ -128,7 +154,7 @@ class DB:
             url = f"{WOWHEAD}/spell={e['spellId']}"
         else:
             url = f"{WOWHEAD}/item={e['itemId']}" if e.get("itemId") else None
-        return {"name": e.get("name", f"enchant {effect_id}"), "url": url}
+        return {"name": e.get("name", f"enchant {effect_id}"), "url": url, "effect": effect_id}   # (effect: page_lint's gear row)
 
     def rows(self, gear_path):
         """[{slot, id, name, url, ilvl, quality, source, enchant?}] for a gear set file, empty slots left out."""
@@ -143,7 +169,13 @@ class DB:
                    "quality": item.get("quality"), "source": self.source(item)}
             ench = self.enchant(it["enchant"], item) if it.get("enchant") else None
             if ench:
+                er = next((self.raid(e) for e in self.enchants.get(it["enchant"]) or [] if self.raid(e)), None)
+                if er:
+                    ench["raid"] = er
                 row["enchant"] = ench
+            rr = self.raid(item, MADE)
+            if rr:
+                row["raid"] = rr
             out.append(row)
         return out
 
@@ -257,6 +289,7 @@ def main():
         gear = {t: db.rows(v["gear"]) for t, v in sets.items() if v.get("gear")}
         key = f"{r['class']}|{r['spec']}"
         specs[key] = {"class": r["class"], "spec": r["spec"], "gear": gear, "ilvl": {t: sets[t].get("ilvl") for t in gear},
+                      "files": {t: sets[t]["gear"] for t in gear},   # (2026-11-22, G6: page_lint compares the table with these files)
                       "sim": sim_links(r, repo, apiv)}
         if r.get("_prev"):
             specs[key]["prev"] = r.get("date")

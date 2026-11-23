@@ -9,27 +9,35 @@
  "knobs": {
   "IMBUE_TOP": "rockbiter",
   "IMBUE_TOP_FROM": 40,
-  "REST_TOGETHER": true
+  "REST_TOGETHER": true,
+  "FORCE_FLAME_SHOCK_LEVELS": [
+   30,
+   50
+  ]
  },
  "class": "shaman",
  "spec": "enhancement-dps",
  "build": "enhancement-open-leveling",
  "levels": [
   20,
+  25,
   30,
+  35,
   40,
+  45,
   50,
+  55,
   60
  ],
- "date": "2026-11-17",
+ "date": "2026-11-22",
  "signature": {
   "required": [
    "Stormstrike"
   ],
   "build_spec": "Enhancement",
   "dropped_saved_rules": [],
-  "core_share_before": 0.790542368091821,
-  "core_share_after": 0.7835413840544219,
+  "core_share_before": 0.7912672627099986,
+  "core_share_after": 0.7912672627099986,
   "min_share": 0.6,
   "floor_reached": null,
   "played_before": true,
@@ -40,54 +48,81 @@
  "changes": [
   {
    "round": 1,
-   "change": "eat below 90% health",
+   "change": "FORCE_FLAME_SHOCK_LEVELS = [30, 50]",
    "rule": [
-    "eat_below",
-    null,
-    0.9
+    "knob",
+    "FORCE_FLAME_SHOCK_LEVELS",
+    [
+     30,
+     50
+    ]
    ],
-   "gain_seed1": 0.005504403875320474,
-   "gain_seed2": 0.011588008592129495
+   "gain_seed1": 0.0036032001267116698,
+   "gain_seed2": 0.005974313704646739
   }
  ],
- "weighted_before": 26.44220367660136,
- "weighted_after": 26.189564913925626,
+ "weighted_before": 26.01927314815471,
+ "weighted_after": 25.886733796298905,
  "per_level": {
   "20": {
-   "before": 21.20973365686765,
-   "after": 23.06090022231804,
+   "before": 22.359799999904,
+   "after": 22.359799999904,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "25": {
+   "before": 21.69536666656711,
+   "after": 21.69536666656711,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 25.220048191026063,
-   "after": 24.74921410063284,
+   "before": 24.89273333330926,
+   "after": 24.556666666634154,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "35": {
+   "before": 26.536466666686024,
+   "after": 26.11006666667378,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 26.832044736052524,
-   "after": 25.836394385050003,
+   "before": 25.60963333332813,
+   "after": 25.46886666665686,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "45": {
+   "before": 26.404100000016125,
+   "after": 26.024600000003737,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 27.44123392498169,
-   "after": 26.89866670560476,
+   "before": 26.63800000002117,
+   "after": 26.63800000002117,
+   "deaths_before": 0.0,
+   "deaths_after": 0.0
+  },
+  "55": {
+   "before": 27.852000000055394,
+   "after": 27.852000000055394,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 27.70501884601587,
-   "after": 27.597157410625684,
+   "before": 27.09116666670322,
+   "after": 27.09116666670322,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
  },
  "retune": {
   "times": {
-   "saved": 26.442,
-   "continued": 26.19
+   "saved": 26.019,
+   "continued": 25.887
   },
   "installed": "continued",
   "reference_ok": true

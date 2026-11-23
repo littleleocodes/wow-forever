@@ -331,6 +331,9 @@ class ShamanModule(BaseModule):
     # a Fire totem stands and the mob is within its 10 yards, above FIRE_NOVA_MANA of the mana
     FIRE_NOVA_SINGLE = 0
     FIRE_NOVA_MANA = 0.3
+    # the forced lines the Enhancement leveling rules may take (2026-11-22, engine.BaseModule.forced_line: the forced runs found Frost
+    # Shock 2.8% faster per kill at 20 and Flame Shock 1.4% at 30 when pressed; Frost Shock is tried first, the shocks share a cooldown)
+    FORCE_SPELLS = {"enhancement-dps": ("Frost Shock", "Flame Shock")}
     ROTATION_KNOBS = {"CL_SINGLE": [0, 1, 2], "CL_SINGLE_MANA": [0.0, 0.3, 0.5, 0.7],   # tuned by rotation_opt.py ("knobs" in rotations/shaman-<spec>.json)
                       "FIRE_NOVA_SINGLE": [0, 1], "FIRE_NOVA_MANA": [0.1, 0.3, 0.5],
                       "IMBUE_EARLY": ["rockbiter", "flametongue", "frostbrand"], "IMBUE_LATE": ["windfury", "rockbiter", "flametongue", "frostbrand"],

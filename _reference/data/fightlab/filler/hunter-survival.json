@@ -141,37 +141,17 @@
  ],
  "steps": [
   {
-   "weighted": 21.035,
+   "weighted": 21.019,
    "values_at_60": {
     "Careful Aim": -0.099,
-    "Efficiency": -0.097,
-    "Endurance Training": 0.0,
-    "Improved Stings": -0.161,
-    "Lightning Reflexes": -0.065,
-    "Strider Kick": -0.145,
-    "Survival Tactics": 0.0,
-    "Trueshot Aura": -0.195
-   },
-   "zero": [
-    "Endurance Training",
-    "Lightning Reflexes",
-    "Survival Tactics"
-   ],
-   "dead_held": []
-  },
-  {
-   "weighted": 21.025,
-   "values_at_60": {
-    "Careful Aim": -0.056,
-    "Efficiency": -0.041,
-    "Improved Stings": -0.127,
-    "Lightning Reflexes": -0.039,
-    "Strider Kick": -0.139,
+    "Efficiency": -0.063,
+    "Improved Stings": -0.139,
+    "Lightning Reflexes": -0.062,
+    "Strider Kick": -0.18,
     "Survival Tactics": 0.0,
     "Trueshot Aura": -0.138
    },
    "zero": [
-    "Careful Aim",
     "Efficiency",
     "Lightning Reflexes",
     "Survival Tactics"
@@ -275,9 +255,27 @@
    "seed3": -0.0002,
    "seed4": -0.0,
    "why": "gate that did nothing, no loss"
+  },
+  {
+   "from": "Entrapment",
+   "to": "Deflection",
+   "level": 19,
+   "seed3": 0.0007,
+   "seed4": 0.0004,
+   "why": "gate that did nothing, no loss"
+  },
+  {
+   "from": "Entrapment",
+   "to": "Deflection",
+   "level": 18,
+   "seed3": -0.0002,
+   "seed4": -0.0003,
+   "why": "gate that did nothing, no loss"
   }
  ],
  "kept_signature": [],
+ "model": "173d79c7b91956d8bcfee70366b8f763c144e448",
+ "chain": "kept: no model recorded, the same order",
  "gates_checked": {
   "Clever Traps": {
    "level": 24,
@@ -285,20 +283,20 @@
    "does_nothing": null,
    "homes": [
     {
-     "to": "Deflection",
-     "seed3": 0.0091
-    },
-    {
-     "to": "Entrapment",
-     "seed3": 0.0093
+     "to": "Survivalist",
+     "seed3": 0.0086
     },
     {
      "to": "Improved Wing Clip",
-     "seed3": 0.0093
+     "seed3": 0.0088
     },
     {
      "to": "Deterrence",
-     "seed3": 0.0093
+     "seed3": 0.0088
+    },
+    {
+     "to": "Deflection",
+     "seed3": 0.0089
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -313,11 +311,36 @@
      "seed3": 0.0003
     },
     {
+     "to": "Survivalist",
+     "seed3": 0.0003
+    },
+    {
      "to": "Improved Wing Clip",
      "seed3": 0.0003
     }
+   ]
+  },
+  "Entrapment": {
+   "level": 18,
+   "kind": "tier point for Clever Traps (tier 3)",
+   "does_nothing": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 20, 30, 40, 50, 60",
+   "homes": [
+    {
+     "to": "Deflection",
+     "seed3": -0.0002,
+     "seed4": -0.0003
+    },
+    {
+     "to": "Improved Wing Clip",
+     "seed3": 0.0,
+     "same_times": true
+    },
+    {
+     "to": "Survivalist",
+     "seed3": 0.0
+    }
    ],
-   "verdict": "kept: no home faster on both seeds"
+   "verdict": "moved to Deflection"
   },
   "Improved Tracking": {
    "level": 14,
@@ -326,7 +349,7 @@
    "homes": [
     {
      "to": "Deflection",
-     "seed3": 0.0039
+     "seed3": 0.0037
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -338,11 +361,11 @@
    "homes": [
     {
      "to": "Improved Concussive Shot",
-     "seed3": 0.0045
+     "seed3": 0.0036
     },
     {
      "to": "Hawk Eye",
-     "seed3": 0.0051
+     "seed3": 0.0043
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -353,8 +376,8 @@
    "does_nothing": null,
    "homes": [
     {
-     "to": "Entrapment",
-     "seed3": 0.0044
+     "to": "Survivalist",
+     "seed3": 0.004
     },
     {
      "to": "Improved Wing Clip",
@@ -378,23 +401,23 @@
    "homes": [
     {
      "to": "Deflection",
-     "seed3": 0.041
-    },
-    {
-     "to": "Entrapment",
-     "seed3": 0.0413
+     "seed3": 0.0407
     },
     {
      "to": "Improved Wing Clip",
-     "seed3": 0.0413
+     "seed3": 0.0412
     },
     {
      "to": "Deterrence",
-     "seed3": 0.0413
+     "seed3": 0.0412
     },
     {
      "to": "Expose Prey",
-     "seed3": 0.0413
+     "seed3": 0.0412
+    },
+    {
+     "to": "Survivalist",
+     "seed3": 0.0412
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -405,16 +428,16 @@
    "does_nothing": null,
    "homes": [
     {
-     "to": "Entrapment",
-     "seed3": 0.0021
+     "to": "Deflection",
+     "seed3": 0.0013
+    },
+    {
+     "to": "Survivalist",
+     "seed3": 0.0015
     },
     {
      "to": "Improved Wing Clip",
-     "seed3": 0.0021
-    },
-    {
-     "to": "Deflection",
-     "seed3": 0.0021
+     "seed3": 0.0016
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -425,45 +448,23 @@
    "does_nothing": null,
    "homes": [
     {
-     "to": "Deflection",
-     "seed3": 0.0066
-    },
-    {
-     "to": "Entrapment",
-     "seed3": 0.0068
-    },
-    {
      "to": "Improved Wing Clip",
-     "seed3": 0.0068
+     "seed3": 0.0053
     },
     {
      "to": "Deterrence",
-     "seed3": 0.0068
-    }
-   ],
-   "verdict": "kept: no home faster on both seeds"
-  },
-  "Survivalist": {
-   "level": 18,
-   "kind": "tier point for Clever Traps (tier 3)",
-   "does_nothing": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 20, 30, 40, 50, 60",
-   "homes": [
-    {
-     "to": "Entrapment",
-     "seed3": -0.0002,
-     "seed4": -0.0
+     "seed3": 0.0053
     },
     {
-     "to": "Improved Wing Clip",
-     "seed3": -0.0002
+     "to": "Survivalist",
+     "seed3": 0.0054
     },
     {
      "to": "Deflection",
-     "seed3": 0.0005,
-     "seed4": 0.0004
+     "seed3": 0.0057
     }
    ],
-   "verdict": "moved to Entrapment"
+   "verdict": "kept: no home faster on both seeds"
   },
   "Survivalist's Discipline": {
    "level": 34,
@@ -471,24 +472,24 @@
    "does_nothing": null,
    "homes": [
     {
-     "to": "Entrapment",
-     "seed3": 0.0315
-    },
-    {
      "to": "Improved Wing Clip",
-     "seed3": 0.0315
+     "seed3": 0.0306
     },
     {
      "to": "Deterrence",
-     "seed3": 0.0315
+     "seed3": 0.0306
     },
     {
      "to": "Expose Prey",
-     "seed3": 0.0315
+     "seed3": 0.0306
     },
     {
      "to": "Deflection",
-     "seed3": 0.032
+     "seed3": 0.0306
+    },
+    {
+     "to": "Survivalist",
+     "seed3": 0.0307
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -507,22 +508,16 @@
   }
  },
  "no_better_home": {
-  "Careful Aim": {
+  "Efficiency": {
    "kind": "zero point",
    "exact": false,
    "why": "time per kill at 60 without its last rank: +0.06 s (seed 3)",
    "homes": 13
   },
-  "Efficiency": {
-   "kind": "zero point",
-   "exact": false,
-   "why": "time per kill at 60 without its last rank: +0.04 s (seed 3)",
-   "homes": 13
-  },
   "Lightning Reflexes": {
    "kind": "zero point",
    "exact": false,
-   "why": "time per kill at 60 without its last rank: +0.04 s (seed 3)",
+   "why": "time per kill at 60 without its last rank: +0.06 s (seed 3)",
    "homes": 10
   }
  },
@@ -540,16 +535,10 @@
    "points": 2
   },
   {
-   "levels": "17",
+   "levels": "17-19",
    "tree": "Survival",
    "talent": "Deflection",
-   "points": 1
-  },
-  {
-   "levels": "18-19",
-   "tree": "Survival",
-   "talent": "Entrapment",
-   "points": 2
+   "points": 3
   },
   {
    "levels": "20-22",
@@ -724,11 +713,7 @@
     ],
     [
      "Deflection",
-     1
-    ],
-    [
-     "Entrapment",
-     2
+     3
     ],
     [
      "Savage Strikes",
@@ -782,16 +767,10 @@
     "points": 2
    },
    {
-    "levels": "17",
+    "levels": "17-19",
     "tree": "Survival",
     "talent": "Deflection",
-    "points": 1
-   },
-   {
-    "levels": "18-19",
-    "tree": "Survival",
-    "talent": "Entrapment",
-    "points": 2
+    "points": 3
    },
    {
     "levels": "20-22",
@@ -902,6 +881,6 @@
     "points": 1
    }
   ],
-  "note": "2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Endurance Training to Efficiency at 50 (no loss: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Survivalist to Entrapment at 19 (gate that did nothing, no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Survivalist to Entrapment at 18 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-21: undone from the leveling filler pass: Survival Tactics back at 53 (it held Efficiency). Its value is one the fight lab cannot see (the stats model's kinds, scorer/kinds.json: travel, control, escape), so the lab's times, a gain or a tie, do not weigh it against the talent that took its point (the audit session's ruling). 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Deflection to Efficiency at 51 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Deadly Aspects to Endurance Training at 50 (no loss: -0.1% seed 3, +0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Endurance Training to Improved Stings at 52 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Efficiency to Deterrence at 59 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Deterrence to Careful Aim at 59 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Deadly Aspects to Deflection at 51 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Survival Tactics to Efficiency at 53 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Rapid Killing to Careful Aim at 58 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Stings to Trueshot Aura at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Deadly Aspects to Endurance Training at 52 (no loss: +0.1% seed 3, -0.0% seed 4, level-weighted time per kill)."
+  "note": "2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Entrapment to Deflection at 19 (gate that did nothing, no loss: +0.1% seed 3, +0.0% seed 4, level-weighted time per kill); Entrapment to Deflection at 18 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Endurance Training to Efficiency at 50 (no loss: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Survivalist to Entrapment at 19 (gate that did nothing, no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Survivalist to Entrapment at 18 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-21: undone from the leveling filler pass: Survival Tactics back at 53 (it held Efficiency). Its value is one the fight lab cannot see (the stats model's kinds, scorer/kinds.json: travel, control, escape), so the lab's times, a gain or a tie, do not weigh it against the talent that took its point (the audit session's ruling). 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Deflection to Efficiency at 51 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Deadly Aspects to Endurance Training at 50 (no loss: -0.1% seed 3, +0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Endurance Training to Improved Stings at 52 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Efficiency to Deterrence at 59 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Deterrence to Careful Aim at 59 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Deadly Aspects to Deflection at 51 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Survival Tactics to Efficiency at 53 (tie-break: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Rapid Killing to Careful Aim at 58 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Stings to Trueshot Aura at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Deadly Aspects to Endurance Training at 52 (no loss: +0.1% seed 3, -0.0% seed 4, level-weighted time per kill)."
  }
 }

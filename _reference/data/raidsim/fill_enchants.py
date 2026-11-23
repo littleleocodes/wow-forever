@@ -14,8 +14,15 @@ with 4+ enchants had been skipped); an off-hand gets Crusader only when it is a 
 Healers (2026-10-15, heallab/heal_gear.py): `HEALER_CANDIDATES` lists, per slot, the Classic phase-1 enchants a healer chooses from (the
 same availability as the caster template: Dire Maul's lesser arcanums, Greater Stats, the Argent Dawn bracers, Molten Core's weapon
 formulas); heal_gear.py takes the one worth most by the healer lab's stat weights, `HEALER` is the fallback `fill` uses. Forever's new
-enchants (necklace, held-in-off-hand, the shield's Law of Nature, the 2H Mighty Healing Power) are left out: their source and phase are
-unknown.
+enchants (necklace, held-in-off-hand, the shield's Law of Nature, the 2H Mighty Healing Power) were left out until 2026-11-22: their
+source and phase were unknown.
+Since 2026-11-22 (the audit session's gear finding G1: a community Survival list carried Forever's enchants, +1.1% from four of them):
+the damage specs' sets take their enchants from the simulator's database by the tier's rules (gear_tiers.choose_enchants: the stat
+enchants by the weights, the others raced; the templates below only fill a starting set). The healer and tank lists gained Forever's
+vendor-sold enchants (the necklaces, Bracer - Greater Spellpower and Superior Deflection, Gloves - Superior Strength, the 2H Spellblasting
+and Mighty Healing Power, Off-Hand - Wisdom) and the stronger Classic ones; heal_gear.py and tank_gear.py keep only the candidates the
+tier's enchant pool allows (gear_tiers.enchant_allowed: Molten Core's Spell Power and Healing Power weapon formulas are no pre-raid
+enchant, Classic's Ahn'Qiraj formulas none at all).
 """
 import argparse
 import json
@@ -35,8 +42,11 @@ HEALER = {0: 1509, 4: 1891, 5: 2566, 8: 1509, 9: 851, 14: 2505}
 # slot -> candidate enchant effect ids ("1h"/"2h"/"shield" for the hands): +8 Int / +8 Spirit / Arcanum of Focus (+8 healing); Greater Stats /
 # Major Intellect; bracer +7 Int / +9 Spirit / +4 mp5 / +24 healing; boots +5 Spirit / Minor Speed; weapon +55 healing / +30 spell power /
 # +22 Int / +22 Spirit (2H also +9 Int / +9 Spirit); shield +9 / +7 Spirit
-HEALER_CANDIDATES = {0: [1509, 1510, 2544], 4: [1891, 1893], 5: [1883, 1884, 2565, 2566], 8: [1509, 1510, 2544], 9: [851, 911],
-                     "1h": [2505, 2504, 2568, 2567], "2h": [2505, 2504, 2568, 2567, 1904, 1903], "shield": [1890, 907]}
+HEALER_CANDIDATES = {0: [1509, 1510, 2544], 1: [8219, 8218], 4: [1891, 1893, 8492], 5: [1883, 1884, 2565, 2566, 7665, 8209, 1901],
+                     6: [8492], 8: [1509, 1510, 2544], 9: [851, 911, 8492],
+                     "1h": [2505, 2504, 2568, 2567], "2h": [2505, 2504, 2568, 2567, 1904, 1903, 8212, 7662, 8211], "shield": [1890, 907],
+                     "offhand": [7661]}   # (2026-11-22: 1 the necklaces, 8492 Mystic Rugged Armor Kit, 7665 / 8209 / 1901 bracers, 8212 /
+                                          # 7662 / 8211 the 2H spell power and healing, 7661 Off-Hand - Wisdom)
 HEALER_FILES = ("priest-holy-", "priest-discipline-", "paladin-holy-", "druid-restoration-", "shaman-restoration-")
 # Tanks (2026-10-15, raidsim/tank_gear.py): the Classic phase-1 tank enchants (Dire Maul's +8 Stamina / +8 Agility arcanums, Cloak +70 armor /
 # +3 Agility, Greater Stats, bracer +9 Stamina, gloves +7 Agility, boots +7 Stamina / +7 Agility, Crusader, shield +9 Stamina: effect 1886
@@ -46,8 +56,10 @@ HEALER_FILES = ("priest-holy-", "priest-discipline-", "paladin-holy-", "druid-re
 # weapons ("1h"/"2h") are raced in the simulator (Crusader, +9 weapon damage and +30 spell power carry no stats to weigh).
 TANK_PLATE = {0: 1507, 3: 1889, 4: 1891, 5: 1886, 6: 1887, 8: 1507, 9: 929, 14: 1900, 15: 1886}
 TANK_BEAR = {0: 1508, 3: 849, 4: 1891, 5: 1886, 6: 1887, 8: 1508, 9: 1887, 14: 1900}
-TANK_CANDIDATES = {0: [1507, 1508, 1506], 3: [1889, 849], 4: [1891, 1892], 5: [1886, 1885, 923], 6: [1887, 927], 8: [1507, 1508, 1506],
-                   9: [929, 1887], "1h": [1900, 2504], "2h": [1900, 1896], "shield": [1886, 929]}
+TANK_CANDIDATES = {0: [1507, 1508, 1506], 1: [925, 856, 904], 3: [1889, 849, 7667], 4: [1891, 1892], 5: [1886, 1885, 923, 8214, 7656],
+                   6: [1887, 927, 8206, 8207, 2563], 8: [1507, 1508, 1506], 9: [929, 1887],
+                   "1h": [1900, 2504, 2564, 2563], "2h": [1900, 1896, 2646], "shield": [1886, 929]}   # (2026-11-22: 1 the necklaces,
+                   # 7667 Cloak - Agility, 8214 Superior Deflection, 7656 Bracer +9 Agility, 8206 / 8207 / 2563 gloves, 2564 / 2563 / 2646 weapons)
 TANK_FILES = ("warrior-protection-", "paladin-protection-", "druid-feral-combat-tank-")
 # weaker enchants a set carried from a preset, replaced by the template's (audit 2026-10-18 row 52: the standard warlock set had Chest +3
 # stats, effect 928, where every template has Greater Stats 1891)

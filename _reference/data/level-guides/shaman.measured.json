@@ -1,6 +1,6 @@
 {
  "class": "shaman",
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -8,7 +8,7 @@
    "build": "enhancement-open-leveling",
    "rotation": "enhancement-dps",
    "provisional_order": false,
-   "fingerprint": "61de15ba24dc",
+   "fingerprint": "1c937dde4991",
    "levels": {
     "1": {
      "seconds": 12.4,
@@ -155,104 +155,112 @@
      "standing": "Rockbiter Weapon, Lightning Shield"
     },
     "30": {
-     "seconds": 25.1,
+     "seconds": 24.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Lightning Shield": 0.62,
-      "Searing Totem": 0.88,
-      "Melee": 3.25,
-      "Stormstrike": 1.55,
-      "Earth Shock": 1.78,
-      "Windfury": 1.66
+      "Lightning Shield": 0.59,
+      "Searing Totem": 0.83,
+      "Flame Shock": 1.13,
+      "Melee": 3.1,
+      "Stormstrike": 1.5,
+      "Earth Shock": 0.94,
+      "Windfury": 1.59
      },
-     "idle_share": 0.23,
-     "drink_per_kill": 1.71,
-     "eat_per_kill": 4.22,
+     "idle_share": 0.246,
+     "drink_per_kill": 2.15,
+     "eat_per_kill": 4.11,
      "shares": {
-      "Melee": 0.286,
-      "Earth Shock": 0.265,
-      "Windfury": 0.159,
-      "Stormstrike": 0.131,
-      "Searing Totem": 0.08,
-      "Lightning Shield": 0.079
+      "Melee": 0.26,
+      "Flame Shock": 0.169,
+      "Windfury": 0.153,
+      "Earth Shock": 0.147,
+      "Stormstrike": 0.126,
+      "Lightning Shield": 0.075,
+      "Searing Totem": 0.07
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,
      "standing": "Windfury Weapon, Lightning Shield"
     },
     "35": {
-     "seconds": 26.8,
+     "seconds": 26.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Lightning Shield": 0.67,
-      "Searing Totem": 0.82,
-      "Melee": 3.68,
-      "Stormstrike": 1.72,
-      "Earth Shock": 1.97,
-      "Windfury": 1.83
+      "Lightning Shield": 0.62,
+      "Searing Totem": 0.78,
+      "Flame Shock": 1.23,
+      "Melee": 3.44,
+      "Stormstrike": 1.7,
+      "Earth Shock": 0.95,
+      "Windfury": 1.88
      },
-     "idle_share": 0.243,
-     "drink_per_kill": 2.37,
-     "eat_per_kill": 4.05,
+     "idle_share": 0.254,
+     "drink_per_kill": 2.89,
+     "eat_per_kill": 3.96,
      "shares": {
-      "Melee": 0.294,
-      "Earth Shock": 0.232,
-      "Windfury": 0.168,
-      "Stormstrike": 0.135,
-      "Lightning Shield": 0.108,
-      "Searing Totem": 0.063
+      "Melee": 0.264,
+      "Windfury": 0.177,
+      "Flame Shock": 0.153,
+      "Stormstrike": 0.13,
+      "Earth Shock": 0.117,
+      "Lightning Shield": 0.102,
+      "Searing Totem": 0.056
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,
      "standing": "Windfury Weapon, Lightning Shield"
     },
     "40": {
-     "seconds": 25.6,
+     "seconds": 25.5,
      "deaths_per_100": 0.0,
      "casts": {
-      "Lightning Shield": 0.66,
-      "Searing Totem": 0.77,
-      "Melee": 3.4,
-      "Stormstrike": 1.89,
-      "Earth Shock": 1.79,
-      "Lightning Bolt": 0.21
+      "Lightning Shield": 0.59,
+      "Searing Totem": 0.74,
+      "Flame Shock": 1.11,
+      "Melee": 3.17,
+      "Stormstrike": 1.88,
+      "Earth Shock": 0.96,
+      "Lightning Bolt": 0.17
      },
-     "idle_share": 0.238,
-     "drink_per_kill": 1.98,
-     "eat_per_kill": 4.48,
+     "idle_share": 0.26,
+     "drink_per_kill": 3.35,
+     "eat_per_kill": 3.93,
      "shares": {
-      "Melee": 0.333,
-      "Earth Shock": 0.285,
-      "Stormstrike": 0.182,
-      "Lightning Shield": 0.118,
-      "Searing Totem": 0.056,
-      "Lightning Bolt": 0.027
+      "Melee": 0.312,
+      "Stormstrike": 0.178,
+      "Flame Shock": 0.17,
+      "Earth Shock": 0.161,
+      "Lightning Shield": 0.107,
+      "Searing Totem": 0.05,
+      "Lightning Bolt": 0.022
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,
      "standing": "Rockbiter Weapon, Lightning Shield"
     },
     "45": {
-     "seconds": 26.5,
+     "seconds": 26.2,
      "deaths_per_100": 0.0,
      "casts": {
-      "Lightning Shield": 0.66,
-      "Searing Totem": 0.77,
-      "Melee": 3.73,
-      "Stormstrike": 1.97,
-      "Earth Shock": 1.9,
-      "Lightning Bolt": 0.42
+      "Lightning Shield": 0.63,
+      "Searing Totem": 0.79,
+      "Flame Shock": 1.18,
+      "Melee": 3.5,
+      "Stormstrike": 1.94,
+      "Earth Shock": 0.95,
+      "Lightning Bolt": 0.4
      },
-     "idle_share": 0.235,
-     "drink_per_kill": 2.24,
-     "eat_per_kill": 4.13,
+     "idle_share": 0.251,
+     "drink_per_kill": 2.71,
+     "eat_per_kill": 4.34,
      "shares": {
-      "Melee": 0.35,
-      "Earth Shock": 0.26,
-      "Stormstrike": 0.185,
-      "Lightning Shield": 0.101,
-      "Lightning Bolt": 0.055,
-      "Searing Totem": 0.051
+      "Melee": 0.328,
+      "Stormstrike": 0.176,
+      "Flame Shock": 0.162,
+      "Earth Shock": 0.137,
+      "Lightning Shield": 0.098,
+      "Lightning Bolt": 0.051,
+      "Searing Totem": 0.05
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,
@@ -734,7 +742,7 @@
    "build": "restoration-leveling",
    "rotation": "enhancement-dps",
    "provisional_order": false,
-   "fingerprint": "62925a22148c",
+   "fingerprint": "e3ce7af2d8a3",
    "levels": {
     "1": {
      "seconds": 12.4,
@@ -901,22 +909,24 @@
      "standing": "Rockbiter Weapon, Lightning Shield"
     },
     "30": {
-     "seconds": 30.8,
+     "seconds": 30.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Lightning Shield": 0.55,
-      "Searing Totem": 0.77,
-      "Melee": 4.56,
-      "Earth Shock": 2.63,
-      "Windfury": 1.56
+      "Searing Totem": 0.84,
+      "Flame Shock": 1.57,
+      "Melee": 4.14,
+      "Earth Shock": 1.05,
+      "Windfury": 1.55
      },
-     "idle_share": 0.241,
-     "drink_per_kill": 4.06,
-     "eat_per_kill": 3.53,
+     "idle_share": 0.263,
+     "drink_per_kill": 4.13,
+     "eat_per_kill": 4.04,
      "shares": {
-      "Earth Shock": 0.357,
-      "Melee": 0.352,
-      "Windfury": 0.133,
+      "Melee": 0.317,
+      "Flame Shock": 0.241,
+      "Earth Shock": 0.145,
+      "Windfury": 0.139,
       "Searing Totem": 0.097,
       "Lightning Shield": 0.061
      },
@@ -925,46 +935,74 @@
      "standing": "Windfury Weapon, Lightning Shield"
     },
     "35": {
-     "seconds": 34.3,
+     "seconds": 33.0,
      "deaths_per_100": 0.0,
      "casts": {
-      "Lightning Shield": 0.57,
-      "Searing Totem": 0.71,
-      "Melee": 5.29,
-      "Earth Shock": 3.04,
-      "Windfury": 1.9
+      "Lightning Shield": 0.52,
+      "Searing Totem": 0.75,
+      "Flame Shock": 1.81,
+      "Melee": 4.76,
+      "Earth Shock": 1.26,
+      "Windfury": 1.77
      },
-     "idle_share": 0.251,
-     "drink_per_kill": 5.45,
-     "eat_per_kill": 2.7,
+     "idle_share": 0.264,
+     "drink_per_kill": 5.12,
+     "eat_per_kill": 3.54,
      "shares": {
-      "Melee": 0.371,
-      "Earth Shock": 0.32,
-      "Windfury": 0.155,
-      "Lightning Shield": 0.078,
-      "Searing Totem": 0.076
+      "Melee": 0.34,
+      "Flame Shock": 0.23,
+      "Windfury": 0.149,
+      "Earth Shock": 0.134,
+      "Searing Totem": 0.076,
+      "Lightning Shield": 0.072
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,
      "standing": "Windfury Weapon, Lightning Shield"
     },
     "40": {
-     "seconds": 35.1,
+     "seconds": 34.8,
      "deaths_per_100": 0.0,
      "casts": {
-      "Lightning Shield": 0.6,
-      "Searing Totem": 0.75,
-      "Melee": 5.03,
-      "Earth Shock": 2.78
+      "Lightning Shield": 0.65,
+      "Searing Totem": 0.8,
+      "Flame Shock": 1.76,
+      "Melee": 4.53,
+      "Earth Shock": 1.09
      },
-     "idle_share": 0.293,
-     "drink_per_kill": 6.51,
-     "eat_per_kill": 5.01,
+     "idle_share": 0.321,
+     "drink_per_kill": 7.44,
+     "eat_per_kill": 5.36,
      "shares": {
-      "Melee": 0.449,
-      "Earth Shock": 0.383,
-      "Lightning Shield": 0.091,
-      "Searing Totem": 0.077
+      "Melee": 0.408,
+      "Flame Shock": 0.262,
+      "Earth Shock": 0.154,
+      "Lightning Shield": 0.099,
+      "Searing Totem": 0.078
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Rockbiter Weapon, Lightning Shield"
+    },
+    "49": {
+     "seconds": 37.8,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Lightning Shield": 0.65,
+      "Searing Totem": 0.7,
+      "Flame Shock": 1.95,
+      "Melee": 5.34,
+      "Earth Shock": 1.3
+     },
+     "idle_share": 0.303,
+     "drink_per_kill": 8.58,
+     "eat_per_kill": 5.38,
+     "shares": {
+      "Melee": 0.431,
+      "Flame Shock": 0.222,
+      "Earth Shock": 0.198,
+      "Lightning Shield": 0.096,
+      "Searing Totem": 0.054
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,

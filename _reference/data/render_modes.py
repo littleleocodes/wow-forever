@@ -434,6 +434,7 @@ def tier_best_lines(cls, spec, src, top, tb, r):
         if worse:
             o += ["*This build does better outside its own set in " + "; ".join(worse) + ": those columns show the set made for an "
                   "earlier build.*", ""]
+        o += gear_tables.raid_note(cls, spec)   # (2026-11-22: no raid is in Forever yet; Molten Core is not coming)
         sl = gear_tables.sim_line(cls, spec)
         if sl:
             o += [sl, ""]
@@ -492,6 +493,7 @@ def tier_lines(cls, spec, src, top):
     if gt:
         il = "; ".join(f"{name} {(page_gear(r, t) or {}).get('ilvl', '-')}" for t, name in TIER_KEYS if page_gear(r, t))
         o += [f"**The gear** (average item level: {il}; each item opens its Wowhead page, with where it drops and its enchant):", ""] + gt + [""]
+        o += gear_tables.raid_note(cls, spec)   # (2026-11-22: no raid is in Forever yet; Molten Core is not coming)
         sl = gear_tables.sim_line(cls, spec)
         if sl:
             o += [sl, ""]
@@ -521,6 +523,7 @@ def support_gear(cls, spec, role):
     o = [f"**The gear** (average item level: {il}; {how}; each item opens its Wowhead page, with where it drops and its enchant):", ""] + gt + [""]
     if (cls, spec, role) in GEAR_REMAKE:
         o += [f"*{GEAR_REMAKE[(cls, spec, role)]}*", ""]
+    o += gear_tables.raid_note(cls, spec, role)   # (2026-11-22: no raid is in Forever yet; Molten Core is not coming)
     sl = gear_tables.sim_line(cls, spec, role=role)
     return o + ([sl, ""] if sl else [])
 
@@ -552,7 +555,11 @@ def tier_table(cls, specs, src):
          "|---" * (len(keys) + 1) + "|"]
     for spec, r in rows:
         o.append(f"| [{SM.spec_name(cls, spec)}]({SM.spec_slug(cls, spec)}.md) | " + " | ".join(tier_dps(r, f"{t}-raid") for t, _ in keys) + " |")
-    return o + [""] + tier_stale_note([tier_date(r) for _, r in rows])
+    o.append("")
+    if any(name == "Raid BiS" for _, name in keys) and gear_tables.any_mc(cls, [s for s, _ in rows]):   # (2026-11-22)
+        o += ["*The Raid BiS column still counts Molten Core gear, which is not in Forever: no raid is open yet, and the raids of "
+              "2026-12-09 are The Barrow Deeps, Hyjal Summit and Onyxia's Lair. The gear lists are being made again.*", ""]
+    return o + tier_stale_note([tier_date(r) for _, r in rows])
 
 
 def mark(b):
@@ -1047,6 +1054,8 @@ def lev_sig_lines(cls, spec, top):
     share = f"{c['core_share']:.0%}" if c.get("core_share") is not None else "?"
     if c.get("ok"):   # 2026-11-08 full page read S13: the core set is the spec's, not a list of what this build casts
         rule = [f"the spec's rule: at least {rl['min_share']:.0%}"] if rl.get("min_share") else []
+        if rl.get("demon") and not rl.get("min_share"):   # (2026-11-22, N3: Demonology's rule in words; the user's of 2026-10-23)
+            rule = ["the spec's rule: the demon out and fighting; no share floor"]
         rule += [f"{req} cast at level 60"] if req else []
         # 2026-11-09 (S13): the core spells this build never casts at 60 (the guide's measured casts), named apart, so the line does not
         # count Primal Bite for a 29-point Feral build or Devouring Plague for a Shadow page that says to skip it
@@ -1422,6 +1431,28 @@ def choice_current(cls, d):
     return True
 
 
+def choice_order_note(cls, spec, order, spell):
+    """Why the Frostfire alternative's order spends one point on Wand Specialization before its Fire points (2026-11-22, the audit
+    session's N4: "a player will ask why"). Accelerant shortens only Fireball, Frostfire Bolt and Arcane Wrath, none of which the build
+    casts before Frostfire Bolt at 40, and from the first Fire point every level goes to Fire until Pyroblast has the 10 Fire points it
+    needs: the one point before them is free for the wand. Written only while the order has exactly that shape."""
+    if (cls, spec) != ("mage", "Hybrid Fire/Frost"):
+        return []
+    lv = []
+    for st in order:
+        a, _, z = str(st["levels"]).partition("-")
+        lv += [(n, st["talent"], st["tree"]) for n in range(int(a), int(z or a) + 1)]
+    wand = next((n for n, t, _ in lv if t == "Wand Specialization"), None)
+    fire = next((n for n, _, tr in lv if tr == "Fire"), None)
+    pyro = next((n for n, t, _ in lv if t == "Pyroblast"), None)
+    if not (wand and fire and pyro) or wand != fire - 1 or pyro != fire + 10 \
+            or any(tr != "Fire" for n, _, tr in lv if fire <= n < pyro) or next(t for n, t, _ in lv if n == fire) != "Accelerant":
+        return []
+    return [f"Why **Wand Specialization** at {wand}: **Accelerant** shortens only **Fireball**, **{spell}** and Arcane Wrath, and this build "
+            f"casts none of them before **{spell}** at 40; from {fire} every point goes to Fire so that **Pyroblast** has the 10 Fire points "
+            f"it needs at {pyro}. The one point before them goes to your wand, whose finishing hits it makes 13% stronger.", ""]
+
+
 def level_as_choice(cls, spec, ranked, nums, src):
     """The leveling page of a spec that levels as another by the user's choice (SM.LEVEL_AS_CHOICE: Frostfire, 2026-11-21, relayed by the
     audit session): level as that spec and switch at 60; then a short section with what playing the spec's own spell while leveling costs
@@ -1439,6 +1470,7 @@ def level_as_choice(cls, spec, ranked, nums, src):
         if top.get("order"):
             o += ["<details><summary>Its talent order (one point per level from 10)</summary>", "", "| Levels | Talent | Points |", "|---|---|---|"]
             o += [f"| {s['levels']} | {s['talent']} ({s['tree']}) | {s['points']} |" for s in top["order"]] + ["", "</details>", ""]
+            o += choice_order_note(cls, spec, top["order"], spell)
     rec = CHOICE_RECORDS.get((cls, spec))
     d = json.load(open(rec, encoding="utf-8")) if rec and rec.exists() else None
     v = (d or {}).get("variants") or {}
@@ -1551,7 +1583,7 @@ def mode_section(cls, spec, mode, builds, nums, src):
             talents += ["## Talents", "", "| Tree | Points | Talents (ranks) |", "|---|---|---|"]
             talents += [f"| {t} | {sum(r for _, r in xs)} | " + ", ".join(f"{n} {r}" + (f" ({idle[n]})" if n in idle else "") for n, r in xs) + " |"
                         for t, xs in rows] + [""]
-            if idle:
+            if any(v.startswith("tier point") for v in idle.values()):   # (2026-11-22, N2: only when a row carries the mark)
                 talents += ["A talent marked as a tier point measures nothing in the simulator's raid fight; the build holds it for the tier "
                             "it opens (or the talent it is needed for).", ""]
     if mode == "leveling":
@@ -1560,7 +1592,7 @@ def mode_section(cls, spec, mode, builds, nums, src):
             talents += ["## Talents while leveling", "", "One point per level from 10, in this order:", "", "| Levels | Talent | Points |", "|---|---|---|"]
             talents += [f"| {s['levels']} | {s['talent']} ({s['tree']})" + (f" ({idle[s['talent']]})" if s["talent"] in idle else "")
                         + f" | {s['points']} |" for s in top["order"]] + [""]
-            if idle:
+            if any(v.startswith("tier point") for v in idle.values()):   # (2026-11-22, N2: only when a row carries the mark)
                 talents += ["A talent marked as a tier point does nothing in the fight lab's leveling fights; it is in the build because no legal "
                             "talent that helps can take that point.", ""]
         spec_model = level_rotation(cls, top)   # (2026-11-04: one rule for the steps, the signature lines and signature_audit.py)

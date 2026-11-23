@@ -17,12 +17,19 @@
   },
   "Conflagrate": {
    "min_hp": 0.2
+  },
+  "Bane of Agony": {
+   "min_hp": 0.35
   }
  },
  "eat_below": 0.4,
  "knobs": {
   "REST_TOGETHER": true,
-  "BOLT_ABOVE": 0.6
+  "BOLT_ABOVE": 0.6,
+  "FORCE_BANE_OF_AGONY_LEVELS": [
+   8,
+   61
+  ]
  },
  "class": "warlock",
  "spec": "destruction-leveling",
@@ -43,8 +50,8 @@
   "required": [],
   "build_spec": "Destruction",
   "dropped_saved_rules": [],
-  "core_share_before": 0.7106899786378263,
-  "core_share_after": 0.699779965005823,
+  "core_share_before": 0.7107849319302458,
+  "core_share_after": 0.6116585813842859,
   "min_share": 0.6,
   "floor_reached": null,
   "played_before": true,
@@ -55,78 +62,234 @@
  "changes": [
   {
    "round": 1,
-   "change": "BOLT_ABOVE = 0.6",
+   "change": "FORCE_BANE_OF_AGONY_LEVELS = [20, 61]",
    "rule": [
     "knob",
-    "BOLT_ABOVE",
-    0.6
+    "FORCE_BANE_OF_AGONY_LEVELS",
+    [
+     20,
+     61
+    ]
    ],
-   "gain_seed1": 0.03188523833409762,
-   "gain_seed2": 0.031165758734108318
+   "gain_seed1": 0.036804922323112166,
+   "gain_seed2": 0.042241892528748326
+  },
+  {
+   "round": 2,
+   "change": "Bane of Agony only while the mob has more than 35% health",
+   "rule": [
+    "min_hp",
+    "Bane of Agony",
+    0.35
+   ],
+   "gain_seed1": 0.013703437113596895,
+   "gain_seed2": 0.01153660354241437
+  },
+  {
+   "round": "by hand",
+   "date": "2026-11-23",
+   "change": "FORCE_BANE_OF_AGONY_LEVELS = [8, 61]",
+   "rule": [
+    "knob",
+    "FORCE_BANE_OF_AGONY_LEVELS",
+    [
+     8,
+     61
+    ]
+   ],
+   "why": "By hand under the delegator's pre-approved bar (2026-11-23: install the earliest start 0.5% or more faster on both seeds at 15 and 19 and never 0.5% slower at a level it adds). The tune could not see it: its levels start at 20, where [8, 61], [10, 61] and [20, 61] score the same (Bane of Agony is trained at 8; Affliction and Aff-Demo cast it from 8). A/B, the installed [20, 61] against [10, 61] and [8, 61], 3,000 fights, seeds 1/2 (scratchpad bane_below20_1123.py): [8, 61] 8 -11.65% / -11.61%, 9 -12.50% / -12.40%, 10 -5.70% / -6.06%, 15 -3.45% / -3.14%, 19 -8.34% / -8.40%; 20, 31, 40 and 60 bit-identical; [10, 61] the same from 10 and nothing at 8-9.",
+   "ab": {
+    "names": [
+     "[20, 61] installed",
+     "[10, 61]",
+     "[8, 61]"
+    ],
+    "levels": [
+     8,
+     9,
+     10,
+     15,
+     19,
+     20,
+     31,
+     40,
+     60
+    ],
+    "seconds_per_kill": {
+     "8": {
+      "1": [
+       27.356,
+       27.356,
+       24.169
+      ],
+      "2": [
+       27.257,
+       27.257,
+       24.093
+      ]
+     },
+     "9": {
+      "1": [
+       29.772,
+       29.772,
+       26.051
+      ],
+      "2": [
+       29.725,
+       29.725,
+       26.039
+      ]
+     },
+     "10": {
+      "1": [
+       22.942,
+       21.635,
+       21.635
+      ],
+      "2": [
+       22.978,
+       21.586,
+       21.586
+      ]
+     },
+     "15": {
+      "1": [
+       28.116,
+       27.146,
+       27.146
+      ],
+      "2": [
+       28.068,
+       27.187,
+       27.187
+      ]
+     },
+     "19": {
+      "1": [
+       30.857,
+       28.285,
+       28.285
+      ],
+      "2": [
+       30.886,
+       28.29,
+       28.29
+      ]
+     },
+     "20": {
+      "1": [
+       27.233,
+       27.233,
+       27.233
+      ],
+      "2": [
+       27.2,
+       27.2,
+       27.2
+      ]
+     },
+     "31": {
+      "1": [
+       35.006,
+       35.006,
+       35.006
+      ],
+      "2": [
+       34.879,
+       34.879,
+       34.879
+      ]
+     },
+     "40": {
+      "1": [
+       38.427,
+       38.427,
+       38.427
+      ],
+      "2": [
+       38.245,
+       38.245,
+       38.245
+      ]
+     },
+     "60": {
+      "1": [
+       36.148,
+       36.148,
+       36.148
+      ],
+      "2": [
+       36.063,
+       36.063,
+       36.063
+      ]
+     }
+    }
+   }
   }
  ],
- "weighted_before": 40.0399069449395,
- "weighted_after": 38.77712037084054,
+ "weighted_before": 38.11980694488944,
+ "weighted_after": 36.09345740775184,
  "per_level": {
   "20": {
-   "before": 29.840133333471847,
-   "after": 28.788266666776366,
+   "before": 28.788266666776366,
+   "after": 27.20733333338257,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "25": {
-   "before": 32.38953333358181,
-   "after": 32.248200000244516,
+   "before": 32.248200000244516,
+   "after": 30.27496666683341,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "30": {
-   "before": 38.16503333382106,
-   "after": 37.253633333794184,
-   "deaths_before": 0.03333333333333333,
+   "before": 33.54536666696682,
+   "after": 34.11316666695443,
+   "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "35": {
-   "before": 44.67743333390114,
-   "after": 36.45336666707281,
+   "before": 35.728033333712546,
+   "after": 36.4679000003707,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "40": {
-   "before": 42.341266667222364,
-   "after": 41.80163333387842,
+   "before": 40.588566667170745,
+   "after": 38.21196666706013,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "45": {
-   "before": 41.195466667194644,
-   "after": 41.002333333867945,
+   "before": 40.33563333384434,
+   "after": 38.27386666707681,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "50": {
-   "before": 41.57076666720889,
-   "after": 40.90850000052991,
+   "before": 40.59570000051615,
+   "after": 37.313000000371126,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "55": {
-   "before": 41.30853333387419,
-   "after": 40.88143333386767,
+   "before": 40.857833333868705,
+   "after": 37.96806666707139,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   },
   "60": {
-   "before": 40.020166667198154,
-   "after": 39.55403333385282,
+   "before": 39.478433333853374,
+   "after": 36.469266667037076,
    "deaths_before": 0.0,
    "deaths_after": 0.0
   }
  },
  "retune": {
   "times": {
-   "saved": 40.04,
-   "continued": 38.777
+   "saved": 38.12,
+   "continued": 36.093
   },
   "installed": "continued",
   "reference_ok": true

@@ -252,7 +252,7 @@
 | forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Ancestral Knowledge** | Enhancement | 5 | +0.01% | manual | sustain | +5% mana: shocks and totems. |
 | forever-draft | `leveling-enhancement` | enhancement-dps / leveling-st | **Totemic Focus** | Restoration | 5 | +0.07% | manual | sustain | Totem mana: the support half of the spec. |
 
-## Warlock - 25 flagged of 66 taken talents, 8 without a documented reason
+## Warlock - 24 flagged of 65 taken talents, 7 without a documented reason
 
 | Game | Build | Spec / profile | Talent | Tree | Ranks | Value/pt | Encoding | Documented role (loops/) | Why |
 |---|---|---|---|---|---|---|---|---|---|
@@ -280,7 +280,6 @@
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Improved Felhunter** | Demonology | 2 | +0.00% | manual | OPEN |  |
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Destructive Reach** | Destruction | 2 | +0.00% | manual | utility (from sb-raid) | Range: cast from outside cleave/AoE (Classic tooltip has no threat reduction). |
 | forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Decimation** | Demonology | 1 | +0.09% | manual | OPEN |  |
-| forever-draft | `leveling-affliction` | affliction-leveling / leveling-st | **Improved Voidwalker** | Demonology | 3 | +0.36% | manual | OPEN |  |
 
 ## Warrior - 21 flagged of 76 taken talents, 9 without a documented reason
 

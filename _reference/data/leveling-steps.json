@@ -26,7 +26,8 @@
    ],
    "steps": [
     "**Moonfire** on a mob above a third of its health.",
-    "**Wrath** while the mob walks in and whenever nothing below applies: each one stores **Eclipse** charges.",
+    "Through level 32: **Starfire** whenever you can afford it, while the mob has more than about half a **Starfire** hit of health left; **Wrath** to finish.",
+    "From 33 (**Eclipse** 3/3), **Wrath** while the mob walks in and whenever nothing below applies: each one stores **Eclipse** charges.",
     "**Starfire** while **Eclipse** has charges, or while the mob is rooted or stunned.",
     "A nearly dead mob: finish it with **Wrath**.",
     "Low on health: **Entangling Roots** on the mob, step out of melee. The tuned rules cast no heal in a fight."
@@ -282,11 +283,12 @@
     "**Power Word: Shield** on yourself before every pull: while it holds, damage does not push your casts back. **Inner Focus** when it is ready, as the pull starts: your first spell (from level 20 the opening **Holy Fire**) is free and 25% more likely to crit."
    ],
    "steps": [
+    "From level 32 to 49, **Shadow Word: Death** on a mob below 20% of its health whenever it is ready (the tuned rules of 2026-11-22); it hurts you for 30% of your maximum health if the mob survives it.",
     "Open with **Holy Fire** from range, and cast it again once its burn has ended while the mob has more than 40% of its health (in melee only while your shield holds).",
     "**Shadow Word: Pain** next, and again when it runs out while the mob has more than 30% of its health.",
     "**Mind Blast** whenever it is ready, at any mana (also to finish a mob one cast will kill).",
     "**Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit; then your wand.",
-    "Skip Devouring Plague and **Penance**: the tuned rules never cast them (without **Penance**, **Smite** and **Holy Fire** stay at least half your damage).",
+    "Skip Devouring Plague and **Penance**: the tuned rules never cast them (without **Penance**, **Smite** and **Holy Fire** stay your main damage: 37-54% of it in the fight lab, least from 32 to 49, where **Shadow Word: Death** finishes the mob).",
     "Hurt: **Power Word: Shield** again in melee below 80% health once Weakened Soul is gone (below half at any time), **Flash Heal** below a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%."
    ],
    "between": [
@@ -385,7 +387,7 @@
     "**Earth Shock** a caster mob's spell: it interrupts and brings the mob to you.",
     "With 5 stacks of **Maelstrom Weapon**: an instant **Lightning Bolt**, once the mob is under 35% health (not on a mob one bolt would overkill).",
     "**Stormstrike** whenever it is ready.",
-    "**Earth Shock** whenever the shock cooldown is free: it takes **Stormstrike**'s 20%. It shares that cooldown with **Flame Shock**, which the fight lab therefore never casts on one mob.",
+    "From 30 to 49, **Flame Shock** whenever the shock cooldown is free and its burn is not on the mob (the tuned rules of 2026-11-22); **Earth Shock** on every other shock cooldown: it takes **Stormstrike**'s 20%.",
     "Low on health at any point: under 30% drop **Stoneclaw Totem** (or **Nature's Swiftness** and **Healing Wave** if you have it), under 40% cast **Lesser Healing Wave**."
    ],
    "between": [
@@ -462,11 +464,12 @@
    ],
    "steps": [
     "Finish first: **Shadowburn** on a mob it would kill, your wand for the last sliver of health.",
+    "From level 8, **Bane of Agony** on every mob (from 10 right after your opening **Shadow Bolt**), on a mob above 35% of its health: one cast a kill (the tuned rules: from 20 since 2026-11-22, from 8 by hand since 2026-11-23).",
     "**Immolate** on a fresh mob above 30% of its health, unless it would pull the mob off the Voidwalker or a mob is already hitting you.",
-    "**Conflagrate** when **Immolate** has about 3 seconds left (whenever it is ready with 5 points in **Shadow and Flame**, which keeps **Immolate** burning), while the mob has more than a fifth of its health.",
+    "**Conflagrate** when **Immolate** has about 3 seconds left (whenever it is ready with 5 points in **Shadow and Flame**, which keeps **Immolate** burning), while the mob has more than a fifth of its health. Before **Shadow and Flame** 5/5 (39) **Conflagrate** uses up your **Immolate**: the fight lab is 4-6% slower a kill at 31-35 pressing it than holding it until 39 (2026-11-23). The page presses it as Destruction's signature spell; hold it until 39 if you only want speed.",
     "With **Decimation**: **Soul Fire** while its buff lasts. With **Shadow Trance**: the free **Shadow Bolt** at once.",
-    "The filler is **Shadow Bolt** while you have more than 60% of your mana and the mob has more than about a third (35%) of its health; otherwise your wand. From level 40, while **Immolate** burns, the wand instead of the bolt: with Incinerate switched off, the fight lab levels faster wanding a burning mob. No Affliction dots, Searing Pain, Drain Life or Incinerate: the fight lab levels faster without them.",
-    "No **Life Tap** in a fight: with **Shadow Bolt** kept for spare mana the fight lab never needs one.",
+    "Between casts your wand is the filler. **Shadow Bolt** only while you have more than 60% of your mana and the mob has more than 35% of its health. From level 40, while **Immolate** burns, the wand instead of the bolt: with Incinerate switched off, the fight lab levels faster wanding a burning mob. No Corruption, Searing Pain, Drain Life or Incinerate: the fight lab levels faster without them.",
+    "No **Life Tap** in a fight: with **Shadow Bolt** kept for spare mana the fight lab almost never needs one.",
     "If a mob reaches you: **Death Coil** below 60% health, and let the Voidwalker's **Torment** take it back. No Fear: the tuned rules of 2026-11-07 never cast it. Your Healthstone below 35% health."
    ],
    "between": [

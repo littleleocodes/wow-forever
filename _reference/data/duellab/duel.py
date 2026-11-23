@@ -75,7 +75,7 @@ PVE_KNOBS = ("IMP_FROM", "MAGE_ARMOR", "POISONS", "IMBUE_EARLY", "IMBUE_LATE", "
              "EVO_BELOW", "REST_TOGETHER", "FIRE_NOVA_SINGLE", "FIRE_NOVA_MANA",   # (2026-11-20: the shaman's single-target Fire Nova, H4;
              "BERSERKER_FROM", "TWIST", "TWIST_MANA",                        # the warrior's Berserker Stance, H7; seal twisting, H3;
              "CONE_AT_WC", "FROSTFIRE_FROM", "CASTER_HEAL", "BOLT_ABOVE",
-             "ECLIPSE_GATE_RANK", "AIMED_FROM")   # (2026-11-22: Balance's Starfire gate by Eclipse rank; Marksmanship's Aimed Shot level)                             # the mage's cone at Winter's Chill stacks and Frostfire
+             "ECLIPSE_GATE_RANK", "AIMED_FROM", "AIMED_OPENER")   # (2026-11-22: Balance's Starfire gate by Eclipse rank; Marksmanship's Aimed Shot level)                             # the mage's cone at Winter's Chill stacks and Frostfire
                                                                         # Bolt's first level, 2026-11-21)
 _GEAR = {"tier": None}
 _RESTORE = {}
@@ -382,6 +382,8 @@ class Side:
         self.rotation_veto = {n: dict(tuned[n]) for n in restored_vetoes(cls, spec) if n in tuned}
         for k in PVE_KNOBS:                     # and so are these knobs: the class default, set before make_player chooses the armor
             self.mod.__dict__.pop(k, None)
+        for k in [k for k in self.mod.__dict__ if k.startswith("FORCE_") or k == "_force_lines"]:   # and the forced lines (2026-11-22)
+            self.mod.__dict__.pop(k)
         # off-GCD spells (spell_gcd.json's "off_gcd") cost no global cooldown: the fight lab's own rule since 2026-11-15 (tables.OFF_GCD);
         # this side had wrapped gcd_of for it until then
         self.p = self.mod.make_player(60)

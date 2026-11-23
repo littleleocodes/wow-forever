@@ -1,0 +1,276 @@
+{
+ "_note": "The forced-run leads beside the tuned rules (2026-11-22, the audit session's ruling on the held leveling picks: \"keep the forced run's number beside the tuned result in the record\").",
+ "shaman": {
+  "enhancement-dps": {
+   "Frost Shock": {
+    "forced": "LEAD: top at 20: -2.83%",
+    "knob": "FORCE_FROST_SHOCK_LEVELS",
+    "window": [
+     20,
+     61
+    ],
+    "installed": null,
+    "verdict": "agrees",
+    "text": "the tune compared it as a rules knob (FORCE_FROST_SHOCK_LEVELS) and left it off; forced at levels 20-60 on the installed rules: -3.14% seed 1, -3.06% seed 2 per kill (faster is +)",
+    "ab": {
+     "gains": [
+      -0.03137,
+      -0.03057
+     ],
+     "weighted": {
+      "seed 1": {
+       "rules": 25.893,
+       "changed": 26.706
+      },
+      "seed 2": {
+       "rules": 25.871,
+       "changed": 26.662
+      }
+     },
+     "levels": [
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60
+     ],
+     "fights": 3000,
+     "build": "enhancement-open-leveling"
+    },
+    "rules_date": "2026-11-22",
+    "date": "2026-11-22"
+   },
+   "Flame Shock": {
+    "forced": "LEAD: top at 30: -1.39%; top at 60: -0.65%",
+    "knob": "FORCE_FLAME_SHOCK_LEVELS",
+    "window": [
+     30,
+     50
+    ],
+    "installed": [
+     30,
+     50
+    ],
+    "verdict": "kept",
+    "text": "the rules force it at levels 30-49; without that window -0.55% seed 1, -0.60% seed 2 per kill",
+    "ab": {
+     "gains": [
+      0.0055,
+      0.00597
+     ],
+     "weighted": {
+      "seed 1": {
+       "rules": 25.893,
+       "changed": 26.037
+      },
+      "seed 2": {
+       "rules": 25.871,
+       "changed": 26.027
+      }
+     },
+     "levels": [
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60
+     ],
+     "fights": 3000,
+     "build": "enhancement-open-leveling"
+    },
+    "rules_date": "2026-11-22",
+    "date": "2026-11-22"
+   }
+  }
+ },
+ "priest": {
+  "holy-leveling": {
+   "Shadow Word: Death": {
+    "forced": "LEAD: top at 40: -10.49%; top at 50: -6.34%; top at 60: -1.65%; filler at 40: -9.96%; filler at 50: -6.51%",
+    "knob": "FORCE_SHADOW_WORD_DEATH_LEVELS",
+    "window": [
+     20,
+     50
+    ],
+    "installed": [
+     20,
+     50
+    ],
+    "verdict": "kept",
+    "text": "the rules force it at levels 20-49; without that window -2.71% seed 1, -2.74% seed 2 per kill",
+    "ab": {
+     "gains": [
+      0.0271,
+      0.02741
+     ],
+     "weighted": {
+      "seed 1": {
+       "rules": 42.193,
+       "changed": 43.368
+      },
+      "seed 2": {
+       "rules": 42.08,
+       "changed": 43.266
+      }
+     },
+     "levels": [
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60
+     ],
+     "fights": 3000,
+     "build": "smite-open-leveling"
+    },
+    "rules_date": "2026-11-22",
+    "date": "2026-11-22"
+   }
+  }
+ },
+ "hunter": {
+  "melee-dps": {
+   "Arcane Shot": {
+    "forced": "LEAD: top at 20: -2.65%",
+    "knob": "FORCE_ARCANE_SHOT_LEVELS",
+    "window": [
+     20,
+     61
+    ],
+    "installed": null,
+    "verdict": "agrees",
+    "text": "the tune compared it as a rules knob (FORCE_ARCANE_SHOT_LEVELS) and left it off; forced at levels 20-60 on the installed rules: -2.68% seed 1, -2.32% seed 2 per kill (faster is +)",
+    "ab": {
+     "gains": [
+      -0.02681,
+      -0.02317
+     ],
+     "weighted": {
+      "seed 1": {
+       "rules": 22.388,
+       "changed": 22.988
+      },
+      "seed 2": {
+       "rules": 22.41,
+       "changed": 22.93
+      }
+     },
+     "levels": [
+      20,
+      30,
+      40,
+      50,
+      60
+     ],
+     "fights": 3000,
+     "build": "leveling-melee"
+    },
+    "rules_date": "2026-11-03",
+    "date": "2026-11-22"
+   }
+  }
+ },
+ "warlock": {
+  "destruction-leveling": {
+   "Bane of Agony": {
+    "forced": "LEAD: top at 20: -5.67%; top at 40: -4.15%; top at 50: -6.83%; top at 60: -5.93%; filler at 20: -5.24%; filler at 40: -4.90%; filler at 50: -6.91%; filler at 60: -6.79%",
+    "knob": "FORCE_BANE_OF_AGONY_LEVELS",
+    "window": [
+     20,
+     61
+    ],
+    "installed": [
+     20,
+     61
+    ],
+    "verdict": "kept",
+    "text": "the rules force it at levels 20-60; without that window -5.13% seed 1, -5.33% seed 2 per kill",
+    "ab": {
+     "gains": [
+      0.05126,
+      0.05329
+     ],
+     "weighted": {
+      "seed 1": {
+       "rules": 36.227,
+       "changed": 38.185
+      },
+      "seed 2": {
+       "rules": 36.135,
+       "changed": 38.169
+      }
+     },
+     "levels": [
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60
+     ],
+     "fights": 3000,
+     "build": "destruction-open-leveling"
+    },
+    "rules_date": "2026-11-22",
+    "date": "2026-11-22"
+   },
+   "Corruption": {
+    "forced": "LEAD: filler at 20: -0.51%",
+    "knob": "FORCE_CORRUPTION_LEVELS",
+    "window": [
+     20,
+     61
+    ],
+    "installed": null,
+    "verdict": "agrees",
+    "text": "the tune compared it as a rules knob (FORCE_CORRUPTION_LEVELS) and left it off; forced at levels 20-60 on the installed rules: -4.10% seed 1, -4.10% seed 2 per kill (faster is +)",
+    "ab": {
+     "gains": [
+      -0.04103,
+      -0.041
+     ],
+     "weighted": {
+      "seed 1": {
+       "rules": 36.227,
+       "changed": 37.714
+      },
+      "seed 2": {
+       "rules": 36.135,
+       "changed": 37.616
+      }
+     },
+     "levels": [
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60
+     ],
+     "fights": 3000,
+     "build": "destruction-open-leveling"
+    },
+    "rules_date": "2026-11-22",
+    "date": "2026-11-22"
+   }
+  }
+ }
+}

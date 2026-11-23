@@ -55,6 +55,8 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 
 | Date | Change | Why (evidence) | Effect |
 |---|---|---|---|
+| 2026-11-23 | `level_guides.py`'s measure keeps every cast from 0.01 a kill (it kept 0.05 and up); the by-level pages still print 0.05 and up, and `render_modes`' signature line keeps its own 0.05 cut | The audit session's read of the Destruction cast list: Death Coil held 0.8% of the damage at 42 and 0.6% at 50 with no cast listed, so the play check's La failed the 42-60 stage for a press "the fight lab never casts", and its Lg sent the spell to the forced run as never pressed. It is the emergency line, pressed under 0.05 a kill | The held classes (druid, hunter, priest, shaman, warlock) were re-measured with the new cut on 2026-11-23. **Every other class keeps the 0.05 cut in its measured record until its next `--measure`: until then a "never pressed" in its La or Lg rows means "under 0.05 a kill".** Their fingerprints do not include the cut, so none reads as stale |
+| 2026-11-23 | `open_builds.py` keeps the open-search record's order when the record's winner is a leveling filler pass's end state (2f355e9d) | `make_leveling_build` took the filler record's written allocation and order whenever `filler_applies()` held, so an order chosen or polished after the pass was dropped: druid Balance's polish of 2026-11-22 (Nature's Grace 30, Eclipse 31-33, 31.40 against 31.57 s a kill at 20-60; the page's Eclipse at 30 was the play check's 29-30 jump) and mage Fire's own-tree-first order of 2026-11-21 (32.83 against 33.34). The check over every class (scratchpad `order_loss_check_1123.py`) found these, Frostfire (noise) and no other | Balance rewritten for the held push. Mage Fire and Frostfire stay as pushed until their own push, with Fire's two orders raced on a second seed first (the audit session's ruling) |
 | 2026-11-19 | `apl_opt.py --fresh` starts from the entry's base wherever it lives | The condition read `not entry["apl"].startswith("_reference/")`, so a fresh tune of an entry whose base is our own file (the warlock entries' new bases under `apls/warlock/upstream/`) started from the old tuned rotation instead; caught when affliction-raid's fresh tune logged "15 actions from affliction-raid-raid.apl.json". Lane stopped, fixed, resumed | No earlier `--fresh` tune of an entry with a base of ours is in the run logs or scripts (frost, frostfire, incinerate, melee hunter, arms-battle: their records start from their tuned files as ordinary continued passes), so nothing earlier is stale |
 | 2026-11-19 | Each upstream build file races as its own rotation family (`deep-runs/warlock_upstream_race.py`, `raidsim/upstream_race.py`) | The independent audit's D1/D2/D4: the simulator now ships its rotations inside build files, and our tools raced its talents under our rotations. Each upstream rotation only works for its own build (our 30/0/21 Affliction builds 316 DPS under aff_wrack; the Wrack build 675 under ours): the same package effect the certificates cannot see | Wrack build +16.1% in its own entry; Demonology +8.0% from the rotation alone; Affliction's own builds +1.4% under sm_ruin |
 | 2026-11-19 | Ice Barrier's Frost damage modelled in the fight lab and cast in the Frost raid rotations; a fresh audit session (`_reference/audit-brief-1119.md`) | The user asked why Frost skipped a talent that adds 15-20% Frost damage. Three gaps lined up: the fight lab coded the shield alone; no raid rotation cast it, so no search valued it and every Frost build stopped at 30 points; the duel lab had modelled it on 11-17 and the fix was never carried over | Frost raid page 533 -> 652 DPS; the leveling redo is owed. Any lab that models an effect another lab lacks must fix the other lab or log it in the work list the same day |
@@ -160,6 +162,41 @@ rotations; `fightlab/rotations/*.json`: the re-tuned leveling rules) and the thr
 | 2026-10-07 | Rank-3 Seal of Command on Retribution's twist line | Rotation search | Best for mana-hungry builds, but costs the hand draft 0.6% | Rejected by the protection rule; a mana-conditional rank line stays open (below) |
 
 ## Open ideas, ranked by what they could still find
+
+1h. **The leveling signature floor is judged at level 60 only, and a forced window below 60 escapes it (2026-11-23, the audit session's read
+    of the held push).** signature_audit.py's core share is the level-60 share. With Shadow Word: Death forced at 32-49 (the held push's
+    priest rules), Smite + Holy Fire are 37-39% of the damage on the Holy page at 32-49 (floor 40%) and 39-43% on the Smite page (floor
+    50%), while the stored verdicts read 43% and 50% at 60, where the window is closed. The ruling for the push: the window stays (a
+    finisher under 20% health; Smite and Holy Fire are cast as often a kill as before; the kill ends sooner), and no text claims a share
+    that is false where it stands. For the optimality pass: judge the floor at every race level or level-weighted, and check a
+    forced-window knob against it at the window's own levels.
+1i. **A tune's level grid can skip the levels a knob acts on (2026-11-23).** The rules tunes race levels 20, 25, 30 ... 60. With druid
+    Balance's order back (Eclipse 31-33), one or two Eclipse points live only at 31-32, so ECLIPSE_GATE_RANK could never win there; it
+    went in by hand (2.7-2.9% a kill at 31, bit-identical elsewhere). For the optimality pass: a knob whose effect is confined to levels
+    the grid skips (a one-point talent level, a forced window's edge) is raced at those levels too.
+1j. **A forced line takes one window (2026-11-23).** Destruction's Bane of Agony is forced at 20-60 although it costs 1.5-2% a kill at
+    31-38, where Conflagrate still uses up Immolate (6.0-6.1% faster level-weighted overall). A two-window knob (or a skip window) would
+    gain about 0.3% level-weighted. For the optimality pass.
+1l. **Rules are never tuned or forced below 20 (2026-11-23, the audit session's read).** The tunes race levels 20-60 and the forced runs start
+    at 20, so a forced window that starts at the grid's first level is the mark: Destruction's Bane of Agony window starts at 20 although
+    the spell is trained at 8 and Affliction casts it from 8; [10, 61] and [20, 61] score the same on every tune level, so the tune
+    could not tell them apart (the held push's A/B, bane_below20_1123.py, decides it by hand). Of the held picks only this one: Shadow
+    Word: Death is not trained before its window, and Flame Shock's [30, 50] was compared with the windows starting at 20 (engine
+    FORCE_WINDOWS: starts 10, 20, 30, 40, 50) on the tune's levels 20 and 25. For the optimality pass: race the grid's first level's
+    lower neighbours, or the spell's training level, whenever a window starts at the grid's first level. One more row from the same data (the audit session, 2026-11-23): Destruction at 9 is 29.5 s a kill with the wand 69% of the damage and no pet damage in the shares at 1-9, while the by-level guide says to summon the Imp at 1 (its Firebolt casts by itself); whether the lab plays the Imp before 10 is open.
+1m. **Destruction's Conflagrate before Shadow and Flame 5/5 (2026-11-23).** Until 39 the list casts it when Immolate has about 3 s
+    left, and it uses up Immolate: holding it until 39 (the rules knob CONFLAG_LEFT -1, by setattr) is 5.2/5.1% faster a kill at 31,
+    6.3/6.2% at 33, 4.3/4.6% at 35, 0.5/0.4% at 38, bit-identical at 30 and 39-60, -1.32% level-weighted (3,000 fights, seeds 1/2,
+    conflag_gate_1123.py). Not installed (the audit session, 2026-11-23): Conflagrate is the spec's signature talent and the gate equals its
+    veto for eight levels, which the stored verdict (level 60's share) cannot see (1h); the page presses it and says what it costs. It
+    goes to the user as one general question with Shadow Word: Death's window: when the lab finds a signature spell slower at some
+    levels, press it and show the cost, or hold it there and say so. For the optimality pass: CONFLAG_LEFT in warlock.ROTATION_KNOBS
+    ([-1, 0, 1.5, 3]: a cast in Immolate's last second was never compared either).
+1k. **A stage's press list against its top-damage spell (2026-11-23).** Balance's 20-29 stage said Wrath stays the nuke and Starfire
+    "almost never" casts, while the lab cast Starfire 3.2 times a kill (75% of the damage) since druid.STARFIRE_NO_ECLIPSE of
+    2026-11-21: La and Le passed because both spells were named and cast. The audit session's scan of every stage (each pressed spell with
+    12% or more of the damage named in the press list; every "rare / never / the nuke / the filler / the biggest hit" sentence read
+    against the casts) found no other case. For the optimality pass: that scan as a play-check rule.
 
 1g. **Proc fishing with Frostbolt Rank 1 (2026-11-22; Arcea's Shift+Q, the user's choice; the rate resolved the same night; the lab
     idea open for the optimality pass)**. The user binds Rank 1 "to fish for Fingers and Missile Barrage procs". With Improved

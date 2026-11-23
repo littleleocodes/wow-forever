@@ -51,13 +51,13 @@
   {
    "levels": "30",
    "tree": "Destruction",
-   "talent": "Conflagrate",
+   "talent": "Bane of Havoc",
    "points": 1
   },
   {
    "levels": "31",
    "tree": "Destruction",
-   "talent": "Bane of Havoc",
+   "talent": "Conflagrate",
    "points": 1
   },
   {
@@ -129,25 +129,87 @@
  ],
  "steps": [
   {
-   "weighted": 38.226,
+   "weighted": 35.954,
    "values_at_60": {
-    "Aftermath": -0.234,
-    "Demonic Energies": -0.472,
-    "Fel Vitality": -0.018,
-    "Improved Voidwalker": -0.07,
-    "Incinerate": 0.282,
-    "Suppression": -0.264
+    "Aftermath": -0.066,
+    "Demonic Energies": -0.05,
+    "Fel Vitality": -0.082,
+    "Improved Voidwalker": 0.057,
+    "Incinerate": -0.245,
+    "Suppression": -0.187
    },
    "zero": [
+    "Aftermath",
+    "Demonic Energies",
     "Fel Vitality",
-    "Improved Voidwalker",
-    "Incinerate"
+    "Improved Voidwalker"
+   ],
+   "dead_held": []
+  },
+  {
+   "weighted": 35.921,
+   "values_at_60": {
+    "Aftermath": -0.226,
+    "Demonic Energies": -0.03,
+    "Fel Vitality": -0.048,
+    "Improved Life Tap": -0.142,
+    "Improved Voidwalker": 0.167,
+    "Incinerate": -0.333,
+    "Suppression": -0.144
+   },
+   "zero": [
+    "Demonic Energies",
+    "Fel Vitality",
+    "Improved Voidwalker"
+   ],
+   "dead_held": []
+  },
+  {
+   "weighted": 35.875,
+   "values_at_60": {
+    "Aftermath": -0.12,
+    "Demonic Energies": -0.137,
+    "Fel Vitality": -0.026,
+    "Improved Life Tap": -0.113,
+    "Improved Voidwalker": -0.147,
+    "Incinerate": -0.333,
+    "Suppression": -0.423
+   },
+   "zero": [
+    "Fel Vitality"
    ],
    "dead_held": []
   }
  ],
- "moves": [],
+ "moves": [
+  {
+   "from": "Improved Voidwalker",
+   "to": "Improved Life Tap",
+   "level": 60,
+   "seed3": -0.0009,
+   "seed4": -0.0015,
+   "why": "tie-break"
+  },
+  {
+   "from": "Improved Voidwalker",
+   "to": "Improved Life Tap",
+   "level": 59,
+   "seed3": -0.0013,
+   "seed4": -0.0016,
+   "why": "tie-break"
+  },
+  {
+   "from": "Intensity",
+   "to": "Improved Shadow Bolt",
+   "level": 28,
+   "seed3": -0.0002,
+   "seed4": -0.0004,
+   "why": "gate that did nothing, no loss"
+  }
+ ],
  "kept_signature": [],
+ "model": "738f4dacd646ccdb36e32f383eff1d5fbee4d697",
+ "chain": "new: no model recorded and the order changed",
  "gates_checked": {
   "Agonizing Flames": {
    "level": 27,
@@ -156,15 +218,11 @@
    "homes": [
     {
      "to": "Improved Shadow Bolt",
-     "seed3": 0.0121
-    },
-    {
-     "to": "Intensity",
-     "seed3": 0.0124
+     "seed3": 0.0109
     },
     {
      "to": "Molten Skin",
-     "seed3": 0.0131
+     "seed3": 0.0109
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -176,15 +234,15 @@
    "homes": [
     {
      "to": "Improved Shadow Bolt",
-     "seed3": 0.0089
+     "seed3": 0.0094
     }
    ],
    "verdict": "kept: no home faster on both seeds"
   },
   "Bane of Havoc": {
-   "level": 31,
+   "level": 30,
    "kind": "prerequisite of Incinerate",
-   "does_nothing": "a talent ability the build never presses (its removal changes nothing at 40, 50, 60)",
+   "does_nothing": "a talent ability the build never presses (its removal changes nothing at 30, 40, 50, 60)",
    "homes": [],
    "verdict": "no legal home"
   },
@@ -194,18 +252,18 @@
    "does_nothing": null,
    "homes": [
     {
-     "to": "Improved Shadow Bolt",
-     "seed3": 0.0106
+     "to": "Molten Skin",
+     "seed3": 0.0087
     },
     {
-     "to": "Molten Skin",
-     "seed3": 0.0106
+     "to": "Improved Shadow Bolt",
+     "seed3": 0.009
     }
    ],
    "verdict": "kept: no home faster on both seeds"
   },
   "Conflagrate": {
-   "level": 30,
+   "level": 31,
    "kind": "prerequisite of Fire and Brimstone",
    "does_nothing": null,
    "homes": [],
@@ -218,11 +276,11 @@
    "homes": [
     {
      "to": "Improved Shadow Bolt",
-     "seed3": 0.0019
+     "seed3": 0.0068
     },
     {
      "to": "Molten Skin",
-     "seed3": 0.0023
+     "seed3": 0.0076
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -234,15 +292,11 @@
    "homes": [
     {
      "to": "Improved Shadow Bolt",
-     "seed3": 0.0114
+     "seed3": 0.0107
     },
     {
      "to": "Molten Skin",
-     "seed3": 0.0118
-    },
-    {
-     "to": "Intensity",
-     "seed3": 0.0118
+     "seed3": 0.0109
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -250,18 +304,20 @@
   "Intensity": {
    "level": 28,
    "kind": "order point (the finished build is legal without it; a later point of the order comes a level too soon)",
-   "does_nothing": null,
+   "does_nothing": "worth nothing: its last rank's removal leaves the time per kill the same to 0.01 s at 30, 40, 50, 60",
    "homes": [
     {
      "to": "Molten Skin",
-     "seed3": 0.0002
+     "seed3": -0.0002,
+     "seed4": 0.0002
     },
     {
      "to": "Improved Shadow Bolt",
-     "seed3": 0.0005
+     "seed3": -0.0002,
+     "seed4": -0.0004
     }
    ],
-   "verdict": "kept: no home faster on both seeds"
+   "verdict": "moved to Improved Shadow Bolt"
   },
   "Ruin": {
    "level": 24,
@@ -270,11 +326,11 @@
    "homes": [
     {
      "to": "Improved Shadow Bolt",
-     "seed3": 0.0055
+     "seed3": 0.0037
     },
     {
      "to": "Molten Skin",
-     "seed3": 0.0056
+     "seed3": 0.0039
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -285,16 +341,12 @@
    "does_nothing": null,
    "homes": [
     {
-     "to": "Intensity",
-     "seed3": 0.048
-    },
-    {
      "to": "Molten Skin",
-     "seed3": 0.0481
+     "seed3": 0.0941
     },
     {
      "to": "Improved Shadow Bolt",
-     "seed3": 0.0484
+     "seed3": 0.0942
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -305,16 +357,12 @@
    "does_nothing": null,
    "homes": [
     {
-     "to": "Intensity",
-     "seed3": 0.067
-    },
-    {
      "to": "Improved Shadow Bolt",
-     "seed3": 0.0674
+     "seed3": 0.1344
     },
     {
      "to": "Molten Skin",
-     "seed3": 0.0675
+     "seed3": 0.1356
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -325,16 +373,16 @@
    "does_nothing": null,
    "homes": [
     {
+     "to": "Demonic Embrace",
+     "seed3": -0.0002
+    },
+    {
      "to": "Improved Health Funnel",
-     "seed3": 0.001
+     "seed3": 0.0002
     },
     {
      "to": "Improved Imp",
-     "seed3": 0.001
-    },
-    {
-     "to": "Demonic Embrace",
-     "seed3": 0.001
+     "seed3": 0.0002
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -344,25 +392,13 @@
   "Fel Vitality": {
    "kind": "zero point",
    "exact": false,
-   "why": "time per kill at 60 without its last rank: +0.02 s (seed 3)",
+   "why": "time per kill at 60 without its last rank: +0.03 s (seed 3)",
    "homes": 10
-  },
-  "Improved Voidwalker": {
-   "kind": "zero point",
-   "exact": false,
-   "why": "time per kill at 60 without its last rank: +0.07 s (seed 3)",
-   "homes": 14
-  },
-  "Incinerate": {
-   "kind": "zero point",
-   "exact": false,
-   "why": "time per kill at 60 without its last rank: -0.28 s (seed 3)",
-   "homes": 9
   },
   "Bane of Havoc": {
    "kind": "prerequisite of Incinerate",
    "exact": true,
-   "why": "a talent ability the build never presses (its removal changes nothing at 40, 50, 60)",
+   "why": "a talent ability the build never presses (its removal changes nothing at 30, 40, 50, 60)",
    "homes": 0
   }
  },
@@ -400,7 +436,7 @@
   {
    "levels": "28",
    "tree": "Destruction",
-   "talent": "Intensity",
+   "talent": "Improved Shadow Bolt",
    "points": 1
   },
   {
@@ -412,13 +448,13 @@
   {
    "levels": "30",
    "tree": "Destruction",
-   "talent": "Conflagrate",
+   "talent": "Bane of Havoc",
    "points": 1
   },
   {
    "levels": "31",
    "tree": "Destruction",
-   "talent": "Bane of Havoc",
+   "talent": "Conflagrate",
    "points": 1
   },
   {
@@ -483,8 +519,8 @@
   },
   {
    "levels": "59-60",
-   "tree": "Demonology",
-   "talent": "Improved Voidwalker",
+   "tree": "Affliction",
+   "talent": "Improved Life Tap",
    "points": 2
   }
  ],
@@ -493,5 +529,214 @@
    "date": "2026-11-21",
    "moves": 0
   }
- ]
+ ],
+ "written": {
+  "allocation": {
+   "Affliction": [
+    [
+     "Improved Life Tap",
+     2
+    ],
+    [
+     "Suppression",
+     4
+    ]
+   ],
+   "Demonology": [
+    [
+     "Unholy Power",
+     5
+    ],
+    [
+     "Improved Voidwalker",
+     1
+    ],
+    [
+     "Fel Vitality",
+     1
+    ],
+    [
+     "Demonic Energies",
+     2
+    ]
+   ],
+   "Destruction": [
+    [
+     "Destructive Reach",
+     2
+    ],
+    [
+     "Improved Shadow Bolt",
+     1
+    ],
+    [
+     "Bane",
+     5
+    ],
+    [
+     "Cataclysm",
+     3
+    ],
+    [
+     "Aftermath",
+     5
+    ],
+    [
+     "Ruin",
+     5
+    ],
+    [
+     "Shadowburn",
+     1
+    ],
+    [
+     "Agonizing Flames",
+     3
+    ],
+    [
+     "Conflagrate",
+     1
+    ],
+    [
+     "Bane of Havoc",
+     1
+    ],
+    [
+     "Fire and Brimstone",
+     3
+    ],
+    [
+     "Shadow and Flame",
+     5
+    ],
+    [
+     "Incinerate",
+     1
+    ]
+   ]
+  },
+  "order": [
+   {
+    "levels": "10-14",
+    "tree": "Destruction",
+    "talent": "Bane",
+    "points": 5
+   },
+   {
+    "levels": "15-16",
+    "tree": "Destruction",
+    "talent": "Destructive Reach",
+    "points": 2
+   },
+   {
+    "levels": "17-19",
+    "tree": "Destruction",
+    "talent": "Cataclysm",
+    "points": 3
+   },
+   {
+    "levels": "20-24",
+    "tree": "Destruction",
+    "talent": "Ruin",
+    "points": 5
+   },
+   {
+    "levels": "25-27",
+    "tree": "Destruction",
+    "talent": "Agonizing Flames",
+    "points": 3
+   },
+   {
+    "levels": "28",
+    "tree": "Destruction",
+    "talent": "Improved Shadow Bolt",
+    "points": 1
+   },
+   {
+    "levels": "29",
+    "tree": "Destruction",
+    "talent": "Shadowburn",
+    "points": 1
+   },
+   {
+    "levels": "30",
+    "tree": "Destruction",
+    "talent": "Bane of Havoc",
+    "points": 1
+   },
+   {
+    "levels": "31",
+    "tree": "Destruction",
+    "talent": "Conflagrate",
+    "points": 1
+   },
+   {
+    "levels": "32-34",
+    "tree": "Destruction",
+    "talent": "Fire and Brimstone",
+    "points": 3
+   },
+   {
+    "levels": "35-39",
+    "tree": "Destruction",
+    "talent": "Shadow and Flame",
+    "points": 5
+   },
+   {
+    "levels": "40",
+    "tree": "Destruction",
+    "talent": "Incinerate",
+    "points": 1
+   },
+   {
+    "levels": "41",
+    "tree": "Destruction",
+    "talent": "Aftermath",
+    "points": 1
+   },
+   {
+    "levels": "42-45",
+    "tree": "Affliction",
+    "talent": "Suppression",
+    "points": 4
+   },
+   {
+    "levels": "46-49",
+    "tree": "Destruction",
+    "talent": "Aftermath",
+    "points": 4
+   },
+   {
+    "levels": "50-54",
+    "tree": "Demonology",
+    "talent": "Unholy Power",
+    "points": 5
+   },
+   {
+    "levels": "55",
+    "tree": "Demonology",
+    "talent": "Improved Voidwalker",
+    "points": 1
+   },
+   {
+    "levels": "56-57",
+    "tree": "Demonology",
+    "talent": "Demonic Energies",
+    "points": 2
+   },
+   {
+    "levels": "58",
+    "tree": "Demonology",
+    "talent": "Fel Vitality",
+    "points": 1
+   },
+   {
+    "levels": "59-60",
+    "tree": "Affliction",
+    "talent": "Improved Life Tap",
+    "points": 2
+   }
+  ],
+  "note": "2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Voidwalker to Improved Life Tap at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Voidwalker to Improved Life Tap at 59 (tie-break: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill); Intensity to Improved Shadow Bolt at 28 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill)."
+ }
 }

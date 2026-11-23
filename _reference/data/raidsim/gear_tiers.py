@@ -210,7 +210,462 @@ def pool_of(tier, zones, repo=None):
     return {"bis": bis, "dungeon": dungeon}.get(tier, prebis)
 
 
-def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, weights_fn=None, score=None, extra=None):
+# ------------------------------------------------------------------------------------------------ weapons, set pieces, enchants (2026-11-22)
+# The audit session's gear findings G1-G3 (_reference/audit-1119.md, "Survival's gear sets against a community list": a community Survival
+# list beat our Pre-BiS set by 2.8% in the simulator, and our own pre-raid rules with these fixes, put in by hand, by 4.3%). Every set
+# maker runs the three steps (optimize_set with `refine`), and `refit` runs them on a set file as it stands:
+# - weapons raced per hand (G2): the per-slot pick sees a weapon's dps and stats, not its speed or the hits a fast off hand adds
+#   (Distracting Dagger for Heartseeker in Survival's off hand: +1.5%);
+# - an item set's pieces raced as a unit (G3): the per-slot pick values no set bonus (the Devilsaur pair's 2% hit: +0.25%);
+# - enchants per slot from every enchant the database lists for the item (G1): the role templates (fill_enchants.py) predate Forever's
+#   enchants (no necklace enchant at all; Cloak +3 Agility for +5, Bracer +9 Strength for +9 Agility, Gloves +7 for +10: +1.1% together).
+#   Stat enchants are chosen by the weights, as items are; an enchant with an effect, a proc, a pseudo-stat or weapon damage (Crusader,
+#   the scopes, Arcanum of Rapidity) is raced against the slot's stat pick.
+WEAPON_TOP, WEAPON_EFFECTS_FROM, WEAPON_RERACE = 8, 20, 4   # per hand: the best 8 by the weights, any with an effect among the best 20;
+WEAPON_DPS_MIN = 0.1   # the main hand raced again on its pass-1 best 4 after the off hand changed; a hand whose dps the weights value
+SET_MAX_LOSS, SET_RACE_MAX = 0.10, 10   # a set's pieces raced when they cost at most 10% of the replaced items' value by the weights
+# The enchant pool (the items' rules, applied to enchants; agreed with the audit session on 2026-11-22):
+# - what Forever has now: the database's phase 1; the Raid BiS tier also takes Molten Core's and Onyxia's drops, which it marks phase 2
+#   (Enchant Weapon - Spell Power, +30, and Healing Power: Molten Core formulas, so in no pre-raid tier);
+# - a source: sold, a drop outside later raids, a craft, a quest or a reputation (gear_opt's later-content rules; the quests-and-dungeons
+#   tier takes reputation to Honored). The phase field dates an enchant, so a vendor or quest entry counts, unlike an item's;
+# - no source: a recipe Classic's trainers teach, or a preset of the tier uses it on that kind of item (the sourceless items' rule);
+# - never a creature type's bonus (Beastslayer, Elemental Slayer, Demonslaying): the bench's target is an Elemental.
+# Out of every tier whatever the database or a preset says (the audit session, 2026-11-22: "a known later-content source in Classic beats a
+# preset's vetting", as LATER_PREFIXES and later_phase do for items; "a tie goes to the enchant with a known source"). Each is still raced
+# where it fits and recorded with what it would have gained (`left_out`); the launch checklist asks whether enchanters have them.
+ENCHANTS_OUT = {
+    (7, 2564): "Enchant Gloves - Superior Agility (+15): Classic's Temple of Ahn'Qiraj formula (the database: phase 1, no source; upstream's "
+               "phase-1 rogue presets use it)",
+    (7, 2614): "Enchant Gloves - Shadow Power: Classic's Temple of Ahn'Qiraj formula",
+    (7, 2615): "Enchant Gloves - Frost Power: Classic's Temple of Ahn'Qiraj formula",
+    (7, 2616): "Enchant Gloves - Fire Power: Classic's Temple of Ahn'Qiraj formula",
+    (7, 2617): "Enchant Gloves - Healing Power: Classic's Temple of Ahn'Qiraj formula",
+    (4, 2622): "Enchant Cloak - Dodge: Classic's Temple of Ahn'Qiraj formula",
+    (5, 7645): "Enchant Chest - Living Stats: Forever's, no source; Greater Stats (1891) plus Nature resistance, a tie for damage",
+}
+# Held until the audit session rules on a trace (2026-11-22): raced and recorded like ENCHANTS_OUT, never taken.
+ENCHANTS_HELD = {
+    (14, 8720): "SAF-T Ultra Precision Scope (2% ranged crit): the simulator's hunter pet takes the higher of its owner's melee and ranged "
+                "crit (sim/hunter/pets.go inheritedCrit, upstream's evidence EV-0070), so the scope raises the pet's crit as well; held "
+                "until the audit session's ruling on the trace",
+}
+SLAYERS = ("Beastslayer", "Elemental Slayer", "Demonslaying")
+_ENCH = G.__dict__.setdefault("TIERS_ENCH", {})   # entries, vetted {"bis"|"prebis": {(item type, effect id)}}, taught: on the shared
+                                                   # gear_opt module, so every copy of this file reads what load_enchants loaded (0q)
+
+
+def norm17(items):
+    return [dict(x) if x else {} for x in items] + [{}] * max(0, 17 - len(items))
+
+
+def load_enchants(repo, db):
+    """The database's enchants, the ones the tiers' presets use (by item type) and Classic's trainer recipes (load_db calls it)."""
+    raw = json.load(open(pathlib.Path(repo) / "assets" / "database" / "db.json", encoding="utf-8"))
+    entries = raw["enchants"]
+    by = {}
+    for e in entries:
+        by.setdefault(e["effectId"], []).append(e)
+    vet = {"bis": set(), "prebis": set()}
+    for p in G.preset_files(repo):
+        if "p2" in p.name or "phase_2" in p.name:
+            continue
+        its = json.load(open(p, encoding="utf-8")).get("items", [])
+        ids = [x["id"] for x in its if x and x.get("id")]
+        official = G.VENDORED_PRESETS not in p.parents
+        tiers = ([] if official and any(db.get(i, {}).get("scalingOptions", {}).get("0", {}).get("ilvl", 0) > G.SOURCELESS_MAX_ILVL for i in ids)
+                 else ["bis"]) + (["prebis"] if any(k in p.name for k in PRE_NAMES) else [])   # load_vetted's and load_vetted_pre's rules
+        for slot, x in enumerate(its[:17]):
+            for e in by.get((x or {}).get("enchant"), []):
+                if G.SLOT_TYPE[slot] in enchant_types(e):
+                    for t in tiers:
+                        vet[t].add((e.get("type"), e["effectId"]))
+    _ENCH.update(entries=entries, vetted=vet, taught=dungeon_data(repo)[2])
+
+
+def enchant_types(e):
+    return [e.get("type")] + list(e.get("extraTypes") or [])
+
+
+def fits_enchant(e, it, slot):
+    """Whether the enchant goes on the item in `slot`: the simulator UI's enchantAppliesToItem (ui/sim/proto/items.ts)."""
+    if G.SLOT_TYPE[slot] not in enchant_types(e):
+        return False
+    et, wt, rt = e.get("enchantType") or 0, it.get("weaponType") or 0, it.get("rangedWeaponType") or 0
+    if (et == 1 and it.get("handType") != 4) or (et == 4 and wt != 8) or (et == 2 and wt != 7) or ((et == 5) != (wt == 5)):
+        return False
+    if wt == 7 and et != 2:
+        return False
+    if e.get("type") == 14 and rt not in (1, 2, 3):
+        return False
+    return not (rt not in (0, 5) and e.get("type") != 14)
+
+
+def enchant_ok(e, tier, zones):
+    """Whether an enchant is in the tier's pool (see above). ENCHANTS_OUT and ENCHANTS_HELD are not."""
+    key = (e.get("type"), e["effectId"])
+    if key in ENCHANTS_OUT or key in ENCHANTS_HELD or any(s in e.get("name", "") for s in SLAYERS):
+        return False
+    srcs = e.get("sources") or []
+    drops = [s["drop"] for s in srcs if s.get("drop")]
+    zs = {zones.get(d.get("zoneId")) for d in drops} - {None}
+    if (e.get("phase") or 1) >= 2 and not (tier == "bis" and zs & G.RAID_OK):
+        return False
+    if G.later_rep(e) or G.later_reward(e):
+        return False
+    if drops and len(drops) == len(srcs) and zs and zs <= (G.RAID_NO if tier == "bis" else G.RAID_NO | G.RAID_OK):
+        return False   # dropped only in later raids (or, below Raid BiS, in any raid)
+    if drops and len(drops) == len(srcs) and {d.get("npcId") for d in drops} <= G.WORLD_BOSSES | G.EVENT_NPCS:
+        return False
+    if tier == "dungeon":
+        reps = [int(s["rep"].get("repLevel") or 0) for s in srcs if s.get("rep")]
+        if reps and min(reps) > REP_MAX and not any(s.get("drop") or s.get("crafted") or s.get("quest") for s in srcs):
+            return False
+    if srcs:
+        return True
+    if int(e.get("spellId") or 0) in _ENCH["taught"]:
+        return True
+    return key in _ENCH["vetted"]["bis" if tier == "bis" else "prebis"]
+
+
+def enchant_allowed(eid, item_type, tier, zones):
+    """Whether an entry of effect `eid` goes on items of `item_type` and is in the tier's enchant pool: heal_gear.py and tank_gear.py
+    filter their candidate lists (fill_enchants.HEALER_CANDIDATES, TANK_CANDIDATES) with it."""
+    if not _ENCH.get("entries"):
+        raise SystemExit("gear_tiers: no enchants loaded (load the database through gear_tiers.load_db first)")
+    return any(e["effectId"] == eid and item_type in enchant_types(e) and enchant_ok(e, tier, zones) for e in _ENCH["entries"])
+
+
+def slot_enchants(cls, it, slot, tier, zones):
+    """(pool, out): the enchants the item in `slot` takes, for the class: the tier's pool, and ENCHANTS_OUT / ENCHANTS_HELD (raced for
+    the record only). One entry per effect id (an effect id can carry two names on one kind of item: 7656)."""
+    if not _ENCH.get("entries"):
+        raise SystemExit("gear_tiers: no enchants loaded (load the database through gear_tiers.load_db first)")
+    pool, out, seen = [], [], set()
+    for e in _ENCH["entries"]:
+        if e["effectId"] in seen or not fits_enchant(e, it, slot) or (e.get("classAllowlist") and G.CLASS_ID[cls] not in e["classAllowlist"]):
+            continue
+        if (e.get("type"), e["effectId"]) in ENCHANTS_OUT or (e.get("type"), e["effectId"]) in ENCHANTS_HELD:
+            if not any(s in e.get("name", "") for s in SLAYERS):
+                out.append(e)
+                seen.add(e["effectId"])
+        elif enchant_ok(e, tier, zones):
+            pool.append(e)
+            seen.add(e["effectId"])
+    return pool, out
+
+
+def static_enchant(e):
+    """Stats only (the weights value it whole): no proc, effect, pseudo-stat or weapon damage."""
+    return not (e.get("procKind") or e.get("enchantEffects") or any(e.get("pseudoStats") or []) or e.get("weaponDamage"))
+
+
+def enchant_value(e, w):
+    return sum(w.get(G.STAT.get(i), 0.0) * x for i, x in enumerate(e.get("stats") or []) if x)
+
+
+DEFENSIVE_PSEUDO = {3, 4, 5, 16, 23, 26}   # PseudoStat block value, dodge, parry, block, block per Strength, crit taken
+
+
+def raced_enchant(e, tank=False):
+    """An enchant the weights cannot value, worth racing: an effect, a combat proc, a pseudo-stat or weapon damage; for a damage dealer
+    no absorb-or-heal proc and no enchant whose only pseudo-stats are defensive (Arcanum of Protection). Enchants that do nothing in a
+    fight (Minor Speed, the gathering ones) are neither raced nor stat picks."""
+    if static_enchant(e):
+        return False
+    if tank:
+        return True
+    if (e.get("procKind") or 0) == 2:
+        return False
+    ps = {i for i, v in enumerate(e.get("pseudoStats") or []) if v}
+    return not (ps and ps <= DEFENSIVE_PSEUDO and not (e.get("procKind") or e.get("enchantEffects") or e.get("weaponDamage")
+                                                       or any(e.get("stats") or [])))
+
+
+def stat_pick(pool, w, cur=None):
+    """The slot's stat enchant worth most by the weights, worth more than 0; the current one when it is worth as much."""
+    st = [e for e in pool if static_enchant(e) and enchant_value(e, w) > 1e-9]
+    if not st:
+        return None
+    best = max(st, key=lambda e: enchant_value(e, w))
+    c = next((e for e in st if e["effectId"] == cur), None)
+    return c if c is not None and enchant_value(c, w) >= enchant_value(best, w) - 1e-9 else best
+
+
+def racer(evals, repo, sc, tag):
+    """race(sets {name: items}, fights, seed) -> {name: score relative to the first set}, averaged over the evaluations."""
+    sc = sc or (lambda row: row.get("dps") or 0)
+
+    def race(sets, its, seed):
+        out = {k: [] for k in sets}
+        for name, e, where, tal, lab in evals:
+            rows = G.run_bench(repo, G.bench_cfg(e, repo, [{"label": k, "talents": tal, "gear_json": {"items": v}} for k, v in sets.items()], its, seed, where), f"r-{tag}")
+            ref = rows[next(iter(sets))]
+            for k in sets:
+                out[k].append(sc(rows[k]) / (sc(ref) or 1))
+        return {k: sum(v) / len(v) for k, v in out.items()}
+    return race
+
+
+def race_weapons(cls, items, w, greedy, race, its, db):
+    """G2: the weapon of each hand whose dps the weights value (and a hunter's ranged weapon) raced in the set on seed 1: the slot's
+    best `WEAPON_TOP` items by the weights plus any with an effect among the best `WEAPON_EFFECTS_FROM` (greedy.weapon_candidates), each
+    with the slot's enchant; the main hand, then the off hand, then the main hand's pass-1 best `WEAPON_RERACE` again when the off hand
+    changed. A candidate is taken when ahead. Returns (items, record)."""
+    items = norm17(items)
+    rec, first = [], {}
+    hands = [(14, "PseudoStatMainHandDps"), (15, "PseudoStatOffHandDps")] + ([(16, "PseudoStatRangedDps")] if cls == "hunter" else [])
+    passes = [(s, None) for s, k in hands if w.get(k, 0.0) > WEAPON_DPS_MIN]
+    i = 0
+    while i < len(passes):
+        slot, only = passes[i]
+        i += 1
+        cur = items[slot].get("id")
+        cands = only if only is not None else greedy.weapon_candidates(items, w, slot, WEAPON_TOP, WEAPON_EFFECTS_FROM)
+        cands = [c for c in cands if c != cur]
+        if not cands:
+            continue
+        sets = {"current": items}
+        for c in cands:
+            x = [dict(y) for y in items]
+            ench = items[slot].get("enchant")
+            x[slot] = {"id": c, **({"enchant": ench} if ench else {})}
+            sets[str(c)] = x
+        r = race(sets, its, 1)
+        best = max(r, key=r.get)
+        if only is None:
+            first[slot] = sorted((c for c in r if c != "current"), key=lambda c: -r[c])[:WEAPON_RERACE]
+        rec.append({"slot": slot, "pass": "again" if only is not None else 1, "from": G.item_name(db, cur),
+                    "to": G.item_name(db, int(best)) if best != "current" else G.item_name(db, cur),
+                    "race_seed1": {("current" if k == "current" else G.item_name(db, int(k))): round(v, 4) for k, v in sorted(r.items(), key=lambda kv: -kv[1])}})
+        if best != "current" and r[best] > 1.0:
+            items = sets[best]
+            if slot == 15 and 14 in first:   # the off hand changed: the main hand's pass-1 best again, next to it
+                passes.append((14, [int(c) for c in first[14] if int(c) != items[15].get("id")]))
+    return items, rec
+
+
+def race_set_pieces(cls, items, w, greedy, race, its, db, pool):
+    """G3: each item set the class can wear two or more pieces of from the pool, its pieces put in as a unit and raced in the set on
+    seed 1: all of its pieces, and its two cheapest by the weights when it has more; only units that cost at most SET_MAX_LOSS of the
+    replaced items' value by the weights, the cheapest SET_RACE_MAX. The best unit is taken when ahead. The bonuses themselves are the
+    simulator's (the database lists the pieces, not the bonus). Returns (items, record)."""
+    items = norm17(items)
+    held = {x.get("id") for x in items if x.get("id")}
+    slots_of = {}
+    for it in db.values():
+        sn = it.get("setName")
+        if not sn or not pool(it):
+            continue
+        for slot in range(17):
+            if G.SLOT_TYPE[slot] == 12:
+                continue
+            shape = db.get(items[slot].get("id")) if items[slot].get("id") else None
+            if slot >= 14 and not shape:
+                continue
+            if greedy.fits(it, slot, shape):
+                slots_of.setdefault(sn, {}).setdefault(slot, []).append(it)
+    units = []
+    for sn, by in slots_of.items():
+        if len(by) < 2 or all(any(it["id"] in held for it in v) for v in by.values()):
+            continue
+        # per slot the piece worth most; a ring or weapon piece fits two slots: each piece once
+        pick, used = {}, set()
+        for slot, v in sorted(by.items(), key=lambda kv: -max(G.value(it, w, kv[0]) for it in kv[1])):
+            v = [it for it in v if it["id"] not in used]
+            if v:
+                it = max(v, key=lambda it: G.value(it, w, slot))
+                pick[slot] = it
+                used.add(it["id"])
+        if len(pick) < 2:
+            continue
+        loss = {s: G.value(db[items[s]["id"]], w, s) - G.value(it, w, s) if items[s].get("id") in db else -G.value(it, w, s) for s, it in pick.items()}
+        base = {s: G.value(db[items[s]["id"]], w, s) if items[s].get("id") in db else 0.0 for s in pick}
+        cands = [tuple(sorted(pick))]
+        if len(pick) > 2:
+            cands.append(tuple(sorted(sorted(pick, key=lambda s: loss[s])[:2])))
+        for ss in cands:
+            tot = sum(base[s] for s in ss)
+            ls = sum(loss[s] for s in ss)
+            if ls <= SET_MAX_LOSS * max(tot, 1e-9) and not all(items[s].get("id") == pick[s]["id"] for s in ss):
+                units.append((ls / max(tot, 1e-9), sn, {s: pick[s] for s in ss}))
+    units.sort(key=lambda u: u[0])
+    units = units[:SET_RACE_MAX]
+    if not units:
+        return items, []
+    sets = {"current": items}
+    keyed = {}
+    for rel, sn, pk in units:
+        x = [dict(y) for y in items]
+        ukeys = set()
+        for s, it in pk.items():
+            ench = x[s].get("enchant")
+            x[s] = {"id": it["id"], **({"enchant": ench} if ench else {})}
+        for y in x:   # the unit must keep the set legal: unique items and limit categories once
+            if y.get("id"):
+                k = G.unique_keys(db.get(y["id"]))
+                if k & ukeys:
+                    break
+                ukeys |= k
+        else:
+            name = f"{sn} ({len(pk)})"
+            sets[name] = x
+            keyed[name] = (rel, pk)
+    if len(sets) < 2:
+        return items, []
+    r = race(sets, its, 1)
+    best = max(r, key=r.get)
+    rec = [{"unit": k, "pieces": [p["name"] for p in keyed[k][1].values()], "weights_loss": round(keyed[k][0], 4), "race_seed1": round(r[k], 4)}
+           for k in keyed]
+    if best != "current" and r[best] > 1.0:
+        items = sets[best]
+        rec.append({"taken": best})
+    return items, rec
+
+
+def enchants_for(cls, items, w, tier, zones, db, emap=None):
+    """The set's enchants within the tier's pool: per slot the enchant of `emap` ({slot: effect id}) when it goes on the item, else the
+    slot's own when the tier allows it, else the slot's stat pick by the weights (an enchant the tier does not allow never stays)."""
+    items = norm17(items)
+    for slot in range(17):
+        x = items[slot]
+        it = db.get(x.get("id")) if x.get("id") else None
+        if not it:
+            continue
+        pool, _ = slot_enchants(cls, it, slot, tier, zones)
+        ids = {e["effectId"] for e in pool}
+        want = (emap or {}).get(slot)
+        if want in ids:
+            x["enchant"] = want
+        elif x.get("enchant") in ids:
+            pass
+        else:
+            sp = stat_pick(pool, w)
+            if sp:
+                x["enchant"] = sp["effectId"]
+            else:
+                x.pop("enchant", None)
+    return items
+
+
+def choose_enchants(cls, items, w, tier, zones, race, its, db, tank=False):
+    """G1: enchant maps for the set ({slot: effect id}). Per slot an anchor: the slot's own enchant when the tier allows it and it is a
+    raced kind (raced_enchant: Crusader, a scope, Arcanum of Rapidity), else the stat pick by the weights (stat_pick: ties keep the own
+    enchant), else the own enchant when the tier allows it (nothing worth more), else none; the anchors are the stat map. Then every raced
+    enchant of the slot and its stat pick, each against the anchors in one bench call on seed 1 (`its` fights); the best per slot is taken
+    when ahead (the raced map). Weapon-damage enchants race only the strongest of them. ENCHANTS_OUT and ENCHANTS_HELD that fit are raced
+    too and recorded with their gain over the slot's choice, never taken. Returns (stat map, raced map, record); the caller confirms on
+    seed 2 (enchants_for puts a map on a set)."""
+    items = norm17(items)
+    anchor, statmap, cands, outs = {}, {}, {}, {}
+    for slot in range(17):
+        x = items[slot]
+        it = db.get(x.get("id")) if x.get("id") else None
+        if not it:
+            continue
+        pool, out = slot_enchants(cls, it, slot, tier, zones)
+        if not pool and not out:
+            continue
+        by = {e["effectId"]: e for e in pool}
+        sp = stat_pick(pool, w, x.get("enchant"))
+        own = by.get(x.get("enchant"))
+        own_raced = own is not None and raced_enchant(own, tank)
+        statmap[slot] = (own["effectId"] if own_raced else sp["effectId"] if sp else own["effectId"] if own else None)
+        anchor[slot] = statmap[slot]
+        rc = [e for e in pool if raced_enchant(e, tank)]
+        wd_only = [e for e in rc if e.get("weaponDamage") and not (e.get("procKind") or e.get("enchantEffects") or any(e.get("pseudoStats") or []))]
+        top_wd = max(wd_only, key=lambda e: e["weaponDamage"]) if wd_only else None
+        c = [e["effectId"] for e in rc if e not in wd_only or e is top_wd]
+        if sp:
+            c.append(sp["effectId"])
+        cands[slot] = [eid for eid in dict.fromkeys(c) if eid != anchor[slot]]
+        outs[slot] = [e for e in out if raced_enchant(e, tank) or enchant_value(e, w) > 1e-9]
+    base = [dict(y) for y in items]
+    for slot, eid in anchor.items():
+        if eid:
+            base[slot]["enchant"] = eid
+        else:
+            base[slot].pop("enchant", None)
+    sets = {"anchor": base}
+    for slot in anchor:
+        for eid in cands[slot] + [e["effectId"] for e in outs[slot]]:
+            x = [dict(y) for y in base]
+            x[slot]["enchant"] = eid
+            sets[f"{slot}:{eid}"] = x
+    ename = lambda eid: next((e["name"] for e in _ENCH["entries"] if e["effectId"] == eid), str(eid)) if eid else None  # noqa: E731
+    rec = {"slots": {}, "left_out": []}
+    raced = dict(anchor)
+    r = race(sets, its, 1) if len(sets) > 1 else {"anchor": 1.0}
+    for slot in anchor:
+        sc = {anchor[slot]: 1.0, **{eid: r[f"{slot}:{eid}"] for eid in cands[slot]}}
+        best = max(sc, key=sc.get)
+        raced[slot] = best if sc[best] > 1.0 else anchor[slot]
+        row = {"item": G.item_name(db, items[slot].get("id")), "own": ename(items[slot].get("enchant")), "stat_pick": ename(statmap[slot]),
+               "chosen_seed1": ename(raced[slot])}
+        if cands[slot]:
+            row["race_seed1"] = {ename(k): round(v, 4) for k, v in sorted(sc.items(), key=lambda kv: -kv[1])}
+        rec["slots"][str(slot)] = row
+        for e in outs[slot]:
+            g = r[f"{slot}:{e['effectId']}"] - sc[raced[slot]]
+            key = (e.get("type"), e["effectId"])
+            rec["left_out"].append({"slot": slot, "enchant": e["name"], "gain_over_choice_seed1": round(g, 4),
+                                    "why": ENCHANTS_OUT.get(key) or ENCHANTS_HELD.get(key)})
+    return statmap, raced, rec
+
+
+def refit(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=None, setting="raid", write=True):
+    """The three steps on a tier set file as it stands (2026-11-22, the audit session's G1-G3 on the sets made on 2026-11-21/22), much
+    cheaper than make(): no greedy pass, no trinket screen. Weights on the filed set, weapons raced, set pieces raced, enchants chosen;
+    then four sets raced on seed 2 (`a.confirm` fights): the filed set with its tier's enchants (an enchant its tier does not allow
+    replaced by the slot's stat pick, even at a loss), the filed items with the stat picks and with the raced map, and the refit set with
+    the raced map. The best is written. Returns the record (make()'s keys plus weapons, set_pieces, enchants, refit)."""
+    e = R.SPECS[cls][entry_name]
+    p = path or set_path(cls, spec, tier)
+    filed = norm17(json.load(open(p, encoding="utf-8"))["items"])
+    pool = pool_of(tier, zones, repo)
+    _, _, greedy = G.class_picker(repo, cls, db, pool)
+    tag = f"refit-{cls}-{SM.slug(spec)}-{tier}"
+    race = racer([(entry_name, e, setting, talents, label)], repo, None, tag)
+    row = G.run_bench(repo, G.bench_cfg(e, repo, [{"label": "w", "talents": talents, "gear_json": {"items": filed}}], a.weight_iterations, 1,
+                                        setting, statweights=True), f"w-{tag}")["w"]
+    if row.get("error"):
+        raise SystemExit(f"stat weights failed for {tag}: {row['error']}")
+    w = row["weights"]
+    t0 = time.time()
+    items, wrec = race_weapons(cls, filed, w, greedy, race, a.iterations, db)
+    items, srec = race_set_pieces(cls, items, w, greedy, race, a.iterations, db, pool)
+    statmap, raced, erec = choose_enchants(cls, items, w, tier, zones, race, a.iterations, db)
+    sets = {"filed": enchants_for(cls, filed, w, tier, zones, db)}
+    for name, its_, m in (("filed, stat enchants", filed, statmap), ("filed, raced enchants", filed, raced), ("refit", items, raced)):
+        x = enchants_for(cls, its_, w, tier, zones, db, m)
+        if all(x != v for v in sets.values()):
+            sets[name] = x
+    r2 = race(sets, a.confirm, 2) if len(sets) > 1 else {"filed": 1.0}
+    chosen = max(r2, key=r2.get)
+    out = sets[chosen]
+    allowed = sets["filed"] == filed
+    if out != filed and write:
+        p.write_text(json.dumps({"items": out}, indent=1) + "\n", encoding="utf-8")
+    ilvl = round(sum(db[x["id"]]["scalingOptions"]["0"].get("ilvl", 0) for x in out if x.get("id") in db)
+                 / max(1, sum(1 for x in out if x.get("id") in db)), 1)
+    changes = [{"slot": i, "from": G.item_name(db, filed[i].get("id")), "to": G.item_name(db, out[i].get("id")),
+                "enchant_from": filed[i].get("enchant"), "enchant_to": out[i].get("enchant")}
+               for i in range(17) if filed[i] != out[i]]
+    print(f"  refit {p.name}: chosen {chosen} (seed 2: " + ", ".join(f"{k} {v:.4f}" for k, v in r2.items()) + f"); {len(changes)} slots changed"
+          + ("" if allowed else "; the filed set held an enchant its tier does not allow") + f"; {(time.time() - t0) / 60:.1f} min", flush=True)
+    for c in changes:
+        print(f"    slot {c['slot']}: {c['from']} ({c['enchant_from']}) -> {c['to']} ({c['enchant_to']})", flush=True)
+    return {"entry": entry_name, "gear": p.relative_to(ROOT).as_posix(), "date": TODAY, "setting": setting, "chosen": chosen, "ilvl": ilvl,
+            "items": out, "names": [db.get(x.get("id"), {}).get("name") if x.get("id") else None for x in out],
+            "weights": {k: round(v, 4) for k, v in w.items() if abs(v) > 1e-6}, "confirm_seed2": {k: round(v, 4) for k, v in r2.items()},
+            "weapons": wrec, "set_pieces": srec, "enchants": erec, "changes": changes,
+            "refit": {"date": TODAY, "why": "the audit session's gear findings G1-G3 (2026-11-22): weapons raced per hand, item-set pieces "
+                      "raced, enchants from the database by the tier's rules", "filed_enchants_allowed": allowed,
+                      "iterations": a.iterations, "confirm": a.confirm}}
+
+
+def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, weights_fn=None, score=None, extra=None, refine=None,
+                 zones=None, tank=False):
     """The best set for the evaluations [(entry name, entry, setting, talents, label)] from `pool`: the same steps as gear_opt.optimize
     (weights, greedy per slot in two variants, weights again, trinket pairs raced, variants raced, seed-2 confirmation), except that the
     current item of a slot competes only when `keep_current` or the pool admits it (a pre-raid set must not keep raid items).
@@ -218,7 +673,10 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     None for damage specs, unchanged; tank_gear.py passes tank value, 2026-10-15). `extra` {name: items}: sets that compete with the
     variants, each also with the raced trinket pair, when every item is in the pool; one named "previous" (the tier's last set) is the
     reference a new set must beat on seed 2 (2026-10-16: the Expertise re-gear's pre-BiS Enhancement set lost 1.6% to the set it
-    replaced, which never raced it)."""
+    replaced, which never raced it). `refine` (a tier name, 2026-11-22, the audit session's G1-G3): the weapons raced per hand after the
+    greedy pass, the item-set pieces raced after the trinkets, the enchants chosen from the tier's enchant pool and put on every set
+    that competes (race_weapons, race_set_pieces, choose_enchants); the stat picks alone compete as one more variant. `tank`: the
+    enchant race takes absorb, heal and defensive enchants too (tank_gear.py)."""
     main = evals[0]
     cur_items = [dict(x) if x else {} for x in cur_items] + [{}] * (17 - len(cur_items))
     sc = score or (lambda row: row.get("dps") or 0)
@@ -252,6 +710,9 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     v1, v2 = greedy(cur_items, w, False), greedy(cur_items, w, True)
     w = weights(v1)
     v1, v2 = greedy(v1, w, False), greedy(v2, w, True)
+    steps = {}
+    if refine:
+        v1, steps["weapons"] = race_weapons(cls, v1, w, greedy, race, a.iterations, db)
     cur_pair = (cur_items[12].get("id"), cur_items[13].get("id"))
     top, screen = G.screen_trinkets(db, trinkets, v1, race, a.iterations)   # the pool's trinkets one at a time, the best paired (2026-10-22)
     pairs = [p for p in itertools.combinations(top, 2) if G.pair_ok(db, p)][: a.max_pairs]
@@ -267,9 +728,20 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     vs = {"v1": v1, "v2": v2}
     relic, relic_race = G.race_relics(greedy.relic_candidates(cur_items), vs, race, a.iterations)   # a re-filled relic slot (2026-10-22)
     v1, v2 = vs["v1"], vs["v2"]
+    emap = None
+    if refine:
+        v1, steps["set_pieces"] = race_set_pieces(cls, v1, w, greedy, race, a.iterations, db, pool)
+        statmap, emap, steps["enchants"] = choose_enchants(cls, v1, w, refine, zones, race, a.iterations, db, tank=tank)
+        steps["enchants"]["map"] = {str(k): v for k, v in emap.items()}
+        v1s = enchants_for(cls, v1, w, refine, zones, db, statmap)
+        v1, v2 = (enchants_for(cls, x, w, refine, zones, db, emap) for x in (v1, v2))
+        cur_items = enchants_for(cls, cur_items, w, refine, zones, db, emap)
+        extra = {k: enchants_for(cls, x, w, refine, zones, db, emap) for k, x in (extra or {}).items()} or None
     in_tier = all(x["id"] in db and pool(db[x["id"]]) for x in cur_items if x.get("id"))   # a missing item is out of the pool (2026-10-22)
     keep_current = keep_current and in_tier   # the current set competes only when every item is in the tier's pool
     sets = ({"current": cur_items} if keep_current else {}) | {"all-slots": v1, "keep-sets-and-effects": v2}
+    if refine and v1s != v1:
+        sets["all-slots, stat enchants"] = v1s
     for name, its in (extra or {}).items():
         its = [dict(x) if x else {} for x in its] + [{}] * (17 - len(its))
         if its == cur_items or not all(x["id"] in db and pool(db[x["id"]]) for x in its if x.get("id")):
@@ -288,7 +760,7 @@ def optimize_set(cls, evals, cur_items, pool, repo, db, a, tag, keep_current, we
     ilvl = lambda its: round(sum(db[x["id"]]["scalingOptions"]["0"].get("ilvl", 0) for x in its if x.get("id") in db) / max(1, sum(1 for x in its if x.get("id") in db)), 1)  # noqa: E731
     return {"evaluated_on": [f"{n}: {lab}" for n, _, _, _, lab in evals], "weights": {k: round(v, 4) for k, v in w.items() if abs(v) > 1e-6},
             "trinkets": [db[i]["name"] for i in pair if i in db], "trinket_screen": screen, **({"relic_race": relic_race} if relic_race else {}),
-            "race_seed1": r1, "confirm_seed2": r2, "chosen": chosen,
+            "race_seed1": r1, "confirm_seed2": r2, "chosen": chosen, **steps, **({"enchant_map": emap} if emap is not None else {}),
             "ilvl": ilvl(items), "items": items, "names": [db.get(x.get("id"), {}).get("name") if x.get("id") else None for x in items]}
 
 
@@ -324,9 +796,8 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
                 FE.fill(li, tmpl)
             extra[f"the {lower} set"] = li
     r = optimize_set(cls, [(entry_name, e, setting, talents, label)], cur, pool, repo, db, a, f"{cls}-{SM.slug(spec)}-{tier}", keep_current=(tier == "bis"),
-                     extra=extra or None)
-    if tmpl:
-        FE.fill(r["items"], tmpl)
+                     extra=extra or None, refine=tier, zones=zones)
+    emap = r.pop("enchant_map", None)   # the tier's enchants are on every set that raced (2026-11-22): no template fill after them
     dropped = G.drop_missing_enchants(r["items"], repo)   # an enchant carried from a set the official database lacks (2026-10-22)
     if dropped:
         r["enchants_dropped"] = dropped
@@ -344,6 +815,8 @@ def make(cls, spec, tier, entry_name, talents, label, repo, db, zones, a, path=N
         # score below the old one); the repaired set also competes: when it wins, it is written
         out_of_pool = [i for i in range(17) if old[i].get("id") and not (old[i]["id"] in db and pool(db[old[i]["id"]]))]
         ref = [dict(new[i]) if i in out_of_pool else dict(old[i]) for i in range(17)]
+        if emap is not None:   # (2026-11-22) the old set with the tier's chosen enchants: the guard compares items, and an enchant the
+            ref = enchants_for(cls, ref, r["weights"], tier, zones, db, emap)   # tier no longer allows never stays through it
         rows = G.run_bench(repo, G.bench_cfg(e, repo, [{"label": "new", "talents": talents, "gear_json": {"items": new}},
                                                         {"label": "previous", "talents": talents, "gear_json": {"items": ref}}],
                                               a.confirm, 2, setting), f"guard-{cls}-{SM.slug(spec)}-{tier}")
@@ -370,6 +843,7 @@ def load_db(repo):
     db, zones = G.load_db(repo)
     G.load_vetted(repo, db)
     load_vetted_pre(repo)
+    load_enchants(repo, db)   # (2026-11-22) the enchant pool's data: choose_enchants
     return db, zones
 
 
@@ -430,7 +904,7 @@ def remake(a, repo, db, zones):
             t0 = time.time()
             g = make(cls, rec["spec"], tier, entry, R.talents_string(trees, alloc), label, repo, db, zones, a, path=path)
             keep = ("entry", "gear", "date", "chosen", "ilvl", "trinkets", "trinket_screen", "names", "race_seed1", "confirm_seed2", "weights",
-                    "evaluated_on", "enchants_dropped")
+                    "evaluated_on", "enchants_dropped", "weapons", "set_pieces", "enchants")
             new = {k: g[k] for k in keep if k in g}
             before = [dict(x) if x else {} for x in before] + [{}] * (17 - len(before))
             new["replaced"] = [{"slot": i, "from": G.item_name(db, before[i].get("id")), "to": G.item_name(db, g["items"][i].get("id"))}

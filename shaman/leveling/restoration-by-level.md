@@ -2,7 +2,7 @@
 
 [Shaman](../README.md) > [Leveling (solo)](README.md) > [Restoration](restoration.md) > Level by level
 
-> **Being checked:** The play check's forced runs found Frost Shock and Flame Shock faster when pressed (2.8% at 20, 1.4% at 30); the rotation is being tuned again with them. The build and numbers on this page may change when it is done.
+> **Being checked:** Mana Tide Totem (talent, 30) is never pressed: the leveling fight lab cannot cast it yet. It is being added behind a rules knob and judged by a forced run; the rest of the page passed the play check on 2026-11-23. The build and numbers on this page may change when it is done.
 
 What a Restoration shaman presses from level 1 to 60 while leveling into the raid healer's talents. Restoration has no leveling rotation of its own, so it plays the Enhancement list without the talents it never takes (**Stormstrike**, **Maelstrom Weapon**, **Rage of the Farseer**): a slow two-handed weapon, a weapon imbue, a shield, **Searing Totem** at the pull and **Earth Shock** whenever it is ready. It is slower per kill than Enhancement: the price of arriving at 60 ready to heal. Each stage lists the full priority, so you can jump in at your level.
 
@@ -18,8 +18,9 @@ What a Restoration shaman presses from level 1 to 60 while leveling into the rai
 | 10-19 | **Searing Totem** at the pull adds free damage for the whole fight. Talent points start. |
 | 20-27 | Nothing new in the fight. **Lesser Healing Wave** is a fast heal, **Ghost Wolf** gets you between mobs sooner. |
 | 28-29 | **Water Shield** (talent): a shield that gives you mana back when you are hit. It takes Lightning Shield's place when your mana is low. |
-| 30-34 | **Windfury Weapon** replaces Rockbiter on your weapon. **Mana Tide Totem** (talent) is a long cooldown for mana. |
-| 35-60 | **Nature's Swiftness** (talent) makes your next **Healing Wave** instant: your emergency heal. Nothing else new in the fight: buy every new rank. |
+| 30-34 | **Windfury Weapon** replaces Rockbiter on your weapon. **Mana Tide Totem** (talent) is a long cooldown for mana. **Flame Shock** joins the list from 30 to 49: the tuned rules of 2026-11-22 cast it whenever the shock cooldown is free and its burn is not on the mob (0.6% faster per kill over levels 20-60). |
+| 35-49 | **Nature's Swiftness** (talent) makes your next **Healing Wave** instant: your emergency heal. Nothing else new in the fight: buy every new rank. |
+| 50-60 | From 50 the tuned rules drop **Flame Shock** again: **Earth Shock** takes every shock cooldown. Pressed on to 60 it measured, on the Enhancement build whose rules this page plays, 0.8-1.4% slower a kill at 50 and 0.5-1.1% faster at 55-60 (the fight lab, 2026-11-23): no clear gain either way. The rest stays. |
 
 ## Keybinds by level
 
@@ -27,44 +28,44 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Action bar 1: the fight**
 
-| Key | Its job | 1-3 | 4-7 | 8-9 | 10-19 | 20-27 | 28-29 | 30-34 | 35-60 |
-|---|---|---|---|---|---|---|---|---|---|
-| Q | Your shock, pressed most; the macro also starts your swings | — | **Earth Shock** | Earth Shock | Earth Shock | Earth Shock | Earth Shock | Earth Shock | Earth Shock |
-| E | Control: slow a mob that runs or that you leave | — | — | — | — | **Frost Shock** | Frost Shock | Frost Shock | Frost Shock |
-| R | Free (Stormstrike's key in Enhancement; this build has none) | — | — | — | — | — | — | — | — |
-| F | The save: mobs turn on the totem while you heal | — | — | **Stoneclaw Totem** | Stoneclaw Totem | Stoneclaw Totem | Stoneclaw Totem | Stoneclaw Totem | Stoneclaw Totem |
-| Mouse 5 | Thumb reaction: the quick heal | **Healing Wave** | Healing Wave | Healing Wave | Healing Wave | **Lesser Healing Wave** | Lesser Healing Wave | Lesser Healing Wave | Lesser Healing Wave |
-| Mouse 4 | Thumb reaction: eat a caster's spell | — | — | — | — | — | — | **Grounding Totem** | Grounding Totem |
-| 1 | A pull from range (an opener at 1-3 if you like) | **Lightning Bolt** | Lightning Bolt | Lightning Bolt | Lightning Bolt | Lightning Bolt | Lightning Bolt | Lightning Bolt | Lightning Bolt |
-| 2 | Your pull totem | — | — | — | **Searing Totem** | Searing Totem | Searing Totem | Searing Totem | Searing Totem |
-| 3 | The instant heal: press it, then C | — | — | — | — | — | — | — | **Nature's Swiftness** |
-| 4 | The long cooldown: mana back in a long fight | — | — | — | — | — | — | **Mana Tide Totem** | Mana Tide Totem |
-| C | The big heal, in a stun or behind the totem | — | — | — | — | **Healing Wave** | Healing Wave | Healing Wave | Healing Wave |
-| Middle mouse | Free | — | — | — | — | — | — | — | — |
+| Key | Its job | 1-3 | 4-7 | 8-9 | 10-19 | 20-27 | 28-29 | 30-34 | 35-49 | 50-60 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Q | Your shock, pressed most; the macro also starts your swings | — | **Earth Shock** | Earth Shock | Earth Shock | Earth Shock | Earth Shock | Earth Shock | Earth Shock | Earth Shock |
+| E | Control: slow a mob that runs or that you leave | — | — | — | — | **Frost Shock** | Frost Shock | Frost Shock | Frost Shock | Frost Shock |
+| R | Free (Stormstrike's key in Enhancement; this build has none) | — | — | — | — | — | — | — | — | — |
+| F | The save: mobs turn on the totem while you heal | — | — | **Stoneclaw Totem** | Stoneclaw Totem | Stoneclaw Totem | Stoneclaw Totem | Stoneclaw Totem | Stoneclaw Totem | Stoneclaw Totem |
+| Mouse 5 | Thumb reaction: the quick heal | **Healing Wave** | Healing Wave | Healing Wave | Healing Wave | **Lesser Healing Wave** | Lesser Healing Wave | Lesser Healing Wave | Lesser Healing Wave | Lesser Healing Wave |
+| Mouse 4 | Thumb reaction: eat a caster's spell | — | — | — | — | — | — | **Grounding Totem** | Grounding Totem | Grounding Totem |
+| 1 | A pull from range (an opener at 1-3 if you like) | **Lightning Bolt** | Lightning Bolt | Lightning Bolt | Lightning Bolt | Lightning Bolt | Lightning Bolt | Lightning Bolt | Lightning Bolt | Lightning Bolt |
+| 2 | Your pull totem | — | — | — | **Searing Totem** | Searing Totem | Searing Totem | Searing Totem | Searing Totem | Searing Totem |
+| 3 | The instant heal: press it, then C | — | — | — | — | — | — | — | **Nature's Swiftness** | Nature's Swiftness |
+| 4 | The long cooldown: mana back in a long fight | — | — | — | — | — | — | **Mana Tide Totem** | Mana Tide Totem | Mana Tide Totem |
+| C | The big heal, in a stun or behind the totem | — | — | — | — | **Healing Wave** | Healing Wave | Healing Wave | Healing Wave | Healing Wave |
+| Middle mouse | Free | — | — | — | — | — | — | — | — | — |
 
 **Action bar 2: the same keys with Shift**
 
-| Key | Its job | 1-3 | 4-7 | 8-9 | 10-19 | 20-27 | 28-29 | 30-34 | 35-60 |
-|---|---|---|---|---|---|---|---|---|---|
-| Shift+Q | Packs: the fire shock to spread | — | — | — | **Flame Shock** | Flame Shock | Flame Shock | Flame Shock | Flame Shock |
-| Shift+E | Packs: the blast around your Fire totem (drop Searing Totem first) | — | — | — | **Fire Nova** from 12 | Fire Nova | Fire Nova | Fire Nova | Fire Nova |
-| Shift+R | Packs: the bolt that jumps | — | — | — | — | — | — | **Chain Lightning** from 32 | Chain Lightning |
-| Shift+F | Escape: slow everything around you | — | **Earthbind Totem** from 6 | Earthbind Totem | Earthbind Totem | Earthbind Totem | Earthbind Totem | Earthbind Totem | Earthbind Totem |
-| Shift+Mouse 5 | A heal that keeps ticking | — | — | — | — | **Healing Stream Totem** | Healing Stream Totem | Healing Stream Totem | Healing Stream Totem |
-| Shift+Mouse 4 | Break a fear | — | — | — | **Tremor Totem** from 18 | Tremor Totem | Tremor Totem | Tremor Totem | Tremor Totem |
-| Shift+1 | Packs: the fire totem | — | — | — | — | **Magma Totem** from 26 | Magma Totem | Magma Totem | Magma Totem |
-| Shift+2 | Strip a mob's buff | — | — | — | **Purge** from 12 | Purge | Purge | Purge | Purge |
-| Shift+3 | Your healing potion (macro on the macro page) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
-| Shift+4 | Your mana potion (macro on the macro page) | — | **Mana potion macro** from 5 | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro |
-| Shift+C | Dungeons: the heal that jumps, the wider version of C | — | — | — | — | — | — | — | **Chain Heal** from 40 |
-| Shift+X | Dungeons: the heal over time | — | — | — | — | — | — | — | **Riptide** from 60 |
+| Key | Its job | 1-3 | 4-7 | 8-9 | 10-19 | 20-27 | 28-29 | 30-34 | 35-49 | 50-60 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Shift+Q | The fire shock: on every mob from 30 to 49, and to spread in packs | — | — | — | **Flame Shock** | Flame Shock | Flame Shock | Flame Shock | Flame Shock | Flame Shock |
+| Shift+E | Packs: the blast around your Fire totem (drop Searing Totem first) | — | — | — | **Fire Nova** from 12 | Fire Nova | Fire Nova | Fire Nova | Fire Nova | Fire Nova |
+| Shift+R | Packs: the bolt that jumps | — | — | — | — | — | — | **Chain Lightning** from 32 | Chain Lightning | Chain Lightning |
+| Shift+F | Escape: slow everything around you | — | **Earthbind Totem** from 6 | Earthbind Totem | Earthbind Totem | Earthbind Totem | Earthbind Totem | Earthbind Totem | Earthbind Totem | Earthbind Totem |
+| Shift+Mouse 5 | A heal that keeps ticking | — | — | — | — | **Healing Stream Totem** | Healing Stream Totem | Healing Stream Totem | Healing Stream Totem | Healing Stream Totem |
+| Shift+Mouse 4 | Break a fear | — | — | — | **Tremor Totem** from 18 | Tremor Totem | Tremor Totem | Tremor Totem | Tremor Totem | Tremor Totem |
+| Shift+1 | Packs: the fire totem | — | — | — | — | **Magma Totem** from 26 | Magma Totem | Magma Totem | Magma Totem | Magma Totem |
+| Shift+2 | Strip a mob's buff | — | — | — | **Purge** from 12 | Purge | Purge | Purge | Purge | Purge |
+| Shift+3 | Your healing potion (macro on the macro page) | **Healing potion macro** | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro | Healing potion macro |
+| Shift+4 | Your mana potion (macro on the macro page) | — | **Mana potion macro** from 5 | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro | Mana potion macro |
+| Shift+C | Dungeons: the heal that jumps, the wider version of C | — | — | — | — | — | — | — | **Chain Heal** from 40 | Chain Heal |
+| Shift+X | Dungeons: the heal over time | — | — | — | — | — | — | — | — | **Riptide** from 60 |
 
 - The keys of the [Enhancement guide](enhancement-by-level.md), with these changes: R stays free (no **Stormstrike** in this build); 4 holds **Mana Tide Totem** from 30 in place of Rage of the Farseer; 3 holds **Nature's Swiftness** from 35; Shift+C and Shift+X hold the dungeon heals, **Chain Heal** (40) and **Riptide** (60).
 - Two swaps on bar 1: **Lesser Healing Wave** takes the thumb at 20 and **Healing Wave** moves to C as the big heal.
 - The Instant big heal macro on the [macro page](../macros.md) casts **Nature's Swiftness** and **Healing Wave** in one press on C, and frees 3.
 - **Lightning Shield** and **Water Shield** are buffs, like your weapon imbue (**Rockbiter Weapon**, **Windfury Weapon** from 30, **Rockbiter Weapon** again from 40): click them between fights. No key either: **Ghost Wolf**, food, water, the mount and the Hearthstone.
 - Right-click the mob to start swinging at levels 1-3. From 4, Q is the Earth Shock macro on the [keybinds page](keybinds.md) that also starts your swings, so the middle mouse button stays free.
-- The single-target rotation never casts **Lightning Bolt** after level 3, nor **Flame Shock**, **Fire Nova**, **Chain Lightning** or **Magma Totem**. **Lightning Bolt** stays on 1 to pull a mob from range; the others are for a pull that brings friends.
+- The single-target rotation never casts **Lightning Bolt** after level 3, casts **Flame Shock** (Shift+Q) from 30 to 49, and never **Fire Nova**, **Chain Lightning** or **Magma Totem**. **Lightning Bolt** stays on 1 to pull a mob from range; the others are for a pull that brings friends.
 
 ## Levels 1-3: Swing
 
@@ -207,13 +208,14 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 
 **Keys to set:** Mouse 4 = Grounding Totem; 4 = Mana Tide Totem; Shift+R = Chain Lightning (at 32).
 
-**Your keys in this stage:** Q Earth Shock, F Stoneclaw Totem, Mouse 5 Lesser Healing Wave, 2 Searing Totem.
+**Your keys in this stage:** Q Earth Shock, F Stoneclaw Totem, Mouse 5 Lesser Healing Wave, 2 Searing Totem, Shift+Q Flame Shock.
 
 **What to press**, top to bottom:
 
 1. **Searing Totem** as you pull, while you have more than half your mana.
 2. **Lightning Shield** up before the pull; when you are under 60% of your mana, Water Shield instead.
-3. **Earth Shock** whenever it is ready.
+3. **Flame Shock** (Shift+Q) whenever the shock cooldown is free and its burn is not on the mob.
+4. **Earth Shock** on the other shock cooldowns.
 
 **If the fight goes wrong:** Under 40% of your health: **Lesser Healing Wave**. Under 30%: drop **Stoneclaw Totem** first.
 
@@ -222,25 +224,26 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Restorative Totems** (31-34) makes **Healing Stream Totem** and **Mana Spring Totem** stronger: a healer's talent.
 - **Chain Lightning** (32) and **Windfury Totem** (32) are not part of a fight against one mob.
 
-*Fight lab, seconds per kill: 31 at level 30. Presses per kill at level 30: Melee 4.6, Earth Shock 2.6, Windfury 1.6, Searing Totem 0.8, Lightning Shield 0.6.*
+*Fight lab, seconds per kill: 30 at level 30. Presses per kill at level 30: Melee 4.1, Flame Shock 1.6, Windfury 1.6, Earth Shock 1.1, Searing Totem 0.8, Lightning Shield 0.6.*
 
-## Levels 35-60: Nature's Swiftness, the finished rotation
+## Levels 35-49: Nature's Swiftness, the finished rotation
 
 **The trainer teaches:** Windwall Totem (36), Disease Cleansing Totem (38), Call of the Spirits (40), Chain Heal (40), Grace of Air Totem (42).
 
-**New ranks to buy:** Chain Heal at 46, 54; Chain Lightning at 40, 48, 56; Earth Shock at 36, 48, 60; Fire Nova at 42, 52; Flame Shock at 40, 52, 60; Frost Shock at 46, 58; Healing Stream Totem at 40, 50, 60; Healing Wave at 40, 48, 56, 60; Lesser Healing Wave at 36, 44, 52, 60; Lightning Bolt at 38, 44, 50, 56; Lightning Shield at 40, 48, 56; Magma Totem at 36, 46, 56; Mana Tide Totem at 38, 48, 58; Riptide at 50, 60; Searing Totem at 40, 50, 60; Stoneclaw Totem at 38, 48, 58.
+**New ranks to buy:** Chain Heal at 46; Chain Lightning at 40, 48; Earth Shock at 36, 48; Fire Nova at 42; Flame Shock at 40; Frost Shock at 46; Healing Stream Totem at 40; Healing Wave at 40, 48; Lesser Healing Wave at 36, 44; Lightning Bolt at 38, 44; Lightning Shield at 40, 48; Magma Totem at 36, 46; Mana Tide Totem at 38, 48; Searing Totem at 40; Stoneclaw Totem at 38, 48.
 
-**Talents:** 35 Nature's Swiftness, 36 Restorative Totems, 37-41 Ancestral Knowledge, 42-43 Ancestral Healing, 44-46 Healing Focus, 47-51 Tidal Mastery, 52-54 Healing Way, 55-59 Purification, 60 Riptide.
+**Talents:** 35 Nature's Swiftness, 36 Restorative Totems, 37-41 Ancestral Knowledge, 42-43 Ancestral Healing, 44-46 Healing Focus, 47-49 Tidal Mastery.
 
-**Keys to set:** 3 = Nature's Swiftness; Shift+C = Chain Heal (at 40); Shift+X = Riptide (at 60).
+**Keys to set:** 3 = Nature's Swiftness; Shift+C = Chain Heal (at 40).
 
-**Your keys in this stage:** Q Earth Shock, F Stoneclaw Totem, Mouse 5 Lesser Healing Wave, 2 Searing Totem, 3 Nature's Swiftness, C Healing Wave.
+**Your keys in this stage:** Q Earth Shock, F Stoneclaw Totem, Mouse 5 Lesser Healing Wave, 2 Searing Totem, 3 Nature's Swiftness, C Healing Wave, Shift+Q Flame Shock.
 
 **What to press**, top to bottom:
 
 1. **Searing Totem** as you pull, while you have more than half your mana.
 2. **Lightning Shield** up before the pull; when you are under 60% of your mana, Water Shield instead.
-3. **Earth Shock** whenever it is ready.
+3. **Flame Shock** (Shift+Q) whenever the shock cooldown is free and its burn is not on the mob.
+4. **Earth Shock** on the other shock cooldowns.
 
 **If the fight goes wrong:** Under 30% of your health: **Nature's Swiftness**, then **Healing Wave**: an instant big heal. With it on cooldown, drop **Stoneclaw Totem** instead. Under 40%: **Lesser Healing Wave**.
 
@@ -248,7 +251,27 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - **Chain Heal** (40) and **Riptide** (60) heal a group in a dungeon. Solo, the fight lab never casts them.
 - **Rockbiter Weapon** is back on your weapon from 40, in place of Windfury (rank 5; rank 6 at 44, rank 7 at 54): its attack power on every swing beats Windfury's extra attacks there in the fight lab (the Enhancement rules re-tuned on 2026-11-16, which this page plays). Windfury Weapon's ranks 2-4 (40, 50, 60) are not needed.
 
-*Fight lab, seconds per kill: 34 at level 35, 35 at level 40, 38 at level 50, 40 at level 60. Presses per kill at level 35: Melee 5.3, Earth Shock 3.0, Windfury 1.9, Searing Totem 0.7, Lightning Shield 0.6.*
+*Fight lab, seconds per kill: 33 at level 35, 35 at level 40, 38 at level 49. Presses per kill at level 35: Melee 4.8, Flame Shock 1.8, Windfury 1.8, Earth Shock 1.3, Searing Totem 0.8, Lightning Shield 0.5.*
+
+## Levels 50-60: Earth Shock only
+
+**New ranks to buy:** Chain Heal at 54; Chain Lightning at 56; Earth Shock at 60; Fire Nova at 52; Flame Shock at 52, 60; Frost Shock at 58; Healing Stream Totem at 50, 60; Healing Wave at 56, 60; Lesser Healing Wave at 52, 60; Lightning Bolt at 50, 56; Lightning Shield at 56; Magma Totem at 56; Mana Tide Totem at 58; Riptide at 50, 60; Searing Totem at 50, 60; Stoneclaw Totem at 58.
+
+**Talents:** 50-51 Tidal Mastery, 52-54 Healing Way, 55-59 Purification, 60 Riptide.
+
+**Keys to set:** Shift+X = Riptide (at 60).
+
+**Your keys in this stage:** Q Earth Shock, F Stoneclaw Totem, Mouse 5 Lesser Healing Wave, 2 Searing Totem, 3 Nature's Swiftness, C Healing Wave.
+
+**What to press**, top to bottom:
+
+1. **Searing Totem** as you pull, while you have more than half your mana.
+2. **Lightning Shield** up before the pull; when you are under 60% of your mana, Water Shield instead.
+3. **Earth Shock** whenever the shock cooldown is free.
+
+**If the fight goes wrong:** Under 30% of your health: **Nature's Swiftness**, then **Healing Wave**: an instant big heal. With it on cooldown, drop **Stoneclaw Totem** instead. Under 40%: **Lesser Healing Wave**.
+
+*Fight lab, seconds per kill: 38 at level 50, 40 at level 60. Presses per kill at level 50: Melee 5.5, Earth Shock 2.8, Searing Totem 0.7, Lightning Shield 0.6.*
 
 ## Between fights
 
@@ -264,4 +287,4 @@ Your two action bars, slot by slot: bar 1 is Q, E, R, F, Mouse 5, Mouse 4, 1, 2,
 - Elemental fights from range with **Lightning Bolt**; it has its own page and guide in this folder.
 
 ---
-*Generated by `_reference/data/level_guides.py` on 2026-11-22: the stages are hand-kept in `_reference/data/level-guides/shaman.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*
+*Generated by `_reference/data/level_guides.py` on 2026-11-23: the stages are hand-kept in `_reference/data/level-guides/shaman.json`; trainer levels, talents and numbers are read from this project's data (client build 1.60.1.70753) and its fight lab (green gear, same-level mobs, one mob per pull, 400 fights per level). A simulation of stated assumptions, not in-game measurements. Do not hand-edit.*

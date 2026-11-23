@@ -1,5 +1,5 @@
 {
- "made": "2026-11-19T19:33:32-05:00",
+ "made": "2026-11-23T02:49:11-05:00",
  "about": "Out-of-combat rest cues for an in-game add-on, every class and leveling spec (2026-11-16, user: \"I want the addon to not proc during combat. Also, I just want to be eat/drink/evocation for now. Also I want it to work across all different classes and specs\").",
  "rules": "Out of combat only. drink_below / eat_below: shares of maximum mana / health; tools: the class's own mana tools between fights, in order (a tool's cue comes before drinking). The fight lab drinks and eats back to full once a cue fires. eat_drink_together (per spec; absent = false): while you sit to drink or to eat, the other bar tops up too, at no extra time, only while it is below full; you stand when the bar that fired is full (the topped-up one may be left short). Evocation is not sitting and brings no top-up. vectors: the fight lab's own decision on set states, for the add-on's tests (hp and mana as shares; does in order; after: the bars once the tool ran; warlocks: health_max and tap_cost).",
  "classes": {
@@ -9,10 +9,9 @@
     "Balance": {
      "build": "balance-open-leveling",
      "rotation": "balance-dps",
-     "drink_below": 0.35,
+     "drink_below": 0.25,
      "eat_below": 0.4,
      "talents": {
-      "Bloom": 1,
       "Eclipse": 3,
       "Genesis": 3,
       "Heart of the Wild": 1,
@@ -22,6 +21,7 @@
       "Moonfury": 5,
       "Moonglow": 3,
       "Moonkin Form": 1,
+      "Natural Shapeshifter": 1,
       "Naturalist": 5,
       "Nature's Focus": 5,
       "Nature's Grace": 1,
@@ -35,7 +35,7 @@
     "Feral Combat": {
      "build": "feral-combat-open-leveling",
      "rotation": "feral-cat-dps",
-     "drink_below": 0.35,
+     "drink_below": 0.15,
      "eat_below": 0.65,
      "talents": {
       "Blood Frenzy": 2,
@@ -65,7 +65,7 @@
     "Restoration": {
      "build": "restoration-leveling",
      "rotation": "feral-cat-dps",
-     "drink_below": 0.35,
+     "drink_below": 0.15,
      "eat_below": 0.65,
      "talents": {
       "Bloom": 1,
@@ -103,7 +103,7 @@
       "Bestial Discipline": 2,
       "Bestial Swiftness": 1,
       "Bestial Wrath": 1,
-      "Careful Aim": 3,
+      "Careful Aim": 2,
       "Deadly Aspects": 5,
       "Efficiency": 5,
       "Endurance Training": 3,
@@ -111,10 +111,11 @@
       "Focused Fire": 2,
       "Frenzy": 5,
       "Improved Stings": 3,
-      "Improved Tracking": 3,
+      "Improved Tracking": 2,
       "Intimidation": 1,
       "Lethal Attacks": 5,
-      "Spirit Bond": 1,
+      "Rapid Killing": 1,
+      "Spirit Bond": 2,
       "Trueshot Aura": 1,
       "Unleashed Fury": 5
      },
@@ -153,9 +154,8 @@
      "talents": {
       "Careful Aim": 5,
       "Clever Traps": 2,
-      "Deadly Aspects": 1,
-      "Deflection": 2,
-      "Efficiency": 4,
+      "Deflection": 3,
+      "Efficiency": 5,
       "Improved Stings": 3,
       "Improved Tracking": 5,
       "Lethal Attacks": 5,
@@ -165,8 +165,7 @@
       "Savage Strikes": 2,
       "Strider Kick": 1,
       "Surefooted": 3,
-      "Survival Tactics": 1,
-      "Survivalist": 2,
+      "Survival Tactics": 2,
       "Survivalist's Discipline": 2,
       "Trueshot Aura": 1
      },
@@ -178,8 +177,7 @@
      "drink_below": 0.15,
      "eat_below": 0.65,
      "talents": {
-      "Bestial Discipline": 1,
-      "Bestial Swiftness": 1,
+      "Bestial Discipline": 2,
       "Careful Aim": 5,
       "Deadly Aspects": 5,
       "Efficiency": 5,
@@ -208,8 +206,8 @@
       "Bestial Discipline": 2,
       "Clever Traps": 2,
       "Deadly Aspects": 5,
+      "Deflection": 3,
       "Endurance Training": 3,
-      "Entrapment": 1,
       "Ferocity": 5,
       "Focused Fire": 2,
       "Improved Tracking": 5,
@@ -219,7 +217,6 @@
       "Savage Strikes": 2,
       "Surefooted": 3,
       "Survival Tactics": 1,
-      "Survivalist": 2,
       "Survivalist's Discipline": 2,
       "Unleashed Fury": 5
      },
@@ -255,13 +252,14 @@
       "Arcane Subtlety": 2,
       "Arcane Wrath": 1,
       "Frost Channeling": 1,
+      "Frost Warding": 1,
+      "Frostbite": 1,
       "Ice Lance": 1,
       "Ice Shards": 4,
       "Improved Channeling": 5,
       "Improved Frost Nova": 2,
       "Improved Frostbolt": 3,
       "Missile Barrage": 2,
-      "Permafrost": 2,
       "Precision": 2,
       "Presence of Mind": 1,
       "Shatter": 3
@@ -272,22 +270,21 @@
      "build": "fire-open-leveling",
      "rotation": "fire-leveling",
      "drink_below": 0.15,
-     "eat_below": 0.4,
+     "eat_below": 0.8,
      "talents": {
       "Accelerant": 5,
-      "Burning Soul": 2,
+      "Burning Soul": 3,
       "Combustion": 1,
       "Critical Mass": 3,
       "Fire Power": 3,
-      "Frost Channeling": 3,
+      "Frost Channeling": 2,
       "Frost Warding": 2,
       "Heating Up": 1,
       "Ice Lance": 1,
       "Ice Shards": 5,
       "Ignite": 5,
-      "Improved Fire Blast": 1,
+      "Improved Fire Blast": 2,
       "Improved Frost Nova": 2,
-      "Improved Scorch": 1,
       "Incineration": 5,
       "Master of Elements": 3,
       "Precision": 3,
@@ -311,17 +308,21 @@
       "Cold Snap": 1,
       "Fingers of Frost": 2,
       "Frost Channeling": 3,
-      "Frostbite": 3,
+      "Frostbite": 2,
+      "Ice Barrier": 1,
       "Ice Lance": 1,
       "Ice Shards": 5,
-      "Improved Channeling": 3,
+      "Improved Channeling": 1,
       "Improved Frost Nova": 2,
       "Improved Frostbolt": 5,
-      "Incineration": 3,
+      "Incineration": 1,
+      "Magic Absorption": 1,
+      "Missile Barrage": 1,
       "Permafrost": 1,
       "Precision": 2,
       "Shatter": 3,
-      "Wand Specialization": 2
+      "Wand Specialization": 2,
+      "Winter's Chill": 2
      },
      "eat_drink_together": true
     },
@@ -340,12 +341,13 @@
       "Arctic Reach": 2,
       "Fingers of Frost": 2,
       "Frost Channeling": 3,
-      "Frostbite": 3,
+      "Frostbite": 1,
       "Ice Lance": 1,
-      "Ice Shards": 4,
+      "Ice Shards": 2,
       "Improved Channeling": 4,
       "Improved Counterspell": 1,
-      "Improved Frostbolt": 3,
+      "Improved Frost Nova": 2,
+      "Improved Frostbolt": 5,
       "Missile Barrage": 2,
       "Precision": 2,
       "Presence of Mind": 1,
@@ -358,23 +360,25 @@
      "build": "frostfire-open-leveling",
      "rotation": "frostfire-leveling",
      "drink_below": 0.15,
-     "eat_below": 0.4,
+     "eat_below": 0.5,
      "talents": {
       "Accelerant": 5,
       "Critical Mass": 3,
       "Fingers of Frost": 2,
       "Frost Channeling": 3,
-      "Frostbite": 3,
+      "Frostbite": 1,
+      "Heating Up": 1,
       "Ice Lance": 1,
       "Ice Shards": 5,
       "Ignite": 5,
-      "Impact": 2,
+      "Impact": 1,
       "Improved Fire Blast": 2,
       "Improved Frost Nova": 2,
-      "Improved Frostbolt": 3,
+      "Improved Frostbolt": 4,
       "Incineration": 5,
       "Master of Elements": 3,
       "Precision": 2,
+      "Pyroblast": 1,
       "Shatter": 3,
       "Wand Specialization": 2
      },
@@ -445,14 +449,15 @@
     "Retribution": {
      "build": "leveling-retribution",
      "rotation": "ret-dps",
-     "drink_below": 0.35,
+     "drink_below": 0.15,
      "eat_below": 0.65,
      "talents": {
       "Benediction": 5,
-      "Champion of the Light": 4,
+      "Champion of the Light": 3,
       "Conviction": 3,
       "Divine Intellect": 5,
       "Divine Strength": 5,
+      "Eye for an Eye": 1,
       "Improved Judgement": 2,
       "Improved Seals": 5,
       "Precision": 3,
@@ -483,11 +488,9 @@
       "Divine Strength": 5,
       "Holy Conduit": 2,
       "Holy Shock": 1,
-      "Illumination": 1,
+      "Illumination": 3,
       "Improved Judgement": 2,
       "Improved Seals": 5,
-      "Oath of Light": 1,
-      "Purifying Power": 1,
       "Reverence": 2,
       "Sacred Arbiter": 1,
       "Sanctified Judgement": 3,
@@ -501,18 +504,18 @@
     "Hybrid Protection/Retribution": {
      "build": "prot-ret-open-leveling",
      "rotation": "ret-dps",
-     "drink_below": 0.35,
+     "drink_below": 0.15,
      "eat_below": 0.65,
      "talents": {
-      "Benediction": 2,
       "Conviction": 3,
-      "Deflection": 3,
-      "Divine Intellect": 5,
+      "Deflection": 5,
+      "Divine Intellect": 1,
       "Divine Strength": 5,
       "Improved Hammer of Justice": 1,
-      "Improved Judgement": 1,
+      "Improved Judgement": 2,
       "Improved Seals": 5,
       "Precision": 3,
+      "Redoubt": 4,
       "Reverence": 2,
       "Sacred Arbiter": 1,
       "Sacred Duty": 2,
@@ -523,7 +526,7 @@
       "Toughness": 3,
       "Two-Handed Weapon Specialization": 3,
       "Vengeance": 3,
-      "Vindication": 3
+      "Vindication": 2
      },
      "eat_drink_together": true
     }
@@ -601,18 +604,20 @@
       "Early Demise": 2,
       "Improved Mind Blast": 5,
       "Improved Mind Flay": 2,
-      "Meditation": 3,
-      "Mental Strength": 3,
+      "Martyrdom": 1,
+      "Meditation": 1,
+      "Mental Strength": 2,
       "Mind Flay": 1,
-      "Power in Light": 2,
       "Shadow Focus": 4,
       "Shadow Reach": 2,
       "Shadow Weaving": 3,
       "Shadowform": 1,
+      "Silent Resolve": 1,
       "Spirit Tap": 5,
-      "Twilight Focus": 2,
+      "Twilight Focus": 3,
       "Twin Disciplines": 5,
-      "Vampiric Embrace": 1
+      "Vampiric Embrace": 1,
+      "Wand Specialization": 2
      },
      "eat_drink_together": true
     },
@@ -623,24 +628,24 @@
      "eat_below": 0.8,
      "talents": {
       "Divine Fury": 5,
-      "Holy Nova": 1,
       "Holy Precision": 1,
       "Holy Specialization": 5,
-      "Improved Healing": 3,
       "Improved Mind Blast": 1,
       "Improved Power Word: Shield": 3,
-      "Improved Renew": 1,
-      "Improved Shadow Word: Pain": 1,
+      "Improved Shadow Word: Pain": 2,
       "Inner Focus": 1,
+      "Inspiration": 3,
       "Meditation": 3,
       "Mental Agility": 3,
       "Power in Light": 5,
       "Searing Light": 2,
+      "Shadow Focus": 1,
       "Soul Warding": 1,
+      "Spell Warding": 2,
       "Spirit Tap": 5,
-      "Spiritual Guidance": 2,
+      "Spiritual Guidance": 1,
       "Twilight Focus": 3,
-      "Twin Disciplines": 3,
+      "Twin Disciplines": 2,
       "Wand Specialization": 2
      },
      "eat_drink_together": true
@@ -721,6 +726,7 @@
       "Composure": 2,
       "Coup de Grace": 3,
       "Death Mark": 1,
+      "Deflection": 2,
       "Dirty Deeds": 2,
       "Dirty Tricks": 1,
       "Efficient Strikes": 2,
@@ -735,7 +741,6 @@
       "Precision": 3,
       "Premeditation": 1,
       "Preparation": 1,
-      "Puncturing Wounds": 2,
       "Serrated Blades": 3,
       "Setup": 3,
       "Weapon Expertise": 2
@@ -750,17 +755,19 @@
       "Aggression": 3,
       "Composure": 2,
       "Coup de Grace": 3,
+      "Deflection": 2,
       "Dirty Deeds": 1,
       "Dual Wield Specialization": 2,
       "Efficient Strikes": 2,
+      "Flash of Steel": 2,
       "Flawless Execution": 1,
       "Ghostly Strike": 1,
       "Hack and Slash": 2,
       "Hemorrhage": 1,
       "Improved Ambush": 3,
       "Initiative": 3,
-      "Lightning Reflexes": 5,
-      "Malice": 3,
+      "Lightning Reflexes": 3,
+      "Malice": 1,
       "Opportunity": 5,
       "Precision": 3,
       "Premeditation": 1,
@@ -783,7 +790,7 @@
      "talents": {
       "Call of Flame": 3,
       "Call of Thunder": 1,
-      "Concussion": 2,
+      "Concussion": 3,
       "Convection": 5,
       "Elemental Alacrity": 3,
       "Elemental Focus": 1,
@@ -794,7 +801,7 @@
       "Lightning Overload": 3,
       "Mental Dexterity": 3,
       "Mindfulness": 3,
-      "Reverberation": 4,
+      "Reverberation": 3,
       "Shamanistic Focus": 1,
       "Thundering Strikes": 5,
       "Tidal Focus": 5
@@ -808,12 +815,11 @@
      "eat_below": 0.9,
      "talents": {
       "Anticipation": 2,
-      "Call of Flame": 1,
       "Concussion": 5,
       "Convection": 5,
       "Elemental Focus": 1,
       "Elemental Weapons": 3,
-      "Flurry": 3,
+      "Flurry": 4,
       "Improved Lightning Shield": 3,
       "Improved Reincarnation": 1,
       "Improved Stormstrike": 2,
@@ -875,15 +881,14 @@
      "eat_below": 0.55,
      "talents": {
       "Amplify Curse": 1,
+      "Bane": 1,
       "Curse of Exhaustion": 1,
+      "Demonic Embrace": 4,
       "Demonic Energies": 2,
-      "Demonic Sacrifice": 1,
-      "Fel Concentration": 1,
-      "Grim Reach": 2,
+      "Destructive Reach": 1,
+      "Grim Reach": 1,
       "Improved Bane of Agony": 2,
       "Improved Corruption": 5,
-      "Improved Drains": 2,
-      "Improved Health Funnel": 1,
       "Improved Life Tap": 2,
       "Improved Voidwalker": 3,
       "Malevolence": 5,
@@ -904,26 +909,23 @@
      "eat_below": 0.55,
      "talents": {
       "Amplify Curse": 1,
-      "Demonic Aegis": 1,
+      "Demonic Aegis": 2,
       "Demonic Brand": 3,
+      "Demonic Embrace": 2,
       "Demonic Energies": 2,
       "Demonic Knowledge": 3,
       "Demonic Sacrifice": 1,
       "Fel Vitality": 3,
-      "Grim Reach": 1,
       "Improved Bane of Agony": 2,
-      "Improved Corruption": 4,
-      "Improved Felhunter": 1,
+      "Improved Corruption": 5,
       "Improved Life Tap": 2,
-      "Improved Sayaad": 1,
       "Improved Voidwalker": 3,
       "Malevolence": 4,
-      "Master Demonologist": 3,
-      "Master Summoner": 1,
+      "Master Demonologist": 4,
       "Pandemic": 3,
       "Siphon Life": 1,
       "Soul Link": 1,
-      "Suppression": 5,
+      "Suppression": 4,
       "Unholy Power": 5
      },
      "eat_drink_together": true
@@ -934,57 +936,52 @@
      "drink_below": 0.15,
      "eat_below": 0.4,
      "talents": {
+      "Aftermath": 5,
       "Agonizing Flames": 3,
       "Bane": 5,
       "Bane of Havoc": 1,
       "Cataclysm": 3,
       "Conflagrate": 1,
-      "Demonic Aegis": 1,
-      "Demonic Energies": 1,
+      "Demonic Energies": 2,
       "Destructive Reach": 2,
       "Fel Vitality": 1,
       "Fire and Brimstone": 3,
-      "Improved Life Tap": 1,
-      "Improved Voidwalker": 3,
+      "Improved Life Tap": 2,
+      "Improved Shadow Bolt": 1,
+      "Improved Voidwalker": 1,
       "Incinerate": 1,
-      "Intensity": 3,
-      "Pyroclasm": 1,
       "Ruin": 5,
       "Shadow and Flame": 5,
       "Shadowburn": 1,
-      "Suppression": 5,
+      "Suppression": 4,
       "Unholy Power": 5
      },
      "eat_drink_together": true
     },
     "Hybrid Affliction/Demonology": {
-     "build": "affliction-demonology-open-leveling",
+     "build": "opt-affliction-leveling-leveling-st",
      "rotation": "demonology-leveling",
      "drink_below": 0.15,
      "eat_below": 0.55,
      "talents": {
       "Amplify Curse": 1,
       "Demonic Aegis": 2,
-      "Demonic Brand": 3,
+      "Demonic Embrace": 5,
       "Demonic Energies": 2,
       "Demonic Knowledge": 3,
       "Demonic Sacrifice": 1,
-      "Grim Reach": 1,
+      "Fel Vitality": 3,
       "Improved Bane of Agony": 2,
       "Improved Corruption": 5,
-      "Improved Felhunter": 1,
       "Improved Imp": 2,
       "Improved Life Tap": 2,
-      "Improved Sayaad": 1,
-      "Improved Voidwalker": 3,
-      "Malevolence": 3,
-      "Master Demonologist": 1,
-      "Master Summoner": 1,
+      "Malevolence": 5,
       "Pandemic": 3,
+      "Shadow Mastery": 2,
       "Siphon Life": 1,
       "Soul Link": 1,
-      "Soul Siphon": 3,
-      "Suppression": 4,
+      "Soul Siphon": 1,
+      "Suppression": 5,
       "Unholy Power": 5
      },
      "eat_drink_together": true
@@ -1002,6 +999,7 @@
      "talents": {
       "Anger Management": 1,
       "Bloodthrill": 2,
+      "Booming Voice": 1,
       "Cruelty": 5,
       "Deep Wounds": 3,
       "Deflection": 2,
@@ -1009,12 +1007,11 @@
       "Impale": 2,
       "Improved Bloodrage": 2,
       "Improved Charge": 2,
-      "Improved Execute": 2,
+      "Improved Execute": 1,
       "Improved Overpower": 2,
       "Improved Rend": 3,
-      "Improved Slam": 1,
+      "Improved Slam": 2,
       "Improved Tactical Mastery": 3,
-      "Lingering Rage": 1,
       "Mortal Strike": 1,
       "Spearing Strike": 1,
       "Sweeping Strikes": 1,
@@ -1040,8 +1037,8 @@
       "Flurry": 3,
       "Furious Precision": 3,
       "Gore Drinker": 2,
-      "Impale": 1,
       "Improved Charge": 2,
+      "Improved Execute": 1,
       "Improved Heroic Strike": 2,
       "Improved Overpower": 2,
       "Improved Rend": 3,
@@ -1377,7 +1374,7 @@
    "tool_ready": true,
    "after": {
     "hp": 0.3,
-    "mana": 0.7907
+    "mana": 0.825
    }
   },
   {
@@ -1493,7 +1490,7 @@
    "tool_ready": true,
    "after": {
     "hp": 0.3,
-    "mana": 0.8445
+    "mana": 0.8845
    }
   },
   {
@@ -1983,7 +1980,7 @@
     "drink",
     "eat"
    ],
-   "health_max": 2499.0,
+   "health_max": 2449.2,
    "tap_cost": 608.5
   },
   {
@@ -1995,7 +1992,7 @@
    "does": [
     "Life Tap"
    ],
-   "health_max": 2499.0,
+   "health_max": 2449.2,
    "tap_cost": 608.5
   },
   {
@@ -2008,7 +2005,7 @@
     "eat",
     "top-up drink"
    ],
-   "health_max": 2499.0,
+   "health_max": 2449.2,
    "tap_cost": 608.5
   },
   {
@@ -2020,7 +2017,7 @@
    "does": [
     "Life Tap"
    ],
-   "health_max": 2499.0,
+   "health_max": 2449.2,
    "tap_cost": 608.5
   },
   {
@@ -2030,7 +2027,7 @@
    "hp": 0.97,
    "mana": 0.97,
    "does": [],
-   "health_max": 2499.0,
+   "health_max": 2449.2,
    "tap_cost": 608.5
   },
   {
@@ -2043,7 +2040,7 @@
     "drink",
     "eat"
    ],
-   "health_max": 2499.0,
+   "health_max": 2384.1,
    "tap_cost": 608.5
   },
   {
@@ -2055,7 +2052,7 @@
    "does": [
     "Life Tap"
    ],
-   "health_max": 2499.0,
+   "health_max": 2384.1,
    "tap_cost": 608.5
   },
   {
@@ -2068,7 +2065,7 @@
     "eat",
     "top-up drink"
    ],
-   "health_max": 2499.0,
+   "health_max": 2384.1,
    "tap_cost": 608.5
   },
   {
@@ -2080,7 +2077,7 @@
    "does": [
     "Life Tap"
    ],
-   "health_max": 2499.0,
+   "health_max": 2384.1,
    "tap_cost": 608.5
   },
   {
@@ -2090,7 +2087,7 @@
    "hp": 0.97,
    "mana": 0.97,
    "does": [],
-   "health_max": 2499.0,
+   "health_max": 2384.1,
    "tap_cost": 608.5
   },
   {
@@ -2103,7 +2100,7 @@
     "drink",
     "eat"
    ],
-   "health_max": 2499.0,
+   "health_max": 2319.0,
    "tap_cost": 608.5
   },
   {
@@ -2115,7 +2112,7 @@
    "does": [
     "Life Tap"
    ],
-   "health_max": 2499.0,
+   "health_max": 2319.0,
    "tap_cost": 608.5
   },
   {
@@ -2128,7 +2125,7 @@
     "eat",
     "top-up drink"
    ],
-   "health_max": 2499.0,
+   "health_max": 2319.0,
    "tap_cost": 608.5
   },
   {
@@ -2140,7 +2137,7 @@
    "does": [
     "Life Tap"
    ],
-   "health_max": 2499.0,
+   "health_max": 2319.0,
    "tap_cost": 608.5
   },
   {
@@ -2150,7 +2147,7 @@
    "hp": 0.97,
    "mana": 0.97,
    "does": [],
-   "health_max": 2499.0,
+   "health_max": 2319.0,
    "tap_cost": 608.5
   }
  ]

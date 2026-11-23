@@ -21,6 +21,7 @@
 - [ ] Spell hit cap vs. +3-level bosses and whether heals can miss (Holy Precision / Divine Precision).
 - [ ] Fire immunity in The Barrow Deeps / Hyjal Summit (Fire Mage, Fire Warlock viability).
 - [ ] Class books (book-only spell ranks: Tome of Frostbolt XI, Grimoire of Shadow Bolt X ...; Ruins of Ahn'Qiraj in Classic): on 2026-12-09 check whether The Barrow Deeps or Hyjal Summit drop them (or new ones). If they do, `raidsim/trainer_ranks.py --reverse` and re-tune the raid rotations (the pages assume trainer ranks; the audit's research of 2026-11-20).
+- [ ] Enchants the gear lists leave out (2026-11-22, the audit session; raidsim/gear_tiers.ENCHANTS_OUT): do enchanters have Gloves - Superior Agility (+15) and Classic's other Ahn'Qiraj formulas (Gloves - Fire, Frost, Shadow and Healing Power, Cloak - Dodge), which the simulator's database lists as phase 1 with no source, and Forever's sourceless enchants (Chest - Living Stats, Bracer - Spell Power, the Grand Crusader / Sorcerer / Arcanist / Inquisitor weapon enchants, the off-hand and shield ones)? Each is raced where it fits and recorded with what it would have gained.
 - [ ] Threat values of new abilities (Holy Strike, Mangle, Stormstrike, Shield Slam changes).
 - [ ] Hunter's Mark: our beta tooltip gives rank 4 +143 ranged attack power, the simulator's spell data +71 (2026-11-21, the audit session's C17). Read the rank the trainer teaches at 60 and its bonus in game; until then the hunter raid guides say to take whichever rank your tooltip shows higher, and the raid numbers are the simulator's.
 
@@ -97,12 +98,6 @@
 **Restoration — Raid healing (machine-learning search)** (`druid/research/raid/builds/restoration-ml-heal.md`)
 - [ ] A machine-searched Restoration build: check it against the community's healing builds at launch.
 
-**Balance — Leveling (open talent search)** (`druid/research/leveling/builds/balance-open-leveling.md`)
-- [ ] An open-search Balance leveling build: check it while leveling at launch.
-
-**Feral Combat — Leveling (open talent search)** (`druid/research/leveling/builds/feral-combat-open-leveling.md`)
-- [ ] An open-search Feral Combat leveling build: check it while leveling at launch.
-
 **Restoration — Leveling into the raid build** (`druid/research/leveling/builds/restoration-leveling.md`)
 - [ ] Check the Restoration leveling pace at launch; the raid build's talents may cost speed early.
 
@@ -117,6 +112,12 @@
 
 **Feral Combat — Raid tank (the simulator's Bear 9/32/10)** (`druid/research/raid/builds/feral-combat-bear-preset-tank.md`)
 - [ ] Lacerate's stacking threat and Primal Bite in Forever: check the bear's threat against these numbers at launch.
+
+**Balance — Leveling (open talent search)** (`druid/research/leveling/builds/balance-open-leveling.md`)
+- [ ] An open-search Balance leveling build: check it while leveling at launch.
+
+**Feral Combat — Leveling (open talent search)** (`druid/research/leveling/builds/feral-combat-open-leveling.md`)
+- [ ] An open-search Feral Combat leveling build: check it while leveling at launch.
 
 ### Hunter
 
@@ -785,6 +786,9 @@
 **Destruction — Incinerate, Succubus out (the simulator's own build)** (`warlock/research/raid/builds/destruction-succubus-raid.md`)
 - [ ] Bane of Havoc copies damage done to other targets: worth nothing on a single boss (a filler here).
 
+**Affliction — Leveling (open talent search)** (`warlock/research/leveling/builds/affliction-open-leveling.md`)
+- [ ] An open-search Affliction leveling build: check it while leveling at launch.
+
 **Affliction-Demonology — Leveling (open talent search)** (`warlock/research/leveling/builds/affliction-demonology-open-leveling.md`)
 - [ ] An open-search Affliction-Demonology leveling build: check it while leveling at launch.
 
@@ -793,9 +797,6 @@
 
 **Demonology — Leveling (open talent search)** (`warlock/research/leveling/builds/demonology-open-leveling.md`)
 - [ ] An open-search Demonology leveling build: check it while leveling at launch.
-
-**Affliction — Leveling (open talent search)** (`warlock/research/leveling/builds/affliction-open-leveling.md`)
-- [ ] An open-search Affliction leveling build: check it while leveling at launch.
 
 ### Warrior
 

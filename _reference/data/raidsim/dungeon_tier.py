@@ -12,7 +12,8 @@ Per ML record (raidsim/ml/<class>-<spec slug>.json) with a full-raid pre-BiS sea
    neighbouring gear tiers the best talents seldom move.
 Record keys gear.dungeon and search["dungeon-raid"] (winner {allocation, split, dps}, race, candidates), so ml_builds.py --rank and
 render_modes.py read it as they read the other tiers. Resumable: a record whose search["dungeon-raid"] ran on the current simulator commit
-is skipped unless --fresh.
+is skipped unless --fresh. --refit (2026-11-22, the audit session's G1-G3): the tier's set file as it stands goes through
+gear_tiers.refit instead of a new make (with --fresh to redo a record already on the current commit).
 """
 import argparse
 import datetime
@@ -42,6 +43,7 @@ def main():
     ap.add_argument("--fresh", action="store_true")
     ap.add_argument("--iterations", type=int, default=30000)
     ap.add_argument("--smoke", action="store_true", help="small budgets; the ML record is not written (a test)")
+    ap.add_argument("--refit", action="store_true", help="refit the tier's set as it stands (gear_tiers.refit) instead of making it again")
     a = ap.parse_args()
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=None))
@@ -70,11 +72,21 @@ def main():
         e = R.SPECS[cls][entry]
         base = {n: r for n, r in flat(s["prebis-raid"]["winner"]["allocation"]).items() if n in known}
         print(f"== {f.name}: the quests-and-dungeons set in {entry} for the pre-BiS full-raid winner", flush=True)
-        g = GT.make(cls, spec, "dungeon", entry, R.talents_string(trees, base), "ml winner (pre-BiS, full raid)", repo, db, zones, ga,
-                    path=GT.SETS / f"{cls}-{rec['slug']}-dungeon.gear.json")
-        keep = ("entry", "gear", "date", "chosen", "ilvl", "trinkets", "trinket_screen", "names", "race_seed1", "confirm_seed2", "weights",
-                "evaluated_on", "enchants_dropped")
-        rec.setdefault("gear", {})["dungeon"] = dict({k: g[k] for k in keep if k in g}, commit=commit)
+        dpath = GT.SETS / f"{cls}-{rec['slug']}-dungeon.gear.json"
+        if a.refit and dpath.exists():   # (2026-11-22) the set as it stands, refit; its make() fields stay when they name the filed items
+            names = [db[x["id"]]["name"] if x and x.get("id") in db else None for x in json.load(open(dpath, encoding="utf-8"))["items"]]
+            pg = (rec.get("gear") or {}).get("dungeon") or {}
+            g = GT.refit(cls, spec, "dungeon", entry, R.talents_string(trees, base), "ml winner (pre-BiS, full raid)", repo, db, zones, ga,
+                         path=dpath, write=not a.smoke)
+            gd = dict(pg) if pg.get("names") == names else {}
+            gd.update({k: g[k] for k in ("entry", "gear", "date", "setting", "chosen", "ilvl", "names", "confirm_seed2", "weights", "weapons", "set_pieces", "enchants", "changes", "refit") if k in g})
+            rec.setdefault("gear", {})["dungeon"] = dict(gd, commit=commit)
+        else:
+            g = GT.make(cls, spec, "dungeon", entry, R.talents_string(trees, base), "ml winner (pre-BiS, full raid)", repo, db, zones, ga,
+                        path=dpath)
+            keep = ("entry", "gear", "date", "chosen", "ilvl", "trinkets", "trinket_screen", "names", "race_seed1", "confirm_seed2", "weights",
+                    "evaluated_on", "enchants_dropped", "weapons", "set_pieces", "enchants")
+            rec.setdefault("gear", {})["dungeon"] = dict({k: g[k] for k in keep if k in g}, commit=commit)
         # the candidates: every tier winner of the record, distinct talents, raced in the new set in a full raid
         cands, seen = [], set()
         for k in KEYS:

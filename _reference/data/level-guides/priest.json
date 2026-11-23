@@ -715,7 +715,7 @@
       "**Twin Disciplines** (10-14) makes your instant spells, **Shadow Word: Pain** among them, 5% stronger.",
       "**Mental Strength** (15-19) adds Intellect: a bigger mana pool.",
       "**Psychic Scream** (14): when a mob is on you and you are below 40% of your health, fear it and heal.",
-      "**Mind Blast** goes out at any mana: until 2026-11-17 the tuned rules held it below 30% of your mana, and once you eat while you drink that hold only cost time (about 2.5% per kill on the Smite build the Holy list is tuned on). **Smite** and, from 20, **Holy Fire** still do half your damage, the spec's rule.",
+      "**Mind Blast** goes out at any mana: until 2026-11-17 the tuned rules held it below 30% of your mana, and once you eat while you drink that hold only cost time (about 2.5% per kill on the Smite build the Holy list is tuned on). **Smite** and, from 20, **Holy Fire** still do 45-53% of your damage from 10 to 30 in the fight lab; the spec's rule asks 40% at level 60.",
       "Racial spells in the list above: Divine Grace (Human), Desperate Prayer (Dwarf), Starshards (Night Elf), Confounding Flash (Gnome), Touch of Weakness (Undead), Hex of Weakness (Troll). Only that race can learn its own."
      ]
     },
@@ -756,10 +756,50 @@
      "if_hurt": "In melee below 80% of your health: **Power Word: Shield** again once Weakened Soul has worn off (below half at any time). **Flash Heal** below a third of your health, **Renew** below 60% if it is not already on you. **Psychic Scream** if a mob is on you and you are below 40%.",
      "notes": [
       "**Soul Warding** (31) shortens the shield's cooldown and cost. **Twilight Focus** (32-34) keeps most hits from pushing your casts back once the shield breaks.",
+      "**Penance** (30) is in the build for the raid healer, but the tuned rotation never casts it (2026-11-15), so that **Smite** and **Holy Fire** stay half your damage at 30, as the signature rule of the Smite list this rotation shares asks at 60. Without it a kill takes about 2 seconds longer. It gets no key."
+     ],
+     "unsimulated": [
+      "Inner Focus"
+     ]
+    },
+    {
+     "from": 32,
+     "title": "Shadow Word: Death to finish",
+     "change": "**Shadow Word: Death** (32) finishes a mob below 20% of its health: the tuned rules of 2026-11-22 put it at the top of the list from 32 to 49, 2.7% faster per kill over levels 20-60 in the fight lab.",
+     "press": [
+      "Before the pull: **Power Word: Shield** on yourself. As the pull starts: **Inner Focus** when it is ready.",
+      "**Shadow Word: Death** (Mouse 5) on a mob below 20% of its health, whenever it is ready: it finishes the mob, and it hurts you for 30% of your maximum health if the mob survives it.",
+      "Open with **Holy Fire** from range. Cast it again once its burn has ended while the mob has more than 40% of its health; in melee only while your shield holds.",
+      "**Shadow Word: Pain** next, and again if it runs out while the mob has more than 30% of its health.",
+      "**Mind Blast** whenever it is ready, at any mana. It also finishes a mob one cast will kill.",
+      "**Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit.",
+      "Your wand for the last hit."
+     ],
+     "if_hurt": "In melee below 80% of your health: **Power Word: Shield** again once Weakened Soul has worn off (below half at any time). **Flash Heal** below a third of your health, **Renew** below 60% if it is not already on you. **Psychic Scream** if a mob is on you and you are below 40%.",
+     "notes": [
       "**Holy Specialization** (35-39) adds crit to your Holy spells, and **Divine Fury** (44) takes a tenth of a second off the cast of **Smite** and **Holy Fire**.",
       "**Holy Nova** (42) is for pulls of several mobs: cast it only when two or more are within 10 yards of you.",
-      "The rest of the Holy points (**Improved Renew**, **Inspiration**, **Holy Binding**, **Improved Healing**, **Litany of Light**, **Spiritual Guidance**, **Spiritual Healing**) are for healing at 60. They do little for your kills, which is why this is a slow way to level.",
-      "**Penance** (30) is in the build for the raid healer, but the tuned rotation never casts it (2026-11-15), so that **Smite** and **Holy Fire** stay at least half your damage: the signature rule of the Smite list this rotation shares. Without it a kill takes about 2 seconds longer. It gets no key."
+      "**Shadow Word: Death** is about one press a kill: the mob has to be below 20% of its health and the spell ready."
+     ],
+     "unsimulated": [
+      "Inner Focus"
+     ]
+    },
+    {
+     "from": 50,
+     "title": "Shadow Word: Death off again",
+     "change": "From 50 the tuned rules no longer press **Shadow Word: Death**. Pressed on to 60 it would be faster (4.5% a kill at 50, 3.9% at 55, 1.1% at 60 in the fight lab, 2026-11-23), but **Smite** and **Holy Fire** would fall to 38% of your damage at 60, under this spec's rule of 40%: that is what the signature rule costs here. The rest stays.",
+     "press": [
+      "Before the pull: **Power Word: Shield** on yourself. As the pull starts: **Inner Focus** when it is ready.",
+      "Open with **Holy Fire** from range. Cast it again once its burn has ended while the mob has more than 40% of its health; in melee only while your shield holds.",
+      "**Shadow Word: Pain** next, and again if it runs out while the mob has more than 30% of its health.",
+      "**Mind Blast** whenever it is ready, at any mana. It also finishes a mob one cast will kill.",
+      "**Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit.",
+      "Your wand for the last hit."
+     ],
+     "if_hurt": "In melee below 80% of your health: **Power Word: Shield** again once Weakened Soul has worn off (below half at any time). **Flash Heal** below a third of your health, **Renew** below 60% if it is not already on you. **Psychic Scream** if a mob is on you and you are below 40%.",
+     "notes": [
+      "The rest of the Holy points (**Improved Renew**, **Inspiration**, **Holy Binding**, **Improved Healing**, **Litany of Light**, **Spiritual Guidance**, **Spiritual Healing**) are for healing at 60. They do little for your kills, which is why this is a slow way to level."
      ],
      "unsimulated": [
       "Inner Focus"
@@ -825,8 +865,13 @@
        },
        {
         "key": "Mouse 5",
-        "role": "Free: Penance's key in the Discipline guide; this rotation never casts it",
-        "binds": []
+        "role": "The finisher: a mob below 20% of its health, from 32 to 49",
+        "binds": [
+         {
+          "from": 32,
+          "spell": "Shadow Word: Death"
+         }
+        ]
        },
        {
         "key": "Mouse 4",
@@ -998,7 +1043,7 @@
      "One swap on bar 1: **Flash Heal** takes 3 at 20 and **Lesser Heal** leaves the bar. **Smite** stays on Q all the way.",
      "4 holds **Desperate Prayer** only for a Dwarf: in Forever it is a Dwarf's spell, and the fight lab plays without racial spells. Other races leave 4 free.",
      "C stays free for the healing potion macro on the [macros page](../macros.md).",
-     "No key: **Power Word: Fortitude**, **Inner Fire**, food, water, the mount and the Hearthstone. **Devouring Plague**, **Penance** and **Shadow Word: Death** are never cast by this rotation."
+     "No key: **Power Word: Fortitude**, **Inner Fire**, food, water, the mount and the Hearthstone. **Devouring Plague** and **Penance** are never cast by this rotation. **Shadow Word: Death** has Mouse 5 from 32, as in the Shadow guide: the tuned rules press it from 32 to 49."
     ]
    }
   },
@@ -1051,7 +1096,7 @@
       "**Wand Specialization** (10-11) makes your wand hit harder.",
       "**Power in Light** (14-18) makes **Smite** stronger while your **Shadow Word: Pain** burns on the mob, and from 20 while **Holy Fire** burns.",
       "**Psychic Scream** (14): when a mob is on you and you are below 40% of your health, fear it and heal.",
-      "**Mind Blast** goes out at any mana: until 2026-11-17 the tuned rules held it below 30% of your mana, and once you eat while you drink that hold only cost time (about 2.5% per kill for this build). **Smite** and, from 20, **Holy Fire** still do half your damage, the spec's rule.",
+      "**Mind Blast** goes out at any mana: until 2026-11-17 the tuned rules held it below 30% of your mana, and once you eat while you drink that hold only cost time (about 2.5% per kill for this build). **Smite** and, from 20, **Holy Fire** still do 47-54% of your damage from 10 to 30 in the fight lab; the spec's rule asks half at level 60.",
       "Racial spells in the list above: Divine Grace (Human), Desperate Prayer (Dwarf), Starshards (Night Elf), Confounding Flash (Gnome), Touch of Weakness (Undead), Hex of Weakness (Troll). Only that race can learn its own."
      ]
     },
@@ -1090,11 +1135,51 @@
      ],
      "if_hurt": "In melee below 80% of your health: **Power Word: Shield** again once Weakened Soul has worn off (below half at any time). **Flash Heal** below a third of your health, **Renew** below 60% if it is not already on you. **Psychic Scream** if a mob is on you and you are below 40%.",
      "notes": [
+      "This build takes no Holy Nova: pull one mob at a time, and with two on you, **Psychic Scream** sends them running.",
+      "This build has no **Penance**, and the [Holy guide](holy-by-level.md)'s rotation never casts it either: Mouse 5 holds **Shadow Word: Death** from 32, as in the Shadow guide."
+     ],
+     "unsimulated": [
+      "Inner Focus"
+     ]
+    },
+    {
+     "from": 32,
+     "title": "Shadow Word: Death to finish",
+     "change": "**Shadow Word: Death** (32) finishes a mob below 20% of its health: the tuned rules of 2026-11-22 put it at the top of the list from 32 to 49, 2.7% faster per kill over levels 20-60 in the fight lab.",
+     "press": [
+      "Before the pull: **Power Word: Shield** on yourself. As the pull starts: **Inner Focus** when it is ready.",
+      "**Shadow Word: Death** (Mouse 5) on a mob below 20% of its health, whenever it is ready: it finishes the mob, and it hurts you for 30% of your maximum health if the mob survives it.",
+      "Open with **Holy Fire** from range. Cast it again once its burn has ended while the mob has more than 40% of its health; in melee only while your shield holds.",
+      "**Shadow Word: Pain** next, and again if it runs out while the mob has more than 30% of its health.",
+      "**Mind Blast** whenever it is ready, at any mana. It also finishes a mob one cast will kill.",
+      "**Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit.",
+      "Your wand for the last hit."
+     ],
+     "if_hurt": "In melee below 80% of your health: **Power Word: Shield** again once Weakened Soul has worn off (below half at any time). **Flash Heal** below a third of your health, **Renew** below 60% if it is not already on you. **Psychic Scream** if a mob is on you and you are below 40%.",
+     "notes": [
       "**Soul Warding** (48) shortens the shield's cooldown and cost. **Twilight Focus** (34, 44, 55) keeps most hits from pushing your casts back once the shield breaks.",
       "**Holy Specialization** (35-39) adds crit to your Holy spells, **Divine Fury** (40-43, 49) takes half a second off the cast of **Smite** and **Holy Fire**, and **Searing Light** (56-57) adds Holy damage.",
-      "This build takes no Holy Nova: pull one mob at a time, and with two on you, **Psychic Scream** sends them running.",
-      "**Improved Shadow Word: Pain** (59-60) makes it last 3 seconds longer, and **Spiritual Guidance** (58) adds 3% of your Spirit to your spell damage.",
-      "This build has no **Penance**, and the [Holy guide](holy-by-level.md)'s rotation never casts it either: Mouse 5 stays free."
+      "**Shadow Word: Death** is about one press a kill: the mob has to be below 20% of its health and the spell ready."
+     ],
+     "unsimulated": [
+      "Inner Focus"
+     ]
+    },
+    {
+     "from": 50,
+     "title": "Shadow Word: Death off again",
+     "change": "From 50 the tuned rules no longer press **Shadow Word: Death**. Pressed on to 60 it would be faster at 50 and 55 (3.5% and 2.3% a kill in the fight lab, 2026-11-23) and 0.6-0.8% slower at 60, and **Smite** and **Holy Fire** would fall to 43% of your damage at 60, under this spec's rule of half: that is what the signature rule costs here. The rest stays.",
+     "press": [
+      "Before the pull: **Power Word: Shield** on yourself. As the pull starts: **Inner Focus** when it is ready.",
+      "Open with **Holy Fire** from range. Cast it again once its burn has ended while the mob has more than 40% of its health; in melee only while your shield holds.",
+      "**Shadow Word: Pain** next, and again if it runs out while the mob has more than 30% of its health.",
+      "**Mind Blast** whenever it is ready, at any mana. It also finishes a mob one cast will kill.",
+      "**Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit.",
+      "Your wand for the last hit."
+     ],
+     "if_hurt": "In melee below 80% of your health: **Power Word: Shield** again once Weakened Soul has worn off (below half at any time). **Flash Heal** below a third of your health, **Renew** below 60% if it is not already on you. **Psychic Scream** if a mob is on you and you are below 40%.",
+     "notes": [
+      "**Improved Shadow Word: Pain** (59-60) makes it last 3 seconds longer, and **Spiritual Guidance** (58) adds 3% of your Spirit to your spell damage."
      ],
      "unsimulated": [
       "Inner Focus"
@@ -1160,8 +1245,13 @@
        },
        {
         "key": "Mouse 5",
-        "role": "Free: Penance's key in the Discipline guide; this build has none",
-        "binds": []
+        "role": "The finisher: a mob below 20% of its health, from 32 to 49",
+        "binds": [
+         {
+          "from": 32,
+          "spell": "Shadow Word: Death"
+         }
+        ]
        },
        {
         "key": "Mouse 4",
@@ -1328,7 +1418,7 @@
      "One swap on bar 1: **Flash Heal** takes 3 at 20 and **Lesser Heal** leaves the bar. **Smite** stays on Q all the way.",
      "4 holds **Desperate Prayer** only for a Dwarf: in Forever it is a Dwarf's spell, and the fight lab plays without racial spells. Other races leave 4 free.",
      "C stays free for the healing potion macro on the [macros page](../macros.md).",
-     "No key: **Power Word: Fortitude**, **Inner Fire**, food, water, the mount and the Hearthstone. **Devouring Plague** and **Shadow Word: Death** are never cast by this rotation."
+     "No key: **Power Word: Fortitude**, **Inner Fire**, food, water, the mount and the Hearthstone. **Devouring Plague** is never cast by this rotation. **Shadow Word: Death** has Mouse 5 from 32, as in the Shadow guide: the tuned rules press it from 32 to 49."
     ]
    }
   }

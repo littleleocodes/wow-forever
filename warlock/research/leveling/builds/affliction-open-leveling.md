@@ -1,10 +1,10 @@
-# Affliction — Leveling (open talent search) — 36/14/1
+# Affliction — Leveling (open talent search) — 35/14/2
 
 *[Warlock](../../../README.md) · [Leveling and solo play](../README.md) · WoW: Forever — proposed*
 
 | | |
 |---|---|
-| **Build** | 36/14/1 (Affliction / Demonology / Destruction) |
+| **Build** | 35/14/2 (Affliction / Demonology / Destruction) |
 | **Role** | DPS — Leveling |
 | **Status** | Draft |
 | **Data** | WoW: Forever beta client build 1.60.1.70753 (2026-11-03 snapshot in `_reference/data/forever-talents/`) — **subject to change before launch** |
@@ -15,7 +15,7 @@ The Affliction leveling build the open leveling search found on 2026-11-22: ever
 
 ## Point allocation
 
-### Affliction (36)
+### Affliction (35)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
@@ -23,12 +23,11 @@ The Affliction leveling build the open leveling search found on 2026-11-22: ever
 | **Suppression** | 5/5 | changed | Improves your chance to hit by 5% and reduces all threat you generate by 20%. |
 | **Improved Corruption** | 5/5 | changed | Reduces the casting time of your Corruption spell by 2 sec and increases the damage it deals by 10%. |
 | **Grim Reach** | 1/2 | **NEW** | Increases the range of your Affliction spells by 10%. |
-| **Improved Drains** | 1/3 | **NEW** | Increases Health drained, damage done, or Mana drained by your Drain Life, Drain Soul, and Drain Mana spells by 7%. |
 | **Improved Bane of Agony** | 2/2 | **NEW** | Increases the damage done by your Bane of Agony by 10%. |
 | **Amplify Curse** | 1/1 | changed | Increases the effect of your next Curse of Weakness or Bane of Agony by 50%, or your next Curse of Exhaustion by 20%. Lasts 30 sec. |
 | **Pandemic** | 3/3 | **NEW** | Increases the critical strike damage bonus of your Corruption, Bane of Agony, Bane of Doom, Drain Soul, Drain Life, Siphon Life, and Wrack spells by 100%. |
 | **Malevolence** | 5/5 | **NEW** | Increases the critical effect chance of your Shadow spells by 5%. |
-| **Nightfall** | 1/2 | changed | Gives your Corruption, Drain Soul, Drain Life, and Wrack spells a 2% chance to cause you to enter a Shadow Trance after damaging the opponent. The Shadow Trance reduces the casting time of your next Shadow Bolt spell by 100%. |
+| **Curse of Exhaustion** | 1/1 | changed | Reduces the target's movement speed by 30% for 12 sec. Only one Curse per Warlock can be active on any one target. |
 | **Siphon Life** | 1/1 | changed | Transfers 11 health from the target to the caster every 3 sec. Lasts 30 sec. |
 | **Soul Siphon** | 3/3 | **NEW** | Increases the damage done or health drained by your Drain Life, Drain Soul, and Wrack spells by 12% per each of your other Affliction effects active on the target, up to a maximum increase of 36%. |
 | **Shadow Mastery** | 5/5 | changed | Increases the damage dealt or life drained by your Shadow spells by 10%. |
@@ -43,11 +42,12 @@ The Affliction leveling build the open leveling search found on 2026-11-22: ever
 | **Improved Voidwalker** | 3/3 | unchanged | Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice, and Suffering spells by 30%. |
 | **Demonic Energies** | 2/2 | **NEW** | You heal your pet for 15% of all spell damage you deal. When you gain Mana from Life Tap, your summoned demon gains 100% of the Mana you gain. |
 
-### Destruction (1)
+### Destruction (2)
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Shadow Bolt** | 1/5 | changed | Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 4% for 12 sec. |
+| **Destructive Reach** | 1/2 | changed | Increases the range of your Destruction spells by 10%. |
+| **Bane** | 1/5 | changed | Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by 0.1 sec and your Soul Fire spell by 0.4 sec. |
 
 ## Leveling order
 
@@ -74,14 +74,14 @@ The Affliction leveling build the open leveling search found on 2026-11-22: ever
 | 44 | Affliction | Malevolence | 1 | 33/2/0 |
 | 45-48 | Demonology | Unholy Power | 4 | 33/6/0 |
 | 49-50 | Demonology | Demonic Energies | 2 | 33/8/0 |
-| 51 | Destruction | Improved Shadow Bolt | 1 | 33/8/1 |
-| 52 | Affliction | Improved Drains | 1 | 34/8/1 |
+| 51 | Destruction | Destructive Reach | 1 | 33/8/1 |
+| 52 | Affliction | Curse of Exhaustion | 1 | 34/8/1 |
 | 53-55 | Demonology | Improved Voidwalker | 3 | 34/11/1 |
 | 56 | Demonology | Demonic Embrace | 1 | 34/12/1 |
 | 57 | Affliction | Grim Reach | 1 | 35/12/1 |
-| 58 | Affliction | Nightfall | 1 | 36/12/1 |
-| 59 | Demonology | Demonic Embrace | 1 | 36/13/1 |
-| 60 | Demonology | Unholy Power | 1 | 36/14/1 |
+| 58 | Destruction | Bane | 1 | 35/12/2 |
+| 59 | Demonology | Demonic Embrace | 1 | 35/13/2 |
+| 60 | Demonology | Unholy Power | 1 | 35/14/2 |
 
 ## Core talents (priority order)
 
@@ -100,8 +100,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Curse of Exhaustion to Improved Drains at 52 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Health Funnel to Nightfall at 58 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Destructive Reach to Unholy Power at 60 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Demonic Aegis to Improved Shadow Bolt at 51 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill).
-- 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Unholy Power to Demonic Energies at 49 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Drains to Demonic Embrace at 42 (no loss: -0.1% seed 3, +0.0% seed 4, level-weighted time per kill); Nightfall to Curse of Exhaustion at 52 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Fel Concentration to Demonic Embrace at 59 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Fel Concentration to Demonic Aegis at 51 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Bane to Improved Health Funnel at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Curse of Exhaustion to Demonic Embrace at 56 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Improved Health Funnel to Nightfall at 52 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Sacrifice to Bane at 58 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Grim Reach to Fel Concentration at 59 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Drains to Demonic Embrace at 43 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Energies to Destructive Reach at 60 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Destructive Reach to Curse of Exhaustion at 56 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Fel Concentration to Improved Health Funnel at 52 (no loss: +0.1% seed 3, +0.1% seed 4, level-weighted time per kill); Improved Drains to Demonic Sacrifice at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Shadow Bolt to Demonic Energies at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Demonic Aegis to Curse of Exhaustion at 58 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Curse of Exhaustion to Improved Drains at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Fel Concentration to Destructive Reach at 56 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Demonic Embrace to Grim Reach at 57 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing moved: Improved Drains to Malevolence at 44 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Energies to Fel Concentration at 56 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Sacrifice to Grim Reach at 59 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Embrace to Demonic Aegis at 58 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Sayaad to Improved Shadow Bolt at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill).
+- 2026-11-23: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Health Funnel to Bane at 58 (no loss: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Drains to Curse of Exhaustion at 52 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Aegis to Destructive Reach at 51 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill).
+- 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Curse of Exhaustion to Improved Drains at 52 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Health Funnel to Nightfall at 58 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Destructive Reach to Unholy Power at 60 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Demonic Aegis to Improved Shadow Bolt at 51 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Unholy Power to Demonic Energies at 49 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Drains to Demonic Embrace at 42 (no loss: -0.1% seed 3, +0.0% seed 4, level-weighted time per kill); Nightfall to Curse of Exhaustion at 52 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Fel Concentration to Demonic Embrace at 59 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Fel Concentration to Demonic Aegis at 51 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Bane to Improved Health Funnel at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Curse of Exhaustion to Demonic Embrace at 56 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Improved Health Funnel to Nightfall at 52 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Sacrifice to Bane at 58 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Grim Reach to Fel Concentration at 59 (no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Drains to Demonic Embrace at 43 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Energies to Destructive Reach at 60 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Destructive Reach to Curse of Exhaustion at 56 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Fel Concentration to Improved Health Funnel at 52 (no loss: +0.1% seed 3, +0.1% seed 4, level-weighted time per kill); Improved Drains to Demonic Sacrifice at 58 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill). Earlier: 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Shadow Bolt to Demonic Energies at 60 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Demonic Aegis to Curse of Exhaustion at 58 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Curse of Exhaustion to Improved Drains at 58 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Fel Concentration to Destructive Reach at 56 (no loss: +0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Demonic Embrace to Grim Reach at 57 (no loss: +0.0% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing moved: Improved Drains to Malevolence at 44 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Energies to Fel Concentration at 56 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Sacrifice to Grim Reach at 59 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Demonic Embrace to Demonic Aegis at 58 (no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Sayaad to Improved Shadow Bolt at 60 (no loss: -0.0% seed 3, +0.0% seed 4, level-weighted time per kill).
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 31.18; affliction-leveling 35.79. The search simulated 21,543 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

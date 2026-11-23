@@ -1,6 +1,6 @@
 {
  "class": "priest",
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -31,7 +31,8 @@
      "deaths_per_100": 0.0,
      "casts": {
       "Shadow Word: Pain": 1.03,
-      "Wand": 6.01
+      "Wand": 6.01,
+      "Lesser Heal": 0.01
      },
      "idle_share": 0.021,
      "drink_per_kill": 0,
@@ -49,7 +50,9 @@
      "deaths_per_100": 0.0,
      "casts": {
       "Shadow Word: Pain": 1.03,
-      "Wand": 10.37
+      "Wand": 10.37,
+      "Lesser Heal": 0.01,
+      "Power Word: Shield": 0.02
      },
      "idle_share": 0.074,
      "drink_per_kill": 0,
@@ -134,7 +137,8 @@
       "Shadow Word: Pain": 1.02,
       "Mind Blast": 2.24,
       "Mind Flay": 2.06,
-      "Wand": 5.11
+      "Wand": 5.11,
+      "Psychic Scream": 0.01
      },
      "idle_share": 0.183,
      "drink_per_kill": 4.67,
@@ -156,7 +160,9 @@
       "Shadow Word: Pain": 1.03,
       "Mind Blast": 2.32,
       "Mind Flay": 2.19,
-      "Wand": 5.3
+      "Wand": 5.3,
+      "Psychic Scream": 0.04,
+      "Flash Heal": 0.01
      },
      "idle_share": 0.186,
      "drink_per_kill": 4.87,
@@ -545,7 +551,8 @@
       "Penance": 1.06,
       "Mind Blast": 1.99,
       "Smite": 1.37,
-      "Wand": 7.56
+      "Wand": 7.56,
+      "Power Word: Shield": 0.04
      },
      "idle_share": 0.282,
      "drink_per_kill": 11.76,
@@ -595,7 +602,7 @@
    "build": "holy-leveling",
    "rotation": "holy-leveling",
    "provisional_order": false,
-   "fingerprint": "f47d9d59e480",
+   "fingerprint": "5d7b06d238ed",
    "levels": {
     "1": {
      "seconds": 13.0,
@@ -777,26 +784,82 @@
      "pet_deaths_per_100": 0.0,
      "standing": "Inner Fire"
     },
+    "32": {
+     "seconds": 45.3,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Power Word: Shield": 1.0,
+      "Holy Fire": 1.67,
+      "Shadow Word: Pain": 1.03,
+      "Mind Blast": 1.84,
+      "Smite": 3.73,
+      "Shadow Word: Death": 0.88,
+      "Wand": 0.84
+     },
+     "idle_share": 0.358,
+     "drink_per_kill": 16.2,
+     "eat_per_kill": 0.21,
+     "shares": {
+      "Smite": 0.248,
+      "Mind Blast": 0.235,
+      "Shadow Word: Death": 0.215,
+      "Holy Fire": 0.143,
+      "Shadow Word: Pain": 0.134,
+      "Wand": 0.026
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Inner Fire"
+    },
     "40": {
-     "seconds": 55.3,
+     "seconds": 51.0,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Power Word: Shield": 1.0,
+      "Holy Fire": 1.84,
+      "Shadow Word: Pain": 1.05,
+      "Mind Blast": 1.85,
+      "Smite": 3.98,
+      "Shadow Word: Death": 0.84,
+      "Wand": 1.99
+     },
+     "idle_share": 0.374,
+     "drink_per_kill": 18.92,
+     "eat_per_kill": 1.4,
+     "shares": {
+      "Mind Blast": 0.259,
+      "Smite": 0.227,
+      "Shadow Word: Death": 0.167,
+      "Shadow Word: Pain": 0.157,
+      "Holy Fire": 0.14,
+      "Wand": 0.051
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Inner Fire"
+    },
+    "49": {
+     "seconds": 51.2,
      "deaths_per_100": 0.0,
      "casts": {
       "Power Word: Shield": 1.0,
       "Holy Fire": 1.85,
-      "Shadow Word: Pain": 1.05,
-      "Mind Blast": 1.99,
-      "Smite": 4.86,
+      "Shadow Word: Pain": 1.06,
+      "Mind Blast": 1.83,
+      "Smite": 3.88,
+      "Shadow Word: Death": 0.86,
       "Wand": 3.29
      },
-     "idle_share": 0.346,
-     "drink_per_kill": 18.86,
-     "eat_per_kill": 2.09,
+     "idle_share": 0.354,
+     "drink_per_kill": 17.72,
+     "eat_per_kill": 2.26,
      "shares": {
-      "Smite": 0.291,
-      "Mind Blast": 0.289,
-      "Shadow Word: Pain": 0.178,
-      "Holy Fire": 0.155,
-      "Wand": 0.086
+      "Mind Blast": 0.238,
+      "Smite": 0.22,
+      "Shadow Word: Pain": 0.175,
+      "Holy Fire": 0.15,
+      "Shadow Word: Death": 0.142,
+      "Wand": 0.075
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,
@@ -858,7 +921,7 @@
    "build": "smite-open-leveling",
    "rotation": "holy-leveling",
    "provisional_order": false,
-   "fingerprint": "e09a5646e2ae",
+   "fingerprint": "2c73f75e0f1b",
    "levels": {
     "1": {
      "seconds": 13.0,
@@ -1040,26 +1103,82 @@
      "pet_deaths_per_100": 0.0,
      "standing": "Inner Fire"
     },
-    "40": {
-     "seconds": 48.3,
+    "32": {
+     "seconds": 38.5,
      "deaths_per_100": 0.0,
      "casts": {
       "Power Word: Shield": 1.0,
-      "Holy Fire": 1.68,
-      "Shadow Word: Pain": 1.05,
-      "Mind Blast": 2.04,
-      "Smite": 4.98,
-      "Wand": 1.71
+      "Holy Fire": 1.44,
+      "Shadow Word: Pain": 1.03,
+      "Mind Blast": 1.88,
+      "Smite": 3.56,
+      "Shadow Word: Death": 0.77,
+      "Wand": 0.86
      },
-     "idle_share": 0.306,
-     "drink_per_kill": 14.46,
-     "eat_per_kill": 1.75,
+     "idle_share": 0.266,
+     "drink_per_kill": 10.15,
+     "eat_per_kill": 0.58,
      "shares": {
-      "Smite": 0.337,
-      "Mind Blast": 0.296,
-      "Shadow Word: Pain": 0.168,
-      "Holy Fire": 0.143,
-      "Wand": 0.056
+      "Smite": 0.277,
+      "Mind Blast": 0.242,
+      "Shadow Word: Death": 0.183,
+      "Holy Fire": 0.135,
+      "Shadow Word: Pain": 0.128,
+      "Wand": 0.035
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Inner Fire"
+    },
+    "40": {
+     "seconds": 44.4,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Power Word: Shield": 1.0,
+      "Holy Fire": 1.69,
+      "Shadow Word: Pain": 1.06,
+      "Mind Blast": 1.83,
+      "Smite": 3.96,
+      "Shadow Word: Death": 0.84,
+      "Wand": 1.35
+     },
+     "idle_share": 0.321,
+     "drink_per_kill": 14.08,
+     "eat_per_kill": 1.45,
+     "shares": {
+      "Smite": 0.258,
+      "Mind Blast": 0.254,
+      "Shadow Word: Death": 0.166,
+      "Shadow Word: Pain": 0.148,
+      "Holy Fire": 0.132,
+      "Wand": 0.042
+     },
+     "pet_sources": [],
+     "pet_deaths_per_100": 0.0,
+     "standing": "Inner Fire"
+    },
+    "49": {
+     "seconds": 43.7,
+     "deaths_per_100": 0.0,
+     "casts": {
+      "Power Word: Shield": 1.0,
+      "Holy Fire": 1.5,
+      "Shadow Word: Pain": 1.03,
+      "Mind Blast": 1.88,
+      "Smite": 4.67,
+      "Shadow Word: Death": 0.77,
+      "Wand": 1.53
+     },
+     "idle_share": 0.343,
+     "drink_per_kill": 14.56,
+     "eat_per_kill": 1.18,
+     "shares": {
+      "Smite": 0.306,
+      "Mind Blast": 0.246,
+      "Shadow Word: Pain": 0.153,
+      "Holy Fire": 0.127,
+      "Shadow Word: Death": 0.124,
+      "Wand": 0.044
      },
      "pet_sources": [],
      "pet_deaths_per_100": 0.0,

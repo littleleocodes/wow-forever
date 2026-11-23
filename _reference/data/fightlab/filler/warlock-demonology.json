@@ -221,6 +221,8 @@
   }
  ],
  "kept_signature": [],
+ "model": "23d3d795b37a21e719e6381673a4681db411f900",
+ "chain": "kept: no model recorded, the same order",
  "gates_checked": {
   "Demonic Aegis": {
    "level": 26,
@@ -674,6 +676,16 @@
    "points": 1
   }
  ],
+ "reruns": [
+  {
+   "date": "2026-11-22",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-22",
+   "moves": 0
+  }
+ ],
  "written": {
   "allocation": {
    "Affliction": [
@@ -911,11 +923,5 @@
    }
   ],
   "note": "2026-11-21: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Imp to Improved Voidwalker at 24 (gate that did nothing, no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Improved Imp to Demonic Embrace at 23 (gate that did nothing, no loss: +0.1% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Imp to Demonic Embrace at 22 (gate that did nothing, no loss: +0.1% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Master Demonologist to Suppression at 44 (tie-break: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Demonic Embrace to Fel Vitality at 21 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Voidwalker to Fel Vitality at 18 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Embrace to Fel Vitality at 20 (gate: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill)."
- },
- "reruns": [
-  {
-   "date": "2026-11-22",
-   "moves": 0
-  }
- ]
+ }
 }

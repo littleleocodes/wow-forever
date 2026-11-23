@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Beast-Marks (a Beast Mastery/Marksmanship hybrid) leveling build the open leveling search found on 2026-11-21: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the bm-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (bm-leveling). 
+The Beast-Marks (a Beast Mastery/Marksmanship hybrid) leveling build the open leveling search found on 2026-11-22: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the bm-leveling rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (bm-leveling). 
 
 ## Point allocation
 
@@ -92,8 +92,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Bestial Swiftness to Bestial Discipline at 56 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill).
-- 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Rapid Recuperation to Barrage at 31 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Pathfinding to Bestial Swiftness at 56 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Spirit Bond to Hawk Eye at 60 (no loss: -0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Barrage to Improved Tracking at 31 (tie-break: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill); Hawk Eye to Improved Tracking at 60 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Bestial Discipline to Mortal Shots at 58 (no loss: -0.0% seed 3, +0.1% seed 4, level-weighted time per kill).
+- 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Bestial Swiftness to Bestial Discipline at 56 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Rapid Recuperation to Barrage at 31 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Pathfinding to Bestial Swiftness at 56 (no loss: +0.0% seed 3, +0.0% seed 4, level-weighted time per kill); Spirit Bond to Hawk Eye at 60 (no loss: -0.0% seed 3, +0.1% seed 4, level-weighted time per kill); Barrage to Improved Tracking at 31 (tie-break: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill); Hawk Eye to Improved Tracking at 60 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill); Bestial Discipline to Mortal Shots at 58 (no loss: -0.0% seed 3, +0.1% seed 4, level-weighted time per kill).
 - Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 22.09; beast-mastery-leveling 22.18, bm-solo-farm 23.15. The search simulated 35,601 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

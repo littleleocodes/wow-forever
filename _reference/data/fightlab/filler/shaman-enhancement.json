@@ -147,7 +147,7 @@
  ],
  "steps": [
   {
-   "weighted": 25.988,
+   "weighted": 25.871,
    "values_at_60": {
     "Elemental Focus": -0.356,
     "Elemental Weapons": -0.29,
@@ -208,6 +208,8 @@
  "kept_signature": [
   "Stormstrike"
  ],
+ "model": "b4f0e9781f036b4c8782d4ba7e5038402f3f50d5",
+ "chain": "kept: no model recorded, the same order",
  "gates_checked": {
   "Anticipation": {
    "level": 24,
@@ -216,15 +218,15 @@
    "homes": [
     {
      "to": "Ancestral Knowledge",
-     "seed3": 0.001
+     "seed3": -0.0002
     },
     {
      "to": "Earth's Grasp",
-     "seed3": 0.0032
+     "seed3": 0.0023
     },
     {
      "to": "Guardian Totems",
-     "seed3": 0.0032
+     "seed3": 0.0023
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -267,19 +269,19 @@
    "homes": [
     {
      "to": "Anticipation",
-     "seed3": 0.0016
+     "seed3": 0.0003
     },
     {
      "to": "Earth's Grasp",
-     "seed3": 0.0025
+     "seed3": 0.0007
     },
     {
      "to": "Guardian Totems",
-     "seed3": 0.0025
+     "seed3": 0.0007
     },
     {
      "to": "Ancestral Knowledge",
-     "seed3": 0.0027
+     "seed3": 0.0018
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -291,31 +293,31 @@
    "homes": [
     {
      "to": "Flurry",
-     "seed3": 0.0143
+     "seed3": 0.0127
     },
     {
      "to": "Toughness",
-     "seed3": 0.0145
-    },
-    {
-     "to": "Anticipation",
-     "seed3": 0.0152
-    },
-    {
-     "to": "Ancestral Knowledge",
-     "seed3": 0.0153
+     "seed3": 0.0128
     },
     {
      "to": "Earth's Grasp",
-     "seed3": 0.0156
+     "seed3": 0.0133
     },
     {
      "to": "Guardian Totems",
-     "seed3": 0.0156
+     "seed3": 0.0133
     },
     {
      "to": "Improved Ghost Wolf",
-     "seed3": 0.0156
+     "seed3": 0.0133
+    },
+    {
+     "to": "Ancestral Knowledge",
+     "seed3": 0.0136
+    },
+    {
+     "to": "Anticipation",
+     "seed3": 0.0137
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -327,31 +329,31 @@
    "homes": [
     {
      "to": "Flurry",
-     "seed3": 0.0011
-    },
-    {
-     "to": "Anticipation",
-     "seed3": 0.0012
+     "seed3": 0.0007
     },
     {
      "to": "Toughness",
-     "seed3": 0.0016
+     "seed3": 0.0009
+    },
+    {
+     "to": "Anticipation",
+     "seed3": 0.0014
     },
     {
      "to": "Ancestral Knowledge",
-     "seed3": 0.0023
+     "seed3": 0.0021
     },
     {
      "to": "Earth's Grasp",
-     "seed3": 0.0024
+     "seed3": 0.0023
     },
     {
      "to": "Guardian Totems",
-     "seed3": 0.0024
+     "seed3": 0.0023
     },
     {
      "to": "Improved Ghost Wolf",
-     "seed3": 0.0024
+     "seed3": 0.0023
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -377,19 +379,19 @@
    "homes": [
     {
      "to": "Anticipation",
-     "seed3": 0.1155
+     "seed3": 0.1234
     },
     {
      "to": "Ancestral Knowledge",
-     "seed3": 0.1177
+     "seed3": 0.1257
     },
     {
      "to": "Earth's Grasp",
-     "seed3": 0.1193
+     "seed3": 0.1276
     },
     {
      "to": "Guardian Totems",
-     "seed3": 0.1193
+     "seed3": 0.1276
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -400,32 +402,32 @@
    "does_nothing": null,
    "homes": [
     {
-     "to": "Anticipation",
-     "seed3": 0.0052
+     "to": "Flurry",
+     "seed3": 0.0036
     },
     {
-     "to": "Flurry",
-     "seed3": 0.0054
+     "to": "Anticipation",
+     "seed3": 0.004
     },
     {
      "to": "Ancestral Knowledge",
-     "seed3": 0.0065
-    },
-    {
-     "to": "Earth's Grasp",
-     "seed3": 0.0073
-    },
-    {
-     "to": "Guardian Totems",
-     "seed3": 0.0073
-    },
-    {
-     "to": "Improved Ghost Wolf",
-     "seed3": 0.0073
+     "seed3": 0.0042
     },
     {
      "to": "Toughness",
-     "seed3": 0.0075
+     "seed3": 0.005
+    },
+    {
+     "to": "Earth's Grasp",
+     "seed3": 0.0052
+    },
+    {
+     "to": "Guardian Totems",
+     "seed3": 0.0052
+    },
+    {
+     "to": "Improved Ghost Wolf",
+     "seed3": 0.0052
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -437,11 +439,11 @@
    "homes": [
     {
      "to": "Ancestral Knowledge",
-     "seed3": 0.0045
+     "seed3": 0.0038
     },
     {
      "to": "Earth's Grasp",
-     "seed3": 0.0062
+     "seed3": 0.0047
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -453,7 +455,7 @@
    "homes": [
     {
      "to": "Improved Healing Wave",
-     "seed3": 0.0045
+     "seed3": 0.004
     }
    ],
    "verdict": "kept: no home faster on both seeds"
@@ -622,6 +624,10 @@
  "reruns": [
   {
    "date": "2026-11-21",
+   "moves": 0
+  },
+  {
+   "date": "2026-11-22",
    "moves": 0
   },
   {

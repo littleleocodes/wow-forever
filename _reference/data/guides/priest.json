@@ -55,7 +55,7 @@
     "written": "2026-11-15",
     "rotations": {
      "leveling:shadow-dps": "cade49498bb2",
-     "leveling:holy-leveling": "6d115d12797e",
+     "leveling:holy-leveling": "4eaaffdacec0",
      "leveling:discipline-leveling": "5fd49f4613a7"
     }
    }
@@ -89,13 +89,14 @@
     }
    },
    "leveling": {
-    "plan": "Leveling as Smite: open with **Holy Fire**, keep **Shadow Word: Pain** on the mob, cast **Mind Blast** whenever it is ready and **Smite** in every gap, and let your wand take the last hit. A **Power Word: Shield** before every pull lets you keep casting in melee. In the fight lab a kill takes about 51 seconds level-weighted (49 at level 60), twice the Shadow page's 24.",
+    "plan": "Leveling as Smite: open with **Holy Fire**, keep **Shadow Word: Pain** on the mob, cast **Mind Blast** whenever it is ready and **Smite** in every gap, and let your wand take the last hit. A **Power Word: Shield** before every pull lets you keep casting in melee. In the fight lab a kill takes about 43 seconds level-weighted (42 at level 60), 1.8 times the Shadow page's 24.",
     "why": [
      "**Holy Fire** (level 20) opens from range: a hard hit and a 10-second burn. The fight lab casts it again once the burn has ended while the mob has more than 40% of its health, in melee only while your shield holds. **Inner Focus** (30) goes up as the pull starts, so the opening **Holy Fire** is free and its hit 25% more likely to crit.",
      "**Shadow Word: Pain** is instant and ticks for the whole fight; **Improved Shadow Word: Pain** (59-60) makes it last 3 seconds longer. While it or **Holy Fire** burns on the mob, **Power in Light** (14-18) makes **Smite** 10% stronger.",
      "**Smite** is your main spell. **Divine Fury** (40-43, 49) takes half a second off its cast and **Holy Fire**'s, **Holy Specialization** (35-39) adds 5% crit and **Searing Light** (56-57) 5% Holy damage.",
      "**Mind Blast** goes out whenever it is ready, at any mana (the tuned rules of 2026-11-17 dropped its 30% mana hold: about 2.5% faster per kill); **Smite** at any mana until the mob has less health left than about half a **Smite** hit, then your wand finishes, 25% stronger with **Wand Specialization** (10-11).",
-     "Mana: drink only below 15%. **Meditation** (22-24) keeps half your regeneration going while you cast, **Mental Agility** (20-21, 28) cuts **Smite** and **Holy Fire**'s cost by 10%, **Spirit Tap** (25-27, 29, 31) doubles your Spirit after a kill."
+     "Mana: drink only below 15%. **Meditation** (22-24) keeps half your regeneration going while you cast, **Mental Agility** (20-21, 28) cuts **Smite** and **Holy Fire**'s cost by 10%, **Spirit Tap** (25-27, 29, 31) doubles your Spirit after a kill.",
+     "From 32 to 49 **Shadow Word: Death** finishes a mob below 20% of its health whenever it is ready: the tuned rules of 2026-11-22 force it there, 2.7% faster per kill over levels 20-60 in the fight lab, and leave it out from 50: pressed on to 60 it would keep **Smite** and **Holy Fire** under the signature rule's share at 60 (38% on the Holy page against 40%, 43% on the Smite page against half), though it would be faster at 50 and 55. It hurts you for 30% of your maximum health when the mob survives it."
     ],
     "caveats": [
      "The pre-pull shield is part of this rotation: **Smite** and **Holy Fire** take 2 seconds or more to cast, and while **Power Word: Shield** holds, damage does not push your casts back. In melee, shield again once Weakened Soul is gone and you are below 80% health; **Soul Warding** (48) cuts the shield's cooldown by 4 seconds and its cost by 15%, **Twilight Focus** (34, 44, 55) avoids most pushback in between.",
@@ -105,12 +106,12 @@
     ],
     "diverge": [
      "Hurt in a fight: shield again below half your health, **Flash Heal** below about a third, **Renew** below 60% if it is not already on you.",
-     "For pure speed, level as Shadow: 24 seconds per kill in the fight lab against this build's 51."
+     "For pure speed, level as Shadow: 24 seconds per kill in the fight lab against this build's 43."
     ],
     "written": "2026-11-15",
     "rotations": {
      "leveling:shadow-dps": "cade49498bb2",
-     "leveling:holy-leveling": "6d115d12797e",
+     "leveling:holy-leveling": "4eaaffdacec0",
      "leveling:discipline-leveling": "5fd49f4613a7"
     }
    }
@@ -143,29 +144,30 @@
     }
    },
    "leveling": {
-    "plan": "You level with your raid talents, Discipline first: the first Holy point comes at level 32. The fight is a Smite priest's: **Holy Fire** to open, **Shadow Word: Pain** and **Mind Blast** whenever they are ready, **Smite** in every gap and your wand for the last hit. In the fight lab a kill takes about 59 seconds level-weighted, 2.4 times the Shadow page's 24.",
+    "plan": "You level with your raid talents, Discipline first: the first Holy point comes at level 32. The fight is a Smite priest's: **Holy Fire** to open, **Shadow Word: Pain** and **Mind Blast** whenever they are ready, **Smite** in every gap and your wand for the last hit. In the fight lab a kill takes about 50 seconds level-weighted, 2.1 times the Shadow page's 24.",
     "why": [
      "**Holy Fire** (level 20) opens from range: a 3.4-second cast (this build takes one point of **Divine Fury**, 0.1 seconds off) that hits hard and burns for 10 seconds more. The fight lab casts it again once the burn has ended while the mob has more than 40% of its health, in melee only while your **Power Word: Shield** holds (damage would push the long cast back). **Inner Focus** (23) goes up as the pull starts, so the opening **Holy Fire** is free and its hit 25% more likely to crit.",
      "**Shadow Word: Pain** is instant and ticks for the whole fight; **Twin Disciplines** (10-14) adds 5% to it and your other instant spells.",
      "**Penance** (30) is in the build for the raid healer, but the tuned rules (2026-11-15) never cast it: with it, **Smite** and **Holy Fire** made only about 40% of your damage at 60, and this list, which the Smite page plays too, must keep them at half (the signature rule). Without it a kill takes about 2 seconds longer.",
      "**Mind Blast** whenever it is ready, at any mana; **Smite** fills every gap at any mana until the mob has less health left than about half a **Smite** hit, then your wand finishes.",
      "Mana: you drink only below 15%. **Meditation** (20-22) keeps half your regeneration going while you cast and **Mental Strength** (15-19) adds 10% Intellect.",
-     "The pre-pull **Power Word: Shield** is part of this rotation: while it holds, damage does not push your casts back; **Soul Warding** (31) takes its 4-second cooldown away and **Twilight Focus** (32-34) avoids most pushback after it breaks."
+     "The pre-pull **Power Word: Shield** is part of this rotation: while it holds, damage does not push your casts back; **Soul Warding** (31) takes its 4-second cooldown away and **Twilight Focus** (32-34) avoids most pushback after it breaks.",
+     "From 32 to 49 **Shadow Word: Death** finishes a mob below 20% of its health whenever it is ready: the tuned rules of 2026-11-22 force it there, 2.7% faster per kill over levels 20-60 in the fight lab, and leave it out from 50: pressed on to 60 it would keep **Smite** and **Holy Fire** under the signature rule's share at 60 (38% on the Holy page against 40%, 43% on the Smite page against half), though it would be faster at 50 and 55. It hurts you for 30% of your maximum health when the mob survives it."
     ],
     "caveats": [
-     "Most of your Holy points are for healing (**Improved Renew**, **Inspiration**, **Holy Binding**, **Improved Healing**, **Litany of Light**, **Spiritual Guidance**, **Spiritual Healing**), so this is a slow way to level: 59 seconds per kill level-weighted in the fight lab against 24 for Shadow.",
-     "The tuned rules never cast **Devouring Plague** or **Penance** (the gates that keep **Smite** and **Holy Fire** your main damage, the spec's rule). Until 2026-11-17 they also held **Mind Blast** below 30% mana; once you eat while you drink, that hold only cost time (about 2.5% per kill on the Smite build the list is tuned on), and **Smite** and **Holy Fire** still do half the damage.",
+     "Most of your Holy points are for healing (**Improved Renew**, **Inspiration**, **Holy Binding**, **Improved Healing**, **Litany of Light**, **Spiritual Guidance**, **Spiritual Healing**), so this is a slow way to level: 50 seconds per kill level-weighted in the fight lab against 24 for Shadow.",
+     "The tuned rules never cast **Devouring Plague** or **Penance** (the gates that keep **Smite** and **Holy Fire** your main damage, the spec's rule). Until 2026-11-17 they also held **Mind Blast** below 30% mana; once you eat while you drink, that hold only cost time (about 2.5% per kill on the Smite build the list is tuned on), and **Smite** and **Holy Fire** still do 43% of the damage at 60 on this page's build (half on the Smite page's).",
      "**Holy Nova** (42) is for pulls of several mobs: the fight lab casts it only when two or more are in reach.",
      "After a fight, **Renew** heals you while you loot and walk on (below 85% health); you eat below 80% health (a tuned rule). Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17)."
     ],
     "diverge": [
      "Hurt in a fight: shield again below half your health, **Flash Heal** below about a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.",
-     "If you only want to reach 60, level as Shadow and respec: about 2.4 times as fast per kill in the fight lab."
+     "If you only want to reach 60, level as Shadow and respec: about 2.1 times as fast per kill in the fight lab."
     ],
     "written": "2026-11-15",
     "rotations": {
      "leveling:shadow-dps": "cade49498bb2",
-     "leveling:holy-leveling": "6d115d12797e",
+     "leveling:holy-leveling": "4eaaffdacec0",
      "leveling:discipline-leveling": "5fd49f4613a7"
     }
    }
@@ -220,7 +222,7 @@
     "written": "2026-11-09",
     "rotations": {
      "leveling:shadow-dps": "cade49498bb2",
-     "leveling:holy-leveling": "6d115d12797e",
+     "leveling:holy-leveling": "4eaaffdacec0",
      "leveling:discipline-leveling": "5fd49f4613a7"
     }
    }
@@ -245,7 +247,7 @@
     "written": "2026-11-15",
     "rotations": {
      "leveling:shadow-dps": "cade49498bb2",
-     "leveling:holy-leveling": "6d115d12797e",
+     "leveling:holy-leveling": "4eaaffdacec0",
      "leveling:discipline-leveling": "5fd49f4613a7"
     }
    }
@@ -269,7 +271,7 @@
     "written": "2026-11-15",
     "rotations": {
      "leveling:shadow-dps": "cade49498bb2",
-     "leveling:holy-leveling": "6d115d12797e",
+     "leveling:holy-leveling": "4eaaffdacec0",
      "leveling:discipline-leveling": "5fd49f4613a7"
     }
    }

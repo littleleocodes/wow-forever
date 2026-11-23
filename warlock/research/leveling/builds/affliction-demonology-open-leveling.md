@@ -100,9 +100,8 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 ## Notes
 
-- 2026-11-09: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Demonic Embrace to Fel Vitality at 24 (gate: -0.1% seed 3, -0.2% seed 4, level-weighted time per kill); Improved Health Funnel to Fel Vitality at 20 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Demonic Embrace to Fel Vitality at 23 (gate: -0.2% seed 3, -0.2% seed 4, level-weighted time per kill).
 - +3.0% faster than the hand draft leveling-affliction, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 33.86; opt-affliction-leveling-leveling-st 34.66, opt-affliction-leveling-solo-60 34.68, demonology-leveling 34.70, leveling-affliction 34.88, opt-affliction-leveling-leveling-aoe 35.41. The search simulated 36,200 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 33.86; opt-affliction-leveling-leveling-st 34.52, opt-affliction-leveling-solo-60 34.68, demonology-leveling 34.70, leveling-affliction 34.88, opt-affliction-leveling-leveling-aoe 35.41. The search simulated 36,200 builds.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 
 ## Open questions (verify in the live game)

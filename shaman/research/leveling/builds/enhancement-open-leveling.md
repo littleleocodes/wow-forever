@@ -11,7 +11,7 @@
 
 ## Summary
 
-The Enhancement leveling build the open leveling search found on 2026-11-21: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the enhancement-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (enhancement-dps). 
+The Enhancement leveling build the open leveling search found on 2026-11-22: every legal 51-point build with no tree rule, searched at level 60 in the fight lab (this project's solo leveling simulator: same-level mobs, eating, drinking and deaths included) playing the enhancement-dps rotation, the winner picked by a race at levels 20-60 among the level-60 finalists (fightlab/fl_open_search.py); the talent order is the stats model's (enhancement-dps). 
 
 ## Point allocation
 
@@ -97,7 +97,7 @@ Not simulated in the fight lab; the class's leveling priority is on the [levelin
 
 - 2026-11-20: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Call of Flame to Flurry at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-17: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Totemic Focus to Improved Reincarnation at 58 (tie-break: -0.0% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-16: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Anticipation to Call of Flame at 60 (tie-break: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill). Earlier: 2026-11-15: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Flurry to Spirit Weapons at 37 (gate: -0.3% seed 3, -0.3% seed 4, level-weighted time per kill); Flurry to Elemental Weapons at 34 (gate: -0.3% seed 3, -0.1% seed 4, level-weighted time per kill).
 - +1.8% faster than the hand draft leveling-enhancement, over the replacement bar: this build is the spec's leveling pick, the hand draft stays as the alternative.
-- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.88; leveling-enhancement 26.34, opt-enhancement-dps-leveling-st 26.96, opt-enhancement-dps-solo-60 26.96, restoration-leveling 35.60. The search simulated 43,694 builds.
+- Race at levels 20-60 (seed 3, 3,000 fights per level; level-weighted seconds per kill, lower is faster): this build 25.80; leveling-enhancement 26.26, opt-enhancement-dps-leveling-st 26.74, opt-enhancement-dps-solo-60 26.74, restoration-leveling 35.50. The search simulated 43,694 builds.
 - The talent order takes the spec's signature talents at the earliest level their tree allows (the signature rule since 2026-11-06, fl_signature.sig_order), then follows the order the fight lab raced fastest.
 - Fight-lab numbers are a model of the beta (the assumptions in fightlab/tables.py), not in-game measurements.
 

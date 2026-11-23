@@ -340,11 +340,14 @@ def best_enchant(cands, w):
     return e, v
 
 
-def choose(cls, items, w):
-    """The set worth most by the weights: [17 slot dicts {id, enchant?}] and a note per decision."""
+def choose(cls, items, w, tier=None, zones=None):
+    """The set worth most by the weights: [17 slot dicts {id, enchant?}] and a note per decision. With a tier (2026-11-22), only the
+    enchants the tier's enchant pool allows (gear_tiers.enchant_allowed), and a held-in-off-hand item takes the off-hand enchant."""
     import fill_enchants as FE
     P = PROFICIENCY[cls]
     C = FE.HEALER_CANDIDATES
+    if tier:
+        C = {k: [c for c in v if GT.enchant_allowed(c, SLOT_TYPE[k] if isinstance(k, int) else 13, tier, zones)] for k, v in C.items()}
 
     def rank(lst):
         return sorted(lst, key=lambda it: (-value(item_stats(it), w), -((it.get("scalingOptions") or {}).get("0") or {}).get("ilvl", 0), it["id"]))
@@ -374,10 +377,11 @@ def choose(cls, items, w):
     e1, v1 = best_enchant(C["1h"], w)
     e2, v2 = best_enchant(C["2h"], w)
     es, vs = best_enchant(C["shield"], w)
+    eo, vo = best_enchant(C.get("offhand", []), w)
     opt_one = None
     if one:
         oh = off[0] if off else None
-        ohe, ohv = (es, vs) if oh and oh.get("weaponType") == 7 else (None, 0.0)
+        ohe, ohv = (es, vs) if oh and oh.get("weaponType") == 7 else (eo, vo) if oh and oh.get("weaponType") == 5 else (None, 0.0)
         opt_one = (value(item_stats(one[0]), w) + v1 + (value(item_stats(oh), w) + ohv if oh else 0.0), one[0], oh, ohe)
     opt_two = (value(item_stats(two[0]), w) + v2, two[0]) if two else None
     if opt_two and (not opt_one or opt_two[0] > opt_one[0]):
@@ -434,12 +438,12 @@ def run_spec(cls, spec, a, B, rec, out_dir):
             pool = GT.pool_of(tier, gs[1])
             items = admissible(cls, tier, pool)
             wd = {k: v["w"] for k, v in w0.items()}
-            s1, n1 = choose(cls, items, wd)
+            s1, n1 = choose(cls, items, wd, tier, gs[1])
             st1 = gear_stats(s1)
             w1, c1, c1se = measure_weights(lab, lab_gear(st1), wseeds, B["weight_steps"], B["boot"])
             log(f"  {tier}: first set " + ", ".join(f"{k} {st1[k]:g}" for k in LAB_KEYS) + f"; capacity {c1:.4f}; weights there: "
                 + ", ".join(f"{k} {v['w']:.2e}±{v['se']:.1e}" for k, v in w1.items()))
-            s2, n2 = choose(cls, items, {k: v["w"] for k, v in w1.items()})
+            s2, n2 = choose(cls, items, {k: v["w"] for k, v in w1.items()}, tier, gs[1])
             race = None
             chosen, notes = s1, n1
             if s2 != s1:

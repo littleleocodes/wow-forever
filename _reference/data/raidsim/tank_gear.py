@@ -306,13 +306,15 @@ def ench_value(entries, w):
     return sum(w.get(STAT_NAMES[i], 0.0) * v for i, v in enumerate(st))
 
 
-def choose_enchants(items, w, db, edb):
-    """Each stat slot's TANK_CANDIDATES enchant worth most by the weights (the template's, listed first, wins ties). Returns the changes."""
+def choose_enchants(items, w, db, edb, tier=None, zones=None):
+    """Each stat slot's TANK_CANDIDATES enchant worth most by the weights (the template's, listed first, wins ties). Returns the changes.
+    With a tier (2026-11-22), only the candidates the tier's enchant pool allows (gear_tiers.enchant_allowed)."""
+    ok = (lambda c, t: GT.enchant_allowed(c, t, tier, zones)) if tier else (lambda c, t: True)
     changes = {}
     for slot, cands in FE.TANK_CANDIDATES.items():
         if not isinstance(slot, int) or not items[slot].get("id"):
             continue
-        cands = [c for c in cands if c in edb]
+        cands = [c for c in cands if c in edb and ok(c, G.SLOT_TYPE[slot])]
         if not cands:
             continue
         vals = [(ench_value(edb[c], w), -i, c) for i, c in enumerate(cands)]
@@ -325,7 +327,7 @@ def choose_enchants(items, w, db, edb):
     sh = items[15]
     it = db.get(sh.get("id")) if sh.get("id") else None
     if it and it.get("weaponType") == 7:
-        cands = [c for c in FE.TANK_CANDIDATES["shield"] if c in edb]
+        cands = [c for c in FE.TANK_CANDIDATES["shield"] if c in edb and ok(c, 13)]
         vals = [(ench_value(edb[c], w), -i, c) for i, c in enumerate(cands)]
         best = cands[0] if abs(max(vals)[0] - vals[0][0]) < 1e-9 else max(vals)[2]
         if sh.get("enchant") != best:
@@ -334,13 +336,18 @@ def choose_enchants(items, w, db, edb):
     return changes
 
 
-def race_weapon_enchant(entry, repo, talents, items, db, ref, a, tag):
-    """The main hand's enchant: the candidates raced on seed 1, the leader confirmed against the current one on seed 2."""
+def race_weapon_enchant(entry, repo, talents, items, db, ref, a, tag, tier=None, zones=None):
+    """The main hand's enchant: the candidates raced on seed 1, the leader confirmed against the current one on seed 2. With a tier
+    (2026-11-22), only the candidates the tier's enchant pool allows; a current enchant it does not allow is no reference."""
     it = db.get(items[14].get("id")) if items[14].get("id") else None
     if not it:
         return None
-    cands = FE.TANK_CANDIDATES["2h" if it.get("handType") == 4 else "1h"]
-    cur = items[14].get("enchant") or cands[0]
+    cands = [c for c in FE.TANK_CANDIDATES["2h" if it.get("handType") == 4 else "1h"] if not tier or GT.enchant_allowed(c, 13, tier, zones)]
+    if not cands:
+        return None
+    cur = items[14].get("enchant")
+    if not cur or (tier and not GT.enchant_allowed(cur, 13, tier, zones)):
+        cur = cands[0]
     sets = {}
     for c in dict.fromkeys([cur] + cands):
         x = [dict(i) for i in items]
@@ -396,12 +403,20 @@ def run_class(cls, tiers, repo, db, zones, edb, a, rec):
         FE.fill(cur, tmpl)
         tag = f"tank-{cls}-{tier}"
         wf = TankWeights(e, repo, talents, ref, a.weight_iterations, tag)
+        # 2026-11-22 (the audit session, for the re-pin night): the set maker's three steps with the tank's measure (weapons raced per
+        # hand, item-set pieces raced, enchants from the tier's enchant pool raced on tank value); their map is on every set that raced,
+        # so the weight-picked enchants and the weapon-enchant race below run only for a set made without them (--no-refine)
         r = GT.optimize_set(cls, [(entry_name, e, "raid", talents, pick)], cur, GT.pool_of(tier, zones), repo, db, a, tag,
-                            keep_current=(tier == "bis"), weights_fn=wf, score=lambda row: R.tank_value(row, ref) or 0)
+                            keep_current=(tier == "bis"), weights_fn=wf, score=lambda row: R.tank_value(row, ref) or 0,
+                            refine=None if a.no_refine else tier, zones=zones, tank=True)
+        r.pop("enchant_map", None)
         items = r["items"]
-        FE.fill(items, tmpl)
-        ench = choose_enchants(items, r["weights"], db, edb)
-        wench = race_weapon_enchant(e, repo, talents, items, db, ref, a, tag)
+        if a.no_refine:
+            FE.fill(items, tmpl)
+            ench = choose_enchants(items, r["weights"], db, edb, tier, zones)
+            wench = race_weapon_enchant(e, repo, talents, items, db, ref, a, tag, tier, zones)
+        else:
+            ench, wench = {}, None
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(json.dumps({"items": items}, indent=1) + "\n", encoding="utf-8")
         m = measure(e, repo, talents, items, a.final, 3, ref, f"m-{cls}")
@@ -455,6 +470,8 @@ def main():
     ap.add_argument("--fresh-standard", action="store_true", help="measure the reference and the standard set again")
     ap.add_argument("--ref-fights", type=int, default=20000, help="fights of the tank-value reference (deep_tank.py's 20,000)")
     ap.add_argument("--smoke", action="store_true", help="tiny budgets; sets and record under raidsim/deep-smoke/tank-gear/ (a test)")
+    ap.add_argument("--no-refine", action="store_true", help="the set maker without its three steps of 2026-11-22 (weapons, set pieces, "
+                    "enchants raced): the enchants by weight from fill_enchants.TANK_CANDIDATES, as before")
     a = ap.parse_args()
     a.min_gain = 0.0
     a.build = dict(x.split("=", 1) for x in a.build)

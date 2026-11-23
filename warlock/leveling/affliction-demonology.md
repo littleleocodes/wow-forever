@@ -2,13 +2,11 @@
 
 [Warlock](../README.md) > [Leveling (solo)](README.md) > Affliction-Demonology
 
-> **Being checked:** Its filler pass is still running (points that do nothing at the levels they are held); its play check follows. The build and numbers on this page may change when it is done.
-
 *Dots and Siphon Life with a demon tanking (Soul Link, Demonic Knowledge): the classic warlock leveling split.* (a hybrid: Affliction/Demonology).
 
 **Leveling from level 1?** [The rotation level by level](affliction-demonology-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Affliction-Demonology (optimized)](../research/leveling/builds/opt-affliction-leveling-leveling-st.md)** (27/24/0) — [open the talent tree](https://talentsforever.com/warlock/60/2550002013500112-02552032010000013--12)
+**[Affliction-Demonology (optimized)](../research/leveling/builds/opt-affliction-leveling-leveling-st.md)** (27/24/0) — [open the talent tree](https://talentsforever.com/warlock/60/2550002013500112-00552232010000013--12)
 
 **Signature spells:** 64% of the damage at level 60 in the fight lab comes from the spec's core spells (Corruption, Bane of Agony, Siphon Life, your pet; this build never casts Drain Life, Wrack) (the spec's rule: at least 50%; **Corruption** cast at level 60).
 
@@ -35,12 +33,12 @@ The 27/24/0 split plays the Demonology list without the brand: the Voidwalker ho
 - **Bane of Agony** and **Corruption** on every mob above about a third of its health (**Corruption** only above 35%, the tuned rule of 2026-11-06, about 1% faster per kill), **Siphon Life** from level 30. **Immolate** only while you have more than half your mana: with no **Searing Pain** brand to pay for, the fight lab casts it on most mobs at every level.
 - The wand is your filler: **Shadow Bolt** waits for 80% mana, which the dots leave you on some pulls before level 30 and almost never after, and the fight lab needs no drinking.
 - The Affliction points make the dots hit harder: **Improved Corruption** (16-19 and 23) makes **Corruption** instant from 23 and adds 10% to it, **Improved Bane of Agony** (21-22) adds 10% to the bane, **Pandemic** (24, 28 and 31) and **Malevolence** (25-27, 29 and 32) make your dots crit more often and harder, **Shadow Mastery** (35-36) adds 4% to your Shadow damage, and **Improved Life Tap** (10-11) adds 20% to each **Life Tap**.
-- The Demonology points are for the Voidwalker: **Unholy Power** (37-41) adds 10% to its damage, **Demonic Energies** (42 and 46) heals it for 15% of your spell damage, **Fel Vitality** (43-45) gives it 15% more health and mana (and you 15% more mana), **Soul Link** (57) moves 30% of your damage taken to it and adds 3% damage for both, and **Demonic Knowledge** (58-60) adds spell damage while it is out.
+- The Demonology points are for the Voidwalker: **Unholy Power** (37-41) adds 10% to its damage, **Demonic Energies** (42 and 46) heals it for 15% of your spell damage, **Fel Vitality** (43-45) gives it 15% more health and mana (and you 15% more mana), **Improved Voidwalker** (48-49) makes its **Torment** and **Consume Shadows** 20% stronger, **Soul Link** (57) moves 30% of your damage taken to it and adds 3% damage for both, and **Demonic Knowledge** (58-60) adds spell damage while it is out.
 - **Drain Life** below 60% health, and in place of the wand below 85%. **Life Tap** in a fight only when you are short of mana and above 60% health; between fights tap back to about 70% mana and eat only below 55% health. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).
 
 **Caveats**
 
-- This build has no Demonic Brand, so the list's **Searing Pain** line never fires, and no Improved Health Funnel, so the in-fight **Health Funnel** line does not apply: heal the Voidwalker between fights. **Improved Imp** (48-49) and **Demonic Aegis** (50, 52) only fill tiers, the Voidwalker being your demon; **Demonic Sacrifice** (47) is the step to **Soul Link**; and **Soul Siphon** (34) only strengthens drains, which this list rarely casts.
+- This build has no Demonic Brand, so the list's **Searing Pain** line never fires, and no Improved Health Funnel, so the in-fight **Health Funnel** line does not apply: heal the Voidwalker between fights. **Demonic Aegis** (50, 52) only fills a tier, the Voidwalker taking the hits; **Improved Voidwalker** (48-49) makes **Torment** and **Consume Shadows** 20% stronger (Improved Imp's two points until the filler pass of 2026-11-23); **Demonic Sacrifice** (47) is the step to **Soul Link**; and **Soul Siphon** (34) only strengthens drains, which this list rarely casts.
 - When a mob reaches you: **Death Coil** (level 42) if you are below about 60% health (it heals you for its damage), otherwise **Fear** it and **Drain Life** while it runs, until the Voidwalker's **Torment** takes it back.
 
 **When to change it**
@@ -69,20 +67,22 @@ One point per level from 10, in this order:
 | 31 | Pandemic (Affliction) | 1 |
 | 32 | Malevolence (Affliction) | 1 |
 | 33 | Suppression (Affliction) | 1 |
-| 34 | Soul Siphon (Affliction) | 1 |
+| 34 | Soul Siphon (Affliction) (tier point: needed to reach Shadow Mastery) | 1 |
 | 35-36 | Shadow Mastery (Affliction) | 2 |
 | 37-41 | Unholy Power (Demonology) | 5 |
 | 42 | Demonic Energies (Demonology) | 1 |
 | 43-45 | Fel Vitality (Demonology) | 3 |
 | 46 | Demonic Energies (Demonology) | 1 |
-| 47 | Demonic Sacrifice (Demonology) | 1 |
-| 48-49 | Improved Imp (Demonology) | 2 |
+| 47 | Demonic Sacrifice (Demonology) (needed for Soul Link) | 1 |
+| 48-49 | Improved Voidwalker (Demonology) | 2 |
 | 50 | Demonic Aegis (Demonology) | 1 |
 | 51 | Demonic Embrace (Demonology) | 1 |
 | 52 | Demonic Aegis (Demonology) | 1 |
 | 53-56 | Demonic Embrace (Demonology) | 4 |
 | 57 | Soul Link (Demonology) | 1 |
 | 58-60 | Demonic Knowledge (Demonology) | 3 |
+
+A talent marked as a tier point does nothing in the fight lab's leveling fights; it is in the build because no legal talent that helps can take that point.
 
 ## The numbers
 
@@ -94,6 +94,8 @@ One point per level from 10, in this order:
 | 50 | 35 |
 | 60 | 34 |
 
+**Points that do nothing for this spec:** **Soul Siphon** (1) only counts toward the points the tree needs before **Shadow Mastery**; **Demonic Sacrifice** (1) is needed for **Soul Link**.
+
 ## Other builds of this spec
 
 - [Leveling — Affliction DoTs with a Voidwalker](../research/leveling/builds/leveling-affliction.md) (23/26/2, 33 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warlock/60/23500020135011-20050302312110213-2-12)
@@ -102,7 +104,7 @@ One point per level from 10, in this order:
 - [Affliction-Demonology (optimized, AoE pulls)](../research/leveling/builds/opt-affliction-leveling-leveling-aoe.md) (21/24/6, 35 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/warlock/60/05500020035001-00552031012010013-0051-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-23 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
 
 *The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

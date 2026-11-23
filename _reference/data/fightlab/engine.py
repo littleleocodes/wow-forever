@@ -20,6 +20,7 @@ import statistics
 from dataclasses import dataclass, field
 
 import tables
+import usable as _usable   # the game's conditions on a cast (fightlab/usable.py), for the forced lines (2026-11-22)
 UNAVOIDABLE = re.compile(r"cannot be (?:[a-z]+, )*(?:or )?(?:dodged|parried)", re.I)   # Overpower, Counterattack (2026-11-19)
 from tables import (DEATH_TIME, DRINK_BELOW, EAT_BELOW, GCD, LOOT_TIME, MELEE_RANGE, MOB_CRIT_CHANCE, MOB_DMG_SPREAD,
                     MOB_HIT_CHANCE, MOB_HP_SPREAD, MOB_SPEED, MOB_SWING, PARTIAL_RESIST_LOSS, PUSHBACK_FIRST,
@@ -273,6 +274,18 @@ class Player:
                 "focus": self.pet.focus if self.pet else 0.0}.get(resource, 0.0)
 
 
+def force_slug(name):
+    """A spell's name as a part of a rules knob's name: "Shadow Word: Death" -> SHADOW_WORD_DEATH (BaseModule.forced_line)."""
+    return re.sub(r"[^A-Z0-9]+", "_", name.upper()).strip("_")
+
+
+# the level windows a forced line's knob offers ([from, until): until 61 is to 60; None: never): the later start first, so a tie between
+# two starts the tune cannot tell apart (10 and 20 when it scores 20-60) keeps the later one; and the mana shares it may wait for
+FORCE_WINDOWS = [None] + [[f, u] for f in (20, 30, 40, 50, 10) for u in (30, 40, 50, 61) if u > f]
+FORCE_MANA = [0.0, 0.3, 0.5]
+CLASS_KEYS = ("druid", "hunter", "mage", "paladin", "priest", "rogue", "shaman", "warlock", "warrior")
+
+
 class BaseModule:
     """Default hooks: a class module overrides what its mechanics need. Numbers default to 'no effect'."""
     melee = False          # the player auto-attacks in melee
@@ -288,6 +301,66 @@ class BaseModule:
     REST_TOGETHER = False  # eat and drink together (a rules knob since 2026-11-17, user: "Yes, all classes"): while you sit to drink
                            # or to eat, the other bar tops up for the sitting seconds at no extra time (Session.downtime); off = the
                            # regression
+
+    # Forced lines (2026-11-22, the audit session's ruling on the leveling play check: fightlab/force_run.py had found spells the rotation
+    # never casts faster when pressed). FORCE_SPELLS {spec: (spell, ...)} names the spells a spec's rules may put at the top of the
+    # priority, each with two rules knobs (rotation_knobs): FORCE_<SLUG>_LEVELS, the levels it is forced at ([from, until); None, the
+    # default: never, so the lab before is kept bit for bit) and FORCE_<SLUG>_MANA, the mana share it waits for. A forced cast must be
+    # ready and affordable (the rules' vetoes apply), in reach, not already ticking or up, and allowed by the game (usable.py: stance,
+    # form, shield, weapon, stealth, position, combo points, minimum range, health limit), the conditions of the forced runs.
+    FORCE_SPELLS = {}
+
+    def __init_subclass__(cls, **kw):
+        super().__init_subclass__(**kw)
+        for names in (cls.__dict__.get("FORCE_SPELLS") or {}).values():
+            for n in names:
+                setattr(cls, f"FORCE_{force_slug(n)}_LEVELS", None)
+                setattr(cls, f"FORCE_{force_slug(n)}_MANA", 0.0)
+
+    @classmethod
+    def rotation_knobs(cls, spec=None, current=None):
+        """The rules knobs a tune of `spec` compares (rotation_opt.candidates): ROTATION_KNOBS and the spec's forced lines; a line's
+        mana knob only while the line is on (`current`: the rules' knobs)."""
+        out = dict(getattr(cls, "ROTATION_KNOBS", {}) or {})
+        cur = current or {}
+        for n in (cls.FORCE_SPELLS or {}).get(spec, ()):
+            g = force_slug(n)
+            out[f"FORCE_{g}_LEVELS"] = list(FORCE_WINDOWS)
+            if cur.get(f"FORCE_{g}_LEVELS", getattr(cls, f"FORCE_{g}_LEVELS", None)):
+                out[f"FORCE_{g}_MANA"] = list(FORCE_MANA)
+        return out
+
+    def forced_line(self, fight):
+        """The first forced spell (FORCE_SPELLS) castable now, else None: the module's own priority decides."""
+        lines = self.__dict__.get("_force_lines")
+        if lines is None:   # once per module: the rules' knobs are set by then (run.apply_rotation)
+            lines = []
+            key = next((k.__module__.rsplit(".", 1)[-1] for k in type(self).__mro__ if k.__module__.rsplit(".", 1)[-1] in CLASS_KEYS), None)
+            for n in (self.FORCE_SPELLS or {}).get(getattr(self, "spec", None), ()):
+                g = force_slug(n)
+                w, s = getattr(self, f"FORCE_{g}_LEVELS", None), self.spells.get(n)
+                if s is not None and w and w[0] <= self.level < w[1]:
+                    lines.append((s, getattr(self, f"FORCE_{g}_MANA", 0.0) or 0.0, key))
+            self._force_lines = lines
+        if not lines:
+            return None
+        p, m, t = fight.p, fight.m, fight.t
+        for s, mana, key in lines:
+            if mana and p.mana_max > 0 and p.mana < mana * p.mana_max:
+                continue
+            if not p.ready(s.name, t) or not fight.can_afford(s, self.mana_cost(s)):
+                continue
+            if s.dot and fight.dot_active(s.name):
+                continue
+            if (s.kind == "buff" or s.absorb or s.hot) and p.buff(s.name, t):
+                continue
+            reach = s.range if s.kind != "melee" and s.range else MELEE_RANGE
+            if (s.kind == "melee" and not m.in_melee) or m.dist > max(reach, MELEE_RANGE) + 0.5:
+                continue
+            if _usable.why_unusable(self, key, s, m, p):
+                continue
+            return s
+        return None
 
     def not_simulated(self):
         return []
@@ -1623,7 +1696,9 @@ class Fight:
             if self.casting or self.channel or m.hp <= 0 or p.hp <= 0:
                 pass
             elif t >= self.retreat_until and t + EPS >= p.gcd_until:
-                action = self.mod.decide(self)
+                action = self.mod.forced_line(self)   # a rules knob's forced line first (BaseModule.forced_line, 2026-11-22)
+                if action is None:
+                    action = self.mod.decide(self)
                 if action is None:
                     pass
                 elif action == "wand":

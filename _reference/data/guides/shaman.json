@@ -56,7 +56,7 @@
      "A mob that flees: **Frost Shock** slows it by 50% for 8 seconds (it shares the shock cooldown)."
     ],
     "rotations": {
-     "leveling:enhancement-dps": "c9aff505c1f9",
+     "leveling:enhancement-dps": "e7c9e04e7e05",
      "leveling:elemental-dps": "6b3c67b207c5"
     },
     "written": "2026-10-22"
@@ -99,7 +99,7 @@
      "**Searing Totem** at the pull while you have more than half your mana: it shoots the mob all fight, a few percent of your damage at 60.",
      "**Stormstrike** (level 25) whenever it is ready: a weapon hit (100% weapon damage since the 2026-11-10 hotfix, 150% before) that makes your next **Earth Shock** or **Lightning Bolt** 20% stronger, and with **Improved Stormstrike** (38-39) half your mana regeneration continues while you cast. At 60 it is worth about 3 seconds per kill in the fight lab, second only to **Shamanistic Focus**.",
      "One tuned rule shapes the fight: no **Lightning Bolt** until the mob is under 35% health, so no opening bolt, and a 5-stack bolt finishes the mob. The fight lab measured it about 10% faster per kill (re-tuned 2026-10-20).",
-     "**Earth Shock** whenever the shock cooldown is free: about a third of your damage at 60. It shares that cooldown with **Flame Shock**, so the fight lab never casts **Flame Shock** on one mob.",
+     "**Earth Shock** whenever the shock cooldown is free: about a third of your damage at 60. From 30 to 49 **Flame Shock** takes the shock cooldowns its burn is off (the tuned rules of 2026-11-22, 0.6% faster per kill over levels 20-60), and **Earth Shock** the others; from 50 the rules leave **Flame Shock** out again.",
      "**Maelstrom Weapon** (levels 40-44) stacks as you hit: since the 2026-11-10 hotfix each stack takes 20% off your next **Lightning Bolt**'s cast time and mana at every rank, and more points bring the stacks faster, so 5 stacks make it instant and free. **Rage of the Farseer** (45) goes at the start of a fight whenever it is ready."
     ],
     "caveats": [
@@ -114,7 +114,7 @@
      "A mob that flees at low health: **Earth Shock** finishes it, or **Frost Shock** slows it by 50%."
     ],
     "rotations": {
-     "leveling:enhancement-dps": "c9aff505c1f9",
+     "leveling:enhancement-dps": "e7c9e04e7e05",
      "leveling:elemental-dps": "6b3c67b207c5"
     },
     "written": "2026-11-15"
@@ -149,10 +149,10 @@
     "written": "2026-10-22"
    },
    "leveling": {
-    "plan": "You level with the raid healer's talents in the fastest order and play a simple melee shaman: a weapon imbue, a shield, **Searing Totem** at each pull and **Earth Shock** whenever the shock cooldown is free. It is about 40% slower than leveling as Enhancement (38 against 27 seconds per kill in the fight lab, levels 20-60, level-weighted): the price of arriving at 60 ready to heal.",
+    "plan": "You level with the raid healer's talents in the fastest order and play a simple melee shaman: a weapon imbue, a shield, **Searing Totem** at each pull and **Earth Shock** whenever the shock cooldown is free (from 30 to 49 **Flame Shock** first, while its burn is off). It is about 38% slower than leveling as Enhancement (35 against 26 seconds per kill in the fight lab, levels 20-60, level-weighted): the price of arriving at 60 ready to heal.",
     "why": [
      "This build takes none of Enhancement's melee talents (the \"Not in this build\" line names them): skip the lines that use them. In the fight lab it opens no fight with a **Lightning Bolt**: the tuned rule allows a bolt only once the mob is under 35% health, and with no Maelstrom Weapon there is no instant one.",
-     "**Earth Shock** takes every free shock (it shares the cooldown with **Flame Shock**, which the list therefore never reaches on one mob), and it interrupts a caster mob.",
+     "**Earth Shock** takes the free shocks and interrupts a caster mob. From 30 to 49 **Flame Shock** takes the shock cooldowns its burn is off (the Enhancement rules of 2026-11-22, which this page plays), and **Earth Shock** the others.",
      "Your damage is your weapon: **Rockbiter Weapon** until 30, **Windfury Weapon** from 30 and **Rockbiter Weapon** again from 40, on a slow two-hander, and **Lightning Shield** strikes back each time a mob hits you. From 28 you also have **Water Shield**: when your shield is gone and you are under 60% mana, the fight lab puts up Water Shield instead (only one shield can be up).",
      "The first points are **Tidal Focus** (10-14: 5% more chance to hit), **Mindfulness** (15-17) and **Thundering Strikes** (18-22: 5% crit); **Totemic Focus** (23-27) makes **Searing Totem** a quarter cheaper. Drop it at each pull while you have more than half your mana.",
      "Low on health: **Stoneclaw Totem** taunts the mob onto itself for a few hits, then **Lesser Healing Wave**. From 35, **Nature's Swiftness** makes a **Healing Wave** instant when you drop under 30%."
@@ -167,7 +167,7 @@
      "A mob that flees at low health: **Earth Shock** finishes it, or **Frost Shock** slows it by 50% (both share the shock cooldown)."
     ],
     "rotations": {
-     "leveling:enhancement-dps": "c9aff505c1f9",
+     "leveling:enhancement-dps": "e7c9e04e7e05",
      "leveling:elemental-dps": "6b3c67b207c5"
     },
     "written": "2026-10-22"

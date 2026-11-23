@@ -34,10 +34,10 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 
 | Talent | Pts | vs Classic | Effect at this rank |
 |---|---|---|---|
-| **Improved Imp** | 2/3 | changed | Increases the damage of your Imp's Firebolt spell by 20% and the effect of its Fire Shield spell by 20%. |
 | **Demonic Embrace** | 5/5 | changed | Increases your total Stamina by 15%. |
 | **Unholy Power** | 5/5 | changed | Increases all damage done by your Imp, Voidwalker, Succubus, Incubus, and Felhunter pets by 10%. |
 | **Demonic Aegis** | 2/2 | **NEW** | Increases the effectiveness of your Demon Skin and Demon Armor spells by 30%. |
+| **Improved Voidwalker** | 2/3 | unchanged | Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice, and Suffering spells by 20%. |
 | **Fel Vitality** | 3/3 | **NEW** | Increases the maximum health and Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 15%, and increases your maximum Mana by 15%. |
 | **Demonic Energies** | 2/2 | **NEW** | You heal your pet for 15% of all spell damage you deal. When you gain Mana from Life Tap, your summoned demon gains 100% of the Mana you gain. |
 | **Demonic Sacrifice** | 1/1 | changed | When activated, sacrifices your summoned Demon to enhance the opposing aspect of your power, granting you an effect that lasts 2 hrs. The effect is canceled if any Demon is summoned.  Imp: Increases your Shadow damage by 15%.  Voidwalker: Restores 2% of your total Mana every 4 sec.  Succubus/Incubus: Increases your Fire damage by 15%.  Felhunter: Restores 3% of your total Health every 4 sec. |
@@ -73,7 +73,7 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `afflicti
 | 43-45 | Demonology | Fel Vitality | 3 | 27/9/0 |
 | 46 | Demonology | Demonic Energies | 1 | 27/10/0 |
 | 47 | Demonology | Demonic Sacrifice | 1 | 27/11/0 |
-| 48-49 | Demonology | Improved Imp | 2 | 27/13/0 |
+| 48-49 | Demonology | Improved Voidwalker | 2 | 27/13/0 |
 | 50 | Demonology | Demonic Aegis | 1 | 27/14/0 |
 | 51 | Demonology | Demonic Embrace | 1 | 27/15/0 |
 | 52 | Demonology | Demonic Aegis | 1 | 27/16/0 |
@@ -102,15 +102,17 @@ What this build casts per kill ([report](../fightlab/affliction-leveling.md), al
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Wand | 7.6 | 9.8 | 12.8 | 13.7 | 12.7 | 26% |
+| Wand | 7.6 | 9.8 | 12.8 | 13.8 | 12.8 | 26% |
 | Torment | 3.4 | 4.4 | 5.3 | 5.6 | 5.3 | 0% |
 | Corruption | 1.0 | 1.0 | 1.3 | 1.4 | 1.2 | 20% |
 | Bane of Agony | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 26% |
 | Siphon Life | 0.0 | 1.0 | 1.0 | 1.0 | 1.0 | 11% |
 | Immolate | 1.0 | 0.9 | 0.8 | 0.7 | 0.7 | 10% |
+| Death Coil | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 
+- 2026-11-23: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Imp to Improved Voidwalker at 49 (gate that did nothing, no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Improved Imp to Improved Voidwalker at 48 (gate that did nothing, no loss: -0.1% seed 3, +0.0% seed 4, level-weighted time per kill).
 - 2026-11-22: leveling filler pass (fightlab/fl_filler_pass.py, 1500 fights a level): points that measured nothing, or held a tier open, moved: Improved Voidwalker to Fel Vitality at 45 (gate: -0.2% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Voidwalker to Fel Vitality at 44 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Voidwalker to Fel Vitality at 43 (gate: -0.1% seed 3, -0.1% seed 4, level-weighted time per kill); Improved Imp to Demonic Aegis at 50 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Decimation to Demonic Embrace at 53 (gate that did nothing, no loss: +0.0% seed 3, -0.0% seed 4, level-weighted time per kill); Decimation to Demonic Aegis at 52 (gate that did nothing, no loss: -0.0% seed 3, -0.0% seed 4, level-weighted time per kill).
 - Report: warlock/research/talents/forever/optimizer/affliction-leveling-leveling-st.md
 

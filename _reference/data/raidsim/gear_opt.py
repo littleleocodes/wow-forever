@@ -495,7 +495,29 @@ def class_picker(repo, cls, db, pool):
         rt = shape["rangedWeaponType"]
         return [i for i in dict.fromkeys(seen) if i in db and db[i].get("rangedWeaponType") == rt and pool(db[i]) and class_ok(db[i])]
 
+    def weapon_candidates(items, w, slot, top=8, effects_from=25):
+        """Items for a weapon or ranged slot that gear_tiers.race_weapons races (2026-11-22, the audit session's G2: the weights see a
+        weapon's dps and stats, not its speed or the hits a fast off hand adds). The items that fit the slot as greedy's do (the slot's
+        shape, the pool, the class, unique limits against the set's other slots), best by the weights first: the first `top`, plus every
+        item with an effect among the first `effects_from` (procs the weights cannot see). [] when the slot has no shape to follow."""
+        new = [dict(x) if x else {} for x in items] + [{}] * max(0, 17 - len(items))
+        curx = new[slot]
+        curit = db.get(curx.get("id")) if curx.get("id") else None
+        shape = curit or (legacy_item(curx["id"]) if curx.get("id") else None)
+        if not shape or (shape.get("rangedWeaponType", 0) in (6, 7, 8, 9)):
+            return []
+        used, ukeys = set(), set()
+        for i, x in enumerate(new):
+            if i != slot and x.get("id"):
+                used.add(x["id"])
+                ukeys |= unique_keys(db.get(x["id"]))
+        cands = sorted((it for it in db.values() if fits(it, slot, shape) and it["id"] not in used and not (unique_keys(it) & ukeys)),
+                       key=lambda it: -value(it, w, slot))
+        return [it["id"] for it in cands[:top]] + [it["id"] for it in cands[top:effects_from] if it.get("itemEffects")]
+
     greedy.relic_candidates = relic_candidates
+    greedy.weapon_candidates = weapon_candidates
+    greedy.fits = fits
     return seen, trinkets, greedy
 
 

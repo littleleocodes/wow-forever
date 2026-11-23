@@ -1,6 +1,6 @@
 {
  "class": "hunter",
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "fights": 400,
  "seed": 3,
  "guides": {
@@ -8,7 +8,7 @@
    "build": "beast-survival-open-leveling",
    "rotation": "melee-dps",
    "provisional_order": false,
-   "fingerprint": "31f0a8fc56e1",
+   "fingerprint": "d64d91bc149a",
    "levels": {
     "1": {
      "seconds": 9.8,
@@ -262,7 +262,8 @@
       "Immolation Trap": 0.51,
       "Melee": 3.22,
       "Melee (off-hand)": 4.0,
-      "Raptor Strike": 0.79
+      "Raptor Strike": 0.79,
+      "Mongoose Bite": 0.01
      },
      "idle_share": 0.018,
      "drink_per_kill": 0.3,
@@ -337,7 +338,8 @@
       "Melee": 4.03,
       "Melee (off-hand)": 4.85,
       "Immolation Trap": 1.0,
-      "Raptor Strike": 0.82
+      "Raptor Strike": 0.82,
+      "Mongoose Bite": 0.03
      },
      "idle_share": 0.022,
      "drink_per_kill": 0.35,
@@ -375,7 +377,8 @@
       "Melee": 4.16,
       "Melee (off-hand)": 5.03,
       "Immolation Trap": 1.0,
-      "Raptor Strike": 0.86
+      "Raptor Strike": 0.86,
+      "Mongoose Bite": 0.02
      },
      "idle_share": 0.028,
      "drink_per_kill": 0.43,
@@ -388,7 +391,7 @@
       "Melee (off-hand)": 0.121,
       "Claw": 0.084,
       "Auto Shot": 0.068,
-      "Raptor Strike": 0.053,
+      "Raptor Strike": 0.052,
       "Bite": 0.04,
       "Lacerate": 0.008
      },
@@ -413,7 +416,8 @@
       "Melee": 4.32,
       "Melee (off-hand)": 5.21,
       "Immolation Trap": 1.0,
-      "Raptor Strike": 0.86
+      "Raptor Strike": 0.86,
+      "Mongoose Bite": 0.03
      },
      "idle_share": 0.046,
      "drink_per_kill": 0.94,
@@ -444,14 +448,15 @@
      "casts": {
       "Auto Shot": 1.1,
       "Serpent Sting": 1.0,
-      "Growl": 3.0,
+      "Growl": 3.01,
       "Bite": 1.0,
       "Claw": 8.26,
       "Lacerate": 0.17,
       "Melee": 4.75,
       "Melee (off-hand)": 5.71,
       "Immolation Trap": 1.0,
-      "Raptor Strike": 0.93
+      "Raptor Strike": 0.93,
+      "Mongoose Bite": 0.03
      },
      "idle_share": 0.031,
      "drink_per_kill": 0.7,
@@ -518,7 +523,8 @@
       "Growl": 1.02,
       "Bite": 0.94,
       "Claw": 2.87,
-      "Serpent Sting": 1.02
+      "Serpent Sting": 1.02,
+      "Melee": 0.03
      },
      "idle_share": 0.0,
      "drink_per_kill": 0,
@@ -727,7 +733,8 @@
       "Bite": 0.99,
       "Claw": 4.11,
       "Serpent Sting": 1.02,
-      "Aimed Shot": 0.99
+      "Aimed Shot": 0.99,
+      "Melee": 0.01
      },
      "idle_share": 0.116,
      "drink_per_kill": 2.08,
@@ -790,7 +797,8 @@
       "Bite": 0.99,
       "Claw": 5.47,
       "Serpent Sting": 1.02,
-      "Aimed Shot": 1.0
+      "Aimed Shot": 1.0,
+      "Feign Death": 0.04
      },
      "idle_share": 0.104,
      "drink_per_kill": 2.08,
@@ -854,7 +862,8 @@
       "Bite": 0.99,
       "Claw": 6.71,
       "Serpent Sting": 1.03,
-      "Aimed Shot": 0.99
+      "Aimed Shot": 0.99,
+      "Feign Death": 0.03
      },
      "idle_share": 0.118,
      "drink_per_kill": 2.71,
@@ -886,7 +895,8 @@
       "Bite": 1.0,
       "Claw": 6.96,
       "Serpent Sting": 1.03,
-      "Aimed Shot": 1.04
+      "Aimed Shot": 1.04,
+      "Feign Death": 0.03
      },
      "idle_share": 0.099,
      "drink_per_kill": 2.24,
@@ -920,7 +930,10 @@
       "Serpent Sting": 1.03,
       "Aimed Shot": 1.01,
       "Feign Death": 0.18,
-      "Melee": 0.06
+      "Melee": 0.06,
+      "Mongoose Bite": 0.02,
+      "Wing Clip": 0.03,
+      "Raptor Strike": 0.02
      },
      "idle_share": 0.116,
      "drink_per_kill": 2.84,
@@ -983,7 +996,8 @@
       "Growl": 1.02,
       "Bite": 0.94,
       "Claw": 2.87,
-      "Serpent Sting": 1.02
+      "Serpent Sting": 1.02,
+      "Melee": 0.03
      },
      "idle_share": 0.0,
      "drink_per_kill": 0,
@@ -1172,7 +1186,8 @@
       "Claw": 3.47,
       "Serpent Sting": 1.04,
       "Arcane Shot": 0.93,
-      "Aimed Shot": 0.98
+      "Aimed Shot": 0.98,
+      "Melee": 0.01
      },
      "idle_share": 0.173,
      "drink_per_kill": 2.98,
@@ -1205,7 +1220,8 @@
       "Claw": 3.51,
       "Serpent Sting": 1.04,
       "Aimed Shot": 0.99,
-      "Arcane Shot": 0.92
+      "Arcane Shot": 0.92,
+      "Melee": 0.01
      },
      "idle_share": 0.202,
      "drink_per_kill": 3.67,
@@ -1239,6 +1255,7 @@
       "Serpent Sting": 1.04,
       "Aimed Shot": 1.0,
       "Arcane Shot": 0.99,
+      "Feign Death": 0.02,
       "Melee": 0.11
      },
      "idle_share": 0.154,
@@ -1275,7 +1292,10 @@
       "Aimed Shot": 1.0,
       "Arcane Shot": 0.97,
       "Feign Death": 0.22,
-      "Melee": 0.29
+      "Melee": 0.29,
+      "Wing Clip": 0.04,
+      "Mongoose Bite": 0.03,
+      "Raptor Strike": 0.04
      },
      "idle_share": 0.161,
      "drink_per_kill": 3.56,
@@ -1311,7 +1331,10 @@
       "Aimed Shot": 1.01,
       "Arcane Shot": 0.95,
       "Melee": 0.28,
-      "Feign Death": 0.23
+      "Feign Death": 0.23,
+      "Wing Clip": 0.04,
+      "Mongoose Bite": 0.04,
+      "Raptor Strike": 0.04
      },
      "idle_share": 0.167,
      "drink_per_kill": 3.74,
@@ -1420,7 +1443,7 @@
    "build": "survival-open-leveling",
    "rotation": "melee-dps",
    "provisional_order": false,
-   "fingerprint": "13b6770f57d2",
+   "fingerprint": "6b800a134da4",
    "levels": {
     "1": {
      "seconds": 9.8,
@@ -1778,28 +1801,30 @@
      "casts": {
       "Auto Shot": 1.17,
       "Serpent Sting": 1.0,
-      "Growl": 2.69,
+      "Growl": 2.7,
       "Bite": 1.55,
       "Claw": 5.75,
-      "Lacerate": 0.15,
-      "Melee": 3.88,
-      "Melee (off-hand)": 4.68,
-      "Immolation Trap": 1.0,
-      "Raptor Strike": 0.82
+      "Lacerate": 0.16,
+      "Melee": 3.9,
+      "Melee (off-hand)": 4.69,
+      "Immolation Trap": 0.99,
+      "Raptor Strike": 0.82,
+      "Mongoose Bite": 0.01
      },
      "idle_share": 0.019,
      "drink_per_kill": 0.31,
      "eat_per_kill": 0,
      "shares": {
-      "Cat melee": 0.19,
+      "Cat melee": 0.191,
       "Immolation Trap": 0.156,
-      "Serpent Sting": 0.149,
-      "Melee": 0.144,
-      "Melee (off-hand)": 0.128,
-      "Auto Shot": 0.071,
+      "Serpent Sting": 0.148,
+      "Melee": 0.143,
+      "Melee (off-hand)": 0.127,
       "Claw": 0.071,
-      "Raptor Strike": 0.052,
-      "Bite": 0.034
+      "Auto Shot": 0.071,
+      "Raptor Strike": 0.053,
+      "Bite": 0.034,
+      "Lacerate": 0.005
      },
      "pet_sources": [
       "Bite",
@@ -1810,34 +1835,35 @@
      "standing": "Aspect of the Beast"
     },
     "40": {
-     "seconds": 21.2,
+     "seconds": 21.1,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.17,
       "Serpent Sting": 1.0,
-      "Growl": 2.72,
+      "Growl": 2.73,
       "Bite": 1.59,
-      "Claw": 5.79,
-      "Lacerate": 0.16,
+      "Claw": 5.78,
+      "Lacerate": 0.14,
       "Melee": 3.97,
       "Melee (off-hand)": 4.77,
-      "Immolation Trap": 1.0,
-      "Raptor Strike": 0.82
+      "Immolation Trap": 0.99,
+      "Raptor Strike": 0.82,
+      "Mongoose Bite": 0.02
      },
-     "idle_share": 0.024,
-     "drink_per_kill": 0.39,
+     "idle_share": 0.022,
+     "drink_per_kill": 0.35,
      "eat_per_kill": 0,
      "shares": {
       "Cat melee": 0.186,
-      "Immolation Trap": 0.149,
+      "Immolation Trap": 0.15,
       "Serpent Sting": 0.143,
       "Melee": 0.143,
-      "Melee (off-hand)": 0.128,
+      "Melee (off-hand)": 0.126,
       "Claw": 0.082,
-      "Auto Shot": 0.069,
-      "Raptor Strike": 0.052,
+      "Auto Shot": 0.068,
+      "Raptor Strike": 0.055,
       "Bite": 0.04,
-      "Lacerate": 0.007
+      "Lacerate": 0.006
      },
      "pet_sources": [
       "Bite",
@@ -1860,7 +1886,7 @@
       "Melee": 3.97,
       "Melee (off-hand)": 4.68,
       "Immolation Trap": 1.0,
-      "Raptor Strike": 0.79,
+      "Raptor Strike": 0.8,
       "Mongoose Bite": 0.1
      },
      "idle_share": 0.044,
@@ -1894,26 +1920,26 @@
       "Serpent Sting": 1.0,
       "Growl": 2.89,
       "Bite": 1.65,
-      "Claw": 5.96,
-      "Lacerate": 0.22,
-      "Melee": 4.21,
+      "Claw": 5.97,
+      "Lacerate": 0.24,
+      "Melee": 4.22,
       "Melee (off-hand)": 4.96,
       "Immolation Trap": 1.0,
-      "Raptor Strike": 0.86,
-      "Mongoose Bite": 0.14
+      "Raptor Strike": 0.88,
+      "Mongoose Bite": 0.15
      },
      "idle_share": 0.042,
      "drink_per_kill": 0.62,
      "eat_per_kill": 0.28,
      "shares": {
       "Serpent Sting": 0.201,
-      "Cat melee": 0.183,
-      "Immolation Trap": 0.153,
-      "Melee": 0.128,
-      "Melee (off-hand)": 0.111,
+      "Cat melee": 0.182,
+      "Immolation Trap": 0.152,
+      "Melee": 0.127,
+      "Melee (off-hand)": 0.112,
       "Claw": 0.067,
       "Auto Shot": 0.062,
-      "Raptor Strike": 0.047,
+      "Raptor Strike": 0.049,
       "Bite": 0.033,
       "Lacerate": 0.008,
       "Mongoose Bite": 0.007
@@ -1927,38 +1953,38 @@
      "standing": "Aspect of the Beast"
     },
     "54": {
-     "seconds": 22.8,
+     "seconds": 22.7,
      "deaths_per_100": 0.0,
      "casts": {
       "Auto Shot": 1.22,
       "Serpent Sting": 1.0,
-      "Growl": 2.83,
-      "Bite": 1.61,
-      "Claw": 5.91,
+      "Growl": 2.85,
+      "Bite": 1.6,
+      "Claw": 5.92,
       "Lacerate": 0.24,
-      "Melee": 4.3,
-      "Melee (off-hand)": 4.91,
+      "Melee": 4.31,
+      "Melee (off-hand)": 4.88,
       "Immolation Trap": 1.0,
       "Strider Kick": 0.99,
-      "Raptor Strike": 0.71,
+      "Raptor Strike": 0.69,
       "Mongoose Bite": 0.14
      },
-     "idle_share": 0.059,
-     "drink_per_kill": 1.22,
-     "eat_per_kill": 0.06,
+     "idle_share": 0.058,
+     "drink_per_kill": 1.12,
+     "eat_per_kill": 0.13,
      "shares": {
       "Serpent Sting": 0.193,
-      "Cat melee": 0.182,
+      "Cat melee": 0.181,
       "Immolation Trap": 0.145,
-      "Melee": 0.126,
+      "Melee": 0.127,
       "Melee (off-hand)": 0.106,
-      "Claw": 0.064,
+      "Claw": 0.065,
       "Auto Shot": 0.062,
       "Strider Kick": 0.039,
-      "Raptor Strike": 0.037,
+      "Raptor Strike": 0.035,
       "Bite": 0.031,
-      "Lacerate": 0.009,
-      "Mongoose Bite": 0.007
+      "Lacerate": 0.01,
+      "Mongoose Bite": 0.006
      },
      "pet_sources": [
       "Bite",
@@ -1974,32 +2000,32 @@
      "casts": {
       "Auto Shot": 1.09,
       "Serpent Sting": 1.0,
-      "Growl": 2.95,
-      "Bite": 1.69,
-      "Claw": 6.06,
-      "Lacerate": 0.27,
-      "Melee": 4.42,
-      "Melee (off-hand)": 5.01,
+      "Growl": 2.96,
+      "Bite": 1.68,
+      "Claw": 6.07,
+      "Lacerate": 0.28,
+      "Melee": 4.45,
+      "Melee (off-hand)": 5.03,
       "Immolation Trap": 1.0,
       "Strider Kick": 0.99,
-      "Raptor Strike": 0.72,
-      "Mongoose Bite": 0.18
+      "Raptor Strike": 0.71,
+      "Mongoose Bite": 0.19
      },
-     "idle_share": 0.053,
-     "drink_per_kill": 1.06,
-     "eat_per_kill": 0.22,
+     "idle_share": 0.054,
+     "drink_per_kill": 1.09,
+     "eat_per_kill": 0.19,
      "shares": {
-      "Serpent Sting": 0.205,
-      "Cat melee": 0.169,
+      "Serpent Sting": 0.203,
+      "Cat melee": 0.17,
       "Immolation Trap": 0.164,
       "Melee": 0.12,
-      "Melee (off-hand)": 0.102,
+      "Melee (off-hand)": 0.103,
       "Claw": 0.064,
       "Auto Shot": 0.054,
-      "Strider Kick": 0.035,
+      "Strider Kick": 0.036,
       "Raptor Strike": 0.035,
       "Bite": 0.032,
-      "Lacerate": 0.012,
+      "Lacerate": 0.011,
       "Mongoose Bite": 0.008
      },
      "pet_sources": [
@@ -2052,7 +2078,8 @@
       "Growl": 1.02,
       "Bite": 0.94,
       "Claw": 2.87,
-      "Serpent Sting": 1.02
+      "Serpent Sting": 1.02,
+      "Melee": 0.03
      },
      "idle_share": 0.0,
      "drink_per_kill": 0,
@@ -2230,7 +2257,8 @@
       "Bite": 0.99,
       "Claw": 3.95,
       "Serpent Sting": 1.04,
-      "Aimed Shot": 0.99
+      "Aimed Shot": 0.99,
+      "Melee": 0.01
      },
      "idle_share": 0.055,
      "drink_per_kill": 0.91,
@@ -2261,7 +2289,8 @@
       "Bite": 0.99,
       "Claw": 4.01,
       "Serpent Sting": 1.04,
-      "Aimed Shot": 0.99
+      "Aimed Shot": 0.99,
+      "Melee": 0.02
      },
      "idle_share": 0.091,
      "drink_per_kill": 1.57,
@@ -2293,7 +2322,8 @@
       "Claw": 4.6,
       "Serpent Sting": 1.04,
       "Aimed Shot": 1.0,
-      "Feign Death": 0.2
+      "Feign Death": 0.2,
+      "Melee": 0.03
      },
      "idle_share": 0.065,
      "drink_per_kill": 1.2,
@@ -2327,7 +2357,9 @@
       "Aimed Shot": 1.0,
       "Feign Death": 0.32,
       "Melee": 0.11,
-      "Raptor Strike": 0.05
+      "Raptor Strike": 0.05,
+      "Mongoose Bite": 0.02,
+      "Wing Clip": 0.04
      },
      "idle_share": 0.092,
      "drink_per_kill": 1.96,
@@ -2364,7 +2396,8 @@
       "Feign Death": 0.34,
       "Melee": 0.17,
       "Wing Clip": 0.09,
-      "Raptor Strike": 0.1
+      "Raptor Strike": 0.1,
+      "Mongoose Bite": 0.03
      },
      "idle_share": 0.091,
      "drink_per_kill": 1.99,
@@ -2400,6 +2433,7 @@
       "Aimed Shot": 1.0,
       "Feign Death": 0.32,
       "Melee": 0.13,
+      "Mongoose Bite": 0.03,
       "Wing Clip": 0.09,
       "Raptor Strike": 0.08
      },
@@ -2437,6 +2471,7 @@
       "Aimed Shot": 1.02,
       "Feign Death": 0.26,
       "Melee": 0.1,
+      "Mongoose Bite": 0.03,
       "Raptor Strike": 0.06,
       "Wing Clip": 0.07
      },
@@ -2472,6 +2507,7 @@
       "Aimed Shot": 1.04,
       "Feign Death": 0.34,
       "Melee": 0.2,
+      "Mongoose Bite": 0.04,
       "Wing Clip": 0.13,
       "Raptor Strike": 0.11
      },

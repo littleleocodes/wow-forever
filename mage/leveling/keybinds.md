@@ -87,6 +87,7 @@ after it fail without using anything; the food lines work the same way. Water an
 global cooldown, so one press starts both.
 
 ```
+#showtooltip
 /use item:8079
 /use item:8078
 /use item:8077
@@ -103,7 +104,9 @@ global cooldown, so one press starts both.
 /use item:5349
 ```
 
-The numbers are the items' ids: the names do not fit in a macro's 255 characters (this one is 210). Highest rank first:
+The numbers are the items' ids: the names do not fit in a macro's 255 characters (this one is 223; 234 when RestCue writes the best
+item into the first line). Item ids work in Forever's client: the button shows the item's icon and how many you carry (tested in game on
+2026-11-22). Highest rank first:
 
 | Conjure rank (water / food level) | Water | Food |
 |---|---|---|
@@ -115,12 +118,13 @@ The numbers are the items' ids: the names do not fit in a macro's 255 characters
 | 2 (10 / 12) | 2288 Conjured Fresh Water | 1113 Conjured Bread |
 | 1 (4 / 6) | 5350 Conjured Water | 5349 Conjured Muffin |
 
-With RestCue (v0.4.0 or later) installed, the button shows the best water you carry and its count: RestCue gives the macro the
-question-mark icon and rewrites its first line to `#showtooltip item:<that water>` whenever your bags change (out of combat; `/rest macro`
-lists what it found, `/rest macro off` stops it). Without it, give the macro a water icon: a macro cannot see your bags, so the question
-mark would show the first line's item, Crystal Water, until you have it. Older
+With RestCue (v0.5.0 or later) installed, the button shows the best water you carry and its count: give the macro the question-mark
+icon and keep `#showtooltip` alone on its first line; RestCue rewrites that line to `#showtooltip item:<that water>` whenever your bags
+change (out of combat; `/rest macro` lists what it found, `/rest macro off` stops it). Without it, give the macro a water icon: a macro
+cannot see your bags, so the question mark would show the first line's item, Crystal Water, until you have it. Older
 water stays in your bags while you carry the new rank (conjured items vanish after 15 minutes logged out), and water a higher-level mage
-gives you that you are too low to drink is skipped. Not tested in game yet: if one press ever uses two waters, go back to one line of each.
+gives you that you are too low to drink is skipped. Seen working in game on 2026-11-22 (the same macro on one player's side bar): if one
+press ever uses two waters, go back to one line of each.
 
 Sources for the Deadlock defaults: [Shacknews, Deadlock controls and keybindings](https://www.shacknews.com/article/141162/deadlock-pc-controls-keybindings),
 [Deadlock wiki, Parries](https://deadlock.wiki/Parries), [Deadlock wiki, Melee Attacks](https://deadlock.wiki/Melee_Attacks).

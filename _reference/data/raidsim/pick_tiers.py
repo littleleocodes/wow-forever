@@ -10,6 +10,9 @@ full raid), the pick raced in each set on the training dummy and in a full raid 
 "compare" naming only the pick, so ml_builds.py writes no build from it. render_modes.py's tier table and gear_links.py read it as they
 read a search's record; `pick_tiers` marks it (the table then says the numbers are the page's pick, not a search's best). Then run
 dungeon_tier.py <class> --spec "<spec>" --fresh for the quests-and-dungeons tier.
+--refit (2026-11-22, the audit session's gear findings G1-G3): each tier's set file as it stands goes through gear_tiers.refit (weapons
+raced per hand, item-set pieces raced, enchants from the tier's enchant pool; written when ahead on seed 2) before the pick is raced in
+it; the record keeps the set's make() fields when they name the filed items, plus the refit's.
 """
 import argparse
 import datetime
@@ -37,6 +40,7 @@ def main():
     ap.add_argument("--build", required=True)
     ap.add_argument("--iterations", type=int, default=10000)
     ap.add_argument("--make", action="store_true", help="make new tier sets for the pick (gear_tiers.make) instead of racing it in the spec's sets")
+    ap.add_argument("--refit", action="store_true", help="refit the spec's tier sets as they stand (gear_tiers.refit), then race the pick in them")
     a = ap.parse_args()
     R.set_game("forever")
     repo = R.repo_path(argparse.Namespace(repo=None))
@@ -79,7 +83,17 @@ def main():
     db, zones = MP.GT.load_db(repo)
     for tier in ("bis", "prebis"):
         sp = GT.set_path(a.cls, a.spec, tier)
-        if sp.exists() and not a.make:
+        if sp.exists() and a.refit and not a.make:
+            # (2026-11-22) the set as it stands, refit: its make() fields stay when they name the filed items, the refit's are added
+            its = json.load(open(sp, encoding="utf-8"))["items"]
+            names = [db[x["id"]]["name"] if x and x.get("id") in db else None for x in its]
+            pg = prev_gear.get(tier) or {}
+            g = dict(pg) if pg.get("names") == names else {k: pg[k] for k in ("entry", "setting") if k in pg}
+            rf = MP.GT.refit(a.cls, a.spec, tier, a.entry, talents, a.build, repo, db, zones, MP.GT.args_ns())
+            g.update({k: rf[k] for k in ("entry", "gear", "date", "setting", "chosen", "ilvl", "names", "confirm_seed2", "weights", "weapons", "set_pieces", "enchants", "changes", "refit") if k in rf})
+            for k in ("kept", "note"):
+                g.pop(k, None)
+        elif sp.exists() and not a.make:
             # the spec's own tier set as it stands (made by its search for that search's winner): the pick is raced in it. The record
             # describes the file as it is: a set kept from an earlier record keeps that record's make() fields only when they name
             # these items (a carried record had listed the level-30 set's items after the file was restored)

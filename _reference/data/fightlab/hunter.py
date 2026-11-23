@@ -337,7 +337,17 @@ class HunterModule(BaseModule):
     # Aimed Shot from this level on (0: as soon as it is trained, the lab before, bit for bit; 61: never). A rules knob since 2026-11-22
     # (the audit session: Marksmanship went from 15.0 s a kill at 19 to 16.2 at 20 on training Aimed Shot), like Frostfire's.
     AIMED_FROM = 0
-    ROTATION_KNOBS = {"SNIPER_SHOT": [0, 1], "AIMED_FROM": [0, 25, 30, 40, 50, 61]}   # tuned by rotation_opt.py ("knobs" in rotations/hunter-<spec>.json)
+    # Aimed Shot as the pull's opener (2026-11-22, the audit session's ruling (a) on Marksmanship's rule: Aimed Shot stays required at
+    # 0.5 a kill; it costs about 4% a kill against never, all of it drinking): inside this level window ([from, until); None, the
+    # default: never, the lab before, bit for bit) Aimed Shot is the pull's first cast (only Auto Shot has fired), at range, ready and
+    # affordable, and is not cast later in the fight; outside it, on cooldown as before. The probe of the day: the opener alone 14.70 s
+    # a kill at 20 against 16.09 on cooldown, slower from 30.
+    AIMED_OPENER = None
+    AIMED_OPENER_WINDOWS = [None] + [[f, u] for f in (20, 30, 40, 50) for u in (30, 40, 50, 61) if u > f]
+    # the forced line the melee leveling rules may take (2026-11-22, engine.BaseModule.forced_line: the forced runs found Arcane Shot
+    # 2.65% faster per kill at 20; usable.py's 8-yard minimum range makes it a pull shot, cast while the mob runs in)
+    FORCE_SPELLS = {"melee-dps": ("Arcane Shot",)}
+    ROTATION_KNOBS = {"SNIPER_SHOT": [0, 1], "AIMED_OPENER": AIMED_OPENER_WINDOWS}   # (AIMED_FROM left out of the tune: above 20 it fails the 0.5-a-kill rule at 20-24)   # tuned by rotation_opt.py ("knobs" in rotations/hunter-<spec>.json)
 
     AOE = {'channel': ['Volley'], 'direct': ['Multi-Shot'], 'dots': ['Serpent Sting'], 'min_near': 2}
 
@@ -922,6 +932,10 @@ class HunterModule(BaseModule):
             return None
         if not at_range:
             return None
+        # AIMED_OPENER: inside its window Aimed Shot opens the pull and is not cast later (2026-11-22)
+        opener = bool(self.AIMED_OPENER) and self.AIMED_OPENER[0] <= p.level < self.AIMED_OPENER[1]
+        if opener and aimed and can(aimed) and set(fight.casts) <= {"Auto Shot"}:
+            return aimed
         # pet care
         if mend and can(mend) and pet is not None and pet.alive and pet.hp < 0.35 * pet.hp_max and m.target == "pet":
             return mend
@@ -940,6 +954,6 @@ class HunterModule(BaseModule):
             return sniper
         if multi and can(multi):
             return multi
-        if aimed and can(aimed) and hp > 0.25 * m.hp_max and p.level >= self.AIMED_FROM:
+        if aimed and can(aimed) and hp > 0.25 * m.hp_max and p.level >= self.AIMED_FROM and not opener:
             return aimed
         return None

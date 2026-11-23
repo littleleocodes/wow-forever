@@ -525,6 +525,10 @@ class WarlockModule(BaseModule):
     # any mana sent a third of the pulls under the drink line and each full bar went into Shadow Bolts; a 40% gate was 6-12% faster at
     # 20-30 and about 1-2% at 40-60, seeds 1-2). 0: the lab before, bit for bit
     BOLT_ABOVE = 0.0
+    # the forced lines the Destruction leveling rules may take (2026-11-22, engine.BaseModule.forced_line: the forced runs found Bane
+    # of Agony 4-7% faster per kill from 20 and Corruption 0.5% at 20; Soul Fire is left out: its lead cast it without the Soul Shard
+    # it costs, and the lab keeps no shards)
+    FORCE_SPELLS = {"destruction-leveling": ("Bane of Agony", "Corruption")}
     ROTATION_KNOBS = {"NUKE_ABOVE": [0.0, 0.2, 0.4, 0.6, 0.8], "BOLT_FIRST": [0, 1], "DESTRO_DOTS": [0, 1], "BOLT_ABOVE": [0.0, 0.2, 0.4, 0.6]}
     CONFLAG_LEFT = 3.0   # Destruction: Conflagrate (outside the finisher) once Immolate has this many seconds left
     CRIT_BONUS_OF_BASE = 0.5   # new rotations: "increases the critical strike damage bonus by X%" = X% of the 50% bonus (wowsims)

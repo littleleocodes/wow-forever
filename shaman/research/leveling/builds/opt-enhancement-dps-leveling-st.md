@@ -94,19 +94,20 @@ Produced by the stats model (`_reference/data/scorer/`) for spec model `enhancem
 
 Single-target leveling fights against normal mobs of your level with a slow two-hander: Lightning Shield (Water Shield when talented and mana is low) and the weapon imbue up (Rockbiter's attack power until 30, Windfury's extra attacks from 30), Searing Totem dropped at the pull, a Lightning Bolt while the mob walks in, then Stormstrike, Earth Shock (buffed by Stormstrike), Flame Shock while mana allows and instant Maelstrom Lightning Bolts between white swings; Stoneclaw Totem and a Lesser Healing Wave when low, Nature's Swiftness + Healing Wave in an emergency; a death with Reincarnation ready costs 30 s instead of 90. Between fights: 2 s loot, 6 s travel, heals back to 80% health, water below 35% mana.
 
-**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-17, on top of the priority below): eat below 90% health. Together +1.0% time per kill saved for `enhancement-open-leveling` (level-weighted, a third seed of 3000 fights per level).
+**Tuned rules** (`fightlab/rotation_opt.py`, 2026-11-22, on top of the priority below): FORCE_FLAME_SHOCK_LEVELS = [30, 50]. Together +0.5% time per kill saved for `enhancement-open-leveling` (level-weighted, a third seed of 3000 fights per level).
 
 What this build casts per kill ([report](../fightlab/enhancement-dps.md), all leveling builds: [leveling rotations](../rotation.md)):
 
 | Ability | L20 casts/kill | L30 casts/kill | L40 casts/kill | L50 casts/kill | L60 casts/kill | Damage at L60 |
 |---|---|---|---|---|---|---|
-| Melee | 3.2 | 3.3 | 3.6 | 3.8 | 4.2 | 29% |
-| Earth Shock | 2.0 | 1.9 | 2.1 | 2.1 | 2.3 | 38% |
-| Stormstrike | 0.0 | 1.6 | 1.7 | 1.8 | 1.9 | 13% |
+| Melee | 3.2 | 3.2 | 3.4 | 3.8 | 4.2 | 29% |
+| Earth Shock | 2.0 | 0.9 | 1.0 | 2.1 | 2.3 | 38% |
+| Stormstrike | 0.0 | 1.5 | 1.7 | 1.8 | 1.9 | 13% |
 | Lightning Shield | 0.6 | 0.6 | 0.7 | 0.7 | 0.7 | 12% |
-| Searing Totem | 0.9 | 0.9 | 0.8 | 0.8 | 0.7 | 5% |
+| Searing Totem | 0.9 | 0.8 | 0.8 | 0.8 | 0.7 | 5% |
 | Lightning Bolt | 0.0 | 0.0 | 0.0 | 0.0 | 0.2 | 3% |
-| Windfury | 0.0 | 1.7 | 0.0 | 0.0 | 0.0 | 0% |
+| Flame Shock | 0.0 | 1.1 | 1.2 | 0.0 | 0.0 | 0% |
+| Windfury | 0.0 | 1.6 | 0.0 | 0.0 | 0.0 | 0% |
 
 ## Notes
 

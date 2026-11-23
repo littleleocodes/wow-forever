@@ -2,13 +2,11 @@
 
 [Hunter](../README.md) > [Leveling (solo)](README.md) > Survival
 
-> **Being checked:** The play check's forced runs found Arcane Shot faster when shot from range on the pull (2.65% at 20, the game's 8-yard minimum range kept); the rotation is being tuned again with a pull shot. The build and numbers on this page may change when it is done.
-
 **✅ Recommended** for leveling (the best hunter spec here, or within 3% of it).
 
 **Leveling from level 1?** [The rotation level by level](survival-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
 
-**[Survival — Leveling](../research/leveling/builds/survival-open-leveling.md)** (0/19/32) — [open the talent tree](https://talentsforever.com/hunter/60/-0053550001-51220023025020215-12)
+**[Survival — Leveling](../research/leveling/builds/survival-open-leveling.md)** (0/19/32) — [open the talent tree](https://talentsforever.com/hunter/60/-0053550001-53020023025020215-12)
 
 > 🔬 Derived build: found by this project's open leveling search (every legal build, no tree rule, in the fight lab, this project's leveling simulator; the winner picked by a race at levels 20-60). A model of the beta, to check at launch.
 
@@ -39,16 +37,16 @@ Melee Survival levels with the pet as the tank: you walk in behind it and fight 
 - **Immolation Trap** goes at your feet beside the mob (traps work in combat in Forever but land where you stand), while the mob has more than 40% of its health (the burn lasts 15 seconds). **Resourcefulness** (levels 30 and 32) cuts the cost of traps and melee abilities by 60%.
 - **Lacerate** (trained at 30) only while the mob has more than half its health and you have 80% of your mana or more: cast freely, its mana cost more time than its bleed saved.
 - **Mongoose Bite** lights up after you dodge, so **Aspect of the Monkey** (its dodges) until level 30; then **Aspect of the Beast**: melee attack power. **Deflection** raises your parry.
-- In the fight lab's removal runs at 60 (seconds a kill costs without the talent), **Resourcefulness** is worth about 2.5 seconds, **Survivalist's Discipline** (33-34, the trap every 18 seconds) 0.6, **Lethal Attacks** and **Surefooted** 0.5 each, **Efficiency** and **Clever Traps** 0.3 each: the build's most valuable talents. Melee, Raptor Strike, Mongoose Bite, Lacerate, Wing Clip and the pet are 53% of the damage at 60.
+- In the fight lab's removal runs at 60 (seconds a kill costs without the talent), **Resourcefulness** is worth about 2.5 seconds, **Survivalist's Discipline** (33-34, the trap every 18 seconds) 0.6, **Lethal Attacks** and **Surefooted** 0.5 each, **Efficiency** and **Clever Traps** 0.3 each: the build's most valuable talents. Melee, Strider Kick, Raptor Strike, Mongoose Bite, Lacerate and the pet are 58% of the damage at 60.
 - Between fights the lab drinks below 35% of your mana and eats below 65% of your health: the tuned rules change neither. Whenever you sit down to drink or eat, do both while the other bar is not full: it costs no extra time (the tuned rules of 2026-11-17).
 
 **Caveats**
 
 - This build does not take **Counterattack**, nor **Deterrence**, so the list above leaves their lines out; **Mongoose Bite** still goes whenever a dodge lights it up. **Strider Kick** (54), a weapon hit on an 8-second cooldown, has no line in the list: the tuned rules cast it like **Raptor Strike**, only once the mob is below 20% of its health. **Survival Tactics** (31) adds 5% to the chance your traps and **Feign Death** hit.
 - The pet is still your tank: **Mend Pet** below about a third in the fight and below half between fights, and let it build threat before you hit hard.
-- The project counts a melee hunter's damage as swings, strikes, bleeds and the pet (the spec's rule: at least half at 60; this build reaches 53%). The sting and the trap are not counted, which is why the rotation does not lean on them harder.
+- The project counts a melee hunter's damage as swings, strikes, bleeds and the pet (the spec's rule: at least half at 60; this build reaches 58%). The sting and the trap are not counted, which is why the rotation does not lean on them harder.
 - **Improved Tracking** (levels 10-14) adds 1% a point, and only against the creature type you are tracking: switch tracking to what you are killing.
-- The last points go to **Efficiency** (50-51, 55-57), a third **Improved Stings** (52), a second **Survival Tactics** (53), **Careful Aim**'s last two points (58-59) and **Trueshot Aura** (60). The leveling filler passes moved a Deadly Aspects point to **Efficiency** (by way of Endurance Training, 2026-11-20 to 2026-11-22), a second Deflection point to **Efficiency** and Survivalist's two points to **Entrapment** (18-19, which only holds the row), none slower in the fight lab; the second **Survival Tactics** point is for traps and **Feign Death**, which the fight lab does not measure.
+- The last points go to **Efficiency** (50-51, 55-57), a third **Improved Stings** (52), a second **Survival Tactics** (53), **Careful Aim**'s last two points (58-59) and **Trueshot Aura** (60). The leveling filler passes moved Deadly Aspects points to **Efficiency** (by way of Endurance Training and Deflection, 2026-11-20 to 2026-11-22) and Survivalist's two points to **Deflection** (18-19, by way of Entrapment, 2026-11-22), none slower in the fight lab; the second **Survival Tactics** point is for traps and **Feign Death**, which the fight lab does not measure.
 - Buy the new ranks: in the beta client (build 70753) the top ranks are the strongest. **Aspect of the Beast** rank 4 gives +110 melee attack power at 60 (rank 3 +90); the other ranks of the spells you press only add damage. Cast the highest rank you know; the fight lab does.
 
 **When to change it**
@@ -64,8 +62,7 @@ One point per level from 10, in this order:
 |---|---|---|
 | 10-14 | Improved Tracking (Survival) | 5 |
 | 15-16 | Savage Strikes (Survival) | 2 |
-| 17 | Deflection (Survival) | 1 |
-| 18-19 | Entrapment (Survival) | 2 |
+| 17-19 | Deflection (Survival) | 3 |
 | 20-22 | Surefooted (Survival) | 3 |
 | 23-24 | Clever Traps (Survival) | 2 |
 | 25-29 | Predator's Edge (Survival) | 5 |
@@ -102,7 +99,7 @@ One point per level from 10, in this order:
 - [Survival (optimized, AoE pulls)](../research/leveling/builds/opt-bm-leveling-leveling-aoe.md) (8/12/31, 25 s per kill, level-weighted) — [open the talent tree](https://talentsforever.com/hunter/60/512-3150102-504103031201022151-12)
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-23 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
 
 *The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 

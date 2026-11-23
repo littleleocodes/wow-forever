@@ -274,6 +274,9 @@ class PriestModule(BaseModule):
     special_stat = None
     WAND_BELOW = 0.0      # wand instead of Mind Flay when mana is below this fraction (APL knob, tested in the sim)
     SHIELD_BELOW = 0.0    # Power Word: Shield before the pull only when health is below this fraction (0 = always)
+    # the forced line the Holy leveling rules may take (2026-11-22, engine.BaseModule.forced_line: the play check's forced runs found
+    # Shadow Word: Death 10.5% faster per kill at 40 and 6.3% at 50 when pressed; the rotation never casts it)
+    FORCE_SPELLS = {"holy-leveling": ("Shadow Word: Death",)}
     ROTATION_KNOBS = {"WAND_BELOW": [0.0, 0.1, 0.2, 0.3], "SHIELD_BELOW": [0.0, 0.5, 0.8]}   # tuned by rotation_opt.py
     RACE = None           # racial priest spells (RACIAL_SPELLS) only for this race; None = race-neutral (the player pages)
 

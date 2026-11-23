@@ -2,8 +2,6 @@
 
 [Priest](../README.md) > [Leveling (solo)](README.md) > Smite
 
-> **Being checked:** The play check's forced runs found Shadow Word: Death faster when pressed (10.5% at 40, 6.3% at 50); the rotation is being tuned again with it. The build and numbers on this page may change when it is done.
-
 *Damage from Smite and Holy Fire, carried by Discipline talents.* (a hybrid: Discipline/Holy).
 
 **Leveling from level 1?** [The rotation level by level](smite-by-level.md): what to press as each spell and talent arrives. [Your keys and macros](keybinds.md).
@@ -20,17 +18,18 @@
 
 **In the fight**, top to bottom:
 
-1. Open with **Holy Fire** from range, and cast it again once its burn has ended while the mob has more than 40% of its health (in melee only while your shield holds).
-2. **Shadow Word: Pain** next, and again when it runs out while the mob has more than 30% of its health.
-3. **Mind Blast** whenever it is ready, at any mana (also to finish a mob one cast will kill).
-4. **Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit; then your wand.
-5. Hurt: **Power Word: Shield** again in melee below 80% health once Weakened Soul is gone (below half at any time), **Flash Heal** below a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
+1. From level 32 to 49, **Shadow Word: Death** on a mob below 20% of its health whenever it is ready (the tuned rules of 2026-11-22); it hurts you for 30% of your maximum health if the mob survives it.
+2. Open with **Holy Fire** from range, and cast it again once its burn has ended while the mob has more than 40% of its health (in melee only while your shield holds).
+3. **Shadow Word: Pain** next, and again when it runs out while the mob has more than 30% of its health.
+4. **Mind Blast** whenever it is ready, at any mana (also to finish a mob one cast will kill).
+5. **Smite** in every gap, at any mana, until the mob has less health left than about half a **Smite** hit; then your wand.
+6. Hurt: **Power Word: Shield** again in melee below 80% health once Weakened Soul is gone (below half at any time), **Flash Heal** below a third, **Renew** below 60%; **Psychic Scream** if a mob is on you and you are below 40%.
 
 **Between fights:** Drink only below 15% mana; **Renew** yourself after a fight below 85% health, and eat below 80%. Whenever you sit down to drink, also eat if your health is not full, and whenever you sit down to eat, also drink if your mana is not full: no extra time (the tuned rules do it). Stand up once the bar you sat down for is full.
 
 ## Why this rotation
 
-Leveling as Smite: open with **Holy Fire**, keep **Shadow Word: Pain** on the mob, cast **Mind Blast** whenever it is ready and **Smite** in every gap, and let your wand take the last hit. A **Power Word: Shield** before every pull lets you keep casting in melee. In the fight lab a kill takes about 51 seconds level-weighted (49 at level 60), twice the Shadow page's 24.
+Leveling as Smite: open with **Holy Fire**, keep **Shadow Word: Pain** on the mob, cast **Mind Blast** whenever it is ready and **Smite** in every gap, and let your wand take the last hit. A **Power Word: Shield** before every pull lets you keep casting in melee. In the fight lab a kill takes about 43 seconds level-weighted (42 at level 60), 1.8 times the Shadow page's 24.
 
 **Why it works**
 
@@ -39,6 +38,7 @@ Leveling as Smite: open with **Holy Fire**, keep **Shadow Word: Pain** on the mo
 - **Smite** is your main spell. **Divine Fury** (40-43, 49) takes half a second off its cast and **Holy Fire**'s, **Holy Specialization** (35-39) adds 5% crit and **Searing Light** (56-57) 5% Holy damage.
 - **Mind Blast** goes out whenever it is ready, at any mana (the tuned rules of 2026-11-17 dropped its 30% mana hold: about 2.5% faster per kill); **Smite** at any mana until the mob has less health left than about half a **Smite** hit, then your wand finishes, 25% stronger with **Wand Specialization** (10-11).
 - Mana: drink only below 15%. **Meditation** (22-24) keeps half your regeneration going while you cast, **Mental Agility** (20-21, 28) cuts **Smite** and **Holy Fire**'s cost by 10%, **Spirit Tap** (25-27, 29, 31) doubles your Spirit after a kill.
+- From 32 to 49 **Shadow Word: Death** finishes a mob below 20% of its health whenever it is ready: the tuned rules of 2026-11-22 force it there, 2.7% faster per kill over levels 20-60 in the fight lab, and leave it out from 50: pressed on to 60 it would keep **Smite** and **Holy Fire** under the signature rule's share at 60 (38% on the Holy page against 40%, 43% on the Smite page against half), though it would be faster at 50 and 55. It hurts you for 30% of your maximum health when the mob survives it.
 
 **Caveats**
 
@@ -50,7 +50,7 @@ Leveling as Smite: open with **Holy Fire**, keep **Shadow Word: Pain** on the mo
 **When to change it**
 
 - Hurt in a fight: shield again below half your health, **Flash Heal** below about a third, **Renew** below 60% if it is not already on you.
-- For pure speed, level as Shadow: 24 seconds per kill in the fight lab against this build's 51.
+- For pure speed, level as Shadow: 24 seconds per kill in the fight lab against this build's 43.
 
 ## Talents while leveling
 
@@ -94,7 +94,7 @@ A talent marked as a tier point does nothing in the fight lab's leveling fights;
 |---|---|---|
 | 20 | 38 | 25 |
 | 30 | 40 | 26 |
-| 40 | 49 | 28 |
+| 40 | 45 | 26 |
 | 50 | 44 | 29 |
 | 60 | 42 | 30 |
 
@@ -103,7 +103,7 @@ A talent marked as a tier point does nothing in the fight lab's leveling fights;
 **Points that do nothing for this spec:** **Inspiration** (3) and **Spell Warding** (2) only count toward the points the tree needs before **Spiritual Guidance**.
 
 ---
-*Generated by `_reference/data/render_modes.py` on 2026-11-22 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
+*Generated by `_reference/data/render_modes.py` on 2026-11-23 from this project's builds and simulations of the WoW: Forever beta (talent data: client build 1.60.1.70753; spell numbers: client 1.60.1.70938). Simulations, not in-game measurements. Between fights, your own health and mana regeneration keeps running while you eat and drink, as on Classic's servers; not yet checked against a Forever combat log. Do not hand-edit.*
 
 *The live client is 1.60.1.71037 (2026-11-20); these pages are on 1.60.1.70938; an update follows.*
 
