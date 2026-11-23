@@ -644,8 +644,17 @@ def make_leveling_build(cls, rot, r, spec, allr, rivals, best_hand, hand_t, repl
     for f in sorted((HERE / "fightlab" / "filler").glob(f"{cls}-*.json")):
         fr = json.load(open(f, encoding="utf-8"))
         if fr.get("build") == b["id"] and fr.get("written") and filler_applies(fr, r):
-            b["allocation"], b["order"] = fr["written"]["allocation"], fr["written"]["order"]
             b["notes"].insert(0, fr["written"]["note"])
+            end = {k: v for k, v in flat_of(fr["written"]["allocation"]).items() if v}
+            if end == {k: v for k, v in flat_of(r["winner"]["allocation"]).items() if v} and fr["written"]["order"] != r["order"]:
+                # 2026-11-23: the record's winner is the pass's end state, so its moves are in the winner already, and the record's order
+                # (raced after the pass, perhaps polished) stays. Taking the pass's written order had dropped the order polish of druid
+                # Balance (Nature's Grace 30, Eclipse 31-33: 31.40 against 31.57 s per kill at 20-60) and mage Fire's own-tree-first
+                # order (32.83 against 33.34).
+                print(f"  {b['id']}: the leveling filler pass of {fr['date']} is in the record's winner already ({len(fr['moves'])} moves); "
+                      f"the record's order stays")
+                continue
+            b["allocation"], b["order"] = fr["written"]["allocation"], fr["written"]["order"]
             print(f"  {b['id']}: the leveling filler pass of {fr['date']} re-applied ({len(fr['moves'])} moves)")
     return b
 
