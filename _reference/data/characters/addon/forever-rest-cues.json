@@ -1,5 +1,5 @@
 {
- "made": "2026-11-23T02:49:11-05:00",
+ "made": "2026-11-23T10:40:39-05:00",
  "about": "Out-of-combat rest cues for an in-game add-on, every class and leveling spec (2026-11-16, user: \"I want the addon to not proc during combat. Also, I just want to be eat/drink/evocation for now. Also I want it to work across all different classes and specs\").",
  "rules": "Out of combat only. drink_below / eat_below: shares of maximum mana / health; tools: the class's own mana tools between fights, in order (a tool's cue comes before drinking). The fight lab drinks and eats back to full once a cue fires. eat_drink_together (per spec; absent = false): while you sit to drink or to eat, the other bar tops up too, at no extra time, only while it is below full; you stand when the bar that fired is full (the topped-up one may be left short). Evocation is not sitting and brings no top-up. vectors: the fight lab's own decision on set states, for the add-on's tests (hp and mana as shares; does in order; after: the bars once the tool ran; warlocks: health_max and tap_cost).",
  "classes": {
@@ -973,8 +973,8 @@
       "Fel Vitality": 3,
       "Improved Bane of Agony": 2,
       "Improved Corruption": 5,
-      "Improved Imp": 2,
       "Improved Life Tap": 2,
+      "Improved Voidwalker": 2,
       "Malevolence": 5,
       "Pandemic": 3,
       "Shadow Mastery": 2,
